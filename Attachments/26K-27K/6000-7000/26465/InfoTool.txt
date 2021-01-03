@@ -1,0 +1,72 @@
+Nero InfoTool 4.2.1.0
+
+Drive Information
+------------------
+Drive                      : LITE-ON  LTR-48246S      
+Type                       : CD-RW Recorder
+Firmware Version           : SGS3
+Buffer Size                : 2 MB
+Date                       : ?
+Serial Number
+Vendor Specific            :  
+Drive Letter               : G:\
+Location                   : 1:0
+Mechanism                  : Tray
+Read Speed                 : 48 , 40 , 32 , 24 , 16 , 12 , 8 , 4  X
+Write Speed                : 48 , 40 , 32 , 24 , 16 , 12 , 8 , 4  X
+
+Read CD Text               : Yes
+Return C2 Pointers         : Yes
+Read CD-R                  : Yes
+Read CD-RW                 : Yes
+Read DVD-ROM               : No
+Read DVD-RAM               : No
+Read DVD-R                 : No
+Read DVD-RW                : No
+Read DVD-R DL              : No
+Read DVD+R                 : No
+Read DVD+RW                : No
+Read DVD+R DL              : No
+Read BD-ROM                : No
+Read BD-R                  : No
+Read BD-RE                 : No
+Read HD DVD-ROM            : No
+Read HD DVD-R              : No
+Read HD DVD-RW             : No
+Read HD-BURN               : No
+Read Digital Audio         : Yes
+Read CD+G                  : Yes
+Read VideoCD               : Yes
+
+Write CD-R                 : Yes
+Write CD-RW                : Yes
+Write DVD-R                : No
+Write DVD-RW               : No
+Write DVD-R DL             : No
+Write DVD+R                : No
+Write DVD+RW               : No
+Write DVD+R DL             : No
+Write DVD-RAM              : No
+Write BD-R                 : No
+Write BD-RE                : No
+Write HD DVD-R             : No
+Write HD DVD-RW            : No
+Write HD-BURN-R            : No
+Write HD-BURN-RW           : No
+Buffer Underrun Protection : Yes
+Mount Rainier              : Yes
+SolidBurn                  : No
+Labelflash                 : No
+Modes                      : Packet, TAO, DAO, SAO, RAW SAO, RAW SAO 16, RAW SAO 96, RAW DAO 16, RAW DAO 96
+
+
+Disc Information (G:\)
+--------------------
+Type                   : no disc inserted
+
+
+
+
+
+
+
