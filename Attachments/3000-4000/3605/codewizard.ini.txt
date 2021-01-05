@@ -1,0 +1,106 @@
+; Nom : CodeWizard.ini
+; Description : Fichier langue de CodeWizard
+; Version : v1.1.204.alpha
+; Auteur : Xavier Brusselaers
+; 
+; Mode d'emplois : copier le langage francais, coller le à la fin du fichier INI, changer l'en-tête de section
+; par votre langue, traduisez les texte.
+; Exemple : 
+; 				[English]
+; 				TabMsgBox=Dialog Box
+; 				Group1=Title
+; 	Etc...
+; 
+; Instructions:  copy the French language, past it at the end of INI file, change the heading of section
+; by your langage, translate the text
+; Sample : 
+; 				[English]
+; 				TabMsgBox=Dialog Box
+; 				Group1=Title
+; 	Etc...
+
+
+[setting]
+Lang=Francais
+; ==== DO NOT CHANGE AFTER 			====
+Name=CodeWizard
+Ver=v1.1.204.alpha
+[Francais]
+tabMsgBox=Boite de dialogue
+Group1=Titre
+TipsGroup1=Titre de la boite de dialogue
+Label1Group1=Texte
+Tips1Group1=Le texte de la boite de dialogue
+IconGroup=Icone
+IconAttention=Attention
+IconInformation=Information
+IconCritical=Critique
+IconQuestion=Question
+OptionGroup=Options
+OptionDelai=Delai
+TipsOptionDelai=Délai d'attente optionnel en seconde. Après l'écoulement du délai, la boite de dialogue sera automatiquement fermée.
+CheckBoxConstant=Constants.au3
+TipsCheckBoxConstant=Inclure <Constants.au3> dans le résultat du code.
+ButtonGroup=Boutons
+RadioBtOK=OK
+RadioBtYN=Oui, Non
+RadioBtOA=OK, Annuler
+RadioBtYNC=Oui, Non, Annuler
+RadioBtARI=Abandonner, Rééssayer, Ignorer
+RadioBtRA=Rééssayer, Annuler
+RadioBtARC=Annuler, Rééssayer, Continuer
+ModalityGroup=Modalité
+ModalApplication=Application
+ModalSystem=Système Modal
+ModalTask=Tâche Modale
+MiscGroup=Divers
+AttrTopMost=Attribut : Toujours visible
+AttrAlignRight=Alignement droite Titre / Texte
+DefBtGroup=Boutton par défaut
+FirstBt=Premier boutton
+SecBt=Deuxième boutton
+ThiBt=Troisième boutton
+tabInputBox=Boite d'entrée
+TipsGroup1a=Titre de la boite d'entrée
+Label1Group1a=Saisie
+TipsLabel1Group1a=Un message pour indiquer à l'utilisateur quelle sorte d'entrée est attendue
+DefTxt=Texte par défaut
+TipsDefTxt=La valeur par défaut de la boite d'entrée
+OptionGroup2=Options [Optionel]
+EntryLong=Longueur d'entrée
+TipsEntryLong=La longueur maximum de la boite d'entrée
+ChrPwd=Mot de passe
+TipsChrPwd=Le caractère qui remplacera tous les caractères tapés (caractère de mot de passe)
+TipsOptionDelai2=Combien de seconde d'attente avant l'annulation automatique de la boite d'entrée
+Manda=Mandataire
+TipsManda=L'entrée est obligatoire; p.e. : Vous devez entrer quelque chose
+PosGroup=Position [Optionel]
+Width=Largeur
+TipsWidth=La largeur de la fenêtre. Si définie, la hauteur doit aussi être définie. Emploie -1 pour la largeur par défaut
+Heigth=Hauteur
+TipsHeigth=La hauteur de la fenêtre. Si définie, la largeur doit aussi être définie. Emploie -1 pour la hauteur par défaut
+Left=Gauche
+TipsLeft=Le coté gauche de la boite d'entrée. Si par défaut, la boite est centrée. Si définis, le plafond doit aussi être définis
+Top=Dessus
+TipsTop=Le plafond de la boite d'entrée. Si par défaut, la boite est centrée. Si définis, le coté gauche doit aussi être définis
+bt_Preview=&Prévisualisation
+Tipsbt_Preview=Affiche la boite de dialogue ou d'entrée
+bt_Copy=&Copier
+InfoConsole=Console
+TipsInfoConsole=Copie le code généré dans la Console
+OtherTips=Copie la code AutoIt généré dans le presse-papier
+bt_Quiet=&Quitter
+Tipsbt_Quiet=Quitte le programme
+Info1=Annuler
+Info2=Oui
+Info3=Non
+InfoOptionDelai=Délai écoulé
+InfoAbord=Abandonner
+InfoRetry=Rééssayer
+InfoIgnore=Ignorer
+InfoTryAgain=Rééssayer à nouveau
+InfoContinue=Continuer
+InfoReturnOK=OK - La chaîne de caractère renseignée est correcte
+InfoReturnCancel=Le bouton Annuler à été poussé
+InfoReturnTimeOut=Le délai est écoulé
+InfoFailedInput=Impossible d'ouvrir la boite d'entrée
