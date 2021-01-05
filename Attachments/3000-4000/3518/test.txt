@@ -1,0 +1,4 @@
+opt("winTitleMatchMode", 4)
+local $outputFile = @desktopDir & "\ClassList.txt"
+fileDelete($outputFile)
+fileWrite($outputFile, stringReplace(winGetClassList("classname=WindowsForms10.Window.8.app3"), @LF, @CRLF))
