@@ -1,0 +1,39 @@
+'Example script to use the FileOpen/FileSave dialog
+
+'Constants and variables
+
+Const ForAppending = 2
+
+' These are constants for licensing the use of MSComDlg.CommonDialog Object.
+' Normally this object is licensed with Microsoft Office.
+Const Regkey = "HKEY_CLASSES_ROOT\Licenses\4D553650-6ABE-11cf-8ADB-00AA00C00905\"
+Const LicValue = "gfjmrfkfifkmkfffrlmmgmhmnlulkmfmqkqj"
+
+'Type Definitions only in Visual Basic
+Dim OpenDialog ' For the file-open dialog box
+Dim Filename   ' Default name for dialog box
+
+Filename = "C:\passwd-status.csv"
+
+' create a common dialog object
+Set OpenDialog = wscript.CreateObject("MSComDlg.CommonDialog")
+
+With OpenDialog	' set the dialog's properties
+     .DialogTitle = "Where do you want to save your export file..."
+     .Filter = "CSV files (*.csv)"
+     .FilterIndex = 1
+     .MaxFileSize = 260
+     .Flags = 0
+     .Filename = Filename
+     ' display the Open File Dialog
+     .ShowOpen
+     'assign the filename selected to a variable for validation
+     FileName = .FileName
+End With
+
+If Err.Number = 0 and FileName <> "" Then
+
+  ' etc.. You can now do a .OpenTextFile (Filename), etc.
+
+End if
+
