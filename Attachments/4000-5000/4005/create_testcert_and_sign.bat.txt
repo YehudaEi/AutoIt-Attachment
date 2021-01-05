@@ -1,0 +1,6 @@
+@echo off 
+rem - only run this line once to create the test cert - comment it out after you run this batch the first time
+"c:\Program Files\Microsoft Visual Studio .NET 2003\SDK\v1.1\Bin\makecert.exe" -ss TestCert -n "CN=Certifcate Name Here"  
+
+rem - run this line to sign the passed param to this batchfile.
+"C:\Program Files\Microsoft Visual Studio .NET 2003\SDK\v1.1\bin\Signcode.exe" -s TestCert -cn "Certifcate Name Here" %1
