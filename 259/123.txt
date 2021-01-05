@@ -1,0 +1,37 @@
+System information for \\user001:
+Uptime:                    2 days 15 hours 8 minutes 23 seconds
+Kernel version:            Microsoft Windows 2000, Uniprocessor Free
+Product type:              Professional
+Product version:           5.0
+Service pack:              4
+Kernel build number:       2195
+Registered organization:   gfda
+Registered owner:          gfda
+Install date:              7/25/2003, 10:09:45 AM
+Activation status:         Not applicable
+IE version:                6.0000
+System root:               C:\WINNT
+Processors:                1
+Processor speed:           2.9 GHz
+Processor type:            Intel(R) Pentium(R) 4 CPU
+Physical memory:           248 MB
+Video driver:              ATI Technologies Inc. 3D RAGE PRO AGP 2X
+Applications:
+Adobe Reader 6.0.1 006.000.001
+Adobe Reader Chinese Simplified Fonts 1.0
+Adobe Reader Chinese Traditional Fonts 1.00
+Adobe Reader Japanese Fonts 1.0
+Adobe Reader Korean Fonts 1.0
+AutoIt v3.0.102
+HP LaserJet 4000 Printing System
+Intel(R) Extreme Graphics Driver
+Intel(R) PRO Network Adapters and Drivers
+Internet Explorer Q831167
+LiveUpdate 1.80 (Symantec Corporation) 1.80.19.0
+Lotus Notes
+Microsoft .NET Framework 1.1 1.1.4322
+Microsoft Windows Journal Viewer 1.5.2315.3
+Outlook Express Q837009
+PageRecall
+Symantec AntiVirus Client 8.1.0.825
+
