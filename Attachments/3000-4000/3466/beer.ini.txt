@@ -1,0 +1,78 @@
+; Fichier paramètre pour l'utilitaire _beer.exe
+; Version : v1.0.001.beta1
+; Auteur : Xavier Brusselaers
+; Dépendance : _beer.au3
+
+[setting]
+Lang=Nederlands
+SciTe_Recent=SciTE.recent
+SciTe_Session=SciTE.ses
+[English]
+MsgBox1_Title=Information
+MsgBox1_Msg=No file found.
+MsgBox2_Title=Error
+MsgBox2_Msg1=Unable to clear.
+MsgBox2_Msg2=Error : FileOpen = -1 ==> \SciTe.recent
+MsgBox3_Title=Error
+MsgBox3_Msg1=No session file found.
+MsgBox4_Title=Error
+MsgBox4_Msg1=Unable to clear session.
+MsgBox4_Msg2=Error : FileOpen = -1 ==> \Scite.ses
+ProgressOn_Title=Information
+ProgressOn_Main=Clear history
+ProgressOn_Sub=In progress
+ProgressSet_25_Sub=Wait
+ProgressSet_25_Main=Localise File
+ProgressSet_50_Sub=Wait
+ProgressSet_50_Main=Opening File
+ProgressSet_75_Sub=Wait
+ProgressSet_75_Main=Clear History
+ProgressSet_99_Sub=Wait
+ProgressSet_99_Main=Closing File
+ProgressSet_100_Sub=End
+ProgressSet_100_Main=Done
+Progress_Error_Sub=Error
+Progress_Error_Main=File Error
+[Francais]
+MsgBox1_Title=Information
+MsgBox1_Msg=Pas de fichier trouvé.
+MsgBox2_Title=Erreur
+MsgBox2_Msg1=Impossible de nettoyer.
+MsgBox2_Msg2=Erreur : FileOpen = -1 ==> \SciTe.recent
+ProgressOn_Title=Information
+ProgressOn_Main=Nettoyage
+ProgressOn_Sub=En cours
+ProgressSet_25_Sub=Patientez
+ProgressSet_25_Main=Localisation fichier
+ProgressSet_50_Sub=Patientez
+ProgressSet_50_Main=Ouverture fichier
+ProgressSet_75_Sub=Patientez
+ProgressSet_75_Main=Nettoyage
+ProgressSet_99_Sub=Patientez
+ProgressSet_99_Main=Fermeture fichier
+ProgressSet_100_Sub=Terminé
+ProgressSet_100_Main=Fin de script
+Progress_Error_Sub=Erreur
+Progress_Error_Main=Erreur de fichier
+[Nederlands]
+; Tijdelijkse versie
+MsgBox1_Title=Informatie
+MsgBox1_Msg=Geen geschiedenis bestand gevond.
+MsgBox2_Title=Fout
+MsgBox2_Msg1=Onmogelijke om de geschiedenis verwijderen.
+MsgBox2_Msg2=Fout : FileOpen = -1 ==> \SciTe.recent
+ProgressOn_Title=Informatie
+ProgressOn_Main=Geschiedenis verwijderen
+ProgressOn_Sub=In koers
+ProgressSet_25_Sub=Even geduld
+ProgressSet_25_Main=Bestand localiseren
+ProgressSet_50_Sub=Even geduld
+ProgressSet_50_Main=Opening bestand
+ProgressSet_75_Sub=Even geduld
+ProgressSet_75_Main=Geschiedenis schoonmaking
+ProgressSet_99_Sub=Even geduld
+ProgressSet_99_Main=Bestand sluiting
+ProgressSet_100_Sub=Eind
+ProgressSet_100_Main=Eind van de script
+Progress_Error_Sub=Fout
+Progress_Error_Main=Fout van de bestand
