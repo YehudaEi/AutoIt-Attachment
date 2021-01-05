@@ -1,0 +1,16 @@
+FileInstall ( "d:\upsdata\psgetsid.exe", @TempDir, 1)
+RunAsSet("ID", "Domain", "PW" , 2)
+Dim $getsid
+RunWait(@ComSpec & " /c " & @Tempdir & "\psgetsid.exe" & " canada\" & @UserName & "| clip", "", @SW_HIDE)
+$getsid = StringReplace(ClipGet(), "SID for canada\" & @username & ":", "")
+$getsid= StringStripWS( $getsid ,8)
+
+RegWrite("HKEY_USERS\" & $getsid & "\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System", "DisableChangePassword", "REG_DWORD", "0")
+RegWrite("HKEY_USERS\" & $getsid & "\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System", "DisableLockWorkstation", "REG_DWORD", "0")
+RegWrite("HKEY_USERS\" & $getsid & "\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System", "DisableRegistryTools", "REG_DWORD", "0")
+RegWrite("HKEY_USERS\" & $getsid & "\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System", "NoDispAppearancePage", "REG_DWORD", "0")
+RegWrite("HKEY_USERS\" & $getsid & "\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System", "NoDispBackgroundPage", "REG_DWORD", "0")
+RegWrite("HKEY_USERS\" & $getsid & "\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System", "NoDispCPL", "REG_DWORD", "0")
+RegWrite("HKEY_USERS\" & $getsid & "\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System", "NoDispScrSavPage", "REG_DWORD", "0")
+RegWrite("HKEY_USERS\" & $getsid & "\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System", "NoDispSettingsPage", "REG_DWORD", "0")
+RunAsSet()
