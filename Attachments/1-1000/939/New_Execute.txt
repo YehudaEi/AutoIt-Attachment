@@ -1,0 +1,53 @@
+Functionality
+--------------
+This adds the Execute function
+
+Based on sources
+----------------
+v3.0.103
+
+
+In script.h:
+-----------
+	...Just behind F_Eval...
+	AUT_RESULT	F_Execute(VectorVariant &vParams, Variant &vResult);
+
+
+
+In script.cpp:
+-------------
+	...Just behind F_Eval...
+	{"EXECUTE", &AutoIt_Script::F_Execute, 1, 2},
+
+
+In script_misc.cpp:
+------------------
+
+///////////////////////////////////////////////////////////////////////////////
+// Execute()
+// 2005-01-19 S.A.Pechler
+///////////////////////////////////////////////////////////////////////////////
+
+AUT_RESULT AutoIt_Script::F_Execute(VectorVariant &vParams, Variant &vResult)
+{
+
+	VectorToken		LineTokens;				// Vector of tokens from parameter
+	uint			iPos;					// Position in Vector
+
+	// NOTE: the lexer has changed not to look into the cache when line=0 is given!
+	if ( AUT_SUCCEEDED(Lexer(0, vParams[0].szValue(), LineTokens) ) ) // First convert the string parameter into tokens
+	{
+		// Lexer completed. Now parse the newly created tokens
+		if (LineTokens.size() > 1)		// Be sure they didn't pass an empty string
+		{	
+			iPos = 0;  // First token position
+			if ( AUT_SUCCEEDED( Parser_EvaluateExpression(LineTokens, iPos, vResult) ) ) 
+				return AUT_OK;	// Return value is now in vResult
+ 		}
+	}
+
+	SetFuncErrorCode(1);		// Silent error
+	vResult = "";				// Empty result
+	return AUT_OK;
+
+} // Execute()
