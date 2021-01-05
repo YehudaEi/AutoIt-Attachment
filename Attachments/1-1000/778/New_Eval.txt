@@ -1,0 +1,121 @@
+Modifications to Eval() function.
+Based on AutoIt Source code: 3.0.102
+
+
+In Script_misc.cpp:
+
+///////////////////////////////////////////////////////////////////////////////
+// Eval()
+// 2005-01-04 Modified by S.A.Pechler; Added Expression evaluation.
+///////////////////////////////////////////////////////////////////////////////
+
+AUT_RESULT AutoIt_Script::F_Eval(VectorVariant &vParams, Variant &vResult)
+{
+	bool			bCondition;				// Result of expression evaluation
+	VectorToken		LineTokens;				// Vector of tokens from parameter
+	uint			iPos;					// Position in Vector
+	bool			tmpScriptError;			// To remember the value of ScriptErrorsFatal
+	
+ 	if (g_oVarTable.isDeclared(vParams[0].szValue()))
+ 	{
+ 		Variant *pvTemp;
+ 		g_oVarTable.GetRef(vParams[0].szValue(), &pvTemp);
+ 		vResult = *pvTemp;
+ 		return AUT_OK;
+ 	}
+ 	else
+ 	{
+		// Expression did not contain a declared variable. 
+		// Check if it contains a valid expression.
+
+		if ( AUT_FAILED( Lexer(vParams[0].szValue(), LineTokens) ) ) // First convert the string parameter into tokens
+		{
+			SetFuncErrorCode(1);	// Silent error 
+			vResult = " ";
+			return AUT_OK;			// Lexer failed, but we won't report it visually
+		}
+
+		// Now parse the newly created tokens
+		// To stay compatible with the pre-3.0.103 eval() versions we must now suppress script errors temporarily
+
+		tmpScriptError = m_bScriptErrorsFatal;	// Remember option ScriptErrorsFatal
+		m_bScriptErrorsFatal = false;			// Script errors are currently not fatal
+
+		iPos = 0;
+
+		if ( AUT_FAILED( Parser_EvaluateCondition(LineTokens, iPos, bCondition) ) ) 
+		{
+			SetFuncErrorCode(1);		// Silent error
+			vResult = " ";
+		}	
+		else
+		{	
+			if (bCondition == true)
+			{
+				vResult = true;			// Evaluation valid and true
+			}
+			else
+			{
+				vResult = false;		// Evaluation valid but false
+			}
+		}
+
+		m_bScriptErrorsFatal = tmpScriptError;	// Restore option ScriptErrorsFatal
+		return AUT_OK;
+ 	}
+
+} // Eval()
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// AutoItSetOption("option", value)
+
+	....just after RunErrorsFatal....
+
+	else if ( !stricmp(szOption, "ScriptErrorsFatal") )		// ScriptErrorsFatal
+	{
+		vResult = (int)m_bScriptErrorsFatal;	// Store current value
+
+		if (nValue == 0)
+			m_bScriptErrorsFatal = false;
+		else
+			m_bScriptErrorsFatal = true;
+	}
+	....
+
+
+
+In Script.h:
+
+	....just after m_bRunErrorsFatal....
+
+	bool			m_bScriptErrorsFatal;		// Determines if "script" errors are fatal
+	...
+
+
+
+In Script.cpp:
+
+///////////////////////////////////////////////////////////////////////////////
+// Constructor()
+///////////////////////////////////////////////////////////////////////////////
+AutoIt_Script::AutoIt_Script()
+
+...placed this code just behind m_bRunErrorsFatal...
+
+m_bScriptErrorsFatal		= true;			// Script errors are fatal by default
+
+
+.....
+
+///////////////////////////////////////////////////////////////////////////////
+// FatalError()
+
+	...placed this code just when function starts...
+
+	if (m_bScriptErrorsFatal == true)  // Only if script errors are fatal
+	{
+
+		...rest of function...
+	}
