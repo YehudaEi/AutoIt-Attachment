@@ -1,0 +1,16 @@
+;
+; AutoIt Version: 2.x
+; Language:       English
+; Platform:       Win9x/NT
+; Author:         A.N.Other (myemail@nowhere.com)
+;
+; Script Function:
+;	Template AutoIt script.
+;
+
+Sleep(180000)
+
+For $i = 1 to 7200
+ Send("!1")
+ Sleep(500)
+Next
