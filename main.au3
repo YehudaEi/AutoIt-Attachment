@@ -49,7 +49,7 @@ Local $iLen = Number(IniRead("config.ini", "General", "Length", "10"))
 Local Const $sBaseUrl = "https://www.autoitscript.com/forum/applications/core/interface/file/attachment.php?id="
 
 For $i = $iStart To $iStart + $iLen
-	Local $sDirName = @ScriptDir & "\Attachments\" & _getSubDirName($i) & $i
+	Local $sDirName = @ScriptDir & "\Attachments\" & _getSubDirName($i) & "\" & $i
 	DirCreate($sDirName)
 	Local $sBaseName = HTTPFileName($sBaseUrl & $i)
 	If @error Then $sBaseName = $i
