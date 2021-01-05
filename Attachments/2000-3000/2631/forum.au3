@@ -1,0 +1,13 @@
+; This script was written by Phil Verlinde, belgium copyright
+MsgBox(64,"AutoIt Toolbar Button","This script adds a AutoIt button to your IExplorer toolbar to have direct access to the Forum")
+FileInstall("D:\downloads\scripting\IExplorer\au3color.ico", "c:\windows\system32\au3color.ico")
+FileInstall("D:\downloads\scripting\IExplorer\au3gray.ico", "c:\windows\system32\au3gray.ico")
+$guid = ("{6AA97E4A-AB89-4Dd1-B292-9D7C284BCCdC}")
+RegWrite("HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Extensions\"& $guid)
+RegWrite("HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Extensions\" & $guid, "Default Visible", "REG_SZ", "Yes")
+RegWrite("HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Extensions\" & $guid, "ButtonText", "REG_SZ", "AutoIt Forum")
+RegWrite("HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Extensions\" & $guid, "HotIcon", "REG_SZ", "c:\windows\system32\au3color.ico")
+RegWrite("HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Extensions\" & $guid, "Icon", "REG_SZ", "c:\windows\system32\au3gray.ico")
+RegWrite("HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Extensions\" & $guid, "CLSID", "REG_SZ", "{1FBA04EE-3024-11D2-8F1F-0000F87ABD16}")
+RegWrite("HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Extensions\" & $guid, "Exec", "REG_SZ", "http://www.autoitscript.com/forum/index.php?") 
+WinClose("Create GUID")
