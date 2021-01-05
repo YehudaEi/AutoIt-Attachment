@@ -1,4 +1,5 @@
 #include <InetConstants.au3>
+#NoTrayIcon
 
 HotKeySet("{esc}", "_Exit")
 
