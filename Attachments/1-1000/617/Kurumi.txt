@@ -1,0 +1,93 @@
+MsgBox,4, Steel Angel Kurumi Start, Would you like to play Steel Angel Kurumi?
+IfMsgBox, YES, Goto, Play
+IfMsgBox, NO, Goto, Quit
+
+
+Play:
+
+; Main Menu Start
+
+Gui, Add, Pic, x41 y502 w112 h97, C:\Documents and Settings\Owner\My Documents\My Pictures\images.jpg
+Gui, Add, Pic, x32396 y32370 w-32425 h-32350, A:\Kurumi-Steel Angel\Kurumi\profiles\karinka\karinka02.jpg
+Gui, Add, Pic, x32565 y32489 w-32244 h-31772, A:\Kurumi-Steel Angel\Kurumi\profiles\saki\saki02.jpg
+Gui, Add, Radio, x117 y68 w58 h25, Kurumi
+Gui, Add, Radio, x116 y199 w43 h27, Saki
+Gui, Add, Radio, x115 y331 w56 h27, Karinka
+Gui, Add, GroupBox, x11 y0 w171 h478, The Angels
+Gui, Add, DropDownList, x18 y625 w158 h21,  Happy|Sad|Grumpy|Tired|Burnt out|Excited
+Gui, Add, Text, x53 y605 w86 h16, Nakahito's mood
+Gui, Add, GroupBox, x12 y484 w169 h177, Nakahito
+Gui, Add, Edit, x188 y485 w438 h180, command input
+Gui, Add, Text, x198 y15 w419 h461, output test
+Gui, Add, GroupBox, x190 y4 w432 h477, Angel's response
+Gui, Add, Button, x667 y15 w99 h31, EXIT
+Gui, Add, Button, x667 y55 w100 h30, About
+Gui, Add, Button, x668 y96 w100 h30, Save
+Gui, Add, Button, x668 y135 w100 h30, Load
+Gui, Add, Button, x668 y174 w100 h31, Commands
+Gui, Add, Checkbox, x699 y255 w48 h21, Mute
+Gui, Add, Button, x675 y625 w100 h30, ENTER
+Gui, Add, Text, x678 y469 w100 h23, points out
+Gui, Add, Text, x678 y511 w95 h18, level out
+Gui, Add, GroupBox, x630 y5 w172 h657, Menu
+Gui, Add, Button, x667 y216 w100 h30, Help
+Gui, Add, Pic, x19 y22 w89 h124, C:\Documents and Settings\Owner\My Documents\My Pictures\kurumi01.jpg
+Gui, Add, Pic, x20 y144 w88 h128, C:\Documents and Settings\Owner\My Documents\My Pictures\saki02.jpg
+Gui, Add, Pic, x20 y271 w88 h114, C:\Documents and Settings\Owner\My Documents\My Pictures\karinka02.jpg
+Gui, Add, Text, x677 y451 w101 h15, Points
+Gui, Add, Text, x679 y492 w95 h17, Level
+Gui, Add, ListBox, vAction x637 y535 w160 h87, Hug|Kiss|Cry|Smile|Giggle|Wave|Shower|Down Time|Run|Talk|Eat|Drink|Study|
+Gui, Show, x117 y75 h673 w881, Steel Angel Kurumi Main Menu
+
+
+Return
+
+; Main Menu End
+
+;===============================================================================================================================
+
+; Main Menu Buttons start
+ButtonHelp:
+{
+	Gui, 2:Add, Text,, this text will soon be a help file explaining how to use SAK. ;place help info on this line
+	Gui, 2:Show,,Help Menu
+	Return
+}
+
+ButtonCommands:
+{
+	Gui, 3:Add, Text,, this text will soon be a compiled list of the command available for use the Command Input edit text window.
+	Gui, 3:Show,,Commands List Explaination
+	Return
+}
+	
+
+
+ButtonAbout:
+{
+	Gui, 4:Add, Text,, Steel Angel Kurumi© and all related names, `nstory ideas, and audio samples are copywritten by `ntheir repected owners.  This game is copywrittin soley `nto Scott Huggins, all game functions and creations are `nprotected by law.
+	Gui, 4:Show,,Services
+	Return
+}
+;========================================================================
+
+
+
+
+
+BottonEnter:	
+
+
+
+
+
+
+
+
+
+
+ButtonEXIT:
+GuiClose:
+
+Quit:
+ExitApp
