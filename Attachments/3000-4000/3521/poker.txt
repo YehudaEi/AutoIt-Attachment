@@ -1,0 +1,53 @@
+; Detect windows by class name
+opt("winDetectHiddenText", 1)
+opt("winTitleMatchMode", 4)
+
+; Poker button control IDs
+local $foldButton = "AfxWnd42s14"
+local $checkButton = "AfxWnd42s15"
+local $callButton = "AfxWnd42s15"
+local $betButton = "AfxWnd42s16"
+local $raiseButton = "AfxWnd42s16"
+
+; Wait for the two windows to be displayed
+winWait("classname=#32770", "Sit Out")
+winWait("classname=WindowsForms10.Window.8.app3", "Chance to Win:")
+
+; Window handles
+local $pokerWindow = InputBox("Input Room Title", "Poker Room Name", "", "", 100, 80)
+local $brainWindow = winGetHandle("classname=WindowsForms10.Window.8.app3", "Chance to Win:")
+
+while (winExists($pokerWindow) and winExists($brainWindow))
+
+    sleep(300)
+    local $foldVisible = controlCommand($pokerWindow, "", $foldButton, "isVisible", "")
+    local $raiseVisible = controlCommand($pokerWindow, "", $raiseButton, "isVisible", "")
+
+    if ($foldVisible) then
+        sleep(random(1500, 2500))
+        local $action = _action($brainWindow)
+        if $action = "Fold" then controlClick($pokerWindow, "", $foldButton)
+        if $action = "Check" then controlClick($pokerWindow, "", $checkButton)
+        if $action = "Bet" then controlClick($pokerWindow, "", $betButton)
+        if $action = "Raise" then controlClick($pokerWindow, "", $raiseButton)
+        if $action = "Call" then controlClick($pokerWindow, "", $callButton)
+    endIf
+
+wEnd
+
+func _action($brainWindow)
+
+    local $counter = 1
+
+    while ($counter <= 100)
+        local $id = "WindowsForms10.STATIC.app3" & $counter
+        local $pos = controlGetPos($brainWindow, "", $id)
+        if (isArray($pos) and $pos[0] = 464 and $pos[1] = 96 and $pos[2] = 80 and $pos[3] = 32) then _
+            return controlGetText($brainWindow, "", $id)
+        $counter = $counter + 1
+    wEnd
+
+    return ""
+
+endFunc
+
