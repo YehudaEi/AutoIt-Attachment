@@ -1,0 +1,396 @@
+Public Const s = " "
+Public Const infoaccess = 10
+Public Const loadaccess = 30
+Public Const fullaccess = 100
+
+qm = chr(34)
+xtimerx = 60
+
+junk = array(qm,"!","@","#","$","%","^","&","*","+","=",":",";","'","<",">","?","/","\","|","~","`")
+iconcode2 = array("H1", "O1", "N1", "U1", "R1", "D1", "H2", "H3", "H4", "H5", "H6", "O2", "O3", "O4", "O5", "O6", "N2", "N3", "N4", "N5", "N6", "U2", "U3", "U4", "U5", "U6", "R2", "R3", "R4", "R5", "R6", "D2", "D3", "D4", "D5", "D6")
+icon = array("Peon", "Peon", "Peon", "Peon", "Peon", "Peon", "Rifleman", "Sorceress", "Spellbreaker", "Blood Mage", "Jaina", "Troll Headhunter", "Shaman", "Spirit Walker", "Shadow Hunter", "Rexxar", "Huntress", "Druid of the Talon", "Dryad", "Keeper of the Grove", "Maiev", "Crypt Fiend", "Banshee", "Destroyer", "Crypt Lord", "Sylvanas", "Myrmidon", "Siren", "Dragon Turtle", "Sea Witch", "Illidan", "Felguard", "Infernal", "Doomguard", "Pit Lord", "Archimonde")
+
+Public t, FSO, savedicons, TDAsafelist, TDAshitlist, lasthour, ScINetOpen
+Set FSO=CreateObject("Scripting.FileSystemObject")
+Set TDAshitlist = CreateObject("Scripting.Dictionary")
+Set savedicons = CreateObject("Scripting.Dictionary")
+
+Sub Event_Load()
+t=botvars.trigger
+  scTimer.Interval = 5000
+  scTimer.Enabled = true
+If not FSO.FileExists(botpath&"TDAsafelist.txt") then
+  RefreshLists  
+else
+  LoadTDAsafelist_Event_Load
+  LoadTDAshitlist_Event_Load
+  LoadSavedIcons_Event_Load
+End if
+lasthour = 25
+End Sub
+
+'// Fires when the server sends a blue INFO-type message. (Includes ban and kick messages.)
+
+Sub Event_ServerInfo(Message)
+
+End Sub
+
+'// Fires when the server sends a red ERROR-type message. (Includes "That user is not logged on." etc.)
+
+Sub Event_ServerError(Message)
+
+End Sub
+
+
+'// Fires when a user on battle.net talks.
+
+Sub Event_UserTalk(Username, Flags, Message, Ping)
+If left(message,1)<>t then exit sub
+getdbentry username, al, Userflags
+if al<1 then exit sub
+lmessage = lcase(message)
+Stuff_Event_UserTalk Username, Flags, Message, lmessage, Ping, al, ""
+End Sub
+
+
+'// Fires when a user speaks with /emote.
+
+Sub Event_UserEmote(Username, Flags, Message)
+End Sub
+
+
+'// Fires when a whisper is recieved.
+
+Sub Event_WhisperFromUser(Username, Flags, Message)
+If left(message,1)<>t then exit sub
+GetDBentry Username, al, UserFlags
+if al<1 then exit sub
+lmessage = lcase(message)
+Stuff_Event_UserTalk Username, Flags, Message, lmessage, -5, al, "/w "&Username&s
+End Sub
+
+'// Fires when a user joins the channel.
+'// Level will contain 0 for no-level Warcraft III players or non-Warcraft III products.
+'// Message contains the user's PARSED statstring.
+'// OriginalStatstring contains the user's UNPARSED statstring.
+
+Sub Event_UserJoins(Username, Flags, Message, Ping, Product, Level, OriginalStatstring)
+If BotFlags <> "2" then Exit Sub
+If Flags = "2" then Exit Sub
+username = lcase(username)
+if TDAshitlist.Exists(username) then addq "/ban "&username&s&shitlist.item(username)
+If mid(OriginalStatstring,6,1) <> "1" Then exit sub
+if instr(safelist, s&username&s)=0 then AddQ "/ban "&username&" You need an icon or get safelisted. Visit www.dota-allstars.com for details."
+End Sub
+
+
+'// Fires when a user leaves the channel.
+
+Sub Event_UserLeaves(Username, Flags)
+End SUb
+
+
+'// Fires when Battle.net updates a user's flags in the channel.
+
+Sub Event_FlagUpdate(Username, NewFlags, Ping)
+End Sub
+
+
+'// Fires after a successful login.
+
+Sub Event_LoggedOn(Username, Product)
+command myusername, "/scq", true
+End Sub
+
+
+'// Fires once for each user in the channel upon joining a channel.
+
+Sub Event_UserInChannel(Username, Flags, Message, Ping, Product)
+Event_UserJoins Username, Flags, Message, Ping, Product, "", getinternaldatabyusername(username,5)
+End Sub
+
+
+'// Flags in this case stores the channel's flags.
+
+Sub Event_ChannelJoin(ChannelName, Flags)
+End Sub
+
+
+'// Executes every X milliseconds, as set by using its .Interval property.
+
+Sub scTimer_Timer()
+if xtimerx > 0 then xtimerx = xtimerx-1 : exit sub
+if hour(time) = lasthour then xtimerx = 120 : exit sub
+RefreshLists
+lasthour = hour(time)
+End Sub
+
+
+'// Executes after the user presses ENTER in the Send box on the bot. Text will always be processed by the bot and sent to battle.net before arriving here.
+
+Sub Event_PressedEnter(Text)
+addchat vbgreen, BotFlags
+Stuff_Event_UserTalk myUsername, "2", text, lcase(text), -5, 900, ""
+End Sub
+
+
+'// Executes when the bot recieves a Profile return from the server. KeyName will be one of the following:
+	' Profile\Sex
+	' Profile\Location
+	' Profile\Description
+'// KeyValue will contain the value of that profile key as a string.
+
+Sub Event_KeyReturn(KeyName, KeyValue)
+End Sub
+
+
+'// Executes when the bot is closed. You can use this sub to write things to disk before the bot shuts down.
+
+Sub Event_Close()
+End Sub
+
+'// This is custom stuff
+Function ReadText(filepath)
+Set FSO = CreateObject("Scripting.FileSystemObject")
+Dim File
+ReadText=""
+If FSO.FileExists(filepath) Then
+  Set File = FSO.GetFile(filepath)
+    If Clng(file.size)=0 Then
+      exit function
+    End If
+  Set File = FSO.OpenTextFile(filepath,1)
+  ReadText=File.ReadAll
+End If
+End Function
+
+Function getclanicon(user,mode)
+content=ScINet.OpenURL("                                                                                      "&user)
+If instr(content, "<title>Frozen Throne Ladder</title>") Then
+  if mode = 0 then getclanicon = "No such player exists."
+  if mode = 1 then getclanicon = "----"
+  Exit Function
+End If
+If instr(content, "<title>Warcraft III Ladder - Error</title>") Then
+  getclanicon = "bnet web pages are down right now."
+  Exit function
+End if
+dim xicon
+xicon=mid(content,instr(content,"/w3xp/")+8,2)
+for i = 0 to ubound(iconcode2)
+  if xicon = iconcode2(i) then
+    zicon=icon(i)
+    Exit For
+  End If
+Next
+if mode = 1 then zicon = left(zicon,4)
+clan=""
+clantag=instr(content,"ClanTag=")
+  If clantag=0 Then
+    clan="-"
+  Else
+    clan=mid(content,clantag+8,6)
+    clan=left(clan,instr(clan,">")-2)
+  End If
+   wins=split(content,"Total:")
+   winsx=split(wins(1),"rankingRow"&chr(34)&">")
+   winsy=left(winsx(1),instr(winsx(1),"<")-1)&"-"&left(winsx(2),instr(winsx(2),"<")-1)
+getclanicon=zicon&"_"&winsy&"_"&clan
+addchat vbyellow, user&" --> "&getclanicon
+End Function
+
+Sub addqx(username,pref,text)
+If username = myusername then addchat vbgreen, text : exit sub
+AddQ pref&text
+End Sub
+
+Sub AppendLine(filepath,text)
+Set File = FSO.OpenTextFile(filepath,8,true)
+File.WriteLine text
+'File.Close
+End Sub
+
+Sub WriteText(filepath,text)
+Dim File
+Set File = FSO.OpenTextFile(filepath,2,true)
+File.Write text
+End Sub
+
+Sub Stuff_Event_UserTalk(Username, Flags, Message, lmessage, Ping, al, msgpref)
+
+  If al < infoaccess then exit sub
+
+  If left(lmessage,7) = t&"check " Then
+    If ScINetOpen=true Then addq msgpref&"Someone is accessing web pages atm." : Exit Sub
+    checkmsg = s&mid(lmessage, 8)&s
+    args = Split(trim(checkmsg))
+    if ubound(args) > 9 then addq "/w "&username&" More than 10 players?" : exit sub
+    If ubound(args) < 1 Then Stuff_Event_UserTalk username, "0", "!clanicon "&args(0), "!clanicon "&args(0), Ping, al, msgpref : exit sub
+    for each arg in args
+      if len(arg)<3 or len(arg)>15 then addq "/w "&username&s&arg&" is not a valid player name." : exit sub
+      sarg = s&arg&s
+      if instr(instr(checkmsg,sarg)+1,checkmsg,sarg) then addq "/w "&username&" Please don't list the same player twice." : exit sub
+    next
+    for each j in junk
+      if instr(checkmsg,j) Then addq "/w "&username&" These charactors: ("&join(junk)&") are not found in WC3 player names." : exit sub
+    next
+    l=msgpref
+    sendingstring=""
+    count=0
+    code = ""
+ScINetOpen=true
+    for each arg in args
+      if savedicons.Exists(arg) then
+        iconx = savedicons.item(arg)
+        lefticon = left(iconx,4)
+      else
+        iconx = getclanicon(arg,1)
+        if iconx = "bnet web pages are down right now." Then AddQ msgpref&iconx : ScINetOpen=false : Exit Sub
+        lefticon = left(iconx,4)
+        if lefticon <> "Peon" and lefticon <> "----" then
+          appendline botpath&"savedicons.txt", arg &s& iconx
+          savedicons.add arg, iconx
+        end if
+      end if
+      if TDAshitlist.Exists(arg) then
+        shit = "S"
+      else
+        shit = ""
+      end if
+      Select case left(iconx,4)
+        Case "Peon"
+          if shit = "" then
+            if instr(TDAsafelist ,s&arg&s) then
+              code = " = ok"
+            else
+              code = " = PB"
+            end if
+          Else
+            if instr(TDAsafelist ,s&arg&s) then
+              code = " = SL"
+            else
+              code = " = PB+SL"
+            end if
+          End If
+        Case "----"   code = " = typo? SPOOF?"
+        Case Else
+          if shit <> "" then
+            code = " = SL"
+          else
+            code = " = ok"
+          end if
+      End Select
+      sendingstring = sendingstring&" / "&arg&s&iconx&code
+      count=count+1
+      If count = 6 then addqx username, l, mid(sendingstring,4) : sendingstring=""
+    next
+ScINetOpen=false
+    if sendingstring <> "" then addqx username, l, mid(sendingstring,4)
+    Exit Sub
+  End If
+
+  If left(lmessage,10) = t&"clanicon " Then
+    If ScINetOpen=true Then addq msgpref&"Someone is accessing web pages atm." : Exit Sub
+    args = trim(Mid(lMessage, 11))
+    If len(message) < 13 Then AddQ msgpref&"Who?" : Exit Sub
+    ScINetOpen=true
+    iconx=getclanicon(args,0)
+    ScINetOpen=false
+    If iconx = "No such player exists." Then AddQ msgpref&iconx : Exit Sub
+    if iconx = "bnet web pages are down right now." Then AddQ msgpref&iconx : Exit Sub
+    if TDAshitlist.Exists(args) then
+      shit = " / "&TDAshitlist.item(args)
+    else
+      shit = ""
+    end if
+    Select case left(iconx,4)
+      Case "Peon"
+        If instr(TDAsafelist, s&args&s) then
+          addqx username, msgpref, args & s & iconx &" Safelisted."&shit
+          exit sub
+        Else
+          addqx username, msgpref, args & s & iconx &" NOT SAFELISTED!"&shit
+          exit sub
+        End If
+      Case Else
+        Select Case shit
+          Case ""   addqx username, msgpref, args & s & iconx &" _ Not shitlisted." : Exit Sub
+          Case Else addqx username, msgpref, args & s & iconx &shit : Exit Sub
+        End Select
+    End Select
+    Exit Sub
+  End If
+
+  If left(lmessage,10)=t&"shitinfo " then
+    args = trim(mid(lmessage,11))
+    if TDAshitlist.exists(args) then
+      addqx username, msgpref, args&s&TDAshitlist.item(args)
+    Else
+      addqx username, msgpref, args&" is not shitlisted in TDA."
+    end if
+    exit sub
+  end if
+
+  If left(lmessage,10)=t&"safeinfo " then
+    args = trim(mid(lmessage,11))
+    if instr(TDAsafelist, s&args&s) then
+      addqx username, msgpref, args&" is indeed safelisted!"
+    Else
+      addqx username, msgpref, args&" NOT SAFELISTED!!"
+    end if
+    exit sub
+  end if
+
+  If left(lmessage,12)=t&"settrigger " then
+    t=botvars.trigger
+  end if
+
+End Sub
+
+Sub RefreshLists()
+writetext botpath&"TDAshitlist.txt",ScINet.OpenURL("                                     ")
+writetext botpath&"TDAsafelist.txt",ScINet.OpenURL("                                     ")
+LoadTDAsafelist_Event_Load
+LoadTDAshitlist_Event_Load
+End Sub
+
+Sub LoadTDAsafelist_Event_Load()
+  TDAsafelist = s&replace(readtext(botpath&"TDAsafelist.txt"),vbCrLf,s)
+End Sub
+
+Sub LoadSavedIcons_Event_Load()
+If not FSO.FileExists(botpath & "savedicons.txt") then exit sub
+savedicons.RemoveAll
+Set File = FSO.OpenTextFile(botpath & "savedicons.txt",1)
+  tempshit=split(File.ReadAll,vbCrLf)
+  for each shit in tempshit
+    if len(shit)>0 then
+    shit = split(shit," ",2)
+'    shit(0) = lcase(shit(0))
+'    If shitlist.Exists(shit(0)) then
+'      shit2 = shitlist.Item(shit(0))
+'      shitlist.Item(shit(0)) = shit2 & s & shit(1)
+'    else
+      savedicons.Add shit(0), shit(1)
+    End If
+  Next
+End Sub
+
+Sub LoadTDAshitlist_Event_Load()
+TDAshitlist.RemoveAll
+Set File = FSO.OpenTextFile(botpath & "TDAshitlist.txt",1)
+  tempshit=split(File.ReadAll,vbCrLf)
+  for each shit in tempshit
+    if len(shit)>0 then
+    shit = split(shit," ",2)
+'    shit(0) = lcase(shit(0))
+'    If shitlist.Exists(shit(0)) then
+'      shit2 = shitlist.Item(shit(0))
+'      shitlist.Item(shit(0)) = shit2 & s & shit(1)
+'    else
+      TDAshitlist.Add shit(0), shit(1)
+    End If
+  Next
+End Sub
+
+
