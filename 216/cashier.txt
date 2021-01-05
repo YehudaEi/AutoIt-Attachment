@@ -1,0 +1,435 @@
+1006  18        OOI LEE CHYE   5541S40011         
+                                                  
+                                                  
+1006  19      KHOR SOON HUAT   7481S40010         
+                                                  
+                                                  
+1006  20        KAM HONG CHU   3262S40010         
+                                                  
+                                                  
+1006  25       TAN BOON SOON   4918S40011         
+                                                  
+                                                  
+1006 102 HENG CHAI HUAT (CL)   SPSPS20010         
+                                                  
+                                                  
+1006 105 LIM BOON POH (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 338   NUR DIYANA (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 354 THILAGAVATHI (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 501      MAIZURA (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 502       EE WAR (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 503      NORAINI (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 504MOHD FIRDAUSS (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 505   NUR HANIZA (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 506    FAZULHIDA (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 507   MOHD AZALI (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 508        MURNI (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 509    YUSMALINA (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 510    HASMANIZA (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 511CHONG TAI WEI (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 512       MAZURA (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 513     ROSLINDA (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 514  NOOR HATINI (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 515  SIVARANJINI (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 516     NOR ANIS (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 517     KAMARIAH (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 518      KAMISAH (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 519       KUYILI (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 520  PARAMESWARI (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 521     ROSAHANI (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 522      HAFIZAH (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 523AAINA RAWAIDA (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 524    WAN JULIA (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 525  SITI ELIANI (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 526      HARTINI (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 527    MOHD AMAR (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 528  NOR FARIZAN (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 529TEOH PHAIK LING (CL)   SPSPS20010         
+                                                  
+                                                  
+1006 530     SHUHAIDA (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 531     ZAWIYATI (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 532 POON BOON SWEE (CL)   SPSPS20010         
+                                                  
+                                                  
+1006 533NEOH CHIA WEI (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 534      KAVITHA (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 535      SURIANI (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 601    NORHALIZA (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 604   MOHD HIZIR (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 605    NORAZLIHA (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 611      NORLISA (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 612   STEVEN ONG (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 613Serinasaari MIS (CL)   SPSPS20010         
+                                                  
+                                                  
+1006 614MOHD RIZAUDIN (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 615 INTAN ZAZALINA (CL)   SPSPS20010         
+                                                  
+                                                  
+1006 616        AFIDA (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 617     SUHANIZA (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 701 LIM LEE PENG (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 702 NG LING LING (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 703  GUNASEKARAN (CNCL)   SPSPS10010         
+                                                  
+                                                  
+1006 704   KOO WA MAY (CNCL)   SPSPS10010         
+                                                  
+                                                  
+1006 705TEO BEOH CHIN (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 706LIM KIM CHUAN (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 707ROPISAH BT MUSA (CL)   SPSPS10010         
+                                                  
+                                                  
+1006 708 SITHALECHIMI (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 710RASLI BIN AWANG (CL)   SPSPS20010         
+                                                  
+                                                  
+1006 712   ONG SU HAN (CNCL)   SPSPS10010         
+                                                  
+                                                  
+1006 713LIM CHEE HONG (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 715   STEVEN ONG (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 717      HARNIZA (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 718 CHONG CHEE YEE (CL)   SPSPS20010         
+                                                  
+                                                  
+1006 723       CHAMPI (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 724       HANIZA (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 725    UJI KAMIS (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 726 LIM SEOK LIN (CNCL)   spspS20010         
+                                                  
+                                                  
+1006 730HASABE BT ABDUL (CL)   SPSPS20010         
+                                                  
+                                                  
+1006 802 TEOH POH CHENG (CL)   SPSPS20010         
+                                                  
+                                                  
+1006 803 KANG AH GAIK (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 804 ONG BEE KEOW (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 805 LIM LAY HOON (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 806LEE KAH HIANG (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 807 FOO GOIK POH (CNCL)   SPSPS30010         
+                                                  
+                                                  
+1006 810    ABU BAKAR (CNCL)   SPSPS20010         
+                                                  
+                                                  
+1006 811 YONG SIEW PENG (CL)   SPSPS20010         
+                                                  
+                                                  
+1006 813LIM LIANG KIM (CNCL)   SPSPS20010         
+                                                  
+                                                  
+10061001      HENG CHAI HUAT   6061S20011         
+                                                  
+                                                  
+10061002       MOHAMAD AZALI   1122S20010         
+                                                  
+                                                  
+10061003        THILAGAVATHI   4091S20011         
+                                                  
+                                                  
+10061004            NOR ANIS   5116S20010         
+                                                  
+                                                  
+10061005           FAZULHIDA   2501S20011         
+                                                  
+                                                  
+10061006           HASMANIZA   5340S20010         
+                                                  
+                                                  
+10061007          NUR HANIZA   5362S20011         
+                                                  
+                                                  
+10061008              EE WAR   5236S20011         
+                                                  
+                                                  
+10061009             HAFIZAH   1404S20011         
+                                                  
+                                                  
+10061010            ROSAHANI   2118S20011         
+                                                  
+                                                  
+10061011               MURNI   5508S20011         
+                                                  
+                                                  
+10061012           YUSMALINA   6216S20010         
+                                                  
+                                                  
+10061013       MOHD FIRDAUSS   7984S20011         
+                                                  
+                                                  
+10061014             SURIANI   5432S20011         
+                                                  
+                                                  
+10061015            KAMARIAH   5582S20011         
+                                                  
+                                                  
+10061016              KUYILI   5816S20011         
+                                                  
+                                                  
+10061017             MAIZURA   5494S20010         
+                                                  
+                                                  
+10061018            ZAWIYATI   6318S20011         
+                                                  
+                                                  
+10061019      AAINAA RAWAIDA   5030S20010         
+                                                  
+                                                  
+10061020        LIM BOON POH   5858S20011         
+                                                  
+                                                  
+10061021          NUR DIYANA   5743S20011         
+                                                  
+                                                  
+10061022             NORAINI   5734S20010         
+                                                  
+                                                  
+10061023         NOOR HATINI   5942S20011         
+                                                  
+                                                  
+10061024      HARTINI (CNCL)   SPSPS20010         
+                                                  
+                                                  
+10061025       NUR SHUHAILAH   5160S20011         
+                                                  
+                                                  
+10061026     NURULL ASHIQ'IN   5202S20011         
+                                                  
+                                                  
+10061027              KARUNA   6031S20011         
+                                                  
+                                                  
+10061028             SUNTHRI   1722S20010         
+                                                  
+                                                  
+10061029             ROHAIZA   5388S20010         
+                                                  
+                                                  
+10061030      THAMARAI SELVI   1973S20010         
+                                                  
+                                                  
+10061031          NORHAFIZAH   3226S20011         
+                                                  
+                                                  
+10061032           NORFARIZA   8286S20011         
+                                                  
+                                                  
+10064001           NORHALIZA   5576S20011         
+                                                  
+                                                  
+10064002   MOHD HIZIR (CNCL)   SPSPS20010         
+                                                  
+                                                  
+10064003    NORAZLIHA (CNCL)   spspS20010         
+                                                  
+                                                  
+10064004               AFIDA   3112S20011         
+                                                  
+                                                  
+10064005            SUHANIZA   5594S20010         
+                                                  
+                                                  
+10064006             NORLISA   5076S20011         
+                                                  
+                                                  
+10064007        FOO GOIK POH   8029S30010         
+                                                  
+                                                  
+10064008           NORHANIDA   8407S20010         
+                                                  
+                                                  
+10064009        LEOW WEI HOW   0125S30011         
+                                                  
+                                                  
+10064010        MOHD ZAHALIF   5921S20011         
+                                                  
+                                                  
+10065001          KOO WA MAY   1644S10010         
+                                                  
+                                                  
+10065002          ONG SU HAN   1234S10011         
+                                                  
+                                                  
+10065003     ROPISAH BT MUSA   5586S10010         
+                                                  
+                                                  
+10065004         GUNASEKARAN   5343S10011         
+                                                  
+                                                  
+10067460       LIM LIANG KIM   9000S40011         
+                                                  
+                                                  
+10067461      YONG SIEW PENG   9001S40011         
+                                                  
+                                                  
+10067462 LIM SEOK LIN (CNCL)   SPSPS20010         
+                                                  
+                                                  
+10067463              CHAMPI   9003S40011         
+                                                  
+                                                  
+10067464                 UJI   9004S40011         
+                                                  
+                                                  
+10067465      MIS Department   9005S40011         
+                                                  
+                                                  
+10067466        HERIS (CNCL)   SPSPS20010         
+                                                  
+                                                  
+10067595        LIM SEOK LIN   9135S40011         
+                                                  
+                                                  
+10067666        KAM HONG CHU   9206S30010         
+                                                  
+                                                  
+10067672      KHOR SOON HUAT   9212S30010         
+                                                  
+                                                  
+10067682       TAN BOON SOON   9222S30010         
+                                                  
+                                                  
+10067695        OOI LEE CHYE   9235S30010         
+                                                  
+                                                  
+10067706        ONG BEE KEOW   9246S30011         
+                                                  
+                                                  
+10067715        LIM LAY HOON   9255S30010         
+                                                  
+                                                  
+10067723       LEE KAH HIANG   9263S30010         
+                                                  
+                                                  
+10067752        KANG AH GAIK   9292S30010         
+                                                  
+                                                  
+10067772        LIM LEE PENG   9312S30010         
+                                                  
+                                                  
+10067789     RASLI BIN AWANG   9329S30010         
+                                                  
+                                                  
