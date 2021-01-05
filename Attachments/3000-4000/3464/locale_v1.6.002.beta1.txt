@@ -1,0 +1,409 @@
+# Nom du fichier : locale.properties					- Officiel
+#
+# Auteur : Neil HODSONG - neilh@scintilla.org 			- Officiel
+# Site internet : www.scintilla.org						- Officiel
+#
+# License : License Publique Globale (GPL)				- Non-officiel
+#
+# Description du fichier : 								- Non-officiel
+#			locale.propertis définis les textes traduis pour l'interface utilisateur.
+#			Le format de chacune des lignes à traduire est la suivante : Original=Traduction
+#			Lorsque le texte original contient des guillements double et des indicateurs d'accès, 
+#			ceux-ci ne sont pas repris dans le texte original. Cependant ils doivent bien être précisé
+#			dans le texte traduit si ce dernier n'inclus pas de manière automatique les guillemets double.
+#			Le caractère "/" ne peut être utilisé dans une entrée de menu si GTK+ est utilisé. Son utilisation
+#			entrainera la création d'un menu supplémentaire.
+#			Chaque texte original doit avoir une traduction unique, même si ce dit texte apparaît dans plusieurs endroit
+#			de l'interface utilisateur.
+#
+# Adaptation :
+#			Le fichier original de traduction francophone v1.63 a été utilisé comme base de travail pour extraire les menus de SciTe 1.62.		- Officiel - 07/2005
+#			La version du fichier placé sous license GPL ne répond pas au "Numbering Shème" du Logiciel Libre et a été rebaptisé v1.6.2			- Non-officiel - 07/2005
+#			Il sera utilisé la numérotation précité et la concordance au "Numbering Shème" de la license GPL.									- Non-officiel - 07/2005
+#
+# Version du fichier : v1.6.002.beta1					- Non-officiel - 07/2005
+#
+# Traduction : 
+#			v1.51.1 :			Fred PACQUIER			- Inconnu
+#			v1.58 : 			Jean-Pascal MILCENT 	- Mise à jour
+#			v1.58.1 : 			Philippe LHOSTE 		- Mise à jour
+#			v1.6.002.beta1 :	Xavier BRUSSELAERS 		- Mise à jour 					- Non-officiel - 07/2005
+
+
+# Définissez le codage de ce dossier de sorte que sur GTK+ 2, le fichier peut être
+# réencondé en UTF-8 en tant que codage d'interface utilisateur GTK+ 2.
+# Un choix commun pour les utilisateurs européens est LATIN1. Pour les autres traductions regardez dans
+# la définition d'encodage supporté par IconV.
+translation.encoding=LATIN1
+
+# Menus
+
+# Menu Fichier -- cefginopqrstuvx
+File=&Fichier
+
+New=&Nouveau
+Open=&Ouvrir
+Open Selected Filename=Ou&vrir le fichier sélectionné
+Revert=&Revenir en arrière
+Close=&Fermer
+Save=&Enregistrer
+Save As=Enregistrer &sous
+Export=E&xporter
+	As HTML=au format &HTML
+	As RTF=au format &RTF
+Page Setup=Mise en &page
+Print=&Imprimer
+Load Session=&Charger une session
+Save Session=Enregis&trer la session
+Exit=&Quitter
+
+# Menu Edition
+Edit=&Édition
+Undo=&Annuler
+
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+Redo=&Répéter
+Cut=&Couper
+Copy=Co&pier
+Paste=C&oller
+Delete=&Effacer
+Select All=Sélectio&nner tout
+Copy as RTF=Copier au &format RTF
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+Match Brace=Marquer
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+Select to Brace=Sélectionner jusqu'au marquage
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+Show Calltip=Afficher l'astuce
+Complete Symbol=Compléter le s&ymbole
+Complete Word=Compléter le &mot
+Expand Abbreviation=Compléter l'a&bréviation
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+Block Comment or Uncomment=Commenter ou décommenter le bloc
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+Box Comment=Boite de commentaire
+Stream Comment=Commentaire m&ultilignes
+Make Selection Uppercase=Sélection en ma&juscules
+Make Selection Lowercase=Sélection en m&inuscules
+
+# Menu Chercher
+Search=&Chercher
+
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+Find=&Trouver
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+Find Next=Trouver &Suivant
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+Find Previous=Trouver &Précédent
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+Find in Files=Trouver dans &fichiers
+Replace=R&emplacer
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+Go to=&Atteindre
+Next Bookmark=Signet s&uivant
+Previous Bookmark=Signet p&récédent
+Toggle Bookmark=&Basculer signet
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+Clear All Bookmarks=Effacer &tous les signets
+
+# Menu Affichage
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+View=&Affichage
+
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+Toggle current fold=&Masquer localement
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+Toggle all folds=Montrer &tout
+Full Screen=Plein &écran
+Tool Bar=Barre d'&outils
+Tab Bar=Barre d'o&nglets
+Status Bar=Barre &d'état
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+Whitespace=&Espaces blanc
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+End of Line=&Fin de lignes
+Indentation Guides=&Guides d'indentation
+Line Numbers=Numéros de &lignes
+Margin=&Marge
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+Fold Margin=Marge de masquage
+Output=Fenêtre de &résultats
+Parameters=P&aramètres
+
+# Menu Outils -- acdegprs
+Tools=&Outils
+
+Compile=&Compiler
+Build=&Générer
+Go=&Exécuter
+Stop Executing=&Arrêter l'exécution
+Next Message=Message &suivant
+Previous Message=Message &précédent
+Clear Output=Effacer &résultats
+Switch Pane=Changer &de cadre
+
+# Menu Options -- aàcdegiloprtuv
+Options=O&ptions
+
+Always On Top=&Toujours visible
+Vertical Split=Séparation &verticale
+Line End Characters=&Caractères de fin de ligne
+	CR + LF=CR &+ LF
+	CR=&CR
+	LF=&LF
+Convert Line End Characters=C&onvertir caractères de fin de ligne
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+Change Indentation Settings=Changer les paramètres d'&indentation
+Use Monospaced Font=Utiliser &police à chasse fixe
+Open Local Options File=Ouvrir fichier d'options &locales
+Open User Options File=Ouvrir fichier d'options &utilisateur
+Open Global Options File=Ouvrir fichier d'options &globales
+Open Abbreviations File=Ouvrir fichier d'&abréviations
+
+# Menu Langage
+Language=&Langage
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+# none=aucun
+
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+# Menu Documents
+# Menu Onglets
+Buffers=O&nglet
+
+Previous=&Précédent
+Next=&Suivant
+Close all=&Fermer tous
+
+# Menu Aide
+Help=Ai&de
+
+About Sc1=À &propos de Sc1
+About SciTE=À propos de &Scite
+
+
+# Boite de dialogue
+
+# Dialogue générique
+OK=OK
+Cancel=Annuler
+Yes=Oui
+No=Non
+
+# Boite de dialogue A propos
+# About SciTE=
+# This is to add something like: Swahili translation 1.41.1 by Neil Hodgson
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+TranslationCredit=Traduction non-officielle française (1.6.201.alpha)
+Contributors:=Contributeurs :
+
+# Boite de dialogue Ouvrir, Sauver
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+Open File=Ouvrir Fichier
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+Save File=Enregistrer fichier
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+Save File As=Enregistrer fichier sous
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+Export File As HTML=Exporter fichier au format HTML
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+Export File As RTF=Exporter fichier au format RTF
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+Save Current Session=Enregistrer la session en cours
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+Custom Filter=Filtre spécifique
+
+# Boite de dialogue Trouver dans les fichiers
+# Find in Files=
+Find what:=&Chercher :
+Files:=&Fichiers :
+# Find=
+
+# Boite de dialogue Atteindre
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+Go To=&Atteindre
+Destination Line Number:=&Numéro de ligne de destination :
+Current line:=Ligne actuelle :
+Last line:=Dernière ligne :
+
+# Boite de dialogue d'indentation
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+Indentation Settings=Paramètres d'indentation
+Tab Size:=Taille de &tabulation :
+Indent Size:=Taille d'&indentation :
+Use tabs:=&Utiliser les tabulations :
+
+# Boite de dialogue Chercher et Remplacer
+# Replace=
+# Find=
+# Find what:=
+Replace with:=Remplacer &par :
+Match whole word only=&Mots entiers seulement
+Match case=Respecter la c&asse
+Regular expression=&Expression régulière
+Wrap around=B&oucler
+Transform backslash expressions=Transformer les caractères \&xx
+# Find Next=
+Replace All=Remplacer &tout
+Replace in Selection=Remplacer &dans la sélection
+# Close=
+Direction=Sens
+Reverse direction=Sens &inverse
+Up=&Haut
+Down=&Bas
+
+# Boite de dialogue Paramètres
+Execute=&Exécuter
+Set=&Valider
+
+# Autre chaîne de caractère d'interface utilisateur
+Untitled=Sans titre
+
+# Propriétés utilisées dans les options globales
+Text=Texte
+All Source=Tous les fichiers source
+All Files (*.*)=Tous les fichiers (*.*)
+
+# Messages
+# Les messages peuvent contenir des variables tant que le nom de fichier ou la chaîne de caractères est indiquée
+# par ^0 où sont remplacée par les valeurs avant l'affichage. ^1, ^2, ... pourront être utilisé prochainement.
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+Can not find the string '^0'.=Impossible de trouver la chaîne de caractère '^0'.
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+Find string must not be empty for 'Replace All' command.=La chaîne de caractère à rechercher ne peut pas être vide pour la commande 'Remplacer tout'.
+Selection must not be empty for 'Replace in Selection' command.=La sélection ne peut pas être vide pour la commande 'Remplacer dans la sélection'.
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+No replacements because string '^0' was not present.=Pas de remplacement effectué, chaîne de caractère '^0' non trouvée.
+Could not open file '^0'.=Impossible d'ouvrir le fichier '^0'.
+Could not save file '^0'.=Impossible d'enregistrer le fichier '^0'.
+Save changes to '^0'?=Enregistrer les changements dans '^0' ?
+Save changes to (Untitled)?=Enregistrer les changements dans (Sans titre) ?
+The file '^0' has been modified. Should it be reloaded?=Le fichier '^0' a été modifié. Faut-il le recharger ?
+Bad file.=Fichier incorrect.
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+Failed to create dialog box: ^0.=Échec de création de la boîte de dialogue : ^0.
+Can not start printer document.=Impossible d'imprimer le document.
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+URI '^0' not understood.=URL '^0' incompréhensible.
+Invalid directory '^0'.=Répertoire '^0' invalide.
+
+# 1.42
+Directory:=Répertoire :
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+Wrap=&Retour automatique à la ligne
+Hide=Cacher
+Check if already open=Vérifier si &déjà ouvert
+
+# 1.43
+Find string must not be empty for 'Replace in Selection' command.=La chaîne de caractère à rechercher ne peut pas être vide pour la commande 'Remplacer dans la sélection'.
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+# Placé en commentaire -- DEBUT
+#List Macros=Lister macros
+#Run Current Macro=Lancer macro courante
+#Record Macro=Enregistrer macro
+#Stop Recording Macro=Arrêter enregistrement macro
+#SciTE Help=&Aide sur SciTE
+#Sc1 Help=&Aide sur Sc1
+#Edit Properties=Éditer les propriétés
+Wrap Output=Retour &à la ligne des résultats
+#Placé en commentaire -- FIN
+
+# 1.44
+Read-Only=L&ecture seule
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+READ=LECTURE
+
+# 1.46
+	As TeX=au format &TeX
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+Export File As TeX=Exporter fichier au format TeX
+Save a Copy=Enregistrer &une copie
+
+# 1.47
+	As LaTeX=au format &LaTeX
+Export File As LaTeX=Exporter fichier au format LaTeX
+Encoding=Encoda&ge
+8 Bit=&8 bits
+# Les noms français semble idiots cependant ils sont officiels ! (Plus d'information sur :                                                             
+UCS-2 Big Endian=UCS-2 &gros-boutiste
+UCS-2 Little Endian=UCS-2 &petit-boutiste
+UTF-8=&UTF-8
+
+# 1.49
+Save All=Enregistrer tout
+Browse=&Parcourir
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+Select a folder to search from=Sélectionner un répertoire initial pour la recherche
+UTF-8 Cookie=UTF-8 &Cookie
+
+# 1.50
+Insert Abbreviation=Insérer une abré&viation
+Abbreviation:=&Abréviation :
+Insert=&Insérer
+Mark All=&Marque &Tout
+
+# 1.51
+In Selection=Dans la sélection
+Paragraph=Paragrap&he
+	# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+	Join=&Joindre
+	Split=&Séparer
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+Replace in Buffers=Remplacer dans les onglets
+Find string must not be empty for 'Replace in Buffers' command.=La chaîne de caractère de recherche ne peut pas être vide la commande 'Remplacer dans les documents'.
+
+# 1.52
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+Block comment variable '^0' is not defined in SciTE *.properties!=La variable du bloc de commentaire '^0' n'est pas définie dans les fichiers *.properties de SciTE !
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+Box comment variables '^0', '^1' and '^2' are not defined in SciTE *.properties!=Les variables de commentaire encadrés '^0', '^1' et '^2' ne sont pas définies dans les fichiers *.properties de SciTE !
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+Stream comment variables '^0' and '^1' are not defined in SciTE *.properties!=Les variables de commentaire multilignes '^0' et '^1' ne sont pas définies dans les fichiers *.properties de SciTE !
+The file '^0' has been modified outside SciTE. Should it be reloaded?=Le fichier '^0' a été modifié hors SciTE. Doit-il être rechargé ?
+	As PDF=au format &PDF
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+Export File As PDF=Exporter fichier au format PDF
+
+# 1.53
+Version=Version
+by=par
+
+#1.54
+Incremental Search=Recherche incrémenta&le
+Search for:=&Chercher :
+
+#1.55
+Could not save file '^0'. Save under a different name?=Impossible d'enregistrer le fichier '^0'. Sauver sous un autre nom ?
+
+#1.56
+	As XML=au format &XML
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+Export File As XML=Exporter fichier au format XML
+
+#1.57
+Destination Line:=&Ligne de destination :
+Column:=&Colonne :
+
+
+#1.58
+Replacements:=Remplacements :
+Open Files Here=Ouvrir les fichiers ici
+
+#1.59
+
+#1.60
+
+#1.61
+File '^0' is ^1 bytes long,\nlarger than the ^2 bytes limit set in the properties.\nDo you still want to open it?=Le fichier '^0 'est de ^1 bits, \nplus grand que la limite des ^2 bits établi dans les propriétés.\nNéanmoins voulez-vous l'ouvrir ?
+Open Lua Startup Script=Ouvrir le script de démarrage Lua
+All Files (*)=Tous les fichiers (*.*)
+Hidden Files (.*)=Fichiers cachés (.*)
+
+#1.62
+Show hidden files=Afficher les fichiers cachés
+
+# Modifié par Xavier BRUSSELAERS - v1.6.201.alpha - Non-officiel
+# Placé sous forme de commentaire pour la v1.62
+#1.63
+#Replace in Buffers=Remplacer dans documents
+#Find string must not be empty for 'Replace in Buffers' command.=La chaîne à rechercher ne peut pas être vide pour la commande 'Remplacer dans les documents'.
+#Search only in this style:=Seulement ce style:
