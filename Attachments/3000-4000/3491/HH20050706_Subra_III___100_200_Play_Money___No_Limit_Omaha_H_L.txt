@@ -1,0 +1,2548 @@
+PokerStars Game #2041980380:  Omaha Hi/Lo No Limit (100/200) - 2005/07/06 - 00:10:20 (ET)
+Table 'Subra III' (Play Money) Seat #6 is the button
+Seat 1: tikigod42020 (15800 in chips) 
+Seat 2: viper8907 (40000 in chips) 
+Seat 4: LuckBeLucy (7800 in chips) 
+Seat 5: oneheart1276 (27148 in chips) 
+Seat 6: StarCrak (83200 in chips) 
+Seat 9: tugee (8000 in chips) 
+AGrande will be allowed to play after the button
+tugee: posts small blind 100
+bag_of_fag said, "i have like 2200 left"
+tikigod42020 said, "use the L lower case and you can say it"
+tikigod42020: posts big blind 200
+viper8907: posts big blind 200
+*** HOLE CARDS ***
+Dealt to viper8907 [Kc 2s Qh 8c]
+bag_of_fag said, "no 1895"
+StarCrak said, "i would, but i've only got like 190k in bankroll"
+viper8907: checks 
+LuckBeLucy: calls 200
+bag_of_fag said, "dont be a *** bag"
+oneheart1276: calls 200
+StarCrak: folds 
+tikigod42020 said, "check now bag"
+tugee: raises 7800 to 8000 and is all-in
+bag_of_fag has returned
+tikigod42020: raises 7800 to 15800 and is all-in
+viper8907: folds 
+LuckBeLucy: calls 7600 and is all-in
+bag_of_fag said, "thanks dood"
+bag_of_fag said, "ur not a ***"
+StarCrak said, "yeah, 194,000 total in bankroll"
+tikigod42020 said, "no prob"
+oneheart1276: calls 15600
+*** FLOP *** [7c 4h 8s]
+*** TURN *** [7c 4h 8s] [9c]
+bag_of_fag said, "now we're kickin"
+*** RIVER *** [7c 4h 8s 9c] [4s]
+tikigod42020 said, "299k here"
+bag_of_fag said, "we're all stars"
+PlumpPete joins the table at seat #3 
+*** SHOW DOWN ***
+tikigod42020: shows [Ac 7d 2h 8d] (HI: two pair, Eights and Sevens; LO: 8,7,4,2,A)
+oneheart1276: shows [Ah 9d 4c 5d] (HI: a full house, Fours full of Nines; LO: 8,7,5,4,A)
+oneheart1276 collected 7800 from side pot-2 
+tikigod42020 collected 7800 from side pot-2 
+tugee: shows [As Ad 6d 2d] (HI: two pair, Aces and Fours; LO: 8,7,4,2,A)
+AGrande said, "1.2"
+bag_of_fag said, "i have 11,895"
+oneheart1276 collected 300 from side pot-1 
+tugee collected 150 from side pot-1 
+tikigod42020 collected 150 from side pot-1 
+LuckBeLucy: mucks hand 
+LuckBeLucy leaves the table
+oneheart1276 collected 15700 from main pot
+tugee collected 7850 from main pot
+tikigod42020 collected 7850 from main pot
+*** SUMMARY ***
+Total pot 47600 Main pot 31400. Side pot-1 600. Side pot-2 15600. | Rake 0 
+Board [7c 4h 8s 9c 4s]
+Seat 1: tikigod42020 (big blind) showed [Ac 7d 2h 8d] and won (15800) with HI: two pair, Eights and Sevens; LO: 8,7,4,2,A
+Seat 2: viper8907 folded before Flop
+Seat 4: LuckBeLucy mucked [Tc Qd Kd 9s]
+Seat 5: oneheart1276 showed [Ah 9d 4c 5d] and won (23800) with HI: a full house, Fours full of Nines; LO: 8,7,5,4,A
+Seat 6: StarCrak (button) folded before Flop (didn't bet)
+Seat 9: tugee (small blind) showed [As Ad 6d 2d] and won (8000) with HI: two pair, Aces and Fours; LO: 8,7,4,2,A
+
+
+
+PokerStars Game #2041990973:  Omaha Hi/Lo No Limit (100/200) - 2005/07/06 - 00:11:39 (ET)
+Table 'Subra III' (Play Money) Seat #9 is the button
+Seat 1: tikigod42020 (15800 in chips) 
+Seat 2: viper8907 (39800 in chips) 
+Seat 3: PlumpPete (40000 in chips) 
+Seat 5: oneheart1276 (35148 in chips) 
+Seat 6: StarCrak (83200 in chips) 
+Seat 7: AGrande (20000 in chips) 
+Seat 8: bag_of_fag (11895 in chips) 
+Seat 9: tugee (8000 in chips) 
+tikigod42020: posts small blind 100
+viper8907: posts big blind 200
+PlumpPete: posts big blind 200
+AGrande: posts small & big blinds 300
+bag_of_fag: posts small blind 100
+*** HOLE CARDS ***
+Dealt to viper8907 [3d 5s 7s Jc]
+PlumpPete: checks 
+oneheart1276: calls 200
+StarCrak: folds 
+AGrande: checks 
+bag_of_fag: raises 200 to 400
+StarCrak leaves the table
+tugee: calls 400
+tikigod42020: calls 300
+viper8907: calls 200
+doug35 joins the table at seat #6 
+PlumpPete: calls 200
+oneheart1276: calls 200
+AGrande: calls 200
+*** FLOP *** [9d 4c Th]
+tikigod42020: bets 1800
+CHEERFULL joins the table at seat #4 
+viper8907: folds 
+PlumpPete: calls 1800
+oneheart1276: folds 
+AGrande: calls 1800
+bag_of_fag: folds 
+tugee: calls 1800
+*** TURN *** [9d 4c Th] [9h]
+tikigod42020: checks 
+PlumpPete: checks 
+AGrande: checks 
+tugee: bets 5800 and is all-in
+tikigod42020: calls 5800
+PlumpPete: calls 5800
+AGrande: calls 5800
+*** RIVER *** [9d 4c Th 9h] [8s]
+tikigod42020: folds 
+PlumpPete: checks 
+AGrande: checks 
+*** SHOW DOWN ***
+PlumpPete: shows [7h 2h 6d 9c] (HI: a straight, Six to Ten)
+AGrande: mucks hand 
+tugee: shows [8d 5h Js 9s] (HI: a full house, Nines full of Eights)
+tugee collected 33400 from pot
+No low hand qualified
+*** SUMMARY ***
+Total pot 33400 | Rake 0 
+Board [9d 4c Th 9h 8s]
+Seat 1: tikigod42020 (small blind) folded on the River
+Seat 2: viper8907 (big blind) folded on the Flop
+Seat 3: PlumpPete showed [7h 2h 6d 9c] and lost with HI: a straight, Six to Ten
+Seat 5: oneheart1276 folded on the Flop
+Seat 6: StarCrak folded before Flop (didn't bet)
+Seat 7: AGrande mucked [Kc Td 4s Ah]
+Seat 8: bag_of_fag folded on the Flop
+Seat 9: tugee (button) showed [8d 5h Js 9s] and won (33400) with HI: a full house, Nines full of Eights
+
+
+
+PokerStars Game #2042006912:  Omaha Hi/Lo No Limit (100/200) - 2005/07/06 - 00:13:39 (ET)
+Table 'Subra III' (Play Money) Seat #1 is the button
+Seat 1: tikigod42020 (40000 in chips) 
+Seat 2: viper8907 (39400 in chips) 
+Seat 3: PlumpPete (32000 in chips) 
+Seat 4: CHEERFULL (7600 in chips) 
+Seat 5: oneheart1276 (34748 in chips) 
+Seat 6: doug35 (40000 in chips) 
+Seat 7: AGrande (11900 in chips) 
+Seat 8: bag_of_fag (11395 in chips) 
+Seat 9: tugee (33400 in chips) 
+viper8907: posts small blind 100
+PlumpPete: posts big blind 200
+CHEERFULL: posts big blind 200
+doug35: posts big blind 200
+*** HOLE CARDS ***
+Dealt to viper8907 [Ks 9s Jc Ac]
+CHEERFULL: checks 
+oneheart1276: folds 
+oneheart1276 is sitting out
+doug35: checks 
+AGrande: calls 200
+bag_of_fag: calls 200
+tugee: calls 200
+tikigod42020: calls 200
+viper8907: calls 100
+PlumpPete: checks 
+*** FLOP *** [5h 4h 8h]
+viper8907: checks 
+PlumpPete: checks 
+bag_of_fag said, "how come every omaha hand looks awesome before the flop"
+CHEERFULL: bets 1800
+doug35: calls 1800
+tikigod42020 said, "lol"
+AGrande: raises 1800 to 3600
+bag_of_fag: folds 
+tugee: folds 
+tikigod42020: folds 
+CHEERFULL said, "lol"
+viper8907: folds 
+PlumpPete: folds 
+CHEERFULL: calls 1800
+tikigod42020 said, "because you look at them wrong i guess"
+doug35: calls 1800
+*** TURN *** [5h 4h 8h] [6d]
+tikigod42020 said, "lol"
+CHEERFULL: bets 1400
+doug35: calls 1400
+bag_of_fag said, "yeah im pretty bad at poker"
+tikigod42020 said, "lol"
+bag_of_fag said, "also i suck at life"
+AGrande: raises 2600 to 4000
+CHEERFULL: calls 2400 and is all-in
+doug35: calls 2600
+*** RIVER *** [5h 4h 8h 6d] [5s]
+doug35: checks 
+AGrande: checks 
+*** SHOW DOWN ***
+doug35: shows [Kd Kh 9h 2c] (HI: a flush, King high)
+AGrande: shows [Td 8s 7h 2h] (HI: a flush, Eight high; LO: 7,6,5,4,2)
+doug35 collected 200 from side pot
+AGrande collected 200 from side pot
+CHEERFULL: shows [Jh 6h Qd 3d] (HI: a flush, Jack high; LO: 8,6,5,4,3)
+doug35 collected 11900 from main pot
+AGrande collected 11900 from main pot
+tikigod42020 said, "im good at poker and ****in"
+CHEERFULL said, "ghs]"
+*** SUMMARY ***
+Total pot 24200 Main pot 23800. Side pot 400. | Rake 0 
+Board [5h 4h 8h 6d 5s]
+Seat 1: tikigod42020 (button) folded on the Flop
+Seat 2: viper8907 (small blind) folded on the Flop
+Seat 3: PlumpPete (big blind) folded on the Flop
+Seat 4: CHEERFULL showed [Jh 6h Qd 3d] and lost with HI: a flush, Jack high; LO: 8,6,5,4,3
+Seat 5: oneheart1276 folded before Flop (didn't bet)
+Seat 6: doug35 showed [Kd Kh 9h 2c] and won (12100) with HI: a flush, King high
+Seat 7: AGrande showed [Td 8s 7h 2h] and won (12100) with HI: a flush, Eight high; LO: 7,6,5,4,2
+Seat 8: bag_of_fag folded on the Flop
+Seat 9: tugee folded on the Flop
+
+
+
+PokerStars Game #2042017701:  Omaha Hi/Lo No Limit (100/200) - 2005/07/06 - 00:15:00 (ET)
+Table 'Subra III' (Play Money) Seat #2 is the button
+Seat 1: tikigod42020 (39800 in chips) 
+Seat 2: viper8907 (39200 in chips) 
+Seat 3: PlumpPete (31800 in chips) 
+Seat 6: doug35 (44300 in chips) 
+Seat 7: AGrande (16200 in chips) 
+Seat 8: bag_of_fag (11195 in chips) 
+Seat 9: tugee (33200 in chips) 
+PlumpPete: posts small blind 100
+doug35: posts big blind 200
+*** HOLE CARDS ***
+Dealt to viper8907 [9s Qc 7s 9d]
+tikigod42020 said, "p   i    m    p    in"
+AGrande: calls 200
+tikigod42020 said, "cant say p   i   m   p"
+tikigod42020 said, "wtf"
+bag_of_fag: calls 200
+tugee: calls 200
+tikigod42020: calls 200
+viper8907: calls 200
+PlumpPete: calls 100
+doug35: raises 200 to 400
+CHEERFULL leaves the table
+AGrande: calls 200
+bag_of_fag said, "****"
+tikigod42020 said, "this craps a joke gotta be 18 + to get account but cant cuss"
+derms33 joins the table at seat #4 
+bag_of_fag: calls 200
+tugee: calls 200
+tikigod42020: calls 200
+viper8907: calls 200
+PlumpPete: calls 200
+*** FLOP *** [4h Th 8h]
+tikigod42020 said, "then why do you have to be 18 ?"
+PlumpPete: checks 
+bag_of_fag said, "i want to open my own online poker room"
+doug35: checks 
+AGrande: bets 200
+tikigod42020 said, "id sign up"
+bag_of_fag: calls 200
+tugee: calls 200
+tikigod42020: calls 200
+viper8907: calls 200
+PlumpPete: folds 
+doug35: calls 200
+*** TURN *** [4h Th 8h] [Tc]
+bag_of_fag said, "yeah itd be sick dood"
+doug35: checks 
+AGrande: bets 1800
+bag_of_fag said, "id make it so i could see everyone elses cards"
+bag_of_fag: calls 1800
+tikigod42020 said, "lol"
+tugee: folds 
+tikigod42020: calls 1800
+viper8907: folds 
+bag_of_fag said, "they wouldnt know tho"
+doug35: folds 
+*** RIVER *** [4h Th 8h Tc] [2h]
+tikigod42020 said, "cheater"
+AGrande: bets 13800 and is all-in
+bag_of_fag said, "come on how cool would that be"
+bag_of_fag: calls 8795 and is all-in
+tikigod42020: calls 13800
+*** SHOW DOWN ***
+AGrande: shows [Jh 6h Ts 4d] (HI: a full house, Tens full of Fours)
+tikigod42020: shows [3c Ah 8d 7c] (HI: two pair, Tens and Eights; LO: 8,4,3,2,A)
+AGrande collected 5005 from side pot
+tikigod42020 collected 5005 from side pot
+bag_of_fag: shows [4s Td Jd Kh] (HI: a full house, Tens full of Fours)
+AGrande collected 8947 from main pot
+bag_of_fag collected 8946 from main pot
+tikigod42020 collected 17892 from main pot
+*** SUMMARY ***
+Total pot 45795 Main pot 35785. Side pot 10010. | Rake 0 
+Board [4h Th 8h Tc 2h]
+Seat 1: tikigod42020 showed [3c Ah 8d 7c] and won (22897) with HI: two pair, Tens and Eights; LO: 8,4,3,2,A
+Seat 2: viper8907 (button) folded on the Turn
+Seat 3: PlumpPete (small blind) folded on the Flop
+Seat 6: doug35 (big blind) folded on the Turn
+Seat 7: AGrande showed [Jh 6h Ts 4d] and won (13952) with HI: a full house, Tens full of Fours
+Seat 8: bag_of_fag showed [4s Td Jd Kh] and won (8946) with HI: a full house, Tens full of Fours
+Seat 9: tugee folded on the Turn
+
+
+
+PokerStars Game #2042036825:  Omaha Hi/Lo No Limit (100/200) - 2005/07/06 - 00:17:25 (ET)
+Table 'Subra III' (Play Money) Seat #3 is the button
+Seat 1: tikigod42020 (46497 in chips) 
+Seat 2: viper8907 (38600 in chips) 
+Seat 3: PlumpPete (31400 in chips) 
+Seat 6: doug35 (43700 in chips) 
+Seat 7: AGrande (13952 in chips) 
+Seat 8: bag_of_fag (8946 in chips) 
+Seat 9: tugee (32600 in chips) 
+derms33 will be allowed to play after the button
+doug35: posts small blind 100
+AGrande: posts big blind 200
+*** HOLE CARDS ***
+Dealt to viper8907 [4s Td Jd 7s]
+bag_of_fag: raises 200 to 400
+tugee: calls 400
+tikigod42020: calls 400
+tikigod42020 said, "got court tommorrow"
+viper8907: calls 400
+PlumpPete: calls 400
+doug35: raises 200 to 600
+bag_of_fag said, "also id hire porn stars and theyd strip if  they lost"
+AGrande: folds 
+bag_of_fag: calls 200
+tugee: calls 200
+tikigod42020 said, "lol"
+tikigod42020: folds 
+viper8907: calls 200
+tikigod42020 said, "youve gotta be like 17"
+PlumpPete: calls 200
+*** FLOP *** [Kh 5d 3h]
+bag_of_fag said, "actually im 9"
+doug35: bets 600
+bag_of_fag: raises 600 to 1200
+tikigod42020 said, "lol yea right"
+tugee: folds 
+viper8907: folds 
+PlumpPete: folds 
+bag_of_fag said, "douuuuuuugggggggggggggggg"
+doug35: calls 600
+*** TURN *** [Kh 5d 3h] [2d]
+doug35: bets 2200
+bag_of_fag: raises 2200 to 4400
+doug35: calls 2200
+*** RIVER *** [Kh 5d 3h 2d] [8h]
+tikigod42020 leaves the table
+bag_of_fag said, "hes got the low"
+bag_of_fag said, "i have a flush can u beat that"
+doug35: checks 
+bag_of_fag: bets 2745
+doug35: calls 2745
+*** SHOW DOWN ***
+bag_of_fag: shows [5h Kc 6h Qc] (HI: a flush, King high; LO: 8,6,5,3,2)
+doug35: shows [Qs 4d 2h Ad] (HI: a straight, Ace to Five; LO: 5,4,3,2,A)
+bag_of_fag collected 10145 from pot
+doug35 collected 10145 from pot
+*** SUMMARY ***
+Total pot 20290 | Rake 0 
+Board [Kh 5d 3h 2d 8h]
+Seat 1: tikigod42020 folded before Flop
+Seat 2: viper8907 folded on the Flop
+Seat 3: PlumpPete (button) folded on the Flop
+Seat 6: doug35 (small blind) showed [Qs 4d 2h Ad] and won (10145) with HI: a straight, Ace to Five; LO: 5,4,3,2,A
+Seat 7: AGrande (big blind) folded before Flop
+Seat 8: bag_of_fag showed [5h Kc 6h Qc] and won (10145) with HI: a flush, King high; LO: 8,6,5,3,2
+Seat 9: tugee folded on the Flop
+
+
+
+PokerStars Game #2042055292:  Omaha Hi/Lo No Limit (100/200) - 2005/07/06 - 00:19:47 (ET)
+Table 'Subra III' (Play Money) Seat #6 is the button
+Seat 2: viper8907 (38000 in chips) 
+Seat 3: PlumpPete (30800 in chips) 
+Seat 4: derms33 (27650 in chips) 
+Seat 6: doug35 (44900 in chips) 
+Seat 7: AGrande (13752 in chips) 
+Seat 8: bag_of_fag (10146 in chips) 
+Seat 9: tugee (32000 in chips) 
+AGrande: posts small blind 100
+bag_of_fag: posts big blind 200
+derms33: posts big blind 200
+*** HOLE CARDS ***
+Dealt to viper8907 [Qh 4h 5h 5c]
+tugee: calls 200
+viper8907: calls 200
+PlumpPete: calls 200
+derms33: raises 2000 to 2200
+doug35: folds 
+AGrande: calls 2100
+bag_of_fag: raises 2000 to 4200
+tugee: calls 4000
+viper8907: calls 4000
+PlumpPete: raises 9800 to 14000
+derms33: calls 11800
+AGrande: folds 
+bag_of_fag said, "woooooooooooooo all in"
+bag_of_fag: calls 5946 and is all-in
+tugee: calls 9800
+viper8907: calls 9800
+*** FLOP *** [7d Qc 9c]
+tugee: checks 
+viper8907: checks 
+PlumpPete: checks 
+derms33: bets 13650 and is all-in
+tugee: calls 13650
+viper8907: folds 
+PlumpPete: calls 13650
+*** TURN *** [7d Qc 9c] [8h]
+tugee: bets 4350 and is all-in
+PlumpPete: calls 3150 and is all-in
+*** RIVER *** [7d Qc 9c 8h] [5d]
+*** SHOW DOWN ***
+tugee: shows [As 8s Kd Jd] (HI: a pair of Eights)
+PlumpPete: shows [Ac 3d Jc 3s] (HI: a pair of Threes; LO: 8,7,5,3,A)
+tugee collected 3150 from side pot-2 
+PlumpPete collected 3150 from side pot-2 
+derms33: shows [Ks 2d Js Kh] (HI: a pair of Kings)
+derms33 collected 28183 from side pot-1 
+PlumpPete collected 28183 from side pot-1 
+bag_of_fag: shows [9h 8d 6d 7s] (HI: a straight, Five to Nine)
+bag_of_fag collected 26465 from main pot
+PlumpPete collected 26465 from main pot
+bag_of_fag said, "yessssssssss"
+*** SUMMARY ***
+Total pot 115596 Main pot 52930. Side pot-1 56366. Side pot-2 6300. | Rake 0 
+Board [7d Qc 9c 8h 5d]
+Seat 2: viper8907 folded on the Flop
+Seat 3: PlumpPete showed [Ac 3d Jc 3s] and won (57798) with HI: a pair of Threes; LO: 8,7,5,3,A
+Seat 4: derms33 showed [Ks 2d Js Kh] and won (28183) with HI: a pair of Kings
+Seat 6: doug35 (button) folded before Flop (didn't bet)
+Seat 7: AGrande (small blind) folded before Flop
+Seat 8: bag_of_fag (big blind) showed [9h 8d 6d 7s] and won (26465) with HI: a straight, Five to Nine
+Seat 9: tugee showed [As 8s Kd Jd] and won (3150) with HI: a pair of Eights
+
+
+
+PokerStars Game #2042069756:  Omaha Hi/Lo No Limit (100/200) - 2005/07/06 - 00:21:38 (ET)
+Table 'Subra III' (Play Money) Seat #7 is the button
+Seat 2: viper8907 (24000 in chips) 
+Seat 3: PlumpPete (57798 in chips) 
+Seat 4: derms33 (28183 in chips) 
+Seat 6: doug35 (44900 in chips) 
+Seat 7: AGrande (11552 in chips) 
+Seat 8: bag_of_fag (26465 in chips) 
+Seat 9: tugee (12350 in chips) 
+bag_of_fag: posts small blind 100
+tugee: posts big blind 200
+*** HOLE CARDS ***
+Dealt to viper8907 [4s 2d Ts 8h]
+bag_of_fag said, "iiiiiiiiiiiiiiiiii am the champion"
+bag_of_fag said, "my frienddd"
+viper8907: calls 200
+PlumpPete: calls 200
+derms33: calls 200
+doug35: calls 200
+AGrande: calls 200
+bag_of_fag: raises 1000 to 1200
+tugee: calls 1000
+viper8907: calls 1000
+PlumpPete: calls 1000
+derms33: calls 1000
+doug35: folds 
+AGrande: calls 1000
+*** FLOP *** [Jd Kc 5c]
+bag_of_fag: bets 2000
+tugee: folds 
+viper8907: folds 
+PlumpPete: calls 2000
+derms33: folds 
+AGrande: folds 
+*** TURN *** [Jd Kc 5c] [5h]
+bag_of_fag: checks 
+PlumpPete: bets 6200
+bag_of_fag: folds 
+PlumpPete collected 11400 from pot
+PlumpPete: doesn't show hand 
+*** SUMMARY ***
+Total pot 11400 | Rake 0 
+Board [Jd Kc 5c 5h]
+Seat 2: viper8907 folded on the Flop
+Seat 3: PlumpPete collected (11400)
+Seat 4: derms33 folded on the Flop
+Seat 6: doug35 folded before Flop
+Seat 7: AGrande (button) folded on the Flop
+Seat 8: bag_of_fag (small blind) folded on the Turn
+Seat 9: tugee (big blind) folded on the Flop
+
+
+
+PokerStars Game #2042078664:  Omaha Hi/Lo No Limit (100/200) - 2005/07/06 - 00:22:48 (ET)
+Table 'Subra III' (Play Money) Seat #8 is the button
+Seat 2: viper8907 (22800 in chips) 
+Seat 3: PlumpPete (65998 in chips) 
+Seat 4: derms33 (26983 in chips) 
+Seat 6: doug35 (44700 in chips) 
+Seat 7: AGrande (10352 in chips) 
+Seat 8: bag_of_fag (23265 in chips) 
+Seat 9: tugee (11150 in chips) 
+tugee: posts small blind 100
+viper8907: posts big blind 200
+*** HOLE CARDS ***
+Dealt to viper8907 [Ad Jh 6s 8s]
+PlumpPete: calls 200
+derms33: raises 26783 to 26983 and is all-in
+doug35: folds 
+AGrande: folds 
+bag_of_fag: calls 23265 and is all-in
+bag_of_fag said, "i cant fold to an all in"
+tugee: calls 11050 and is all-in
+bag_of_fag said, "no matter what i have"
+bag_of_fag said, "i have trips"
+bag_of_fag said, "omg"
+bag_of_fag said, "hahahaha"
+viper8907: folds 
+PlumpPete: folds 
+*** FLOP *** [5s 7c Kc]
+*** TURN *** [5s 7c Kc] [Ts]
+*** RIVER *** [5s 7c Kc Ts] [2d]
+*** SHOW DOWN ***
+derms33: shows [2h Kh Tc Qd] (HI: two pair, Kings and Tens)
+bag_of_fag: mucks hand 
+derms33 collected 24230 from side pot
+tugee: shows [Td Ah As 3d] (HI: a pair of Aces; LO: 7,5,3,2,A)
+bag_of_fag said, ":("
+derms33 collected 16925 from main pot
+tugee collected 16925 from main pot
+*** SUMMARY ***
+Total pot 58080 Main pot 33850. Side pot 24230. | Rake 0 
+Board [5s 7c Kc Ts 2d]
+Seat 2: viper8907 (big blind) folded before Flop
+Seat 3: PlumpPete folded before Flop
+Seat 4: derms33 showed [2h Kh Tc Qd] and won (41155) with HI: two pair, Kings and Tens
+Seat 6: doug35 folded before Flop (didn't bet)
+Seat 7: AGrande folded before Flop (didn't bet)
+Seat 8: bag_of_fag (button) mucked [Js Qh 8h 9h]
+Seat 9: tugee (small blind) showed [Td Ah As 3d] and won (16925) with HI: a pair of Aces; LO: 7,5,3,2,A
+
+
+
+PokerStars Game #2042085758:  Omaha Hi/Lo No Limit (100/200) - 2005/07/06 - 00:23:44 (ET)
+Table 'Subra III' (Play Money) Seat #9 is the button
+Seat 2: viper8907 (22600 in chips) 
+Seat 3: PlumpPete (65798 in chips) 
+Seat 4: derms33 (44873 in chips) 
+Seat 6: doug35 (44700 in chips) 
+Seat 7: AGrande (10352 in chips) 
+Seat 9: tugee (16925 in chips) 
+viper8907: posts small blind 100
+PlumpPete: posts big blind 200
+*** HOLE CARDS ***
+Dealt to viper8907 [7c Ks 5s Kh]
+derms33: calls 200
+doug35: calls 200
+bag_of_fag said, "hey can someone toss me some money"
+AGrande: calls 200
+tugee: calls 200
+viper8907: calls 100
+PlumpPete: checks 
+*** FLOP *** [8c As Kc]
+bag_of_fag said, "ill lose it back to u i promise"
+viper8907: bets 200
+PlumpPete: calls 200
+derms33: folds 
+doug35: calls 200
+AGrande: calls 200
+derms33 leaves the table
+tugee: raises 2400 to 2600
+viper8907: calls 2400
+PlumpPete: calls 2400
+bag_of_fag said, "ok bye"
+doug35: folds 
+AGrande: folds 
+*** TURN *** [8c As Kc] [9d]
+bag_of_fag leaves the table
+viper8907: checks 
+PlumpPete: checks 
+tugee: checks 
+*** RIVER *** [8c As Kc 9d] [2h]
+viper8907: bets 19800 and is all-in
+PlumpPete: folds 
+tugee: folds 
+viper8907 collected 9400 from pot
+viper8907: doesn't show hand 
+*** SUMMARY ***
+Total pot 9400 | Rake 0 
+Board [8c As Kc 9d 2h]
+Seat 2: viper8907 (small blind) collected (9400)
+Seat 3: PlumpPete (big blind) folded on the River
+Seat 4: derms33 folded on the Flop
+Seat 6: doug35 folded on the Flop
+Seat 7: AGrande folded on the Flop
+Seat 9: tugee (button) folded on the River
+
+
+
+PokerStars Game #2042097387:  Omaha Hi/Lo No Limit (100/200) - 2005/07/06 - 00:25:16 (ET)
+Table 'Subra III' (Play Money) Seat #2 is the button
+Seat 2: viper8907 (29200 in chips) 
+Seat 3: PlumpPete (62998 in chips) 
+Seat 6: doug35 (44300 in chips) 
+Seat 7: AGrande (9952 in chips) 
+Seat 9: tugee (14125 in chips) 
+PlumpPete: posts small blind 100
+doug35: posts big blind 200
+*** HOLE CARDS ***
+Dealt to viper8907 [Ad 4c Ah 7h]
+AGrande: calls 200
+tugee: calls 200
+viper8907: calls 200
+PlumpPete: calls 100
+doug35: checks 
+*** FLOP *** [2c 8s 5h]
+PlumpPete: checks 
+doug35: bets 200
+AGrande: calls 200
+tugee: calls 200
+viper8907: calls 200
+PlumpPete: calls 200
+*** TURN *** [2c 8s 5h] [4h]
+PlumpPete: checks 
+doug35: checks 
+AGrande: checks 
+tugee: checks 
+viper8907: checks 
+*** RIVER *** [2c 8s 5h 4h] [Js]
+PlumpPete: checks 
+doug35: checks 
+AGrande: bets 1000
+tugee: calls 1000
+viper8907: calls 1000
+PlumpPete: calls 1000
+doug35: calls 1000
+*** SHOW DOWN ***
+AGrande: shows [5d 6s Qd Kd] (HI: a pair of Fives; LO: 8,6,5,4,2)
+tugee: shows [As Tc 7c 8d] (HI: a pair of Eights; LO: 7,5,4,2,A)
+viper8907: shows [Ad 4c Ah 7h] (HI: a pair of Aces; LO: 7,5,4,2,A)
+PlumpPete: shows [6d 8h 4s Jh] (HI: two pair, Jacks and Eights; LO: 8,6,5,4,2)
+doug35: shows [2s Jc Jd 2h] (HI: three of a kind, Jacks)
+doug35 collected 3500 from pot
+tugee collected 1750 from pot
+viper8907 collected 1750 from pot
+*** SUMMARY ***
+Total pot 7000 | Rake 0 
+Board [2c 8s 5h 4h Js]
+Seat 2: viper8907 (button) showed [Ad 4c Ah 7h] and won (1750) with HI: a pair of Aces; LO: 7,5,4,2,A
+Seat 3: PlumpPete (small blind) showed [6d 8h 4s Jh] and lost with HI: two pair, Jacks and Eights; LO: 8,6,5,4,2
+Seat 6: doug35 (big blind) showed [2s Jc Jd 2h] and won (3500) with HI: three of a kind, Jacks
+Seat 7: AGrande showed [5d 6s Qd Kd] and lost with HI: a pair of Fives; LO: 8,6,5,4,2
+Seat 9: tugee showed [As Tc 7c 8d] and won (1750) with HI: a pair of Eights; LO: 7,5,4,2,A
+
+
+
+PokerStars Game #2042106971:  Omaha Hi/Lo No Limit (100/200) - 2005/07/06 - 00:26:32 (ET)
+Table 'Subra III' (Play Money) Seat #3 is the button
+Seat 2: viper8907 (29550 in chips) 
+Seat 3: PlumpPete (61598 in chips) 
+Seat 6: doug35 (46400 in chips) 
+Seat 7: AGrande (8552 in chips) 
+Seat 9: tugee (14475 in chips) 
+oneheart1276 has returned
+doug35: posts small blind 100
+AGrande: posts big blind 200
+*** HOLE CARDS ***
+Dealt to viper8907 [8s 9d As 3h]
+tugee has timed out
+tugee: folds 
+tugee is sitting out
+viper8907: calls 200
+PlumpPete: calls 200
+doug35: calls 100
+AGrande: checks 
+*** FLOP *** [Ks 6c Jh]
+doug35: checks 
+AGrande: checks 
+tugee has returned
+viper8907: checks 
+LQQKINGatU2 joins the table at seat #1 
+PlumpPete: checks 
+*** TURN *** [Ks 6c Jh] [Js]
+doug35: checks 
+AGrande: bets 400
+viper8907: calls 400
+PlumpPete: calls 400
+doug35: calls 400
+*** RIVER *** [Ks 6c Jh Js] [2c]
+doug35: checks 
+AGrande: checks 
+viper8907: checks 
+PlumpPete: checks 
+*** SHOW DOWN ***
+doug35: shows [Tc Qh 3c Ac] (HI: a pair of Jacks)
+AGrande: shows [2h 5s 4h 5d] (HI: two pair, Jacks and Fives)
+viper8907: mucks hand 
+PlumpPete: shows [6d 5c 8c Kh] (HI: two pair, Kings and Jacks)
+mrbigshot26 joins the table at seat #4 
+PlumpPete collected 2400 from pot
+No low hand qualified
+*** SUMMARY ***
+Total pot 2400 | Rake 0 
+Board [Ks 6c Jh Js 2c]
+Seat 2: viper8907 mucked [8s 9d As 3h]
+Seat 3: PlumpPete (button) showed [6d 5c 8c Kh] and won (2400) with HI: two pair, Kings and Jacks
+Seat 6: doug35 (small blind) showed [Tc Qh 3c Ac] and lost with HI: a pair of Jacks
+Seat 7: AGrande (big blind) showed [2h 5s 4h 5d] and lost with HI: two pair, Jacks and Fives
+Seat 9: tugee folded before Flop (didn't bet)
+
+
+
+PokerStars Game #2042120621:  Omaha Hi/Lo No Limit (100/200) - 2005/07/06 - 00:28:21 (ET)
+Table 'Subra III' (Play Money) Seat #6 is the button
+Seat 1: LQQKINGatU2 (8000 in chips) 
+Seat 2: viper8907 (28950 in chips) 
+Seat 3: PlumpPete (63398 in chips) 
+Seat 4: mrbigshot26 (8000 in chips) 
+Seat 5: oneheart1276 (34748 in chips) 
+Seat 6: doug35 (45800 in chips) 
+Seat 7: AGrande (7952 in chips) 
+Seat 9: tugee (14475 in chips) 
+AGrande: posts small blind 100
+tugee: posts big blind 200
+LQQKINGatU2: posts big blind 200
+mrbigshot26: posts big blind 200
+Yanksin04 joins the table at seat #8 
+oneheart1276: posts small & big blinds 300
+*** HOLE CARDS ***
+Dealt to viper8907 [5d 3d Qc Jd]
+LQQKINGatU2: raises 200 to 400
+viper8907: calls 400
+PlumpPete is disconnected 
+PlumpPete is connected 
+PlumpPete: calls 400
+mrbigshot26: calls 200
+oneheart1276: calls 200
+doug35: folds 
+AGrande: calls 300
+tugee: calls 200
+*** FLOP *** [4s 3s 6s]
+AGrande: bets 200
+tugee: calls 200
+LQQKINGatU2: folds 
+viper8907: folds 
+PlumpPete: folds 
+mrbigshot26: raises 200 to 400
+oneheart1276: calls 400
+AGrande: calls 200
+tugee: calls 200
+*** TURN *** [4s 3s 6s] [7h]
+AGrande: bets 400
+tugee: calls 400
+mrbigshot26: raises 6800 to 7200 and is all-in
+oneheart1276: calls 7200
+AGrande: calls 6752 and is all-in
+tugee: calls 6800
+*** RIVER *** [4s 3s 6s 7h] [2c]
+tugee: bets 6475 and is all-in
+oneheart1276: calls 6475
+*** SHOW DOWN ***
+tugee: shows [9d Ks Jc 5s] (HI: a flush, King high)
+oneheart1276: shows [7c 9s 5c 6h] (HI: a straight, Three to Seven; LO: 6,5,4,3,2)
+tugee collected 6475 from side pot-2 
+oneheart1276 collected 6475 from side pot-2 
+mrbigshot26: mucks hand 
+tugee collected 72 from side pot-1 
+oneheart1276 collected 72 from side pot-1 
+AGrande: shows [4h 4c Td 5h] (HI: a straight, Three to Seven; LO: 6,5,4,3,2)
+Yanksin04 said, "where u at???"
+tugee collected 16554 from main pot
+AGrande collected 8277 from main pot
+oneheart1276 collected 8277 from main pot
+*** SUMMARY ***
+Total pot 46202 Main pot 33108. Side pot-1 144. Side pot-2 12950. | Rake 0 
+Board [4s 3s 6s 7h 2c]
+Seat 1: LQQKINGatU2 folded on the Flop
+Seat 2: viper8907 folded on the Flop
+Seat 3: PlumpPete folded on the Flop
+Seat 4: mrbigshot26 mucked [8s 2s Qh Js]
+Seat 5: oneheart1276 showed [7c 9s 5c 6h] and won (14824) with HI: a straight, Three to Seven; LO: 6,5,4,3,2
+Seat 6: doug35 (button) folded before Flop (didn't bet)
+Seat 7: AGrande (small blind) showed [4h 4c Td 5h] and won (8277) with HI: a straight, Three to Seven; LO: 6,5,4,3,2
+Seat 9: tugee (big blind) showed [9d Ks Jc 5s] and won (23101) with HI: a flush, King high
+
+
+
+PokerStars Game #2042137230:  Omaha Hi/Lo No Limit (100/200) - 2005/07/06 - 00:30:34 (ET)
+Table 'Subra III' (Play Money) Seat #7 is the button
+Seat 1: LQQKINGatU2 (7600 in chips) 
+Seat 2: viper8907 (28550 in chips) 
+Seat 3: PlumpPete (62998 in chips) 
+Seat 4: mrbigshot26 (8000 in chips) 
+Seat 5: oneheart1276 (34997 in chips) 
+Seat 6: doug35 (45800 in chips) 
+Seat 7: AGrande (8277 in chips) 
+Seat 9: tugee (23101 in chips) 
+Yanksin04 will be allowed to play after the button
+tugee: posts small blind 100
+LQQKINGatU2: posts big blind 200
+*** HOLE CARDS ***
+Dealt to viper8907 [6c 5h Kh 5s]
+viper8907: calls 200
+PlumpPete: calls 200
+mrbigshot26: calls 200
+Yanksin04 said, "k"
+oneheart1276: calls 200
+doug35: calls 200
+AGrande: calls 200
+tugee: calls 100
+LQQKINGatU2: checks 
+*** FLOP *** [2s Qd 7h]
+tugee: checks 
+LQQKINGatU2: checks 
+viper8907: checks 
+PlumpPete: folds 
+PlumpPete leaves the table
+mrbigshot26: checks 
+oneheart1276: checks 
+doug35: bets 200
+AGrande: calls 200
+tugee: calls 200
+LQQKINGatU2: calls 200
+viper8907: calls 200
+mrbigshot26: calls 200
+oneheart1276: raises 200 to 400
+shoelessjoey joins the table at seat #3 
+doug35 said, "check/raise"
+doug35: calls 200
+AGrande: calls 200
+tugee: calls 200
+LQQKINGatU2: calls 200
+viper8907: calls 200
+mrbigshot26: calls 200
+*** TURN *** [2s Qd 7h] [Jc]
+tugee: bets 1000
+LQQKINGatU2: folds 
+viper8907: folds 
+mrbigshot26: folds 
+oneheart1276: calls 1000
+doug35: folds 
+AGrande: calls 1000
+*** RIVER *** [2s Qd 7h Jc] [8c]
+tugee: checks 
+oneheart1276: checks 
+AGrande: bets 6677 and is all-in
+tugee: folds 
+oneheart1276: folds 
+AGrande collected 7400 from pot
+AGrande: doesn't show hand 
+*** SUMMARY ***
+Total pot 7400 | Rake 0 
+Board [2s Qd 7h Jc 8c]
+Seat 1: LQQKINGatU2 (big blind) folded on the Turn
+Seat 2: viper8907 folded on the Turn
+Seat 3: PlumpPete folded on the Flop
+Seat 4: mrbigshot26 folded on the Turn
+Seat 5: oneheart1276 folded on the River
+Seat 6: doug35 folded on the Turn
+Seat 7: AGrande (button) collected (7400)
+Seat 9: tugee (small blind) folded on the River
+
+
+
+PokerStars Game #2042162171:  Omaha Hi/Lo No Limit (100/200) - 2005/07/06 - 00:33:55 (ET)
+Table 'Subra III' (Play Money) Seat #9 is the button
+Seat 1: LQQKINGatU2 (7000 in chips) 
+Seat 2: viper8907 (27950 in chips) 
+Seat 3: shoelessjoey (8000 in chips) 
+Seat 4: mrbigshot26 (7400 in chips) 
+Seat 5: oneheart1276 (33397 in chips) 
+Seat 6: doug35 (45200 in chips) 
+Seat 7: AGrande (14077 in chips) 
+Seat 8: Yanksin04 (40000 in chips) 
+Seat 9: tugee (21501 in chips) 
+LQQKINGatU2: posts small blind 100
+viper8907: posts big blind 200
+shoelessjoey: posts big blind 200
+Yanksin04: posts big blind 200
+*** HOLE CARDS ***
+Dealt to viper8907 [9c Th Kc 9d]
+shoelessjoey: checks 
+mrbigshot26: calls 200
+oneheart1276: calls 200
+doug35: raises 200 to 400
+AGrande: calls 400
+Yanksin04: calls 200
+tugee: raises 21101 to 21501 and is all-in
+LQQKINGatU2: calls 6900 and is all-in
+viper8907: folds 
+shoelessjoey: calls 7800 and is all-in
+mrbigshot26: folds 
+oneheart1276: raises 11896 to 33397 and is all-in
+doug35: folds 
+AGrande: folds 
+Yanksin04: calls 32997
+*** FLOP *** [5h 6c Qd]
+*** TURN *** [5h 6c Qd] [6d]
+*** RIVER *** [5h 6c Qd 6d] [2d]
+*** SHOW DOWN ***
+oneheart1276: shows [4d 7d Kd 4s] (HI: a flush, King high; LO: 7,6,5,4,2)
+Yanksin04 said, "cant hit crap tonite"
+Yanksin04: mucks hand 
+oneheart1276 collected 11896 from side pot-3 
+oneheart1276 collected 11896 from side pot-3 
+tugee: shows [3c 9h Ad Kh] (HI: a pair of Sixes; LO: 6,5,3,2,A)
+oneheart1276 collected 20252 from side pot-2 
+tugee collected 20251 from side pot-2 
+shoelessjoey: mucks hand 
+oneheart1276 collected 2000 from side pot-1 
+tugee collected 2000 from side pot-1 
+LQQKINGatU2: mucks hand 
+Yanksin04 said, "nhs"
+LQQKINGatU2 is sitting out
+oneheart1276 collected 18100 from main pot
+tugee collected 18100 from main pot
+*** SUMMARY ***
+Total pot 104495 Main pot 36200. Side pot-1 4000. Side pot-2 40503. Side pot-3 23792. | Rake 0 
+Board [5h 6c Qd 6d 2d]
+Seat 1: LQQKINGatU2 (small blind) mucked [Jc 4h Ts 6h]
+Seat 2: viper8907 (big blind) folded before Flop
+Seat 3: shoelessjoey mucked [3d Js 2c Jd]
+Seat 4: mrbigshot26 folded before Flop
+Seat 5: oneheart1276 showed [4d 7d Kd 4s] and won (64144) with HI: a flush, King high; LO: 7,6,5,4,2
+Seat 6: doug35 folded before Flop
+Seat 7: AGrande folded before Flop
+Seat 8: Yanksin04 mucked [Tc As 9s Qs]
+Seat 9: tugee (button) showed [3c 9h Ad Kh] and won (40351) with HI: a pair of Sixes; LO: 6,5,3,2,A
+
+
+
+PokerStars Game #2042173393:  Omaha Hi/Lo No Limit (100/200) - 2005/07/06 - 00:35:26 (ET)
+Table 'Subra III' (Play Money) Seat #2 is the button
+Seat 2: viper8907 (27750 in chips) 
+Seat 4: mrbigshot26 (7200 in chips) 
+Seat 5: oneheart1276 (64144 in chips) 
+Seat 6: doug35 (44800 in chips) 
+Seat 7: AGrande (13677 in chips) 
+Seat 8: Yanksin04 (40000 in chips) 
+Seat 9: tugee (40351 in chips) 
+mrbigshot26: posts small blind 100
+shoelessjoey leaves the table
+oneheart1276: posts big blind 200
+*** HOLE CARDS ***
+Dealt to viper8907 [8h Ad 3h 5d]
+doug35: calls 200
+AGrande: calls 200
+Yanksin04: calls 200
+tugee: calls 200
+viper8907: calls 200
+mrbigshot26: calls 100
+oneheart1276 said, ".ilty"
+oneheart1276: raises 200 to 400
+oneheart1276 said, "ty"
+doug35: calls 200
+AGrande: calls 200
+Yanksin04: calls 200
+tugee: calls 200
+viper8907: calls 200
+mrbigshot26: calls 200
+*** FLOP *** [Td Qc 6h]
+mrbigshot26: checks 
+oneheart1276: bets 2400
+doug35: folds 
+LQQKINGatU2 has returned
+AGrande: calls 2400
+Yanksin04: raises 2400 to 4800
+tugee: folds 
+viper8907: folds 
+mrbigshot26: folds 
+oneheart1276: calls 2400
+AGrande: calls 2400
+*** TURN *** [Td Qc 6h] [Qh]
+oneheart1276: bets 11200
+AGrande: calls 8477 and is all-in
+Yanksin04: calls 11200
+*** RIVER *** [Td Qc 6h Qh] [5c]
+oneheart1276: bets 15000
+Yanksin04 said, "grrrr"
+Yanksin04: folds 
+*** SHOW DOWN ***
+oneheart1276: shows [4s As Tc Th] (HI: a full house, Tens full of Queens)
+oneheart1276 collected 5446 from side pot
+AGrande: shows [2s Js 6c Qs] (HI: a full house, Queens full of Sixes)
+Yanksin04 said, "nh"
+AGrande collected 42631 from main pot
+No low hand qualified
+*** SUMMARY ***
+Total pot 48077 Main pot 42631. Side pot 5446. | Rake 0 
+Board [Td Qc 6h Qh 5c]
+Seat 2: viper8907 (button) folded on the Flop
+Seat 4: mrbigshot26 (small blind) folded on the Flop
+Seat 5: oneheart1276 (big blind) showed [4s As Tc Th] and won (5446) with HI: a full house, Tens full of Queens
+Seat 6: doug35 folded on the Flop
+Seat 7: AGrande showed [2s Js 6c Qs] and won (42631) with HI: a full house, Queens full of Sixes
+Seat 8: Yanksin04 folded on the River
+Seat 9: tugee folded on the Flop
+
+
+
+PokerStars Game #2042193018:  Omaha Hi/Lo No Limit (100/200) - 2005/07/06 - 00:38:04 (ET)
+Table 'Subra III' (Play Money) Seat #4 is the button
+Seat 1: LQQKINGatU2 (7763 in chips) 
+Seat 2: viper8907 (27350 in chips) 
+Seat 4: mrbigshot26 (6800 in chips) 
+Seat 5: oneheart1276 (53190 in chips) 
+Seat 6: doug35 (44400 in chips) 
+Seat 7: AGrande (42631 in chips) 
+Seat 8: Yanksin04 (23600 in chips) 
+Seat 9: tugee (39951 in chips) 
+oneheart1276: posts small blind 100
+doug35: posts big blind 200
+*** HOLE CARDS ***
+Dealt to viper8907 [Qh Ac 2c 2h]
+AGrande: calls 200
+Yanksin04: folds 
+AGrande said, "ty"
+tugee: calls 200
+LQQKINGatU2: raises 7563 to 7763 and is all-in
+viper8907: calls 7763
+mrbigshot26: folds 
+oneheart1276: folds 
+doug35: folds 
+AGrande: calls 7563
+tugee: folds 
+*** FLOP *** [4s 5d Jc]
+AGrande: checks 
+viper8907: checks 
+*** TURN *** [4s 5d Jc] [Ad]
+AGrande: checks 
+viper8907: checks 
+*** RIVER *** [4s 5d Jc Ad] [6h]
+AGrande: bets 15000
+viper8907: calls 15000
+*** SHOW DOWN ***
+AGrande: shows [5h Qd 2s 3d] (HI: a straight, Deuce to Six; LO: 5,4,3,2,A)
+watauga joins the table at seat #3 
+viper8907: mucks hand 
+AGrande collected 15000 from side pot
+AGrande collected 15000 from side pot
+LQQKINGatU2: mucks hand 
+LQQKINGatU2 leaves the table
+AGrande collected 11895 from main pot
+AGrande collected 11894 from main pot
+*** SUMMARY ***
+Total pot 53789 Main pot 23789. Side pot 30000. | Rake 0 
+Board [4s 5d Jc Ad 6h]
+Seat 1: LQQKINGatU2 mucked [Ks 3h Kd As]
+Seat 2: viper8907 mucked [Qh Ac 2c 2h]
+Seat 4: mrbigshot26 (button) folded before Flop (didn't bet)
+Seat 5: oneheart1276 (small blind) folded before Flop
+Seat 6: doug35 (big blind) folded before Flop
+Seat 7: AGrande showed [5h Qd 2s 3d] and won (53789) with HI: a straight, Deuce to Six; LO: 5,4,3,2,A
+Seat 8: Yanksin04 folded before Flop (didn't bet)
+Seat 9: tugee folded before Flop
+
+
+
+PokerStars Game #2042203255:  Omaha Hi/Lo No Limit (100/200) - 2005/07/06 - 00:39:28 (ET)
+Table 'Subra III' (Play Money) Seat #5 is the button
+Seat 2: viper8907 (40000 in chips) 
+Seat 3: watauga (7225 in chips) 
+Seat 4: mrbigshot26 (6800 in chips) 
+Seat 5: oneheart1276 (53090 in chips) 
+Seat 6: doug35 (44200 in chips) 
+Seat 7: AGrande (73657 in chips) 
+Seat 8: Yanksin04 (23600 in chips) 
+Seat 9: tugee (39751 in chips) 
+doug35: posts small blind 100
+AGrande: posts big blind 200
+watauga: posts big blind 200
+*** HOLE CARDS ***
+Dealt to viper8907 [6d 9h 7h 2s]
+Yanksin04: calls 200
+GSMaster joins the table at seat #1 
+tugee: calls 200
+viper8907: calls 200
+watauga: checks 
+mrbigshot26: calls 200
+oneheart1276: calls 200
+doug35: calls 100
+AGrande: checks 
+*** FLOP *** [9s Ks 3h]
+doug35: checks 
+AGrande: bets 200
+Yanksin04: calls 200
+tugee: calls 200
+viper8907: folds 
+watauga: calls 200
+mrbigshot26: calls 200
+oneheart1276: folds 
+doug35: calls 200
+*** TURN *** [9s Ks 3h] [6s]
+doug35: bets 200
+AGrande: raises 3000 to 3200
+Yanksin04: folds 
+tugee: folds 
+watauga: calls 3200
+mrbigshot26: folds 
+doug35: calls 3000
+*** RIVER *** [9s Ks 3h 6s] [3c]
+doug35: checks 
+AGrande: bets 27000
+watauga: folds 
+doug35: calls 27000
+*** SHOW DOWN ***
+AGrande: shows [4c Ts Td As] (HI: a flush, Ace high)
+doug35: mucks hand 
+AGrande collected 66400 from pot
+No low hand qualified
+*** SUMMARY ***
+Total pot 66400 | Rake 0 
+Board [9s Ks 3h 6s 3c]
+Seat 2: viper8907 folded on the Flop
+Seat 3: watauga folded on the River
+Seat 4: mrbigshot26 folded on the Turn
+Seat 5: oneheart1276 (button) folded on the Flop
+Seat 6: doug35 (small blind) mucked [Js Kh 5s Th]
+Seat 7: AGrande (big blind) showed [4c Ts Td As] and won (66400) with HI: a flush, Ace high
+Seat 8: Yanksin04 folded on the Turn
+Seat 9: tugee folded on the Turn
+
+
+
+PokerStars Game #2042219716:  Omaha Hi/Lo No Limit (100/200) - 2005/07/06 - 00:41:43 (ET)
+Table 'Subra III' (Play Money) Seat #6 is the button
+Seat 1: GSMaster (40000 in chips) 
+Seat 2: viper8907 (39800 in chips) 
+Seat 3: watauga (3625 in chips) 
+Seat 4: mrbigshot26 (6400 in chips) 
+Seat 5: oneheart1276 (52890 in chips) 
+Seat 6: doug35 (13600 in chips) 
+Seat 7: AGrande (109457 in chips) 
+Seat 8: Yanksin04 (23200 in chips) 
+Seat 9: tugee (39351 in chips) 
+AGrande: posts small blind 100
+Yanksin04: posts big blind 200
+GSMaster: posts big blind 200
+*** HOLE CARDS ***
+Dealt to viper8907 [8s 8h 4d Ts]
+tugee: calls 200
+GSMaster: raises 600 to 800
+viper8907: calls 800
+watauga: folds 
+mrbigshot26: folds 
+mrbigshot26 leaves the table
+oneheart1276: calls 800
+doug35: calls 800
+AGrande: calls 700
+Yanksin04: folds 
+tugee: calls 600
+*** FLOP *** [3d 7d 4s]
+Yanksin04 leaves the table
+AGrande: bets 626
+tugee: calls 626
+GSMaster: raises 2374 to 3000
+viper8907: folds 
+oneheart1276: raises 5000 to 8000
+doug35: folds 
+AGrande: calls 7374
+tugee: calls 7374
+GSMaster: calls 5000
+*** TURN *** [3d 7d 4s] [4c]
+AGrande: checks 
+tugee: checks 
+GSMaster: bets 6000
+oneheart1276: raises 14000 to 20000
+AGrande: calls 20000
+tugee: folds 
+GSMaster: raises 11200 to 31200 and is all-in
+oneheart1276: calls 11200
+AGrande: calls 11200
+*** RIVER *** [3d 7d 4s 4c] [5c]
+AGrande: checks 
+oneheart1276: bets 12890 and is all-in
+AGrande: calls 12890
+*** SHOW DOWN ***
+oneheart1276: shows [2c 6s 9c 4h] (HI: a straight, Three to Seven; LO: 6,5,4,3,2)
+AGrande: shows [8d 5h 6c Qh] (HI: a straight, Four to Eight; LO: 7,6,5,4,3)
+AGrande collected 12890 from side pot
+oneheart1276 collected 12890 from side pot
+GSMaster: shows [Qc Js 2s As] (HI: a straight, Ace to Five; LO: 5,4,3,2,A)
+AGrande collected 65300 from main pot
+GSMaster collected 65300 from main pot
+*** SUMMARY ***
+Total pot 156380 Main pot 130600. Side pot 25780. | Rake 0 
+Board [3d 7d 4s 4c 5c]
+Seat 1: GSMaster showed [Qc Js 2s As] and won (65300) with HI: a straight, Ace to Five; LO: 5,4,3,2,A
+Seat 2: viper8907 folded on the Flop
+Seat 3: watauga folded before Flop (didn't bet)
+Seat 4: mrbigshot26 folded before Flop (didn't bet)
+Seat 5: oneheart1276 showed [2c 6s 9c 4h] and won (12890) with HI: a straight, Three to Seven; LO: 6,5,4,3,2
+Seat 6: doug35 (button) folded on the Flop
+Seat 7: AGrande (small blind) showed [8d 5h 6c Qh] and won (78190) with HI: a straight, Four to Eight; LO: 7,6,5,4,3
+Seat 8: Yanksin04 (big blind) folded before Flop
+Seat 9: tugee folded on the Turn
+
+
+
+PokerStars Game #2042237861:  Omaha Hi/Lo No Limit (100/200) - 2005/07/06 - 00:44:13 (ET)
+Table 'Subra III' (Play Money) Seat #7 is the button
+Seat 1: GSMaster (65300 in chips) 
+Seat 2: viper8907 (39000 in chips) 
+Seat 3: watauga (3625 in chips) 
+Seat 5: oneheart1276 (12890 in chips) 
+Seat 6: doug35 (40000 in chips) 
+Seat 7: AGrande (134757 in chips) 
+Seat 9: tugee (30551 in chips) 
+tugee: posts small blind 100
+GSMaster: posts big blind 200
+*** HOLE CARDS ***
+Dealt to viper8907 [Ah 3c Qd As]
+viper8907: calls 200
+watauga: raises 3425 to 3625 and is all-in
+oneheart1276: folds 
+oneheart1276 leaves the table
+doug35: folds 
+AGrande: calls 3625
+tugee: calls 3525
+GSMaster: folds 
+viper8907: calls 3425
+*** FLOP *** [7d 4d Kh]
+tugee: checks 
+viper8907: checks 
+AGrande: bets 3400
+tugee: folds 
+viper8907: calls 3400
+*** TURN *** [7d 4d Kh] [3d]
+viper8907: checks 
+AGrande: bets 6626
+viper8907: calls 6626
+*** RIVER *** [7d 4d Kh 3d] [2h]
+viper8907: checks 
+AGrande: bets 121106 and is all-in
+viper8907: calls 25349 and is all-in
+*** SHOW DOWN ***
+AGrande: shows [5d Ad 3h 6d] (HI: a straight flush, Three to Seven; LO: 5,4,3,2,A)
+viper8907: mucks hand 
+AGrande collected 35375 from side pot
+AGrande collected 35375 from side pot
+watauga: mucks hand 
+AGrande collected 7350 from main pot
+AGrande collected 7350 from main pot
+*** SUMMARY ***
+Total pot 85450 Main pot 14700. Side pot 70750. | Rake 0 
+Board [7d 4d Kh 3d 2h]
+Seat 1: GSMaster (big blind) folded before Flop
+Seat 2: viper8907 mucked [Ah 3c Qd As]
+Seat 3: watauga mucked [7c 4c 3s Kc]
+Seat 5: oneheart1276 folded before Flop (didn't bet)
+Seat 6: doug35 folded before Flop (didn't bet)
+Seat 7: AGrande (button) showed [5d Ad 3h 6d] and won (85450) with HI: a straight flush, Three to Seven; LO: 5,4,3,2,A
+Seat 9: tugee (small blind) folded on the Flop
+
+
+
+PokerStars Game #2042247788:  Omaha Hi/Lo No Limit (100/200) - 2005/07/06 - 00:45:35 (ET)
+Table 'Subra III' (Play Money) Seat #9 is the button
+Seat 1: GSMaster (65100 in chips) 
+Seat 2: viper8907 (4000 in chips) 
+Seat 6: doug35 (40000 in chips) 
+Seat 7: AGrande (181207 in chips) 
+Seat 9: tugee (26926 in chips) 
+GSMaster: posts small blind 100
+viper8907: posts big blind 200
+*** HOLE CARDS ***
+Dealt to viper8907 [6s 6d 8s Th]
+doug35: calls 200
+AGrande: calls 200
+tugee: raises 200 to 400
+watauga leaves the table
+GSMaster: raises 600 to 1000
+viper8907: calls 800
+doug35: calls 800
+AGrande: calls 800
+tugee: calls 600
+*** FLOP *** [3h 5h 7s]
+GSMaster: bets 4000
+viper8907: calls 3000 and is all-in
+doug35: calls 4000
+AGrande: calls 4000
+tugee: folds 
+*** TURN *** [3h 5h 7s] [Ts]
+GSMaster: bets 8000
+doug35: calls 8000
+AGrande: calls 8000
+*** RIVER *** [3h 5h 7s Ts] [9s]
+GSMaster: bets 52100 and is all-in
+doug35: folds 
+AGrande said, "A-2?"
+AGrande: folds 
+*** SHOW DOWN ***
+GSMaster: shows [2d Ks Jh As] (HI: a flush, Ace high; LO: 7,5,3,2,A)
+GSMaster collected 13500 from side pot
+GSMaster collected 13500 from side pot
+viper8907: shows [6s 6d 8s Th] (HI: a straight flush, Six to Ten; LO: 8,7,6,5,3)
+viper8907 collected 8500 from main pot
+GSMaster collected 8500 from main pot
+*** SUMMARY ***
+Total pot 44000 Main pot 17000. Side pot 27000. | Rake 0 
+Board [3h 5h 7s Ts 9s]
+Seat 1: GSMaster (small blind) showed [2d Ks Jh As] and won (35500) with HI: a flush, Ace high; LO: 7,5,3,2,A
+Seat 2: viper8907 (big blind) showed [6s 6d 8s Th] and won (8500) with HI: a straight flush, Six to Ten; LO: 8,7,6,5,3
+Seat 6: doug35 folded on the River
+Seat 7: AGrande folded on the River
+Seat 9: tugee (button) folded on the Flop
+
+
+
+PokerStars Game #2042261372:  Omaha Hi/Lo No Limit (100/200) - 2005/07/06 - 00:47:29 (ET)
+Table 'Subra III' (Play Money) Seat #1 is the button
+Seat 1: GSMaster (87600 in chips) 
+Seat 2: viper8907 (8500 in chips) 
+Seat 6: doug35 (27000 in chips) 
+Seat 7: AGrande (168207 in chips) 
+Seat 9: tugee (25926 in chips) 
+viper8907: posts small blind 100
+GSMaster said, "nh"
+viper8907 said, "2 SFs in a row"
+QuirosPablo joins the table at seat #4 
+doug35: posts big blind 200
+*** HOLE CARDS ***
+Dealt to viper8907 [4h 7s 2h Ad]
+GSMaster said, "your good"
+GSMaster said, "lol"
+AGrande: calls 200
+tugee: calls 200
+GSMaster: calls 200
+viper8907 said, "not for me...just at this table"
+viper8907: calls 100
+doug35: checks 
+*** FLOP *** [Kc Jd Jc]
+GSMaster said, "o ok"
+viper8907: checks 
+doug35: checks 
+AGrande: bets 1626
+tugee: calls 1626
+GSMaster: folds 
+viper8907: folds 
+doug35: calls 1626
+*** TURN *** [Kc Jd Jc] [Th]
+doug35: checks 
+AGrande: bets 1626
+tugee: calls 1626
+lola204 joins the table at seat #5 
+doug35: folds 
+*** RIVER *** [Kc Jd Jc Th] [6h]
+AGrande: bets 22474
+TheDonW joins the table at seat #3 
+tugee: folds 
+AGrande collected 9130 from pot
+AGrande: shows [Kd Js 6s 8d] (HI: a full house, Jacks full of Kings)
+*** SUMMARY ***
+Total pot 9130 | Rake 0 
+Board [Kc Jd Jc Th 6h]
+Seat 1: GSMaster (button) folded on the Flop
+Seat 2: viper8907 (small blind) folded on the Flop
+Seat 6: doug35 (big blind) folded on the Turn
+Seat 7: AGrande collected (9130)
+Seat 9: tugee folded on the River
+
+
+
+PokerStars Game #2042277203:  Omaha Hi/Lo No Limit (100/200) - 2005/07/06 - 00:49:43 (ET)
+Table 'Subra III' (Play Money) Seat #2 is the button
+Seat 1: GSMaster (87400 in chips) 
+Seat 2: viper8907 (8300 in chips) 
+Seat 6: doug35 (40000 in chips) 
+Seat 7: AGrande (173885 in chips) 
+Seat 9: tugee (22474 in chips) 
+TheDonW will be allowed to play after the button
+QuirosPablo will be allowed to play after the button
+lola204 will be allowed to play after the button
+doug35: posts small blind 100
+AGrande: posts big blind 200
+*** HOLE CARDS ***
+Dealt to viper8907 [2s Js 2c Td]
+tugee: calls 200
+GSMaster: calls 200
+viper8907: calls 200
+doug35: calls 100
+AGrande: checks 
+*** FLOP *** [4c Kd 6c]
+doug35: checks 
+AGrande: checks 
+tugee: checks 
+GSMaster: checks 
+viper8907: checks 
+*** TURN *** [4c Kd 6c] [5d]
+doug35: checks 
+JustMe&U joins the table at seat #8 
+AGrande: bets 1626
+tugee: folds 
+GSMaster: raises 1774 to 3400
+viper8907: folds 
+doug35: folds 
+AGrande: calls 1774
+*** RIVER *** [4c Kd 6c 5d] [9d]
+AGrande: bets 6626
+GSMaster: calls 6626
+*** SHOW DOWN ***
+AGrande: shows [9s 5s 6h Kh] (HI: two pair, Kings and Nines)
+GSMaster: shows [9c 3s As 7h] (HI: a straight, Three to Seven; LO: 6,5,4,3,A)
+GSMaster collected 10526 from pot
+GSMaster collected 10526 from pot
+*** SUMMARY ***
+Total pot 21052 | Rake 0 
+Board [4c Kd 6c 5d 9d]
+Seat 1: GSMaster showed [9c 3s As 7h] and won (21052) with HI: a straight, Three to Seven; LO: 6,5,4,3,A
+Seat 2: viper8907 (button) folded on the Turn
+Seat 6: doug35 (small blind) folded on the Turn
+Seat 7: AGrande (big blind) showed [9s 5s 6h Kh] and lost with HI: two pair, Kings and Nines
+Seat 9: tugee folded on the Turn
+
+
+
+PokerStars Game #2042286335:  Omaha Hi/Lo No Limit (100/200) - 2005/07/06 - 00:51:01 (ET)
+Table 'Subra III' (Play Money) Seat #6 is the button
+Seat 1: GSMaster (98226 in chips) 
+Seat 2: viper8907 (8100 in chips) 
+Seat 3: TheDonW (8000 in chips) 
+Seat 4: QuirosPablo (20000 in chips) 
+Seat 5: lola204 (8000 in chips) 
+Seat 6: doug35 (39800 in chips) 
+Seat 7: AGrande (163659 in chips) 
+Seat 8: JustMe&U (8000 in chips) 
+Seat 9: tugee (22274 in chips) 
+AGrande said, "vnh"
+AGrande: posts small blind 100
+JustMe&U: posts big blind 200
+TheDonW: posts big blind 200
+GSMaster said, "ty"
+QuirosPablo: posts big blind 200
+lola204: posts big blind 200
+*** HOLE CARDS ***
+Dealt to viper8907 [Ad Kd 6s As]
+tugee: calls 200
+GSMaster: calls 200
+viper8907: raises 7900 to 8100 and is all-in
+TheDonW: calls 7800 and is all-in
+GSMaster said, "got lucky"
+QuirosPablo: folds 
+lola204: calls 7800 and is all-in
+doug35: folds 
+AGrande: folds 
+JustMe&U: folds 
+AGrande said, "no shame in that"
+tugee: calls 7900
+GSMaster: calls 7900
+*** FLOP *** [7c Jh 3s]
+tugee: checks 
+GSMaster said, "get to sit next to a pretty woman...lol"
+AGrande said, "i didn't think you had a hi AND a low"
+GSMaster: checks 
+*** TURN *** [7c Jh 3s] [6h]
+tugee: checks 
+GSMaster: checks 
+*** RIVER *** [7c Jh 3s 6h] [4s]
+tugee: bets 14174 and is all-in
+GSMaster: calls 14174
+*** SHOW DOWN ***
+tugee: shows [2s 9h 5s 7s] (HI: a straight, Three to Seven; LO: 6,5,4,3,2)
+GSMaster: shows [Qd 5c 7d 3d] (HI: a straight, Three to Seven; LO: 7,6,5,4,3)
+tugee collected 7087 from side pot-2 
+GSMaster collected 7087 from side pot-2 
+tugee collected 14174 from side pot-2 
+viper8907: mucks hand 
+tugee collected 75 from side pot-1 
+GSMaster collected 75 from side pot-1 
+tugee collected 150 from side pot-1 
+TheDonW: shows [4d 4h Kh 8s] (HI: three of a kind, Fours; LO: 8,7,6,4,3)
+lola204: mucks hand 
+AGrande said, "and she's from ***ton"
+tugee collected 10125 from main pot
+GSMaster collected 10125 from main pot
+tugee collected 20250 from main pot
+*** SUMMARY ***
+Total pot 69148 Main pot 40500. Side pot-1 300. Side pot-2 28348. | Rake 0 
+Board [7c Jh 3s 6h 4s]
+Seat 1: GSMaster showed [Qd 5c 7d 3d] and won (17287) with HI: a straight, Three to Seven; LO: 7,6,5,4,3
+Seat 2: viper8907 mucked [Ad Kd 6s As]
+Seat 3: TheDonW showed [4d 4h Kh 8s] and lost with HI: three of a kind, Fours; LO: 8,7,6,4,3
+Seat 4: QuirosPablo folded before Flop
+Seat 5: lola204 mucked [4c Qs 3c Tc]
+Seat 6: doug35 (button) folded before Flop (didn't bet)
+Seat 7: AGrande (small blind) folded before Flop
+Seat 8: JustMe&U (big blind) folded before Flop
+Seat 9: tugee showed [2s 9h 5s 7s] and won (51861) with HI: a straight, Three to Seven; LO: 6,5,4,3,2
+
+
+
+PokerStars Game #2042298272:  Omaha Hi/Lo No Limit (100/200) - 2005/07/06 - 00:52:43 (ET)
+Table 'Subra III' (Play Money) Seat #7 is the button
+Seat 1: GSMaster (93239 in chips) 
+Seat 2: viper8907 (4000 in chips) 
+Seat 3: TheDonW (8000 in chips) 
+Seat 4: QuirosPablo (19800 in chips) 
+Seat 5: lola204 (8000 in chips) 
+Seat 6: doug35 (39800 in chips) 
+Seat 7: AGrande (163559 in chips) 
+Seat 8: JustMe&U (7800 in chips) 
+Seat 9: tugee (51861 in chips) 
+JustMe&U: posts small blind 100
+tugee: posts big blind 200
+*** HOLE CARDS ***
+Dealt to viper8907 [3s 7d Qc Th]
+GSMaster said, "dam lucky guy huh?"
+GSMaster: calls 200
+viper8907: folds 
+TheDonW: raises 7800 to 8000 and is all-in
+QuirosPablo: folds 
+AGrande said, "and loose"
+lola204: calls 8000 and is all-in
+AGrande said, "with her chips"
+doug35: folds 
+AGrande: folds 
+JustMe&U: calls 7700 and is all-in
+tugee: folds 
+tugee is sitting out
+GSMaster: calls 7800
+*** FLOP *** [Kc 3c Qs]
+*** TURN *** [Kc 3c Qs] [As]
+*** RIVER *** [Kc 3c Qs As] [Qh]
+GSMaster said, "be nice now"
+*** SHOW DOWN ***
+GSMaster: shows [Jc 7c 5h Ah] (HI: two pair, Aces and Queens)
+TheDonW: shows [Ad 2h 4d 4c] (HI: two pair, Aces and Queens - lower kicker)
+lola204: mucks hand 
+GSMaster collected 600 from side pot
+JustMe&U: mucks hand 
+GSMaster collected 31400 from main pot
+No low hand qualified
+*** SUMMARY ***
+Total pot 32000 Main pot 31400. Side pot 600. | Rake 0 
+Board [Kc 3c Qs As Qh]
+Seat 1: GSMaster showed [Jc 7c 5h Ah] and won (32000) with HI: two pair, Aces and Queens
+Seat 2: viper8907 folded before Flop (didn't bet)
+Seat 3: TheDonW showed [Ad 2h 4d 4c] and lost with HI: two pair, Aces and Queens
+Seat 4: QuirosPablo folded before Flop (didn't bet)
+Seat 5: lola204 mucked [Kh 7h 3h 2d]
+Seat 6: doug35 folded before Flop (didn't bet)
+Seat 7: AGrande (button) folded before Flop (didn't bet)
+Seat 8: JustMe&U (small blind) mucked [Ts 2s 8c 4s]
+Seat 9: tugee (big blind) folded before Flop
+
+
+
+PokerStars Game #2042307835:  Omaha Hi/Lo No Limit (100/200) - 2005/07/06 - 00:54:07 (ET)
+Table 'Subra III' (Play Money) Seat #8 is the button
+Seat 1: GSMaster (117239 in chips) 
+Seat 2: viper8907 (40000 in chips) 
+Seat 3: TheDonW (8000 in chips) 
+Seat 4: QuirosPablo (19800 in chips) 
+Seat 5: lola204 (8000 in chips) 
+Seat 6: doug35 (39800 in chips) 
+Seat 7: AGrande (163559 in chips) 
+Seat 8: JustMe&U (8000 in chips) 
+GSMaster: posts small blind 100
+viper8907: posts big blind 200
+*** HOLE CARDS ***
+Dealt to viper8907 [5d 4d 9h Tc]
+TheDonW: calls 200
+QuirosPablo: calls 200
+lola204: calls 200
+doug35: calls 200
+AGrande: calls 200
+JustMe&U: calls 200
+GSMaster: calls 100
+viper8907: checks 
+*** FLOP *** [7s Ks Ah]
+GSMaster: checks 
+viper8907: folds 
+TheDonW: checks 
+QuirosPablo: checks 
+lola204: checks 
+doug35: checks 
+AGrande: bets 1626
+GSMaster said, "viper ...r u blushing?"
+JustMe&U: calls 1626
+GSMaster: calls 1626
+TheDonW: folds 
+QuirosPablo: folds 
+lola204: folds 
+doug35: folds 
+*** TURN *** [7s Ks Ah] [Jh]
+GSMaster: bets 7000
+AGrande: calls 7000
+JustMe&U: calls 6174 and is all-in
+*** RIVER *** [7s Ks Ah Jh] [Ac]
+GSMaster: bets 10000
+AGrande said, "damn teaser lo"
+AGrande: folds 
+*** SHOW DOWN ***
+GSMaster: shows [Jd 4h Ts Qs] (HI: a straight, Ten to Ace)
+GSMaster said, "lol"
+GSMaster collected 1652 from side pot
+JustMe&U: shows [Kc Ad Qd 7c] (HI: a full house, Aces full of Kings)
+JustMe&U collected 25000 from main pot
+No low hand qualified
+*** SUMMARY ***
+Total pot 26652 Main pot 25000. Side pot 1652. | Rake 0 
+Board [7s Ks Ah Jh Ac]
+Seat 1: GSMaster (small blind) showed [Jd 4h Ts Qs] and won (1652) with HI: a straight, Ten to Ace
+Seat 2: viper8907 (big blind) folded on the Flop
+Seat 3: TheDonW folded on the Flop
+Seat 4: QuirosPablo folded on the Flop
+Seat 5: lola204 folded on the Flop
+Seat 6: doug35 folded on the Flop
+Seat 7: AGrande folded on the River
+Seat 8: JustMe&U (button) showed [Kc Ad Qd 7c] and won (25000) with HI: a full house, Aces full of Kings
+
+
+
+PokerStars Game #2042320984:  Omaha Hi/Lo No Limit (100/200) - 2005/07/06 - 00:56:02 (ET)
+Table 'Subra III' (Play Money) Seat #1 is the button
+Seat 1: GSMaster (110065 in chips) 
+Seat 2: viper8907 (39800 in chips) 
+Seat 3: TheDonW (7800 in chips) 
+Seat 4: QuirosPablo (19600 in chips) 
+Seat 5: lola204 (7800 in chips) 
+Seat 6: doug35 (39600 in chips) 
+Seat 7: AGrande (154733 in chips) 
+Seat 8: JustMe&U (25000 in chips) 
+viper8907: posts small blind 100
+TheDonW: posts big blind 200
+*** HOLE CARDS ***
+Dealt to viper8907 [Kd As 3c 6h]
+QuirosPablo: folds 
+QuirosPablo leaves the table
+lola204: calls 200
+doug35: calls 200
+AGrande: calls 200
+JustMe&U: calls 200
+GSMaster: calls 200
+viper8907: calls 100
+TheDonW: checks 
+*** FLOP *** [9d 4h 8h]
+bucket77 joins the table at seat #4 
+viper8907: checks 
+TheDonW: bets 600
+lola204: calls 600
+doug35: folds 
+AGrande: calls 600
+JustMe&U: calls 600
+GSMaster: calls 600
+viper8907: calls 600
+*** TURN *** [9d 4h 8h] [Jd]
+viper8907: checks 
+TheDonW: bets 1000
+lola204: calls 1000
+AGrande: calls 1000
+JustMe&U: folds 
+GSMaster: calls 1000
+viper8907: calls 1000
+*** RIVER *** [9d 4h 8h Jd] [8s]
+viper8907: checks 
+TheDonW: checks 
+lola204: checks 
+AGrande: bets 5000
+GSMaster: folds 
+viper8907: folds 
+TheDonW: folds 
+TheDonW is sitting out
+lola204: calls 5000
+*** SHOW DOWN ***
+AGrande: shows [Jh Td 8d 3s] (HI: a full house, Eights full of Jacks)
+lola204: mucks hand 
+AGrande collected 20000 from pot
+No low hand qualified
+*** SUMMARY ***
+Total pot 20000 | Rake 0 
+Board [9d 4h 8h Jd 8s]
+Seat 1: GSMaster (button) folded on the River
+Seat 2: viper8907 (small blind) folded on the River
+Seat 3: TheDonW (big blind) folded on the River
+Seat 4: QuirosPablo folded before Flop (didn't bet)
+Seat 5: lola204 mucked [Jc Qd 4c Th]
+Seat 6: doug35 folded on the Flop
+Seat 7: AGrande showed [Jh Td 8d 3s] and won (20000) with HI: a full house, Eights full of Jacks
+Seat 8: JustMe&U folded on the Turn
+
+
+
+PokerStars Game #2042332335:  Omaha Hi/Lo No Limit (100/200) - 2005/07/06 - 00:57:41 (ET)
+Table 'Subra III' (Play Money) Seat #2 is the button
+Seat 1: GSMaster (108265 in chips) 
+Seat 2: viper8907 (38000 in chips) 
+Seat 5: lola204 (1000 in chips) 
+Seat 6: doug35 (39400 in chips) 
+Seat 7: AGrande (167933 in chips) 
+Seat 8: JustMe&U (24200 in chips) 
+bucket77 will be allowed to play after the button
+lola204: posts small blind 100
+doug35: posts big blind 200
+*** HOLE CARDS ***
+Dealt to viper8907 [2d 6c Ks Jd]
+AGrande: calls 200
+JustMe&U: calls 200
+GSMaster: calls 200
+viper8907: calls 200
+lola204: calls 100
+doug35: checks 
+*** FLOP *** [As Ac Kc]
+lola204: checks 
+doug35: checks 
+AGrande: bets 2200
+JustMe&U: folds 
+GSMaster: folds 
+viper8907: folds 
+lola204: calls 800 and is all-in
+doug35: folds 
+*** TURN *** [As Ac Kc] [4d]
+*** RIVER *** [As Ac Kc 4d] [4s]
+*** SHOW DOWN ***
+lola204: shows [Qs Qd Jc 9c] (HI: two pair, Aces and Queens)
+AGrande: mucks hand 
+lola204 collected 2800 from pot
+No low hand qualified
+*** SUMMARY ***
+Total pot 2800 | Rake 0 
+Board [As Ac Kc 4d 4s]
+Seat 1: GSMaster folded on the Flop
+Seat 2: viper8907 (button) folded on the Flop
+Seat 5: lola204 (small blind) showed [Qs Qd Jc 9c] and won (2800) with HI: two pair, Aces and Queens
+Seat 6: doug35 (big blind) folded on the Flop
+Seat 7: AGrande mucked [5s 7h 2h Tc]
+Seat 8: JustMe&U folded on the Flop
+
+
+
+PokerStars Game #2042341343:  Omaha Hi/Lo No Limit (100/200) - 2005/07/06 - 00:59:00 (ET)
+Table 'Subra III' (Play Money) Seat #5 is the button
+Seat 1: GSMaster (108065 in chips) 
+Seat 2: viper8907 (37800 in chips) 
+Seat 4: bucket77 (16000 in chips) 
+Seat 5: lola204 (2800 in chips) 
+Seat 6: doug35 (39200 in chips) 
+Seat 7: AGrande (166933 in chips) 
+Seat 8: JustMe&U (24000 in chips) 
+doug35: posts small blind 100
+AGrande: posts big blind 200
+bucket77: posts big blind 200
+*** HOLE CARDS ***
+Dealt to viper8907 [Qd Ad 8h 4s]
+JustMe&U: calls 200
+GSMaster: calls 200
+viper8907: calls 200
+bucket77: checks 
+lola204: calls 200
+doug35: calls 100
+AGrande: checks 
+*** FLOP *** [Tc 2s 3c]
+doug35: checks 
+AGrande: bets 1626
+JustMe&U: calls 1626
+GSMaster: calls 1626
+viper8907: calls 1626
+bucket77: folds 
+lola204: folds 
+doug35: folds 
+*** TURN *** [Tc 2s 3c] [Jc]
+AGrande: bets 6626
+JustMe&U: calls 6626
+GSMaster: folds 
+viper8907: calls 6626
+*** RIVER *** [Tc 2s 3c Jc] [8d]
+AGrande: bets 158481 and is all-in
+JustMe&U: calls 15548 and is all-in
+viper8907: calls 29348 and is all-in
+*** SHOW DOWN ***
+AGrande: shows [Ts 6c 7h Ac] (HI: a flush, Ace high; LO: 8,6,3,2,A)
+viper8907: shows [Qd Ad 8h 4s] (HI: a pair of Eights; LO: 8,4,3,2,A)
+AGrande collected 13800 from side pot
+viper8907 collected 13800 from side pot
+JustMe&U: shows [Kc 5c 2c 9h] (HI: a flush, King high)
+AGrande collected 37213 from main pot
+viper8907 collected 37213 from main pot
+*** SUMMARY ***
+Total pot 102026 Main pot 74426. Side pot 27600. | Rake 0 
+Board [Tc 2s 3c Jc 8d]
+Seat 1: GSMaster folded on the Turn
+Seat 2: viper8907 showed [Qd Ad 8h 4s] and won (51013) with HI: a pair of Eights; LO: 8,4,3,2,A
+Seat 4: bucket77 folded on the Flop
+Seat 5: lola204 (button) folded on the Flop
+Seat 6: doug35 (small blind) folded on the Flop
+Seat 7: AGrande (big blind) showed [Ts 6c 7h Ac] and won (51013) with HI: a flush, Ace high; LO: 8,6,3,2,A
+Seat 8: JustMe&U showed [Kc 5c 2c 9h] and lost with HI: a flush, King high
+
+
+
+PokerStars Game #2042353362:  Omaha Hi/Lo No Limit (100/200) - 2005/07/06 - 01:00:47 (ET)
+Table 'Subra III' (Play Money) Seat #6 is the button
+Seat 1: GSMaster (106239 in chips) 
+Seat 2: viper8907 (51013 in chips) 
+Seat 4: bucket77 (15800 in chips) 
+Seat 5: lola204 (2600 in chips) 
+Seat 6: doug35 (39000 in chips) 
+Seat 7: AGrande (180146 in chips) 
+Seat 8: JustMe&U (8000 in chips) 
+AGrande: posts small blind 100
+JustMe&U: posts big blind 200
+*** HOLE CARDS ***
+Dealt to viper8907 [Ks Jd Tc 6s]
+GSMaster said, "nh's"
+GSMaster: calls 200
+viper8907: calls 200
+bucket77: calls 200
+lola204: calls 200
+AGrande said, "thx"
+doug35: calls 200
+AGrande: calls 100
+JustMe&U: checks 
+*** FLOP *** [Kd 3d 2c]
+AGrande: bets 200
+JustMe&U: calls 200
+GSMaster: calls 200
+viper8907: calls 200
+bucket77: calls 200
+lola204: calls 200
+doug35: calls 200
+*** TURN *** [Kd 3d 2c] [Qc]
+AGrande: bets 1626
+JustMe&U: calls 1626
+GSMaster: folds 
+viper8907: calls 1626
+bucket77: raises 1626 to 3252
+lola204: calls 2200 and is all-in
+doug35: folds 
+AGrande: calls 1626
+JustMe&U: calls 1626
+viper8907: calls 1626
+*** RIVER *** [Kd 3d 2c Qc] [4h]
+AGrande: checks 
+JustMe&U: checks 
+viper8907: checks 
+bucket77: bets 3600
+AGrande: calls 3600
+JustMe&U: raises 748 to 4348 and is all-in
+viper8907: folds 
+bucket77: calls 748
+AGrande said, "pot odds"
+AGrande: calls 748
+*** SHOW DOWN ***
+JustMe&U: shows [Th 2d 2s 8d] (HI: three of a kind, Deuces)
+bucket77: shows [Qd 5h Qh 9d] (HI: three of a kind, Queens)
+AGrande: shows [5c 8c 3s 4s] (HI: two pair, Fours and Threes; LO: 8,5,4,3,2)
+bucket77 collected 8626 from side pot
+AGrande collected 8626 from side pot
+lola204: shows [3c 6c Kh As] (HI: two pair, Kings and Threes; LO: 6,4,3,2,A)
+bucket77 collected 6900 from main pot
+lola204 collected 6900 from main pot
+*** SUMMARY ***
+Total pot 31052 Main pot 13800. Side pot 17252. | Rake 0 
+Board [Kd 3d 2c Qc 4h]
+Seat 1: GSMaster folded on the Turn
+Seat 2: viper8907 folded on the River
+Seat 4: bucket77 showed [Qd 5h Qh 9d] and won (15526) with HI: three of a kind, Queens
+Seat 5: lola204 showed [3c 6c Kh As] and won (6900) with HI: two pair, Kings and Threes; LO: 6,4,3,2,A
+Seat 6: doug35 (button) folded on the Turn
+Seat 7: AGrande (small blind) showed [5c 8c 3s 4s] and won (8626) with HI: two pair, Fours and Threes; LO: 8,5,4,3,2
+Seat 8: JustMe&U (big blind) showed [Th 2d 2s 8d] and lost with HI: three of a kind, Deuces
+
+
+
+PokerStars Game #2042366068:  Omaha Hi/Lo No Limit (100/200) - 2005/07/06 - 01:02:40 (ET)
+Table 'Subra III' (Play Money) Seat #7 is the button
+Seat 1: GSMaster (105839 in chips) 
+Seat 2: viper8907 (47361 in chips) 
+Seat 4: bucket77 (23326 in chips) 
+Seat 5: lola204 (6900 in chips) 
+Seat 6: doug35 (38600 in chips) 
+Seat 7: AGrande (180772 in chips) 
+GSMaster: posts small blind 100
+viper8907: posts big blind 200
+*** HOLE CARDS ***
+Dealt to viper8907 [Td 2h As 3d]
+JustMe&U has returned
+JustMe&U leaves the table
+bucket77: calls 200
+lola204: calls 200
+doug35: calls 200
+AGrande: calls 200
+GSMaster: calls 100
+viper8907: checks 
+*** FLOP *** [Ah 8d Tc]
+GSMaster: checks 
+viper8907: bets 4600
+bucket77: calls 4600
+lola204: folds 
+AGrande said, "i think viper's mad at me"
+fishenbuddie joins the table at seat #8 
+GSMaster said, "yup me 2"
+viper8907 said, "?"
+viper8907 said, "...."
+viper8907 said, "lol"
+doug35: folds 
+AGrande: folds 
+GSMaster: calls 4600
+*** TURN *** [Ah 8d Tc] [8c]
+doug35 leaves the table
+GSMaster said, "didn't think u were talking to me"
+GSMaster: checks 
+viper8907: checks 
+bucket77: checks 
+*** RIVER *** [Ah 8d Tc 8c] [Ad]
+GSMaster: checks 
+viper8907: bets 42561 and is all-in
+bucket77: calls 18526 and is all-in
+GSMaster: folds 
+*** SHOW DOWN ***
+viper8907: shows [Td 2h As 3d] (HI: a full house, Aces full of Tens)
+GSMaster said, "is that your picture?"
+viper8907 said, "i didnt know u said anything to me"
+bucket77: mucks hand 
+viper8907 collected 52052 from pot
+No low hand qualified
+TheDonW has returned
+viper8907 said, "no"
+*** SUMMARY ***
+Total pot 52052 | Rake 0 
+Board [Ah 8d Tc 8c Ad]
+Seat 1: GSMaster (small blind) folded on the River
+Seat 2: viper8907 (big blind) showed [Td 2h As 3d] and won (52052) with HI: a full house, Aces full of Tens
+Seat 4: bucket77 mucked [Qs Kd Ks 4s]
+Seat 5: lola204 folded on the Flop
+Seat 6: doug35 folded on the Flop
+Seat 7: AGrande (button) folded on the Flop
+
+
+
+PokerStars Game #2042379568:  Omaha Hi/Lo No Limit (100/200) - 2005/07/06 - 01:04:39 (ET)
+Table 'Subra III' (Play Money) Seat #1 is the button
+Seat 1: GSMaster (101039 in chips) 
+Seat 2: viper8907 (76087 in chips) 
+Seat 3: TheDonW (6000 in chips) 
+Seat 4: bucket77 (40000 in chips) 
+Seat 5: lola204 (6700 in chips) 
+Seat 7: AGrande (180572 in chips) 
+Seat 8: fishenbuddie (40000 in chips) 
+viper8907: posts small blind 100
+TheDonW: posts big blind 200
+fishenbuddie: posts big blind 200
+*** HOLE CARDS ***
+Dealt to viper8907 [8s 6d 3d 9h]
+viper8907 said, "that is jessica simpson"
+bucket77: calls 200
+viper8907 said, "lol"
+lola204: calls 200
+GSMaster said, "bummer...."
+GSMaster said, "lol"
+AGrande: calls 200
+GSMaster said, "o ok"
+fishenbuddie: raises 39800 to 40000 and is all-in
+GSMaster said, "silly me"
+GSMaster: folds 
+viper8907: folds 
+TheDonW: calls 5800 and is all-in
+bucket77: folds 
+lola204: calls 6500 and is all-in
+AGrande: folds 
+*** FLOP *** [5c 6h 5s]
+AGrande said, "are you a guy?"
+*** TURN *** [5c 6h 5s] [Th]
+*** RIVER *** [5c 6h 5s Th] [Qd]
+*** SHOW DOWN ***
+lola204: shows [4c 2h 7c Ad] (HI: a pair of Fives)
+fishenbuddie: shows [Jh Qs 2s 3s] (HI: two pair, Queens and Fives)
+GSMaster said, "how old r u?"
+fishenbuddie collected 1400 from side pot
+TheDonW: shows [Ac 5h 8d Qc] (HI: a full house, Fives full of Queens)
+TheDonW collected 18500 from main pot
+No low hand qualified
+*** SUMMARY ***
+Total pot 19900 Main pot 18500. Side pot 1400. | Rake 0 
+Board [5c 6h 5s Th Qd]
+Seat 1: GSMaster (button) folded before Flop (didn't bet)
+Seat 2: viper8907 (small blind) folded before Flop
+Seat 3: TheDonW (big blind) showed [Ac 5h 8d Qc] and won (18500) with HI: a full house, Fives full of Queens
+Seat 4: bucket77 folded before Flop
+Seat 5: lola204 showed [4c 2h 7c Ad] and lost with HI: a pair of Fives
+Seat 7: AGrande folded before Flop
+Seat 8: fishenbuddie showed [Jh Qs 2s 3s] and won (1400) with HI: two pair, Queens and Fives
+
+
+
+PokerStars Game #2042386511:  Omaha Hi/Lo No Limit (100/200) - 2005/07/06 - 01:05:40 (ET)
+Table 'Subra III' (Play Money) Seat #2 is the button
+Seat 1: GSMaster (101039 in chips) 
+Seat 2: viper8907 (75987 in chips) 
+Seat 3: TheDonW (18500 in chips) 
+Seat 4: bucket77 (39800 in chips) 
+Seat 7: AGrande (180372 in chips) 
+Seat 8: fishenbuddie (34700 in chips) 
+TheDonW: posts small blind 100
+bucket77: posts big blind 200
+*** HOLE CARDS ***
+Dealt to viper8907 [7h 4d 9h 8c]
+AGrande: calls 200
+fishenbuddie: calls 200
+AGrande said, "This is getting creepy"
+GSMaster: calls 200
+viper8907: calls 200
+TheDonW: calls 100
+bucket77: checks 
+*** FLOP *** [Qs Js Jh]
+GSMaster said, "lol"
+TheDonW: checks 
+GSMaster said, "yup'"
+bucket77: bets 3000
+AGrande: calls 3000
+fishenbuddie: calls 3000
+GSMaster said, "it's a dude"
+GSMaster: calls 3000
+viper8907: folds 
+TheDonW: folds 
+*** TURN *** [Qs Js Jh] [6c]
+bucket77: bets 1600
+AGrande: calls 1600
+fishenbuddie: calls 1600
+viper8907 said, "lol"
+GSMaster: calls 1600
+*** RIVER *** [Qs Js Jh 6c] [4s]
+bucket77: bets 1000
+GSMaster said, "srry man"
+GSMaster said, "lol"
+AGrande: raises 4572 to 5572
+fishenbuddie: calls 5572
+GSMaster said, "hot photo"
+GSMaster: raises 4572 to 10144
+AGrande said, "lola's pretty hot"
+bucket77: folds 
+AGrande: calls 4572
+fishenbuddie: calls 4572
+*** SHOW DOWN ***
+GSMaster: shows [Jd 3d Kd 4c] (HI: a full house, Jacks full of Fours)
+AGrande: mucks hand 
+fishenbuddie: shows [8h 9c 9s As] (HI: a flush, Ace high)
+GSMaster collected 51032 from pot
+No low hand qualified
+AGrande said, "damn!"
+*** SUMMARY ***
+Total pot 51032 | Rake 0 
+Board [Qs Js Jh 6c 4s]
+Seat 1: GSMaster showed [Jd 3d Kd 4c] and won (51032) with HI: a full house, Jacks full of Fours
+Seat 2: viper8907 (button) folded on the Flop
+Seat 3: TheDonW (small blind) folded on the Flop
+Seat 4: bucket77 (big blind) folded on the River
+Seat 7: AGrande mucked [7s 2c Kh Qc]
+Seat 8: fishenbuddie showed [8h 9c 9s As] and lost with HI: a flush, Ace high
+
+
+
+PokerStars Game #2042398449:  Omaha Hi/Lo No Limit (100/200) - 2005/07/06 - 01:07:26 (ET)
+Table 'Subra III' (Play Money) Seat #3 is the button
+Seat 1: GSMaster (137127 in chips) 
+Seat 2: viper8907 (75787 in chips) 
+Seat 3: TheDonW (18300 in chips) 
+Seat 4: bucket77 (34000 in chips) 
+Seat 7: AGrande (165428 in chips) 
+Seat 8: fishenbuddie (19756 in chips) 
+BARDAR777 joins the table at seat #6 
+bucket77: posts small blind 100
+AGrande: posts big blind 200
+*** HOLE CARDS ***
+Dealt to viper8907 [6s 5h Js 7s]
+GSMaster said, "oops"
+fishenbuddie: folds 
+GSMaster: calls 200
+viper8907: calls 200
+lola204 has returned
+lola204 said, "im hot or my chips is hot???.......lol"
+TheDonW: calls 200
+bucket77: calls 100
+AGrande: checks 
+*** FLOP *** [4d 8s Kc]
+GSMaster said, "yup"
+bucket77: bets 1400
+AGrande: calls 1400
+GSMaster: calls 1400
+viper8907: calls 1400
+TheDonW: folds 
+*** TURN *** [4d 8s Kc] [7d]
+bucket77: bets 4000
+AGrande: folds 
+GSMaster: calls 4000
+viper8907: raises 4000 to 8000
+bucket77: calls 4000
+GSMaster: calls 4000
+*** RIVER *** [4d 8s Kc 7d] [Qd]
+bucket77: bets 5000
+GSMaster: folds 
+viper8907: raises 61187 to 66187 and is all-in
+bucket77: calls 19400 and is all-in
+*** SHOW DOWN ***
+viper8907: shows [6s 5h Js 7s] (HI: a straight, Four to Eight; LO: 8,7,6,5,4)
+bucket77: shows [Kd Jd 6d 2c] (HI: a flush, King high; LO: 8,7,6,4,2)
+bucket77 collected 39700 from pot
+bucket77 collected 39700 from pot
+*** SUMMARY ***
+Total pot 79400 | Rake 0 
+Board [4d 8s Kc 7d Qd]
+Seat 1: GSMaster folded on the River
+Seat 2: viper8907 showed [6s 5h Js 7s] and lost with HI: a straight, Four to Eight; LO: 8,7,6,5,4
+Seat 3: TheDonW (button) folded on the Flop
+Seat 4: bucket77 (small blind) showed [Kd Jd 6d 2c] and won (79400) with HI: a flush, King high; LO: 8,7,6,4,2
+Seat 7: AGrande (big blind) folded on the Turn
+Seat 8: fishenbuddie folded before Flop (didn't bet)
+
+
+
+PokerStars Game #2042408619:  Omaha Hi/Lo No Limit (100/200) - 2005/07/06 - 01:08:57 (ET)
+Table 'Subra III' (Play Money) Seat #4 is the button
+Seat 1: GSMaster (127527 in chips) 
+Seat 2: viper8907 (41787 in chips) 
+Seat 3: TheDonW (18100 in chips) 
+Seat 4: bucket77 (79400 in chips) 
+Seat 7: AGrande (163828 in chips) 
+Seat 8: fishenbuddie (19756 in chips) 
+lola204 will be allowed to play after the button
+BARDAR777 will be allowed to play after the button
+AGrande: posts small blind 100
+fishenbuddie: posts big blind 200
+*** HOLE CARDS ***
+Dealt to viper8907 [Th 5s As 7s]
+GSMaster: calls 200
+viper8907: calls 200
+TheDonW: calls 200
+bucket77: calls 200
+AGrande: calls 100
+fishenbuddie: checks 
+*** FLOP *** [Qc 3d Jd]
+AGrande: checks 
+fishenbuddie: checks 
+GSMaster: bets 1000
+viper8907: calls 1000
+TheDonW: calls 1000
+bucket77: folds 
+AGrande: calls 1000
+fishenbuddie: folds 
+*** TURN *** [Qc 3d Jd] [7d]
+AGrande: checks 
+GSMaster: bets 5000
+viper8907: folds 
+TheDonW: folds 
+AGrande: folds 
+GSMaster collected 5200 from pot
+GSMaster: doesn't show hand 
+*** SUMMARY ***
+Total pot 5200 | Rake 0 
+Board [Qc 3d Jd 7d]
+Seat 1: GSMaster collected (5200)
+Seat 2: viper8907 folded on the Turn
+Seat 3: TheDonW folded on the Turn
+Seat 4: bucket77 (button) folded on the Flop
+Seat 7: AGrande (small blind) folded on the Turn
+Seat 8: fishenbuddie (big blind) folded on the Flop
+
+
+
+PokerStars Game #2042416211:  Omaha Hi/Lo No Limit (100/200) - 2005/07/06 - 01:10:05 (ET)
+Table 'Subra III' (Play Money) Seat #7 is the button
+Seat 1: GSMaster (131527 in chips) 
+Seat 2: viper8907 (40587 in chips) 
+Seat 3: TheDonW (16900 in chips) 
+Seat 4: bucket77 (79200 in chips) 
+Seat 5: lola204 (8000 in chips) 
+Seat 6: BARDAR777 (22222 in chips) 
+Seat 7: AGrande (162628 in chips) 
+Seat 8: fishenbuddie (19556 in chips) 
+fishenbuddie: posts small blind 100
+GSMaster: posts big blind 200
+lola204: posts small & big blinds 300
+BARDAR777: posts big blind 200
+*** HOLE CARDS ***
+Dealt to viper8907 [3h Ts 5c 8c]
+AGrande said, "Did they switch dealers while I wasn't looking?"
+viper8907: calls 200
+GSMaster said, "yup"
+TheDonW: calls 200
+bucket77: calls 200
+lola204: checks 
+AGrande said, "this one sucks"
+BARDAR777: checks 
+AGrande: calls 200
+fishenbuddie: calls 100
+GSMaster: checks 
+*** FLOP *** [5s Kd Ac]
+GSMaster said, "he don't talk much tho"
+fishenbuddie: checks 
+GSMaster: checks 
+viper8907: checks 
+TheDonW: checks 
+bucket77: bets 4800
+lola204: calls 4800
+BARDAR777: calls 4800
+AGrande: calls 4800
+fishenbuddie: folds 
+GSMaster: calls 4800
+viper8907: calls 4800
+TheDonW: folds 
+*** TURN *** [5s Kd Ac] [Jc]
+GSMaster: checks 
+viper8907: checks 
+bucket77: bets 2600
+lola204: calls 2600
+BARDAR777: calls 2600
+AGrande: calls 2600
+GSMaster: calls 2600
+viper8907: folds 
+*** RIVER *** [5s Kd Ac Jc] [6d]
+GSMaster: bets 20000
+bucket77: calls 20000
+lola204: calls 300 and is all-in
+BARDAR777: folds 
+AGrande: calls 20000
+*** SHOW DOWN ***
+GSMaster: shows [5d 3d Jh 2s] (HI: two pair, Jacks and Fives; LO: 6,5,3,2,A)
+bucket77: shows [6s Ah Tc Ks] (HI: two pair, Aces and Kings)
+AGrande: shows [Kc 2h 4s 3s] (HI: a pair of Kings; LO: 6,5,3,2,A)
+bucket77 collected 29550 from side pot
+GSMaster collected 14775 from side pot
+AGrande collected 14775 from side pot
+lola204: shows [Qd Td Jd 4c] (HI: a straight, Ten to Ace)
+lola204 collected 22350 from main pot
+GSMaster collected 11175 from main pot
+AGrande collected 11175 from main pot
+*** SUMMARY ***
+Total pot 103800 Main pot 44700. Side pot 59100. | Rake 0 
+Board [5s Kd Ac Jc 6d]
+Seat 1: GSMaster (big blind) showed [5d 3d Jh 2s] and won (25950) with HI: two pair, Jacks and Fives; LO: 6,5,3,2,A
+Seat 2: viper8907 folded on the Turn
+Seat 3: TheDonW folded on the Flop
+Seat 4: bucket77 showed [6s Ah Tc Ks] and won (29550) with HI: two pair, Aces and Kings
+Seat 5: lola204 showed [Qd Td Jd 4c] and won (22350) with HI: a straight, Ten to Ace
+Seat 6: BARDAR777 folded on the River
+Seat 7: AGrande (button) showed [Kc 2h 4s 3s] and won (25950) with HI: a pair of Kings; LO: 6,5,3,2,A
+Seat 8: fishenbuddie (small blind) folded on the Flop
+
+
+
+PokerStars Game #2042430078:  Omaha Hi/Lo No Limit (100/200) - 2005/07/06 - 01:12:11 (ET)
+Table 'Subra III' (Play Money) Seat #8 is the button
+Seat 1: GSMaster (129877 in chips) 
+Seat 2: viper8907 (35587 in chips) 
+Seat 3: TheDonW (16700 in chips) 
+Seat 4: bucket77 (81150 in chips) 
+Seat 5: lola204 (22350 in chips) 
+Seat 6: BARDAR777 (22622 in chips) 
+Seat 7: AGrande (160978 in chips) 
+Seat 8: fishenbuddie (19356 in chips) 
+GSMaster: posts small blind 100
+viper8907: posts big blind 200
+*** HOLE CARDS ***
+Dealt to viper8907 [Ah Tc 6c 3s]
+TheDonW said, "Nh boo"
+TheDonW: calls 200
+bucket77: calls 200
+lola204: calls 200
+BARDAR777: calls 200
+AGrande: calls 200
+fishenbuddie: calls 200
+GSMaster: calls 100
+viper8907: checks 
+*** FLOP *** [5c 3h 7h]
+GSMaster said, "                                                ?"
+GSMaster: checks 
+viper8907: checks 
+TheDonW: bets 16500 and is all-in
+bucket77: calls 16500
+lola204: calls 16500
+BARDAR777: folds 
+AGrande: raises 35000 to 51500
+fishenbuddie: calls 19156 and is all-in
+GSMaster: folds 
+viper8907: folds 
+bucket77: calls 35000
+lola204: calls 5650 and is all-in
+*** TURN *** [5c 3h 7h] [Qc]
+TheDonW said, "???"
+bucket77: checks 
+AGrande: bets 29500
+bucket77: calls 29450 and is all-in
+*** RIVER *** [5c 3h 7h Qc] [5s]
+*** SHOW DOWN ***
+bucket77: shows [2c 4s 8s 5h] (HI: three of a kind, Fives; LO: 7,5,4,3,2)
+AGrande: shows [2d 8d 3d 4d] (HI: two pair, Fives and Threes; LO: 7,5,4,3,2)
+bucket77 collected 58800 from side pot-3 
+bucket77 collected 29400 from side pot-3 
+AGrande collected 29400 from side pot-3 
+lola204: mucks hand 
+lola204 is sitting out
+bucket77 collected 4491 from side pot-2 
+bucket77 collected 2246 from side pot-2 
+AGrande collected 2245 from side pot-2 
+fishenbuddie: shows [Qh Kc Qd 2h] (HI: a full house, Queens full of Fives)
+fishenbuddie collected 5312 from side pot-1 
+bucket77 collected 2656 from side pot-1 
+AGrande collected 2656 from side pot-1 
+TheDonW: shows [2s Jd Ks Ac] (HI: a pair of Fives; LO: 7,5,3,2,A)
+fishenbuddie collected 42050 from main pot
+TheDonW collected 42050 from main pot
+*** SUMMARY ***
+Total pot 221306 Main pot 84100. Side pot-1 10624. Side pot-2 8982. Side pot-3 117600. | Rake 0 
+Board [5c 3h 7h Qc 5s]
+Seat 1: GSMaster (small blind) folded on the Flop
+Seat 2: viper8907 (big blind) folded on the Flop
+Seat 3: TheDonW showed [2s Jd Ks Ac] and won (42050) with HI: a pair of Fives; LO: 7,5,3,2,A
+Seat 4: bucket77 showed [2c 4s 8s 5h] and won (97593) with HI: three of a kind, Fives; LO: 7,5,4,3,2
+Seat 5: lola204 mucked [6d 8c As Ad]
+Seat 6: BARDAR777 folded on the Flop
+Seat 7: AGrande showed [2d 8d 3d 4d] and won (34301) with HI: two pair, Fives and Threes; LO: 7,5,4,3,2
+Seat 8: fishenbuddie (button) showed [Qh Kc Qd 2h] and won (47362) with HI: a full house, Queens full of Fives
+
+
+
+PokerStars Game #2042442404:  Omaha Hi/Lo No Limit (100/200) - 2005/07/06 - 01:14:04 (ET)
+Table 'Subra III' (Play Money) Seat #1 is the button
+Seat 1: GSMaster (129677 in chips) 
+Seat 2: viper8907 (35387 in chips) 
+Seat 3: TheDonW (42050 in chips) 
+Seat 4: bucket77 (97593 in chips) 
+Seat 6: BARDAR777 (22422 in chips) 
+Seat 7: AGrande (114129 in chips) 
+Seat 8: fishenbuddie (47362 in chips) 
+viper8907: posts small blind 100
+TheDonW: posts big blind 200
+*** HOLE CARDS ***
+Dealt to viper8907 [6c 8c 7c 6s]
+GSMaster said, "confusius say"
+bucket77: calls 200
+BARDAR777: calls 200
+AGrande: calls 200
+AGrande said, "yeah yeah"
+fishenbuddie: calls 200
+GSMaster: calls 200
+viper8907: calls 100
+GSMaster said, "lol"
+TheDonW: checks 
+*** FLOP *** [Td 8d Kd]
+viper8907: checks 
+TheDonW: checks 
+bucket77: checks 
+BARDAR777: checks 
+AGrande: checks 
+fishenbuddie: folds 
+GSMaster: bets 1000
+viper8907: folds 
+TheDonW: folds 
+bucket77: folds 
+BARDAR777: calls 1000
+AGrande: calls 1000
+*** TURN *** [Td 8d Kd] [Tc]
+BARDAR777: checks 
+AGrande: checks 
+GSMaster: bets 2000
+BARDAR777: folds 
+AGrande: calls 2000
+*** RIVER *** [Td 8d Kd Tc] [Kc]
+AGrande: checks 
+GSMaster: checks 
+*** SHOW DOWN ***
+AGrande: shows [6h 5s 5h 8s] (HI: two pair, Kings and Eights)
+GSMaster: shows [9c 9d 7d 4c] (HI: a flush, King high)
+GSMaster collected 8400 from pot
+No low hand qualified
+*** SUMMARY ***
+Total pot 8400 | Rake 0 
+Board [Td 8d Kd Tc Kc]
+Seat 1: GSMaster (button) showed [9c 9d 7d 4c] and won (8400) with HI: a flush, King high
+Seat 2: viper8907 (small blind) folded on the Flop
+Seat 3: TheDonW (big blind) folded on the Flop
+Seat 4: bucket77 folded on the Flop
+Seat 6: BARDAR777 folded on the Turn
+Seat 7: AGrande showed [6h 5s 5h 8s] and lost with HI: two pair, Kings and Eights
+Seat 8: fishenbuddie folded on the Flop
+
+
+
+PokerStars Game #2042452856:  Omaha Hi/Lo No Limit (100/200) - 2005/07/06 - 01:15:42 (ET)
+Table 'Subra III' (Play Money) Seat #2 is the button
+Seat 1: GSMaster (134877 in chips) 
+Seat 2: viper8907 (35187 in chips) 
+Seat 3: TheDonW (41850 in chips) 
+Seat 4: bucket77 (97393 in chips) 
+Seat 6: BARDAR777 (21222 in chips) 
+Seat 7: AGrande (110929 in chips) 
+Seat 8: fishenbuddie (47162 in chips) 
+TheDonW: posts small blind 100
+bucket77: posts big blind 200
+*** HOLE CARDS ***
+Dealt to viper8907 [Kd Tc 7d Qc]
+BARDAR777: calls 200
+AGrande: calls 200
+fishenbuddie: calls 200
+GSMaster: calls 200
+viper8907: calls 200
+TheDonW: calls 100
+bucket77: checks 
+*** FLOP *** [3s Ac Ah]
+TheDonW: checks 
+bucket77: checks 
+BARDAR777: checks 
+AGrande: bets 1600
+fishenbuddie: folds 
+GSMaster: folds 
+viper8907: folds 
+TheDonW: folds 
+bucket77: folds 
+BARDAR777: folds 
+AGrande collected 1400 from pot
+AGrande: shows [9d 4h 5d 6h] (HI: a pair of Aces)
+*** SUMMARY ***
+Total pot 1400 | Rake 0 
+Board [3s Ac Ah]
+Seat 1: GSMaster folded on the Flop
+Seat 2: viper8907 (button) folded on the Flop
+Seat 3: TheDonW (small blind) folded on the Flop
+Seat 4: bucket77 (big blind) folded on the Flop
+Seat 6: BARDAR777 folded on the Flop
+Seat 7: AGrande collected (1400)
+Seat 8: fishenbuddie folded on the Flop
+
+
+
+PokerStars Game #2042457200:  Omaha Hi/Lo No Limit (100/200) - 2005/07/06 - 01:16:22 (ET)
+Table 'Subra III' (Play Money) Seat #3 is the button
+Seat 1: GSMaster (134677 in chips) 
+Seat 2: viper8907 (34987 in chips) 
+Seat 3: TheDonW (41650 in chips) 
+Seat 4: bucket77 (97193 in chips) 
+Seat 6: BARDAR777 (21022 in chips) 
+Seat 7: AGrande (112129 in chips) 
+Seat 8: fishenbuddie (46962 in chips) 
+bucket77: posts small blind 100
+BARDAR777: posts big blind 200
+*** HOLE CARDS ***
+Dealt to viper8907 [Th 4s 7c 9c]
+AGrande: calls 200
+fishenbuddie: calls 200
+GSMaster: calls 200
+viper8907 has timed out
+viper8907: folds 
+viper8907 is sitting out
+TheDonW: calls 200
+bucket77: calls 100
+BARDAR777: checks 
+*** FLOP *** [7s As Qs]
+bucket77: checks 
+BARDAR777: checks 
+AGrande: checks 
+fishenbuddie: checks 
+GSMaster: checks 
+TheDonW: bets 5400
+bucket77: folds 
+BARDAR777: calls 5400
+AGrande: folds 
+fishenbuddie: folds 
+GSMaster: folds 
+*** TURN *** [7s As Qs] [Jh]
+viper8907 has returned
+BARDAR777: checks 
+TheDonW: checks 
+*** RIVER *** [7s As Qs Jh] [Ah]
+BARDAR777: checks 
+lola204 said, "ok"
+lola204 has returned
+TheDonW: bets 21800
+BARDAR777: folds 
+TheDonW collected 12000 from pot
+TheDonW: shows [Ad 9d Ac 5d] (HI: four of a kind, Aces)
+*** SUMMARY ***
+Total pot 12000 | Rake 0 
+Board [7s As Qs Jh Ah]
+Seat 1: GSMaster folded on the Flop
+Seat 2: viper8907 folded before Flop (didn't bet)
+Seat 3: TheDonW (button) collected (12000)
+Seat 4: bucket77 (small blind) folded on the Flop
+Seat 6: BARDAR777 (big blind) folded on the River
+Seat 7: AGrande folded on the Flop
+Seat 8: fishenbuddie folded on the Flop
+
+
+
+PokerStars Game #2042472214:  Omaha Hi/Lo No Limit (100/200) - 2005/07/06 - 01:18:45 (ET)
+Table 'Subra III' (Play Money) Seat #4 is the button
+Seat 1: GSMaster (134477 in chips) 
+Seat 2: viper8907 (34987 in chips) 
+Seat 3: TheDonW (48050 in chips) 
+Seat 4: bucket77 (96993 in chips) 
+Seat 6: BARDAR777 (23422 in chips) 
+Seat 7: AGrande (111929 in chips) 
+Seat 8: fishenbuddie (46762 in chips) 
+lola204 will be allowed to play after the button
+BARDAR777: posts small blind 100
+AGrande: posts big blind 200
+*** HOLE CARDS ***
+Dealt to viper8907 [8c 6s 3c 3s]
+GSMaster said, "willing huh"
+fishenbuddie: calls 200
+GSMaster: folds 
+viper8907: calls 200
+TheDonW: calls 200
+bucket77: raises 200 to 400
+BARDAR777: folds 
+AGrande: calls 200
+fishenbuddie: calls 200
+viper8907: calls 200
+TheDonW: calls 200
+*** FLOP *** [5d Js 7h]
+AGrande: bets 626
+fishenbuddie: calls 626
+viper8907: calls 626
+TheDonW: folds 
+bucket77: calls 626
+*** TURN *** [5d Js 7h] [8h]
+AGrande: bets 1626
+fishenbuddie: calls 1626
+viper8907: calls 1626
+bucket77: calls 1626
+*** RIVER *** [5d Js 7h 8h] [9c]
+AGrande: bets 6626
+fishenbuddie: calls 6626
+viper8907: calls 6626
+bucket77: folds 
+*** SHOW DOWN ***
+AGrande: shows [Th 8d 5s Qd] (HI: a straight, Eight to Queen)
+fishenbuddie: shows [Tc 2s 4c 2d] (HI: a pair of Deuces; LO: 8,7,5,4,2)
+viper8907: mucks hand 
+viper8907 is sitting out
+AGrande collected 15493 from pot
+fishenbuddie collected 15493 from pot
+*** SUMMARY ***
+Total pot 30986 | Rake 0 
+Board [5d Js 7h 8h 9c]
+Seat 1: GSMaster folded before Flop (didn't bet)
+Seat 2: viper8907 mucked [8c 6s 3c 3s]
+Seat 3: TheDonW folded on the Flop
+Seat 4: bucket77 (button) folded on the River
+Seat 6: BARDAR777 (small blind) folded before Flop
+Seat 7: AGrande (big blind) showed [Th 8d 5s Qd] and won (15493) with HI: a straight, Eight to Queen
+Seat 8: fishenbuddie showed [Tc 2s 4c 2d] and won (15493) with HI: a pair of Deuces; LO: 8,7,5,4,2
+
+
+
