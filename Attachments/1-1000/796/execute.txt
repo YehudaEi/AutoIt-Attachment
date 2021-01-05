@@ -1,0 +1,105 @@
+Functionality
+--------------
+This adds the Execute function
+
+Based on sources
+----------------
+v3.0.102
+
+
+In script.h:
+-----------
+	...Just behind F_Eval...
+	AUT_RESULT	F_Execute(VectorVariant &vParams, Variant &vResult);
+
+
+
+In script.cpp:
+-------------
+	...Just behind F_Eval...
+	{"EXECUTE", &AutoIt_Script::F_Execute, 1, 2},
+
+
+In script_misc.cpp:
+------------------
+
+///////////////////////////////////////////////////////////////////////////////
+// Execute()
+// 2005-01-06
+///////////////////////////////////////////////////////////////////////////////
+
+AUT_RESULT AutoIt_Script::F_Execute(VectorVariant &vParams, Variant &vResult)
+{
+	Variant			vTemp;					// Result of expression evaluation
+	VectorToken		LineTokens;				// Vector of tokens from parameter
+	int				iPos;					// Position in Vector
+	bool			tmpScriptError;			// To remember the value of ScriptErrorsFatal
+	
+
+	// Suppress script errors if given by arguments
+
+	tmpScriptError = m_bScriptErrorsFatal;	// Remember option ScriptErrorsFatal
+
+	if (vParams.size() == 2)
+	{
+		if (vParams[1].nValue() != 0)  m_bScriptErrorsFatal = false;		// Script errors are temporarily not fatal
+	}
+
+
+	if ( AUT_FAILED( Lexer(vParams[0].szValue(), LineTokens) ) ) // First convert the string parameter into tokens
+	{
+		SetFuncErrorCode(1);	// Silent error 
+		vResult = "";			// Return empty string
+		return AUT_OK;			// Lexer failed, but we won't report it visually
+	}
+
+	// Now parse the newly created tokens
+
+	iPos = 1;	// Fake script line number, because it concerns the script inside the function arguments and not the real scriptline.
+
+	Parser(LineTokens, iPos);   // The Parser does not return any status, so no way to tell if it's successful
+
+	vResult = "";				// Always return an empty string
+
+	m_bScriptErrorsFatal = tmpScriptError;	// Restore option ScriptErrorsFatal
+
+	return AUT_OK;
+
+
+} // Execute()
+
+
+
+
+///// The debatable ScriptErrorsFatal option  :-)
+
+
+In script.h:
+-----------
+	....just after m_bRunErrorsFatal....
+
+	bool			m_bScriptErrorsFatal;		// Determines if "script" errors are fatal
+	...
+
+
+In script.cpp:
+-------------
+
+
+In function AutoIt_Script::AutoIt_Script()
+
+...placed this code just behind m_bRunErrorsFatal...
+m_bScriptErrorsFatal		= true;			// Script errors are fatal by default
+.....
+
+
+
+In function FatalError()
+
+	...placed this code just when function starts...
+
+	if (m_bScriptErrorsFatal == true)  // Only if script errors are fatal
+	{
+
+		...rest of function...
+	}
