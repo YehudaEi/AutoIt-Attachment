@@ -1,0 +1,68 @@
+Name: Modifications to Eval() function.
+Based on AutoIt Source code: 3.0.103
+Version: 2 (backwards compatible)
+
+In Script_misc.cpp:
+------------------
+
+///////////////////////////////////////////////////////////////////////////////
+// Eval()
+// 2005-01-16 Modified by S.A.Pechler; Added Expression evaluation.
+///////////////////////////////////////////////////////////////////////////////
+
+AUT_RESULT AutoIt_Script::F_Eval(VectorVariant &vParams, Variant &vResult)
+{
+	bool			bConst = false;
+	VectorToken		LineTokens;				// Vector of tokens from parameter
+	uint			iPos;					// Position in Vector
+
+ 	if (g_oVarTable.isDeclared(vParams[0].szValue()))
+ 	{
+ 		Variant *pvTemp;
+ 		g_oVarTable.GetRef(vParams[0].szValue(), &pvTemp, bConst);
+ 		vResult = *pvTemp;
+ 		return AUT_OK;
+ 	}
+ 	else
+ 	{
+		// Expression did not contain a declared variable. 
+		// Check if it contains a valid expression.
+
+		// NOTE: the lexer has changed not peeking into the cache when line=0 is given!
+		if ( AUT_FAILED(Lexer(0, vParams[0].szValue(), LineTokens) ) ) // First convert the string parameter into tokens
+		{
+			SetFuncErrorCode(1);	// Silent error 
+			vResult = "";
+			return AUT_OK;			// Lexer failed, but we won't report it visually
+		}
+
+		// Now parse the newly created tokens
+		// To stay compatible with the pre-3.0.103 eval() versions we must now check if somebody 
+		// passed an undefined variable name. Like: Eval("doesnotexist") 
+		// In this case the line has only two tokens, and that's of type 'userfunction' and TOK_END 
+		// (that's what the Lexer returns when he doesn't know what it is)
+
+		if (LineTokens.size() > 1)		// Be sure they didn't pass an empty string
+			if (!((LineTokens.size() == 2) && (LineTokens[0].m_nType == TOK_USERFUNCTION)))   // inverted boolean
+			{	
+				iPos = 0;  // First token position
+				if ( AUT_SUCCEEDED( Parser_EvaluateCondition(LineTokens, iPos, bConst) ) ) 
+				{
+					vResult = bConst;
+					return AUT_OK;
+				}
+			}
+ 	}
+	SetFuncErrorCode(1);		// Silent error
+	vResult = "";
+	return AUT_OK; 
+} // Eval()
+
+
+In script_lexer.cpp:
+-------------------
+
+	// 16-01-2005 SvenP: MODIFIED; if linenumber = 0 then don't check the cache (->eval function!)
+
+	if ((nCacheIdx >0 ) && (m_LexerCache[nCacheIdx].nLineNum == nLineNum))
+
