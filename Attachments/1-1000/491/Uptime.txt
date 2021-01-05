@@ -1,0 +1,10 @@
+\\BU001ASRET01 has been up for: 28 day(s), 2 hour(s), 19 minute(s), 34 second(s)
+UPTIME was unable to connect to host: BU001ASPDE01
+\\BU002ASRET01 has been up for: 28 day(s), 2 hour(s), 19 minute(s), 34 second(s)
+UPTIME was unable to connect to host: BU002ASPDE01
+\\BU003ASRET01 has been up for: 28 day(s), 2 hour(s), 19 minute(s), 34 second(s)
+UPTIME was unable to connect to host: BU003ASPDE01
+\\BU004ASRET01 has been up for: 28 day(s), 2 hour(s), 19 minute(s), 34 second(s)
+UPTIME was unable to connect to host: BU004ASPDE01
+\\BU005ASRET01 has been up for: 28 day(s), 2 hour(s), 19 minute(s), 34 second(s)
+UPTIME was unable to connect to host: BU005ASPDE01
