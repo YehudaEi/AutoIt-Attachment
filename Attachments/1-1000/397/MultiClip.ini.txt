@@ -1,0 +1,31 @@
+; MultiClip Saved Text for each number key on the number pad.
+
+[Number 0]
+text=
+
+[Number 1]
+text=
+
+[Number 2]
+text=
+
+[Number 3]
+text=
+
+[Number 4]
+text=
+
+[Number 5]
+text=
+
+[Number 6]
+text=
+
+[Number 7]
+text=
+
+[Number 8]
+text=
+
+[Number 9]
+text=
