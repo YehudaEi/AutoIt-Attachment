@@ -1,0 +1,12 @@
+[apps]
+virus=C:\Program Files\AVPersonal\AVGCTRL.EXE
+vexe=AVGCTRL.EXE
+fw=C:\Program Files\Sygate\SPF\Smc.exe" -start
+fwexe=SMC.EXE
+popup=c:\Program Files\killad\killad.exe
+fx=c:\Program Files\Mozilla Firefox\firefox.exe
+ie=C:\Program Files\Internet Explorer\IEXPLORE.EXE
+ymess=C:\Program Files\Yahoo!\Messenger\YPager.exe
+[connectoid]
+first=rundll rnaui.dll,RnaDial Alltel
+second=rundll rnaui.dll,RnaDial Earthlink
