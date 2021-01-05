@@ -1,0 +1,17 @@
+' script to demo shell.application copy, jw 07May00
+Option Explicit
+Dim oSHApp : Set oSHApp = CreateObject("Shell.Application")
+Dim sSrc, sDest  ' as string(s)
+Const FOF_SIMPLEPROGRESS = &H100
+
+  sSrc = "c:\windows\temp\*.*"
+  sDest = "A:\"
+
+  ' use ms Animated Copy Applet, showing file names and progressbar...
+  oSHApp.Namespace(sDest).CopyHere sSrc
+
+  ' use ms Animated Copy Applet, showing progressbar (but no names)...
+  oSHApp.Namespace(sDest).CopyHere sSrc, FOF_SIMPLEPROGRESS
+
+Set oSHApp = nothing  ' clean up
+WScript.Quit
