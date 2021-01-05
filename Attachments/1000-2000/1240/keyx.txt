@@ -1,0 +1,280 @@
+KeyX 
+Trey Hoover
+
+*Jump Drive is required
+
+Basic Objective:
+Lock your PC When you are not there. If jump drive not plugged in, marquee screensaver with custom settings appears and mouse and keyboard are blocked. You cannot access anything on the computer while this is in effect. To unlock the computer again, simply plug in your jump drive.
+*Windows XP Strongly Recommended.
+
+How to Use:
+When first running the script, an input box will appear asking you for the path to a file in your jump drive. The file most likely does not exist yet but will after you hit “OK”. The file path will look something like this: F:\pass.key, the filename is pass.key. Make sure your jump drive is plugged in when doing this the first time. After you have selected the path to your hardware, the file pass.key will be copied to your jump drive. I txt file will be written to your System Directory (“C:\WINDOWS\System32”) in a folder called Keyx. This .txt file will store your path so you do not need to be prompted every time you run the program. I suggest not tampering with this file, if you wish to change the file path use a hotkey to bring up the input box again (See Hotkeys). Now all you have to do is plug on unplug your jump drive to toggle between locked and unlocked mode.
+
+Order of events:
+1.	Makes sure the script is only run one time
+2.	If not XP, warns user that program may not function correctly
+3.	Reads the stored file path and saves it to a variable (Default: F:\Pass.Key)
+4.	If file opened from jump drive then file copy to desktop (otherwise will not function correctly)
+5.	Installs and moves Pass.Key onto jump drive
+6.	Again for check, Reads the stored file path and saves it to a variable (Default: F:\Pass.Key)
+7.	Checks to make sure stored file path exists/ isn’t blank
+8.	Again for check, If file opened from jump drive then file copy to desktop (otherwise will not function correctly)
+9.	Sets View hotkey
+10. Sets Master hotkey
+11. Sets File Path Edit hotkey
+12. Reads saved file path to determine drive letter
+13. Checks to make sure stored file path exists/ isn’t blank
+14. Stores old marquee settings to variables
+15. Predefines values to design locked screen using Marquee screensaver
+16. Writes new values
+17. Again for check, Reads the stored file path and saves it to a variable (Default: F:\Pass.Key)
+18. Sets file path file attributes to be read only/hidden
+19. Calls unlocked function
+20. Loop constantly checks if hardware plugged in, if not, goes into locked loop.
+21. Same as above only inverted, locked state checking to see if it should unlock.
+22. Loop state blocks input, makes sure screensaver is running, and disables basic escape key
+23. On unlocking hides auto play window
+24. If exited (using hotkey), will restore marquee settings, remove read only and hidden settings on file path file, and then exit
+
+Hotkeys:
+Exit (only works in unlocked mode for security reasons): HOME
+Master Exit (hold when hitting alt ctrl delete for escape when locked): F11
+Change File Path: Control Alt e
+View File Path: Alt v
+
+
+Code:
+
+$g_szVersion = "keyx"
+If WinExists($g_szVersion) Then Exit
+AutoItWinSetTitle($g_szVersion)
+DirCreate(@SystemDir & "\keyx")
+
+If not @OSVersion = "WIN_XP" Then
+   MsgBox(4096, "", "KeyX may require Windows XP to function properly." & @CRLF & "Sorry for the inconvenience.")
+
+;if origionally changed (started blank) updated here
+$pass = FileReadLine(@SystemDir & "\keyx\filekey.txt", 1)
+;pass = F:\pass.key
+;if origionally changed (started blank) update here
+
+If $pass = "" Then Input()
+If not FileExists(@SystemDir & "\keyx\filekey.txt") Then Input()
+$drive = FileRead(@SystemDir & "\keyx\filekey.txt", 2)
+
+If $drive = @ScriptDir or "" Then
+FileMove(@ScriptFullPath, @DesktopCommonDir, 1)
+Exit
+endif
+
+FileInstall("F:\pass.key", "C:\pass.key")
+FileMove("C:\pass.key", $drive)
+
+;if origionally changed (started blank) updated here
+$pass = FileReadLine(@SystemDir & "\keyx\filekey.txt", 1)
+;pass = F:\pass.key
+;if origionally changed (started blank) update here
+
+If $pass = "" Then Input()
+If not FileExists(@SystemDir & "\keyx\filekey.txt") Then Input()
+
+If $drive = @ScriptDir or "" Then
+FileMove(@ScriptFullPath, @DesktopCommonDir, 1)
+Exit
+endif
+
+HotKeySet("!v", "view")
+
+;master loophole hotkey
+HotkeySet("{f11}", "myexit")
+;master loophole hotkey
+
+;change hardware config
+HotKeySet("^!e", "input")
+;change hardware config
+
+;read file on hardware to authenticate
+$pass = FileReadLine(@SystemDir & "\keyx\filekey.txt", 1)
+;read file on hardware to authenticate
+
+$drive = FileRead(@SystemDir & "\keyx\filekey.txt", 2)
+
+If $pass = "" Then Input()
+If not FileExists(@SystemDir & "\keyx\filekey.txt") Then Input()
+
+;origional settings
+$Font2 = RegRead("HKEY_CURRENT_USER\Control Panel\Screen Saver.Marquee", "Font")
+$Mode2 = RegRead("HKEY_CURRENT_USER\Control Panel\Screen Saver.Marquee", "Mode")
+$Size2 = RegRead("HKEY_CURRENT_USER\Control Panel\Screen Saver.Marquee", "Size")
+$Speed2 = RegRead("HKEY_CURRENT_USER\Control Panel\Screen Saver.Marquee", "Speed")
+$Text2 = RegRead("HKEY_CURRENT_USER\Control Panel\Screen Saver.Marquee", "Text")
+$BackgroundColor2 = RegRead("HKEY_CURRENT_USER\Control Panel\Screen Saver.Marquee", "BackgroundColor")
+$TextColor2 = RegRead("HKEY_CURRENT_USER\Control Panel\Screen Saver.Marquee", "TextColor")
+$Attributes2 = RegRead("HKEY_CURRENT_USER\Control Panel\Screen Saver.Marquee", "Attributes")
+;origional settings
+
+;new settings
+$BackgroundColor = "0 0 0" ;black
+$Font = "Comic Sans MS"
+$Mode = "1"
+$Size = "48"
+$Speed = "30"
+$Text = "Computer is Locked, please insert jump drive"
+$TextColor = "255 0 0" ;red
+$attributes = "00000" ;centered, random is 00010,
+;new settings
+
+;config to new settings
+RegWrite("HKEY_CURRENT_USER\Control Panel\Screen Saver.Marquee", "BackgroundColor", "REG_SZ", $BackgroundColor)
+RegWrite("HKEY_CURRENT_USER\Control Panel\Screen Saver.Marquee", "Font", "REG_SZ", $Font)
+RegWrite("HKEY_CURRENT_USER\Control Panel\Screen Saver.Marquee", "Mode", "REG_SZ", $Mode)
+RegWrite("HKEY_CURRENT_USER\Control Panel\Screen Saver.Marquee", "Size", "REG_SZ", $Size)
+RegWrite("HKEY_CURRENT_USER\Control Panel\Screen Saver.Marquee", "Speed", "REG_SZ", $Speed)
+RegWrite("HKEY_CURRENT_USER\Control Panel\Screen Saver.Marquee", "Text", "REG_SZ", $Text)
+RegWrite("HKEY_CURRENT_USER\Control Panel\Screen Saver.Marquee", "TextColor", "REG_SZ", $TextColor)
+RegWrite("HKEY_CURRENT_USER\Control Panel\Screen Saver.Marquee", "Attributes", "REG_SZ", $Attributes)
+;config to new settings
+
+;if origionally changed (started blank) updated here
+$pass = FileReadLine(@SystemDir & "\keyx\filekey.txt", 1)
+;pass = F:\pass.key
+;if origionally changed (started blank) update here
+
+FileSetAttrib ( @SystemDir & "\keyx\filekey.txt", "+R+H")
+
+state2()
+
+func lock()
+
+Sleep(400)
+
+
+Sleep(100)
+
+If not ProcessExists("ssmarque.scr") Then Run(@systemdir & "\ssmarque.scr /s")
+
+Sleep(500)
+
+;choose locked or unlocked
+
+State1()
+
+endfunc
+
+func unlock()
+
+If $pass = "" Then Input()
+If not FileExists(@SystemDir & "\keyx\filekey.txt") Then Input()
+
+HotKeySet("{HOME}", "myexit")
+If WinExists("Autoplay", "") Then
+WinKill("Autoplay", "")
+WinClose("Autoplay", "")
+WinSetState("Autoplay", "", @Sw_Hide)
+WinSetTrans("Autoplay", "", 0)
+endif
+
+BlockInput(0)
+ProcessClose("ssmarque.scr")
+
+If $pass = "" Then Input()
+If not FileExists(@SystemDir & "\keyx\filekey.txt") Then Input()
+
+If not FileExists($pass) Then
+If not ProcessExists ("ssmarque.scr") Then lock()
+endif
+
+Sleep(400)
+
+state2()
+
+endfunc
+
+BlockInput(0)
+ProcessClose("ssmarque.scr")
+
+func myexit()
+;config to old settings
+RegWrite("HKEY_CURRENT_USER\Control Panel\Screen Saver.Marquee", "BackgroundColor", "REG_SZ", $BackgroundColor2)
+RegWrite("HKEY_CURRENT_USER\Control Panel\Screen Saver.Marquee", "Font", "REG_SZ", $Font2)
+RegWrite("HKEY_CURRENT_USER\Control Panel\Screen Saver.Marquee", "Mode", "REG_SZ", $Mode2)
+RegWrite("HKEY_CURRENT_USER\Control Panel\Screen Saver.Marquee", "Size", "REG_SZ", $Size2)
+RegWrite("HKEY_CURRENT_USER\Control Panel\Screen Saver.Marquee", "Speed", "REG_SZ", $Speed2)
+RegWrite("HKEY_CURRENT_USER\Control Panel\Screen Saver.Marquee", "Text", "REG_SZ", $Text2)
+RegWrite("HKEY_CURRENT_USER\Control Panel\Screen Saver.Marquee", "TextColor", "REG_SZ", $TextColor2)
+RegWrite("HKEY_CURRENT_USER\Control Panel\Screen Saver.Marquee", "Attributes", "REG_SZ", $Attributes2)
+;config to old settings
+
+;sometimes freezes this
+WinKill("Display Properties")
+;sometimes freezes this
+
+FileSetAttrib ( @SystemDir & "\keyx\filekey.txt", "-R-H")
+
+exit
+endfunc
+
+;config hardware
+Func Input()
+$box1 = InputBox("Where is pass.key located?", "Where is pass.key?", "F:\pass.key")
+FileDelete(@SystemDir & "\keyx\filekey.txt")
+If FileExists(@SystemDir & "\keyx\filekey.txt") Then
+InputBox("Where is pass.key located?", "Where is pass.key?", "F:\pass.key")
+endif
+If FileExists(@SystemDir & "\keyx\filekey.txt") and $pass = "" Then
+InputBox("Where is pass.key located?", "", "F:\pass.key")
+endif
+If $box1 = "" Then input()
+
+FileWrite(@SystemDir & "\keyx\filekey.txt", $box1)
+
+FileSetAttrib ( @SystemDir & "\keyx\filekey.txt", "+R+H")
+
+endfunc
+;config hardware
+
+;exit hotkey not work during brief period after ^!{DEL} (security protection)
+func null()
+endfunc
+;exit hotkey not work during brief period after ^!{DEL} (security protection)
+
+func view()
+Run("explorer " & @SystemDir & "\keyx")
+endfunc
+
+func state1()
+While 1
+;user known hotkey (do not move)
+HotKeySet("{HOME}", "null")
+;user known hotkey (do not move)
+BlockInput(1)
+;choose locked or unlocked
+If not FileExists($pass) Then
+Sleep(10)
+Else
+unlock()
+endif
+;choose locked or unlocked
+WEnd
+
+Sleep(400)
+
+endfunc
+
+func state2()
+While 1
+;choose locked or unlocked
+If not FileExists($pass) Then
+lock()
+Else
+Sleep(10)
+endif
+;choose locked or unlocked
+
+WinSetTrans("Auto", "", 0)
+
+WEnd
+
+Sleep(400)
+
+endfunc
