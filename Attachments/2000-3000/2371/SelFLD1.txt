@@ -1,0 +1,148 @@
+  '//Multiselect files and Folders and save selection to file
+
+DIM FileList : FileList = "C:\FileList.txt"         '//Name of FileList file
+DIM WithFolder : WithFolder = 1                  '//1=List with Folders; 0=Only files
+Set WSHShell = WScript.CreateObject("WScript.Shell")
+Set FSO = CreateObject("Scripting.FileSystemObject")
+
+set oIE = WScript.CreateObject("InternetExplorer.Application", "IE_")
+with oIE
+ .navigate("about:<title>&#160;Select files"&String(99,chr(160))&"</title>")
+ .width = 320 : .height = 520 : .Toolbar=0 : .Statusbar=0 : .visible = true 
+  while .ReadyState<>4 : WScript.Sleep 100 : Wend
+End With
+
+with oIE.document
+   view= "<body><h4><p align=""center"">Multiselect Folder and Files</p></h4>"_
+    &"<p><input ID=""FoNM"" type=""text"" style=""width:270px; font-size:8pt"" name=""file"" value=""C:\"">" _
+    &"<br><button ID=""ButDirDown"" title=""Go one Folder up""><<</button>" _
+    &"<button ID=""ButUpdate"">Update</button>" _
+    &"<button ID=""ButDirUp"" title=""Browse for a Folder"">>></button>" _
+    &"<br><button ID=""ButSortName"" style=""font-size:8pt"" title=""Sort Files by Name"">Name</button>" _
+    &"<button ID=""ButSortDate"" style=""font-size:8pt"" >Date</button>" _
+    & "<select id=""FileBox"" style=""width:270px; height = 300px; font-size:8pt""multiple></select>" _
+    &"<p align=""center""><button ID=""ButSave"" title=""Save Selection to new FileList file"">&nbsp;Save&nbsp;</BUTTON>&nbsp;&nbsp;"_
+    &"<button ID=""ButAppend"" title=""Append selection to existing FileList file"">Append</BUTTON>&nbsp;&nbsp;"_
+    &"<button ID=""ButViewFL"">View FL</BUTTON>&nbsp;&nbsp;"_
+    &"<button ID=""ButQuit"">Quit</BUTTON></p></body>"
+  .body.bgcolor="#C0C0C0"  :  .body.scroll="no" : .body.innerHTML = view
+  set oBFF = .getElementByID("FoNM")
+  set oFileBox = .getElementById("FileBox") '//->Selection mit ID FileBoxID
+  Update
+  .all.ButDirUp.OnClick = GetRef("BrowseFF")
+  .all.ButDirDown.OnClick = GetRef("ButDirDown")   :  .all.ButUpdate.OnClick = GetRef("Update")
+  .all.ButSortName.OnClick = GetRef("SortName")   :  .all.ButSortDate.OnClick = GetRef("SortDate")
+  .all.FileBox.OnDblClick = GetRef("FileBox_onDblClick")
+  .all.ButSave.OnClick = GetRef("ButSave")
+  .all.ButAppend.OnClick = GetRef("ButAppend") :   .all.ButViewFL.OnClick = GetRef("ButViewFL")
+  .all.ButQuit.OnClick = GetRef("ButQuit")
+End With
+do : WScript.Sleep 1000 : loop until sEvent = "Quit"
+
+sub BrowseFF() : x=oBFF.value : oBFF.value = Selfolder : if oBFF.value="" then : oBFF.value=x : else : Update : end if : end sub
+function SelFolder
+  dim oSHA, oBFF, oItem  'as object
+  SET oSHA = CreateObject("Shell.Application")
+  SET oBFF =oSHA.BrowseForFolder(&H0,"Browse for Folder",&H1)
+  if Instr(typename(oBFF),"Folder")<> 1 then Exit function
+  for each oItem in oBFF.ParentFolder.Items
+    if oItem.Name = oBFF.Title then SelFolder = oItem.Path : exit function
+  next
+  SelFolder = oBFF.title 'If no FSO-Item selected
+end function
+
+Sub Update()
+      If FSO.FolderExists(oBFF.value) = False Then MsgBox("Folder don't exit") : Exit Sub
+      oFileBox.length = 0
+      Set oFol = FSO.GetFolder(oBFF.Value)
+      if WithFolder = 1 then
+         Redim arFolp(oFol.SubFolders.Count -1) : n = -1
+          For Each xSubFol in oFol.SubFolders : n=n+1 : arFolp(n) = xSubFol.path : Next
+          call Sort(arFolp, "FNA")
+          For Each xFolder in arFolp
+            sFol = "<" & Right(xFolder, Len(xFolder) - InStrRev(xFolder,"\")) &">"
+           Set Opt = oIE.document.CreateElement("option") 
+           Opt.text = sFol  :  Opt.value = xFolder : oFileBox.add Opt
+         next
+       end if
+      Redim arFil(oFol.Files.Count -1) : n = -1
+      if FSORT= "" then FSORT= "FNA"
+      For Each xFile in oFol.Files : n=n+1
+         if left(FSort,2) = "FN" then arFil(n) = ";" & xFile.Name &";" &xFile.path
+         if left(FSort,2) = "FD" then
+             x  = xFile.DateLastModified : y = mid(x,7,4) & mid(x,3,4) & mid(x,1,2) & mid(x,11,9) & " "
+            arFil(n) = y &";" & xFile.Name &";" &xFile.path
+            end if
+       next
+      Call Sort(arFil, FSort)
+      For Each xFile in arFil
+      if xFile <>"" then
+         x  = split(xFile,";") : sFil = x(1) : vFil = x(2)
+         Set Opt = oIE.document.CreateElement("option") 
+         Opt.text = sFil  :  Opt.value = vFil : oFileBox.add Opt
+       end if
+      Next
+END Sub
+
+Sub FileBox_onDblclick()
+If oFileBox.value = "0" Then Exit Sub
+  If FSO.FolderExists(oFileBox.value) Then
+    oBFF.value = oFileBox.value  :  update()
+   else
+     WshShell.run oFileBox.value
+end if
+End Sub
+
+Function Sort(arX, Fsort)
+For n = 0 to ubound(arX) -1
+  For m = n+1 to ubound(arX)
+    if right(FSort,1) = "A" then if lcase(arX(m)) < lcase(arX(n)) then :  temp = arX(m) : arX(m) = arX(n) : arX(n) = temp : end if
+    if right(FSort,1) = "D" then if lcase(arX(m)) > lcase(arX(n)) then :  temp = arX(m) : arX(m) = arX(n) : arX(n) = temp : end if
+  Next
+Next
+End function
+
+Dim FSort  : FSort = "FNA"
+Sub SortName()
+   if FSort = "FNA" then Fsort = "FND" :  Update : exit Sub
+   if FSort = "FND" then Fsort = "FNA" :  Update : exit Sub
+   FSort = "FNA" : Update()
+ End Sub
+
+Sub SortDate()
+   if FSort = "FDD" then Fsort = "FDA" :  Update() : exit Sub
+   if FSort = "FDA" then Fsort = "FDD" :  Update() : exit Sub
+   FSort = "FDD" : Update
+ End Sub
+
+Sub ButDirDown
+  xTxt = oBFF.value
+  If Len(xTxt) < 4 Then : BrowseFF: exit Sub :end if
+  if Right(xTxt, 1)="\" Then xTxt = Left(xTxt, Len(xTxt)-1)
+  xDirup = Left(xTxt, InStrRev(xTxt, "\"))
+  oBFF.value = xDirup  :  Update()
+end Sub
+
+Sub ButSave() :  WriteSel(2) : end sub
+Sub ButAppend() :  WriteSel(8) : end sub
+Sub ButViewFL() : WshShell.Run(FileList) : end sub
+
+function getSelection(xSelected)
+  set cFileBoxOpts = oFileBox.options
+   for i=0 to cFileBoxOpts.length-1
+      if cFileBoxOpts(i).selected = true then
+        xSelected = xSelected & cFileBoxOpts(i).value & vbcr&vblf
+      end if
+   next
+end function
+
+Sub WriteSel(vExp)
+    set Datei = fso.OpenTextFile(FileList, vExp, true)
+     call getSelection(xSelected)
+     datei.Write xSelected
+     datei.close
+End sub
+
+Sub ButQuit : sEvent="Quit" : MsgBox "You clicked Cancel" : oIE.quit : WScript.Quit :End SUB
+sub IE_OnQuit : Wscript.Quit : End Sub
+
