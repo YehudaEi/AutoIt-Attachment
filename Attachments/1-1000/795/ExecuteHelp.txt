@@ -1,0 +1,37 @@
+###Function###
+Execute
+
+###Description###
+Executes an AutoIt statement given in the expression.
+
+###Syntax###
+Execute ( expression, errorhandling )
+
+
+###Parameters###
+@@ParamTable@@
+expression
+	string representing the statement to be executed.
+errorhandling
+	integer representing how to handle errors in the expression.
+	0 = Stop script and display error
+	1 = Continue script and set @error to 1
+@@End@@
+
+
+###ReturnValue###
+@@ReturnTable@@
+Success:	Returns null string with @error set to 0.
+Failure:	Returns null string with @error set to 1.
+@@End@@
+
+
+###Remarks###
+The expression may not contain multiple lines.
+
+###Related###
+Eval
+
+
+###Example###
+@@IncludeExample@@
