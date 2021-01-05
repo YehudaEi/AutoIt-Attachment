@@ -1,0 +1,17 @@
+; vbs shell.application demo script converted to autoIt, jw 05Oct05
+AutoItSetOption("MustDeclareVars", 1)  ; 1 => Option Explicit
+Dim $oSHApp  ; as object
+$oSHApp = ObjCreate("Shell.Application")  ; create the object...
+Dim $sSrc, $sDest  ; as string(s)
+Const $FOF_SIMPLEPROGRESS = 0x100
+
+  $sSrc = "c:\windows\temp\*.*"
+  $sDest = "A:\"
+
+  ; use ms Animated Copy Applet, showing file names and progressbar...
+  ;$oSHApp.Namespace($sDest).CopyHere($sSrc)
+
+  ; use ms Animated Copy Applet, showing progressbar (but no names)...
+  $oSHApp.Namespace($sDest).CopyHere($sSrc, $FOF_SIMPLEPROGRESS)
+
+Exit  ; not needed(?), but re-assuring...
