@@ -1,0 +1,449 @@
+VERSION 1.0 CLASS
+BEGIN
+  MultiUse = -1  'True
+  Persistable = 0  'NotPersistable
+  DataBindingBehavior = 0  'vbNone
+  DataSourceBehavior  = 0  'vbNone
+  MTSTransactionMode  = 0  'NotAnMTSObject
+END
+Attribute VB_Name = "CompressedFolder"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = False
+Attribute VB_Exposed = False
+'---------------------------------------------------------------------------------------
+'
+' CompressedFolder (CompressedFolder.cls)
+'
+'---------------------------------------------------------------------------------------
+'
+' Author: Eduardo A. Morcillo
+' E-Mail: emorcillo@mvps.org
+' Web Page: http://www.mvps.org/emorcillo
+'
+' Distribution: You can freely use this code in your own applications but you
+'               can't publish this code in a web site, online service, or any
+'               other media, without my express permission.
+'
+' Usage: at your own risk.
+'
+' Tested on: Windows XP Pro + VB6
+'
+' History:
+'           10/08/2003 - This code was released
+'
+'---------------------------------------------------------------------------------------
+Option Explicit
+
+Private m_oStorage As IStorage
+
+Enum FileInfo
+   Filename
+   FileType
+   PackedSize
+   HasAPassword
+   Method
+   Size
+   Ratio
+   Date
+   CRC32
+End Enum
+
+'---------------------------------------------------------------------------------------
+' Procedure : CloseZip
+' Purpose   : Saves changes and closes the file
+'---------------------------------------------------------------------------------------
+'
+Public Sub CloseZip()
+   
+   m_oStorage.Commit
+   Set m_oStorage = Nothing
+   
+End Sub
+
+Public Sub CompressFile( _
+   ByVal Filename As String)
+Dim oDT As IDropTarget
+Dim oDO As IDataObject
+Dim oSF As IShellFolder
+Dim tIID_IDropTarget As UUID
+Dim lPtr As Long
+
+   ' The storage object doesn't seems to work :(
+   ' To compress the file we will use the
+   ' IDropTarget interface to simulate a drag
+   ' and drop operation
+   
+   ' Initialize IDs
+   CLSIDFromString "{00000122-0000-0000-C000-000000000046}", tIID_IDropTarget
+   
+   ' Get the folder IDropTarget interface
+   Set oSF = m_oStorage
+   lPtr = oSF.CreateViewObject(0, tIID_IDropTarget)
+   MoveMemory oDT, lPtr, 4&
+   
+   ' Get the file IDataObject interface
+   Set oDO = getFileDataObject(Filename)
+   
+   ' Simulate a drag-drop operation
+   oDT.DragEnter oDO, vbKeyLButton, 0, 0, DROPEFFECT_COPY
+   oDT.Drop oDO, vbKeyLButton, 0, 0, DROPEFFECT_COPY
+
+End Sub
+
+'---------------------------------------------------------------------------------------
+' Procedure : CreateZip
+' Purpose   : Creates a .zip file
+'---------------------------------------------------------------------------------------
+'
+Public Sub CreateZip( _
+   ByVal Filename As String)
+Dim lFF As Long
+Dim abData(0 To 21) As Byte
+
+   On Error Resume Next
+   
+   ' Delete file if exists
+   Kill Filename
+   
+   On Error GoTo 0
+   
+   ' Write an empty .zip file
+   lFF = FreeFile
+   Open Filename For Binary As lFF
+   abData(0) = &H50
+   abData(1) = &H4B
+   abData(2) = &H5
+   abData(3) = &H6
+   Put lFF, , abData
+   Close lFF
+   
+   ' Open the zip
+   OpenZip Filename
+   
+End Sub
+
+'---------------------------------------------------------------------------------------
+' Procedure : DeleteFile
+' Purpose   : Removes a file from the .zip file
+'---------------------------------------------------------------------------------------
+'
+Public Sub DeleteFile(ByVal Name As String)
+
+   m_oStorage.DestroyElement Name
+   
+End Sub
+
+'---------------------------------------------------------------------------------------
+' Procedure : ExtractFile
+' Purpose   : Extracts a file from the zip
+'---------------------------------------------------------------------------------------
+'
+Public Sub ExtractFile( _
+   ByVal Name As String, _
+   ByVal DestFolder As String)
+Dim oStream As IStream
+Dim tStat As STATSTG
+Dim abData() As Byte
+Dim lFF As Long
+
+   ' Open the stream
+   Set oStream = m_oStorage.OpenStream( _
+      Name, 0, _
+      STGM_READ Or STGM_SHARE_EXCLUSIVE)
+   
+   ' Get the stream info
+   oStream.Stat tStat, STATFLAG_DEFAULT
+   
+   ' Initialize the array
+   ReDim abData(0 To tStat.cbSize * 10000 - 1)
+         
+   ' Read the data from the stream
+   oStream.Read abData(0), tStat.cbSize * 10000
+         
+   ' Close the stream
+   Set oStream = Nothing
+   
+   ' Save the data to a file
+   lFF = FreeFile()
+   Open DestFolder & "\" & Name For Binary As lFF
+   Put lFF, , abData
+   Close lFF
+         
+End Sub
+
+'---------------------------------------------------------------------------------------
+' Procedure : GetFileInfo
+' Purpose   : Returns file information
+'---------------------------------------------------------------------------------------
+'
+Public Function GetFileInfo( _
+   ByVal Filename As String, _
+   ByVal Index As FileInfo) As String
+Dim oSF As IShellFolder2
+Dim tSD As SHELLDETAILS
+Dim lPidl As Long
+
+   If Index < 0 Or Index > CRC32 Then Err.Raise 5
+   
+   ' Get the IShellFolder2 interface
+   Set oSF = m_oStorage
+   
+   ' Get the file PIDL
+   oSF.ParseDisplayName 0, 0, StrPtr(Filename), 0, lPidl, 0
+   
+   ' Get the column info
+   oSF.GetDetailsOf lPidl, Index, tSD
+   
+   ' Convert the info to string
+   GetFileInfo = SysAllocString(StrRetToStr(VarPtr(tSD.Str), lPidl))
+   
+   ' Release the PIDL
+   CoTaskMemFree lPidl
+   
+End Function
+
+'---------------------------------------------------------------------------------------
+' Procedure : GetFiles
+' Purpose   : Enumerates files contained in this folder
+'---------------------------------------------------------------------------------------
+'
+Public Function GetFiles() As String()
+Dim oEnum As IEnumSTATSTG
+Dim tStat As STATSTG
+Dim asFiles() As String
+Dim lIdx As Long
+
+   Set oEnum = m_oStorage.EnumElements
+   
+   Do While oEnum.Next(1, tStat) = S_OK
+      
+      ' Files are stored as streams
+      If tStat.Type = STGTY_STREAM Then
+      
+         ' Resize the array
+         ReDim Preserve asFiles(0 To lIdx)
+         
+         ' Get the file name
+         asFiles(lIdx) = SysAllocString(tStat.pwcsName)
+         
+         ' Release the pointer
+         CoTaskMemFree tStat.pwcsName
+         
+         ' Increment the index
+         lIdx = lIdx + 1
+         
+      End If
+      
+   Loop
+
+   ' Return the array
+   GetFiles = asFiles
+
+End Function
+
+'---------------------------------------------------------------------------------------
+' Procedure : GetFolders
+' Purpose   : Enumerates folders contained in this folder
+'---------------------------------------------------------------------------------------
+'
+Public Function GetFolders() As String()
+Dim oEnum As IEnumSTATSTG
+Dim tStat As STATSTG
+Dim asFolders() As String
+Dim lIdx As Long
+
+   Set oEnum = m_oStorage.EnumElements
+   
+   Do While oEnum.Next(1, tStat) = S_OK
+      
+      ' Folders are stored as storages
+      If tStat.Type = STGTY_STORAGE Then
+      
+         ' Resize the array
+         ReDim Preserve asFolders(0 To lIdx)
+         
+         ' Get the file name
+         asFolders(lIdx) = SysAllocString(tStat.pwcsName)
+         
+         ' Release the pointer
+         CoTaskMemFree tStat.pwcsName
+         
+         ' Increment the index
+         lIdx = lIdx + 1
+         
+      End If
+      
+   Loop
+
+   ' Return the array
+   GetFolders = asFolders
+   
+End Function
+
+'---------------------------------------------------------------------------------------
+' Procedure : OpenSubFolder
+' Purpose   : Opens a subfolder
+'---------------------------------------------------------------------------------------
+'
+Public Function OpenSubFolder( _
+   ByVal Name As String) As CompressedFolder
+Dim oFolder As IStorage
+
+   ' Open the storage
+   Set oFolder = m_oStorage.OpenStorage( _
+      Name, 0, _
+      STGM_READWRITE Or STGM_SHARE_EXCLUSIVE)
+   
+   ' Create a new CompressedFolder object
+   Set OpenSubFolder = New CompressedFolder
+   
+   ' Initialize the object
+   OpenSubFolder.setStorage oFolder
+
+End Function
+
+'---------------------------------------------------------------------------------------
+' Procedure : OpenZip
+' Purpose   : Opens a zip file
+'---------------------------------------------------------------------------------------
+'
+Public Sub OpenZip(ByVal Filename As String)
+Dim oPF As IPersistFile
+
+   Set m_oStorage = Nothing
+   
+   ' Create the CompressedFolder object
+   Set m_oStorage = CreateObject("CompressedFolder")
+   
+   ' Get the IPersistFile interface
+   ' and load the zip file
+   Set oPF = m_oStorage
+   oPF.Load Filename, STGM_READWRITE Or STGM_SHARE_EXCLUSIVE
+   
+End Sub
+
+'---------------------------------------------------------------------------------------
+' Procedure : ShowAddPassword
+' Purpose   : Shows the add password dialog
+'---------------------------------------------------------------------------------------
+'
+Public Sub ShowAddPassword()
+Dim oCtxMenu As IContextMenu
+Dim tICI As CMINVOKECOMMANDINFO
+
+   Set oCtxMenu = getContextMenu
+   
+   tICI.cbSize = Len(tICI)
+   tICI.lpVerb = 1
+   oCtxMenu.InvokeCommand tICI
+   
+End Sub
+
+'---------------------------------------------------------------------------------------
+' Procedure : ShowExtractAll
+' Purpose   : Shows the extract all dialog
+'---------------------------------------------------------------------------------------
+'
+Public Sub ShowExtractAll()
+Dim oCtxMenu As IContextMenu
+Dim tICI As CMINVOKECOMMANDINFO
+
+   Set oCtxMenu = getContextMenu
+   
+   tICI.cbSize = Len(tICI)
+   tICI.lpVerb = 0
+   oCtxMenu.InvokeCommand tICI
+   
+End Sub
+
+'---------------------------------------------------------------------------------------
+' Procedure : getContextMenu
+' Purpose   : Returns the folder context menu handler
+'---------------------------------------------------------------------------------------
+'
+Private Function getContextMenu() As IContextMenu
+Dim oSF As IShellFolder
+Dim tIID_IContextMenu As UUID
+Dim lPtr As Long
+
+   ' Initialize IDs
+   CLSIDFromString IIDSTR_IContextMenu, tIID_IContextMenu
+   
+   ' Get the folder object
+   Set oSF = m_oStorage
+   
+   ' Get the context menu
+   lPtr = oSF.CreateViewObject(0, tIID_IContextMenu)
+   MoveMemory getContextMenu, lPtr, 4&
+
+End Function
+
+'---------------------------------------------------------------------------------------
+' Procedure : getFileDataObject
+' Purpose   : Returns the IDataObject interface for a
+'             file
+'---------------------------------------------------------------------------------------
+'
+Private Function getFileDataObject( _
+   ByVal Filename As String) As IDataObject
+Dim tIID_IDataObject As UUID
+Dim tIID_IShellFolder As UUID
+Dim oDesktop As IShellFolder
+Dim oParent As IShellFolder
+Dim oUnk As IUnknown
+Dim sFolder As String
+Dim lPidl As Long
+Dim lPtr As Long
+
+   ' Intialize IDs
+   CLSIDFromString "{0000010e-0000-0000-C000-000000000046}", tIID_IDataObject
+   CLSIDFromString IIDSTR_IShellFolder, tIID_IShellFolder
+   
+   sFolder = Left$(Filename, InStrRev(Filename, "\") - 1)
+   Filename = Mid$(Filename, Len(sFolder) + 2)
+   
+   ' Get the parent folder object
+   Set oDesktop = SHGetDesktopFolder
+   
+   ' Get the parent folder IDL
+   oDesktop.ParseDisplayName 0, 0, StrPtr(sFolder), lPtr, lPidl, 0
+   
+   ' Get the parent folder object
+   oDesktop.BindToObject lPidl, 0, tIID_IShellFolder, lPtr
+   MoveMemory oParent, lPtr, 4&
+   
+   ' Release the PIDL
+   CoTaskMemFree lPidl
+   
+   ' Get the file PIDL
+   oParent.ParseDisplayName 0, 0, StrPtr(Filename), 0, lPidl, 0
+   
+   ' Get the file IDataObject
+   lPtr = oParent.GetUIObjectOf(0, 1, lPidl, tIID_IDataObject, 0)
+   MoveMemory oUnk, lPtr, 4&
+   
+   ' Release the file PIDL
+   CoTaskMemFree lPidl
+
+   ' Return the file IDataObject
+   Set getFileDataObject = oUnk
+   
+End Function
+
+'---------------------------------------------------------------------------------------
+' Procedure : setStorage
+' Purpose   : Sets the IStorage object. This method is
+'             called on a new object when OpenSubFolder
+'             is called to open a subfolder
+'---------------------------------------------------------------------------------------
+'
+Friend Sub setStorage(ByVal Stg As IStorage)
+   Set m_oStorage = Stg
+End Sub
+
+Private Sub Class_Terminate()
+
+   If Not m_oStorage Is Nothing Then CloseZip
+   
+End Sub
