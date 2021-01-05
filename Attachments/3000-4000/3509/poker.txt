@@ -1,0 +1,43 @@
+
+;Poker server window name
+Global $tablename1 = "Table 32371"
+;No Hands Holdem WIndow name
+Global $tablename2 = "Hold'em - $0.50/$1"
+
+; Initialize Buttons 
+
+;Poker Server Buttons
+$FoldButton = "AfxWnd42s14" 
+$CheckButton = "AfxWnd42s15" 
+$CallButton = "AfxWnd42s15" 
+$BetButton = "AfxWnd42s16" 
+$RaiseButton = "AfxWnd42s16" 
+
+;No Hands Action suggestion box
+$action = "WindowsForm10.STATIC.app314"
+
+; Set Coordinate mode to relative to window 
+AutoItSetOption ( "PixelCoordMode", 0 ) 
+
+; Wait for the window of table to become active 
+WinWaitActive($tablename1) 
+WinWaitActive($tablename2) 
+
+; Main Function
+While WinExists($tablename1) 
+Sleep(300); 
+$FoldVisible = ControlCommand($tablename1, "", $FoldButton, "IsVisible", ""); 
+$RaiseVisible = ControlCommand($tablename1, "", $RaiseButton, "IsVisible", ""); 
+if $FoldVisible = 1 then 
+Sleep(Random(1500, 2500)) 
+
+
+if $action = "Fold" then ControlClick($tablename1, "", $FoldButton); 
+if $action = "Check" then ControlClick($tablename1, "", $CheckButton); 
+if $action = "Bet" then ControlClick($tablename1, "", $BetButton); 
+if $action = "Raise" then ControlClick($tablename1, "", $RaiseButton); 
+if $action = "Call" then ControlClick($tablename1, "", $CallButton); 
+
+endif 
+WEnd 
+
