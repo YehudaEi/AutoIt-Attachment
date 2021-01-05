@@ -1,0 +1,38 @@
+Opt("WinTitleMatchMode", 3)     ;1=start, 2=subStr, 3=exact, 4=...
+
+MsgBox(0, "Statement mailer", "Program running")
+
+while 1
+
+$stmt_file = FileOpenDialog ( "Select Statement", "C:\Documents and Settings\All Users\Documents\Statements", "(*.pdf)" , 1 )
+; MsgBox(0, "", $stmt_file)
+
+If @error = 1 Then
+	Exit
+Else
+EndIf
+
+Run ("C:\Program Files\Microsoft Office\OFFICE11\OUTLOOK.EXE /c ipm.note", "")
+
+WinWait("Untitled - Message (HTML) ","")
+If Not WinActive("Untitled - Message (HTML) ","") Then WinActivate("Untitled - Message (HTML) ","")
+WinWaitActive("Untitled - Message (HTML) ","")
+
+Send("{ALTDOWN}j{ALTUP}{SHIFTDOWN}a{SHIFTUP}ttached statement{TAB 2}")
+
+Send("{ALTDOWN}i{ALTUP}f")
+Send ($stmt_file)
+Send("{ALTDOWN}s{ALTUP}")
+
+WinWait("Attached statement - Message (HTML) ","")
+If Not WinActive("Attached statement - Message (HTML) ","") Then WinActivate("Attached statement - Message (HTML) ","")
+WinWaitActive("Attached statement - Message (HTML) ","")
+
+Send("{ENTER}Please find your latest statement attached.")
+WinWaitClose ("Attached statement - Message (HTML) ","")
+
+MsgBox (0, "supposed to be", "waiting for 'attached statement' to close")
+
+; FileDelete($stmt_file)
+
+WEnd
