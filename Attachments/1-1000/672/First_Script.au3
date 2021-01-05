@@ -1,0 +1,1 @@
+MsgBox (0, "FIRST SCRIPT!!", "This is my first script yay!!!" , 10 )
