@@ -1,0 +1,74 @@
+;make sure excel and access are closed, copy some files.
+
+$g_szversion = "PSE DealTracker Install v0.2"
+If WinExists($g_szversion) Then Exit ; It's already running
+AutoItWinSetTitle($g_szversion)
+
+$stitle = "PSE DealTracker Install"
+$sproduct = "PSE DealTracker"
+$sSF = "\\spsefil1\comtr\Mid Office\Tools\11 - Deal Tracker\PSEDealTracker\*.*"
+$stf = @ProgramFilesDir & "\PSEDealTracker"
+
+If MsgBox(4, $stitle, "Would you like to upgrade to the latest version of " & $sproduct) = 7 Then
+   Exit
+EndIf
+
+If FileExists($sTF) = 0 Then
+   $iDct = DirCreate($stf)
+   
+EndIf
+
+
+If ProcessExists("msaccess.exe") = 1 Or ProcessExists("excel.exe") = 1 Then
+   SplashTextOn($sTitle, "Please close Excel and Access to allow the " & $sTitle & " to continue.", _
+         300, 100, -1, -1, 2 + 16)
+   Sleep(10000)
+   SplashOff()
+   
+   Do 
+      If MsgBox(5, $stitle, "Please close Excel and Access and click Retry to continue.") = 2 Then
+         Exit
+      EndIf
+      Sleep(250)
+   Until ProcessExists("msaccess.exe") = 0 Or ProcessExists("excel.exe") = 0
+EndIf
+
+do
+   If FileExists($sSF) = 0 Then
+      If MsgBox(5, $sTitle, "Error, source folder not found: " & $sSF) = 2 Then 
+         Exit
+      EndIf
+   EndIf
+Until FileExists($sSF) = 1
+
+;FileMove($sTF & "\psedealtracker.mdb", $sTF & "\psedealtracker.old",1)
+
+;copy some files
+Do
+   $iFCT = FileCopy('"' & $sSF & '"', '"' & $sTF & '\*.*"', 1)
+   Sleep(500)
+   If $iFCT = 0 Then 
+      If MsgBox(5, $stitle, 'Error copying ' & $sSF & ' to ' & $sTF & @LF & _
+            "Click Retry to try again, you may need to make sure that no files in " & $sTF & _
+            " are in use.  Click cancel to exit") = 2 Then
+         Exit
+      EndIf
+   EndIf
+Until $iFCT = 1
+
+;create a shortcut
+If FileCreateShortcut("C:\Program Files\PSEDealTracker\PSEDealTracker.mdb", @DesktopCommonDir & _
+      "\PSEDealTracker.lnk", "C:\Program Files\PSEDealTracker", "", "", _
+      "\\spsefil1\Comtr\Mid Office\Tools\11 - Deal Tracker\PSEDealTracker\Deal.ico") = 0 Then _
+      FileCreateShortcut("C:\Program Files\PSEDealTracker\PSEDealTracker.mdb", @DesktopDir & _
+      "\PSEDealTracker.lnk", "C:\Program Files\PSEDealTracker", "", "", _
+      "\\spsefil1\Comtr\Mid Office\Tools\11 - Deal Tracker\PSEDealTracker\Deal.ico")
+
+;give a msgbox that it's done.
+If MsgBox(4, $stitle, $sproduct & " has been installed." & @LF & @LF & "Click Yes to launch PSE Deal Tracker." _
+       & @LF & "Click No to exit") = 6 Then
+   Run(@ComSpec & ' /c start "" "C:\Program Files\PSEDealTracker\PSEDealTracker.mdb"', "", @SW_HIDE)
+   Exit
+Else
+   Exit
+EndIf
