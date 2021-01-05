@@ -1,0 +1,119 @@
+/L20"AutoIT v3.0.103" String Chars = '" Line Comment = ; Block Comment On = #comments-start Block Comment Off = #comments-end Block Comment On Alt = #cs Block Comment Off Alt = #ce File Extensions = AU3
+/Delimiters = ~%&()=|\/[]:;"'<> ,	.?
+/Function String = "%Func ^([a-zA-Z]*[a-zA-Z_0-9]*^)(*)"
+/Indent Strings SOL = "Do" "Else" "For" "Func" "If" "Select" "While"
+/Unindent Strings = "Else" "EndFunc" "EndIf" "EndSelect" "Next" "Until" "Wend"
+
+/C1"Keywords/Statements"
+And
+ByRef
+ContinueLoop Case
+Dim Do
+Else ElseIf EndFunc EndIf EndSelect Exit ExitLoop
+For Func
+Global
+If
+Local
+Next Not
+Or
+ReDim Return
+Select Step
+Then To
+Until
+Wend While
+
+/C2"Internal Functions"
+Abs ACos AdlibDisable AdlibEnable Asc ASin Assign ATan AutoItSetOption AutoItWinGetTitle AutoItWinSetTitle
+BitAND BitNOT BitOR BitShift BitXOR BlockInput Break
+Call CDTray Chr ClipGet ClipPut ConsoleWrite ControlClick ControlCommand ControlDisable ControlEnable
+ControlFocus ControlGetFocus ControlGetHandle ControlGetPos ControlGetText ControlHide ControlListView
+ControlMove ControlSend ControlSetText ControlShow Cos
+Dec DirCopy DirCreate DirGetSize DirMove DirRemove DllCall DllClose DllOpen DriveGetDrive DriveGetFileSystem
+DriveGetLabel DriveGetSerial DriveGetType DriveMapAdd DriveMapDel DriveMapGet DriveSetLabel DriveSpaceFree
+DriveSpaceTotal DriveStatus
+EnvGet EnvSet EnvUpdate Eval Exp
+FileChangeDir FileClose FileCopy FileCreateShortcut FileDelete FileExists FileFindFirstFile FileFindNextFile
+FileGetAttrib FileGetLongName FileGetShortcut FileGetShortName FileGetSize FileGetTime FileGetVersion
+FileInstall FileMove FileOpen FileOpenDialog FileRead FileReadLine FileRecycle FileRecycleEmpty FileSaveDialog
+FileSelectFolder FileSetAttrib FileSetTime FileWrite FileWriteLine FtpSetProxy
+GUICreate GUICtrlCreateAvi GUICtrlCreateButton GUICtrlCreateCheckbox GUICtrlCreateCombo GUICtrlCreateContextMenu
+GUICtrlCreateDate GUICtrlCreateDummy GUICtrlCreateEdit GUICtrlCreateGroup GUICtrlCreateIcon GUICtrlCreateInput
+GUICtrlCreateLabel GUICtrlCreateList GUICtrlCreateMenu GUICtrlCreateMenuitem GUICtrlCreatePic GUICtrlCreateProgress
+GUICtrlCreateRadio GUICtrlCreateSlider GUICtrlCreateTab GUICtrlCreateTabItem GUICtrlCreateTreeView 
+GUICtrlCreateTreeViewItem GUICtrlCreateUpdown GUICtrlDelete GUICtrlGetState GUICtrlSetBkColor GUICtrlSetColor
+GUICtrlSetCursor GUICtrlSetData GUICtrlSetFont GUICtrlSetImage GUICtrlSetLimit GUICtrlSetOnEvent GUICtrlSetPos
+GUICtrlSetResizing GUICtrlSetState GUICtrlSetStyle GUICtrlSetTip GUIDelete GUIGetCursorInfo GUIGetMsg GUIRead
+GUIRecvMsg GUISendMsg GUISendToDummy GUISetBkColor GUISetCoord GUISetCursor GUISetFont GUISetHelp GUISetIcon
+GUISetOnEvent GUISetState GUIStartGroup GUISwitch 
+Hex HotKeySet HttpSetProxy
+InetGet InetGetSize IniDelete IniRead IniWrite InputBox Int IsAdmin IsArray IsDeclared IsFloat IsInt IsNumber IsString
+Log
+MemGetStats Mod MouseClick MouseClickDrag MouseDown MouseGetCursor MouseGetPos MouseMove MouseUp MouseWheel MsgBox
+Number
+Opt
+Ping PixelChecksum PixelGetColor PixelSearch ProcessClose ProcessExists ProcessList ProcessSetPriority ProcessWait
+ProcessWaitClose ProgressOff ProgressOn ProgressSet 
+Random RegDelete RegEnumKey RegEnumVal RegExp RegExpClose RegExpSet RegRead RegWrite Round Run RunAsSet RunWait
+Send SetError Shutdown Sin Sleep SoundPlay SoundSetWaveVolume SplashImageOn SplashOff SplashTextOn Sqrt 
+StatusbarGetText String StringAddCR StringFormat StringInStr StringIsAlNum StringIsAlpha StringIsASCII
+StringIsDigit StringIsFloat StringIsInt StringIsLower StringIsSpace StringIsUpper StringIsXDigit StringLeft
+StringLen StringLower StringMid StringReplace StringRight StringSplit StringStripCR StringStripWS StringTrimLeft
+StringTrimRight StringUpper
+Tan TimerDiff TimerInit ToolTip TrayTip TimerStart TimerStop
+UBound URLDownloadToFile
+WinActivate WinActive WinClose WinExists WinGetCaretPos WinGetClassList WinGetClientSize WinGetHandle WinGetPos
+WinGetProcess WinGetState WinGetText WinGetTitle WinKill WinList WinMenuSelectItem WinMinimizeAll WinMinimizeAllUndo
+WinMove WinSetOnTop WinSetState WinSetTitle WinSetTrans WinWait WinWaitActive WinWaitClose WinWaitNotActive WinShow
+
+/C3"Read-Only Variables"
+@AppDataCommonDir @AppDataDir @AutoItVersion
+@CR @CRLF @CommonFilesDir @ComputerName @Compiled @ComSpec
+@DesktopCommonDir @DesktopDir @DesktopHeight @DesktopWidth @DocumentsCommonDir @DesktopDepth @DesktopRefresh
+@error
+@FavoritesCommonDir @FavoritesDir
+@HOUR @HomeDrive @HomePath @HomeShare
+@IPAddress1 @IPAddress2 @IPAddress3 @IPAddress4 @InetGetActive @InetGetBytesRead
+@LF @LogonDNSDomain @LogonDomain @LogonServer
+@MDAY @MIN @MON @MyDocumentsDir
+@OSBuild @OSServicePack @OSTYPE @OSVersion @OSLang
+@ProgramFilesDir @ProgramsCommonDir @ProgramsDir
+@SW_HIDE @SW_MAXIMIZE @SW_MINIMIZE @SW_RESTORE @SW_SHOW @SW_DISABLE @SW_ENABLE @SW_SHOWDEFAULT @SW_SHOWMAXIMIZED @SW_SHOWMINIMIZED
+@ScriptDir @ScriptFullPath @ScriptName @StartMenuCommonDir @StartMenuDir @StartupCommonDir @SEC @StartupDir @SystemDir
+@SW_SHOWMINNOACTIVE @SW_SHOWNA @SW_SHOWNOACTIVATE @SW_SHOWNORMAL
+@TAB @TempDir
+@UserName @UserProfileDir
+@WDAY @WindowsDir @WorkingDir
+@YDAY @YEAR
+
+/C4"Special"
+#compiler_allow_decompile #compiler_aut2exe #compiler_compression #compiler_icon #compiler_passphrase
+#compiler_prompt #compiler_res_comment #compiler_res_description #compiler_res_field1name
+#compiler_res_field1value #compiler_res_field2name #compiler_res_field2value #compiler_res_fileversion
+#compiler_res_legalcopyright #compiler_run_after #compiler_run_au3check #compiler_run_before
+#endregion 
+#include #include_once #notrayicon 
+#region
+
+/C5"Variables"
+** $
+
+/C6"Special Keys"
+{!} {#} {+} {^} {{} {}}
+{ALTDOWN} {ALT} {APPSKEY} {ASC}
+{BACKSPACE} {BS} {BROWSER_BACK} {BROWSER_FAVORITES} {BROWSER_FORWARD} {BROWSER_HOME} {BROWSER_REFRESH} {BROWSER_SEARCH} {BROWSER_STOP}
+{CAPSLOCK} {CTRLBREAK} {CTRLDOWN}
+{DELETE} {DEL} {DOWN}
+{END} {ENTER} {ESCAPE} {ESC} 
+{F1} {F2} {F3} {F4} {F5} {F6} {F7} {F8} {F9} {F10} {F11} {F12}
+{HOME} 
+{INSERT} {INS} 
+{LALT} {LAUNCH_APP1} {LAUNCH_APP2} {LAUNCH_MAIL} {LAUNCH_MEDIA} {LCTRL} {LEFT} {LSHIFT} {LWINDOWN} {LWIN} 
+{MEDIA_NEXT} {MEDIA_PLAY_PAUSE} {MEDIA_PREV} {MEDIA_STOP}
+{NUMLOCK} {NUMPADADD} {NUMPADDIV} {NUMPADDOT} {NUMPADENTER} {NUMPADMULT} {NUMPADSUB}
+{NUMPAD0} {NUMPAD1} {NUMPAD2} {NUMPAD3} {NUMPAD4} {NUMPAD5} {NUMPAD6} {NUMPAD7} {NUMPAD8} {NUMPAD9}
+{PAUSE} {PGDN} {PGUP} {PRINTSCREEN}
+{RALT} {RCTRL} {RIGHT} {RSHIFT} {RWINDOWN} {RWIN}
+{SCROLLLOCK} {SHIFTDOWN} {SLEEP} {SPACE}
+{TAB}
+{UP} 
+{VOLUME_DOWN} {VOLUME_MUTE} {VOLUME_UP}
