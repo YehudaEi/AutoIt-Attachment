@@ -1,0 +1,98 @@
+; SCREEN MUST BE IN 1280 X 1024 RESOLUTION FOR THIS TO WORK!!!
+; AutoIt Version: 3.0
+; Language:       English
+; Platform:      WinXP
+; Author:         Nathan M.
+;
+; Script Function:
+;   Opens chat, and logs in to the user diamond777, then says a few things, then leaves.
+;
+
+
+; Prompt the user to run the script - use a Yes/No prompt (4 - see help file)
+$answer = MsgBox(4, "AutoIt Example (English Only)", "This script will run chatterbox and talk to hulksmash.  Is everything else closed?")
+
+
+; Check the user's answer to the prompt (see the help file for MsgBox return values)
+; If "No" was clicked (7) then exit the script
+If $answer = 7 Then
+    MsgBox(0, "AutoIt", "Well what the hell did you think you were doing?")
+    Exit
+EndIf
+
+
+
+
+; Runs chatterbox (not a real program) below is the icon's location on my desktop
+MouseClick("left", 263, 844, 2, 1)
+
+
+Sleep(1000)
+
+
+; Now that the lobby window is active open the login menu
+MouseClick("left", 263, 241, 1, 10)
+
+
+; Now click on login
+MouseClick("left", 273, 265, 1, 4)
+Sleep(500)
+; Now autopop the username (clicks on the user name field then sends the name)
+MouseClick("left", 724, 426, 2, 3)
+Send("diamond777")
+Sleep(500)
+; Now put in password (clicks on the password field then send ths password)
+MouseClick("left", 714, 461, 2, 3)
+Send("a12345678")
+Sleep(500)
+; Now finish logging in (clicks ok to log in)
+MouseCLick("left", 594, 596, 1, 1)
+Sleep(1000)
+
+
+;Clicks on the request tab
+
+MouseClick("left", 365, 244, 1, 4)
+
+ 
+
+; find user (find user tab in request tab)
+
+MouseClick("left", 378, 386, 1, 4)
+
+ 
+
+;choose name ( it's sent to the correct field automatically)
+
+Send("hulksmash90")
+Sleep(300)
+; find user (find user button)
+
+MouseClick("left", 597, 561, 1, 2)
+
+;go there (goes to that chat room)
+
+MouseClick("left", 592, 643, 1, 6)
+
+ 
+
+;time to sit, then say hello
+
+;clicks on the default location of the chat bar
+
+MouseClick("left", 521, 75, 1, 3)
+
+Send("test")
+
+
+
+;close hulksmash’s room
+
+MouseClick("left", 783, 3, 1, 1)
+
+Sleep (300)
+
+
+;close the chat program
+
+MouseClick("left", 1025, 221, 1, 1)
