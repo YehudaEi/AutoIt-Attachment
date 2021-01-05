@@ -1,0 +1,111 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fcharset0 Arial;}}
+{\*\generator Msftedit 5.41.15.1503;}\viewkind4\uc1\pard\f0\fs20 ;Compiled ChangeLog v1 to v6.1\par
+\par
+;v1\par
+;I've fixed up your code. I belive my effort deserves some mention. Your code is very very bad. You are creating one list over another instead of dynamicly deleting/creating ;on the fly which is causing them to not function due to overlaping lists.\par
+\par
+;v2\par
+;I fixed up the code even more, notice the new include\par
+\par
+;v3\par
+;Fixed some odd bugs due to you doing freaky stuff and it's running well.  ;) \par
+\par
+;v4\par
+;GUIDelete() Exiting the program will delete the GUI, this is redundant\par
+;$a = GUICtrlRead($desktoplist)\par
+;ClipPut($a) can be simplified into\par
+;ClipPut(GUICtrlRead($desktoplist))\par
+;You never use makeInput so why leave it in? Deleted.\par
+;Renamed NthruZitem to itmNtoZ\par
+;It starts with the prefix itm so we know it's an item of our treeview then it's followed by NtoZ which is shorter & more pretty then NtoZ\par
+;Same thing with AthruMitem, renamed to itmAtoM. In larger programs having a variable naming convention that works well is essential, bad variable names make for messy code.\par
+;Pasting is the process of taking data from the clipboard and putting it into a controle while copying is the process of\par
+;taking data from a controle and putting it onto the clipboard, you have the two mixed up.\par
+;thelist corrected to the list\par
+;You had all this text on one line, shame on you. Use the next line operator to make it span multiple lines to improve readability.\par
+;msgbox(0, "How to use TreePaste", "1. Click your cursor in the field you wish to paste data to in your application." & @CRLF _\par
+; & "2. Use the tree menu in the left field to select the catagory." & @CRLF _\par
+; & "3. Select the item desired in the list on the right." & @CRLF _\par
+; & "4. Click the Copy button to copy the data to the clipboard" & @CRLF _\par
+; & "" & @CRLF & " If you do not wish to make a choice, click -Cancel-")\par
+;Stupid comments:\par
+;Opt("trayIconHide", 1); Hides the icon in the system tray\par
+;You can tell exactly from the code what is happening, don't make stupid comments like this.\par
+;#include <GUIConstants.au3>;you will need to include this file\par
+;Same deal here.. comments are used to explain to the programmer what is happening, don't explain extreamly basic things or the code will\par
+;become cluttered. I understand you're new and learning but this is all part of the learning process. wink.gif I left the comments unchanged.\par
+;Finally your formatting sucks. There is no formatting in your code. You should try to stick to the standard formating convention to make your code readable\par
+;to other programmers as well as yourself.\par
+\par
+;v5\par
+;You've sectioned off the code well except you left the global variables scattered about, not good! I added a global variable section and put them\par
+;all under it.\par
+;Global $input -- Why is this even here? You don't use it once. Remove stuff that is never used, you did this with the makeInput funciton I removed in\par
+;v4 as well. :(  $input removed.\par
+;What are you trying to do here?! This code is very bad. It shows you have no idea what GUISetState does, look it up in the HelpFile\par
+;and read then look at how the examples use it. GUISetState, when called with no parameters, will show the gui. Why are you showing the GUI\par
+;each time you make a button? The GUI is hidden when you create it as you're suppose to add all your controles and then once you're done you call\par
+; GUISetState ONCE! ;) I fixed up the code to do just that and I added a little comment.\par
+;;buttons\par
+;$pastebutton = GUICtrlCreateButton("Paste", 365, 462, 70, 20)\par
+;GUISetState()\par
+;$btnCancel = GUICtrlCreateButton("Cancel", 465, 462, 70, 20)\par
+;GUISetState()\par
+;$btnHelp = GUICtrlCreateButton("Help", 565, 462, 70, 20)\par
+;GUISetState()\par
+;Okay in your origonal code this is what you did..\par
+; Case $msg = $pastebutton;$msg = -3 Or $msg = -1 Or\par
+;$a = GUICtrlRead($desktoplist)\par
+;ClipPut($a)\par
+;exit\par
+;\par
+;Case $msg = $btnCancel;$msg = -3 Or $msg = -1 Or\par
+;$a = GUICtrlRead($desktoplist)\par
+;exit \par
+;"paste"button (it's really copy by the way.. might want to change that, see v4 notes for explination)\par
+;Ok now on the code for the exit button you have a freaky comment that looks like it was stolen from somewhere (I removed it) and\par
+;you create and assign the variable a to the highlited item in $desktoplist but never do anything with it! What are you thinking?\par
+;I fixed up both events to work correctly, mainly when you click the "paste" button it copys the data like it should and the\par
+;program does _not_ exit. The exit button will just exit the program like it should and wont do any last minute pointless calculations.\par
+;I just noticed you have ;$msg = -3 Or $msg = -1 in there as a comment about three times. What the hell? It has nothing to do with your code\par
+;nor the code you're putting it next to. All removed.\par
+;Removed the stupid comment:\par
+;;msgbox with how to use\par
+;MsgBox(0, "How to use TreePaste"\par
+;as you can see the first line says it's a message box and starts off with "How to use.." you do NOT need a comment there! If you do then shame on you.\par
+;The "copy" button got on my nerves again and I just renamed it how it should of origonally been named, to copy. I also changed the caption to reflect\par
+;this recent name change.\par
+;Again talking about variable naming conventions.. xbutton is horrible. Renamed all of your xbuttons using a btnx convention where x\par
+;is the identifier. example: helpbutton => btnHelp   notice the capital H.\par
+;when you have hundreds of buttons this shorter yet clear naming convention will come in handy.\par
+;you named the Cancel button exitbutton.. stick to one name. Named btnCancel\par
+;Line four of your Help button message\par
+; & "" & @CRLF & " If you do not wish to make a choice, click -Cancel-") \par
+;changed to click the cancel button. In all the other lines you end with a period and then you suddenly don't use one. Be consistant.\par
+;-Cancel- is so weird and no one says that when refering to a button, if I was a user I'd be really confused hence my change to\par
+; "the cancel button" this way they'll know what you're talking about with minimal confusion!\par
+;You have this comment..\par
+\tab\tab\tab ; to use with INI file in your script.\par
+\tab\tab\tab ; Make sure you have path correct to\par
+\tab\tab\tab ; ini file. I found it best to have\par
+\tab\tab\tab ; ini files in a sub folder as shown\par
+\tab\tab\tab ; in the example.\par
+;about five times in your example and it means nothing. If you built this so others can use it then your a very cruel person.\par
+;I don't see any effort put into this on your part to make the code readable.. it's taken me five revisions to even get it to this point! ;(\par
+;Removed the comments that ment nothing _ALL_ of them.. You had many more, see your origonal source for them. haha. \par
+;Ok, when your commenting code don't use aol speak as it is not professional. Changed thru to through.\par
+;After removing all those identicial yet totally irrelivent comments I get the impression that this was a copy and paste hack job.\par
+;Again if your target audience is really other autoit developers you must code well.. this is not acceptable unless you don't mind\par
+;looking like some aol l33t dude. :'(\par
+\par
+;v6 change notes\par
+;Added function CopyToClip which copys the selected item to the clipboard only if there's something to copy in the first palce.\par
+;Before you could just start the program and click copy and it would close, now it'll only work if you actually copy something.\par
+;btnCopy will now run CopyToClip to take advantage of this new funtionality, old code removed. Added context menu which uses\par
+;the new function CopyToClip also.\par
+\par
+;v6.1\par
+;Redesigned CopyToClip. Removed the Exit at the end of the code. It did not need to be there.\par
+\par
+}
+ 
