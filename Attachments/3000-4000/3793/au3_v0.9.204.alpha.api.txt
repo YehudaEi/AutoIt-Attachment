@@ -1,0 +1,583 @@
+ContinueLoop
+And
+ByRef
+Case
+Const
+Dim
+Do
+Else
+ElseIf
+EndFunc
+EndIf
+EndSelect
+Exit
+ExitLoop
+For
+Func
+Global
+If
+Local
+Next
+Not
+Or
+ReDim
+Return
+Select
+Step
+Then
+To
+Until
+WEnd
+While
+#include
+#ce
+#comments-end
+#comments-start
+#cs
+#include-once
+#NoTrayIcon
+#region
+#compiler_allow_decompile
+#compiler_aut2exe
+#compiler_compression
+#compiler_icon
+#compiler_outfile
+#compiler_passphrase
+#compiler_prompt
+#compiler_res_comment
+#compiler_res_description
+#compiler_res_field
+#compiler_res_field1name
+#compiler_res_field1value
+#compiler_res_field2name
+#compiler_res_field2value
+#compiler_res_fileversion
+#compiler_res_legalcopyright
+#compiler_run_after
+#compiler_run_au3check
+#compiler_run_before
+#endregion
+@AppDataCommonDir
+@AppDataDir
+@AutoItExe
+@AutoItVersion
+@CommonFilesDir
+@Compiled
+@ComputerName
+@ComSpec
+@CR
+@CRLF
+@DesktopCommonDir
+@DesktopDepth
+@DesktopDir
+@DesktopHeight
+@DesktopRefresh
+@DesktopWidth
+@DocumentsCommonDir
+@error
+@extended
+@FavoritesCommonDir
+@FavoritesDir
+@GUI_CtrlHandle
+@GUI_CtrlId
+@GUI_WinHandle
+@HomeDrive
+@HomePath
+@HomeShare
+@HOUR
+@InetGetActive
+@InetGetBytesRead
+@IPAddress1
+@IPAddress2
+@IPAddress3
+@IPAddress4
+@LF
+@LogonDNSDomain
+@LogonDomain
+@LogonServer
+@MDAY
+@MIN
+@MON
+@MyDocumentsDir
+@NumParams
+@OSBuild
+@OSLang
+@OSServicePack
+@OSTYPE
+@OSVersion
+@ProgramFilesDir
+@ProgramsCommonDir
+@ProgramsDir
+@ScriptDir
+@ScriptFullPath
+@ScriptName
+@SEC
+@StartMenuCommonDir
+@StartMenuDir
+@StartupCommonDir
+@StartupDir
+@SW_DISABLE
+@SW_ENABLE
+@SW_HIDE
+@SW_MAXIMIZE
+@SW_MINIMIZE
+@SW_RESTORE
+@SW_SHOW
+@SW_SHOWDEFAULT
+@SW_SHOWMAXIMIZED
+@SW_SHOWMINIMIZED
+@SW_SHOWMINNOACTIVE
+@SW_SHOWNA
+@SW_SHOWNOACTIVATE
+@SW_SHOWNORMAL
+@SystemDir
+@TAB
+@TempDir
+@UserName
+@UserProfileDir
+@WDAY
+@WindowsDir
+@WorkingDir
+@YDAY
+@YEAR
+Abs ( expression ) Calcule la valeur absolue d'un nombre.
+ACos ( expression ) Calcule l'ArcCossinus d'un nombre.
+AdlibDisable ( ) Désactive la fonctionnalité AdLib.
+AdlibEnable ( "fonction" [, temps] ) Active la fonctionnalité AdLib.
+Asc ( "caractère" ) Renvoie le code ASCII d'un caractère (Char).
+ASin ( expression ) Calcule l'ArcSinus d'un nombre.
+Assign ( "nomVar", "donnée" [, indicateur] ) Assigne une valeur (data) à une variable (varname).
+ATan ( expression ) Calcule l'ArcTangente d'un nombre.
+AutoItSetOption ( "CaretCoordMode", parametres ) Option AutoIt. Détermine la manière dont sont employées des coordonnées dans les fonctions dont cet argument est omis. Renseigne en coordonnées absolues ou relative la fenêtre active : 0 représente les coordonnées relative à la fenêtre active ; 1 représente les coordonnées absolues de l'écran (par défaut) ; 2 est les coordonnées relatives au secteur client de la fenêtre active.
+AutoItSetOption ( "ColorMode", parametres ) Option AutoIt. Définis la gestion des couleurs, soit RGB soit BGR. RGB est par défaut mais dans les anciennes version AutoIt (pré 3.0.102) BGR était par défaut : 0 = couleur définie en RGB (0xRRGGBB) (par défaut), 1 = couleur définies en BGR (0xBBGGRR) (Le mode utilisé dans les anciennes version AutoIt) 
+AutoItSetOption ( "ExpandEnvStrings", parametres ) Option AutoIt. Détermine comment des chaines de caractère litérale et les symboles de % (pourcent)sont interpretés.  Par défaut les chaines de caractères sont traitées litéralement, cette option vous permet d'employer des variables %environement% dans les chaines de caractère, p.e, "Le dossier temporaire est : %temp%". 1 = étend les variables d'environnement (similaire à AutoIt v2), 0 = n'expend pas les variables d'environnement (par défaut) Sans cette option, la manière habituelle serait : 	"Le dossier temporaire est: " & EnvGet("temp") 
+AutoItSetOption ( "ExpandVarStrings", parametres ) Option AutoIt. Change comment les chaines de caractère litérale et les variables ou macro ($ et @) sont interpretées. Par défaut les chaines de caractères sont traitées litéralement, cette option attribue comment utiliser les variables et les macros dans les chaines de caractères, p.e., "La valeur de var1 est $var1". 1 = étend la variable (lorsque dans ce mode vous désirez utiliser litéralement un $ ou @ alors il faut le doubler : "Ceci est un signe dollard simple $$". 0 = n'étend pas les variables (par défaut).
+AutoItSetOption ( "FtpBinaryMode", parametres ) Option AutoIt. Détermine comment les fichiers FTP sont transferés. 1 = Binaire (par défaut) 0 = ASCII 
+AutoItSetOption ( "GUICloseOnESC", parametres ) Option AutoIt. Lorsque la touche ESC est poussé sur une interface utilisateur, le message de variable $GUI_EVENT_CLOSE est envoyé. Cette option active ou désactive cet événement. 1 = Envoie le message de variable $GUI_EVENT_CLOSE lorsque la touche ESC est poussée (par défaut). 1 = Désactive le message de variable $GUI_EVENT_CLOSE lorsque la touche ESC est poussée.
+AutoItSetOption ( "GUICoordMode", parametres ) Option AutoIt. Alterne la position d'un Contrôle définis par <a href="GUICtrlSetPos.htm">GUICtrlSetPos</a>. 1 = coordonnées absolues (par défaut) relative à la boite de dialogue. 0 = position relative au démarrage du dernier Contrôle (coin gauche supérieur) 2 = cellule positionnée en relatif à la cellule courante. Un -1 pour le paramétrage de gauche ou du dessus n'incrémente pas le début. Ainsi la prochaine ligne est -1,0 ; la prochaine cellule est 0, -1 ; la cellule courrante est -1, -1
+AutoItSetOption ( "GUIOnEventMode", parametres ) Option AutoIt. Active / Désactive la fonction de notificatino OnEvent. 0 = (par défaut) désactivé. 1 = actif. 
+AutoItSetOption ( "GUIResizeMode", parametres ) Option AutoIt. Change le redimensionnement par défaut d'un Contrôle. 0 = (par défaut) pas de redimensionnement. &lt;1024 = pour tout type de redimensionnement voir <a href="GUICtrlSetResizing.htm">GUICtrlSetResizing</a>. 
+AutoItSetOption ( "MouseClickDelay", parametres ) Option AutoIt. Change la durée de pause entre deux clics de souris. Laps de temps déterminé en millisecondes de pause (par défaut = 10). 
+AutoItSetOption ( "MouseClickDownDelay", parametres ) Option AutoIt. Change la longueur qu'un clic est maintenu avant dégagement. Laps de temps déterminé en millisecondes de pause (par défaut = 10). 
+AutoItSetOption ( "MouseClickDragDelay", parametres ) Option AutoIt. Change la longueur de la pause en début et fin d'une opération de glisser et déposer (drag and drop). Laps de temps déterminé en millisecondes de pause (par défaut = 250). 
+AutoItSetOption ( "MouseCoordMode", parametres ) Option AutoIt. Définis la manière dont les coordonnées sont utilisées dans les fonctions de souris, coordonnées absolues ou coordonnées relatives à la fenêtre active courante : 0 = coordonnées relatives à la fenêtre active, 1 = coordonnées absolues de l'écran (par défaut), 2 = coordonnées relatives a la zone de la fenêtre active.
+AutoItSetOption ( "MustDeclareVars", parametres ) Option AutoIt. Si cette option est utilisée, toutes les variables doivent être prédéclarée avec Dim, Local ou Global avant utilisation - diminue les chance pour des variables mal épelées causant des problèmes. 1 = las variables doivent être prédéclarée, 0 = les variables n'ont pas besoin d'être prédéclaré (par défaut).
+AutoItSetOption ( "OnExitFunc", parametres ) Option AutoIt. Définis le nom de la fonction qui est appellée lorsque AutoIt est quitté (par défaut sur OnAutoItExit). 
+AutoItSetOption ( "PixelCoordMode", parametres ) Option AutoIt. Détermine la manière dont sont employés les coordonnées dans les fonctions Pixel, soit des coordonnées relatives soit des coordonnées absolues à la fenêtre active courante. 0 = coordonnées relative à la fenêtre active, 1 = écran en coordonnées absolues (par défaut, 2 = coordonnées relatives a la zone de la fenêtre active.
+AutoItSetOption ( "RunErrorsFatal", parametres ) Option AutoIt. Définis si le script doit être terminé avec une erreur fatale lorsque une fonction Run / RunWait échoue du a un mauvais chemin / Fichier non trouvé / mauvais identifiant (ID). 1 = Erreur fatale (par défaut), 0 = erreur silencieuse (@error est définis à 1).
+AutoItSetOption ( "SendAttachMode", parametres ) Option AutoIt. Specifies if AutoIt attaches input threads when using then Send() function.  When not attaching (default mode=0) detecting the state of capslock/scrolllock and numlock can be unreliable under NT4.  However, when you specify attach mode=1 the Send("{... down/up}") syntax will not work and there may be problems with sending keys to "hung" windows.  ControlSend() ALWAYS attaches and is not affected by this mode. 0 = don't attach (default) 1 = attach 
+AutoItSetOption ( "SendCapslockMode", parametres ) Option AutoIt. Spécifie si AutotIt stocke l'état du CapsLock avant une fonction et restaure sa position après exécution. 0 = pas de stockage / restauration, 1 = stockage et réstauration (par défaut).
+AutoItSetOption ( "SendKeyDelay", parametres ) Option AutoIt. Change la longueur de la pause entre deux envois de touches. Laps de temps définis en millisecondes de pause (par défaut = 5). Parfois une valeur de 0 ne fonctione pas; Employez 1 à la place.
+AutoItSetOption ( "SendKeyDownDelay", parametres ) Option AutoIt. Change la durée où une touche est maintenue avant libération pendant un envois de données (keystroke) [frappe clavier]. Pour les applications qui prenne un laps de temps d'inscription dans le registre (et beaucoup de jeux) vous pouvez augmenter cette valeur par défaut. Le laps de temps est définis en millisecondes de pause (par défaut = 1).
+AutoItSetOption ( "TrayIconDebug", parametres ) Option AutoIt. Si actifs affiche les lignes du script courrant dans l'infobulle de l'incone du SysTray afin d'aider au déboguage. 0 = pas d'information de déboguage (par défaut), 1 = affiche les informations de déboguage.
+AutoItSetOption ( "TrayIconHide", parametres ) Option AutoIt. Cache l'icone AutoIt du SysTray. Note : L'icone s'affichera initialement pendant ~750 millisecondes. 0 = affiche l'icone (par défaut), 1 = cache l'icone.
+AutoItSetOption ( "WinDetectHiddenText", parametres ) Option AutoIt. Indique si le texte caché de fenêtre peut "être vu" par les fonctions assorties de fenêtre. 0 = ne détectent pas le texte caché (défaut) 1 = détectent le texte caché.
+AutoItSetOption ( "WinSearchChildren", parametres ) Option AutoIt. Attribue à la routine de recherche de fenêtre la recherche de fenêtre enfant autant que de fenêtre de premier niveau. 0 = uniquement rechercher les fenêtre de premier niveau (par défaut), 1 = recherche les fenêtre de premier niveau et les fenêtres enfants.
+AutoItSetOption ( "WinTextMatchMode", parametres ) Option AutoIt. Change la méthode employée pour assortir les textes des fenêtre durant les opérations de recherches. 1 = mode complet / mode lent (par défaut); 2 = mode rapide, dans le mode rapide AutoIt peut seulement visualiser les texte de boite de dialogue, texte de boutons et les légendes de quelques Contrôles. En mode par défaut, beaucoup plus de texte peut être vu (par exemple le contenu de la fenêtre du Bloc-note). Si vous avez des problèmes de performance lors de recherche de / dans des fenêtres changer ce mode en "rapide" peut vous aider.
+AutoItSetOption ( "WinTitleMatchMode", parametres ) Option AutoIt. Change la méthode qui est employée pour assortir les titres de fenêtres durant une opération de recherche. 1 = concorde le titre dès le début (par défaut), 2 = concorde n'importe quelle sous chaine de caractère du titre, 3 = concorde exactement le titre, 4 = mode avancé voir <a href="../intro/windowsadvanced.htm">Titre de fenêtre & Texte (Avancé)</a>
+AutoItSetOption ( "WinWaitDelay", parametres ) Option AutoIt. Change le temps d'attente du script après une opération de connection de fenêtre réussie. Laps de temps de pause définis en millisecondes (par défaut = 250)
+AutoItWinGetTitle ( ) Renvoie le titre d'une fenêtre AutoIt.
+AutoItWinSetTitle ( "NouveauTitre" ) Change le titre d'une fenêtre AutoIt.
+BitAND ( valeur1, valeur2 [, valeur n] ) Effectue l'opération AND (ET) bit par bit.
+BitNOT ( valeur ) Effectue l'opération NOT (NON) bit par bit.
+BitOR ( valeur1, valeur2 [, valeur n] ) Effectue l'opération OR (OU) bit par bit.
+BitShift ( valeur, shift ) Effectue une opération de décalage bit par bit.
+BitXOR ( valeur1, valeur2 [, valeur n] ) Effectue l'opération exclusive OR (XOR) bit par bit.
+BlockInput ( flag ) Active/Désactive la souris et le clavier.
+Break ( mode ) Active ou désactive la possibilité de l'utilisateur à quitter un script a partir de l'icone du menu de la barre système.
+Call ( "fonction" ) Appelle une fonction utilisateur prédéfinie contenue dans un paramètre de chaîne de caractère.
+CDTray ( "drive", "status" ) Ouvre ou ferme le lecteur CD-ROM.
+Chr ( ASCIIcode ) Renvoie le caractère correspondant au code ASCII.
+ClipGet ( ) Récupère le texte du presse-papier.
+ClipPut ( "valeur" ) Ecrit le texte dans dans le presse-papier.
+ConsoleWrite ( "données" ) Ecrit les données en jet que les éditeurs de texte peuvent parfois lire.
+ControlClick ( "titre", "texte", IDcontrole [, button] [, clicks]] ) Envoie un clic de souris sur un Contôle donné.
+ControlCommand ( "titre", "texte", "nomDeClasseNN", "IsVisible", "" ) Retourne 1 si le Contrôle est visible, 0 dans les autres cas.
+ControlCommand ( "titre", "texte", "nomDeClasseNN", "IsEnabled", "" ) Retourne 1 si le Contrôle est activé, 0 dans les autres cas.
+ControlCommand ( "titre", "texte", "nomDeClasseNN", "ShowDropDown", "" ) Déroule un ComboBox.
+ControlCommand ( "titre", "texte", "nomDeClasseNN", "HideDropDown", "" ) Referme un ComboBox.
+ControlCommand ( "titre", "texte", "nomDeClasseNN", "AddString", 'string' ) Ajoute une chaîne de caractère à la fin d'une ListBox ou d'un ComboBox.
+ControlCommand ( "titre", "texte", "nomDeClasseNN", "DelString", occurrence ) Supprime une chaîne de caractère selon l'occurence donnée dans une ListBox ou d'un ComboBox.
+ControlCommand ( "titre", "texte", "nomDeClasseNN", "FindString", 'string' ) Retourne les références exacte d'occurances de la chaîne de caractères dans une ListBox ou d'un ComboBox.
+ControlCommand ( "titre", "texte", "nomDeClasseNN", "SetCurrentSelection", occurrence ) Définis la sélection pour les références d'occurances dans une ListBox ou d'un ComboBox.
+ControlCommand ( "titre", "texte", "nomDeClasseNN", "SelectString", 'string' ) Définis la sélection de la chaine de caractère dans une Listbox ou une ComboBox.
+ControlCommand ( "titre", "texte", "nomDeClasseNN", "IsChecked", "" ) Retourne 1 si le Bouton est activé, 0 dans les autres cas.
+ControlCommand ( "titre", "texte", "nomDeClasseNN", "Check", "" ) Active le Bouton Radio ou active le Bouton de contrôle.
+ControlCommand ( "titre", "texte", "nomDeClasseNN", "UnCheck", "" ) Désactive le Bouton radio ou le Bouton de contrôle.
+ControlCommand ( "titre", "texte", "nomDeClasseNN", "GetCurrentLine", "" ) Retourne la ligne # où se trouve le curseur et l'Edite.
+ControlCommand ( "titre", "texte", "nomDeClasseNN", "GetCurrentCol", "" ) Retourne la colonne # où se trouve le curseur et l'Edite.
+ControlCommand ( "titre", "texte", "nomDeClasseNN", "GetCurrentSelection", "" ) Retourne le nom de l'élément sélectionné dans une ListBox ou un ComboBox.
+ControlCommand ( "titre", "texte", "nomDeClasseNN", "GetLineCount", "" ) Retourne # le nombre de ligne et les Edite.
+ControlCommand ( "titre", "texte", "nomDeClasseNN", "GetLine", line# ) Renvoie le texte à la ligne # passé d'une édition (Edit).
+ControlCommand ( "titre", "texte", "nomDeClasseNN", "GetSelected", "" ) Renvoie le texte sélectionné d'une édition (Edit)
+ControlCommand ( "titre", "texte", "nomDeClasseNN", "EditPaste", 'string' ) Colle la 'chaine de caractère ('string') à la position d'édition du chariot (Edit Caret position)
+ControlCommand ( "titre", "texte", "nomDeClasseNN", "CurrentTab", "" ) Renvoie l'onglet courrant affiché d'un Contrôle système tabulatoire 32 bit (SysTabControl32)
+ControlCommand ( "titre", "texte", "nomDeClasseNN", "TabRight", "" ) Déplacement jusqu'au prochain onglet vers la droite d'un Contrôle système tabulatoire 32 bit (SysTabControl32)
+ControlCommand ( "titre", "texte", "nomDeClasseNN", "Tabgauche", "" ) Déplacement jusqu'au prochain onglet vers la gauche d'un Contrôle système tabulatoire 32 bit (SysTabControl32)
+ControlDisable ( "titre", "texte", IDcontrole) Désactive ou "grise" un Contrôle.
+ControlEnable ( "titre", "texte", IDcontrole ) Active ou "dégrise" un Contrôle.
+ControlFocus ( "titre", "texte", IDcontrole ) Définis le foyer d'entrée (focus) sur un Contrôle définis d'une fenêtre.
+ControlGetFocus ( "titre" [, "texte"] ) Returns the ControlRef# of the control that has keyboard focus within a specified window.
+ControlGetHandle ( "title", "texte", IDcontrole ) Renvoie / Capture les coordonnées interne (handle) d'un Contrôle.
+ControlGetPos ( "title", "texte", IDcontrole ) Renvoie / Capture la position et la taille d'un Contrôle relatif à sa fenêtre.
+ControlGetText ( "title", "texte", IDcontrole ) Capture le texte d'un Contrôle.
+ControlHide ( "title", "texte", IDcontrole ) Masque un Contrôle.
+ControlListView ( "title", "texte", "nomDeClasseNN", "DeSelect", From [, To] ) Désélectionne un ou plusieurs éléments.
+ControlListView ( "title", "texte", "nomDeClasseNN", "FindItem", "string to find" [, SubItem] ) Renvoie l'index des élements d'une chaine de caractère. Renvoie -1 si la chaine de caractère n'est pas trouvée.
+ControlListView ( "title", "texte", "nomDeClasseNN", "GetItemCount" ) Renvoie / Compte le nombre d'élément d'une liste.
+ControlListView ( "title", "texte", "nomDeClasseNN", "GetSelected" [, option] ) Returns a string containing the item index of selected items.  If option=0 (default) only the first selected item is returned.  If option=1 then all the selected items are returned delimited by |, e.g: &quot;0|3|4|10&quot;.  If no items are selected a blank "" string is returned.
+ControlListView ( "title", "texte", "nomDeClasseNN", "GetSelectedCount" ) Renvoie / Compte le nombre d'élément sélectionné d'une liste.
+ControlListView ( "title", "texte", "nomDeClasseNN", "GetSubItemCount" ) Renvoie / Compte le nombre de sous-éléments.
+ControlListView ( "title", "texte", "nomDeClasseNN", "GetText", Item, SubItem ) Returns the text of a given item/subitem.
+ControlListView ( "title", "texte", "nomDeClasseNN", "IsSelected", Item ) Retourne 1 si l'élément est sélectionné, autrement renvoie 0.
+ControlListView ( "title", "texte", "nomDeClasseNN", "Select", From [, To] ) Sélectionne un ou plusieurs éléments.
+ControlListView ( "title", "texte", "nomDeClasseNN", "SelectAll" ) Sélectionne tous les éléments.
+ControlListView ( "title", "texte", "nomDeClasseNN", "SelectClear" ) Efface la sélection de tous les éléments.
+ControlListView ( "title", "texte", "nomDeClasseNN", "SelectInvert" ) Inverse la sélection courrante.
+ControlListView ( "title", "texte", "nomDeClasseNN", "ViewChange", "view" ) Changes the current view.  Valid views are "list", "details", "smallicons", "largeicons".
+ControlMove ( "title", "texte", IDcontrole, x, y [, largeur [, hauteur]] ) Déplace un Contrôle dans sa fenêtre.
+ControlSend ( "title", "texte", IDcontrole, "chaine" [, indicateur] ) Envoie une chaine de caractère à un Contrôle.
+ControlSetText ( "title", "texte", IDcontrole, "new text" ) Définis le texte d'un Contrôle.
+ControlShow ( "title", "texte", IDcontrole ) Affiche un Contrôle qui est caché.
+Cos ( expression ) Calcule le cosinus d'un nombre.
+Dec ( "hex" ) Renvoie une représentation numérique d'une chaine de caractère hexadécimale.
+DirCopy ( "source dir", "dest dir" [, indicateur] ) Copie un répertoire ainsi que tous les sous-répertoires et fichier (Similaire à XCOPY).
+DirCreate ( "chemin" ) Crée un répertoire / dossier.
+DirGetSize ( "chemin" [, indicateur] ) Renvoie la taille en byte du répertoire renseigné.
+DirMove ( "source dir", "dest dir" [, indicateur] ) Déplace un répertoire ainsi que tous les sous-répertoires et fichier.
+DirRemove ( "chemin" [, recurse] ) Supprime un répertoire / dossier.
+DllCall ( "dll", "return type", "fonction" [, "type1", param1 [, "type n", parametres n]] ) Appelle dynamiquement une fonction dans une DLL.
+DllClose ( dllhandle ) Ferme un fichier DLL précédemment ouvert.
+DllOpen ( "nomDeFichier" ) Ouvre un fichier DLL pour utilisation dans la fonction DllCall.
+DriveGetDrive ( "type" ) Renvoie une zone de mémoire (Array) contenant les lecteurs à énumérer.
+DriveGetFileSystem ( "chemin" ) Renseigne le type de fichier system d'un lecteur.
+DriveGetLabel ( "chemin" ) Renseigne l'étiquette de volume d'un lecteur, si elle est existante.
+DriveGetSerial ( "chemin" ) Renvoie le numéro de série d'un lecteur.
+DriveGetType ( "chemin" ) Renseigne le type de lecteur.
+DriveMapAdd ( "device", "remote share" [, flags [, "user" [, "password"]]] ) Monte un lecteur réseau.
+DriveMapDel ( "device" ) Déconnecte un lecteur réseau.
+DriveMapGet ( "device" ) Renseigne les détails d'un lecteur réseau.
+DriveSetLabel ( "chemin", "label" ) Définis l'étiquette de volume d'un lecteur.
+DriveSpaceFree ( "chemin" ) Renseigne l'espace disque libre en MegaByte du chemin renseigné.
+DriveSpaceTotal ( "chemin" ) Renseigne l'espace disque libre total en MegaByte du chemin renseigné.
+DriveStatus ( "chemin" ) Renseigne le status du lecteur dans une chaîne de caractère (String).
+EnvGet ( "envvariable" ) Capture la variable d'environnement.
+EnvSet ( "envvariable" [, "value"] ) Ecrit une variable d'environnement.
+EnvUpdate ( ) Réactualise les variables d'environnement de l'OS.
+Eval ( expression ) Renseigne la valeur de la variable dont le nom est donné dans l'expression.
+Exp ( expression ) Calcule <i><b>e</b></i> à la puissance du nombre.
+FileChangeDir ( "chemin" ) Change le répertoire courrant de travail.
+FileClose ( filehandle ) Ferme un fichier texte précédemment ouvert.
+FileCopy ( "source", "dest" [, indicateur] ) Copie un ou plusieurs fichier.
+FileCreateShortcut ( "fichier", "lnk" [, "workdir" [, "args" [, "desc" [, "icon" [, "hotkey" [, icon number [, state]]]]]]] ) Crée un raccourcis (.LNK) vers un fichier.
+FileDelete ( "chemin" ) Supprime un ou plusieurs fichiers.
+FileExists ( "chemin" ) Renseigne si un fichier ou un répertoire existe.
+FileFindFirstFile ( "nomDeFichier" ) Renvoie un nom de fichier selon la chaine de caractère renseigné.
+FileFindNextFile ( recherche ) Renvoie un nom de fichier selon un appel précédent de la fonction FilFindNextFile.
+FileGetAttrib ( "nomDeFichier" ) Renvoie une chaine de caractère représentant les attributs du fichier.
+FileGetLongName ( "fichier" ) Renvoie le nom de fichier et le chemin du fichier renseigné.
+FileGetShortcut ( "raccourcis" ) Renseigne les détails du raccourcis.
+FileGetShortName ( "fichier" ) Renvoie le chemin et le nom au format 8.3 (MS-Dos) du fichier renseigné.
+FileGetSize ( "nomDeFichier" ) Renseigne la taille en byte d'un fichier.
+FileGetTime ( "nomDeFichier" [, option [, format]] ) Donne les informations d'heure et de date à propos d'un fichier.
+FileGetVersion ( "nomDeFichier" ) Renseigne les informations de version du "Fichier".
+FileInstall ( "source", "dest" [, indicateur] ) Inclus et installe un fichier avec le script compilé.
+FileMove ( "source", "dest" [, indicateur] ) Déplace un ou plusieurs fichiers.
+FileOpen ( "nomDeFichier", mode ) Ouvre un fichier texte pour lecture ou écriture.
+FileOpenDialog ( "title", "repertoire initial", "filtre" [, options [, "nom par défaut"]] ) Initialise une boite de dialogue Ouvrir.
+FileRead ( filehandle ou "nomDeFichier", comptage ) Lis un nombre de caractère d'un fichier fichier texte précédemment ouvert.
+FileReadLine ( filehandle ou "nomDeFichier" [, ligne] ) Read in a line of text from a previously opened text file.
+FileRecycle ( "source" ) Envoie un fichier ou un répertoire vers la corbeille.
+FileRecycleEmpty ( ["drive"] ) Vide la corbeille.
+FileSaveDialog ( "titre", "répertoire initial", "filtre" [, options [, "nom par défaut"]] ) Initialise une boite de dialogue Sauver.
+FileSelectFolder ( "texte de dialogue", "répertoire racine" [, indicateur [, "répertoire initial"]] ) Initialise une boite de dialogue Parcourir d'interface utilisateur.
+FileSetAttrib ( "fichier modèle", "+-RASHNOT" [, recurse] ) Définis les attributs pour un ou plusieurs fichiers.
+FileSetTime ( "file pattern", "temps", type [, recurse] ) Définis l'heure de modification d'un ou plusieurs fichiers.
+FileWrite ( filehandle or "nomDeFichier", "ligne" ) Appose une ligne de texte à la fin d'un fichier texte précédemment ouvert.
+FileWriteLine ( filehandle or "nomDeFichier", "ligne" ) Appose une ligne de texte à la fin d'un fichier texte précédemment ouvert.
+FtpSetProxy ( mode [, "proxy:port" [, "nomUtilisateur", "MotDePasse"]] ) Configure le proxy Internet pour l'accès FTP.
+GUICreate ( "titre" [, largeur [, hauteur [, gauche [, top [, style [, exStyle [, parent]]]]]]] ) Crée une interface utilisateur.
+GUICtrlCreateAvi ( filename, subfileid, gauche, top [, largeur [, hauteur [, style [,  exStyle]]]] ) Crée un Contrôle vidéo AVI pour une interface utilisateur.
+GUICtrlCreateButton ( "texte", gauche, top [, largeur [, hauteur [, style [, exStyle]]]] ) Crée un Boutton Contrôle pour une interface utilisateur.
+GUICtrlCreateCheckbox ( "texte", gauche, top [, largeur [, hauteur [, style [, exStyle]]]] ) Crée une boite de sélection (CheckBox) pour une interface utilisateur.
+GUICtrlCreateCombo ( "texte", gauche, top [, largeur [, hauteur [, style [, exStyle]]]] ) Crée un boite déroulante (ComboBox) pour une interface utilisateur.
+GUICtrlCreateContextMenu ( [IDcontrole] ) Crée un menu contextuel pour un Contrôle ou pour une interface utilisateur entière.
+GUICtrlCreateDate ( "texte", gauche, top [, largeur [, hauteur [, style [, exStyle]]]] ) Crée un Contrôle date (date control) pour une interface utilisateur.
+GUICtrlCreateDummy ( ) Crée un Contrôle Factice (Dummy Control) pour une interface utilisateur.
+GUICtrlCreateEdit ( "texte", gauche, top [, largeur [, hauteur [, style [, exStyle]]]] ) Crée un Contrôle de boite d'édition (Edit Control) pour une interface utilisateur.
+GUICtrlCreateGroup ( "texte", gauche, top [, largeur [, hauteur [, style [, exStyle]]]] ) Crée un Contrôle groupé (Group Control) pour une interface utilisateur.
+GUICtrlCreateIcon ( filename, iconID, gauche, top [, largeur [, hauteur [, style [, exStyle]]]] ) Crée un Contrôle Icone (Icon Control) pour une interface utilisateur.
+GUICtrlCreateInput ( "texte", gauche, top [, largeur [, hauteur [, style [, exStyle]]]] ) Crée un Contrôle d'entrée (Input Control) pour une interface utilisateur.
+GUICtrlCreateLabel ( "texte", gauche, top [, largeur [, hauteur [, style [, exStyle]]]] ) Crée un Contrôle étiquette statique (Static Label Control) pour une interface utilisateur.
+GUICtrlCreateList ( "texte", gauche, top [, largeur [, hauteur [, style [, exStyle]]]] ) Crée un Contrôle de liste (List Control) pour une interface utilisateur.
+GUICtrlCreateListView ( "texte", gauche, top [, largeur [, hauteur [, style [, exStyle]]]] ) Crée un Contrôle de liste de vue (ListView) pour une interface utilisateur.
+GUICtrlCreateListViewItem ( "texte", listviewID ) Crée un élément d'une liste de vue (ListView Item).
+GUICtrlCreateMenu ( "submenutext" [, menuID [, menuentry]] ) Crée un Contrôle de menu pour une interface utilisateur.
+GUICtrlCreateMenuitem ( "texte", menuID [, menuentry [, menuradioitem]] ) Crée un Contrôle d'élement de menu (MenuItem) pour une interface utilisateur.
+GUICtrlCreatePic ( filename, gauche, top [, largeur [, hauteur [, style [, exStyle]]]] ) Crée un Contrôle d'image (Picture Control) pour une interface utilisateur.
+GUICtrlCreateProgress ( gauche, top [, largeur [, hauteur [, style [, exStyle]]]] ) Crée un Contrôle de progression (Progress Control) pour une interface utilisateur.
+GUICtrlCreateRadio ( "texte", gauche, top [, largeur [, hauteur [, style [, exStyle]]]] ) Crée un Contrôle de bouton radio (Radio Button) pour une interface utilisateur.
+GUICtrlCreateSlider ( gauche, top [, largeur [, hauteur [, style [, exStyle]]]] ) Crée un Contrôle de glisser (Slider Control) pour une interface utilisateur.
+GUICtrlCreateTab ( gauche, top [, largeur [, hauteur [, style [, exStyle]]]] ) Crée un Contrôle onglet (Create Tab) pour une interface utilisateur.
+GUICtrlCreateTabItem ( "texte" ) Crée un Contrôle d'élement d'onglet (TabItem Control) pour une interface utilisateur.
+GUICtrlCreateTreeView ( gauche, top [, largeur [, hauteur [, style [, exStyle]]]] ) Crée un Contrôle d'arborescence (TreeView Control) pour une interface utilisateur.
+GUICtrlCreateTreeViewItem ( "texte", treeviewID ) Crée un Controle d'élement d'une arborescence pour une interface utilisateur.
+GUICtrlCreateUpdown ( inputcontrolID [,style] ) Crée un Contrôle UpDown pour l'interface utilisateur.
+GUICtrlDelete ( IDcontrole ) Supprime un Contrôle.
+GUICtrlGetState ( [IDcontrole] ) Capture l'état d'un Contrôle définis.
+GUICtrlRead ( IDcontrole ) Lis l'état ou les données d'un Contrôle.
+GUICtrlRecvMsg ( IDcontrole , msg [, wParam [, lParamType]] ) Envoie un message à un Contrôle et renseigne les informations dans LPARAM.
+GUICtrlSendMsg ( IDcontrole, msg , wParam, lParam ) Envoie un message à un Contrôle.
+GUICtrlSendToDummy ( IDcontrole [, state] ) Envoie un message à un Contrôle factice.
+GUICtrlSetBkColor ( IDcontrole, backgroundcolor ) Définis la couleur d'arrière-plan d'un Contrôle.
+GUICtrlSetColor ( IDcontrole, textcolor) Définis la couleur du texte d'un contrôle.
+GUICtrlSetCursor ( IDcontrole, cursorID ) Définis l'icone du curseur de la souris pour un Contrôle particulier.
+GUICtrlSetData ( IDcontrole, data [, default] ) Modifie les données d'un Contrôle.
+GUICtrlSetFont (IDcontrole, size [, weight [, attribute [, fontname]]] ) Définis la police pour un Contrôle.
+GUICtrlSetImage ( IDcontrole, filename [, iconID [, icontype]] ) Définis l'image point (Bitmap) ou l'icone pour un Contrôle particulier.
+GUICtrlSetLimit ( IDcontrole, max [, min] ) Limite le nombre de caractère / pixels pour un Contrôle.
+GuiCtrlSetOnEvent ( ctrlID, "fonction" ) Enregistre une fonction de rappel sur un Contrôle.
+GUICtrlSetPos ( IDcontrole, gauche, top [, largeur [, hauteur]] ) Change la position d'un Controle dans une fenêtre d'interface utilisateur.
+GUICtrlSetResizing ( IDcontrole, resizing ) Définis la méthode de redimensionnement utilisé par un Contrôle.
+GUICtrlSetState ( IDcontrole, state ) Change l'état d'un Contrôle.
+GUICtrlSetStyle ( IDcontrole, style [, exStyle] ) Change le style d'un Contrôle.
+GUICtrlSetTip ( IDcontrole, tiptext ) Définis l'infobulle associé à un Contrôle.
+GUIDelete ( [winhandle] ) Supprime une fenêtre GUI et tous les Contrôle qu'elle contient.
+GUIGetCursorInfo ( [winhandle] ) Capture la position relative du curseur de la souris dans une fenêtre d'interface utilisateur.
+GUIGetMsg ( [advanced] ) Interroge une fenêtre d'interface utilisateur pour voir si un événement à eu lieu (détection d'un événement sur une GUI).
+GUISetBkColor ( background [, winhandle] ) Définis la couleur d'arrière-plan d'une fenêtre d'interface utilisateur.
+GUISetCoord ( gauche, top [, largeur [, hauteur [, winhandle]]] ) Définis les coordonnées absolues pour le prochain Contrôle.
+GUISetCursor ( [cursorID [, override [, winhandle]]] ) Définis le l'icone de curseur de la souris pour une fenêtre d'interface utilisateur.
+GUISetFont (size [, weight [, attribute [, fontname [, winhandle]]]] ) Définis la police par défaut pour une fenêtre d'interface utilisateur.
+GUISetHelp ( helpfile [, winhandle] ) Configure un fichier exécutable qui sera lancé lorsque la touche F1 sera pressée.
+GUISetIcon ( iconfile [, iconID [, winhandle]] ) Définis l'icone utilisée pour une fenêtre d'interface utilisateur.
+GUISetOnEvent ( specialID, "fonction" [, winhandle] ) Détermine l'appel d'une fonction utilisateur lorsque un Contrôle est cliqué.
+GUISetState ( [flag [, winhandle]] ) Change l'état d'une fenêtre d'interface utilisateur.
+GUIStartGroup ( [winhandle] ) Définis que tous les Contrôles créés sous-jacent seront définis comme "groupés".
+GUISwitch ( winhandle ) Bascule la fenêtre courrante utilisée comme fonction d'interface utilisateur.
+Hex ( number, length ) Renvoie la représentation d'une chaine de caractère d'un nombre entier convertie en hexadécimale (Entier ==> Hexadécimal).
+HotKeySet ( "key" [, "fonction"] ) Définis une touche (hotKey) pour appeller une fonction utilisateur.
+HttpSetProxy ( mode [, "proxy:port" [, "username", "password"]] ) Configure le Proxy Internet pour utilisation de l'accès HTTP.
+InetGet ( "URL", "nomDeFichier" [, reload [, background]] ) Télécharge un fichier provenant de Internet en utilisatn le protocole HTTP ou FTP.
+InetGetSize ( "URL" ) Renvoie la taille (en byte) d'un fichier situé sur Internet.
+IniDelete ( "nomDeFichier", "section" [, "key"] ) Supprime une valeur d'un fichier de format de configuration standard (.INI).
+IniRead ( "nomDeFichier", "section", "key", "default" ) Lis une valeur d'un fichier de format de configuration standard (.INI).
+IniReadSection ( "nomDeFichier", "section" ) Lis toutes les clés / paires de valeur d'une section d'un fichier de configuration standard (.INI).
+IniReadSectionNames ( "nomDeFichier" ) Lis toutes les section d'un fichier de configuration standard (.INI).
+IniWrite ( "nomDeFichier", "section", "key", "value" ) Ecrit une valeur dans un fichier de configuration standard (.INI).
+InputBox ( "title", "Prompt" [, "Default" [, "password char" [, largeur, hauteur [, gauche, Top [, TimeOut]]]]] ) Affiche une boite d'entrée (InputBox) pour demander à l'utilisateur d'encoder une chaine de caractère.
+Int ( expression ) Renvoie l'entier (Nombre entier) d'une représentation ou d'une expression.
+IsAdmin ( ) Controle si l'utilisateur courrant a les droits administrateurs.
+IsArray ( variable ) Controle si une variable est de type zone de mémoire (Array).
+IsDeclared ( expression ) Controle si une variable a été déclarée.
+IsFloat ( variable ) Controle si une variable ou une expression est de type flottante.
+IsInt ( variable ) Controle si une variable ou une expression est de type entier.
+IsNumber ( variable ) Controle si la base de la variable est de type numérique.
+IsString ( variable ) Controle si la variable est une chaine de caractère.
+Log ( expression )  Calcule le logarithme naturel d'un nombre.
+MemGetStats ( ) Renvoie / Capture les informations relative à la mémoire.
+Mod ( value1, value2 ) Exécute une opération modulatoire.
+MouseClick ( "button" [, x, y [, clicks [, speed ]]] ) Exécute l'opération d'un clic de souris.
+MouseClickDrag ( "button", x1, y1, x2, y2 [, speed] )  Exécute l'opération d'un clic de souris suivis d'un "déposé".
+MouseDown ( "button" ) Exécute un évenement de souris (scroll / mouvement) vers le bas en rapport avec la position courrante de la souris.
+MouseGetCursor ( ) Renvoie un nombre identifiant de curseur (cursor ID Number) de la position courrante de la souris.
+MouseGetPos ( ) Renvoie / Capture la position courrante du curseur de la souris.
+MouseMove ( x, y [, speed] ) Déplace le curseur de la souris.
+MouseUp ( "button" ) Exécute un événement de souris (scroll / mouvement) vers le haut en rapport avec l position courrante de la souris.
+MouseWheel ( "direction" [, clicks] ) Actionne la roulette de la souris vers le haut ou le bas (NT / 2000 / XP / 2003 uniquement)
+MsgBox ( flag, "title", "texte" [, timeout] ) Affiche une boite de dialogue simple avec comme option un délai (TimeOut).
+Number ( expression )  Renvoie la représentation numérique d'une expression. 
+Opt ( "CaretCoordMode", parametres ) Option AutoIt. Définis la manière que des coordonnées sont employées en fonction d'omission, coodonnées absolues ou coordonnées relative à la fenêtre courrante : 0 = coordonnées relavtive à la fenêtre courrante, 1 = coordonnées absolues à l'écran utilisateur courrant (par défaut), 2 = coordonnées relative en rapport avec la zone de la fenêtre utilisateur courrante.
+Opt ( "ColorMode", parametres ) Option AutoIt. Définis la manière dont les couleurs sont utilisées, RGB ou BGR. Le RGB est par défaut mais dans les versions précédentes de AutoIt (pré 3.1.1), BGR était par défaut ; 0 = les couleurs sont définies par RGB (0xRRGGBB) (par défaut), 1 = les couleurs sont définies par BGR (0xBBGGRR) (le mode des anciennes versions AutoIt)
+Opt ( "ExpandEnvStrings", parametres ) Option AutoIt. Détermine comment des chaines de caractère litérale et les symboles de % (pourcent)sont interpretés.  Par défaut les chaines de caractères sont traitées litéralement, cette option vous permet d'employer des variables %environement% dans les chaines de caractère, p.e, "Le dossier temporaire est : %temp%". 1 = étend les variables d'environnement (similaire à AutoIt v2), 0 = n'expend pas les variables d'environnement (par défaut) Sans cette option, la manière habituelle serait : 	"Le dossier temporaire est: " & EnvGet("temp")
+Opt ( "ExpandVarStrings", parametres ) Option AutoIt. Change comment les chaines de caractère litérale et les variables ou macro ($ et @) sont interpretées. Par défaut les chaines de caractères sont traitées litéralement, cette option attribue comment utiliser les variables et les macros dans les chaines de caractères, p.e., "La valeur de var1 est $var1". 1 = étend la variable (lorsque dans ce mode vous désirez utiliser litéralement un $ ou @ alors il faut le doubler : "Ceci est un signe dollard simple $$". 0 = n'étend pas les variables (par défaut). 
+Opt ( "FtpBinaryMode", parametres ) Option AutoIt. Détermine comment les fichiers FTP sont transferés. 1 = Binaire (par défaut) 0 = ASCII 
+Opt ( "GUICloseOnESC", parametres ) Option AutoIt. Lorsque la touche ESC est poussé sur une interface utilisateur, le message de variable $GUI_EVENT_CLOSE est envoyé. Cette option active ou désactive cet événement. 1 = Envoie le message de variable $GUI_EVENT_CLOSE lorsque la touche ESC est poussée (par défaut). 1 = Désactive le message de variable $GUI_EVENT_CLOSE lorsque la touche ESC est poussée. 
+Opt ( "GUICoordMode", parametres ) Option AutoIt. Alterne la position d'un Contrôle définis par <a href="GUICtrlSetPos.htm">GUICtrlSetPos</a>. 1 = coordonnées absolues (par défaut) relative à la boite de dialogue. 0 = position relative au démarrage du dernier Contrôle (coin gauche supérieur) 2 = cellule positionnée en relatif à la cellule courante. Un -1 pour le paramétrage de gauche ou du dessus n'incrémente pas le début. Ainsi la prochaine ligne est -1,0 ; la prochaine cellule est 0, -1 ; la cellule courrante est -1, -1 
+Opt ( "GUIOnEventMode", parametres ) Option AutoIt. Active / Désactive la fonction de notificatino OnEvent. 0 = (par défaut) désactivé. 1 = actif.  
+Opt ( "GUIResizeMode", parametres ) Option AutoIt. Change le redimensionnement par défaut d'un Contrôle. 0 = (par défaut) pas de redimensionnement. &lt;1024 = pour tout type de redimensionnement voir <a href="GUICtrlSetResizing.htm">GUICtrlSetResizing</a>. 
+Opt ( "MouseClickDelay", parametres ) Option AutoIt. Change la durée de pause entre deux clics de souris. Laps de temps déterminé en millisecondes de pause (par défaut = 10). 
+Opt ( "MouseClickDownDelay", parametres ) Option AutoIt. Change la longueur qu'un clic est maintenu avant dégagement. Laps de temps déterminé en millisecondes de pause (par défaut = 10). 
+Opt ( "MouseClickDragDelay", parametres ) Option AutoIt. Change la longueur de la pause en début et fin d'une opération de glisser et déposer (drag and drop). Laps de temps déterminé en millisecondes de pause (par défaut = 250). 
+Opt ( "MouseCoordMode", parametres ) Option AutoIt. Définis la manière dont les coordonnées sont utilisées dans les fonctions de souris, coordonnées absolues ou coordonnées relatives à la fenêtre active courante : 0 = coordonnées relatives à la fenêtre active, 1 = coordonnées absolues de l'écran (par défaut), 2 = coordonnées relatives a la zone de la fenêtre active.
+Opt ( "MustDeclareVars", parametres ) Option AutoIt. Si cette option est utilisée, toutes les variables doivent être prédéclarée avec Dim, Local ou Global avant utilisation - diminue les chance pour des variables mal épelées causant des problèmes. 1 = las variables doivent être prédéclarée, 0 = les variables n'ont pas besoin d'être prédéclaré (par défaut).
+Opt ( "OnExitFunc", parametres ) Option AutoIt. Définis le nom de la fonction qui est appellée lorsque AutoIt est quitté (par défaut sur OnAutoItExit). 
+Opt ( "PixelCoordMode", parametres ) Option AutoIt. Détermine la manière dont sont employés les coordonnées dans les fonctions Pixel, soit des coordonnées relatives soit des coordonnées absolues à la fenêtre active courante. 0 = coordonnées relative à la fenêtre active, 1 = écran en coordonnées absolues (par défaut, 2 = coordonnées relatives a la zone de la fenêtre active.
+Opt ( "RunErrorsFatal", parametres ) Option AutoIt. Définis si le script doit être terminé avec une erreur fatale lorsque une fonction Run / RunWait échoue du a un mauvais chemin / Fichier non trouvé / mauvais identifiant (ID). 1 = Erreur fatale (par défaut), 0 = erreur silencieuse (@error est définis à 1).
+Opt ( "SendAttachMode", parametres ) Option AutoIt. Specifies if AutoIt attaches input threads when using then Send() function.  When not attaching (default mode=0) detecting the state of capslock/scrolllock and numlock can be unreliable under NT4.  However, when you specify attach mode=1 the Send("{... down/up}") syntax will not work and there may be problems with sending keys to "hung" windows.  ControlSend() ALWAYS attaches and is not affected by this mode. 0 = don't attach (default) 1 = attach 
+Opt ( "SendCapslockMode", parametres ) Option AutoIt. Spécifie si AutotIt stocke l'état du CapsLock avant une fonction et restaure sa position après exécution. 0 = pas de stockage / restauration, 1 = stockage et réstauration (par défaut).
+Opt ( "SendKeyDelay", parametres ) Option AutoIt. Change la longueur de la pause entre deux envois de touches. Laps de temps définis en millisecondes de pause (par défaut = 5). Parfois une valeur de 0 ne fonctione pas; Employez 1 à la place.
+Opt ( "SendKeyDownDelay", parametres ) Option AutoIt. Change la durée où une touche est maintenue avant libération pendant un envois de données (keystroke) [frappe clavier]. Pour les applications qui prenne un laps de temps d'inscription dans le registre (et beaucoup de jeux) vous pouvez augmenter cette valeur par défaut. Le laps de temps est définis en millisecondes de pause (par défaut = 1).
+Opt ( "TrayIconDebug", parametres ) Option AutoIt. Si actifs affiche les lignes du script courrant dans l'infobulle de l'incone du SysTray afin d'aider au déboguage. 0 = pas d'information de déboguage (par défaut), 1 = affiche les informations de déboguage.
+Opt ( "TrayIconHide", parametres ) Option AutoIt. Cache l'icone AutoIt du SysTray. Note : L'icone s'affichera initialement pendant ~750 millisecondes. 0 = affiche l'icone (par défaut), 1 = cache l'icone.
+Opt ( "WinDetectHiddenText", parametres ) Option AutoIt. Indique si le texte caché de fenêtre peut "être vu" par les fonctions assorties de fenêtre. 0 = ne détectent pas le texte caché (défaut) 1 = détectent le texte caché.
+Opt ( "WinSearchChildren", parametres ) Option AutoIt. Attribue à la routine de recherche de fenêtre la recherche de fenêtre enfant autant que de fenêtre de premier niveau. 0 = uniquement rechercher les fenêtre de premier niveau (par défaut), 1 = recherche les fenêtre de premier niveau et les fenêtres enfants.
+Opt ( "WinTextMatchMode", parametres ) Option AutoIt. Change la méthode employée pour assortir les textes des fenêtre durant les opérations de recherches. 1 = mode complet / mode lent (par défaut); 2 = mode rapide, dans le mode rapide AutoIt peut seulement visualiser les texte de boite de dialogue, texte de boutons et les légendes de quelques Contrôles. En mode par défaut, beaucoup plus de texte peut être vu (par exemple le contenu de la fenêtre du Bloc-note). Si vous avez des problèmes de performance lors de recherche de / dans des fenêtres changer ce mode en "rapide" peut vous aider.
+Opt ( "WinTitleMatchMode", parametres ) Option AutoIt. Change la méthode qui est employée pour assortir les titres de fenêtres durant une opération de recherche. 1 = concorde le titre dès le début (par défaut), 2 = concorde n'importe quelle sous chaine de caractère du titre, 3 = concorde exactement le titre, 4 = mode avancé voir <a href="../intro/windowsadvanced.htm">Titre de fenêtre & Texte (Avancé)</a>
+Opt ( "WinWaitDelay", parametres ) Option AutoIt. Change le temps d'attente du script après une opération de connection de fenêtre réussie. Laps de temps de pause définis en millisecondes (par défaut = 250)
+Ping ( address or hostname [, timeout] ) Envoie un paquet de donnée de type Ping à un hôte distant et renvoie le résultat temporel.
+PixelChecksum ( gauche, top, right, bottom [, step] ) Génère une somme de vérification (CheckSum) pour une région de pixels.
+PixelGetColor ( x , y ) Renvoie la colorisation d'un pixel en concordance avec les coordonnées X, Y définies.
+PixelSearch ( gauche, top, right, bottom, color [, shade-variation] [, step]]  ) Cherche un rectangle de pixel pour fournir la colorisation des pixels.
+ProcessClose ( "process" ) Termine / Ferme le processus nommé.
+ProcessExists ( "process" )  Controle si le processus renseigné existe. 
+ProcessList ( ["name"] ) Renvoie dans une zone de mémoire (Array) la liste des processus en cours (nom et PID [Processus ID].
+ProcessSetPriority ( "process", priority) Change la priorité d'un processus
+ProcessWait ( "process" [, timeout] ) Suspend l'exécution d'un script tant que le processus renseigné existe.
+ProcessWaitClose ( "process" [, timeout] ) Suspend l'exécution d'un script tant que le processus renseigné n'existe pas.
+ProgressOff ( ) Eteins la fenêtre de progression.
+ProgressOn ( "title", "maintext" [, "subtext" [, x pos [, y pos [, opt]]]] ) Crée une fenêtre personnalisable de progression.
+ProgressSet ( percent [, "subtext" [, "maintext"]] ) Définis la progression (position) et / ou le texte d'une fenêtre de progression précédemment créée.
+Random ( [Min [, Max [, indicateur]]] ) Génère un pseudo nombre aléatoire de type flottant.
+RegDelete ( "keyname" [, "valuename"] ) Supprime une clé ou une valeur du registre.
+RegEnumKey ( "keyname", instance ) Lis le nom d'une sous-clé registre selon l'exemple mentionné.
+RegEnumVal ( "keyname", instance ) Lis le nom d'une valeur registre selon l'exemple mentionné.
+RegRead ( "keyname", "valuename" ) Lis une valeur du registre.
+RegWrite ( "keyname" [,"valuename", "type", value] ) Crée une clé ou une valeur dans le registre.
+Round ( expression [, decimalplaces]  ) Renvoie un nombre arrondis au nombre indiqué de décimale.
+Run ( "nomDeFichier" [, "workingdir" [, indicateur]] ) Exécute un programme externe.
+RunAsSet ( ["user", "domain", "password" [, options]] ) Initialise une configuration utilisateur pour l'utilisation des opérations Run et RunWait (Login sous un USER différent pour opération Run et RunWait).
+RunWait ( "nomDeFichier" [, "workingdir" [, indicateur]] ) Exécute une commande externe (programme) et arrete l'exécution du script jusqu'a la fin de celle-ci.
+Send ( "keys" [, indicateur] ) Envoie des "simulation touche" (frappes clavier) à la fenêtre active.
+SetError ( code )  Définis manuelle la valeur de la macro @error. 
+SetExtended ( code )  Définis manuellement la valeur de la macro @extended. 
+Shutdown ( code ) Eteins le système (PC).
+Sin ( expression ) Calcule le sinus d'un nombre.
+Sleep ( delay ) Suspend l'exécution du script.
+SoundPlay ( "nomDeFichier" [, wait] ) Joue un fichier son.
+SoundSetWaveVolume ( percent )  Définis en pourcentage le volume du son. 
+SplashImageOn ( "title", "fichier" [, largeur [, hauteur [, x pos [, y pos [, opt]]]]] ) Crée une fenêtre (popup Splash) personnalisable d'image.
+SplashOff ( ) Coupe l'effet SplashText ou le SplashImage.
+SplashTextOn ( "title", "texte" [, w [, h [, x pos [, y pos [, opt [, "fontname" [, "fontsz" [, "fontwt"]]]]]]]] ) Crée une fenêtre (popup Splash) personnalisable de texte.
+Sqrt ( expression ) Calcule la racine carrée d'un nombre.
+StatusbarGetText ( "titre" [, "texte" [, part]] ) Renseigne le texte d'un Contrôle barre des status standard.
+String ( expression ) Renvoie la représentation d'une chaine de caractère.
+StringAddCR ( "chaine" ) Takes a string and prefixes all linefeed characters ( Chr(10) ) with a carriage return character ( Chr(13) ).
+StringFormat ( "format control", var1 [, ... var32] ) Renvoie une chaine de caractère formatée (similaire à la fonction C sprintf() ).
+StringInStr ( "chaine", "substring" [, casesense [, occurance]] ) Controle si une chaine de caractère contient la sous-chaine de caractère renseignée.
+StringIsAlNum ( "chaine" ) Controle si une chaine de caractère contient uniquement des caractères alphanumériques.
+StringIsAlpha ( "chaine" ) Controle si une chaine de caractère contient uniquement des caractères alphabétiques.
+StringIsASCII ( "chaine" ) Controle si une chaine de caractère contient uniquement des caractères ASCII dans la gamme 0x00 - 0x7f (0 - 127).
+StringIsDigit ( "chaine" ) Controle si une chaine de caractère contient uniquement des chiffres (0-9).
+StringIsFloat ( "chaine" ) Controle si une chaine de caractère est un nombre à virgule flottant.
+StringIsInt ( "chaine" ) Controle si une chaine chaine de caractère est un nombre entier.
+StringIsLower ( "chaine" ) Controle si une chaine de caractère contient uniquement des minuscules.
+StringIsSpace ( "chaine" ) Controle si une chaine de caractère contient uniquement des espaces blancs.
+StringIsUpper ( "chaine" ) Controle si une chaine de caractère contient uniquement des majuscules.
+StringIsXDigit ( "chaine" ) Controle si une chaine de caractère contient uniquement des chiffres hexadécimaux (0-9, A-F).
+StringLeft ( "chaine", count ) Renvoie un nombre de caractère en partant de la gauche d'une chaine de caractères.
+StringLen ( "chaine" )  Renvoie le nombre de caractère d'une chaine de caractère. 
+StringLower ( "chaine" ) Convertis une chaine de caractère en minuscule.
+StringMid ( "chaine", start [, count] ) Extrait un nombre de caractère d'une chaine de caractère.
+StringRegExp ( "test", "pattern", [ flag ] ) Controle si une chaine de caractère donne une expression régulière basée sur un modèle donné.
+StringRegExpReplace ( "test", "pattern", "replace", [ count ] ) Remplace du texte dans une chaine de caractère basée sur une expression régulière.
+StringReplace ( "chaine", "searchstring" or start, "replacestring" [, count [, casesense]] ) Remplace une sous-chaine de caractères dans une chaine de caractères.
+StringRight ( "chaine", count ) Renvoie un nombre de caractère en partant de la droite d'une chaine de caractères.
+StringSplit ( "chaine", "delimiters" [, flag ] ) Coupe une chaine de caractère dans une sous-chaine de caractère en dépendant du caractère de délimitation.
+StringStripCR ( "chaine" ) Supprime tous les retours de chariot ( Chr(13) ) d'une chaine de caractères.
+StringStripWS ( "chaine", flag ) Dépouille les espaces blanc d'une chaine de caractère.
+StringTrimLeft ( "chaine", count ) Equilibre le nombre de caractère d'une chaine de caractère en partant de la gauche.
+StringTrimRight ( "chaine", count ) Equilibre le nombre de caractère d'une chaine de caractère en partant de la droite.
+StringUpper ( "chaine" ) Convertis une chaine de caractère en majuscule.
+Tan ( expression ) Calcule la tangente d'un nombre.
+TimerDiff ( timestamp ) Renvoie la différence temporelle a partir de l'appel précédent de la fonction TimerInit().
+TimerInit ( ) Renvoie une valeur temporelle (en millisecondes).
+TimerStart ( ) Initialise une valeur temporelle (en millisecondes).
+TimerStop ( timestamp ) Renseigne une différence temporelle a partir d'un appel précédent de TimerInit() [stoppe le Timer de la fonction TimerInit() et renseigne du résultat].
+ToolTip ( "texte" [, x [, y]] ) Crée une infobulle n'importe ou sur l'écran.
+TrayTip ( "title", "texte", timeout [, option] ) Affiche une infobulle sur l'icone AutoIt (2000 / XP uniquement).
+UBound ( Array [, Dimension] ) Renvoie la taille d'une zone de mémoire.
+WinActivate ( "titre" [, "texte"] ) Active (donne le focus) à une fenêtre.
+WinActive ( "titre" [, "texte"] ) Controle si la fenêtre renseignée existe et si elle est active dans son étât actuel (focus).
+WinClose ( "titre" [, "texte"] ) Ferme la fenêtre renseignée.
+WinExists ( "titre" [, "texte"] ) Controle si la fenêtre renseignée existe.
+WinGetCaretPos ( ) Renvoie les coordonnées du chariot dans la fenêtre au premier plan.
+WinGetClassList ( "titre" [, "texte"] ) Retourne les classes d'une fenêtre.
+WinGetClientSize ( "titre" [, "texte"] ) Renvoie la taille d'une zone client d'une fenêtre renseignée.
+WinGetHandle ( "titre" [, "texte"] ) Retourne le Handle d'une fenêtre.
+WinGetPos ( "titre" [, "texte"] ) Renseigne / Capture la position et la taille de la fenêtre renseignée.
+WinGetProcess ( "titre" [, "texte"] ) Renseigne / Capture l'identifiant de processus (Process ID ou PID) associé à la fenêtre renseignée.
+WinGetState ( "titre" [, "texte"] ) Renseigne / Capture l'étât  de la fenêtre renseignée.
+WinGetText ( "titre" [, "texte"] ) Renseigne / Capture le texte d'une fenêtre.
+WinGetTitle ( "titre" [, "texte"] ) Renseigne / Capture le titre complet d'une fenêtre.
+WinKill ( "titre" [, "texte"] ) Force la fermeture d'une fenêtre.
+WinList ( ["title" [, "texte"]] ) Retourne une liste des fenêtres.
+WinMenuSelectItem ( "title", "texte", "element" [, "element" [, "element" [, "element" [, "element" [, "element" [, "element"]]]]]] ) Invokes a menu item of a window.
+WinMinimizeAll ( ) Minimalise toutes les fenêtres.
+WinMinimizeAllUndo ( ) Annule l'action de minimaliser toutes les fenêtres (fonction WinMinimizeAll).
+WinMove ( "title", "texte", x, y [, largeur [, hauteur]] ) Déplace et / ou redimensionne une fenêtre.
+WinSetOnTop ( "title", "texte", flag ) Définis l'attribut de la fenêtre comme "Toujours au dessus".
+WinSetState ( "title", "texte", flag ) Affiche, carche, minimise ou restaure une fenêtre (définis l'étât).
+WinSetTitle ( "title", "texte", "newtitle" ) Change le titre d'une fenêtre.
+WinSetTrans ( "title", "texte", transparency ) Définis la transparence d'une fenêtre (Windows 2000 / XP ou postérieurs).
+WinShow ( "title", "texte", flag ) Affiche, cache, minimise, maximise ou restore une fenêtre.
+WinWait ( "titre" [, "texte" [, timeout]] ) Suspend l'exécution du script tant que la fenêtre renseignée n'est pas existante.
+WinWaitActive ( "title", ["texte"], [timeout] ) Suspend l'exécution du script tant que la fenêtre renseignée n'est pas active.
+WinWaitClose ( "titre" [, "texte" [, timeout]] ) Suspend l'exécution du script tant que la fenêtre renseignée n'est plus existante (fermée).
+WinWaitNotActive ( "titre" [, "texte" [, timeout]] ) Suspend l'exécution du script tant que la fenêtre renseignée n'est pas inactive.
+_ArrayAdd ( $avArray, $sValue ) Ajoute une valeur spécifique à la fin d'une zone de mémoire (Array), renvoie la valeur modifiée de la zone de mémoire (Array). (Requiert : #include <Array.au3>)
+_ArrayBinarySearch ( $avArray, $iKey [, $i_Base=0] ) Utilise l'algorithme binaire de recherche pour recherche sur une rangée unidimentionnelle. (Requiert : #include <Array.au3>)
+_ArrayCreate ( $v_Val1, [$v_Val2, [..., $v_Val21]] ) Crée une petite zone de mémoire (Array) et lui assigne des valeurs. (Requiert: #include <Array.au3>)
+_ArrayDelete ( $avArray, $iElement ) Supprime l'élément spécifé d'une zone mémoire (Array) et renvoie la valeur modifiée. (Requiert: #include <Array.au3>)
+_ArrayDisplay ( $avArray, $sTitle  ) Affiche une zone de mémoire (Array) unidimentionnelle dans une boite de dialogue. (Requiert: #include <Array.au3>)
+_ArrayInsert ( $avArray, $iElement[, $sValue] ) Insère une nouvelle chaine de caractère dans à l'endroit désiré dans une zone de mémoire (Array) et retourne la valeur modifiée. (Requiert : #include <Array.au3>)
+_ArrayMax ( $avArray[[, $iCompNumeric], $i_Base] ) Renvoie la plus haute valeur contenue dans une zone de mémoire (Array). (Requiert : #include <Array.au3>)
+_ArrayMaxIndex ( $avArray[[, $iCompNumeric], $i_Base] ) Retourne l'index de la plus haute valeur contenue dans une zone de mémoire. (Requiert : #include <Array.au3>)
+_ArrayMin ( $avArray[[, $iCompNumeric], $i_Base] ) Renvoie la plus petite valeur contenue dans une zone de mémoire (Array). (Requiert : #include <Array.au3>)
+_ArrayMinIndex ( $avArray[[, $iCompNumeric], $i_Base] ) Renvoie l'index de la plus petite valeur contenue dans une zone de mémoire. (Requiert : #include <Array.au3>)
+_ArrayPop ( $avArray ) Renvoie le dernier élément d'une zone de mémoire et supprime cet élément de la zone de mémoire (Array) dans le même temps(Requiert : #include <Array.au3>)
+_ArrayReverse ( $avArray ) Capture la zone de mémoire et renvoie une valeur renversée de l'ordre des élements capturés de la dite zone de mémoire (Array). (Requiert : #include <Array.au3>)
+_ArraySort ( ByRef $a_Array, [[[[[$i_Descending], $i_Base=0], $i_Ubound=0], $i_Dim=1], $i_SortIndex=0] ) Sorte de zone de mémoire multidimentionnelle. (Requiert : #include <Array.au3>)
+_ArraySwap ( $sVector1, $sVector2 ) Permute deux éléments d'une zone de mémoire (Array). (Requiert : #include <Array.au3>)
+_ArrayToClip ( $avArray, $i_Base = 0) Envoie le contenu d'une zone de mémoire (Array) au presse-papier. (Requiert : #include <Array.au3>)
+_ArrayToString ( $avArray, $iStart, $iEnd, $sDelim ) Place les éléments d'une zone de mémoire (Array) dans une chaine de caractère simple séparés par le délimitant spécifé. (Requiert : #include <Array.au3>)
+_ArrayTrim ( $aArray, $iTrimNum [[[, $iTrimDirection], $iBase], $iUbound] ) Nettoye d'une zone de mémoire (Array) un certain nombre de caractères. (Requiert : #include <Array.au3>)
+_ColorGetBlue ( $nColor ) Renvoie le composant bleu d'une couleur déterminée. (Requiert : #include <Color.au3>)
+_ColorGetGreen ( $nColor ) Renvoie le composant vert d'une couleur déterminée. (Requiert : #include <Color.au3>)
+_ColorGetRed ( $nColor ) Renvoie le composant rouge d'une couleur déterminée. (Requiert : #include <Color.au3>)
+_DateAdd ( $sType, $iValToAdd, $sDate ) Calcule une nouvelle date basée basée sur la date renseignée et ajoute l'interval demandé. (Requiert : #include <Date.au3>)
+_DateDayOfWeek ( $iDayNum [, $iFormat] ) Renvoie le nom du jour de la semaine, basé sur le jour spécifié. (Requiert : #include <Date.au3>)
+_DateDaysInMonth ( $iYear, $iMonthNum ) Renvoie le numéro du jour dans le mois, basé sur le mois et l'année renseignée. (Requiert : #include <Date.au3>)
+_DateDiff ($sType, $sStartDate, $sEndDate) Renvoie la différence entre deux dates exprimée dans la requête. (Requiert : #include <Date.au3>)
+_DateIsLeapYear ( $iYear ) Controle l'année renseignée afin de voir si c'est une année bissextile. (Requiert : #include <Date.au3>)
+_DateIsValid ( $sDate ) Controle la date renseignée afin de déterminer si elle est valide.  (Requiert : #include <Date.au3>)
+_DateTimeFormat ( $sDate, $sType) Renvoie la date dans le format régional du PC.  (Requiert : #include <Date.au3>)
+_DateTimeSplit ($sDate, ByRef $asDatePart, ByRef $iTimePart) Sépare une chaine de caractère contenant un temps et une date en deux zone de mémoire (Array). (Requiert : #include <Date.au3>)
+_DateToDayOfWeek ( $iYear, $iMonth, $iDay ) Renvoie le numéro de jour de semaine d'une date donnée.  (Requiert : #include <Date.au3>)
+_DateToDayValue ($iJulianDate, ByRef $iYear, ByRef $iMonth, ByRef $iDay) Ajoute les jours donnés depuis "midi 4713" avant le Christ et renvoie la date du calendrier Grégorien. (Requiert : #include <Date.au3>)
+_Now () Renvoie la date et l'heure courrante au format du PC. (Requiert : #include <Date.au3>)
+_NowCalc () Renvoie l'heure et la date courrante au format AAAA/MM/JJ HH:MM:SS pour utilisation dans des calculs de date. (Requiert : #Include <date.au3>)
+_NowCalcDate () Renvoie la date courrante au format AAAA/MM/JJ. (Requiert : #Include <date.au3>)
+_NowDate () Renvoie la date courrante au format du PC.  (Requiert : #Include <date.au3>)
+_NowTime () Renvoie l'heure courrant au format HH:MM:SS.  (Requiert : #Include <date.au3>)
+_TicksToTime ( $iTicks, $iHours, $iMins, $iSecs ) Convertis le compteur indiqué en heures, minutes, secondes. (Requiert : #Include <date.au3>)
+_TimeToTicks ( $iHours, $iMins, $iSecs ) Convertis les heures, les minutes et les secondes en compteur. (Requiert : #Include <date.au3>)
+_FileCountLines ( $sFilePath ) Renvoie le nombre de lignes d'un fichier spécifié. (Requiert : #Include <file.au3>)
+_FileCreate ( $sFilePath ) Crée un fichier spécifié à l'endroit indiqué. (Requiert : #Include <file.au3>)
+_FileReadToArray ($sFilePath, ByRef $aArray) Lis un fichier spécifié dans une zone de mémoire (Array). (Requiert : #Include <file.au3>)
+_FileWriteLog ( $sLogPath, $sLogMsg ) Ecris la date et l'heure courrante ainsi que le texte spécifique dans le fichier journal (LogFile). (Requiert : #Include <file.au3>)
+_TempFile () Génère un nom pour un fichier temporaire. Le fichier est garantis de ne pas exister dans le répertoire %TEMP% de l'utilisateur. (Requiert : #Include <file.au3>)
+_GetIP () Capture l'IP Internet Publique d'un réseau / ordinateur. (Requiert : #Include <inet.au3>)
+_INetExplorerCapable ( $s_IEString ) Convertis une chaine de caractère en une adresse lisible par IE (Internet Explorer). (Requiert : #Include <inet.au3>)
+_INetMail ( $s_MailTo, $s_MailSubject, $s_MailBody ) Ouvre le client de messagerie par défaut de l'utilisateur avec l'adresse donnée, le sujet et le corps de message. (Requiert : #Include <inet.au3>)
+_Ceil ( $nValue ) Renvoie le plus petit nombre entier supérieur ou égal à la valeur indiquée.  (Requiert : #include <math.au3>)
+_Floor ( $nValue ) Renvoie le plus grand nombre entier inférieur ou égal à la valeur indiquée.  (Requiert : #include <math.au3>)
+_MathCheckDiv ( $i_NumA, $i_NumB ) Controle si NumA est divisible par NumB. (Requiert : #include <math.au3>)
+_Max ( $nNum1, $nNum2 ) Evalue quel est le plus grand nombre des deux. (Requiert : #include <math.au3>)
+_Min ( $nNum1, $nNum2 ) Evalue quel est le plus petit nombre des deux. (Requiert : #include <math.au3>)
+_Iif ( $f_Test, $v_TrueVal, $v_FalseVal ) Réalise un test Booléen (boolean) avec l'expression renseignée. (Requiert : #include <Misc.au3>)
+_RunDOS ( $sCommand ) Exécute une commande MS-DOS dans une fenêtre masquée d'interprétation de commande. (Requiert : #Include <process.au3>)
+_HexToString ("hex") Convertis une chaine de caractère hexadécimale en une chaine de caractère. (Requiert : #include <string.au3>)
+_StringEncrypt ( $i_Encrypt, $s_EncryptText, $s_EncryptPassword [, $i_EncryptLevel ] ) Une fonction de codage RC4 de chaine de caractère. (Requiert : #include <string.au3>)
+_StringProper ( $sString ) Change une chaine de caractère en casse propre, similaire a la fonction NomPropre de Excel (Attribue à chaque mot une majuscule). (Requiert: #Include <string.au3>)
+_StringRepeat ( $sString, $iRepeatCount ) Répète une chaine de caractère un certain nombre de fois. (Requires: #Include <string.au3>)
+_StringReverse ( $sString ) Inverse le contenu de la chaîne de caractère spécifiée. (Requiert: #Include <string.au3>)
+_StringToHex ("chaine") Convertis une chaîne de caractère en une chaine hexadécimale. (Requires: #include <string.au3>)
+_viClose ($h_session) Ferme une connection VISA d'un Périphérique ou d'un Instrument. (Requiert: #include <Visa.au3>)
+_viExecCommand ($h_session, $s_command, $i_timeout_ms = -1) Envoie une commande / requête à un instrument / appareil par l'interface VISA (GPIB / TCP). (Requiert: #include <Visa.au3>)
+_viFindGpib (ByRef $a_descriptor_list, ByRef $a_idn_list, $f_show_search_results = 0) Recherche une commande / requête d'un instrument / appareil par l'interface VISA (GPIB / TCP) (Requires: #include <Visa.au3>)
+_viGpibBusReset () Réinitialise le BUS GPIB : Utilisez cette fonction lorsque le BUS GPIB ne répond pas pour une quelconque raison. Vous pourriez être chanceux et résoudre ce problème en appellant cette fonction. (Requiert : #include <Visa.au3>)
+_viGTL ($h_session) Aller vers le mode local (Go To Local mode) : les instruments qui acceptent cette commande quitteront le mode de controle à distance ("Remote Control mode") et iront sur le mode Local. Si l'instrument est déjà en mode Local, cette commande sera ignorée, si l'instrument ne support pas ce type de commande il restera en mode controle à distance. (Requiert : #include <Visa.au3>)
+_viOpen ($s_visa_address, $s_visa_secondary_address = 0) Ouvre une connection VISA vers un Périphérique ou un Instrument. (Requiert : #include <Visa.au3>)
+_viSetAttribute ($h_session, $i_attribute, $i_value) Configure tout attribut VISA. Cette fonction, qui est appellée par _viSetTimeOut, peut AUSSI être utilisée pour définir des autres attributs spécifiques VISA. Lisez la documentation VISA pour plus d'information des attributs VISA et de leurs valeurs. (Requiert : #include <Visa.au3>)
+_viSetTimeout ($h_session, $i_timeout_ms) Définis la limite de temps (TimeOut) VISA en millisecondes. (Requiert : #include <Visa.au3>)
