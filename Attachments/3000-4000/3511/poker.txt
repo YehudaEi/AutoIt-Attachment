@@ -1,0 +1,39 @@
+Window names
+$pokerWindow = "Play Money"
+$brainWindow = "Watching:"
+
+; Poker button control IDs
+$foldButton = "AfxWnd42s14"
+$checkButton = "AfxWnd42s15"
+$callButton = "AfxWnd42s15"
+$betButton = "AfxWnd42s16"
+$raiseButton = "AfxWnd42s16"
+
+; No Hands action suggestion field
+$actionField = "WindowsForm10.STATIC.app327"
+
+; Wait for the two windows to be displayed
+winWait($pokerWindow)
+winWait($brainWindow)
+
+msgBox(64, "AutoIt", "Both windows now exist; starting loop")
+
+while (winExists($pokerWindow) and winExists($brainWindow))
+
+    sleep(300)
+    $foldVisible = controlCommand($pokerWindow, "", $foldButton, "isVisible", "")
+    $raiseVisible = controlCommand($pokerWindow, "", $raiseButton, "isVisible", "")
+
+    if ($foldVisible = 1) then
+        msgBox(64, "AutoIt", "Fold is visible; attempting to read from brain in a moment")
+        sleep(random(1500, 2500))
+        $action = controlGetText($brainWindow, "", $actionField)
+        msgBox(64, "AutoIt", "Brain returns:" & @CRLF & $action)
+        if $action = "Fold" then controlClick($pokerWindow, "", $foldButton)
+        if $action = "Check" then controlClick($pokerWindow, "", $checkButton)
+        if $action = "Bet" then controlClick($pokerWindow, "", $betButton)
+        if $action = "Raise" then controlClick($pokerWindow, "", $raiseButton)
+        if $action = "Call" then controlClick($pokerWindow, "", $callButton)
+    endIf
+
+wEnd
