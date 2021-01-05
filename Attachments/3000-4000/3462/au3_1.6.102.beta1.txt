@@ -1,0 +1,276 @@
+# Nom du fichier : 		au3.properties													- Officiel - 02/2005
+# Auteur : 				Jos Van Der Zande												- Officiel - 02/2005
+# Site internet : 		www.autoitscript.com											- Officiel - 02/2005
+# Date de création : 	07 Février 2005													- Officiel - 02/2005
+# Description : 		propriété AutoIT v3 pour SciTE
+#
+# Version du fichier :	v1.6.102.beta1													- Non-officiel - 07/2005
+# Modification : 		v1.6.102.beta1								Mise à jour 		- Non-officiel - 07/2005
+#							MISE A JOUR D'URGENCE
+#								Correction des doubles menus
+#								Francisation totale des menus
+#								Ajout du menu Nettoyage de l'historique
+# 						v1.6.201.alpha								Mise à jour 		- Non-officiel - 07/2005
+#								Traduction française des commentaires
+#								Traduction des menus
+#								Modification du menu User CallTips
+#								Ajout de Mise à jour AutoIt (obligation de compiler
+#									l'application dans le dossier d'origine)	
+#								Ajout de Convertir v2 | v3
+# 
+# A faire : 
+#				
+
+
+
+#Spécifie le dossier racine de AutoIT
+autoit3dir=C:\Program Files\AutoIt3
+
+file.patterns.au3=*.au3
+filter.au3=AutoIt (au3)|*.au3|
+lexer.$(file.patterns.au3)=au3
+
+#Commande pour compiler / exécuter le script
+command.compile.*.au3=$(SciteDefaultHome)\CompileAU3\CompileAU3.exe /in "$(FilePath)"
+command.build.*.au3="$(autoit3dir)\aut2exe\aut2exe.exe" /in "$(FilePath)"
+#Cette commande GO fera apparaître les erreurs dans la fenêtre extérieure Output. Utilisation avec la version 3.0.102 ou supérieure
+command.go.*.au3="$(autoit3dir)\autoit3.exe" /ErrorStdOut "$(FilePath)" $(1) $(2) $(3) $(4)
+command.go.subsystem.*.au3=1
+#Configuration Scite de JdeB
+command.1.*.au3="$(autoit3dir)\Scite\SciteConfig.exe"
+command.name.1.*.au3=Configurer Scite
+command.shortcut.1.*.au3=
+command.subsystem.1.*.au3=2
+command.save.before.1.*.au3=2
+command.replace.selection.1.*.au3=0
+command.quiet.1.*.au3=1
+#Commande FunctionPopup AutoIT de JdeB
+command.3.*.au3="$(SciteDefaultHome)\FuncPopUp\FuncPopUp.exe" "-h:$(WindowID)"
+command.subsystem.3.*.au3=2
+command.name.3.*.au3=Aide en PopUp (FuncPopUp)
+command.shortcut.3.*.au3=Shift+F1
+command.save.before.3.*.au3=2
+#Programme AU3Info de Larry
+command.4.*.au3="$(autoit3dir)\AU3Info.exe"
+command.name.4.*.au3=Au3 Info
+command.shortcut.4.*.au3=Ctrl+F6
+command.subsystem.4.*.au3=2
+command.save.before.4.*.au3=2
+command.replace.selection.4.*.au3=0
+command.quiet.4.*.au3=1
+#Programme AU3Record de Larry
+command.5.*.au3="$(SciteDefaultHome)\ScriptWriter\AU3record.exe" /o
+command.subsystem.5.*.au3=1
+command.name.5.*.au3=Enregistreur Au3
+command.shortcut.5.*.au3=Alt+F6
+command.save.before.5.*.au3=2
+command.replace.selection.5.*.au3=1
+command.quiet.5.*.au3=1
+#Programmes AU3Check et Aut2Exe de Tylo
+command.name.6.*.au3=Vérifier et Compiler
+command.6.*.au3="$(SciteDefaultHome)\au3check\CheckCompile.bat" $(command.8.*.au3) $(command.build.*.au3)
+command.shortcut.6.*.au3=Ctrl+Shift+F7
+command.save.before.6.*.au3=1
+#Programme AU3Check et AutoIT3 de Tylo
+command.name.7.*.au3=Vérifier et Exécuter
+command.7.*.au3="$(SciteDefaultHome)\au3check\CheckRun.bat" $(command.8.*.au3) $(command.go.*.au3)
+command.shortcut.7.*.au3=Ctrl+Shift+F5
+command.save.before.7.*.au3=1
+#Programme AU3Check de Tylo
+command.8.*.au3="$(SciteDefaultHome)\au3check\au3check" "$(FilePath)"
+command.name.8.*.au3=Vérifier Syntaxe
+command.shortcut.8.*.au3=Ctrl+F5
+command.save.before.8.*.au3=1
+#Programme de formattage Tidy pour AutoIT3
+command.9.*.au3=tidy\tidy.exe "$(FilePath)"
+command.name.9.*.au3=Ordonner la source
+command.subsystem.9.*.au3=1
+command.save.before.9.*.au3=1
+command.shortcut.9.*=Ctrl+9
+#Programme d'assistant de code de Giuseppe
+command.10.*.au3="$(SciteDefaultHome)\CodeWizard\CodeWizard.exe" /StdOut
+command.subsystem.10.*.au3=1
+command.name.10.*.au3=Assistant Boite de dialogue et d'entrée
+command.shortcut.10.*.au3=Alt+M
+command.save.before.10.*.au3=2
+command.replace.selection.10.*.au3=1
+command.quiet.10.*.au3=1
+
+#"User CallTips" de Mhz (Fonction personnalisée de l'utilisateur)
+#Modifié par Xavier BRUSSELAERS - v1.6.2.alpha - Non-officiel
+command.name.15.*=Entrées utilisateurs
+command.15.*=$(SciteDefaultHome)\scite.exe "$(SciteDefaultHome)\api\au3.user.calltips.api"
+command.subsystem.15.*=1
+ 
+#Rajout d'un menu pour faire les upgrades AutoIT
+#Création par Xavier BRUSSSELAERS - Non-officiel - v1.6.201.alpha
+command.name.16.*=Mise à jour AutoIt
+command.16.*=$(autoit3dir)\Extras\AutoUpdateIt\AutoUpdateIt.exe
+command.subsystem.16.*=2
+
+#Rajout d'un menu pour faire la conversion des script AutoIt v2 en AutoIt v3
+#Création par Xavier BRUSSELAERS & Jos VAN DER ZANDE - Non-officiel - v1.6.201.alpha
+command.name.17.*=Convertir v2 | v3
+command.17.*=$(autoit3dir)\Extras\v2_to_v3_Converter\AutoItV2toV3.exe
+command.subsystem.17.*=2
+
+# MISE A JOUR D'URGENCE - SUPRRESSION DES DOUBLES EMPLOIS
+#Rajout d'un menu pour l'application CodeWizard
+#Création par Xavier BRUSSELAERS - Non-officiel - v1.6.201.alpha
+#command.name.18.*=Assistant de code
+#command.18.*=$(SciteDefaultHome)\CodeWizard\CodeWizard.exe
+#command.subsystem.18.*=2
+
+#Rajout d'un menu pour l'application Tidy
+#Création par Xavier BRUSSELAERS - Non-officiel - v1.6.201.alpha
+#command.name.19.*=Tidy
+#command.19.*=$(SciteDefaultHome)\Tidy\Tidy.exe
+#command.subsystem.19.*=2
+
+#Rajout d'un menu pour le nettoyage de l'historique
+#Création par Xavier BRUSSELAERS - Non-Officiel - v1.6.102.rc1
+command.name.18.*=Nettoyer l'historique
+command.18.*=$(SciteDefaultHome)\_beer.exe
+command.subsystem.18.*=2
+
+#Fonctions standard LUA
+extension.*.au3=$(SciteDefaultHome)\AutoIt3.lua
+#Trouver Fonction Rapidement
+command.name.20.*.au3=Aller à la fonction
+command.mode.20.*.au3=subsystem:lua,savebefore:no
+command.shortcut.20.*.au3=Ctrl+J
+command.20.*.au3=GotoDefinition
+#Bascule de remplacement de script LUA pour police à enchassement fixe (MONOSPACE)
+command.name.21.*.au3=Basculer la police
+command.mode.21.*.au3=subsystem:lua,savebefore:no
+command.shortcut.21.*.au3=Ctrl+F11
+command.21.*.au3=toggleOverrideFont
+#Copie toute les lignes de signet à la ligne courrante
+command.name.22.*.au3=Insérer un signet de ligne(s)
+command.subsystem.22.*.au3=3
+command.22.*.au3=Copy_BookMarks
+command.shortcut.22.*.au3=Ctrl+Alt+B
+command.save.before.22.*.au3=2
+#Ajoute une boite de dialogue pour le "déplantage"
+command.name.23.*.au3=Débug dans boite de dialogue
+command.subsystem.23.*.au3=3
+command.23.*.au3=Debug_MsgBox
+command.shortcut.23.*.au3=Ctrl+Shift+D
+command.save.before.23.*.au3=2
+#Ajoute un message "Console" pour "déplantage"
+command.name.24.*.au3=Debug dans Console
+command.subsystem.24.*.au3=3
+command.24.*.au3=Debug_Console
+command.shortcut.24.*.au3=Alt+D
+command.save.before.24.*.au3=2
+#Commente la "Console" et la boite de dialogue (MSGBOX) pour les lignes fautives
+command.name.25.*.au3=Debug : Commenter TOUTES lignes
+command.subsystem.25.*.au3=3
+command.25.*.au3=Comment_Debug
+command.shortcut.25.*.au3=Alt+Shift+D
+command.save.before.25.*.au3=2
+#Décommente la "Console" et la boite de dialogue (MSGBOX) pour les lignes fautives
+command.name.26.*.au3=Debug : Décommenter TOUTES lignes
+command.subsystem.26.*.au3=3
+command.26.*.au3=unComment_Debug
+command.shortcut.26.*.au3=Alt+Ctrl+D
+command.save.before.26.*.au3=2
+#Ajouter une écriture trace de "Console" à la ligne
+command.name.27.*.au3=Debug : Ajouter lignes de tracage
+command.subsystem.27.*.au3=3
+command.27.*.au3=Au3Trace
+command.shortcut.27.*.au3=
+command.save.before.27.*.au3=2
+#Supprime une écriture trace de "Console" à la ligne
+command.name.28.*.au3=Debug: Enlever les lignes de tracage
+command.subsystem.28.*.au3=3
+command.28.*.au3=Remove_Trace
+command.shortcut.28.*.au3=
+command.save.before.28.*.au3=2
+#Supprime la Console et la boite de dialogue pour les lignes fautives
+command.name.29.*.au3=Debug : Enlever TOUTES lignes
+command.subsystem.29.*.au3=3
+command.29.*.au3=Remove_Debug
+command.shortcut.29.*.au3=
+command.save.before.29.*.au3=2
+#Nettoyer le script par remise à zéro des indentation et suppression des espaces blancs
+command.name.30.*.au3=Nettoyer Script des espaces blancs
+command.subsystem.30.*.au3=3
+command.30.*.au3=cleanDocWhitespace
+command.shortcut.30.*.au3=
+command.save.before.30.*.au3=2
+
+#Commande pour l'Aide F1
+command.help.*.au3=$(autoit3dir)\Autoit3Help.exe $(CurrentWord)
+command.help.subsystem.*.au3=1
+#Autocomplète et appel des paramètres personnalisé de l'utilisateur (User CallTips)
+api.*.au3=$(SciteDefaultHome)\api\au3.api;$(SciteDefaultHome)\api\au3.user.calltips.api
+calltip.au3.word.characters=$(chars.alpha)$(chars.numeric)_
+calltip.au3.ignorecase=1
+calltip.au3.end.definition=)
+autocomplete.au3.ignorecase=1
+autocomplete.au3.start.characters=$(chars.alpha)$(chars.numeric)$_@#
+word.characters.*.au3=$(chars.alpha)$(chars.numeric).@$_#
+#Autoindentation
+statement.indent.*.au3=
+statement.end.*.au3=
+statement.lookback.*.au3=
+block.start.*.au3=5 case if do for func else elseif while select \
+                    Case If Do For Func Else ElseIf While Select \
+                    CASE IF DO FOR FUNC ELSE ELSEIF WHILE SELECT
+block.end.*.au3=5 case else endif elseif endfunc endselect next until wend \
+				  Case Else EndIf ElseIf EndFunc EndSelect Next Until Wend WEnd\
+                  CASE ELSE ENDIF ELSEIF ENDFUNC ENDSELECT NEXT UNTIL WEND
+#Fonctions de Définition de Commentaire
+comment.block.au3=;~
+comment.block.at.line.start.au3=1
+comment.stream.start.au3=#CS
+comment.stream.end.au3=#CE
+comment.box.start.au3=#CS
+comment.box.middle.au3=  
+comment.box.end.au3= #CE
+
+#Importe le fichier séparé au3.keywords.properties contenant les informations AutoIT3 (basé sur le script de Valik)
+import au3.keywords
+#Mots clés AutoIT
+keywords.$(file.patterns.au3)=$(au3.keywords.keywords)
+#Fonctions AutoIT
+keywords2.$(file.patterns.au3)=$(au3.keywords.functions)
+#Macro-commande AutoIT
+keywords3.$(file.patterns.au3)=$(au3.keywords.macros)
+#Clés d'envois AutoIT
+keywords4.$(file.patterns.au3)=$(au3.keywords.sendkeys)
+#Pré-processeur
+keywords5.$(file.patterns.au3)=$(au3.keywords.preprocessor)
+#Spéciale
+keywords6.$(file.patterns.au3)=$(au3.keywords.special) 
+#Extension des abréviations
+keywords7.$(file.patterns.au3)=$(au3.keywords.abbrev) 
+#Espace blanc
+style.au3.0=fore:#000000
+#Comment line
+style.au3.1=fore:#009933,italics
+#Bloc de commentaire
+style.au3.2=fore:#669900,italics
+#Nombre
+style.au3.3=fore:#AC00A9,bold,italics
+#Fonctions
+style.au3.4=fore:#000090,bold,italics
+#Mots clés
+style.au3.5=fore:#0000FF,bold
+#Macro-commandes
+style.au3.6=fore:#FF33FF,bold
+#Chaînes de caractères
+style.au3.7=fore:#9999CC,bold
+#Opérateurs
+style.au3.8=fore:#FF0000,bold
+#Variables
+style.au3.9=fore:#AA0000,bold
+#Clés d'envois dans une chaîne de caractères
+style.au3.10=fore:#FF8800,bold
+#Pre-Processeur
+style.au3.11=fore:#F000FF,italics
+#Spécial
+style.au3.12=fore:#A00FF0,italics
+#Extension des abbréviations
+style.au3.13=fore:#FF0000,bold
