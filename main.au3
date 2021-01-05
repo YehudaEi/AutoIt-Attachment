@@ -34,10 +34,12 @@ For $i = $iStart To $iStart + $iLen
 	Until InetGetInfo($hDownload, $INET_DOWNLOADCOMPLETE)
 	InetClose($hDownload)
 
-	If Not DirGetSize(@ScriptDir & "\" & $i, 1)[1] And Not DirGetSize(@ScriptDir & "\" & $i, 1)[2] Then DirRemove(@ScriptDir & "\" & $i)
-
-	RunWait("git add .", @ScriptDir, @SW_HIDE)
-	RunWait("git commit -m ""add " & $sBaseName & """ -m ""From the link: " & $sBaseUrl & $i & """", @ScriptDir, @SW_HIDE)
+	If Not DirGetSize(@ScriptDir & "\" & $i, 1)[1] And Not DirGetSize(@ScriptDir & "\" & $i, 1)[2] Then
+		DirRemove(@ScriptDir & "\" & $i)
+	Else
+		RunWait("git add .", @ScriptDir, @SW_HIDE)
+		RunWait("git commit -m ""add " & $sBaseName & """ -m ""From the link: " & $sBaseUrl & $i & """", @ScriptDir, @SW_HIDE)
+	EndIf
 
 	IniWrite("config.ini", "General", "Start", $i + 1)
 Next
