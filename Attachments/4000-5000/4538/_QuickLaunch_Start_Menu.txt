@@ -1,0 +1,313 @@
+
+; ----------------------------------------------------------------------------
+;
+; AutoIt Version: 3.1.1
+; Language:       English
+; Platform:       WinXP
+; Author:         Kapitan
+; Version:	  1.4
+;
+; Script Function:
+; Quick Launch & Start Menu Options
+;
+; ----------------------------------------------------------------------------
+
+
+; ----------------------------------------------------------------------------
+; End User Var's
+; ----------------------------------------------------------------------------
+
+; Taskbar
+$OP_01 = "Y"			; (Y)es or (N)o - Lock The Taskbar
+$OP_02 = "N"			; (Y)es or (N)o - Auto-Hide The Taskbar
+$OP_03 = "Y"			; (Y)es or (N)o - Keep Taskbar On Top
+$OP_04 = "Y"			; (Y)es or (N)o - Group Similar Taskbar Buttons
+$OP_05 = "Y"			; (Y)es or (N)o - Show Quick Launch
+$OP_06 = "Y"			; (Y)es or (N)o - Show Clock
+$OP_07 = "Y"			; (Y)es or (N)o - Hide Inactive Icons
+; Start Menu
+$OP_08 = "N"			; (Y)es or (N)o - Use Classic Start Menu
+; Start Menu Options - Classic
+$OP_09 = "Y"			; (Y)es or (N)o - Display Administrative Tools
+$OP_10 = "N"			; (Y)es or (N)o - Display Favorites
+$OP_11 = "Y"			; (Y)es or (N)o - Display Run
+$OP_12 = "Y"			; (Y)es or (N)o - Enable dragging and dropping
+$OP_13 = "Y"			; (Y)es or (N)o - Expand Control Panel
+$OP_14 = "N"			; (Y)es or (N)o - Expand My Documents
+$OP_15 = "N"			; (Y)es or (N)o - Expand My Pictures
+$OP_16 = "N"			; (Y)es or (N)o - Expand Network Connections
+$OP_17 = "N"			; (Y)es or (N)o - Expand Printers
+$OP_18 = "Y"			; (Y)es or (N)o - Scroll Programs
+$OP_19 = "N"			; (Y)es or (N)o - Show Small Icons in Start Menu
+$OP_20 = "N"			; (Y)es or (N)o - Use Personalized Menus
+$OP_21 = "Y"			; (Y)es or (N)o - Sort Start Menu Items
+$OP_22 = "Y"			; (Y)es or (N)o - Clear Recently Viewed Files
+; Start Menu Options - XP
+; == General ==
+$OP_23 = "Y"			; (Y)es or (N)o - Show Large Icons in Start Menu
+$OP_24 = "4"			;		  Number Of Programs In Start Menu
+$OP_25 = "N"			; (Y)es or (N)o - Clear Recently Used Programs
+$OP_26 = "Y"			; (Y)es or (N)o - Show Application For Internet
+$OP_27 = "Y"			; (Y)es or (N)o - Show Application For E-mail
+$OP_28 = "Mozilla Firefox"	;		  Web Browser	( "Internet Explorer", "Mozilla Firefox", "Opera",... )
+$OP_29 = "Mozilla Thunderbird"	;		  E-mail Client	( "Hotmail", "Microsoft Office", "Mozilla Thunderbird", "Outlook Express",... )
+; == Advanced ==
+$OP_30 = "Y"			; (Y)es or (N)o - Open SubMenu's on Mouse Hover
+$OP_31 = "N"			; (Y)es or (N)o - Highlight Newly Installed Programs
+$OP_32 = "L"			;		  Display Control Panel as (L)ink, (M)enu, (D)on't Display
+$OP_33 = "Y"			; (Y)es or (N)o - Enable Dragging And Dropping
+$OP_34 = "N"			; (Y)es or (N)o - Display Favorites Menu
+$OP_35 = "N"			; (Y)es or (N)o - Display Help And Support
+$OP_36 = "L"			;		  Display My Computer	as (L)ink, (M)enu, (D)on't Display
+$OP_37 = "D"			;		  Display My Documents	as (L)ink, (M)enu, (D)on't Display
+$OP_38 = "D"			;		  Display My Music	as (L)ink, (M)enu, (D)on't Display
+$OP_39 = "Y"			; (Y)es or (N)o - Display My Network Places
+$OP_40 = "D"			;		  Display My Pictures	as (L)ink, (M)enu, (D)on't Display
+$OP_41 = "L"			;		  Display Connections	as (L)ink, (M)enu, (D)on't Display
+$OP_42 = "Y"			; (Y)es or (N)o - Display Printers And Faxes
+$OP_43 = "Y"			; (Y)es or (N)o - Display Run Command
+$OP_44 = "Y"			; (Y)es or (N)o - Enable Scroll Programs
+$OP_45 = "Y"			; (Y)es or (N)o - Display Search
+$OP_46 = "N"			; (Y)es or (N)o - Display Program Access And Defaults
+$OP_47 = "D"			;		  Display Admin Tools	as (L)ink, (M)enu, (D)on't Display
+$OP_48 = "N"			; (Y)es or (N)o - Display Recently Opened Files
+$OP_49 = "Y"			; (Y)es or (N)o - Clear Recently Opened Files List
+; Misc bar's
+$OP_50 = "N"			; (Y)es or (N)o - Display Bar For Address
+$OP_51 = "Y"			; (Y)es or (N)o - Display Bar For Media
+$OP_52 = "N"			; (Y)es or (N)o - Display Bar For Links
+$OP_53 = "N"			; (Y)es or (N)o - Display Bar For Desktop
+
+
+; ----------------------------------------------------------------------------
+; Prevent Duplicates From Running
+; ----------------------------------------------------------------------------
+
+If WinExists(@ScriptName) Then Exit
+AutoItWinSetTitle(@ScriptName)
+
+
+; ----------------------------------------------------------------------------
+; Script Defaults
+; ----------------------------------------------------------------------------
+
+;Opt	("CaretCoordMode",	1)	; 1=absolute, 0=relative
+;Opt	("ExpandEnvStrings",	0)	; 0=don't expand, 1=do expand
+;Opt	("MouseClickDelay",	10)	; 10 milliseconds
+;Opt	("MouseClickDownDelay",	10)	; 10 milliseconds
+ Opt	("MouseClickDragDelay",	100)	; 250 milliseconds
+ Opt	("MouseCoordMode",	0)	; 1=absolute, 0=relative
+ Opt	("MustDeclareVars",	0)	; 0=no, 1=require pre-declare
+;Opt	("PixelCoordMode",	1)	; 1=absolute, 0=relative
+;Opt	("RunErrorsFatal",	1)	; 1=fatal, 0=silent set @error
+;Opt	("SendAttachMode",	0)	; 0=don't attach, 1=do attach
+;Opt	("SendCapslockMode",	1)	; 1=store and restore, 0=don"t
+ Opt	("SendKeyDelay",	1)	; 5 milliseconds
+;Opt	("SendKeyDownDelay",	1)	; 1 millisecond
+ Opt	("TrayIconDebug",	1)	; 0=no info, 1=debug line info
+;Opt	("TrayIconHide",	0)	; 0=show, 1=hide tray icon
+;Opt	("WinDetectHiddenText",	0)	; 0=don't detect, 1=do detect
+;Opt	("WinSearchChildren",	1)	; 0=no, 1=search children also
+ Opt	("WinTitleMatchMode",	4)	; 1=start, 2=subStr, 3=exact, 4=...
+ Opt	("WinWaitDelay",	100)	; 250 milliseconds
+
+
+; ----------------------------------------------------------------------------
+; Script Functions
+; ----------------------------------------------------------------------------
+
+Func _Check( $i1 , $i2 )
+	If $i1 = "y" AND ControlCommand ( $Title , "" , $i2 , "IsChecked" , "" ) <> 1 Then ControlClick ( $Title , "" , $i2 )
+	If $i1 = "n" AND ControlCommand ( $Title , "" , $i2 , "IsChecked" , "" )  = 1 Then ControlClick ( $Title , "" , $i2 )
+EndFunc
+
+Func _MoveCheck( $i3 , $i4 )
+	If $i4 <= 1 Then ControlSend ( $Title , "" , $i3 , "{HOME}{SPACE}" )
+	If $i4 >= 2 Then ControlSend ( $Title , "" , $i3 , "{HOME}{DOWN " & $i4 - 1 & " }{SPACE}" )
+EndFunc
+
+Func _RegRead( $i5 )
+	$i6 = RegRead( $Key , $i5 )
+	If IsInt ( $i6 ) AND Int( $i6 ) <> 0 Then
+		Return "y"
+	ElseIf $i6 <> "no" Then
+		Return "y"
+	Else
+		Return "n"
+	EndIf
+EndFunc
+
+Func _Bar( $i7 )
+	ControlClick	( "classname=Shell_TrayWnd" , "" , "TrayClockWClass1", "right" )
+	ControlSend	( "classname=Shell_TrayWnd" , "" , "TrayClockWClass1", $i7 )
+EndFunc
+
+
+; ----------------------------------------------------------------------------
+; Script Start
+; ----------------------------------------------------------------------------
+
+; Open Taskbar and Start Menu Properties
+_Bar	( "r" )
+
+; Taskbar and Start Menu Properties #1
+$Title = "Taskbar and Start Menu Properties"
+WinWaitActive	( $Title )
+_Check		( $OP_01 , 1105 )
+_Check		( $OP_02 , 1102 )
+_Check		( $OP_03 , 1101 )
+_Check		( $OP_04 , 1104 )
+_Check		( $OP_05 , 1107 )
+_Check		( $OP_06 , 1103 )
+_Check		( $OP_07 , 1000 )
+ControlCommand	( $Title , "" , "SysTabControl321", "TabRight", "" )
+If $OP_08 = "y" Then	; Start Menu - Classic
+	ControlClick	( $Title , "" , 1133 )
+	ControlClick	( $Title , "" , 1130 )
+
+	; Customize Classic Start Menu
+	$Title = "Customize Classic Start Menu"
+	WinWaitActive	( $Title )
+	ControlFocus	( $Title , "" , "SysTreeView321" )
+	$VAL_01 = "StartMenuAdminTools"
+	$VAL_02 = "StartMenuFavorites"
+	$VAL_03 = "StartMenuRun"
+	$VAL_04 = "StartMenuChange"
+	$VAL_05 = "CascadeControlPanel"
+	$VAL_06 = "CascadeMyDocuments"
+	$VAL_07 = "CascadeMyPictures"
+	$VAL_08 = "CascadeNetworkConnections"
+	$VAL_09 = "CascadePrinters"
+	$VAL_10 = "StartMenuScrollPrograms"
+	$VAL_11 = "Start_LargeMFUIcons"
+	$VAL_12 = "IntelliMenus"
+	$Key    = "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
+	If _RegRead( $VAL_01 ) <> $OP_09 Then _MoveCheck( "SysTreeView321" , 01 )
+	If _RegRead( $VAL_02 ) <> $OP_10 Then _MoveCheck( "SysTreeView321" , 02 )
+	If _RegRead( $VAL_03 ) <> $OP_11 Then _MoveCheck( "SysTreeView321" , 03 )
+	If _RegRead( $VAL_04 ) <> $OP_12 Then _MoveCheck( "SysTreeView321" , 04 )
+	If _RegRead( $VAL_05 ) <> $OP_13 Then _MoveCheck( "SysTreeView321" , 05 )
+	If _RegRead( $VAL_06 ) <> $OP_14 Then _MoveCheck( "SysTreeView321" , 06 )
+	If _RegRead( $VAL_07 ) <> $OP_15 Then _MoveCheck( "SysTreeView321" , 07 )
+	If _RegRead( $VAL_08 ) <> $OP_16 Then _MoveCheck( "SysTreeView321" , 08 )
+	If _RegRead( $VAL_09 ) <> $OP_17 Then _MoveCheck( "SysTreeView321" , 09 )
+	If _RegRead( $VAL_10 ) <> $OP_18 Then _MoveCheck( "SysTreeView321" , 10 )
+	If _RegRead( $VAL_11 ) <> $OP_19 Then _MoveCheck( "SysTreeView321" , 11 )
+	If _RegRead( $VAL_12 ) <> $OP_20 Then _MoveCheck( "SysTreeView321" , 12 )
+	If $OP_21 = "y" Then ControlClick ( $Title , "" , 1124 )
+	If $OP_22 = "y" Then ControlClick ( $Title , "" , 1125 )
+	ControlClick	( $Title , "" , 1 )
+Else			; Start Menu - XP
+	ControlClick	( $Title , "" , 1132 )
+	ControlClick	( $Title , "" , 1131 )
+
+	; Customize Start Menu
+	$Title = "Customize Start Menu"
+	WinWaitActive	( $Title )
+	; == General ==
+	If $OP_23 = "y" Then ControlClick ( $Title , "" , 1302 )
+	If $OP_23 = "n" Then ControlClick ( $Title , "" , 1303 )
+	ControlSetText	( $Title , "" , 1304 , $OP_24 )
+	If $OP_25 = "y" Then ControlClick ( $Title , "" , 1310 )
+	_Check		( $OP_26 , 1320 )
+	_Check		( $OP_27 , 1322 )
+	ControlSend	( $Title , "" , 1321 , "{HOME}" )
+	While WinExists ( $Title , $OP_28 ) <> 1
+	   ControlSend	( $Title , "" , 1321 , "{DOWN}" )
+	WEnd
+	ControlSend	( $Title , "" , 1323 , "{HOME}" )
+	While WinExists ( $Title , $OP_29 ) <> 1
+	   ControlSend	( $Title , "" , 1323 , "{DOWN}" )
+	WEnd
+	ControlCommand	( $Title , "" , "SysTabControl321", "TabRight", "" )
+	; == Advanced ==
+	_Check( $OP_30 , 1306 )
+	_Check( $OP_31 , 1326 )
+	ControlFocus	( $Title , "" ,  "SysTreeView321" )
+	ControlSend	( $Title , "" ,  "SysTreeView321" , "{LEFT}{RIGHT}" )
+	If $OP_32 = "l" Then _MoveCheck( "SysTreeView321" , 02 )
+	If $OP_32 = "m" Then _MoveCheck( "SysTreeView321" , 03 )
+	If $OP_32 = "d" Then _MoveCheck( "SysTreeView321" , 04 )
+	ControlSend	( $Title , "" ,  "SysTreeView321" , "{LEFT 2}{HOME}" )
+	$VAL_01 = "Start_EnableDragDrop"
+	$VAL_02 = "StartMenuFavorites"
+	$VAL_03 = "Start_ShowHelp"
+	$VAL_04 = "Start_ShowNetPlaces"
+	$VAL_05 = "Start_ShowPrinters"
+	$VAL_06 = "Start_ShowRun"
+	$VAL_07 = "Start_ScrollPrograms"
+	$VAL_08 = "Start_ShowSearch"
+	$VAL_09 = "Start_ShowSetProgramAccessAndDefaults"
+	$Key    = "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
+	If _RegRead( $VAL_01 ) <> $OP_33 Then _MoveCheck( "SysTreeView321" , 02 )
+	If _RegRead( $VAL_02 ) <> $OP_34 Then _MoveCheck( "SysTreeView321" , 03 )
+	If _RegRead( $VAL_03 ) <> $OP_35 Then _MoveCheck( "SysTreeView321" , 04 )
+
+	ControlSend	( $Title , "" ,  "SysTreeView321" , "{HOME}{DOWN 4}{LEFT}{RIGHT}" )
+	If $OP_36 = "l" Then _MoveCheck( "SysTreeView321" , 06 )
+	If $OP_36 = "m" Then _MoveCheck( "SysTreeView321" , 07 )
+	If $OP_36 = "d" Then _MoveCheck( "SysTreeView321" , 08 )
+	ControlSend	( $Title , "" ,  "SysTreeView321" , "{LEFT 2}{HOME}" )
+
+	ControlSend	( $Title , "" ,  "SysTreeView321" , "{DOWN 5}{LEFT}{RIGHT}" )
+	If $OP_37 = "l" Then _MoveCheck( "SysTreeView321" , 07 )
+	If $OP_37 = "m" Then _MoveCheck( "SysTreeView321" , 08 )
+	If $OP_37 = "d" Then _MoveCheck( "SysTreeView321" , 09 )
+	ControlSend	( $Title , "" ,  "SysTreeView321" , "{LEFT 2}{HOME}" )
+
+	ControlSend	( $Title , "" ,  "SysTreeView321" , "{DOWN 6}{LEFT}{RIGHT}" )
+	If $OP_38 = "l" Then _MoveCheck( "SysTreeView321" , 08 )
+	If $OP_38 = "m" Then _MoveCheck( "SysTreeView321" , 09 )
+	If $OP_38 = "d" Then _MoveCheck( "SysTreeView321" , 10 )
+	ControlSend	( $Title , "" ,  "SysTreeView321" , "{LEFT 2}{HOME}" )
+
+	If _RegRead( $VAL_04 ) <> $OP_39 Then _MoveCheck( "SysTreeView321" , 08 )
+
+	ControlSend	( $Title , "" ,  "SysTreeView321" , "{DOWN 8}{LEFT}{RIGHT}" )
+	If $OP_40 = "l" Then _MoveCheck( "SysTreeView321" , 10 )
+	If $OP_40 = "m" Then _MoveCheck( "SysTreeView321" , 11 )
+	If $OP_40 = "d" Then _MoveCheck( "SysTreeView321" , 12 )
+	ControlSend	( $Title , "" ,  "SysTreeView321" , "{LEFT 2}{HOME}" )
+
+	ControlSend	( $Title , "" ,  "SysTreeView321" , "{DOWN 9}{LEFT}{RIGHT}" )
+	If $OP_41 = "l" Then _MoveCheck( "SysTreeView321" , 11 )
+	If $OP_41 = "m" Then _MoveCheck( "SysTreeView321" , 12 )
+	If $OP_41 = "d" Then _MoveCheck( "SysTreeView321" , 13 )
+	ControlSend	( $Title , "" ,  "SysTreeView321" , "{LEFT 2}{HOME}" )
+
+	If _RegRead( $VAL_05 ) <> $OP_42 Then _MoveCheck( "SysTreeView321" , 11 )
+	If _RegRead( $VAL_06 ) <> $OP_43 Then _MoveCheck( "SysTreeView321" , 12 )
+	If _RegRead( $VAL_07 ) <> $OP_44 Then _MoveCheck( "SysTreeView321" , 13 )
+	If _RegRead( $VAL_08 ) <> $OP_45 Then _MoveCheck( "SysTreeView321" , 14 )
+	If _RegRead( $VAL_09 ) <> $OP_46 Then _MoveCheck( "SysTreeView321" , 15 )
+
+	ControlSend	( $Title , "" ,  "SysTreeView321" , "{HOME}{DOWN 15}{LEFT}{RIGHT}" )
+	If $OP_47 = "l" Then _MoveCheck( "SysTreeView321" , 17 )
+	If $OP_47 = "m" Then _MoveCheck( "SysTreeView321" , 18 )
+	If $OP_47 = "d" Then _MoveCheck( "SysTreeView321" , 19 )
+	ControlSend	( $Title , "" ,  "SysTreeView321" , "{LEFT 2}{HOME}" )
+	_Check		( $OP_48 , 1308 )
+	If $OP_49 = "y" Then ControlClick ( $Title , "" , 1309 )
+	ControlClick	( $Title , "" , 1 )
+	WinWaitClose	( $Title )
+EndIf
+
+; Taskbar and Start Menu Properties #2
+$Title = "Taskbar and Start Menu Properties"
+WinWaitActive	( $Title )
+ControlClick	( $Title , "" , 1 )
+WinWaitClose	( $Title )
+
+; Display Bar For Address
+If $OP_50 = "y" Then _Bar( "ta" )
+
+; Display Bar For Media
+If $OP_51 = "y" Then _Bar( "tw" )
+
+; Display Bar For Links
+If $OP_52 = "y" Then _Bar( "tl" )
+
+; Display Bar For Desktop
+If $OP_53 = "y" Then _Bar( "td" )
+
+Exit
