@@ -1,0 +1,343 @@
+>>>>>First Question<<<<<
+How do I make a main loop for an entire script? The same way as if your the script was a musical piece that refrains and starts at the top. I want the script to start from the top and play again .
+
+Below in between the double lines...I want to put that particular region of the script in a loop (the main loop),
+but within that loop, (I will describe below) how I want smaller loops within this main loop. You'll see the Case Function nested within it. Which is one of the main topics of concern.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Region --- ScriptWriter generated code Start ---
+;Note:In this script,HyperVRE needs to be manually opened first before you run the script.
+Opt("WinWaitDelay", 100)
+Opt("WinTitleMatchMode", 4)
+Opt("WinDetectHiddenText", 1)
+Opt("MouseCoordMode", 0)
+WinWait("Sony Keywords - Notepad", "")
+If Not WinActive("Sony Keywords - Notepad", "") Then WinActivate("Sony Keywords - Notepad", "")
+WinWaitActive("Sony Keywords - Notepad", "")
+MouseMove(61, 57)
+Sleep(2000)
+MouseDown("left")
+MouseMove(-2, 62)
+MouseUp("left")
+Send("{CTRLDOWN}c{CTRLUP}")
+WinWait("Program Manager", "FolderView")
+If Not WinActive("Program Manager", "FolderView") Then WinActivate("Program Manager", "FolderView")
+WinWaitActive("Program Manager", "FolderView")
+MouseMove(456, 579)
+Sleep(2000)
+MouseDown("left")
+MouseUp("left")
+WinWait("HyperVRE - Convert your content into cash", "")
+If Not WinActive("HyperVRE - Convert your content into cash", "") Then WinActivate("HyperVRE - Convert your content into cash", "")
+WinWaitActive("HyperVRE - Convert your content into cash", "")
+MouseMove(202, 129)
+MouseDown("left")
+MouseUp("left")
+WinWait("Step 1 - Keyword Selection", "")
+If Not WinActive("Step 1 - Keyword Selection", "") Then WinActivate("Step 1 - Keyword Selection", "")
+WinWaitActive("Step 1 - Keyword Selection", "")
+MouseMove(276, 166)
+MouseDown("left")
+MouseUp("left")
+Send("{CTRLDOWN}v{CTRLUP}")
+MouseMove(196, 123)
+MouseDown("left")
+MouseUp("left")
+WinWait("Keyword Suggestion Tool", "")
+If Not WinActive("Keyword Suggestion Tool", "") Then WinActivate("Keyword Suggestion Tool", "")
+WinWaitActive("Keyword Suggestion Tool", "")
+Sleep(1000)
+MouseMove(329, 175);this is where the mouse moves over the "get keywords" button.
+MouseDown("left")
+Sleep(2000)
+MouseUp("left")
+Sleep(10000)
+MouseMove(38, 230);this is where the cursor is moved to select the first keyword.
+Sleep(2000)
+MouseDown("left");this is where the first keyword is selected
+MouseUp("left")
+MouseMove(35, 251)
+Sleep(2000)
+MouseDown("left")
+MouseUp("left")
+MouseMove(35, 268)
+Sleep(2000)
+MouseDown("left")
+MouseUp("left")
+MouseMove(35, 286)
+Sleep(2000)
+MouseDown("left")
+MouseUp("left")
+MouseMove(35, 307)
+Sleep(2000)
+MouseDown("left")
+MouseUp("left")
+MouseMove(35, 324)
+Sleep(2000)
+MouseDown("left")
+MouseUp("left")
+MouseMove(36, 344)
+Sleep(2000)
+MouseDown("left")
+MouseUp("left")
+MouseMove(38, 363)
+Sleep(2000)
+MouseDown("left")
+MouseUp("left")
+MouseMove(38, 379)
+Sleep(2000)
+MouseDown("left")
+MouseUp("left")
+MouseMove(38, 394)
+Sleep(2000)
+MouseDown("left")
+MouseUp("left")
+MouseMove(611, 342) ;this is when the cursor moves to the add to master list button.
+MouseDown("left")
+MouseUp("left")
+WinWait("HyperVRE", "")    ;wait for the window to become active, the text is not important at this stage
+$WinText = WinGetText("HyperVRE");get window text
+Select 
+    Case StringInStr($WinText, "10 Selected keywords")
+        If Not WinActive("HyperVRE", "10 Selected keywords")Then WinActivate("HyperVRE", "10 Selected keywords")
+        WinWaitActive("HyperVRE", "10 Selected keywords")
+    Case StringInStr($WinText, "1 Selected keywords")
+        If Not WinActive("HyperVRE", "1 Selected keywords") Then WinActivate("HyperVRE", "1 Selected keywords")
+        WinWaitActive("HyperVRE", "1 Selected keywords")
+    Case StringInStr($WinText, "Unable to get keywor")
+        If Not WinActive("HyperVRE","Unable to get keywor") Then WinActivate("HyperVRE","Unable to get keywor")
+        WinWaitActive("HyperVRE","Unable to get keywor")
+	Case StringInStr($WinText, "Unable to get keywor")
+        If Not WinActive("HyperVRE","Unable to get keywor") Then WinActivate("HyperVRE","Unable to get keywor")
+        WinWaitActive("HyperVRE","Unable to get keywor")	
+	Case StringInStr($WinText, "Your keyword list co")	
+		If Not WinActive("HyperVRE","Your keyword list co") Then WinActivate("HyperVRE","Your keyword list co")
+        WinWaitActive("HyperVRE","Your keyword list co")
+      EndSelect
+MouseMove(175,102);this where the cursor moves over the msgbox 
+MouseDown("left")
+MouseUp("left")
+MouseMove(662,473);this is where the cursor moves over the "close" button and waits
+MouseDown("left")
+MouseUp("left")
+;when the "Exit" is placed here the script goes to Step one Keyword Selection page and waits until 
+; the HyperVRE-Convert your content into cash page(the very first page when HyperVRE is opened). 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ I don't know if I'm using the right function or not.  I'm wanting to use that Case Function(or another function if you have one thats better suited) as a off ramp to get out of the main loop if the msgbox with the text that reads opens either 
+
+WinWait("HyperVRE", "1 Selected keywords")........ 
+
+or 
+
+
+WinWait("HyperVRE", "0 Selected keywords")..........
+
+
+
+  
+
+When those two msgboxes above occur, How can I make the script 
+exit from the main region loop above and enter into a loop that contains the region script below.........
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Opt("WinWaitDelay", 100)
+Opt("WinTitleMatchMode", 4)
+Opt("WinDetectHiddenText", 1)
+Opt("MouseCoordMode", 0)
+WinWait("Sony Keywords - Notepad", "")
+If Not WinActive("Sony Keywords - Notepad", "") Then WinActivate("Sony Keywords - Notepad", "")
+WinWaitActive("Sony Keywords - Notepad", "")
+MouseMove(61, 57)
+Sleep(2000)
+MouseDown("left")
+MouseMove(-2, 62)
+MouseUp("left")
+Send("{CTRLDOWN}c{CTRLUP}")
+WinWait("Program Manager", "FolderView")
+If Not WinActive("Program Manager", "FolderView") Then WinActivate("Program Manager", "FolderView")
+WinWaitActive("Program Manager", "FolderView")
+MouseMove(456, 579)
+Sleep(2000)
+MouseDown("left")
+MouseUp("left")
+WinWait("HyperVRE - Convert your content into cash", "")
+If Not WinActive("HyperVRE - Convert your content into cash", "") Then WinActivate("HyperVRE - Convert your content into cash", "")
+WinWaitActive("HyperVRE - Convert your content into cash", "")
+MouseMove(202, 129)
+MouseDown("left")
+MouseUp("left")
+WinWait("Step 1 - Keyword Selection", "")
+If Not WinActive("Step 1 - Keyword Selection", "") Then WinActivate("Step 1 - Keyword Selection", "")
+WinWaitActive("Step 1 - Keyword Selection", "")
+MouseMove(276, 166);cursor moves over the 'suggest keywords'button.
+MouseDown("left")
+MouseUp("left")
+Send("{CTRLDOWN}v{CTRLUP}")
+MouseMove(196, 123); keyword is placed in box 
+MouseDown("left")
+MouseUp("left")
+WinWait("Keyword Suggestion Tool", "")
+If Not WinActive("Keyword Suggestion Tool", "") Then WinActivate("Keyword Suggestion Tool", "")
+WinWaitActive("Keyword Suggestion Tool", "")
+Sleep(1000)
+MouseMove(329, 175);this is where the mouse moves over the "get keywords" button.
+MouseDown("left")
+Sleep(2000)
+MouseUp("left")
+Sleep(10000)
+MouseMove(38, 230);this is where the cursor is moved to select the first keyword.
+Sleep(2000)
+MouseDown("left");this is where the first keyword is selected
+MouseUp("left")
+MouseMove(35, 251)
+Sleep(2000)
+MouseDown("left")
+MouseUp("left")
+MouseMove(35, 268)
+Sleep(2000)
+MouseDown("left")
+MouseUp("left")
+MouseMove(35, 286)
+Sleep(2000)
+MouseDown("left")
+MouseUp("left")
+MouseMove(35, 307)
+Sleep(2000)
+MouseDown("left")
+MouseUp("left")
+MouseMove(35, 324)
+Sleep(2000)
+MouseDown("left")
+MouseUp("left")
+MouseMove(36, 344)
+Sleep(2000)
+MouseDown("left")
+MouseUp("left")
+MouseMove(38, 363)
+Sleep(2000)
+MouseDown("left")
+MouseUp("left")
+MouseMove(38, 379)
+Sleep(2000)
+MouseDown("left")
+MouseUp("left")
+MouseMove(38, 394)
+Sleep(2000)
+MouseDown("left")
+MouseUp("left")
+MouseMove(611, 342) ;this is when the cursor moves to the add to master list button.
+MouseDown("left")
+MouseUp("left")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+How can I loop the above script in a loop until the msgbox reads WinWait("HyperVRE",10 Selected keywords")?
+Then when the message box WinWait("HyperVRE",10 Selected keywords") is true how can I make the script go into this script below next?.......
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#region --- ScriptWriter generated code Start --- 
+Opt("WinWaitDelay",100)
+Opt("WinTitleMatchMode",4)
+Opt("WinDetectHiddenText",1)
+Opt("MouseCoordMode",0)
+WinWait("Keyword Suggestion Tool","")
+If Not WinActive("Keyword Suggestion Tool","") Then WinActivate("Keyword SuggestionTool","")
+WinWaitActive("Keyword Suggestion Tool","")
+MouseMove(39,232)
+MouseDown("left")
+MouseUp("left")
+MouseMove(39,251)
+MouseDown("left")
+MouseUp("left")
+MouseMove(35,265)
+MouseDown("left")
+MouseUp("left")
+MouseMove(35,289)
+MouseDown("left")
+MouseUp("left")
+MouseMove(36,307)
+MouseDown("left")
+MouseUp("left")
+MouseMove(36,320)
+MouseDown("left")
+MouseUp("left")
+MouseMove(36,341)
+MouseDown("left")
+MouseUp("left")
+MouseMove(38,357)
+MouseDown("left")
+MouseUp("left")
+MouseMove(36,379)
+MouseDown("left")
+MouseUp("left")
+MouseMove(35,394)
+MouseDown("left")
+MouseUp("left")
+MouseMove(598,349)
+MouseDown("left")
+MouseUp("left")
+WinWait("HyperVRE","10 Selected keywords")If Not WinActive("HyperVRE","10 Selected keywords") Then WinActivate("HyperVRE","10 Selected keywords")WinWaitActive("HyperVRE","10 Selected keywords") 
+MouseMove(165,102)
+MouseDown("left")
+MouseUp("left")
+WinWait("Keyword Suggestion Tool","") If Not WinActive("Keyword Suggestion Tool","") Then WinActivate("Keyword Suggestion Tool","")WinWaitActive("Keyword Suggestion Tool","")
+MouseMove(625,470)
+MouseDown("left")
+MouseUp("left")
+WinWait("Step 1 - Keyword Selection","")
+If Not WinActive("Step 1 - Keyword Selection","") Then WinActivate("Step 1 - Keyword Selection","")
+WinWaitActive("Step 1 - Keyword Selection","")
+MouseMove(122,198)
+MouseDown("left")
+MouseUp("left")
+MouseMove(689,504)
+MouseDown("left")
+MouseUp("left")
+WinWait("Step 2 - Select Templates","PHP")
+If Not WinActive("Step 2 - Select Templates","PHP") Then WinActivate("Step 2 - Select Templates","PHP") WinWaitActive("Step 2 - Select Templates","PHP")
+MouseMove(114,230)
+MouseDown("left")
+MouseUp("left")
+WinWait("Select a HTML file for Homepage Template","Open as &read-only")
+If Not WinActive("Select a HTML file for Homepage Template","Open as &read-only") Then WinActivate("Select a HTML file for Homepage Template","Open as &read-only")
+WinWaitActive("Select a HTML file for Homepage Template","Open as &read-only")
+MouseClick("left",125,163,2)
+WinWait("Step 2 - Select Templates","PHP")
+If Not WinActive("Step 2 - Select Templates","PHP") Then WinActivate("Step 2 - Select Templates","PHP")
+WinWaitActive("Step 2 - Select Templates","PHP")
+MouseMove(128,307)
+MouseDown("left")
+MouseUp("left")
+WinWait("Select a HTML file for Keyword Template","Open as &read-only") If Not WinActive("Select a HTML file for Keyword Template","Open as &read-only") Then WinActivate("Select a HTML file for Keyword Template","Open as &read-only")WinWaitActive("Select a HTML file for Keyword Template","Open as &read-only")
+MouseClick("left",132,178,2)
+WinWait("Step 2 - Select Templates","PHP")
+If Not WinActive("Step 2 - Select Templates","PHP") Then WinActivate("Step 2 - Select Templates","PHP")
+WinWaitActive("Step 2 - Select Templates","PHP")
+MouseMove(701,507)
+MouseDown("left")
+MouseUp("left")
+WinWait("Step 3 - Webpage Content","Rotating Definitions")
+If Not WinActive("Step 3 - Webpage Content","Rotating Definitions") Then WinActivate("Step 3 - Webpage Content","Rotating Definitions")
+WinWaitActive("Step 3 - Webpage Content","Rotating Definitions")
+MouseMove(563,220)
+MouseDown("left")
+MouseUp("left")
+MouseMove(689,507)
+MouseDown("left")
+MouseUp("left")
+
+#endregion --- ScriptWriter generated code End ---
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
