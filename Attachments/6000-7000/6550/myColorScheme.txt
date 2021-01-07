@@ -1,0 +1,64 @@
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+# START: DO NOT CHANGE ANYTHING AFTER THIS LINE     #-#-#-#-#
+# Created by SciteConfig
+#------------------------------------------------------------
+font.base=font:Verdana,size:10,$(font.override)
+font.monospace=font:Fixedsys,size:10
+use.tabs=0
+indent.size=4
+indent.size.*.au3=4
+tabsize=4
+
+#Background
+style.au3.32=style.*.32=$(font.base),back:#006464
+
+#CaretLineBackground
+caret.line.back=#008080
+# Brace highlight
+style.au3.34=fore:#FF8040,back:#006464
+# Brace incomplete highlight
+style.au3.35=fore:#00FFFF,back:#006464
+
+#White space
+style.au3.0=fore:#FFFFFF,back:#006464
+
+#Comment line
+style.au3.1=fore:#00FFFF,back:#006464
+
+#Comment block
+style.au3.2=fore:#00FFFF,back:#006464
+
+#Number
+style.au3.3=fore:#80FF80,back:#006464
+
+#Function
+style.au3.4=fore:#FFFF00,back:#006464
+
+#Keyword
+style.au3.5=fore:#FF8040,back:#006464
+
+#Macro
+style.au3.6=fore:#C1EDBC,back:#006464
+
+#String
+style.au3.7=fore:#FF17FF,back:#006464
+
+#Operator
+style.au3.8=fore:#D9D9FF,back:#006464
+
+#Variable
+style.au3.9=fore:#EAEAEA,back:#006464
+
+#Sent keys
+style.au3.10=fore:#FFC891,back:#006464
+
+#Pre-Processor
+style.au3.11=fore:#FFB0FB,italics,back:#006464
+
+#Special
+style.au3.12=fore:#FFC1FF,italics,back:#006464
+
+#Abbrev-Expand
+style.au3.13=fore:#FF0000,bold,back:#006464
+# END => DO NOT CHANGE ANYTHING BEFORE THIS LINE  #-#-#-#-#-#
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
