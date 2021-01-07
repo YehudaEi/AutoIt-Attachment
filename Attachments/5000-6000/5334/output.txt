@@ -1,0 +1,56 @@
+Func Output()
+  WinActivate("eServiceAlert - Microsoft Internet Explorer provided by XXXXX")
+  $title = WinGetTitle("")
+  Dim $_f
+  Dim $ObjShell = ObjCreate("Shell.Application")
+  Dim $ObjShellWindows = $ObjShell.Windows (); collection of all ShellWindows
+  Global $ObjIE
+    For $Window in $ObjShellWindows
+      If $title = $window.locationname & " - " & $window.name & " provided by XXXXX" Then
+        $ObjIE = $Window
+        ExitLoop
+      Else
+        $ObjIE = 0
+      EndIf
+    Next
+
+    With $ObjIE
+      .Visible = True
+      .Navigate("http://VARIOUS_WEB_PAGE/createmenu.asp")
+        Do 
+          Sleep(50)
+        Until .document.frames("Application").document.ReadyState = "complete"
+      .document.frames("Application").location.href = 
+                          "http://VARIOUS_WEB_PAGE/createform.asp?form=TECH_CREATEWO"
+        Do 
+          Sleep(50)
+        Until .document.frames("Application").document.ReadyState = "complete"
+    EndWith
+
+  GUISetState(@SW_MINIMIZE,$main_gui)
+  WinSetState("","",@SW_MAXIMIZE)
+
+    With $ObjIE.document.frames("Application").document.forms("formTECH_CREATEWO")
+		
+      ******FIELD ENTRY PORTION*****
+      ******FIELD ENTRY PORTION*****
+      ******FIELD ENTRY PORTION*****
+
+      .submit
+    EndWith
+
+    With $ObjIE
+      .document.frames("Application").location.href =
+         "http://VARIOUS_WEB_PAGE/createform.asp?form=wohead&selectedrecord=280674&link="
+        Do 
+          Sleep(50)
+        Until .document.frames("Application").document.ReadyState = "complete"
+    EndWith
+	
+  Run("C:\Windows\Notepad.exe")
+  WinWaitActive("Untitled - Notepad")
+  Send("TEST")
+
+  Call(“clear_button”)
+
+EndFunc
