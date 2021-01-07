@@ -1,0 +1,11 @@
+big
+small
+short
+tall
+round
+square
+flat
+fast
+slow
+good
+bad
