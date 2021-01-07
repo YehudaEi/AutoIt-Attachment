@@ -1,0 +1,171 @@
+;Set display properties for ASPIA VB13
+;Required: 1280 x 1024 on monitor 1 and 2, 75 Hz, monitor 2 extends windows desktop
+
+;This script works correctly only if display settings are the same as the initial settings
+;before executing this script the first time!
+
+;-- Init -----------------------------------------------------------------------------------------------------
+
+    ;tell user "hands off"
+    SetEnv, SplashText, DON'T TOUCH THE KEYBOARD OR THE MOUSE\nwhile the script is running!
+    SplashTextOn, 350, 80, Aspia Installer, %SplashText%
+    ;configure AutoIt
+    HideAutoItDebug, Off
+    HideAutoItWin, Off
+    StringCaseSense, Off
+    SetWinDelay, 1000
+    ;set match mode less restrictive, important!
+    SetTitleMatchMode, 2
+
+;-- Let's GO -------------------------------------------------------------------------------------------------
+
+    ;open Display Properties dialog and activate "settings" tabcard
+    Run, rundll32.exe shell32.dll\,Control_RunDLL desk.cpl\,\,3
+    Sleep, 1000
+    ActivateWindow:
+        WinActivate, Display Properties
+        IfWinNotActive, Display Properties,, Goto, ActivateWindow
+
+    DisplaySettings:
+        ;-- LOOP to set display properties for the two monitors ----------------------------------------------
+        SetEnv, Monitor, 1
+        Repeat, 2
+
+            IfWinNotActive, Display Properties,, WinActivate, Display Properties
+
+            SelectTabCardSettings:
+                IfWinActive, Display Properties, Settings, Goto, SelectMonitor
+                Send, ^{TAB}
+                Goto, SelectTabCardSettings
+
+            SelectMonitor:
+                Send, !d
+                Send, %Monitor%
+                Send, !s
+                Send, {LEFT 10}
+
+            ScreenResolution:
+                SplashTextOn, 350, 125, ASPIA Installer, %SplashText%\n\nScreen resolution for monitor %Monitor%.\n
+                IfWinActive, Display Properties, 1280 by 1024 pixels, Goto, ApplyScreenResolution
+                Send, !s
+                Send, {RIGHT}
+                Goto, ScreenResolution
+            ApplyScreenResolution:
+                ;-------------------------------------------------------------------------------------------------
+                ;extend Windows desktop to monitor 2
+                ;unfortunately no possibility to check the state of the checkbox at the moment
+                ;must be done here, if not, the screen resolution will be reset to 640x480 after pressing "Apply".
+                ;Why? Don't know.
+                IfNotEqual, USERNAME, meduser, IfEqual, Monitor, 2, Send, !e
+                Send, !a
+                Sleep, 1000
+                IfWinActive, Monitor Settings, Your desktop has been reconfigured, Send, !y
+                Sleep, 2000
+
+            SetColorQuality:
+                SplashTextOn, 350, 125, ASPIA Installer, %SplashText%\n\nColor quality for monitor %Monitor%.\n
+                IfWinNotActive, Display Properties,, WinActivate, Display Properties
+                Send, !c
+                Send, h
+
+            AdvancedDisplaySettings:
+                SplashTextOn, 350, 125, ASPIA Installer, %SplashText%\n\nAdvanced display settings for monitor %Monitor%.\n
+                IfWinNotActive, Display Properties,, WinActivate, Display Properties
+                Send, !v
+                Sleep, 2000
+                IfWinNotActive, NVIDIA Quadro,, WinActivate, NVIDIA Quadro
+                IfWinActive, NVIDIA Quadro FX 1400 Properties,, SetEnv, GraphicAdapter, NVIDIA Quadro FX 1400
+                IfEqual, GraphicAdapter, NVIDIA Quadro FX 1400, Goto, SetRefreshRate
+                Sleep, 2000
+                IfWinActive, NVIDIA Quadro4 980 XGL Properties,, SetEnv, GraphicAdapter, NVIDIA Quadro4 980 XGL
+                IfEqual, GraphicAdapter, NVIDIA Quadro4 980 XGL, Goto, SetRefreshRate
+                ;open a message box ABORT+RETRY+IGNORE+MB_ICONHAND+MB_SYSTEMMODAL
+                MsgBox, 4114, ASPIA Installer, Invalid graphics adapter! Only NVIDIA Quadro4 980 XGL and NVIDIA Quadro FX 1400 are allowed!
+                IfMsgBox, IGNORE, Goto, SetRefreshRate
+                IfMsgBox, ABORT,  Goto, Finish
+                IfMsgBox, RETRY,  Goto, AdvancedDisplaySettings
+
+            SetRefreshRate:
+                SplashTextOn, 350, 125, ASPIA Installer, %SplashText%\n\nRefresh rate for monitor %Monitor%.\n
+                IfWinNotActive, NVIDIA Quadro,, WinActivate, NVIDIA Quadro
+                Send, ^{TAB 2}
+                Send, !s
+                Send, 7
+                Send, 5
+                Send, !a
+                Sleep, 1000
+                ;if a window pops up asking you to keep the settings, press Yes
+                IfWinActive, Monitor Settings, Your desktop has been reconfigured, Send, !y
+                Sleep, 1000
+
+            ApplyPredefinedNVIDIAProfile:
+                IfWinNotActive, NVIDIA Quadro,, WinActivate, NVIDIA Quadro
+                Send, ^+{TAB 3}
+                Sleep, 1000
+                Send, +{TAB}
+                IfWinNotActive, NVIDIA Properties,, WinActivate, NVIDIA Properties
+                Send, {UP 12}
+                Send, {DOWN 2}
+                Send, {TAB}
+                Sleep, 1000
+                Send, !t
+                Send, ASPIA
+                Send, !a
+                Sleep, 1000
+                Send, {ENTER}
+
+            ;-------------------------------------------------------------------------------------------------
+            Sleep, 1000
+            IfWinNotActive, Display Properties,, WinActivate, Display Properties
+            SplashTextOn, 350, 125, ASPIA Installer, %SplashText%\n\nDisplay Settings of Monitor %Monitor% finished!\n
+            EnvAdd, Monitor, 1
+
+        ;END OF LOOP -----------------------------------------------------------------------------------------
+        EndRepeat
+
+    ;---------------------------------------------------------------------------------------------------------
+    ;set screen saver to "none" and power off monitor to "never"
+
+    SelectTabCardScreenSaver:
+        Sleep, 1000
+        IfWinActive, Display Properties, Screen Saver, Goto, ScreenSaverSettings
+        Send, ^+{TAB}
+        Goto, SelectTabCardScreenSaver
+    ScreenSaverSettings:
+        ;set screen saver to (None)
+        Send, !s
+        Send, (
+        ;set monitor power option "Turn off monitor" to "Never"
+        Send, !o
+        Sleep, 1000
+        IfWinNotActive, Power Options Properties,, WinActivate, Power Options Properties
+        Send, !m
+        Send, n
+        ;press "Apply" followed by "OK"
+        Send, !a
+        Sleep, 1000
+        SplashTextOn, 350, 125, ASPIA Installer, %SplashText%\n\nDisplay Settings finished!\n
+        IfWinActive, Monitor Settings, Your desktop has been reconfigured, Send, !y
+        WinWaitActive, Power Options Properties
+        Send, +{TAB 3}
+        Send, {ENTER}
+    ;back at "Display Properties" dialog, press "Apply"
+    Sleep, 1000
+    IfWinNotActive, Display Properties,, WinWaitActive, Display Properties
+    Send, !a
+    Sleep, 1000
+    ;if a window pops up asking you to keep the settings, press Yes
+    IfWinActive, Monitor Settings, Your desktop has been reconfigured, Send, !y
+    Sleep, 1000
+    IfWinNotActive, Display Properties,, WinWaitActive, Display Properties
+    Send, {TAB 2}
+    Send, {ENTER}
+
+;-- FINSIH ---------------------------------------------------------------------------------------------------
+
+    Finish:
+        Exit
+
+
+
+[ADLIB]
