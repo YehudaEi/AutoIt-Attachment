@@ -1,0 +1,1538 @@
+McAfee VirusScan for Win32 v4.40.0
+Copyright (c) 1992-2004 Networks Associates Technology Inc. All rights reserved.
+(408) 988-3832  LICENSED COPY - Sep 23 2004
+
+Scan engine v4.4.00 for Win32.
+Virus data file v4662 created Dec 29 2005
+Scanning for 168215 viruses, trojans and variants.
+
+
+
+12/29/2005  15:37:03
+
+
+Options:
+/CHECKLIST LIST.TXT /ANALYZE /PANALYZE /MIME /PROGRAM /UNZIP /NOMEM /NOBOOT /SILENT /NOEXPIRE /NODDA /NOBREAK /NORENAME /REPORT VLOG.TXT
+
+V:\TEST\12-23r75648673065014010ACF8.msg\Isabel.zip\FOTO_5321.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23r75648673255014010ACF8.msg\Frances.zip\FOTO_5321.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23r75648673545014010ACF8.msg\Christian.zip\FOTO_5321.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23r75648673835014010ACF8.msg\Emanuel.zip\FOTO_5321.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23r75648678e25014010ACF8.msg\Anthonye.zip\FOTO_5321.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23r7564867e7f5014010ACF8.msg\Avice.zip\FOTO_5321.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23r7564867ecd5014010ACF8.msg\Margret.zip\FOTO_5321.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23r7564867eec5014010ACF8.msg\Susan.zip\FOTO_5321.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23r7564867f1b5014010ACF8.msg\Daniel.zip\FOTO_5321.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23r7564867f4a5014010ACF8.msg\Josias.zip\FOTO_5321.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23r7564867f795014010ACF8.msg\Daniel.zip\FOTO_5321.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23r7564867fa85014010ACF8.msg\Hughe.zip\FOTO_5321.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23S7562f05bd20a011450ef0.msg\question_list810.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23S7562f05be20a011450ef0.msg\question_list810.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23S75663081280a011450ef0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23S75663081370a011450ef0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T75616e9ef60a01145012a0.msg\000008c9.EML\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T756192291f0a01145012a0.msg\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T7561a5d7b70a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7561ade03b0a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T7561ca442f0a01145012a0.msg\00000641.EML\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T7561e7302f0a01145012a0.msg\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T7561f44c380a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7561f84df10a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7561fdb0220a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T75620c8f430a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T756214a0de0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T75621e76db0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T75621eb8770a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T75621f5f640a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T756223ab740a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7562249fc50a01145012a0.msg\bycv.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7562296f7b0a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T75623470b60a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T756235dd820a01145012a0.msg\000006e1.EML\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T75623930ec0a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T756241fea20a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T75624896430a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T75624a7e770a01145012a0.msg\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T75624f28c40a01145012a0.msg ... Found the W32/Netsky.w.eml!exe virus !!!
+V:\TEST\12-23T75625a19460a01145012a0.msg\olx.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T75625e3cb00a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T756264babe0a01145012a0.msg\mebx.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T756275bd960a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T75627628160a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T756277fb4c0a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T756278feb00a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7562824ec40a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T756287ae070a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T75628b08280a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T75628c2d3c0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T75628f09540a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7562b2ac160a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7562b480e10a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7562c17cfd0a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T7562c607c00a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7562c839f00a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7562dcbbb10a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7562f293fb0a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T7563023bc90a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T756305040b0a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T75630ed45b0a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T756311bc980a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T75631611520a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T75631d5ffd0a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T756321bad20a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T756321e8e70a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7563238c520a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T75632b7dd40a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T756337141a0a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T75633743570a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T75633cd5420a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T756340282f0a01145012a0.msg\account-password.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T75634597700a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T75634b3d600a01145012a0.msg\message.zip ... Found the W32/Netsky.p@MM!zip virus !!!
+V:\TEST\12-23T75634ed6fa0a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T75634ffde30a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T756350355e0a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-23T7563508d120a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7563513a580a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T756360b8390a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T756362bc130a01145012a0.msg\euhkxzq.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T756362d1ae0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T756363c4f50a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T756363d30f0a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T75636b56d30a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T75636c67b40a01145012a0.msg ... Found the W32/Netsky.p.eml!exe virus !!!
+V:\TEST\12-23T756373f6a30a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T75637a9cdb0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T75637dbd100a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T75638648300a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T756394dbc10a01145012a0.msg\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T756395dc090a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7563a275650a01145012a0.msg\account-password.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7563ae72d10a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7563ba5ed80a01145012a0.msg\wdp.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7563bad85c0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7563cb627a0a01145012a0.msg\000004c9.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-23T7563ddad8e0a01145012a0.msg\xly.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7563e994650a01145012a0.msg\000020f1.EML\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T7563eda3ab0a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-23T7563f0423d0a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7563f232700a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7563f632a30a01145012a0.msg\iqau.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7564016a5f0a01145012a0.msg ... Found the W32/Netsky.p.eml!exe virus !!!
+V:\TEST\12-23T75640183170a01145012a0.msg\letter.zip ... Found the W32/Netsky.p@MM!zip virus !!!
+V:\TEST\12-23T7564018d580a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7564019d750a01145012a0.msg ... Found the W32/Netsky.p.eml!exe virus !!!
+V:\TEST\12-23T756401a1ca0a01145012a0.msg ... Found the W32/Netsky.p.eml!exe virus !!!
+V:\TEST\12-23T7564028a440a01145012a0.msg ... Found the W32/Netsky.p.eml!exe virus !!!
+V:\TEST\12-23T7564056b0f0a01145012a0.msg ... Found the W32/Netsky.p.eml!exe virus !!!
+V:\TEST\12-23T7564062b8e0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T756410db300a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T7564111f6c0a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7564144c040a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T756415bfc50a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T756418a4c60a01145012a0.msg\00000500.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-23T756419f9760a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T756421edd60a01145012a0.msg\00000535.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-23T756432230e0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T75643e8b580a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T75643ed2b10a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T756456b53e0a01145012a0.msg\qks.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T75645e26650a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T75645f897c0a01145012a0.msg\pygeyb.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T756466e0740a01145012a0.msg\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T7564688ab60a01145012a0.msg\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T75647130ff0a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T756473a4b80a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T756476be370a01145012a0.msg\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T75647cfd490a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T75648543900a01145012a0.msg\Richarde.zip\FOTO_5321.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23T756487a8f20a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T756487fc510a01145012a0.msg\Ales.zip\FOTO_5321.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23T756495c4b50a01145012a0.msg\Annes.zip\FOTO_532.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23T756496bd7b0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T756497f4fe0a01145012a0.msg\Leonard.zip\FOTO_532.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23T7564a119110a01145012a0.msg\Wynnefreede.zip\FOTO_532.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23T7564a5684e0a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T7564a7bb320a01145012a0.msg\Wynefrede.zip\FOTO_6432.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23T7564aa75b80a01145012a0.msg\question_list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T7564ab3d5c0a01145012a0.msg\Bennet.zip\FOTO_6432.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23T7564ac30650a01145012a0.msg\Henry.zip\FOTO_532.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23T7564af38000a01145012a0.msg\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T7564b189290a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7564b1f3580a01145012a0.msg\00000833.EML\Edwarde.zip\FOTO_532.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23T7564b81cb10a01145012a0.msg\Marye.zip\FOTO_532.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23T7564b98b350a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7564b9ad550a01145012a0.msg\Sybell.zip\FOTO_532.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23T7564baea670a01145012a0.msg\Elizabeth.zip\FOTO_5321.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23T7564bb387b0a01145012a0.msg\Edward.zip\FOTO_5321.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23T7564bb3cff0a01145012a0.msg\Bennett.zip\FOTO_5321.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23T7564bdd43c0a01145012a0.msg\Nycholas.zip\FOTO_532.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23T7564c0ba620a01145012a0.msg\Wynefreed.zip\FOTO_532.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23T7564c7d4e70a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T7564ce540f0a01145012a0.msg\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T7564cef1a60a01145012a0.msg\Harry.zip\FOTO_532.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23T7564cf5e690a01145012a0.msg\Elizabethe.zip\FOTO_532.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23T7564d04f2f0a01145012a0.msg\00000528.EML\John.zip\FOTO_532.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23T7564d1805a0a01145012a0.msg\Nicholas.zip\FOTO_532.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23T7564d2a0100a01145012a0.msg\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T7564dafdb70a01145012a0.msg\Richard.zip\FOTO_5321.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23T7564de65550a01145012a0.msg\Nicholaus.zip\FOTO_532.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23T7564dfd9f10a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7564e0b52c0a01145012a0.msg\00000876.EML\Judith.zip\FOTO_5321.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23T7564f406050a01145012a0.msg\00000518.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-23T7564f99e3a0a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T7564fbd46e0a01145012a0.msg\Margerie.zip\FOTO_532.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23T7564fd3ae10a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T756504e15f0a01145012a0.msg\Ales.zip\FOTO_532.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23T75650c82ec0a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T756513eabd0a01145012a0.msg\question_list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T75651488720a01145012a0.msg\Humphrey.zip\FOTO_532.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23T75651a14330a01145012a0.msg\Nathaniell.zip\FOTO_5321.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23T75652b7e300a01145012a0.msg\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T75653447df0a01145012a0.msg\0000051a.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-23T756537c0f10a01145012a0.msg\question_list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T75653c77530a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T75653fe2f80a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7565458f410a01145012a0.msg\Roger.zip\FOTO_532.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23T756545a45f0a01145012a0.msg\00000663.EML\Robert.zip\FOTO_532.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23T7565460a6b0a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T756549453c0a01145012a0.msg\Suzanna.zip\FOTO_532.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23T756564b0e80a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T756568972b0a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T75656a09f20a01145012a0.msg\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T756571f0380a01145012a0.msg\Sindony.zip\FOTO_5321.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23T756575f9920a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7565774ebf0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T756584288f0a01145012a0.msg\Cybil.zip\FOTO_5321.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23T75658a4fd30a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-23T75658c8b570a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T75658d44550a01145012a0.msg\Sybyll.zip\FOTO_532.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23T75659248780a01145012a0.msg\Frances.zip\FOTO_532.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23T7565930f220a01145012a0.msg\0000052e.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-23T75659eb98d0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7565a270430a01145012a0.msg\Richard.zip\FOTO_532.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23T7565a4d1210a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-23T7565a673930a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T7565aa28460a01145012a0.msg\Wynefreed.zip\FOTO_5321.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23T7565ae0fb10a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T7565aebd840a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7565bed88d0a01145012a0.msg\00000826.EML\Margaret.zip\FOTO_532.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23T7565c80fbb0a01145012a0.msg\Anthony.zip\FOTO_532.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23T7565c98f050a01145012a0.msg\Ales.zip\FOTO_532.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23T7565cb380e0a01145012a0.msg\lvosbwg.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7565cec1f80a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7565cf9def0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7565d18a880a01145012a0.msg\000004d6.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-23T7565d356f70a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7565d4527c0a01145012a0.msg\Marye.zip\FOTO_532.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23T7565d7cd530a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7565d7eddb0a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7565da32480a01145012a0.msg\Francis.zip\FOTO_532.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23T7565dae4700a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7565dd22460a01145012a0.msg\kjtpwfj.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7565dd8e4d0a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7565e6a1e50a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7565e6bb390a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7565e843ca0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7565ea2c6c0a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7565f0ccd70a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7565f1b86e0a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T7565f459900a01145012a0.msg\000004e0.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-23T7565f8dbc30a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T75660085300a01145012a0.msg\Elizabeth.zip\FOTO_532.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23T756601c02e0a01145012a0.msg\Frances.zip\FOTO_532.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23T756601c05d0a01145012a0.msg\Ellen.zip\FOTO_532.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23T7566066f6b0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T756606afc00a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T75660b671c0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T75660ea3930a01145012a0.msg\Harrye.zip\FOTO_532.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23T75661892850a01145012a0.msg\Elizabethe.zip\FOTO_532.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23T75661e228c0a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T7566231fba0a01145012a0.msg\account-password.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7566253bd00a01145012a0.msg\Emanuel.zip\FOTO_532.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-23T756627f30a0a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T75662d34270a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T756630232a0a01145012a0.msg\hkgoa.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7566342ff00a01145012a0.msg\000004c0.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-23T75663c66a70a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T75663cde950a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7566425bef0a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7566442e1b0a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T75664bc9fb0a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T75664d58580a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T756650493f0a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T756651ea2a0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T756652f04e0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T7566555b3e0a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T7566597ca40a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T75665a11ce0a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-23T75665aa3010a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-23T75665f361c0a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T75668b14a50a01145012a0.msg\account-password.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T75669345de0a01145012a0.msg\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T7566991a600a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T75669df0cd0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T7566a210ea0a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T7566a285bb0a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T7566a36fba0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T7566aaa3e20a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T7566aba9d40a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T7566b8daf90a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T7566be5d870a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T7566ccb4ac0a01145012a0.msg\question_list297.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T7566cfc3da0a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T7566d314f20a01145012a0.msg\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T7566f030ac0a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T75670042ad0a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T7567032b290a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T7567034c8b0a01145012a0.msg\question_list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T756707c1030a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-24T75670a01a70a01145012a0.msg\0000050e.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-24T756710d5f30a01145012a0.msg\question_list926.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T756721c4190a01145012a0.msg\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T7567267b180a01145012a0.msg\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T756728be7b0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T75672c00320a01145012a0.msg\00000507.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-24T75672c226f0a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T75673009bb0a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T7567309ed60a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756733955b0a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-24T756735089f0a01145012a0.msg\000004e6.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-24T756737f36c0a01145012a0.msg\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T75673b32440a01145012a0.msg\question_list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T756743ab340a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T7567562bbf0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T75675e613e0a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T75676055e60a01145012a0.msg\list655.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T75676c58df0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T75676ca3550a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T75676ed6f90a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756772c7fa0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T7567737aae0a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T75677cb8a20a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T75677f9c0d0a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T75678578200a01145012a0.msg\account-password.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T75678abbad0a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T75678ddd970a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756790890a0a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T75679416ed0a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-24T75679931670a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T75679c9ba40a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T7567a5d5130a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T7567a8de460a01145012a0.msg\question_list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T7567ab04fa0a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T7567ab95320a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T7567b63cc50a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T7567b727c00a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T7567b8489e0a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T7567c263830a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T7567c3e2500a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T7567cd5bc50a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T7567cf7ae80a01145012a0.msg\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T7567d3155c0a01145012a0.msg\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T7567d5eb4a0a01145012a0.msg\question_list142.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T7567dab17b0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T7567df5dda0a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T7567e4527d0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T7567f416eb0a01145012a0.msg\question_list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T7567f689000a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T7567f87cbd0a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T7567f9ea540a01145012a0.msg\account-password.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T7567fb50d60a01145012a0.msg\rwj.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T7567fcd08d0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756805c39e0a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T756805fef10a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756806e0750a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T75680c35290a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T75681174bf0a01145012a0.msg\question_list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T75681582bd0a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756819c6120a01145012a0.msg\account-password.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T75681baabd0a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-24T75681bf4870a01145012a0.msg\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T75681cacf80a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T756821052d0a01145012a0.msg\question_list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T756821d3a70a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T7568261c9a0a01145012a0.msg\0000082e.EML\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T7568275eeb0a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756829e35e0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T75682a6b690a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T75682d13df0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T75682e7a510a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756832d2a60a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T7568351d9b0a01145012a0.msg\jtco.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756837e55f0a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756839b3a30a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T75683a98640a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T75683e30b60a01145012a0.msg\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T75683e75500a01145012a0.msg\smcab.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T7568422b5b0a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T756852be140a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756859c7890a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T75685c48230a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T75685d458c0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756863cea70a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-24T75686fb3a90a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756875441d0a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T75687b17180a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T7568854bfc0a01145012a0.msg\gwevn.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T7568865f100a01145012a0.msg\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T75688734ae0a01145012a0.msg\question_list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T75688770cc0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756887c3bd0a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756888f0f00a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-24T75688a84eb0a01145012a0.msg\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T75688b18500a01145012a0.msg\00008c43.EML\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T75688d83fc0a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T75688effbb0a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T7568934a350a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T756894b3960a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T75689db5230a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T75689e39b60a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T7568a0bc110a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T7568a346130a01145012a0.msg\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T7568a9200a0a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T7568b236a80a01145012a0.msg\list441.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T7568b922270a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T7568bbe97e0a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T7568c9522f0a01145012a0.msg\00001e4b.EML\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T7568d982850a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T7568dcb9fb0a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T7568e009ac0a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T7568e084590a01145012a0.msg\excel document.zip ... Found the W32/Netsky.p@MM!zip virus !!!
+V:\TEST\12-24T7568e98f950a01145012a0.msg\000087ca.EML\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T7568ea59b90a01145012a0.msg\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T7568ee907c0a01145012a0.msg\000004cc.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-24T7568f36c480a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T7568f7e7570a01145012a0.msg\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T7568f85b0f0a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T7568fd25370a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756902b83b0a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T75690aaecd0a01145012a0.msg\000004fd.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-24T7569105c7e0a01145012a0.msg\00001cf1.EML\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T75691065090a01145012a0.msg\00001181.EML\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T756911e56c0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756918750e0a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T75691bc7300a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T75692869660a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T75692d2fc50a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756937fffe0a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-24T75693e0bac0a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T756943927c0a01145012a0.msg\00000516.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-24T7569492a330a01145012a0.msg\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T756954c28d0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T7569589f0b0a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756960f4280a01145012a0.msg\question_list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T756963b3800a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T7569647d370a01145012a0.msg ... Found the W32/Netsky.d.eml!exe virus !!!
+V:\TEST\12-24T756965d2550a01145012a0.msg ... Found the W32/Netsky.d.eml!exe virus !!!
+V:\TEST\12-24T7569663cc60a01145012a0.msg ... Found the W32/Netsky.d.eml!exe virus !!!
+V:\TEST\12-24T75696bd9ad0a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-24T7569705c0f0a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756970fc360a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T75697471dd0a01145012a0.msg\000004e9.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-24T75697732bc0a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756978f9ad0a01145012a0.msg\00000511.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-24T75697b525e0a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T75697cd6a90a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T75697ec90e0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T75699c2e160a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T75699f06b30a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T7569a2e8810a01145012a0.msg\question_list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T7569abe2380a01145012a0.msg\question_list625.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T7569b0766c0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T7569b0c93f0a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T7569b1ff4b0a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T7569baa16e0a01145012a0.msg\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T7569cbbf000a01145012a0.msg\0000054a.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-24T7569d21bcb0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T7569daa1fa0a01145012a0.msg\vqlslu.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T7569dde41e0a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T7569e553ae0a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T7569eb00e20a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T7569ee95a90a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T7569ef7a4b0a01145012a0.msg\dse.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T7569f259fc0a01145012a0.msg\question_list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T7569f31e260a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T756a02160e0a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756a0253c30a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T756a03d9170a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756a0900140a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756a0da64a0a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756a11a2c30a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T756a1639d60a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T756a24e7870a01145012a0.msg\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T756a27cb500a01145012a0.msg\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T756a2f7cda0a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756a3a76c30a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T756a3d42ae0a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756a439f5a0a01145012a0.msg\her.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756a4431b50a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756a46e5a40a01145012a0.msg\account-password.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756a4cf2d90a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756a4d5a3d0a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756a4d7e010a01145012a0.msg\question_list520.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T756a4eb67e0a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756a573fc90a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756a61e6330a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T756a6444140a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T756a66b9b20a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756a6806920a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T756a689f280a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756a726bed0a01145012a0.msg\000007c8.EML\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T756a7273cc0a01145012a0.msg\00000790.EML\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T756a7628700a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756a7806730a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756a7bf8000a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T756a8a959d0a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-24T756a8b0e880a01145012a0.msg\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T756a8c95b60a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756a8f34130a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756a9b196c0a01145012a0.msg\0000051f.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-24T756aa1dccc0a01145012a0.msg\question_list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T756aab5df60a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756ab0d8fe0a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756ab12d280a01145012a0.msg\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T756ab1c2620a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756aba71d20a01145012a0.msg\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T756ac7591f0a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T756acccf930a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756ad5e09b0a01145012a0.msg\0000053d.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-24T756ad774090a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756ade40470a01145012a0.msg\anggg.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756aef92660a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756af45ccd0a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756af86dc80a01145012a0.msg\tbjlx.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756b04fd800a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756b10b8360a01145012a0.msg\account-password.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756b1b09ca0a01145012a0.msg\000004f8.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-24T756b31a63d0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756b365d6a0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756b375bae0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756b41cf700a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756b48d5b80a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756b4922410a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756b4c6fa00a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756b5d47af0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756b6111700a01145012a0.msg\000024ae.EML\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T756b63d1f20a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T756b64f15a0a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-24T756b68ce740a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-24T756b68d6a20a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-24T756b7dac720a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756b80251e0a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756b81b3d90a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756b8bc6610a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756b9659810a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-24T756b995b510a01145012a0.msg\yrzcdh.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25S756fb916b60a011450ef0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25S756fb916c60a011450ef0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756ba344e50a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756ba5851c0a01145012a0.msg\pmas.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756baa3fe30a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756bb429c50a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756bb62aa10a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756bb898120a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756bc41dbe0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756be3f8d10a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756be4d2e40a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756bebc3230a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756bec2caa0a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756bf276990a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756bfebf070a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756c01243b0a01145012a0.msg\000004b7.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-25T756c045bb10a01145012a0.msg\llwk.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756c0e1fbb0a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756c1580480a01145012a0.msg\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756c17f24d0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756c2193300a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756c24cbaf0a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756c2ebbcb0a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756c2f9bb90a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756c2fa9b30a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756c341a430a01145012a0.msg\0000053e.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-25T756c3884a80a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756c3d79890a01145012a0.msg\00000542.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-25T756c46a2bd0a01145012a0.msg\000004cc.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-25T756c48388c0a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756c49221f0a01145012a0.msg\000009a8.EML\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756c5590b20a01145012a0.msg\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756c5f1aa30a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756c66d8a10a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756c6a4b2b0a01145012a0.msg\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756c7b31d00a01145012a0.msg\0000089d.EML\00000305.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-25T756c7b4f790a01145012a0.msg\0000089b.EML\00000305.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-25T756c7c62000a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756c7e37b40a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756c8275120a01145012a0.msg\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756c82fa130a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756c864d680a01145012a0.msg\00002e29.EML\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756c8c66150a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-25T756c91b4050a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756c92ebf80a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756c99ba7c0a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756ca120490a01145012a0.msg\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756ca6b7830a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756ca7bc2f0a01145012a0.msg\000004cb.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-25T756cadc8890a01145012a0.msg\000004b7.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-25T756caefed40a01145012a0.msg\000004cc.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-25T756caf90a30a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756caf9c2c0a01145012a0.msg\list344.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756cb0e5730a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756cb4dc3f0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756cb5fa7e0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756cba39ec0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756cc4c05a0a01145012a0.msg\cwu.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756cc90df10a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756cce259c0a01145012a0.msg\000004c8.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-25T756cd35e5c0a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756ce31a6e0a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756ce78bb90a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756ce970a20a01145012a0.msg\list283.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756cf1606d0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756cf23c640a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756d0062870a01145012a0.msg\question_list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756d0b38ab0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756d0cb8720a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756d0f1eee0a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-25T756d1655100a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756d278a120a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756d283ff30a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756d2864a20a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756d2f59950a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756d33ef5f0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756d3649380a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756d3cc3200a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756d481df40a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756d53086b0a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756d59d7a60a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756d68a3200a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756d6d44e10a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756d6fe5c50a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756d79984c0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756d7c7d4d0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756d8935d90a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756d8b95bd0a01145012a0.msg\000004c1.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-25T756d8bbfda0a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-25T756d8e91150a01145012a0.msg\account-password.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756d9527100a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756d9cb3cd0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756d9dac450a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-25T756da6e9bb0a01145012a0.msg\fhq.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756da851d40a01145012a0.msg\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756db227ef0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756dc078bc0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756dcd25df0a01145012a0.msg\wrkcnyg.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756dcde2b50a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-25T756dcf5adb0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756dd234050a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756ddc66780a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756de7dbd90a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756dec7b870a01145012a0.msg\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756ded0e010a01145012a0.msg\list566.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756df25b330a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756df367420a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756df5a18d0a01145012a0.msg\question_list677.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756df752180a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756dfd1b8e0a01145012a0.msg\000004dd.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-25T756e0255c50a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-25T756e0976f70a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756e0ce3f40a01145012a0.msg\gpx.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756e0e3edd0a01145012a0.msg\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756e1017b00a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756e16218a0a01145012a0.msg\glnjf.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756e17d05f0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756e1bd5350a01145012a0.msg\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756e2e85f80a01145012a0.msg\00000526.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-25T756e2fb7030a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756e30905a0a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756e321cf20a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756e32bcbb0a01145012a0.msg\question_list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756e33219e0a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756e3c1f9b0a01145012a0.msg\document.zip ... Found the W32/Mydoom@MM!zip virus !!!
+V:\TEST\12-25T756e3c6b4a0a01145012a0.msg\mail.zip ... Found the W32/Mydoom@MM!zip virus !!!
+V:\TEST\12-25T756e3d70a20a01145012a0.msg\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756e3dd7b70a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756e459d950a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756e5391eb0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756e553ebc0a01145012a0.msg\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756e58245a0a01145012a0.msg\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756e5d958e0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756e5e7a4f0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756e6427530a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756e6a51090a01145012a0.msg\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756e6d73220a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756e6e54770a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756e71e4970a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756e7722d20a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756e7d84e10a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756e7dd2870a01145012a0.msg\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756e884be50a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756e8d427e0a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756e96d9510a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-25T756ea4bc800a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756ea7a22d0a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756eaef9d10a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756eb11ceb0a01145012a0.msg\question_list106.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756eb3127d0a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-25T756eb347960a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-25T756eb5def50a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756eba8d1a0a01145012a0.msg\document.zip ... Found the W32/Mydoom@MM!zip virus !!!
+V:\TEST\12-25T756ebde0160a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756ebdf93b0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756ec38e430a01145012a0.msg\question_list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756eca06280a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756ecbe8ce0a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756eccc39c0a01145012a0.msg\00000544.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-25T756eccceb80a01145012a0.msg\00000543.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-25T756ed257f80a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756eddbffb0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756eef7c8c0a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756ef1b2340a01145012a0.msg\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756ef603f10a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756ef6c4ed0a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756f06ce920a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756f0bada90a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756f0febdf0a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756f1181120a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756f17abe00a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756f19c3040a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756f1ac4550a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756f2297710a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756f23875d0a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756f26e72a0a01145012a0.msg\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756f2d1fe30a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756f2f7bfe0a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756f354fc40a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-25T756f37e7520a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756f429c720a01145012a0.msg\question_list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756f42f04e0a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756f46215b0a01145012a0.msg\00008ab1.EML\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756f46b4330a01145012a0.msg\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756f4773b90a01145012a0.msg\00000521.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-25T756f4b61fa0a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756f56cb260a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756f6006e70a01145012a0.msg\account-password.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756f63e6c10a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-25T756f65a9e90a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756f6b8dcc0a01145012a0.msg\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756f70a5d50a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756f74b7cb0a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756f7933760a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756f7fe90f0a01145012a0.msg\list541.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756f8366760a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756f8dc76b0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756f8dee8b0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756f8e57460a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756f94faaf0a01145012a0.msg\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756f968a350a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756f9a54f00a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756f9dfaa00a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756f9f845a0a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756fa1099f0a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756fa63d2f0a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756fb8a1290a01145012a0.msg\000004fb.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-25T756fba4ade0a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756fc7b4980a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756fc7e3b70a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756fcbac4f0a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756fcefd670a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756fd17e9e0a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-25T756fde2ba20a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756fe055c10a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756fe1b2be0a01145012a0.msg\000004bc.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-25T756ff3aa920a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T756ff419e50a01145012a0.msg\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756ff5560c0a01145012a0.msg\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T756ff8309d0a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-25T75700117c70a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T757003504d0a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T75700400230a01145012a0.msg\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T7570061a540a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T75700d402a0a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T75700ea8cf0a01145012a0.msg\000004f0.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-25T7570141ee60a01145012a0.msg\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T75701856830a01145012a0.msg\account-password.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T75701f9fb00a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T7570227d9d0a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T75702ac3d50a01145012a0.msg\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T75702bc5540a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T75703571530a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T75703677570a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T75703fc3060a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T75704252760a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T757049bae20a01145012a0.msg\account-password.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T757050d9080a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T75705168080a01145012a0.msg\list988.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T757054ec650a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T75705ae7790a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T75705b6b000a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T75705f1b9c0a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T75706489b40a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-25T757068e7500a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T75706b188a0a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T757073cb840a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T757079f81f0a01145012a0.msg\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T75707db8dd0a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T757082be5b0a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T757083382d0a01145012a0.msg\hvx.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T757088a2cb0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T75708c6a7a0a01145012a0.msg\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T757092b91c0a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T757093bcbe0a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T757094c90c0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T75709c71dc0a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T75709ffc440a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T7570a08bd00a01145012a0.msg\account-password.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T7570a2ae1f0a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T7570a4a3c10a01145012a0.msg\00000722.EML\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T7570a4b9f80a01145012a0.msg\maqs.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T7570ab1a6d0a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-25T7570aec9e00a01145012a0.msg\00001d83.EML\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T7570aece260a01145012a0.msg\00001143.EML\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-25T7570b646810a01145012a0.msg\beqzjvc.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-25T7570c17d430a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26S75741ae1b20a011450ef0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26S75741ae1c20a011450ef0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T7570c7ed280a01145012a0.msg\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T7570cda5870a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7570d573d00a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7570e7f2a60a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-26T7570ed84330a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7570ee172b0a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T7570eeb9940a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7570f0b12a0a01145012a0.msg\00000518.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-26T757109b09e0a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T757113bf6d0a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T757114563d0a01145012a0.msg\question_list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T75711e0fa90a01145012a0.msg\000007c0.EML\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T7571225b7a0a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T757125f33f0a01145012a0.msg\question_list192.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T75713969150a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T75713a1b7c0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7571406c9e0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T75714a8ef50a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7571513c410a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T75715c85a00a01145012a0.msg\account-password.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T75715f4a480a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-26T75716343760a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-26T75716434e90a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T75716472bc0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T75716fd2ff0a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T757180622e0a01145012a0.msg\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T757185c9be0a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T75718664570a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T757186af690a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T757194ff7a0a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T757199b4b30a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T75719ebb470a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7571a14b050a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7571a848550a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7571b2c4050a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7571b7bd8a0a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7571c2c57c0a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7571c399550a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7571c5f5ed0a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7571ccbba30a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7571ccf5020a01145012a0.msg\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T7571cfa5470a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7571d41b070a01145012a0.msg\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T7571dcb2aa0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7571e03bb90a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7571e219300a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T7571e6eef10a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7571f5c1120a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7571ff6cc20a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T75720d86240a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T75720e22e00a01145012a0.msg\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T75721483930a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T75721d465c0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T75721f660b0a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T757224aa450a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T75722dd6d30a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T75723b2ac40a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T75723baaef0a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7572401ab30a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7572414edc0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7572475de50a01145012a0.msg\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T7572482d1a0a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T757249ad5e0a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T757253f4050a01145012a0.msg\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T75725601460a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7572578ded0a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T757258e6370a01145012a0.msg\000007bc.EML\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T75726bfcdc0a01145012a0.msg\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T75726c0fa80a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-26T75727037be0a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T757277a4550a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-26T75727d469c0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T75727e0a770a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T757282b07e0a01145012a0.msg\00001e21.EML\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T75728686930a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T75728829820a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T75728f2ac90a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7572af49ca0a01145012a0.msg\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T7572b537a00a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T7572bcf6690a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7572cdcef40a01145012a0.msg\00000514.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-26T7572d6080d0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7572d778720a01145012a0.msg\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T7572dcbf5b0a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7572e09e0c0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7572e0ce630a01145012a0.msg\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T7572e5e2d20a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7572e693920a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7572e8f05a0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7572ef6d010a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T7572f094860a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T7572f3c5f10a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7572f4051d0a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7572fafda90a01145012a0.msg\vgi.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7572fb32a40a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T7572fdccc10a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7572fe7e3d0a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T75730077e60a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T75730b2b700a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-26T757314ff490a01145012a0.msg\00000870.EML\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T75731c9ca00a01145012a0.msg\Elizabethe.zip\FOTO_532.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-26T75731cf2800a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T757321cfb30a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T75732691fb0a01145012a0.msg\James.zip\FOTO_2315.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-26T757326e50c0a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-26T75732715630a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T75732b1eec0a01145012a0.msg\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T75732c65440a01145012a0.msg\Robert.zip\FOTO_2315.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-26T75732d95c30a01145012a0.msg\Edmonde.zip\FOTO_2315.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-26T75733599740a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T75733deb450a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-26T757340faa10a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T757346c5bd0a01145012a0.msg\Ann.zip\FOTO_2315.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-26T75734c4d770a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T75734fe0e60a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7573544a230a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7573558d9d0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7573561e040a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T75735973720a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T75735c06ba0a01145012a0.msg\odv.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T75735d6bc50a01145012a0.msg\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T757361e5da0a01145012a0.msg\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T7573647b830a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T757366db090a01145012a0.msg\Winifred.zip\FOTO_6432.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-26T757369866d0a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T757369f9790a01145012a0.msg\Christian.zip\S3700026.EXE ... Found the W32/Bagle.gen virus !!!
+V:\TEST\12-26T75736f62dd0a01145012a0.msg\James.zip\FOTO_2315.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-26T7573733bc20a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T757376e9900a01145012a0.msg\Joane.zip\FOTO_2315.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-26T7573775f990a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T757378c4370a01145012a0.msg\list236.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T75737b90230a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T75737b9a160a01145012a0.msg\Jeffrye.zip\FOTO_2315.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-26T75737ba7d10a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T75738041060a01145012a0.msg\question_list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T757388e6c30a01145012a0.msg\0000063f.EML\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T75738a8d7a0a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T75738c74b40a01145012a0.msg\Johen.zip\FOTO_2315.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-26T75738c9b280a01145012a0.msg\Androwe.zip\FOTO_2315.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-26T7573912fe90a01145012a0.msg\karen.kovlan@inmar.com\karen.kovlan@inmar.com ... Found the W32/Mydoom.n@MM virus !!!
+V:\TEST\12-26T7573913ff60a01145012a0.msg\.zip ... Found the W32/Mydoom@MM!zip virus !!!
+V:\TEST\12-26T757396ecbc0a01145012a0.msg\Annes.zip\FOTO_2315.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-26T75739886920a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T75739f53ba0a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T7573a3129f0a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7573a498900a01145012a0.msg\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T7573a4e8350a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7573a924290a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7573ab555c0a01145012a0.msg\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T7573b5ad780a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T7573b6339e0a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7573b953d30a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7573b9bc210a01145012a0.msg\question_list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T7573bd8b810a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7573bda7d20a01145012a0.msg\Androw.zip\FOTO_2315.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-26T7573c567f30a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-26T7573c5711b0a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7573c754db0a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7573cc030f0a01145012a0.msg\00002d34.EML\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T7573d62d550a01145012a0.msg\Leonarde.zip\FOTO_2315.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-26T7573d6bade0a01145012a0.msg\Edmond.zip\FOTO_2315.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-26T7573d9a33a0a01145012a0.msg\James.zip\FOTO_2315.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-26T7573da50af0a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7573e2232f0a01145012a0.msg\question_list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T7573e740780a01145012a0.msg\00000538.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-26T7573ea52930a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7574053f0e0a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T75740712720a01145012a0.msg\account-password.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T75741015320a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-26T75741560fd0a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T757415e2a00a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T75741600680a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T75741608f40a01145012a0.msg\000007d0.EML\Email.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T75741616710a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7574192fd00a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T75741a1c700a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-26T75742227840a01145012a0.msg\Margret.zip\FOTO_2315.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-26T757422bb180a01145012a0.msg\Edward.zip\FOTO_2315.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-26T75742614ea0a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T75742719480a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T75742840ed0a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-26T75742916c90a01145012a0.msg\Gabriell.zip\FOTO_2315.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-26T757430c9bb0a01145012a0.msg\Elizabeth.zip\FOTO_2315.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-26T757431c0000a01145012a0.msg\Peter.zip\FOTO_2315.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-26T7574349c760a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7574355e4d0a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T75744125b50a01145012a0.msg\James.zip\FOTO_2315.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-26T757441e0c60a01145012a0.msg\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T7574445e830a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T75744511f30a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T757449013e0a01145012a0.msg\Margerye.zip\FOTO_2315.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-26T75744c21d00a01145012a0.msg\Joane.zip\FOTO_2315.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-26T75744d86450a01145012a0.msg\Androw.zip\FOTO_2315.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-26T757455ad110a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T75745aeeaf0a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T75745eb4aa0a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T757460dfba0a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-26T757461a1830a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T757466ad2e0a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T75746918cb0a01145012a0.msg\00000679.EML\Leonarde.zip\FOTO_2315.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-26T757469dc380a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T75746a47270a01145012a0.msg\Hughe.zip\FOTO_2315.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-26T75746d893b0a01145012a0.msg\Peter.zip\FOTO_2315.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-26T75747339aa0a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T757474d1bc0a01145012a0.msg\account-password.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T75747f53d50a01145012a0.msg\question_list82.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T757480b19d0a01145012a0.msg\list880.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T757485123f0a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T75748eeb390a01145012a0.msg\Susan.zip\FOTO_2315.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-26T757494017d0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T75749825250a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7574a094bf0a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7574a774550a01145012a0.msg\Francis.zip\FOTO_2315.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-26T7574a8462a0a01145012a0.msg\Alice.zip\FOTO_2315.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-26T7574afff560a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7574b03f8b0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7574b1ad6f0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7574b92b290a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7574babc450a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-26T7574bb29850a01145012a0.msg\Leonarde.zip\FOTO_2315.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-26T7574be920d0a01145012a0.msg\Danyell.zip\FOTO_2315.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-26T7574c478130a01145012a0.msg\George.zip\FOTO_2315.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-26T7574c5a3a00a01145012a0.msg\00000695.EML\Emanual.zip\FOTO_2315.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-26T7574c9ff4f0a01145012a0.msg\Emanuel.zip\FOTO_2315.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-26T7574cd7c690a01145012a0.msg\wrgbf.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7574ce25c70a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7574d1d9800a01145012a0.msg\Roger.zip\FOTO_2315.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-26T7574d439d10a01145012a0.msg\Margrett.zip\FOTO_2315.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-26T7574d76a420a01145012a0.msg\Leonard.zip\FOTO_2315.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-26T7574d9a3260a01145012a0.msg\Stephen.zip\FOTO_2315.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-26T7574e437700a01145012a0.msg\Avis.zip\FOTO_2315.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-26T7574e7248f0a01145012a0.msg\question_list635.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T7574e989360a01145012a0.msg\Wynnefreede.zip\FOTO_2315.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-26T7574eb22ae0a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-26T7574eea7d60a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7574f515e70a01145012a0.msg\Sara.zip\FOTO_2315.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-26T7574fa7fd80a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7574fe7e170a01145012a0.msg\000004fc.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-26T757500fb850a01145012a0.msg\account-password.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T75750202350a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7575021a8f0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T757504b2e80a01145012a0.msg\Emanuel.zip\FOTO_2315.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-26T75750ab7810a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T75750b9aea0a01145012a0.msg\Gabriell.zip\FOTO_2315.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-26T7575123e820a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T75751253af0a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T75751438890a01145012a0.msg\jyjqapf.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T75751f160f0a01145012a0.msg\Rose.zip\FOTO_2315.EXE ... Found the W32/Bagle.dldr virus !!!
+V:\TEST\12-26T75752116310a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T75752308480a01145012a0.msg\account-password.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T75752a46880a01145012a0.msg\00000515.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-26T75753040640a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T75753a1a190a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T75754214b20a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T75754238090a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T757544012d0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T757546ad6b0a01145012a0.msg\00000508.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-26T7575480da40a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T757554d2560a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T757555c31c0a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7575564d3a0a01145012a0.msg\question_list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T75755d00430a01145012a0.msg\000004c2.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-26T75755f53360a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-26T75755fbd790a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-26T75756ec4550a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T75757054b60a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T75757223a60a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-26T75757375f50a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T757573e2a80a01145012a0.msg\000004c4.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-26T757575416a0a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T757579c7370a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T75757c869f0a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T75757e68b90a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T75757f20110a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T75758398220a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T7575859b220a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T757586386a0a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T757592f9240a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T75759532660a01145012a0.msg\account-password.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T75759724eb0a01145012a0.msg\00000533.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-26T7575a0bd130a01145012a0.msg\question_list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T7575a256ab0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7575a2befa0a01145012a0.msg\000009d8.EML\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T7575a4e1e50a01145012a0.msg\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T7575acd0a70a01145012a0.msg ... Found potentially unwanted program Exploit-MIME.gen.c.
+V:\TEST\12-26T7575b33e4a0a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T7575b5ab0f0a01145012a0.msg\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T7575b64b840a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7575b9e8890a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7575baaf420a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7575bae6ec0a01145012a0.msg\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T7575c38e5d0a01145012a0.msg\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T7575c5f6cd0a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7575c9a5850a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-26T7575c9ded40a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7575cc9f370a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7575cd471e0a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-26T7575d860c30a01145012a0.msg\0000050a.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-26T7575dc779a0a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-26T7575dd3c6f0a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-26T7575e9c9c50a01145012a0.msg\account-password.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-26T7575ea1a560a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T7575edb5c50a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T7575f6bf3b0a01145012a0.msg\0000051b.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-27T7575f80b600a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T7575fabe740a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T75760289910a01145012a0.msg\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T757610fb050a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T7576166b110a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T757624a5d50a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T757625fc5a0a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T7576297e070a01145012a0.msg\000004f2.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-27T75762a20310a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-27T75763862c50a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T75763a30cb0a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T75763c4aec0a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T75763e7ff80a01145012a0.msg\000024a6.EML\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T75764330ed0a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757644a1830a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757644bbae0a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757645bbe60a01145012a0.msg\000004f2.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-27T75764a1f0f0a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T75764b649c0a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T75764bd5e90a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T75764d70a20a01145012a0.msg\question_list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T75765344d40a01145012a0.msg\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T75765ef8570a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T75765f480c0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757660dbc80a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T75766645d90a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T75767309620a01145012a0.msg\ergqzdg.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T7576762ee60a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-27T757689d5410a01145012a0.msg\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T75768b05ef0a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T75769ac81b0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T75769b63020a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T7576a115750a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T7576b3ca5e0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T7576c55c160a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T7576c643c50a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T7576d834650a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T7576df58f30a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T7576eaf41b0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T7576eb8ee30a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T7576edd12d0a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-27T7576ee85780a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757705f3a10a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-27T75770745630a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T75770837720a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T75770cd1c00a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T75770ef2690a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T7577119bd90a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T75771a6de40a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T75771aad7d0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T75772b58cf0a01145012a0.msg\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T75773378070a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T7577480c980a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757754af8a0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757755e6b00a01145012a0.msg\lnvfi.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T75775a550c0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T7577634f310a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T75776761170a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T75776a56450a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T75776b131b0a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T75777036cc0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T7577716c6b0a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T757778f2530a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T757781f8100a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757790d4b10a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T75779b62720a01145012a0.msg\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T7577a6475c0a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T7577aa7b210a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T7577add4d40a01145012a0.msg\000084f8.EML\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T7577af43f20a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T7577b896870a01145012a0.msg\00002a6e.EML\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T7577b9a5e10a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T7577bf1d200a01145012a0.msg\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T7577c77cbc0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T7577cbd1670a01145012a0.msg\gnfzecg.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T7577d10e2e0a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T7577d1e13c0a01145012a0.msg\document_sjackson.zip ... Found the W32/Netsky.p@MM!zip virus !!!
+V:\TEST\12-27T7577e218a70a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T7577ecbd3c0a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T7577f5a2230a01145012a0.msg\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T7577f82cef0a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T7577faa00d0a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T757801bf5c0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T7578033f130a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T757804df130a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T757815cdc70a01145012a0.msg\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T7578191da60a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T75782161cb0a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757821769b0a01145012a0.msg\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T75782296310a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T757829de930a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T75782d17fd0a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757834d7040a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T75783e179b0a01145012a0.msg\pnzud.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T7578476d9f0a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T75785854710a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T75785c6ccf0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757864b49d0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T75786694170a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T75786c535b0a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T75786d04f60a01145012a0.msg\question_list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T757878f0420a01145012a0.msg\tteuac.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T7578803a0a0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757885d5d90a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757893b3c80a01145012a0.msg ... Found potentially unwanted program Exploit-MIME.gen.c.
+V:\TEST\12-27T7578a6d3510a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T7578b27f610a01145012a0.msg ... Found potentially unwanted program Exploit-MIME.gen.c.
+V:\TEST\12-27T7578b983e40a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T7578b9af980a01145012a0.msg ... Found potentially unwanted program Exploit-MIME.gen.c.
+V:\TEST\12-27T7578bcc4530a01145012a0.msg\0000050f.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-27T7578c1f8310a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T7578c462170a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T7578c6810b0a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T7578cdd19a0a01145012a0.msg\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T7578d899c50a01145012a0.msg\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T7578dd52f50a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T7578dfd4e80a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T7578e0d55e0a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T7578e2b6300a01145012a0.msg\00000a3e.EML\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T7578f0cee50a01145012a0.msg\msg.zip ... Found the W32/Netsky.p@MM!zip virus !!!
+V:\TEST\12-27T7578f33ab00a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T7578f455840a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T7578f715890a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T75790da9320a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T75790e69730a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T75791371400a01145012a0.msg\00000bb3.EML\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T75791b57960a01145012a0.msg\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T757920fb730a01145012a0.msg\gxcdwgd.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T75792110520a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-27T75792bb4990a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T75792c5f7e0a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T75792efc990a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757930a8420a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T75793d58ef0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757947ba620a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T75794806db0a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T75795f5de20a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757961187f0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757962e30a0a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T75796742060a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T75796894c20a01145012a0.msg\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T75796a15340a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757972c33e0a01145012a0.msg\000016a2.EML\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T75797fd8800a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T7579832aa10a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757983c6530a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757983ee9c0a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T7579847cd10a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T7579853b5c0a01145012a0.msg\ygeqv.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T75798741690a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T7579918f440a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T757994a75b0a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-27T7579a214800a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T7579a4637c0a01145012a0.msg\ixxrhgz.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T7579ac97940a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T7579acb6080a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T7579b124170a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T7579b77dc50a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T7579bbdc530a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-27T7579bed20e0a01145012a0.msg\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T7579c0ebb20a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T7579d6ee960a01145012a0.msg\list734.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T7579d998a20a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T7579da54fb0a01145012a0.msg\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T7579e331b50a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T7579e921210a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T7579e9f8740a01145012a0.msg\question_list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T7579ee7f2b0a01145012a0.msg\account-password.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T7579f450ed0a01145012a0.msg\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T7579f70df40a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T7579f7bdab0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757a0086dd0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757a01d7480a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757a0c9d8e0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757a10b8ba0a01145012a0.msg\nhhbap.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757a111dcd0a01145012a0.msg\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T757a181c740a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T757a1b497a0a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757a1d0a120a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T757a2b5c2a0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757a2d30e30a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757a2d60c00a01145012a0.msg\llwz.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757a2db1ed0a01145012a0.msg\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T757a33c47d0a01145012a0.msg\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T757a35df750a01145012a0.msg\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T757a40e4880a01145012a0.msg\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T757a499b3f0a01145012a0.msg\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T757a4c18310a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757a5471450a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757a550b510a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757a5cc3920a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757a66376a0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757a6a2bd60a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-27T757a7885da0a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757a7bb84e0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757a8373cc0a01145012a0.msg\000029ac.EML\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T757a8443010a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757a8ebf2f0a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T757a931f240a01145012a0.msg\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T757a981b970a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757aa8324b0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757aab4e980a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757aacaaaa0a01145012a0.msg\wecfuhv.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757aaf7a8d0a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T757ac1ac4d0a01145012a0.msg\account-password.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757ac9a2330a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757acb0a5b0a01145012a0.msg\question_list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T757acf35c40a01145012a0.msg\00000b4d.EML\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T757ae0388c0a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757ae06c5d0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757ae83e7f0a01145012a0.msg\dtgkboc.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757ae85e4c0a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-27T757aeb04ae0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757aebdc6f0a01145012a0.msg\zqzkec.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-27T757af2fd340a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-28r757d34518a5014010ACF8.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28r757d34519a5014010ACF8.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28r757d3451b95014010ACF8.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28r757d3451c95014010ACF8.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28r757d3452175014010ACF8.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28r757d3452365014010ACF8.msg\question_list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28S757c8375470a011450ef0.msg\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28S757c8375570a011450ef0.msg\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757b1533870a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757b17cebe0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757b18fae80a01145012a0.msg\question_list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757b1d64ff0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757b2b5d0e0a01145012a0.msg\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757b3944ff0a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757b3e167b0a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757b41f6a20a01145012a0.msg\pza.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757b44b1380a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757b474e250a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757b5498af0a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757b5f1d3a0a01145012a0.msg\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757b649a740a01145012a0.msg\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757b66502f0a01145012a0.msg\hnjq.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757b6c2afa0a01145012a0.msg\zoyzg.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757b6cf28e0a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757b79865c0a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-28T757b79b2fa0a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-28T757b818b850a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757b8488340a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757b86bfa10a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757b90113c0a01145012a0.msg\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757b90de6d0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757b924bc60a01145012a0.msg\00000506.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-28T757b9a0d7d0a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757ba5ab060a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757ba930ab0a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-28T757bb2d4ab0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757bb8df210a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757bb9bf1f0a01145012a0.msg\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757bbe8f320a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-28T757bbf52610a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757bc4f38f0a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757bcfbabf0a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-28T757bd1fb440a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757bd3e51e0a01145012a0.msg\icgjcxf.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757be4dc7c0a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757be7e2440a01145012a0.msg\question_list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757bec23380a01145012a0.msg\question_list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757bfd46a70a01145012a0.msg\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757c0e55360a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757c142b0f0a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757c1d308e0a01145012a0.msg\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757c1dcc360a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757c25ef8b0a01145012a0.msg\account-password.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757c2dc7d00a01145012a0.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757c34af870a01145012a0.msg\xmdc.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757c37d79e0a01145012a0.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757c3ff7b20a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757c4323500a01145012a0.msg\wiy.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757c4720850a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757c4ebc070a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757c528b670a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757c5f95ac0a01145012a0.msg\onorzbl.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757c64512f0a01145012a0.msg\rsu.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757c7291de0a01145012a0.msg\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757c77179c0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757c789b890a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757c7b87ec0a01145012a0.msg\question_list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757c84a6cf0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757c89c04f0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757c8b9ae80a01145012a0.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757c8e0a3d0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757c8fe8fb0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757c91388b0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757c997dc90a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757c9a7a660a01145012a0.msg\000006ca.EML\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757c9d05810a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757c9db92f0a01145012a0.msg\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757ca137230a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757ca1ff820a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757ca76a000a01145012a0.msg\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757ca9970d0a01145012a0.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757cad52480a01145012a0.msg\iwsto.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757cb385920a01145012a0.msg\qoox.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757cb7d6a40a01145012a0.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757cbeaa920a01145012a0.msg\vpqziyr.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757cc1ca980a01145012a0.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757cc751a60a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-28T757cd29ff70a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757cd7558d0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757ce262520a01145012a0.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757cea85040a01145012a0.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757ceb8c410a01145012a0.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757cebdffd0a01145012a0.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757cebf9de0a01145012a0.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757cf6ba0a0a01145012a0.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-28T757d3d92c90a0114507bc.msg\list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757d413b480a0114507bc.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757d450d370a0114507bc.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757d45d45e0a0114507bc.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-28T757d46f2bc0a0114507bc.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757d4c91980a0114507bc.msg\000083ca.EML\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757d549b440a0114507bc.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757d5f8f700a0114507bc.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757d6238810a0114507bc.msg\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757d63614f0a0114507bc.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757d7056380a0114507bc.msg\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757d79d1830a0114507bc.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757d7f0aee0a0114507bc.msg\000004ec.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-28T757d87720c0a0114507bc.msg\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757d87bb690a0114507bc.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757d88205c0a0114507bc.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757d8937c50a0114507bc.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757d8f48d20a0114507bc.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757d8fff8d0a0114507bc.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757d9754ef0a0114507bc.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757dadd0000a0114507bc.msg\000011d4.EML\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757db3cb810a0114507bc.msg\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757dbc27b20a0114507bc.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757dbe7ca90a0114507bc.msg\adkqlgk.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757dd19aca0a0114507bc.msg\00000533.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-28T757de244860a0114507bc.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757de539750a0114507bc.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757de5910a0a0114507bc.msg\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757ded35f30a0114507bc.msg\nrfhd.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757df40a1f0a0114507bc.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757dfdc65a0a0114507bc.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757e029d150a0114507bc.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757e0613f40a0114507bc.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757e0f850d0a0114507bc.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757e18815f0a0114507bc.msg\0000051d.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-28T757e1944ac0a0114507bc.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757e270b710a0114507bc.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757e2d00620a0114507bc.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757e2f94260a0114507bc.msg\0000064c.EML\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757e34c8b00a0114507bc.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757e3e6d2d0a0114507bc.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757e3f8b3d0a0114507bc.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757e40e6460a0114507bc.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757e42a5e40a0114507bc.msg\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757e4610cd0a0114507bc.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757e5188af0a0114507bc.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757e5417050a0114507bc.msg\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757e58dfb60a0114507bc.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757e59513c0a0114507bc.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757e5c47c10a0114507bc.msg ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-28T757e5e6afa0a0114507bc.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757e5f4ed00a0114507bc.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757e6b516c0a0114507bc.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757e711d620a0114507bc.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757e7bf6d20a0114507bc.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757e8738620a0114507bc.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757e8a70a30a0114507bc.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757e90a9f80a0114507bc.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757e947aaf0a0114507bc.msg\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757e95f5a30a0114507bc.msg\0000050d.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-28T757e9966490a0114507bc.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757e99d01e0a0114507bc.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757e9c8efa0a0114507bc.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757e9dbedc0a0114507bc.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757e9f67780a0114507bc.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757eb0ad140a0114507bc.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757ec9659d0a0114507bc.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757ecf1b0e0a0114507bc.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757ecfcfb60a0114507bc.msg\list706.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757ed48caf0a0114507bc.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757edbac6b0a0114507bc.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757edead510a0114507bc.msg\Details.zip ... Found the W32/Netsky.z@MM!zip virus !!!
+V:\TEST\12-28T757edebf420a0114507bc.msg\Details.zip ... Found the W32/Netsky.z@MM!zip virus !!!
+V:\TEST\12-28T757ee2c2530a0114507bc.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757ef5e8830a0114507bc.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757eff060e0a0114507bc.msg\00000512.EML ... Found the Phish-BankFraud.eml.a trojan !!!
+V:\TEST\12-28T757f0172460a0114507bc.msg ... Found the W32/Netsky.d.eml!exe virus !!!
+V:\TEST\12-28T757f0175c10a0114507bc.msg ... Found the W32/Netsky.d.eml!exe virus !!!
+V:\TEST\12-28T757f0180bd0a0114507bc.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757f0455920a0114507bc.msg\000088ec.EML\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757f08d2080a0114507bc.msg\list95.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757f0dddec0a0114507bc.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757f10c1f30a0114507bc.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757f15315a0a0114507bc.msg\account-password.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757f284f8b0a0114507bc.msg\000007c5.EML\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757f2af2150a0114507bc.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757f3ab1720a0114507bc.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757f4303cf0a0114507bc.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757f44e8b80a0114507bc.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757f4871e70a0114507bc.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757f597cbd0a0114507bc.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757f5e4e860a0114507bc.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757f635d290a0114507bc.msg\000020cf.EML\reg_pass-data.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757f65359e0a0114507bc.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757f684c0f0a0114507bc.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757f6907bd0a0114507bc.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757f77f3ed0a0114507bc.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757f7bd1a40a0114507bc.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757f9eb0b90a0114507bc.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757fa141040a0114507bc.msg\account-password.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757fa4b37e0a0114507bc.msg\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757fc1b7b90a0114507bc.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757fc52d7f0a0114507bc.msg\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-28T757fce0cd90a0114507bc.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757fd15fa70a0114507bc.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757fd3e5ee0a0114507bc.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757fd5896a0a0114507bc.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757fde70b20a0114507bc.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757ff3bc3e0a0114507bc.msg\account-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757ff7a5010a0114507bc.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757ffb3c1b0a0114507bc.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T757ffb54750a0114507bc.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T7580106b4d0a0114507bc.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T758011bbc60a0114507bc.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T758016b7220a0114507bc.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T75802721150a0114507bc.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-28T7580347d040a0114507bc.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+
+Summary report on checklist list.txt
+File(s)
+        Total files: ...........    4574
+        Clean: .................    3068
+        Not scanned: ...........       0
+        Possibly Infected: .....    1506
+ 
+
+
+Time: 00:05.42
+
