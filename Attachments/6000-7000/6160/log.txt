@@ -1,0 +1,7 @@
+ENDPOINT   	OPERATING SYSTEM	SERVICE PACK  	PUSH NAME           	BULLETIN  	KB NUMBER 	RESULT           	RC    	TIME/DATE
+BJC11116698	Windows XP      	Service Pack 2	Acrobat705          	AcrRdr-705	NA        	Already Installed	0     	2005:12:07:18:17:10
+ENDPOINT   	OPERATING SYSTEM	SERVICE PACK  	PUSH NAME           	BULLETIN  	KB NUMBER 	RESULT           	RC    	TIME/DATE
+BJC11116698	Windows XP      	Service Pack 2	EmerWMFPatch        	MS05-053  	KB896424  	Already Installed	0     	2006:01:06:18:23:51
+BJC11116698	Windows XP      	Service Pack 2	EmerWMFPatch        	MS05-054  	KB905915  	Already Installed	0     	2006:01:06:18:23:51
+BJC11116698	Windows XP      	Service Pack 2	EmerWMFPatch        	MS05-055  	KB908523  	Not Applicable   	0     	2006:01:06:18:23:51
+BJC11116698	Windows XP      	Service Pack 2	EmerWMFPatch        	MS06-001  	KB912919  	Already Installed	0     	2006:01:06:18:23:51
