@@ -1,0 +1,17 @@
+[Projects]
+;name=version
+oo2.0=1.0
+
+[Descriptions]
+;projectname=description
+oo2.0="This should hold the description for the Edit-Box"
+
+[Path]
+oo2.0="Path to package"
+
+[cmd_install]
+oo2.0="Commandline for Installation"
+[cmd_uninstall]
+oo2.0="Commandline for Uninstallation"
+[cmd_repair]
+oo2.0="Commandline for Repair (if possible)"
