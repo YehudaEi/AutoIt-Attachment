@@ -1,0 +1,134 @@
+<html>
+<head>
+    <!-- <META HTTP-EQUIV='Pragma' CONTENT='no-cache'>
+    <META HTTP-EQUIV='Expires' CONTENT='-1'> -->
+    <title>flawblure</title>
+    
+    <style type='text/css'>
+    <!--
+	    A:link { color: white;
+	    text-decoration: none
+	     }
+	    A:visited { color: white;
+	    text-decoration: none
+	     }
+	    A:hover { color: white;
+	    text-decoration: underline
+	     }
+	    TABLE { border:5; }
+	    small { font-size : 80%; }
+    -->
+    </style>
+
+</head>
+<body bgcolor="black" text="white"  topmargin="0" leftmargin="0" marginwidth="0" marginheight="0"><table  width=100% border=0 cellspacing=0 cellpadding=0><tr><td align=center valign=top>
+<script language="JavaScript">
+function mpd(x,y) {
+  document.df.dx.value=x;
+  document.df.dy.value=y;
+  document.df.submit();
+}
+function delmes(m) {
+  document.message.action='/';
+  document.message.DelMessage.value=m;
+  document.message.submit();
+}
+function replym(m) {
+  document.message.action='message.php';
+  document.message.ReplyMes.value=m;
+  document.message.submit();
+}
+function newmsg(p) {
+  document.message.action='message.php';
+  document.message.WriteTo.value=p;
+  document.message.submit();
+}
+</script>
+
+<div style="text-align: center; padding: 2px; padding-bottom: 0px;"><a href="javascript:document.gof.action='editactions.php';document.gof.submit();"  onmouseover="status=''; return true;"><nobr>inventing (x8) <small>(20 minutes)</small> </nobr> </a></div></td><td rowspan=3 valign=top style="border: none; border-left: 1px solid #400040; width: 10%; margin: 1px; padding: 1px;"><script language="JavaScript">
+	function move(dir) {
+	if(!dir) return;
+	document.form1.Act2.value = dir;
+	if(dir!='center')
+		document.form1.Action.value = "move";
+	document.form1.submit();
+	}
+	</script>
+
+	<table  width=100% border=0 cellspacing=0 cellpadding=0><tr><td width='16%'></td><td width='16%'></td><td width='16%'></td><td width='16%'></td><td width='16%'></td><td width='16%'></td></tr><tr><td colspan=6><center><a href="javascript:move('u');"  onmouseover="status=''; return true;"><img title='up' src=                                      border=0></a></td></tr><tr><td></td><td colspan=2><center><a href="javascript:move('nw');"  onmouseover="status=''; return true;"><img title='northwest' src=                                       border=0></a></td><td colspan=2><center><a href="javascript:move('n');"  onmouseover="status=''; return true;"><img title='north' src=                                      border=0></a></td><td></td></tr><tr><td colspan=2><center><a href="javascript:move('w');"  onmouseover="status=''; return true;"><img title='west' src=                                      border=0></a></td><td colspan=2><center><a href="javascript:move('center');"  onmouseover="status=''; return true;"><img title='' src=                                           border=0></a></td><td colspan=2><center><a href="javascript:move('e');"  onmouseover="status=''; return true;"><img title='east' src=                                      border=0></a></td></tr><tr><td></td><td colspan=2><center><a href="javascript:move('s');"  onmouseover="status=''; return true;"><img title='south' src=                                      border=0></a></td><td colspan=2><center><a href="javascript:move('se');"  onmouseover="status=''; return true;"><img title='southeast' src=                                       border=0></a></td><td></td></tr><tr><td colspan=6><center><a href="javascript:move('d');"  onmouseover="status=''; return true;"><img title='down' src=                                      border=0></a></td></tr></table><br>
+<div style="border: 1px solid #400040; border-left: none; border-right: none; width: 80%; text-align: left; margin: 2px; padding: 6px;"><font color=gray>Display:</font><br>
+<a href="javascript:document.form1.MapMode.value='Terrain'; document.form1.submit();"  onmouseover="status=''; return true;">Terrain</a><br>
+<a href="javascript:document.form1.MapMode.value='Height'; document.form1.submit();"  onmouseover="status=''; return true;">Height</a><br>
+<a href="javascript:document.form1.MapMode.value='Roads'; document.form1.submit();"  onmouseover="status=''; return true;">Roads</a><br>
+<a href="javascript:document.form1.MapMode.value='Brief'; document.form1.submit();"  onmouseover="status=''; return true;">Brief</a><br>
+</div><div style="width: 80%; text-align: left; margin: 2px; padding: 6px;"><i><a href="javascript:document.gof.action='';document.gof.submit();"  onmouseover="status=''; return true;"><font color=white>reload</font></a></i><br>
+<br>
+<i><a href="javascript:document.gof.action='build.php';document.gof.submit();"  onmouseover="status=''; return true;"><font color=#FFEECC>build</font></a></i><br>
+
+<i><a href="javascript:document.gof.action='waract.php';document.gof.submit();"  onmouseover="status=''; return true;"><font color=#FF00FF>war</font></a></i><br>
+<i><a href="javascript:document.gof.action='miscact.php';document.gof.submit();"  onmouseover="status=''; return true;"><font color=#3377BB>knowledge</font></a></i><br>
+<i><a href="javascript:document.gof.action='magic.php';document.gof.submit();"  onmouseover="status=''; return true;"><font color=#FF00FF>magic</font></a></i><br>
+<i><a href="javascript:document.gof.action='message.php';document.gof.submit();"  onmouseover="status=''; return true;"><font color=#FF00FF>messages</font></a></i><br>
+<i><a href="javascript:document.gof.action='possessions.php';document.gof.submit();"  onmouseover="status=''; return true;"><font color=#e7929c>possessions</font></a></i><br>
+<i><a href="javascript:document.gof.action='/';document.gof.submit();"  onmouseover="status=''; return true;"><font color=#33AA11>map</font></a></i><br>
+<br>
+<br>
+<i><a href="javascript:document.gof.action='discuss.php';document.gof.submit();"  onmouseover="status=''; return true;"><font color=#FF00FF>forums</font></a></i><br>
+<i><a href="javascript:document.gof.action='skills.php';document.gof.submit();"  onmouseover="status=''; return true;"><font color=#906765>skills</font></a></i><br>
+
+<i><a href="javascript:document.gof.action='extra.php';document.gof.submit();"  onmouseover="status=''; return true;"><font color=#774464>options</font></a></i><br>
+<i><a href="javascript:document.gof.action='overview.php';document.gof.submit();"  onmouseover="status=''; return true;"><font color=#FF00FF>overview</font></a></i><br>
+<i><a href="javascript:document.gof.action='                            ';document.gof.submit();"  onmouseover="status=''; return true;"><font color=#FF00FF>contract</font></a></i></div></td></tr><tr><td align=center valign=top><table style="border-style: none;" width= border=0 cellspacing=2 cellpadding=2><tr height='%'><td colspan=3></td><td colspan="2" height="60" style="text-align: center; border-style: solid; border-width: 1px; border-color:#141418;"><a href="javascript:mpd(-2,-2);" style="display: block; "><img title="Tungsten Garden " src="                                  " style="border-style: none; clear: both;"><br /><font color=#666677>(24)<br /></font></a></td>
+<td colspan="2" height="60" style="text-align: center; border-style: solid; border-width: 1px; border-color:#141418;"><a href="javascript:mpd(-1,-2);" style="display: block; "><img title="Desert " src="                              " style="border-style: none; clear: both;"><br /><font color=#666677>(4)<br /></font></a></td>
+<td colspan="2" height="60" style="text-align: center; border-style: solid; border-width: 1px; border-color:#141418;"><a href="javascript:mpd(0,-2);" style="display: block; "><img title="Desert Farm " src="                              " style="border-style: none; clear: both;"><br /></a></td>
+<td colspan="2" height="60" style="text-align: center; border-style: solid; border-width: 1px; border-color:#141418;"><a href="javascript:mpd(1,-2);" style="display: block; "><img title="Desert Farm " src="                              " style="border-style: none; clear: both;"><br /></a></td>
+<td colspan=3></td></tr><tr height='%'><td colspan=2></td><td colspan="2" height="60" style="text-align: center; border-style: solid; border-width: 1px; border-color:#141418;"><a href="javascript:mpd(-2,-1);" style="display: block; "><img title="Desert " src="                              " style="border-style: none; clear: both;"><br /><font color=#666677>(3)<br /></font></a></td>
+<td colspan="2" height="60" style="text-align: center; border-style: solid; border-width: 1px; border-color:#141418;"><a href="javascript:mpd(-1,-1);" style="display: block; "><img title="Tungsten Garden " src="                                  " style="border-style: none; clear: both;"><br /><font color=#666677>(37)<br /></font><font color=#666677><i>Adrian</i><br /></font><font color=#666677>jwrtolkien<br /></font></a></td>
+
+<td colspan="2" height="60" style="text-align: center; border-style: solid; border-width: 1px; border-color:#141418;"><a href="javascript:mpd(0,-1);" style="display: block; "><img title="Tungsten Garden " src="                                  " style="border-style: none; clear: both;"><br /><font color=#666677>(4)<br /></font></a></td>
+<td colspan="2" height="60" style="text-align: center; border-style: solid; border-width: 1px; border-color:#02210d;"><a href="javascript:mpd(1,-1);" style="display: block; "><img title="Forest " src="                              " style="border-style: none; clear: both;"><br /></a></td>
+<td colspan="2" height="60" style="text-align: center; border-style: solid; border-width: 1px; border-color:#141418;"><a href="javascript:mpd(2,-1);" style="display: block; "><img title="Desert " src="                              " style="border-style: none; clear: both;"><br /></a></td>
+<td colspan=2></td></tr><tr height='%'><td></td><td colspan="2" height="60" style="text-align: center; border-style: solid; border-width: 1px; border-color:#141418;"><a href="javascript:mpd(-2,0);" style="display: block; "><img title="Desert " src="                              " style="border-style: none; clear: both;"><br /><font color=#666677>(3)<br /></font></a></td>
+<td colspan="2" height="60" style="text-align: center; border-style: solid; border-width: 1px; border-color:#141418;"><a href="javascript:mpd(-1,0);" style="display: block; "><img title="Desert " src="                              " style="border-style: none; clear: both;"><br /><font color=#666677>(3)<br /></font></a></td>
+<td colspan="2" height="60" style="text-align: center; border-style: solid; border-width: 1px; border-color:#141418;"><a href="javascript:mpd(0,0);" style="display: block; "><img title="Lab " src="                             " style="border-style: none; clear: both;"><br /><font color=#666677>(100)<br /></font><font color=#FF0022><i>Chimpy</i><br /></font></a></td>
+<td colspan="2" height="60" style="text-align: center; border-style: solid; border-width: 1px; border-color:#141418;"><a href="javascript:mpd(1,0);" style="display: block; "><img title="Village " src="                                  " style="border-style: none; clear: both;"><br /></a></td>
+<td colspan="2" height="60" style="text-align: center; border-style: solid; border-width: 1px; border-color:#141418;"><a href="javascript:mpd(2,0);" style="display: block; "><img title="Desert " src="                              " style="border-style: none; clear: both;"><br /></a></td>
+<td colspan="2" height="60" style="text-align: center; border-style: solid; border-width: 1px; border-color:#141418;"><a href="javascript:mpd(3,0);" style="display: block; "><img title="Desert " src="                              " style="border-style: none; clear: both;"><br /></a></td>
+<td></td></tr><tr height='%'><td colspan="2" height="60" style="text-align: center; border-style: solid; border-width: 1px; border-color:#02210d;"><a href="javascript:mpd(-2,1);" style="display: block; "><img title="Forest " src="                              " style="border-style: none; clear: both;"><br /><font color=#09A540>(120)<br /></font></a></td>
+<td colspan="2" height="60" style="text-align: center; border-style: solid; border-width: 1px; border-color:#02210d;"><a href="javascript:mpd(-1,1);" style="display: block; "><img title="Forest " src="                              " style="border-style: none; clear: both;"><br /><font color=#09A540>(120)<br /></font></a></td>
+
+<td colspan="2" height="60" style="text-align: center; border-style: solid; border-width: 1px; border-color:#141418;"><a href="javascript:mpd(0,1);" style="display: block; "><img title="Desert " src="                              " style="border-style: none; clear: both;"><br /></a></td>
+<td colspan="2" height="60" style="text-align: center; border-style: solid; border-width: 1px; border-color:#141418;"><a href="javascript:mpd(1,1);" style="display: block; "><img title="Tungsten Garden " src="                                  " style="border-style: none; clear: both;"><br /><font color=#666677>(17)<br /></font><font color=#666677><i>Spanky</i><br /></font><font color=#DCA243><i>Redhill</i><br /></font><font color=#666677><i>Page</i><br /></font><font color=#2469D1>lordgarion<br /></font><font color=#666677><i>zeus</i><br /></font><font color=#666677><i>chumbawumba</i><br /></font><font color=#666677><nobr>flawblure 70</nobr><br /></font></a></td>
+<td colspan="2" height="60" style="text-align: center; border-style: solid; border-width: 1px; border-color:#141418;"><a href="javascript:mpd(2,1);" style="display: block; "><img title="Tungsten Garden " src="                                  " style="border-style: none; clear: both;"><br /></a></td>
+<td colspan="2" height="60" style="text-align: center; border-style: solid; border-width: 1px; border-color:#02210d;"><a href="javascript:mpd(3,1);" style="display: block; "><img title="Forest " src="                              " style="border-style: none; clear: both;"><br /><font color=#09A540>(120)<br /></font></a></td>
+<td colspan="2" style="border-style: none; text-align: center"><img src=                               ></td>
+</tr><tr height='%'><td></td><td colspan="2" height="60" style="text-align: center; border-style: solid; border-width: 1px; border-color:#02210d;"><a href="javascript:mpd(-1,2);" style="display: block; "><img title="Forest " src="                              " style="border-style: none; clear: both;"><br /><font color=#09A540>(120)<br /></font></a></td>
+<td colspan="2" height="60" style="text-align: center; border-style: solid; border-width: 1px; border-color:#02210d;"><a href="javascript:mpd(0,2);" style="display: block; "><img title="Quarry " src="                               " style="border-style: none; clear: both;"><br /></a></td>
+
+<td colspan="2" height="60" style="text-align: center; border-style: solid; border-width: 1px; border-color:#02210d;"><a href="javascript:mpd(1,2);" style="display: block; "><img title="Forest " src="                              " style="border-style: none; clear: both;"><br /></a></td>
+<td colspan="2" height="60" style="text-align: center; border-style: solid; border-width: 1px; border-color:#141418;"><a href="javascript:mpd(2,2);" style="display: block; "><img title="Tungsten Garden " src="                                  " style="border-style: none; clear: both;"><br /></a></td>
+<td colspan="2" height="60" style="text-align: center; border-style: solid; border-width: 1px; border-color:#02210d;"><a href="javascript:mpd(3,2);" style="display: block; "><img title="Quarry " src="                               " style="border-style: none; clear: both;"><br /></a></td>
+<td colspan="2" style="border-style: none; text-align: center"><img src=                               ></td>
+<td></td></tr><tr height='%'><td colspan=2></td><td colspan="2" height="60" style="text-align: center; border-style: solid; border-width: 1px; border-color:#07152a;"><a href="javascript:mpd(0,3);" style="display: block; "><img title="Water " src="                              " style="border-style: none; clear: both;"><br /></a></td>
+<td colspan="2" height="60" style="text-align: center; border-style: solid; border-width: 1px; border-color:#07152a;"><a href="javascript:mpd(1,3);" style="display: block; "><img title="Water " src="                              " style="border-style: none; clear: both;"><br /><font color=#2469D1>(13)<br /></font></a></td>
+<td colspan="2" height="60" style="text-align: center; border-style: solid; border-width: 1px; border-color:#2c200d;"><a href="javascript:mpd(2,3);" style="display: block; "><img title="Village " src="                                  " style="border-style: none; clear: both;"><br /></a></td>
+<td colspan="2" height="60" style="text-align: center; border-style: solid; border-width: 1px; border-color:#02210d;"><a href="javascript:mpd(3,3);" style="display: block; "><img title="Forest " src="                              " style="border-style: none; clear: both;"><br /></a></td>
+<td colspan="2" style="border-style: none; text-align: center"><img src=                               ></td>
+<td colspan=2></td></tr><tr height='%'><td colspan=3></td><td colspan="2" style="border-style: none; text-align: center"><img src=                               ></td>
+<td colspan="2" style="border-style: none; text-align: center"><img src=                               ></td>
+<td colspan="2" style="border-style: none; text-align: center"><img src=                               ></td>
+<td colspan="2" style="border-style: none; text-align: center"><img src=                               ></td>
+<td colspan=3></td></tr><tr><td height=0 width='7%'></td><td height=0 width='7%'></td><td height=0 width='7%'></td><td height=0 width='7%'></td><td height=0 width='7%'></td><td height=0 width='7%'></td><td height=0 width='7%'></td><td height=0 width='7%'></td><td height=0 width='7%'></td><td height=0 width='7%'></td><td height=0 width='7%'></td><td height=0 width='7%'></td><td height=0 width='7%'></td><td height=0 width='7%'></td></tr></table></td></tr><tr><td><table bgcolor=#400040 width=100% border=0 cellspacing=0 cellpadding=4><tr><td><font color=#FF00FF><font color=#bf00bf>1h46m ago:</font> <i><a href="javascript:document.gof.action='message.php#m2859055';document.gof.submit();"  onmouseover="status=''; return true;"><font color=#bf00bf><font color=#FF00FF>You hear a muffled explosion from  jwrtolkien.</font></a></i>&nbsp;&nbsp;&nbsp;<font size=-1><i><a href="javascript:delmes(2859055);"  onmouseover="status=''; return true;">delete</a></i></font><br>
+
+<font color=#bf00bf>2h11m ago:</font> <i><a href="javascript:document.gof.action='message.php#m2858982';document.gof.submit();"  onmouseover="status=''; return true;"><font color=#bf00bf><font color=#FF00FF><b>lordgarion adopts your future.</b></font></a></i>&nbsp;&nbsp;&nbsp;<font size=-1><i><a href="javascript:delmes(2858982);"  onmouseover="status=''; return true;">delete</a></i></font><br>
+<font color=#bf00bf>2h24m ago:</font> <i><a href="javascript:document.gof.action='message.php#m2858948';document.gof.submit();"  onmouseover="status=''; return true;"><font color=#bf00bf><font color=#FF00FF><b>You focus on lordgarion and memories  flit into your mind.
+<font size=-1>Feb  17th, 1:44</font> Spanky nibbles on  some Wheat grain.
+<font size=-1>Feb  16th, 23:34</font> <b>You're not  hungry.</b>
+<font size=-1>Feb 16th,  23:21</font> <font  color=#DD88DD><i>alchemy failed:</ i> You need Adamant.  </font>
+
+<font size=-1>Feb 16th,  23:21</font> <b>You're not hungry.</ b>
+<font size=-1>Feb 16th, 23:08</ font> <font color=#DD88DD><i>alchemy  failed:</ i> You need Adamant.  </font>
+<font size=-1></font><font color=#FF00FF>...</font></a></i>&nbsp;&nbsp;&nbsp;<font size=-1><i><a href="javascript:delmes(2858948);"  onmouseover="status=''; return true;">delete</a></i></font><br>
+<font color=#bf00bf>4h18m ago:</font> <i><a href="javascript:document.gof.action='message.php#m2858717';document.gof.submit();"  onmouseover="status=''; return true;"><font color=#bf00bf><font color=#FF00FF><b>You had a glimmer of insight, but  couldn't shape it into an invention...  </b></font></a></i>&nbsp;&nbsp;&nbsp;<font size=-1><i><a href="javascript:delmes(2858717);"  onmouseover="status=''; return true;">delete</a></i></font><br>
+
+<div align=right><i><a href="javascript:document.gof.action='message.php';document.gof.submit();"  onmouseover="status=''; return true;">(not shown: 837 messages)</a></i></div></font></td></tr></table></td></tr></table>
