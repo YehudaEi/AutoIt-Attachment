@@ -1,0 +1,233 @@
+<!DOCTYPE html  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>_FreePrimoPDF.au3</title>
+<meta name="GENERATOR" content="SciTE - www.Scintilla.org" />
+<style type="text/css">
+.S0 {
+	color: #000000;
+	background: #FFFFFF;
+}
+.S1 {
+	font-style: italic;
+	color: #319700;
+	background: #FFFFFF;
+}
+.S3 {
+	font-style: italic;
+	font-weight: bold;
+	color: #AC00A9;
+	background: #FFFFFF;
+}
+.S4 {
+	font-style: italic;
+	font-weight: bold;
+	color: #000090;
+	background: #FFFFFF;
+}
+.S5 {
+	font-weight: bold;
+	color: #0000FF;
+	background: #FFFFFF;
+}
+.S6 {
+	font-weight: bold;
+	color: #FF33FF;
+	background: #FFFFFF;
+}
+.S7 {
+	font-weight: bold;
+	color: #9999CC;
+	background: #FFFFFF;
+}
+.S8 {
+	font-weight: bold;
+	color: #FF0000;
+	background: #FFFFFF;
+}
+.S9 {
+	font-weight: bold;
+	color: #AA0000;
+	background: #FFFFFF;
+}
+.S12 {
+	font-style: italic;
+	color: #A00FF0;
+	background: #FFFFFF;
+}
+span {
+	font-family: 'Courier New';
+	color: #000000;
+	background: #FFFFFF;
+	font-size: 11pt;
+}
+</style>
+
+<meta name="NetsparkQuiltingResult" total-length="36976" removed="0" rules-found="w3123,w3104,w2341,w4473,w6769,w4947" />
+</head>
+<body bgcolor="#FFFFFF">
+<span><span class="S12">#region - FreePrimoSetup install script - (Automated with WinWait functions)</span><br />
+<br />
+<span class="S4">Opt</span><span class="S8">(</span><span class="S7">'TrayIconDebug'</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">)</span><br />
+<span class="S4">Opt</span><span class="S8">(</span><span class="S7">'WinDetectHiddenText'</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">)</span><br />
+<span class="S4">Opt</span><span class="S8">(</span><span class="S7">'WinTitleMatchMode'</span><span class="S8">,</span><span class="S0"> </span><span class="S3">4</span><span class="S8">)</span><br />
+<span class="S4">Opt</span><span class="S8">(</span><span class="S7">"WinWaitDelay"</span><span class="S8">,</span><span class="S3">100</span><span class="S8">)</span><br />
+<br />
+<span class="S1">; Installer.</span><br />
+<span class="S9">$executable</span><span class="S0"> </span><span class="S8">=</span><span class="S0"> </span><span class="S7">'FreePrimoSetup.exe'</span><br />
+<span class="S1">; Show progess.</span><br />
+<span class="S9">$splash</span><span class="S0"> </span><span class="S8">=</span><span class="S0"> </span><span class="S3">0</span><br />
+<span class="S1">; Default catagory folder in startmenu.</span><br />
+<span class="S9">$group</span><span class="S0"> </span><span class="S8">=</span><span class="S0"> </span><span class="S7">'PrimoPDF'</span><br />
+<span class="S1">; New catagory to move the default folder into.</span><br />
+<span class="S9">$catagory</span><span class="S0"> </span><span class="S8">=</span><span class="S0"> </span><span class="S7">''</span><br />
+<span class="S1">; Installation folder in Program Files.</span><br />
+<span class="S9">$directory</span><span class="S0"> </span><span class="S8">=</span><span class="S0"> </span><span class="S7">'activePDF\PrimoPDF'</span><br />
+<br />
+<span class="S1">; Run the installer.</span><br />
+<span class="S9">$pid</span><span class="S0"> </span><span class="S8">=</span><span class="S0"> _Install</span><span class="S8">()</span><br />
+<span class="S5">If</span><span class="S0"> </span><span class="S4">WinWait</span><span class="S8">(</span><span class="S7">'Programa de instalación'</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'&amp;Siguiente &gt;'</span><span class="S8">,</span><span class="S0"> </span><span class="S3">60</span><span class="S8">)</span><span class="S0"> </span><span class="S5">Then</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S4">WinMove</span><span class="S8">(</span><span class="S7">'Programa de instalación'</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'&amp;Siguiente &gt;'</span><span class="S8">,</span><span class="S6">@DesktopWidth</span><span class="S8">,</span><span class="S0"> </span><span class="S3">10</span><span class="S8">)</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S4">ControlClick</span><span class="S8">(</span><span class="S7">'Programa de instalación'</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'&amp;Siguiente &gt;'</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'Button3'</span><span class="S8">)</span><br />
+<br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S4">WinWait</span><span class="S8">(</span><span class="S7">'Programa de instalación'</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'Acepto los términos'</span><span class="S8">)</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S4">ControlClick</span><span class="S8">(</span><span class="S7">'Programa de instalación'</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'Acepto los términos'</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'Button3'</span><span class="S8">)</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S4">ControlClick</span><span class="S8">(</span><span class="S7">'Programa de instalación'</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'Acepto los términos'</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'Button1'</span><span class="S8">)</span><br />
+<br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S4">WinWait</span><span class="S8">(</span><span class="S7">'Programa de instalación'</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'&amp;Siguiente &gt;'</span><span class="S8">)</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S4">ControlSetText</span><span class="S8">(</span><span class="S7">'Programa de instalación'</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'&amp;Siguiente &gt;'</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'Edit1'</span><span class="S8">,</span><span class="S0"> </span><span class="S6">@ProgramFilesDir</span><span class="S0"> </span><span class="S8">&amp;</span><span class="S0"> </span><span class="S7">'\'</span><span class="S0"> </span><span class="S8">&amp;</span><span class="S0"> </span><span class="S9">$directory</span><span class="S8">)</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S4">ControlClick</span><span class="S8">(</span><span class="S7">'Programa de instalación'</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'&amp;Siguiente &gt;'</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'Button1'</span><span class="S8">)</span><br />
+<br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S4">WinWait</span><span class="S8">(</span><span class="S7">'PrimoPDF Setup'</span><span class="S8">,</span><span class="S0"> </span><span class="S7">''</span><span class="S8">)</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S4">ControlClick</span><span class="S8">(</span><span class="S7">'PrimoPDF Setup'</span><span class="S8">,</span><span class="S0"> </span><span class="S7">''</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'Button1'</span><span class="S8">)</span><br />
+<br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S4">WinWait</span><span class="S8">(</span><span class="S7">'Programa de instalación'</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'&amp;Siguiente &gt;'</span><span class="S8">)</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S4">ControlClick</span><span class="S8">(</span><span class="S7">'Programa de instalación'</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'&amp;Siguiente &gt;'</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'Button4'</span><span class="S8">)</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S4">ControlClick</span><span class="S8">(</span><span class="S7">'Programa de instalación'</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'&amp;Siguiente &gt;'</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'Button1'</span><span class="S8">)</span><br />
+<span class="S5">Else</span><br />
+<span class="S0">&nbsp; &nbsp; _Abort</span><span class="S8">()</span><br />
+<span class="S5">EndIf</span><br />
+<span class="S4">ProcessWaitClose</span><span class="S8">(</span><span class="S9">$pid</span><span class="S8">)</span><br />
+<br />
+<span class="S1">; Remove shortcuts.</span><br />
+<span class="S5">If</span><span class="S0"> _MainShortcut</span><span class="S8">(</span><span class="S7">'PrimoPDF_2.0 Manual.lnk'</span><span class="S8">)</span><span class="S0"> </span><span class="S5">Then</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S4">FileDelete</span><span class="S8">(</span><span class="S7">'Uninstall PrimoPDF.lnk'</span><span class="S8">)</span><br />
+<span class="S5">EndIf</span><br />
+<br />
+<span class="S12">#endregion</span><br />
+<br />
+<span class="S5">Exit</span><br />
+<br />
+<span class="S5">Func</span><span class="S0"> _Install</span><span class="S8">(</span><span class="S9">$path</span><span class="S0"> </span><span class="S8">=</span><span class="S0"> </span><span class="S7">'Default'</span><span class="S8">)</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S1">; Run the installer in Default Script directory.</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S5">Dim</span><span class="S0"> </span><span class="S9">$splash</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$processblock</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S5">If</span><span class="S0"> </span><span class="S9">$path</span><span class="S0"> </span><span class="S8">=</span><span class="S0"> </span><span class="S7">'Default'</span><span class="S0"> </span><span class="S5">Then</span><span class="S0"> </span><span class="S9">$path</span><span class="S0"> </span><span class="S8">=</span><span class="S0"> </span><span class="S6">@ScriptDir</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S5">If</span><span class="S0"> </span><span class="S4">StringRight</span><span class="S8">(</span><span class="S9">$path</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">)</span><span class="S0"> </span><span class="S8">&lt;&gt;</span><span class="S0"> </span><span class="S7">'\'</span><span class="S0"> </span><span class="S5">Then</span><span class="S0"> </span><span class="S9">$path</span><span class="S0"> </span><span class="S8">=</span><span class="S0"> </span><span class="S9">$path</span><span class="S0"> </span><span class="S8">&amp;</span><span class="S0"> </span><span class="S7">'\'</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S5">If</span><span class="S0"> </span><span class="S4">StringInStr</span><span class="S8">(</span><span class="S9">$executable</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'\'</span><span class="S8">)</span><span class="S0"> </span><span class="S5">Then</span><span class="S0"> </span><span class="S9">$path</span><span class="S0"> </span><span class="S8">=</span><span class="S0"> </span><span class="S7">''</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S5">If</span><span class="S0"> </span><span class="S5">Not</span><span class="S0"> </span><span class="S4">FileExists</span><span class="S8">(</span><span class="S9">$path</span><span class="S0"> </span><span class="S8">&amp;</span><span class="S0"> </span><span class="S9">$executable</span><span class="S8">)</span><span class="S0"> </span><span class="S5">Then</span><span class="S0"> </span><span class="S5">Exit</span><span class="S8">(</span><span class="S3">1</span><span class="S8">)</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S5">If</span><span class="S0"> </span><span class="S9">$processblock</span><span class="S0"> </span><span class="S8">&lt;&gt;</span><span class="S0"> </span><span class="S7">''</span><span class="S0"> </span><span class="S5">Then</span><span class="S0"> </span><span class="S4">Call</span><span class="S8">(</span><span class="S7">'_'</span><span class="S0"> </span><span class="S8">&amp;</span><span class="S0"> </span><span class="S7">'ProcessBlock'</span><span class="S8">)</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S5">If</span><span class="S0"> </span><span class="S9">$splash</span><span class="S0"> </span><span class="S5">Then</span><span class="S0"> _Splash</span><span class="S8">(</span><span class="S7">'Installing:'</span><span class="S0"> </span><span class="S8">&amp;</span><span class="S0"> </span><span class="S4">StringTrimRight</span><span class="S8">(</span><span class="S4">StringReplace</span><span class="S8">(</span><span class="S6">@ScriptName</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'_'</span><span class="S8">,</span><span class="S0"> </span><span class="S7">' '</span><span class="S8">),</span><span class="S0"> </span><span class="S3">4</span><span class="S8">))</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S5">If</span><span class="S0"> </span><span class="S4">StringRight</span><span class="S8">(</span><span class="S9">$executable</span><span class="S8">,</span><span class="S0"> </span><span class="S3">3</span><span class="S8">)</span><span class="S0"> </span><span class="S8">=</span><span class="S0"> </span><span class="S7">'msi'</span><span class="S0"> </span><span class="S5">Then</span><br />
+<span class="S0">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="S5">Return</span><span class="S0"> </span><span class="S4">Run</span><span class="S8">(</span><span class="S6">@SystemDir</span><span class="S0"> </span><span class="S8">&amp;</span><span class="S0"> </span><span class="S7">'\msiexec /i "'</span><span class="S0"> </span><span class="S8">&amp;</span><span class="S0"> </span><span class="S9">$path</span><span class="S0"> </span><span class="S8">&amp;</span><span class="S0"> </span><span class="S9">$executable</span><span class="S0"> </span><span class="S8">&amp;</span><span class="S0"> </span><span class="S7">'"'</span><span class="S8">)</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S5">Else</span><br />
+<span class="S0">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="S5">Return</span><span class="S0"> </span><span class="S4">Run</span><span class="S8">(</span><span class="S9">$path</span><span class="S0"> </span><span class="S8">&amp;</span><span class="S0"> </span><span class="S9">$executable</span><span class="S8">)</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S5">EndIf</span><br />
+<span class="S5">EndFunc</span><br />
+<br />
+<span class="S5">Func</span><span class="S0"> _Abort</span><span class="S8">()</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S1">; close process if exists then exit.</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S5">Dim</span><span class="S0"> </span><span class="S9">$pid</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S5">If</span><span class="S0"> </span><span class="S4">ProcessExists</span><span class="S8">(</span><span class="S9">$pid</span><span class="S8">)</span><span class="S0"> </span><span class="S5">Then</span><br />
+<span class="S0">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="S4">ProcessClose</span><span class="S8">(</span><span class="S9">$pid</span><span class="S8">)</span><br />
+<span class="S0">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="S5">Exit</span><span class="S8">(</span><span class="S3">2</span><span class="S8">)</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S5">Else</span><br />
+<span class="S0">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="S5">Exit</span><span class="S8">(</span><span class="S3">3</span><span class="S8">)</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S5">EndIf</span><br />
+<span class="S5">EndFunc</span><br />
+<br />
+<span class="S5">Func</span><span class="S0"> _Desktop</span><span class="S8">(</span><span class="S9">$shortcut</span><span class="S8">)</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S1">; Delete a Desktop shortcut.</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S5">If</span><span class="S0"> </span><span class="S4">FileExists</span><span class="S8">(</span><span class="S6">@DesktopDir</span><span class="S0"> </span><span class="S8">&amp;</span><span class="S0"> </span><span class="S7">'\'</span><span class="S0"> </span><span class="S8">&amp;</span><span class="S0"> </span><span class="S9">$shortcut</span><span class="S8">)</span><span class="S0"> </span><span class="S5">Then</span><br />
+<span class="S0">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="S5">Return</span><span class="S0"> </span><span class="S4">FileChangeDir</span><span class="S8">(</span><span class="S6">@DesktopDir</span><span class="S8">)</span><span class="S0"> </span><span class="S5">And</span><span class="S0"> </span><span class="S4">FileDelete</span><span class="S8">(</span><span class="S9">$shortcut</span><span class="S8">)</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S5">ElseIf</span><span class="S0"> </span><span class="S4">FileExists</span><span class="S8">(</span><span class="S6">@DesktopCommonDir</span><span class="S0"> </span><span class="S8">&amp;</span><span class="S0"> </span><span class="S7">'\'</span><span class="S0"> </span><span class="S8">&amp;</span><span class="S0"> </span><span class="S9">$shortcut</span><span class="S8">)</span><span class="S0"> </span><span class="S5">Then</span><br />
+<span class="S0">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="S5">Return</span><span class="S0"> </span><span class="S4">FileChangeDir</span><span class="S8">(</span><span class="S6">@DesktopCommonDir</span><span class="S8">)</span><span class="S0"> </span><span class="S5">And</span><span class="S0"> </span><span class="S4">FileDelete</span><span class="S8">(</span><span class="S9">$shortcut</span><span class="S8">)</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S5">EndIf</span><br />
+<span class="S5">EndFunc</span><br />
+<br />
+<span class="S5">Func</span><span class="S0"> _MainShortcut</span><span class="S8">(</span><span class="S9">$shortcut</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$rename</span><span class="S0"> </span><span class="S8">=</span><span class="S0"> </span><span class="S7">''</span><span class="S8">)</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S1">; Change working directory to correct StartMenu\Group directory.</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S5">Dim</span><span class="S0"> </span><span class="S9">$group</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$catagory</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$splash</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S5">If</span><span class="S0"> </span><span class="S9">$group</span><span class="S0"> </span><span class="S8">=</span><span class="S0"> </span><span class="S7">''</span><span class="S0"> </span><span class="S5">Then</span><span class="S0"> </span><span class="S5">Return</span><span class="S0"> </span><span class="S3">0</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S5">If</span><span class="S0"> </span><span class="S4">FileExists</span><span class="S8">(</span><span class="S6">@ProgramsDir</span><span class="S0"> </span><span class="S8">&amp;</span><span class="S0"> </span><span class="S7">'\'</span><span class="S0"> </span><span class="S8">&amp;</span><span class="S0"> </span><span class="S9">$group</span><span class="S8">)</span><span class="S0"> </span><span class="S5">Then</span><br />
+<span class="S0">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="S4">FileChangeDir</span><span class="S8">(</span><span class="S6">@ProgramsDir</span><span class="S0"> </span><span class="S8">&amp;</span><span class="S0"> </span><span class="S7">'\'</span><span class="S0"> </span><span class="S8">&amp;</span><span class="S0"> </span><span class="S9">$group</span><span class="S8">)</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S5">ElseIf</span><span class="S0"> </span><span class="S4">FileExists</span><span class="S8">(</span><span class="S6">@ProgramsCommonDir</span><span class="S0"> </span><span class="S8">&amp;</span><span class="S0"> </span><span class="S7">'\'</span><span class="S0"> </span><span class="S8">&amp;</span><span class="S0"> </span><span class="S9">$group</span><span class="S8">)</span><span class="S0"> </span><span class="S5">Then</span><br />
+<span class="S0">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="S4">FileChangeDir</span><span class="S8">(</span><span class="S6">@ProgramsCommonDir</span><span class="S0"> </span><span class="S8">&amp;</span><span class="S0"> </span><span class="S7">'\'</span><span class="S0"> </span><span class="S8">&amp;</span><span class="S0"> </span><span class="S9">$group</span><span class="S8">)</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S5">Else</span><br />
+<span class="S0">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="S5">Return</span><span class="S0"> </span><span class="S3">0</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S5">EndIf</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S1">; Wait for main shortcut.</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S5">If</span><span class="S0"> </span><span class="S9">$splash</span><span class="S0"> </span><span class="S5">Then</span><span class="S0"> _Splash</span><span class="S8">(</span><span class="S7">'Waiting for shortcuts'</span><span class="S8">)</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S5">For</span><span class="S0"> </span><span class="S9">$i</span><span class="S0"> </span><span class="S8">=</span><span class="S0"> </span><span class="S3">1</span><span class="S0"> </span><span class="S5">To</span><span class="S0"> </span><span class="S3">20</span><br />
+<span class="S0">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="S5">If</span><span class="S0"> </span><span class="S4">FileExists</span><span class="S8">(</span><span class="S9">$shortcut</span><span class="S8">)</span><span class="S0"> </span><span class="S5">Then</span><span class="S0"> </span><span class="S5">ExitLoop</span><br />
+<span class="S0">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="S4">Sleep</span><span class="S8">(</span><span class="S3">500</span><span class="S8">)</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S5">Next</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S5">If</span><span class="S0"> </span><span class="S9">$splash</span><span class="S0"> </span><span class="S5">Then</span><span class="S0"> _Splash</span><span class="S8">(</span><span class="S7">'Cleaning up:'</span><span class="S0"> </span><span class="S8">&amp;</span><span class="S0"> </span><span class="S4">StringTrimRight</span><span class="S8">(</span><span class="S4">StringReplace</span><span class="S8">(</span><span class="S6">@ScriptName</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'_'</span><span class="S8">,</span><span class="S0"> </span><span class="S7">' '</span><span class="S8">),</span><span class="S0"> </span><span class="S3">4</span><span class="S8">))</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S1">; If catagory not assigned anything, then return.</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S5">If</span><span class="S0"> </span><span class="S9">$catagory</span><span class="S0"> </span><span class="S8">=</span><span class="S0"> </span><span class="S7">''</span><span class="S0"> </span><span class="S5">Then</span><span class="S0"> </span><span class="S5">Return</span><span class="S0"> </span><span class="S3">1</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S1">; Move the group folder into the catagory folder.</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S5">If</span><span class="S0"> </span><span class="S4">FileChangeDir</span><span class="S8">(</span><span class="S7">'..'</span><span class="S8">)</span><span class="S0"> </span><span class="S5">And</span><span class="S0"> </span><span class="S4">DirCopy</span><span class="S8">(</span><span class="S9">$group</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$catagory</span><span class="S0"> </span><span class="S8">&amp;</span><span class="S0"> </span><span class="S7">'\'</span><span class="S0"> </span><span class="S8">&amp;</span><span class="S0"> </span><span class="S9">$group</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">)</span><span class="S0"> </span><span class="S5">Then</span><br />
+<span class="S0">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="S5">If</span><span class="S0"> </span><span class="S4">DirRemove</span><span class="S8">(</span><span class="S9">$group</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">)</span><span class="S0"> </span><span class="S5">Then</span><br />
+<span class="S0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="S1">; If optional rename parameter is used, then rename the group folder.</span><br />
+<span class="S0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="S5">If</span><span class="S0"> </span><span class="S9">$rename</span><span class="S0"> </span><span class="S8">&lt;&gt;</span><span class="S0"> </span><span class="S7">''</span><span class="S0"> </span><span class="S5">And</span><span class="S0"> </span><span class="S4">FileChangeDir</span><span class="S8">(</span><span class="S9">$catagory</span><span class="S8">)</span><span class="S0"> </span><span class="S5">Then</span><br />
+<span class="S0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="S5">If</span><span class="S0"> </span><span class="S4">DirCopy</span><span class="S8">(</span><span class="S9">$group</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$rename</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">)</span><span class="S0"> </span><span class="S5">And</span><span class="S0"> </span><span class="S4">DirRemove</span><span class="S8">(</span><span class="S9">$group</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">)</span><span class="S0"> </span><span class="S5">Then</span><br />
+<span class="S0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="S5">Return</span><span class="S0"> </span><span class="S4">FileChangeDir</span><span class="S8">(</span><span class="S9">$rename</span><span class="S8">)</span><br />
+<span class="S0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="S5">EndIf</span><br />
+<span class="S0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="S5">Else</span><br />
+<span class="S0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="S5">Return</span><span class="S0"> </span><span class="S4">FileChangeDir</span><span class="S8">(</span><span class="S9">$catagory</span><span class="S0"> </span><span class="S8">&amp;</span><span class="S0"> </span><span class="S7">'\'</span><span class="S0"> </span><span class="S8">&amp;</span><span class="S0"> </span><span class="S9">$group</span><span class="S8">)</span><br />
+<span class="S0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="S5">EndIf</span><br />
+<span class="S0">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="S5">EndIf</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S5">EndIf</span><br />
+<span class="S5">EndFunc</span><br />
+<br />
+<span class="S5">Func</span><span class="S0"> _QuickLaunch</span><span class="S8">(</span><span class="S9">$shortcut</span><span class="S8">)</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S1">; Delete a Quicklaunch shortcut.</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S5">Local</span><span class="S0"> </span><span class="S9">$subdirs</span><span class="S0"> </span><span class="S8">=</span><span class="S0"> </span><span class="S7">'\Microsoft\Internet Explorer\Quick Launch'</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S5">If</span><span class="S0"> </span><span class="S4">FileExists</span><span class="S8">(</span><span class="S6">@AppDataDir</span><span class="S0"> </span><span class="S8">&amp;</span><span class="S0"> </span><span class="S9">$subdirs</span><span class="S0"> </span><span class="S8">&amp;</span><span class="S0"> </span><span class="S7">'\'</span><span class="S0"> </span><span class="S8">&amp;</span><span class="S0"> </span><span class="S9">$shortcut</span><span class="S8">)</span><span class="S0"> </span><span class="S5">Then</span><br />
+<span class="S0">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="S5">Return</span><span class="S0"> </span><span class="S4">FileChangeDir</span><span class="S8">(</span><span class="S6">@AppDataDir</span><span class="S0"> </span><span class="S8">&amp;</span><span class="S0"> </span><span class="S9">$subdirs</span><span class="S8">)</span><span class="S0"> </span><span class="S5">And</span><span class="S0"> </span><span class="S4">FileDelete</span><span class="S8">(</span><span class="S9">$shortcut</span><span class="S8">)</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S5">ElseIf</span><span class="S0"> </span><span class="S4">FileExists</span><span class="S8">(</span><span class="S6">@AppDataCommonDir</span><span class="S0"> </span><span class="S8">&amp;</span><span class="S0"> </span><span class="S9">$subdirs</span><span class="S0"> </span><span class="S8">&amp;</span><span class="S0"> </span><span class="S7">'\'</span><span class="S0"> </span><span class="S8">&amp;</span><span class="S0"> </span><span class="S9">$shortcut</span><span class="S8">)</span><span class="S0"> </span><span class="S5">Then</span><br />
+<span class="S0">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="S5">Return</span><span class="S0"> </span><span class="S4">FileChangeDir</span><span class="S8">(</span><span class="S6">@AppDataCommonDir</span><span class="S0"> </span><span class="S8">&amp;</span><span class="S0"> </span><span class="S9">$subdirs</span><span class="S8">)</span><span class="S0"> </span><span class="S5">And</span><span class="S0"> </span><span class="S4">FileDelete</span><span class="S8">(</span><span class="S9">$shortcut</span><span class="S8">)</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S5">EndIf</span><br />
+<span class="S5">EndFunc</span><br />
+<br />
+<span class="S5">Func</span><span class="S0"> _Splash</span><span class="S8">(</span><span class="S9">$text</span><span class="S0"> </span><span class="S8">=</span><span class="S0"> </span><span class="S7">''</span><span class="S8">)</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S1">; Shows a small borderless splash message.</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S5">Dim</span><span class="S0"> </span><span class="S9">$splash</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S5">If</span><span class="S0"> </span><span class="S9">$splash</span><span class="S0"> </span><span class="S5">Then</span><br />
+<span class="S0">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="S5">If</span><span class="S0"> </span><span class="S9">$text</span><span class="S0"> </span><span class="S5">Then</span><br />
+<span class="S0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="S4">SplashTextOn</span><span class="S8">(</span><span class="S7">''</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$text</span><span class="S8">,</span><span class="S0"> </span><span class="S3">500</span><span class="S8">,</span><span class="S0"> </span><span class="S3">25</span><span class="S8">,</span><span class="S0"> </span><span class="S8">-</span><span class="S3">1</span><span class="S8">,</span><span class="S0"> </span><span class="S3">5</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">,</span><span class="S0"> </span><span class="S7">''</span><span class="S8">,</span><span class="S0"> </span><span class="S3">14</span><span class="S8">)</span><br />
+<span class="S0">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="S5">Else</span><br />
+<span class="S0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="S4">SplashOff</span><span class="S8">()</span><br />
+<span class="S0">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="S5">EndIf</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S5">EndIf</span><br />
+<span class="S5">EndFunc</span><br />
+<br />
+<span class="S5">Func</span><span class="S0"> _WinClose</span><span class="S8">(</span><span class="S9">$title</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$text</span><span class="S0"> </span><span class="S8">=</span><span class="S0"> </span><span class="S7">''</span><span class="S8">)</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S1">; Close a window with further attempts.</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S5">For</span><span class="S0"> </span><span class="S9">$i</span><span class="S0"> </span><span class="S8">=</span><span class="S0"> </span><span class="S3">1</span><span class="S0"> </span><span class="S5">To</span><span class="S0"> </span><span class="S3">10</span><br />
+<span class="S0">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="S4">WinClose</span><span class="S8">(</span><span class="S9">$title</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$text</span><span class="S8">)</span><br />
+<span class="S0">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="S5">If</span><span class="S0"> </span><span class="S5">Not</span><span class="S0"> </span><span class="S4">WinExists</span><span class="S8">(</span><span class="S9">$title</span><span class="S8">)</span><span class="S0"> </span><span class="S5">Then</span><span class="S0"> </span><span class="S5">Return</span><span class="S0"> </span><span class="S3">1</span><br />
+<span class="S0">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="S4">Sleep</span><span class="S8">(</span><span class="S3">500</span><span class="S8">)</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S5">Next</span><br />
+<span class="S5">EndFunc</span><br />
+<br />
+<span class="S5">Func</span><span class="S0"> OnAutoItStart</span><span class="S8">()</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S1">; A 2nd script instance will exit.</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S5">Local</span><span class="S0"> </span><span class="S9">$interpreter</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S5">If</span><span class="S0"> </span><span class="S4">StringInStr</span><span class="S8">(</span><span class="S9">$cmdlineraw</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'/dummy'</span><span class="S8">)</span><span class="S0"> </span><span class="S5">Then</span><span class="S0"> </span><span class="S5">Exit</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S9">$interpreter</span><span class="S0"> </span><span class="S8">=</span><span class="S0"> </span><span class="S4">StringTrimRight</span><span class="S8">(</span><span class="S6">@ScriptName</span><span class="S8">,</span><span class="S0"> </span><span class="S3">4</span><span class="S8">)</span><span class="S0"> </span><span class="S8">&amp;</span><span class="S0"> </span><span class="S7">' Script Interpreter'</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S5">If</span><span class="S0"> </span><span class="S4">WinExists</span><span class="S8">(</span><span class="S9">$interpreter</span><span class="S8">)</span><span class="S0"> </span><span class="S5">Then</span><span class="S0"> </span><span class="S5">Exit</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S4">AutoItWinSetTitle</span><span class="S8">(</span><span class="S9">$interpreter</span><span class="S8">)</span><br />
+<span class="S5">EndFunc</span><br />
+<span class="S0"></span></span>
+</body>
+</html>
