@@ -1,0 +1,62 @@
+McAfee VirusScan for Win32 v4.40.0
+Copyright (c) 1992-2004 Networks Associates Technology Inc. All rights reserved.
+(408) 988-3832  LICENSED COPY - Sep 23 2004
+
+Scan engine v4.4.00 for Win32.
+Virus data file v4655 created Dec 21 2005
+Scanning for 167009 viruses, trojans and variants.
+
+
+
+12/27/2005  14:23:59
+
+
+Options:
+/CHECKLIST LIST.TXT /ANALYZE /PANALYZE /MIME /PROGRAM /UNZIP /NOMEM /NOBOOT /SILENT /NOEXPIRE /NODDA /NOBREAK /NORENAME /REPORT VLOG.TXT
+
+V:\TEST\12-05r7540830ae65014010ACF8.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-05r7540830b155014010ACF8.msg\00006826.EML\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-09r7540830b445014010ACF8.msg\question_list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-09r7540830b545014010ACF8.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-16r7540830b735014010ACF8.msg\email-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-16r7540830b835014010ACF8.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-16r7540830bc15014010ACF8.msg\mailtext.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-16r7540830be05014010ACF8.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-17r7540830c005014010ACF8.msg\instructions.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-17r7540830c0f5014010ACF8.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-17r7540830c2f5014010ACF8.msg\question_list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-17r7540830c4e5014010ACF8.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-17r7540830c5d5014010ACF8.msg\important-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-17r7540830c7d5014010ACF8.msg\wygatm.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-17r7540830c8c5014010ACF8.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-17r7540830ccb5014010ACF8.msg\downloadm.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-19r7540830cfa5014010ACF8.msg\reg_pass.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-19r7540830d095014010ACF8.msg\email-info.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-19r7540830d295014010ACF8.msg\question_list.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-19T754001c0ae0a01145016f8.msg\dkzoj.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-19T754007e4000a01145016f8.msg\0000064d.EML\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-19T75400d22030a01145016f8.msg\account-report.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-19T754010797b0a01145016f8.msg\info-text.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-16T7540163e8e0a01145016f8.msg\document.zip ... Found the W32/Netsky.p@MM!zip virus !!!
+V:\TEST\12-16T754016facb0a01145016f8.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-16T75401986490a01145016f8.msg\mail_body.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-16T75401c82b00a01145016f8.msg\information.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-16T75401d0b770a01145016f8.msg\account-password.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-20T75401d5ab00a01145016f8.msg\mail.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-20T75401da5740a01145016f8.msg\document.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-20T75402069450a01145016f8.msg\etmjlj.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-17T754020a43b0a01145016f8.msg\list260.zip ... Found the W32/Sober@MM!M681 virus !!!
+V:\TEST\12-17T754028b0110a01145016f8.msg\lslom.zip ... Found the Generic Malware.a!zip trojan !!!
+V:\TEST\12-18T75402a23270a01145016f8.msg\account-details.zip ... Found the Generic Malware.a!zip trojan !!!
+
+Summary report on checklist list.txt
+File(s)
+        Total files: ...........      34
+        Clean: .................       0
+        Not scanned: ...........       0
+        Possibly Infected: .....      34
+ 
+
+
+Time: 00:00.08
+
