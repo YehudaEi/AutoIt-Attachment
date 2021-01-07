@@ -1,0 +1,6 @@
+[playlist]
+numberofentries=1
+File1=                         
+Title1=(#1 - 20/20) CLUB 977 The Hitz Channel (HIGH BANDWIDTH)
+Length1=-1
+Version=2
