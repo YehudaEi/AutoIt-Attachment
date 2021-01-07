@@ -1,0 +1,163 @@
+$CD_CHECKATTRIBS
+$CD_CHECKDATABINARY
+$CD_CHECKDATATEXT
+$CD_CHECKDATECREATEDIFF
+$CD_CHECKDATECREATENEWER
+$CD_CHECKDATEMODIFYDIFF
+$CD_CHECKDATEMODIFYNEWER
+$CD_CHECKSIZEBIGGER
+$CD_CHECKSIZEDIFF
+$CD_SETALLFILES
+$CD_SETATTRIBS
+$CD_SETATTRIBSALLFILES
+$CD_SETCREATEDATE
+$CD_SETDATEALLFILES
+$CD_SETMODIFYDATE
+$Hkcr
+$HkcrCls
+$Hkcu
+$HkcuCp
+$HkcuCpDesk
+$HkcuEnv
+$HkcuSw
+$HkcuSwGrv
+$HkcuSwMs
+$HkcuSwMsIe
+$HkcuSwMsWin
+$HkcuSwMsWinCv
+$HkcuSwMsWinCvExp
+$HkcuSwMsWinCvPol
+$HkcuSwMsWinCvPolExp
+$HkcuSwMsWinCvPolNet
+$HkcuSwMsWinCvPolSys
+$HkcuSwMsWinNt
+$HkcuSwMsWinNtCv
+$HkcuSwMsWinNtCvExp
+$HkcuSwMsWinNtCvNet
+$HkcuSwPol
+$HkcuSwPolMs
+$HkcuSwPolMsWin
+$HkcuSwPolMsWinSys
+$HkcuSwPopG
+$Hklm
+$HklmSw
+$HklmSwCls
+$HklmSwGrv
+$HklmSwMs
+$HklmSwMsIe
+$HklmSwMsWin
+$HklmSwMsWinCv
+$HklmSwMsWinCvExp
+$HklmSwMsWinNt
+$HklmSwMsWinNtCv
+$HklmSwMsWinNtCvWinl
+$HklmSwPopG
+$HklmSys
+$HklmSysCc
+$HklmSysCcsCtl
+$HklmSysCcsSvc
+$Hku
+$HkuDef
+$HkuDefCp
+$HkuDefCpDesk
+$HkuDefEnv
+$HkuDefSw
+$HkuDefSwMs
+$HkuDefSwMsWinNt
+$HkuDefSwMsWinNtCv
+$HkuDefSwMsWinNtCvNet
+$MBA_Abort
+$MBA_Cancel
+$MBA_Ignore
+$MBA_No
+$MBA_Ok
+$MBA_Retry
+$MBA_Yes
+$MBF_Ari
+$MBF_Excl
+$MBF_Info
+$MBF_Ok
+$MBF_OkCancel
+$MBF_OnTop
+$MBF_Quest
+$MBF_Rc
+$MBF_Stop
+$MBF_Yn
+$MBF_Ync
+$RegBIN
+$RegDBE
+$RegDWD
+$RegESZ
+$RegFUL
+$REGGR_INDATA
+$REGGR_INKEY
+$REGGR_INVALUE
+$RegLNK
+$RegMSZ
+$RegNON
+$RegREQ
+$RegRES
+$RegSZ
+$UD_AccountActive
+$UD_AccountExpires
+$UD_Comment
+$UD_CountryCode
+$UD_Fullname
+$UD_Groups
+$UD_HomeDir
+$UD_LogonScript
+$UD_LogonTimes
+$UD_MayChangePassword
+$UD_PasswordExpires
+$UD_PasswordRequired
+$UD_UserComment
+$UD_Username
+$UD_UserProfile
+$UD_WorkstationsAllowed
+_ArrayAdd1(ByRef $ArrA,[$ArrB,$Lower=0[,$Upper=0]])									(Requires #include <PopG_Array.au3>) 	As per _ArrayAdd, but adds an array.
+_ArrayAdd2(ByRef $ArrA,ByRef $ArrB[,$RowOrCol=1[,$Lower=0[,$Upper=-1]]])				(Requires #include <PopG_Array.au3>) 	As per _ArrayAdd1, but for two dimensional arrays.
+_ArrayDelete2(ByRef $avArray,$iElement[,$RowOrCol=0])									(Requires #include <PopG_Array.au3>) 	Deletes either a row or a column from a two dimensional array.
+_ArrayDisplay2(ByRef $ArrA, $sTitle[,$Timeout=0])										(Requires #include <PopG_Array.au3>) 	As per _ArrayDisplay but for 1,2 & 3 dimensional arrays.  Also has a timeout option.
+_ArraySwap2ByIndex(ByRef $Arr,$RowOrCol,$rcA,$rcB[,$Beg=0[,$End=999[,$OkKey=False]]])	(Requires #include <PopG_Array.au3>) 	Swaps two rows or columns in a 2-d array, the hook being by position.
+_CmdLineParse(ByRef $CmdArgs[, $RegKey1=''[,$RegNam=''[, $RegKey2='']]]) 				(Requires #Include <PopG_CmdLine.au3>)	Parses the command line, returning results in an array.
+_DelimListGetIndex($List,$Item[,$Case=False[,$Dlm=GUIDataSeparatorChar]])				(Requires #Include <PopG_Delim.au3>)	Returns the index position of one string in a delimited string.
+_DelimListGetText($List,$Idx[,$Dlm=GUIDataSeparatorChar])								(Requires #Include <PopG_Delim.au3>)	Returns the text at an index position in a delimited string.
+_DelimListPadDelims($List,$Qty[,$Dlm=GUIDataSeparatorChar])								(Requires #Include <PopG_Delim.au3>)	Ensures that there are at least a certain number of delimiters in a string
+_DelimListReplaceItem($List,$OldItem,$NewItem[,$Case=False[,$Occur=1[,$Dlm=GUIDataSeparatorChar]]])	(Requires #Include <PopG_Delim.au3>)	Replaces a subitem in a string, such as one used in a ListView using StringReplaceby searching for the substring
+_DelimListSetItem($List,$NewItem,$Index[,$Dlm=GUIDataSeparatorChar])					(Requires #Include <PopG_Delim.au3>)	Replaces a subitem in a string, such as one used in a ListView by occurence of delimiters in the string.
+_DelimListSort($List[,$i_descending=0[,$Dlm=GUIDataSeparatorChar]])						(Requires #Include <PopG_Delim.au3>)	Returns a delimited list in sorted order.
+_DelimListSplit($List,ByRef $Left,ByRef $Right,[$Occur=1[,$Dlm=GUIDataSeparatorChar]])	(Requires #Include <PopG_Delim.au3>)	Splits a delimted list into left and right at the specified occurence of delimter.
+_DirCopy2($SrcDir,$DstDir[,$CopyIfNewer=False[,$CopyIfBigger=False[,$CopyIfDifferent=False[,$OkSetTime=False[,$CopyAlways=False[,$ConfCopy=False[,$ProgMax=-1]]]]]])	(Requires #include <PopG_File.au3> 	Like DirCopy but uses _FileCopy2 to ensure the update is as intelligent as possible.
+_DriveMap($Drv,$Func[$Dir=''])													(Requires #include <PopG_File.au3> 	Extends DriveMap functionality to support both local and remote drive mappings.
+_FileCopy2($SrcFil,$DstFil[,$CopyIfNewer=False[,$CopyIfBigger=False[,$CopyIfDifferent=False[,$OkSetTime=False[,$CopyAlways=False[,$ConfCopy=False[,$ProgMax=-1]]]]]])	(Requires #include <PopG_File.au3> 	Copies one file to another folder.  Does not copy if file exists.  Sets target date to source.
+_FileWriteFromArray2($sFilePath, $a_Array[, $i_Base = 0[, $i_UBound = 0]]) 	(Requires #include <PopG_File.au3> 	Extends _FileWriteFromArray to support file handles.
+_FileWriteLog2($sLogPath, $sLogMsg) 											(Requires #include <PopG_File.au3> 	Enhanced _FileWriteLog to be able to re-use a file handle instead of a filename.
+_GUICtrlCheckBoxSet($handle, $val)												(Requires #include <PopG_GuiCtrl.au3>) Sets or clears a Checkbox.
+_GUICtrlComboSetItemTextFromArray($combo,ByRef $arr,$Default) 					(Requires #include <PopG_GuiCtrl.au3>) Sets the items in a list view from elements in an array.
+_GUICtrlCreateListViewFromArray($Lv,ByRef $arr[,$Default='']) 					(Requires #include <PopG_GuiCtrl.au3>) Sets the items in a list view from elements in an array.
+_GUICtrlCreateListViewFromArray2($Lv,ByRef $arr[,$Default=''[,$filter='']]) 	(Requires #include <PopG_GuiCtrl.au3>) Sets the items in a list view from elements in a two-dimensional array. filtering on the first dimension, and populating from the second.
+_GUICtrlCreateMenuitemEvent($label,$menuid[,$event=''])						(Requires #include <PopG_GuiCtrl.au3>) Adds a Menu item for event driven handling.
+_GUICtrlCreateWithTipAndEvent($Type, $Text, $X, $Y, $W, $H, $Tip[, $Event=''[, $Style=-1]]) 	(Requires #include <PopG_GuiCtrl.au3>) Creates GUICtrls, setting tips and events.
+_GUICtrlHasFocus($c1,$c2[,$c3...c10]) 											(Requires #include <PopG_GuiCtrl.au3>) Returns the Gui Control that has focus from the list of handles.  Up to 10 handles can be supplied.
+_GUICtrlListViewRenameItem($Lv,$LvIdx1,$LvIdx2)								(Requires #include <PopG_GuiCtrl.au3>) Renames the leftmost subitem for two rows in a listview
+_GUICtrlListViewSwapRow($Lv,$LvIdx1,$LvIdx2)									(Requires #include <PopG_GuiCtrl.au3>) Swaps the entire row for two subitems in a listview, leaving the "key" subitem as is.
+_IsDir($FilOrDir)																(Requires #include <PopG_File.au3> 	Returns True if a directory.
+_MsgBoxExit($mbeFlag,$mbeTtl,$mbeTxt[,$mbeExitIf=0[,$mbeTime=0]]) 	(Requires #include <PopG_MsgBox.au3>) 	Does a normal message box and then exits if either no exit control is specified or if the specified button is clicked.
+_RegCreateKeys($base,$keys)							(Requires #include <PopG_Reg.au3> 		Creates a range of delimited subkeys.
+_RegRenameVal($Key,$OldV,$NewV)						(Requires #include <PopG_Reg.au3> 		Renames registry $nam1 to $nam2 in key $Key.
+_RegReRead($Key,$Val)									(Requires #include <PopG_Reg.au3> 		If the value read from the registry is registry key\val (ie begins with 'HKEY' then it reads and returns that indirect value instead.  Thus providing registry indirection.
+_RegSearchAndReplace($Hive,$Srch,$Repl,$Occ,$Case,$OkData,$OkValue[,$ProgCnt=0[,$ProgMax=0]])	(Requires #include <PopG_Reg.au3> 		Scans through the registry replacing one string for another. WARNING: USING THIS COULD DAMAGE YOUR COMPUTER.  TEST THOROUGHLY ON A SCRATCH COMPUTER FIRST!  I CAN ACCEPT NO LIABILITY FOR ANY DAMAGE DONE, HOWSOEVER CAUSED.
+_RegSetReset($Key,$Name,$Type,$SetVal,$OkReset=False,$OkSetDelete=False,$OkResetDelete=False[,$RstVal=''[,$Desc='']])	(Requires #include <PopG_Reg.au3> 		Updates the registry to either a set, or a reset value.
+_RegSplit($RegKND,ByRef $Key,ByRef $Name, ByRef $dat)	(Requires #include <PopG_Reg.au3> 		Splits a registry key\name=val string into key, name & value.
+_RegSwapVal($Key,$nam1,$nam2)							(Requires #include <PopG_Reg.au3> 		Swaps registry $nam1 to $nam2 in key $Key.
+_RegType($idx)											(Requires #include <PopG_Reg.au3> 		Returns the string value of the registry type decimal constant,
+_RegWriteSetRst($Key,$name,$Type,$SetVal[,$OkRst=False[,$RstTyp=0[,$RstVal='_RegWriteSetRst-novalue'[,$VfySecs=0[,$VfyMsg='']]]])	(Requires #include <PopG_Reg.au3> 		Writes to the registry one of two values depending on $OkRst.
+_RunWaitOutErr($Cmd,$Dir,$Flag,ByRef $OutArr,ByRef $ErrArr)		(Requires #include <PopG_Run.au3>) 	Runs a (dos) command until completion, returning output & error lines into two arrays.
+_RunWaitSys($Cmd[,$Dir=''[,$Flag=0]])								(Requires #include <PopG_Run.au3>) 	Calls function RunWait for a command in the system folder.
+_RunWaitSysOutErr($Cmd,$Dir,$Flag,ByRef $OutArr,ByRef $ErrArr)		(Requires #include <PopG_Run.au3>) 	Calls function RunWaitOutErr in Windows\System32 folder.
+_UserGetAllGroups() 										(Requires #include <PopG_User.au3>) 	Returns a list of all groups both locally and in the domain.
+_UserGetAllUsers([$OkDomain=False]) 						(Requires #include <PopG_User.au3>) 	Returns a list of users, either local or in the domain.
+_UserGetDetails($Username,$Field[,$OkDomain=False]) 		(Requires #include <PopG_User.au3>) 	Returns one of the User details for the current user.
+_UserGetUsersGroups($Username) 							(Requires #include <PopG_User.au3>) 	Returns a list of all groups (both locally and in the domain) that this user belongs to.
+_UserIsMember($Username,$Group) 							(Requires #include <PopG_User.au3>) 	Returns true if the user is a member of specified group.
+_UserSetDetails($Username,$Field,$Val[,$OkDomain=False]) 	(Requires #include <PopG_User.au3>) 	Sets one of the User details for the current user
