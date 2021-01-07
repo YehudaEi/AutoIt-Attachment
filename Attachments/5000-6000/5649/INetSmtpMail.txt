@@ -1,0 +1,50 @@
+###User Defined Function###
+_INetSmtpMail
+
+###Description###
+Sends an email without using an external email program.
+
+###Syntax###
+#include <INet.au3>
+_INetSmtpMail ( $s_SmtpServer, $s_FromName, $s_FromAddress, $s_ToAddress, [$s_Subject, [$as_Body]])
+
+###Parameters###
+@@ParamTable@@
+$s_SmtpServer
+	Smtp server the eMail is to be sent though  May be either alpha or a numeric IP address.   In order to fight spam, many ISPs require this to be their server.  
+	eg "smtp.ispdomain.com", "mail.ispdomain.com" or "192.168.1.1"
+$s_FromName
+	The name you wish the message to appear to be sent from. 
+	eg "Bob Smith"
+$s_FromAddress
+	The email address you wish the message to appear to be sent from.  
+	eg "bob.smith@mydomain.com".
+$s_ToAddress
+	The email address the message is to go to.  
+	eg "jane.brown@yourdomain.com"
+$s_Subject
+	The subject of the email.
+$as_Body
+	The body of the email as an array of strings.   Each value in the array will be terminated with a @CRLF in the email.
+@@End@@
+
+###ReturnValue###
+On Success - Returns 1
+On Failure - Returns 0 and sets:
+	@ERROR = 1	-	Invalid Parameters
+	@ERROR = 2	-	Unable to start TCP
+	@ERROR = 3	-	Unable to resolve IP
+	@ERROR = 4	-	Unable to create socket
+	@ERROR = 5	-	Data send or SMTP Protocol error
+
+
+
+###Remarks###
+This function sends a email directly through an SMTP server without the use of a third party email client.   Requires Beta
+
+###Related###
+_INetMail
+
+###Example###
+@@IncludeExample@@
+
