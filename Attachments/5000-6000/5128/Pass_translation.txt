@@ -1,0 +1,26 @@
+a = f	A = A	! = !	< = <
+b = g	B = B	@ = @	, = ,
+c = h	C = C	# = #	> = >
+d = i	D = D	$ = $	. = .
+e = j	E = F	% = %	? = ?
+f = k	F = I	^ = c	/ = /
+g = l	G = J	& = &	* = *
+h = m	H = K	* = *	1 = 1
+i = n	I = L	( = (	2 = 2
+j = o	J = M	) = )	3 = 3
+k = p	K = O	~ = G	4 = 4
+l = q	L = P	` = e	5 = 5
+m = r	M = Q	_ = d	6 = 6
+n = s	N = R	- = -	7 = 7
+o = t	O = S	+ = +	8 = 8
+p = u	P = U	= = =	9 = 9
+q = v	Q = V	{ = N	0 = 0
+r = w	R = W	[ = `	
+s = x	S = X	} = H	
+t = y	T = Y	] = b	
+u = z	U = Z	: = :	
+v = {	V = Z	; = ;	
+w = |	W = \	" = "	
+x = }	X = ]	' = '	
+y = ~	Y = ^	\ = a	
+z = T	Z = _	| = E	
