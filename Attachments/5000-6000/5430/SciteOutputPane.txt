@@ -1,0 +1,42 @@
+>Running AU3Check...
+C:\Program Files\AutoIt3\Include\GUIListView.au3(458,11) : ERROR: syntax error
+		$struct &
+		~~~~~~~~^
+C:\Program Files\AutoIt3\Include\GUIListView.au3(473,11) : ERROR: syntax error
+		$s_cols &
+		~~~~~~~~^
+C:\Program Files\AutoIt3\Include\GUIListView.au3(1182,11) : ERROR: syntax error
+		$struct &
+		~~~~~~~~^
+C:\Program Files\AutoIt3\Include\process.au3(64,91) : ERROR: syntax error
+    Local $aProcessHandle = DllCall($hDLL, 'int, 'OpenProcess, 'int, 0x1f0fff, 'int, False,
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Program Files\AutoIt3\Include\process.au3(68,12) : ERROR: syntax error
+    Switch $aPriority
+~~~~~~~~~~~^
+C:\Program Files\AutoIt3\Include\process.au3(71,9) : ERROR: syntax error
+        Case
+~~~~~~~~^
+C:\Program Files\AutoIt3\Include\process.au3(73,9) : ERROR: syntax error
+        Case
+~~~~~~~~^
+C:\Program Files\AutoIt3\Include\process.au3(75,9) : ERROR: syntax error
+        Case
+~~~~~~~~^
+C:\Program Files\AutoIt3\Include\process.au3(77,9) : ERROR: syntax error
+        Case
+~~~~~~~~^
+C:\Program Files\AutoIt3\Include\process.au3(79,9) : ERROR: syntax error
+        Case
+~~~~~~~~^
+C:\Program Files\AutoIt3\Include\process.au3(81,9) : ERROR: syntax error
+        Case
+~~~~~~~~^
+C:\Program Files\AutoIt3\Include\process.au3(84,14) : ERROR: syntax error
+    EndSwitch
+~~~~~~~~~~~~~^
+G:\Scripts\IT Helpers\GetIPAndLoggedOn.au3 - 12 error(s), 0 warning(s)
+>AU3Check Ended.
+>Running: C:\Program Files\AutoIt3\beta\AutoIt3.exe /beta /ErrorStdOut  "G:\Scripts\IT Helpers\GetIPAndLoggedOn.au3" /autoit3dir "C:\Program Files\AutoIt3\beta" /UserParams    
+>AutoIT3.exe ended.
+>Exit code: 0    Time: 26.390
