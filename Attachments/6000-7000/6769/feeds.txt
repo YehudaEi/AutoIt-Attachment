@@ -1,0 +1,8 @@
+[This Week In Tech]
+url=                                        
+
+
+[Diggnation]
+url=                                                      
+[Skatecaste]
+url=http://feeds.feedburner.com/64mmVlog 
