@@ -1,0 +1,23 @@
+;;This file is used for the client the client sends errors to the server
+;;Server can be IP address of the server you wish to connect to or Name on local network
+;;portNo must mach the open port on the receiving server
+;;useIP=1 only if you wish to send your IP to the server for connection, will need to be used if not on local network
+;;If useIP is not used then Computer name is sent to server for local name resolution.
+;;IPAddress is the address you would use to connect back to this machine, note if behind a router it will be the router 
+;;address and port number that radmin is set up to use i.e. 192.35.129.27:4899
+;;You would need to be sure that port forwarding is set up correctly.
+
+;;Window titles are entered as 1=Windowname|part of window text, Note the pipe | between title and text!
+;;you can use either window name or part of text on screen or both
+;;Window titles are case sensative
+
+[General]
+server=fm01657
+portNo=8000
+useIP=0
+IPAddress=
+
+[windows]
+1=Test|
+
+
