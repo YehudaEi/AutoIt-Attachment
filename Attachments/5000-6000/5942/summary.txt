@@ -1,0 +1,796 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+        <link rel="stylesheet" type="text/css" href="                                            " />
+    <meta name="description" content="TV.com is your reference guide to My Name Is Earl episode White Lie Christmas. Episode guide, cast and crew information, analysis, polls, reviews and more. " />  
+    <meta name="keywords" content="My Name Is Earl White Lie Christmas episode guide guest stars analysis synopsis recap cast crew" />
+    <title>My Name Is Earl: White Lie Christmas - TV.com  </title>  
+    <script type="text/javascript" src="                                 "></script>
+    
+            
+            
+                        
+                
+</head>
+<body>
+
+
+
+<div width="100%" align="center">
+    <div style="width:804px;">
+        <div id="body-wrap">
+            <div style="width:760px;background:#fff;float:left;margin-left:23px;display:inline;">
+                <div id="gnenav">
+                    <img src="                                              " width="197" height="10" alt="CNET Games & Entertainment"> <a href="                       ">GameSpot</a> | <a href="                       ">GameFAQs</a> | <a href="                         ">Metacritic</a> | <a href="                  ">MP3.com</a> | <a href="                 ">TV.com</a>
+                </div>
+
+                              <div id="header">
+                    <div id="head-wrap">
+                        <a href="                 "><img src="                                    " id="head-logo" alt="My Name Is Earl: White Lie Christmas - TV.com  " /></a>
+
+                        <div id="head-personal">
+
+                          <form name="login" method="POST" action="                                      " style="margin:10px 0px 0px 0px;padding:0px;height:30px;">
+                            <p class="fl m-0">
+                                <span class="f-gray f-small">Email:</span><br/>
+                                <input type="text" name="EMAILADDR" style="width:100px;font-size:9px;margin-left:0px;margin-right:5px;" />
+                            </p>
+                            <p class="fl m-0">
+                                <span class="f-gray f-small">Password:</span><br/>
+                                <input type="password" name="PASSWORD" style="width:80px;font-size:9px;margin-right:5px;" />
+                            </p>
+                            <input type="hidden" name="path" value="                 " />
+                            <input type="image" class="btn_login fl mt-10" onClick="document.login.submit();" value="" src="                             "></a>
+                          </form>
+
+                                <span class="f-teal f-small cb"><a class="f-normal" href="                              ">Signup</a> | <a class="f-normal" href="                                      ">Forgot Login</a></span>
+
+
+                        </div>
+                    </div>
+                    
+                    
+                    <div id="global-nav">
+                        <div id="nav" class="f-medium f-white f-bold">
+                            <ul id="menu">
+                                <li class="link "><a href="                  ">Home</a></li> 
+                                <li class="link "><a href="                                     ">TV Listings</a></li>
+                                <li class="link "><a href="                            ">All Shows</a></li>
+                                <li class="link "><a href="                                 ">News</a></li>
+                                <li class="link "><a href="                                     ">Features</a></li>
+                                <li class="link "><a href="                                  ">Pictures</a></li>
+                                <li class="link "><a href="                        ">Videos</a></li>
+                                <li class="link "><a href="                             ">Reviews</a></li>
+                                <li class="link"><a href="                    ">Forums</a></li>
+                                                        </ul>
+                        </div>
+                    </div>
+
+                    <div id="search-wrap">
+
+                        <form class="f-small f-teal" action="                            " method="GET">
+                          <input type="hidden" name="type" value="11" />
+                          <input type="hidden" name="stype" value="all" />
+                          <span class="f-bold f-medium f-white">Search: </span>
+                          <input name="qs" type="text" class="text" value="">
+                          <input type="image" class="image" src="                                                ">
+                        </form>
+
+                    </div>
+
+<!-- headband here1 -->                    
+                            
+                </div>
+                
+                        <!-- CONTENT HERE -->
+    <div id="breadcrumb-wrap" class="f-small f-white">
+
+			<h1 class="f-small f-normal di"><a href="                                                         ">My Name Is Earl</a></h1>
+					: <a href="                                                               ">Episode</a> :
+        	<a href="                                             "> White Lie Christmas</a> 
+			
+	
+			:   Summary 
+	 
+
+</div>    
+
+    <div id="content-wrap"> 
+
+        <div id="showhead-wrap" style="height:140px;background:url(                                                               ) center no-repeat #000;border:0px;">
+    <div class="spacer"></div>
+    <div id="tabs" class="f-small"> 
+       
+        <li class="tab"><a href="                                                         ">Summary</a></li>
+    
+               
+        <li class="tab on"><a href="                                                               ">Episodes</a></li>     
+        
+       
+            
+        <li class="tab"><a href="                                                      ">Cast</a></li>
+        
+    
+            
+        <li class="tab"><a href="                                                      ">News</a></li>
+        
+    
+            
+        <li class="tab"><a href="                                                        ">Videos</a></li>
+        
+    
+            
+        <li class="tab"><a href="                                                        ">Pictures</a></li>
+        
+    
+            
+        <li class="tab"><a href="                                                         ">Similar</a></li>
+        
+    
+            
+        <li class="tab"><a href="                                                         ">Reviews</a></li>
+        
+                    
+            <li class="tab"><a href="                                                        ">Forum</a></li>
+          
+      
+        
+    </div>
+</div>
+        <h2 class="f-red ml-10 mt-20 fl di">White Lie Christmas <span class="f-medium f-gray"> 
+            (episode #10)
+    </span></h2>
+<div id="pagehead">
+    <div class="nav">
+    
+            <li class="box on f-white">Summary</li>
+        
+
+    
+     
+        <li class="box"><a href="                                                                               ">Recap</a></li>
+      
+    
+    
+    
+     
+        <li class="box"><a href="                                                                                ">Trivia &amp; Quotes</a></li>
+      
+    
+    
+    
+     
+        <li class="box"><a href="                                                                              ">Cast</a></li>
+        
+    
+    
+    
+     
+        <li class="box"><a href="                                                                                 ">Reviews</a></li>
+      
+ 
+    </div>
+    <div class="fr mt-20 pt-5 mr-10 f-bold f-gray">
+        
+                <a href="                                                                                   ">&laquo; Previous Episode</a> 
+                
+                <span class="pl-5 pr-5">|</span> 
+                
+                <a href="                                                                         ">Next Episode &raquo;</a>
+                 
+    </div>
+</div>
+        <div id="col-wrap">
+        <div id="col-0">
+            <div class="pod">
+
+
+                <br />
+                                    <span class="f-bold">Originally aired: <span class="f-red">Tuesday December 6, 2005</span></span> on
+                                <span class="f-bold">NBC</span>
+                <br />
+                
+                <div class="f-small">
+                                    Writer: 
+                                            <a href="                                                        ">Timothy Stack</a>                                        <br />
+                
+                                    Director: 
+                                            <a href="                                                        ">Marc Buckland</a>                                        <br />
+                
+                
+                                    Show Stars:
+                                            <a href="                                                     ">Jason Lee</a> (Earl),                                             <a href="                                                           ">Eddie Steeples</a> (Darnell),                                             <a href="                                                         ">Jaime Pressly</a> (Joy),                                             <a href="                                                        ">Ethan Suplee</a> (Randy),                                             <a href="                                                             ">Nadine Velazquez</a> (Catalina)                                        <br />
+                
+
+                                    All Guest Stars: 
+                                        
+                                        
+                                            <a href="                                                          ">Charles Noland</a> (Guy),                                             <a href="                                                         ">Gil Christner</a> (Contestant),                                             <a href="                                                           ">Trey  Carlisle</a> (Earl Jr.),                                             <a href="                                                         ">Saginaw Grant</a> (Casino Worker),                                             <a href="                                                           ">Louis T. Moyle</a> (Dodge),                                             <a href="                                                       ">Brett Butler</a> (Joy's Mom),                                             <a href="                                                      ">Blake Clark</a> (Joy's Dad),                                             <a href="                                                           ">Harland Williams</a> (Radio Contest Announcer)                                        <br />
+                                
+                    
+                                    Production Code: <span class="f-gray">1ALJ09</span>
+                    <br />
+                                <br />
+                </div>
+            
+                <p class="m-0">
+                
+                
+            
+                                
+                As the holiday season comes under way a few secrets are exposed when Earl attempts to cross number seventy-four off of his list: "always ruined Joy's Christmas." Earl, Randy, and Catalina enter a radio contest to win a brand new car for Joy to make up for all of the thoughtless Christmas presents Earl gave her while they were married. While Randy and Catalina vie over the car, Earl finds out that Joy's parents believe that he's still their son-in-law and that he's just returned from the war in Iraq. Joy is afraid to tell her father, an alleged racist, that she is now married to Darnell, so Earl plays the part, afraid of ruining another one of her Christmases.
+                </p>
+                <div class="divider"></div>
+                <div class="pod-foot">
+                                            <a href="                                                                                      ">Edit Episode Summary</a>
+                                    </div>
+            </div>
+
+            <div id="episode_notes" class="pod">
+	<a name="Allusions"></a>
+	<div class="titlebar f-white mb-10"><h3>Episode Allusions</h3><a href="                                                      ;type=9&amp;show_id=31988&amp;episode_id=497164"><img class="add" src="                                                       "></a></div>
+			<p class="m-0 p-0"><b>Earl</b>: If you're gonna try to fly a bicycle, you better make sure <b>E.T.</b> is sitting in your basket instead of a 12 pack of beer.<br />
+<br />
+E.T. was a film directed by Steven Spielberg, released in 1982, and staring an alien with the same name.  E.T. was able to heal and levitate objects.  <br />
+<br />
+ <a href="                                                      ;type=9&amp;show_id=31988&amp;episode_id=497164&blurb_id=920452"> <strong>(Edit)</a></strong></p>
+		<div class="divider"></div>
+				<div class="pod-foot"><a href="                                                                          ">More  Allusions</a> | <a href="                                                      ;type=9&amp;show_id=31988&amp;episode_id=497164">Add</a></div>
+	</div>
+	            <div id="episode_notes" class="pod">
+	<a name="Notes"></a>
+	<div class="titlebar f-white mb-10"><h3>Episode Notes</h3><a href="                                                  ;type=9&amp;show_id=31988&amp;episode_id=497164"><img class="add" src="                                                       "></a></div>
+			<p class="m-0 p-0">Harland Williams had previously been in an episode of Gary and Mike, where his character- Mike- also participated in a car contests with the person keeping their hands on a car. <a href="                                                  ;type=9&amp;show_id=31988&amp;episode_id=497164&blurb_id=951517"> <strong>(Edit)</a></strong></p>
+		<div class="divider"></div>
+			<p class="m-0 p-0">We learn in this episode that Catalina is an illegal alien. <a href="                                                  ;type=9&amp;show_id=31988&amp;episode_id=497164&blurb_id=921874"> <strong>(Edit)</a></strong></p>
+		<div class="divider"></div>
+			<p class="m-0 p-0">Blake Clark and Ethan Suplee previously worked together on the 90's TGIF sitcom <i>Boy Meets World</i>, while Clark and Brett Butler previously worked together on another ABC sitcom, <i>Grace Under Fire</i>. <a href="                                                  ;type=9&amp;show_id=31988&amp;episode_id=497164&blurb_id=919410"> <strong>(Edit)</a></strong></p>
+		<div class="divider"></div>
+				<div class="pod-foot"><a href="                                                                      ">More  Notes</a> | <a href="                                                  ;type=9&amp;show_id=31988&amp;episode_id=497164">Add</a></div>
+	</div>
+	            <div id="episode_notes" class="pod">
+	<a name="Trivia"></a>
+	<div class="titlebar f-white mb-10"><h3>Episode Trivia</h3><a href="                                                   ;type=9&amp;show_id=31988&amp;episode_id=497164"><img class="add" src="                                                       "></a></div>
+		
+	<p class="m-0 p-0">We don't have trivia for White Lie Christmas. <a href="                                                   ;type=9&amp;show_id=31988&amp;episode_id=497164"><strong>Add</strong></a> the episode trivia.</p>
+</div>
+	            <div id="episode_notes" class="pod">
+	<a name="Quotes"></a>
+	<div class="titlebar f-white mb-10"><h3>Episode Quotes</h3><a href="                                                   ;type=9&amp;show_id=31988&amp;episode_id=497164"><img class="add" src="                                                       "></a></div>
+			<p class="m-0 p-0"><i>Darnell enters the room</i><br />
+<b>Joy</b>: Oh, my God, it's a negro, were being robbed. <a href="                                                   ;type=9&amp;show_id=31988&amp;episode_id=497164&blurb_id=953860"> <strong>(Edit)</a></strong></p>
+		<div class="divider"></div>
+			<p class="m-0 p-0"><b>Earl</b>: Why the wheelchair?<br />
+<b>Connie</b>: I sprained my ankle a few weeks ago, and I just got used to being pushed around. <a href="                                                   ;type=9&amp;show_id=31988&amp;episode_id=497164&blurb_id=953858"> <strong>(Edit)</a></strong></p>
+		<div class="divider"></div>
+			<p class="m-0 p-0"><b>Connie</b>: (<i>to Joy's father</i>)Remember when I told you to sign over the business to me in case something bad happens?<br />
+<b>Joy's Father</b>: Yeah!<br />
+<b>Connie</b>: Something bad happen. <a href="                                                   ;type=9&amp;show_id=31988&amp;episode_id=497164&blurb_id=953856"> <strong>(Edit)</a></strong></p>
+		<div class="divider"></div>
+			<p class="m-0 p-0"><b>Joy's Father</b>: Connie, your walking?<br />
+<b>Connie</b>: It's a Christmas miracle. <a href="                                                   ;type=9&amp;show_id=31988&amp;episode_id=497164&blurb_id=953852"> <strong>(Edit)</a></strong></p>
+		<div class="divider"></div>
+			<p class="m-0 p-0"><b>Joy</b>: Mom, Dad, his been gone for months, and a wife's got her needs. <a href="                                                   ;type=9&amp;show_id=31988&amp;episode_id=497164&blurb_id=953850"> <strong>(Edit)</a></strong></p>
+		<div class="divider"></div>
+				<div class="pod-foot"><a href="                                                                       ">More  Quotes</a> | <a href="                                                   ;type=9&amp;show_id=31988&amp;episode_id=497164">Add</a></div>
+	</div>
+	            <div id="reviews" class="pod">
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+        <div class="titlebar f-white mb-10 cb">
+    <h3>
+        Community Reviews        </h3>
+  </div>
+    
+
+        
+        
+
+  
+
+    <div class="review">
+    <div class="reviewer">
+      
+            <div class="avatar">
+                          <a href="                                           "><img src="                                                            " /></a>
+                        </div>
+            
+            <a href="                                           ">Milks23</a><br />
+      
+                        
+            
+                        
+    </div>
+    
+            <div class="fl" style="width:316px; overflow:hidden">
+            
+              <div class="score"><p class="m-0">7.1</p></div>
+                        
+          <div class="f-bold mb-5 mt-0"><a href="                                                                 ">White Lie Christmas</a></div>
+            
+                
+                                      <p class="mb-5 mt-0"><a class="f-bold f-12" href="                                                                                               ">Above average</a></p>
+               
+                                
+      <p class="m-0">
+        Many Lies 
+
+                                                                          <a class="f-bold" href="                                                                                               ">Continue <img src="                                        "></a>
+                              </p>
+    </div>
+        
+    <div class="f-small f-gray cl pb-5">posted 2005-12-22 07:29:54</div>
+    <div class="divider"></div>
+  </div>
+    <div class="review">
+    <div class="reviewer">
+      
+            <div class="avatar">
+                          <a href="                                            "><img src="                                         " /></a>
+                        </div>
+            
+            <a href="                                            ">attilasd</a><br />
+      
+                        
+            
+                        
+    </div>
+    
+            <div class="fl" style="width:316px; overflow:hidden">
+            
+              <div class="score"><p class="m-0">9.2</p></div>
+                        
+          <div class="f-bold mb-5 mt-0"><a href="                                                                 ">White Lie Christmas</a></div>
+            
+                
+                                      <p class="mb-5 mt-0"><a class="f-bold f-12" href="                                                                                               ">Another great installment</a></p>
+               
+                                
+      <p class="m-0">
+        Great episode 
+
+                                                                          <a class="f-bold" href="                                                                                               ">Continue <img src="                                        "></a>
+                              </p>
+    </div>
+        
+    <div class="f-small f-gray cl pb-5">posted 2005-12-11 08:08:08</div>
+    <div class="divider"></div>
+  </div>
+    <div class="review">
+    <div class="reviewer">
+      
+            <div class="avatar">
+                          <a href="                                           "><img src="                                         " /></a>
+                        </div>
+            
+            <a href="                                           ">kail313</a><br />
+      
+                        
+            
+                        
+    </div>
+    
+            <div class="fl" style="width:316px; overflow:hidden">
+            
+              <div class="score"><p class="m-0">7.5</p></div>
+                        
+          <div class="f-bold mb-5 mt-0"><a href="                                                                 ">White Lie Christmas</a></div>
+            
+                
+                                      <p class="mb-5 mt-0"><a class="f-bold f-12" href="                                                                                               ">Silly</a></p>
+               
+                                
+      <p class="m-0">
+        funny 
+
+                                                                          <a class="f-bold" href="                                                                                               ">Continue <img src="                                        "></a>
+                              </p>
+    </div>
+        
+    <div class="f-small f-gray cl pb-5">posted 2005-12-10 12:57:08</div>
+    <div class="divider"></div>
+  </div>
+    <div class="review">
+    <div class="reviewer">
+      
+            <div class="avatar">
+                          <a href="                                            "><img src="                                                                   " /></a>
+                        </div>
+            
+            <a href="                                            ">wdwillis</a><br />
+      
+                        
+            
+                        
+    </div>
+    
+            <div class="fl" style="width:316px; overflow:hidden">
+            
+              <div class="score"><p class="m-0">9.2</p></div>
+                        
+          <div class="f-bold mb-5 mt-0"><a href="                                                                 ">White Lie Christmas</a></div>
+            
+                
+                                      <p class="mb-5 mt-0"><a class="f-bold f-12" href="                                                                                               ">A very special episode</a></p>
+               
+                                
+      <p class="m-0">
+        It wouldn't be Christmas without the fighting. 
+
+                                                                          <a class="f-bold" href="                                                                                               ">Continue <img src="                                        "></a>
+                              </p>
+    </div>
+        
+    <div class="f-small f-gray cl pb-5">posted 2005-12-09 23:06:41</div>
+    <div class="divider"></div>
+  </div>
+    <div class="review">
+    <div class="reviewer">
+      
+            <div class="avatar">
+                          <a href="                                           "><img src="                                                       " /></a>
+                        </div>
+            
+            <a href="                                           ">ZugZug4</a><br />
+      
+                        
+            
+                        
+    </div>
+    
+            <div class="fl" style="width:316px; overflow:hidden">
+            
+              <div class="score"><p class="m-0">8.8</p></div>
+                        
+          <div class="f-bold mb-5 mt-0"><a href="                                                                 ">White Lie Christmas</a></div>
+            
+                
+                                      <p class="mb-5 mt-0"><a class="f-bold f-12" href="                                                                                               ">A very special episode</a></p>
+               
+                                
+      <p class="m-0">
+        Christmas, Earl Style. 
+
+                                                                          <a class="f-bold" href="                                                                                               ">Continue <img src="                                        "></a>
+                              </p>
+    </div>
+        
+    <div class="f-small f-gray cl pb-5">posted 2005-12-08 10:13:40</div>
+    <div class="divider"></div>
+  </div>
+ 
+
+  <div class="ta-c">
+    <a href="                                                         ">all community reviews (10)</a>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+<div class="gray-box pod f-bold cb">
+        <p class="mb-10">Tell the world what you think of White Lie Christmas. Write a review for this episode.</p>
+      <a href="                                                                      " class="btn_writereview btn_center"></a>    </div>            <div class="gray-box pod mt-20 cb">
+	<table cellpadding="0" cellspacing="0" style="width:436px;">
+		<tr>
+			<td class="ta-l pl-10 f-bold f-gray" width="30%">
+			                    	<a href="                                                                   ">&laquo; Previous Episode</a> 
+                			<td class="ta-c f-gray" width="5%">
+				|
+			</td>
+			<td class="ta-c" width="30%">
+				<a href="                                                               ">Episode Guide</a>
+			</td>
+			<td class="ta-c f-gray" width="5%">
+				|
+			</td>
+			<td class="ta-r pr-10 f-bold f-gray" width="30%">
+				        			<a href="                                                         ">Next Episode &raquo;</a> 
+                			</td>
+		</tr>
+	</table>
+</div>
+            <div class="bottom-nav mt-15">
+	<div style="text-align: center">
+		<span class="f-medium"><strong>White Lie Christmas</strong></span>
+		<br />
+    
+    
+            <span class="f-medium f-gray f-bold">Summary</span>
+        
+   <span class="f-medium f-gray"> | </span> 
+    
+     
+		<a href="                                                               ">Recap</a>
+      
+    
+   <span class="f-medium f-gray"> | </span> 
+    
+     
+		<a href="                                                                ">Trivia &amp; Quotes</a>
+      
+    
+    
+   <span class="f-medium f-gray"> | </span> 
+    
+     
+		<a href="                                                              ">Cast</a>
+        
+    
+    
+   <span class="f-medium f-gray"> | </span> 
+    
+     
+		<a href="                                                                 ">Reviews</a>
+        
+    
+ 
+	</div>
+</div>            <div class="mt-15 pod pl-5">
+	<div style="text-align: center">
+		<span class="f-small">My Name Is Earl</span>
+		<br />
+
+		 
+     		<a href="                                                         ">Summary</a> 
+    	    
+    
+   		<span class="f-medium f-gray"> | </span> 
+
+		        	<span class="f-medium f-gray f-bold">Episodes</span>
+    	
+   		<span class="f-medium f-gray"> | </span> 
+
+		     		<a href="                                                      ">Cast</a> 
+		
+   		<span class="f-medium f-gray"> | </span> 
+
+		     		<a href="                                                      ">News</a>
+		
+   		<span class="f-medium f-gray"> | </span> 
+
+		         	<a href="                                                        ">Videos</a>
+		
+   		<span class="f-medium f-gray"> | </span> 
+
+		     		<a href="                                                        ">Pictures</a>
+		   		<span class="f-medium f-gray"> | </span> 
+
+		     		<a href="                                                         ">Similar</a>
+		
+   		<span class="f-medium f-gray"> | </span> 
+
+		     		<a href="                                                         ">Reviews</a>
+		   		<span class="f-medium f-gray"> | </span> 
+
+		    		<a href="                    ">Forums</a>
+			</div>
+</div>
+
+<div class="pt-15 pod ta-c">
+	<select name=drp_shownav onChange="top.window.location=this.options[this.selectedIndex].value;" value=Go class="f-small">\
+		<option value="                                                         ">My Name Is Earl Quick Nav</option>
+		<option value="                                                         ">My Name Is Earl TV Show</option>
+		<option value="                                                               ">My Name Is Earl Episodes</option>
+		<option value="                                                               ">My Name Is Earl Trivia</option>
+		<option value="                                                               ">My Name Is Earl Quotes</option>
+		<option value="                                                               ">My Name Is Earl Spoilers</option>
+		<option value="                                                      ">My Name Is Earl Cast</option>
+				<option value="                                                      ">My Name Is Earl News</option>
+		<option value="                                                      ">My Name Is Earl Gossip</option>
+						<option value="                                                        ">My Name Is Earl Videos</option>
+		<option value="                                                        ">My Name Is Earl Movies</option>
+						<option value="                                                        ">My Name Is Earl Photos</option>
+		<option value="                                                        ">My Name Is Earl Pictures</option>
+				<option value="                                                         ">My Name Is Earl Similar Shows</option>
+		<option value="                                                         ">My Name Is Earl Reviews</option>
+	</select>
+</div>
+        </div id="col-0">
+
+        <div id="col-1">
+            
+
+                        <div class="mb-10">
+        	    <!-- gne_ads madison: 216.239.113.171 /html/RGROUP=8401/UA=Mozilla%2F4.0+%28compatible%3B+MSIE+6.0%3B+Windows+NT+5.1%3B+MyIE2%3B+SV1%3B+Maxthon%3B+.NET+CLR+1.0.3705%3B+.NET+CLR+1.1.4322%3B+.NET+CLR+2.0.50727%29/REMOTE_ADDR=66.57.114.6/HTTP_HOST=www.tv.com/GS_COOKIE=/MADCAPS=/MADCAPP=/HEADERS=OFF -->
+<div style="text-align:center"><img src="                                               " width="120" height="10" alt="advertisement"><br /></div><IFRAME SRC="                                                 ;sz=300x250;ord=2006.01.04.15.10.49?" width="300" height="250" MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no BORDERCOLOR='#000000'>
+<SCRIPT language='JavaScript1.1' SRC="                                                 ;abr=!ie;sz=300x250;ord=2006.01.04.15.10.49?">
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://adlog.com.com/adlog/c/r=8401&s=641172&t=2006.01.04.15.10.49&o=1:&h=pi&p=&b=4&l=En_US&&site=6&pt=&nd=/http://ad.doubleclick.net/jump/N3220.tv/B1736744.4;abr=!ie4;abr=!ie5;sz=300x250;ord=2006.01.04.15.10.49?">
+<IMG SRC="                                                ;abr=!ie4;abr=!ie5;sz=300x250;ord=2006.01.04.15.10.49?" BORDER=0 WIDTH=300 HEIGHT=250 ALT="Click Here"></A>
+</NOSCRIPT>
+</IFRAME><IMG SRC="http://adlog.com.com/adlog/i/r=8401&s=641172&t=2006.01.04.15.10.49&o=1:&h=pi&p=&b=4&l=En_US&&site=6&pt=&nd=/http://i.i.com.com/cnwk.1d/Ads/common/dotclear.gif" HEIGHT="0" WIDTH="0" alt="">
+    </div>            <div id="recentforum" class="pod">
+    <div class="head"><h3>Community</h3></div>
+    <div class="body">
+            <div class="fr mr-10 di">
+            <span class="f-bold">Your Score:</span>
+            <br />
+            <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" id="tv_score_panel" width="205" height="22" align="middle"><param name="allowScriptAccess" value="sameDomain" /><param name="movie" value="                                                                                                                                                                                                             " /><param name="quality" value="high" /><param name="bgcolor" value="#0C1115" /><embed src="                                                                                                                                                                                                             " quality="high" bgcolor="#0C1115" width="205" height="22" swLiveConnect=true id="tv_score_panel" name="tv_score_panel" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" /></object>
+        </div>
+        <div class="ta-c pb-5 pl-5 pr-5" style="width:60px;background:url(                                                                   ) right no-repeat;">
+            <span class="f-bold f-lt-yellow" style="font-size:28px;">
+                                                        9.1
+                            </span>
+            <br />
+            
+                        <span class="f-small f-12 f-bold">Superb</span>
+            
+        </div>
+            <div class="pt-10 pb-10 cb" style="border-top:1px solid #0B427A;">
+    <div class="fl ml-10 di">
+        <a href="                                                                                 " class="btn_add_my_shows"></a>
+        <a href="                                                                      " class="btn_review_episode cl mt-10"></a>        <a href="                                                                           " class="btn_print_guide cl mt-10" target="_blank"></a>
+        <a href="                                                            " class="btn_contribute cl mt-10"></a>
+    </div>
+    <div class="fr" style="width:145px;">
+        <p>
+            <span class="f-bold f-big">Rank: </span> 
+                        <span class="f-lt-blue">n/a</span>
+            
+            <br />
+
+            <span class="f-small">Genre Rank:</span> 
+						<span class="f-lt-blue">n/a</span>
+                    </p>
+        <p>
+            <span class="f-bold">Profile Statistics</span>
+            <br />
+            <span class="f-small">People Tracking:</span> 
+            <span class="f-bold f-lt-blue">none</span>
+        </p>
+    </div>
+    <br class="cb" />
+</div>
+                        
+            </div>
+    <div class="foottext line">
+                    <a href="                                                                 ">All Reviews</a>&nbsp; | &nbsp;<a href="                                                                      ">Write a Review</a>                    </div>
+</div>                        
+        </div id="col-1">
+        </div id="col-wrap">
+        <img src='                                                                                                                                                                                                                                         ' height='1' width='1' /> 
+    </div>            
+                <div id="footer-wrap" class="cb">
+                    <p class="line1">
+                        <a href="                  ">Home</a> |
+                        <a href="                            ">All TV Shows</a> |
+                        <a href="                                 ">TV News</a> |
+                        <a href="                                  ">Pictures</a> |
+                        <a href="                        ">Videos</a> |
+                        <a href="                             ">TV Show Reviews</a> |
+                        <a href="                    ">TV Forums</a>
+                    </p>
+            
+            <div class="line2"><h1 style="padding:4px 0px 3px;"><font size="2"><span style="font-size:11px;">&nbsp;My Name Is Earl: White Lie Christmas - TV.com &nbsp;</span></font></h1></div>
+                                                    
+                    <div class="logo"></div>
+
+										<p class="top" style="padding-top:4px;">
+										<a href="                              ">About TV.com</a> | <a href="                                    ">Advertising Inquiries</a>
+										</p>
+                    
+                    <p class="top">
+                        Popular Shows: 
+                        <a href="                                                       ">American Idol</a> |                      
+                        <a href="                                              ">Lost</a> | 
+                        <a href="                                                              ">Desperate Housewives</a> |
+                        <a href="                                                   ">Smallville</a> | 
+                        <a href="                                                        ">The Apprentice</a> | 
+                        <a href="                                                 ">Survivor</a> | 
+                        <a href="                                               ">Charmed</a> | 
+                        <a href="                                                    ">Simpsons</a> | 
+                        <a href="                                              ">Alias</a> | 
+                        <a href="                                                       ">One Tree Hill</a> | 
+                        <a href="                                          ">CSI</a> | 
+                        <a href="                                           ">24</a>
+                    </p>
+                    
+                    <p class="top">
+                        Top Actors:
+                        <a href="                                                          ">Jennifer Garner</a> |
+                        <a href="                                                         ">Paris Hilton</a> |
+                        <a href="                                                        ">Eva Longoria</a> |
+                        <a href="                                                          ">Jennifer Aniston</a> |
+                        <a href="                                                           ">Pamela Anderson</a> |
+                        <a href="                                                       ">Katie Holmes</a>
+                    </p>
+                    <p class="top">
+                        Today on CNET:
+                            <a href="http://reviews.cnet.com/Music/2001-6450_7-0.html">MP3 Players</a> |
+                        <a href="http://reviews.cnet.com/Cell_phones/2001-3504_7-0.html">Cell Phones</a> |
+                        <a href="http://reviews.cnet.com/Digital_cameras/2001-6501_7-0.html">Digital Cameras</a> |
+                        <a href="http://reviews.cnet.com/Notebooks/2001-3121_7-0.html">Laptops</a> |
+                        <a href="http://reviews.cnet.com/Handhelds/2001-3127_7-0.html">PDAs</a> |
+                        <a href="http://reviews.cnet.com/4521-6531_7-5021436-3.html">Speakers</a> |
+                        <a href="http://reviews.cnet.com/Web_hosting/2001-6540_7-0.html">Web Hosting</a> |
+                        <a href="                         ">Overstock Clearance</a> |
+                        <a href="http://shopper.cnet.com/4520-5-6276184.html">Tech Bargains</a>
+                    </p>
+                    
+                    <p class="line3"><a href="http://www.bnet.com/?tag=tv.ft.no">BNET</a> | <a href="                                 ">CNET.com</a> | <a href="http://www.cnetchannel.com/?tag=tv.ft.no">CNET Channel</a> | <a href="http://www.download.com/?tag=tv.ft.no">CNET Download.com</a> | <a href="                                 ">CNET News.com</a> | <a href="http://reviews.cnet.com/?tag=tv.ft.no">CNET Reviews</a> | <a href="http://shopper.cnet.com/?tag=tv.ft.no">CNET Shopper.com</a> | <a href="http://www.computershopper.com/?tag=tv.ft.no">Computer Shopper</a></p>
+                    <p class="line4"><a href="http://www.cnetnetworks.com/advertise/properties/international.html?tag=tv.ft.no">International Media</a> | <a href="                                ">MP3.com</a> | <a href="                                     ">GameSpot</a> | <a href="                                    ">mySimon</a> | <a href="http://www.cnetnetworks.com/partnerships/?tag=tv.ft.no">Partnerships</a> | <a href="                                   ">Search.com</a> | <a href="http://www.techrepublic.com/?tag=tv.ft.no">TechRepublic</a> | <a href="                                     ">Webshots</a> | <a href="http://www.zdnet.com/?tag=tv.ft.no">ZDNet</a></p>
+                    <p class="line4"><a href="http://www.gamerankings.com/">Game Rankings</a> | <a href="                        ">GameFAQs</a> | <a href="                          ">Metacritic</a> | <a href="                      ">Wireless Gaming Review</a></p>
+                    
+                    <p class="copyright"><a href="http://www.cnetnetworks.com/editorial/copyright.html?tag=tv.ft.no">Copyright</a> &copy; 2006 CNET Networks, Inc. All Rights Reserved. <a href="http://www.cnetnetworks.com/editorial/privacy.html?tag=tv.ft.no">Privacy Policy</a> | <a href="http://www.cnetnetworks.com/editorial/terms.html?tag=tv.ft.no">Terms of Use</a><p class="about"><a href="http://www.cnetnetworks.com/aboutus/?tag=tv.ft.no">About CNET Networks</a> | <a href="http://www.cnetnetworks.com/careers/?tag=tv.ft.no">Jobs</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<SCRIPT SRC="http://surveys.cnet.com/html/surveys/964.js"></SCRIPT>
+
+<SCRIPT SRC="http://surveys.cnet.com/html/surveys/967.js"></SCRIPT>
+
+ 
+ 
+
+
+
+ 
+
+
+
+
+
+    <!-- gne_ads madison: 216.239.113.171 /html/RGROUP=8780/UA=Mozilla%2F4.0+%28compatible%3B+MSIE+6.0%3B+Windows+NT+5.1%3B+MyIE2%3B+SV1%3B+Maxthon%3B+.NET+CLR+1.0.3705%3B+.NET+CLR+1.1.4322%3B+.NET+CLR+2.0.50727%29/REMOTE_ADDR=66.57.114.6/HTTP_HOST=www.tv.com/GS_COOKIE=/MADCAPS=/MADCAPP=/HEADERS=OFF -->
+<!-- blank error ad --><img src="http://adlog.com.com/adlog/i/r=8780&s=501815&t=2006.01.04.15.10.50&o=1:&h=pi&p=&b=4&l=En_US&&site=6&pt=&nd=/http://i.i.com.com/cnwk.1d/Ads/common/dotclear.gif" HEIGHT="0" WIDTH="0" alt=""/>
+
+<div id="no_skin"></div>
+
+</body>
+</html>
+<!-- CACHED: 0/10.15.30.25 RENDER TIME: 0.152492 -->
