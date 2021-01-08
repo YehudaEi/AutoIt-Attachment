@@ -1,0 +1,109 @@
+#include <Array.au3>
+#include <GUIConstants.au3>
+#include <Color.au3>
+;Opt("GUICoordMode",1)
+Opt("GUIOnEventMode", 1)
+
+Dim $I=0
+Dim $J=0
+Dim $T=0
+Dim $PrevPageNo=1
+Dim $CurrentPageNo=1
+Dim $NextPageNo=1
+Dim $LastPage="N"
+Dim $CountEmpty = 0
+Dim $StartNo = 0
+Dim $NP = 0
+Dim $PP = 0
+Dim $EXE = 0
+
+Dim $RKN = ""
+Dim $RKD = ""
+Dim $Skip = ""
+$I = 0
+$J = 0
+
+Dim $RowDisplay[22]
+$RowDisplay[0] = 0
+$RowDisplay[1] = 55
+For $I = 2 To 20
+	$RowDisplay[$I] = $RowDisplay[$I-1] + 25
+Next
+
+Dim $Refresh = "Y"
+;If $Refresh = "Y" Then
+	;   $Refresh = "N"
+	   Create_Main_Window()
+;EndIf
+	GUISetState(@SW_SHOW)
+While 1
+    
+    ;GUISetState(@SW_SHOW)
+	 
+    Sleep(10)
+Wend   
+Func Create_Main_Window()
+	
+     $Main_Window = GUICreate("Tesing buttons", 850, 600)
+	 GUISetOnEvent($GUI_EVENT_CLOSE, "CC")
+;	 
+; Setup Headers
+;
+  $GUIRKN = GUICtrlCreateLabel ("Testing Header 1", 35,  15, 210)	; first cell 50 width
+  GUICtrlSetFont($GUIRKN, 14, 800, 0, "Arial Bold")
+  GUICtrlSetColor($GUIRKN,0x0000ff)    ; Blue
+  $GUIRDN = GUICtrlCreateLabel ("Testing Header 2", 315, 15, 400)
+  GUICtrlSetFont($GUIRDN, 14, 800, 0, "Arial Bold")
+  GUICtrlSetColor($GUIRDN,0x0000ff)    ; Blue
+  ;
+; Setup Main Data Lines
+;
+  SETUP_Main_Data_Lines()
+;
+; Setup Footers(Buttons)
+;
+  $NP = GUICtrlCreateButton ("NewPage",  700, $RowDisplay[19]+28, 100, 35)
+  GUICtrlSetState($NP, $GUI_ENABLE)
+  GUISetOnEvent($NP, "NewPage")
+  
+  $PP = GUICtrlCreateButton ("PrevPage",  50, $RowDisplay[19]+28, 100, 35)
+  GUICtrlSetState($PP, $GUI_ENABLE)
+  GUISetOnEvent($PP, "PrevPage")
+  
+  ;If $CurrentPageNo = 1 Then
+	; GUICtrlDelete($PP)
+	 
+ ;Else
+	; If $LastPage = "Y" Then
+		;GUICtrlDelete($NP)
+	    
+    ; EndIf
+ ;EndIf   
+ ;GUICtrlCreateButton ("Exit",  275, $RowDisplay[19]+28, 100, 35)
+ $EXE = GUICtrlCreateButton ("Proc",  290, $RowDisplay[19]+28, 225, 35)
+ GUICtrlSetState($EXE, $GUI_ENABLE)
+ GUISetOnEvent($EXE, "Proc")
+ ;GUISetState(@SW_SHOW)
+EndFunc
+Func SETUP_Main_Data_Lines()
+
+$J = 0
+	For $I = ( ( ($CurrentPageNo - 1) * 18) + 1)  To $CurrentPageNo + 18
+		$J = $J + 1
+        GUICtrlCreateLabel ("Testing Label # " & String($I),   40, $RowDisplay[$J], 275)	; first cell 50 width
+	    GUICtrlCreateLabel ("Testing Row   # " & String($J),  315, $RowDisplay[$J], 350)
+	Next
+EndFunc
+
+Func NewPage()
+    MsgBox(0, "Next Page", "OK!")
+EndFunc
+Func PrevPage()
+    MsgBox(0, "Previous Page", "OK!")
+EndFunc
+Func Proc()
+    MsgBox(0, "Execute", "OK!")
+EndFunc
+Func CC()
+    Exit
+EndFunc
