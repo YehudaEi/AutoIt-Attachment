@@ -1,0 +1,150 @@
+;=============================================================================================
+;
+;Hello there! Here's the deal:
+;
+;	The first section must be called "groups". Put your software-profiled groups 
+;	in this section, like this: 
+;		
+;			[Groups]
+;			group1 = Call Center
+;			group2 = Finance
+;			group3 = Auditing
+;			group4 = Operations
+;
+;
+;
+;	
+;	All of the other sections represent the individual programs and scripts you'll
+;	be running from the Software Loader. Each section needs a "location" and "type".
+;	It can also have groups. They look like:
+;
+;			[Qfiniti Agent Monitor]
+;			Location=\\129.1.1.89\Installs\Qfiniti.bat
+;			Type=Unmanaged
+;			Call Center=yes
+;
+;
+;		"Location" is where the script or program is located. Make sure it's
+;		an unattended installation! Otherwise this whole thing is pretty pointless.
+;
+;		"Type" tells the Software Loader which section to put the checkbox in. This
+;		has no other purpose but to keep things seperated and easy to read, and to
+;		remind you not to go around installing License-Managed software willy-nilly.
+;
+;		Groups are added to each section to say that the program should be installed
+;		by default for each member of that particular group. For example, Qfiniti Agent
+;		Monitor should be installed by default on Call Center PCs, so an entry is added
+;		that says " Call Center = yes ". Now when the "Call Center" radio button is
+;		selected, this program will be automatically checked. You can make a program
+;		part of many different groups, or even no groups, if desired.
+;
+;
+;
+;								-Jesse
+;	
+;=============================================================================================
+
+
+
+[Groups]
+group1 = Call Center
+group2 = Call Center Managers
+group3 = Operations
+group4 = My Gonads
+
+
+
+
+[Qfiniti Agent Monitor]
+Location=\\softwareserver\installs\qfiniti.bat
+Type=unmanaged
+Call Center=yes
+
+
+[D-Rom Viewer]
+Location=\\softwareserver\installs\dromviewer.bat
+Type=unmanaged
+Operations=yes
+
+
+[Adobe Writer 5]
+Location=\\softwareserver\installs\adobewriter5.bat
+Type=Managed
+
+
+[Connections Plugin]
+Location=\\softwareserver\installs\connections.bat
+Type=Unmanaged
+
+[MS Office 2000]
+Location=\\softwareserver\installs\office2000.bat
+Type=managed
+
+[MS Outlook 2000]
+Location=\\softwareserver\installs\outlook2000.bat
+Type=managed
+
+[DTLP Icon]
+Location=\\softwareserver\installs\dtlpicon.bat
+Type=Unmanaged
+Call Center = yes
+
+[Adobe Reader 7]
+Location=\\softwareserver\installs\adobereader7.bat
+Type=Unmanaged
+
+[Ecora Agent]
+Location=\\softwareserver\installs\ecoraagent.bat
+Type=Unmanaged
+
+[DirectX 9.0c]
+Location=\\softwareserver\installs\directx.bat
+Type=Unmanaged
+
+[.NET Framework 1.1]
+Location=\\softwareserver\installs\dotnet11.bat
+Type=Unmanaged
+
+[IRMA]
+Location=\\softwareserver\installs\IRMA.bat
+Type=Unmanaged
+
+[ITC Stone Sans font]
+Location=\\softwareserver\installs\ITCStoneSans.bat
+Type=Unmanaged
+
+[McAfee 8.0i]
+Location=\\softwareserver\installs\mcafee80i.bat
+Type=Unmanaged
+
+[VNC 4.1.1]
+Location=\\softwareserver\installs\VNC.bat
+Type=Unmanaged
+
+[Xerox]
+Location=\\softwareserver\installs\printers\Xerox.bat
+Type=Printer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
