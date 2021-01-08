@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<InputData>
+               <Program>
+ 		<Exe>C:\Program Files\Microsoft Office\OFFICE11</Exe>
+                </Program>	
+                  <System>
+		
+		<To>Vasudeva.kamboja@aztecsoft.com</To>
+		<Cc>Silpa.guddanti@aztecsoft.com </Cc>
+		<Bcc>Prasad.poluri@satyam.com</Bcc>
+		<Subject>Test mail</Subject>
+		<Information>This is test mail</Information>
+	</System>
+	
+</InputData>
