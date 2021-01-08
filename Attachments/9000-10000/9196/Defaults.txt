@@ -1,0 +1,15 @@
+[Windows]
+Window=
+[Sleeps]
+Sleep1=
+Sleep2=
+Sleep3=
+Sleep4=
+Sleep5=
+[Sends]
+Send1=
+Send2=
+Send3=
+Send4=
+Send5=
+Send6=
