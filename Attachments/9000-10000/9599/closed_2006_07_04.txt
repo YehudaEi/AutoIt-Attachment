@@ -1,0 +1,70 @@
+Name: Jeff
+Phone Number: *****
+Location: *****
+Issue:
+        Has new rep that's taking over new territory 
+        and he has laptop and cell phone that will be 
+        given to him, but he wanted to know if he needs 
+        to send it to us.
+        The laptop belonged to previous rep Mike *****. 
+        The new rep is Spencer ***** and he starts 
+        on June 26th.
+ 
+ 
+Name: Greg
+Phone Number: *****    x231
+Location: *****
+Issue:
+        he is not able to log onto the network and his 
+        icons have dissappeared
+ 
+ 
+Name: Ellen
+Phone Number: *****    x255
+Location: *****
+Issue:
+        06/30/2006 12:52 PM
+        	
+        	 To:
+        	 cc: 
+        	 Subject: Re: SEMS 13081
+        Anna, can you pull the item from the credit 
+        section but add in a Labor line for $325.00.
+        Thanks
+        
+        	Ellen
+        	06/30/2006 10:47 AM
+        		 
+        		 To: 
+        		 cc: 
+        		 Subject: SEMS 13081
+        When Chuck ***** created SEMS 13081, it 
+        was thought that the complaint replacement tile 
+        was going to be all that was needed.  So, this 
+        was entered with $0 to credit.  However, now 
+        there's a small labor bill, too.
+        Can this be fixed so that it will route to Sandy 
+        when Sales completes approvals?
+        Thanks,
+         
+ 
+Name: Pamela
+Ext: 3003
+Location: *****
+Issue:
+        Subject: PO approval - *****
+        Andrea,
+        I would like Jerry's PO approval removed.  In the 
+        end, I would like the PO approval setup to look 
+        like the attached (proposal side).  Please confirm 
+        that I should be making this request of you.
+         << File: PO Approval Matrix.xls >>  
+        Also, the plant says that it cannot use approval 
+        route codes VEGAS09 and VEGAS10, and I 
+        would like to find out if they are inactive or 
+        something.  Any idea who I should direct this 
+        request to? 
+ 
+ 
+-----------------------------------
+ 
