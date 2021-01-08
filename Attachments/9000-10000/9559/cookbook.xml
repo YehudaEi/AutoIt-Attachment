@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<DATAPACKET Version="2.0">
+    <METADATA>
+        <FIELDS>
+            <FIELD attrname="name" fieldtype="string" WIDTH="30"/>
+            <FIELD attrname="crystal" fieldtype="string" WIDTH="20"/>
+            <FIELD attrname="item1" fieldtype="string" WIDTH="20"/>
+            <FIELD attrname="qty1" fieldtype="i4"/>
+            <FIELD attrname="item2" fieldtype="string" WIDTH="20"/>
+            <FIELD attrname="qty2" fieldtype="i4"/>
+            <FIELD attrname="item3" fieldtype="string" WIDTH="20"/>
+            <FIELD attrname="qty3" fieldtype="i4"/>
+            <FIELD attrname="item4" fieldtype="string" WIDTH="20"/>
+            <FIELD attrname="qty4" fieldtype="i4"/>
+            <FIELD attrname="item5" fieldtype="string" WIDTH="20"/>
+            <FIELD attrname="qty5" fieldtype="i4"/>
+            <FIELD attrname="item6" fieldtype="string" WIDTH="20"/>
+            <FIELD attrname="qty6" fieldtype="i4"/>
+            <FIELD attrname="item7" fieldtype="string" WIDTH="20"/>
+            <FIELD attrname="qty7" fieldtype="i4"/>
+            <FIELD attrname="item8" fieldtype="string" WIDTH="20"/>
+            <FIELD attrname="qty8" fieldtype="i4"/>
+        </FIELDS>
+        <PARAMS/>
+    </METADATA>
+    <ROWDATA>
+            <ROW name="Carrot Broth" crystal="Water Crystal" item1="San d'Or. Carrot" qty1="4"/>
+            <ROW name="Sliced Sardine" crystal="Wind Crystal" item1="Bastore Sardine" qty1="1"/>
+			<ROW name="Selbina Butter" crystal="Ice Crystal" item1="Selbina Milk" qty1="1" item2="Rock Salt" qty2="1"/>
+			<ROW name="Baked Popoto" crystal="Fire Crystal" item1="Popoto" qty1="1" item2="Selbina Butter" qty2="1"/>                
+			<ROW name="Insect Ball" crystal="Earth Crystal" item1="Distilled Water" qty1="1" item2="Millioncorn" qty2="1" item3="Little Worm" qty3="1"/>
+			<ROW name="Pineapple Juice" crystal="Water Crystal" item1="Kazham Pine." qty1="2"/>
+			<ROW name="Fish Broth" crystal="Water Crystal" item1="Bastore Sardine" qty1="4"/>
+			<ROW name="Pie Dough" crystal="Water Crystal" item1="Selbina Butter" qty1="1" item2="Rock Salt" qty2="1" item3="San d'Or Flour" qty3="0"/>
+			<ROW name="Apple Pie" crystal="Fire Crystal" item1="Pie Dough" qty1="1" item2="Cinnamon" qty2="1" item3="Maple Sugar" qty3="1" item4="Lizard Egg" qty4="1" item5="Faerie Apple" qty5="1"/>
+			<ROW name="Apple Pie2" crystal="Fire Crystal" item1="Pie Dough" qty1="1" item2="Cinnamon" qty2="1" item3="Maple Sugar" qty3="1" item4="Bird Egg" qty4="1" item5="Faerie Apple" qty5="1"/>
+			<ROW name="Batagreen Saute" crystal="Fire Crystal" item1="Batagreens" qty1="1" item2="Selbina Butter" qty2="1"/>
+			<ROW name="Stone Cheese" crystal="Dark Crystal" item1="Selbina Butter" qty1="1" item2="Rock Salt" qty2="1"/>
+			<ROW name="Colored Egg" crystal="Fire Crystal" item1="San d'Or. Carrot" qty1="1" item2="La Theine Cbg." qty2="1" item3="Distilled Water" qty3="1" item4="Lizard Egg" qty4="1"/>
+			<ROW name="Colored Egg2" crystal="Fire Crystal" item1="San d'Or. Carrot" qty1="1" item2="La Theine Cbg." qty2="1" item3="Distilled Water" qty3="1" item4="Bird Egg" qty4="1"/>
+			<ROW name="Rarab Meatball" crystal="Fire Crystal" item1="San d'Or. Flour" qty1="0" item2="Stone Cheese" qty2="1" item3="Black Pepper" qty3="1" item4="Mhaura Garlic" qty4="1" item5="Rock Salt" qty5="1" item6="Distilled Water" qty6="1" item7="Bird Egg" qty7="1" item8="Hare Meat" qty8="1"/>
+			<ROW name="Chocomilk" crystal="Fire Crystal" item1="Kukuru Bean" qty1="4" item2="Selbina Milk" qty2="1" item3="Maple Sugar" qty3="1" item4="Distilled Water" qty4="1" item5="Honey" qty5="1"/>
+			<ROW name="Chamomile Tea" crystal="Fire Crystal" item1="Chamomile" qty1="2" item2="Distilled Water" qty2="1" item3="Honey" qty3="1"/>
+			<ROW name="Pumpkin Pie" crystal="Fire Crystal" item1="Selbina Milk" qty1="1" item2="Bird Egg" qty2="1" item3="Selbina Butter" qty3="1" item4="Pie Dough" qty4="1" item5="Maple Sugar" qty5="1" item6="Cinnamon" qty6="1" item7="Ogre Pumpkin" qty7="1" item8="Distilled Water" qty8="1"/>
+			<ROW name="Rolanberry Pie" crystal="Fire Crystal" item1="San d'Or. Flour" qty1="0" item2="Gelatin" qty2="1" item3="Selbina Milk" qty3="1" item4="Pie Dough" qty4="1" item5="Maple Sugar" qty5="1" item6="Rolanberry" qty6="0" item7="Bird Egg" qty7="1"/>
+			<ROW name="Tonosama Rice Ball" crystal="Fire Crystal" item1="Tarutaru Rice" qty1="1" item2="Pamtam Kelp" qty2="1" item3="Flint Caviar" qty3="1" item4="Rock Salt" qty4="1" item5="Distilled Water" qty5="1"/>
+			<ROW name="Sweet Rice Cake" crystal="Fire Crystal" item1="Sticky Rice" qty1="1" item2="Maple Sugar" qty2="1" item3="Cinnamon" qty3="1" item4="Gardenia Seed" qty4="1" item5="Fresh Mugwort" qty5="1" item6="Distilled Water" qty6="1"/>
+			<ROW name="Cursed Soup" crystal="Water Crystal" item1="Kitron" qty1="1" item2="Persikos" qty2="1" item3="Royal Jelly" qty3="0" item4="Distilled Water" qty4="1" item5="Honey" qty5="1"/>
+    </ROWDATA>
+</DATAPACKET>
