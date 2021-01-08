@@ -1,0 +1,80 @@
+<!-- saved from url=(0022)http://internet.e-mail -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>insert</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=UTF-8"></META>
+<SCRIPT language=javascript type=text/javascript>
+
+function addItems(fromSelect, toSelect)
+{
+  for (var i = 0; i < fromSelect.length;++i){
+	if (fromSelect.options[i].selected)
+	{
+		newItem = new Option(fromSelect.options[i].text, 							fromSelect.options[i].value,false, false);
+		toSelect.options[toSelect.options.length] = newItem;
+		fromSelect.options[i--] = null;
+	}
+  }
+}
+</SCRIPT>
+
+
+
+
+<meta name="NetsparkQuiltingResult" total-length="2277" removed="33" rules-found="w3123,w6774,w2341,w2645,w240,w3583,w27799,r5077s52p3,w27800,r5076s101p1,w73,w3433,w3435,w2707" />
+</HEAD>
+<BODY>
+<FORM name=main_form onsubmit="buildItems('AVAIL_CATEGORIES','AVAIL_C_VALS'); buildItems('CATEGORIES','C_VALS');method=post encType=multipart/form-data>
+<INPUT type=hidden name=AVAIL_C_VALS></INPUT>
+<INPUT type=hidden name=C_VALS></INPUT>
+
+<TABLE border="1">
+  
+  <TR>
+    <TD>choose category</TD>
+  </TR>
+</TABLE>
+  
+
+
+<TABLE align="center" width=400>
+  
+  <TR align="center">
+    <TD>Available</TD>
+    <TD></TD>
+    <TD>Selected</TD>
+  </TR>
+  <TR>
+   <TD width="40%">
+<SELECT class=wide multiple size=7 name=AVAIL_CATEGORIES>
+<OPTION value=23>3D - Action</OPTION>
+<OPTION value=9>Action</OPTION>
+<OPTION value=8>Arcade</OPTION>
+<OPTION value=27>Casino &amp; Bar</OPTION>
+
+<OPTION value=11>Classics</OPTION>
+<OPTION value=10>Logic</OPTION>
+<OPTION value=18>Multiplayer</OPTION>
+<OPTION value=29>Top downloads</OPTION>
+<OPTION value=28>News</OPTION>
+<OPTION value=12>Other</OPTION>
+<OPTION value=14>Lord Of The Rings</OPTION>
+<OPTION value=13>Sports</OPTION>
+<OPTION value=24>Strategy</OPTION>
+<OPTION value=22>Superstar</OPTION>
+<OPTION value=16>Utilities</OPTION>
+<OPTION value=20>Christmas</OPTION>
+<OPTION value=26>Racing</OPTION>
+</SELECT>
+    </TD>
+    <TD width="20%">
+	<INPUT class=wide onclick=addItems(AVAIL_CATEGORIES,CATEGORIES); type=button value=Add></INPUT>
+	<INPUT class=wide onclick="addItems(CATEGORIES, AVAIL_CATEGORIES);" type=button value=Remove></INPUT>
+    </TD>
+    <TD width="40%" align="center">
+	<SELECT class=wide multiple size=7 name=CATEGORIES></SELECT>
+    </TD>
+    </TR>
+</TABLE>
+</FORM></BODY></HTML>
