@@ -1,0 +1,931 @@
+-----------------
+05/10/2006 10:54:34 starting the log 
+-----------------
+05/10/2006 10:54:34 finding the name of the configuration file 
+05/10/2006 10:54:34 the name of the configuration file is: config_users.xml
+05/10/2006 10:54:34 opening the configuration file 
+05/10/2006 10:54:34 the configuration file was opened 
+05/10/2006 10:54:34 finding the setup values from the configuration file 
+05/10/2006 10:54:34 setup values from the configuration file found 
+05/10/2006 10:54:34 setting the mouse position
+05/10/2006 10:54:35 starting to execute step 1
+	action name : open_application : Internet Explorer
+05/10/2006 10:54:35 ---------------------------
+05/10/2006 10:54:36 lgamr_users.au3 - SciTE [1 of 2]
+Source
+;
+
+#include <alexFunctions.au3>
+
+
+; all the variables must be declared before they are used
+AutoItSetOption ("MustDeclareVars", 1)
+; set the delay time for the key strokes simulations
+AutoItSetOption ("SendKeyDelay", 50)
+
+; declaring the variables
+Dim $_XmlDomDoc, $_MyErrorEvent, $_XmlDomDocRoot
+Dim $_XmlDomDocSteps, $_XmlDomDocNodesList, $_XmlDomDocElement, $_XmlDomDocSetup  
+Dim $_ConfigFile, $_LogFile, $_WebSiteAddress, $_Username, $_Password, $_DefaultPage ; $_WriteFile
+Dim $_LogFileDesc, $_SetupValues
+Dim $_PageText, $_TempLogDesc
+
+
+; initiating the error handler
+$_MyErrorEvent = ObjEvent ("AutoIt.error", "funcErrorHandler")
+
+; creating the XML Document object
+$_XmlDomDoc = ObjCreate ("Msxml2.DOMDocument.4.0")
+
+;opening the temporary log file 
+$_TempLogDesc = FileOpen (@WorkingDir & "/templog.txt", 2)
+If $_TempLogDesc == -1 Then
+    MsgBox (0, "script error message", "the temporary log file could not be created")
+    Exit
+EndIf
+; writing in the log file for the first time 
+writeInLog ($_TempLogDesc, "starting the log ", 0)    
+
+writeInLog ($_TempLogDesc, "finding the name of the configuration file ", 1)
+
+; checking if the configuration file is passed as an argument
+; if the number of command line parameters is not zero, then the first parameter should be the configuration file 
+If $CmdLine[0] == 1 Then
+    $_ConfigFile = $CmdLine[1]
+Else
+    $_ConfigFile = "config_users.xml"
+EndIf
+
+writeInLog ($_TempLogDesc, "the name of the configuration file is: " & $_ConfigFile, 1)
+
+;asynchronous download not permitted
+$_XmlDomDoc.async = false
+
+writeInLog ($_TempLogDesc, "opening the configuration file ", 1)
+
+; opening the configuration file
+$_XmlDomDoc.load ($_ConfigFile)
+
+; checking if the file was well loaded
+If $_XmlDomDoc.parseError.errorCode <> 0 Then 
+    writeInLog ($_TempLogDesc, $_XmlDomDoc.parseError.reason & @TAB & _
+                     "error line number: " & $_XmlDomDoc.parseError.line & @CRLF & @TAB & _
+                     "error line: " & StringStripWS ($_XmlDomDoc.parseError.srcText, 1), 1 _
+            )
+    Exit 
+EndIf
+
+writeInLog ($_TempLogDesc, "the configuration file was opened ", 1)
+
+; finding out the root element of the xml file
+$_XmlDomDocRoot = $_XmlDomDoc.documentElement
+
+; finding out if the root element has children
+If ($_XmlDomDocRoot.hasChildNodes) Then 
+    ; if the children exist, then select each one of them 
+    ; finding the element with the test setup information
+    $_XmlDomDocSetup = $_XmlDomDocRoot.firstChild
+
+    ; and then finding the element with the test steps
+    $_XmlDomDocSteps = $_XmlDomDocRoot.lastChild
+Else
+    writeInLog ($_TempLogDesc, "the root element has no children", 1)
+    writeInLog ($_TempLogDesc, "finishing the script ", 0)  
+    Exit
+EndIf
+
+writeInLog ($_TempLogDesc, "finding the setup values from the configuration file ", 1)
+
+; finding the setup parameters
+$_SetupValues = getSetupParameters ($_XmlDomDocSetup, $_XmlDomDocSetup.childNodes.length)
+If IsArray ($_SetupValues) Then
+   $_LogFile = $_SetupValues[0]
+#cs
+    $_WebSiteAddress = $_SetupValues[1]
+   $_Username = $_SetupValues[2]
+   $_Password = $_SetupValues[3]
+   $_DefaultPage = $_SetupValues[4]
+#ce
+Else
+   writeInLog ($_TempLogDesc, "there is no information in the setup section of the configuration file", 1)
+   writeInLog ($_TempLogDesc, "finishing the script ", 0)    
+   Exit
+EndIf
+
+writeInLog ($_TempLogDesc, "setup values from the configuration file found ", 1)
+
+; closing the temp log file 
+If FileClose ($_TempLogDesc) == 0 Then
+    MsgBox (0, "script error message", "the temporary file handle is invalid. the file could not be closed")
+    Exit
+EndIf
+    
+; copy the content of the temporary log file to the log file from the configuration file 
+If fileToFile (@WorkingDir & "/templog.txt", $_LogFile.text) == 0 Then
+    MsgBox (0, "script error message", "the temporary log could not be moved to the log file")
+    Exit
+EndIf
+
+; opening the log file 
+$_LogFileDesc = FileOpen ($_LogFile.text, 9)
+; if the log file cannot be opened/created, then the script will exit
+If $_LogFileDesc == -1 Then
+    MsgBox (0, "script error message", "the log file could not be opened")
+    Exit
+EndIf
+
+writeInLog ($_LogFileDesc, "setting the mouse position", 1)
+
+; puts the mouse to a position where nothing happens :) 
+MouseMove (0, 600)
+
+
+; executing the test steps
+execTestSteps ($_XmlDomDocSteps, $_LogFileDesc)
+
+Sleep (3000)
+
+; closing the Internet Explorer window
+;Send ("!{F4}")
+
+writeInLog ($_TempLogDesc, "ending the log ", 0)    
+
+; closing the log file 
+FileClose ($_LogFileDesc)
+$_XmlDomDoc = 0
+
+;===============================================================================
+;
+; Description:      
+; Syntax:           
+; Parameter(s):     
+; Requirement(s):   
+; Return Value(s):  On Success - 
+;                   On Failure - 
+; Author(s):        Alexandru
+; Note(s):          
+;
+;===============================================================================
+
+
+>C:\program files\autoit3\beta\autoit3.exe "D:\alex\autoit\lgamr_users.au3"
+>Exit code: 0
+>C:\program files\autoit3\beta\autoit3.exe "D:\alex\autoit\lgamr_users.au3"
+
+Tab
+ line 1, column 1 (INS) (CR+LF)  -  0 chars selected
+0
+0	0
+05/10/2006 10:54:37 lgamr_users.au3 - SciTE [1 of 2]
+Source
+;
+
+#include <alexFunctions.au3>
+
+
+; all the variables must be declared before they are used
+AutoItSetOption ("MustDeclareVars", 1)
+; set the delay time for the key strokes simulations
+AutoItSetOption ("SendKeyDelay", 50)
+
+; declaring the variables
+Dim $_XmlDomDoc, $_MyErrorEvent, $_XmlDomDocRoot
+Dim $_XmlDomDocSteps, $_XmlDomDocNodesList, $_XmlDomDocElement, $_XmlDomDocSetup  
+Dim $_ConfigFile, $_LogFile, $_WebSiteAddress, $_Username, $_Password, $_DefaultPage ; $_WriteFile
+Dim $_LogFileDesc, $_SetupValues
+Dim $_PageText, $_TempLogDesc
+
+
+; initiating the error handler
+$_MyErrorEvent = ObjEvent ("AutoIt.error", "funcErrorHandler")
+
+; creating the XML Document object
+$_XmlDomDoc = ObjCreate ("Msxml2.DOMDocument.4.0")
+
+;opening the temporary log file 
+$_TempLogDesc = FileOpen (@WorkingDir & "/templog.txt", 2)
+If $_TempLogDesc == -1 Then
+    MsgBox (0, "script error message", "the temporary log file could not be created")
+    Exit
+EndIf
+; writing in the log file for the first time 
+writeInLog ($_TempLogDesc, "starting the log ", 0)    
+
+writeInLog ($_TempLogDesc, "finding the name of the configuration file ", 1)
+
+; checking if the configuration file is passed as an argument
+; if the number of command line parameters is not zero, then the first parameter should be the configuration file 
+If $CmdLine[0] == 1 Then
+    $_ConfigFile = $CmdLine[1]
+Else
+    $_ConfigFile = "config_users.xml"
+EndIf
+
+writeInLog ($_TempLogDesc, "the name of the configuration file is: " & $_ConfigFile, 1)
+
+;asynchronous download not permitted
+$_XmlDomDoc.async = false
+
+writeInLog ($_TempLogDesc, "opening the configuration file ", 1)
+
+; opening the configuration file
+$_XmlDomDoc.load ($_ConfigFile)
+
+; checking if the file was well loaded
+If $_XmlDomDoc.parseError.errorCode <> 0 Then 
+    writeInLog ($_TempLogDesc, $_XmlDomDoc.parseError.reason & @TAB & _
+                     "error line number: " & $_XmlDomDoc.parseError.line & @CRLF & @TAB & _
+                     "error line: " & StringStripWS ($_XmlDomDoc.parseError.srcText, 1), 1 _
+            )
+    Exit 
+EndIf
+
+writeInLog ($_TempLogDesc, "the configuration file was opened ", 1)
+
+; finding out the root element of the xml file
+$_XmlDomDocRoot = $_XmlDomDoc.documentElement
+
+; finding out if the root element has children
+If ($_XmlDomDocRoot.hasChildNodes) Then 
+    ; if the children exist, then select each one of them 
+    ; finding the element with the test setup information
+    $_XmlDomDocSetup = $_XmlDomDocRoot.firstChild
+
+    ; and then finding the element with the test steps
+    $_XmlDomDocSteps = $_XmlDomDocRoot.lastChild
+Else
+    writeInLog ($_TempLogDesc, "the root element has no children", 1)
+    writeInLog ($_TempLogDesc, "finishing the script ", 0)  
+    Exit
+EndIf
+
+writeInLog ($_TempLogDesc, "finding the setup values from the configuration file ", 1)
+
+; finding the setup parameters
+$_SetupValues = getSetupParameters ($_XmlDomDocSetup, $_XmlDomDocSetup.childNodes.length)
+If IsArray ($_SetupValues) Then
+   $_LogFile = $_SetupValues[0]
+#cs
+    $_WebSiteAddress = $_SetupValues[1]
+   $_Username = $_SetupValues[2]
+   $_Password = $_SetupValues[3]
+   $_DefaultPage = $_SetupValues[4]
+#ce
+Else
+   writeInLog ($_TempLogDesc, "there is no information in the setup section of the configuration file", 1)
+   writeInLog ($_TempLogDesc, "finishing the script ", 0)    
+   Exit
+EndIf
+
+writeInLog ($_TempLogDesc, "setup values from the configuration file found ", 1)
+
+; closing the temp log file 
+If FileClose ($_TempLogDesc) == 0 Then
+    MsgBox (0, "script error message", "the temporary file handle is invalid. the file could not be closed")
+    Exit
+EndIf
+    
+; copy the content of the temporary log file to the log file from the configuration file 
+If fileToFile (@WorkingDir & "/templog.txt", $_LogFile.text) == 0 Then
+    MsgBox (0, "script error message", "the temporary log could not be moved to the log file")
+    Exit
+EndIf
+
+; opening the log file 
+$_LogFileDesc = FileOpen ($_LogFile.text, 9)
+; if the log file cannot be opened/created, then the script will exit
+If $_LogFileDesc == -1 Then
+    MsgBox (0, "script error message", "the log file could not be opened")
+    Exit
+EndIf
+
+writeInLog ($_LogFileDesc, "setting the mouse position", 1)
+
+; puts the mouse to a position where nothing happens :) 
+MouseMove (0, 600)
+
+
+; executing the test steps
+execTestSteps ($_XmlDomDocSteps, $_LogFileDesc)
+
+Sleep (3000)
+
+; closing the Internet Explorer window
+;Send ("!{F4}")
+
+writeInLog ($_TempLogDesc, "ending the log ", 0)    
+
+; closing the log file 
+FileClose ($_LogFileDesc)
+$_XmlDomDoc = 0
+
+;===============================================================================
+;
+; Description:      
+; Syntax:           
+; Parameter(s):     
+; Requirement(s):   
+; Return Value(s):  On Success - 
+;                   On Failure - 
+; Author(s):        Alexandru
+; Note(s):          
+;
+;===============================================================================
+
+
+>C:\program files\autoit3\beta\autoit3.exe "D:\alex\autoit\lgamr_users.au3"
+>Exit code: 0
+>C:\program files\autoit3\beta\autoit3.exe "D:\alex\autoit\lgamr_users.au3"
+
+Tab
+ line 1, column 1 (INS) (CR+LF)  -  0 chars selected
+1000
+0	0
+05/10/2006 10:54:38 lgamr_users.au3 - SciTE [1 of 2]
+Source
+;
+
+#include <alexFunctions.au3>
+
+
+; all the variables must be declared before they are used
+AutoItSetOption ("MustDeclareVars", 1)
+; set the delay time for the key strokes simulations
+AutoItSetOption ("SendKeyDelay", 50)
+
+; declaring the variables
+Dim $_XmlDomDoc, $_MyErrorEvent, $_XmlDomDocRoot
+Dim $_XmlDomDocSteps, $_XmlDomDocNodesList, $_XmlDomDocElement, $_XmlDomDocSetup  
+Dim $_ConfigFile, $_LogFile, $_WebSiteAddress, $_Username, $_Password, $_DefaultPage ; $_WriteFile
+Dim $_LogFileDesc, $_SetupValues
+Dim $_PageText, $_TempLogDesc
+
+
+; initiating the error handler
+$_MyErrorEvent = ObjEvent ("AutoIt.error", "funcErrorHandler")
+
+; creating the XML Document object
+$_XmlDomDoc = ObjCreate ("Msxml2.DOMDocument.4.0")
+
+;opening the temporary log file 
+$_TempLogDesc = FileOpen (@WorkingDir & "/templog.txt", 2)
+If $_TempLogDesc == -1 Then
+    MsgBox (0, "script error message", "the temporary log file could not be created")
+    Exit
+EndIf
+; writing in the log file for the first time 
+writeInLog ($_TempLogDesc, "starting the log ", 0)    
+
+writeInLog ($_TempLogDesc, "finding the name of the configuration file ", 1)
+
+; checking if the configuration file is passed as an argument
+; if the number of command line parameters is not zero, then the first parameter should be the configuration file 
+If $CmdLine[0] == 1 Then
+    $_ConfigFile = $CmdLine[1]
+Else
+    $_ConfigFile = "config_users.xml"
+EndIf
+
+writeInLog ($_TempLogDesc, "the name of the configuration file is: " & $_ConfigFile, 1)
+
+;asynchronous download not permitted
+$_XmlDomDoc.async = false
+
+writeInLog ($_TempLogDesc, "opening the configuration file ", 1)
+
+; opening the configuration file
+$_XmlDomDoc.load ($_ConfigFile)
+
+; checking if the file was well loaded
+If $_XmlDomDoc.parseError.errorCode <> 0 Then 
+    writeInLog ($_TempLogDesc, $_XmlDomDoc.parseError.reason & @TAB & _
+                     "error line number: " & $_XmlDomDoc.parseError.line & @CRLF & @TAB & _
+                     "error line: " & StringStripWS ($_XmlDomDoc.parseError.srcText, 1), 1 _
+            )
+    Exit 
+EndIf
+
+writeInLog ($_TempLogDesc, "the configuration file was opened ", 1)
+
+; finding out the root element of the xml file
+$_XmlDomDocRoot = $_XmlDomDoc.documentElement
+
+; finding out if the root element has children
+If ($_XmlDomDocRoot.hasChildNodes) Then 
+    ; if the children exist, then select each one of them 
+    ; finding the element with the test setup information
+    $_XmlDomDocSetup = $_XmlDomDocRoot.firstChild
+
+    ; and then finding the element with the test steps
+    $_XmlDomDocSteps = $_XmlDomDocRoot.lastChild
+Else
+    writeInLog ($_TempLogDesc, "the root element has no children", 1)
+    writeInLog ($_TempLogDesc, "finishing the script ", 0)  
+    Exit
+EndIf
+
+writeInLog ($_TempLogDesc, "finding the setup values from the configuration file ", 1)
+
+; finding the setup parameters
+$_SetupValues = getSetupParameters ($_XmlDomDocSetup, $_XmlDomDocSetup.childNodes.length)
+If IsArray ($_SetupValues) Then
+   $_LogFile = $_SetupValues[0]
+#cs
+    $_WebSiteAddress = $_SetupValues[1]
+   $_Username = $_SetupValues[2]
+   $_Password = $_SetupValues[3]
+   $_DefaultPage = $_SetupValues[4]
+#ce
+Else
+   writeInLog ($_TempLogDesc, "there is no information in the setup section of the configuration file", 1)
+   writeInLog ($_TempLogDesc, "finishing the script ", 0)    
+   Exit
+EndIf
+
+writeInLog ($_TempLogDesc, "setup values from the configuration file found ", 1)
+
+; closing the temp log file 
+If FileClose ($_TempLogDesc) == 0 Then
+    MsgBox (0, "script error message", "the temporary file handle is invalid. the file could not be closed")
+    Exit
+EndIf
+    
+; copy the content of the temporary log file to the log file from the configuration file 
+If fileToFile (@WorkingDir & "/templog.txt", $_LogFile.text) == 0 Then
+    MsgBox (0, "script error message", "the temporary log could not be moved to the log file")
+    Exit
+EndIf
+
+; opening the log file 
+$_LogFileDesc = FileOpen ($_LogFile.text, 9)
+; if the log file cannot be opened/created, then the script will exit
+If $_LogFileDesc == -1 Then
+    MsgBox (0, "script error message", "the log file could not be opened")
+    Exit
+EndIf
+
+writeInLog ($_LogFileDesc, "setting the mouse position", 1)
+
+; puts the mouse to a position where nothing happens :) 
+MouseMove (0, 600)
+
+
+; executing the test steps
+execTestSteps ($_XmlDomDocSteps, $_LogFileDesc)
+
+Sleep (3000)
+
+; closing the Internet Explorer window
+;Send ("!{F4}")
+
+writeInLog ($_TempLogDesc, "ending the log ", 0)    
+
+; closing the log file 
+FileClose ($_LogFileDesc)
+$_XmlDomDoc = 0
+
+;===============================================================================
+;
+; Description:      
+; Syntax:           
+; Parameter(s):     
+; Requirement(s):   
+; Return Value(s):  On Success - 
+;                   On Failure - 
+; Author(s):        Alexandru
+; Note(s):          
+;
+;===============================================================================
+
+
+>C:\program files\autoit3\beta\autoit3.exe "D:\alex\autoit\lgamr_users.au3"
+>Exit code: 0
+>C:\program files\autoit3\beta\autoit3.exe "D:\alex\autoit\lgamr_users.au3"
+
+Tab
+ line 1, column 1 (INS) (CR+LF)  -  0 chars selected
+2000
+0	0
+05/10/2006 10:54:39 lgamr_users.au3 - SciTE [1 of 2]
+Source
+;
+
+#include <alexFunctions.au3>
+
+
+; all the variables must be declared before they are used
+AutoItSetOption ("MustDeclareVars", 1)
+; set the delay time for the key strokes simulations
+AutoItSetOption ("SendKeyDelay", 50)
+
+; declaring the variables
+Dim $_XmlDomDoc, $_MyErrorEvent, $_XmlDomDocRoot
+Dim $_XmlDomDocSteps, $_XmlDomDocNodesList, $_XmlDomDocElement, $_XmlDomDocSetup  
+Dim $_ConfigFile, $_LogFile, $_WebSiteAddress, $_Username, $_Password, $_DefaultPage ; $_WriteFile
+Dim $_LogFileDesc, $_SetupValues
+Dim $_PageText, $_TempLogDesc
+
+
+; initiating the error handler
+$_MyErrorEvent = ObjEvent ("AutoIt.error", "funcErrorHandler")
+
+; creating the XML Document object
+$_XmlDomDoc = ObjCreate ("Msxml2.DOMDocument.4.0")
+
+;opening the temporary log file 
+$_TempLogDesc = FileOpen (@WorkingDir & "/templog.txt", 2)
+If $_TempLogDesc == -1 Then
+    MsgBox (0, "script error message", "the temporary log file could not be created")
+    Exit
+EndIf
+; writing in the log file for the first time 
+writeInLog ($_TempLogDesc, "starting the log ", 0)    
+
+writeInLog ($_TempLogDesc, "finding the name of the configuration file ", 1)
+
+; checking if the configuration file is passed as an argument
+; if the number of command line parameters is not zero, then the first parameter should be the configuration file 
+If $CmdLine[0] == 1 Then
+    $_ConfigFile = $CmdLine[1]
+Else
+    $_ConfigFile = "config_users.xml"
+EndIf
+
+writeInLog ($_TempLogDesc, "the name of the configuration file is: " & $_ConfigFile, 1)
+
+;asynchronous download not permitted
+$_XmlDomDoc.async = false
+
+writeInLog ($_TempLogDesc, "opening the configuration file ", 1)
+
+; opening the configuration file
+$_XmlDomDoc.load ($_ConfigFile)
+
+; checking if the file was well loaded
+If $_XmlDomDoc.parseError.errorCode <> 0 Then 
+    writeInLog ($_TempLogDesc, $_XmlDomDoc.parseError.reason & @TAB & _
+                     "error line number: " & $_XmlDomDoc.parseError.line & @CRLF & @TAB & _
+                     "error line: " & StringStripWS ($_XmlDomDoc.parseError.srcText, 1), 1 _
+            )
+    Exit 
+EndIf
+
+writeInLog ($_TempLogDesc, "the configuration file was opened ", 1)
+
+; finding out the root element of the xml file
+$_XmlDomDocRoot = $_XmlDomDoc.documentElement
+
+; finding out if the root element has children
+If ($_XmlDomDocRoot.hasChildNodes) Then 
+    ; if the children exist, then select each one of them 
+    ; finding the element with the test setup information
+    $_XmlDomDocSetup = $_XmlDomDocRoot.firstChild
+
+    ; and then finding the element with the test steps
+    $_XmlDomDocSteps = $_XmlDomDocRoot.lastChild
+Else
+    writeInLog ($_TempLogDesc, "the root element has no children", 1)
+    writeInLog ($_TempLogDesc, "finishing the script ", 0)  
+    Exit
+EndIf
+
+writeInLog ($_TempLogDesc, "finding the setup values from the configuration file ", 1)
+
+; finding the setup parameters
+$_SetupValues = getSetupParameters ($_XmlDomDocSetup, $_XmlDomDocSetup.childNodes.length)
+If IsArray ($_SetupValues) Then
+   $_LogFile = $_SetupValues[0]
+#cs
+    $_WebSiteAddress = $_SetupValues[1]
+   $_Username = $_SetupValues[2]
+   $_Password = $_SetupValues[3]
+   $_DefaultPage = $_SetupValues[4]
+#ce
+Else
+   writeInLog ($_TempLogDesc, "there is no information in the setup section of the configuration file", 1)
+   writeInLog ($_TempLogDesc, "finishing the script ", 0)    
+   Exit
+EndIf
+
+writeInLog ($_TempLogDesc, "setup values from the configuration file found ", 1)
+
+; closing the temp log file 
+If FileClose ($_TempLogDesc) == 0 Then
+    MsgBox (0, "script error message", "the temporary file handle is invalid. the file could not be closed")
+    Exit
+EndIf
+    
+; copy the content of the temporary log file to the log file from the configuration file 
+If fileToFile (@WorkingDir & "/templog.txt", $_LogFile.text) == 0 Then
+    MsgBox (0, "script error message", "the temporary log could not be moved to the log file")
+    Exit
+EndIf
+
+; opening the log file 
+$_LogFileDesc = FileOpen ($_LogFile.text, 9)
+; if the log file cannot be opened/created, then the script will exit
+If $_LogFileDesc == -1 Then
+    MsgBox (0, "script error message", "the log file could not be opened")
+    Exit
+EndIf
+
+writeInLog ($_LogFileDesc, "setting the mouse position", 1)
+
+; puts the mouse to a position where nothing happens :) 
+MouseMove (0, 600)
+
+
+; executing the test steps
+execTestSteps ($_XmlDomDocSteps, $_LogFileDesc)
+
+Sleep (3000)
+
+; closing the Internet Explorer window
+;Send ("!{F4}")
+
+writeInLog ($_TempLogDesc, "ending the log ", 0)    
+
+; closing the log file 
+FileClose ($_LogFileDesc)
+$_XmlDomDoc = 0
+
+;===============================================================================
+;
+; Description:      
+; Syntax:           
+; Parameter(s):     
+; Requirement(s):   
+; Return Value(s):  On Success - 
+;                   On Failure - 
+; Author(s):        Alexandru
+; Note(s):          
+;
+;===============================================================================
+
+
+>C:\program files\autoit3\beta\autoit3.exe "D:\alex\autoit\lgamr_users.au3"
+>Exit code: 0
+>C:\program files\autoit3\beta\autoit3.exe "D:\alex\autoit\lgamr_users.au3"
+
+Tab
+ line 1, column 1 (INS) (CR+LF)  -  0 chars selected
+3000
+0	0
+05/10/2006 10:54:40 lgamr_users.au3 - SciTE [1 of 2]
+Source
+;
+
+#include <alexFunctions.au3>
+
+
+; all the variables must be declared before they are used
+AutoItSetOption ("MustDeclareVars", 1)
+; set the delay time for the key strokes simulations
+AutoItSetOption ("SendKeyDelay", 50)
+
+; declaring the variables
+Dim $_XmlDomDoc, $_MyErrorEvent, $_XmlDomDocRoot
+Dim $_XmlDomDocSteps, $_XmlDomDocNodesList, $_XmlDomDocElement, $_XmlDomDocSetup  
+Dim $_ConfigFile, $_LogFile, $_WebSiteAddress, $_Username, $_Password, $_DefaultPage ; $_WriteFile
+Dim $_LogFileDesc, $_SetupValues
+Dim $_PageText, $_TempLogDesc
+
+
+; initiating the error handler
+$_MyErrorEvent = ObjEvent ("AutoIt.error", "funcErrorHandler")
+
+; creating the XML Document object
+$_XmlDomDoc = ObjCreate ("Msxml2.DOMDocument.4.0")
+
+;opening the temporary log file 
+$_TempLogDesc = FileOpen (@WorkingDir & "/templog.txt", 2)
+If $_TempLogDesc == -1 Then
+    MsgBox (0, "script error message", "the temporary log file could not be created")
+    Exit
+EndIf
+; writing in the log file for the first time 
+writeInLog ($_TempLogDesc, "starting the log ", 0)    
+
+writeInLog ($_TempLogDesc, "finding the name of the configuration file ", 1)
+
+; checking if the configuration file is passed as an argument
+; if the number of command line parameters is not zero, then the first parameter should be the configuration file 
+If $CmdLine[0] == 1 Then
+    $_ConfigFile = $CmdLine[1]
+Else
+    $_ConfigFile = "config_users.xml"
+EndIf
+
+writeInLog ($_TempLogDesc, "the name of the configuration file is: " & $_ConfigFile, 1)
+
+;asynchronous download not permitted
+$_XmlDomDoc.async = false
+
+writeInLog ($_TempLogDesc, "opening the configuration file ", 1)
+
+; opening the configuration file
+$_XmlDomDoc.load ($_ConfigFile)
+
+; checking if the file was well loaded
+If $_XmlDomDoc.parseError.errorCode <> 0 Then 
+    writeInLog ($_TempLogDesc, $_XmlDomDoc.parseError.reason & @TAB & _
+                     "error line number: " & $_XmlDomDoc.parseError.line & @CRLF & @TAB & _
+                     "error line: " & StringStripWS ($_XmlDomDoc.parseError.srcText, 1), 1 _
+            )
+    Exit 
+EndIf
+
+writeInLog ($_TempLogDesc, "the configuration file was opened ", 1)
+
+; finding out the root element of the xml file
+$_XmlDomDocRoot = $_XmlDomDoc.documentElement
+
+; finding out if the root element has children
+If ($_XmlDomDocRoot.hasChildNodes) Then 
+    ; if the children exist, then select each one of them 
+    ; finding the element with the test setup information
+    $_XmlDomDocSetup = $_XmlDomDocRoot.firstChild
+
+    ; and then finding the element with the test steps
+    $_XmlDomDocSteps = $_XmlDomDocRoot.lastChild
+Else
+    writeInLog ($_TempLogDesc, "the root element has no children", 1)
+    writeInLog ($_TempLogDesc, "finishing the script ", 0)  
+    Exit
+EndIf
+
+writeInLog ($_TempLogDesc, "finding the setup values from the configuration file ", 1)
+
+; finding the setup parameters
+$_SetupValues = getSetupParameters ($_XmlDomDocSetup, $_XmlDomDocSetup.childNodes.length)
+If IsArray ($_SetupValues) Then
+   $_LogFile = $_SetupValues[0]
+#cs
+    $_WebSiteAddress = $_SetupValues[1]
+   $_Username = $_SetupValues[2]
+   $_Password = $_SetupValues[3]
+   $_DefaultPage = $_SetupValues[4]
+#ce
+Else
+   writeInLog ($_TempLogDesc, "there is no information in the setup section of the configuration file", 1)
+   writeInLog ($_TempLogDesc, "finishing the script ", 0)    
+   Exit
+EndIf
+
+writeInLog ($_TempLogDesc, "setup values from the configuration file found ", 1)
+
+; closing the temp log file 
+If FileClose ($_TempLogDesc) == 0 Then
+    MsgBox (0, "script error message", "the temporary file handle is invalid. the file could not be closed")
+    Exit
+EndIf
+    
+; copy the content of the temporary log file to the log file from the configuration file 
+If fileToFile (@WorkingDir & "/templog.txt", $_LogFile.text) == 0 Then
+    MsgBox (0, "script error message", "the temporary log could not be moved to the log file")
+    Exit
+EndIf
+
+; opening the log file 
+$_LogFileDesc = FileOpen ($_LogFile.text, 9)
+; if the log file cannot be opened/created, then the script will exit
+If $_LogFileDesc == -1 Then
+    MsgBox (0, "script error message", "the log file could not be opened")
+    Exit
+EndIf
+
+writeInLog ($_LogFileDesc, "setting the mouse position", 1)
+
+; puts the mouse to a position where nothing happens :) 
+MouseMove (0, 600)
+
+
+; executing the test steps
+execTestSteps ($_XmlDomDocSteps, $_LogFileDesc)
+
+Sleep (3000)
+
+; closing the Internet Explorer window
+;Send ("!{F4}")
+
+writeInLog ($_TempLogDesc, "ending the log ", 0)    
+
+; closing the log file 
+FileClose ($_LogFileDesc)
+$_XmlDomDoc = 0
+
+;===============================================================================
+;
+; Description:      
+; Syntax:           
+; Parameter(s):     
+; Requirement(s):   
+; Return Value(s):  On Success - 
+;                   On Failure - 
+; Author(s):        Alexandru
+; Note(s):          
+;
+;===============================================================================
+
+
+>C:\program files\autoit3\beta\autoit3.exe "D:\alex\autoit\lgamr_users.au3"
+>Exit code: 0
+>C:\program files\autoit3\beta\autoit3.exe "D:\alex\autoit\lgamr_users.au3"
+
+Tab
+ line 1, column 1 (INS) (CR+LF)  -  0 chars selected
+4000
+0	0
+05/10/2006 10:54:42 Microsoft Internet Explorer
+5000
+0	0
+05/10/2006 10:54:43 http://www.google.ro/ - Microsoft Internet Explorer
+Links
+6000
+0	0
+05/10/2006 10:54:44 http://www.google.ro/ - Microsoft Internet Explorer
+Links
+7000
+0	0
+05/10/2006 10:54:45 http://www.google.ro/ - Microsoft Internet Explorer
+Links
+8000
+0	0
+05/10/2006 10:54:46 Google - Microsoft Internet Explorer
+Links
+http://www.google.ro/
+http://www.google.ro/
+Done
+9000
+1	1
+05/10/2006 10:54:46 maximizing the application window
+05/10/2006 10:54:47 +++++++++++++++++++++++++++
+05/10/2006 10:54:47 finished executing the test step 1
+	test status: PASS
+
+05/10/2006 10:54:47 starting to execute step 2
+	action name : open_page : login page
+05/10/2006 10:54:47 ---------------------------
+05/10/2006 10:54:51 0 1000
+05/10/2006 10:54:52 Links
+                                                                                                        
+                                                                                                        
+Opening page                                                                                                         ...
+ 2000
+05/10/2006 10:54:53 Links
+                                                                                                        
+                                                                                                        
+Done
+ 3000
+05/10/2006 10:54:53 +++++++++++++++++++++++++++
+05/10/2006 10:54:53 finished executing the test step 2
+	test status: PASS
+
+05/10/2006 10:54:53 starting to execute step 3
+	action name : login : 
+05/10/2006 10:54:53 ---------------------------
+05/10/2006 10:54:55 Links
+                                                                                                        
+                                                                                                        
+Done
+ 1000
+05/10/2006 10:54:58 Links
+                                                         
+                                                         
+Done
+ 2000
+05/10/2006 10:54:58 +++++++++++++++++++++++++++
+05/10/2006 10:54:58 finished executing the test step 3
+	test status: PASS
+
+05/10/2006 10:54:58 starting to execute step 4
+	action name : open_page : Administration > Users
+05/10/2006 10:54:58 ---------------------------
+05/10/2006 10:55:04 Links
+                                                           
+                                                           
+Opening page                                                            ...
+ 1000
+05/10/2006 10:55:06 Links
+                                                           
+                                                           
+Done
+??
+??
+??
+ 2000
+05/10/2006 10:55:06 +++++++++++++++++++++++++++
+05/10/2006 10:55:06 finished executing the test step 4
+	test status: PASS
+
+05/10/2006 10:55:06 starting to execute step 5
+	action name : search : 0
+05/10/2006 10:55:06 ---------------------------
+05/10/2006 10:55:07 am trimis la combo - 
+05/10/2006 10:55:07 +++++++++++++++++++++++++++
+05/10/2006 10:55:07 finished executing the test step 5
+	test status: FAIL
+
+-----------------
+05/10/2006 10:55:10 ending the log 
+-----------------
