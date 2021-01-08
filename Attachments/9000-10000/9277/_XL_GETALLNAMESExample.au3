@@ -1,0 +1,15 @@
+#include "ExcelUDF v01.au3"
+#include <array.au3>
+_XLApp($XL_OPEN)
+_XLWBook($XL_NEW)
+_XLWBook($XL_OPEN,@ScriptDir & "\WorldCup.xls")
+_XLWSheet($XL_SETNAME,1,"","Database")
+_XLWSheet($XL_SETNAME,2,"","Empty1")
+_XLWSheet($XL_SETNAME,3,"", "NothingHere")
+$xlNames = _XLWSheet($XL_GETALLNAMES)
+_ArrayDisplay($xlNames, "WorldCup Sheet Names")
+$xlNames = _XLWBook($XL_GETALLNAMES)
+_ArrayDisplay($xlNames, "Names of opened workbooks")
+_XLWBook($XL_CLOSE)
+_XLWBook($XL_CLOSE)
+_XLApp($XL_CLOSE)
