@@ -1,0 +1,10 @@
+False
+And
+ByRef
+Case
+Const
+#include
+#cs
+@WorkingDir
+WinMinimizeAll ( ) Minimizes all windows.
+_ArrayCreate ( $v_Val1, [$v_Val2, [..., $v_Val21]] ) Create a small array and quickly assign values. (Requires: #include <Array.au3>)
