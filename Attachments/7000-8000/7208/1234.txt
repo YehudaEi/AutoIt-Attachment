@@ -1,0 +1,38 @@
+==========
+
+==========
+@OSLang: 0407
+@OSType: WIN32_NT
+@OSVersion: WIN_XP
+@OSBuild: 2600
+@OSServicePack: Service Pack 2
+@ProcessorArch: X86
+==========
+Bias,4294967236
+StandardName,Westeuropäische Normalzeit
+StandardBias,0
+StandardStart,00000A00050003000000000000000000
+DaylightName,Westeuropäische Normalzeit
+DaylightBias,4294967236
+DaylightStart,00000300050002000000000000000000
+ActiveTimeBias,4294967236
+
+
+==========
+
+==========
+@OSLang: 0409
+@OSType: WIN32_NT
+@OSVersion: WIN_XP
+@OSBuild: 2600
+@OSServicePack: Service Pack 2
+@ProcessorArch: X86
+==========
+Bias,4294967236
+StandardName,W. Europe Standard Time
+StandardBias,0
+StandardStart,00000A00050003000000000000000000
+DaylightName,W. Europe Daylight Time
+DaylightBias,4294967236
+DaylightStart,00000300050002000000000000000000
+ActiveTimeBias,4294967236
