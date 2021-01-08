@@ -1,0 +1,81 @@
+-----------------
+05/10/2006 11:16:13 starting the log 
+-----------------
+05/10/2006 11:16:13 finding the name of the configuration file 
+05/10/2006 11:16:13 the name of the configuration file is: config_users.xml
+05/10/2006 11:16:13 opening the configuration file 
+05/10/2006 11:16:13 the configuration file was opened 
+05/10/2006 11:16:13 finding the setup values from the configuration file 
+05/10/2006 11:16:13 setup values from the configuration file found 
+05/10/2006 11:16:13 setting the mouse position
+05/10/2006 11:16:13 starting to execute step 1
+	action name : open_application : Internet Explorer
+05/10/2006 11:16:13 ---------------------------
+05/10/2006 11:16:14 http://www.google.ro/ - Microsoft Internet Explorer
+Links
+0
+0	0
+05/10/2006 11:16:16 Google - Microsoft Internet Explorer
+Links
+http://www.google.ro/
+http://www.google.ro/
+Done
+1000
+1	1
+05/10/2006 11:16:16 +++++++++++++++++++++++++++
+05/10/2006 11:16:16 finished executing the test step 1
+	test status: PASS
+
+05/10/2006 11:16:16 starting to execute step 2
+	action name : open_page : login page
+05/10/2006 11:16:16 ---------------------------
+05/10/2006 11:16:21 0 1000
+05/10/2006 11:16:22 Links
+                                                                                                        
+                                                                                                        
+Done
+ 2000
+05/10/2006 11:16:22 +++++++++++++++++++++++++++
+05/10/2006 11:16:22 finished executing the test step 2
+	test status: PASS
+
+05/10/2006 11:16:22 starting to execute step 3
+	action name : login : 
+05/10/2006 11:16:22 ---------------------------
+05/10/2006 11:16:24 Links
+                                                         
+                                                         
+Opening page                                                          ...
+ 1000
+05/10/2006 11:16:25 Links
+                                                         
+                                                         
+Done
+ 2000
+05/10/2006 11:16:25 +++++++++++++++++++++++++++
+05/10/2006 11:16:25 finished executing the test step 3
+	test status: PASS
+
+05/10/2006 11:16:25 starting to execute step 4
+	action name : open_page : Administration > Users
+05/10/2006 11:16:25 ---------------------------
+05/10/2006 11:16:30 Links
+                                                           
+                                                           
+Done
+ 1000
+05/10/2006 11:16:30 +++++++++++++++++++++++++++
+05/10/2006 11:16:30 finished executing the test step 4
+	test status: PASS
+
+05/10/2006 11:16:30 starting to execute step 5
+	action name : search : 0
+05/10/2006 11:16:30 ---------------------------
+05/10/2006 11:16:32 am trimis la combo - 
+05/10/2006 11:16:32 +++++++++++++++++++++++++++
+05/10/2006 11:16:32 finished executing the test step 5
+	test status: FAIL
+
+-----------------
+05/10/2006 11:16:35 ending the log 
+-----------------
