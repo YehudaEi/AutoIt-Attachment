@@ -1,0 +1,128 @@
+; this is the ini file used for the printerinstall script - it feeds the script the information is needs to set up each room
+;
+; you can add or delete rooms at will - just create or delete sections
+;
+;NOTE!!!!
+; 1. the Global and Quit sections should not be removed!
+; 2. DO NOT put comments in the sections!  AutoIT can't handle it and includes the comment in the output....
+;
+;Section Explanations - 
+;[14]                                                               {this is the room number or designation
+;InfFileLocationInRepository=HPLJ456PCL5eWinXP_lj631en\lj456p5.inf  {this is the folder name and INI file name of the driver
+;PrinterModelNumberInInfFile=HP LaserJet 5                          {this is the printer model name as found in the above INI file
+;PrinterPort=\\STJ_TREE\14LJ5_28.Printers.ROOT                      {this is the network or local port name the printer will use
+;PrinterNameSeenByUser=14LJ5_28                                     {this is the printer name the user will see in windows
+;
+;The [RoomLists] section contains lists of room names seperated by commas
+;If you add a new room to this file, make sure you also put it in the 'All Printers' list
+;
+;PrinterDriverRepositry is the location where the printer drivers are stored, each driver in its own folder.  This would normally be a network location.
+;PauseTime is the time in seconds that the script pauses to allow Windows to complete the addition of the printer before starting to add the next one.  In the interests of reliability, don't shorten it too much!  Allow for your slowest machine.
+
+[RoomLists]
+All Printers=14,17,18,19,22,36libstaff,36libstud,41b,41,frntdsk,sci,staffmanarts,staffeast,staffwest,offLJ1320
+Staff Laptops=staffwest,14,17,18,19,22,36libstud,41,sci,staffmanarts,staffeast,offLJ1320
+Staffroom Desktops=staffwest,staffeast,offLJ1320
+ManArts Staff Desktops=staffmanarts,41
+Science Labs=sci
+
+[Global]
+ScriptID=Printer Installation V4
+PauseTime=45
+PrinterDriverRepository=O:\avupd\printers
+
+[quit]
+InfFileLocationInRepository=quit
+PrinterModelNumberInInfFile=quit
+PrinterPort=quit
+PrinterNameSeenByUser=quit
+
+[14]
+InfFileLocationInRepository=HPLJ456PCL5eWinXP_lj631en\lj456p5.inf
+PrinterModelNumberInInfFile=HP LaserJet 5
+PrinterPort=\\STJ_TREE\14LJ5_28.Printers.ROOT
+PrinterNameSeenByUser=14LJ5_28
+
+[17]
+InfFileLocationInRepository=HPLJ456PCL5eWinXP_lj631en\lj456p5.inf
+PrinterModelNumberInInfFile=HP LaserJet 5M
+PrinterPort=\\STJ_TREE\17LJ5M_53.Printers.ROOT
+PrinterNameSeenByUser=17LJ5M_53
+
+[18]
+InfFileLocationInRepository=HPLJ1320tnPCL5WinXp_en\hpc1160b.inf
+PrinterModelNumberInInfFile=hp LaserJet 1320 PCL 5e
+PrinterPort=\\STJ_TREE\18LJ1320_52.Printers.ROOT
+PrinterNameSeenByUser=18LJ1320_52
+
+[19]
+InfFileLocationInRepository=HPLJ456PCL5eWinXP_lj631en\lj456p5.inf
+PrinterModelNumberInInfFile=HP LaserJet 5M
+PrinterPort=\\STJ_TREE\19LJ5M_51.Printers.ROOT
+PrinterNameSeenByUser=19LJ5M_51
+
+[22]
+InfFileLocationInRepository=HPLJ456PCL5eWinXP_lj631en\lj456p5.inf
+PrinterModelNumberInInfFile=HP LaserJet 4 Plus
+PrinterPort=\\STJ_TREE\22StudioLJ4Plus_25.Printers.ROOT
+PrinterNameSeenByUser=22StudioLJ4Plus_25
+
+[36libstaff]
+InfFileLocationInRepository=HPLJ456PCL5eWinXP_lj631en\lj456p5.inf
+PrinterModelNumberInInfFile=HP LaserJet 5
+PrinterPort=\\STJ_TREE\36LibStafLJ5_30.Printers.ROOT
+PrinterNameSeenByUser=36LibStafLJ5_30
+
+[36libstud]
+InfFileLocationInRepository=HPLJ456PCL5eWinXP_lj631en\lj456p5.inf
+PrinterModelNumberInInfFile=HP LaserJet 5
+PrinterPort=\\STJ_TREE\36LibStudLJ5_57.Printers.ROOT
+PrinterNameSeenByUser=36LibStudLJ5_57
+
+[41b]
+InfFileLocationInRepository=lj5000pcl5ewin2kxp2003-en\hpbf241i.inf
+PrinterModelNumberInInfFile=HP LaserJet 5000 Series PCL 5e
+PrinterPort=\\STJ_TREE\41bLJ5000_59.Printers.ROOT
+PrinterNameSeenByUser=41bLJ5000_59
+
+[41]
+InfFileLocationInRepository=lj5000pcl5ewin2kxp2003-en\hpbf241i.inf
+PrinterModelNumberInInfFile=HP LaserJet 5000 Series PCL 5e
+PrinterPort=\\STJ_TREE\41LJ5000_57.Printers.ROOT
+PrinterNameSeenByUser=41LJ5000_57
+
+[frntdsk]
+InfFileLocationInRepository=HPLJ456PCL5eWinXP_lj631en\lj456p5.inf
+PrinterModelNumberInInfFile=HP LaserJet 4
+PrinterPort=\\STJ_TREE\FrntDskLJ4_22.Printers.ROOT
+PrinterNameSeenByUser=FrntDskLJ4_22
+
+[sci]
+InfFileLocationInRepository=Science 5M BDS Custom Driver\ntprint.inf
+PrinterModelNumberInInfFile=HP LaserJet
+PrinterPort=\\STJ_TREE\SciLJ5_27.ROOT
+PrinterNameSeenByUser=SciLJ5_27
+
+[staffmanarts]
+InfFileLocationInRepository=HPLJ456PCL5eWinXP_lj631en\lj456p5.inf
+PrinterModelNumberInInfFile=HP LaserJet 5M
+PrinterPort=\\STJ_TREE\StaffManArtsLJ5M_56.Printers.ROOT
+PrinterNameSeenByUser=StaffManArtsLJ5M_56
+
+[staffeast]
+InfFileLocationInRepository=KyoceraFskmWinXP\OEMSETUP.inf
+PrinterModelNumberInInfFile=Kyocera Mita FS-1800 (KPDL-2)
+PrinterPort=\\STJ_TREE\StffEastKy1800_24.Printers.ROOT
+PrinterNameSeenByUser=StffEastKy1800_24
+
+[staffwest]
+InfFileLocationInRepository=HPLJ456PCL5eWinXP_lj631en\lj456p5.inf
+PrinterModelNumberInInfFile=HP LaserJet 5
+PrinterPort=\\STJ_TREE\StffWestLJ5_29.Printers.ROOT
+PrinterNameSeenByUser=StffWestLJ5_29
+
+[offLJ1320]
+InfFileLocationInRepository=HPLJ1320tnPCL5WinXp_en\hpc1160b.inf
+PrinterModelNumberInInfFile=hp LaserJet 1320 PCL 5e
+PrinterPort=\\STJ_TREE\OffLj1320tn1.Office.ROOT
+PrinterNameSeenByUser=OffLj1320tn1
