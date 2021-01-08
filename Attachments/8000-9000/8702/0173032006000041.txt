@@ -1,0 +1,23 @@
+ Info     	101, IXPB booting
+ Info     	101, IXPA booting
+ Info     	101, SW Ready
+ Info     	101, MC booting
+ Info     	101, SC booting
+ Info     	101, SC Ready
+ Info     	101, IXPB Ready
+ Info     	101, MC Ready
+ Info     	101, IXPA Ready
+ PASS     	Loop: 1,   Warning(s): 0,   Error(s): 0,   Time: 227.234 Second(s).
+ PASS     	Loop: 1,   Warning(s): 0,   Error(s): 0,   Time: 127.719 Second(s).
+= = = = = 	......................................
+= = = = = 	Total Sumary:
+ Total    	Time: 1034.907 Second(s)
+ Total    	Pass: 24
+ Total    	Fail: 0
+ Total    	Warn: 0
+ Total    	Retry: 0
+ Total    	Skip: 0
+ Total    	Date: 08/05/2006,    Time: 11:58:56
+= = = = = 	========== End Of Summary ==========
+ PostTest 	C:\ETS\Lib\PostTest.esl
+ Done     	Loop: 1,   Warning(s): 0,   Error(s): 0,   Time: 1526.500 Second(s).
