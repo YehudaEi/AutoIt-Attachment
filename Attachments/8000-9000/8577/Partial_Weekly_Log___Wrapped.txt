@@ -1,0 +1,855 @@
+----- Original Message ----- 
+From: "edited"
+To: <support@--------.com>
+Sent: Monday, April 24, 2006 11:45 AM
+Subject: System Notification from NAME (WEEKLY_LOG) INFO
+
+
+
+
+________________________________
+
+Thanks!
+
+-----Original Message-----
+From: BM [mailto:BM] 
+Sent: Sunday, April 23, 2006 12:49 AM
+To: Support
+Subject: System Notification from NAME (WEEKLY_LOG) INFO
+
+GENERATED_ON=Sun Apr 23 00:00:00 EDT 2006
+VERSION=NetApp Release 7.0.1R1: Wed May 18 23:05:48 PDT 2005
+SYSTEM_ID=003361####
+HOSTNAME=NAME
+SNMP_LOCATION=CITY, ST
+Console is using XXXXX
+
+===== SYSCONFIG-A =====
+NetApp Release 7.0.1R1: Wed May 18 23:05:48 PDT 2005
+System ID: 003361XXXX (NAME)
+System Serial Number: 1034XXX (NAME)
+System Rev: B0
+Backplane Part Number: 104-0XXXX
+Backplane Rev: B0
+Backplane Serial Number: 1034XXXX
+slot 0: System Board 866 MHz (NetApp System Board VII D0)
+                Model Name:         R100
+                Part Number:        110-0XXXX
+                Revision:           D0
+                Serial Number:      27XXXX
+                Firmware release:   4.2.2_i1
+                Processors:         2
+                Processor ID:       0x68a
+                Microcode Version:  0x1
+                Memory Size:        3072 MB
+                CIOB Revision ID:   5
+slot 0: FastEnet-10/100 Ethernet Controller 
+Device Type:        82559
+e0 MAC Address:     00:a0:XX:XX:XX:XX
+(auto-unknown-cfg_down)
+                        memory mapped I/O base 0xd8100000, size 0x1000
+                        I/O base 0xffc0, size 0x40
+                        memory mapped I/O base 0xd8000000, size 0x100000
+slot 0: NetApp ATA/IDE Adapter 0a (0x000001f0)
+                0a.0                 SanDisk  SDCFB-32         1.10 30MB
+512B/sect (36322560608)
+                        I/O base 0xffb0, size 0x10
+slot 4: Dual 10/100/1000 Ethernet Controller V
+e4a MAC Address:    00:07:XX:XX:XX:XX (auto-1000t-fd-up)
+e4b MAC Address:    00:07:YY:YY:YY:YY (auto-1000t-fd-up)
+                Device Type:        Rev 1
+                        memory mapped I/O base 0xe8200000, size 0x20000
+                        I/O base 0xddc0, size 0x40
+                        memory mapped I/O base 0xe8220000, size 0x20000
+                        I/O base 0xdd40, size 0x40
+slot 5: Dual 10/100/1000 Ethernet Controller V
+e5a MAC Address:    00:07:XX:XX:XX:XX (auto-1000t-fd-up)
+e5b MAC Address:    00:07:XX:XX:XX:XX (auto-1000t-fd-up)
+                Device Type:        Rev 1
+                        memory mapped I/O base 0xe8240000, size 0x20000
+                        I/O base 0xdd80, size 0x40
+                        memory mapped I/O base 0xe8260000, size 0x20000
+                        I/O base 0xdd00, size 0x40
+slot 7: SCSI Host Adapter 7a (Adaptec AIC7899A, <ONLINE>)
+HW Version 0.0
+Ultra160 SCSI, Low Voltage Differential
+                  0: Maxtor   4G160J8U66       G8CK 136.0GB 512B/sect
+(G80HHXXX)
+                  1: Maxtor   4G160J8U66       G8CK 136.0GB 512B/sect
+(G80HHXXX)
+                  2: Maxtor   4G160J8U66       G8CK 136.0GB 512B/sect
+(G80HGXXX)
+                  3: Maxtor   4G160J8U66       G8CK 136.0GB 512B/sect
+(G80HHXXX)
+                  8: Maxtor   4G160J8U66       G8CK 136.0GB 512B/sect
+(G80HHXXX)
+                  9: Maxtor   4G160J8U66       G8CK 136.0GB 512B/sect
+(G80HHXXX)
+                 10: Maxtor   4G160J8U66       G8CK 136.0GB 512B/sect
+(G80H3XXX)
+                 11: Maxtor   4G160J8U66       G8CK 136.0GB 512B/sect
+(G80H4XXX)
+                 12: Maxtor   4G160J8U66       G8CK 136.0GB 512B/sect
+(G80HHXXX)
+                 13: Maxtor   4G160J8U66       G8CK 136.0GB 512B/sect
+(G80H1XXX)
+                 14: Maxtor   4G160J8U66       G8CK 136.0GB 512B/sect
+(G80HHXXX)
+                 15: Maxtor   4G160J8U66       G8CK 136.0GB 512B/sect
+(G80HHXXX)
+Shelf 0: R1XXShelf, EMU rev. 1019 Bridge firmware
+rev.  N130   
+                        I/O base 0xde00, size 0x100
+                        memory mapped I/O base 0xe8280000, size 0x1000
+slot 7: SCSI Host Adapter 7b (Adaptec AIC7899A, <ONLINE>)
+HW Version 0.0
+Ultra160 SCSI, Low Voltage Differential
+                        I/O base 0xdf00, size 0x100
+                        memory mapped I/O base 0xe8281000, size 0x1000
+slot 8: SCSI Host Adapter 8a (Adaptec AIC7899A, <ONLINE>)
+HW Version 0.0
+Ultra160 SCSI, Low Voltage Differential
+                  0: Maxtor   4G160J8U66       G8CK 136.0GB 512B/sect
+(G80H4XXX)
+                  1: Maxtor   4G160J8U66       G8CK 136.0GB 512B/sect
+(G80H1XXX)
+                  2: Maxtor   4G160J8U66       G8CK 136.0GB 512B/sect
+(G80H3XXX)
+                  3: Maxtor   4G160J8U66       G8CK 136.0GB 512B/sect
+(G80H2XXX)
+                  8: Maxtor   4G160J8U66       G8CK 136.0GB 512B/sect
+(G80H2XXX)
+                  9: Maxtor   4G160J8U66       G8CK 136.0GB 512B/sect
+(G80H3XXX)
+                 10: Maxtor   4G160J8U66       G8CK 136.0GB 512B/sect
+(G80HHXXX)
+                 11: Maxtor   4G160J8U66       G8CK 136.0GB 512B/sect
+(G80H2XXX)
+                 12: Maxtor   4G160J8U66       G8CK 136.0GB 512B/sect
+(G80H2XXX)
+                 13: Maxtor   4G160J8U66       G8CK 136.0GB 512B/sect
+(G80H3XXX)
+                 14: Maxtor   4G160J8U66       G8CK 136.0GB 512B/sect
+(G80H3XXX)
+                 15: Maxtor   4G160J8U66       G8CK 136.0GB 512B/sect
+(G80H2XXX)
+Shelf 0: R1XXShelf, EMU rev. 1019 Bridge firmware
+rev.  N130   
+                        I/O base 0xef00, size 0x100
+                        memory mapped I/O base 0xe8005000, size 0x1000
+slot 8: SCSI Host Adapter 8b (Adaptec AIC7899A, <ONLINE>)
+HW Version 0.0
+Ultra160 SCSI, Low Voltage Differential
+                  0: Maxtor   4G160J8U66       G8CK 136.0GB 512B/sect
+(G80HAXXX)
+                  1: Maxtor   4G160J8U66       G8CK 136.0GB 512B/sect
+(G80H8XXX)
+                  2: Maxtor   4G160J8U66       G8CK 136.0GB 512B/sect
+(G80GEXXX)
+                  3: Maxtor   4G160J8U66       G8CK 136.0GB 512B/sect
+(G80H8XXX)
+                  8: Maxtor   4G160J8U66       G8CK 136.0GB 512B/sect
+(G80H8XXX)
+                  9: Maxtor   4G160J8U66       G8CK 136.0GB 512B/sect
+(G80GDXXX)
+                 10: Maxtor   4G160J8U66       G89K 136.0GB 512B/sect
+(G80GYXXX)
+                 11: Maxtor   4G160J8U66       G8CK 136.0GB 512B/sect
+(G80H8XXX)
+                 12: Maxtor   4G160J8U66       G8CK 136.0GB 512B/sect
+(G80H8XXX)
+                 13: Maxtor   4G160J8U66       G8CK 136.0GB 512B/sect
+(G80GDXXX)
+                 14: Maxtor   4G160J8U66       G8CK 136.0GB 512B/sect
+(G80HLXXX)
+                 15: Maxtor   4G160J8U66       G8CK 136.0GB 512B/sect
+(G80HAB5E)
+Shelf 0: R1XXShelf, EMU rev. 1019 Bridge firmware
+rev.  N130   
+                        I/O base 0xeb00, size 0x100
+                        memory mapped I/O base 0xe8000000, size 0x1000
+slot 11: NVRAM (NetApp NVRAM III)
+                Revision:           A0
+                Serial Number:      59XXX
+                Memory Size:        128 MB
+                Battery Status:      OK
+                        prefetchable memory base 0xe0000000, size
+0x8000000
+
+===== SYSCONFIG-C =====
+sysconfig: There are no configuration errors.
+
+===== SYSCONFIG HARDWARE IDS =====
+R100 2 8 0x9005 0x00C0 1
+R100 2 9 0x9005 0x00C0 1
+R100 2 10 0x9005 0x00C0 1
+R100 3 11 0x1275 0x0002 0
+R100 1 4 0x8086 0x1010 0
+R100 1 5 0x8086 0x1010 0
+R100 2 7 0x9005 0x00C0 1
+
+===== SYSCONFIG-D =====
+Device          HA    SHELF BAY CHAN    Disk Vital Product Information
+----------      --------------- -----   ------------------------------
+10a.0           10a   0   0             ########
+10a.1           10a   0   1             ########
+10a.2           10a   0   2             ########
+10a.3           10a   0   3             ########
+10a.8           10a   0   4             ########
+10a.9           10a   0   5             ########
+10a.10          10a   0   6             ########
+10a.11          10a   0   7             ########
+10a.12          10a   0   8             ########
+10a.13          10a   0   9             ########
+10a.14          10a   0   10            ########
+10a.15          10a   0   11            ########
+10b.0           10b   0   0             ########
+10b.1           10b   0   1             ########
+10b.2           10b   0   2             ########
+10b.3           10b   0   3             ########
+10b.8           10b   0   4             ########
+10b.9           10b   0   5             ########
+10b.10          10b   0   6             ########
+10b.11          10b   0   7             ########
+10b.12          10b   0   8             ########
+10b.13          10b   0   9             ########
+10b.14          10b   0   10            ########
+10b.15          10b   0   11            ########
+7a.0            7a    0   0             ########
+7a.1            7a    0   1             ########
+7a.2            7a    0   2             ########
+7a.3            7a    0   3             ########
+7a.8            7a    0   4             ########
+7a.9            7a    0   5             ########
+7a.10           7a    0   6             ########
+7a.11           7a    0   7             ########
+7a.12           7a    0   8             ########
+7a.13           7a    0   9             ########
+7a.14           7a    0   10            ########
+7a.15           7a    0   11            ########
+8a.0            8a    0   0             ########
+8a.1            8a    0   1             ########
+8a.2            8a    0   2             ########
+8a.3            8a    0   3             ########
+
+===== FLASH CARD INFO =====
+
+partition:          1
+file system:        0x04
+bytes per cluster:  4096
+number of clusters: 7668
+total bytes:        31457280
+usable bytes:       31404032
+free bytes:         13447168
+FAT location:       51X
+root location:      312XX
+data location:      476XX
+
+ Volume Label in Drive 0a.0:1: is XXXXXX
+ Volume Serial Number is 24CE-XXX
+ Directory of 0a.0:1:/
+
++X86                                 <DIR>  01-09-2004   6:53p      2
++-+KERNEL                            <DIR>  01-09-2004   6:53p      3
+| | |PRIMARY.KRN                  12263424  07-29-2005   5:34p      4
++-+DIAG                              <DIR>  01-09-2004   6:59p   2773
+| | |DIAG.KRN                      1855488  07-29-2005   5:34p   2999
++-+FIRMWARE                          <DIR>  01-09-2004   7:00p   3188
++-+-+RODAN                           <DIR>  01-09-2004   7:00p   3189
+| | | |FIRMWARE.IMG                 311776  07-29-2005   5:34p   3458
++-+-+XFILER                          <DIR>  01-09-2004   7:00p   3261
+| | | |FIRMWARE.IMG                 261316  07-29-2005   5:35p   3535
++-+OFW                               <DIR>  01-09-2004   7:00p   3320
+| | |UCODE.PDB                       63488  07-29-2005   5:35p   3600
++-+PLATFORM                          <DIR>  01-09-2004   7:01p   3421
++-+-+F87                             <DIR>  01-09-2004   7:01p   3422
+| | | |BIOSUPG.C0C                  524483  07-29-2005   5:35p   3711
+| | | |F87.LST                         338  07-29-2005   5:35p   4384
++-+-+C2100                           <DIR>  01-09-2004   7:01p   3552
+| | | |BIOS.ZIP                     604174  07-29-2005   5:35p   3841
+| | | |BMC.ZIP                      273128  07-29-2005   5:35p   3989
+| | | |DELTREE.COM                    4210  07-29-2005   5:35p   4056
+| | | |FRUSDR.ZIP                    99529  07-29-2005   5:35p   4058
+| | | |HSC.ZIP                       58653  07-29-2005   5:35p   4083
+| | | |TBIRDFW.BAT                    2526  07-29-2005   5:35p   4098
+| | | |UNZIP.EXE                     44849  07-29-2005   5:35p   4099
+| | | |C2100.LST                       319  07-29-2005   5:35p   4385
++-+-+C1200                           <DIR>  01-09-2004   7:02p   3822
+| | | |BIOS.ZIP                     604174  07-29-2005   5:35p   4110
+| | | |BMC.ZIP                      273128  07-29-2005   5:35p   4258
+| | | |DELTREE.COM                    4210  07-29-2005   5:35p   4325
+| | | |FRUSDR.ZIP                    99519  07-29-2005   5:35p   4327
+| | | |HSC.ZIP                       58276  07-29-2005   5:35p   4352
+| | | |MADDOGFW.BAT                   2524  07-29-2005   5:35p   4367
+| | | |UNZIP.EXE                     44849  07-29-2005   5:35p   4368
+| | | |C1200.LST                       350  07-29-2005   5:35p   4386
+| | |PLATFORM.LST                      464  07-29-2005   5:35p   4383
+| |SERVICE.LST                         561  07-29-2005   5:35p   4379
+| |DISKBOOT.LST                        542  07-29-2005   5:35p   4380
+| |DHCPWARN.TXT                        517  07-29-2005   5:35p   4381
+| |FWUPWARN.TXT                        745  07-29-2005   5:35p   4382
+|AUTOEXEC.BAT                          964  07-29-2005   5:35p   3616
+|COMMAND.COM                         86561  07-29-2005   5:35p   3617
+|KERNEL.SYS                          75663  07-29-2005   5:35p   3639
+|FIND.EXE                            16130  07-29-2005   5:35p   3658
+|FRUSDR.EXE                         200382  07-29-2005   5:35p   3662
+
+13447168 bytes free
+
+Version information of Data ONTAP, diagnostics and firmware contained on
+flash card:
+
+1:/x86/kernel/primary.krn: OS 7.0.1R1
+1:/x86/diag/diag.krn:  Diagnostic_4.4
+1:/x86/firmware/xfiler/firmware.img: Firmware 4.3.1_i2
+1:/x86/firmware/rodan/firmware.img: Firmware 4.3.1_i1
+
+===== SYSTEM SERIAL NUMBER =====
+system serial number = 10XXXXXX
+
+
+===== SERVICE USAGE =====
+Service statistics as of Sun Apr 23 00:00:03 EDT 2006
+ System  (UP). First recorded (72352860) on Tue Jan  6 12:59:03 EST 2004
+         P  16, 115907, 69988, Fri Jan  9 08:15:28 EST 2004
+         U  2, 327971, 179945, Fri Aug 13 09:47:37 EDT 2004
+ NFS     (UP). First recorded (72352815) on Tue Jan  6 12:59:48 EST 2004
+         P  15, 108369, 70048, Fri Jan  9 08:16:28 EST 2004
+         U  3, 328532, 180015, Fri Aug 13 09:48:47 EDT 2004
+ CIFS    (UP). First recorded (72352811) on Tue Jan  6 12:59:52 EST 2004
+         P  25, 20236393, 20121314, Fri Jul 29 13:55:41 EDT 2005
+         U  3, 328545, 180019, Fri Aug 13 09:48:51 EDT 2004
+ iSCSI   (UP). First recorded (47656895) on Mon Oct 18 09:58:28 EDT 2004
+         P  4, 4758, 3614, Mon Nov 15 12:32:21 EST 2004
+         U  1, 148037, 148037, Wed Nov  9 08:48:01 EST 2005
+
+===== IFSTAT-A =====
+
+-- interface  e0  (164 days, 14 hours, 12 minutes, 33 seconds) --
+
+RECEIVE
+ Frames/second:       0  | Bytes/second:        0  | Errors/minute:
+0 
+ Total frames:        0  | Total bytes:         0  | Total errors:
+0 
+ Multi/broadcast:     0  | No buffers:          0  | Non-primary u/c:
+0 
+ Tag drop:            0  | Vlan tag drop:       0  | Vlan untag drop:
+0 
+ CRC errors:          0  | Alignment errors:    0  | List overflow:
+0 
+ Bus overruns:        0  | Runt frames:         0  | Long frames:
+0 
+ Flow controls:       0 
+TRANSMIT
+ Frames/second:       0  | Bytes/second:        0  | Errors/minute:
+0 
+ Total frames:        0  | Total bytes:         0  | Total errors:
+0 
+ Multi/broadcast:     0  | Queue overflows:     0  | No buffers:
+0 
+ Max collisions:      0  | Late collisions:     0  | Bus underruns:
+0 
+ Lost carriers:       0  | Deferred:            0  | Single collision:
+0 
+ Multi collisions:    0  | Flow controls:       0 
+LINK_INFO
+ Current state: cfg_down | Up to downs:         0 
+
+
+-- interface  e4a  (164 days, 14 hours, 12 minutes, 33 seconds) --
+
+RECEIVE
+ Frames/second:       0  | Bytes/second:        0  | Errors/minute:
+0 
+ Total frames:      361m | Total bytes:       113g | Total errors:
+0 
+ Multi/broadcast:     0  | No buffers:          0  | Non-primary u/c:
+0 
+ Tag drop:            0  | Vlan tag drop:       0  | Vlan untag drop:
+0 
+ CRC errors:          0  | Runt frames:         0  | Fragment:
+0 
+ Long frames:         0  | Jabber:              0  | Alignment errors:
+0 
+ Bus overruns:        0  | Queue overflows:     0  | Xon:
+0 
+ Xoff:                0  | Jumbo:               0  | Reset:
+0 
+ Reset1:              0  | Reset2:              0 
+TRANSMIT
+ Frames/second:       2  | Bytes/second:      135  | Errors/minute:
+0 
+ Total frames:      286m | Total bytes:     24110m | Total errors:
+0 
+ Multi/broadcast:   100k | Queue overflows:     0  | No buffers:
+0 
+ Max collisions:      0  | Single collision:    0  | Multi collisions:
+0 
+ Late collisions:     0  | Timeout:             0  | Xon:
+0 
+ Xoff:                0  | Jumbo:               0 
+LINK_INFO
+ Current state:       up | Up to downs:         0  | Auto:
+on
+ Speed:            1000m | Duplex:            full | Flowcontrol:
+full
+
+
+-- interface  e4b  (164 days, 14 hours, 12 minutes, 33 seconds) --
+
+RECEIVE
+ Frames/second:       2  | Bytes/second:      174  | Errors/minute:
+0 
+ Total frames:     8182m | Total bytes:     12015g | Total errors:
+122 
+ Multi/broadcast:     0  | No buffers:          0  | Non-primary u/c:
+0 
+ Tag drop:            0  | Vlan tag drop:       0  | Vlan untag drop:
+0 
+ CRC errors:          0  | Runt frames:         0  | Fragment:
+0 
+ Long frames:         0  | Jabber:              0  | Alignment errors:
+0 
+ Bus overruns:       28  | Queue overflows:    94  | Xon:
+0 
+ Xoff:                0  | Jumbo:               0  | Reset:
+0 
+ Reset1:              0  | Reset2:              0 
+TRANSMIT
+ Frames/second:       0  | Bytes/second:        0  | Errors/minute:
+0 
+ Total frames:      823m | Total bytes:     54662m | Total errors:
+0 
+ Multi/broadcast:    14  | Queue overflows:     0  | No buffers:
+0 
+ Max collisions:      0  | Single collision:    0  | Multi collisions:
+0 
+ Late collisions:     0  | Timeout:             0  | Xon:
+13899 
+ Xoff:            13927  | Jumbo:               0 
+LINK_INFO
+ Current state:       up | Up to downs:         0  | Auto:
+on
+ Speed:            1000m | Duplex:            full | Flowcontrol:
+full
+
+
+-- interface  e5a  (164 days, 14 hours, 12 minutes, 33 seconds) --
+
+RECEIVE
+ Frames/second:       0  | Bytes/second:        0  | Errors/minute:
+0 
+ Total frames:      132k | Total bytes:     15497k | Total errors:
+0 
+ Multi/broadcast:     0  | No buffers:          0  | Non-primary u/c:
+0 
+ Tag drop:            0  | Vlan tag drop:       0  | Vlan untag drop:
+0 
+ CRC errors:          0  | Runt frames:         0  | Fragment:
+0 
+ Long frames:         0  | Jabber:              0  | Alignment errors:
+0 
+ Bus overruns:        0  | Queue overflows:     0  | Xon:
+0 
+ Xoff:                0  | Jumbo:               0  | Reset:
+0 
+ Reset1:              0  | Reset2:              0 
+TRANSMIT
+ Frames/second:       0  | Bytes/second:        0  | Errors/minute:
+0 
+ Total frames:     1593m | Total bytes:       297g | Total errors:
+0 
+ Multi/broadcast:    13  | Queue overflows:     0  | No buffers:
+0 
+ Max collisions:      0  | Single collision:    0  | Multi collisions:
+0 
+ Late collisions:     0  | Timeout:             0  | Xon:
+0 
+ Xoff:                0  | Jumbo:               0 
+LINK_INFO
+ Current state:       up | Up to downs:         0  | Auto:
+on
+ Speed:            1000m | Duplex:            full | Flowcontrol:
+full
+
+
+-- interface  e5b  (164 days, 14 hours, 12 minutes, 33 seconds) --
+
+RECEIVE
+ Frames/second:       1  | Bytes/second:       32  | Errors/minute:
+0 
+ Total frames:     2609m | Total bytes:       863g | Total errors:
+0 
+ Multi/broadcast:     0  | No buffers:          0  | Non-primary u/c:
+0 
+ Tag drop:            0  | Vlan tag drop:       0  | Vlan untag drop:
+0 
+ CRC errors:          0  | Runt frames:         0  | Fragment:
+0 
+ Long frames:         0  | Jabber:              0  | Alignment errors:
+0 
+ Bus overruns:        0  | Queue overflows:     0  | Xon:
+0 
+ Xoff:                0  | Jumbo:               0  | Reset:
+0 
+ Reset1:              0  | Reset2:              0 
+TRANSMIT
+ Frames/second:       3  | Bytes/second:      156  | Errors/minute:
+0 
+ Total frames:     8600m | Total bytes:     10874g | Total errors:
+0 
+ Multi/broadcast:    11  | Queue overflows:     0  | No buffers:
+0 
+ Max collisions:      0  | Single collision:    0  | Multi collisions:
+0 
+ Late collisions:     0  | Timeout:             0  | Xon:
+511 
+ Xoff:              511  | Jumbo:               0 
+LINK_INFO
+ Current state:       up | Up to downs:         0  | Auto:
+on
+ Speed:            1000m | Duplex:            full | Flowcontrol:
+full
+
+
+-- interface  lo  (164 days, 14 hours, 12 minutes, 28 seconds) --
+
+RECEIVE
+ Packets:         67470k | Bytes:             374g | Errors:
+0 
+ Queue full:          0 
+TRANSMIT 
+ Packets:         67470k | Bytes:             374g | Errors:
+0 
+ Collisions:          0 
+
+
+-- interface  vh  (164 days, 14 hours, 12 minutes, 28 seconds) --
+
+RECEIVE
+ Packets:             0  | Bytes:               0  | Errors:
+0 
+ Queue full:          0 
+TRANSMIT 
+ Packets:             0  | Bytes:               0  | Errors:
+0 
+ Collisions:          0 
+
+
+-- interface  trunk1  (164 days, 14 hours, 11 minutes, 56 seconds) --
+
+RECEIVE
+ Total frames:     2564m | Frames/second:    4294m | Total bytes:
+12992g
+ Bytes/second:      174  | Multi/broadcast:     0 
+TRANSMIT
+ Total frames:     2713m | Frames/second:       2  | Total bytes:
+11251g
+ Bytes/second:      151  | Multi/broadcast:   100k
+
+
+===== DNS info =====
+DNS is enabled
+
+DNS caching is enabled
+
+8405 cache hits
+4351 cache misses
+20 cache entries
+4294 expired entries
+4293 cache replacements
+
+IP Address       State   Last Polled                  Avg RTT Calls
+Errs
+------------------------------------------------------------------------
+-------
+10.XXX.XX.X      UP      Sat Apr 22 22:05:00 EDT 2006       2  6282
+21
+10.XXX.XX.X      DOWN    Sun Apr 16 18:05:05 EDT 2006       2    21
+20
+
+Default domain: XXXXXXX.com
+Search domains: XXXXXXX.com 
+
+===== LUN STATISTICS =====
+    /vol/haygrp2/k_drive/lun2  (1 hour, 54 minutes, 51 seconds)
+        Read (kbytes)   Write (kbytes)  Read Ops  Write Ops  Other Ops
+QFulls  Partner Ops Partner KBytes
+        0               0               0         0          0
+0       0           0         
+    /vol/vt203v/v_drive/v_drive  (14 hours, 30 minutes, 8 seconds)
+        Read (kbytes)   Write (kbytes)  Read Ops  Write Ops  Other Ops
+QFulls  Partner Ops Partner KBytes
+        0               0               0         0          0
+0       0           0         
+    /vol/vt200y/y_drive  (54 days, 5 hours, 4 minutes, 50 seconds)
+        Read (kbytes)   Write (kbytes)  Read Ops  Write Ops  Other Ops
+QFulls  Partner Ops Partner KBytes
+        473925138       220814967       8981369   3242688    998
+0       0           0         
+    /vol/vt200x/x_drive  (54 days, 5 hours, 48 minutes, 48 seconds)
+        Read (kbytes)   Write (kbytes)  Read Ops  Write Ops  Other Ops
+QFulls  Partner Ops Partner KBytes
+        334275699       96191628        5549669   546838     1005
+0       0           0         
+    /vol/vt200w/w_drive  (54 days, 5 hours, 49 minutes, 8 seconds)
+        Read (kbytes)   Write (kbytes)  Read Ops  Write Ops  Other Ops
+QFulls  Partner Ops Partner KBytes
+        425924992       121902634       6926023   509924     1007
+0       0           0         
+    /vol/vt200v/v_drive  (54 days, 5 hours, 49 minutes, 25 seconds)
+        Read (kbytes)   Write (kbytes)  Read Ops  Write Ops  Other Ops
+QFulls  Partner Ops Partner KBytes
+        517198132       209500519       8810639   859221     1018
+0       0           0         
+
+===== SYSCONFIG-R =====
+Volume icon (online, raid_dp) (block checksums)
+  Plex /icon/plex0 (online, normal, active)
+    RAID group /icon/plex0/rg0 (normal)
+
+      RAID Disk Device HA  SHELF BAY CHAN Pool Type  RPM  Used
+(MB/blks)    Phys (MB/blks)
+      --------- ------ ------------- ---- ---- ---- -----
+--------------    --------------
+      dparity 10a.14 10a   0   10         -  ATA   7200
+136000/278528000  138959/284589376 
+      parity  7a.15 7a    0   11         -  ATA   7200
+136000/278528000  138959/284589376 
+      data    8a.11 8a    0   7          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    9a.14 9a    0   10         -  ATA   7200
+136000/278528000  138959/284589376 
+      data    10b.12 10b   0   8          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    9a.0  9a    0   0          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    8b.12 8b    0   8          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    9b.15 9b    0   11         -  ATA   7200
+136000/278528000  138959/284589376 
+      data    8b.13 8b    0   9          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    8b.14 8b    0   10         -  ATA   7200
+136000/278528000  138959/284589376 
+      data    8b.15 8b    0   11         -  ATA   7200
+136000/278528000  138959/284589376 
+      data    9b.1  9b    0   1          -  ATA   7200
+136000/278528000  138959/284589376 
+
+    RAID group /icon/plex0/rg1 (normal)
+
+      RAID Disk Device HA  SHELF BAY CHAN Pool Type  RPM  Used
+(MB/blks)    Phys (MB/blks)
+      --------- ------ ------------- ---- ---- ---- -----
+--------------    --------------
+      dparity 8a.3  8a    0   3          -  ATA   7200
+136000/278528000  138959/284589376 
+      parity  9a.1  9a    0   1          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    10a.2 10a   0   2          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    8a.15 8a    0   11         -  ATA   7200
+136000/278528000  138959/284589376 
+      data    10b.0 10b   0   0          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    10a.8 10a   0   4          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    8b.10 8b    0   6          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    7a.0  7a    0   0          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    7a.8  7a    0   4          -  ATA   7200
+136000/278528000  138959/284589376 
+
+Volume haygroup (online, raid_dp) (block checksums)
+  Plex /haygroup/plex0 (online, normal, active)
+    RAID group /haygroup/plex0/rg0 (normal)
+
+      RAID Disk Device HA  SHELF BAY CHAN Pool Type  RPM  Used
+(MB/blks)    Phys (MB/blks)
+      --------- ------ ------------- ---- ---- ---- -----
+--------------    --------------
+      dparity 9b.9  9b    0   5          -  ATA   7200
+136000/278528000  138959/284589376 
+      parity  10b.1 10b   0   1          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    7a.10 7a    0   6          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    8a.0  8a    0   0          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    10a.1 10a   0   1          -  ATA   7200
+136000/278528000  138959/284589376 
+
+Aggregate aggr0 (online, raid_dp) (block checksums)
+  Plex /aggr0/plex0 (online, normal, active)
+    RAID group /aggr0/plex0/rg0 (normal)
+
+      RAID Disk Device HA  SHELF BAY CHAN Pool Type  RPM  Used
+(MB/blks)    Phys (MB/blks)
+      --------- ------ ------------- ---- ---- ---- -----
+--------------    --------------
+      dparity 9a.2  9a    0   2          -  ATA   7200
+136000/278528000  138959/284589376 
+      parity  10b.13 10b   0   9          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    8a.1  8a    0   1          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    9b.12 9b    0   8          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    7a.1  7a    0   1          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    8b.8  8b    0   4          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    10a.0 10a   0   0          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    9a.8  9a    0   4          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    8a.8  8a    0   4          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    9b.0  9b    0   0          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    7a.9  7a    0   5          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    8b.0  8b    0   0          -  ATA   7200
+136000/278528000  138959/284589376 
+
+    RAID group /aggr0/plex0/rg1 (normal)
+
+      RAID Disk Device HA  SHELF BAY CHAN Pool Type  RPM  Used
+(MB/blks)    Phys (MB/blks)
+      --------- ------ ------------- ---- ---- ---- -----
+--------------    --------------
+      dparity 10b.14 10b   0   10         -  ATA   7200
+136000/278528000  138959/284589376 
+      parity  8a.2  8a    0   2          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    9a.13 9a    0   9          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    9b.11 9b    0   7          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    7a.2  7a    0   2          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    10a.13 10a   0   9          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    8a.13 8a    0   9          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    9a.3  9a    0   3          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    9b.13 9b    0   9          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    7a.14 7a    0   10         -  ATA   7200
+136000/278528000  138959/284589376 
+      data    10a.15 10a   0   11         -  ATA   7200
+136000/278528000  138959/284589376 
+      data    10b.8 10b   0   4          -  ATA   7200
+136000/278528000  138959/284589376 
+
+    RAID group /aggr0/plex0/rg2 (normal)
+
+      RAID Disk Device HA  SHELF BAY CHAN Pool Type  RPM  Used
+(MB/blks)    Phys (MB/blks)
+      --------- ------ ------------- ---- ---- ---- -----
+--------------    --------------
+      dparity 7a.3  7a    0   3          -  ATA   7200
+136000/278528000  138959/284589376 
+      parity  8b.11 8b    0   7          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    9a.11 9a    0   7          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    9b.10 9b    0   6          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    8a.14 8a    0   10         -  ATA   7200
+136000/278528000  138959/284589376 
+      data    10a.10 10a   0   6          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    10b.10 10b   0   6          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    10a.12 10a   0   8          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    10b.2 10b   0   2          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    8b.1  8b    0   1          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    9a.12 9a    0   8          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    9b.2  9b    0   2          -  ATA   7200
+136000/278528000  138959/284589376 
+
+    RAID group /aggr0/plex0/rg3 (normal)
+
+      RAID Disk Device HA  SHELF BAY CHAN Pool Type  RPM  Used
+(MB/blks)    Phys (MB/blks)
+      --------- ------ ------------- ---- ---- ---- -----
+--------------    --------------
+      dparity 10a.9 10a   0   5          -  ATA   7200
+136000/278528000  138959/284589376 
+      parity  7a.12 7a    0   8          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    8a.9  8a    0   5          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    10b.9 10b   0   5          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    8b.9  8b    0   5          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    9a.9  9a    0   5          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    9b.14 9b    0   10         -  ATA   7200
+136000/278528000  138959/284589376 
+      data    10b.3 10b   0   3          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    10a.3 10a   0   3          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    7a.11 7a    0   7          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    8a.12 8a    0   8          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    8b.2  8b    0   2          -  ATA   7200
+136000/278528000  138959/284589376 
+
+    RAID group /aggr0/plex0/rg4 (normal)
+
+      RAID Disk Device HA  SHELF BAY CHAN Pool Type  RPM  Used
+(MB/blks)    Phys (MB/blks)
+      --------- ------ ------------- ---- ---- ---- -----
+--------------    --------------
+      dparity 8b.3  8b    0   3          -  ATA   7200
+136000/278528000  138959/284589376 
+      parity  9b.8  9b    0   4          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    9a.10 9a    0   6          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    8a.10 8a    0   6          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    10b.11 10b   0   7          -  ATA   7200
+136000/278528000  138959/284589376 
+      data    7a.13 7a    0   9          -  ATA   7200
+136000/278528000  138959/284589376 
+
+
+Spare disks
+
+RAID Disk Device HA  SHELF BAY CHAN Pool Type  RPM  Used
+(MB/blks)    Phys (MB/blks)
+--------- ------ ------------- ---- ---- ---- -----
+--------------    --------------
+Spare disks for block or zoned checksum traditional volumes or
+aggregates
+spare   10a.11 10a   0   7          -  ATA   7200
+136000/278528000  138959/284589376 
+spare   10b.15 10b   0   11         -  ATA   7200
+136000/278528000  138959/284589376 
+spare   9a.15 9a    0   11         -  ATA   7200
+136000/278528000  138959/284589376 
+spare   9b.3  9b    0   3          -  ATA   7200
+136000/278528000  138959/284589376 
+
+
+===== ASUP END =====
+
+
+
+
+
+
