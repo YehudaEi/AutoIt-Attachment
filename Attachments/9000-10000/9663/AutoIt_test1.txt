@@ -1,0 +1,1021 @@
+This test references beta build help file 3.1.1.128. In some cases in the remarks, Quotes will be taken from the Forum. I will do my best to quote the author.
+
+1. AutoIt v3 is a freeware ______-like scripting language designed for automating the Windows GUI.
+
+a. C+
+b. C++
+c. Python
+d. BASIC
+
+Answer: d
+
+2. Which one of these can AutoIt <B>NOT</B> do?
+
+a. Execute Windows and DOS executables 
+b. Simulate key strokes (supports most keyboards layouts) 
+c. Simulate mouse movements and clicks 
+d. Move, resize and manipulate windows 
+e. Excacute programs at the assembly level.
+f. Interact directly with "controls" on a window (set/get text, move, disable, etc.) 
+g. Work with the clipboard to cut/paste text items 
+h. Work with the registry 
+
+Answer: e
+
+3. AutoIt v3 standalone requires registry entries.
+
+A. True
+b. False
+
+Answer: b
+
+<B>More information:</b> As with previous versions, AutoIt has been designed to be as small as possible (~115KB) and stand-alone with no external .dll files or registry entries required.  Scripts can also be compiled into stand-alone executables with Aut2Exe.
+
+4. The DLL version of AutoIt is called 
+
+a. AutoIt X3
+b. AutoIt DLL
+c. AutoItX
+d. AutoDll
+
+Answer: c
+
+<B>More Information:</b> There have also been updates to the ActiveX and DLL versions of AutoIt called AutoItX - unlike v2 this will be a combined control (COM and standard DLL functions in the same DLL).  AutoItX will allow you to add the unique features of AutoIt to your own favourite scripting or programming languages!  See the AutoItX Help file (Start \ AutoIt v3 \ Extras \ AutoItX \ AutoItX Help File) for more information and examples.
+
+5. V3 and V2.64 have compatable syntax.
+
+a. True
+b. False
+
+Answer: b
+
+<B>More Information:</b> v3 has a completely different syntax to v2.64 so old scripts are not compatible. However, v2.64 will continue to be supported and downloadable.  Both AutoIt v3 and v2.64 can  be installed on the same machine together without any problems and you can keep your old scripts intact.  v2 uses the .aut extension and v3 uses .au3. There is rarely a need to rewrite a working v2.64 script for v3. 
+
+6. Directly get information on and interact with edit boxes, check boxes, list boxes, combos, buttons, status bars without the risk of keystrokes getting lost is called working with
+
+a. interacts
+b. controls
+c. functions
+d. bases
+
+Answer: b
+
+<B>More Information:</b> You can use the AU3Info to gather information on the control you wish to interact with. Even work with controls in windows that aren't active!
+
+7. With AutoIt v3, you can use: (select 4)
+
+a. limited lenth strings
+b. Goto statements
+c. if statements
+d. while loops
+e. functions
+f. if arrays
+g. do loops
+
+Answer: c, d, e, g
+
+<B>More Information:</b> "Proper" numbers, unlimited-length strings, complex expressions, if statements, select, while loops, for loops, do loops, functions, arrays, excellent string handling (over 25 functions!) - the list goes on.  Everything you need to make your automation routines as painless as possible.  Yes, this is a GUI automation language but the syntax in v3 is powerful enough for general purpose scripting.  Old versions of AutoIt were often referred to as "not a proper language".  Not any more.
+<br>AutoIt v3 doesn't use Goto statements. From the help file:<P><h2><font size="3">Where is the &quot;goto&quot; command?</font></h2>
+<p>Gone.&nbsp; It's evil.&nbsp; No, you can't ask why - it just is.&nbsp; It's like that lump 
+of rock they find in the microwave at the end of the film
+<a class="ext" target="_blank" href="                                    ">Time 
+Bandits</a> :)</p>
+<p>AutoIt v3 features most of the common &quot;loops&quot; in use today and with these 
+Goto is no longer required.&nbsp; Look up
+<a target="_blank" href="mk:@MSITStore:C:/Program%20Files/AutoIt3/beta/AutoIt3.chm::/html/keywords/While.htm">
+While</a>,
+<a target="_blank" href="mk:@MSITStore:C:/Program%20Files/AutoIt3/beta/AutoIt3.chm::/html/keywords/Do.htm">
+Do</a>,
+<a target="_blank" href="mk:@MSITStore:C:/Program%20Files/AutoIt3/beta/AutoIt3.chm::/html/keywords/For.htm">
+For</a>,
+<a target="_blank" href="mk:@MSITStore:C:/Program%20Files/AutoIt3/beta/AutoIt3.chm::/html/keywords/ExitLoop.htm">
+ExitLoop</a>,
+<a target="_blank" href="mk:@MSITStore:C:/Program%20Files/AutoIt3/beta/AutoIt3.chm::/html/keywords/ContinueLoop.htm">
+ContinueLoop</a> and
+<a target="_blank" href="mk:@MSITStore:C:/Program%20Files/AutoIt3/beta/AutoIt3.chm::/html/keywords/Func.htm">
+Functions</a> for the modern way of doing things :)&nbsp; And while you are looking 
+at help file sections check out these on
+<a target="_blank" href="mk:@MSITStore:C:/Program%20Files/AutoIt3/beta/AutoIt3.chm::/html/intro/lang_loops.htm">
+loops</a>,
+<a target="_blank" href="mk:@MSITStore:C:/Program%20Files/AutoIt3/beta/AutoIt3.chm::/html/intro/lang_conditional.htm">
+conditional statements</a> and
+<a target="_blank" href="mk:@MSITStore:C:/Program%20Files/AutoIt3/beta/AutoIt3.chm::/html/intro/lang_functions.htm">
+functions</a>.&nbsp; I promise you, once you have got the hang of such things you 
+will be able to script in virtually any other language within a couple of 
+minutes.</p>
+<p>Just to get you started, the most basic use of Goto in version 2.64 was an 
+infinite loop like:</p>
+<blockquote>
+  <p class="code"><font color="#FF0000">:mylabel<br>
+  ...do something...<br>
+  ...and something else...<br>
+  goto, mylabel</font></p>
+</blockquote>
+<p>A simple v3 version of that is a While loop that is always &quot;true&quot;.</p>
+<blockquote>
+  <p class="code"><font color="#FF0000">While 1 = 1<br>
+  &nbsp;&nbsp; ...do something...<br>
+  &nbsp;&nbsp; ...do something else...<br>
+  Wend</font></p>
+</blockquote>
+<p>If there is a massive outcry about this after the launch of v3 then I may add 
+it back in, but only to help people convert scripts.</p>
+
+8. You can access windows by: (select 3)
+
+a. "title/text"
+b. string names
+c. class names
+d. string handles
+e. handles
+f. pixel color point
+
+Answer: a, c, e
+
+<B>More Information:</b> From the help file: <p><strong>Window Management</strong></p>
+<p>In addition to the &quot;title/text&quot; v2 way of accessing windows you can also 
+access windows by their class names and handles. As usual you can expect to 
+move, hide, show, resize, activate, close and pretty much do what you want with 
+windows.</p>
+
+9. What is required to run a AutoIt v3 Script?
+
+a. You must have installed the AutoIt 3.1.1 installation package
+b. You must have AutoIt 3.1.1, the latest AutoIt beta, and a script editor such as SciTE
+c. You need only to run AutoIt3.exe
+d. You need AutoItv3.exe, and a script editor.
+
+Answer: c
+
+<B>More Information:</b> AutoIt3.exe is the AutoIt main program and only file required to run scripts.
+
+10. The AutoIt information tool is called:
+
+a. AutoIt.chm
+b. AU3Info.exe
+c. AUtInfo.exe
+d. AutoIt3.exe
+
+Answer: b
+
+<B>More Information:</b> AU3Info.exe is <a target="_blank" href="mk:@MSITStore:C:/Program%20Files/AutoIt3/beta/AutoIt3.chm::/html/intro/au3spy.htm">
+the AutoIt Window Info Tool.</a>
+
+11. Aut2Exe.exe is used for:
+
+a. Executable stub for compiled scripts
+b. The script compiler
+c. The script decompiler
+d. Process...() function helper DLL - used under Windows NT 4 only (Microsoft redistributable file)
+
+Answer: B
+
+<B>More Information:</b> <BR><a target="_blank" href="mk:@MSITStore:C:\Program%20Files\AutoIt3\beta\AutoIt3.chm::/html/intro/compiler.htm">Compiling Scripts with Aut2Exe</a></p>
+
+12. The program UPX.exe is used to
+
+a. Converts EXE files to scripts
+b. Converts 2.64 EXE files to scripts
+c. Converts 2.64 scripts to 3.1.1 scripts
+d. Shrinks the size of EXE files
+
+Answer: D
+
+13. What way is correct to run a DOS "DIR" command?
+
+a. RunWait(@COMSPEC & " /c Dir C:\")
+b. Run(@COMSPEC & " /c Dir C:\")
+c. Run("Command.com /"DIR"")
+d. Runwait("Command.com /"DIR" , C:\ /S")
+
+Answer: A
+
+<B>More Information:</b><BR> <a target="_blank" href="mk:@MSITStore:C:\Program%20Files\AutoIt3\beta\AutoIt3.chm::/html/faq.htm#5"> Using the @Comspec macro</a><br>
+<a target="_blank" href="mk:@MSITStore:C:\Program%20Files\AutoIt3\beta\UDFs3.chm::/html/libfunctions/_RunDOS.htm">
+_RunDOS</a>
+
+14. How do you run the file bagel.msi?
+
+a. runwait("Bagel.msi", "", 3)
+b. run("Bagel.msi")
+c. RunWait("msiexec Bagel.msi")
+d. Run("msiexec Bagel.msi")
+
+Answer: c
+
+<B>More Information:</b><BR> <a target="_blank" href="mk:@MSITStore:C:\Program%20Files\AutoIt3\beta\AutoIt3.chm::/html/faq.htm#6"> How to run a MSI file</a>
+
+15. You want the following sentence to appear in a msgbox as shown below:<P>
+<B>&nbsp;&nbsp;&nbsp;&nbsp;A word in "this" sentence has quotes around it!</b><P>
+How would you code this so the quotes appear when the msgbox is displayed?
+
+a. Msgbox(0, "", "A word in "this" sentence has quotes around it!")
+b. Msgbox(0, "", "A word in """this""" sentence has quotes around it!")
+c. Msgbox(0, "", 'A word in 'this' sentence has quotes around it!')
+d. Msgbox(0, "", "A word in ""this"" sentence has quotes around it!")
+
+Answer: D
+
+<B>More Information:</b><BR> <a target="_blank" href="mk:@MSITStore:C:\Program%20Files\AutoIt3\beta\AutoIt3.chm::/html/faq.htm#7"> Using double quotes</a>
+
+16. Will the following code work so the sentence "I love a bagel" will show in a msgbox?<P>
+<B>&nbsp;&nbsp;&nbsp;&nbsp;$msg="a bagel"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;msgbox(0, "", "I love $MSG")
+
+a. yes
+b. no
+
+Answer: b
+
+<B>More Information:</b><BR> <a target="_blank" href="mk:@MSITStore:C:\Program%20Files\AutoIt3\beta\AutoIt3.chm::/html/faq.htm#9"> Why can't I print a variable using "My var is $variable"?</a>
+
+17. What is the file extension for a AutoIt v3 Script?
+
+a. aut
+b. au3
+c. at3
+d. ats
+
+Answer: b
+
+18. How do you comment out a line?
+
+a. rem
+b. #
+c. ;
+d. ;-
+
+Answer: c
+
+19. Where is the best place to locate a function?
+
+a. The start of a script
+b. Before the loop statement
+c. AutoIt doesn't use functions
+d. The end of the script
+
+Answer: D
+
+20. The special array ___________ is initialized with the command line parameters passed in to your AutoIt script. 
+
+a. $command
+b. $CmdLine
+c. $commandline
+d. $cmdln
+
+Answer: b
+
+<B>More Information:</b><BR> <a target="_blank" href="mk:@MSITStore:C:\Program%20Files\AutoIt3\beta\AutoIt3.chm::/html/intro/running.htm#CommandLine"> Command Line Parameters</a>
+
+21. What will <B>WinWaitActive("", "", 10)</b> do?&nbsp;&nbsp;&nbsp;&nbsp;(note: WinTitleMatchMode is not being used)
+
+a. The script will halt, for no window will match.
+b. The currently active window will be used.
+c. Error for the syntax is incorrect.
+d. Wait 10 seconds, then the script will continue
+
+Answer: B
+
+<B>More Information:</b><BR> <a target="_blank" href="mk:@MSITStore:C:\Program%20Files\AutoIt3\beta\AutoIt3.chm::/html/intro/windowsbasic.htm"> Window Titles and Text (Basic)</a>
+
+22. In this example: <b>WinWaitActive ( "title", ["text"], [timeout] )</B>, which parameter(s) are required?
+
+a. Title, text
+b. Title, text, timeout
+c. Title
+d. Title, timeout
+
+Answer: C
+
+<B>More Information:</b><BR><em><strong>title</strong></em> is the only required parameter for this 
+function, both the <em><strong>text</strong></em> and <em><strong>timeout</strong></em> 
+are optional.&nbsp; In some functions the <em><strong>text</strong></em> parameter is 
+not optional, if you do not wish to specify any text then just use <strong>&quot;&quot;</strong> 
+(a blank string).&nbsp; A blank string, or nothing at all, in the <em><strong>text</strong></em> 
+tells AutoIt that any text is valid.
+
+23. How many "Windows matching" modes does AutoIt use?
+
+a. 1
+b. 2
+c. 3
+d. 4
+e. 5
+
+Answer: d
+
+<B>More Information:</b><BR> <a target="_blank" href="mk:@MSITStore:C:\Program%20Files\AutoIt3\beta\AutoIt3.chm::/html/intro/windowsadvanced.htm"> Window Titles and Text (Advanced)</a>
+
+24. AutoIt only works with
+
+a. Standard Microsoft controls
+b. WIndows, Linix, and novell
+c. WinBatch functions
+d. Sun Java controls
+
+Answer: A
+
+<B>More Information:</b><BR> <a target="_blank" href="mk:@MSITStore:C:\Program%20Files\AutoIt3\beta\AutoIt3.chm::/html/intro/controls.htm"> Controls</a>
+
+25. What is a control ID?
+
+a. A edit, lable, button, or banner.
+b. A varaible assigned to a control.
+c. The internal numeric identifier that windows gives to each control.
+D. Choice not listed.
+
+Answer: c
+
+<B>More Information:</b><BR>The Control ID is the internal numeric identifier that windows gives to each control. It is generally the best method of identifying controls. In addition to the AutoIt Window Info Tool, other applications such as screenreaders for the blind and Microsoft tools/APIs may allow you to get this Control ID. 
+
+26. What three methods can be used to interact with a control?
+
+a. ClassNameNN
+b. NameClassNN
+c. Classname
+d. text
+e. HWND
+f. HNWD
+
+Answer: a, d, e
+
+<B>More Information:</b><BR> <a target="_blank" href="mk:@MSITStore:C:\Program%20Files\AutoIt3\beta\AutoIt3.chm::/html/intro/controls.htm"> Controls</a>
+
+27. What is the perfered editor for AutoIt v3?
+
+a. notepad
+b. wordpad
+c. notetext
+d. SciTE
+
+Answer: d
+
+<B>More Information:</b><BR> <a target="_blank" href="mk:@MSITStore:C:\Program%20Files\AutoIt3\beta\AutoIt3.chm::/html/intro/editors.htm"> Editors</a>
+
+28. In this example: <B>MsgBox(0, "SRE Example 1 Result", StringRegExp("text", 'test'))</b>, what will be the result in the msgbox?
+
+a. 0
+b. 1
+c. Result
+d. error
+
+Answer: a
+
+<B>More Information:</b><BR> <a target="_blank" href="mk:@MSITStore:C:\Program%20Files\AutoIt3\beta\AutoIt3.chm::/html/tutorials/regexp/regexp.htm"> Tutorial - Regular expression</a>
+
+29. In this example: <B>MsgBox(0, "SRE Example 2 Result", StringRegExp("text", 'te[sx]t'))</b>, what will be the result in the msgbox?
+
+a. 0
+b. 1
+c. Result
+d. error
+
+Answer: 1
+
+<B>More Information:</b><BR> <a target="_blank" href="mk:@MSITStore:C:\Program%20Files\AutoIt3\beta\AutoIt3.chm::/html/tutorials/regexp/regexp.htm"> Tutorial - Regular expression</a>
+
+30. when using StringRegExp, you can specifying a pattern using a 
+
+a. group
+b. set
+c. bunch
+d. string
+
+Answer: b
+
+<B>More Information:</b><BR> <a target="_blank" href="mk:@MSITStore:C:\Program%20Files\AutoIt3\beta\AutoIt3.chm::/html/tutorials/regexp/regexp.htm"> Tutorial - Regular expression</a>
+
+31. Review the following example. <P>
+<font face="Lucida Sans Unicode" size="2"><b><font color="#CC0000">$asResult 
+=</font> <i><font color="#000080">StringRegExp</font></i><font color="#FF0000">(</font><font color="#C0C0C0">&quot;Gnarly 
+Monster hits you for 18 damage.&quot;</font><font color="#FF0000">,</font> _<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#C0C0C0"> '([0-9]{1,3})'</font><font color="#FF0000">,</font> 
+1<font color="#CC0000">)</font><br>
+<font color="#0000FF">If</font> <font color="#FF00FF">@error</font>
+<font color="#FF0000">==</font> 0 <font color="#0000FF">Then</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000080"><i>MsgBox</i></font><font color="#FF0000">(</font>0<font color="#FF0000">,</font>
+<font color="#C0C0C0">&quot;SRE Example 5 Result&quot;</font>, <font color="#CC0000">
+$asResult</font><font color="#FF0000">[</font>0<font color="#FF0000">])</font><br>
+<font color="#000080">EndIf</font></b></font></p>
+What will be the result in the msgbox?
+
+a. 1
+b. 0
+c. 18
+d. error
+
+Answer: c
+
+<B>More Information:</b><BR> <a target="_blank" href="mk:@MSITStore:C:\Program%20Files\AutoIt3\beta\AutoIt3.chm::/html/tutorials/regexp/regexp.htm"> Tutorial - Regular expression</a>
+
+32. What is a UDF:
+
+a. unified defined format
+b. User defined format
+c. User defined function
+d. unified defined function
+
+Answer: c
+
+<B>More Information:</b><BR>A UDF (User Defined Function) should be self sufficient, or the variables shouuld be made constants and unique. - <B>SmOKe N</b>
+
+33. Pick three that are not the basics of the AutoIt language.
+
+a. Datatypes 
+b. Variables 
+c. Macros 
+d. Operators 
+e. Conditional Statements 
+f. Loop Statements 
+g. User Functions 
+h. Comments 
+i. Command Dynamics
+j. Goto loops
+k. Range Fields
+
+Answer: I, J, K
+
+34. In AutoIt there is only one datatype called a:
+
+a. Operator
+b. Variant
+c. Variable
+d. Constant
+
+Answer: b
+
+<B>More Information:</b><BR> <a target="_blank" href="mk:@MSITStore:C:\Program%20Files\AutoIt3\beta\AutoIt3.chm::/html/intro/lang_datatypes.htm"> Language Reference - Datatypes</a>
+
+35. If a string is used as a number and it doesn't contain a valid number, it will be assumed to equal
+
+a. 1
+b. error
+c. 0
+d. true
+
+Answer:c
+
+<B>More Information:</b><BR> <a target="_blank" href="mk:@MSITStore:C:\Program%20Files\AutoIt3\beta\AutoIt3.chm::/html/intro/lang_datatypes.htm"> Language Reference - Datatypes</a>
+
+36. A number written like this: <B>1.5e3 </b> is called a 
+
+a. typo error
+b. Scientific notation
+c. contracted number
+d. compounded number
+
+Answer: b
+
+<B>More Information:</b><BR>&nbsp;&nbsp;<B>Numbers</b><br>
+Numbers can be standard decimal numbers like 2, 4.566, and -7.  
+
+Scientific notation is also supported; therefore, you could write 1.5e3 instead of 1500.  
+
+Integers (whole numbers) can also be represented in hexadecimal notation by preceding the integer with 0x as in 0x409 or 0x4fff (when using hex notation only 32-bit numbers are valid). 
+
+37. Strings are
+
+a. always shown with a $
+b. enclosed in double-quotes like "this"  
+c. enclosed in double-quotes like ""this""  
+d. always shown with a $_
+
+Answer: b
+
+<B>More Information:</b><BR> <a target="_blank" href="mk:@MSITStore:C:\Program%20Files\AutoIt3\beta\AutoIt3.chm::/html/intro/lang_datatypes.htm"> Language Reference - Datatypes</a>
+
+38. Only ____ Boolean value(s) exist: _____________________
+
+a. 3, 0 & 1 & 2
+b. 4, On, off, 0, 1
+c. 2, True and False
+d. 1, constant
+
+Answer: c
+
+<B>More Information:</b><BR> <a target="_blank" href="mk:@MSITStore:C:\Program%20Files\AutoIt3\beta\AutoIt3.chm::/html/intro/lang_datatypes.htm"> Language Reference - Datatypes</a>
+
+39. Review the following code:
+<p><font face="Arial Black" size="2"><font color="#CC0000">$Boolean1</font>
+<font color="#FF0000">=</font> true<br>
+<font color="#CC0000">$Boolean2</font> <font color="#FF0000">=</font> false<br>
+<font color="#CC0000">$Boolean3</font> <font color="#FF0000">=</font>
+<font color="#CC0000">$Boolean1</font> <font color="#0000FF">AND</font>
+<font color="#CC0000">$Boolean2</font></font></p>
+What would be the output?
+
+a. $Boolean3 being false
+b. $Boolean3 being true
+c. error
+d. o
+
+Answer: A
+
+<B>More Information:</b><BR> <a target="_blank" href="mk:@MSITStore:C:\Program%20Files\AutoIt3\beta\AutoIt3.chm::/html/intro/lang_datatypes.htm"> Language Reference - Datatypes</a>
+
+40. Review the following code:
+<p><font face="Arial Black" size="2"><font color="#CC0000">$Number1</font>
+<font color="#FF0000">=</font> 0<br>
+<font color="#CC0000">$Boolean1</font> <font color="#FF0000">=</font> true<br>
+<font color="#CC0000">$Boolean2</font> <font color="#FF0000">=</font>
+<font color="#CC0000">$Number1</font> <font color="#0000FF">AND</font>
+<font color="#CC0000">$Boolean1</font></font></p>
+What would be the output?
+
+a. $Boolean2 being false
+b. $Boolean2 being true
+c. error
+d. o
+
+Answer: A
+
+<B>More Information:</b><BR> <a target="_blank" href="mk:@MSITStore:C:\Program%20Files\AutoIt3\beta\AutoIt3.chm::/html/intro/lang_datatypes.htm"> Language Reference - Datatypes</a>
+
+41. What is not advisable to use together with Boolean values?
+
+a. variables
+b. macros
+c. arithmetics
+d. operators
+
+Answer: c
+
+<B>More Information:</b><BR>If you use arithmetics together with Boolean values (which is not advisable!), the following rules apply:<br>
+<br>
+A Boolean true will be converted into the numeric value 1<br>
+A Boolean false will be converted into the numeric value 0<br>
+<br>
+Example:<br>
+$Boolean1 = true<br>
+$Number1 = 100<br>
+$Number2 = $Boolean1 + $Number1<br>
+<br>
+This will result in $Number2 to be the numeric value 101
+
+42. If you use strings together with Boolean values, they will be converted as follows:
+
+a. A Boolean true will be the string value "True", A Boolean false will be the string value "False"
+b. A Boolean true will be the string value "1", A Boolean false will be the string value "0"
+c. A Boolean 1 will be the string value "True", A Boolean 0 will be the string value "False"
+d. A Boolean 1 will be the string value "1", A Boolean 0 will be the string value "False"
+
+Answer: a
+
+<B>More Information:</b><BR>If you use strings together with Boolean values, they will be converted as follows:<br>
+<br>
+A Boolean true will be the string value "True"<br>
+A Boolean false will be the string value "False"<br>
+<br>
+Example:<br>
+$Boolean1=true<br>
+$String1="Test is: "<br>
+$String2=$String1 & $Boolean1<br>
+<br>
+This will result in $String2 being the string value "Test is: True"<br>
+<br>
+The other way around however is different. When you use string comparisons with Boolean values, the following rules apply:<br>
+Only an empty string ("") will be a Boolean false<br>
+Any other string values (including a string containing "0") will be a Boolean true<br>
+
+43. BinaryStrings are: 
+
+a. like this example: 00100101001000101
+b. strings which can include Chr(0) characters. 
+c. strings that have any charactor that repeats
+d. choice not listed
+
+Answer: b
+
+<B>More Information:</b><BR>BinaryString are strings which can include Chr(0) characters. No substitution will occur as it does for Strings.<br>
+<br>
+Example:<br>
+$bin = "abc" & chr(0) & "def"<br>
+$bin = BinaryString("abc")
+
+44. What is a variable?
+
+a. number
+b. character
+c. sub strings
+d. data stored in memory
+
+Answer: d
+
+<B>More Information:</b><BR>A variable is just a place to store data in memory so that it can be accessed quickly.  Think of it as a mailbox in memory that you can put information in or take information out of.  For example you might create a variable to store the number a user's response to a question, or the result to a math equation.<br>
+<br>
+Each variable has a name (again, similar to a mailbox) and must start with the $ character and may only contain letters, numbers and the underscore _ character.  Here are some example names:<br>
+<br>
+    $var1<br>
+<br>
+    $my_variable<br>
+<br>
+Each variable is stored as a <a target="_blank" href="mk:@MSITStore:C:\Program%20Files\AutoIt3\beta\AutoIt3.chm::/html/intro/lang_datatypes.htm"> variant.</a>
+
+45. How do you declare a variable? (choose 3)
+
+a. Dim
+b. Local
+c. $Dim
+d. $Local
+e. Global
+f. $Global
+
+Answer: a, b, e
+
+<B>More Information:</b><BR>Variables are declared and created with the
+<a target="_blank" href="mk:@MSITStore:C:/Program%20Files/AutoIt3/beta/AutoIt3.chm::/html/keywords/Dim.htm">
+Dim</a>,
+<a target="_blank" href="mk:@MSITStore:C:/Program%20Files/AutoIt3/beta/AutoIt3.chm::/html/keywords/Dim.htm">
+Local</a> and
+<a target="_blank" href="mk:@MSITStore:C:/Program%20Files/AutoIt3/beta/AutoIt3.chm::/html/keywords/Dim.htm">
+Global</a> keywords:</p>
+<table border="0" width="37%" id="table1" cellspacing="0" cellpadding="0" bgcolor="#00FFFF">
+	<tr>
+		<td>&nbsp; Dim $var1</td>
+	</tr>
+</table>
+<p>Or you can declare multiple variables at once:</p>
+<table border="0" width="37%" id="table2" cellspacing="0" cellpadding="0" bgcolor="#00FFFF">
+	<tr>
+		<td>
+		<p class="codebox">&nbsp; Dim $var1, $myvariable</td>
+	</tr>
+</table>
+<p class="codebox">&nbsp;&nbsp;You can also assign a variable <strong>without</strong> 
+declaring it first, but many prefer explicit declarations.</p>
+<table border="0" width="37%" id="table3" cellspacing="0" cellpadding="0" bgcolor="#00FFFF">
+	<tr>
+		<td>
+		<p class="codebox">&nbsp;&nbsp;&nbsp; $var1 = &quot;create and assign&quot;</td>
+	</tr>
+</table>
+
+46. A variable's scope is controlled by
+
+a. the type of variable
+b. lenth of the variable
+c. when and how you declare the variable
+d. if it is declaired in a array
+
+Answer: c
+
+<B>More Information:</b><BR>&nbsp;&nbsp;A variable's scope is controlled by when and how you declare the variable.  If you declare a variable at the start of your script and outside any functions it exists in the Global scope and can be read or changed from anywhere in the script.<BR>
+&nbsp;&nbsp;If you declare a variable inside a function it is in Local scope and can only be used within that same function.  Variables created inside functions are automatically destroyed when the function ends.<BR>
+&nbsp;&nbsp;By default when variables are declared using Dim or assigned in a function they have Local scope unless there is a global variable of the same name (in which case the global variable is reused).  This can be altered by using the Local and Global keywords to declare variables and force the scope you want.
+
+47. What is the defination of a array?
+
+a. A variable with one character
+b. A Scope that is declared both local and global
+c. A variable containing series of data elements of the same type and size.
+D. A variable containing series of data elements of different types and sizes.
+
+Answer: c
+
+<B>More Information:</b><BR>An <b>Array</b> is a variable containing series of data elements of the same type and size. Each element in this variable can be accessed by an index number.
+<br>
+<br>
+An example:<br>
+<br>
+Let's say you want to store these series of characters: &quot;A&quot;, &quot;U&quot;, &quot;T&quot;, &quot;O&quot;, &quot;I&quot;, 
+&quot;T&quot; and &quot;3&quot;.<br>
+You could use seven separate variables to do so, but using an Array is more efficient:</p>
+<table border="0" width="33%" id="table1" cellspacing="0" cellpadding="0" bgcolor="#00FFFF">
+	<tr>
+		<td>$Array[1]=&quot;A&quot;<br>
+		$Array[2]=&quot;U&quot;<br>
+		..etc..<br>
+		$Array[7]=&quot;3&quot;</td>
+	</tr>
+</table>
+<p>To access a specific value in an Array, you only have to know the index number:</p>
+<table border="0" width="33%" id="table2" cellspacing="0" cellpadding="0" bgcolor="#00FFFF">
+	<tr>
+		<td>
+		<p class="codebox">$MyChar=$Array[3]</td>
+	</tr>
+</table>
+<p>This results in $MyChar containing the letter &quot;T&quot; (See also: <b>'operators'</b>).<br>
+<br>
+The index number can also be substituted by another variable or an expression, so you can build complex ways to assign or access elements in an array.<br>
+<br>
+Arrays can also be multi dimensional, when you use multiple series of index numbers, like:</p>
+<table border="0" width="32%" id="table3" cellspacing="0" cellpadding="0" bgcolor="#00FFFF">
+	<tr>
+		<td>$Array[1][1]=&quot;Upper-Left&quot;<br>
+		$Array[2][1]=&quot;Lower-Left&quot;<br>
+		$Array[1][2]=&quot;Upper-Right&quot;<br>
+		$Array[2][2]=&quot;Lower-Right&quot;</td>
+	</tr>
+</table>
+<p>(These values are just examples)<br>
+<br>
+You can use up to 64 dimensions in an Array.<br>
+<br>
+Before you can start using Arrays in your script, you must define their bounds using the <b>'<a href="mk:@MSITStore:C:/Program%20Files/AutoIt3/beta/AutoIt3.chm::/html/keywords/Dim.htm">Dim</a>'</b>keyword
+
+48. Is the following statement true or false:<P>
+It is ok to mix different datatypes in an Array.
+
+A. True
+B. False
+
+Answer: b
+
+<B>More Information:</b><BR>
+<h2>Data types in Arrays</h2>
+<p>It was said that an Array contains only <b>one</b> datatype of the same type. But technically speaking, a Variant in AutoIt can contain anything from a number to a boolean value. So an AutoIt-Array could also contain different types, even 
+other Arrays:</p>
+<table border="0" width="33%" id="table2" cellspacing="0" cellpadding="0" bgcolor="#00FFFF">
+	<tr>
+		<td>
+		<p class="codebox">$Array[1]=1<br>
+		$Array[2]=true<br>
+		$Array[3]=&quot;Text&quot;<br>
+		$Array[4]=$AnotherArray</td>
+	</tr>
+</table>
+<p>This has not been strictly forbidden in AutoIt. However, it is <b>NOT ADVISABLE</b> to mix different datatypes in an Array. Especially the use of an Array inside another Array will severely affect the execution speed of your script.
+
+49. What can you do to a macro? 
+
+a. Assign a value to them
+b. Use in a expression
+c. choice not listed
+d. make it read - write
+
+Answer: b
+
+<B>More Information:</b><BR> <a target="_blank" href="mk:@MSITStore:C:\Program%20Files\AutoIt3\beta\AutoIt3.chm::/html/intro/lang_macros.htm"> Language Reference - Macros</a>
+
+50. Which one of these are NOT a operator?
+
+a. @
+b. =
+c. /
+d. &
+
+Answer: a
+
+<B>More Information:</b><BR> <a target="_blank" href="mk:@MSITStore:C:\Program%20Files\AutoIt3\beta\AutoIt3.chm::/html/intro/lang_operators.htm"> Language Reference - Operators</a>
+
+51. What is NOT a type of operator?
+
+a. assignment
+b. mathematical
+c. comparison
+d. Logical
+e. dynamic
+
+Answer: e
+
+<B>More Information:</b><BR> <a target="_blank" href="mk:@MSITStore:C:\Program%20Files\AutoIt3\beta\AutoIt3.chm::/html/intro/lang_operators.htm"> Language Reference - Operators</a>
+
+52. Examine the following code:<br><B>
+$var = 20<br>
+<br>
+If $var > 10 Then<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MsgBox(0, "Example", "$var was greater than 10!")<br>
+Else<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MsgBox(0, "Example", "$var was less than 10")<br>
+EndIf<br></b>
+<BR>
+&nbsp;What would be the outcome of the example?
+
+a. True
+b. False
+C. Error
+d. 0
+
+Answer: A
+
+<B>More Information:</b><BR> <a target="_blank" href="mk:@MSITStore:C:\Program%20Files\AutoIt3\beta\AutoIt3.chm::/html/intro/lang_conditional.htm"> Conditional Statements</a>
+
+53. User functions are declared using the
+
+a. Function......EndFunction
+b. Func....EndFunc
+c. Function....Fend
+d. Func...Fend
+
+Answer: b
+
+<B>More Information:</b><BR> <a target="_blank" href="mk:@MSITStore:C:\Program%20Files\AutoIt3\beta\AutoIt3.chm::/html/intro/lang_functions.htm"> Language Reference - User Functions</a>
+
+54. Review the following code. <P><B>
+$val = 10<br>  
+For $i = 1 To 10<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$doubled = MyDouble($val)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MsgBox(0, "", $val & " doubled is " & $doubled)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$val = $doubled<br>
+Next<br>
+<br>
+Exit<br>
+<br>
+<br>
+Func MyDouble($value)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$value = $value * 2<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return $value<br>
+EndFunc<p></b>
+How many times will the the number be doubled?
+
+a. 5
+b. 10
+c. 20
+d. 100
+
+Answer: a
+
+<B>More Information:</b><BR> <a target="_blank" href="mk:@MSITStore:C:\Program%20Files\AutoIt3\beta\AutoIt3.chm::/html/intro/lang_functions.htm"> Language Reference - User Functions</a>
+
+55. How can you make a comment and span multiple lines?
+
+a. Add the macro @Returnline to the end of the line
+b. Add an underscore " _" preceded by a blank is placed at the end of a "broken" line. 
+c. Add a carriage return to the end of the line
+d. Add "&_Return" to the end of the line. You must use double quotes when doing this.
+
+Answer: b
+
+<B>More Information:</b><BR> <a target="_blank" href="mk:@MSITStore:C:\Program%20Files\AutoIt3\beta\AutoIt3.chm::/html/intro/lang_comments.htm"> Language Reference - Comments</a>
+
+56. What is the best method to comment large blocks of script? (Pick 2)
+
+a. Use ";;;;;" then the macro @Returnline to start, to stop use ";;;;;" then the macro @ReturnStop.
+b. use #CS to start, and to stop use #CE
+c. Use #Comment-start and #Comment-end
+d. Use @Comment-start and @Comment-end
+e. Use @CS to start, and @CE to stop
+
+Answer: b, c
+
+<B>More Information:</b><BR> <a target="_blank" href="mk:@MSITStore:C:\Program%20Files\AutoIt3\beta\AutoIt3.chm::/html/intro/lang_comments.htm"> Language Reference - Comments</a>
+
+57. A GUI consist of what?
+
+a. The start button, taskbar, and desktop icons
+b. The start button, taskbar, mouse pointer, and desktop icons
+c. One or more windows and each window contains one or more controls.
+D. A DOS window to enter commands
+
+Answer: c
+
+<B>More Information:</b><BR> <a target="_blank" href="mk:@MSITStore:C:\Program%20Files\AutoIt3\beta\AutoIt3.chm::/html/guiref/GUIRef.htm"> GUI Reference</a>
+
+58. Before writing any GUI scripts you must include the file
+
+a. GUIConstants.aut
+b. GUIConstants.au3
+c. GUICtrlConstants.aut
+d. GUICtrlConstants.au3
+
+Answer: b
+
+<B>More Information:</b><BR> <a target="_blank" href="mk:@MSITStore:C:\Program%20Files\AutoIt3\beta\AutoIt3.chm::/html/guiref/GUIRef.htm"> GUI Reference</a>
+
+59. Review the following script:<P><B>
+#include <GUIConstants.au3><BR>
+<BR>
+GUICreate("Hello World", 200, 100) <BR>
+GUISetState(@SW_SHOW)<BR>
+Sleep(2000)<P></b>
+What will happen when you run this script?
+
+a. A window will appear for 2000 seconds
+b. A window will appear for 2 minutes
+c. A window will appear for 2 seconds
+d. Nothing. The script is missing a loop statement.
+
+Answer: c
+
+<B>More Information:</b><BR> Sleep(2000) is 2 seconds. 
+<a target="_blank" href="mk:@MSITStore:C:\Program%20Files\AutoIt3\beta\AutoIt3.chm::/html/guiref/GUIRef.htm"> GUI Reference</a>
+
+60. Review the following script:<P><B>
+#include <GUIConstants.au3><br>
+<br>
+GUICreate("Hello World", 200, 100) <br>
+GUICtrlCreateLabel("Hello world! How are you?", 30, 10)<br>
+GUICtrlCreateButton("OK", 70, 50, 60)<br>
+GUISetState(@SW_SHOW)<br>
+Sleep(20000)<br></b>
+<br>
+What will happen when you run this script, and click on the "OK" button?
+
+a. The window will close in 20 seconds, and the OK button will blink.
+b. Nothing. The script is missing a loop statement
+c. The OK button will not react when clicked. The window will close in 20 seconds.
+d. The window will close in 2 seconds.
+
+Answer: c
+
+<B>More Information:</b><BR>
+<a target="_blank" href="mk:@MSITStore:C:\Program%20Files\AutoIt3\beta\AutoIt3.chm::/html/guiref/GUIRef.htm"> GUI Reference</a>
+
+61. What are the two basic GUI modes? (Pick 2)
+
+a. MessageEvent
+b. OnMessage
+c. MessageLoop
+d. EventLoop
+e. OnEvent
+f. OnMessageEvent
+
+Answer: C, E
+
+<B>More Information:</b><BR>
+<a target="_blank" href="mk:@MSITStore:C:\Program%20Files\AutoIt3\beta\AutoIt3.chm::/html/guiref/GUIRef_MessageLoopMode.htm"> GUI Reference - MessageLoop Mode </a><br>
+<a target="_blank" href="mk:@MSITStore:C:\Program%20Files\AutoIt3\beta\AutoIt3.chm::/html/guiref/GUIRef_OnEventMode.htm"> GUI Reference - OnEvent Mode </a>
+
+<h2>GUI Event Modes</h2>
+<p>&nbsp; As mentioned above there are two basic GUI modes: <strong>MessageLoop</strong> 
+mode and <strong>OnEvent</strong> mode. The modes are simply two different ways of reacting to GUI events. The mode you choose will depend on <em>personal preference</em>, and to some extent the type of GUI you wish to create. Both modes are equally capable of creating any GUI you wish but sometimes one mode is more suited to a task than the other.<br>
+&nbsp; The default mode is the MessageLoop mode.&nbsp; To switch to OnEvent mode use<a target="_blank" href="mk:@MSITStore:C:/Program%20Files/AutoIt3/beta/AutoIt3.chm::/html/functions/AutoItSetOption.htm#GUIOnEventMode">
+Opt(&quot;GUIOnEventMode&quot;, 1)</a>. </p>
+<p><strong>Message-loop Mode (default) <br>
+&nbsp; </strong>In the Message-loop mode your script will spend the majority of its time in a tight loop. This loop will simply poll the GUI using the <a target="_blank" href="mk:@MSITStore:C:/Program%20Files/AutoIt3/beta/AutoIt3.chm::/html/functions/GUIGetMsg.htm">GUIGetMsg</a> function. When an event has occurred the return value of the 
+GUIGetMsg function will show the details (a button is clicked, the GUI has been 
+closed, etc.).<br>
+&nbsp; In this mode you will only receive events while you are actively polling the GUIGetMsg function so you must ensure that you call it many times a second 
+otherwise your GUI will be unresponsive.<em><br>
+&nbsp; This mode is best for GUIs where the GUI is &quot;king&quot; and all you care about is waiting for user events.</em></p>
+<p>See <a target="_blank" href="mk:@MSITStore:C:/Program%20Files/AutoIt3/beta/AutoIt3.chm::/html/guiref/GUIRef_MessageLoopMode.htm">
+this page</a> for a more detailed explanation of the <a target="_blank" href="mk:@MSITStore:C:/Program%20Files/AutoIt3/beta/AutoIt3.chm::/html/guiref/GUIRef_MessageLoopMode.htm">
+MessageLoop mode</a>.</p>
+<p><strong>OnEvent Mode<br>
+&nbsp; </strong>In the OnEvent mode instead of constantly polling the GUI to find out if anything has happened you make the GUI temporarily pause your script and call a 
+pre-defined function to handle the event. For example, if the user clicks Button1 the GUI halts your main script and calls a previously defined user function that deals with Button1. When the function call is completed the main script is resumed. This mode is similar to the Visual Basic forms method.<em><br>
+&nbsp; This mode is best for GUIs where the GUI is of secondary importance and your script has other tasks to perform in addition to looking after the GUI.</em></p>
+<p>See<a target="_blank" href="mk:@MSITStore:C:/Program%20Files/AutoIt3/beta/AutoIt3.chm::/html/guiref/GUIRef_OnEventMode.htm">
+this page</a> for a more detailed explanation of the <a target="_blank" href="mk:@MSITStore:C:/Program%20Files/AutoIt3/beta/AutoIt3.chm::/html/guiref/GUIRef_OnEventMode.htm">
+OnEvent</a> mode  
+
+62. What are the three event messages that GUIGetMsg will return?
+
+a. No Event
+b. Dynamic Event
+c. Array Event
+d. Control Event
+e. System Event
+
+Answer: a, d, e
+
+<B>More Information:</b><BR>
+<a target="_blank" href="mk:@MSITStore:C:\Program%20Files\AutoIt3\beta\AutoIt3.chm::/html/guiref/GUIRef_MessageLoopMode.htm"> GUI Reference - MessageLoop Mode </a>
+
+63. Review the following script:<P><B>
+<p class="codebox"><font face="Courier">#include &lt;GUIConstants.au3&gt;<br>
+<br>
+GUICreate(&quot;Hello World&quot;, 200, 100)<br>
+GUICtrlCreateLabel(&quot;Hello world! How are you?&quot;, 30, 10)<br>
+$okbutton = GUICtrlCreateButton(&quot;OK&quot;, 70, 50, 60)<br>
+GUISetState(@SW_SHOW)<br>
+<br>
+While 1<br>
+&nbsp;&nbsp;$msg = GUIGetMsg()<br>
+<br>
+&nbsp;&nbsp;Select<br>
+&nbsp;&nbsp;&nbsp; Case $msg = $okbutton<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MsgBox(0, &quot;GUI Event&quot;, &quot;You pressed OK!&quot;)<br>
+<br>
+&nbsp;&nbsp;&nbsp; Case $msg = $GUI_EVENT_CLOSE<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MsgBox(0, &quot;GUI Event&quot;, &quot;You clicked CLOSE! Exiting...&quot;)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ExitLoop<br>
+&nbsp; EndSelect<br>
+WEnd<P></font></b>
+What will happen when you click the "OK" button when you run the script?
+
+a. Nothing
+b. THe GUI will close
+c. A message box will appear
+d. error message
+
+Answer: c
+
+<B>More Information: </b>
+<p class="codebox"><font face="Courier">#include &lt;GUIConstants.au3&gt;<br>
+<br>
+GUICreate(&quot;Hello World&quot;, 200, 100)&nbsp; ;makes a GIU<br>
+GUICtrlCreateLabel(&quot;Hello world! How are you?&quot;, 30, 10)&nbsp; ;makes a 
+lable<br>
+$okbutton = GUICtrlCreateButton(&quot;OK&quot;, 70, 50, 60)&nbsp; ;makes a 
+button<br>
+GUISetState(@SW_SHOW)&nbsp;&nbsp; ;<br>
+<br>
+While 1<br>
+&nbsp;&nbsp;$msg = GUIGetMsg()&nbsp; ;checks the state of the GUI<br>
+<br>
+&nbsp;&nbsp;Select<br>
+&nbsp;&nbsp;&nbsp; Case $msg = $okbutton&nbsp;&nbsp; ;When this happens, a 
+msgbox will be displayed<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MsgBox(0, &quot;GUI Event&quot;, &quot;You pressed OK!&quot;)&nbsp; 
+;message box with ok button<br>
+<br>
+&nbsp;&nbsp;&nbsp; Case $msg = $GUI_EVENT_CLOSE&nbsp;&nbsp; ;When this happens, 
+a msgbox will be displayed<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MsgBox(0, &quot;GUI Event&quot;, &quot;You clicked CLOSE! Exiting...&quot;)&nbsp;&nbsp;&nbsp; 
+;message box with ok button<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ExitLoop<br>
+&nbsp; EndSelect<br>
+WEnd </font>
+
