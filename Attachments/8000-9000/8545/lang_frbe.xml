@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<language>
+	<name>Franзais</name>
+	<nativename>Franзais Belgique</nativename>
+	<version>0.1.208.alpha Beta 05.05.2006</version>
+	<author>Groumphy</author>
+	<icon>
+		<bin>000001000100120C000001001800F80200001600000028000000120000001800</bin>
+		<bin>00000100180000000000A0020000000000000000000000000000000000000000</bin>
+		<bin>0000000000000000000000000000000000000000000000000000000000000000</bin>
+		<bin>000000000000000000000000000000000000000000000000001F201F09090900</bin>
+		<bin>00000303030D18181FCFCA2FEEEE42FAF54FFFFA50F9F549DEE24052C13A41B7</bin>
+		<bin>333DAC2C35A0242D960000000000000000383838181818050505000000061110</bin>
+		<bin>13C5BF21E4E335F2EC46FCF650FEFA52E9ED4D5FD13E46BE3842B4313BA92A33</bin>
+		<bin>9E00000000000000005050502F3030121212030303010C0C0ABEB914DBD926E8</bin>
+		<bin>E13AF5EF4AFEF955EFF45769DD4851CB3D47BB3641B12F39A700000000000000</bin>
+		<bin>006464644848482727270D0D0D020D0C05BAB50AD4D118DED82BEBE53EF8F350</bin>
+		<bin>F1F65D6FE5535CD9444FC53B46B9353FAE00000000000000006565665E5E5E40</bin>
+		<bin>414120201F0A141403B9B303CECB0DD6D01DE1DB2FEEE946EBF05A6EE95A63E3</bin>
+		<bin>505BD4404AC03A44B700000000000000003B3A3B6A6A6A575757383838192323</bin>
+		<bin>09B9B400CCCA05D0C910D8D221E4DF38E2E75367E65B64E85864E04C57D03E49</bin>
+		<bin>BE000000000000000021212146464668676850505030393915BEB803CCCA00CD</bin>
+		<bin>C607D1CB14DBD62AD8DC465BDD555FE75C67E75762DD4854CB00000000000000</bin>
+		<bin>000A0A0A2A2A2A5959596464644952512AC7C20DCECD01CCC601CDC70AD4CE1C</bin>
+		<bin>CED3384DD34953E05864E85C67E5535ED9000000000000000000000011111132</bin>
+		<bin>32326565655E676643D7D21FD4D209CDC700CCC603CEC811C6CB2A3FC83B45D6</bin>
+		<bin>4E5AE25A66E85B66E400000000000000000000000000001919193B3B3A6A7272</bin>
+		<bin>59E8E538E1E118D2CF05CCC900CCCA0AC2C81E34C12E38CD414EDB525FE75C68</bin>
+		<bin>EB00000000000000000000000000000000000000000000000000000000000000</bin>
+		<bin>0000000000000000000000000000000000000000000000000000000000000000</bin>
+		<bin>0000000000000000000000000000000000000000000000000000000000000000</bin>
+		<bin>0000000000000000000000000000</bin>
+	</icon>
+	<messages>
+		<askCloseModified>%s a йtй modifiй. Enregistrer la feuille avant suppression ?</askCloseModified>
+		<askCloseQuery>%s a йtй modifiй. Enregistrer la feuille ?</askCloseQuery>
+		<askAlreadyContains>Le Projet contient dйjа &quot;%s&quot; avec le mкme nom.</askAlreadyContains>
+		<askFileExists>Fichier &quot;%s&quot; existant. Йcraser ?</askFileExists>
+		<errOpFailed>Opйration йchouйe !</errOpFailed>
+		<strAssociated>Associй</strAssociated>
+		<strNotAssociated>Non associй</strNotAssociated>
+		<strObjInit>Initialisation...</strObjInit>
+		<strObjCreatedOk>Objet correctement crйй</strObjCreatedOk>
+		<strObjCreatedErr>Erreur de crйation d'objet !</strObjCreatedErr>
+		<askAlreadyOpened>Fichier\n\n&quot;%s&quot;\n\nexistant ouvert dans l'interface.</askAlreadyOpened>
+		<askCompExists>Feuille nommйe &quot;%s&quot; dйjа ouverte. Veuillez fermer ou renommer l'autre feuille avant ouverture.</askCompExists>
+		<askNoActiveForm>Pas de feuille active dans l'interface, rien а sauver.</askNoActiveForm>
+		<askUnrecoverable>Une erreur non rйparable a йtй rencontrйe au chargement de la feuille : \n\n%s\n\nUne nouvelle feuille a йtй ouverte.</askUnrecoverable>
+		<msgWarningTitle>Attention</msgWarningTitle>
+		<msgInfoTitle>Information</msgInfoTitle>
+		<msgConfirmTitle>Confirmer</msgConfirmTitle>
+		<msgErrorTitle>Erreur</msgErrorTitle>
+	</messages>
+	<form name="DesignerMain">
+		<caption>oda FormDesigner</caption>
+		<btnNewTemplate property="Hint">Nouveau...</btnNewTemplate>
+		<btnOpenForm property="Hint">Ouvrir feuille</btnOpenForm>
+		<btnSaveForm property="Hint">Enregistrer feuille</btnSaveForm>
+		<btnRemoveForm property="Hint">Supprimer feuille</btnRemoveForm>
+		<btnRunForm property="Hint">Exйcuter feuille</btnRunForm>
+		<btnNewForm property="Hint">Nouvelle feuille</btnNewForm>
+		<tabStandard property="Caption">Standard</tabStandard>
+		<btnTMainMenu property="Hint">Menu principal</btnTMainMenu>
+		<btnTLabel property="Hint">Йtiquette</btnTLabel>
+		<btnTEdit property="Hint">Zone de saisie</btnTEdit>
+		<btnTMemo property="Hint">Йdition</btnTMemo>
+		<btnTButton property="Hint">Boutton</btnTButton>
+		<btnTCheckBox property="Hint">Case а cocher</btnTCheckBox>
+		<btnTRadioButton property="Hint">Boutton radio</btnTRadioButton>
+		<btnTListBox property="Hint">Boite de liste</btnTListBox>
+		<btnTComboBox property="Hint">Boite dйroulante</btnTComboBox>
+		<btnTPopupMenu property="Hint">Menu en fenкtre</btnTPopupMenu>
+		<btnTGroupBox property="Hint">Boite de groupe</btnTGroupBox>
+		<tabAdditional property="Caption">Supplйmentaire</tabAdditional>
+		<btnSelect2 property="Caption">tbSelect</btnSelect2>
+		<btnTImage property="Hint">Image</btnTImage>
+		<btnTIcon property="Hint">Icфne</btnTIcon>
+		<btnTShape property="Hint">Graphique</btnTShape>
+		<btnTSpinEdit property="Hint">Updown</btnTSpinEdit>
+		<btnTAnimate property="Hint">Avi</btnTAnimate>
+		<btnTTrayMenu property="Hint">Tray Menu</btnTTrayMenu>
+		<tabWin32 property="Caption">Windows</tabWin32>
+		<btnSelect3 property="Caption">tbSelect</btnSelect3>
+		<btnTTrackBar property="Hint">Barre de progression sйlective</btnTTrackBar>
+		<btnTProgressBar property="Hint">Barre de progession continue</btnTProgressBar>
+		<btnTDatePick property="Hint">Sйlection de date</btnTDatePick>
+		<btnMonthCal property="Hint">Calendrier mensuel</btnMonthCal>
+		<btnTTreeView property="Hint">Arbre</btnTTreeView>
+		<btnTListView property="Hint">Liste</btnTListView>
+		<btnTTab property="Hint">Panneau de tabulation</btnTTab>
+		<btnTObj property="Hint">Objet COM</btnTObj>
+		<mnuNewTabCnt property="Caption">Nouvelle page</mnuNewTabCnt>
+		<mnuCutCnt property="Caption">Couper</mnuCutCnt>
+		<mnuCopyCnt property="Caption">Copier</mnuCopyCnt>
+		<mnuPasteCnt property="Caption">Coller</mnuPasteCnt>
+		<mnuDeleteCnt property="Caption">Supprimer (Del)</mnuDeleteCnt>
+		<mnuSelectAllCnt property="Caption">Sйlectionner tout</mnuSelectAllCnt>
+		<mnuTabOrderCnt property="Caption">Ordre de tabulation</mnuTabOrderCnt>
+		<mnuAlignToGridCnt property="Caption">Aligner sur la grille</mnuAlignToGridCnt>
+		<mnuControlCnt property="Caption">Contrфle</mnuControlCnt>
+		<mnuBringToFrontCnt property="Caption">Mettre au premier-plan</mnuBringToFrontCnt>
+		<mnuSendToBack property="Caption">Mettre а l'arriиre-plan</mnuSendToBack>
+		<mnuLockCnt property="Caption">Bloquer</mnuLockCnt>
+		<mnuUnLockCnt property="Caption">Dйbloquer</mnuUnLockCnt>
+		<mnuNoInsertIn property="Caption">Ne pas insйrer dans</mnuNoInsertIn>
+		<mnuNoCopy property="Caption">Ne pas copier</mnuNoCopy>
+		<mnuFile property="Caption">&amp;Fichier</mnuFile>
+		<mnuNew property="Caption">&amp;Nouveau</mnuNew>
+		<mnuOpen property="Caption">&amp;Ouvrir</mnuOpen>
+		<mnuSave property="Caption">&amp;Enregistrer</mnuSave>
+		<mnuSaveAs property="Caption">Enregistrer so&amp;us</mnuSaveAs>
+		<mnuUpdate property="Caption">Mise а jour</mnuUpdate>
+		<mnuExit property="Caption">&amp;Quitter</mnuExit>
+		<mnuEdit property="Caption">&amp;Йdition</mnuEdit>
+		<mnuCut property="Caption">Couper</mnuCut>
+		<mnuCopy property="Caption">Copier</mnuCopy>
+		<mnuPaste property="Caption">Coller</mnuPaste>
+		<mnuDelete property="Caption">Supprimer</mnuDelete>
+		<mnuSelectAll property="Caption">Selectionner tout</mnuSelectAll>
+		<mnuTabOrder property="Caption">Ordre de tabulation</mnuTabOrder>
+		<mnuView property="Caption">&amp;Affichage</mnuView>
+		<mnuObjectInspector property="Caption">Inspecteur d'Objet</mnuObjectInspector>
+		<mnuFormList property="Caption">Liste des feuilles</mnuFormList>
+		<mnuForms property="Caption">&amp;Afficher feuille</mnuForms>
+		<mnuOptions property="Caption">&amp;Options</mnuOptions>
+		<mnuOptionsDlg property="Caption">&amp;Options</mnuOptionsDlg>
+		<mnuTools property="Caption">Ou&amp;tils</mnuTools>
+		<mnuGenerateCode property="Caption">Gйnйrer code</mnuGenerateCode>
+		<mnuGenerateAdvanced property="Caption">Gйnйration avancйes</mnuGenerateAdvanced>
+		<mnuRunForm property="Caption">Exйcuter feuille</mnuRunForm>
+		<mnuHelp property="Caption">&amp;Aide</mnuHelp>
+		<mnuAbout property="Caption">А propos</mnuAbout>
+	</form>
+	<form name="frmFormList">
+		<caption>Liste des feuilles</caption>
+		<FormList property="Columns">
+			<item idx="0">Feuilles</item>
+			<item idx="1">Chemin</item>
+		</FormList>
+		<btnFormAdd property="Hint">Nouvelle feuille</btnFormAdd>
+		<btnFormDel property="Hint">Supprimer feuille</btnFormDel>
+		<mnuFormDel property="Caption">Supprimer feuille</mnuFormDel>
+		<mnuFormAdd property="Caption">Ajouter feuille</mnuFormAdd>
+	</form>
+	<form name="PInsp">
+		<caption>Inspecteur d'objet</caption>
+		<ModeTabSet property="Tabs">
+			<line idx="0">Propriйtйs</line>
+			<line idx="1">Styles</line>
+			<line idx="2">ExStyles</line>
+		</ModeTabSet>
+		<btnResetStyle property="Caption">Rйinitialiser</btnResetStyle>
+		<btnResetExStyle property="Caption">Rйinitialiser</btnResetExStyle>
+	</form>
+	<form name="ConfigDlg">
+		<caption>Options</caption>
+		<OptTreeView property="Items">
+			<item idx="0">Gйnйral</item>
+			<item idx="1">Gйnйrateur code</item>
+			<item idx="2">En-tкte et pied</item>
+			<item idx="3">Affichage</item>
+			<item idx="4">Language</item>
+		</OptTreeView>
+		<grpGeneralAssociate property="Caption">Association</grpGeneralAssociate>
+		<btnAssociate property="Caption">Dйfinir</btnAssociate>
+		<btnUnassociate property="Caption">Supprimer</btnUnassociate>
+		<grpGeneralAuPath property="Caption">Prйvisualiser mйthode d'exйcution</grpGeneralAuPath>
+		<cbGeneralAuPath property="Text">Associatй</cbGeneralAuPath>
+		<cbGeneralAuPath property="Items">
+			<line idx="0">Associatй</line>
+			<line idx="1">Manuel</line>
+		</cbGeneralAuPath>
+		<grpGeneralStartup property="Caption">Au dйmarrage</grpGeneralStartup>
+		<cbGeneralStartup property="Text">Crйer nouvelle feuille</cbGeneralStartup>
+		<cbGeneralStartup property="Items">
+			<line idx="0">Crйer nouvelle feuille</line>
+			<line idx="1">Ouvrir nouvelle feuille</line>
+			<line idx="2">Ouvrir feuille personnalisйe</line>
+		</cbGeneralStartup>
+		<cbGeneralBackup property="Caption">Crйer sauvegarde</cbGeneralBackup>
+		<lblSepChar property="Caption">Caractиre de sйparation de donnйes</lblSepChar>
+		<grpIndent property="Caption">Indentation code</grpIndent>
+		<lblIndentBy property="Caption">Indentй par</lblIndentBy>
+		<Label1 property="Caption">X</Label1>
+		<lblInitial property="Caption">Indentation initiale</lblInitial>
+		<cbSymbol property="Text">Tabulation</cbSymbol>
+		<cbSymbol property="Items">
+			<line idx="0">Tabulation</line>
+			<line idx="1">Espace</line>
+		</cbSymbol>
+		<grpVariables property="Caption">Variables</grpVariables>
+		<lblScope property="Caption">Portйe</lblScope>
+		<cbScope property="Text">Non dйfinis</cbScope>
+		<cbScope property="Items">
+			<line idx="0">Non dйfinis</line>
+			<line idx="1">Global</line>
+			<line idx="2">Local</line>
+		</cbScope>
+		<grpResources property="Caption">Ressources</grpResources>
+		<cbResPathType property="Items">
+			<line idx="0">Chemin absolus</line>
+			<line idx="1">Chemin relatif du script</line>
+		</cbResPathType>
+		<grpDesignerOptions property="Caption">Option par dйfaut du Gйnйrateur</grpDesignerOptions>
+		<cbCodegenPopulate property="Caption">Gйnйrer йvйnement pour tous contrфles</cbCodegenPopulate>
+		<cbCodegenPopulate property="Hint">Cela va gйnйrer des variables ou йvйnement pour tous les contrфles, dйfinis ou non</cbCodegenPopulate>
+		<cbCodegenExpandVars property="Caption">Йtendre variable %var%</cbCodegenExpandVars>
+		<cbCodegenExpandVars property="Hint">Si le texte de la propriйtй contiendra une variable йgale а $VAR - cela gйnйrera une variable, et non une chaоne de caractиre</cbCodegenExpandVars>
+		<cbCodegenOnEvent property="Caption">Gйnйrer code OnEvent</cbCodegenOnEvent>
+		<cbCodegenOnEvent property="Hint">Gйnйrera un code style d'йvйnement en place d'un style de boucle</cbCodegenOnEvent>
+		<cbCodegenStripPrefix property="Caption">Enlиve le prйfixe 'A' du nom par dйfaut</cbCodegenStripPrefix>
+		<lblHeader property="Caption">En-tкte</lblHeader>
+		<lblFooter property="Caption">Pied</lblFooter>
+		<grpDesignerGrid property="Caption">Option de grille</grpDesignerGrid>
+		<cbDesignerDispalyGrid property="Caption">Afficher la grille</cbDesignerDispalyGrid>
+		<cbDesignerSnapToGrid property="Caption">Aligner sur la grille</cbDesignerSnapToGrid>
+		<grpDesignerGridSize property="Caption">Taille de la grille</grpDesignerGridSize>
+		<lblDesignerGridX property="Caption">Grille &amp;X</lblDesignerGridX>
+		<lblDesignerGridY property="Caption">Grille &amp;Y</lblDesignerGridY>
+		<grpDesignerOther property="Caption">Autres options</grpDesignerOther>
+		<cbDesignerReflect property="Caption">Reflect form styles changes in designtime</cbDesignerReflect>
+		<cbDesignerSafe property="Caption">Don't reflect unsafe styles (transparency etc.)</cbDesignerSafe>
+		<cbDesignerOnEvent property="Caption">Йditeur avancй d'йvйnement (pour mode OnEvent)</cbDesignerOnEvent>
+		<lblActiveLang property="Caption">Langage actif :</lblActiveLang>
+		<LangList property="Columns">
+			<item idx="0">Language</item>
+			<item idx="1">Nom natif</item>
+			<item idx="2">Auteur</item>
+			<item idx="3">Version</item>
+		</LangList>
+		<btnCreateTemplate property="Caption">Crйer modиle</btnCreateTemplate>
+		<btnCancel property="Caption">Annuler</btnCancel>
+		<btnOK property="Caption">Ok</btnOK>
+		<btnApply property="Caption">Appliquer</btnApply>
+	</form>
+	<form name="frmDesignerCode">
+		<caption>Code</caption>
+		<btnCopyCode property="Caption">Copier dans presse-papier</btnCopyCode>
+	</form>
+	<form name="AboutBox">
+		<caption>А propos</caption>
+		<btnOK property="Caption">OK</btnOK>
+	</form>
+	<form name="PictureEdit">
+		<caption>Йditeur d'image</caption>
+		<btnImgOk property="Caption">OK</btnImgOk>
+		<btnImgCancel property="Caption">Annuler</btnImgCancel>
+		<btnImgHelp property="Caption">Aide</btnImgHelp>
+		<btnImgLoad property="Caption">&amp;Charger...</btnImgLoad>
+		<btnImgSave property="Caption">&amp;Enregistrer...</btnImgSave>
+		<btnImgClear property="Caption">&amp;Clear</btnImgClear>
+	</form>
+	<form name="frmAXObjectEdit">
+		<caption>Navigateur d'object ActiveX</caption>
+		<lblLoadStatus property="Caption">Status : </lblLoadStatus>
+		<lblPath property="Caption">Chemin :</lblPath>
+		<CompList property="Columns">
+			<item idx="0">Nom du composant</item>
+		</CompList>
+		<btnOK property="Caption">OK</btnOK>
+		<btnCancel property="Caption">Annuler</btnCancel>
+	</form>
+	<form name="GalleryBrowseDlg">
+		<caption>Modиle</caption>
+		<lblTGDescr property="Caption">Description :</lblTGDescr>
+		<btnTGOK property="Caption">OK</btnTGOK>
+		<btnTGCancel property="Caption">Annuler</btnTGCancel>
+		<btnTGHelp property="Caption">&amp;Aide</btnTGHelp>
+		<tabGroups property="Tabs">
+			<line idx="0">Standard</line>
+		</tabGroups>
+		<lvItems property="Columns">
+			<item idx="0">Nom</item>
+			<item idx="1">Description</item>
+		</lvItems>
+		<mnuTGLargeIcons property="Caption">Affichage &amp;Larges Icфnes</mnuTGLargeIcons>
+		<mnuTGSmallIcons property="Caption">Affichage &amp;Petite Icфne</mnuTGSmallIcons>
+		<mnuTGList property="Caption">Affichage L&amp;iste</mnuTGList>
+		<mnuTGDetails property="Caption">Affichage &amp;Dйtails</mnuTGDetails>
+	</form>
+	<form name="TreeviewForm">
+		<caption>Йditeur d'йlйments en arbre</caption>
+		<grpTVItems property="Caption">Йlйmйnts</grpTVItems>
+		<btnTVNew property="Caption">Nouveau йlйment</btnTVNew>
+		<btnTVNewSub property="Caption">Nouveau sous-йlйment</btnTVNewSub>
+		<btnTVDelete property="Caption">Supprimer</btnTVDelete>
+		<grpTVProperties property="Caption">Propriйtйs йlйment</grpTVProperties>
+		<lblTVText property="Caption">Texte :</lblTVText>
+		<btnTVCancel property="Caption">Annuler</btnTVCancel>
+		<btnTVApply property="Caption">&amp;Appliquer</btnTVApply>
+		<btnTVOk property="Caption">OK</btnTVOk>
+		<btnTVHelp property="Caption">&amp;Aide</btnTVHelp>
+	</form>
+	<form name="frmListViewItems">
+		<caption>ListView Items Editor</caption>
+		<grpLVItems property="Caption">Йlйmйnt</grpLVItems>
+		<btnLVNew property="Caption">&amp;Nouveau йlйment</btnLVNew>
+		<btnLVDelete property="Caption">&amp;Supprimer</btnLVDelete>
+		<btnLVNewSub property="Caption">N&amp;ouveau sous-йlйment</btnLVNewSub>
+		<grpLVProperties property="Caption">Propriйtйs йlйment</grpLVProperties>
+		<lblLVCaption property="Caption">&amp;Lйgende :</lblLVCaption>
+		<btnLVOk property="Caption">OK</btnLVOk>
+		<btnLVCancel property="Caption">Annuler</btnLVCancel>
+		<btnLVApply property="Caption">&amp;Appliquer</btnLVApply>
+		<btnLVHelp property="Caption">&amp;Aide</btnLVHelp>
+	</form>
+	<form name="frmCollectionEdit">
+		<caption>Colonne</caption>
+		<btnAdd property="Hint">Ajouter йlйment</btnAdd>
+		<btnDelete property="Hint">Supprimer йlйment</btnDelete>
+		<btnUp property="Hint">Monter</btnUp>
+		<btnDown property="Hint">Descendre</btnDown>
+		<mnuColRefresh property="Caption">Rafraоchir</mnuColRefresh>
+	</form>
+	<form name="frmEventEditor">
+		<caption>Йditeur йvйnement</caption>
+		<grpNotify property="Caption">Notification contrфle</grpNotify>
+		<grpEvent property="Caption">Йvйnement contrфle</grpEvent>
+		<rbEditFunc property="Caption">Notifier</rbEditFunc>
+		<rbNone property="Caption">Aucun</rbNone>
+		<btnDefault property="Caption">Dйfaut</btnDefault>
+		<FuncNameEdit property="Items"/>
+		<btnOK property="Caption">OK</btnOK>
+		<btnCancel property="Caption">Annuler</btnCancel>
+	</form>
+	<form name="frmMenuBuilder">
+		<caption>Menu Designer</caption>
+		<InsertItem property="Caption">&amp;Insйrer</InsertItem>
+		<DeleteItem property="Caption">&amp;Supprimer</DeleteItem>
+		<CreateSubmenu property="Caption">&amp;Crйer sous-menu</CreateSubmenu>
+	</form>
+</language>
