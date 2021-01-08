@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+<language>
+	<name>Français</name>
+	<nativename>Français Belgique</nativename>
+	<version>0.1.216.alpha</version>
+	<author>Groumphy</author>
+	<icon>Icon data here</icon>
+	<form name="DesignerMain">
+		<caption>oda FormDesigner</caption>
+		<btnNewTemplate property="Hint">Nouveau...</btnNewTemplate>
+		<btnOpenForm property="Hint">Ouvrir feuille</btnOpenForm>
+		<btnSaveForm property="Hint">Enregistrer feuille</btnSaveForm>
+		<btnRemoveForm property="Hint">Supprimer feuille</btnRemoveForm>
+		<btnRunForm property="Hint">Éxécuter feuille</btnRunForm>
+		<btnNewForm property="Hint">Nouvelle feuille</btnNewForm>
+		<tabStandard property="Caption">Standard</tabStandard>
+		<btnTMainMenu property="Hint">Menu principal</btnTMainMenu>
+		<btnTLabel property="Hint">Étiquette</btnTLabel>
+		<btnTEdit property="Hint">Zone de saisie</btnTEdit>
+		<btnTMemo property="Hint">Édition</btnTMemo>
+		<btnTButton property="Hint">Bouton</btnTButton>
+		<btnTCheckBox property="Hint">CheckBox</btnTCheckBox>
+		<btnTRadioButton property="Hint">Bouton radio</btnTRadioButton>
+		<btnTListBox property="Hint">Boite de liste</btnTListBox>
+		<btnTComboBox property="Hint">Boite déroulante</btnTComboBox>
+		<btnTPopupMenu property="Hint">Menu en fenêtre</btnTPopupMenu>
+		<btnTGroupBox property="Hint">Boite de groupe</btnTGroupBox>
+		<tabAdditional property="Caption">Supplémentaire</tabAdditional>
+		<btnTImage property="Hint">Image</btnTImage>
+		<btnTIcon property="Hint">Icône</btnTIcon>
+		<btnTShape property="Hint">Graphique</btnTShape>
+		<btnTSpinEdit property="Hint">Updown</btnTSpinEdit>
+		<btnTAnimate property="Hint">Avi</btnTAnimate>
+		<tabWin32 property="Caption">Windows</tabWin32>
+		<btnTTrackBar property="Hint">Barre de progression sélective</btnTTrackBar>
+		<btnTProgressBar property="Hint">Barre de progression continue</btnTProgressBar>
+		<btnTDatePick property="Hint">Sélection date</btnTDatePick>
+		<btnMonthCal property="Hint">Calendrier mensuel</btnMonthCal>
+		<btnTTreeView property="Hint">Arbre</btnTTreeView>
+		<btnTListView property="Hint">Liste</btnTListView>
+		<btnTTab property="Hint">Panneau de tabulation</btnTTab>
+		<btnTObj property="Hint">Objet COM</btnTObj>
+		<mnuNewTabCnt property="Caption">Nouvelle page</mnuNewTabCnt>
+		<mnuDeleteCnt property="Caption">Supprimer (Suppr)</mnuDeleteCnt>
+		<mnuAlignToGridCnt property="Caption">Aligner sur la grille</mnuAlignToGridCnt>
+		<mnuCopyCnt property="Caption">Copier</mnuCopyCnt>
+		<mnuCutCnt property="Caption">Couper</mnuCutCnt>
+		<mnuPasteCnt property="Caption">Coller</mnuPasteCnt>
+		<mnuSelectAllCnt property="Caption">Sélectionner tout</mnuSelectAllCnt>
+		<mnuControlCnt property="Caption">Contrôle</mnuControlCnt>
+		<mnuBringToFrontCnt property="Caption">Mettre au premier-plan</mnuBringToFrontCnt>
+		<mnuSendToBack property="Caption">Mettre Ã  l'arrière-plan</mnuSendToBack>
+		<mnuLockCnt property="Caption">Bloquer</mnuLockCnt>
+		<mnuUnLockCnt property="Caption">Débloquer</mnuUnLockCnt>
+		<mnuNoInsertIn property="Caption">Ne pas insérer içi</mnuNoInsertIn>
+		<mnuNoCopy property="Caption">Ne pas copier</mnuNoCopy>
+		<mnuFile property="Caption">&amp;Fichier</mnuFile>
+		<mnuNew property="Caption">&amp;Nouveau</mnuNew>
+		<mnuOpen property="Caption">&amp;Ouvrir</mnuOpen>
+		<mnuSave property="Caption">&amp;Enregistrer</mnuSave>
+		<mnuSaveAs property="Caption">Enregistrer so&amp;us</mnuSaveAs>
+		<mnuExit property="Caption">&amp;Quitter</mnuExit>
+		<mnuEdit property="Caption">&amp;Éditer</mnuEdit>
+		<mnuCut property="Caption">Couper</mnuCut>
+		<mnuCopy property="Caption">Copier</mnuCopy>
+		<mnuPaste property="Caption">Coller</mnuPaste>
+		<mnuDelete property="Caption">Supprimer</mnuDelete>
+		<mnuView property="Caption">&amp;Voir</mnuView>
+		<mnuObjectInspector property="Caption">Inspecteur &amp;Objet</mnuObjectInspector>
+		<mnuFormList property="Caption">&amp;Liste feuille</mnuFormList>
+		<mnuForms property="Caption">&amp;Voir feuille</mnuForms>
+		<mnuOptions property="Caption">&amp;Options</mnuOptions>
+		<mnuOptionsDlg property="Caption">&amp;Options</mnuOptionsDlg>
+		<mnuTools property="Caption">Out&amp;ils</mnuTools>
+		<mnuGenerateCode property="Caption">Générer le code</mnuGenerateCode>
+		<mnuRunForm property="Caption">Exécuter feuille</mnuRunForm>
+		<mnuHelp property="Caption">&amp;Aide</mnuHelp>
+		<mnuAbout property="Caption">À propos</mnuAbout>
+	</form>
+	<form name="frmformlist">
+		<caption>Liste feuilles</caption>
+		<FormList property="Columns">
+			<item idx="0">Feuille</item>
+			<item idx="1">Chemin</item>
+		</FormList>
+		<mnuFormDel property="Caption">Supprimer feuille</mnuFormDel>
+		<mnuFormAdd property="Caption">Ajouter feuille</mnuFormAdd>
+	</form>
+	<form name="pinsp">
+		<caption>Inspecteur Objet</caption>
+		<ModeTabSet property="Tabs">
+			<line idx="0">Propriétés</line>
+			<line idx="1">Styles</line>
+			<line idx="2">ExStyles</line>
+		</ModeTabSet>
+		<btnResetStyle property="Caption">Réinitialiser</btnResetStyle>
+		<btnResetExStyle property="Caption">Réinitialiser</btnResetExStyle>
+	</form>
+	<form name="ConfigDlg">
+		<caption>Options</caption>
+		<OptTreeView property="Items">
+			<item idx="0">Généralités</item>
+			<item idx="1">Générateur code</item>
+			<item idx="2">En-tête et pied</item>
+			<item idx="3">Affichage</item>
+			<item idx="4">Language</item>
+		</OptTreeView>
+		<grpGeneralAssociate property="Caption">Association</grpGeneralAssociate>
+		<btnAssociate property="Caption">Définir</btnAssociate>
+		<btnUnassociate property="Caption">Supprimer</btnUnassociate>
+		<grpGeneralAuPath property="Caption">Apperçu méthode exécution</grpGeneralAuPath>
+		<cbGeneralAuPath property="Items">
+			<line idx="0">Associé</line>
+			<line idx="1">Manuel</line>
+		</cbGeneralAuPath>
+		<grpGeneralStartup property="Caption">Au démarrage</grpGeneralStartup>
+		<cbGeneralStartup property="Items">
+			<line idx="0">Créer nouvelle feuille</line>
+			<line idx="1">Ouvrir dernière feuille</line>
+			<line idx="2">Ouvrir feuille actuelle</line>
+		</cbGeneralStartup>
+		<grpIndent property="Caption">Indenter code</grpIndent>
+		<lblSymbols property="Caption">Symbôles</lblSymbols>
+		<lblSymbol property="Caption">Indenté par</lblSymbol>
+		<cbSymbol property="Items">
+			<line idx="0">Tab</line>
+			<line idx="1">Espace</line>
+		</cbSymbol>
+		<grpVariables property="Caption">Variables</grpVariables>
+		<lblScope property="Caption">Portage</lblScope>
+		<cbScope property="Items">
+			<line idx="0">Non définis</line>
+			<line idx="1">Global</line>
+			<line idx="2">Local</line>
+		</cbScope>
+		<lblHeader property="Caption">En-tête</lblHeader>
+		<lblFooter property="Caption">Pied</lblFooter>
+		<grpDesignerGrid property="Caption">Option de grille</grpDesignerGrid>
+		<lblDesignerGridSize property="Caption">Taille de grille :</lblDesignerGridSize>
+		<lblDesignerGridX property="Caption">Grille &amp;X</lblDesignerGridX>
+		<lblDesignerGridY property="Caption">Grille &amp;Y</lblDesignerGridY>
+		<cbDesignerDispalyGrid property="Caption">Afficher la grille</cbDesignerDispalyGrid>
+		<cbDesignerSnapToGrid property="Caption">Aligner sur la grille</cbDesignerSnapToGrid>
+		<grpDesignerOther property="Caption">Autres options</grpDesignerOther>
+		<cbDesignerReflect property="Caption">Reflect form styles changes in designtime</cbDesignerReflect>
+		<cbDesignerSafe property="Caption">Don't reflect unsafe styles (transparency etc.)</cbDesignerSafe>
+		<lblActiveLang property="Caption">Language actif : </lblActiveLang>
+		<LangList property="Columns">
+			<item idx="0">Language</item>
+			<item idx="1">Nom</item>
+			<item idx="2">Auteur</item>
+			<item idx="3">Version</item>
+		</LangList>
+		<btnCreateTemplate property="Caption">Créer modèle</btnCreateTemplate>
+		<btnCancel property="Caption">Annuler</btnCancel>
+		<btnOK property="Caption">Ok</btnOK>
+		<btnApply property="Caption">Appliquer</btnApply>
+	</form>
+	<form name="designercode">
+		<caption>Code</caption>
+		<btnCopyCode property="Caption">Copier dans presse-papier</btnCopyCode>
+	</form>
+	<form name="PictureEdit">
+		<caption>Éditeur d'image</caption>
+		<btnLoad property="Caption">OK</btnLoad>
+		<btnSave property="Caption">Annuler</btnSave>
+		<btnClear property="Caption">Aide</btnClear>
+		<btnImgLoad property="Caption">&amp;Charger...</btnImgLoad>
+		<btnImgSave property="Caption">&amp;Enregistrer...</btnImgSave>
+		<btnImgClear property="Caption">&amp;Clear</btnImgClear>
+	</form>
+	<form name="frmAXObjectEdit">
+		<caption>Navigateur objet ActiveX</caption>
+		<lblLoadStatus property="Caption">Status : </lblLoadStatus>
+		<lblPath property="Caption">Chemin :</lblPath>
+		<CompList property="Columns">
+			<item idx="0">Nom du composant</item>
+		</CompList>
+		<btnOK property="Caption">OK</btnOK>
+		<btnCancel property="Caption">Annuler</btnCancel>
+	</form>
+</language>
