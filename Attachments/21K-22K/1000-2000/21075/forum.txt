@@ -1,0 +1,2092 @@
+#include <Process.au3>
+#include <File.au3>
+#include <GUIConstants.au3>
+#include <IE.au3>
+
+
+Global $iFlag, $Button, $msgbox, $asMsgText
+
+GUICreate("Rigenerator Nokia N/E-Series",600,504)
+GUISetState()  
+
+GUICtrlCreateGroup("start", 5, 6, 180, 174)
+$startbutton = GuiCtrlCreatePic("start.jpg", 20, 20, 150, 38)
+GuiCtrlCreateLabel("start", 18, 62, 170, 15)	
+GUICtrlCreateGroup("", -99, -99, 1, 1)  
+
+
+GUICtrlCreateGroup("stop", 5, 6, 180, 174)
+$startbutton = GuiCtrlCreatePic("stop.jpg", 20, 20, 150, 38)
+GuiCtrlCreateLabel("stop", 18, 62, 170, 15)	
+GUICtrlCreateGroup("", -99, -99, 1, 1)  
+
+
+
+
+
+While 1
+	$msg = GUIGetMsg()
+	
+	select
+	Case $msg = $startbutton
+		
+		
+	if $larghezza = 640  then ;larghezza
+
+	
+	
+
+		
+		if FileExists("C:\Programmi\Rigenerator-program\rigenerator2\cartella\1.mp4") then ;se esiste 1
+		
+			If $sincronia = 1 Then ; se sincronia
+					
+		
+				if $editing = 1 Then ; se editing
+
+							filecopy($cartella1 &"\1.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							_rundos("cmd.exe < testo.txt")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder.bat")
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\mencoder.bat" , "C:\Programmi\Rigenerator-program\rigenerator2")
+							$framerate2 = FileOpen("framerate.txt", 0)
+							$framerate =  FileReadLine($framerate2)
+							$framerate1000 = $framerate * 1000
+							$find = "replace"
+							$replace = $framerate1000
+							$filename = "C:\Programmi\Rigenerator-program\rigenerator2\mencoder.bat"
+							_ReplaceStringInFile($filename,$find,$replace)
+							runwait("mencoder.bat","C:\Programmi\Rigenerator-program\rigenerator2",@SW_SHOWMINNOACTIVE)
+		
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\istruzioniwin640.avs" , $cartella2)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\avs2avi.exe" , $cartella2)
+							_rundos($cartella2 &"\avs2avi " & $cartella2 &"\istruzioniwin640.avs " & $cartella2 &"\intermedio.avi -w -l " & "C:\Programmi\Rigenerator-program\rigenerator2\xvid.txt")
+							filedelete ($cartella2 &"\originale_automen.avi")
+							filedelete ($cartella2 &"\avs2avi.exe")
+							filedelete ($cartella2 &"\*.avs")
+							filedelete ($cartella2 &"\*.ffv0cache")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\framerate.txt")
+							_rundos("mp4box -raw 2 " & "originale.mp4")
+							_rundos("faad -d -o audio.wav C:\Programmi\Rigenerator-program\rigenerator2\originale_track2.aac")
+							_rundos("del originale_track2.aac")
+							_rundos("mencoder " & $cartella2 &"intermedio.avi -ovc copy -mc 0 -noskip -audiofile audio.wav -oac copy -o " & $cartella2 & "finito1.avi" )
+							filedelete ("audio.wav")
+							filedelete ($cartella2 &"\intermedio.avi")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\*.mp4")
+							filecopy ($cartella2 &"\finito1.avi" , $cartella1)
+							filedelete ($cartella2 &"\*.avi")
+							
+					if FileExists($cartella1 & "\2.mp4") Then
+								
+							filecopy($cartella1 &"\2.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							_rundos("cmd.exe < testo.txt")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder.bat")
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\mencoder.bat" , "C:\Programmi\Rigenerator-program\rigenerator2")
+							$framerate2 = FileOpen("framerate.txt", 0)
+							$framerate =  FileReadLine($framerate2)
+							$framerate1000 = $framerate * 1000
+							$find = "replace"
+							$replace = $framerate1000
+							$filename = "C:\Programmi\Rigenerator-program\rigenerator2\mencoder.bat"
+							_ReplaceStringInFile($filename,$find,$replace)
+							runwait("mencoder.bat","C:\Programmi\Rigenerator-program\rigenerator2",@SW_SHOWMINNOACTIVE)	
+							
+							
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\istruzioniwin640.avs" , $cartella2)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\avs2avi.exe" , $cartella2)
+							_rundos($cartella2 &"\avs2avi " & $cartella2 &"\istruzioniwin640.avs " & $cartella2 &"\intermedio.avi -w -l " & "C:\Programmi\Rigenerator-program\rigenerator2\xvid.txt")
+							filedelete ($cartella2 &"\originale_automen.avi")
+							filedelete ($cartella2 &"\avs2avi.exe")
+							filedelete ($cartella2 &"\*.avs")
+							filedelete ($cartella2 &"\*.ffv0cache")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\framerate.txt")
+							_rundos("mp4box -raw 2 " & "originale.mp4")
+							_rundos("faad -d -o audio.wav C:\Programmi\Rigenerator-program\rigenerator2\originale_track2.aac")
+							_rundos("del originale_track2.aac")
+							_rundos("mencoder " & $cartella2 &"intermedio.avi -ovc copy -mc 0 -noskip -audiofile audio.wav -oac copy -o " & $cartella2 & "finito2.avi" )
+							filedelete ("audio.wav")
+							filedelete ($cartella2 &"\intermedio.avi")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\*.mp4")
+							filecopy ($cartella2 &"\finito2.avi" , $cartella1)
+							filedelete ($cartella2 &"\*.avi")
+							
+					else
+							_rundos("start " & $cartella1)		
+							exit
+					endif
+							
+					if FileExists($cartella1 & "\3.mp4") Then
+								
+							filecopy($cartella1 &"\3.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							_rundos("cmd.exe < testo.txt")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder.bat")
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\mencoder.bat" , "C:\Programmi\Rigenerator-program\rigenerator2")
+							$framerate2 = FileOpen("framerate.txt", 0)
+							$framerate =  FileReadLine($framerate2)
+							$framerate1000 = $framerate * 1000
+							$find = "replace"
+							$replace = $framerate1000
+							$filename = "C:\Programmi\Rigenerator-program\rigenerator2\mencoder.bat"
+							_ReplaceStringInFile($filename,$find,$replace)
+							runwait("mencoder.bat","C:\Programmi\Rigenerator-program\rigenerator2",@SW_SHOWMINNOACTIVE)
+							
+														
+							
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\istruzioniwin640.avs" , $cartella2)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\avs2avi.exe" , $cartella2)
+							_rundos($cartella2 &"\avs2avi " & $cartella2 &"\istruzioniwin640.avs " & $cartella2 &"\intermedio.avi -w -l " & "C:\Programmi\Rigenerator-program\rigenerator2\xvid.txt")
+							filedelete ($cartella2 &"\originale_automen.avi")
+							filedelete ($cartella2 &"\avs2avi.exe")
+							filedelete ($cartella2 &"\*.avs")
+							filedelete ($cartella2 &"\*.ffv0cache")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\framerate.txt")
+							_rundos("mp4box -raw 2 " & "originale.mp4")
+							_rundos("faad -d -o audio.wav C:\Programmi\Rigenerator-program\rigenerator2\originale_track2.aac")
+							_rundos("del originale_track2.aac")
+							_rundos("mencoder " & $cartella2 &"intermedio.avi -ovc copy -mc 0 -noskip -audiofile audio.wav -oac copy -o " & $cartella2 & "finito3.avi" )
+							filedelete ("audio.wav")
+							filedelete ($cartella2 &"\intermedio.avi")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\*.mp4")
+							filecopy ($cartella2 &"\finito3.avi" , $cartella1)
+							filedelete ($cartella2 &"\*.avi")
+
+					else
+							_rundos("start " & $cartella1)		
+							exit
+					endif
+
+
+					if FileExists($cartella1 & "\4.mp4") Then
+							
+							filecopy($cartella1 &"\4.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							_rundos("cmd.exe < testo.txt")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder.bat")
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\mencoder.bat" , "C:\Programmi\Rigenerator-program\rigenerator2")
+							$framerate2 = FileOpen("framerate.txt", 0)
+							$framerate =  FileReadLine($framerate2)
+							$framerate1000 = $framerate * 1000
+							$find = "replace"
+							$replace = $framerate1000
+							$filename = "C:\Programmi\Rigenerator-program\rigenerator2\mencoder.bat"
+							_ReplaceStringInFile($filename,$find,$replace)
+							runwait("mencoder.bat","C:\Programmi\Rigenerator-program\rigenerator2",@SW_SHOWMINNOACTIVE)
+							
+							
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\istruzioniwin640.avs" , $cartella2)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\avs2avi.exe" , $cartella2)
+							_rundos($cartella2 &"\avs2avi " & $cartella2 &"\istruzioniwin640.avs " & $cartella2 &"\intermedio.avi -w -l " & "C:\Programmi\Rigenerator-program\rigenerator2\xvid.txt")
+							filedelete ($cartella2 &"\originale_automen.avi")
+							filedelete ($cartella2 &"\avs2avi.exe")
+							filedelete ($cartella2 &"\*.avs")
+							filedelete ($cartella2 &"\*.ffv0cache")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\framerate.txt")
+							_rundos("mp4box -raw 2 " & "originale.mp4")
+							_rundos("faad -d -o audio.wav C:\Programmi\Rigenerator-program\rigenerator2\originale_track2.aac")
+							_rundos("del originale_track2.aac")
+							_rundos("mencoder " & $cartella2 &"intermedio.avi -ovc copy -mc 0 -noskip -audiofile audio.wav -oac copy -o " & $cartella2 & "finito4.avi" )
+							filedelete ("audio.wav")
+							filedelete ($cartella2 &"\intermedio.avi")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\*.mp4")
+							filecopy ($cartella2 &"\finito4.avi" , $cartella1)
+							filedelete ($cartella2 &"\*.avi")
+							
+					else
+							_rundos("start " & $cartella1)		
+							exit
+					endif
+							
+							
+					if FileExists($cartella1 & "\5.mp4") Then
+
+							filecopy($cartella1 &"\5.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							_rundos("cmd.exe < testo.txt")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder.bat")
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\mencoder.bat" , "C:\Programmi\Rigenerator-program\rigenerator2")
+							$framerate2 = FileOpen("framerate.txt", 0)
+							$framerate =  FileReadLine($framerate2)
+							$framerate1000 = $framerate * 1000
+							$find = "replace"
+							$replace = $framerate1000
+							$filename = "C:\Programmi\Rigenerator-program\rigenerator2\mencoder.bat"
+							_ReplaceStringInFile($filename,$find,$replace)
+							runwait("mencoder.bat","C:\Programmi\Rigenerator-program\rigenerator2",@SW_SHOWMINNOACTIVE)
+
+
+							
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\istruzioniwin640.avs" , $cartella2)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\avs2avi.exe" , $cartella2)
+							_rundos($cartella2 &"\avs2avi " & $cartella2 &"\istruzioniwin640.avs " & $cartella2 &"\intermedio.avi -w -l " & "C:\Programmi\Rigenerator-program\rigenerator2\xvid.txt")
+							filedelete ($cartella2 &"\originale_automen.avi")
+							filedelete ($cartella2 &"\avs2avi.exe")
+							filedelete ($cartella2 &"\*.avs")
+							filedelete ($cartella2 &"\*.ffv0cache")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\framerate.txt")
+							_rundos("mp4box -raw 2 " & "originale.mp4")
+							_rundos("faad -d -o audio.wav C:\Programmi\Rigenerator-program\rigenerator2\originale_track2.aac")
+							_rundos("del originale_track2.aac")
+							_rundos("mencoder " & $cartella2 &"intermedio.avi -ovc copy -mc 0 -noskip -audiofile audio.wav -oac copy -o " & $cartella2 & "finito5.avi" )
+							filedelete ("audio.wav")
+							filedelete ($cartella2 &"\intermedio.avi")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\*.mp4")
+							filecopy ($cartella2 &"\finito5.avi" , $cartella1)
+							filedelete ($cartella2 &"\*.avi")
+							
+					else
+							_rundos("start " & $cartella1)		
+							exit
+					endif
+							
+					if FileExists($cartella1 & "\6.mp4") Then
+								
+							filecopy($cartella1 &"\6.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							_rundos("cmd.exe < testo.txt")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder.bat")
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\mencoder.bat" , "C:\Programmi\Rigenerator-program\rigenerator2")
+							$framerate2 = FileOpen("framerate.txt", 0)
+							$framerate =  FileReadLine($framerate2)
+							$framerate1000 = $framerate * 1000
+							$find = "replace"
+							$replace = $framerate1000
+							$filename = "C:\Programmi\Rigenerator-program\rigenerator2\mencoder.bat"
+							_ReplaceStringInFile($filename,$find,$replace)
+							runwait("mencoder.bat","C:\Programmi\Rigenerator-program\rigenerator2",@SW_SHOWMINNOACTIVE)
+							
+							
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\istruzioniwin640.avs" , $cartella2)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\avs2avi.exe" , $cartella2)
+							_rundos($cartella2 &"\avs2avi " & $cartella2 &"\istruzioniwin640.avs " & $cartella2 &"\intermedio.avi -w -l " & "C:\Programmi\Rigenerator-program\rigenerator2\xvid.txt")
+							filedelete ($cartella2 &"\originale_automen.avi")
+							filedelete ($cartella2 &"\avs2avi.exe")
+							filedelete ($cartella2 &"\*.avs")
+							filedelete ($cartella2 &"\*.ffv0cache")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\framerate.txt")
+							_rundos("mp4box -raw 2 " & "originale.mp4")
+							_rundos("faad -d -o audio.wav C:\Programmi\Rigenerator-program\rigenerator2\originale_track2.aac")
+							_rundos("del originale_track2.aac")
+							_rundos("mencoder " & $cartella2 &"intermedio.avi -ovc copy -mc 0 -noskip -audiofile audio.wav -oac copy -o " & $cartella2 & "finito6.avi" )
+							filedelete ("audio.wav")
+							filedelete ($cartella2 &"\intermedio.avi")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\*.mp4")
+							filecopy ($cartella2 &"\finito6.avi" , $cartella1)
+							filedelete ($cartella2 &"\*.avi")
+							_rundos("start " & $cartella1)
+					else
+							_rundos("start " & $cartella1)		
+							exit
+					endif
+							
+				Else ; no editing
+							
+							filecopy($cartella1 &"\1.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							_rundos("cmd.exe < testo.txt")
+							_rundos("cmd.exe < time.txt")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder.bat")
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\mencoder.bat" , "C:\Programmi\Rigenerator-program\rigenerator2")
+							$framerate2 = FileOpen("framerate.txt", 0)
+							$framerate =  FileReadLine($framerate2)
+							$framerate1000 = $framerate * 1000
+							$find = "replace"
+							$replace = $framerate1000
+							$filename = "C:\Programmi\Rigenerator-program\rigenerator2\mencoder.bat"
+							_ReplaceStringInFile($filename,$find,$replace)
+							runwait("mencoder.bat","C:\Programmi\Rigenerator-program\rigenerator2",@SW_SHOWMINNOACTIVE)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\istruzioniwin640.avs" , $cartella2)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\x264.bat" , "C:\Programmi\Rigenerator-program\rigenerator2")
+							$arichange = ("cambiare")
+							$impo2642=FileOpen("impo264.txt", 0)
+							$impo264 = FileRead($impo2642)
+							_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\x264.bat",$arichange,$impo264)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\x264.exe" , $cartella2)
+							runwait("x264.bat")
+							filedelete ($cartella2 &"\originale_automen.avi")
+							filedelete ($cartella2 &"\x264.exe")
+							filedelete ("x264.bat")
+							filedelete ($cartella2 &"\*.avs")
+							filedelete ($cartella2 &"\*.ffv0cache")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\framerate.txt")
+							_rundos("mp4box -raw 2 " & "originale.mp4")
+							_rundos("MP4Box -add " & "intermedio.mp4:delay=" & $delay & " -add " & "originale_track2.aac " & "finito1.mp4")	
+							filedelete ("intermedio.mp4")
+							filedelete ("originale_track2.aac")
+							filedelete ("originale.mp4")
+					
+					If $fileupload = 1 Then
+								
+								_rundos ("start " & $cartella1)
+								$contatore=FileOpen("contatore2.txt", 0)
+								$contatore2 =  FileReadLine($contatore)
+								$intermezzo = FileOpen("contatore.txt", 0)
+								$intermezzo2 =  FileReadLine($intermezzo)
+								$variabile = $contatore2 + $intermezzo2	
+								$indirizzo=FileOpen("indirizzo.txt", 0)
+								$indirizzo2 = FileReadLine($indirizzo)
+								$ora =-@HOUR
+								$minuti =-@MIN
+								$giorno =@mday
+								$mese =-@mon
+								$ORARIO =($giorno & $mese & $ora & $minuti)
+								_FileWriteToLine("C:\Programmi\Rigenerator-program\rigenerator2\lista-file-trasferiti-ftp.txt",$variabile,$indirizzo2 & $orario&".html",0)
+								_FileWriteToLine("C:\Programmi\Rigenerator-program\rigenerator2\rinomina.txt",1,$orario,1)
+								$rinomina2=FileOpen("rinomina.txt", 0)
+								$rinomina = FileReadLine($rinomina2)
+								FileDelete("C:\Programmi\Rigenerator-program\rigenerator2\readme.html")
+								FileCopy("C:\Programmi\Rigenerator-program\rigenerator2\finito1.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\cartella\" & $rinomina & ".mp4", 8)
+								filecopy("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\readme.html", "C:\Programmi\Rigenerator-program\rigenerator2")
+								$cerca = ("rimpiazzami")
+								$address = ("indirizzo/")
+								$encoding =("numero")
+								$normalealtainsane =("normalealtainsane")
+								$data =("time")
+								$cercaautore =("autore")
+								$cercatitolo = ("titles")
+								$cambiaqualita = FileReadLine($variabili,8)
+								$cambiaautore = FileReadLine($variabili,9)
+								$cambiatitolo = FileReadLine($variabili,10)
+								$cfr2 =fileopen("crf.txt",0)
+								$cfr=FileReadLine($cfr2)
+								$indirizzo2 =fileopen("indirizzo.txt",0)
+								$indirizzo=FileReadLine($indirizzo2)
+								$time2 =fileopen("data.txt",0)
+								$time=FileReadLine($time2)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cerca,$rinomina)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$address,$indirizzo)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$encoding,$cfr)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$normalealtainsane,$cambiaqualita)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$data,$time)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cercaautore,$cambiaautore)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cercatitolo,$cambiatitolo)
+								FileCopy("C:\Programmi\Rigenerator-program\rigenerator2\readme.html", "C:\Programmi\Rigenerator-program\rigenerator2\cartella\" & $rinomina & ".html", 8)
+								_rundos ("start C:\Programmi\Rigenerator-program\rigenerator2\ftp.exe "& $cartella1 & $rinomina & ".html")
+								FileDelete("C:\Programmi\Rigenerator-program\rigenerator2\finito1.mp4")
+								_rundos ("start C:\Programmi\Rigenerator-program\rigenerator2\ftp.exe "& $cartella1 & $rinomina & ".mp4")
+					Else
+								filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\finito1.mp4" , $cartella1)
+								filedelete ("finito1.mp4")
+								_rundos("start " & $cartella1)
+								
+					endif
+		
+							
+							
+							
+					if FileExists($cartella1 & "\2.mp4") Then
+								
+							filecopy($cartella1 &"\2.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							_rundos("cmd.exe < testo.txt")
+							_rundos("cmd.exe < time.txt")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder.bat")
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\mencoder.bat" , "C:\Programmi\Rigenerator-program\rigenerator2")
+							$framerate2 = FileOpen("framerate.txt", 0)
+							$framerate =  FileReadLine($framerate2)
+							$framerate1000 = $framerate * 1000
+							$find = "replace"
+							$replace = $framerate1000
+							$filename = "C:\Programmi\Rigenerator-program\rigenerator2\mencoder.bat"
+							_ReplaceStringInFile($filename,$find,$replace)
+							runwait("mencoder.bat","C:\Programmi\Rigenerator-program\rigenerator2",@SW_SHOWMINNOACTIVE)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\istruzioniwin640.avs" , $cartella2)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\x264.bat" , "C:\Programmi\Rigenerator-program\rigenerator2")
+							$arichange = ("cambiare")
+							$impo2642=FileOpen("impo264.txt", 0)
+							$impo264 = FileRead($impo2642)
+							_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\x264.bat",$arichange,$impo264)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\x264.exe" , $cartella2)
+							runwait("x264.bat")
+							filedelete ($cartella2 &"\originale_automen.avi")
+							filedelete ($cartella2 &"\x264.exe")
+							filedelete ("x264.bat")
+							filedelete ($cartella2 &"\*.avs")
+							filedelete ($cartella2 &"\*.ffv0cache")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\framerate.txt")
+							_rundos("mp4box -raw 2 " & "originale.mp4")
+							_rundos("MP4Box -add " & "intermedio.mp4:delay=" & $delay & " -add " & "originale_track2.aac " & "finito2.mp4")	
+							filedelete ("intermedio.mp4")
+							filedelete ("originale_track2.aac")
+							filedelete ("originale.mp4")
+					
+						If $fileupload = 1 Then
+								
+								
+								$contatore=FileOpen("contatore2.txt", 0)
+								$contatore2 =  FileReadLine($contatore)
+								$intermezzo = FileOpen("contatore.txt", 0)
+								$intermezzo2 =  FileReadLine($intermezzo)
+								$variabile = $contatore2 + $intermezzo2	
+								$indirizzo=FileOpen("indirizzo.txt", 0)
+								$indirizzo2 = FileReadLine($indirizzo)
+								$ora =-@HOUR
+								$minuti =-@MIN
+								$giorno =@mday
+								$mese =-@mon
+								$ORARIO =($giorno & $mese & $ora & $minuti)
+								_FileWriteToLine("C:\Programmi\Rigenerator-program\rigenerator2\lista-file-trasferiti-ftp.txt",$variabile,$indirizzo2 & $orario&".html",0)
+								_FileWriteToLine("C:\Programmi\Rigenerator-program\rigenerator2\rinomina.txt",1,$orario,1)
+								$rinomina2=FileOpen("rinomina.txt", 0)
+								$rinomina = FileReadLine($rinomina2)
+								FileDelete("C:\Programmi\Rigenerator-program\rigenerator2\readme.html")
+								FileCopy("C:\Programmi\Rigenerator-program\rigenerator2\finito2.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\cartella\" & $rinomina & ".mp4", 8)
+								filecopy("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\readme.html", "C:\Programmi\Rigenerator-program\rigenerator2")
+								$cerca = ("rimpiazzami")
+								$address = ("indirizzo/")
+								$encoding =("numero")
+								$normalealtainsane =("normalealtainsane")
+								$data =("time")
+								$cercaautore =("autore")
+								$cercatitolo = ("titles")
+								$cambiaqualita = FileReadLine($variabili,8)
+								$cambiaautore = FileReadLine($variabili,9)
+								$cambiatitolo = FileReadLine($variabili,10)
+								$cfr2 =fileopen("crf.txt",0)
+								$cfr=FileReadLine($cfr2)
+								$indirizzo2 =fileopen("indirizzo.txt",0)
+								$indirizzo=FileReadLine($indirizzo2)
+								$time2 =fileopen("data.txt",0)
+								$time=FileReadLine($time2)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cerca,$rinomina)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$address,$indirizzo)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$encoding,$cfr)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$normalealtainsane,$cambiaqualita)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$data,$time)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cercaautore,$cambiaautore)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cercatitolo,$cambiatitolo)
+								FileCopy("C:\Programmi\Rigenerator-program\rigenerator2\readme.html", "C:\Programmi\Rigenerator-program\rigenerator2\cartella\" & $rinomina & ".html", 8)
+								_rundos ("start C:\Programmi\Rigenerator-program\rigenerator2\ftp.exe "& $cartella1 & $rinomina & ".html")
+								FileDelete("C:\Programmi\Rigenerator-program\rigenerator2\finito2.mp4")
+								_rundos ("start C:\Programmi\Rigenerator-program\rigenerator2\ftp.exe "& $cartella1 & $rinomina & ".mp4")
+																
+								
+						Else
+									filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\finito2.mp4" , $cartella1)
+									filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\*.mp4")
+						EndIf
+								
+						Else 
+							_rundos("start " & $cartella1)		
+							exit
+					endif
+								
+					if FileExists($cartella1 & "\3.mp4") Then
+								
+							filecopy($cartella1 &"\3.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							_rundos("cmd.exe < testo.txt")
+							_rundos("cmd.exe < time.txt")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder.bat")
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\mencoder.bat" , "C:\Programmi\Rigenerator-program\rigenerator2")
+							$framerate2 = FileOpen("framerate.txt", 0)
+							$framerate =  FileReadLine($framerate2)
+							$framerate1000 = $framerate * 1000
+							$find = "replace"
+							$replace = $framerate1000
+							$filename = "C:\Programmi\Rigenerator-program\rigenerator2\mencoder.bat"
+							_ReplaceStringInFile($filename,$find,$replace)
+							runwait("mencoder.bat","C:\Programmi\Rigenerator-program\rigenerator2",@SW_SHOWMINNOACTIVE)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\istruzioniwin640.avs" , $cartella2)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\x264.bat" , "C:\Programmi\Rigenerator-program\rigenerator2")
+							$arichange = ("cambiare")
+							$impo2642=FileOpen("impo264.txt", 0)
+							$impo264 = FileRead($impo2642)
+							_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\x264.bat",$arichange,$impo264)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\x264.exe" , $cartella2)
+							runwait("x264.bat")
+							filedelete ($cartella2 &"\originale_automen.avi")
+							filedelete ($cartella2 &"\x264.exe")
+							filedelete ("x264.bat")
+							filedelete ($cartella2 &"\*.avs")
+							filedelete ($cartella2 &"\*.ffv0cache")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\framerate.txt")
+							_rundos("mp4box -raw 2 " & "originale.mp4")
+							_rundos("MP4Box -add " & "intermedio.mp4:delay=" & $delay & " -add " & "originale_track2.aac " & "finito3.mp4")	
+							filedelete ("intermedio.mp4")
+							filedelete ("originale_track2.aac")
+							filedelete ("originale.mp4")
+					
+						If $fileupload = 1 Then
+								
+								
+								$contatore=FileOpen("contatore2.txt", 0)
+								$contatore2 =  FileReadLine($contatore)
+								$intermezzo = FileOpen("contatore.txt", 0)
+								$intermezzo2 =  FileReadLine($intermezzo)
+								$variabile = $contatore2 + $intermezzo2	
+								$indirizzo=FileOpen("indirizzo.txt", 0)
+								$indirizzo2 = FileReadLine($indirizzo)
+								$ora =-@HOUR
+								$minuti =-@MIN
+								$giorno =@mday
+								$mese =-@mon
+								$ORARIO =($giorno & $mese & $ora & $minuti)
+								_FileWriteToLine("C:\Programmi\Rigenerator-program\rigenerator2\lista-file-trasferiti-ftp.txt",$variabile,$indirizzo2 & $orario&".html",0)
+								_FileWriteToLine("C:\Programmi\Rigenerator-program\rigenerator2\rinomina.txt",1,$orario,1)
+								$rinomina2=FileOpen("rinomina.txt", 0)
+								$rinomina = FileReadLine($rinomina2)
+								FileDelete("C:\Programmi\Rigenerator-program\rigenerator2\readme.html")
+								FileCopy("C:\Programmi\Rigenerator-program\rigenerator2\finito3.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\cartella\" & $rinomina & ".mp4", 8)
+								filecopy("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\readme.html", "C:\Programmi\Rigenerator-program\rigenerator2")
+								$cerca = ("rimpiazzami")
+								$address = ("indirizzo/")
+								$encoding =("numero")
+								$normalealtainsane =("normalealtainsane")
+								$data =("time")
+								$cercaautore =("autore")
+								$cercatitolo = ("titles")
+								$cambiaqualita = FileReadLine($variabili,8)
+								$cambiaautore = FileReadLine($variabili,9)
+								$cambiatitolo = FileReadLine($variabili,10)
+								$cfr2 =fileopen("crf.txt",0)
+								$cfr=FileReadLine($cfr2)
+								$indirizzo2 =fileopen("indirizzo.txt",0)
+								$indirizzo=FileReadLine($indirizzo2)
+								$time2 =fileopen("data.txt",0)
+								$time=FileReadLine($time2)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cerca,$rinomina)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$address,$indirizzo)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$encoding,$cfr)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$normalealtainsane,$cambiaqualita)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$data,$time)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cercaautore,$cambiaautore)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cercatitolo,$cambiatitolo)
+								FileCopy("C:\Programmi\Rigenerator-program\rigenerator2\readme.html", "C:\Programmi\Rigenerator-program\rigenerator2\cartella\" & $rinomina & ".html", 8)
+								_rundos ("start C:\Programmi\Rigenerator-program\rigenerator2\ftp.exe "& $cartella1 & $rinomina & ".html")
+								FileDelete("C:\Programmi\Rigenerator-program\rigenerator2\finito3.mp4")
+								_rundos ("start C:\Programmi\Rigenerator-program\rigenerator2\ftp.exe "& $cartella1 & $rinomina & ".mp4")
+																
+								
+						Else
+									filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\finito3.mp4" , $cartella1)
+									filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\*.mp4")
+						EndIf
+								
+						Else 
+							_rundos("start " & $cartella1)		
+							exit
+					endif
+					
+					if FileExists($cartella1 & "\4.mp4") Then
+								
+							filecopy($cartella1 &"\4.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							_rundos("cmd.exe < testo.txt")
+							_rundos("cmd.exe < time.txt")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder.bat")
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\mencoder.bat" , "C:\Programmi\Rigenerator-program\rigenerator2")
+							$framerate2 = FileOpen("framerate.txt", 0)
+							$framerate =  FileReadLine($framerate2)
+							$framerate1000 = $framerate * 1000
+							$find = "replace"
+							$replace = $framerate1000
+							$filename = "C:\Programmi\Rigenerator-program\rigenerator2\mencoder.bat"
+							_ReplaceStringInFile($filename,$find,$replace)
+							runwait("mencoder.bat","C:\Programmi\Rigenerator-program\rigenerator2",@SW_SHOWMINNOACTIVE)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\istruzioniwin640.avs" , $cartella2)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\x264.bat" , "C:\Programmi\Rigenerator-program\rigenerator2")
+							$arichange = ("cambiare")
+							$impo2642=FileOpen("impo264.txt", 0)
+							$impo264 = FileRead($impo2642)
+							_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\x264.bat",$arichange,$impo264)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\x264.exe" , $cartella2)
+							runwait("x264.bat")
+							filedelete ($cartella2 &"\originale_automen.avi")
+							filedelete ($cartella2 &"\x264.exe")
+							filedelete ("x264.bat")
+							filedelete ($cartella2 &"\*.avs")
+							filedelete ($cartella2 &"\*.ffv0cache")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\framerate.txt")
+							_rundos("mp4box -raw 2 " & "originale.mp4")
+							_rundos("MP4Box -add " & "intermedio.mp4:delay=" & $delay & " -add " & "originale_track2.aac " & "finito4.mp4")	
+							filedelete ("intermedio.mp4")
+							filedelete ("originale_track2.aac")
+							filedelete ("originale.mp4")
+					
+						If $fileupload = 1 Then
+								
+								
+								$contatore=FileOpen("contatore2.txt", 0)
+								$contatore2 =  FileReadLine($contatore)
+								$intermezzo = FileOpen("contatore.txt", 0)
+								$intermezzo2 =  FileReadLine($intermezzo)
+								$variabile = $contatore2 + $intermezzo2	
+								$indirizzo=FileOpen("indirizzo.txt", 0)
+								$indirizzo2 = FileReadLine($indirizzo)
+								$ora =-@HOUR
+								$minuti =-@MIN
+								$giorno =@mday
+								$mese =-@mon
+								$ORARIO =($giorno & $mese & $ora & $minuti)
+								_FileWriteToLine("C:\Programmi\Rigenerator-program\rigenerator2\lista-file-trasferiti-ftp.txt",$variabile,$indirizzo2 & $orario&".html",0)
+								_FileWriteToLine("C:\Programmi\Rigenerator-program\rigenerator2\rinomina.txt",1,$orario,1)
+								$rinomina2=FileOpen("rinomina.txt", 0)
+								$rinomina = FileReadLine($rinomina2)
+								FileDelete("C:\Programmi\Rigenerator-program\rigenerator2\readme.html")
+								FileCopy("C:\Programmi\Rigenerator-program\rigenerator2\finito4.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\cartella\" & $rinomina & ".mp4", 8)
+								filecopy("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\readme.html", "C:\Programmi\Rigenerator-program\rigenerator2")
+								$cerca = ("rimpiazzami")
+								$address = ("indirizzo/")
+								$encoding =("numero")
+								$normalealtainsane =("normalealtainsane")
+								$data =("time")
+								$cercaautore =("autore")
+								$cercatitolo = ("titles")
+								$cambiaqualita = FileReadLine($variabili,8)
+								$cambiaautore = FileReadLine($variabili,9)
+								$cambiatitolo = FileReadLine($variabili,10)
+								$cfr2 =fileopen("crf.txt",0)
+								$cfr=FileReadLine($cfr2)
+								$indirizzo2 =fileopen("indirizzo.txt",0)
+								$indirizzo=FileReadLine($indirizzo2)
+								$time2 =fileopen("data.txt",0)
+								$time=FileReadLine($time2)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cerca,$rinomina)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$address,$indirizzo)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$encoding,$cfr)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$normalealtainsane,$cambiaqualita)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$data,$time)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cercaautore,$cambiaautore)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cercatitolo,$cambiatitolo)
+								FileCopy("C:\Programmi\Rigenerator-program\rigenerator2\readme.html", "C:\Programmi\Rigenerator-program\rigenerator2\cartella\" & $rinomina & ".html", 8)
+								_rundos ("start C:\Programmi\Rigenerator-program\rigenerator2\ftp.exe "& $cartella1 & $rinomina & ".html")
+								FileDelete("C:\Programmi\Rigenerator-program\rigenerator2\finito4.mp4")
+								_rundos ("start C:\Programmi\Rigenerator-program\rigenerator2\ftp.exe "& $cartella1 & $rinomina & ".mp4")
+																
+								
+						Else
+									filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\finito4.mp4" , $cartella1)
+									filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\*.mp4")
+						EndIf
+								
+						Else 
+							_rundos("start " & $cartella1)		
+							exit
+					endif
+					
+					if FileExists($cartella1 & "\5.mp4") Then
+								
+							filecopy($cartella1 &"\5.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							_rundos("cmd.exe < testo.txt")
+							_rundos("cmd.exe < time.txt")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder.bat")
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\mencoder.bat" , "C:\Programmi\Rigenerator-program\rigenerator2")
+							$framerate2 = FileOpen("framerate.txt", 0)
+							$framerate =  FileReadLine($framerate2)
+							$framerate1000 = $framerate * 1000
+							$find = "replace"
+							$replace = $framerate1000
+							$filename = "C:\Programmi\Rigenerator-program\rigenerator2\mencoder.bat"
+							_ReplaceStringInFile($filename,$find,$replace)
+							runwait("mencoder.bat","C:\Programmi\Rigenerator-program\rigenerator2",@SW_SHOWMINNOACTIVE)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\istruzioniwin640.avs" , $cartella2)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\x264.bat" , "C:\Programmi\Rigenerator-program\rigenerator2")
+							$arichange = ("cambiare")
+							$impo2642=FileOpen("impo264.txt", 0)
+							$impo264 = FileRead($impo2642)
+							_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\x264.bat",$arichange,$impo264)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\x264.exe" , $cartella2)
+							runwait("x264.bat")
+							filedelete ($cartella2 &"\originale_automen.avi")
+							filedelete ($cartella2 &"\x264.exe")
+							filedelete ("x264.bat")
+							filedelete ($cartella2 &"\*.avs")
+							filedelete ($cartella2 &"\*.ffv0cache")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\framerate.txt")
+							_rundos("mp4box -raw 2 " & "originale.mp4")
+							_rundos("MP4Box -add " & "intermedio.mp4:delay=" & $delay & " -add " & "originale_track2.aac " & "finito5.mp4")	
+							filedelete ("intermedio.mp4")
+							filedelete ("originale_track2.aac")
+							filedelete ("originale.mp4")
+					
+						If $fileupload = 1 Then
+								
+								
+								$contatore=FileOpen("contatore2.txt", 0)
+								$contatore2 =  FileReadLine($contatore)
+								$intermezzo = FileOpen("contatore.txt", 0)
+								$intermezzo2 =  FileReadLine($intermezzo)
+								$variabile = $contatore2 + $intermezzo2	
+								$indirizzo=FileOpen("indirizzo.txt", 0)
+								$indirizzo2 = FileReadLine($indirizzo)
+								$ora =-@HOUR
+								$minuti =-@MIN
+								$giorno =@mday
+								$mese =-@mon
+								$ORARIO =($giorno & $mese & $ora & $minuti)
+								_FileWriteToLine("C:\Programmi\Rigenerator-program\rigenerator2\lista-file-trasferiti-ftp.txt",$variabile,$indirizzo2 & $orario&".html",0)
+								_FileWriteToLine("C:\Programmi\Rigenerator-program\rigenerator2\rinomina.txt",1,$orario,1)
+								$rinomina2=FileOpen("rinomina.txt", 0)
+								$rinomina = FileReadLine($rinomina2)
+								FileDelete("C:\Programmi\Rigenerator-program\rigenerator2\readme.html")
+								FileCopy("C:\Programmi\Rigenerator-program\rigenerator2\finito5.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\cartella\" & $rinomina & ".mp4", 8)
+								filecopy("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\readme.html", "C:\Programmi\Rigenerator-program\rigenerator2")
+								$cerca = ("rimpiazzami")
+								$address = ("indirizzo/")
+								$encoding =("numero")
+								$normalealtainsane =("normalealtainsane")
+								$data =("time")
+								$cercaautore =("autore")
+								$cercatitolo = ("titles")
+								$cambiaqualita = FileReadLine($variabili,8)
+								$cambiaautore = FileReadLine($variabili,9)
+								$cambiatitolo = FileReadLine($variabili,10)
+								$cfr2 =fileopen("crf.txt",0)
+								$cfr=FileReadLine($cfr2)
+								$indirizzo2 =fileopen("indirizzo.txt",0)
+								$indirizzo=FileReadLine($indirizzo2)
+								$time2 =fileopen("data.txt",0)
+								$time=FileReadLine($time2)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cerca,$rinomina)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$address,$indirizzo)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$encoding,$cfr)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$normalealtainsane,$cambiaqualita)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$data,$time)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cercaautore,$cambiaautore)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cercatitolo,$cambiatitolo)
+								FileCopy("C:\Programmi\Rigenerator-program\rigenerator2\readme.html", "C:\Programmi\Rigenerator-program\rigenerator2\cartella\" & $rinomina & ".html", 8)
+								_rundos ("start C:\Programmi\Rigenerator-program\rigenerator2\ftp.exe "& $cartella1 & $rinomina & ".html")
+								FileDelete("C:\Programmi\Rigenerator-program\rigenerator2\finito5.mp4")
+								_rundos ("start C:\Programmi\Rigenerator-program\rigenerator2\ftp.exe "& $cartella1 & $rinomina & ".mp4")
+																
+								
+						Else
+									filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\finito5.mp4" , $cartella1)
+									filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\*.mp4")
+						EndIf
+								
+						Else 
+							_rundos("start " & $cartella1)		
+							exit
+					endif
+					
+					
+					
+					if FileExists($cartella1 & "\6.mp4") Then
+								
+							filecopy($cartella1 &"\6.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							_rundos("cmd.exe < testo.txt")
+							_rundos("cmd.exe < time.txt")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder.bat")
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\mencoder.bat" , "C:\Programmi\Rigenerator-program\rigenerator2")
+							$framerate2 = FileOpen("framerate.txt", 0)
+							$framerate =  FileReadLine($framerate2)
+							$framerate1000 = $framerate * 1000
+							$find = "replace"
+							$replace = $framerate1000
+							$filename = "C:\Programmi\Rigenerator-program\rigenerator2\mencoder.bat"
+							_ReplaceStringInFile($filename,$find,$replace)
+							runwait("mencoder.bat","C:\Programmi\Rigenerator-program\rigenerator2",@SW_SHOWMINNOACTIVE)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\istruzioniwin640.avs" , $cartella2)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\x264.bat" , "C:\Programmi\Rigenerator-program\rigenerator2")
+							$arichange = ("cambiare")
+							$impo2642=FileOpen("impo264.txt", 0)
+							$impo264 = FileRead($impo2642)
+							_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\x264.bat",$arichange,$impo264)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\x264.exe" , $cartella2)
+							runwait("x264.bat")
+							filedelete ($cartella2 &"\originale_automen.avi")
+							filedelete ($cartella2 &"\x264.exe")
+							filedelete ("x264.bat")
+							filedelete ($cartella2 &"\*.avs")
+							filedelete ($cartella2 &"\*.ffv0cache")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\framerate.txt")
+							_rundos("mp4box -raw 2 " & "originale.mp4")
+							_rundos("MP4Box -add " & "intermedio.mp4:delay=" & $delay & " -add " & "originale_track2.aac " & "finito6.mp4")	
+							filedelete ("intermedio.mp4")
+							filedelete ("originale_track2.aac")
+							filedelete ("originale.mp4")
+					
+						If $fileupload = 1 Then
+								
+								
+								$contatore=FileOpen("contatore2.txt", 0)
+								$contatore2 =  FileReadLine($contatore)
+								$intermezzo = FileOpen("contatore.txt", 0)
+								$intermezzo2 =  FileReadLine($intermezzo)
+								$variabile = $contatore2 + $intermezzo2	
+								$indirizzo=FileOpen("indirizzo.txt", 0)
+								$indirizzo2 = FileReadLine($indirizzo)
+								$ora =-@HOUR
+								$minuti =-@MIN
+								$giorno =@mday
+								$mese =-@mon
+								$ORARIO =($giorno & $mese & $ora & $minuti)
+								_FileWriteToLine("C:\Programmi\Rigenerator-program\rigenerator2\lista-file-trasferiti-ftp.txt",$variabile,$indirizzo2 & $orario&".html",0)
+								_FileWriteToLine("C:\Programmi\Rigenerator-program\rigenerator2\rinomina.txt",1,$orario,1)
+								$rinomina2=FileOpen("rinomina.txt", 0)
+								$rinomina = FileReadLine($rinomina2)
+								FileDelete("C:\Programmi\Rigenerator-program\rigenerator2\readme.html")
+								FileCopy("C:\Programmi\Rigenerator-program\rigenerator2\finito6.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\cartella\" & $rinomina & ".mp4", 8)
+								filecopy("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\readme.html", "C:\Programmi\Rigenerator-program\rigenerator2")
+								$cerca = ("rimpiazzami")
+								$address = ("indirizzo/")
+								$encoding =("numero")
+								$normalealtainsane =("normalealtainsane")
+								$data =("time")
+								$cercaautore =("autore")
+								$cercatitolo = ("titles")
+								$cambiaqualita = FileReadLine($variabili,8)
+								$cambiaautore = FileReadLine($variabili,9)
+								$cambiatitolo = FileReadLine($variabili,10)
+								$cfr2 =fileopen("crf.txt",0)
+								$cfr=FileReadLine($cfr2)
+								$indirizzo2 =fileopen("indirizzo.txt",0)
+								$indirizzo=FileReadLine($indirizzo2)
+								$time2 =fileopen("data.txt",0)
+								$time=FileReadLine($time2)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cerca,$rinomina)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$address,$indirizzo)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$encoding,$cfr)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$normalealtainsane,$cambiaqualita)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$data,$time)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cercaautore,$cambiaautore)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cercatitolo,$cambiatitolo)
+								FileCopy("C:\Programmi\Rigenerator-program\rigenerator2\readme.html", "C:\Programmi\Rigenerator-program\rigenerator2\cartella\" & $rinomina & ".html", 8)
+								_rundos ("start C:\Programmi\Rigenerator-program\rigenerator2\ftp.exe "& $cartella1 & $rinomina & ".html")
+								FileDelete("C:\Programmi\Rigenerator-program\rigenerator2\finito6.mp4")
+								_rundos ("start C:\Programmi\Rigenerator-program\rigenerator2\ftp.exe "& $cartella1 & $rinomina & ".mp4")
+																
+								
+						Else
+									filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\finito6.mp4" , $cartella1)
+									filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\*.mp4")
+						EndIf
+								
+						Else 
+							_rundos("start " & $cartella1)		
+							exit
+					endif
+					
+				EndIf ; fine editing
+		
+			Else  ; se sincronia è uguale a 0
+
+				if $editing = 1 Then
+
+							filecopy($cartella1 &"\1.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							_rundos("cmd.exe < testo.txt")
+							filecopy("C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4", $cartella2 &"\originale_automen.avi")
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\istruzioniwin640.avs" , $cartella2)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\avs2avi.exe" , $cartella2)
+							_rundos($cartella2 &"\avs2avi " & $cartella2 &"\istruzioniwin640.avs " & $cartella2 &"\intermedio.avi -w -l " & "C:\Programmi\Rigenerator-program\rigenerator2\xvid.txt")
+							filedelete ($cartella2 &"\originale_automen.avi")
+							filedelete ($cartella2 &"\avs2avi.exe")
+							filedelete ($cartella2 &"\*.avs")
+							filedelete ($cartella2 &"\*.ffv0cache")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\framerate.txt")
+							_rundos("mp4box -raw 2 " & "originale.mp4")
+							_rundos("faad -d -o audio.wav C:\Programmi\Rigenerator-program\rigenerator2\originale_track2.aac")
+							_rundos("del originale_track2.aac")
+							_rundos("mencoder " & $cartella2 &"intermedio.avi -ovc copy -mc 0 -noskip -audiofile audio.wav -oac copy -o " & $cartella2 & "finito1.avi" )
+							filedelete ("audio.wav")
+							filedelete ($cartella2 &"\intermedio.avi")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							filecopy ($cartella2 &"\finito1.avi" , $cartella1)
+							filedelete ($cartella2 &"\*.avi")
+							
+					if FileExists($cartella1 & "\2.mp4") Then
+								
+							filecopy($cartella1 &"\2.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							_rundos("cmd.exe < testo.txt")
+							filecopy("C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4", $cartella2 &"\originale_automen.avi")
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\istruzioniwin640.avs" , $cartella2)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\avs2avi.exe" , $cartella2)
+							_rundos($cartella2 &"\avs2avi " & $cartella2 &"\istruzioniwin640.avs " & $cartella2 &"\intermedio.avi -w -l " & "C:\Programmi\Rigenerator-program\rigenerator2\xvid.txt")
+							filedelete ($cartella2 &"\originale_automen.avi")
+							filedelete ($cartella2 &"\avs2avi.exe")
+							filedelete ($cartella2 &"\*.avs")
+							filedelete ($cartella2 &"\*.ffv0cache")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\framerate.txt")
+							_rundos("mp4box -raw 2 " & "originale.mp4")
+							_rundos("faad -d -o audio.wav C:\Programmi\Rigenerator-program\rigenerator2\originale_track2.aac")
+							_rundos("del originale_track2.aac")
+							_rundos("mencoder " & $cartella2 &"intermedio.avi -ovc copy -mc 0 -noskip -audiofile audio.wav -oac copy -o " & $cartella2 & "finito2.avi" )
+							filedelete ("audio.wav")
+							filedelete ($cartella2 &"\intermedio.avi")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							filecopy ($cartella2 &"\finito2.avi" , $cartella1)
+							filedelete ($cartella2 &"\*.avi")
+							
+					else
+							_rundos("start " & $cartella1)		
+							exit
+					endif
+							
+					if FileExists($cartella1 & "\3.mp4") Then
+								
+							filecopy($cartella1 &"\3.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							_rundos("cmd.exe < testo.txt")
+							filecopy("C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4", $cartella2 &"\originale_automen.avi")
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\istruzioniwin640.avs" , $cartella2)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\avs2avi.exe" , $cartella2)
+							_rundos($cartella2 &"\avs2avi " & $cartella2 &"\istruzioniwin640.avs " & $cartella2 &"\intermedio.avi -w -l " & "C:\Programmi\Rigenerator-program\rigenerator2\xvid.txt")
+							filedelete ($cartella2 &"\originale_automen.avi")
+							filedelete ($cartella2 &"\avs2avi.exe")
+							filedelete ($cartella2 &"\*.avs")
+							filedelete ($cartella2 &"\*.ffv0cache")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\framerate.txt")
+							_rundos("mp4box -raw 2 " & "originale.mp4")
+							_rundos("faad -d -o audio.wav C:\Programmi\Rigenerator-program\rigenerator2\originale_track2.aac")
+							_rundos("del originale_track2.aac")
+							_rundos("mencoder " & $cartella2 &"intermedio.avi -ovc copy -mc 0 -noskip -audiofile audio.wav -oac copy -o " & $cartella2 & "finito3.avi" )
+							filedelete ("audio.wav")
+							filedelete ($cartella2 &"\intermedio.avi")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							filecopy ($cartella2 &"\finito3.avi" , $cartella1)
+							filedelete ($cartella2 &"\*.avi")
+
+					else
+							_rundos("start " & $cartella1)		
+							exit
+					endif
+
+
+					if FileExists($cartella1 & "\4.mp4") Then
+							
+							filecopy($cartella1 &"\4.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							_rundos("cmd.exe < testo.txt")
+							filecopy("C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4", $cartella2 &"\originale_automen.avi")
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\istruzioniwin640.avs" , $cartella2)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\avs2avi.exe" , $cartella2)
+							_rundos($cartella2 &"\avs2avi " & $cartella2 &"\istruzioniwin640.avs " & $cartella2 &"\intermedio.avi -w -l " & "C:\Programmi\Rigenerator-program\rigenerator2\xvid.txt")
+							filedelete ($cartella2 &"\originale_automen.avi")
+							filedelete ($cartella2 &"\avs2avi.exe")
+							filedelete ($cartella2 &"\*.avs")
+							filedelete ($cartella2 &"\*.ffv0cache")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\framerate.txt")
+							_rundos("mp4box -raw 2 " & "originale.mp4")
+							_rundos("faad -d -o audio.wav C:\Programmi\Rigenerator-program\rigenerator2\originale_track2.aac")
+							_rundos("del originale_track2.aac")
+							_rundos("mencoder " & $cartella2 &"intermedio.avi -ovc copy -mc 0 -noskip -audiofile audio.wav -oac copy -o " & $cartella2 & "finito4.avi" )
+							filedelete ("audio.wav")
+							filedelete ($cartella2 &"\intermedio.avi")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							filecopy ($cartella2 &"\finito4.avi" , $cartella1)
+							filedelete ($cartella2 &"\*.avi")
+							
+					else
+							_rundos("start " & $cartella1)		
+							exit
+					endif
+							
+							
+					if FileExists($cartella1 & "\5.mp4") Then
+
+							filecopy($cartella1 &"\5.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							_rundos("cmd.exe < testo.txt")
+							filecopy("C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4", $cartella2 &"\originale_automen.avi")
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\istruzioniwin640.avs" , $cartella2)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\avs2avi.exe" , $cartella2)
+							_rundos($cartella2 &"\avs2avi " & $cartella2 &"\istruzioniwin640.avs " & $cartella2 &"\intermedio.avi -w -l " & "C:\Programmi\Rigenerator-program\rigenerator2\xvid.txt")
+							filedelete ($cartella2 &"\originale_automen.avi")
+							filedelete ($cartella2 &"\avs2avi.exe")
+							filedelete ($cartella2 &"\*.avs")
+							filedelete ($cartella2 &"\*.ffv0cache")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\framerate.txt")
+							_rundos("mp4box -raw 2 " & "originale.mp4")
+							_rundos("faad -d -o audio.wav C:\Programmi\Rigenerator-program\rigenerator2\originale_track2.aac")
+							_rundos("del originale_track2.aac")
+							_rundos("mencoder " & $cartella2 &"intermedio.avi -ovc copy -mc 0 -noskip -audiofile audio.wav -oac copy -o " & $cartella2 & "finito5.avi" )
+							filedelete ("audio.wav")
+							filedelete ($cartella2 &"\intermedio.avi")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							filecopy ($cartella2 &"\finito5.avi" , $cartella1)
+							filedelete ($cartella2 &"\*.avi")
+							
+					else
+							_rundos("start " & $cartella1)		
+							exit
+					endif
+							
+					if FileExists($cartella1 & "\6.mp4") Then
+								
+							filecopy($cartella1 &"\6.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							_rundos("cmd.exe < testo.txt")
+							filecopy("C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4", $cartella2 &"\originale_automen.avi")
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\istruzioniwin640.avs" , $cartella2)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\avs2avi.exe" , $cartella2)
+							_rundos($cartella2 &"\avs2avi " & $cartella2 &"\istruzioniwin640.avs " & $cartella2 &"\intermedio.avi -w -l " & "C:\Programmi\Rigenerator-program\rigenerator2\xvid.txt")
+							filedelete ($cartella2 &"\originale_automen.avi")
+							filedelete ($cartella2 &"\avs2avi.exe")
+							filedelete ($cartella2 &"\*.avs")
+							filedelete ($cartella2 &"\*.ffv0cache")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\framerate.txt")
+							_rundos("mp4box -raw 2 " & "originale.mp4")
+							_rundos("faad -d -o audio.wav C:\Programmi\Rigenerator-program\rigenerator2\originale_track2.aac")
+							_rundos("del originale_track2.aac")
+							_rundos("mencoder " & $cartella2 &"intermedio.avi -ovc copy -mc 0 -noskip -audiofile audio.wav -oac copy -o " & $cartella2 & "finito6.avi" )
+							filedelete ("audio.wav")
+							filedelete ($cartella2 &"\intermedio.avi")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							filecopy ($cartella2 &"\finito6.avi" , $cartella1)
+							filedelete ($cartella2 &"\*.avi")
+							_rundos("start " & $cartella1)
+					else
+							_rundos("start " & $cartella1)		
+							exit
+					endif
+							
+				Else ; se no editing
+							
+							filecopy($cartella1 &"\1.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							_rundos("cmd.exe < testo.txt")
+							_rundos("cmd.exe < time.txt")
+							filecopy("C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4", $cartella2 &"\originale_automen.avi")
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\istruzioniwin640.avs" , $cartella2)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\x264.bat" , "C:\Programmi\Rigenerator-program\rigenerator2")
+							$arichange = ("cambiare")
+							$impo2642=FileOpen("impo264.txt", 0)
+							$impo264 = FileRead($impo2642)
+							_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\x264.bat",$arichange,$impo264)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\x264.exe" , $cartella2)
+							runwait("x264.bat")
+							filedelete ($cartella2 &"\originale_automen.avi")
+							filedelete ($cartella2 &"\x264.exe")
+							filedelete ("x264.bat")
+							filedelete ($cartella2 &"\*.avs")
+							filedelete ($cartella2 &"\*.ffv0cache")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\framerate.txt")
+							_rundos("mp4box -raw 2 " & "originale.mp4")
+							_rundos("MP4Box -add " & "intermedio.mp4:delay=" & $delay & " -add " & "originale_track2.aac " & "finito1.mp4")	
+							filedelete ("intermedio.mp4")
+							filedelete ("originale_track2.aac")
+							filedelete ("originale.mp4")
+					
+					If $fileupload = 1 Then
+								
+								$contatore=FileOpen("contatore2.txt", 0)
+								$contatore2 =  FileReadLine($contatore)
+								$intermezzo = FileOpen("contatore.txt", 0)
+								$intermezzo2 =  FileReadLine($intermezzo)
+								$variabile = $contatore2 + $intermezzo2	
+								$indirizzo=FileOpen("indirizzo.txt", 0)
+								$indirizzo2 = FileReadLine($indirizzo)
+								$ora =-@HOUR
+								$minuti =-@MIN
+								$giorno =@mday
+								$mese =-@mon
+								$ORARIO =($giorno & $mese & $ora & $minuti)
+								_FileWriteToLine("C:\Programmi\Rigenerator-program\rigenerator2\lista-file-trasferiti-ftp.txt",$variabile,$indirizzo2 & $orario&".html",0)
+								_FileWriteToLine("C:\Programmi\Rigenerator-program\rigenerator2\rinomina.txt",1,$orario,1)
+								$rinomina2=FileOpen("rinomina.txt", 0)
+								$rinomina = FileReadLine($rinomina2)
+								FileDelete("C:\Programmi\Rigenerator-program\rigenerator2\readme.html")
+								FileCopy("C:\Programmi\Rigenerator-program\rigenerator2\finito1.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\cartella\" & $rinomina & ".mp4", 8)
+								filecopy("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\readme.html", "C:\Programmi\Rigenerator-program\rigenerator2")
+								$cerca = ("rimpiazzami")
+								$address = ("indirizzo/")
+								$encoding =("numero")
+								$normalealtainsane =("normalealtainsane")
+								$data =("time")
+								$cercaautore =("autore")
+								$cercatitolo = ("titles")
+								$cambiaqualita = FileReadLine($variabili,8)
+								$cambiaautore = FileReadLine($variabili,9)
+								$cambiatitolo = FileReadLine($variabili,10)
+								$cfr2 =fileopen("crf.txt",0)
+								$cfr=FileReadLine($cfr2)
+								$indirizzo2 =fileopen("indirizzo.txt",0)
+								$indirizzo=FileReadLine($indirizzo2)
+								$time2 =fileopen("data.txt",0)
+								$time=FileReadLine($time2)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cerca,$rinomina)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$address,$indirizzo)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$encoding,$cfr)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$normalealtainsane,$cambiaqualita)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$data,$time)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cercaautore,$cambiaautore)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cercatitolo,$cambiatitolo)
+								FileCopy("C:\Programmi\Rigenerator-program\rigenerator2\readme.html", "C:\Programmi\Rigenerator-program\rigenerator2\cartella\" & $rinomina & ".html", 8)
+								_rundos ("start C:\Programmi\Rigenerator-program\rigenerator2\ftp.exe "& $cartella1 & $rinomina & ".html")
+								FileDelete("C:\Programmi\Rigenerator-program\rigenerator2\finito1.mp4")
+								_rundos ("start C:\Programmi\Rigenerator-program\rigenerator2\ftp.exe "& $cartella1 & $rinomina & ".mp4")
+																
+					Else
+									filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\finito1.mp4" , $cartella1)
+									filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\*.mp4")
+					EndIf
+		
+							
+							
+							
+					if FileExists($cartella1 & "\2.mp4") Then
+								
+							filecopy($cartella1 &"\2.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							_rundos("cmd.exe < testo.txt")
+							_rundos("cmd.exe < time.txt")
+							filecopy("C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4", $cartella2 &"\originale_automen.avi")
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\istruzioniwin640.avs" , $cartella2)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\x264.bat" , "C:\Programmi\Rigenerator-program\rigenerator2")
+							$arichange = ("cambiare")
+							$impo2642=FileOpen("impo264.txt", 0)
+							$impo264 = FileRead($impo2642)
+							_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\x264.bat",$arichange,$impo264)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\x264.exe" , $cartella2)
+							runwait("x264.bat")
+							filedelete ($cartella2 &"\originale_automen.avi")
+							filedelete ($cartella2 &"\x264.exe")
+							filedelete ("x264.bat")
+							filedelete ($cartella2 &"\*.avs")
+							filedelete ($cartella2 &"\*.ffv0cache")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\framerate.txt")
+							_rundos("mp4box -raw 2 " & "originale.mp4")
+							_rundos("MP4Box -add " & "intermedio.mp4:delay=" & $delay & " -add " & "originale_track2.aac " & "finito2.mp4")	
+							filedelete ("intermedio.mp4")
+							filedelete ("originale_track2.aac")
+							filedelete ("originale.mp4")
+					
+						If $fileupload = 1 Then
+								
+								
+								$contatore=FileOpen("contatore2.txt", 0)
+								$contatore2 =  FileReadLine($contatore)
+								$intermezzo = FileOpen("contatore.txt", 0)
+								$intermezzo2 =  FileReadLine($intermezzo)
+								$variabile = $contatore2 + $intermezzo2	
+								$indirizzo=FileOpen("indirizzo.txt", 0)
+								$indirizzo2 = FileReadLine($indirizzo)
+								$ora =-@HOUR
+								$minuti =-@MIN
+								$giorno =@mday
+								$mese =-@mon
+								$ORARIO =($giorno & $mese & $ora & $minuti)
+								_FileWriteToLine("C:\Programmi\Rigenerator-program\rigenerator2\lista-file-trasferiti-ftp.txt",$variabile,$indirizzo2 & $orario&".html",0)
+								_FileWriteToLine("C:\Programmi\Rigenerator-program\rigenerator2\rinomina.txt",1,$orario,1)
+								$rinomina2=FileOpen("rinomina.txt", 0)
+								$rinomina = FileReadLine($rinomina2)
+								FileDelete("C:\Programmi\Rigenerator-program\rigenerator2\readme.html")
+								FileCopy("C:\Programmi\Rigenerator-program\rigenerator2\finito2.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\cartella\" & $rinomina & ".mp4", 8)
+								filecopy("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\readme.html", "C:\Programmi\Rigenerator-program\rigenerator2")
+								$cerca = ("rimpiazzami")
+								$address = ("indirizzo/")
+								$encoding =("numero")
+								$normalealtainsane =("normalealtainsane")
+								$data =("time")
+								$cercaautore =("autore")
+								$cercatitolo = ("titles")
+								$cambiaqualita = FileReadLine($variabili,8)
+								$cambiaautore = FileReadLine($variabili,9)
+								$cambiatitolo = FileReadLine($variabili,10)
+								$cfr2 =fileopen("crf.txt",0)
+								$cfr=FileReadLine($cfr2)
+								$indirizzo2 =fileopen("indirizzo.txt",0)
+								$indirizzo=FileReadLine($indirizzo2)
+								$time2 =fileopen("data.txt",0)
+								$time=FileReadLine($time2)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cerca,$rinomina)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$address,$indirizzo)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$encoding,$cfr)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$normalealtainsane,$cambiaqualita)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$data,$time)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cercaautore,$cambiaautore)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cercatitolo,$cambiatitolo)
+								FileCopy("C:\Programmi\Rigenerator-program\rigenerator2\readme.html", "C:\Programmi\Rigenerator-program\rigenerator2\cartella\" & $rinomina & ".html", 8)
+								_rundos ("start C:\Programmi\Rigenerator-program\rigenerator2\ftp.exe "& $cartella1 & $rinomina & ".html")
+								FileDelete("C:\Programmi\Rigenerator-program\rigenerator2\finito2.mp4")
+								_rundos ("start C:\Programmi\Rigenerator-program\rigenerator2\ftp.exe "& $cartella1 & $rinomina & ".mp4")
+																
+								
+						Else
+									filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\finito2.mp4" , $cartella1)
+									filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\*.mp4")
+						EndIf
+								
+						Else 
+							_rundos("start " & $cartella1)		
+							exit
+					endif
+								
+					if FileExists($cartella1 & "\3.mp4") Then
+								
+							filecopy($cartella1 &"\3.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							_rundos("cmd.exe < testo.txt")
+							_rundos("cmd.exe < time.txt")
+							filecopy("C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4", $cartella2 &"\originale_automen.avi")
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\istruzioniwin640.avs" , $cartella2)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\x264.bat" , "C:\Programmi\Rigenerator-program\rigenerator2")
+							$arichange = ("cambiare")
+							$impo2642=FileOpen("impo264.txt", 0)
+							$impo264 = FileRead($impo2642)
+							_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\x264.bat",$arichange,$impo264)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\x264.exe" , $cartella2)
+							runwait("x264.bat")
+							filedelete ($cartella2 &"\originale_automen.avi")
+							filedelete ($cartella2 &"\x264.exe")
+							filedelete ("x264.bat")
+							filedelete ($cartella2 &"\*.avs")
+							filedelete ($cartella2 &"\*.ffv0cache")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\framerate.txt")
+							_rundos("mp4box -raw 2 " & "originale.mp4")
+							_rundos("MP4Box -add " & "intermedio.mp4:delay=" & $delay & " -add " & "originale_track2.aac " & "finito3.mp4")	
+							filedelete ("intermedio.mp4")
+							filedelete ("originale_track2.aac")
+							filedelete ("originale.mp4")
+					
+						If $fileupload = 1 Then
+								
+								
+								$contatore=FileOpen("contatore2.txt", 0)
+								$contatore2 =  FileReadLine($contatore)
+								$intermezzo = FileOpen("contatore.txt", 0)
+								$intermezzo2 =  FileReadLine($intermezzo)
+								$variabile = $contatore2 + $intermezzo2	
+								$indirizzo=FileOpen("indirizzo.txt", 0)
+								$indirizzo2 = FileReadLine($indirizzo)
+								$ora =-@HOUR
+								$minuti =-@MIN
+								$giorno =@mday
+								$mese =-@mon
+								$ORARIO =($giorno & $mese & $ora & $minuti)
+								_FileWriteToLine("C:\Programmi\Rigenerator-program\rigenerator2\lista-file-trasferiti-ftp.txt",$variabile,$indirizzo2 & $orario&".html",0)
+								_FileWriteToLine("C:\Programmi\Rigenerator-program\rigenerator2\rinomina.txt",1,$orario,1)
+								$rinomina2=FileOpen("rinomina.txt", 0)
+								$rinomina = FileReadLine($rinomina2)
+								FileDelete("C:\Programmi\Rigenerator-program\rigenerator2\readme.html")
+								FileCopy("C:\Programmi\Rigenerator-program\rigenerator2\finito3.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\cartella\" & $rinomina & ".mp4", 8)
+								filecopy("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\readme.html", "C:\Programmi\Rigenerator-program\rigenerator2")
+								$cerca = ("rimpiazzami")
+								$address = ("indirizzo/")
+								$encoding =("numero")
+								$normalealtainsane =("normalealtainsane")
+								$data =("time")
+								$cercaautore =("autore")
+								$cercatitolo = ("titles")
+								$cambiaqualita = FileReadLine($variabili,8)
+								$cambiaautore = FileReadLine($variabili,9)
+								$cambiatitolo = FileReadLine($variabili,10)
+								$cfr2 =fileopen("crf.txt",0)
+								$cfr=FileReadLine($cfr2)
+								$indirizzo2 =fileopen("indirizzo.txt",0)
+								$indirizzo=FileReadLine($indirizzo2)
+								$time2 =fileopen("data.txt",0)
+								$time=FileReadLine($time2)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cerca,$rinomina)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$address,$indirizzo)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$encoding,$cfr)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$normalealtainsane,$cambiaqualita)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$data,$time)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cercaautore,$cambiaautore)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cercatitolo,$cambiatitolo)
+								FileCopy("C:\Programmi\Rigenerator-program\rigenerator2\readme.html", "C:\Programmi\Rigenerator-program\rigenerator2\cartella\" & $rinomina & ".html", 8)
+								_rundos ("start C:\Programmi\Rigenerator-program\rigenerator2\ftp.exe "& $cartella1 & $rinomina & ".html")
+								FileDelete("C:\Programmi\Rigenerator-program\rigenerator2\finito3.mp4")
+								_rundos ("start C:\Programmi\Rigenerator-program\rigenerator2\ftp.exe "& $cartella1 & $rinomina & ".mp4")
+																
+								
+						Else
+									filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\finito3.mp4" , $cartella1)
+									filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\*.mp4")
+						EndIf
+								
+						Else 
+							_rundos("start " & $cartella1)		
+							exit
+					endif
+					
+					if FileExists($cartella1 & "\4.mp4") Then
+								
+							filecopy($cartella1 &"\4.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							_rundos("cmd.exe < testo.txt")
+							_rundos("cmd.exe < time.txt")
+							filecopy("C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4", $cartella2 &"\originale_automen.avi")
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\istruzioniwin640.avs" , $cartella2)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\x264.bat" , "C:\Programmi\Rigenerator-program\rigenerator2")
+							$arichange = ("cambiare")
+							$impo2642=FileOpen("impo264.txt", 0)
+							$impo264 = FileRead($impo2642)
+							_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\x264.bat",$arichange,$impo264)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\x264.exe" , $cartella2)
+							runwait("x264.bat")
+							filedelete ($cartella2 &"\originale_automen.avi")
+							filedelete ($cartella2 &"\x264.exe")
+							filedelete ("x264.bat")
+							filedelete ($cartella2 &"\*.avs")
+							filedelete ($cartella2 &"\*.ffv0cache")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\framerate.txt")
+							_rundos("mp4box -raw 2 " & "originale.mp4")
+							_rundos("MP4Box -add " & "intermedio.mp4:delay=" & $delay & " -add " & "originale_track2.aac " & "finito2.mp4")	
+							filedelete ("intermedio.mp4")
+							filedelete ("originale_track2.aac")
+							filedelete ("originale.mp4")
+					
+						If $fileupload = 1 Then
+								
+								
+								$contatore=FileOpen("contatore2.txt", 0)
+								$contatore2 =  FileReadLine($contatore)
+								$intermezzo = FileOpen("contatore.txt", 0)
+								$intermezzo2 =  FileReadLine($intermezzo)
+								$variabile = $contatore2 + $intermezzo2	
+								$indirizzo=FileOpen("indirizzo.txt", 0)
+								$indirizzo2 = FileReadLine($indirizzo)
+								$ora =-@HOUR
+								$minuti =-@MIN
+								$giorno =@mday
+								$mese =-@mon
+								$ORARIO =($giorno & $mese & $ora & $minuti)
+								_FileWriteToLine("C:\Programmi\Rigenerator-program\rigenerator2\lista-file-trasferiti-ftp.txt",$variabile,$indirizzo2 & $orario&".html",0)
+								_FileWriteToLine("C:\Programmi\Rigenerator-program\rigenerator2\rinomina.txt",1,$orario,1)
+								$rinomina2=FileOpen("rinomina.txt", 0)
+								$rinomina = FileReadLine($rinomina2)
+								FileDelete("C:\Programmi\Rigenerator-program\rigenerator2\readme.html")
+								FileCopy("C:\Programmi\Rigenerator-program\rigenerator2\finito4.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\cartella\" & $rinomina & ".mp4", 8)
+								filecopy("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\readme.html", "C:\Programmi\Rigenerator-program\rigenerator2")
+								$cerca = ("rimpiazzami")
+								$address = ("indirizzo/")
+								$encoding =("numero")
+								$normalealtainsane =("normalealtainsane")
+								$data =("time")
+								$cercaautore =("autore")
+								$cercatitolo = ("titles")
+								$cambiaqualita = FileReadLine($variabili,8)
+								$cambiaautore = FileReadLine($variabili,9)
+								$cambiatitolo = FileReadLine($variabili,10)
+								$cfr2 =fileopen("crf.txt",0)
+								$cfr=FileReadLine($cfr2)
+								$indirizzo2 =fileopen("indirizzo.txt",0)
+								$indirizzo=FileReadLine($indirizzo2)
+								$time2 =fileopen("data.txt",0)
+								$time=FileReadLine($time2)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cerca,$rinomina)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$address,$indirizzo)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$encoding,$cfr)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$normalealtainsane,$cambiaqualita)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$data,$time)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cercaautore,$cambiaautore)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cercatitolo,$cambiatitolo)
+								FileCopy("C:\Programmi\Rigenerator-program\rigenerator2\readme.html", "C:\Programmi\Rigenerator-program\rigenerator2\cartella\" & $rinomina & ".html", 8)
+								_rundos ("start C:\Programmi\Rigenerator-program\rigenerator2\ftp.exe "& $cartella1 & $rinomina & ".html")
+								FileDelete("C:\Programmi\Rigenerator-program\rigenerator2\finito4.mp4")
+								_rundos ("start C:\Programmi\Rigenerator-program\rigenerator2\ftp.exe "& $cartella1 & $rinomina & ".mp4")
+																
+								
+						Else
+									filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\finito4.mp4" , $cartella1)
+									filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\*.mp4")
+						EndIf
+								
+						Else 
+							_rundos("start " & $cartella1)		
+							exit
+					endif
+					
+					if FileExists($cartella1 & "\5.mp4") Then
+								
+							filecopy($cartella1 &"\5.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							_rundos("cmd.exe < testo.txt")
+							_rundos("cmd.exe < time.txt")
+							filecopy("C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4", $cartella2 &"\originale_automen.avi")
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\istruzioniwin640.avs" , $cartella2)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\x264.bat" , "C:\Programmi\Rigenerator-program\rigenerator2")
+							$arichange = ("cambiare")
+							$impo2642=FileOpen("impo264.txt", 0)
+							$impo264 = FileRead($impo2642)
+							_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\x264.bat",$arichange,$impo264)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\x264.exe" , $cartella2)
+							runwait("x264.bat")
+							filedelete ($cartella2 &"\originale_automen.avi")
+							filedelete ($cartella2 &"\x264.exe")
+							filedelete ("x264.bat")
+							filedelete ($cartella2 &"\*.avs")
+							filedelete ($cartella2 &"\*.ffv0cache")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\framerate.txt")
+							_rundos("mp4box -raw 2 " & "originale.mp4")
+							_rundos("MP4Box -add " & "intermedio.mp4:delay=" & $delay & " -add " & "originale_track2.aac " & "finito2.mp4")	
+							filedelete ("intermedio.mp4")
+							filedelete ("originale_track2.aac")
+							filedelete ("originale.mp4")
+					
+						If $fileupload = 1 Then
+								
+								
+								$contatore=FileOpen("contatore2.txt", 0)
+								$contatore2 =  FileReadLine($contatore)
+								$intermezzo = FileOpen("contatore.txt", 0)
+								$intermezzo2 =  FileReadLine($intermezzo)
+								$variabile = $contatore2 + $intermezzo2	
+								$indirizzo=FileOpen("indirizzo.txt", 0)
+								$indirizzo2 = FileReadLine($indirizzo)
+								$ora =-@HOUR
+								$minuti =-@MIN
+								$giorno =@mday
+								$mese =-@mon
+								$ORARIO =($giorno & $mese & $ora & $minuti)
+								_FileWriteToLine("C:\Programmi\Rigenerator-program\rigenerator2\lista-file-trasferiti-ftp.txt",$variabile,$indirizzo2 & $orario&".html",0)
+								_FileWriteToLine("C:\Programmi\Rigenerator-program\rigenerator2\rinomina.txt",1,$orario,1)
+								$rinomina2=FileOpen("rinomina.txt", 0)
+								$rinomina = FileReadLine($rinomina2)
+								FileDelete("C:\Programmi\Rigenerator-program\rigenerator2\readme.html")
+								FileCopy("C:\Programmi\Rigenerator-program\rigenerator2\finito5.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\cartella\" & $rinomina & ".mp4", 8)
+								filecopy("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\readme.html", "C:\Programmi\Rigenerator-program\rigenerator2")
+								$cerca = ("rimpiazzami")
+								$address = ("indirizzo/")
+								$encoding =("numero")
+								$normalealtainsane =("normalealtainsane")
+								$data =("time")
+								$cercaautore =("autore")
+								$cercatitolo = ("titles")
+								$cambiaqualita = FileReadLine($variabili,8)
+								$cambiaautore = FileReadLine($variabili,9)
+								$cambiatitolo = FileReadLine($variabili,10)
+								$cfr2 =fileopen("crf.txt",0)
+								$cfr=FileReadLine($cfr2)
+								$indirizzo2 =fileopen("indirizzo.txt",0)
+								$indirizzo=FileReadLine($indirizzo2)
+								$time2 =fileopen("data.txt",0)
+								$time=FileReadLine($time2)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cerca,$rinomina)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$address,$indirizzo)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$encoding,$cfr)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$normalealtainsane,$cambiaqualita)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$data,$time)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cercaautore,$cambiaautore)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cercatitolo,$cambiatitolo)
+								FileCopy("C:\Programmi\Rigenerator-program\rigenerator2\readme.html", "C:\Programmi\Rigenerator-program\rigenerator2\cartella\" & $rinomina & ".html", 8)
+								_rundos ("start C:\Programmi\Rigenerator-program\rigenerator2\ftp.exe "& $cartella1 & $rinomina & ".html")
+								FileDelete("C:\Programmi\Rigenerator-program\rigenerator2\finito5.mp4")
+								_rundos ("start C:\Programmi\Rigenerator-program\rigenerator2\ftp.exe "& $cartella1 & $rinomina & ".mp4")
+																
+								
+						Else
+									filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\finito5.mp4" , $cartella1)
+									filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\*.mp4")
+						EndIf
+								
+						Else 
+							_rundos("start " & $cartella1)		
+							exit
+					endif
+					
+					
+					
+					if FileExists($cartella1 & "\6.mp4") Then
+								
+							filecopy($cartella1 &"\6.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							_rundos("cmd.exe < testo.txt")
+							_rundos("cmd.exe < time.txt")
+							filecopy("C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4", $cartella2 &"\originale_automen.avi")
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\istruzioniwin640.avs" , $cartella2)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\x264.bat" , "C:\Programmi\Rigenerator-program\rigenerator2")
+							$arichange = ("cambiare")
+							$impo2642=FileOpen("impo264.txt", 0)
+							$impo264 = FileRead($impo2642)
+							_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\x264.bat",$arichange,$impo264)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\x264.exe" , $cartella2)
+							runwait("x264.bat")
+							filedelete ($cartella2 &"\originale_automen.avi")
+							filedelete ($cartella2 &"\x264.exe")
+							filedelete ("x264.bat")
+							filedelete ($cartella2 &"\*.avs")
+							filedelete ($cartella2 &"\*.ffv0cache")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\framerate.txt")
+							_rundos("mp4box -raw 2 " & "originale.mp4")
+							_rundos("MP4Box -add " & "intermedio.mp4:delay=" & $delay & " -add " & "originale_track2.aac " & "finito6.mp4")	
+							filedelete ("intermedio.mp4")
+							filedelete ("originale_track2.aac")
+							filedelete ("originale.mp4")
+					
+						If $fileupload = 1 Then
+								
+								
+								$contatore=FileOpen("contatore2.txt", 0)
+								$contatore2 =  FileReadLine($contatore)
+								$intermezzo = FileOpen("contatore.txt", 0)
+								$intermezzo2 =  FileReadLine($intermezzo)
+								$variabile = $contatore2 + $intermezzo2	
+								$indirizzo=FileOpen("indirizzo.txt", 0)
+								$indirizzo2 = FileReadLine($indirizzo)
+								$ora =-@HOUR
+								$minuti =-@MIN
+								$giorno =@mday
+								$mese =-@mon
+								$ORARIO =($giorno & $mese & $ora & $minuti)
+								_FileWriteToLine("C:\Programmi\Rigenerator-program\rigenerator2\lista-file-trasferiti-ftp.txt",$variabile,$indirizzo2 & $orario&".html",0)
+								_FileWriteToLine("C:\Programmi\Rigenerator-program\rigenerator2\rinomina.txt",1,$orario,1)
+								$rinomina2=FileOpen("rinomina.txt", 0)
+								$rinomina = FileReadLine($rinomina2)
+								FileDelete("C:\Programmi\Rigenerator-program\rigenerator2\readme.html")
+								FileCopy("C:\Programmi\Rigenerator-program\rigenerator2\finito6.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\cartella\" & $rinomina & ".mp4", 8)
+								filecopy("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\readme.html", "C:\Programmi\Rigenerator-program\rigenerator2")
+								$cerca = ("rimpiazzami")
+								$address = ("indirizzo/")
+								$encoding =("numero")
+								$normalealtainsane =("normalealtainsane")
+								$data =("time")
+								$cercaautore =("autore")
+								$cercatitolo = ("titles")
+								$cambiaqualita = FileReadLine($variabili,8)
+								$cambiaautore = FileReadLine($variabili,9)
+								$cambiatitolo = FileReadLine($variabili,10)
+								$cfr2 =fileopen("crf.txt",0)
+								$cfr=FileReadLine($cfr2)
+								$indirizzo2 =fileopen("indirizzo.txt",0)
+								$indirizzo=FileReadLine($indirizzo2)
+								$time2 =fileopen("data.txt",0)
+								$time=FileReadLine($time2)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cerca,$rinomina)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$address,$indirizzo)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$encoding,$cfr)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$normalealtainsane,$cambiaqualita)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$data,$time)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cercaautore,$cambiaautore)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cercatitolo,$cambiatitolo)
+								FileCopy("C:\Programmi\Rigenerator-program\rigenerator2\readme.html", "C:\Programmi\Rigenerator-program\rigenerator2\cartella\" & $rinomina & ".html", 8)
+								_rundos ("start C:\Programmi\Rigenerator-program\rigenerator2\ftp.exe "& $cartella1 & $rinomina & ".html")
+								FileDelete("C:\Programmi\Rigenerator-program\rigenerator2\finito6.mp4")
+								_rundos ("start C:\Programmi\Rigenerator-program\rigenerator2\ftp.exe "& $cartella1 & $rinomina & ".mp4")
+																
+								
+						Else
+									filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\finito6.mp4" , $cartella1)
+									filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\*.mp4")
+						EndIf
+								
+						Else 
+							_rundos("start " & $cartella1)		
+							exit
+					endif
+		
+				Endif ; fine editing
+			
+			endif ; fine sincronia
+				
+		Else ; se non c'è un file che si chiama 1.mp4
+				
+				
+			if $stop = 0 then 
+
+			
+	
+				If $sincronia = 1 Then ; se sincronia
+					
+
+					if $editing = 1 Then ; se editing
+
+							filecopy($cartella1 &"\*.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							_rundos("cmd.exe < testo.txt")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder.bat")
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\mencoder.bat" , "C:\Programmi\Rigenerator-program\rigenerator2")
+							$framerate2 = FileOpen("framerate.txt", 0)
+							$framerate =  FileReadLine($framerate2)
+							$framerate1000 = $framerate * 1000
+							$find = "replace"
+							$replace = $framerate1000
+							$filename = "C:\Programmi\Rigenerator-program\rigenerator2\mencoder.bat"
+							_ReplaceStringInFile($filename,$find,$replace)
+							runwait("mencoder.bat","C:\Programmi\Rigenerator-program\rigenerator2",@SW_SHOWMINNOACTIVE)
+		
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\istruzioniwin640.avs" , $cartella2)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\avs2avi.exe" , $cartella2)
+							_rundos($cartella2 &"\avs2avi " & $cartella2 &"\istruzioniwin640.avs " & $cartella2 &"\intermedio.avi -w -l " & "C:\Programmi\Rigenerator-program\rigenerator2\xvid.txt")
+							filedelete ($cartella2 &"\originale_automen.avi")
+							filedelete ($cartella2 &"\avs2avi.exe")
+							filedelete ($cartella2 &"\*.avs")
+							filedelete ($cartella2 &"\*.ffv0cache")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\framerate.txt")
+							_rundos("mp4box -raw 2 " & "originale.mp4")
+							_rundos("faad -d -o audio.wav C:\Programmi\Rigenerator-program\rigenerator2\originale_track2.aac")
+							_rundos("del originale_track2.aac")
+							_rundos("mencoder " & $cartella2 &"intermedio.avi -ovc copy -mc 0 -noskip -audiofile audio.wav -oac copy -o " & $cartella2 & "finito.avi" )
+							filedelete ("audio.wav")
+							filedelete ($cartella2 &"\intermedio.avi")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\*.mp4")
+							filecopy ($cartella2 &"\finito.avi" , $cartella1)
+							filedelete ($cartella2 &"\*.avi")
+							_rundos("start " & $cartella1)
+							
+							
+					Else ; no editing
+							
+							filecopy($cartella1 &"\*.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							_rundos("cmd.exe < testo.txt")
+							_rundos("cmd.exe < time.txt")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder.bat")
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\mencoder.bat" , "C:\Programmi\Rigenerator-program\rigenerator2")
+							$framerate2 = FileOpen("framerate.txt", 0)
+							$framerate =  FileReadLine($framerate2)
+							$framerate1000 = $framerate * 1000
+							$find = "replace"
+							$replace = $framerate1000
+							$filename = "C:\Programmi\Rigenerator-program\rigenerator2\mencoder.bat"
+							_ReplaceStringInFile($filename,$find,$replace)
+							runwait("mencoder.bat","C:\Programmi\Rigenerator-program\rigenerator2",@SW_SHOWMINNOACTIVE)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\istruzioniwin640.avs" , $cartella2)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\x264.bat" , "C:\Programmi\Rigenerator-program\rigenerator2")
+							$arichange = ("cambiare")
+							$impo2642=FileOpen("impo264.txt", 0)
+							$impo264 = FileRead($impo2642)
+							_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\x264.bat",$arichange,$impo264)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\x264.exe" , $cartella2)
+							runwait("x264.bat")
+							filedelete ($cartella2 &"\originale_automen.avi")
+							filedelete ($cartella2 &"\x264.exe")
+							filedelete ("x264.bat")
+							filedelete ($cartella2 &"\*.avs")
+							filedelete ($cartella2 &"\*.ffv0cache")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\framerate.txt")
+							_rundos("mp4box -raw 2 " & "originale.mp4")
+							_rundos("MP4Box -add " & "intermedio.mp4:delay=" & $delay & " -add " & "originale_track2.aac " & "finito.mp4")	
+							filedelete ("intermedio.mp4")
+							filedelete ("originale_track2.aac")
+							filedelete ("originale.mp4")
+					
+						If $fileupload = 1 Then
+								
+								$contatore=FileOpen("contatore2.txt", 0)
+								$contatore2 =  FileReadLine($contatore)
+								$intermezzo = FileOpen("contatore.txt", 0)
+								$intermezzo2 =  FileReadLine($intermezzo)
+								$variabile = $contatore2 + $intermezzo2	
+								$indirizzo=FileOpen("indirizzo.txt", 0)
+								$indirizzo2 = FileReadLine($indirizzo)
+								$ora =-@HOUR
+								$minuti =-@MIN
+								$giorno =@mday
+								$mese =-@mon
+								$ORARIO =($giorno & $mese & $ora & $minuti)
+								_FileWriteToLine("C:\Programmi\Rigenerator-program\rigenerator2\lista-file-trasferiti-ftp.txt",$variabile,$indirizzo2 & $orario&".html",0)
+								_FileWriteToLine("C:\Programmi\Rigenerator-program\rigenerator2\rinomina.txt",1,$orario,1)
+								$rinomina2=FileOpen("rinomina.txt", 0)
+								$rinomina = FileReadLine($rinomina2)
+								FileDelete("C:\Programmi\Rigenerator-program\rigenerator2\readme.html")
+								FileCopy("C:\Programmi\Rigenerator-program\rigenerator2\finito.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\cartella\" & $rinomina & ".mp4", 8)
+								filecopy("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\readme.html", "C:\Programmi\Rigenerator-program\rigenerator2")
+								$cerca = ("rimpiazzami")
+								$address = ("indirizzo/")
+								$encoding =("numero")
+								$normalealtainsane =("normalealtainsane")
+								$data =("time")
+								$cercaautore =("autore")
+								$cercatitolo = ("titles")
+								$cambiaqualita = FileReadLine($variabili,8)
+								$cambiaautore = FileReadLine($variabili,9)
+								$cambiatitolo = FileReadLine($variabili,10)
+								$cfr2 =fileopen("crf.txt",0)
+								$cfr=FileReadLine($cfr2)
+								$indirizzo2 =fileopen("indirizzo.txt",0)
+								$indirizzo=FileReadLine($indirizzo2)
+								$time2 =fileopen("data.txt",0)
+								$time=FileReadLine($time2)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cerca,$rinomina)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$address,$indirizzo)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$encoding,$cfr)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$normalealtainsane,$cambiaqualita)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$data,$time)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cercaautore,$cambiaautore)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cercatitolo,$cambiatitolo)
+								FileCopy("C:\Programmi\Rigenerator-program\rigenerator2\readme.html", "C:\Programmi\Rigenerator-program\rigenerator2\cartella\" & $rinomina & ".html", 8)
+								_rundos ("start C:\Programmi\Rigenerator-program\rigenerator2\ftp.exe "& $cartella1 & $rinomina & ".html")
+								FileDelete("C:\Programmi\Rigenerator-program\rigenerator2\finito.mp4")
+								_rundos ("start C:\Programmi\Rigenerator-program\rigenerator2\ftp.exe "& $cartella1 & $rinomina & ".mp4")
+																
+						Else
+									filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\finito.mp4" , $cartella1)
+									filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\*.mp4")
+						EndIf
+								
+		
+					Endif ; fine editing
+					
+		   
+		
+				Else  ; se sincronia è uguale a 0
+
+					if $editing = 1 Then
+						
+						
+							filecopy($cartella1 &"\*.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							_rundos("cmd.exe < testo.txt")
+							filecopy("C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4", $cartella2 &"\originale_automen.avi")
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\istruzioniwin640.avs" , $cartella2)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\avs2avi.exe" , $cartella2)
+							_rundos($cartella2 &"\avs2avi " & $cartella2 &"\istruzioniwin640.avs " & $cartella2 &"\intermedio.avi -w -l " & "C:\Programmi\Rigenerator-program\rigenerator2\xvid.txt")
+							filedelete ($cartella2 &"\originale_automen.avi")
+							filedelete ($cartella2 &"\avs2avi.exe")
+							filedelete ($cartella2 &"\*.avs")
+							filedelete ($cartella2 &"\*.ffv0cache")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\framerate.txt")
+							_rundos("mp4box -raw 2 " & "originale.mp4")
+							_rundos("faad -d -o audio.wav C:\Programmi\Rigenerator-program\rigenerator2\originale_track2.aac")
+							_rundos("del originale_track2.aac")
+							_rundos("mencoder " & $cartella2 &"intermedio.avi -ovc copy -mc 0 -noskip -audiofile audio.wav -oac copy -o " & $cartella2 & "finito.avi" )
+							filedelete ("audio.wav")
+							filedelete ($cartella2 &"\intermedio.avi")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							filecopy ($cartella2 &"\finito.avi" , $cartella1)
+							filedelete ($cartella2 &"\finito.avi")
+							_rundos("start " & $cartella1)
+							
+							
+					Else ;editing non è uguale a 1
+							
+							filecopy($cartella1 &"\*.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							_rundos("cmd.exe < testo.txt")
+							_rundos("cmd.exe < time.txt")
+							filecopy("C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4", $cartella2 &"\originale_automen.avi")
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\x264.bat" , "C:\Programmi\Rigenerator-program\rigenerator2")
+							$arichange = ("cambiare")
+							$impo2642=FileOpen("impo264.txt", 0)
+							$impo264 = FileRead($impo2642)
+							_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\x264.bat",$arichange,$impo264)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\x264.exe" , $cartella2)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\istruzioniwin640.avs" , $cartella2)
+							runwait("x264.bat")
+							filedelete ($cartella2 &"\originale_automen.avi")
+							filedelete ($cartella2 &"\x264.exe")
+							filedelete ("x264.bat")
+							filedelete ($cartella2 &"\*.avs")
+							filedelete ($cartella2 &"\*.ffv0cache")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\framerate.txt")
+							_rundos("mp4box -raw 2 " & "originale.mp4")
+							_rundos("MP4Box -add " & "intermedio.mp4:delay=" & $delay & " -add " & "originale_track2.aac " & "finito.mp4")	
+				
+							filedelete ("intermedio.mp4")
+							filedelete ("originale_track2.aac")
+							filedelete ("originale.mp4")
+							
+						If $fileupload = 1 Then
+								
+								$contatore=FileOpen("contatore2.txt", 0)
+								$contatore2 =  FileReadLine($contatore)
+								$intermezzo = FileOpen("contatore.txt", 0)
+								$intermezzo2 =  FileReadLine($intermezzo)
+								$variabile = $contatore2 + $intermezzo2	
+								$indirizzo=FileOpen("indirizzo.txt", 0)
+								$indirizzo2 = FileReadLine($indirizzo)
+								$ora =-@HOUR
+								$minuti =-@MIN
+								$giorno =@mday
+								$mese =-@mon
+								$ORARIO =($giorno & $mese & $ora & $minuti)
+								_FileWriteToLine("C:\Programmi\Rigenerator-program\rigenerator2\lista-file-trasferiti-ftp.txt",$variabile,$indirizzo2 & $orario&".html",0)
+								_FileWriteToLine("C:\Programmi\Rigenerator-program\rigenerator2\rinomina.txt",1,$orario,1)
+								$rinomina2=FileOpen("rinomina.txt", 0)
+								$rinomina = FileReadLine($rinomina2)
+								FileDelete("C:\Programmi\Rigenerator-program\rigenerator2\readme.html")
+								FileCopy("C:\Programmi\Rigenerator-program\rigenerator2\finito.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\cartella\" & $rinomina & ".mp4", 8)
+								filecopy("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\readme.html", "C:\Programmi\Rigenerator-program\rigenerator2")
+								$cerca = ("rimpiazzami")
+								$address = ("indirizzo/")
+								$encoding =("numero")
+								$normalealtainsane =("normalealtainsane")
+								$data =("time")
+								$cercaautore =("autore")
+								$cercatitolo = ("titles")
+								$cambiaqualita = FileReadLine($variabili,8)
+								$cambiaautore = FileReadLine($variabili,9)
+								$cambiatitolo = FileReadLine($variabili,10)
+								$cfr2 =fileopen("crf.txt",0)
+								$cfr=FileReadLine($cfr2)
+								$indirizzo2 =fileopen("indirizzo.txt",0)
+								$indirizzo=FileReadLine($indirizzo2)
+								$time2 =fileopen("data.txt",0)
+								$time=FileReadLine($time2)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cerca,$rinomina)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$address,$indirizzo)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$encoding,$cfr)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$normalealtainsane,$cambiaqualita)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$data,$time)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cercaautore,$cambiaautore)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cercatitolo,$cambiatitolo)
+								FileCopy("C:\Programmi\Rigenerator-program\rigenerator2\readme.html", "C:\Programmi\Rigenerator-program\rigenerator2\cartella\" & $rinomina & ".html", 8)
+								_rundos ("start C:\Programmi\Rigenerator-program\rigenerator2\ftp.exe "& $cartella1 & $rinomina & ".html")
+								FileDelete("C:\Programmi\Rigenerator-program\rigenerator2\finito.mp4")
+								_rundos ("start C:\Programmi\Rigenerator-program\rigenerator2\ftp.exe "& $cartella1 & $rinomina & ".mp4")
+						Else
+								filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\finito.mp4" , $cartella1)
+								filedelete ("finito.mp4")
+								_rundos("start " & $cartella1)
+								
+						endif
+					Endif ; fine editing
+				endif	; fine sincronia	
+		
+			Else ; se stop diverso da zero
+	
+	
+			
+			
+			
+				If $sincronia = 1 Then ; se sincronia
+					
+		
+					if $editing = 1 Then ; se editing
+							
+							filecopy($cartella1 &"\*.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							_Rundos("mp4box -splitx "& $start&":"& $stop&" C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							_Rundos("ren "& "C:\Programmi\Rigenerator-program\rigenerator2\*.mp4 "& "originale.mp4")
+							_rundos("cmd.exe < testo.txt")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder.bat")
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\mencoder.bat" , "C:\Programmi\Rigenerator-program\rigenerator2")
+							$framerate2 = FileOpen("framerate.txt", 0)
+							$framerate =  FileReadLine($framerate2)
+							$framerate1000 = $framerate * 1000
+							$find = "replace"
+							$replace = $framerate1000
+							$filename = "C:\Programmi\Rigenerator-program\rigenerator2\mencoder.bat"
+							_ReplaceStringInFile($filename,$find,$replace)
+							runwait("mencoder.bat","C:\Programmi\Rigenerator-program\rigenerator2",@SW_SHOWMINNOACTIVE)
+		
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\istruzioniwin640.avs" , $cartella2)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\avs2avi.exe" , $cartella2)
+							_rundos($cartella2 &"\avs2avi " & $cartella2 &"\istruzioniwin640.avs " & $cartella2 &"\intermedio.avi -w -l " & "C:\Programmi\Rigenerator-program\rigenerator2\xvid.txt")
+							filedelete ($cartella2 &"\originale_automen.avi")
+							filedelete ($cartella2 &"\avs2avi.exe")
+							filedelete ($cartella2 &"\*.avs")
+							filedelete ($cartella2 &"\*.ffv0cache")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\framerate.txt")
+							_rundos("mp4box -raw 2 " & "originale.mp4")
+							_rundos("faad -d -o audio.wav C:\Programmi\Rigenerator-program\rigenerator2\originale_track2.aac")
+							_rundos("del originale_track2.aac")
+							_rundos("mencoder " & $cartella2 &"intermedio.avi -ovc copy -mc 0 -noskip -audiofile audio.wav -oac copy -o " & $cartella2 & "finito.avi" )
+							filedelete ("audio.wav")
+							filedelete ($cartella2 &"\intermedio.avi")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\*.mp4")
+							filecopy ($cartella2 &"\finito.avi" , $cartella1)
+							filedelete ($cartella2 &"\*.avi")
+							_rundos("start " & $cartella1)
+							
+							
+					Else
+							
+							filecopy($cartella1 &"\*.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							_Rundos("mp4box -splitx "& $start&":"& $stop&" C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							_Rundos("ren "& "C:\Programmi\Rigenerator-program\rigenerator2\*.mp4 "& "originale.mp4")
+							_rundos("cmd.exe < testo.txt")
+							_rundos("cmd.exe < time.txt")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder.bat")
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\mencoder.bat" , "C:\Programmi\Rigenerator-program\rigenerator2")
+							$framerate2 = FileOpen("framerate.txt", 0)
+							$framerate =  FileReadLine($framerate2)
+							$framerate1000 = $framerate * 1000
+							$find = "replace"
+							$replace = $framerate1000
+							$filename = "C:\Programmi\Rigenerator-program\rigenerator2\mencoder.bat"
+							_ReplaceStringInFile($filename,$find,$replace)
+							runwait("mencoder.bat","C:\Programmi\Rigenerator-program\rigenerator2",@SW_SHOWMINNOACTIVE)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\istruzioniwin640.avs" , $cartella2)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\x264.bat" , "C:\Programmi\Rigenerator-program\rigenerator2")
+							$arichange = ("cambiare")
+							$impo2642=FileOpen("impo264.txt", 0)
+							$impo264 = FileRead($impo2642)
+							_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\x264.bat",$arichange,$impo264)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\x264.exe" , $cartella2)
+							runwait("x264.bat")
+							filedelete ($cartella2 &"\originale_automen.avi")
+							filedelete ($cartella2 &"\x264.exe")
+							filedelete ("x264.bat")
+							filedelete ($cartella2 &"\*.avs")
+							filedelete ($cartella2 &"\*.ffv0cache")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\framerate.txt")
+							_rundos("mp4box -raw 2 " & "originale.mp4")
+							_rundos("MP4Box -add " & "intermedio.mp4:delay=" & $delay & " -add " & "originale_track2.aac " & "finito.mp4")	
+				
+							filedelete ("intermedio.mp4")
+							filedelete ("originale_track2.aac")
+							filedelete ("originale.mp4")
+					
+						If $fileupload = 1 Then
+								
+								$contatore=FileOpen("contatore2.txt", 0)
+								$contatore2 =  FileReadLine($contatore)
+								$intermezzo = FileOpen("contatore.txt", 0)
+								$intermezzo2 =  FileReadLine($intermezzo)
+								$variabile = $contatore2 + $intermezzo2	
+								$indirizzo=FileOpen("indirizzo.txt", 0)
+								$indirizzo2 = FileReadLine($indirizzo)
+								$ora =-@HOUR
+								$minuti =-@MIN
+								$giorno =@mday
+								$mese =-@mon
+								$ORARIO =($giorno & $mese & $ora & $minuti)
+								_FileWriteToLine("C:\Programmi\Rigenerator-program\rigenerator2\lista-file-trasferiti-ftp.txt",$variabile,$indirizzo2 & $orario&".html",0)
+								_FileWriteToLine("C:\Programmi\Rigenerator-program\rigenerator2\rinomina.txt",1,$orario,1)
+								$rinomina2=FileOpen("rinomina.txt", 0)
+								$rinomina = FileReadLine($rinomina2)
+								FileDelete("C:\Programmi\Rigenerator-program\rigenerator2\readme.html")
+								FileCopy("C:\Programmi\Rigenerator-program\rigenerator2\finito.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\cartella\" & $rinomina & ".mp4", 8)
+								filecopy("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\readme.html", "C:\Programmi\Rigenerator-program\rigenerator2")
+								$cerca = ("rimpiazzami")
+								$address = ("indirizzo/")
+								$encoding =("numero")
+								$normalealtainsane =("normalealtainsane")
+								$data =("time")
+								$cercaautore =("autore")
+								$cercatitolo = ("titles")
+								$cambiaqualita = FileReadLine($variabili,8)
+								$cambiaautore = FileReadLine($variabili,9)
+								$cambiatitolo = FileReadLine($variabili,10)
+								$cfr2 =fileopen("crf.txt",0)
+								$cfr=FileReadLine($cfr2)
+								$indirizzo2 =fileopen("indirizzo.txt",0)
+								$indirizzo=FileReadLine($indirizzo2)
+								$time2 =fileopen("data.txt",0)
+								$time=FileReadLine($time2)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cerca,$rinomina)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$address,$indirizzo)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$encoding,$cfr)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$normalealtainsane,$cambiaqualita)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$data,$time)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cercaautore,$cambiaautore)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cercatitolo,$cambiatitolo)
+								FileCopy("C:\Programmi\Rigenerator-program\rigenerator2\readme.html", "C:\Programmi\Rigenerator-program\rigenerator2\cartella\" & $rinomina & ".html", 8)
+								_rundos ("start C:\Programmi\Rigenerator-program\rigenerator2\ftp.exe "& $cartella1 & $rinomina & ".html")
+								FileDelete("C:\Programmi\Rigenerator-program\rigenerator2\finito.mp4")
+								_rundos ("start C:\Programmi\Rigenerator-program\rigenerator2\ftp.exe "& $cartella1 & $rinomina & ".mp4")
+						Else
+									filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\finito.mp4" , $cartella1)
+									filedelete ("finito.mp4")
+									_rundos("start " & $cartella1)
+						EndIf
+					EndIf ; fine editing
+		
+				Else  ; se sincronia è uguale a 0
+
+					if $editing = 1 Then
+						
+							filecopy($cartella1 &"\*.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							_Rundos("mp4box -splitx "& $start&":"& $stop&" C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							_Rundos("ren "& "C:\Programmi\Rigenerator-program\rigenerator2\*.mp4 "& "originale.mp4")
+							filecopy("C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4", $cartella2 &"\originale_automen.avi")
+							_rundos("cmd.exe < testo.txt")
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\istruzioniwin640.avs" , $cartella2)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\avs2avi.exe" , $cartella2)
+							_rundos($cartella2 &"\avs2avi " & $cartella2 &"\istruzioniwin640.avs " & $cartella2 &"\intermedio.avi -w -l " & "C:\Programmi\Rigenerator-program\rigenerator2\xvid.txt")
+							filedelete ($cartella2 &"\originale_automen.avi")
+							filedelete ($cartella2 &"\avs2avi.exe")
+							filedelete ($cartella2 &"\*.avs")
+							filedelete ($cartella2 &"\*.ffv0cache")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\framerate.txt")
+							_rundos("mp4box -raw 2 " & "originale.mp4")
+							_rundos("faad -d -o audio.wav C:\Programmi\Rigenerator-program\rigenerator2\originale_track2.aac")
+							_rundos("del originale_track2.aac")
+							_rundos("mencoder " & $cartella2 &"intermedio.avi -ovc copy -mc 0 -noskip -audiofile audio.wav -oac copy -o " & $cartella2 & "finito.avi" )
+							filedelete ("audio.wav")
+							filedelete ($cartella2 &"\intermedio.avi")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							filecopy ($cartella2 &"\finito.avi" , $cartella1)
+							filedelete ($cartella2 &"\*.avi")
+							_rundos("start " & $cartella1)
+								
+							
+					Else
+							
+							filecopy($cartella1 &"\*.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							_Rundos("mp4box -splitx "& $start&":"& $stop&" C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4")
+							_Rundos("ren "& "C:\Programmi\Rigenerator-program\rigenerator2\*.mp4 "& "originale.mp4")
+							filecopy("C:\Programmi\Rigenerator-program\rigenerator2\originale.mp4", $cartella2 &"\originale_automen.avi")
+							_rundos("cmd.exe < testo.txt")
+							_rundos("cmd.exe < time.txt")
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\istruzioniwin640.avs" , $cartella2)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\x264.bat" , "C:\Programmi\Rigenerator-program\rigenerator2")
+							$arichange = ("cambiare")
+							$impo2642=FileOpen("impo264.txt", 0)
+							$impo264 = FileRead($impo2642)
+							_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\x264.bat",$arichange,$impo264)
+							filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\x264.exe" , $cartella2)
+							runwait("x264.bat")
+							filedelete ($cartella2 &"\originale_automen.avi")
+							filedelete ($cartella2 &"\x264.exe")
+							filedelete ("x264.bat")
+							filedelete ($cartella2 &"\*.avs")
+							filedelete ($cartella2 &"\*.ffv0cache")
+							filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\framerate.txt")
+							_rundos("mp4box -raw 2 " & "originale.mp4")
+							_rundos("MP4Box -add " & "intermedio.mp4:delay=" & $delay & " -add " & "originale_track2.aac " & "finito.mp4")	
+							filedelete ("intermedio.mp4")
+							filedelete ("originale_track2.aac")
+							filedelete ("originale.mp4")
+					
+						If $fileupload = 1 Then
+								
+								$contatore=FileOpen("contatore2.txt", 0)
+								$contatore2 =  FileReadLine($contatore)
+								$intermezzo = FileOpen("contatore.txt", 0)
+								$intermezzo2 =  FileReadLine($intermezzo)
+								$variabile = $contatore2 + $intermezzo2	
+								$indirizzo=FileOpen("indirizzo.txt", 0)
+								$indirizzo2 = FileReadLine($indirizzo)
+								$ora =-@HOUR
+								$minuti =-@MIN
+								$giorno =@mday
+								$mese =-@mon
+								$ORARIO =($giorno & $mese & $ora & $minuti)
+								_FileWriteToLine("C:\Programmi\Rigenerator-program\rigenerator2\lista-file-trasferiti-ftp.txt",$variabile,$indirizzo2 & $orario&".html",0)
+								_FileWriteToLine("C:\Programmi\Rigenerator-program\rigenerator2\rinomina.txt",1,$orario,1)
+								$rinomina2=FileOpen("rinomina.txt", 0)
+								$rinomina = FileReadLine($rinomina2)
+								FileDelete("C:\Programmi\Rigenerator-program\rigenerator2\readme.html")
+								FileCopy("C:\Programmi\Rigenerator-program\rigenerator2\finito.mp4", "C:\Programmi\Rigenerator-program\rigenerator2\cartella\" & $rinomina & ".mp4", 8)
+								filecopy("C:\Programmi\Rigenerator-program\rigenerator2\mencoder\readme.html", "C:\Programmi\Rigenerator-program\rigenerator2")
+								$cerca = ("rimpiazzami")
+								$address = ("indirizzo/")
+								$encoding =("numero")
+								$normalealtainsane =("normalealtainsane")
+								$data =("time")
+								$cercaautore =("autore")
+								$cercatitolo = ("titles")
+								$cerca60fps = ("framealsec")
+								$cambiaqualita = FileReadLine($variabili,8)
+								$cambiaautore = FileReadLine($variabili,9)
+								$cambiatitolo = FileReadLine($variabili,10)
+								$cambia60fps = FileReadLine($variabili,11)
+								$cfr2 =fileopen("crf.txt",0)
+								$cfr=FileReadLine($cfr2)
+								$indirizzo2 =fileopen("indirizzo.txt",0)
+								$indirizzo=FileReadLine($indirizzo2)
+								$time2 =fileopen("data.txt",0)
+								$time=FileReadLine($time2)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cerca,$rinomina)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$address,$indirizzo)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$encoding,$cfr)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$normalealtainsane,$cambiaqualita)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$data,$time)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cercaautore,$cambiaautore)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cercatitolo,$cambiatitolo)
+								_ReplaceStringInFile("C:\Programmi\Rigenerator-program\rigenerator2\readme.html",$cerca60fps,$cambia60fps)
+								FileCopy("C:\Programmi\Rigenerator-program\rigenerator2\readme.html", "C:\Programmi\Rigenerator-program\rigenerator2\cartella\" & $rinomina & ".html", 8)
+								_rundos ("start C:\Programmi\Rigenerator-program\rigenerator2\ftp.exe "& $cartella1 & $rinomina & ".html")
+								FileDelete("C:\Programmi\Rigenerator-program\rigenerator2\finito.mp4")
+								_rundos ("start C:\Programmi\Rigenerator-program\rigenerator2\ftp.exe "& $cartella1 & $rinomina & ".mp4")
+																
+						Else
+									filecopy ("C:\Programmi\Rigenerator-program\rigenerator2\finito.mp4" , $cartella1)
+									filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\*.mp4")
+									_rundos("start " & $cartella1)
+						EndIf
+
+					endif ; fine editing
+				endif ; fine sincronia
+			endif ; fine stop diverso da zero
+		endif ; fine non c'è un file che si chiama 1
+	endif ; fine è un video a 640
+
+
+case $msg = $stopbutton	
+			
+			$cartella2 = FileOpen("cartella2.txt", 0)
+			$cartella =  FileReadLine($cartella2)
+			$cartella1 = FileOpen("cartella1.txt", 0)			
+			$cartellastart =  FileReadLine($cartella1)			
+						
+			ProcessClose("cmd.exe")
+			ProcessClose("x264.exe")
+			ProcessClose("x264.bat")
+			ProcessClose("startwinmulti.exe")
+			ProcessClose("mencoder.exe")
+			ProcessClose("HCenc_021.exe")
+			ProcessClose("startwin.exe")
+			ProcessClose("avs2avi.exe")
+			filedelete ($cartella &"\*.*")
+			filedelete ($cartellastart &"\*.m2v")
+			filedelete ($cartellastart &"\*.wav")
+			filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\*.mp4")
+			filedelete ("C:\Programmi\Rigenerator-program\rigenerator2\x264.bat")
+
+
+EndSelect
+
+WEnd
+
+
+
+GUIDelete()
+
+Exit
