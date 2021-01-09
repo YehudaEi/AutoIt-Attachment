@@ -1,0 +1,4 @@
+[bericht1]
+subject=Call Back Nota
+message = test
+from=brutus
