@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form1
+><!--******************************************************************************
+
+If you filled in a form:
+
+    This file contains data that was entered into a form.
+    It is not the form itself.
+
+******************************************************************************
+
+If you receive this data file:
+
+    Please follow the directions below to process this data file using
+    Adobe Acrobat Professional 7
+
+**To view the completed form:
+    1) Save this data file to your computer.
+    2) Open a blank copy of the original PDF form that the form filler
+       completed in order to generate this data file.
+    3) In Acrobat, choose Advanced > Forms > Import Data to Current Form
+       and browse for this data file.
+    4) You will see the form with the data in it.
+    5) To save a copy of the form with the data in it, choose File > Save As
+       and save the file.
+
+**To create a spreadsheet from one or more form data files you have received:
+    1) Save the data files to a place on your computer, giving each file a
+       unique name and making sure not to delete the '.xml' file extension.
+    2) In Acrobat, choose File > Form Data > Create Spreadsheet from Data Files.
+    3) Click the 'Add Files' button to chose the data files.
+    4) After the data files are added, click the 'Create Spreadsheet' button
+       to create a Spreadsheet that contains data from selected data files.
+
+******************************************************************************--><TextField1
+>aSasd</TextField1
+><Name
+>asdf</Name
+><Address
+>asdf</Address
+><City
+>asdf</City
+><State
+>sd</State
+><ZipCode
+>123456</ZipCode
+><CheckBox1
+>0</CheckBox1
+><DateTimeField1
+>2008-05-14</DateTimeField1
+><DropDownList1
+>Mailed Check</DropDownList1
+><TextField2
+>asdf</TextField2
+><TextField3
+>1234 main street</TextField3
+><TextField4
+>(123) 456-7890</TextField4
+><TextField5
+>(123) 456-7890</TextField5
+><TextField6
+/><TextField8
+>t. hale</TextField8
+><NumericField1
+> 100</NumericField1
+><TextField9
+>asdf</TextField9
+><TextField10
+>creek</TextField10
+><TextField11
+>1234 main street</TextField11
+><ZipCode
+>1234567</ZipCode
+><State
+>oh</State
+><City
+>1234 main street</City
+><TextField12
+>ok</TextField12
+><RadioButtonList
+/><TextField13
+>todd.hale@faithhighway.com</TextField13
+><TextField14
+>cox</TextField14
+><TextField15
+>tulsa</TextField15
+><TextField16
+/><RadioButtonList
+>3</RadioButtonList
+><NumericField
+/><RadioButtonList
+>2</RadioButtonList
+><RadioButtonList
+>1</RadioButtonList
+><TextField17
+>asdf</TextField17
+><TextField17
+>asdf</TextField17
+><TextField17
+>asdf</TextField17
+><TextField18
+>asdf</TextField18
+><RadioButtonList
+>2</RadioButtonList
+><DropDownList2
+>Mini-DV</DropDownList2
+><TextField19
+>qu</TextField19
+><DateTimeField3
+>2008-05-23</DateTimeField3
+><DateTimeField4
+/><DateTimeField5
+/><NumericField2
+>   1,200.00</NumericField2
+><NumericField3
+>    500.00</NumericField3
+><NumericField4
+>    126.00</NumericField4
+><NumericField6
+>    100.00</NumericField6
+><NumericField7
+/><NumericField8
+>   1,926.00</NumericField8
+><TextField20
+>qu</TextField20
+><NumericField9
+/><TextField21
+>qu</TextField21
+><DateTimeField6
+>2008-05-16</DateTimeField6
+><DateTimeField7
+>2008-05-15</DateTimeField7
+><DateTimeField8
+/><DateTimeField9
+/><NumericField10
+/><DateTimeField10
+/><DateTimeField10
+/><NumericField10
+/><DateTimeField9
+/><DateTimeField10
+/><NumericField10
+/><DateTimeField9
+/><DateTimeField10
+/><NumericField10
+/><DateTimeField9
+/><DateTimeField10
+/><NumericField10
+/><DateTimeField9
+/><DateTimeField9
+/><DateTimeField9
+/><DateTimeField9
+/><DateTimeField9
+/><DateTimeField9
+/><NumericField11
+/><NumericField11
+/><NumericField11
+/><NumericField11
+/><NumericField11
+/><NumericField10
+/><NumericField10
+/><NumericField10
+/><NumericField10
+/><NumericField10
+/><NumericField13
+>123456</NumericField13
+><TextField22
+/><DateTimeField11
+>2008-05-15</DateTimeField11
+><DateTimeField12
+>2008-05-21</DateTimeField12
+><TextField23
+>balsh</TextField23
+><TextField24
+>alsdkfj</TextField24
+><TextField25
+>alsdkfj</TextField25
+><TextField26
+>asldf</TextField26
+><TextField27
+>okasdfasdf</TextField27
+><TextField28
+>ok</TextField28
+><TextField29
+>ok</TextField29
+><DateTimeField13
+>2008-05-15</DateTimeField13
+><Check_Subform
+><TextField30
+>123123</TextField30
+><TextField31
+>123123</TextField31
+><TextField32
+>123123</TextField32
+><TextField33
+>123456789</TextField33
+></Check_Subform
+></form1
+>
