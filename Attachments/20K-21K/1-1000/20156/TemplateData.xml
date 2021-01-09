@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NetworTest>
+<TestingMode Name="IperfTesting">
+	<TestInfra Name="1GigaNet">
+		<TemplateTitle Name="1GIGA Net 1ms or less">
+			<CLIrun>-f -r-s -s</CLIrun>
+		</TemplateTitle>
+		<TemplateTitle Name="1GIGA Net 10ms or less">
+			<CLIrun>-f -r-s -s</CLIrun>
+		</TemplateTitle>
+	</TestInfra>
+</TestingMode>
+</NetworTest>
+	
