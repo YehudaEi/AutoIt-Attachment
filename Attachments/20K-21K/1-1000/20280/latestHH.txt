@@ -1,0 +1,1422 @@
+Pokerstars Game #17324993382: Tournament #86853653, $3.00+$0.40 Hold'em No Limit - Level I (10/20) - 2008/01/03 - 17:53:27 (ET)
+Table '83863753 1' 10-max Seat #1 is the button
+Seat 1: Rabensohn (1500 in chips)
+Seat 2: Maximilano (1500 in chips)
+Seat 3: Hawkeyes56 (1500 in chips)
+Seat 4: kristic 83 (1500 in chips)
+Seat 5: biggs615 (1500 in chips)
+Seat 6: Exclusive (1500 in chips)
+Seat 7: bjg40 (1500 in chips)
+Seat 8: ian_sloss (1500 in chips)
+Seat 9: fishinfool21 (1500 in chips)
+Seat 10: Nightwish99 (1500 in chips)
+Maximilano: posts small blind 10
+Hawkeyes56: posts big blind 20
+*** HOLE CARDS ***
+Dealt to Exclusive [Kh 7c]
+kristic 83: folds
+biggs615: folds
+Exclusive: calls 20
+bjg40: calls 20
+ian_sloss: folds
+fishinfool21: folds
+Nightwish99: folds
+Rabensohn: folds
+Maximilano: calls 10
+Hawkeyes56: checks
+*** FLOP *** [6d 6h 8d]
+Maximilano is disconnected
+Maximilano has timed out while disconnected
+Maximilano: checks
+Hawkeyes56: checks
+Exclusive: checks
+bjg40: checks
+*** TURN *** [6d 6h 8d] [Tc]
+Maximilano has timed out while disconnected
+Maximilano: checks
+Hawkeyes56: checks
+Exclusive: checks
+bjg40: checks
+*** RIVER *** [6d 6h 8d Tc] [9c]
+Maximilano has timed out while disconnected
+Maximilano: checks
+Hawkeyes56: checks
+Exclusive: bets 60
+bjg40: folds
+Maximilano has timed out while disconnected
+Maximilano: folds
+Maximilano is sitting out
+Hawkeyes56: folds
+Uncalled bet (60) returned to Exclusive
+Exclusive collected 80 from pot
+*** SUMMARY ***
+Total pot 80 | Rake 0
+Board [6d 6h 8d Tc 9c]
+Seat 1: Rabensohn (button) folded before Flop (didn't bet)
+Seat 2: Maximilano (small blind) folded on the River
+Seat 3: Hawkeyes56 (big blind) folded on the River
+Seat 4: kristic 83 folded before Flop (didn't bet)
+Seat 5: biggs615 folded before Flop (didn't bet)
+Seat 6: Exclusive collected (80)
+Seat 7: bjg40 folded on the River
+Seat 8: ian_sloss folded before Flop (didn't bet)
+Seat 9: fishinfool21 folded before Flop (didn't bet)
+Seat 10: Nightwish99 folded before Flop (didn't bet)
+
+*********** # 2 **************
+Pokerstars Game #17525063744: Tournament #83863753, $3.00+$0.40 Hold'em No Limit - Level I (10/20) - 2008/01/03 - 17:56:18 (ET)
+Table '83863753 1' 10-max Seat #2 is the button
+Seat 1: Rabensohn (1500 in chips)
+Seat 2: Maximilano (1480 in chips) is sitting out
+Seat 3: Hawkeyes56 (1480 in chips)
+Seat 4: kristic 83 (1500 in chips)
+Seat 5: biggs615 (1500 in chips)
+Seat 6: Exclusive (1560 in chips)
+Seat 7: bjg40 (1480 in chips)
+Seat 8: ian_sloss (1500 in chips)
+Seat 9: fishinfool21 (1500 in chips)
+Seat 10: Nightwish99 (1500 in chips)
+Hawkeyes56: posts small blind 10
+kristic 83: posts big blind 20
+*** HOLE CARDS ***
+Dealt to Exclusive [6d 6c]
+biggs615: folds
+Exclusive: raises 40 to 60
+bjg40: calls 60
+ian_sloss: folds
+fishinfool21: folds
+Nightwish99: folds
+Rabensohn: calls 60
+Maximilano: folds
+Hawkeyes56: folds
+kristic 83: folds
+*** FLOP *** [Kh 2d 3d]
+Exclusive: checks
+bjg40: checks
+Rabensohn: checks
+*** TURN *** [Kh 2d 3d] [Ah]
+Exclusive: bets 40
+Maximilano is connected
+bjg40: folds
+Rabensohn: folds
+Uncalled bet (40) returned to Exclusive
+Maximilano has returned
+Exclusive collected 210 from pot
+*** SUMMARY ***
+Total pot 210 | Rake 0
+Board [Kh 2d 3d Ah]
+Seat 1: Rabensohn folded on the Turn
+Seat 2: Maximilano (button) folded before Flop (didn't bet)
+Seat 3: Hawkeyes56 (small blind) folded before Flop
+Seat 4: kristic 83 (big blind) folded before Flop
+Seat 5: biggs615 folded before Flop (didn't bet)
+Seat 6: Exclusive collected (210)
+Seat 7: bjg40 folded on the Turn
+Seat 8: ian_sloss folded before Flop (didn't bet)
+Seat 9: fishinfool21 folded before Flop (didn't bet)
+Seat 10: Nightwish99 folded before Flop (didn't bet)
+
+*********** # 3 **************
+Pokerstars Game #17525081215: Tournament #83863753, $3.00+$0.40 Hold'em No Limit - Level I (10/20) - 2008/01/03 - 17:57:02 (ET)
+Table '83863753 1' 10-max Seat #3 is the button
+Seat 1: Rabensohn (1440 in chips)
+Seat 2: Maximilano (1480 in chips)
+Seat 3: Hawkeyes56 (1470 in chips)
+Seat 4: kristic 83 (1480 in chips)
+Seat 5: biggs615 (1500 in chips)
+Seat 6: Exclusive (1710 in chips)
+Seat 7: bjg40 (1420 in chips)
+Seat 8: ian_sloss (1500 in chips)
+Seat 9: fishinfool21 (1500 in chips)
+Seat 10: Nightwish99 (1500 in chips)
+kristic 83: posts small blind 10
+biggs615: posts big blind 20
+*** HOLE CARDS ***
+Dealt to Exclusive [Ah Ts]
+Exclusive: calls 20
+bjg40: calls 20
+ian_sloss: folds
+fishinfool21: calls 20
+Nightwish99: folds
+Rabensohn: folds
+Maximilano is disconnected
+Maximilano has timed out while disconnected
+Maximilano: folds
+Maximilano is sitting out
+Hawkeyes56: folds
+kristic 83: calls 10
+biggs615: checks
+*** FLOP *** [As Jd 6s]
+kristic 83: checks
+biggs615: checks
+Exclusive: bets 40
+bjg40: folds
+fishinfool21: folds
+kristic 83: folds
+biggs615: folds
+Uncalled bet (40) returned to Exclusive
+Exclusive collected 100 from pot
+*** SUMMARY ***
+Total pot 100 | Rake 0
+Board [As Jd 6s]
+Seat 1: Rabensohn folded before Flop (didn't bet)
+Seat 2: Maximilano folded before Flop (didn't bet)
+Seat 3: Hawkeyes56 (button) folded before Flop (didn't bet)
+Seat 4: kristic 83 (small blind) folded on the Flop
+Seat 5: biggs615 (big blind) folded on the Flop
+Seat 6: Exclusive collected (100)
+Seat 7: bjg40 folded on the Flop
+Seat 8: ian_sloss folded before Flop (didn't bet)
+Seat 9: fishinfool21 folded on the Flop
+Seat 10: Nightwish99 folded before Flop (didn't bet)
+
+*********** # 4 **************
+Pokerstars Game #17525114471: Tournament #83863753, $3.00+$0.40 Hold'em No Limit - Level I (10/20) - 2008/01/03 - 17:58:26 (ET)
+Table '83863753 1' 10-max Seat #4 is the button
+Seat 1: Rabensohn (1440 in chips)
+Seat 2: Maximilano (1480 in chips) is sitting out
+Seat 3: Hawkeyes56 (1470 in chips)
+Seat 4: kristic 83 (1460 in chips)
+Seat 5: biggs615 (1480 in chips)
+Seat 6: Exclusive (1790 in chips)
+Seat 7: bjg40 (1400 in chips)
+Seat 8: ian_sloss (1500 in chips)
+Seat 9: fishinfool21 (1480 in chips)
+Seat 10: Nightwish99 (1500 in chips)
+biggs615: posts small blind 10
+Exclusive: posts big blind 20
+*** HOLE CARDS ***
+Dealt to Exclusive [5s 2c]
+bjg40: folds
+ian_sloss: folds
+fishinfool21: calls 20
+Nightwish99: folds
+Rabensohn: folds
+Maximilano: folds
+Hawkeyes56: calls 20
+kristic 83: calls 20
+biggs615: folds
+Exclusive: checks
+*** FLOP *** [Jh 2s Kh]
+Maximilano is connected
+Exclusive: checks
+Maximilano has returned
+fishinfool21: checks
+Hawkeyes56: checks
+kristic 83: checks
+*** TURN *** [Jh 2s Kh] [9d]
+Exclusive: checks
+fishinfool21: checks
+Hawkeyes56: checks
+kristic 83: checks
+*** RIVER *** [Jh 2s Kh 9d] [Qh]
+Exclusive: bets 40
+fishinfool21: raises 40 to 80
+Hawkeyes56: folds
+kristic 83: folds
+Exclusive: folds
+Uncalled bet (40) returned to fishinfool21
+fishinfool21 collected 170 from pot
+*** SUMMARY ***
+Total pot 170 | Rake 0
+Board [Jh 2s Kh 9d Qh]
+Seat 1: Rabensohn folded before Flop (didn't bet)
+Seat 2: Maximilano folded before Flop (didn't bet)
+Seat 3: Hawkeyes56 folded on the River
+Seat 4: kristic 83 (button) folded on the River
+Seat 5: biggs615 (small blind) folded before Flop
+Seat 6: Exclusive (big blind) folded on the River
+Seat 7: bjg40 folded before Flop (didn't bet)
+Seat 8: ian_sloss folded before Flop (didn't bet)
+Seat 9: fishinfool21 collected (170)
+Seat 10: Nightwish99 folded before Flop (didn't bet)
+
+*********** # 5 **************
+Pokerstars Game #17525138812: Tournament #83863753, $3.00+$0.40 Hold'em No Limit - Level II (15/30) - 2008/01/03 - 17:59:28 (ET)
+Table '83863753 1' 10-max Seat #5 is the button
+Seat 1: Rabensohn (1440 in chips)
+Seat 2: Maximilano (1480 in chips)
+Seat 3: Hawkeyes56 (1450 in chips)
+Seat 4: kristic 83 (1440 in chips)
+Seat 5: biggs615 (1470 in chips)
+Seat 6: Exclusive (1730 in chips)
+Seat 7: bjg40 (1400 in chips)
+Seat 8: ian_sloss (1500 in chips)
+Seat 9: fishinfool21 (1590 in chips)
+Seat 10: Nightwish99 (1500 in chips)
+Exclusive: posts small blind 15
+bjg40: posts big blind 30
+*** HOLE CARDS ***
+Dealt to Exclusive [Kc Jh]
+ian_sloss: raises 120 to 150
+fishinfool21: folds
+Nightwish99: folds
+Rabensohn: folds
+Maximilano: folds
+Hawkeyes56: folds
+kristic 83: folds
+biggs615: folds
+Exclusive: folds
+bjg40: calls 120
+*** FLOP *** [Ad 6c 9h]
+bjg40: checks
+ian_sloss: bets 180
+bjg40: folds
+Uncalled bet (180) returned to ian_sloss
+ian_sloss collected 315 from pot
+*** SUMMARY ***
+Total pot 315 | Rake 0
+Board [Ad 6c 9h]
+Seat 1: Rabensohn folded before Flop (didn't bet)
+Seat 2: Maximilano folded before Flop (didn't bet)
+Seat 3: Hawkeyes56 folded before Flop (didn't bet)
+Seat 4: kristic 83 folded before Flop (didn't bet)
+Seat 5: biggs615 (button) folded before Flop (didn't bet)
+Seat 6: Exclusive (small blind) folded before Flop
+Seat 7: bjg40 (big blind) folded on the Flop
+Seat 8: ian_sloss collected (315)
+Seat 9: fishinfool21 folded before Flop (didn't bet)
+Seat 10: Nightwish99 folded before Flop (didn't bet)
+
+*********** # 6 **************
+Pokerstars Game #17525153734: Tournament #83863753, $3.00+$0.40 Hold'em No Limit - Level II (15/30) - 2008/01/03 - 18:00:06 (ET)
+Table '83863753 1' 10-max Seat #6 is the button
+Seat 1: Rabensohn (1440 in chips)
+Seat 2: Maximilano (1480 in chips)
+Seat 3: Hawkeyes56 (1450 in chips)
+Seat 4: kristic 83 (1440 in chips)
+Seat 5: biggs615 (1470 in chips)
+Seat 6: Exclusive (1715 in chips)
+Seat 7: bjg40 (1250 in chips)
+Seat 8: ian_sloss (1665 in chips)
+Seat 9: fishinfool21 (1590 in chips)
+Seat 10: Nightwish99 (1500 in chips)
+bjg40: posts small blind 15
+ian_sloss: posts big blind 30
+*** HOLE CARDS ***
+Dealt to Exclusive [Th 4d]
+fishinfool21: calls 30
+Nightwish99: folds
+Rabensohn: folds
+Maximilano: calls 30
+Hawkeyes56: folds
+kristic 83: raises 120 to 150
+biggs615: folds
+Exclusive: folds
+bjg40: calls 135
+ian_sloss: folds
+fishinfool21: folds
+Maximilano: calls 120
+*** FLOP *** [Qs Td 5c]
+bjg40: checks
+Maximilano: bets 240
+kristic 83: raises 1050 to 1290 and is all-in
+bjg40: folds
+Maximilano: folds
+Uncalled bet (1050) returned to kristic 83
+kristic 83 collected 990 from pot
+kristic 83: doesn't show hand
+*** SUMMARY ***
+Total pot 990 | Rake 0
+Board [Qs Td 5c]
+Seat 1: Rabensohn folded before Flop (didn't bet)
+Seat 2: Maximilano folded on the Flop
+Seat 3: Hawkeyes56 folded before Flop (didn't bet)
+Seat 4: kristic 83 collected (990)
+Seat 5: biggs615 folded before Flop (didn't bet)
+Seat 6: Exclusive (button) folded before Flop (didn't bet)
+Seat 7: bjg40 (small blind) folded on the Flop
+Seat 8: ian_sloss (big blind) folded before Flop
+Seat 9: fishinfool21 folded before Flop
+Seat 10: Nightwish99 folded before Flop (didn't bet)
+
+*********** # 7 **************
+Pokerstars Game #17525184454: Tournament #83863753, $3.00+$0.40 Hold'em No Limit - Level II (15/30) - 2008/01/03 - 18:01:22 (ET)
+Table '83863753 1' 10-max Seat #7 is the button
+Seat 1: Rabensohn (1440 in chips)
+Seat 2: Maximilano (1090 in chips)
+Seat 3: Hawkeyes56 (1450 in chips)
+Seat 4: kristic 83 (2040 in chips)
+Seat 5: biggs615 (1470 in chips)
+Seat 6: Exclusive (1715 in chips)
+Seat 7: bjg40 (1100 in chips)
+Seat 8: ian_sloss (1635 in chips)
+Seat 9: fishinfool21 (1560 in chips)
+Seat 10: Nightwish99 (1500 in chips)
+ian_sloss: posts small blind 15
+fishinfool21: posts big blind 30
+*** HOLE CARDS ***
+Dealt to Exclusive [8c 9s]
+Nightwish99: calls 30
+Rabensohn: raises 90 to 120
+Maximilano: folds
+Hawkeyes56: calls 120
+kristic 83: folds
+biggs615: folds
+Exclusive: folds
+bjg40: folds
+ian_sloss: folds
+fishinfool21: calls 90
+Nightwish99: folds
+*** FLOP *** [Qs Qd 7h]
+fishinfool21: bets 30
+Rabensohn: raises 90 to 120
+Hawkeyes56: folds
+fishinfool21: folds
+Uncalled bet (90) returned to Rabensohn
+Rabensohn collected 465 from pot
+Rabensohn: doesn't show hand
+*** SUMMARY ***
+Total pot 465 | Rake 0
+Board [Qs Qd 7h]
+Seat 1: Rabensohn collected (465)
+Seat 2: Maximilano folded before Flop (didn't bet)
+Seat 3: Hawkeyes56 folded on the Flop
+Seat 4: kristic 83 folded before Flop (didn't bet)
+Seat 5: biggs615 folded before Flop (didn't bet)
+Seat 6: Exclusive folded before Flop (didn't bet)
+Seat 7: bjg40 (button) folded before Flop (didn't bet)
+Seat 8: ian_sloss (small blind) folded before Flop
+Seat 9: fishinfool21 (big blind) folded on the Flop
+Seat 10: Nightwish99 folded before Flop
+
+*********** # 8 **************
+Pokerstars Game #17525199296: Tournament #83863753, $3.00+$0.40 Hold'em No Limit - Level II (15/30) - 2008/01/03 - 18:01:59 (ET)
+Table '83863753 1' 10-max Seat #8 is the button
+Seat 1: Rabensohn (1755 in chips)
+Seat 2: Maximilano (1090 in chips)
+Seat 3: Hawkeyes56 (1330 in chips)
+Seat 4: kristic 83 (2040 in chips)
+Seat 5: biggs615 (1470 in chips)
+Seat 6: Exclusive (1715 in chips)
+Seat 7: bjg40 (1100 in chips)
+Seat 8: ian_sloss (1620 in chips)
+Seat 9: fishinfool21 (1410 in chips)
+Seat 10: Nightwish99 (1470 in chips)
+fishinfool21: posts small blind 15
+Nightwish99: posts big blind 30
+*** HOLE CARDS ***
+Dealt to Exclusive [3c Qc]
+Rabensohn: folds
+Maximilano: folds
+Hawkeyes56: folds
+kristic 83: raises 120 to 150
+biggs615: folds
+Exclusive: folds
+bjg40: folds
+ian_sloss: folds
+fishinfool21: folds
+Nightwish99: folds
+Uncalled bet (120) returned to kristic 83
+kristic 83 collected 75 from pot
+kristic 83: doesn't show hand
+*** SUMMARY ***
+Total pot 75 | Rake 0
+Seat 1: Rabensohn folded before Flop (didn't bet)
+Seat 2: Maximilano folded before Flop (didn't bet)
+Seat 3: Hawkeyes56 folded before Flop (didn't bet)
+Seat 4: kristic 83 collected (75)
+Seat 5: biggs615 folded before Flop (didn't bet)
+Seat 6: Exclusive folded before Flop (didn't bet)
+Seat 7: bjg40 folded before Flop (didn't bet)
+Seat 8: ian_sloss (button) folded before Flop (didn't bet)
+Seat 9: fishinfool21 (small blind) folded before Flop
+Seat 10: Nightwish99 (big blind) folded before Flop
+
+*********** # 9 **************
+Pokerstars Game #17525212324: Tournament #83863753, $3.00+$0.40 Hold'em No Limit - Level II (15/30) - 2008/01/03 - 18:02:31 (ET)
+Table '83863753 1' 10-max Seat #9 is the button
+Seat 1: Rabensohn (1755 in chips)
+Seat 2: Maximilano (1090 in chips)
+Seat 3: Hawkeyes56 (1330 in chips)
+Seat 4: kristic 83 (2085 in chips)
+Seat 5: biggs615 (1470 in chips)
+Seat 6: Exclusive (1715 in chips)
+Seat 7: bjg40 (1100 in chips)
+Seat 8: ian_sloss (1620 in chips)
+Seat 9: fishinfool21 (1395 in chips)
+Seat 10: Nightwish99 (1440 in chips)
+Nightwish99: posts small blind 15
+Rabensohn: posts big blind 30
+*** HOLE CARDS ***
+Dealt to Exclusive [7d 4s]
+Maximilano: folds
+Hawkeyes56: folds
+kristic 83: folds
+biggs615: folds
+Exclusive: folds
+bjg40: calls 30
+ian_sloss: folds
+fishinfool21: folds
+Nightwish99: folds
+Rabensohn: checks
+*** FLOP *** [Ts 2s 7s]
+Rabensohn: checks
+bjg40: checks
+*** TURN *** [Ts 2s 7s] [6d]
+Rabensohn: checks
+bjg40: checks
+*** RIVER *** [Ts 2s 7s 6d] [3s]
+Rabensohn: checks
+bjg40: checks
+*** SHOW DOWN ***
+Rabensohn: shows [Th Qd] (a pair of Tens)
+bjg40: mucks hand
+Rabensohn collected 75 from pot
+*** SUMMARY ***
+Total pot 75 | Rake 0
+Board [Ts 2s 7s 6d 3s]
+Seat 1: Rabensohn (big blind) showed [Th Qd] and won (75) with a pair of Tens
+Seat 2: Maximilano folded before Flop (didn't bet)
+Seat 3: Hawkeyes56 folded before Flop (didn't bet)
+Seat 4: kristic 83 folded before Flop (didn't bet)
+Seat 5: biggs615 folded before Flop (didn't bet)
+Seat 6: Exclusive folded before Flop (didn't bet)
+Seat 7: bjg40 mucked [Qh 8h]
+Seat 8: ian_sloss folded before Flop (didn't bet)
+Seat 9: fishinfool21 (button) folded before Flop (didn't bet)
+Seat 10: Nightwish99 (small blind) folded before Flop
+
+*********** # 10 **************
+Pokerstars Game #17525229986: Tournament #83863753, $3.00+$0.40 Hold'em No Limit - Level II (15/30) - 2008/01/03 - 18:03:16 (ET)
+Table '83863753 1' 10-max Seat #10 is the button
+Seat 1: Rabensohn (1800 in chips)
+Seat 2: Maximilano (1090 in chips)
+Seat 3: Hawkeyes56 (1330 in chips)
+Seat 4: kristic 83 (2085 in chips)
+Seat 5: biggs615 (1470 in chips)
+Seat 6: Exclusive (1715 in chips)
+Seat 7: bjg40 (1070 in chips)
+Seat 8: ian_sloss (1620 in chips)
+Seat 9: fishinfool21 (1395 in chips)
+Seat 10: Nightwish99 (1425 in chips)
+Rabensohn: posts small blind 15
+Maximilano: posts big blind 30
+*** HOLE CARDS ***
+Dealt to Exclusive [4s 2h]
+Hawkeyes56: folds
+kristic 83: raises 60 to 90
+biggs615: folds
+Exclusive: folds
+bjg40 is disconnected
+bjg40 is connected
+bjg40: folds
+ian_sloss: folds
+fishinfool21: calls 90
+Nightwish99: folds
+Rabensohn: folds
+Maximilano: calls 60
+*** FLOP *** [Kh 6d 4h]
+Maximilano: checks
+kristic 83: bets 90
+fishinfool21: folds
+Maximilano: folds
+Uncalled bet (90) returned to kristic 83
+kristic 83 collected 285 from pot
+kristic 83: doesn't show hand
+*** SUMMARY ***
+Total pot 285 | Rake 0
+Board [Kh 6d 4h]
+Seat 1: Rabensohn (small blind) folded before Flop
+Seat 2: Maximilano (big blind) folded on the Flop
+Seat 3: Hawkeyes56 folded before Flop (didn't bet)
+Seat 4: kristic 83 collected (285)
+Seat 5: biggs615 folded before Flop (didn't bet)
+Seat 6: Exclusive folded before Flop (didn't bet)
+Seat 7: bjg40 folded before Flop (didn't bet)
+Seat 8: ian_sloss folded before Flop (didn't bet)
+Seat 9: fishinfool21 folded on the Flop
+Seat 10: Nightwish99 (button) folded before Flop (didn't bet)
+
+*********** # 11 **************
+Pokerstars Game #17525257865: Tournament #83863753, $3.00+$0.40 Hold'em No Limit - Level III (25/50) - 2008/01/03 - 18:04:26 (ET)
+Table '83863753 1' 10-max Seat #1 is the button
+Seat 1: Rabensohn (1785 in chips)
+Seat 2: Maximilano (1000 in chips)
+Seat 3: Hawkeyes56 (1330 in chips)
+Seat 4: kristic 83 (2280 in chips)
+Seat 5: biggs615 (1470 in chips)
+Seat 6: Exclusive (1715 in chips)
+Seat 7: bjg40 (1070 in chips)
+Seat 8: ian_sloss (1620 in chips)
+Seat 9: fishinfool21 (1305 in chips)
+Seat 10: Nightwish99 (1425 in chips)
+Maximilano: posts small blind 25
+Hawkeyes56: posts big blind 50
+*** HOLE CARDS ***
+Dealt to Exclusive [6h 7d]
+kristic 83: folds
+biggs615: folds
+Exclusive: folds
+bjg40: folds
+ian_sloss: folds
+fishinfool21: folds
+Nightwish99: folds
+Rabensohn: folds
+Maximilano: calls 25
+Hawkeyes56: checks
+*** FLOP *** [Ad 9c Th]
+Maximilano: bets 50
+Hawkeyes56: folds
+Uncalled bet (50) returned to Maximilano
+Maximilano collected 100 from pot
+*** SUMMARY ***
+Total pot 100 | Rake 0
+Board [Ad 9c Th]
+Seat 1: Rabensohn (button) folded before Flop (didn't bet)
+Seat 2: Maximilano (small blind) collected (100)
+Seat 3: Hawkeyes56 (big blind) folded on the Flop
+Seat 4: kristic 83 folded before Flop (didn't bet)
+Seat 5: biggs615 folded before Flop (didn't bet)
+Seat 6: Exclusive folded before Flop (didn't bet)
+Seat 7: bjg40 folded before Flop (didn't bet)
+Seat 8: ian_sloss folded before Flop (didn't bet)
+Seat 9: fishinfool21 folded before Flop (didn't bet)
+Seat 10: Nightwish99 folded before Flop (didn't bet)
+
+*********** # 12 **************
+Pokerstars Game #17525269909: Tournament #83863753, $3.00+$0.40 Hold'em No Limit - Level III (25/50) - 2008/01/03 - 18:04:56 (ET)
+Table '83863753 1' 10-max Seat #2 is the button
+Seat 1: Rabensohn (1785 in chips)
+Seat 2: Maximilano (1050 in chips)
+Seat 3: Hawkeyes56 (1280 in chips)
+Seat 4: kristic 83 (2280 in chips)
+Seat 5: biggs615 (1470 in chips)
+Seat 6: Exclusive (1715 in chips)
+Seat 7: bjg40 (1070 in chips)
+Seat 8: ian_sloss (1620 in chips)
+Seat 9: fishinfool21 (1305 in chips)
+Seat 10: Nightwish99 (1425 in chips)
+Hawkeyes56: posts small blind 25
+kristic 83: posts big blind 50
+*** HOLE CARDS ***
+Dealt to Exclusive [5s 6d]
+biggs615: folds
+Exclusive: calls 50
+bjg40: calls 50
+ian_sloss: folds
+fishinfool21: folds
+Nightwish99: folds
+Rabensohn: folds
+Maximilano: folds
+Hawkeyes56: calls 25
+kristic 83: checks
+*** FLOP *** [Ks 8d Kd]
+Hawkeyes56: checks
+kristic 83: bets 100
+Exclusive: folds
+bjg40: folds
+Hawkeyes56: calls 100
+*** TURN *** [Ks 8d Kd] [8h]
+Hawkeyes56: checks
+kristic 83: checks
+*** RIVER *** [Ks 8d Kd 8h] [Jh]
+Hawkeyes56: checks
+kristic 83: checks
+*** SHOW DOWN ***
+Hawkeyes56: shows [9d Ad] (two pair, Kings and Eights)
+kristic 83: mucks hand
+Hawkeyes56 collected 400 from pot
+*** SUMMARY ***
+Total pot 400 | Rake 0
+Board [Ks 8d Kd 8h Jh]
+Seat 1: Rabensohn folded before Flop (didn't bet)
+Seat 2: Maximilano (button) folded before Flop (didn't bet)
+Seat 3: Hawkeyes56 (small blind) showed [9d Ad] and won (400) with two pair, Kings and Eights
+Seat 4: kristic 83 (big blind) mucked [4h Qh]
+Seat 5: biggs615 folded before Flop (didn't bet)
+Seat 6: Exclusive folded on the Flop
+Seat 7: bjg40 folded on the Flop
+Seat 8: ian_sloss folded before Flop (didn't bet)
+Seat 9: fishinfool21 folded before Flop (didn't bet)
+Seat 10: Nightwish99 folded before Flop (didn't bet)
+
+*********** # 13 **************
+Pokerstars Game #17525291848: Tournament #83863753, $3.00+$0.40 Hold'em No Limit - Level III (25/50) - 2008/01/03 - 18:05:50 (ET)
+Table '83863753 1' 10-max Seat #3 is the button
+Seat 1: Rabensohn (1785 in chips)
+Seat 2: Maximilano (1050 in chips)
+Seat 3: Hawkeyes56 (1530 in chips)
+Seat 4: kristic 83 (2130 in chips)
+Seat 5: biggs615 (1470 in chips)
+Seat 6: Exclusive (1665 in chips)
+Seat 7: bjg40 (1020 in chips)
+Seat 8: ian_sloss (1620 in chips)
+Seat 9: fishinfool21 (1305 in chips)
+Seat 10: Nightwish99 (1425 in chips)
+kristic 83: posts small blind 25
+biggs615: posts big blind 50
+*** HOLE CARDS ***
+Dealt to Exclusive [2h 9d]
+Exclusive: folds
+bjg40: calls 50
+ian_sloss: folds
+fishinfool21: folds
+Nightwish99: calls 50
+Rabensohn: folds
+Maximilano: folds
+Hawkeyes56: folds
+kristic 83: calls 25
+biggs615: checks
+*** FLOP *** [9s Js Kc]
+kristic 83: checks
+biggs615: bets 150
+bjg40: calls 150
+Nightwish99: folds
+kristic 83: folds
+*** TURN *** [9s Js Kc] [Qs]
+biggs615: checks
+bjg40: checks
+*** RIVER *** [9s Js Kc Qs] [6d]
+biggs615: bets 250
+bjg40: calls 250
+*** SHOW DOWN ***
+biggs615: shows [Qd Kh] (two pair, Kings and Queens)
+bjg40: mucks hand
+biggs615 collected 1000 from pot
+*** SUMMARY ***
+Total pot 1000 | Rake 0
+Board [9s Js Kc Qs 6d]
+Seat 1: Rabensohn folded before Flop (didn't bet)
+Seat 2: Maximilano folded before Flop (didn't bet)
+Seat 3: Hawkeyes56 (button) folded before Flop (didn't bet)
+Seat 4: kristic 83 (small blind) folded on the Flop
+Seat 5: biggs615 (big blind) showed [Qd Kh] and won (1000) with two pair, Kings and Queens
+Seat 6: Exclusive folded before Flop (didn't bet)
+Seat 7: bjg40 mucked [Qc 5h]
+Seat 8: ian_sloss folded before Flop (didn't bet)
+Seat 9: fishinfool21 folded before Flop (didn't bet)
+Seat 10: Nightwish99 folded on the Flop
+
+*********** # 14 **************
+Pokerstars Game #17525311310: Tournament #83863753, $3.00+$0.40 Hold'em No Limit - Level III (25/50) - 2008/01/03 - 18:06:38 (ET)
+Table '83863753 1' 10-max Seat #4 is the button
+Seat 1: Rabensohn (1785 in chips)
+Seat 2: Maximilano (1050 in chips)
+Seat 3: Hawkeyes56 (1530 in chips)
+Seat 4: kristic 83 (2080 in chips)
+Seat 5: biggs615 (2020 in chips)
+Seat 6: Exclusive (1665 in chips)
+Seat 7: bjg40 (570 in chips)
+Seat 8: ian_sloss (1620 in chips)
+Seat 9: fishinfool21 (1305 in chips)
+Seat 10: Nightwish99 (1375 in chips)
+biggs615: posts small blind 25
+Exclusive: posts big blind 50
+*** HOLE CARDS ***
+Dealt to Exclusive [5s Qh]
+bjg40: calls 50
+ian_sloss: folds
+fishinfool21: folds
+Nightwish99 has timed out
+Nightwish99: folds
+Nightwish99 is sitting out
+Rabensohn: folds
+Maximilano: raises 50 to 100
+Hawkeyes56: folds
+kristic 83: folds
+biggs615: folds
+Exclusive: calls 50
+bjg40: calls 50
+*** FLOP *** [Td 7c 3h]
+Exclusive: checks
+bjg40: checks
+Maximilano: bets 150
+Exclusive: folds
+bjg40: raises 320 to 470 and is all-in
+Maximilano: calls 320
+*** TURN *** [Td 7c 3h] [2s]
+*** RIVER *** [Td 7c 3h 2s] [Ks]
+Nightwish99 has returned
+*** SHOW DOWN ***
+bjg40: shows [7s 6s] (a pair of Sevens)
+Maximilano: shows [Qc Qs] (a pair of Queens)
+Maximilano collected 1265 from pot
+*** SUMMARY ***
+Total pot 1265 | Rake 0
+Board [Td 7c 3h 2s Ks]
+Seat 1: Rabensohn folded before Flop (didn't bet)
+Seat 2: Maximilano showed [Qc Qs] and won (1265) with a pair of Queens
+Seat 3: Hawkeyes56 folded before Flop (didn't bet)
+Seat 4: kristic 83 (button) folded before Flop (didn't bet)
+Seat 5: biggs615 (small blind) folded before Flop
+Seat 6: Exclusive (big blind) folded on the Flop
+Seat 7: bjg40 showed [7s 6s] and lost with a pair of Sevens
+Seat 8: ian_sloss folded before Flop (didn't bet)
+Seat 9: fishinfool21 folded before Flop (didn't bet)
+Seat 10: Nightwish99 folded before Flop (didn't bet)
+
+*********** # 15 **************
+Pokerstars Game #17525342823: Tournament #83863753, $3.00+$0.40 Hold'em No Limit - Level III (25/50) - 2008/01/03 - 18:07:56 (ET)
+Table '83863753 1' 10-max Seat #5 is the button
+Seat 1: Rabensohn (1785 in chips)
+Seat 2: Maximilano (1745 in chips)
+Seat 3: Hawkeyes56 (1530 in chips)
+Seat 4: kristic 83 (2080 in chips)
+Seat 5: biggs615 (1995 in chips)
+Seat 6: Exclusive (1565 in chips)
+Seat 8: ian_sloss (1620 in chips)
+Seat 9: fishinfool21 (1305 in chips)
+Seat 10: Nightwish99 (1375 in chips)
+Exclusive: posts small blind 25
+ian_sloss: posts big blind 50
+*** HOLE CARDS ***
+Dealt to Exclusive [Kd 3c]
+fishinfool21: raises 100 to 150
+Nightwish99: folds
+Rabensohn: folds
+Maximilano: folds
+Hawkeyes56: folds
+kristic 83: folds
+biggs615: folds
+Exclusive: folds
+ian_sloss: folds
+Uncalled bet (100) returned to fishinfool21
+fishinfool21 collected 125 from pot
+*** SUMMARY ***
+Total pot 125 | Rake 0
+Seat 1: Rabensohn folded before Flop (didn't bet)
+Seat 2: Maximilano folded before Flop (didn't bet)
+Seat 3: Hawkeyes56 folded before Flop (didn't bet)
+Seat 4: kristic 83 folded before Flop (didn't bet)
+Seat 5: biggs615 (button) folded before Flop (didn't bet)
+Seat 6: Exclusive (small blind) folded before Flop
+Seat 8: ian_sloss (big blind) folded before Flop
+Seat 9: fishinfool21 collected (125)
+Seat 10: Nightwish99 folded before Flop (didn't bet)
+
+*********** # 16 **************
+Pokerstars Game #17525352986: Tournament #83863753, $3.00+$0.40 Hold'em No Limit - Level III (25/50) - 2008/01/03 - 18:08:21 (ET)
+Table '83863753 1' 10-max Seat #6 is the button
+Seat 1: Rabensohn (1785 in chips)
+Seat 2: Maximilano (1745 in chips)
+Seat 3: Hawkeyes56 (1530 in chips)
+Seat 4: kristic 83 (2080 in chips)
+Seat 5: biggs615 (1995 in chips)
+Seat 6: Exclusive (1540 in chips)
+Seat 8: ian_sloss (1570 in chips)
+Seat 9: fishinfool21 (1380 in chips)
+Seat 10: Nightwish99 (1375 in chips)
+ian_sloss: posts small blind 25
+fishinfool21: posts big blind 50
+*** HOLE CARDS ***
+Dealt to Exclusive [6s Js]
+Nightwish99: folds
+Rabensohn: calls 50
+Maximilano: raises 50 to 100
+Hawkeyes56: folds
+kristic 83: folds
+biggs615: folds
+Exclusive: folds
+ian_sloss: folds
+fishinfool21: calls 50
+Rabensohn: calls 50
+*** FLOP *** [9h 2c 8h]
+fishinfool21: bets 50
+Rabensohn: calls 50
+Maximilano: raises 150 to 200
+fishinfool21: calls 150
+Rabensohn: folds
+*** TURN *** [9h 2c 8h] [6c]
+fishinfool21: bets 150
+Maximilano: calls 150
+*** RIVER *** [9h 2c 8h 6c] [As]
+fishinfool21: bets 150
+Maximilano: raises 1145 to 1295 and is all-in
+fishinfool21: calls 780 and is all-in
+Uncalled bet (365) returned to Maximilano
+*** SHOW DOWN ***
+Maximilano: shows [Kh Qc] (high card Ace)
+fishinfool21: shows [6h 2d] (two pair, Sixes and Deuces)
+fishinfool21 collected 2935 from pot
+*** SUMMARY ***
+Total pot 2935 | Rake 0
+Board [9h 2c 8h 6c As]
+Seat 1: Rabensohn folded on the Flop
+Seat 2: Maximilano showed [Kh Qc] and lost with high card Ace
+Seat 3: Hawkeyes56 folded before Flop (didn't bet)
+Seat 4: kristic 83 folded before Flop (didn't bet)
+Seat 5: biggs615 folded before Flop (didn't bet)
+Seat 6: Exclusive (button) folded before Flop (didn't bet)
+Seat 8: ian_sloss (small blind) folded before Flop
+Seat 9: fishinfool21 (big blind) showed [6h 2d] and won (2935) with two pair, Sixes and Deuces
+Seat 10: Nightwish99 folded before Flop (didn't bet)
+
+*********** # 17 **************
+Pokerstars Game #17525389011: Tournament #83863753, $3.00+$0.40 Hold'em No Limit - Level IV (50/100) - 2008/01/03 - 18:09:50 (ET)
+Table '83863753 1' 10-max Seat #8 is the button
+Seat 1: Rabensohn (1635 in chips)
+Seat 2: Maximilano (365 in chips)
+Seat 3: Hawkeyes56 (1530 in chips)
+Seat 4: kristic 83 (2080 in chips)
+Seat 5: biggs615 (1995 in chips)
+Seat 6: Exclusive (1540 in chips)
+Seat 8: ian_sloss (1545 in chips)
+Seat 9: fishinfool21 (2935 in chips)
+Seat 10: Nightwish99 (1375 in chips)
+fishinfool21: posts small blind 50
+Nightwish99: posts big blind 100
+*** HOLE CARDS ***
+Dealt to Exclusive [6d Jh]
+Rabensohn: folds
+Maximilano: raises 100 to 200
+Hawkeyes56: folds
+kristic 83: folds
+biggs615: folds
+Exclusive: folds
+ian_sloss: folds
+fishinfool21: folds
+Nightwish99: folds
+Uncalled bet (100) returned to Maximilano
+Maximilano collected 250 from pot
+*** SUMMARY ***
+Total pot 250 | Rake 0
+Seat 1: Rabensohn folded before Flop (didn't bet)
+Seat 2: Maximilano collected (250)
+Seat 3: Hawkeyes56 folded before Flop (didn't bet)
+Seat 4: kristic 83 folded before Flop (didn't bet)
+Seat 5: biggs615 folded before Flop (didn't bet)
+Seat 6: Exclusive folded before Flop (didn't bet)
+Seat 8: ian_sloss (button) folded before Flop (didn't bet)
+Seat 9: fishinfool21 (small blind) folded before Flop
+Seat 10: Nightwish99 (big blind) folded before Flop
+
+*********** # 18 **************
+Pokerstars Game #17525399403: Tournament #83863753, $3.00+$0.40 Hold'em No Limit - Level IV (50/100) - 2008/01/03 - 18:10:16 (ET)
+Table '83863753 1' 10-max Seat #9 is the button
+Seat 1: Rabensohn (1635 in chips)
+Seat 2: Maximilano (515 in chips)
+Seat 3: Hawkeyes56 (1530 in chips)
+Seat 4: kristic 83 (2080 in chips)
+Seat 5: biggs615 (1995 in chips)
+Seat 6: Exclusive (1540 in chips)
+Seat 8: ian_sloss (1545 in chips)
+Seat 9: fishinfool21 (2885 in chips)
+Seat 10: Nightwish99 (1275 in chips)
+Nightwish99: posts small blind 50
+Rabensohn: posts big blind 100
+*** HOLE CARDS ***
+Dealt to Exclusive [Td Qc]
+Maximilano: folds
+Hawkeyes56: folds
+kristic 83: folds
+biggs615: folds
+Exclusive: calls 100
+ian_sloss: folds
+fishinfool21: folds
+Nightwish99: folds
+Rabensohn: checks
+*** FLOP *** [Ah Jd Th]
+Rabensohn: checks
+Exclusive: checks
+*** TURN *** [Ah Jd Th] [Jc]
+Rabensohn: checks
+Exclusive: bets 100
+Rabensohn: calls 100
+*** RIVER *** [Ah Jd Th Jc] [2s]
+Rabensohn: bets 200
+Exclusive: calls 200
+*** SHOW DOWN ***
+Rabensohn: shows [8d Jh] (three of a kind, Jacks)
+Exclusive: mucks hand
+Rabensohn collected 850 from pot
+*** SUMMARY ***
+Total pot 850 | Rake 0
+Board [Ah Jd Th Jc 2s]
+Seat 1: Rabensohn (big blind) showed [8d Jh] and won (850) with three of a kind, Jacks
+Seat 2: Maximilano folded before Flop (didn't bet)
+Seat 3: Hawkeyes56 folded before Flop (didn't bet)
+Seat 4: kristic 83 folded before Flop (didn't bet)
+Seat 5: biggs615 folded before Flop (didn't bet)
+Seat 6: Exclusive mucked [Td Qc]
+Seat 8: ian_sloss folded before Flop (didn't bet)
+Seat 9: fishinfool21 (button) folded before Flop (didn't bet)
+Seat 10: Nightwish99 (small blind) folded before Flop
+
+*********** # 19 **************
+Pokerstars Game #17525416637: Tournament #83863753, $3.00+$0.40 Hold'em No Limit - Level IV (50/100) - 2008/01/03 - 18:10:59 (ET)
+Table '83863753 1' 10-max Seat #10 is the button
+Seat 1: Rabensohn (2085 in chips)
+Seat 2: Maximilano (515 in chips)
+Seat 3: Hawkeyes56 (1530 in chips)
+Seat 4: kristic 83 (2080 in chips)
+Seat 5: biggs615 (1995 in chips)
+Seat 6: Exclusive (1140 in chips)
+Seat 8: ian_sloss (1545 in chips)
+Seat 9: fishinfool21 (2885 in chips)
+Seat 10: Nightwish99 (1225 in chips)
+Rabensohn: posts small blind 50
+Maximilano: posts big blind 100
+*** HOLE CARDS ***
+Dealt to Exclusive [Ah Th]
+Hawkeyes56: folds
+kristic 83: folds
+biggs615: folds
+Exclusive: raises 100 to 200
+ian_sloss: folds
+fishinfool21: folds
+Nightwish99: folds
+Rabensohn: folds
+Maximilano: raises 315 to 515 and is all-in
+Exclusive: calls 315
+*** FLOP *** [3s Js 5h]
+*** TURN *** [3s Js 5h] [Tc]
+*** RIVER *** [3s Js 5h Tc] [3c]
+*** SHOW DOWN ***
+Maximilano: shows [6h 8s] (a pair of Threes)
+Exclusive: shows [Ah Th] (two pair, Tens and Threes)
+Exclusive collected 1080 from pot
+*** SUMMARY ***
+Total pot 1080 | Rake 0
+Board [3s Js 5h Tc 3c]
+Seat 1: Rabensohn (small blind) folded before Flop
+Seat 2: Maximilano (big blind) showed [6h 8s] and lost with a pair of Threes
+Seat 3: Hawkeyes56 folded before Flop (didn't bet)
+Seat 4: kristic 83 folded before Flop (didn't bet)
+Seat 5: biggs615 folded before Flop (didn't bet)
+Seat 6: Exclusive showed [Ah Th] and won (1080) with two pair, Tens and Threes
+Seat 8: ian_sloss folded before Flop (didn't bet)
+Seat 9: fishinfool21 folded before Flop (didn't bet)
+Seat 10: Nightwish99 (button) folded before Flop (didn't bet)
+
+*********** # 20 **************
+Pokerstars Game #17525430508: Tournament #83863753, $3.00+$0.40 Hold'em No Limit - Level IV (50/100) - 2008/01/03 - 18:11:34 (ET)
+Table '83863753 1' 10-max Seat #1 is the button
+Seat 1: Rabensohn (2035 in chips)
+Seat 3: Hawkeyes56 (1530 in chips)
+Seat 4: kristic 83 (2080 in chips)
+Seat 5: biggs615 (1995 in chips)
+Seat 6: Exclusive (1705 in chips)
+Seat 8: ian_sloss (1545 in chips)
+Seat 9: fishinfool21 (2885 in chips)
+Seat 10: Nightwish99 (1225 in chips)
+Hawkeyes56: posts small blind 50
+kristic 83: posts big blind 100
+*** HOLE CARDS ***
+Dealt to Exclusive [Jh 2d]
+biggs615: folds
+Exclusive: folds
+ian_sloss: folds
+fishinfool21: raises 200 to 300
+Nightwish99: folds
+Rabensohn: folds
+Hawkeyes56: folds
+kristic 83: folds
+Uncalled bet (200) returned to fishinfool21
+fishinfool21 collected 250 from pot
+*** SUMMARY ***
+Total pot 250 | Rake 0
+Seat 1: Rabensohn (button) folded before Flop (didn't bet)
+Seat 3: Hawkeyes56 (small blind) folded before Flop
+Seat 4: kristic 83 (big blind) folded before Flop
+Seat 5: biggs615 folded before Flop (didn't bet)
+Seat 6: Exclusive folded before Flop (didn't bet)
+Seat 8: ian_sloss folded before Flop (didn't bet)
+Seat 9: fishinfool21 collected (250)
+Seat 10: Nightwish99 folded before Flop (didn't bet)
+
+*********** # 21 **************
+Pokerstars Game #17525441104: Tournament #83863753, $3.00+$0.40 Hold'em No Limit - Level IV (50/100) - 2008/01/03 - 18:12:01 (ET)
+Table '83863753 1' 10-max Seat #3 is the button
+Seat 1: Rabensohn (2035 in chips)
+Seat 3: Hawkeyes56 (1480 in chips)
+Seat 4: kristic 83 (1980 in chips)
+Seat 5: biggs615 (1995 in chips)
+Seat 6: Exclusive (1705 in chips)
+Seat 8: ian_sloss (1545 in chips)
+Seat 9: fishinfool21 (3035 in chips)
+Seat 10: Nightwish99 (1225 in chips)
+kristic 83: posts small blind 50
+biggs615: posts big blind 100
+*** HOLE CARDS ***
+Dealt to Exclusive [3d 2c]
+Exclusive: folds
+ian_sloss: folds
+fishinfool21: calls 100
+Nightwish99: folds
+Rabensohn: folds
+Hawkeyes56: folds
+kristic 83: calls 50
+biggs615: checks
+*** FLOP *** [4d Qd 5h]
+kristic 83: checks
+biggs615: checks
+fishinfool21: bets 100
+kristic 83: folds
+biggs615: folds
+Uncalled bet (100) returned to fishinfool21
+fishinfool21 collected 300 from pot
+*** SUMMARY ***
+Total pot 300 | Rake 0
+Board [4d Qd 5h]
+Seat 1: Rabensohn folded before Flop (didn't bet)
+Seat 3: Hawkeyes56 (button) folded before Flop (didn't bet)
+Seat 4: kristic 83 (small blind) folded on the Flop
+Seat 5: biggs615 (big blind) folded on the Flop
+Seat 6: Exclusive folded before Flop (didn't bet)
+Seat 8: ian_sloss folded before Flop (didn't bet)
+Seat 9: fishinfool21 collected (300)
+Seat 10: Nightwish99 folded before Flop (didn't bet)
+
+*********** # 22 **************
+Pokerstars Game #17525456203: Tournament #83863753, $3.00+$0.40 Hold'em No Limit - Level IV (50/100) - 2008/01/03 - 18:12:39 (ET)
+Table '83863753 1' 10-max Seat #4 is the button
+Seat 1: Rabensohn (2035 in chips)
+Seat 3: Hawkeyes56 (1480 in chips)
+Seat 4: kristic 83 (1880 in chips)
+Seat 5: biggs615 (1895 in chips)
+Seat 6: Exclusive (1705 in chips)
+Seat 8: ian_sloss (1545 in chips)
+Seat 9: fishinfool21 (3235 in chips)
+Seat 10: Nightwish99 (1225 in chips)
+biggs615: posts small blind 50
+Exclusive: posts big blind 100
+*** HOLE CARDS ***
+Dealt to Exclusive [2s 2h]
+ian_sloss: folds
+fishinfool21: calls 100
+Nightwish99: folds
+Rabensohn: folds
+Hawkeyes56: raises 1380 to 1480 and is all-in
+kristic 83: folds
+biggs615: folds
+Exclusive: folds
+fishinfool21: folds
+Uncalled bet (1380) returned to Hawkeyes56
+Hawkeyes56 collected 350 from pot
+Hawkeyes56: doesn't show hand
+*** SUMMARY ***
+Total pot 350 | Rake 0
+Seat 1: Rabensohn folded before Flop (didn't bet)
+Seat 3: Hawkeyes56 collected (350)
+Seat 4: kristic 83 (button) folded before Flop (didn't bet)
+Seat 5: biggs615 (small blind) folded before Flop
+Seat 6: Exclusive (big blind) folded before Flop
+Seat 8: ian_sloss folded before Flop (didn't bet)
+Seat 9: fishinfool21 folded before Flop
+Seat 10: Nightwish99 folded before Flop (didn't bet)
+
+*********** # 23 **************
+Pokerstars Game #17525467299: Tournament #83863753, $3.00+$0.40 Hold'em No Limit - Level IV (50/100) - 2008/01/03 - 18:13:06 (ET)
+Table '83863753 1' 10-max Seat #5 is the button
+Seat 1: Rabensohn (2035 in chips)
+Seat 3: Hawkeyes56 (1730 in chips)
+Seat 4: kristic 83 (1880 in chips)
+Seat 5: biggs615 (1845 in chips)
+Seat 6: Exclusive (1605 in chips)
+Seat 8: ian_sloss (1545 in chips)
+Seat 9: fishinfool21 (3135 in chips)
+Seat 10: Nightwish99 (1225 in chips)
+Exclusive: posts small blind 50
+ian_sloss: posts big blind 100
+*** HOLE CARDS ***
+Dealt to Exclusive [2s Kh]
+fishinfool21: folds
+Nightwish99: raises 1125 to 1225 and is all-in
+Rabensohn: folds
+Hawkeyes56: folds
+kristic 83: folds
+biggs615: folds
+Exclusive: folds
+ian_sloss: folds
+Uncalled bet (1125) returned to Nightwish99
+Nightwish99 collected 250 from pot
+Nightwish99: doesn't show hand
+*** SUMMARY ***
+Total pot 250 | Rake 0
+Seat 1: Rabensohn folded before Flop (didn't bet)
+Seat 3: Hawkeyes56 folded before Flop (didn't bet)
+Seat 4: kristic 83 folded before Flop (didn't bet)
+Seat 5: biggs615 (button) folded before Flop (didn't bet)
+Seat 6: Exclusive (small blind) folded before Flop
+Seat 8: ian_sloss (big blind) folded before Flop
+Seat 9: fishinfool21 folded before Flop (didn't bet)
+Seat 10: Nightwish99 collected (250)
+
+*********** # 24 **************
+Pokerstars Game #17525486551: Tournament #83863753, $3.00+$0.40 Hold'em No Limit - Level V (75/150) - 2008/01/03 - 18:13:55 (ET)
+Table '83863753 1' 10-max Seat #6 is the button
+Seat 1: Rabensohn (2035 in chips)
+Seat 3: Hawkeyes56 (1730 in chips)
+Seat 4: kristic 83 (1880 in chips)
+Seat 5: biggs615 (1845 in chips)
+Seat 6: Exclusive (1555 in chips)
+Seat 8: ian_sloss (1445 in chips)
+Seat 9: fishinfool21 (3135 in chips)
+Seat 10: Nightwish99 (1375 in chips)
+ian_sloss: posts small blind 75
+fishinfool21: posts big blind 150
+*** HOLE CARDS ***
+Dealt to Exclusive [Ts 6s]
+Nightwish99: folds
+Rabensohn: folds
+Hawkeyes56: folds
+kristic 83: folds
+biggs615: folds
+Exclusive: folds
+ian_sloss: calls 75
+fishinfool21: checks
+*** FLOP *** [Ac Th 2d]
+ian_sloss: checks
+fishinfool21: bets 150
+ian_sloss: calls 150
+*** TURN *** [Ac Th 2d] [Kd]
+ian_sloss: checks
+fishinfool21: checks
+*** RIVER *** [Ac Th 2d Kd] [4c]
+ian_sloss: bets 450
+fishinfool21: folds
+Uncalled bet (450) returned to ian_sloss
+ian_sloss collected 600 from pot
+ian_sloss: doesn't show hand
+*** SUMMARY ***
+Total pot 600 | Rake 0
+Board [Ac Th 2d Kd 4c]
+Seat 1: Rabensohn folded before Flop (didn't bet)
+Seat 3: Hawkeyes56 folded before Flop (didn't bet)
+Seat 4: kristic 83 folded before Flop (didn't bet)
+Seat 5: biggs615 folded before Flop (didn't bet)
+Seat 6: Exclusive (button) folded before Flop (didn't bet)
+Seat 8: ian_sloss (small blind) collected (600)
+Seat 9: fishinfool21 (big blind) folded on the River
+Seat 10: Nightwish99 folded before Flop (didn't bet)
+
+*********** # 25 **************
+Pokerstars Game #16380205286: Tournament #83863753, $3.00+$0.40 Hold'em No Limit - Level V (75/150) - 2008/01/03 - 18:14:43 (ET)
+Table '83863753 1' 10-max Seat #8 is the button
+Seat 1: Rabensohn (2035 in chips)
+Seat 3: Hawkeyes56 (1730 in chips)
+Seat 4: kristic 83 (1880 in chips)
+Seat 5: biggs615 (1845 in chips)
+Seat 6: Exclusive (1555 in chips)
+Seat 8: ian_sloss (1745 in chips)
+Seat 9: fishinfool21 (2835 in chips)
+Seat 10: Nightwish99 (1375 in chips)
+fishinfool21: posts small blind 75
+Nightwish99: posts big blind 150
+*** HOLE CARDS ***
+Dealt to Exclusive [9s Ah]
+Rabensohn: folds
+Hawkeyes56: folds
+kristic 83: folds
+biggs615: folds
+Exclusive: folds
+ian_sloss: folds
+fishinfool21: calls 75
+Nightwish99: checks
+*** FLOP *** [2s Jc 7d]
+fishinfool21: checks
+Nightwish99: checks
+*** TURN *** [2s Jc 7d] [Qh]
+fishinfool21: checks
+Nightwish99: bets 300
+fishinfool21: folds
+Uncalled bet (300) returned to Nightwish99
+Nightwish99 collected 300 from pot
+*** SUMMARY ***
+Total pot 300 | Rake 0
+Board [2s Jc 7d Qh]
+Seat 1: Rabensohn folded before Flop (didn't bet)
+Seat 3: Hawkeyes56 folded before Flop (didn't bet)
+Seat 4: kristic 83 folded before Flop (didn't bet)
+Seat 5: biggs615 folded before Flop (didn't bet)
+Seat 6: Exclusive folded before Flop (didn't bet)
+Seat 8: ian_sloss (button) folded before Flop (didn't bet)
+Seat 9: fishinfool21 (small blind) folded on the Turn
+Seat 10: Nightwish99 (big blind) collected (300)
+
+*********** # 26 **************
+Pokerstars Game #16380219128: Tournament #83863753, $3.00+$0.40 Hold'em No Limit - Level V (75/150) - 2008/01/03 - 18:15:17 (ET)
+Table '83863753 1' 10-max Seat #9 is the button
+Seat 1: Rabensohn (2035 in chips)
+Seat 3: Hawkeyes56 (1730 in chips)
+Seat 4: kristic 83 (1880 in chips)
+Seat 5: biggs615 (1845 in chips)
+Seat 6: Exclusive (1555 in chips)
+Seat 8: ian_sloss (1745 in chips)
+Seat 9: fishinfool21 (2685 in chips)
+Seat 10: Nightwish99 (1525 in chips)
+Nightwish99: posts small blind 75
+Rabensohn: posts big blind 150
+*** HOLE CARDS ***
+Dealt to Exclusive [8h 2d]
+Hawkeyes56: folds
+kristic 83: folds
+biggs615: folds
+Exclusive: folds
+ian_sloss: folds
+fishinfool21: calls 150
+Nightwish99: raises 1375 to 1525 and is all-in
+Rabensohn: folds
+fishinfool21: folds
+Uncalled bet (1375) returned to Nightwish99
+Nightwish99 collected 450 from pot
+Nightwish99: doesn't show hand
+*** SUMMARY ***
+Total pot 450 | Rake 0
+Seat 1: Rabensohn (big blind) folded before Flop
+Seat 3: Hawkeyes56 folded before Flop (didn't bet)
+Seat 4: kristic 83 folded before Flop (didn't bet)
+Seat 5: biggs615 folded before Flop (didn't bet)
+Seat 6: Exclusive folded before Flop (didn't bet)
+Seat 8: ian_sloss folded before Flop (didn't bet)
+Seat 9: fishinfool21 (button) folded before Flop
+Seat 10: Nightwish99 (small blind) collected (450)
+
+*********** # 27 **************
+Pokerstars Game #16380231981: Tournament #83863753, $3.00+$0.40 Hold'em No Limit - Level V (75/150) - 2008/01/03 - 18:15:51 (ET)
+Table '83863753 1' 10-max Seat #10 is the button
+Seat 1: Rabensohn (1885 in chips)
+Seat 3: Hawkeyes56 (1730 in chips)
+Seat 4: kristic 83 (1880 in chips)
+Seat 5: biggs615 (1845 in chips)
+Seat 6: Exclusive (1555 in chips)
+Seat 8: ian_sloss (1745 in chips)
+Seat 9: fishinfool21 (2535 in chips)
+Seat 10: Nightwish99 (1825 in chips)
+Rabensohn: posts small blind 75
+Hawkeyes56: posts big blind 150
+*** HOLE CARDS ***
+Dealt to Exclusive [Ks Kc]
+kristic 83: folds
+biggs615: folds
+Exclusive: raises 450 to 600
+ian_sloss: folds
+fishinfool21: folds
+Nightwish99: folds
+Rabensohn: folds
+Hawkeyes56: folds
+Uncalled bet (450) returned to Exclusive
+Exclusive collected 375 from pot
+*** SUMMARY ***
+Total pot 375 | Rake 0
+Seat 1: Rabensohn (small blind) folded before Flop
+Seat 3: Hawkeyes56 (big blind) folded before Flop
+Seat 4: kristic 83 folded before Flop (didn't bet)
+Seat 5: biggs615 folded before Flop (didn't bet)
+Seat 6: Exclusive collected (375)
+Seat 8: ian_sloss folded before Flop (didn't bet)
+Seat 9: fishinfool21 folded before Flop (didn't bet)
+Seat 10: Nightwish99 (button) folded before Flop (didn't bet)
+
+*********** # 28 **************
+Pokerstars Game #16380239536: Tournament #83863753, $3.00+$0.40 Hold'em No Limit - Level V (75/150) - 2008/01/03 - 18:16:10 (ET)
+Table '83863753 1' 10-max Seat #1 is the button
+Seat 1: Rabensohn (1810 in chips)
+Seat 3: Hawkeyes56 (1580 in chips)
+Seat 4: kristic 83 (1880 in chips)
+Seat 5: biggs615 (1845 in chips)
+Seat 6: Exclusive (1780 in chips)
+Seat 8: ian_sloss (1745 in chips)
+Seat 9: fishinfool21 (2535 in chips)
+Seat 10: Nightwish99 (1825 in chips)
+Hawkeyes56: posts small blind 75
+kristic 83: posts big blind 150
+*** HOLE CARDS ***
+Dealt to Exclusive [Kc 8s]
+biggs615: folds
+Exclusive: folds
+ian_sloss: folds
+fishinfool21: folds
+Nightwish99: raises 1675 to 1825 and is all-in
+Rabensohn: folds
+Hawkeyes56: folds
+kristic 83: folds
+Uncalled bet (1675) returned to Nightwish99
+Nightwish99 collected 375 from pot
+*** SUMMARY ***
+Total pot 375 | Rake 0
+Seat 1: Rabensohn (button) folded before Flop (didn't bet)
+Seat 3: Hawkeyes56 (small blind) folded before Flop
+Seat 4: kristic 83 (big blind) folded before Flop
+Seat 5: biggs615 folded before Flop (didn't bet)
+Seat 6: Exclusive folded before Flop (didn't bet)
+Seat 8: ian_sloss folded before Flop (didn't bet)
+Seat 9: fishinfool21 folded before Flop (didn't bet)
+Seat 10: Nightwish99 collected (375)
+
+*********** # 29 **************
+Pokerstars Game #16380251014: Tournament #83863753, $3.00+$0.40 Hold'em No Limit - Level V (75/150) - 2008/01/03 - 18:16:39 (ET)
+Table '83863753 1' 10-max Seat #3 is the button
+Seat 1: Rabensohn (1810 in chips)
+Seat 3: Hawkeyes56 (1505 in chips)
+Seat 4: kristic 83 (1730 in chips)
+Seat 5: biggs615 (1845 in chips)
+Seat 6: Exclusive (1780 in chips)
+Seat 8: ian_sloss (1745 in chips)
+Seat 9: fishinfool21 (2535 in chips)
+Seat 10: Nightwish99 (2050 in chips)
+kristic 83: posts small blind 75
+biggs615: posts big blind 150
+*** HOLE CARDS ***
+Dealt to Exclusive [Ah Ad]
+Exclusive: calls 150
+ian_sloss: raises 1595 to 1745 and is all-in
+fishinfool21: folds
+Nightwish99: folds
+Rabensohn: folds
+Hawkeyes56: folds
+kristic 83: folds
+biggs615: folds
+Exclusive: calls 1595
+*** FLOP *** [2s Kh 8c]
+*** TURN *** [2s Kh 8c] [7d]
+*** RIVER *** [2s Kh 8c 7d] [9d]
+*** SHOW DOWN ***
+Exclusive: shows [Ah Ad] (a pair of Aces)
+ian_sloss: shows [8s 8h] (three of a kind, Eights)
+ian_sloss collected 3715 from pot
+*** SUMMARY ***
+Total pot 3715 | Rake 0
+Board [2s Kh 8c 7d 9d]
+Seat 1: Rabensohn folded before Flop (didn't bet)
+Seat 3: Hawkeyes56 (button) folded before Flop (didn't bet)
+Seat 4: kristic 83 (small blind) folded before Flop
+Seat 5: biggs615 (big blind) folded before Flop
+Seat 6: Exclusive showed [Ah Ad] and lost with a pair of Aces
+Seat 8: ian_sloss showed [8s 8h] and won (3715) with three of a kind, Eights
+Seat 9: fishinfool21 folded before Flop (didn't bet)
+Seat 10: Nightwish99 folded before Flop (didn't bet)
+
+*********** # 30 **************
+Pokerstars Game #16380265019: Tournament #83863753, $3.00+$0.40 Hold'em No Limit - Level V (75/150) - 2008/01/03 - 18:17:15 (ET)
+Table '83863753 1' 10-max Seat #4 is the button
+Seat 1: Rabensohn (1810 in chips)
+Seat 3: Hawkeyes56 (1505 in chips)
+Seat 4: kristic 83 (1655 in chips)
+Seat 5: biggs615 (1695 in chips)
+Seat 6: Exclusive (35 in chips)
+Seat 8: ian_sloss (3715 in chips)
+Seat 9: fishinfool21 (2535 in chips)
+Seat 10: Nightwish99 (2050 in chips)
+biggs615: posts small blind 75
+Exclusive: posts big blind 35 and is all-in
+*** HOLE CARDS ***
+Dealt to Exclusive [7c Jh]
+ian_sloss: folds
+fishinfool21: calls 150
+Nightwish99: folds
+Rabensohn: folds
+Hawkeyes56: folds
+kristic 83: folds
+biggs615: folds
+Uncalled bet (75) returned to fishinfool21
+*** FLOP *** [Kh 7h Qs]
+*** TURN *** [Kh 7h Qs] [7s]
+*** RIVER *** [Kh 7h Qs 7s] [Kc]
+*** SHOW DOWN ***
+fishinfool21: shows [8d Kd] (a full house, Kings full of Sevens)
+fishinfool21 collected 80 from side pot
+Exclusive: shows [7c Jh] (a full house, Sevens full of Kings)
+fishinfool21 collected 105 from main pot
+*** SUMMARY ***
+Total pot 185 Main pot 105. Side pot 80. | Rake 0
+Board [Kh 7h Qs 7s Kc]
+Seat 1: Rabensohn folded before Flop (didn't bet)
+Seat 3: Hawkeyes56 folded before Flop (didn't bet)
+Seat 4: kristic 83 (button) folded before Flop (didn't bet)
+Seat 5: biggs615 (small blind) folded before Flop
+Seat 6: Exclusive (big blind) showed [7c Jh] and lost with a full house, Sevens full of Kings
+Seat 8: ian_sloss folded before Flop (didn't bet)
+Seat 9: fishinfool21 showed [8d Kd] and won (185) with a full house, Kings full of Sevens
+Seat 10: Nightwish99 folded before Flop (didn't bet)
