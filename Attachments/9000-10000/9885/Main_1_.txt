@@ -1,0 +1,20 @@
+<html>
+<head><title>MD InSite - Atlanta Dermatology & Vein</title>
+
+</head>
+<frameset rows="30,22,90,*" frameborder="0" border="0" name="rootframe">
+   <frame scrolling="no" marginwidth="0" marginheight="0" name="mainmenu" src="../menus/mainmenu.jsp">
+   <frame scrolling="no" marginwidth="0" marginheight="0" name="mymenu" src="../menus/mymenu.jsp">
+   <frameset cols="230,*" frameborder="0" border="0" name="patient2">
+     <frame scrolling="no" marginwidth="5" marginheight="5" name="locator" src="../servlet/Locator">
+    <frame scrolling="no" marginwidth="5" marginheight="5" name="basicpatientinfo" src="../servlet/ControllerServlet?_rh_=com.tasc.pos.requesthandler.BasicPatientInfo">
+  </frameset>
+  <frameset cols="0,*" frameborder="0" border="0">
+    <frameset rows="*,1" frameborder="0" border="0">
+      <frame marginwidth="2" marginheight="4" name="menu" src="../servlet/MenuManager">
+      <frame name="redirector" scrolling="no" marginwidth="0" marginheight="0">
+    </frameset>
+    <frame name="detail" src="../welcome.html">
+  </frameset>
+</frameset>
+</html>
