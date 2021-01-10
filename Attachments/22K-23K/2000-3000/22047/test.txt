@@ -1,0 +1,22 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2008.09.03 20:07:59 =~=~=~=~=~=~=~=~=~=~=~=
+login as: ..............
+Using keyboard-interactive authentication.
+Password: 
+Last login: Wed Sep  3 17:00:52 2008 from ..............
+Sun Microsystems Inc.   SunOS 5.10      Generic January 2005
+
+Hostname:               ..............
+Usage:                  ..............
+OS:                     Solaris 10 (SunOS 5.10)
+Hardware Model:         Sun Fire 6900
+        .............. is in a Solaris container = virtual host
+Processors:             5 core (1*dual-core and 3*single-core)
+Clock Frequency:        1050 MHz
+Physical Memory:        36864 MB
+Swap Space:             4096 MB
+
+                        View /README for more information
+Contact:                ..............
+
+You have new mail.
+$ bash 
