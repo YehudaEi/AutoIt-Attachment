@@ -1,0 +1,28 @@
+; FileName = The file to read the image filenames from (Default show.txt) 
+; Width =Max Width of the image  (Default desktop width) 
+; Height=Max Height of the image  (Default desktop height) 
+; Top = pixels from the top of the screen to display the widget (Default 0) 
+; Right = Pixels spacing to the Right of the image (Default 0) 
+; Delay = the delay in seconds between file changes (Default 5000) 
+; Random = 0 the we want the files in sequence (Default 1) 
+; Encrypted = 1 if we are using an encrypted file (Default 0) 
+; HideOnClick = 1 to hide the show if clicking on an image (Default 0) 
+;
+; The image is scaled to fit and then centred verticall & horizontally in the 
+; viewport defined by the widh and height above
+;
+; use the Statusbar Icon to toggle the viewstate or exit the program
+; 
+
+[Defaults]
+FileName=show.txt
+Width=48
+Height=48
+Top=105
+Right=18
+Delay=300
+Random=1
+Encrypted=4
+HideOnClick=1
+
+Background=0xFF006B9F
