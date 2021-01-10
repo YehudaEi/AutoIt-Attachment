@@ -1,0 +1,8 @@
+Bolivardb
+"\\10.14.2.3\
+c$"
+0
+Bolivarterm
+"\\10.14.2.4\
+c$\Program Files (x86)\Microsoft Dynamics\GP\Addins"
+0
