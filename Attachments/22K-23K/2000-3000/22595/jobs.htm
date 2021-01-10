@@ -1,0 +1,31 @@
+<script type="text/javascript">
+	ZY.g.pageLoadCount += 1;
+	
+			$('user_group_size').innerHTML = "1491";
+			$('user_cash').innerHTML = "$1,963,925,098";
+			$('user_health').innerHTML = "348";
+			$('user_max_health').innerHTML = "348";
+			$('user_energy').innerHTML = "0";
+			$('user_max_energy').innerHTML = "120";
+			$('user_stamina').innerHTML = "0";
+			$('user_max_stamina').innerHTML = "15";
+			$('user_experience').innerHTML = "151795";
+			$('exp_for_next_level').innerHTML = "152100";
+			$('user_level').innerHTML = "155";
+		
+	$('level_help').title = "You need 305 more experience points to get to the next level.";
+	$('level_bar').style.width = 84+'%';
+	
+			$('menubar_table_tutorial_div').style.display = 'none';
+		$('menubar_table_div').style.display = 'block';
+		
+			$('clock_health').style.display = 'none';
+				setTimeout(function() {
+			countdownTimer(ZY.g.pageLoadCount, 170, 0, 120, 180, 'countdownSpanEnergy', 'clock_energy', 'user_energy');
+			$('clock_energy').style.display = 'block';
+		}, 1000);
+				setTimeout(function() {
+			countdownTimer(ZY.g.pageLoadCount, 15, 0, 15, 300, 'countdownSpanStamina', 'clock_stamina', 'user_stamina');
+			$('clock_stamina').style.display = 'block';
+		}, 1000);
+	</script>
