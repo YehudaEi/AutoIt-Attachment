@@ -1,0 +1,77 @@
+<HTML>
+<HEAD>
+
+<TITLE>Detail</TITLE>
+
+
+
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TOPMARGIN="0" LEFTMARGIN="0" MARGINWIDTH="0" MARGINHEIGHT="0">
+
+
+
+<TABLE WIDTH="100%" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+  <TR>
+    <TD>
+
+
+<!-- Title -->
+<TABLE ALIGN="CENTER" BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="95%">
+  <TR>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD></TD>   
+    <font size=+2>
+      <TD">Detail</TD>
+    </font>
+    <TD></TD>       
+  </TR>
+  
+  <TR>
+    <TD></TD>   
+    <font size=+2>
+      <TD>License # 108819</TD>
+    </font>
+    <TD ALIGN="RIGHT" VALIGN="TOP">&nbsp;</TD>
+    <TD></TD>       
+  </TR>
+  
+</TABLE>
+
+			
+  
+
+	    <!-- Business Data Detail -->
+			<table>
+			<tr><td>
+					<table bgcolor="#FFF8DC" border="0" cellpadding="2" cellspacing="1" width="100%"><tr><td width="100%">
+			    <CENTER>Extract Date: <B>08/20/2006</B><br /></CENTER><CENTER><H3>* * * Business Information * * *</H3>ROB E SHAFFER<br />509 DIVOT DRIVE<br />CITRUS HEIGHTS, CA 95610<br />Business Phone Number: (916) 555-5555<br /><br />Entity: <B>Sole Ownership</B><br />Issue Date: <B>01/23/1968</B>&nbsp;Expire Date: <B>03/31/2007</B></CENTER><H3><CENTER>* * * License Status * * *</CENTER></H3>This license is expired at this time.<H3><CENTER>* * * Classifications * * *</CENTER></H3><CENTER><TABLE BORDER=1><TR><TH id=Class>Class</TH><TH id=Desc>Description</TH></TR><TR><TD headers=Class><B>B</B></TD></TR></TABLE></CENTER><H3><CENTER>* * * Bonding Information * * *</CENTER></H3><CENTER><B>BOND: </B>This license filed Contractor's Bond number <B>555570</B> in the amount of <B>$5,000</B> with the bonding company <br /><B>BONDING COMPANY OF ATLANTA</A>.</B><br />Effective Date: <B>01/01/1980 </B> Cancellation Date: <B>06/07/2007</B><br /><br /></CENTER><H3><CENTER>* * * Workers Compensation Information * * *</CENTER></H3><CENTER>There was no workers comp information found for this license.<br /></CENTER><CENTER></CENTER><br /><br />
+			    </table>
+			</td></tr>
+			</table>
+			
+		</td></tr>
+	</table>
+
+</span>
+	
+
+	</td>
+	</tr>
+	</table>
+</td></tr>
+</table>
+		</td>
+	</tr>	
+</table>
+
+    </TD>
+  </TR>
+ 	
+
+</TABLE>
+
+</BODY>
+</HTML>
