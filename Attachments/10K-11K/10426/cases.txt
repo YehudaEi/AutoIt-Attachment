@@ -1,0 +1,5 @@
+sharename               type                           comment
+sc                                disk                              testshare
+sc1                              disk                              testshare1            
+sc2		disk		 testshare1
+sc3		disk		 testshatre2
