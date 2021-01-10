@@ -1,0 +1,29 @@
+
+text file 1
+
+   RyanM
+   anette
+   Heatherm
+   SheelaghR
+   JonathanH
+  
+
+----------------------------------------------- 
+
+text file 2
+ 
+dn: CN=XYZ,CN=Users,DC=vebnet,DC=com
+changetype: modify
+replace: homeMDB
+homeMDB:
+ CN=Mailbox Store (EXCH2),CN=First Storage Group,CN=InformationStore,CN=EXCH2,CN=Servers,CN=x,CN=Administrative Groups,CN=x,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=x,DC=com
+-
+replace:homeMTA
+homeMTA:
+ CN=Microsoft MTA,CN=Exch2,CN=Servers,CN=x,CN=Administrative Groups,CN=x,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=x,DC=com
+-
+replace:msExchHomeServerName
+msExchHomeServerName:
+ /O=x/OU=x/cn=Configuration/cn=Servers/cn=EXCH2
+-
+
