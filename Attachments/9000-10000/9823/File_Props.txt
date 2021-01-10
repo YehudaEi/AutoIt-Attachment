@@ -1,0 +1,334 @@
+'-- This script includes a class and a demo. Drop any PE file onto the script (EXE, DLL, OCX)
+'-- to get file properties. The class, ClsProps, is a complete set of all functions needed
+'-- get file properties using only VBS and the Textstream object.
+'-- The file properties returned are those that are found when a file is right-clicked,
+'-- Properties menu is clicked, and Version tab is selected. This information
+'-- is included in most PE (portable executable) files.
+
+'-- Thank you to Ed Gruberman (                    ) for help with this code.
+'-- He corrected a bug and also worked out the "aspack" variation whereby some
+'-- PE files have been compressed and require a different method to find the version info.  j.
+
+'-- NOTE: This script is written to be compact for pasting into scripts. It uses simplified versions of some functions from
+'-- the Textstream Binary Ops and Base 64 download, using only the functionality needed to get file version info.,
+'--  in order to keep this class as small as possible. If you want to use functions such as GetArray or GetByteString 
+'-- you may want to download the other package. It provides a fairly complete set of methods for working with binary files.
+   
+'-- Demo script --------------------
+Dim Arg, cPE, i2, AReturn
+     If WScript.arguments.count = 0 Then
+         MsgBox "Drop A PE file [EXE-DLL-OCX] onto this script to get version information.", 64
+         WScript.quit
+     Else
+         Arg = WScript.arguments.item(0)
+		 iniOutput = WScript.arguments.item(1)
+     End If    
+     
+Set cPE = New ClsProps 
+  i2 = cPE.GetVersionInfo(Arg, AReturn)
+Set cPE = Nothing
+    Select Case i2
+       Case 1
+			endmsg = "File path not valid"
+       Case 2
+			endmsg = "Unable to find Resource table header in file."
+       Case 3
+			endmsg = "Unable to find file version info. in file."
+       Case 4
+			endmsg = "This is not a PE file."
+       Case 5
+			endmsg = "This is a 16-bit executable. It is not a PE file."
+       Case 0  ' success
+			endmsg = "[PATCH]" & VBCrLf & "AppliesTo = " & AReturn(0) & VBCrLf & "InstallerEngine = " & AReturn(1)' & VBCrLf & "File Name = " & AReturn(2)
+     End Select
+	'Create the ini file
+	DIM fso, iniFile
+	Set fso = CreateObject("Scripting.FileSystemObject")
+	Set iniFile = fso.CreateTextFile(iniOutput, True)
+	iniFile.Write (endmsg)
+	iniFile.Close 
+
+'-- End demo script ------------------------------------------------------------
+
+'-- //////////////////////// Start Class:   ClsProps   ///////////////////////////////////////////////
+'
+'  Functions in this class. (All functions are needed for getting file version information.)
+'
+'   Public Function GetVersionInfo(sFilePath, ARet2)  - returns version information For PE files. 
+'                                                                On success ARet2 returns array(5) containing version info. strings for file.
+'    Function return error codes:    0 = success.      1 = invalid file path.      2 = no .rsrc table listed in section table. 
+'    3 = failed to find version info.       4 = not a PE file.       5 = file is a 16-bit executable. ("NE" file rather than "PE")
+'
+'     Private (internal) functions:
+'        GetArray(StringIn) - convert a string to an array of byte values. 
+'        GetByteString(StringIn, SnipUnicode) - convert a string to a manageable version. If SnipUnicode = True then get only every 2nd byte.
+'        GetNumFromBytes(array) - takes array of ubound 1 or 3. return numeric value for 2 or 4 bytes.
+'
+'
+'
+'
+'
+'----------------////////////  --- BEGIN Class HERE ---  /////////////////////-------------------------------------------
+
+Class ClsProps
+   Private FSO, i, TS, sAst, ANums, Char1
+   
+  Private Sub Class_Initialize()
+       sAst = "*"
+       Char1 = Chr(1)
+      Set FSO = CreateObject("Scripting.FileSystemObject")
+  End Sub
+          
+  Private Sub Class_Terminate()
+      Set TS = Nothing   '-- just in case.
+      Set FSO = Nothing
+  End Sub
+  '-- The public function in this class: GetVersionInfo -----------------------------------------  
+Public Function GetVersionInfo(sFilePath, ARet2)  '-- return array(5)
+Dim ARet, s1, sB, Pt1, sRes, A1, A4(3), A2(1), LocRes, VLocRes, SizeRes, iOffSet, Boo, sVerString, sMarker
+Dim iNum1, iNum2, iReadPt, iNum3, LocAspack, VLocAspack, VIOffset, ReadOffset, BooAspack
+   On Error Resume Next
+               If (FSO.FileExists(sFilePath) = False) Then
+                    GetVersionInfo = 1  'bad path.
+                    Exit Function
+               End If
+       sRes = ".rsrc"
+       sVerString = "VS_VER"
+       BooAspack = False
+           
+   Set TS = FSO.OpenTextFile(sFilePath, 1)
+       s1 = TS.Read(2048) '-- Read first 2 KB.
+       TS.Close
+   Set TS = Nothing    
+      A1 = GetArray(Mid(s1, 61, 2))  '-- get number value at offset 60 that points to PE signature address.
+      iNum1 = (GetNumFromBytes(A1) + 1)     '-- get offset of "PE00"
+      sB = GetByteString(s1, False)  '-- get a workable string with Chr(0) replaced by "*".       
+       sMarker = Mid(sB, iNum1, 4) 
+         If (sMarker <> "PE**") Then
+                 If Left(sMarker, 2) = "NE" Then
+                     GetVersionInfo = 5  '-- 16 bit.
+                 Else 
+                     GetVersionInfo = 4  '-- no PE signature found.
+                 End If   
+             Exit Function 
+         End If
+          
+     Pt1 = InStr(1, sB, sRes)   '-- find .rsrc table.
+         If (Pt1 = 0) Then   
+              GetVersionInfo = 2  'no resource table header found.
+              Exit Function
+         End If
+     Pt1 = Pt1 + 12  '--  size of raw data is 4 bytes at offset of 16 into the .rsrc table. 
+        A1 = GetArray(Mid(s1, Pt1, 12))  '-- get the same string as a numeric array to Read offset numbers.  
+           For iOffSet = 0 to 3
+                A4(iOffSet) = A1(iOffSet)
+           Next
+             VLocRes = GetNumFromBytes(A4) 
+           For iOffSet = 0 to 3
+                A4(iOffSet) = A1(iOffSet + 4)
+           Next
+             SizeRes = GetNumFromBytes(A4) '--size of resource section in bytes.
+           For iOffSet = 0 to 3
+                A4(iOffSet) = A1(iOffSet + 8)
+           Next
+              LocRes = GetNumFromBytes(A4)    '-- offset location of resource section.  
+          Pt1 = InStr(1, sB, ".aspack")   '-- find .rsrc table.
+             If (Pt1 > 0) Then
+                  BooAspack = True
+                      Pt1 = Pt1 + 12    '--  virtual offset is first 4 bytes; raw offset is bytes 9-12.
+                      A1 = GetArray(Mid(s1, Pt1, 12))                      
+                   For iOffSet = 0 to 3
+                      A4(iOffSet) = A1(iOffSet)
+                   Next
+                     VLocAspack = GetNumFromBytes(A4)             
+                   For iOffSet = 0 to 3
+                      A4(iOffSet) = A1(iOffSet + 8)
+                   Next
+                     LocAspack = GetNumFromBytes(A4) 
+              End If    
+  
+   Boo = False
+   Set TS = FSO.OpenTextFile(sFilePath, 1)
+      TS.Skip LocRes + 12  '-- get number of names from bytes 13,14 in top level "Type" directory.
+        s1 = TS.Read(2)       '-- Read bytes 13,14 to get number of named resource types.
+          iNum1 = Asc(s1)       '-- number of names.
+        s1 = TS.Read(2)       '-- Read bytes 15,16 to get number of numbered resource types.
+          iNum2 = Asc(s1)       '-- number of nums.
+        
+       If (iNum2 = 0) Then '-- no numbered entries. have to quit here.
+            TS.Close
+            Set TS = Nothing
+            GetVersionInfo = 3  'failed to find version info in resource table.
+            Exit Function
+       End If
+     
+     If (iNum1 > 0) Then TS.Skip (iNum1 * 8) '-- Skip past named entries.
+     iReadPt = LocRes + 16 + (iNum1 * 8)  '-- update file offset variable because this will be needed.
+     Boo = False
+        For iOffSet = 1 to iNum2
+           s1 = TS.Read(8)
+           iReadPt = iReadPt + 8
+              If (Asc(s1) = 16) Then  '-- this is version info. entry.
+                 Boo = True
+                 Exit For
+              End If
+        Next
+     If (Boo = False) Then  '-- have to quit. no version info. entry found.
+         TS.Close
+         Set TS = Nothing
+         GetVersionInfo = 3  'failed to find version info in resource table.
+         Exit Function
+     End If
+       
+     A1 = GetArray(s1)  '-- get a byte array for version info entry at top level.
+     iOffSet = 0
+     iNum3 = 1
+   Do
+       For iNum1 = 0 to 2  '-- get offset number to next level from 2nd 4 bytes of entry structure.  
+          A4(iNum1) = A1(iNum1 + 4)
+       Next
+            A4(3) = 0
+            iNum2 = GetNumFromBytes(A4)        
+       If (A1(7) > 127) Then  '-- high bit was set in entry offset value, so it's just a pointer to another pointer.    
+             iNum2 = LocRes + iNum2 + 16
+             TS.Skip (iNum2 - iReadPt)   '- 1)
+             s1 = TS.Read(8)
+             iReadPt = iReadPt + ((iNum2 - iReadPt) + 8)
+             A1 = GetArray(s1)
+       Else  '-- this is the offset of version info offset info.! 
+              iOffSet = (iNum2 + LocRes)
+              Exit Do
+       End If
+          iNum3 = iNum3 + 1
+          If (iNum3 > 10) Then Exit Do
+   Loop    
+       If (iOffSet = 0) Then  '-- have to quit. no final offset found.       
+            TS.Close
+            Set TS = Nothing
+            GetVersionInfo = 3  'failed to find version info in resource table.
+            Exit Function
+       End If
+   TS.Skip (iOffSet - iReadPt) 
+   s1 = TS.Read(8)
+   iReadPt = iReadPt + ((iOffSet - iReadPt) + 8)
+    A1 = GetArray(s1)
+       For iNum1 = 0 to 3
+         A4(iNum1) = A1(iNum1)
+       Next   
+           VIOffset = GetNumFromBytes(A4)  '--offset of version info. given in .rsrc section.
+           ReadOffset = ((VIOffset - VLocRes) + LocRes)
+       For iNum1 = 0 to 3
+         A4(iNum1) = A1(iNum1 + 4)
+       Next      
+           SizeRes = GetNumFromBytes(A4)
+    TS.Skip (ReadOffset - iReadPt)
+    s1 = TS.Read(SizeRes)  '-- read out the entire FileVersionInfo data area.
+    TS.Close
+  Set TS = Nothing
+      sB = GetByteString(s1, True) '-- snip unicode.
+      Pt1 = InStr(1, sB, sVerString)                                                           
+           If (Pt1 > 0) Then        '-- "VS_VER" was found, so process the string and quit.
+                ARet = ProcessRes(sB)     
+                ARet2 = ARet
+                GetVersionInfo = 0  ' ok              
+           ElseIf (BooAspack = True) Then   '-- if "VS_VER" was not found but there is an "aspack" section then try that.
+              ReadOffset = ((VIOffset - VLocAspack) + LocAspack)  '-- calculate a new file version info data offset.           
+                Set TS = FSO.OpenTextFile(sFilePath, 1)  '-- The file was closed and is now re-opened here. Keeping the file
+                   TS.Skip ReadOffset                            '-- open "just in case" wouldn't have helped because the file pointer
+                     s1 = TS.Read(SizeRes)                     '-- for this read may be further back thean the pointer was when the file
+                   TS.Close                                  '-- was closed. So rather than try to sort out the read point, the file is just
+                Set TS = Nothing                        '-- opened fresh and Skip is used.
+                   sB = GetByteString(s1, True) 
+                   Pt1 = InStr(1, sB, sVerString) 
+                     If (Pt1 > 0) Then        
+                        ARet = ProcessRes(sB)     
+                        ARet2 = ARet
+                        GetVersionInfo = 0  ' ok
+                     Else   
+                        GetVersionInfo = 3  'failed to find version info in resource table.
+                     End If  
+           Else   
+                 GetVersionInfo = 3  'failed to find version info in resource table.         
+           End If
+End Function  
+
+Private Function ProcessRes(sDat)
+  Dim AInfo(2)
+      On Error Resume Next
+      'AInfo(0) = GetInfo(sDat, "CompanyName")
+      'AInfo(1) = GetInfo(sDat, "FileDescription") 
+      '~ AInfo(2) = GetInfo(sDat, "Name")
+      '~ AInfo(3)  = GetInfo(sDat, "ProductName")
+      AInfo(0) = GetInfo(sDat, "Applies to")
+      'AInfo(5) = GetInfo(sDat, "OriginalFilename")
+	  AInfo(1) = GetInfo(sDat, "Installer Engine")
+    ProcessRes = AInfo  
+End Function
+
+Private Function GetInfo(sStr, sVal)
+  Dim Pta, Ptb, LenVal, s4
+       On Error Resume Next
+         GetInfo = ""
+    LenVal = Len(sVal) + 1  '-- length of info string: "CompanyName" = 11
+     Pta = InStr(1, sStr, sVal)  '-- find string name.
+       If (Pta > 0) Then
+          Pta = Pta + LenVal
+          Ptb = InStr((Pta + 1), sStr, sAst)   '-- look for next *. some properties are Name**value** and some are
+            If Ptb > (Pta + 2) Then              '-- Name*value**. So start looking at 3rd character after. If that                      
+               s4 = Mid(sStr, Pta, (Ptb - Pta))    '-- character is * then it's Name*** which means there's
+               s4 = Replace(s4, sAst, "")                                           '--no value for that specific property.
+              If InStr(1, s4, Char1, 0) = 0 Then GetInfo = s4   '-- check for Chr(1) which seems to be found
+           End If                             ' between values. If it's in the string that means there is no value for
+                                               ' this property and function has actually read next property name.
+      End If 
+End Function
+'-------------- simplified version of GetByteString For this Class. ---------------------
+Private Function GetByteString(sStr, SnipUnicode)
+  Dim sRet, iLen, iA, iLen2, A2()
+    On Error Resume Next
+      iLen2 = 0
+   If (SnipUnicode = False) Then
+       ReDim A2(len(sStr) - 1)
+        For iLen = 1 to Len(sStr)
+            iA = Asc(Mid(sStr, iLen, 1))
+              If iA = 0 Then iA = 42  '-- converts 0-byte to *
+            A2(iLen - 1) = Chr(iA)
+        Next
+   Else     
+      ReDim A2((len(sStr) \ 2) - 1)
+       For iLen = 1 to Len(sStr) step 2
+             iA = Asc(Mid(sStr, iLen, 1))
+                If iA = 0 Then iA = 42  '-- converts 0-byte to *
+              A2(iLen2) = Chr(iA)
+              iLen2 = iLen2 + 1
+       Next  
+   End If     
+       GetByteString = Join(A2, "")
+End Function
+'-------------------------------- Simplified version of GetArray. -----------------------
+Private Function GetArray(sStr)
+Dim iA, Len1, Len2, AStr()
+  On Error Resume Next
+    Len1 = Len(sStr)
+    ReDim AStr(Len1 - 1)
+     For iA = 1 to Len1
+        AStr(iA - 1) = Asc(Mid(sStr, iA, 1))
+     Next      
+         GetArray = AStr    
+End Function
+'-------------------- return a number from 2 or 4 bytes. ---------------
+Private Function GetNumFromBytes(ABytes)
+   Dim Num1
+    Err.Clear
+        On Error Resume Next
+        GetNumFromBytes = -1
+    Num1 = ABytes(0) + (ABytes(1) * 256)
+      If (UBound(ABytes) = 3) Then
+          Num1 = Num1 + (ABytes(2) * 65536) + (ABytes(3) * 16777216)
+      End If
+    If (Err.number = 0) Then GetNumFromBytes = Num1
+End Function
+  
+End Class
+    
+
