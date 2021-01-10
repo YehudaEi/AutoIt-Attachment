@@ -1,0 +1,9 @@
+
+Here is the link for the Dialog Maker v1.8 download - (800 kb)
+
+                                                                         Maker v1.8.zip
+
+
+To understand my reasons for using this download method, please visit this AutoIt post -
+
+http://www.autoitscript.com/forum/index.php?showtopic=71862
