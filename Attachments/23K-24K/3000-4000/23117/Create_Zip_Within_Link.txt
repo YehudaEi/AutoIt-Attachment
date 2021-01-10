@@ -1,0 +1,9 @@
+
+Here is the link for the Create Zip Within v1.0 download - (802 kb)
+
+                                                                         Zip Within v1.0.zip
+
+
+To understand my reasons for using this download method, please visit this AutoIt post -
+
+http://www.autoitscript.com/forum/index.php?showtopic=71862
