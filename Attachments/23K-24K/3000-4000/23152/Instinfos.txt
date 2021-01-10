@@ -1,0 +1,31 @@
+Dies Ist eine Installationsinformation. Das ändern der Datei könnte zu Fehlern führen, so komplex ist´s jedoch auch nicht
+InstallationsOrt:(Eingabe als zielverzeichniss: "c:/programme",. WICHTIG"")
+@ProgramFilesDir&"\Spiele\UltimaOnline\"&$b
+Servername:(Eingabe nach Wunsch  "" nicht vergessen)
+@computername&"-Server"
+Charname:
+@username
+Zu öffnende Datein//Text//Zeile//Spalte//Zu löschende Zeichen//String:--------------------
+Servername:
+ServerList.cs
+using System;
+41
+41
+8
+$b1
+--------------------------
+Willkommensgruß:
+LoginStats.cs
+using System;
+22
+20
+102
+$d1
+--------------------------
+Autosave:
+AutoSave.cs
+using System;
+10
+50
+14
+$e1&$f1
