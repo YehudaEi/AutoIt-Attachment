@@ -1,0 +1,533 @@
+
+<HTML>
+<Head>
+	<Meta HTTP-Equiv="Content-Type" Content="text/html; charset=UTF-8">
+	<Title>Microsoft Certificate Services</Title>
+</Head>
+<Body BgColor=#FFFFFF Link=#0000FF VLink=#0000FF ALink=#0000FF><Font ID=locPageFont Face="Arial">
+
+
+<Table Border=0 CellSpacing=0 CellPadding=4 Width=100% BgColor=#008080>
+<TR>
+	<TD><Font Color=#FFFFFF><LocID ID=locMSCertSrv><Font Face="Arial" Size=-1><B><I>Microsoft</I></B> Certificate Services &nbsp;--&nbsp; ringworm &nbsp;</Font></LocID></Font></TD>
+	<TD ID=locHomeAlign Align=Right><A Href="/certsrv"><Font Color=#FFFFFF><LocID ID=locHomeLink><Font Face="Arial" Size=-1><B>Home</B></Font></LocID></Font></A></TD>
+</TR>
+</Table>
+
+<P ID=locPageTitle> <B> View the Status of a Pending Certificate Request </B>
+<!-- Green HR --><Table Border=0 CellSpacing=0 CellPadding=0 Width=100%><TR><TD BgColor=#008080><Img Src="certspc.gif" Alt="" Height=2 Width=1></TD></TR></Table>
+
+
+
+
+<P ID=locSelectCert> Select the certificate request you want to view:
+
+
+<Table Border=0 CellPadding=0 CellSpacing=0>
+
+	<TR><TD ID=locSpc2 Colspan=2><Img Src="certspc.gif" Alt="" Height=3 Width=1></TD></TR>
+	<TR>
+		<TD ID=locSpc1><Img Src="certspc.gif" Alt="" Height=1 Width=20></TD>
+		
+		<TD><Font ID=locLinkFont1 Face="Arial">
+			<Span tabindex=0 Style="cursor:hand; color:#0000FF; text-decoration:underline;"
+				OnContextMenu="return false;"
+				OnMouseOver="window.status='Server Authentication Certificate (Monday  July 24  2006 11:34:08 AM)'; return true;" 
+				OnMouseOut="window.status=''; return true;" 
+				OnKeyDown="if (13==event.keyCode) {CheckPending2('42', '131072', 'no');return false;} else if (9==event.keyCode) {return true;};return false;"
+				OnClick="CheckPending2('42', '131072', 'no');return false;"
+				>Server Authentication Certificate (Monday  July 24  2006 11:34:08 AM)</Span>
+		</Font></TD>
+		
+	</TR>
+
+	<TR><TD ID=locSpc2 Colspan=2><Img Src="certspc.gif" Alt="" Height=3 Width=1></TD></TR>
+	<TR>
+		<TD ID=locSpc1><Img Src="certspc.gif" Alt="" Height=1 Width=20></TD>
+		
+		<TD><Font ID=locLinkFont1 Face="Arial">
+			<Span tabindex=0 Style="cursor:hand; color:#0000FF; text-decoration:underline;"
+				OnContextMenu="return false;"
+				OnMouseOver="window.status='Server Authentication Certificate (Monday  July 24  2006 1:07:02 PM)'; return true;" 
+				OnMouseOut="window.status=''; return true;" 
+				OnKeyDown="if (13==event.keyCode) {CheckPending2('43', '131072', 'no');return false;} else if (9==event.keyCode) {return true;};return false;"
+				OnClick="CheckPending2('43', '131072', 'no');return false;"
+				>Server Authentication Certificate (Monday  July 24  2006 1:07:02 PM)</Span>
+		</Font></TD>
+		
+	</TR>
+
+	<TR><TD ID=locSpc2 Colspan=2><Img Src="certspc.gif" Alt="" Height=3 Width=1></TD></TR>
+	<TR>
+		<TD ID=locSpc1><Img Src="certspc.gif" Alt="" Height=1 Width=20></TD>
+		
+		<TD><Font ID=locLinkFont1 Face="Arial">
+			<Span tabindex=0 Style="cursor:hand; color:#0000FF; text-decoration:underline;"
+				OnContextMenu="return false;"
+				OnMouseOver="window.status='Server Authentication Certificate (Monday  July 24  2006 1:46:25 PM)'; return true;" 
+				OnMouseOut="window.status=''; return true;" 
+				OnKeyDown="if (13==event.keyCode) {CheckPending2('44', '131072', 'no');return false;} else if (9==event.keyCode) {return true;};return false;"
+				OnClick="CheckPending2('44', '131072', 'no');return false;"
+				>Server Authentication Certificate (Monday  July 24  2006 1:46:25 PM)</Span>
+		</Font></TD>
+		
+	</TR>
+
+	<TR><TD ID=locSpc2 Colspan=2><Img Src="certspc.gif" Alt="" Height=3 Width=1></TD></TR>
+	<TR>
+		<TD ID=locSpc1><Img Src="certspc.gif" Alt="" Height=1 Width=20></TD>
+		
+		<TD><Font ID=locLinkFont1 Face="Arial">
+			<Span tabindex=0 Style="cursor:hand; color:#0000FF; text-decoration:underline;"
+				OnContextMenu="return false;"
+				OnMouseOver="window.status='Server Authentication Certificate (Monday  July 24  2006 1:50:57 PM)'; return true;" 
+				OnMouseOut="window.status=''; return true;" 
+				OnKeyDown="if (13==event.keyCode) {CheckPending2('45', '131072', 'no');return false;} else if (9==event.keyCode) {return true;};return false;"
+				OnClick="CheckPending2('45', '131072', 'no');return false;"
+				>Server Authentication Certificate (Monday  July 24  2006 1:50:57 PM)</Span>
+		</Font></TD>
+		
+	</TR>
+
+	<TR><TD ID=locSpc2 Colspan=2><Img Src="certspc.gif" Alt="" Height=3 Width=1></TD></TR>
+	<TR>
+		<TD ID=locSpc1><Img Src="certspc.gif" Alt="" Height=1 Width=20></TD>
+		
+		<TD><Font ID=locLinkFont1 Face="Arial">
+			<Span tabindex=0 Style="cursor:hand; color:#0000FF; text-decoration:underline;"
+				OnContextMenu="return false;"
+				OnMouseOver="window.status='Server Authentication Certificate (Monday  July 24  2006 1:54:22 PM)'; return true;" 
+				OnMouseOut="window.status=''; return true;" 
+				OnKeyDown="if (13==event.keyCode) {CheckPending2('46', '131072', 'no');return false;} else if (9==event.keyCode) {return true;};return false;"
+				OnClick="CheckPending2('46', '131072', 'no');return false;"
+				>Server Authentication Certificate (Monday  July 24  2006 1:54:22 PM)</Span>
+		</Font></TD>
+		
+	</TR>
+
+	<TR><TD ID=locSpc2 Colspan=2><Img Src="certspc.gif" Alt="" Height=3 Width=1></TD></TR>
+	<TR>
+		<TD ID=locSpc1><Img Src="certspc.gif" Alt="" Height=1 Width=20></TD>
+		
+		<TD><Font ID=locLinkFont1 Face="Arial">
+			<Span tabindex=0 Style="cursor:hand; color:#0000FF; text-decoration:underline;"
+				OnContextMenu="return false;"
+				OnMouseOver="window.status='Server Authentication Certificate (Monday  July 24  2006 3:42:39 PM)'; return true;" 
+				OnMouseOut="window.status=''; return true;" 
+				OnKeyDown="if (13==event.keyCode) {CheckPending2('47', '131072', 'no');return false;} else if (9==event.keyCode) {return true;};return false;"
+				OnClick="CheckPending2('47', '131072', 'no');return false;"
+				>Server Authentication Certificate (Monday  July 24  2006 3:42:39 PM)</Span>
+		</Font></TD>
+		
+	</TR>
+
+	<TR><TD ID=locSpc2 Colspan=2><Img Src="certspc.gif" Alt="" Height=3 Width=1></TD></TR>
+	<TR>
+		<TD ID=locSpc1><Img Src="certspc.gif" Alt="" Height=1 Width=20></TD>
+		
+		<TD><Font ID=locLinkFont1 Face="Arial">
+			<Span tabindex=0 Style="cursor:hand; color:#0000FF; text-decoration:underline;"
+				OnContextMenu="return false;"
+				OnMouseOver="window.status='Server Authentication Certificate (Monday  July 24  2006 3:46:16 PM)'; return true;" 
+				OnMouseOut="window.status=''; return true;" 
+				OnKeyDown="if (13==event.keyCode) {CheckPending2('48', '131072', 'no');return false;} else if (9==event.keyCode) {return true;};return false;"
+				OnClick="CheckPending2('48', '131072', 'no');return false;"
+				>Server Authentication Certificate (Monday  July 24  2006 3:46:16 PM)</Span>
+		</Font></TD>
+		
+	</TR>
+
+	<TR><TD ID=locSpc2 Colspan=2><Img Src="certspc.gif" Alt="" Height=3 Width=1></TD></TR>
+	<TR>
+		<TD ID=locSpc1><Img Src="certspc.gif" Alt="" Height=1 Width=20></TD>
+		
+		<TD><Font ID=locLinkFont1 Face="Arial">
+			<Span tabindex=0 Style="cursor:hand; color:#0000FF; text-decoration:underline;"
+				OnContextMenu="return false;"
+				OnMouseOver="window.status='Server Authentication Certificate (Monday  July 24  2006 3:52:23 PM)'; return true;" 
+				OnMouseOut="window.status=''; return true;" 
+				OnKeyDown="if (13==event.keyCode) {CheckPending2('49', '131072', 'no');return false;} else if (9==event.keyCode) {return true;};return false;"
+				OnClick="CheckPending2('49', '131072', 'no');return false;"
+				>Server Authentication Certificate (Monday  July 24  2006 3:52:23 PM)</Span>
+		</Font></TD>
+		
+	</TR>
+
+	<TR><TD ID=locSpc2 Colspan=2><Img Src="certspc.gif" Alt="" Height=3 Width=1></TD></TR>
+	<TR>
+		<TD ID=locSpc1><Img Src="certspc.gif" Alt="" Height=1 Width=20></TD>
+		
+		<TD><Font ID=locLinkFont1 Face="Arial">
+			<Span tabindex=0 Style="cursor:hand; color:#0000FF; text-decoration:underline;"
+				OnContextMenu="return false;"
+				OnMouseOver="window.status='Server Authentication Certificate (Monday  July 24  2006 3:57:29 PM)'; return true;" 
+				OnMouseOut="window.status=''; return true;" 
+				OnKeyDown="if (13==event.keyCode) {CheckPending2('50', '131072', 'no');return false;} else if (9==event.keyCode) {return true;};return false;"
+				OnClick="CheckPending2('50', '131072', 'no');return false;"
+				>Server Authentication Certificate (Monday  July 24  2006 3:57:29 PM)</Span>
+		</Font></TD>
+		
+	</TR>
+
+	<TR><TD ID=locSpc2 Colspan=2><Img Src="certspc.gif" Alt="" Height=3 Width=1></TD></TR>
+	<TR>
+		<TD ID=locSpc1><Img Src="certspc.gif" Alt="" Height=1 Width=20></TD>
+		
+		<TD><Font ID=locLinkFont1 Face="Arial">
+			<Span tabindex=0 Style="cursor:hand; color:#0000FF; text-decoration:underline;"
+				OnContextMenu="return false;"
+				OnMouseOver="window.status='Server Authentication Certificate (Monday  July 24  2006 3:59:03 PM)'; return true;" 
+				OnMouseOut="window.status=''; return true;" 
+				OnKeyDown="if (13==event.keyCode) {CheckPending2('51', '131072', 'no');return false;} else if (9==event.keyCode) {return true;};return false;"
+				OnClick="CheckPending2('51', '131072', 'no');return false;"
+				>Server Authentication Certificate (Monday  July 24  2006 3:59:03 PM)</Span>
+		</Font></TD>
+		
+	</TR>
+
+	<TR><TD ID=locSpc2 Colspan=2><Img Src="certspc.gif" Alt="" Height=3 Width=1></TD></TR>
+	<TR>
+		<TD ID=locSpc1><Img Src="certspc.gif" Alt="" Height=1 Width=20></TD>
+		
+		<TD><Font ID=locLinkFont1 Face="Arial">
+			<Span tabindex=0 Style="cursor:hand; color:#0000FF; text-decoration:underline;"
+				OnContextMenu="return false;"
+				OnMouseOver="window.status='Server Authentication Certificate (Monday  July 24  2006 4:10:11 PM)'; return true;" 
+				OnMouseOut="window.status=''; return true;" 
+				OnKeyDown="if (13==event.keyCode) {CheckPending2('52', '131072', 'no');return false;} else if (9==event.keyCode) {return true;};return false;"
+				OnClick="CheckPending2('52', '131072', 'no');return false;"
+				>Server Authentication Certificate (Monday  July 24  2006 4:10:11 PM)</Span>
+		</Font></TD>
+		
+	</TR>
+
+	<TR><TD ID=locSpc2 Colspan=2><Img Src="certspc.gif" Alt="" Height=3 Width=1></TD></TR>
+	<TR>
+		<TD ID=locSpc1><Img Src="certspc.gif" Alt="" Height=1 Width=20></TD>
+		
+		<TD><Font ID=locLinkFont1 Face="Arial">
+			<Span tabindex=0 Style="cursor:hand; color:#0000FF; text-decoration:underline;"
+				OnContextMenu="return false;"
+				OnMouseOver="window.status='Server Authentication Certificate (Monday  July 24  2006 4:12:31 PM)'; return true;" 
+				OnMouseOut="window.status=''; return true;" 
+				OnKeyDown="if (13==event.keyCode) {CheckPending2('53', '131072', 'no');return false;} else if (9==event.keyCode) {return true;};return false;"
+				OnClick="CheckPending2('53', '131072', 'no');return false;"
+				>Server Authentication Certificate (Monday  July 24  2006 4:12:31 PM)</Span>
+		</Font></TD>
+		
+	</TR>
+
+	<TR><TD ID=locSpc2 Colspan=2><Img Src="certspc.gif" Alt="" Height=3 Width=1></TD></TR>
+	<TR>
+		<TD ID=locSpc1><Img Src="certspc.gif" Alt="" Height=1 Width=20></TD>
+		
+		<TD><Font ID=locLinkFont1 Face="Arial">
+			<Span tabindex=0 Style="cursor:hand; color:#0000FF; text-decoration:underline;"
+				OnContextMenu="return false;"
+				OnMouseOver="window.status='Server Authentication Certificate (Monday  July 24  2006 4:15:49 PM)'; return true;" 
+				OnMouseOut="window.status=''; return true;" 
+				OnKeyDown="if (13==event.keyCode) {CheckPending2('54', '131072', 'no');return false;} else if (9==event.keyCode) {return true;};return false;"
+				OnClick="CheckPending2('54', '131072', 'no');return false;"
+				>Server Authentication Certificate (Monday  July 24  2006 4:15:49 PM)</Span>
+		</Font></TD>
+		
+	</TR>
+
+	<TR><TD ID=locSpc2 Colspan=2><Img Src="certspc.gif" Alt="" Height=3 Width=1></TD></TR>
+	<TR>
+		<TD ID=locSpc1><Img Src="certspc.gif" Alt="" Height=1 Width=20></TD>
+		
+		<TD><Font ID=locLinkFont1 Face="Arial">
+			<Span tabindex=0 Style="cursor:hand; color:#0000FF; text-decoration:underline;"
+				OnContextMenu="return false;"
+				OnMouseOver="window.status='Server Authentication Certificate (Monday  July 24  2006 4:17:29 PM)'; return true;" 
+				OnMouseOut="window.status=''; return true;" 
+				OnKeyDown="if (13==event.keyCode) {CheckPending2('55', '131072', 'no');return false;} else if (9==event.keyCode) {return true;};return false;"
+				OnClick="CheckPending2('55', '131072', 'no');return false;"
+				>Server Authentication Certificate (Monday  July 24  2006 4:17:29 PM)</Span>
+		</Font></TD>
+		
+	</TR>
+
+	<TR><TD ID=locSpc2 Colspan=2><Img Src="certspc.gif" Alt="" Height=3 Width=1></TD></TR>
+	<TR>
+		<TD ID=locSpc1><Img Src="certspc.gif" Alt="" Height=1 Width=20></TD>
+		
+		<TD><Font ID=locLinkFont1 Face="Arial">
+			<Span tabindex=0 Style="cursor:hand; color:#0000FF; text-decoration:underline;"
+				OnContextMenu="return false;"
+				OnMouseOver="window.status='Server Authentication Certificate (Monday  July 24  2006 4:18:55 PM)'; return true;" 
+				OnMouseOut="window.status=''; return true;" 
+				OnKeyDown="if (13==event.keyCode) {CheckPending2('56', '131072', 'no');return false;} else if (9==event.keyCode) {return true;};return false;"
+				OnClick="CheckPending2('56', '131072', 'no');return false;"
+				>Server Authentication Certificate (Monday  July 24  2006 4:18:55 PM)</Span>
+		</Font></TD>
+		
+	</TR>
+
+	<TR><TD ID=locSpc2 Colspan=2><Img Src="certspc.gif" Alt="" Height=3 Width=1></TD></TR>
+	<TR>
+		<TD ID=locSpc1><Img Src="certspc.gif" Alt="" Height=1 Width=20></TD>
+		
+		<TD><Font ID=locLinkFont1 Face="Arial">
+			<Span tabindex=0 Style="cursor:hand; color:#0000FF; text-decoration:underline;"
+				OnContextMenu="return false;"
+				OnMouseOver="window.status='Server Authentication Certificate (Monday  July 24  2006 4:21:40 PM)'; return true;" 
+				OnMouseOut="window.status=''; return true;" 
+				OnKeyDown="if (13==event.keyCode) {CheckPending2('57', '131072', 'no');return false;} else if (9==event.keyCode) {return true;};return false;"
+				OnClick="CheckPending2('57', '131072', 'no');return false;"
+				>Server Authentication Certificate (Monday  July 24  2006 4:21:40 PM)</Span>
+		</Font></TD>
+		
+	</TR>
+
+	<TR><TD ID=locSpc2 Colspan=2><Img Src="certspc.gif" Alt="" Height=3 Width=1></TD></TR>
+	<TR>
+		<TD ID=locSpc1><Img Src="certspc.gif" Alt="" Height=1 Width=20></TD>
+		
+		<TD><Font ID=locLinkFont1 Face="Arial">
+			<Span tabindex=0 Style="cursor:hand; color:#0000FF; text-decoration:underline;"
+				OnContextMenu="return false;"
+				OnMouseOver="window.status='Server Authentication Certificate (Monday  July 24  2006 4:24:43 PM)'; return true;" 
+				OnMouseOut="window.status=''; return true;" 
+				OnKeyDown="if (13==event.keyCode) {CheckPending2('58', '131072', 'no');return false;} else if (9==event.keyCode) {return true;};return false;"
+				OnClick="CheckPending2('58', '131072', 'no');return false;"
+				>Server Authentication Certificate (Monday  July 24  2006 4:24:43 PM)</Span>
+		</Font></TD>
+		
+	</TR>
+
+	<TR><TD ID=locSpc2 Colspan=2><Img Src="certspc.gif" Alt="" Height=3 Width=1></TD></TR>
+	<TR>
+		<TD ID=locSpc1><Img Src="certspc.gif" Alt="" Height=1 Width=20></TD>
+		
+		<TD><Font ID=locLinkFont1 Face="Arial">
+			<Span tabindex=0 Style="cursor:hand; color:#0000FF; text-decoration:underline;"
+				OnContextMenu="return false;"
+				OnMouseOver="window.status='Server Authentication Certificate (Monday  July 24  2006 4:28:41 PM)'; return true;" 
+				OnMouseOut="window.status=''; return true;" 
+				OnKeyDown="if (13==event.keyCode) {CheckPending2('59', '131072', 'no');return false;} else if (9==event.keyCode) {return true;};return false;"
+				OnClick="CheckPending2('59', '131072', 'no');return false;"
+				>Server Authentication Certificate (Monday  July 24  2006 4:28:41 PM)</Span>
+		</Font></TD>
+		
+	</TR>
+
+	<TR><TD ID=locSpc2 Colspan=2><Img Src="certspc.gif" Alt="" Height=3 Width=1></TD></TR>
+	<TR>
+		<TD ID=locSpc1><Img Src="certspc.gif" Alt="" Height=1 Width=20></TD>
+		
+		<TD><Font ID=locLinkFont1 Face="Arial">
+			<Span tabindex=0 Style="cursor:hand; color:#0000FF; text-decoration:underline;"
+				OnContextMenu="return false;"
+				OnMouseOver="window.status='Server Authentication Certificate (Monday  July 24  2006 4:31:22 PM)'; return true;" 
+				OnMouseOut="window.status=''; return true;" 
+				OnKeyDown="if (13==event.keyCode) {CheckPending2('60', '131072', 'no');return false;} else if (9==event.keyCode) {return true;};return false;"
+				OnClick="CheckPending2('60', '131072', 'no');return false;"
+				>Server Authentication Certificate (Monday  July 24  2006 4:31:22 PM)</Span>
+		</Font></TD>
+		
+	</TR>
+
+	<TR><TD ID=locSpc2 Colspan=2><Img Src="certspc.gif" Alt="" Height=3 Width=1></TD></TR>
+	<TR>
+		<TD ID=locSpc1><Img Src="certspc.gif" Alt="" Height=1 Width=20></TD>
+		
+		<TD><Font ID=locLinkFont1 Face="Arial">
+			<Span tabindex=0 Style="cursor:hand; color:#0000FF; text-decoration:underline;"
+				OnContextMenu="return false;"
+				OnMouseOver="window.status='Server Authentication Certificate (Monday  July 24  2006 4:35:43 PM)'; return true;" 
+				OnMouseOut="window.status=''; return true;" 
+				OnKeyDown="if (13==event.keyCode) {CheckPending2('61', '131072', 'no');return false;} else if (9==event.keyCode) {return true;};return false;"
+				OnClick="CheckPending2('61', '131072', 'no');return false;"
+				>Server Authentication Certificate (Monday  July 24  2006 4:35:43 PM)</Span>
+		</Font></TD>
+		
+	</TR>
+
+	<TR><TD ID=locSpc2 Colspan=2><Img Src="certspc.gif" Alt="" Height=3 Width=1></TD></TR>
+	<TR>
+		<TD ID=locSpc1><Img Src="certspc.gif" Alt="" Height=1 Width=20></TD>
+		
+		<TD><Font ID=locLinkFont1 Face="Arial">
+			<Span tabindex=0 Style="cursor:hand; color:#0000FF; text-decoration:underline;"
+				OnContextMenu="return false;"
+				OnMouseOver="window.status='Server Authentication Certificate (Monday  July 24  2006 4:49:45 PM)'; return true;" 
+				OnMouseOut="window.status=''; return true;" 
+				OnKeyDown="if (13==event.keyCode) {CheckPending2('62', '131072', 'no');return false;} else if (9==event.keyCode) {return true;};return false;"
+				OnClick="CheckPending2('62', '131072', 'no');return false;"
+				>Server Authentication Certificate (Monday  July 24  2006 4:49:45 PM)</Span>
+		</Font></TD>
+		
+	</TR>
+
+	<TR><TD ID=locSpc2 Colspan=2><Img Src="certspc.gif" Alt="" Height=3 Width=1></TD></TR>
+	<TR>
+		<TD ID=locSpc1><Img Src="certspc.gif" Alt="" Height=1 Width=20></TD>
+		
+		<TD><Font ID=locLinkFont1 Face="Arial">
+			<Span tabindex=0 Style="cursor:hand; color:#0000FF; text-decoration:underline;"
+				OnContextMenu="return false;"
+				OnMouseOver="window.status='Server Authentication Certificate (Monday  July 24  2006 4:52:45 PM)'; return true;" 
+				OnMouseOut="window.status=''; return true;" 
+				OnKeyDown="if (13==event.keyCode) {CheckPending2('63', '131072', 'no');return false;} else if (9==event.keyCode) {return true;};return false;"
+				OnClick="CheckPending2('63', '131072', 'no');return false;"
+				>Server Authentication Certificate (Monday  July 24  2006 4:52:45 PM)</Span>
+		</Font></TD>
+		
+	</TR>
+
+	<TR><TD ID=locSpc2 Colspan=2><Img Src="certspc.gif" Alt="" Height=3 Width=1></TD></TR>
+	<TR>
+		<TD ID=locSpc1><Img Src="certspc.gif" Alt="" Height=1 Width=20></TD>
+		
+		<TD><Font ID=locLinkFont1 Face="Arial">
+			<Span tabindex=0 Style="cursor:hand; color:#0000FF; text-decoration:underline;"
+				OnContextMenu="return false;"
+				OnMouseOver="window.status='Server Authentication Certificate (Monday  July 24  2006 4:57:10 PM)'; return true;" 
+				OnMouseOut="window.status=''; return true;" 
+				OnKeyDown="if (13==event.keyCode) {CheckPending2('64', '131072', 'no');return false;} else if (9==event.keyCode) {return true;};return false;"
+				OnClick="CheckPending2('64', '131072', 'no');return false;"
+				>Server Authentication Certificate (Monday  July 24  2006 4:57:10 PM)</Span>
+		</Font></TD>
+		
+	</TR>
+
+	<TR><TD ID=locSpc2 Colspan=2><Img Src="certspc.gif" Alt="" Height=3 Width=1></TD></TR>
+	<TR>
+		<TD ID=locSpc1><Img Src="certspc.gif" Alt="" Height=1 Width=20></TD>
+		
+		<TD><Font ID=locLinkFont1 Face="Arial">
+			<Span tabindex=0 Style="cursor:hand; color:#0000FF; text-decoration:underline;"
+				OnContextMenu="return false;"
+				OnMouseOver="window.status='Server Authentication Certificate (Monday  July 24  2006 4:59:35 PM)'; return true;" 
+				OnMouseOut="window.status=''; return true;" 
+				OnKeyDown="if (13==event.keyCode) {CheckPending2('65', '131072', 'no');return false;} else if (9==event.keyCode) {return true;};return false;"
+				OnClick="CheckPending2('65', '131072', 'no');return false;"
+				>Server Authentication Certificate (Monday  July 24  2006 4:59:35 PM)</Span>
+		</Font></TD>
+		
+	</TR>
+
+	<TR><TD ID=locSpc2 Colspan=2><Img Src="certspc.gif" Alt="" Height=3 Width=1></TD></TR>
+	<TR>
+		<TD ID=locSpc1><Img Src="certspc.gif" Alt="" Height=1 Width=20></TD>
+		
+		<TD><Font ID=locLinkFont1 Face="Arial">
+			<Span tabindex=0 Style="cursor:hand; color:#0000FF; text-decoration:underline;"
+				OnContextMenu="return false;"
+				OnMouseOver="window.status='Server Authentication Certificate (Monday  July 24  2006 5:02:29 PM)'; return true;" 
+				OnMouseOut="window.status=''; return true;" 
+				OnKeyDown="if (13==event.keyCode) {CheckPending2('66', '131072', 'no');return false;} else if (9==event.keyCode) {return true;};return false;"
+				OnClick="CheckPending2('66', '131072', 'no');return false;"
+				>Server Authentication Certificate (Monday  July 24  2006 5:02:29 PM)</Span>
+		</Font></TD>
+		
+	</TR>
+
+	<TR><TD ID=locSpc2 Colspan=2><Img Src="certspc.gif" Alt="" Height=3 Width=1></TD></TR>
+	<TR>
+		<TD ID=locSpc1><Img Src="certspc.gif" Alt="" Height=1 Width=20></TD>
+		
+		<TD><Font ID=locLinkFont1 Face="Arial">
+			<Span tabindex=0 Style="cursor:hand; color:#0000FF; text-decoration:underline;"
+				OnContextMenu="return false;"
+				OnMouseOver="window.status='Server Authentication Certificate (Monday  July 24  2006 5:10:01 PM)'; return true;" 
+				OnMouseOut="window.status=''; return true;" 
+				OnKeyDown="if (13==event.keyCode) {CheckPending2('67', '131072', 'no');return false;} else if (9==event.keyCode) {return true;};return false;"
+				OnClick="CheckPending2('67', '131072', 'no');return false;"
+				>Server Authentication Certificate (Monday  July 24  2006 5:10:01 PM)</Span>
+		</Font></TD>
+		
+	</TR>
+
+	<TR><TD ID=locSpc2 Colspan=2><Img Src="certspc.gif" Alt="" Height=3 Width=1></TD></TR>
+	<TR>
+		<TD ID=locSpc1><Img Src="certspc.gif" Alt="" Height=1 Width=20></TD>
+		
+		<TD><Font ID=locLinkFont1 Face="Arial">
+			<Span tabindex=0 Style="cursor:hand; color:#0000FF; text-decoration:underline;"
+				OnContextMenu="return false;"
+				OnMouseOver="window.status='Server Authentication Certificate (Monday  July 24  2006 5:17:51 PM)'; return true;" 
+				OnMouseOut="window.status=''; return true;" 
+				OnKeyDown="if (13==event.keyCode) {CheckPending2('68', '131072', 'no');return false;} else if (9==event.keyCode) {return true;};return false;"
+				OnClick="CheckPending2('68', '131072', 'no');return false;"
+				>Server Authentication Certificate (Monday  July 24  2006 5:17:51 PM)</Span>
+		</Font></TD>
+		
+	</TR>
+
+	<TR><TD ID=locSpc2 Colspan=2><Img Src="certspc.gif" Alt="" Height=3 Width=1></TD></TR>
+	<TR>
+		<TD ID=locSpc1><Img Src="certspc.gif" Alt="" Height=1 Width=20></TD>
+		
+		<TD><Font ID=locLinkFont1 Face="Arial">
+			<Span tabindex=0 Style="cursor:hand; color:#0000FF; text-decoration:underline;"
+				OnContextMenu="return false;"
+				OnMouseOver="window.status='Server Authentication Certificate (Monday  July 24  2006 5:20:17 PM)'; return true;" 
+				OnMouseOut="window.status=''; return true;" 
+				OnKeyDown="if (13==event.keyCode) {CheckPending2('69', '131072', 'no');return false;} else if (9==event.keyCode) {return true;};return false;"
+				OnClick="CheckPending2('69', '131072', 'no');return false;"
+				>Server Authentication Certificate (Monday  July 24  2006 5:20:17 PM)</Span>
+		</Font></TD>
+		
+	</TR>
+
+	<TR><TD ID=locSpc2 Colspan=2><Img Src="certspc.gif" Alt="" Height=3 Width=1></TD></TR>
+	<TR>
+		<TD ID=locSpc1><Img Src="certspc.gif" Alt="" Height=1 Width=20></TD>
+		
+		<TD><Font ID=locLinkFont1 Face="Arial">
+			<Span tabindex=0 Style="cursor:hand; color:#0000FF; text-decoration:underline;"
+				OnContextMenu="return false;"
+				OnMouseOver="window.status='Server Authentication Certificate (Monday  July 24  2006 5:30:16 PM)'; return true;" 
+				OnMouseOut="window.status=''; return true;" 
+				OnKeyDown="if (13==event.keyCode) {CheckPending2('70', '131072', 'no');return false;} else if (9==event.keyCode) {return true;};return false;"
+				OnClick="CheckPending2('70', '131072', 'no');return false;"
+				>Server Authentication Certificate (Monday  July 24  2006 5:30:16 PM)</Span>
+		</Font></TD>
+		
+	</TR>
+
+</Table>
+
+
+</P>
+
+<!-- Green HR --><Table Border=0 CellSpacing=0 CellPadding=0 Width=100%><TR><TD BgColor=#008080><Img Src="certspc.gif" Alt="" Height=2 Width=1></TD></TR></Table>
+<!-- White HR --><Table Border=0 CellSpacing=0 CellPadding=0 Width=100%><TR><TD BgColor=#FFFFFF><Img Src="certspc.gif" Alt="" Height=5 Width=1></TD></TR></Table>
+
+
+
+
+</Font>
+<!-- ############################################################ -->
+<!-- End of standard text. Scripts follow  -->
+
+
+<!-- This form we fill in and submit 'by hand'-->
+<Form Name=SubmittedData Action="certfnsh.asp" Method=Post>
+	<Input Type=Hidden Name=Mode>             <!-- used in request ('newreq'|'chkpnd') -->
+	<Input Type=Hidden Name=ReqID>            <!-- used in request -->
+	<Input Type=Hidden Name=TargetStoreFlags> <!-- used on install ('0'|CSSLM)-->
+	<Input Type=Hidden Name=SaveCert>         <!-- used on install ('no'|'yes')-->
+</FORM>
+	
+<Script Language="JavaScript">
+
+
+	function CheckPending2(sReqID, sTargetStoreFlags, sSaveCert) {
+		// fill out the submission form
+		document.SubmittedData.Mode.value='chkpnd';
+		document.SubmittedData.ReqID.value=sReqID;
+		document.SubmittedData.TargetStoreFlags.value=sTargetStoreFlags;
+		document.SubmittedData.SaveCert.value=sSaveCert;
+		
+		// Submit the cert request and move forward in the wizard
+		document.SubmittedData.submit();
+	}
+</Script>
+
+
+</Body>
+</HTML>
