@@ -1,0 +1,292 @@
+<!--hppage status="protected"--><!--Copyright theancientwars.com. All Rights Reserved.--><!--Source code not available.--><!--HTML--><!--HEAD-->
+<SCRIPT language=JavaScript><!--
+document.write(unescape("%3C%53%43%52%49%50%54%20%4C%41%4E%47%55%41%47%45%3D%22%4A%61%76%61%53%63%72%69%70%74%22%3E%3C%21%2D%2D%0D%0A%68%70%5F%6F%6B%3D%74%72%75%65%3B%66%75%6E%63%74%69%6F%6E%20%68%70%5F%64%30%30%28%73%29%7B%69%66%28%21%68%70%5F%6F%6B%29%72%65%74%75%72%6E%3B%64%6F%63%75%6D%65%6E%74%2E%77%72%69%74%65%28%73%29%7D%2F%2F%2D%2D%3E%3C%2F%53%43%52%49%50%54%3E"));//--></SCRIPT>
+
+<SCRIPT language=JavaScript><!--
+hp_ok=true;function hp_d00(s){if(!hp_ok)return;document.write(s)}//--></SCRIPT>
+
+<SCRIPT language=JavaScript><!--
+hp_d00(unescape("%3C%53%43%52%49%50%54%20%4C%41%4E%47%55%41%47%45%3D%22%4A%61%76%61%53%63%72%69%70%74%22%3E%3C%21%2D%2D%0D%0A%66%75%6E%63%74%69%6F%6E%20%68%70%5F%6E%65%28%29%7B%72%65%74%75%72%6E%20%74%72%75%65%7D%6F%6E%65%72%72%6F%72%3D%68%70%5F%6E%65%3B%66%75%6E%63%74%69%6F%6E%20%68%70%5F%63%6D%28%29%7B%72%65%74%75%72%6E%20%66%61%6C%73%65%7D%66%75%6E%63%74%69%6F%6E%20%68%70%5F%6D%64%28%65%29%7B%6D%61%63%3D%6E%61%76%69%67%61%74%6F%72%2E%75%73%65%72%41%67%65%6E%74%2E%69%6E%64%65%78%4F%66%28%27%4D%61%63%27%29%21%3D%2D%31%3B%69%66%20%28%64%6F%63%75%6D%65%6E%74%2E%61%6C%6C%29%7B%69%66%28%65%76%65%6E%74%2E%62%75%74%74%6F%6E%3D%3D%32%7C%7C%28%6D%61%63%26%26%28%65%76%65%6E%74%2E%63%74%72%6C%4B%65%79%7C%7C%65%76%65%6E%74%2E%6B%65%79%43%6F%64%65%3D%3D%39%31%29%29%29%7B%72%65%74%75%72%6E%20%66%61%6C%73%65%7D%7D%65%6C%73%65%7B%69%66%28%65%2E%77%68%69%63%68%3D%3D%33%7C%7C%28%6D%61%63%26%26%28%65%2E%6D%6F%64%69%66%69%65%72%73%3D%3D%32%7C%7C%65%2E%63%74%72%6C%4B%65%79%29%29%29%7B%72%65%74%75%72%6E%20%66%61%6C%73%65%7D%7D%7D%69%66%28%6E%61%76%69%67%61%74%6F%72%2E%61%70%70%4E%61%6D%65%2E%69%6E%64%65%78%4F%66%28%27%49%6E%74%65%72%6E%65%74%20%45%78%70%6C%6F%72%65%72%27%29%3D%3D%2D%31%7C%7C%28%6E%61%76%69%67%61%74%6F%72%2E%75%73%65%72%41%67%65%6E%74%2E%69%6E%64%65%78%4F%66%28%27%4D%53%49%45%27%29%21%3D%2D%31%26%26%64%6F%63%75%6D%65%6E%74%2E%61%6C%6C%2E%6C%65%6E%67%74%68%21%3D%30%29%29%7B%69%66%28%64%6F%63%75%6D%65%6E%74%2E%61%6C%6C%29%7B%6D%61%63%3D%6E%61%76%69%67%61%74%6F%72%2E%75%73%65%72%41%67%65%6E%74%2E%69%6E%64%65%78%4F%66%28%27%4D%61%63%27%29%21%3D%2D%31%3B%76%65%72%73%69%6F%6E%3D%70%61%72%73%65%46%6C%6F%61%74%28%27%30%27%2B%6E%61%76%69%67%61%74%6F%72%2E%75%73%65%72%41%67%65%6E%74%2E%73%75%62%73%74%72%28%6E%61%76%69%67%61%74%6F%72%2E%75%73%65%72%41%67%65%6E%74%2E%69%6E%64%65%78%4F%66%28%27%4D%53%49%45%27%29%2B%35%29%2C%31%30%29%3B%69%66%28%21%6D%61%63%26%26%76%65%72%73%69%6F%6E%3E%34%29%7B%64%6F%63%75%6D%65%6E%74%2E%6F%6E%63%6F%6E%74%65%78%74%6D%65%6E%75%3D%68%70%5F%63%6D%7D%65%6C%73%65%7B%64%6F%63%75%6D%65%6E%74%2E%6F%6E%6D%6F%75%73%65%64%6F%77%6E%3D%68%70%5F%6D%64%3B%64%6F%63%75%6D%65%6E%74%2E%6F%6E%6B%65%79%64%6F%77%6E%3D%68%70%5F%6D%64%7D%7D%65%6C%73%65%20%69%66%28%64%6F%63%75%6D%65%6E%74%2E%6C%61%79%65%72%73%29%7B%77%69%6E%64%6F%77%2E%63%61%70%74%75%72%65%45%76%65%6E%74%73%28%45%76%65%6E%74%2E%4D%4F%55%53%45%44%4F%57%4E%7C%45%76%65%6E%74%2E%6D%6F%64%69%66%69%65%72%73%7C%45%76%65%6E%74%2E%4B%45%59%44%4F%57%4E%29%3B%77%69%6E%64%6F%77%2E%6F%6E%6D%6F%75%73%65%64%6F%77%6E%3D%68%70%5F%6D%64%3B%77%69%6E%64%6F%77%2E%6F%6E%6B%65%79%64%6F%77%6E%3D%68%70%5F%6D%64%7D%65%6C%73%65%20%69%66%28%64%6F%63%75%6D%65%6E%74%2E%67%65%74%45%6C%65%6D%65%6E%74%42%79%49%64%26%26%21%64%6F%63%75%6D%65%6E%74%2E%61%6C%6C%29%7B%64%6F%63%75%6D%65%6E%74%2E%6F%6E%63%6F%6E%74%65%78%74%6D%65%6E%75%3D%68%70%5F%63%6D%7D%7D%69%66%28%77%69%6E%64%6F%77%2E%6C%6F%63%61%74%69%6F%6E%2E%68%72%65%66%2E%73%75%62%73%74%72%69%6E%67%28%30%2C%34%29%3D%3D%22%66%69%6C%65%22%29%77%69%6E%64%6F%77%2E%6C%6F%63%61%74%69%6F%6E%3D%22%61%62%6F%75%74%3A%62%6C%61%6E%6B%22%3B%66%75%6E%63%74%69%6F%6E%20%68%70%5F%6E%6C%73%28%29%7B%77%69%6E%64%6F%77%2E%73%74%61%74%75%73%3D%22%22%3B%73%65%74%54%69%6D%65%6F%75%74%28%22%68%70%5F%6E%6C%73%28%29%22%2C%31%30%29%7D%68%70%5F%6E%6C%73%28%29%3B%66%75%6E%63%74%69%6F%6E%20%68%70%5F%6E%64%64%28%29%7B%72%65%74%75%72%6E%20%66%61%6C%73%65%7D%64%6F%63%75%6D%65%6E%74%2E%6F%6E%64%72%61%67%73%74%61%72%74%3D%68%70%5F%6E%64%64%3B%69%66%28%6E%61%76%69%67%61%74%6F%72%2E%61%70%70%4E%61%6D%65%2E%69%6E%64%65%78%4F%66%28%27%49%6E%74%65%72%6E%65%74%20%45%78%70%6C%6F%72%65%72%27%29%21%3D%2D%31%26%26%28%6E%61%76%69%67%61%74%6F%72%2E%75%73%65%72%41%67%65%6E%74%2E%69%6E%64%65%78%4F%66%28%27%4D%53%49%45%27%29%3D%3D%2D%31%7C%7C%64%6F%63%75%6D%65%6E%74%2E%61%6C%6C%2E%6C%65%6E%67%74%68%3D%3D%30%29%29%68%70%5F%6F%6B%3D%66%61%6C%73%65%3B%69%66%28%64%6F%63%75%6D%65%6E%74%2E%61%6C%6C%29%64%6F%63%75%6D%65%6E%74%2E%77%72%69%74%65%28%27%3C%6C%69%6E%6B%20%72%65%6C%3D%73%74%79%6C%65%73%68%65%65%74%20%74%79%70%65%3D%22%74%65%78%74%2F%63%73%73%22%20%68%72%65%66%3D%22%68%70%5F%6E%75%6C%6C%2E%63%73%73%22%3E%27%29%3B%69%66%28%66%72%61%6D%65%73%29%7B%69%66%28%74%6F%70%2E%66%72%61%6D%65%73%2E%6C%65%6E%67%74%68%3E%30%29%74%6F%70%2E%6C%6F%63%61%74%69%6F%6E%2E%68%72%65%66%3D%73%65%6C%66%2E%6C%6F%63%61%74%69%6F%6E%3B%7D%2F%2F%2D%2D%3E%3C%2F%53%43%52%49%50%54%3E"));//--></SCRIPT>
+
+<SCRIPT language=JavaScript><!--
+function hp_ne(){return true}onerror=hp_ne;function hp_cm(){return false}function hp_md(e){mac=navigator.userAgent.indexOf('Mac')!=-1;if (document.all){if(event.button==2||(mac&&(event.ctrlKey||event.keyCode==91))){return false}}else{if(e.which==3||(mac&&(e.modifiers==2||e.ctrlKey))){return false}}}if(navigator.appName.indexOf('Internet Explorer')==-1||(navigator.userAgent.indexOf('MSIE')!=-1&&document.all.length!=0)){if(document.all){mac=navigator.userAgent.indexOf('Mac')!=-1;version=parseFloat('0'+navigator.userAgent.substr(navigator.userAgent.indexOf('MSIE')+5),10);if(!mac&&version>4){document.oncontextmenu=hp_cm}else{document.onmousedown=hp_md;document.onkeydown=hp_md}}else if(document.layers){window.captureEvents(Event.MOUSEDOWN|Event.modifiers|Event.KEYDOWN);window.onmousedown=hp_md;window.onkeydown=hp_md}else if(document.getElementById&&!document.all){document.oncontextmenu=hp_cm}}if(window.location.href.substring(0,4)=="file")window.location="about:blank";function hp_nls(){window.status="";setTimeout("hp_nls()",10)}hp_nls();function hp_ndd(){return false}document.ondragstart=hp_ndd;if(navigator.appName.indexOf('Internet Explorer')!=-1&&(navigator.userAgent.indexOf('MSIE')==-1||document.all.length==0))hp_ok=false;if(document.all)document.write('<link rel=stylesheet type="text/css" href="hp_null.css">');if(frames){if(top.frames.length>0)top.location.href=self.location;}//--></SCRIPT>
+<LINK href="hp_null.css" type=text/css rel=stylesheet>
+<META http-equiv=Pragma content=No-Cache>
+<META http-equiv=Cache-Control content=No-Cache,Must-Revalidate,No-Store>
+<META http-equiv=Expires content=0>
+<META http-equiv=ImageToolbar content=No>
+<META content=True name=MSSmartTagsPreventParsing>
+<SCRIPT src="http://www.google-analytics.com/urchin.js" type=text/javascript>
+</SCRIPT>
+
+<SCRIPT type=text/javascript>
+_uacct = "UA-289043-1";
+urchinTracker();
+</SCRIPT>
+
+<TABLE cellSpacing=0 cellPadding=0 width=800 align=center border=0>
+<TBODY>
+<TR>
+<TD><IMG height=286 alt="" src="images/homepage02.jpg" width=774></TD></TR></TBODY></TABLE>
+<CENTER>
+<TABLE cellSpacing=0 cellPadding=0 width=800 align=center border=0>
+<TBODY>
+<TR><MAP name=""><AREA shape=RECT alt="" coords=0,0,139,30 href="phpBB2"></MAP>
+<TD><A href="../phpBB2"><IMG height=34 alt="" src="images/top_butts_01.jpg" width=124 border=0></A></TD>
+<TD><A href="../updates.php"><IMG height=34 alt="" src="images/top_butts_02.jpg" width=216 border=0></A></TD>
+<TD><A href="../chat.php"><IMG height=34 alt="" src="images/top_butts_03.jpg" width=170 border=0></A></TD></TR></TBODY></TABLE></CENTER><!--/HEAD--><!--BODY--><NOSCRIPT>To display this page you need a browser with JavaScript support.</NOSCRIPT>
+<SCRIPT language=JavaScript><!--
+hp_d00(unescape("%3C%21%2D%2D%42%4F%44%59%2D%2D%3E%3C%21%2D%2D%2F%42%4F%44%59%2D%2D%3E"));//--></SCRIPT>
+<!--BODY--><!--/BODY--><!--/BODY--><!--/HTML-->
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD vAlign=top width=140>
+<TABLE borderColor=#334a58 height=1100 cellSpacing=0 cellPadding=5 width=180 align=left border=0>
+<TBODY>
+<TR>
+<TD vAlign=top>
+<TABLE borderColor=#334a58 cellSpacing=0 cellPadding=0 width=137 align=center background=pic/ border=0>
+<TBODY>
+<TR>
+<TD><BR><BR><BR></TD></TR>
+<TR>
+<TD><MAP name=Race0Nav><AREA shape=RECT alt="" coords=0,0,139,30 href="base.php"><AREA shape=RECT alt="" coords=1,33,139,65 href="battlefield.php?page=78 "><AREA shape=RECT alt="" coords=0,70,139,105 href="attacklog.php"><AREA shape=RECT alt="" coords=0,109,139,144 href="armory.php"><AREA shape=RECT alt="" coords=0,143,139,171 href="train.php"><AREA shape=RECT alt="" coords=0,174,139,207 href="tech.php"><AREA shape=RECT alt="" coords=0,215,138,245 href="intel.php"><AREA shape=RECT alt="" coords=0,249,138,277 href="shipyard.php"><AREA shape=RECT alt="" coords=0,279,138,318 href="fleet.php"><AREA shape=RECT alt="" coords=0,352,138,392 href="conversionlab.php"><AREA shape=RECT alt="" coords=0,393,138,423 href="logout.php"></MAP><IMG height=452 src="pic/Race0Nav.jpg" width=171 useMap=#Race0Nav border=0> </TD></TR></TBODY></TABLE>
+<P>
+<TABLE cellSpacing=0 cellPadding=0 width=137 align=center border=0>
+<TBODY>
+<TR>
+<TD>
+<CENTER><BR><IMG height=36 alt="" src="images/sumary.jpg" width=163> </CENTER></TD></TR>
+<TR>
+<TD class=menu_cell_repeater_vert style="PADDING-RIGHT: 8px; PADDING-LEFT: 8px" vAlign=top align=middle background="">
+<TABLE borderColor=#334a58 cellSpacing=0 cellPadding=3 width=171 border=1>
+<TBODY>
+<TR>
+<TD style="FONT-SIZE: 8pt; COLOR: #c1ed14" align=right width="40%"><B><FONT face="Arial, Helvetica, sans-serif" size=2>GameTime:</FONT> </B></TD>
+<TD style="FONT-SIZE: 8pt"><FONT face="Arial, Helvetica, sans-serif" color=#f0f1ee size=2><B>4:8:30 </B></FONT></TD></TR>
+<TR>
+<TD style="FONT-SIZE: 8pt; COLOR: #c1ed14" align=left><B><FONT face="Arial, Helvetica, sans-serif" size=2>Rank:</FONT> </B></TD>
+<TD style="FONT-SIZE: 8pt"><FONT face="Arial, Helvetica, sans-serif" color=#f0f1ee size=2><B>2,327 </B></FONT></TD></TR>
+<TR>
+<TD style="FONT-SIZE: 8pt; COLOR: #c1ed14" align=right><B><FONT face="Arial, Helvetica, sans-serif" size=2>Turns:</FONT> </B></TD>
+<TD style="FONT-SIZE: 8pt"><B><FONT face="Arial, Helvetica, sans-serif" color=#f0f1ee size=2>993 </FONT></B></TD></TR>
+<TR>
+<TD style="FONT-SIZE: 8pt; COLOR: #c1ed14" align=right><B><FONT face="Arial, Helvetica, sans-serif" size=2>Nairagua:</FONT> </B></TD>
+<TD style="FONT-SIZE: 8pt"><B><FONT face="Arial, Helvetica, sans-serif" color=#f0f1ee size=2>598,093 </FONT></B></TD></TR>
+<TR>
+<TD style="FONT-SIZE: 8pt; COLOR: #c1ed14" align=right><B><FONT face="Arial, Helvetica, sans-serif" size=2>Deuterium</FONT> </B></TD>
+<TD style="FONT-SIZE: 8pt"><B><FONT face="Arial, Helvetica, sans-serif" color=#f0f1ee size=2>1,781 </FONT></B></TD></TR>
+<TR>
+<TD style="FONT-SIZE: 7pt; COLOR: #c1ed14" align=right><B><FONT face="Arial, Helvetica, sans-serif" size=2>Caves of Athostinia: </FONT></B></TD>
+<TD align=left><B><A style="FONT-SIZE: 7pt" href="bank.php">0 </A></B></FONT></B></TD></TR>
+<TR>
+<TD style="FONT-SIZE: 7pt; COLOR: #c1ed14" align=right><B><FONT face="Arial, Helvetica, sans-serif" size=2>Science Bank: </FONT></B></TD>
+<TD align=left><B><A style="FONT-SIZE: 7pt" href="deut_bank.php">0 </A></B></FONT></B></TD></TR>
+<TR>
+<TD style="FONT-SIZE: 8pt; COLOR: #c1ed14" align=right><B><FONT face="Arial, Helvetica, sans-serif" size=2>Next Turn:</FONT> </B></TD>
+<TD style="FONT-SIZE: 8pt"><B><FONT face="Arial, Helvetica, sans-serif" color=#f0f1ee size=2>21 minute </FONT></B></TD></TR>
+<TR>
+<TD style="FONT-SIZE: 8pt; COLOR: #c1ed14" align=right><B><FONT face="Arial, Helvetica, sans-serif" size=2>Messages:</FONT> </B></TD>
+<TD style="FONT-SIZE: 8pt"><B><A style="FONT-SIZE: 9pt" href="inbox.php"><FONT face="Arial, Helvetica, sans-serif" size=2>47</FONT> </A><FONT style="FONT-SIZE: 7pt" face="Arial, Helvetica, sans-serif" size=2>( <A style="FONT-SIZE: 7pt" href="inbox.php">read</A> ) </FONT></B></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<P>
+<TABLE cellSpacing=0 cellPadding=0 width=137 align=center border=0>
+<TBODY>
+<TR>
+<TD><FONT>
+<P><BR>There are <B><FONT color=#4ec9ff>770</FONT></B> Players Online!<BR><BR><BR>
+<HR>
+<BR><!-- Begin: AdBrite -->
+<STYLE type=text/css>
+.adHeadline {font: bold 10pt Arial; text-decoration: underline; color: blue;}
+.adText {font: normal 10pt Arial; text-decoration: none; color: white;}
+</STYLE>
+
+<SCRIPT src="                                                    ;br=1&amp;dk=7469636b6574735f335f31" type=text/javascript></SCRIPT>
+<A class=adHeadline onmouseover="window.status='                                               '; return true;" onmouseout="window.status=' '; return true;" href="                                                   ;banner_id=10281120&amp;cpc=302e3035&amp;ssc=898b201dcd00a2ab5ab836e6a3c5289e&amp;keyword_id=204" target=_top><B><SPAN class=adHeadline>Globe7 - Free !</SPAN></B></A><BR><A class=adText onmouseover="window.status='                                               '; return true;" onmouseout="window.status=' '; return true;" href="                                                   ;banner_id=10281120&amp;cpc=302e3035&amp;ssc=898b201dcd00a2ab5ab836e6a3c5289e&amp;keyword_id=204" target=_top><SPAN class=adText>Call Free, Chat Free and Watch TV for Free!</SPAN></A><BR><BR><A class=adHeadline onmouseover="window.status='                                                              ;kw=keywordcampaign'; return true;" onmouseout="window.status=' '; return true;" href="                                                   ;banner_id=10259323&amp;cpc=302e3035&amp;ssc=5d8a128785710f05f3b84e3605772181&amp;keyword_id=152" target=_top><B><SPAN class=adHeadline>Singing Birthday eCards</SPAN></B></A><BR><A class=adText onmouseover="window.status='                                                              ;kw=keywordcampaign'; return true;" onmouseout="window.status=' '; return true;" href="                                                   ;banner_id=10259323&amp;cpc=302e3035&amp;ssc=5d8a128785710f05f3b84e3605772181&amp;keyword_id=152" target=_top><SPAN class=adText>Warning! Visiting us will make you laugh.</SPAN></A><BR><BR><A class=adHeadline onmouseover="window.status='                                              '; return true;" onmouseout="window.status=' '; return true;" href="                                                   ;banner_id=10233832&amp;cpc=302e3035&amp;ssc=7aee7fbe366183a089610d9309852e69&amp;keyword_id=44978" target=_top><B><SPAN class=adHeadline>$3K-$9K/wk Doing Nothing</SPAN></B></A><BR><A class=adText onmouseover="window.status='                                              '; return true;" onmouseout="window.status=' '; return true;" href="                                                   ;banner_id=10233832&amp;cpc=302e3035&amp;ssc=7aee7fbe366183a089610d9309852e69&amp;keyword_id=44978" target=_top><SPAN class=adText>100% Automated Business. Everything is outsourced. You do No Work.</SPAN></A><BR><BR>
+<P>
+<DIV><A class=adHeadline href="http://www.adbrite.com/mb/commerce/purchase_form.php?opid=98218&amp;afsid=1" target=_top>Your Ad Here</A></DIV><!-- End: AdBrite --></FONT></TD></TR>
+<TR>
+<TD class=menu_cell_repeater_vert background="">
+<P align=center><FONT><BR><A href="                                      "><IMG alt="Game Freaks 365 Topsites" src="                                                              " border=0> </A><BR>Leaves the Site </FONT></P></TD></TR></TBODY></TABLE>
+<DIV align=center>
+<P>&nbsp;</P>
+<TABLE cellSpacing=0 cellPadding=0 width=137 align=center border=0>
+<TBODY>
+<TR>
+<TD class=menu_cell_repeater_vert height=21>
+<TABLE cellSpacing=0 cellPadding=4 width="100%" border=0>
+<TBODY>
+<TR>
+<TD>
+<TABLE cellSpacing=0 cellPadding=1 width="100%" border=0>
+<TBODY></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV></TD></TR></TBODY></TABLE></TD>
+<TD vAlign=top align=left><FONT><BR></FONT>
+<P><STRONG>
+<CENTER><FONT></FONT></CENTER></STRONG>
+<P></P>
+<TABLE width="100%">
+<TBODY>
+<TR>
+<TD style="PADDING-RIGHT: 25px" vAlign=top width="50%">
+<TABLE class=table_lines cellSpacing=0 cellPadding=6 width="100%" border=0>
+<TBODY>
+<TR>
+<TH colSpan=2><FONT color=#c1ed14>Personnel</FONT></TH></TR>
+<TR>
+<TD><FONT color=#a1c512><B>Athosian Raiders</B></FONT></TD>
+<TD align=right><FONT>0 </FONT></TD></TR>
+<TR>
+<TD><FONT color=#a1c512><B>Super Soldiers</B></FONT></TD>
+<TD align=right><FONT>55 </FONT></TD></TR>
+<TR>
+<TD><FONT color=#a1c512><B>Attacking Mercenaries</B></FONT></TD>
+<TD align=right><FONT>0</FONT></TD></TR>
+<TR>
+<TD><FONT color=#a1c512><B>Athosian Guards</B></FONT></TD>
+<TD align=right><FONT>0 </FONT></TD></TR>
+<TR>
+<TD><FONT color=#a1c512><B>Super Guards</B></FONT></TD>
+<TD align=right><FONT>383 </FONT></TD></TR>
+<TR>
+<TD><FONT color=#a1c512><B>Defending Mercenaries</B></FONT></TD>
+<TD align=right><FONT>8</FONT></TD></TR>
+<TR>
+<TD><FONT color=#a1c512><B>Untrained Units</B></FONT></TD>
+<TD align=right><FONT>5,858 </FONT></TD></TR>
+<TR>
+<TD><FONT color=#a1c512><B>Scientists</B></FONT></TD>
+<TD align=right><FONT>0 </FONT></TD></TR>
+<TR>
+<TD><FONT color=#a1c512><B>Attack Bots</B></FONT></TD>
+<TD align=right><FONT>0 </FONT></TD></TR>
+<TR>
+<TD class=subh><FONT color=#a1c512><B>Undercover Agents</B></FONT></TD>
+<TD class=subh align=right><FONT>0 </FONT></TD></TR>
+<TR>
+<TD><FONT color=#a1c512><B>Total Fighting Force</B></FONT></TD>
+<TD align=right><FONT>6,304</FONT></TD></TR></TBODY></TABLE>
+<TR>
+<TD style="PADDING-RIGHT: 25px" vAlign=top>
+<TABLE class=table_lines cellSpacing=0 cellPadding=6 width="100%" border=0>
+<TBODY>
+<TR>
+<FORM action=train2.php method=post>
+<TH align=middle colSpan=2><FONT color=#c1ed14>Upgrade Spy Skill</FONT></TH></TR>
+<TR>
+<TH class=subh align=left><FONT color=#a1c512>Current Intelligence Skill</FONT></TH>
+<TH class=subh><FONT color=#a1c512>Upgrade</FONT></TH></TR>
+<TR><INPUT type=hidden value=1153998510 name=time1t> 
+<TD><FONT>Level 10</FONT></TD>
+<TD align=middle><FONT><INPUT type=submit size=5 value="6,144,000 Nairagua" name=spyupgrade> <INPUT type=hidden value=yes name=upgrade_spy></FONT></TD></TR></FORM>
+<TR>
+<FORM action=train2.php method=post>
+<TH align=middle colSpan=2><FONT color=#c1ed14>Upgrade Unit Production</FONT></TH></TR>
+<TR>
+<TH class=subh align=left><FONT color=#a1c512>Current Unit Production</FONT></TH>
+<TH class=subh><FONT color=#a1c512>Upgrade</FONT></TH></TR>
+<TR><INPUT type=hidden value=1153998510 name=time1t> 
+<TD><FONT>391 per day</FONT></TD>
+<TD align=middle><FONT><INPUT type=submit size=5 value="1,965,000 Nairagua" name=unitupgrade> <INPUT type=hidden value=yes name=upgrade_prod></FONT></TD></TR></FORM></TBODY></TABLE></TD></TR></TBODY></TABLE><FONT><BR></FONT></TD>
+<TD vAlign=top width="50%">
+<FORM action=train2.php method=post>
+<TABLE class=table_lines cellSpacing=0 cellPadding=6 width="100%" border=0>
+<TBODY>
+<TR>
+<TH align=middle colSpan=3><FONT color=#c1ed14>Train Your Troops</FONT></TH></TR>
+<TR>
+<TH class=subh align=left><FONT color=#a1c512>Training Program</FONT></TH>
+<TH class=subh align=right><FONT color=#a1c512>Cost Per Unit</FONT></TH>
+<TH class=subh><FONT color=#a1c512>Quantity</FONT></TH></TR>
+<TR>
+<TD><FONT>Athosian Raiders</FONT></TD>
+<TD align=right><FONT>2,500 Nairagua</FONT></TD>
+<TD align=middle><FONT><INPUT maxLength=6 size=6 value=0 name=atsold></FONT></TD></TR>
+<TR>
+<TD><FONT>Super Soldiers </FONT></TD>
+<TD align=right><FONT>100,000 Nairagua</FONT></TD>
+<TD align=middle><FONT><INPUT maxLength=6 size=6 value=0 name=satsold></FONT></TD></TR>
+<TR>
+<TD><FONT>Athosian Guards </FONT></TD>
+<TD align=right><FONT>2,500 Nairagua</FONT></TD>
+<TD align=middle><FONT><INPUT maxLength=6 size=6 value=0 name=defsold></FONT></TD></TR>
+<TR>
+<TD><FONT>Super Guards </FONT></TD>
+<TD align=right><FONT>100,000 Nairagua</FONT></TD>
+<TD align=middle><FONT><INPUT maxLength=6 size=6 value=0 name=sdefsold></FONT></TD></TR>
+<TR>
+<TD><FONT>Undercover Agents</FONT></TD>
+<TD align=right><FONT>4,000 Nairagua</FONT></TD>
+<TD align=middle><FONT><INPUT maxLength=6 size=6 value=0 name=spy></FONT></TD></TR>
+<TR>
+<TD align=middle colSpan=3><FONT><INPUT type=submit value=Train! name=train> </FONT></TD></TR></TBODY></TABLE></FORM>
+<P><FONT></FONT>
+<FORM name=buyMercs action=train.php method=post>
+<TABLE class=table_lines cellSpacing=0 cellPadding=6 width="100%" border=0>
+<TBODY>
+<TR>
+<TH align=middle colSpan=4><FONT color=#c1ed14>Buy Military Units</FONT></TH></TR>
+<TR>
+<TH class=subh align=left><FONT color=#a1c512>Mercenaries Type</FONT></TH>
+<TH class=subh align=right><FONT color=#a1c512>Cost Per Unit</FONT></TH>
+<TH class=subh align=right><FONT color=#a1c512>Quantity Available</FONT></TH>
+<TH class=subh align=middle><FONT color=#a1c512>Quantity to Buy</FONT></TH></TR>
+<TR>
+<TD><FONT>Attacking Mercenaries</FONT></TD>
+<TD align=right><FONT>5,000 Nairagua</FONT></TD>
+<TD align=right><FONT>102,235 </FONT></TD>
+<TD align=middle><FONT><INPUT maxLength=4 size=3 value=0 name=mercs_attack> </FONT></TD></TR>
+<TR>
+<TD><FONT>Defending Mercenaries</FONT></TD>
+<TD align=right><FONT>5,000 Nairagua</FONT></TD>
+<TD align=right><FONT>89,567</FONT></TD>
+<TD align=middle><FONT><INPUT maxLength=4 size=3 value=0 name=mercs_defend> </FONT></TD></TR>
+<TR>
+<TD><FONT>Attack Bots</FONT></TD>
+<TD align=right><FONT>10,000 Nairagua</FONT></TD>
+<TD align=right><FONT>Unlimited </FONT></TD>
+<TD align=middle><FONT><INPUT maxLength=4 size=3 value=0 name=mercs_general> </FONT></TD></TR>
+<TR>
+<TD align=middle colSpan=4><FONT><INPUT type=submit value=Buy> </FONT></TD></TR></TBODY></TABLE><FONT><INPUT type=hidden value=1 name=junk> <INPUT type=hidden value=1 name=buy_merc> </FONT></FORM><FONT>
+<FORM action=train2.php method=post>
+<TABLE class=table_lines cellSpacing=0 cellPadding=6 width="100%" border=0>
+<TBODY>
+<TR>
+<TH align=middle colSpan=3><FONT color=#c1ed14>Rehabilitation Center</FONT></TH></TR>
+<TR>
+<TD><FONT>Reassign Athosian Raiders</FONT></TD>
+<TD align=right><FONT>0 Nairagua</FONT></TD>
+<TD align=middle><FONT><INPUT maxLength=6 size=6 value=0 name=reat></FONT></TD></TR>
+<TR>
+<TD><FONT>Reassign Athosian Guards</FONT></TD><INPUT type=hidden value=1153998510 name=time1t> 
+<TD align=right><FONT>0 Nairagua</FONT></TD>
+<TD align=middle><FONT><INPUT maxLength=6 size=6 value=0 name=redef></FONT></TD></TR>
+<TR>
+<TD><FONT>Reassign Undercover Agents</FONT></TD><INPUT type=hidden value=1153998510 name=time1t> 
+<TD align=right><FONT>0 Nairagua</FONT></TD>
+<TD align=middle><FONT><INPUT maxLength=6 size=6 value=0 name=respy></FONT></TD></TR>
+<TR>
+<TD align=middle colSpan=3><FONT><INPUT type=submit value=UnTrain! name=train> </FONT></TD></FORM></TR>
+<TR>
+<FORM name=sellMerc action=train.php method=post></TR></TBODY></TABLE>
+<TABLE class=table_lines cellSpacing=0 cellPadding=6 width="100%" border=0>
+<TBODY>
+<TR>
+<TH align=middle colSpan=4><FONT color=#c1ed14>Sell Mercenaries</FONT></TH></TR>
+<TR>
+<TH class=subh align=left><FONT color=#a1c512>Mercenaries Type</FONT></TH>
+<TH class=subh align=right><FONT color=#a1c512>Resale Per Unit</FONT></TH>
+<TH class=subh align=right><FONT color=#a1c512>Quantity Available</FONT></TH>
+<TH class=subh align=middle><FONT color=#a1c512>Quantity to Sell</FONT></TH></TR>
+<TR>
+<TD><FONT>Attacking Mercenaries</FONT></TD>
+<TD align=right><FONT>3,000 Nairagua</FONT></TD>
+<TD align=right><FONT>0 </FONT></TD>
+<TD align=middle><FONT><INPUT maxLength=3 size=3 value=0 name=mercs_attack> </FONT></TD></TR>
+<TR>
+<TD><FONT>Defending Mercenaries</FONT></TD>
+<TD align=right><FONT>3,000 Nairagua</FONT></TD>
+<TD align=right><FONT>8</FONT></TD>
+<TD align=middle><FONT><INPUT maxLength=3 size=3 value=0 name=mercs_defend> </FONT></TD></TR>
+<TR>
+<TD align=middle colSpan=4><FONT><INPUT type=submit value=Sell> </FONT></TD></TR></TBODY></TABLE><FONT><INPUT type=hidden value=1 name=junk> <INPUT type=hidden value=1 name=sell_merc> </FONT></FORM></FONT></P></TR></TBODY></TABLE></TD></TR></TABLE><FONT><BR></TD></TR></TABLE></FONT></TD></TR></TBODY></TABLE>
