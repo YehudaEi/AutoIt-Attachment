@@ -1,0 +1,75 @@
+#include <IE.au3>
+
+	$oIE = _IECreate ("justdial.com");
+
+	WinSetState("","",@SW_MAXIMIZE);
+	sleep(10000)
+
+	Send("+{TAB}");
+   
+	Send("{LEFT}");
+	Sleep(500)
+   
+	Send("{TAB}")
+   
+	Sleep(1000)
+   
+	controlEnable ("Just Dial - India's No.1 local search engine", "", "txt1_cat" )
+	ControlFocus ("Just Dial - India's No.1 local search engine", "", "txt1_cat" );
+	send ("jewellery");
+   
+	Sleep(2000)
+    
+ 	Send("+{TAB}");
+ 	Send("+{TAB}");
+
+	ControlFocus ("Just Dial - India's No.1 local search engine", "", "txt2" );
+	$o_object = _IEGetObjById ( $oIE, "txt2");
+	_IEAction ( $o_object, "delete" );
+	Sleep(200);
+	_IEDocInsertText ( $o_object, "udupi");
+
+	Sleep(2000)
+	controlEnable ("Just Dial - India's No.1 local search engine", "GO", "gobutton" )
+	ControlFocus ("Just Dial - India's No.1 local search engine", "", "gobutton" );
+	Sleep(1000)
+	Send("{ENTER}");
+	Sleep(10000)
+   
+	WinActivate("Just Dial - India's No.1 local search engine","")
+
+	sleep(3000);
+;~ 	$oLinks = _IELinkGetCollection ($oIE)
+
+;~ 	For $oLink In $oLinks
+;~ 		MsgBox(0, "Link Info", $oLink.href)
+;~ 	Next
+
+;~ popsearchfont
+
+;~ $var = ControlGetText("Just Dial - India's No.1 local search engine", "", "popsearchfont")
+;~ MsgBox(1, "", $var);
+
+	
+;_IEFrameGetCollection
+$o_object = _IEGetObjById ( $oIE, "txt2");
+$oLinks = _IELinkGetCollection()
+$sMyString = "jewellery"
+$oLinks = _IELinkGetCollection($oIE)
+For $oLink in $oLinks
+    $sLinkText = _IEPropertyGet($oLink, "innerhtml")
+    If StringInStr($sLinkText, $sMyString) Then
+        _IEAction($oLink, "click")
+        ExitLoop
+    EndIf
+Next
+
+
+sleep(5000);
+send("!T");
+send("o");
+sleep(1000);
+send("!i");
+send ("{Enter}");
+sleep(3000);
+send ("{Enter}");
