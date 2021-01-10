@@ -1,0 +1,230 @@
+11:56:35:624	----------
+11:56:35:624	EnumerateAdapters
+11:56:36:399	DoInit
+11:56:36:400	WinVer = 6.0 Service Pack 1
+11:56:36:475	DoInit Finished
+11:56:36:476	Adapters: 1
+11:56:36:476	EnumerateAdapters Finished, result=1
+12:05:29:888	----------
+12:05:29:888	EnumerateAdapters
+12:05:30:702	DoInit
+12:05:30:702	WinVer = 6.0 Service Pack 1
+12:05:30:773	DoInit Finished
+12:05:30:775	Adapters: 1
+12:05:30:775	EnumerateAdapters Finished, result=1
+12:06:09:939	----------
+12:06:09:939	EnumerateAdapters
+12:06:10:585	DoInit
+12:06:10:586	WinVer = 6.0 Service Pack 1
+12:06:10:661	DoInit Finished
+12:06:10:663	Adapters: 1
+12:06:10:663	EnumerateAdapters Finished, result=1
+12:06:42:533	----------
+12:06:42:533	EnumerateAdapters
+12:06:43:303	DoInit
+12:06:43:304	WinVer = 6.0 Service Pack 1
+12:06:43:381	DoInit Finished
+12:06:43:386	Adapters: 1
+12:06:43:387	EnumerateAdapters Finished, result=1
+12:06:43:412	GetAdapterName
+12:06:43:413	Adapter name: Intel(R) PRO/Wireless 3945ABG Network Connection
+12:06:43:413	GetAdapterName Finished, result=48
+12:45:27:369	----------
+12:45:27:374	EnumerateAdapters
+12:45:28:143	DoInit
+12:45:28:143	WinVer = 6.0 Service Pack 1
+12:45:28:218	DoInit Finished
+12:45:28:219	Adapters: 1
+12:45:28:220	EnumerateAdapters Finished, result=1
+12:50:46:504	----------
+12:50:46:504	EnumerateAdapters
+12:50:47:309	DoInit
+12:50:47:309	WinVer = 6.0 Service Pack 1
+12:50:47:383	DoInit Finished
+12:50:47:389	Adapters: 1
+12:50:47:389	EnumerateAdapters Finished, result=1
+12:50:47:403	GetAdapterName
+12:50:47:404	Adapter name: Intel(R) PRO/Wireless 3945ABG Network Connection
+12:50:47:404	GetAdapterName Finished, result=48
+12:50:49:093	EnumerateAvailableNetworks
+12:50:49:093	Scanning
+12:50:51:230	Scanning OK
+12:50:51:230	EnumerateAvailableNetworks Finished, result=2
+12:50:51:230	GetAvailableNetworkName
+12:50:51:230	GetAvailableNetworkName Finished
+12:50:51:230	GetAvailableNetworkSignalQuality
+12:50:51:230	GetAvailableNetworkSignalQuality Finished, result=99
+12:50:51:230	GetAvailableNetworkType
+12:50:51:230	GetAvailableNetworkType Finished, result=1
+12:50:51:230	IsAvailableNetworkSecure
+12:50:51:230	IsAvailableNetworkSecure Finished, result=0
+12:50:51:230	GetAvailableNetworkAuthMode
+12:50:51:230	Auth: 1
+12:50:51:245	GetAvailableNetworkAuthMode Finished, result=0
+12:50:51:245	GetAvailableNetworkCipherMode
+12:50:51:245	GetAvailableNetworkCipherMode Finished, result=0
+12:50:51:245	GetAvailableNetworkName
+12:50:51:245	GetAvailableNetworkName Finished
+12:50:51:245	GetAvailableNetworkSignalQuality
+12:50:51:245	GetAvailableNetworkSignalQuality Finished, result=30
+12:50:51:245	GetAvailableNetworkType
+12:50:51:245	GetAvailableNetworkType Finished, result=1
+12:50:51:245	IsAvailableNetworkSecure
+12:50:51:245	IsAvailableNetworkSecure Finished, result=0
+12:50:51:245	GetAvailableNetworkAuthMode
+12:50:51:245	Auth: 1
+12:50:51:245	GetAvailableNetworkAuthMode Finished, result=0
+12:50:51:245	GetAvailableNetworkCipherMode
+12:50:51:245	GetAvailableNetworkCipherMode Finished, result=0
+12:50:56:175	EnumerateAvailableNetworks
+12:50:56:175	Scanning
+12:50:58:406	Scanning OK
+12:50:58:406	EnumerateAvailableNetworks Finished, result=2
+12:50:58:406	GetAvailableNetworkName
+12:50:58:406	GetAvailableNetworkName Finished
+12:50:58:406	GetAvailableNetworkSignalQuality
+12:50:58:406	GetAvailableNetworkSignalQuality Finished, result=99
+12:50:58:406	GetAvailableNetworkType
+12:50:58:406	GetAvailableNetworkType Finished, result=1
+12:50:58:406	IsAvailableNetworkSecure
+12:50:58:406	IsAvailableNetworkSecure Finished, result=0
+12:50:58:406	GetAvailableNetworkAuthMode
+12:50:58:406	Auth: 1
+12:50:58:406	GetAvailableNetworkAuthMode Finished, result=0
+12:50:58:406	GetAvailableNetworkCipherMode
+12:50:58:406	GetAvailableNetworkCipherMode Finished, result=0
+12:50:58:406	GetAvailableNetworkName
+12:50:58:406	GetAvailableNetworkName Finished
+12:50:58:406	GetAvailableNetworkSignalQuality
+12:50:58:406	GetAvailableNetworkSignalQuality Finished, result=30
+12:50:58:406	GetAvailableNetworkType
+12:50:58:406	GetAvailableNetworkType Finished, result=1
+12:50:58:406	IsAvailableNetworkSecure
+12:50:58:406	IsAvailableNetworkSecure Finished, result=0
+12:50:58:406	GetAvailableNetworkAuthMode
+12:50:58:406	Auth: 1
+12:50:58:406	GetAvailableNetworkAuthMode Finished, result=0
+12:50:58:406	GetAvailableNetworkCipherMode
+12:50:58:406	GetAvailableNetworkCipherMode Finished, result=0
+12:51:16:674	EnumerateAvailableNetworks
+12:51:16:674	Scanning
+12:51:18:343	Scanning OK
+12:51:18:343	EnumerateAvailableNetworks Finished, result=1
+12:51:18:359	GetAvailableNetworkName
+12:51:18:359	GetAvailableNetworkName Finished
+12:51:18:359	GetAvailableNetworkSignalQuality
+12:51:18:359	GetAvailableNetworkSignalQuality Finished, result=53
+12:51:18:359	GetAvailableNetworkType
+12:51:18:359	GetAvailableNetworkType Finished, result=1
+12:51:18:359	IsAvailableNetworkSecure
+12:51:18:359	IsAvailableNetworkSecure Finished, result=0
+12:51:18:359	GetAvailableNetworkAuthMode
+12:51:18:359	Auth: 1
+12:51:18:359	GetAvailableNetworkAuthMode Finished, result=0
+12:51:18:359	GetAvailableNetworkCipherMode
+12:51:18:359	GetAvailableNetworkCipherMode Finished, result=0
+12:51:19:903	EnumerateAvailableNetworks
+12:51:19:903	Scanning
+12:51:21:573	Scanning OK
+12:51:21:573	EnumerateAvailableNetworks Finished, result=1
+12:51:21:573	GetAvailableNetworkName
+12:51:21:573	GetAvailableNetworkName Finished
+12:51:21:588	GetAvailableNetworkSignalQuality
+12:51:21:588	GetAvailableNetworkSignalQuality Finished, result=65
+12:51:21:588	GetAvailableNetworkType
+12:51:21:588	GetAvailableNetworkType Finished, result=1
+12:51:21:588	IsAvailableNetworkSecure
+12:51:21:588	IsAvailableNetworkSecure Finished, result=0
+12:51:21:588	GetAvailableNetworkAuthMode
+12:51:21:588	Auth: 1
+12:51:21:588	GetAvailableNetworkAuthMode Finished, result=0
+12:51:21:588	GetAvailableNetworkCipherMode
+12:51:21:588	GetAvailableNetworkCipherMode Finished, result=0
+12:51:21:760	EnumerateAvailableNetworks
+12:51:21:760	Scanning
+12:51:23:460	Scanning OK
+12:51:23:460	EnumerateAvailableNetworks Finished, result=1
+12:51:23:460	GetAvailableNetworkName
+12:51:23:460	GetAvailableNetworkName Finished
+12:51:23:460	GetAvailableNetworkSignalQuality
+12:51:23:460	GetAvailableNetworkSignalQuality Finished, result=60
+12:51:23:460	GetAvailableNetworkType
+12:51:23:460	GetAvailableNetworkType Finished, result=1
+12:51:23:460	IsAvailableNetworkSecure
+12:51:23:460	IsAvailableNetworkSecure Finished, result=0
+12:51:23:460	GetAvailableNetworkAuthMode
+12:51:23:476	Auth: 1
+12:51:23:476	GetAvailableNetworkAuthMode Finished, result=0
+12:51:23:476	GetAvailableNetworkCipherMode
+12:51:23:476	GetAvailableNetworkCipherMode Finished, result=0
+12:51:39:513	EnumerateAvailableNetworks
+12:51:39:513	Scanning
+12:51:41:229	Scanning OK
+12:51:41:229	EnumerateAvailableNetworks Finished, result=1
+12:51:41:229	GetAvailableNetworkName
+12:51:41:229	GetAvailableNetworkName Finished
+12:51:41:229	GetAvailableNetworkSignalQuality
+12:51:41:229	GetAvailableNetworkSignalQuality Finished, result=65
+12:51:41:229	GetAvailableNetworkType
+12:51:41:229	GetAvailableNetworkType Finished, result=1
+12:51:41:229	IsAvailableNetworkSecure
+12:51:41:229	IsAvailableNetworkSecure Finished, result=0
+12:51:41:229	GetAvailableNetworkAuthMode
+12:51:41:229	Auth: 1
+12:51:41:229	GetAvailableNetworkAuthMode Finished, result=0
+12:51:41:229	GetAvailableNetworkCipherMode
+12:51:41:245	GetAvailableNetworkCipherMode Finished, result=0
+12:53:27:161	----------
+12:53:27:161	EnumerateAdapters
+12:53:28:814	DoInit
+12:53:28:814	WinVer = 6.0 Service Pack 1
+12:53:28:892	DoInit Finished
+12:53:28:892	Adapters: 1
+12:53:28:892	EnumerateAdapters Finished, result=1
+12:53:28:892	GetAdapterName
+12:53:28:892	Adapter name: Intel(R) PRO/Wireless 3945ABG Network Connection
+12:53:28:892	GetAdapterName Finished, result=48
+12:53:34:757	EnumerateAvailableNetworks
+12:53:34:757	Scanning
+12:53:36:458	Scanning OK
+12:53:36:458	EnumerateAvailableNetworks Finished, result=1
+12:53:36:473	GetAvailableNetworkName
+12:53:36:473	GetAvailableNetworkName Finished
+12:53:36:473	GetAvailableNetworkSignalQuality
+12:53:36:473	GetAvailableNetworkSignalQuality Finished, result=65
+12:53:36:473	GetAvailableNetworkType
+12:53:36:473	GetAvailableNetworkType Finished, result=1
+12:53:36:473	IsAvailableNetworkSecure
+12:53:36:473	IsAvailableNetworkSecure Finished, result=0
+12:53:36:473	GetAvailableNetworkAuthMode
+12:53:36:473	Auth: 1
+12:53:36:473	GetAvailableNetworkAuthMode Finished, result=0
+12:53:36:473	GetAvailableNetworkCipherMode
+12:53:36:473	GetAvailableNetworkCipherMode Finished, result=0
+12:58:14:321	----------
+12:58:14:321	EnumerateAdapters
+12:58:15:569	DoInit
+12:58:15:569	WinVer = 6.0 Service Pack 1
+12:58:15:647	DoInit Finished
+12:58:15:647	Adapters: 1
+12:58:15:647	EnumerateAdapters Finished, result=1
+12:58:15:662	GetAdapterName
+12:58:15:662	Adapter name: Intel(R) PRO/Wireless 3945ABG Network Connection
+12:58:15:662	GetAdapterName Finished, result=48
+12:58:16:848	EnumerateAvailableNetworks
+12:58:16:848	Scanning
+12:58:18:549	Scanning OK
+12:58:18:549	EnumerateAvailableNetworks Finished, result=1
+12:58:18:564	GetAvailableNetworkName
+12:58:18:564	GetAvailableNetworkName Finished
+12:58:18:564	GetAvailableNetworkSignalQuality
+12:58:18:564	GetAvailableNetworkSignalQuality Finished, result=65
+12:58:18:595	GetAvailableNetworkType
+12:58:18:595	GetAvailableNetworkType Finished, result=1
+12:58:18:595	IsAvailableNetworkSecure
+12:58:18:595	IsAvailableNetworkSecure Finished, result=0
+12:58:18:595	GetAvailableNetworkAuthMode
+12:58:18:595	Auth: 1
+12:58:18:595	GetAvailableNetworkAuthMode Finished, result=0
+12:58:18:595	GetAvailableNetworkCipherMode
+12:58:18:595	GetAvailableNetworkCipherMode Finished, result=0
