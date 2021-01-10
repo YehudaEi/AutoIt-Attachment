@@ -1,0 +1,24 @@
+
+  JOB WHAT
+----- ------------------------------------------------------------
+  301 IFACT.TMP_OTPT_EXTRACT_PROC;
+  381 begin
+	  ogw_refresh_ogw_cgw_device;
+	  ogw_refresh_ogw_ts100_device;
+      end;
+
+  289 dbms_refresh.refresh('"IFACT"."MV_BBS_CE_LST"');
+  530 IFACT.Call_Rollup_Pkg.Call_Rollup_Proc(351, 10000);
+  529 IFACT.Call_Rollup_Pkg.Call_Rollup_Proc(1, 350);
+  221 dbms_refresh.refresh('"IFACT"."MV_SMS_BILL_UNIT"');
+  141 IFACT.Call_Rollup_Pkg.Call_Rollup_Proc(10001, 51000);
+
+  JOB WHAT
+----- ------------------------------------------------------------
+  533 IFACT.Call_Rollup_Pkg.Call_Rollup_Proc(55001, 60000);
+  532 IFACT.Call_Rollup_Pkg.Call_Rollup_Proc(51001, 55000);
+  241 IFACT.Call_Rollup_Pkg.Call_Rollup_Proc(60001, 65000);
+  281 IFACT.Call_Rollup_Pkg.Call_Rollup_Proc(65001, 999999999);
+
+11 rows selected.
+
