@@ -1,0 +1,492 @@
+
+
+<!-- include file="../../../common/util/secure.asp" -->
+
+
+
+<!-- /* Inference [Begin] */    -->
+<!-- /* Inference [Begin] */ -->
+
+
+<!-- /* Inference [End] */ -->
+
+<!-- /* Inference [End] */    -->
+
+
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../../../common/css/basic.css" title="style1">
+		<script src="../../../common/util/key.js"></script>
+		<script language="JavaScript" src="../../../common/util/recorder.js"></script>
+		<script language="JavaScript" src="../../../common/util/idgenerator.js"></script>
+		<script language="JavaScript" src="../../../common/util/smallbutton.js"></script>
+		<script language="JavaScript" src="../../../common/util/bigbutton.js"></script>
+		<script language="JavaScript" src="../../../common/util/iconbutton.js"></script>
+		<script language="JavaScript" src="../../../common/util/addremove.js"></script>
+		<script language="JavaScript" src="../../../common/util/util.js"></script>
+		<script language="JavaScript" src="../../../common/util/open.js"></script>
+		<script language="JavaScript" src="../../../common/util/constant.js"></script>
+		<script language="JavaScript" src="I18NConstants/I18Nreplybody.js"></script>
+		<script language="JavaScript" src="replybody.js"></script>
+
+		<script>
+			var IsFocusAtMacroField = 0;
+			var undoButton;
+			var redoButton;
+			var addNotesButton;
+			var saveDraftButton;
+			var checkSpellingButton;
+			var expandMacroButton;
+			var suggestResponseButton;
+			var mailMergeButton;
+			var addAttachmentButton;
+			var deleteAttachmentButton;
+			var allCategories;
+			var assignedCategories;
+			var deleteCategoryButton;
+
+
+			function InitializeCategories()
+			{
+				allCategories = new Array();
+			}
+
+//ei_excep_start_25/07/00
+		function CancelDefault()
+		{
+			event.returnValue = false;
+			if (TopBaseMainreadBody.g_DragDocumentID != null)
+			{
+				event.dataTransfer.dropEffect = "copy";
+			}
+		}
+
+		function CancelDefaultforCat()
+		{
+			if (TopBaseMainreadBody.g_DragCategoryID != null)
+			{
+				event.returnValue = false;
+				event.dataTransfer.dropEffect = "copy";
+			}
+		}
+//ei_excep_end
+		</script>
+	</head>
+
+
+
+<script>
+	var g_inferenceObj						= new Object();
+	g_inferenceObj.StartInferenceService	= 0;
+	top.base.global.KCSEHostName			= "localhost"
+</script>
+
+	<body leftmargin="8" onload="OnLoad()" onunload="OnUnload()">
+		<form id="replyForm" name="replyForm" >
+			<input type="hidden" value=""					name="fromEmailAddress"		size="27"	height="40">
+			<input type="hidden" value=""					name="ccEmailAddress"		size="27" 	height="40">
+			<input type="hidden" value=""					name="bccEmailAddress"		size="27" 	height="40">
+			<input type="hidden" value=""					name="recvEmailAddress"		size="27" 	height="40">
+			<input type="hidden" value=""					name="replyToEmailAddress"	size="27" 	height="40">
+			<input type="hidden" value=""					name="emailState"			size="27" 	height="40">
+
+			<input type="hidden" value=""					name="userID">
+			<input type="hidden" value=""					name="tboxID">
+			<input type="hidden" value=""					name="emailID">
+			<input type="hidden" value=""					name="customerID">
+			<input type="hidden" value=""					name="tID">
+			<input type="hidden" value="EMS reply email"	name="header">
+			<input type="hidden" value="0"					name="nAttachments">
+			<input type="hidden" value="eGain EMS"			name="messageID">
+			<input type="hidden" value=""					name="isSaveDraftExist">
+			<input type="hidden" value=""					name="ticketFlags">
+			<input type="hidden" value=""					name="attachmentIDs">
+			<input type="hidden" value=""					name="index">
+			<input type="hidden" value=""					name="EMSSessionKey">
+
+			<input type="hidden" value=""					name="userFName">
+			<input type="hidden" value=""					name="userLName">
+			<input type="hidden" value=""					name="customerFName">
+			<input type="hidden" value=""					name="customerLName">
+
+
+			<input type="hidden" value=""					name="ticketData1">
+			<input type="hidden" value=""					name="ticketData2">
+			<input type="hidden" value=""					name="ticketData3">
+			<input type="hidden" value=""					name="priority">
+
+			<input type="hidden" value=""					name="time">
+
+			<input type="hidden" value=""					name="newAssignedCategories">
+			<input type="hidden" value=""					name="oldAssignedCategories">
+
+			<input type="hidden" value=""					name="noteState">
+			<input type="hidden" value=""					name="noteContent">
+
+			<input type="hidden" value=""					name="macro">
+			<input type="hidden" value="1"					name="personalizeIt">
+
+			<input type="hidden" value=""					name="stayOnTicket">
+			<input type="hidden" value=""					name="docIDAddedString">
+			<input type="hidden" value=""					name="suggesteddocIDAddedString">
+			<input type="hidden" value=""					name="docIDAddedAsSignatureString">
+			<input type="hidden" value=""					name="docIDAddedAsGreetingString">
+
+			<input type="hidden" value="1005"	name="greetingFolderID">
+			<input type="hidden" value="1006"	name="signatureFolderID">
+
+			<input type="hidden" value=""					name="operation">
+			<input type="hidden" value=""					name="addAttachmentToDB">
+			<input type="hidden" value=""					name="type">
+			<input type="hidden" value=""					name="spellCheckText">
+			<input type="hidden" value=""					name="enableAILearning">
+			<input type="hidden" value=""					name="emailIDLIEmail">
+			<input type="hidden" value="0"					name="anyOBRuleOnTBox">
+
+			<center>
+				<table border="0" cellpadding="3" cellspacing="0" width="100%">
+					<tr>
+						<td id="replyToLabel" class="labels" align="right" style="display:none">Reply To</td>
+						<td id="replyToCol" colspan="3" style="display:none">
+							<input id="replyToField" type="text" size="70"  nowrap height="40" class="inputField" onBlur="ReplyToChanged()">
+						</td>
+						<td width="25%"></td>
+					</tr>
+
+					<tr>
+						<td width="25%" align="right">
+							<a id="toLink" class="labels" href="javascript:OnTo()">To</a>
+							<span id="toLabel" class="labels" style="display:none">To:</span>
+						</td>
+						<td width="20%">
+							<input type="text" id="toEmailAddress" name="toEmailAddress" size="25"  nowrap height="40" class="inputField">
+						</td>
+						<td width="10%" class="labels" id="subjectLabel" align="right">Subject:</td>
+						</td>
+						<td width="20%">
+							<input type="text" id="subject" name="subject" size="25" maxlength="255" class="inputField">
+						</td>
+						<td width="25%"></td>
+					</tr>
+					<tr>
+						<td id="ccLabel1" class="labels" align="right" style="display:none"></td>
+						<td id="ccCol1" style="display:none">
+							<input id="ccField1" type="text" size="25"  nowrap height="40" class="inputField" onBlur="CCLabelChanged()">
+						</td>
+						<td id="ccLabel2" class="labels" align="right" style="display:none"></td>
+						<td id="ccCol2" style="display:none">
+							<input id="ccField2" type="text" size="25"  nowrap height="40" class="inputField" onBlur="BCCLabelChanged()">
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td align="right">
+							<img src="../../../common/image/greetings.png" alt="Greetings">
+						</td>
+						<td>
+							<select id="greetings" name="greetings"  onChange="OnGreetingsSelection()" size="1" class="inputField">
+								<option  value="-1">Greetings</option>
+								<option  value="-2">No Greetings</option>
+
+							
+								<option  value="1002">Dear Membe-</option>
+									
+								<option  value="1681">Estimado S-Spanish Gr</option>
+									
+								<option  value="2350">Dear Custo-</option>
+									
+								<option  value="2399">MediaBay D-</option>
+									
+							</select>
+						</td>
+						<td align="right">
+							<img src="../../../common/image/signature.png" alt="Signatures">
+						</td>
+						<td>
+							<select id="signatures" name="signatures" onChange="OnSignaturesSelection()" size="1" class="inputField">
+								<option  value="-1">Signatures</option>
+								<option  value="-2">No Signatures</option>
+							
+								<option  value="1005">Sincerely-</option>
+									
+								<option  value="1682">Atte-Spanish Cl</option>
+									
+								<option  value="2349">HTSSincere-</option>
+									
+								<option  value="2573">Temp_Do_No-Temp_Do_No</option>
+									
+								<option  value="2949">DS_Sincere-</option>
+									
+								<option  value="3190">COR Signit-COR Sigint</option>
+									
+							</select>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td align="right">
+							<img src="../../../common/image/response.png" alt="Responses">
+						</td>
+						<td>
+							<select id="responses" name="responses" onChange="AddResponseToContent()" size="1" class="inputField">
+								<option  value="-1">Responses</option>
+
+								
+												<option  value="-5">---Global Bookmark---</option>
+											
+
+											<option  value="1360">Account Canceled</option>
+										
+
+											<option  value="1411">NoBook Confirmation</option>
+										
+							</select>
+						</td>
+						<td align="right">
+							<a id="macrosLink" class="labels" href="javascript:OnMacro()">Macros </a>
+							<span id="macrosLabel" class="labels" style="display:none">Macros:</span>
+						</td>
+						<td>
+							<input onfocus="SetMacroFieldFocus()" onblur="ReSetMacroFieldFocus()" onChange="MacroFieldChanged()" type="text" id="macroField" name="macroField" size="25" class="inputField">
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td colspan="3">
+							<div align="left" onmouseover="DropHere()">
+								<textarea id="message" ondragenter="CancelDefault()" ondragover="CancelDefault()" name="message" cols="65" rows="17" wrap="soft" class="inputField" onchange="OnChangeMessage()"></textarea>
+							</div>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td colspan="3">
+							<table border="0" cellpadding="0" cellspacing="0" width="100%">
+								<tr>
+									<td align="left" valign="top">
+										<script>
+											undoButton = new IconButton(
+												idGenerator,
+												"Undo",
+												"OnUndo()",
+												ICON_BUTTON_PRESSED | ICON_BUTTON_MOUSE_OVER | ICON_BUTTON_DISABLED,
+												"iconUndo"
+											);
+											undoButton.Instantiate();
+										</script>
+									</td>
+									<td>&nbsp;&nbsp;</td>
+									<td align="left">
+										<script>
+											redoButton = new IconButton(
+												idGenerator,
+												"Redo",
+												"OnRedo()",
+												ICON_BUTTON_PRESSED | ICON_BUTTON_MOUSE_OVER | ICON_BUTTON_DISABLED,
+												"iconRedo"
+											);
+											redoButton.Instantiate();
+										</script>
+									</td>
+									<td>&nbsp;&nbsp;</td>
+									<td align="left">
+										<script>
+											addNotesButton = new IconButton(
+												idGenerator,
+												"Add Notes",
+												"AddNotes()",
+												ICON_BUTTON_PRESSED | ICON_BUTTON_MOUSE_OVER | ICON_BUTTON_DISABLED,
+												"iconNote"
+											);
+											addNotesButton.Instantiate();
+										</script>
+									</td>
+									<td>&nbsp;&nbsp;</td>
+									<td align="left">
+										<script>
+											saveDraftButton = new IconButton(
+												idGenerator,
+												"Save Draft",
+												"OnSaveDraft()",
+												ICON_BUTTON_PRESSED | ICON_BUTTON_MOUSE_OVER | ICON_BUTTON_DISABLED,
+												"iconSaveDraft"
+											);
+											saveDraftButton.Instantiate();
+										</script>
+									</td>
+									<td>&nbsp;&nbsp;</td>
+									<td align="left">
+										<script>
+											checkSpellingButton = new IconButton(
+												idGenerator,
+												"Check Spelling",
+												"OnSpellCheck()",
+												ICON_BUTTON_PRESSED | ICON_BUTTON_MOUSE_OVER | ICON_BUTTON_DISABLED,
+												"iconSpellcheck"
+											);
+											checkSpellingButton.Instantiate();
+										</script>
+									</td>
+									<td>&nbsp;&nbsp;</td>
+									<td align="left">
+										<script>
+											expandMacroButton = new IconButton(
+												idGenerator,
+												"Expand Macro",
+												"OnExpandMacro()",
+												ICON_BUTTON_PRESSED | ICON_BUTTON_MOUSE_OVER | ICON_BUTTON_DISABLED,
+												"iconExpandMacros"
+											);
+											expandMacroButton.Instantiate();
+										</script>
+									</td>
+									<td>&nbsp;&nbsp;</td>
+									<td align="left">
+										<script>
+											suggestResponseButton = new IconButton(
+												idGenerator,
+												"Suggest Response",
+												"OnSuggestResponse()",
+												ICON_BUTTON_PRESSED | ICON_BUTTON_MOUSE_OVER | ICON_BUTTON_DISABLED,
+												"iconSuggestAsResponse"
+											);
+											suggestResponseButton.Instantiate();
+										</script>
+									</td>
+									<td>&nbsp;&nbsp;</td>
+									<td align="left">
+										<script>
+											mailMergeButton = new IconButton(
+												idGenerator,
+												"Mail Merge Field",
+												"OnMailMerge()",
+												ICON_BUTTON_PRESSED | ICON_BUTTON_MOUSE_OVER | ICON_BUTTON_DISABLED,
+												"iconMailmerge"
+											);
+											mailMergeButton.Instantiate();
+										</script>
+									</td>
+
+									<!-- Customization for print -->
+									<td>&nbsp;&nbsp;</td>
+									 	<td align="left">
+									 	<!--<img src="../../../Common/Image/print.png" style="cursor:hand" onclick="window.open('                                                                                     '+currentTicket.ticketID,null,'height=150,width=300,status=no,toolbar=no,menubar=no,location=no,top=300,left=300')" alt="Print Preview" > -->
+									 	<img src="../../../Common/Image/print.png" style="cursor:hand" onclick="window.showModalDialog('printPreviewModal.asp?tid='+currentTicket.ticketID,null,'dialogWidth=300px;dialogHeight=200px;center=yes;help=no')" alt="Print Preview" >
+
+									</td>
+									<!-- /* Inference [Begin] */    -->
+									<td>&nbsp;&nbsp;</td>
+									<td align="left">
+										<script>
+											if(g_inferenceObj.StartInferenceService == 1)
+											{
+												runInferenceEngineButton = new IconButton(
+													idGenerator,
+													"Knowledge",
+													"RunInferenceEngine()",
+													ICON_BUTTON_PRESSED | ICON_BUTTON_MOUSE_OVER | ICON_BUTTON_DISABLED,
+													"iconKCSE"
+												);
+												runInferenceEngineButton.Instantiate();
+											}
+										</script>
+									</td>
+									<td>&nbsp;&nbsp;</td>
+									<!-- /* Inference [Begin] */    -->
+									<td width="100%"></td>
+								</tr>
+							</table>
+						</td>
+						<td></td>
+					</tr>
+					<tr height="20"><td>&nbsp;</td></tr>
+				<!--ei_excep_start_20/07/00 -->
+				<!--removed code for All Categories-->
+					<tr>
+						<td width="16%"></td>
+						<!--<td colspan="2" width="50%" id="allCategoriesLabel" class="labels"  style="text-align:left" nowrap>All Categories:      </td>-->
+						<td	width="20%"	colspan ="3" id="selectedCategoriesLabel" class="labels"  style="text-align:left" nowrap>Assigned Categories:</td>
+						<td width="10%"></td>
+					</tr>
+
+					<tr height="50">
+						<td width="5%"></td>
+						<td colspan ="4">
+							<div align="left" onmouseover="DropHereOnAssignedCategories()">
+							<select ondragenter="CancelDefaultforCat()" ondragover="CancelDefaultforCat()" id="selectedCategory"  size="4" name="selectedCategory" class="inputField" style="width:100%">
+								 <!-- <option class="blackHeading" value=-1>&LTAssigned Categories&GT</option> -->
+							</select>
+							</div>
+						</td>
+				<!--ei_exception_end -->
+						<td align="left" valign=middle>
+							<script>
+								deleteCategoryButton = new IconButton(
+									idGenerator,
+									"Delete",
+									"DeleteTicketCategory()",
+									ICON_BUTTON_PRESSED | ICON_BUTTON_MOUSE_OVER | ICON_BUTTON_DISABLED,
+									"iconDelete"
+								);
+								deleteCategoryButton.Instantiate();
+							</script>
+						</td>
+				</tr>
+
+				<tr>
+					<td width="15%"></td>
+					<td colspan="2" width="50%">
+						<span id="attachmentsLabel" class="labels">Attachments:</span>
+					</td>
+					<td ></td>
+					<td ></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td colspan="2">
+						<select id="selectedAttachment" name="selectedAttachment" size="4" class="inputField" style="width:100%">
+						</select>
+					</td>
+					<td>
+						<table cellpadding="0" cellspacing="0">
+							<tr>
+								<td>
+									<script>
+										addAttachmentButton = new IconButton(
+											idGenerator,
+											"Add",
+											"AddAttachment()",
+											ICON_BUTTON_PRESSED | ICON_BUTTON_MOUSE_OVER | ICON_BUTTON_DISABLED,
+											"iconAdd"
+										);
+										addAttachmentButton.Instantiate();
+									</script>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<script>
+										deleteAttachmentButton = new IconButton(
+											idGenerator,
+											"Delete",
+											"DeleteAttachment()",
+											ICON_BUTTON_PRESSED | ICON_BUTTON_MOUSE_OVER | ICON_BUTTON_DISABLED,
+											"iconDelete"
+										);
+										deleteAttachmentButton.Instantiate();
+									</script>
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td width="40%"></td>
+					<td width="10%"></td>
+				</tr>
+			</table>
+
+			</center>
+		</form>
+	</body>
+</html>
