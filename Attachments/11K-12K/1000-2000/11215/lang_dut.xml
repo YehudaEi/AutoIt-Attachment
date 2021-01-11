@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<language>
+	<name>Dutch</name>
+	<nativename>Nederlands</nativename>
+	<version>1.6.0.2</version>
+	<author>Martijn Loeffen</author>
+	<icon>
+		<bin>000001000100120C000001001800F80200001600000028000000120000001800</bin>
+		<bin>00000100180000000000D0020000000000000000000000000000000000000000</bin>
+		<bin>0000000000000000000000000000000000000000000000000000000000000000</bin>
+		<bin>00000000000000000000000000000000000000000000000000B75121AD3E0BAB</bin>
+		<bin>3702AC3A04B5430EC0521ECF6331DC7444E27E50DD7D51CF7247BA6137B15A32</bin>
+		<bin>A6522B9B4A2490401C0000000000000000C46338B34718AB3705AA3300AE3805</bin>
+		<bin>B64310C35221D26435DE7446E17C50D9784EC96B42B85C34AD552EA34D289844</bin>
+		<bin>210000000000000000DA8F6BC4734DB55B32B05125B05023B55529BF6136CC71</bin>
+		<bin>46DA8259E49068E5946EDB8D68C97D5AB9704EAF6847A45F3F00000000000000</bin>
+		<bin>00FCF9F8EBE8E7D7D4D3CDC9C8CBC7C6CDC9C7D3CFCDDDD9D8EAE6E5F7F4F2FE</bin>
+		<bin>FBF9FBF7F6EDEAE9D9D6D5CCC9C8C1BEBD0000000000000000F7F7F8FAFAFAE6</bin>
+		<bin>E7E7D5D5D4CDCDCDCCCCCCCECECED6D6D6E1E1E1EEEEEEFAFAFAFFFFFFF9F9F9</bin>
+		<bin>EAEAEAD5D4D5CACACA0000000000000000C7C6C7FFFFFFF6F6F6E1E1E1D2D2D2</bin>
+		<bin>CCCCCCCCCCCCD0D0D0D8D8D8E4E4E4F2F2F2FCFCFCFEFEFEF6F6F6E5E5E5D2D2</bin>
+		<bin>D200000000000000009393A7BFBFD4E8E8FFD9D9F1C2C2DDB3B3CFAEAECCAEAE</bin>
+		<bin>CDB3B3D1BDBDDBCBCBE8D9D9F5E3E3FEE3E3FDD9D9F2C7C8E000000000000000</bin>
+		<bin>000F0E8B2E2FB25E5EE96969FD4E4EEC2D2DD81414CE0808CC0909CD1111D41F</bin>
+		<bin>1FDE3232EB4444F85353FF5757FB4F4FEE000000000000000000007F11119432</bin>
+		<bin>32BB6565F75E5EFA4141E71F1FD40909CD0000CC0303CE0D0DD61D1DE12F2FEE</bin>
+		<bin>4242FA4F4FFF5050F9000000000000000000007F00007F19199D3B3BC66A6AFF</bin>
+		<bin>5757F63838E11818D20505CC0000CC0505D01010D82121E43535F24646FC5050</bin>
+		<bin>FE00000000000000000000000000000000000000000000000000000000000000</bin>
+		<bin>0000000000000000000000000000000000000000000000000000000000000000</bin>
+		<bin>0000000000000000000000000000000000000000000000000000000000000000</bin>
+		<bin>0000000000000000000000000000</bin>
+	</icon>
+	<messages>
+		<msgCloseModified>%s is gewijzigd. Formulier opslaan alvorens te sluiten?</msgCloseModified>
+		<msgAlreadyOpened>Bestand\n\n&quot;%s&quot;\n\nis al geopend in de designer.</msgAlreadyOpened>
+		<msgFileExists>Bestand &quot;%s&quot; bestaat al. Overschrijven?</msgFileExists>
+		<msgNoActiveForm>Geen actief formulier in de designer, actie kan niet worden uitgevoerd.</msgNoActiveForm>
+		<msgUnrecoverable>Koda kan het formulier niet openen, de parser geeft een fout:\n\n  %s</msgUnrecoverable>
+		<msgNoKodaUpdates>Je hebt de nieuwste versie.</msgNoKodaUpdates>
+		<msgNewKodaUpdate>Nieuwe versie %s%s van Koda gevonden. Wil je de download-pagina openen?</msgNewKodaUpdate>
+		<msgErrorUpdate>Kan geen versie-informatie ophalen.</msgErrorUpdate>
+		<msgNoFormsInScript>Geen Koda-gegenereerde formulieren gevonden in het script.</msgNoFormsInScript>
+		<msgNoFormIdent>Kan huidige formulier-sectie niet vinden in het script. De identificatie is waarschijnlijk verwijderd. Het script is niet geupdate!</msgNoFormIdent>
+		<msgFormHaveNoScript>Dit formulier heeft geen geassocieerd script.</msgFormHaveNoScript>
+		<msgNotImplemented>Nog niet geimplementeerd...</msgNotImplemented>
+		<msgWarningTitle>Waarschuwing</msgWarningTitle>
+		<msgInfoTitle>Informatie</msgInfoTitle>
+		<msgConfirmTitle>Bevestigen</msgConfirmTitle>
+		<msgErrorTitle>Fout</msgErrorTitle>
+		<strErrOpFailed>Actie mislukt!</strErrOpFailed>
+		<strAssociated>Geassocieerd</strAssociated>
+		<strNotAssociated>Niet Geassocieerd</strNotAssociated>
+		<strObjInit>Initialiseren...</strObjInit>
+		<strObjCreatedOk>Object succesvol aangemaakt</strObjCreatedOk>
+		<strObjCreatedErr>Fout tijdens aanmaken object!</strObjCreatedErr>
+	</messages>
+	<form name="DesignerMain">
+		<caption>oda Formulier designer</caption>
+		<btnNewTemplate property="Hint">Nieuw formulier vanuit sjabloon</btnNewTemplate>
+		<btnOpenForm property="Hint">Open Formulier</btnOpenForm>
+		<btnSaveForm property="Hint">Formulier Opslaan</btnSaveForm>
+		<btnRemoveForm property="Hint">Formulier Sluiten</btnRemoveForm>
+		<btnRunForm property="Hint">Formulier Uitvoeren</btnRunForm>
+		<btnNewForm property="Hint">Nieuw Formulier</btnNewForm>
+		<tabStandard property="Caption">Standaard</tabStandard>
+		<btnTMainMenu property="Hint">Hoofdmenu</btnTMainMenu>
+		<btnTLabel property="Hint">Label</btnTLabel>
+		<btnTEdit property="Hint">Invoer</btnTEdit>
+		<btnTMemo property="Hint">Wijzigen</btnTMemo>
+		<btnTButton property="Hint">Knop</btnTButton>
+		<btnTCheckBox property="Hint">Vinkje</btnTCheckBox>
+		<btnTRadioButton property="Hint">Radio</btnTRadioButton>
+		<btnTListBox property="Hint">Lijst</btnTListBox>
+		<btnTComboBox property="Hint">Uitklaplijst</btnTComboBox>
+		<btnTPopupMenu property="Hint">Popup Menu</btnTPopupMenu>
+		<btnTGroupBox property="Hint">Groep</btnTGroupBox>
+		<tabAdditional property="Caption">Extra</tabAdditional>
+		<btnTImage property="Hint">Plaatje</btnTImage>
+		<btnTIcon property="Hint">Icoon</btnTIcon>
+		<btnTShape property="Hint">Vorm</btnTShape>
+		<btnTSpinEdit property="Hint">OmhoogOmlaag</btnTSpinEdit>
+		<btnTAnimate property="Hint">Animatie</btnTAnimate>
+		<btnTTrayMenu property="Hint">Tray Menu</btnTTrayMenu>
+		<tabWin32 property="Caption">Win32</tabWin32>
+		<btnTTrackBar property="Hint">Schuifbalk</btnTTrackBar>
+		<btnTProgressBar property="Hint">Voortgang</btnTProgressBar>
+		<btnTDatePick property="Hint">Datumselector</btnTDatePick>
+		<btnMonthCal property="Hint">Maandkalender</btnMonthCal>
+		<btnTTreeView property="Hint">Boomstructuur</btnTTreeView>
+		<btnTListView property="Hint">Lijst</btnTListView>
+		<btnTTab property="Hint">Tabbladen</btnTTab>
+		<btnTObj property="Hint">COM Object</btnTObj>
+		<mnuNewTabCnt property="Caption">&amp;Nieuwe Pagina</mnuNewTabCnt>
+		<mnuCutCnt property="Caption">&amp;Knippen</mnuCutCnt>
+		<mnuCopyCnt property="Caption">Ko&amp;pieren</mnuCopyCnt>
+		<mnuPasteCnt property="Caption">&amp;Plakken</mnuPasteCnt>
+		<mnuDeleteCnt property="Caption">&amp;Verwijderen</mnuDeleteCnt>
+		<mnuSelectAllCnt property="Caption">Selecteer &amp;Alles</mnuSelectAllCnt>
+		<mnuTabOrderCnt property="Caption">&amp;Tab Volgorde</mnuTabOrderCnt>
+		<mnuAlignToGridCnt property="Caption">Uitlijnen naar &amp;raster</mnuAlignToGridCnt>
+		<mnuControlCnt property="Caption">Contro&amp;le</mnuControlCnt>
+		<mnuBringToFrontCnt property="Caption">Breng naar voren</mnuBringToFrontCnt>
+		<mnuSendToBack property="Caption">Stuur naar achter</mnuSendToBack>
+		<mnuLockCnt property="Caption">Vast</mnuLockCnt>
+		<mnuUnLockCnt property="Caption">Los</mnuUnLockCnt>
+		<mnuNoInsertIn property="Caption">Geen insert in</mnuNoInsertIn>
+		<mnuNoCopy property="Caption">Geen kopieren</mnuNoCopy>
+		<mnuFile property="Caption">&amp;Bestand</mnuFile>
+		<mnuNew property="Caption">&amp;Nieuw...</mnuNew>
+		<mnuOpen property="Caption">&amp;Open</mnuOpen>
+		<mnuFormClose property="Caption">S&amp;luiten</mnuFormClose>
+		<mnuSave property="Caption">Op&amp;slaan</mnuSave>
+		<mnuSaveAs property="Caption">Opslaan &amp;Als...</mnuSaveAs>
+		<mnuImport property="Caption">&amp;Importeer</mnuImport>
+		<mnuImportAu3 property="Caption">Au3 GUI script</mnuImportAu3>
+		<mnuExit property="Caption">Afsluiten</mnuExit>
+		<mnuEdit property="Caption">&amp;Wijzigen</mnuEdit>
+		<mnuCut property="Caption">Knippen</mnuCut>
+		<mnuCopy property="Caption">Ko&amp;pieren</mnuCopy>
+		<mnuPaste property="Caption">&amp;Plakken</mnuPaste>
+		<mnuDelete property="Caption">&amp;Verwijderen</mnuDelete>
+		<mnuSelectAll property="Caption">Selecteer &amp;Alles</mnuSelectAll>
+		<mnuTabOrder property="Caption">Tab &amp;Volgorde</mnuTabOrder>
+		<mnuView property="Caption">&amp;Bekijk</mnuView>
+		<mnuTreeView property="Caption">&amp;Boomstructuur</mnuTreeView>
+		<mnuObjectInspector property="Caption">&amp;Object Inspector</mnuObjectInspector>
+		<mnuFormList property="Caption">Formulieren &amp;Lijst</mnuFormList>
+		<mnuForms property="Caption">&amp;Formulieren</mnuForms>
+		<mnuOptions property="Caption">&amp;Opties</mnuOptions>
+		<mnuOptionsDlg property="Caption">&amp;Opties...</mnuOptionsDlg>
+		<mnuRememberPos property="Caption">&amp;Positie Onthouden</mnuRememberPos>
+		<mnuTools property="Caption">&amp;Gereedschap</mnuTools>
+		<mnuGenerateCode property="Caption">&amp;Genereer Code...</mnuGenerateCode>
+		<mnuGenerateAdvanced property="Caption">&amp;Geavanceerd Genereren...</mnuGenerateAdvanced>
+		<mnuUpdate property="Caption">&amp;Script Bijwerken</mnuUpdate>
+		<mnuRunForm property="Caption">&amp;Formulier Uitvoeren</mnuRunForm>
+		<mnuHelp property="Caption">&amp;Help</mnuHelp>
+		<mnuHelpContent property="Caption">&amp;Inhoud</mnuHelpContent>
+		<mnuCheckNewVersion property="Caption">Controleer Laatste &amp;Versie</mnuCheckNewVersion>
+		<mnuAbout property="Caption">&amp;Over...</mnuAbout>
+	</form>
+	<form name="frmFormList">
+		<caption>Formulieren Lijst</caption>
+		<tipNotSaved property="Caption">Formulier niet opgeslagen</tipNotSaved>
+		<tipForm property="Caption"> Formulier</tipForm>
+		<tipScript property="Caption">Script</tipScript>
+		<FormList property="Columns">
+			<item idx="0">Formulier</item>
+			<item idx="1">Map</item>
+		</FormList>
+		<btnFormAdd property="Hint">Nieuw Formulier</btnFormAdd>
+		<btnFormDel property="Hint">Formulier Verwijderen</btnFormDel>
+		<mnuFormDel property="Caption">Formulier Verwijderen</mnuFormDel>
+		<mnuFormAdd property="Caption">Nieuw Formulier</mnuFormAdd>
+	</form>
+	<form name="PInsp">
+		<caption>Object Inspector</caption>
+		<ModeTabSet property="Tabs">
+			<line idx="0">Eigenschappen</line>
+			<line idx="1">Stijlen</line>
+			<line idx="2">Uitgebreide Stijlen</line>
+		</ModeTabSet>
+		<btnResetStyle property="Caption">Reset</btnResetStyle>
+		<btnResetExStyle property="Caption">Reset</btnResetExStyle>
+	</form>
+	<form name="ConfigDlg">
+		<caption>Opties</caption>
+		<OptTreeView property="Items">
+			<item idx="0">Algemeen</item>
+			<item idx="1">Code Generator</item>
+			<item idx="2">Opmaak</item>
+			<item idx="3">Sjablonen</item>
+			<item idx="4">Designer</item>
+			<item idx="5">Taal</item>
+		</OptTreeView>
+		<grpGeneralAssociate property="Caption">Associatie</grpGeneralAssociate>
+		<btnAssociate property="Caption">Zetten</btnAssociate>
+		<btnUnassociate property="Caption">Verwijder</btnUnassociate>
+		<grpGeneralAuPath property="Caption">Formulier uitvoer methode</grpGeneralAuPath>
+		<cbGeneralAuPath property="Items">
+			<line idx="0">Geassocieerd</line>
+			<line idx="1">Handmatig...</line>
+		</cbGeneralAuPath>
+		<grpGeneralStartup property="Caption">Bij opstarten Koda</grpGeneralStartup>
+		<cbGeneralStartup property="Items">
+			<line idx="0">Maak nieuw formulier</line>
+			<line idx="1">Open laatste formulier</line>
+			<line idx="2">Open formulier...</line>
+		</cbGeneralStartup>
+		<cbGeneralBackup property="Caption">Maak Reservekopie</cbGeneralBackup>
+		<grpDesignerOptions property="Caption">Standaard Generator Opties</grpDesignerOptions>
+		<cbCodegenPopulate property="Caption">Genereer gebeurtenissen voor alle controls</cbCodegenPopulate>
+		<cbCodegenPopulate property="Hint">Dit zal variabelen of functies genereren voor alle controls, ongeacht of de gebeurtenis eigenschap is gezet</cbCodegenPopulate>
+		<cbCodegenExpandVars property="Caption">Expandeer %var% variabelen</cbCodegenExpandVars>
+		<cbCodegenExpandVars property="Hint">Als de tekst-eigenschap een variabele als %VAR% bevat - wordt het een variabele, geen string</cbCodegenExpandVars>
+		<cbCodegenOnEvent property="Caption">Genereer OnEvent code</cbCodegenOnEvent>
+		<cbCodegenOnEvent property="Hint">Zal event-style code genereren in plaats van message loop style</cbCodegenOnEvent>
+		<GroupBox3 property="Caption">Opmaak opties</GroupBox3>
+		<lblSepChar property="Caption">Data scheidingsteken</lblSepChar>
+		<grpIndent property="Caption">Inspringen code</grpIndent>
+		<lblIndentBy property="Caption">Inspringen met</lblIndentBy>
+		<lblInitial property="Caption">Initieel inspringen</lblInitial>
+		<cbSymbol property="Items">
+			<line idx="0">Tab</line>
+			<line idx="1">Spatie</line>
+		</cbSymbol>
+		<grpVariables property="Caption">Variabelen</grpVariables>
+		<lblScope property="Caption">Bereik</lblScope>
+		<cbScope property="Items">
+			<line idx="0">Niet gezet</line>
+			<line idx="1">Globaal</line>
+			<line idx="2">Lokaal</line>
+		</cbScope>
+		<cbCodegenStripPrefix property="Caption">Verwijder 'A' prefix van standaard naam</cbCodegenStripPrefix>
+		<rbLoop property="Caption">Lus</rbLoop>
+		<rbEvents property="Caption">Gebeurtenissen</rbEvents>
+		<TemplatesList property="Columns">
+			<item idx="0">Naam Sjabloon</item>
+			<item idx="1">Standaard</item>
+		</TemplatesList>
+		<grpDesignerGrid property="Caption">Raster Opties</grpDesignerGrid>
+		<cbDesignerDispalyGrid property="Caption">Toon Raster</cbDesignerDispalyGrid>
+		<cbDesignerSnapToGrid property="Caption">Uitlijnen naar Raster</cbDesignerSnapToGrid>
+		<grpDesignerGridSize property="Caption">Raster Grootte</grpDesignerGridSize>
+		<lblDesignerGridX property="Caption">Raster &amp;X</lblDesignerGridX>
+		<lblDesignerGridY property="Caption">Raster &amp;Y</lblDesignerGridY>
+		<grpDesignerOther property="Caption">Ooverige opties</grpDesignerOther>
+		<cbDesignerReflect property="Caption">Gewijzigde formulier stijlen in ontwerpmodus doorvoeren</cbDesignerReflect>
+		<cbDesignerSafe property="Caption">Onveilige stijlen niet doorvoeren (transparantie etc.)</cbDesignerSafe>
+		<cbDesignerOnEvent property="Caption">Geavanceerde Gebeurtenissen editor (voor OnEvent modus)</cbDesignerOnEvent>
+		<grpWindows property="Caption">Windows</grpWindows>
+		<lblDesignerPosSaving property="Caption">Grootte en Positie Opslaan</lblDesignerPosSaving>
+		<cbDesignerWinSnap property="Caption">Snap vensters</cbDesignerWinSnap>
+		<cbDesignerSavePos property="Items">
+			<line idx="0">Niet opslaan</line>
+			<line idx="1">Automatisch</line>
+			<line idx="2">Handmatig</line>
+		</cbDesignerSavePos>
+		<cbDesignerKeepLayout property="Caption">Houd standaard lay-out</cbDesignerKeepLayout>
+		<cbDesignerKeepLayout property="Hint">Houd standaard vensters lay-out als het hoofdformulier verplaatst wordt</cbDesignerKeepLayout>
+		<lblActiveLang property="Caption">Actieve taal: </lblActiveLang>
+		<LangList property="Columns">
+			<item idx="0">Taal</item>
+			<item idx="1">Inheemse naam</item>
+			<item idx="2">Auteur</item>
+			<item idx="3">Versie</item>
+		</LangList>
+		<btnCreateTemplate property="Caption">Maak Sjabloon</btnCreateTemplate>
+		<btnCancel property="Caption">Annuleer</btnCancel>
+		<btnOK property="Caption">Ok</btnOK>
+		<btnApply property="Caption">Toepassen</btnApply>
+		<mnuNew property="Caption">Nieuw</mnuNew>
+		<mnuEdit property="Caption">Wijzigen</mnuEdit>
+		<mnuDelete property="Caption">Verwijder</mnuDelete>
+		<mnuDuplicate property="Caption">Dupliceer</mnuDuplicate>
+		<mnuSetDef property="Caption">Toggle standaard</mnuSetDef>
+	</form>
+	<form name="frmDesignerCode">
+		<caption>Code</caption>
+		<mnuCopyToClipboard property="Caption">&amp;Kopieer naar klembord</mnuCopyToClipboard>
+		<mnuSaveToFile property="Caption">&amp;Opslaan naar bestand</mnuSaveToFile>
+		<mnuInsertIntoScite property="Caption">&amp;In Scite toevoegen</mnuInsertIntoScite>
+	</form>
+	<form name="frmAdvGenerate">
+		<caption>Advanced Generate</caption>
+		<grpDesignerOptions property="Caption">Generator Opties</grpDesignerOptions>
+		<cbCodegenPopulate property="Caption">Genereer gebeurtenissen voor alle controls</cbCodegenPopulate>
+		<cbCodegenExpandVars property="Caption">Expandeer %var% variabelen</cbCodegenExpandVars>
+		<cbCodegenOnEvent property="Caption">Genereer OnEvent code</cbCodegenOnEvent>
+		<btnGenerate property="Caption">Genereer</btnGenerate>
+		<btnCancel property="Caption">Annuleer</btnCancel>
+		<grpTemplate property="Caption">Sjabloon</grpTemplate>
+		<btnManage property="Caption">Beheren</btnManage>
+	</form>
+	<form name="frmAboutBox">
+		<caption>About</caption>
+		<lblHomePage property="Caption">Website</lblHomePage>
+		<lblVersion property="Caption">Versie</lblVersion>
+		<btnOK property="Caption">OK</btnOK>
+	</form>
+	<form name="frmTemplateEditor">
+		<caption>Sjabloon Code Editor</caption>
+		<lblName property="Caption">Sjabloon naam</lblName>
+		<lblText property="Caption">Sjabloon tekst</lblText>
+		<btnOK property="Caption">OK</btnOK>
+	</form>
+	<form name="frmObjectTree">
+		<caption>Object Boomstructuur</caption>
+	</form>
+	<form name="frmChooseScript">
+		<caption>Selecteer Script</caption>
+		<lblChooseHint property="Caption">Formulier &quot;%s&quot; dat je wil openen, wordt in meerdere scripts gebruikt. Kies er een waarmee je wilt werken..</lblChooseHint>
+		<ScriptsList property="Columns">
+			<item idx="0">Script Naam</item>
+			<item idx="1">Laatst Gewijzigd</item>
+		</ScriptsList>
+		<btnOK property="Caption">OK</btnOK>
+		<btnCancel property="Caption">Cancel</btnCancel>
+	</form>
+	<form name="frmPictureEditor">
+		<caption>Afbeelding Editor</caption>
+		<btnImgOk property="Caption">OK</btnImgOk>
+		<btnImgCancel property="Caption">Annuleer</btnImgCancel>
+		<btnImgHelp property="Caption">Help</btnImgHelp>
+		<grpImgPicGroupBox property="Caption">Geselecteerde afbeelding</grpImgPicGroupBox>
+		<btnImgLoad property="Caption">&amp;Laad...</btnImgLoad>
+		<btnImgSave property="Caption">&amp;Opslaan...</btnImgSave>
+		<btnImgClear property="Caption">&amp;Legen</btnImgClear>
+		<grpImages property="Caption">Afbeeldingen in bestand</grpImages>
+		<cbSmallIcons property="Caption">Kleine Iconen</cbSmallIcons>
+	</form>
+	<form name="frmAXObjectEditor">
+		<caption>ActiveX objecten verkenner</caption>
+		<lblLoadStatus property="Caption">Status: </lblLoadStatus>
+		<lblPath property="Caption">Map:</lblPath>
+		<CompList property="Columns">
+			<item idx="0">Naam component</item>
+		</CompList>
+		<btnOK property="Caption">OK</btnOK>
+		<btnCancel property="Caption">Annuleer</btnCancel>
+	</form>
+	<form name="frmGalleryBrowser">
+		<caption>Form Templates</caption>
+		<lblTGDescr property="Caption">Omschrijving:</lblTGDescr>
+		<btnTGOK property="Caption">OK</btnTGOK>
+		<btnTGCancel property="Caption">Annuleer</btnTGCancel>
+		<btnTGHelp property="Caption">&amp;Help</btnTGHelp>
+		<tabGroups property="Tabs">
+			<line idx="0">Standaard</line>
+		</tabGroups>
+		<lvItems property="Columns">
+			<item idx="0">Naam</item>
+			<item idx="1">Omschrijving</item>
+		</lvItems>
+		<mnuTGLargeIcons property="Caption">Bekijk &amp;Grote Iconen</mnuTGLargeIcons>
+		<mnuTGSmallIcons property="Caption">Bekijk &amp;Kleine Iconen</mnuTGSmallIcons>
+		<mnuTGList property="Caption">Bekijk L&amp;ijst</mnuTGList>
+		<mnuTGDetails property="Caption">Bekijk &amp;Details</mnuTGDetails>
+	</form>
+	<form name="frmTreeViewEditor">
+		<caption>Boomstructuur Items Editor</caption>
+		<grpTVItems property="Caption">Items</grpTVItems>
+		<btnTVNew property="Caption">Nieuw &amp;Item</btnTVNew>
+		<btnTVNewSub property="Caption">Nieuw &amp;Subitem</btnTVNewSub>
+		<btnTVDelete property="Caption">&amp;Verwijder</btnTVDelete>
+		<grpTVProperties property="Caption">Item Eigenschappen</grpTVProperties>
+		<lblTVText property="Caption">Tekst:</lblTVText>
+		<btnTVCancel property="Caption">Annuleer</btnTVCancel>
+		<btnTVApply property="Caption">&amp;Toepassen</btnTVApply>
+		<btnTVOk property="Caption">OK</btnTVOk>
+		<btnTVHelp property="Caption">&amp;Help</btnTVHelp>
+	</form>
+	<form name="frmListViewEditor">
+		<caption>Lijst Items Editor</caption>
+		<grpLVItems property="Caption">Items</grpLVItems>
+		<btnLVNew property="Caption">Nieuw &amp;Item</btnLVNew>
+		<btnLVDelete property="Caption">&amp;Verwijder</btnLVDelete>
+		<btnLVNewSub property="Caption">Nieuw &amp;SubItem</btnLVNewSub>
+		<grpLVProperties property="Caption">Item Eigenschappen</grpLVProperties>
+		<lblLVCaption property="Caption">&amp;Tekst:</lblLVCaption>
+		<btnLVOk property="Caption">OK</btnLVOk>
+		<btnLVCancel property="Caption">Annuleer</btnLVCancel>
+		<btnLVApply property="Caption">&amp;Toepassen</btnLVApply>
+		<btnLVHelp property="Caption">&amp;Help</btnLVHelp>
+	</form>
+	<form name="frmCollectionEditor">
+		<caption>Columns</caption>
+		<btnAdd property="Hint">Item Toevoegen</btnAdd>
+		<btnDelete property="Hint">Verwijder Item</btnDelete>
+		<btnUp property="Hint">Plaats Omhoog</btnUp>
+		<btnDown property="Hint">Plaats Omlaag</btnDown>
+	</form>
+	<form name="frmEventEditor">
+		<caption>Gebeurtenis Editor</caption>
+		<grpNotify property="Caption">Control notificatie</grpNotify>
+		<grpEvent property="Caption">Control gebeurtenis</grpEvent>
+		<rbEditFunc property="Caption">Notificatie</rbEditFunc>
+		<rbNone property="Caption">Geen</rbNone>
+		<btnDefault property="Caption">Standaard</btnDefault>
+		<btnOK property="Caption">OK</btnOK>
+		<btnCancel property="Caption">Annuleer</btnCancel>
+	</form>
+	<form name="frmTabOrder">
+		<caption>Tab Volgorder Editor</caption>
+		<btnOK property="Caption">OK</btnOK>
+		<btnCancel property="Caption">Annuleer</btnCancel>
+	</form>
+	<form name="frmMenuBuilder">
+		<caption>Menu Designer</caption>
+		<InsertItem property="Caption">&amp;Toevoegen</InsertItem>
+		<DeleteItem property="Caption">&amp;Verwijderen</DeleteItem>
+		<CreateSubmenu property="Caption">&amp;Aanmaken Submenu</CreateSubmenu>
+	</form>
+</language>
