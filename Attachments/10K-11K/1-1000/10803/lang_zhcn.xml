@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="GBK"?>
+<language>
+	<name>Chinese(Simplified)</name>
+	<nativename>简体中文</nativename>
+	<version>1.5.1.18</version>
+	<author>bianbian</author><!--http://bianbian.sunshow.net-->
+	<icon>
+		<bin>000001000100120C000001001800F80200001600000028000000120000001800</bin>
+		<bin>00000100180000000000A0020000000000000000000000000000000000000000</bin>
+		<bin>0000000000000000000000000000000000000000000000000000000000000000</bin>
+		<bin>000000000000000000000000000000000000000000000000001F20D40909CD00</bin>
+		<bin>00CC0303CE0D0DD61D1DE12F2FEE4242FA4F4FFF5050F94646EA3536D53030CA</bin>
+		<bin>2A2ABF2323B21B1BA700000000000000003838E11818D20505CC0000CC0505D0</bin>
+		<bin>1010D82121E43535F24646FC5050FE4E4EF64242E53434D22E2EC72828BC2121</bin>
+		<bin>B000000000000000005050F12F30DD1212CF0303CC0000CC0707D11414DB2626</bin>
+		<bin>E83A3AF54A4AFE5151FD4C4CF23E3FE03333CF2D2DC42626B900000000000000</bin>
+		<bin>006464FD4848EC2727D80D0ECE0109CC0102CD0A0AD41818DE2B2BEB3E3EF84D</bin>
+		<bin>4DFF5151FB4949EE3A3ADA3132CD2C2CC100000000000000006565F85E5EFA40</bin>
+		<bin>41E72024D40922CD0002CC0303CE0D0DD61D1DE12F2FEE4242FA4F4FFF5050F9</bin>
+		<bin>4646EA3635D53030CA00000000000000003B3AC76A6AFF5757F63838E11818D2</bin>
+		<bin>0514CC000ACC0505D01010D82121E43535F24646FC5050FE4E4EF64242E53434</bin>
+		<bin>D200000000000000002125A7464BD46877FF5054F12F2FDD1224CF031ACC0001</bin>
+		<bin>CD0707D11414DB2626E83A3AF54A4AFE5151FD4C4CF23E3FE000000000000000</bin>
+		<bin>000A178B2A97B259B8E9646DFD4848EC2727D80D1FCE0108CC0101CD0A0AD418</bin>
+		<bin>18DE2B2BEB3E3EF84D4DFF5151FB4949EE000000000000000000107F11719432</bin>
+		<bin>97BB6576F75E5EFA4141E71F2DD4090DCD0000CC0303CE0D0DD61D1DE12F2FEE</bin>
+		<bin>4242FA4F4FFF5050F9000000000000000000007F00127F19209D3B3BC66A6FFF</bin>
+		<bin>5782F63839E11818D20505CC0000CC0505D01010D82121E43535F24646FC5050</bin>
+		<bin>FE00000000000000000000000000000000000000000000000000000000000000</bin>
+		<bin>0000000000000000000000000000000000000000000000000000000000000000</bin>
+		<bin>0000000000000000000000000000000000000000000000000000000000000000</bin>
+		<bin>0000000000000000000000000000</bin>
+	</icon>
+	<messages>
+		<msgCloseModified>%s 已被修改. 移除前是否保存?</msgCloseModified>
+		<msgAlreadyOpened>文件\n\n&quot;%s&quot;\n\n已经在设计器中打开.</msgAlreadyOpened>
+		<msgFileExists>文件 &quot;%s&quot; 已经存在. 覆盖吗?</msgFileExists>
+		<msgNoActiveForm>设计器中没有活动的窗体, 操作无法完成.</msgNoActiveForm>
+		<msgUnrecoverable>Koda 无法打开这个窗体, 解析错误:\n\n  %s</msgUnrecoverable>
+		<msgNoKodaUpdates>你已经有了最新的版本.</msgNoKodaUpdates>
+		<msgNewKodaUpdate>Koda 新版本 %s%s 已存在. 现在打开页面下载吗?</msgNewKodaUpdate>
+		<msgErrorUpdate>无法获取更新信息.</msgErrorUpdate>
+		<msgNoFormsInScript>脚本里未发现Koda生成的任何窗体.</msgNoFormsInScript>
+		<msgNoFormIdent>在脚本里不能找到目前窗体的相关代码, 也许您偶然删除了识别字串. 脚本未能更新!</msgNoFormIdent>
+		<msgFormHaveNoScript>这个窗体不存在关联的脚本.</msgFormHaveNoScript>
+		<msgNotImplemented>目前尚未实现...</msgNotImplemented>
+		<msgWarningTitle>警告</msgWarningTitle>
+		<msgInfoTitle>提示</msgInfoTitle>
+		<msgConfirmTitle>确认</msgConfirmTitle>
+		<msgErrorTitle>错误</msgErrorTitle>
+		<strErrOpFailed>操作失败!</strErrOpFailed>
+		<strAssociated>关联</strAssociated>
+		<strNotAssociated>不关联</strNotAssociated>
+		<strObjInit>初始化中...</strObjInit>
+		<strObjCreatedOk>对象创建成功</strObjCreatedOk>
+		<strObjCreatedErr>对象创建失败!</strObjCreatedErr>
+	</messages>
+	<form name="DesignerMain">
+		<btnNewTemplate property="Hint">从模板中新建窗体</btnNewTemplate>
+		<btnOpenForm property="Hint">打开窗体</btnOpenForm>
+		<btnSaveForm property="Hint">保存窗体</btnSaveForm>
+		<btnRemoveForm property="Hint">删除窗体</btnRemoveForm>
+		<btnRunForm property="Hint">运行窗体</btnRunForm>
+		<btnNewForm property="Hint">新建窗体</btnNewForm>
+		<tabStandard property="Caption">标准控件</tabStandard>
+		<btnTMainMenu property="Hint">主菜单</btnTMainMenu>
+		<btnTLabel property="Hint">文字(Label)</btnTLabel>
+		<btnTEdit property="Hint">单行输入框(Input)</btnTEdit>
+		<btnTMemo property="Hint">多行输入框(Memo)</btnTMemo>
+		<btnTButton property="Hint">按钮(Button)</btnTButton>
+		<btnTCheckBox property="Hint">多选(CheckBox)</btnTCheckBox>
+		<btnTRadioButton property="Hint">单选(RadioButton)</btnTRadioButton>
+		<btnTListBox property="Hint">列表框(ListBox)</btnTListBox>
+		<btnTComboBox property="Hint">下拉框(ComboBox)</btnTComboBox>
+		<btnTPopupMenu property="Hint">弹出菜单(Popup Menu)</btnTPopupMenu>
+		<btnTGroupBox property="Hint">组(GroupBox)</btnTGroupBox>
+		<tabAdditional property="Caption">附加控件</tabAdditional>
+		<btnSelect2 property="Caption">tbSelect</btnSelect2>
+		<btnTImage property="Hint">图像(Image)</btnTImage>
+		<btnTIcon property="Hint">图标(Icon)</btnTIcon>
+		<btnTShape property="Hint">图形(Graphic)</btnTShape>
+		<btnTSpinEdit property="Hint">上下滚动条(Updown)</btnTSpinEdit>
+		<btnTAnimate property="Hint">动画(Avi)</btnTAnimate>
+		<tabWin32 property="Caption">Win32控件</tabWin32>
+		<btnSelect3 property="Caption">tbSelect</btnSelect3>
+		<btnTTrackBar property="Hint">滑动条(Slider)</btnTTrackBar>
+		<btnTProgressBar property="Hint">进度条(Progress)</btnTProgressBar>
+		<btnTDatePick property="Hint">日期选取器</btnTDatePick>
+		<btnMonthCal property="Hint">月历</btnMonthCal>
+		<btnTTreeView property="Hint">TreeView</btnTTreeView>
+		<btnTListView property="Hint">ListView</btnTListView>
+		<btnTTab property="Hint">分页标签(Tabbed Panel)</btnTTab>
+		<btnTObj property="Hint">COM Object</btnTObj>
+		<mnuNewTabCnt property="Caption">新页面(&amp;N)</mnuNewTabCnt>
+		<mnuCutCnt property="Caption">剪切(&amp;X)</mnuCutCnt>
+		<mnuCopyCnt property="Caption">复制(&amp;C)</mnuCopyCnt>
+		<mnuPasteCnt property="Caption">粘贴(&amp;P)</mnuPasteCnt>
+		<mnuDeleteCnt property="Caption">删除(&amp;D)</mnuDeleteCnt>
+		<mnuSelectAllCnt property="Caption">全选(&amp;A)</mnuSelectAllCnt>
+		<mnuTabOrderCnt property="Caption">Tab顺序(&amp;O)</mnuTabOrderCnt>
+		<mnuAlignToGridCnt property="Caption">对齐到网格(&amp;G)</mnuAlignToGridCnt>
+		<mnuControlCnt property="Caption">控制(&amp;L)</mnuControlCnt>
+		<mnuBringToFrontCnt property="Caption">移到前面</mnuBringToFrontCnt>
+		<mnuSendToBack property="Caption">移到后面</mnuSendToBack>
+		<mnuLockCnt property="Caption">锁定</mnuLockCnt>
+		<mnuUnLockCnt property="Caption">解锁</mnuUnLockCnt>
+		<mnuNoInsertIn property="Caption">禁止控件插入</mnuNoInsertIn>
+		<mnuNoCopy property="Caption">禁止复制控件</mnuNoCopy>
+		<mnuFile property="Caption">文件(&amp;F)</mnuFile>
+		<mnuNew property="Caption">新建(&amp;N)</mnuNew>
+		<mnuOpen property="Caption">打开(&amp;O)</mnuOpen>
+		<mnuFormClose property="Caption">关闭(&amp;C)</mnuFormClose>
+		<mnuSave property="Caption">保存(&amp;S)</mnuSave>
+		<mnuSaveAs property="Caption">另存为(&amp;A)</mnuSaveAs>
+		<mnuImport property="Caption">导入(&amp;I)</mnuImport>
+		<mnuImportAu3 property="Caption">Au3 GUI 脚本</mnuImportAu3>
+		<mnuExit property="Caption">退出(&amp;E)</mnuExit>
+		<mnuEdit property="Caption">编辑(&amp;E)</mnuEdit>
+		<mnuCut property="Caption">剪切(&amp;X)</mnuCut>
+		<mnuCopy property="Caption">复制(&amp;C)</mnuCopy>
+		<mnuPaste property="Caption">粘贴(&amp;P)</mnuPaste>
+		<mnuDelete property="Caption">删除(&amp;D)</mnuDelete>
+		<mnuSelectAll property="Caption">全选(&amp;A)</mnuSelectAll>
+		<mnuTabOrder property="Caption">Tab顺序(&amp;O)</mnuTabOrder>
+		<mnuView property="Caption">视图(&amp;V)</mnuView>
+		<mnuTreeView property="Caption">对象树状视图(&amp;T)</mnuTreeView>
+		<mnuObjectInspector property="Caption">对象查看器(&amp;I)</mnuObjectInspector>
+		<mnuFormList property="Caption">窗体列表(&amp;L)</mnuFormList>
+		<mnuForms property="Caption">所有窗体(&amp;F)</mnuForms>
+		<mnuOptions property="Caption">选项(&amp;O)</mnuOptions>
+		<mnuOptionsDlg property="Caption">选项(&amp;O)...</mnuOptionsDlg>
+		<mnuRememberPos property="Caption">记住位置(&amp;R)</mnuRememberPos>
+		<mnuTools property="Caption">工具(&amp;T)</mnuTools>
+		<mnuGenerateCode property="Caption">生成代码(&amp;G)</mnuGenerateCode>
+		<mnuGenerateAdvanced property="Caption">高级代码生成(&amp;A)...</mnuGenerateAdvanced>
+		<mnuUpdate property="Caption">更新代码(&amp;U)</mnuUpdate>
+		<mnuRunForm property="Caption">运行窗体(&amp;R)</mnuRunForm>
+		<mnuHelp property="Caption">帮助(&amp;H)</mnuHelp>
+		<mnuHelpContent property="Caption">帮助文档(&amp;C)</mnuHelpContent>
+		<mnuCheckNewVersion property="Caption">检查更新(&amp;V)</mnuCheckNewVersion>
+		<mnuAbout property="Caption">关于(&amp;A)...</mnuAbout>
+	</form>
+	<form name="frmFormList">
+		<caption>窗体列表</caption>
+		<tipNotSaved property="Caption">窗体未保存</tipNotSaved>
+		<tipForm property="Caption"> 窗体</tipForm>
+		<tipScript property="Caption">脚本</tipScript>
+		<FormList property="Columns">
+			<item idx="0">窗体</item>
+			<item idx="1">路径</item>
+		</FormList>
+		<btnFormAdd property="Hint">新建窗体</btnFormAdd>
+		<btnFormDel property="Hint">关闭窗体</btnFormDel>
+		<mnuFormDel property="Caption">关闭窗体</mnuFormDel>
+		<mnuFormAdd property="Caption">添加窗体</mnuFormAdd>
+	</form>
+	<form name="PInsp">
+		<caption>对象查看器</caption>
+		<ModeTabSet property="Tabs">
+			<line idx="0">属性</line>
+			<line idx="1">样式</line>
+			<line idx="2">扩展样式</line>
+		</ModeTabSet>
+		<btnResetStyle property="Caption">重置</btnResetStyle>
+		<btnResetExStyle property="Caption">重置</btnResetExStyle>
+	</form>
+	<form name="ConfigDlg">
+		<caption>选项</caption>
+		<OptTreeView property="Items">
+			<item idx="0">常规</item>
+			<item idx="1">代码生成</item>
+			<item idx="2">格式</item>
+			<item idx="3">模板</item>
+			<item idx="4">设计器</item>
+			<item idx="5">Language</item>
+		</OptTreeView>
+		<grpGeneralAssociate property="Caption">文件关联</grpGeneralAssociate>
+		<btnAssociate property="Caption">设置</btnAssociate>
+		<btnUnassociate property="Caption">移除</btnUnassociate>
+		<grpGeneralAuPath property="Caption">窗体执行模式</grpGeneralAuPath>
+		<cbGeneralAuPath property="Items">
+			<line idx="0">关联</line>
+			<line idx="1">手动...</line>
+		</cbGeneralAuPath>
+		<grpGeneralStartup property="Caption">Koda启动时</grpGeneralStartup>
+		<cbGeneralStartup property="Items">
+			<line idx="0">创建新窗体</line>
+			<line idx="1">打开最后编辑的窗体</line>
+			<line idx="2">打开窗体对话框...</line>
+		</cbGeneralStartup>
+		<cbGeneralBackup property="Caption">创建备份</cbGeneralBackup>
+		<grpDesignerOptions property="Caption">代码生成缺省选项</grpDesignerOptions>
+		<cbCodegenPopulate property="Caption">为所有控件生成事件</cbCodegenPopulate>
+		<cbCodegenPopulate property="Hint">这将为所有控件生成变量或函数, 不管有没有设置&quot;事件&quot;属性</cbCodegenPopulate>
+		<cbCodegenExpandVars property="Caption">扩展 %var% 变量</cbCodegenExpandVars>
+		<cbCodegenExpandVars property="Hint">如果文本属性是类似 %VAR% 的 - 将解析成变量, 而不是文本本身</cbCodegenExpandVars>
+		<cbCodegenOnEvent property="Caption">基于OnEvent</cbCodegenOnEvent>
+		<cbCodegenOnEvent property="Hint">将生成OnEvent的代码风格(替代消息循环)</cbCodegenOnEvent>
+		<GroupBox3 property="Caption">格式选项</GroupBox3>
+		<lblSepChar property="Caption">数据分隔字符</lblSepChar>
+		<grpIndent property="Caption">代码缩进</grpIndent>
+		<lblIndentBy property="Caption">缩进使用</lblIndentBy>
+		<lblInitial property="Caption">初始缩进</lblInitial>
+		<cbSymbol property="Items">
+			<line idx="0">Tab键</line>
+			<line idx="1">空格</line>
+		</cbSymbol>
+		<grpVariables property="Caption">变量</grpVariables>
+		<lblScope property="Caption">范围</lblScope>
+		<cbScope property="Items">
+			<line idx="0">未设置</line>
+			<line idx="1">全局</line>
+			<line idx="2">局部</line>
+		</cbScope>
+		<cbCodegenStripPrefix property="Caption">缺省命名去掉前缀'A'</cbCodegenStripPrefix>
+		<rbLoop property="Caption">循环</rbLoop>
+		<rbEvents property="Caption">事件</rbEvents>
+		<TemplatesList property="Columns">
+			<item idx="0">模板名称</item>
+			<item idx="1">缺省</item>
+		</TemplatesList>
+		<grpDesignerGrid property="Caption">网格选项</grpDesignerGrid>
+		<cbDesignerDispalyGrid property="Caption">显示网格</cbDesignerDispalyGrid>
+		<cbDesignerSnapToGrid property="Caption">吸附到网格</cbDesignerSnapToGrid>
+		<grpDesignerGridSize property="Caption">网格大小</grpDesignerGridSize>
+		<lblDesignerGridX property="Caption">横向(&amp;X)</lblDesignerGridX>
+		<lblDesignerGridY property="Caption">纵向(&amp;Y)</lblDesignerGridY>
+		<grpDesignerOther property="Caption">其他选项</grpDesignerOther>
+		<cbDesignerReflect property="Caption">在设计时立即显示控件样式效果</cbDesignerReflect>
+		<cbDesignerSafe property="Caption">某些不安全的样式不显示效果 (透明等)</cbDesignerSafe>
+		<cbDesignerOnEvent property="Caption">高级事件编辑器 (OnEvent模式)</cbDesignerOnEvent>
+		<grpWindows property="Caption">所有窗口</grpWindows>
+		<lblDesignerPosSaving property="Caption">大小和位置保存</lblDesignerPosSaving>
+		<cbDesignerWinSnap property="Caption">吸附窗口</cbDesignerWinSnap>
+		<cbDesignerSavePos property="Items">
+			<line idx="0">不要保存</line>
+			<line idx="1">自动保存</line>
+			<line idx="2">手动保存</line>
+		</cbDesignerSavePos>
+		<cbDesignerKeepLayout property="Caption">保持标准布局</cbDesignerKeepLayout>
+		<cbDesignerKeepLayout property="Hint">当主窗体移动时保持所有窗口的标准布局</cbDesignerKeepLayout>
+		<lblActiveLang property="Caption">选定语言: </lblActiveLang>
+		<LangList property="Columns">
+			<item idx="0">语言</item>
+			<item idx="1">本地名称</item>
+			<item idx="2">作者</item>
+			<item idx="3">版本</item>
+		</LangList>
+		<btnCreateTemplate property="Caption">创建模板</btnCreateTemplate>
+		<btnCancel property="Caption">取消</btnCancel>
+		<btnOK property="Caption">确定</btnOK>
+		<btnApply property="Caption">应用</btnApply>
+		<mnuNew property="Caption">新建</mnuNew>
+		<mnuEdit property="Caption">编辑</mnuEdit>
+		<mnuDelete property="Caption">删除</mnuDelete>
+		<mnuDuplicate property="Caption">复制</mnuDuplicate>
+		<mnuSetDef property="Caption">设为默认</mnuSetDef>
+	</form>
+	<form name="frmDesignerCode">
+		<caption>代码</caption>
+		<mnuCopyToClipboard property="Caption">复制到剪贴板(&amp;C)</mnuCopyToClipboard>
+		<mnuSaveToFile property="Caption">保存到文件(&amp;F)</mnuSaveToFile>
+		<mnuInsertIntoScite property="Caption">插入到(&amp;Scite)</mnuInsertIntoScite>
+	</form>
+	<form name="frmAdvGenerate">
+		<caption>高级代码生成</caption>
+		<grpDesignerOptions property="Caption">生成选项</grpDesignerOptions>
+		<cbCodegenPopulate property="Caption">为所有控件生成事件</cbCodegenPopulate>
+		<cbCodegenExpandVars property="Caption">扩展 %var% 变量</cbCodegenExpandVars>
+		<cbCodegenOnEvent property="Caption">生成基于OnEvent的代码</cbCodegenOnEvent>
+		<btnGenerate property="Caption">生成</btnGenerate>
+		<btnCancel property="Caption">取消</btnCancel>
+		<grpTemplate property="Caption">模板</grpTemplate>
+		<btnManage property="Caption">管理</btnManage>
+	</form>
+	<form name="frmAboutBox">
+		<caption>关于</caption>
+		<lblHomePage property="Caption">主页</lblHomePage>
+		<lblVersion property="Caption">版本</lblVersion>
+		<btnOK property="Caption">确定</btnOK>
+	</form>
+	<form name="frmTemplateEditor">
+		<caption>代码模板编辑</caption>
+		<lblName property="Caption">模板名称</lblName>
+		<lblText property="Caption">模板内容</lblText>
+		<btnOK property="Caption">确定</btnOK>
+	</form>
+	<form name="frmObjectTree">
+		<caption>对象树状视图</caption>
+	</form>
+	<form name="frmChooseScript">
+		<caption>选择脚本</caption>
+		<lblChooseHint property="Caption">您想打开的窗体被不止一个脚本引用. 请选择一个脚本.</lblChooseHint>
+		<ScriptsList property="Columns">
+			<item idx="0">脚本名称</item>
+			<item idx="1">最后修改</item>
+		</ScriptsList>
+		<btnOK property="Caption">确定</btnOK>
+		<btnCancel property="Caption">取消</btnCancel>
+	</form>
+	<form name="PictureEdit">
+		<caption>图像编辑器</caption>
+		<btnImgOk property="Caption">确定</btnImgOk>
+		<btnImgCancel property="Caption">取消</btnImgCancel>
+		<btnImgHelp property="Caption">帮助</btnImgHelp>
+		<grpImgPicGroupBox property="Caption">选择图片</grpImgPicGroupBox>
+		<btnImgLoad property="Caption">读取(&amp;L)...</btnImgLoad>
+		<btnImgSave property="Caption">保存(&amp;S)...</btnImgSave>
+		<btnImgClear property="Caption">清除(&amp;C)</btnImgClear>
+		<grpImages property="Caption">文件中的图片</grpImages>
+		<cbSmallIcons property="Caption">小图标</cbSmallIcons>
+	</form>
+	<form name="frmAXObjectEditor">
+		<caption>ActiveX控件浏览</caption>
+		<lblLoadStatus property="Caption">状态: </lblLoadStatus>
+		<lblPath property="Caption">路径:</lblPath>
+		<CompList property="Columns">
+			<item idx="0">组件名称</item>
+		</CompList>
+		<btnOK property="Caption">确定</btnOK>
+		<btnCancel property="Caption">取消</btnCancel>
+	</form>
+	<form name="frmGalleryBrowser">
+		<caption>模板</caption>
+		<lblTGDescr property="Caption">描述:</lblTGDescr>
+		<btnTGOK property="Caption">确定</btnTGOK>
+		<btnTGCancel property="Caption">取消</btnTGCancel>
+		<btnTGHelp property="Caption">帮助(&amp;H)</btnTGHelp>
+		<tabGroups property="Tabs">
+			<line idx="0">标准</line>
+		</tabGroups>
+		<lvItems property="Columns">
+			<item idx="0">名称</item>
+			<item idx="1">描述</item>
+		</lvItems>
+		<mnuTGLargeIcons property="Caption">显示大图标(&amp;L)</mnuTGLargeIcons>
+		<mnuTGSmallIcons property="Caption">显示小图标(&amp;S)</mnuTGSmallIcons>
+		<mnuTGList property="Caption">显示列表(&amp;I)</mnuTGList>
+		<mnuTGDetails property="Caption">显示详情(&amp;D)</mnuTGDetails>
+	</form>
+	<form name="frmTreeViewEditor">
+		<caption>TreeView项目编辑器</caption>
+		<grpTVItems property="Caption">Items</grpTVItems>
+		<btnTVNew property="Caption">新项(&amp;I)</btnTVNew>
+		<btnTVNewSub property="Caption">新子项(&amp;S)</btnTVNewSub>
+		<btnTVDelete property="Caption">删除&amp;D</btnTVDelete>
+		<grpTVProperties property="Caption">项目属性</grpTVProperties>
+		<lblTVText property="Caption">文本:</lblTVText>
+		<btnTVCancel property="Caption">取消</btnTVCancel>
+		<btnTVApply property="Caption">应用(&amp;A)</btnTVApply>
+		<btnTVOk property="Caption">确定</btnTVOk>
+		<btnTVHelp property="Caption">帮助(&amp;H)</btnTVHelp>
+	</form>
+	<form name="frmListViewEditor">
+		<caption>ListView项目编辑器</caption>
+		<grpLVItems property="Caption">Items</grpLVItems>
+		<btnLVNew property="Caption">新项(&amp;N)</btnLVNew>
+		<btnLVDelete property="Caption">删除(&amp;D)</btnLVDelete>
+		<btnLVNewSub property="Caption">新子项(&amp;E)</btnLVNewSub>
+		<grpLVProperties property="Caption">项目属性</grpLVProperties>
+		<lblLVCaption property="Caption">文本:</lblLVCaption>
+		<btnLVOk property="Caption">确定</btnLVOk>
+		<btnLVCancel property="Caption">取消</btnLVCancel>
+		<btnLVApply property="Caption">应用(&amp;A)</btnLVApply>
+		<btnLVHelp property="Caption">帮助(&amp;H)</btnLVHelp>
+	</form>
+	<form name="frmCollectionEditor">
+		<caption>所有列</caption>
+		<btnAdd property="Hint">新增</btnAdd>
+		<btnDelete property="Hint">删除</btnDelete>
+		<btnUp property="Hint">上移</btnUp>
+		<btnDown property="Hint">下移</btnDown>
+		<mnuColRefresh property="Caption">刷新</mnuColRefresh>
+	</form>
+	<form name="frmEventEditor">
+		<caption>事件(Event)编辑器</caption>
+		<grpNotify property="Caption">管理通知</grpNotify>
+		<grpEvent property="Caption">管理事件</grpEvent>
+		<rbEditFunc property="Caption">通知</rbEditFunc>
+		<rbNone property="Caption">无</rbNone>
+		<btnDefault property="Caption">默认</btnDefault>
+		<btnOK property="Caption">确定</btnOK>
+		<btnCancel property="Caption">取消</btnCancel>
+	</form>
+	<form name="frmTabOrder">
+		<caption>Tab顺序编辑器</caption>
+		<btnOK property="Caption">确定</btnOK>
+		<btnCancel property="Caption">取消</btnCancel>
+	</form>
+	<form name="frmMenuBuilder">
+		<caption>菜单设计器</caption>
+		<InsertItem property="Caption">插入(&amp;I)</InsertItem>
+		<DeleteItem property="Caption">删除(&amp;D)</DeleteItem>
+		<CreateSubmenu property="Caption">创建子菜单(&amp;C)</CreateSubmenu>
+	</form>
+</language>
