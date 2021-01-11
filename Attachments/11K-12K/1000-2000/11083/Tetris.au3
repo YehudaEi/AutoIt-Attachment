@@ -432,7 +432,6 @@ EndFunc
 Func _NewGame()
 	Local $i, $j
 
-	AdlibRegister()
 	HotKeySet("{LEFT}", "_MoveShapeLeft")
 	HotKeySet("{RIGHT}", "_MoveShapeRight")
 	HotKeySet("{DOWN}", "_RotateShape")
@@ -448,5 +447,5 @@ Func _NewGame()
 	$g_bGameStarted = True
 	_DrawGameShape()
 	$g_nGameTick = 500
-	AdlibEnable("_MoveShapeDown", $g_nGameTick)
+	AdlibRegister("_MoveShapeDown", $g_nGameTick)
 EndFunc
