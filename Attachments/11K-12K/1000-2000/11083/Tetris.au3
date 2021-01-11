@@ -267,10 +267,9 @@ Func _MoveShape($nMoveX, $nMoveY)
 						_RedrawGameBoard()
 					EndIf
 				Next
-				AdlibRegister()
 				_NewShape()
 				_DrawGameShape()
-				AdlibEnable("_MoveShapeDown", $g_nGameTick)
+				AdlibRegister("_MoveShapeDown", $g_nGameTick)
 			EndIf
 		EndIf
 	Else
