@@ -1,0 +1,28 @@
+~-----------------------------------------------------------------~
+| Error      : Scan failed                                        |
+| Descrip    : error in scan             Suberr :    4d           |
+| Error1     : Scan failed                                        |
+| Error2     : Text field with more info                          |
+~-----------------------------------------------------------------~
+| More info  : Scan number  : 31       scans failed : 12          |
+~-----------------------------------------------------------------~
+| More info2 : Scan              : 1       failed           : 1   |
+|            : Scan1             : 1       failed1          : 1   |
+|            : Scan2             : 1                              |
+|            : Scan3             : 1                              |
+|         Error Code 4                                            |
+|         Error Code 5                                            |
+|         Error Code 6                                            |
+~-----------------------------------------------------------------~
+
+~-----------------------------------------------------------------~
+| Error      : Scan failed                                        |
+| Descrip    : error in scan             Suberr :    4d           |
+| Error1     : text field with info                               |
+| Error2     : Text field with more info                          |
+~-----------------------------------------------------------------~
+| More info2 : Scan              : 1       failed           : 1   |
+|            : Scan1             : 1       failed 1         : 1   |
+|            : Scan2             : 1                              |
+|            : Scan3             : 1                              |
+~-----------------------------------------------------------------~
