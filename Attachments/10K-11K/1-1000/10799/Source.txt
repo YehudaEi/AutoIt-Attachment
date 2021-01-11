@@ -1,0 +1,583 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- #BeginTemplate "/Templates/template_covers.dwt" --><!-- DW6 -->
+<head>
+<!-- #BeginEditable "doctitle" -->
+<title>Cdcovers.cc - Displaying [Dvd] [The Last Samurai] [front] Cover</title>
+<!-- #EndEditable -->
+<meta name="Description" content="Cdcovers.cc - World's Largest Cover Archive and Game Cheats." />
+<meta name="Keywords" content="cd, covers, audio, dvd, dreamcast, gameboy advance, gamecube, mini disc, pc, playstation, playstation2, vhs, vcd, xbox, cdcovers, cheats, labels, music covers, mp3 search, covers, covers search, Pochettes, Portadas, Coptine, Caratulas, Sleeves, Hoesjes" />
+<meta name="COPYRIGHT" content="Copyright (c) 1999-2005 Cdcovers.cc" />
+<meta name="robots" content="noarchive" />
+<meta name="MSSmartTagsPreventParsing" content="TRUE" />
+<meta http-equiv="MSThemeCompatible" content="Yes" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<style type="text/css">
+.textbox {BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; SCROLLBAR-FACE-COLOR: #cccccc; FONT-SIZE: x-small; BACKGROUND: white; SCROLLBAR-HIGHLIGHT-COLOR: #ffffff; BORDER-LEFT: #000000 1px solid; SCROLLBAR-SHADOW-COLOR: #ffffff; COLOR: #000000; SCROLLBAR-3DLIGHT-COLOR: #ffffff; SCROLLBAR-ARROW-COLOR: #000000; SCROLLBAR-TRACK-COLOR: #ffffff; BORDER-BOTTOM: #000000 1px solid; FONT-FAMILY: Verdana,Arial,Helvetica; SCROLLBAR-DARKSHADOW-COLOR: #ffffff; TEXT-ALIGN: left}
+select {FONT-FAMILY: Arial,Verdana,Helvetica; TEXT-ALIGN: left; color:#000000; font-size:13px; background-color:#ffffff;}
+td {FONT-FAMILY: Verdana,Arial,Helvetica; FONT-SIZE: 10pt}
+div {FONT-FAMILY: Verdana,Arial,Helvetica}
+body {
+FONT-SIZE: 10pt; FONT-FAMILY: Verdana,Arial,Helvetica
+scrollbar-3d-light-color: #d8ecea;
+scrollbar-arrow-color: #666666;
+scrollbar-base-color: #666666;
+scrollbar-dark-shadow-color: #FFFFFF;
+scrollbar-face-color: #d8ecea;
+scrollbar-highlight-color: #FFFFFF;
+scrollbar-shadow-color: #FFFFFF;}
+.coverLetter {font-family: Arial, Verdana, Helvetica; font-size: 18px; color: #222222; font-weight: bold; text-decoration: none;}
+a.coverLetter:hover {font-family: Arial, Verdana, Helvetica; font-size: 18px; color: #BE5002; font-weight: bold; text-decoration: none;}
+a.coverLetter:link {font-family: Arial, Verdana, Helvetica; font-size: 18px; color: #EF7F00; font-weight: bold; text-decoration: none;}
+a.coverLetter:visited {font-family: Arial, Verdana, Helvetica; font-size: 18px; color: #EF7F00; font-weight: bold; text-decoration: none;}
+</style>
+<script language="JavaScript" type="text/javascript">
+<!--
+// frame buster
+if(top.frames.length != 0 || top != self) top.location.href = self.location.href;
+function bookmark() {
+	if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) {
+		var url = "                       ";
+		var title = "Cdcovers.cc - World's Largest Cover Archive";
+		window.external.AddFavorite(url, title);
+	}
+}
+function parseSearch(oForm) {
+	var oSelect = oForm.group;
+	if (oSelect.options[oSelect.selectedIndex].value == 'isohunt') {
+		window.open('                                    '+oForm.terms.value, 'isohunt');
+		return false;
+	}
+	return true;
+}
+//-->
+</script>
+<!-- #BeginEditable "head" --><!-- #EndEditable -->
+</head>
+<body text="#000000" vlink="#363636" alink="#d5ae83" link="#363636" bgcolor="#ffffff" leftmargin="0" topmargin="0" marginheight="0" marginwidth="0" onload="self.focus();">
+<br />
+<table cellspacing="0" cellpadding="0" width="100%" align="center" bgcolor="#ffffff" border="0">
+  <tbody>
+    <tr>
+      <td align="center" width="33%"><table width="100%" border="0" align="left" cellpadding="0" cellspacing="0">
+          <tr valign="top">
+            <td align="center"><font size="1"><strong>if you find our free service helpful, please consider donating</strong></font></td>
+            <td align="left"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                <input type="hidden" name="cmd" value="_xclick" />
+                <input type="hidden" name="business" value="cdcovers@gmail.com" />
+                <input type="hidden" name="item_name" value="Donation to support our free service" />
+                <input type="hidden" name="item_number" value="Thank you for supporting our free service" />
+                <input type="hidden" name="no_shipping" value="1" />
+                <input type="hidden" name="return" value="                                 " />
+                <input type="hidden" name="cn" value="Comments" />
+                <input type="hidden" name="currency_code" value="EUR" />
+                <input type="hidden" name="tax" value="0" />
+                <input name="submit" type="image" src="images/paypal.gif" alt="Click to donate to cdcovers.cc using PayPal - it's fast, free and secure!" width="62" height="31" border="0" />
+              </form></td>
+            <td align="left" width="10">&nbsp;</td>
+          </tr>
+        </table></td>
+      <td align="center" bgcolor="#ffffff"><img src="images/pixel.gif" width="10" height="1" /></td>
+      <td align="center" bgcolor="#ffffff" width="33%"><img alt="Welcome to CDcovers.CC" src="images/logo_new3.gif" border="0" width="417" height="65" /> </td>
+      <td align="center" bgcolor="#ffffff"><img src="images/pixel.gif" width="10" height="1" /></td>
+      <td align="center" width="33%"><TABLE width="240" border="0" cellpadding="0" cellspacing="0" > 
+  <TR> 
+	<TD height="52" align="center">
+	<SCRIPT type="text/javascript">
+	var aSosTitle = new Array();
+	aSosTitle[0] = 'All New Software Releases';
+	aSosTitle[1] = 'Download Latest Software';
+	aSosTitle[2] = 'All Freeware and Shareware';
+	aSosTitle[3] = 'New Software Rating';
+	aSosTitle[4] = 'Free Software Downloads';
+	aSosTitle[5] = 'Discover New Software';
+	aSosTitle[6] = 'Share Your Favorite Apps';
+	aSosTitle[7] = "Geek's Sneak Peak";
+	aSosTitle[8] = 'Download Newest Warez';
+	aSosTitle[9] = 'Newest Software Releases';
+
+	var aSosBody = new Array();
+	aSosBody[0] = 'Download links, user ratings & reviews, screenshots and info';
+	aSosBody[1] = 'Freeware and shareware software downloads, rating and screenshots';
+	aSosBody[2] = 'Download latest software releases for Windows, Linux or Mac';
+	aSosBody[3] = 'User ratings & reviews, screenshots and free software downloads';
+	aSosBody[4] = 'All new freeware and shareware downloads for Windows, Linux or Mac';
+	aSosBody[5] = 'The latest cutting edge software releases picked by software geeks';
+	aSosBody[6] = 'With friends and fellow software enthusiasts around the world';
+	aSosBody[7] = 'Be the first to download and try new features of your favorite apps';
+	aSosBody[8] = 'Cutting edge software releases picked by the geek community';
+	aSosBody[9] = 'Picked, rated and reviewed by the community of software lovers';
+
+	var iRandom = (Math.floor((Math.random()*aSosTitle.length)));
+	if (iRandom == aSosTitle.length) iRandom--;
+	// site on spot
+	document.write('<A style="cursor:pointer; text-decoration:none"  href="http://www.betamarker.com?gad=CPPFjNYCEghJ9SeLdpF_eBj1xZL-AyDfk6Ma" target="_blank"><SPAN style="font-family:Verdana, Arial, Helvetica, sans-serif; font-size:13px; color:#E60000; font-weight:bold">');
+	document.write(aSosTitle[iRandom]);
+	document.write('</SPAN></A><BR><SPAN style="font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; color:#000000;">');
+	document.write(aSosBody[iRandom]);
+	document.write('</SPAN><BR><A style="cursor:pointer; text-decoration:none" href="http://www.betamarker.com?gad=CPPFjNYCEghJ9SeLdpF_eBj1xZL-AyDfk6Ma" target="_blank"><SPAN style="font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px; color:#0000FF; font-weight:bold">www.betamarker.com</SPAN></A>');
+	</SCRIPT>
+	</TD>
+  </TR>
+</TABLE>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<table cellspacing="0" cellpadding="0" width="100%" align="center" bgcolor="#fefefe" border="0">
+  <tbody>
+    <tr>
+      <td bgcolor="#000000" colspan="8"><img height="1" alt="" src="images/pixel.gif" width="1" border="0" /></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ffffff" colspan="8"><img height="1" alt="" src="images/pixel.gif" width="1" border="0" /></td>
+    </tr>
+    <tr valign="middle" bgcolor="#d8ecea">
+      <td align="center" width="12%"><a href="                       " target="_top"> <img height="22" alt="Go to Home" src="images/home.gif" width="22" border="0" /></a> </td>
+      <td align="center" width="12%"><a href="                                 " target="_top"> <img height="21" alt="Download Covers" src="images/covers.gif" width="22" border="0" /></a> </td>
+      <td align="center" width="12%"><a href="                                 " target="_top"> <img height="22" alt="Game Cheats" src="images/download.gif" width="22" border="0" /></a> </td>
+      <td align="center" width="12%"><a href="                                 " target="_top"> <img height="22" alt="Mobile Enhancements" src="images/mobile2.gif" width="22" border="0" /></a> </td>
+      <td align="center" width="12%"><a href="                                 " target="_top"> <img height="22" alt="Upload Covers" src="images/forum.gif" width="22" border="0" /></a> </td>
+      <td align="center" width="12%"><a href="                                 " target="_top"> <img height="22" alt="Request Covers" src="images/unregistered.gif" width="22" border="0" /></a> </td>
+      <td align="center" width="12%"><a href="                              " target="_top"> <img height="22" alt="Frequently Asked Questions" src="images/top.gif" width="22" border="0" /></a> </td>
+    </tr>
+    <tr valign="middle" bgcolor="#d8ecea">
+      <td align="center"><font size="2"><a href="                       " target="_top">Home</a></font> </td>
+      <td align="center"><font size="2"><a href="                                 " target="_top">Covers</a></font> </td>
+      <td align="center"><font size="2"><a href="                                 " target="_top">Cheats</a></font> </td>
+      <td align="center"><font size="2"><a href="                                 " target="_top">Mobile</a></font> </td>
+      <td align="center"><font size="2"><a href="                                 " target="_top">Upload</a></font> </td>
+      <td align="center"><font size="2"><a href="                                 " target="_top">Forums</a></font> </td>
+      <td align="center"><strong><font size="2"><font color="#FF0000">NEW </font><a href="                              " target="_top">FAQ</a></font></strong> </td>
+    </tr>
+    <tr bgcolor="#d8ecea">
+      <td colspan="8"><img height="4" alt="" src="images/pixel.gif" width="1" /></td>
+    </tr>
+    <tr>
+      <td bgcolor="#cccccc" colspan="8"><img height="1" alt="" src="images/pixel.gif" width="1" border="0" /></td>
+    </tr>
+    <tr>
+      <td bgcolor="#000000" colspan="8"><img height="1" alt="" src="images/pixel.gif" width="1" border="0" /></td>
+    </tr>
+  </tbody>
+</table>
+<table cellspacing="0" cellpadding="0" width="100%" align="center" bgcolor="#ffffff" border="0">
+  <tr>
+    <td><img alt="" src="images/pixel.gif" height="10" border="0" /></td>
+  </tr>
+  <tr>
+    <td align="center"><script language='JavaScript' type='text/javascript'>
+if (!document.phpAds_used) document.phpAds_used = ',';
+phpAds_random = new String (Math.random()); phpAds_random = phpAds_random.substring(2,11);
+document.write ("<" + "script language='JavaScript' type='text/javascript' src='");
+document.write ("                                        " + phpAds_random);
+document.write ("&amp;what=zone:74&amp;target=_blank&amp;source=download");
+document.write ("&amp;exclude=" + document.phpAds_used);
+if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+document.write ("'><" + "/script>");
+</script>
+</td>
+  </tr>
+  <tr>
+    <td><img alt="" src="images/pixel.gif" height="10" border="0" /></td>
+  </tr>
+</table>
+<table cellspacing="0" cellpadding="0" width="100%" align="center" bgcolor="#ffffff" border="0">
+  <tbody>
+    <tr valign="top">
+      <td bgcolor="#ffffff"><img height="1" alt="" src="images/pixel.gif" width="10" border="0" /></td>
+      <td valign="top" width="150" bgcolor="#ffffff"><table cellspacing="0" cellpadding="1" width="150" bgcolor="#000000" border="0">
+          <tbody>
+            <tr>
+              <td><table cellspacing="0" cellpadding="0" width="100%" bgcolor="#d8ecea" border="0">
+                  <tbody>
+                    <tr>
+                      <td bgcolor="#ffffff"><img height="1" alt="" src="images/pixel.gif" width="1" border="0" /></td>
+                    </tr>
+                    <tr>
+                      <td align="left" height="20"><font color="#363636" size="2"><b>&nbsp;&nbsp;Cover Search</b></font></td>
+                    </tr>
+                    <tr>
+                      <td bgcolor="#aaaaaa"><img height="1" alt="" src="images/pixel.gif" width="1" border="0" /></td>
+                    </tr>
+                  </tbody>
+                </table></td>
+            </tr>
+          </tbody>
+        </table>
+        <table cellspacing="0" cellpadding="0" width="150" bgcolor="#ffffff" border="0">
+          <tbody>
+            <tr valign="top">
+              <td bgcolor="#ffffff" align="center"><table width="100%" border="0" cellpadding="1" cellspacing="1">
+                  <form action="                                 " method="get" name="cover" target="_top" id="cover" onsubmit="return parseSearch(this)">
+                    <tr>
+                      <td><font size="2">Section:</font> </td>
+                    </tr>
+                    <tr>
+                      <td align="center"><select name="group" size="1">
+                          <option value="audio">==== Covers ====</option>
+                          <option value="audio">Audio Covers</option>
+                          <option value="bollywood">Bollywood Covers</option>
+                          <option value="cdi">CDi Covers</option>
+                          <option value="dreamcast">Dreamcast Covers</option>
+                          <option value="ds">DS Covers</option>
+                          <option value="dvd" selected="selected">Dvd Covers</option>
+                          <option value="gamecube">Gamecube Covers</option>
+                          <option value="gba">Gameboy Advance</option>
+                          <option value="karaoke">Karaoke Covers</option>
+                          <option value="pc">Pc Covers</option>
+                          <option value="psp">Psp Covers</option>
+                          <option value="psx">Psx Covers</option>
+                          <option value="psx2">Psx2 Covers</option>
+                          <option value="vcd">Vcd Covers</option>
+                          <option value="vhs">Vhs Covers</option>
+                          <option value="xbox">Xbox Covers</option>
+                          <option value="xbox360">Xbox360 Covers</option>
+                          <option value="cheats_Playstation">==== Cheats ====</option>
+                          <option value="cheats_Dreamcast">Dreamcast Cheats</option>
+                          <option value="cheats_Dvd">Dvd Cheats</option>
+                          <option value="cheats_Gameboy">Gameboy Cheats</option>
+                          <option value="cheats_Gameboy_Advance">Gameboy Advance</option>
+                          <option value="cheats_Gamecube">Gamecube Cheats</option>
+                          <option value="cheats_Nintendo_64">Nintendo Cheats</option>
+                          <option value="cheats_Pc">Pc Cheats</option>
+                          <option value="cheats_Playstation">Psx Cheats</option>
+                          <option value="cheats_Playstation_2">Psx2 Cheats</option>
+                          <option value="cheats_Xbox">Xbox Cheats</option>
+                          <option value="isohunt">==== Files ====</option>
+                          <option value="isohunt">Bittorrent Files</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><font size="2">Keywords:</font> </td>
+                    </tr>
+                    <tr>
+                      <td align="center"><input type="text" name="terms" size="16" maxlength="40" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center">
+                        <input type="submit" name="Button" value="Search" />
+                      </td>
+                    </tr>
+                  </form>
+                </table></td>
+            </tr>
+            <tr>
+              <td><br />
+                <img alt="" src="images/shadow.gif" width="150" border="0" /> </td>
+            </tr>
+          </tbody>
+        </table>
+		<br  />
+		<table cellspacing="0" cellpadding="1" width="150" bgcolor="#000000" border="0">
+          <tbody>
+            <tr>
+              <td><table cellspacing="0" cellpadding="0" width="100%" bgcolor="#d8ecea" border="0">
+                  <tbody>
+                    <tr>
+                      <td bgcolor="#ffffff"><img height="1" alt="" src="images/pixel.gif" width="1" border="0" /></td>
+                    </tr>
+                    <tr>
+                      <td align="left" height="20"><font color="#363636" size="2"><b>&nbsp;&nbsp;Free Storage </b></font></td>
+                    </tr>
+                    <tr>
+                      <td bgcolor="#aaaaaa"><img height="1" alt="" src="images/pixel.gif" width="1" border="0" /></td>
+                    </tr>
+                  </tbody>
+                </table></td>
+            </tr>
+          </tbody>
+        </table>
+        <table cellspacing="0" cellpadding="0" width="150" bgcolor="#ffffff" border="0">
+          <tbody>
+            <tr valign="top">
+              <td bgcolor="#ffffff" align="center">
+			  <br />
+				<script type="text/javascript">
+				var aImages = new Array();
+				aImages[0] = 'fw125x125.gif';
+				aImages[1] = 'fw125x125b.gif';
+				aImages[2] = 'np_125x125_2_1.gif';
+				var aLinks = new Array();
+				aLinks[0] = '                       ';
+				aLinks[1] = '                       ';
+				aLinks[2] = '                                         ';
+				var iRandom = (Math.floor((Math.random()*aImages.length)));
+				if (iRandom == aImages.length) iRandom--;
+				document.write('<a href="'+aLinks[iRandom]+'" target="_blank">');
+				document.write('<img src="/images/'+aImages[iRandom]+'" width="125" height="125" border="0">');
+				document.write('</a>');
+				</script>			  			  
+			  </td>
+            </tr>
+            <tr>
+              <td><br />
+                <img alt="" src="images/shadow.gif" width="150" border="0" /> </td>
+            </tr>
+          </tbody>
+        </table>
+        <br />
+        <table cellspacing="0" cellpadding="1" width="150" bgcolor="#000000" border="0">
+          <tbody>
+            <tr>
+              <td><table cellspacing="0" cellpadding="0" width="100%" bgcolor="#d8ecea" border="0">
+                  <tbody>
+                    <tr>
+                      <td bgcolor="#ffffff"><img height="1" alt="" src="images/pixel.gif" width="1" border="0" /></td>
+                    </tr>
+                    <tr>
+                      <td align="left" height="20"><font color="#363636" size="2"><b><font color="#FF0000">NEW</font>&nbsp;Forums</b></font></td>
+                    </tr>
+                    <tr>
+                      <td bgcolor="#aaaaaa"><img height="1" alt="" src="images/pixel.gif" width="1" border="0" /></td>
+                    </tr>
+                  </tbody>
+                </table></td>
+            </tr>
+          </tbody>
+        </table>
+        <table cellspacing="0" cellpadding="0" width="150" bgcolor="#ffffff" border="0">
+          <tbody>
+            <tr valign="top">
+              <td bgcolor="#ffffff"><font size="2">Our newly redesigned <a href="                          "><strong>forums</strong></a> are the place to meet other members of this site and discuss anything from requesting covers (including music covers!), through hardware and software issues and up to the general lounge room where you can talk about anything you like</font></td>
+            </tr>
+            <tr>
+              <td><br />
+                <img alt="" src="images/shadow.gif" width="150" border="0" /> </td>
+            </tr>
+          </tbody>
+        </table>
+        <br />
+        <table cellspacing="0" cellpadding="1" width="150" bgcolor="#000000" border="0">
+          <tbody>
+            <tr>
+              <td><table cellspacing="0" cellpadding="0" width="100%" bgcolor="#d8ecea" border="0">
+                  <tbody>
+                    <tr>
+                      <td bgcolor="#ffffff"><img height="1" alt="" src="images/pixel.gif" width="1" border="0" /></td>
+                    </tr>
+                    <tr>
+                      <td align="left" height="20"><font color="#363636" size="2"><b>&nbsp;&nbsp;Our Affiliates</b></font></td>
+                    </tr>
+                    <tr>
+                      <td bgcolor="#aaaaaa"><img height="1" alt="" src="images/pixel.gif" width="1" border="0" /></td>
+                    </tr>
+                  </tbody>
+                </table></td>
+            </tr>
+          </tbody>
+        </table>
+        <table cellspacing="0" cellpadding="0" width="150" bgcolor="#ffffff" border="0">
+          <tbody>
+            <tr valign="top">
+              <td bgcolor="#ffffff"><font size="2">You are just a few clicks away from these cool sites we are affilated with: <br />
+                </font>
+                <li><a href="http://www.betamarker.com">Beta Marker</a> </li>				
+                <li><a href="                                                                   " target="_blank">Site On Spot</a></li>
+                <li><a href="                          " target="_blank">Mega-Search</a></li>
+                <li><a href="http://www.cdrinfo.com" target="_blank">CDR-Info</a></li>
+                <li><a href="http://www.cdfreaks.com" target="_blank">CDFreaks</a></li>
+                <li><a href="http://www.bitburners.com" target="_blank">BitBurners</a></li></td>
+            </tr>
+            <tr>
+              <td><br />
+                <img alt="" src="images/shadow.gif" width="150" border="0" /> </td>
+            </tr>
+          </tbody>
+        </table>
+        <br />
+	  </td>
+      <td><img height="1" alt="" src="images/pixel.gif" width="15" border="0" /></td>
+      <td width="100%"><!-- #BeginEditable "body" -->
+<script language="JavaScript">
+window.status = 'Thank you for using our free service';
+</script>
+<div align=center>
+<div style="display:none" id='tp'>The Last Samurai</div>
+
+	<script language="JavaScript" type="text/javascript">
+	<!--
+	ctxt_ad_partner = "2628758600";
+	ctxt_ad_section = "22360";
+	ctxt_ad_bg = "FFFFFF";
+	ctxt_ad_width = 468;
+	ctxt_ad_height = 60;
+	ctxt_ad_bc = "FFFFFF";
+	ctxt_ad_cc = "FFFFFF";
+	ctxt_ad_lc = "000000";
+	ctxt_ad_tc = "3A4F6C";
+	ctxt_ad_uc = "97B5E0";
+	// -->
+	</script>
+	<script language="JavaScript" src="http://ypn-js.overture.com/partner/js/ypn.js">
+	</script>
+	<br />
+<B>The Last Samurai-front</B>&nbsp;&nbsp;[1490x1000]&nbsp;&nbsp;[319.2 KB]<BR><font size="1" color="red">more parts of this title are available at the <a href="#bottom">bottom</a></font><br><IMG src='transparent.gif' width=500 height=336 name="the_cover" alt="Please wait while the cover is downloaded. If you encounter any problem, please read our FAQ at www.cdcovers.cc/faq.php" border=1><BR><FONT size=1>cover has been resized for display only. When saved it will get its real size<BR>To save right click on the cover and choose Save Picture As... Read the <A href=faq.php>faq</A> for more info.</FONT><BR></DIV><script language='JavaScript'>window.onLoad=setTimeout('document.the_cover.src="                                                                                                                                                     "', 7000);</script><a name="bottom" id="bottom"></a><br /><!-- Search Google -->
+<table bgcolor="#ffffff" cellpadding="0" cellspacing="0" border="0" width="500" align="center">
+<form method="get" action="http://www.google.com/custom" target="google_window">
+<tr><td cellspan="2" align="center"><font face="Verdana, Arial, Helvetica, sans-serif"><strong><font color="#FF0000" size="2">NEW! </font><font size="2">Search for more info about this title:</font></strong></font></td></tr>
+<tr><td nowrap="nowrap" valign="top" align="left" height="32">
+<a href="http://www.google.com/">
+<img src="http://www.google.com/logos/Logo_25wht.gif" border="0" alt="Google" align="middle"></img></a>
+<input type="text" name="q" size="52" maxlength="255" value=""></input>
+<input type="submit" name="sa" value="Search"></input>
+<input type="hidden" name="client" value="pub-5821412950245701"></input>
+<input type="hidden" name="forid" value="1"></input>
+<input type="hidden" name="channel" value="0491251240"></input>
+<input type="hidden" name="ie" value="UTF-8"></input>
+<input type="hidden" name="oe" value="UTF-8"></input>
+<input type="hidden" name="cof" value="GALT:#008000;GL:1;DIV:#336699;VLC:663399;AH:center;BGC:FFFFFF;LBGC:FFFFFF;ALC:0000FF;LC:0000FF;T:000000;GFNT:0000FF;GIMP:0000FF;LH:50;LW:321;L:                                             ;S:                       ;FORID:1;"></input>
+<input type="hidden" name="hl" value="en"></input>
+</td></tr>
+</form>
+</table>
+</div>
+<!-- Search Google -->
+        <br />
+                <form action="                             " method="post" name="download" target="_top" id="download">
+          <div align="center">
+            <input type="hidden" name="cname" value="The Last Samurai" />
+            <input type="hidden" name="type" value="dvd" />
+            <input type="hidden" name="letter" value="t" />
+            <input type="hidden" name="titleList" value="13" />
+            <b>We also have the following cover parts for this title:</b><br />
+            <script language='JavaScript' type='text/javascript'>
+if (!document.phpAds_used) document.phpAds_used = ',';
+phpAds_random = new String (Math.random()); phpAds_random = phpAds_random.substring(2,11); 
+document.write ("<" + "script language='JavaScript' type='text/javascript' src='");
+document.write ("                                        " + phpAds_random);
+document.write ("&amp;what=zone:66&amp;source=bottom&amp;target=_blank");
+document.write ("&amp;exclude=" + document.phpAds_used);
+if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+document.write ("'><" + "/script>");
+</script>
+<br />
+<INPUT name="part" type="submit" id="frontCover" value="front">&nbsp;<INPUT name="part" type="submit" id="cdCover" value="cd">&nbsp;<INPUT name="part" type="submit" id="cd2Cover" value="cd2">&nbsp;            <font size="1"><br />
+            <a href="                                 "><strong>go back</strong></a> to the cover selection page you came from</font>
+            </div>
+        </form>
+        <script language="JavaScript" type="text/javascript">document.getElementById("frontCover").disabled = true;</script>        <!-- #EndEditable --></td>
+      <td><img height="1" alt="" src="" width="15" border="0" /></td>
+      <td width="150"><table cellspacing="0" cellpadding="1" width="150" bgcolor="#000000" border="0">
+          <tbody>
+            <tr>
+              <td><table cellspacing="0" cellpadding="0" width="100%" bgcolor="#d8ecea" border="0">
+                  <tbody>
+                    <tr>
+                      <td bgcolor="#ffffff"><img height="1" alt="" src="images/pixel.gif" width="1" border="0" /></td>
+                    </tr>
+                    <tr>
+                      <td align="left" height="20"><font color="#363636" size="2"><b>&nbsp; Advertisement</b></font></td>
+                    </tr>
+                    <tr>
+                      <td bgcolor="#aaaaaa"><img height="1" alt="" src="images/pixel.gif" width="1" border="0" /></td>
+                    </tr>
+                  </tbody>
+                </table></td>
+            </tr>
+          </tbody>
+        </table>
+        <table cellspacing="0" cellpadding="0" width="150" bgcolor="#ffffff" border="0">
+          <tbody>
+            <tr valign="top">
+              <td bgcolor="#ffffff" align="center" height="600"><br />
+                <script language='JavaScript' type='text/javascript'>
+if (!document.phpAds_used) document.phpAds_used = ',';
+phpAds_random = new String (Math.random()); phpAds_random = phpAds_random.substring(2,11);
+document.write ("<" + "script language='JavaScript' type='text/javascript' src='");
+document.write ("                                        " + phpAds_random);
+document.write ("&amp;what=zone:68&amp;target=_blank&amp;source=download");
+document.write ("&amp;exclude=" + document.phpAds_used);
+if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+document.write ("'><" + "/script>");
+</script>
+              </td>
+            </tr>
+            <tr>
+              <td><br />
+                <img alt="" src="images/shadow.gif" width="150" border="0" /> </td>
+            </tr>
+          </tbody>
+        </table>
+        <br />
+        <table cellspacing="0" cellpadding="1" width="150" bgcolor="#000000" border="0">
+          <tbody>
+            <tr>
+              <td><table cellspacing="0" cellpadding="0" width="100%" bgcolor="#d8ecea" border="0">
+                  <tbody>
+                    <tr>
+                      <td bgcolor="#ffffff"><img height="1" alt="" src="images/pixel.gif" width="1" border="0" /></td>
+                    </tr>
+                    <tr>
+                      <td align="left" height="20"><font color="#363636" size="2"><b>&nbsp;&nbsp;Cover Software</b></font></td>
+                    </tr>
+                    <tr>
+                      <td bgcolor="#aaaaaa"><img height="1" alt="" src="images/pixel.gif" width="1" border="0" /></td>
+                    </tr>
+                  </tbody>
+                </table></td>
+            </tr>
+          </tbody>
+        </table>
+        <table cellspacing="0" cellpadding="0" width="150" bgcolor="#ffffff" border="0">
+          <tbody>
+            <tr valign="top">
+              <td bgcolor="#ffffff"><p><a href="                      " target="_blank"><img src="images/coverXP1.gif" width="140" height="25" vspace="2" border="0" /></a><br />
+                  <a href="                      " target="_blank"><b>download</b></a> the all new version of our official printing software. </p>
+                <p><font size="1">features : drag covers directly from the download page into the software / scan / upload / search / brightness adjustement / overlay to add text or pictures on your covers</font></p></td>
+            </tr>
+            <tr>
+              <td><br />
+                <img alt="" src="images/shadow.gif" width="150" border="0" /> </td>
+            </tr>
+          </tbody>
+        </table></td>
+      <td><img height="1" alt="" src="images/pixel.gif" width="10" border="0" /></td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<table cellspacing="0" cellpadding="0" width="100%" align="center" bgcolor="#fefefe" border="0">
+  <tbody>
+    <tr>
+      <td bgcolor="#000000"><img height="1" alt="" src="" width="1" border="0" /></td>
+    </tr>
+    <tr>
+      <td bgcolor="#ffffff"><img height="1" alt="" src="" width="1" border="0" /></td>
+    </tr>
+    <tr valign="middle" bgcolor="#d8ecea">
+      <td align="center" height="20" bgcolor="#d8ecea"><font size="2"> <a href="                       " target="_top">Home</a>&nbsp;&nbsp;&middot;&nbsp; <a href="                                 " target="_top">Covers</a>&nbsp;&nbsp;&middot;&nbsp; <a href="                                 " target="_top">Cheats</a>&nbsp;&nbsp;&middot;&nbsp; <a href="                                   " target="_top">Software</a>&nbsp;&nbsp;&middot;&nbsp; <a href="                                 " target="_top">Forums</a> &nbsp;&middot;&nbsp; <a href="                                    " target="_top">FAQ</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp; <a href="javascript:bookmark()">Bookmark</a></font></td>
+    </tr>
+    <tr>
+      <td bgcolor="#cccccc"><img height="1" alt="" src="" width="1" border="0" /></td>
+    </tr>
+    <tr>
+      <td bgcolor="#000000"><img height="1" alt="" src="" width="1" border="0" /></td>
+    </tr>
+    <tr>
+      <td height="30" align="center"><font size="1">Copyright &copy; 1999 - 2006 <a href="                                         ">Cdcovers.cc</a></font> </td>
+    </tr>
+  </tbody>
+</table>
+<!-- #BeginEditable "bottom" -->
+<script language='JavaScript' type='text/javascript'>
+if (!document.phpAds_used) document.phpAds_used = ',';
+phpAds_random = new String (Math.random()); phpAds_random = phpAds_random.substring(2,11);
+document.write ("<" + "script language='JavaScript' type='text/javascript' src='");
+document.write ("                                        " + phpAds_random);
+document.write ("&amp;what=zone:67&amp;target=_blank&amp;source=download");
+document.write ("&amp;exclude=" + document.phpAds_used);
+if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+document.write ("'><" + "/script>");
+</script>
+<!-- #EndEditable -->
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-229507-1";
+urchinTracker();
+</script>
+</body>
+<!-- #EndTemplate --></html>
