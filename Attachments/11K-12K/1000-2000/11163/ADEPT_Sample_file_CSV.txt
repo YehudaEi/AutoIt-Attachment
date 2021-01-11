@@ -1,0 +1,6 @@
+BAS 2{ENTER},\sleep(1000),2{ENTER}3{ENTER},\sleep(1000),"\beep(200,200)",\FINISHED ROW,Enter Application,,,
+51,{TAB},9100200,{NUMPADADD}{ENTER},\sleep(1000),{PGDN 3},\sleep(3000),"\beep(500,500)",{F3},Process Records
+51,{TAB},9100210,{NUMPADADD}{ENTER},\sleep(1000),{PGDN 3},\sleep(3000),"\beep(500,500)",{F3},
+51,{TAB},9100220,{NUMPADADD}{ENTER},\sleep(1000),{PGDN 3},\sleep(3000),"\beep(500,500)",{F3},
+51,{TAB},9100230,{NUMPADADD}{ENTER},\sleep(1000),{PGDN 3},\sleep(3000),"\beep(500,500)",{F3},
+\FINISHED SHEET,,,,,,,,,
