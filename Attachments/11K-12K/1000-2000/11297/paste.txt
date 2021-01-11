@@ -1,0 +1,107 @@
+
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "1 TYPELIB "".\\scm.tlb""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FIL
+ FIL
+#endif
+ FILEOS 0x4L
+ FILE
+            VALUE "Comments", "\0"
+            
+            VALUE "InternalName", "CCM\0"
+            VALUE "LegalCopyright", "Copyright 1999-2003\0"
+            VALUE "LegalTrademarks", "\0"
+          
+            VALUE "ProductVersion", "4.1.3.14472\0"
+            VALUE "SpecialBuild", "eg05792 eg47889 eg75148 eg77257 eg80606 sa63770 sa64690 sa65757 sa66224 sa68351 sa70684 sa71292 sa71443 sa72075 sa72667 sa73460 sa73461 sa73468 sa73714 sa73821 sa81171 sa82121 sa83874 eg62448 eg39579 sa55834 sa77103 sa95603\0"
+            VALUE "SpecialBuild2", "sa94475 sa98553 sa98999 sa99827 sb01716 ee20842 sb00797 eh48498 sa84421 sa92062 sb01536 ef40976 sb10350 sb17636 sa86206 sa96850 sa97366 sb08295 sb10350 ef81805 sb22211 sb22708 sa70674 sa80318 ef71610 eg37721 eg55229 eh39139\0"
+            VALUE "SpecialBuild3", "sa91198 sb12448 sb13798 sb30975 sb31602 eg56410 eh06782 sa65878 sa75901 sa77185 sb01329 sb08581 sb18747 sb18809 sb26605 sb30317 sb32103 uk55454 ef70826 sa73714 sb18809 sb40124 sa82433 sb33400 sb27851 sb36782 sb57014 sb58843\0"
+            VALUE "SpecialBuild4", "sb49627 sb53977 sb62669 sb64065 uk55138 sb50071 sb70126 sb49430 sb16635 sb56053 sb60395 sb73699 sb91325 sb85579 sb85579 sb36910 sb46224 sb50366 sb60395_2 sb92313 sb95724 sb75848 sb88712 sb98884 sc08515 sc10659 ec50080 sb05242\0" 
+            VALUE "SpecialBuild7", "sb43753 sc07492 sc14193 sc67021 sc70853 sb15241 sb46008 sd06096 sd07174 sa70351 sd01343 sd16251 sd11438 sd03212 sd13544 sd36176 sb28215 sb87792 sc06953 sc45181 sd28860 sd43894\0"
+            VALUE "SpecialBuild8", "sb93663 sc06953_2 sc24761 sc57949 sc71873 sc92724 sd00135 sd03859 sd04737 sd16427 sd22818 sd23916 sd32150 sd43646 sd54037 sd61551 sd51518 sb13556 sd27237 sd61861 sd67329 sd74769\0"
+            VALUE "SpecialBuild9", "sd87924 sd93062 sd39649 sc89249 sd98033 eb74323 sd79553 sd97462 sd99801 sa80421 se05527 se13526 ee93063 sb25694 sd17222 sd96174 se28510 sd95583 se12129 se28346 sb14724 se21694\0"
+            VALUE "SpecialBuild10", "se27147 sc83171 se09304 se40889 se42819 se43228 se44016 se44352 sc64303 sc79421 sd87675 se40333 se48041 se43154 se43391 se53300 se61109 se36638 sd94511 se29071 se66661 se82801\0"
+            VALUE "SpecialBuild11", "eg88830 sd18730 se48918 se78257 sd98221 se72798 se85155 eg33875 sb44680 sc62073 sd13088 sd65745 sd72778 sd83803 se00015 se43044 se54360 sf00272 sc28999 sd99344 sd96188\0"
+	    VALUE "SpecialBuild12", "sf32240 sg06040 se69001 sg12126 sd87256 sb65151_2 sg15105 sf32240 sc62073\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+1 TYPELIB ".\scm.tlb"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
