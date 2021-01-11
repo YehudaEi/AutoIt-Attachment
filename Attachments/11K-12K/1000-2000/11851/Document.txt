@@ -1,0 +1,295 @@
+
+@echo off
+
+title Richard Haynes 11/03/2006
+
+color 9f
+
+rem < COMMAND 1 >
+
+echo.
+echo. show hidden files and folders/show extensions...
+Start /wait reg import %systemdrive%\OemPreinstall\View.reg
+echo. done!
+
+rem < COMMAND 2 >
+
+cls
+echo.
+echo. Microsoft .NET Framework 1.1
+Start /wait %systemdrive%\OemPreinstall\dotnetfx\netfx.msi /qn
+echo. done!
+
+rem < COMMAND 3 >
+
+cls
+echo.
+echo. Microsoft .NET Framework 2.0
+Start /wait %systemdrive%\OemPreinstall\dotnetfx.exe /q:a /c:"install /l /q"
+echo. done!
+
+rem < COMMAND 4 >
+
+cls
+echo.
+echo. Security update for Microsoft .NET Framework 2.0
+Start /wait %systemdrive%\OemPreinstall\KB917283.exe /qn
+echo. done!
+
+rem < COMMAND 5 >
+
+cls
+echo.
+echo. Security Update for Microsoft .NET Framework, Version 2.0
+Start /wait %systemdrive%\OemPreinstall\KB922770.exe /qn
+echo. done!
+
+rem < COMMAND 6 >
+
+cls
+echo.
+echo. Office 2003 - This might take several minutes to complete
+Start /wait %systemdrive%\OemPreinstall\Office\SETUP.EXE TRANSFORMS=PRO11.MST /qn
+echo. done!
+
+rem < COMMAND 7 >
+
+cls
+echo.
+echo. Office updates - This might take several minutes to complete
+Start /min /wait %systemdrive%\OemPreinstall\Office\updates\updates.bat
+echo. done!
+
+rem < COMMAND 8 >
+
+cls
+echo.
+echo. turning off the Office '03 Language Bar...
+Start /wait reg import %systemdrive%\OemPreinstall\LangBar.reg
+echo. done!
+
+rem < COMMAND 9 >
+
+cls
+echo.
+echo. Windows Media Player 11
+Start /wait %systemdrive%\OemPreinstall\mpsetupedp.msi /qn
+echo. done!
+
+rem < COMMAND 10 >
+
+cls
+echo.
+echo. update for WMDRM-enabled players
+Start /wait %systemdrive%\OemPreinstall\KB902344.exe /q
+echo. done!
+
+rem < COMMAND 11 >
+
+cls
+echo.
+echo. Security Update for Windows Media Player 10 for Windows XP (KB911565)
+Start /wait %systemdrive%\OemPreinstall\KB911565.exe /q
+echo. done!
+
+rem < COMMAND 12 >
+
+cls
+echo.
+echo. HighMAT CD Writing Wizard
+Start /wait %systemdrive%\OemPreinstall\HMTCD.exe /qn
+echo. done!
+
+rem < COMMAND 13 >
+
+cls
+echo.
+echo. Microsoft PowerToys for Windows XP - This may take a minute or two
+Start /min /wait %systemdrive%\OemPreinstall\PowerToys\PowerToys.bat
+echo. done!
+
+rem < COMMAND 14 >
+
+cls
+echo.
+echo. Microsoft Calculator Plus
+Start /wait %systemdrive%\OemPreinstall\CalcPlus.msi /qn
+echo. done!
+
+rem < COMMAND 15 >
+
+cls
+echo.
+echo. Windows Media Connect 2.0
+Start /wait %systemdrive%\OemPreinstall\wmcsetup.exe /q
+echo. done!
+
+rem < COMMAND 16 >
+
+cls
+echo.
+echo. Adobe Reader 7.0.7
+Start /wait %systemdrive%\OemPreinstall\Adobe\7.07\Adobe.msi /qn
+echo. done!
+
+rem < COMMAND 17 >
+
+cls
+echo.
+echo. Accept Adobe Reader EULA...
+Start /wait reg import %systemdrive%\OemPreinstall\Adobe\EULA.reg
+echo. done!
+
+rem < COMMAND 18 >
+
+cls
+echo.
+echo. Hide the Yahoo! toolbar/Search The Internet menu (Adobe Reader)
+COPY "%systemdrive%\OemPreinstall\Adobe\disableYahooSearch.js" "C:\Program Files\Adobe\Acrobat 7.0\Reader\Javascripts"
+echo. done!
+
+rem < COMMAND 19 >
+
+cls
+echo.
+echo. Disable 'Search The Internet' in the Search pane (Adobe Reader)
+REN "%systemdrive%\Program Files\Adobe\Acrobat 7.0\Reader\Javascripts\WebSearch.js" "%systemdrive%\Program Files\Adobe\Acrobat 7.0\Reader\Javascripts\WebSearch.old"
+echo. done!
+
+rem < COMMAND 20 >
+
+cls
+echo.
+echo. Shockwave Player 10
+Start /wait %systemdrive%\OemPreinstall\Shockwave_Installer_Full.exe /S
+echo. done!
+taskkill /f /im iexplore.exe
+
+rem < COMMAND 21 >
+
+cls
+echo.
+echo. Security update for Flash player (Flash player Version 9)
+Start /wait %systemdrive%\OemPreinstall\KB913433.exe /q:a /r:n
+echo. done!
+
+rem < COMMAND 22 >
+
+cls
+echo.
+echo. Windows Live Messenger 8.1 BETA
+Start /wait %systemdrive%\OemPreinstall\MsnMsgs.msi /qn
+echo. done!
+
+rem < COMMAND 23 >
+
+cls
+echo.
+echo. Java Runtime Environment 5.0 Update 9
+start /w %systemdrive%\OemPreinstall\jre-1_5_0_09-windows-i586-p-s.exe /s /v"/qn ADDLOCAL=ALL IEXPLORER=1 REBOOT=Suppress WEBSTARTICON=0
+echo. done!
+
+rem < COMMAND 24 >
+
+cls
+echo.
+echo. Symantec AntiVirus 10.0 Corporate Edition
+Start /wait %systemdrive%\OemPreinstall\AntiVirus\AntiVirus.msi ENABLEAUTOPROTECT=1 RUNLIVEUPDATE=0 /qn
+echo. done!
+
+rem < COMMAND 25 >
+
+cls
+echo.
+echo. Close "Old Virus Definition File" window
+Start /wait %systemdrive%\OemPreinstall\WinClose.exe
+echo. done!
+
+rem < COMMAND 26 >
+
+cls
+echo.
+echo. Updating Virus Protection Files -Release Date: November 2, 2006-
+Start /wait %systemdrive%\OemPreinstall\definitions.exe /q
+echo. done!
+
+rem < COMMAND 27 >
+
+cls
+echo.
+echo. Internet Explorer 7 - This may take a minute or two
+Start /wait %systemdrive%\OemPreinstall\IE7.exe /norestart /quiet /passive
+echo. done!
+
+rem < COMMAND 28 >
+
+cls
+echo.
+echo. WinRAR 3.61
+Start /wait %systemdrive%\OemPreinstall\wrar361.exe /s
+echo. done!
+
+rem < COMMAND 29 >
+
+cls
+echo.
+echo. Disable Balloon Tips - Remove Messengers from Startup
+Start /wait reg import %systemdrive%\OemPreinstall\BalloonTips.reg
+echo. done!
+
+rem < COMMAND 30 >
+
+cls
+echo.
+echo. disable third-party tool bands
+Start /wait reg import %systemdrive%\OemPreinstall\thirdparty.reg
+echo. done!
+
+rem < COMMAND 31 >
+
+cls
+echo.
+echo. QuickTime 7.1.3
+Start /wait %systemdrive%\OemPreinstall\QuickTime\QuickTime.msi /qn
+echo. done!
+
+REN "C:\Program Files\QuickTime\qttask.exe" qttask
+
+rem < COMMAND 32 >
+
+cls
+echo.
+echo. Remove Desktop icons
+del "C:\Documents and Settings\All Users\Desktop\*.*" /q
+echo. done!
+
+rem < COMMAND 33 >
+
+cls
+echo.
+echo. Mozilla Firefox 1.5.0.7
+Start /wait %systemdrive%\OemPreinstall\Firefox\setup.exe
+echo. done!
+
+rem < COMMAND 34 >
+
+cls
+echo.
+echo. VMware Workstation 5.5.2
+Start /wait msiexec -i "%systemdrive%\OemPreinstall\VMware\VMware Workstation.msi" ADDLOCAL=ALL DESKTOP_SHORTCUT=0 SERIALNUMBER=xxxxx-xxxxx-xxxxx-xxxxx /qn
+echo. done!
+
+rem < COMMAND 35 >
+
+cls
+echo.
+echo. Network Diagnostic Tool
+Start /wait %systemdrive%\OemPreinstall\KB914440.exe /q
+echo. done!
+
+cls
+echo.
+echo. Restarting computer...
+shutdown -r -f -t 300 -c "Finalizing installation"
+
+exit
