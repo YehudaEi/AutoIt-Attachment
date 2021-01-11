@@ -225,7 +225,7 @@ Func _MoveShape($nMoveX, $nMoveY)
 	If _CollisionTest($nMoveX, $nMoveY) Then
 		If $nMoveY = 1 Then
 			If $g_nShapeY < 1 Then
-				AdlibDisable()
+				AdlibRegister()
 				MsgBox(0, "AutoIT Tetris", "GAME OVER!")
 				GUICtrlSetState($g_btnStart, $GUI_ENABLE)
 				HotKeySet("{LEFT}")
@@ -268,7 +268,7 @@ Func _MoveShape($nMoveX, $nMoveY)
 						_RedrawGameBoard()
 					EndIf
 				Next
-				AdlibDisable()
+				AdlibRegister()
 				_NewShape()
 				_DrawGameShape()
 				AdlibEnable("_MoveShapeDown", $g_nGameTick)
@@ -434,7 +434,7 @@ EndFunc
 Func _NewGame()
 	Local $i, $j
 
-	AdlibDisable()
+	AdlibRegister()
 	HotKeySet("{LEFT}", "_MoveShapeLeft")
 	HotKeySet("{RIGHT}", "_MoveShapeRight")
 	HotKeySet("{DOWN}", "_RotateShape")
