@@ -1,0 +1,145 @@
+[Config]
+Apps_Install=1
+Component_Install=1
+Finalize=1
+Hotfix_Install=1
+Hotfix_Path=%CDROM%\Addon\XPHotfix\
+Reboot=1
+
+[Component_1]
+Title=Package Installer 6.1.22.4
+CmdLine=%CDROM%\Addon\XPProgs\PInstall.exe /quiet /passive /norestart
+
+[Component_2]
+Title=Windows Installer 3.1
+CmdLine=%CDROM%\Addon\XPProgs\INST31.exe /quiet /passive /norestart
+
+[Component_3]
+Title=Windows Media Player 10
+CmdLine=%CDROM%\Addon\XPProgs\MP10.exe /Q:A /R:N /C:"Setup_WM.exe /DisallowSystemRestore /Q:A /R:N"
+
+[Component_4]
+Title=Windows Media Connect 2.0
+CmdLine=%CDROM%\Addon\XPProgs\WMCSetup.exe /quiet /passive /norestart
+
+[Component_5]
+Title=Windows Messenger 5.1
+CmdLine=MSIEXEC /i %CDROM%\Addon\XPProgs\MSGR51.MSI /Q
+
+[Component_6]
+Title=MSN Messenger 7.5
+CmdLine=MSIEXEC /i %CDROM%\Addon\XPProgs\MSN75.msi ADDEXPLORERTOOLBAR="" SETSEARCHENGINE="" SETHOMEPAGE="" /Quiet /Norestart
+
+[Component_7]
+Title=MacroMedia Flash Fix
+CmdLine=%CDROM%\Addon\XPProgs\Flash.exe /Q:A /R:N
+
+[Apps_1]
+Title=AC3-Filter 0.70b
+CmdLine=%CDROM%\Addon\Apps\AC3_070B.exe /S
+
+[Apps_2]
+Title=Alcohol 120% 1.9.5.3150
+CmdLine_1=MSIEXEC /i %CDROM%\Addon\Apps\Alcohol\Setup.msi /NORESTART /QN
+CmdLine_2=%CDROM%\Addon\Apps\Alcohol\Alcohol.exe
+
+[Apps_3]
+Title=DVD-Decrypter 3.5.4.0
+CmdLine=%CDROM%\Addon\Apps\Dvddecr.exe /S
+
+[Apps_4]
+Title=DVD-Shrink 3.2.0.15
+CmdLine=%CDROM%\Addon\Apps\Dvdshrink.exe /VERYSILENT /SP-
+
+[Apps_5]
+Title=eMule 0.47
+CmdLine_1=%CDROM%\Addon\Apps\eMule\eMule047.exe /S
+CmdLine_2=%CDROM%\Addon\Apps\eMule\eMuleCFG.exe
+
+[Apps_6]
+Title=Microsoft OfficeXP SP3
+CmdLine_1=%CDROM%\Addon\Apps\OfficeXP\SetupPLS.exe TRANSFORMS=Unattended.MST /qn
+CmdLine_2=%CDROM%\Addon\Apps\OfficeXP\KB885884.exe /quiet /passive /norestart
+
+[Apps_7]
+Title=Microsoft PowerPoint Viewer 97
+CmdLine=%CDROM%\Addon\Apps\PPV_97\Setup.exe /QNT /QT
+
+[Apps_8]
+Title=Nero Burning Rom 6.6.0.16
+CmdLine=%CDROM%\Addon\Apps\Nero6.exe /NOCANCEL /NOLICENCE /NOREBOOT /NO_UI /SILENT /SN=xxxx-xxxx-xxxx-xxxx-xxxx-xxxx /WRITE_SN /NO_DESKTOPSHORTCUT
+
+[Apps_9]
+Title=Norton Antivirus 2005
+CmdLine_1=%CDROM%\Addon\Apps\Nav05\Activate.exe
+CmdLine_2=%CDROM%\Addon\Apps\Nav05\NavSetup.exe "/qn /noreboot /REBOOT=ReallySuppress"
+
+[Apps_10]
+Title=Norton Partition Magic 8.05
+CmdLine=%CDROM%\Addon\Apps\PQM805\Setup.exe /s /v"/qn"
+
+[Apps_11]
+Title=PcAnywhere 12
+CmdLine=%CDROM%\Addon\Apps\PCA12.exe
+
+[Apps_12]
+Title=PowerDVD 5
+CmdLine=%CDROM%\Addon\Apps\PowerDVD\Setup.exe -s -f2"%Systemdrive%\PowerDVD.log"
+
+[Apps_13]
+Title=Total Commander 6.55
+CmdLine=%CDROM%\Addon\Apps\TCMD_655.EXE
+
+[Apps_14]
+Title=UltraIso Premium Edition 8
+CmdLine_1=%CDROM%\Addon\Apps\UIso\uiso8_pe.exe /VERYSILENT /SP-
+CmdLine_2=%CDROM%\Addon\Apps\UIso\UltraIso.exe
+
+[Apps_15]
+Title=uTorrent 1.6
+CmdLine=%CDROM%\Addon\Apps\uTorrent.exe
+
+[Apps_16]
+Title=VMWare Workstation 5.5
+CmdLine_1=%CDROM%\Addon\Apps\VMWare\VMWare.exe /s /v"/qn REBOOT=REALLYSUPPRESS SERIALNUMBER=xxxxx-xxxxx-xxxxx-xxxxx ADDLOCAL=ALL DESKTOP_SHORTCUT=0 QUICKLAUNCH_SHORTCUT=1 DISABLE_AUTORUN=0 REMOVE_LICENSE=1"
+CmdLine_2=%CDROM%\Addon\Apps\VMWare\Prefs.exe
+
+[Apps_17]
+Title=VOptXP 7.22
+CmdLine_1=%CDROM%\Addon\Apps\VOPTXP\VOPTXP.exe /s
+CmdLine_2=%CDROM%\Addon\Apps\VOPTXP\VOPT.exe
+
+[Apps_18]
+Title=WinRAR Corporate
+CmdLine=%CDROM%\Addon\Apps\WinRAR.exe
+
+[Apps_19]
+Title=XVid-Codec 1.1.0
+CmdLine=%CDROM%\Addon\Apps\XVID110.exe /VERYSILENT /SP-
+
+[Finalize]
+Action=CreateShortcut,uTorrent,%APPDATA%\Microsoft\Internet Explorer\Quick Launch\uTorrent.lnk,%PROGRAMFILES%\uTorrent\uTorrent.exe
+Action=CreateShortcut,eMule,%APPDATA%\Microsoft\Internet Explorer\Quick Launch\eMule1.lnk,%PROGRAMFILES%\eMule\eMule.exe
+Action=DirDel,%USERPROFILE%\Favorites\LINKS
+Action=DirDel,%USERPROFILE%\Favorieten\Koppelingen
+Action=FileCopy,%CDROM%\Addon\Personal\Don.bmp,%ALLUSERSPROFILE%\Application Data\Microsoft\User Account Pictures
+Action=FileCopy,%USERPROFILE%\Start Menu\Programs\Windows Media Player.lnk,%APPDATA%\Microsoft\Internet Explorer\Quick Launch
+Action=FileCopy,%ALLUSERSPROFILE%\Start Menu\Programs\eMule\eMule.lnk,%APPDATA%\Microsoft\Internet Explorer\Quick Launch
+Action=FileCopy,%CDROM%\Addon\Apps\Nav05\NavCFG.exe,%PROGRAMFILES%\Norton AntiVirus
+Action=FileCopy,%ALLUSERSPROFILE%\Start Menu\Programs\Total Commander\Total Commander 32.lnk,%APPDATA%\Microsoft\Internet Explorer\Quick Launch
+Action=FileCopy,%SystemDrive%\UpdateOS.ini,%ProgramFIles%\1\
+Action=FileDel,%USERPROFILE%\Favorites\MSN.com.url
+Action=FileDel,%USERPROFILE%\Favorieten\MSN.com.url
+Action=FileDel,%USERPROFILE%\Favorties\Radio Station Guide.url
+Action=FileDel,%USERPROFILE%\Desktop\DVD Decrypter.lnk
+Action=FileDel,%USERPROFILE%\Desktop\DVD Shrink 3.2.lnk
+Action=FileDel,%ALLUSERSPROFILE%\Desktop\Norton Antivirus 2005.lnk
+Action=FileDel,%SYSTEMDRIVE%\PowerDVD.log
+Action=FileMove,%ALLUSERSPROFILE%\Desktop\Alcohol 120%%.lnk,%APPDATA%\Microsoft\Internet Explorer\Quick Launch
+Action=FileMove,%ALLUSERSPROFILE%\Desktop\Symantec PcAnywhere.lnk,%APPDATA%\Microsoft\Internet Explorer\Quick Launch
+Action=FileMove,%ALLUSERSPROFILE%\Desktop\PowerDVD.lnk,%APPDATA%\Microsoft\Internet Explorer\Quick Launch
+Action=FileMove,%USERPROFILE%\Desktop\UltraISO.lnk,%APPDATA%\Microsoft\Internet Explorer\Quick Launch
+Action=Run,%CDROM%\Addon\Cmd\Recycle.exe
+Action=Run,%CDROM%\Addon\Personal\Favorite.exe
+Action=RegAdd,HKLM\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\RUN,NAV CfgWiz,REG_SZ,%ProgramFiles%\Norton AntiVirus\NavCFG.exe
+Action=RegDel,HKLM\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\RUN,WU_TIC
