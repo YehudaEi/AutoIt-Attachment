@@ -1,0 +1,11 @@
+Shared resources at \\sydsye
+
+ffff
+
+Share name  Type  Used as  Comment    
+
+-------------------------------------------------------------------------------
+sc          Disk                      
+testshare   Disk           testshare  
+The command completed successfully.
+
