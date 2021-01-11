@@ -213,8 +213,8 @@ Func _MoveShapeDown()
 EndFunc
 
 Func _DropShape()
-	AdlibDisable()
-	AdlibEnable("_MoveShapeDown", 25)
+	AdlibUnRegister()
+	AdlibRegister("_MoveShapeDown", 25)
 EndFunc
 
 Func _MoveShape($nMoveX, $nMoveY)
