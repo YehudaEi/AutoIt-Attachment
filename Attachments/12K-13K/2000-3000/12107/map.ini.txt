@@ -1,0 +1,19 @@
+;
+; default sitename can be whatever you want it to be
+: as long as there is a matching Siteurl
+;
+; HotKey Below = Ctrl+ALt+m change it if you want
+;
+
+[Defaults]
+HotKey=^!m
+Sitename=Multimap
+;Sitename=Streetmap
+
+BrowserPath=C:\Program Files\Internet Explorer\iexplore.exe
+;BrowserPath="C:\Program Files\Mozilla Firefox\Firefox.exe"
+
+
+[Siteurl]
+Multimap=                                                                                           
+Streetmap=http://www.streetmap.co.uk/newsearch.srf?mapp=newmap&searchp=newsearch&name=
