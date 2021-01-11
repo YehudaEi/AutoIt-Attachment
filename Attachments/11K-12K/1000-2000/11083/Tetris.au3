@@ -225,7 +225,6 @@ Func _MoveShape($nMoveX, $nMoveY)
 	If _CollisionTest($nMoveX, $nMoveY) Then
 		If $nMoveY = 1 Then
 			If $g_nShapeY < 1 Then
-				AdlibRegister()
 				MsgBox(0, "AutoIT Tetris", "GAME OVER!")
 				GUICtrlSetState($g_btnStart, $GUI_ENABLE)
 				HotKeySet("{LEFT}")
