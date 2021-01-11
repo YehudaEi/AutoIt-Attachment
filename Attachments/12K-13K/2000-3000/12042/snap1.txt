@@ -1,0 +1,80 @@
+Press CTRL-ALT-F to freeze the display.
+
+>>>>>>>>>>>> Window Details <<<<<<<<<<<<<
+Title:	Product Wizard
+Class:	WindowsForms10.Window.8.app.0.378734a
+Size:	X: 477    Y: 206    W: 1020    H: 728
+
+>>>>>>>>>>> Mouse Details <<<<<<<<<<<
+Screen:	X: 1166	Y: 1187
+Cursor ID:	2
+
+>>>>>>>>>>> Pixel Color Under Mouse <<<<<<<<<<<
+RGB:	Hex: 0xD4D0C8	Dec: 13947080
+
+>>>>>>>>>>> Control Under Mouse <<<<<<<<<<<
+Size:
+Control ID:
+ClassNameNN:
+Text:
+
+>>>>>>>>>>> Status Bar Text <<<<<<<<<<<
+
+
+>>>>>>>>>>> Visible Window Text <<<<<<<<<<<
+300
+300
+Nominal Rate:
+70.0%
+Title Insurance:
+Solicitors costs:
+Lenders Arrgmnt fee:
+£395.00
+£0.00
+£0.00
+£0.00
+Broker Fee:
+Commission
+3.00%
+£750.00
+Loan:
+0.00%
+Rate:
+PPP:
+£0.00
+Rate:
+Repayments
+300 installments of £271.23.
+£0
+None
+Second Charge (CCA Regulated) LTV 77.5% from £3,000
+12.20% (commission 3.00%)
+25000
+Term (months):
+Loan Amount:
+Blemain Plans:
+Loan advance:
+£25,395
+£25,395
+Early repayment charges
+Amount payable per £100 borrowed at 75 months £96.03, at 150 months £84.00 and at 225 months £57.97.
+Payment Protection Cover:
+Main Loan:
+PPP Cost:
+Gross Advance:
++
+=
+Valuation:
+£250,000
+Loan to Value:
+APR:
+13.2%
+Monthly:
+1.017%
+Flat:
+8.817%
+Facility Fee:
+1.48%
+0870 220 4744
+
+>>>>>>>>>>> Hidden Window Text <<<<<<<<<<<
