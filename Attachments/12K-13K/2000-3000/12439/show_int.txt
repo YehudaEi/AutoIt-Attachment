@@ -1,0 +1,85 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;
+;	ttpmacro-(ttermpro-) script
+;
+;	show interfaces / ports mit logfile
+;
+;	aufruf: ttpmacro show-int.ttl hostname
+;
+;	fj 14.03.2005 07:50
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+password = '********'
+enapw = '********'
+
+
+timeout = 5
+connect param2
+;	1 = 1900	2 = 2980 / 6000		3 = ios
+wait 'Catalyst 1900' 'Cisco Systems' 'User Access Verification'
+_rc = result
+
+if	_rc = 0 then
+	messagebox param2 'timeout'
+	end
+endif
+
+
+if	_rc = 1 then
+;
+;	cat1900
+;
+;	messagebox 'cat1900' 'TYP'
+	wait 'Enter Selection'
+	sendln 'k'
+	wait '>'
+	sendln 'exit'
+	waitevent 4
+	
+elseif	_rc = 2 then
+;
+;	catos
+;
+	wait 'word:'
+	sendln password
+	wait '>'
+	sendln 'set len 0'
+	wait '>'
+	logfile = 'show-int\catos.'
+	strconcat logfile param2
+	strconcat logfile '.log'
+	logopen logfile 0 0
+;	logwrite param2
+;	logwrite #13#10
+	sendln 'show port status'
+	wait param2
+	logclose
+;	pause 1
+	sendln 'quit'
+	waitevent 4
+
+elseif	_rc = 3 then
+;
+;	IOS
+;
+	wait 'word:'
+	sendln password
+	wait '>'
+	sendln 'term len 0'
+	wait '>'
+	logfile = 'show-int\ios.'
+	strconcat logfile param2
+	strconcat logfile '.log'
+	logopen logfile 0 0
+;	logwrite param2
+;	logwrite #13#10
+	sendln 'show int status'
+	wait param2
+	logclose
+;	pause 1
+	sendln 'quit'
+	waitevent 4
+
+endif
+
+end
