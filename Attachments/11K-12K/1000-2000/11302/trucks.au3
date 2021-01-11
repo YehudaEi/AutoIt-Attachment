@@ -11,7 +11,7 @@ Do
 	$top3 = Random(10, @DesktopHeight-60)
 Until ($top3 < ($top1-60) OR $top3 > ($top1+60)) AND ($top3 < ($top2-60) OR $top3 > ($top2+60))
 
-$speed = 55 ; range from 1 to 100
+$speed = 60 ; range from 1 to 100
 
 $GUI = GUICreate("                      ", @DesktopWidth+5, @DesktopHeight, 0, 0, $WS_POPUP, BitOr($WS_EX_TOPMOST, $WS_EX_TOOLWINDOW))
 GUISetBkColor("0x000000")
@@ -53,19 +53,19 @@ While 1
 	$left1 += 5
 	$left2 += 6
 	$left3 += 4
-	If $left1 > (@DesktopWidth - 20) Then 
+	If $left1 > (@DesktopWidth - 20) Then
 		$left1 = -120
 		Do
 	        $top1 = Random(10, @DesktopHeight-60)
         Until ($top1 < ($top2-60) OR $top1 > ($top2+60)) AND ($top1 < ($top3-60) OR $top1 > ($top3+60))
 	EndIf
-	If $left2 > (@DesktopWidth - 20) Then 
+	If $left2 > (@DesktopWidth - 20) Then
 		$left2 = -120
 		Do
 			$top2 = Random(10, @DesktopHeight-60)
         Until ($top2 < ($top1-60) OR $top2 > ($top1+60)) AND ($top2 < ($top3-60) OR $top2 > ($top3+60))
 	EndIf
-	If $left3 > (@DesktopWidth - 20) Then 
+	If $left3 > (@DesktopWidth - 20) Then
 		$left3 = -120
 		Do
 			$top3 = Random(10, @DesktopHeight-60)
@@ -76,5 +76,4 @@ WEnd
 Func _exit()
 	Exit
 EndFunc
-	
-	
+
