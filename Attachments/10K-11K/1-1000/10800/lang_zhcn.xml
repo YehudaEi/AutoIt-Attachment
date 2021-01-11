@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="GBK"?>
+<language>
+	<name>Chinese(Simplified)</name>
+	<nativename>简体中文</nativename>
+	<version>1.5.1</version>
+	<author>bianbian</author><!--http://bianbian.sunshow.net-->
+	<icon>
+		<bin>000001000100120C000001001800F80200001600000028000000120000001800</bin>
+		<bin>00000100180000000000A0020000000000000000000000000000000000000000</bin>
+		<bin>0000000000000000000000000000000000000000000000000000000000000000</bin>
+		<bin>000000000000000000000000000000000000000000000000001F20D40909CD00</bin>
+		<bin>00CC0303CE0D0DD61D1DE12F2FEE4242FA4F4FFF5050F94646EA3536D53030CA</bin>
+		<bin>2A2ABF2323B21B1BA700000000000000003838E11818D20505CC0000CC0505D0</bin>
+		<bin>1010D82121E43535F24646FC5050FE4E4EF64242E53434D22E2EC72828BC2121</bin>
+		<bin>B000000000000000005050F12F30DD1212CF0303CC0000CC0707D11414DB2626</bin>
+		<bin>E83A3AF54A4AFE5151FD4C4CF23E3FE03333CF2D2DC42626B900000000000000</bin>
+		<bin>006464FD4848EC2727D80D0ECE0109CC0102CD0A0AD41818DE2B2BEB3E3EF84D</bin>
+		<bin>4DFF5151FB4949EE3A3ADA3132CD2C2CC100000000000000006565F85E5EFA40</bin>
+		<bin>41E72024D40922CD0002CC0303CE0D0DD61D1DE12F2FEE4242FA4F4FFF5050F9</bin>
+		<bin>4646EA3635D53030CA00000000000000003B3AC76A6AFF5757F63838E11818D2</bin>
+		<bin>0514CC000ACC0505D01010D82121E43535F24646FC5050FE4E4EF64242E53434</bin>
+		<bin>D200000000000000002125A7464BD46877FF5054F12F2FDD1224CF031ACC0001</bin>
+		<bin>CD0707D11414DB2626E83A3AF54A4AFE5151FD4C4CF23E3FE000000000000000</bin>
+		<bin>000A178B2A97B259B8E9646DFD4848EC2727D80D1FCE0108CC0101CD0A0AD418</bin>
+		<bin>18DE2B2BEB3E3EF84D4DFF5151FB4949EE000000000000000000107F11719432</bin>
+		<bin>97BB6576F75E5EFA4141E71F2DD4090DCD0000CC0303CE0D0DD61D1DE12F2FEE</bin>
+		<bin>4242FA4F4FFF5050F9000000000000000000007F00127F19209D3B3BC66A6FFF</bin>
+		<bin>5782F63839E11818D20505CC0000CC0505D01010D82121E43535F24646FC5050</bin>
+		<bin>FE00000000000000000000000000000000000000000000000000000000000000</bin>
+		<bin>0000000000000000000000000000000000000000000000000000000000000000</bin>
+		<bin>0000000000000000000000000000000000000000000000000000000000000000</bin>
+		<bin>0000000000000000000000000000</bin>
+	</icon>
+	<messages>
+		<askCloseModified>%s 已被修改. 删除前是否保存?</askCloseModified>
+		<askCloseQuery>%s 已被修改. 是否保存?</askCloseQuery>
+		<askAlreadyContains>项目里已经有同名的 &quot;%s&quot; 存在.</askAlreadyContains>
+		<askFileExists>文件 &quot;%s&quot; 已经存在. 覆盖吗?</askFileExists>
+		<errOpFailed>操作失败!</errOpFailed>
+		<strAssociated>关联</strAssociated>
+		<strNotAssociated>不关联</strNotAssociated>
+		<strObjInit>初始化中...</strObjInit>
+		<strObjCreatedOk>对象创建成功</strObjCreatedOk>
+		<strObjCreatedErr>对象创建失败!</strObjCreatedErr>
+	</messages>
+	<form name="DesignerMain">
+		<caption>oda FormDesigner</caption>
+		<btnNewTemplate property="Hint">新建...</btnNewTemplate>
+		<btnOpenForm property="Hint">打开窗体</btnOpenForm>
+		<btnSaveForm property="Hint">保存窗体</btnSaveForm>
+		<btnRemoveForm property="Hint">删除窗体</btnRemoveForm>
+		<btnRunForm property="Hint">运行窗体</btnRunForm>
+		<btnNewForm property="Hint">新建窗体</btnNewForm>
+		<tabStandard property="Caption">标准控件</tabStandard>
+		<btnTMainMenu property="Hint">主菜单</btnTMainMenu>
+		<btnTLabel property="Hint">文字(Label)</btnTLabel>
+		<btnTEdit property="Hint">单行输入框(Input)</btnTEdit>
+		<btnTMemo property="Hint">多行输入框(Memo)</btnTMemo>
+		<btnTButton property="Hint">按钮(Button)</btnTButton>
+		<btnTCheckBox property="Hint">多选(CheckBox)</btnTCheckBox>
+		<btnTRadioButton property="Hint">单选(RadioButton)</btnTRadioButton>
+		<btnTListBox property="Hint">列表框(ListBox)</btnTListBox>
+		<btnTComboBox property="Hint">下拉框(ComboBox)</btnTComboBox>
+		<btnTPopupMenu property="Hint">弹出菜单(Popup Menu)</btnTPopupMenu>
+		<btnTGroupBox property="Hint">组(GroupBox)</btnTGroupBox>
+		<tabAdditional property="Caption">附加控件</tabAdditional>
+		<btnSelect2 property="Caption">tbSelect</btnSelect2>
+		<btnTImage property="Hint">图像(Image)</btnTImage>
+		<btnTIcon property="Hint">图标(Icon)</btnTIcon>
+		<btnTShape property="Hint">图形(Graphic)</btnTShape>
+		<btnTSpinEdit property="Hint">上下滚动条(Updown)</btnTSpinEdit>
+		<btnTAnimate property="Hint">动画(Avi)</btnTAnimate>
+		<tabWin32 property="Caption">Win32控件</tabWin32>
+		<btnSelect3 property="Caption">tbSelect</btnSelect3>
+		<btnTTrackBar property="Hint">滑动条(Slider)</btnTTrackBar>
+		<btnTProgressBar property="Hint">进度条(Progress)</btnTProgressBar>
+		<btnTDatePick property="Hint">日期选取器</btnTDatePick>
+		<btnMonthCal property="Hint">月历</btnMonthCal>
+		<btnTTreeView property="Hint">TreeView</btnTTreeView>
+		<btnTListView property="Hint">ListView</btnTListView>
+		<btnTTab property="Hint">分页标签(Tabbed Panel)</btnTTab>
+		<btnTObj property="Hint">COM Object</btnTObj>
+		<mnuNewTabCnt property="Caption">新页面</mnuNewTabCnt>
+		<mnuDeleteCnt property="Caption">删除页面</mnuDeleteCnt>
+		<mnuAlignToGridCnt property="Caption">网格对齐</mnuAlignToGridCnt>
+		<mnuCopyCnt property="Caption">复制</mnuCopyCnt>
+		<mnuCutCnt property="Caption">剪切</mnuCutCnt>
+		<mnuPasteCnt property="Caption">粘贴</mnuPasteCnt>
+		<mnuSelectAllCnt property="Caption">全选</mnuSelectAllCnt>
+		<mnuControlCnt property="Caption">Control</mnuControlCnt>
+		<mnuBringToFrontCnt property="Caption">移到前面</mnuBringToFrontCnt>
+		<mnuSendToBack property="Caption">移到后面</mnuSendToBack>
+		<mnuLockCnt property="Caption">锁定</mnuLockCnt>
+		<mnuUnLockCnt property="Caption">解锁</mnuUnLockCnt>
+		<mnuNoInsertIn property="Caption">No insert in</mnuNoInsertIn>
+		<mnuNoCopy property="Caption">No copy</mnuNoCopy>
+		<mnuFile property="Caption">文件(&amp;F)</mnuFile>
+		<mnuNew property="Caption">新建(&amp;N)</mnuNew>
+		<mnuOpen property="Caption">打开(&amp;O)</mnuOpen>
+		<mnuSave property="Caption">保存(&amp;S)</mnuSave>
+		<mnuSaveAs property="Caption">另存为(&amp;A)</mnuSaveAs>
+		<mnuExit property="Caption">退出(&amp;E)</mnuExit>
+		<mnuEdit property="Caption">编辑(&amp;E)</mnuEdit>
+		<mnuCut property="Caption">剪切</mnuCut>
+		<mnuCopy property="Caption">复制</mnuCopy>
+		<mnuPaste property="Caption">粘贴</mnuPaste>
+		<mnuDelete property="Caption">删除</mnuDelete>
+		<mnuView property="Caption">视图(&amp;V)</mnuView>
+		<mnuObjectInspector property="Caption">对象查看器</mnuObjectInspector>
+		<mnuFormList property="Caption">窗体列表</mnuFormList>
+		<mnuForms property="Caption">查看所有窗体(&amp;V)</mnuForms>
+		<mnuOptions property="Caption">选项(&amp;O)</mnuOptions>
+		<mnuOptionsDlg property="Caption">选项(&amp;O)</mnuOptionsDlg>
+		<mnuTools property="Caption">工具(&amp;T)</mnuTools>
+		<mnuGenerateCode property="Caption">生成代码</mnuGenerateCode>
+		<mnuRunForm property="Caption">运行窗体</mnuRunForm>
+		<mnuHelp property="Caption">帮助(&amp;H)</mnuHelp>
+		<mnuAbout property="Caption">关于...</mnuAbout>
+	</form>
+	<form name="frmformlist">
+		<caption>窗体列表</caption>
+		<FormList property="Columns">
+			<item idx="0">窗体</item>
+			<item idx="1">路径</item>
+		</FormList>
+		<btnFormAdd property="Hint">新建窗体</btnFormAdd>
+		<btnFormDel property="Hint">移除窗体</btnFormDel>
+		<mnuFormDel property="Caption">移除窗体</mnuFormDel>
+		<mnuFormAdd property="Caption">添加窗体</mnuFormAdd>
+	</form>
+	<form name="pinsp">
+		<caption>对象查看器</caption>
+		<ModeTabSet property="Tabs">
+			<line idx="0">属性</line>
+			<line idx="1">样式</line>
+			<line idx="2">扩展样式</line>
+		</ModeTabSet>
+		<btnResetStyle property="Caption">重置</btnResetStyle>
+		<btnResetExStyle property="Caption">重置</btnResetExStyle>
+	</form>
+	<form name="ConfigDlg">
+		<caption>选项</caption>
+		<OptTreeView property="Items">
+			<item idx="0">常规</item>
+			<item idx="1">代码</item>
+			<item idx="2">文件头和尾</item>
+			<item idx="3">设计</item>
+			<item idx="4">语言</item>
+		</OptTreeView>
+		<grpGeneralAssociate property="Caption">文件关联</grpGeneralAssociate>
+		<btnAssociate property="Caption">设置</btnAssociate>
+		<btnUnassociate property="Caption">移除</btnUnassociate>
+		<grpGeneralAuPath property="Caption">预览执行模式</grpGeneralAuPath>
+		<cbGeneralAuPath property="Text">已关联文件</cbGeneralAuPath>
+		<cbGeneralAuPath property="Items">
+			<line idx="0">关联</line>
+			<line idx="1">手动</line>
+		</cbGeneralAuPath>
+		<grpGeneralStartup property="Caption">启动时</grpGeneralStartup>
+		<cbGeneralStartup property="Text">创建新窗体</cbGeneralStartup>
+		<cbGeneralStartup property="Items">
+			<line idx="0">创建新窗体</line>
+			<line idx="1">打开最后编辑的窗体</line>
+			<line idx="2">打开自定义窗体</line>
+		</cbGeneralStartup>
+		<grpIndent property="Caption">代码缩进</grpIndent>
+		<lblSymbols property="Caption">符号</lblSymbols>
+		<lblSymbol property="Caption">缩进用</lblSymbol>
+		<cbSymbol property="Items">
+			<line idx="0">Tab键</line>
+			<line idx="1">空格</line>
+		</cbSymbol>
+		<grpVariables property="Caption">变量</grpVariables>
+		<lblScope property="Caption">范围</lblScope>
+		<cbScope property="Text">未设置</cbScope>
+		<cbScope property="Items">
+			<line idx="0">未设置</line>
+			<line idx="1">全局</line>
+			<line idx="2">局部</line>
+		</cbScope>
+		<lblHeader property="Caption">开头</lblHeader>
+		<lblFooter property="Caption">结尾</lblFooter>
+		<grpDesignerGrid property="Caption">网格选项</grpDesignerGrid>
+		<lblDesignerGridSize property="Caption">网格大小:</lblDesignerGridSize>
+		<lblDesignerGridX property="Caption">Grid &amp;X</lblDesignerGridX>
+		<lblDesignerGridY property="Caption">Grid &amp;Y</lblDesignerGridY>
+		<cbDesignerDispalyGrid property="Caption">显示网格</cbDesignerDispalyGrid>
+		<cbDesignerSnapToGrid property="Caption">网格对齐</cbDesignerSnapToGrid>
+		<grpDesignerOther property="Caption">其他选项</grpDesignerOther>
+		<cbDesignerReflect property="Caption">在设计时立即显示控件样式</cbDesignerReflect>
+		<cbDesignerSafe property="Caption">某些不安全的样式不显示 (透明等)</cbDesignerSafe>
+		<lblActiveLang property="Caption">选定语言: </lblActiveLang>
+		<LangList property="Columns">
+			<item idx="0">语言</item>
+			<item idx="1">本地名称</item>
+			<item idx="2">作者</item>
+			<item idx="3">版本</item>
+		</LangList>
+		<btnCreateTemplate property="Caption">建立模板</btnCreateTemplate>
+		<btnCancel property="Caption">取消</btnCancel>
+		<btnOK property="Caption">确定</btnOK>
+		<btnApply property="Caption">应用</btnApply>
+	</form>
+	<form name="designercode">
+		<caption>代码</caption>
+		<btnCopyCode property="Caption">复制到剪贴板</btnCopyCode>
+	</form>
+	<form name="PictureEdit">
+		<caption>图像编辑器</caption>
+		<btnImgOk property="Caption">确定</btnImgOk>
+		<btnImgCancel property="Caption">取消</btnImgCancel>
+		<btnImgHelp property="Caption">帮助</btnImgHelp>
+		<btnImgLoad property="Caption">读取(&amp;L)...</btnImgLoad>
+		<btnImgSave property="Caption">保存(&amp;S)...</btnImgSave>
+		<btnImgClear property="Caption">清除(&amp;C)</btnImgClear>
+	</form>
+	<form name="frmAXObjectEdit">
+		<caption>ActiveX控件浏览</caption>
+		<lblLoadStatus property="Caption">状态: </lblLoadStatus>
+		<lblPath property="Caption">路径:</lblPath>
+		<CompList property="Columns">
+			<item idx="0">组件名称</item>
+		</CompList>
+		<btnOK property="Caption">确定</btnOK>
+		<btnCancel property="Caption">取消</btnCancel>
+	</form>
+	<form name="GalleryBrowseDlg">
+		<caption>模板</caption>
+		<lblTGDescr property="Caption">描述:</lblTGDescr>
+		<btnTGOK property="Caption">确定</btnTGOK>
+		<btnTGCancel property="Caption">取消</btnTGCancel>
+		<btnTGHelp property="Caption">帮助(&amp;H)</btnTGHelp>
+		<tabGroups property="Tabs">
+			<line idx="0">标准</line>
+		</tabGroups>
+		<lvItems property="Columns">
+			<item idx="0">名称</item>
+			<item idx="1">描述</item>
+		</lvItems>
+		<mnuTGLargeIcons property="Caption">显示大图标(&amp;L)</mnuTGLargeIcons>
+		<mnuTGSmallIcons property="Caption">显示小图标(&amp;S)</mnuTGSmallIcons>
+		<mnuTGList property="Caption">显示列表(&amp;I)</mnuTGList>
+		<mnuTGDetails property="Caption">显示详情(&amp;D)</mnuTGDetails>
+	</form>
+	<form name="TreeviewForm">
+		<caption>TreeView项目编辑器</caption>
+		<grpTVItems property="Caption">Items</grpTVItems>
+		<btnTVNew property="Caption">新项</btnTVNew>
+		<btnTVNewSub property="Caption">新子项</btnTVNewSub>
+		<btnTVDelete property="Caption">删除</btnTVDelete>
+		<grpTVProperties property="Caption">项目属性</grpTVProperties>
+		<lblTVText property="Caption">文本:</lblTVText>
+		<btnTVCancel property="Caption">取消</btnTVCancel>
+		<btnTVApply property="Caption">应用(&amp;A)</btnTVApply>
+		<btnTVOk property="Caption">确定</btnTVOk>
+		<btnTVHelp property="Caption">帮助(&amp;H)</btnTVHelp>
+	</form>
+	<form name="frmListViewItems">
+		<caption>ListView项目编辑器</caption>
+		<grpLVItems property="Caption">Items</grpLVItems>
+		<btnLVNew property="Caption">新项(&amp;N)</btnLVNew>
+		<btnLVDelete property="Caption">删除(&amp;D)</btnLVDelete>
+		<btnLVNewSub property="Caption">新子项(&amp;E)</btnLVNewSub>
+		<grpLVProperties property="Caption">项目属性</grpLVProperties>
+		<lblLVCaption property="Caption">标题:</lblLVCaption>
+		<btnLVOk property="Caption">确定</btnLVOk>
+		<btnLVCancel property="Caption">取消</btnLVCancel>
+		<btnLVApply property="Caption">应用(&amp;A)</btnLVApply>
+		<btnLVHelp property="Caption">帮助(&amp;H)</btnLVHelp>
+	</form>
+	<form name="frmCollectionEdit">
+		<caption>列</caption>
+		<btnAdd property="Hint">新增</btnAdd>
+		<btnDelete property="Hint">删除</btnDelete>
+		<btnUp property="Hint">上移</btnUp>
+		<btnDown property="Hint">下移</btnDown>
+		<mnuColRefresh property="Caption">刷新</mnuColRefresh>
+	</form>
+</language>
