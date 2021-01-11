@@ -1,0 +1,152 @@
+<packages carfilespath="D:\SpecPro_Distribution\CarFiles\Data" marimba_runchannel="D:\Marimba\Castanet Tuner\runchannel" marimba_app_packager_url="http://iwebs10:80/Marimba/Current/ApplicationPackager650" marimba_channel_copier="http://iwebs10:80/Marimba/Current/ChannelCopier">
+  <package name="Freightliner 2.61" desc="Freightliner">
+    <code value="FTL" />
+    <path value="D:\SpecPro_Distribution\Data\Marimba\FTL\3.0" />
+    <version value="2.61.02" />
+    <desc value="This Electronic Update provides you with enhanced data for the following Product Lines:&#xD;&#xA;Century PRL-545, DRL-003 added Spanish&#xD;&#xA;Columbia PRL-031, DRL-003 added Spanish&#xD;&#xA;Coronado PRL-52D, DRL-003 added Spanish&#xD;&#xA;Business Class PRL-72A, DRL-003 added Spanish&#xD;&#xA;Severe Duty PRL-166, DRL-003 added Spanish&#xD;&#xA;Items included in this update are as follows:&#xD;&#xA;&#xD;&#xA;Items included in this update are as follows:&#xD;&#xA;This release will impact all Freightliner Product Lines.  All data changes are related to changes reflected in the 2.60  Data Books.&#xD;&#xA;&#xD;&#xA;For more information on all updates, please refer to:&#xD;&#xA;https://secure.freightliner.com/docs/technicalsupport/specpro21/alertsupdates/default.asp" />
+    <iter value="26" />
+    <data_source_files value="D:\SpecPro_Distribution\Data\Source\Data_Releases\12.5\2.61\Freightliner" />
+    <stage_url value="http://iwebs10:80/Repository/Datasets2/Freightliner" />
+    <dev_url value="http://iwebs10/Data_QA/Datasets2/Freightliner" />
+    <prod_url value="http://iprdweb10/Repository/Datasets2/Freightliner" />
+    <url_last_part value="current" />
+    <lastCarfile_v2 value="26" />
+    <lastCarfile_v3 value="2.61.02" />
+    <lastCarfile value="FTL_SP21_v2.61.02.26.car" />
+  </package>
+  <package name="Sterling 2.61" desc="Sterling">
+    <code value="STL" />
+    <path value="D:\SpecPro_Distribution\Data\Marimba\STL\3.1" />
+    <version value="2.61.02" />
+    <desc value="This Electronic Update provides you with enhanced data for the following Product Lines:&#xD;&#xA;Sterling A&amp;L PRL-22K, DRL-003 added Spanish&#xD;&#xA;Acterra PRL-32G, DRL-003 added Spanish&#xD;&#xA;Cargo PRL-12G, DRL-003&#xD;&#xA;Light Duty PRL-4FA, DRL-002&#xD;&#xA;&#xD;&#xA;Items included in this update are as follows:&#xD;&#xA;This release will impact all Sterling Product Lines.  All data changes relate to the changes reflected to the 2.60 Data Book.&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;For more information on all updates, please refer to:&#xD;&#xA;https://secure.freightliner.com/docs/technicalsupport/specpro21/alertsupdates/default.asp" />
+    <iter value="15" />
+    <data_source_files value="D:\SpecPro_Distribution\Data\Source\Data_Releases\12.5\2.61\Sterling" />
+    <stage_url value="http://iwebs10:80/Repository/Datasets2/Sterling" />
+    <dev_url value="http://iwebs10/Data_QA/Datasets2/Sterling" />
+    <prod_url value="http://iprdweb10/Repository/Datasets2/Sterling" />
+    <url_last_part value="current" />
+    <lastCarfile_v2 value="15" />
+    <lastCarfile_v3 value="2.61.02" />
+    <lastCarfile value="STL_SP21_v2.61.02.15.car" />
+  </package>
+  <package name="Western_Star 2.61" desc="Western_Star">
+    <code value="WST" />
+    <path value="D:\SpecPro_Distribution\Data\Marimba\WST\3.0" />
+    <version value="2.61.02" />
+    <desc value="This Electronic Update provides you with enhanced data for the following Product Lines:&#xD;&#xA;Western Star PRL-62B, DRL-003 added Spanish&#xD;&#xA;&#xD;&#xA;Items included in this update are as follows:&#xD;&#xA;This release will impact all Western Star Product Lines.  All data changes relate to the changes reflected to the 2.60 Data Book.&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;For more information on all updates, please refer to:&#xD;&#xA;https://secure.freightliner.com/docs/technicalsupport/specpro21/alertsupdates/default.asp" />
+    <iter value="11" />
+    <data_source_files value="D:\SpecPro_Distribution\Data\Source\Data_Releases\12.5\2.61\Western_Star" />
+    <stage_url value="http://iwebs10:80/Repository/Datasets2/Western_Star" />
+    <dev_url value="http://iwebs10/Data_QA/Datasets2/Western_Star" />
+    <prod_url value="http://iprdweb10/Repository/Datasets2/Western_Star" />
+    <url_last_part value="current" />
+    <lastCarfile_v2 value="11" />
+    <lastCarfile_v3 value="2.61.02" />
+    <lastCarfile value="WST_SP21_v2.61.02.11.car" />
+  </package>
+  <package name="FCCC 1.xx" desc="FCCC">
+    <code value="FCCC" />
+    <path value="D:\SpecPro_Distribution\Data\Marimba\FCCC\3.0" />
+    <version value="1.xx.00" />
+    <desc value="This Electronic Update provides you with enhanced data for the following Product Lines:&#xD;&#xA;FCCC PRL-xxx, DRL-xxx&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Items included in this update are as follows:&#xD;&#xA;This release will impact all FCCC Product Lines.  All data changes relate to the changes reflected to the 1.xx Data Book.&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;For more information on all updates, please refer to:&#xD;&#xA;https://secure.freightliner.com/docs/technicalsupport/specpro21/alertsupdates/default.asp" />
+    <iter value="255" />
+    <data_source_files value="D:\SpecPro_Distribution\Data\Source\Data_Releases\12.5\1.xx\FCCC" />
+    <stage_url value="http://iwebs10:80/Repository/Datasets2/FCCC" />
+    <dev_url value="http://iwebs10/Data_QA/Datasets2/FCCC" />
+    <prod_url value="http://iprdweb10/Repository/Datasets2/FCCC" />
+    <url_last_part value="current" />
+    <lastCarfile_v2 value="255" />
+    <lastCarfile_v3 value="1.xx.00" />
+    <lastCarfile value="FCCC_SP21_v1.xx.00.255.car" />
+  </package>
+  <package name="FCCC 1.30" desc="FCCC">
+    <code value="FCCC" />
+    <path value="D:\SpecPro_Distribution\Data\Marimba\FCCC\3.0" />
+    <version value="1.30.00" />
+    <desc value="This Electronic Update provides you with enhanced data for the following Product Lines:&#xD;&#xA;FCCC PRL-813, DRL-004&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Items included in this update are as follows:&#xD;&#xA;This release will impact all FCCC Product Lines.  All data changes relate to the changes reflected to the 1.30 Data Book.&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;For more information on all updates, please refer to:&#xD;&#xA;https://secure.freightliner.com/docs/technicalsupport/specpro21/alertsupdates/default.asp" />
+    <iter value="251" />
+    <data_source_files value="D:\SpecPro_Distribution\Data\Source\Data_Releases\12.5\1.30\FCCC" />
+    <stage_url value="http://iwebs10:80/Repository/Datasets2/FCCC" />
+    <dev_url value="http://iwebs10/Data_QA/Datasets2/FCCC" />
+    <prod_url value="http://iprdweb10/Repository/Datasets2/FCCC" />
+    <url_last_part value="current" />
+    <lastCarfile_v2 value="251" />
+    <lastCarfile_v3 value="1.30.00" />
+    <lastCarfile value="FCCC_SP21_v1.30.00.251.car" />
+  </package>
+  <package name="ALF 1.00" desc="American LaFrance">
+    <code value="ALF" />
+    <path value="D:\SpecPro_Distribution\Data\Marimba\ALF\3.0" />
+    <version value="1.00.00" />
+    <desc value="This Electronic Update provides you with enhanced data for the following Product Lines:&#xD;&#xA;Condor 2006 PRL&#xD;&#xA;&#xD;&#xA;Items included in this update are as follows:&#xD;&#xA;&#xD;&#xA;Items included in this update are as follows:&#xD;&#xA;This release will impact all Amrican LaFrance Condor Product Line.  All data changes are related to changes reflected in the 1.00  Data Books.&#xD;&#xA;&#xD;&#xA;For more information on all updates, please refer to:&#xD;&#xA;https://secure.freightliner.com/docs/technicalsupport/specpro21/alertsupdates/default.asp" />
+    <iter value="111" />
+    <data_source_files value="D:\SpecPro_Distribution\Data\Source\Data_Releases\12.5\1.00\ALF" />
+    <stage_url value="http://iwebs10:80/Repository/Datasets2/ALF" />
+    <dev_url value="http://iwebs10/Data_QA/Datasets2/ALF" />
+    <prod_url value="http://iprdweb10/Repository/Datasets2/ALF" />
+    <url_last_part value="current" />
+    <lastCarfile_v2 value="111" />
+    <lastCarfile_v3 value="1.00.00" />
+    <lastCarfile value="ALF_SP21_v1.00.00.111.car" />
+  </package>
+  <package name="ReadySpec" desc="ReadySpec">
+    <code value="RS" />
+    <path value="D:\SpecPro_Distribution\Data\Marimba\RS\2.0" />
+    <version value="FTL.1.008" />
+    <desc value="ReadySpec Catalog update for SpecPro" />
+    <iter value="108" />
+    <data_source_files value="D:\SpecPro_Distribution\Data\Source\VocSpec\English\rsg000" />
+    <stage_url value="http://iwebs10:80/Repository/Datasets/ReadySpec" />
+    <dev_url value="http://corpwebxm01:5282/test/Datasets2/ReadySpec" />
+    <prod_url value="http://iprdweb10/Repository/Datasets/ReadySpec" />
+    <url_last_part value="current" />
+    <lastCarfile_v2 value="108" />
+    <lastCarfile_v3 value="FTL.1.008" />
+    <lastCarfile value="RS_SP21_vFTL.1.008.108.car" />
+  </package>
+  <package name="WorkSpec" desc="WorkSpec">
+    <code value="WS" />
+    <path value="D:\SpecPro_Distribution\Data\Marimba\WS\2.0" />
+    <version value="STL.1.027" />
+    <desc value="WorkSpec Catalog update for SpecPro" />
+    <iter value="127" />
+    <data_source_files value="D:\SpecPro_Distribution\Data\Source\VocSpec\English\ws000" />
+    <stage_url value="http://iwebs10:80/Repository/Datasets/WorkSpec" />
+    <dev_url value="http://corpwebxm01:5282/test/Datasets2/WorkSpec" />
+    <prod_url value="http://iprdweb10/Repository/Datasets/WorkSpec" />
+    <url_last_part value="current" />
+    <lastCarfile_v2 value="127" />
+    <lastCarfile_v3 value="STL.1.027" />
+    <lastCarfile value="WS_SP21_vSTL.1.027.127.car" />
+  </package>
+  <package name="Spanish ReadySpec" desc="Spanish ReadySpec">
+    <code value="SPRS" />
+    <path value="D:\SpecPro_Distribution\Data\Marimba\SPRS\1.0" />
+    <version value="FTL.1.008" />
+    <desc value="Spanish ReadySpec Catalog update for SpecPro" />
+    <iter value="108" />
+    <data_source_files value="D:\SpecPro_Distribution\Data\Source\VocSpec\Spanish\rsg000" />
+    <stage_url value="http://iwebs10:80/Repository/Datasets/Spanish/ReadySpec" />
+    <dev_url value="http://corpwebxm01:5282/test/Datasets2/ReadySpec" />
+    <prod_url value="http://iprdweb10/Repository/Datasets/ReadySpec" />
+    <url_last_part value="current" />
+    <lastCarfile_v2 value="108" />
+    <lastCarfile_v3 value="FTL.1.008" />
+    <lastCarfile value="RS_SP21_vFTL.1.008.108.car" />
+  </package>
+  <package name="Spanish WorkSpec" desc="Spanish WorkSpec">
+    <code value="WS" />
+    <path value="D:\SpecPro_Distribution\Data\Marimba\SPWS\1.0" />
+    <version value="STL.1.027" />
+    <desc value="Spanish WorkSpec Catalog update for SpecPro" />
+    <iter value="127" />
+    <data_source_files value="D:\SpecPro_Distribution\Data\Source\VocSpec\Spanish\ws000" />
+    <stage_url value="http://iwebs10:80/Repository/Datasets/Spanish/WorkSpec" />
+    <dev_url value="http://corpwebxm01:5282/test/Datasets2/WorkSpec" />
+    <prod_url value="http://iprdweb10/Repository/Datasets/WorkSpec" />
+    <url_last_part value="current" />
+    <lastCarfile_v2 value="127" />
+    <lastCarfile_v3 value="STL.1.027" />
+    <lastCarfile value="WS_SP21_vSTL.1.027.127.car" />
+  </package>
+</packages>
