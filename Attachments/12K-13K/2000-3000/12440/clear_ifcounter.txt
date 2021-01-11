@@ -1,0 +1,76 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;
+;	ttpmacro-(ttermpro-) script zum clearen der counter
+;	aufruf: ttpmacro clear-counters.ttl hostname
+;
+;	fj 20.12.2004 12:24
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+password = '********'
+enapw = '********'
+
+
+timeout = 5
+connect param2
+;	1 = 1900	2 = 2980 / 6000		3 = ios
+wait 'Catalyst 1900' 'Cisco Systems' 'User Access Verification'
+_rc = result
+
+if	_rc = 0 then
+	messagebox param2 'timeout'
+	end
+endif
+
+if	_rc = 1 then
+	; messagebox 'cat1900' 'TYP'
+	wait 'Enter Selection'
+	sendln 'k'
+	wait '>'
+	sendln 'enable'
+	wait 'word:'
+	sendln enapw
+	wait '#'
+	sendln 'clear counters'
+	wait '#'
+;	pause 2
+	sendln 'exit'
+	waitevent 4
+	
+elseif	_rc = 2 then
+	; catos
+	wait 'word:'
+	sendln password
+	wait '>'
+	sendln 'enable'
+	wait 'word:'
+	sendln enapw
+	wait 'enable'
+	sendln 'clear counters'
+	wait 'continue'
+	sendln 'y'
+	wait 'enable'
+;	pause 2
+	sendln 'quit'
+	waitevent 4
+
+elseif	_rc = 3 then
+;			IOS
+;	messagebox 'ios' param2
+	wait 'word:'
+	sendln password
+	wait '>'
+	sendln 'enable'
+	wait 'word:'
+	sendln enapw
+        wait '#' 'enable'
+	sendln 'clear counters'
+	wait 'confirm'
+	sendln 'y'
+	wait '#'
+	pause 2
+	sendln 'quit'
+	waitevent 4
+
+endif
+
+end
