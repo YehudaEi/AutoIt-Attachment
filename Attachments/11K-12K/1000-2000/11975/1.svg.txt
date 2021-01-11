@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+ <svg xmlns="http://www.w3.org/2000/svg" xmlns:vnet="http://www.aveva.com/VNET" 
+   xmlns:xlink="http://www.w3.org/1999/xlink" 
+   viewBox="0 0 5942.000000 4202.000000" 
+   width="594.200009" height="420.200006">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+     .pen0 {fill:none;stroke:#000000;stroke-width:0.05%}
+     .pen1 {fill:none;stroke:#3E7899;stroke-width:0.05%}
+     .pen2 {fill:none;stroke:darkred;stroke-width:0.05%}
+     .pen3 {fill:none;stroke:deeppink;stroke-width:0.05%}
+     .pen4 {fill:none;stroke:gold;stroke-width:0.05%}
+     .pen5 {fill:none;stroke:navy;stroke-width:0.05%}
+     .pen6 {fill:none;stroke:darkgreen;stroke-width:0.05%}
+     .pen7 {fill:none;stroke:orchid;stroke-width:0.05%}
+     .pen8 {fill:none;stroke:darkorange;stroke-width:0.05%}
+     .pen9 {fill:none;stroke:darkgray;stroke-width:0.05%}
+     .plot {shape-rendering:auto;}
+     .hitpoints {fill:none; stroke-width:0.2%}
+     .hitpoint {}
+   ]]>
+  </style>
+ </defs>
+
+ <g id="plot" class="plot">
+  <g class="pen1">
+   <path d="M0 0"/>
+  </g>
+  <g class="pen3">
+   <path d="M0 0M0 4202V2H5940V4202H0"/>
+  </g>
+  <g class="pen1">
+   <path d="M0 4202M2989 3466H4361V2517H2989V3466"/>
+  </g>
+  <g class="pen2">
+   <path d="M2989 3466M3491 8l3 -2l2 -2l3 -3l1 -3l1 -2l1 -3l0 -2l-1 -2l-1 -2l-2 -2l-2 -1l-1 0"/>
+  </g>
+  <g class="pen1">
+   <path d="M4046 2934M412 1476H2490V484H412V1476"/>
+  </g>
+ </g>
+ 
+ <g id="hitpoints" class="hitpoints" style="fill:none;pointer-events:all;stroke-opacity:0.8">
+  <g class="hitpoint" style="stroke:none">
+   <metadata>
+    <vnet:id>/J-9002A
+    </vnet:id>
+   </metadata>
+   <circle cx="3559.599915" cy="918.400146" r="59.420002" class="hit-circle"/>
+  </g>
+  
+  <g class="hitpoint" style="stroke:none">
+   <metadata>
+    <vnet:id>/J-9002A/N2
+    </vnet:id>
+   </metadata>
+   <circle cx="3967.799988" cy="422.599976" r="59.420002" class="hit-circle"/>
+  </g>
+  
+  <g class="hitpoint" style="stroke:none">
+   <metadata>
+    <vnet:id>/J-9002A/N1
+    </vnet:id>
+   </metadata>
+   <circle cx="2920.700073" cy="501.100037" r="59.420002" class="hit-circle"/>
+  </g>
+  </g>
+ </g>
+</svg>
