@@ -1,0 +1,27 @@
+[GAMES]
+Kitten Cannon=                                                              
+Helicopter Game=                                                              
+Super Monkey Poop Flinging=                                                              
+Mini Putt=                                                              
+Poke The Bunny=                                                              
+Curveball=                                                              
+BLACK=                                                              
+Dick Cheney=                                                              
+Dry Fire=                                                              
+Base Defense 2=                                                              
+Defend Your Computer=                                                              
+Super Mafia Brothers=                                                              
+Tactical Assassin=                                                              
+God's Playing Field=                                                              
+BarBQ Beef=                                                         
+Bloody Pingu=                                                          
+Bouncy n' Bob=                                                         
+Xtrem Climber=                                                            
+Barb Jump=                                                         
+Fling The Cow=                                                           
+Condom=                                                           
+City Jumper=                                                          
+Arh Tiger=                                                             
+Squirrel Smash=                                                        
+Hammered=                                                        
+Chicken and Eggs=                                                             
