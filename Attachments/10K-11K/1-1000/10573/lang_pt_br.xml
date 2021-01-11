@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<language>
+	<name>Brazilian Portuguese</name>
+	<nativename>Português do Brasil</nativename>
+	<version>1.5.1.16</version>
+	<author>Gring0</author>
+	<icon>
+		<bin>000001000100120C000001001800F80200001600000028000000120000001800</bin>
+		<bin>00000100180000000000A0020000000000000000000000000000000000000000</bin>
+		<bin>0000000000000000000000000000000000000000000000000000000000000000</bin>
+		<bin>000000000000000000000000000000000000000000000000001F701F095F0900</bin>
+		<bin>5A00035C030D600D1D74232FBA9242F5F24FFDFE50D3B6469252357736307430</bin>
+		<bin>2A6B2A2362221B581B0000000000000000388338186A18055B05005200057633</bin>
+		<bin>10BFAB41B4A675967C89A88A78D0C24EE3D642A7793475342E6F2E286928215F</bin>
+		<bin>2100000000000000005097502F773012691D03967000C5C23D856C8451218F54</bin>
+		<bin>269E693AB6875999C0AB4DEEED3EBDA4337E432D6B2D26662600000000000000</bin>
+		<bin>0064A36448A87627C3B40DCECE1AA5986C39047648137D531D9A794EA37E51BC</bin>
+		<bin>8D637ACDBD49EEEE3ACDC431956D2C6B2B000000000000000065D9C25EF7F840</bin>
+		<bin>E6E720D5D4358B7571380B6D430F734712835D2C946E41B1855D9DC3B250F6F6</bin>
+		<bin>46E9EA36D4D530B19E00000000000000003B9D7D6AF9F657F6F638E1E14AA597</bin>
+		<bin>82583478583384664591795E9B8364A6785888A78D50FDFD4EF5F642E1E034AA</bin>
+		<bin>8D000000000000000021582146915F68E1CC50F1F142C5BF79552C784F227552</bin>
+		<bin>2579552B80522188512658C5B64AFEFE51E5D64CA9743E823F00000000000000</bin>
+		<bin>000A430A2A632A59975A64C59D48E2DC4AA5936C42106A2F016B3001713D0A4D</bin>
+		<bin>947B2BE6E23EBE934D9D555197514992490000000000000000003800114B1132</bin>
+		<bin>6E3265A1655EAC7341C5A931BBB23291812D8A771CACA20DB6A01D88452F7D2F</bin>
+		<bin>4292424F9C4F509A5000000000000000000039000038001954193B793A6AA96A</bin>
+		<bin>579B5738A27118C9C205CAC7008A56055F0A106410217821358835469746509D</bin>
+		<bin>5000000000000000000000000000000000000000000000000000000000000000</bin>
+		<bin>0000000000000000000000000000000000000000000000000000000000000000</bin>
+		<bin>0000000000000000000000000000000000000000000000000000000000000000</bin>
+		<bin>0000000000000000000000000000</bin>
+	</icon>
+	<messages>
+		<msgCloseModified>%s foi modificado. Salvar o form antes de sair?</msgCloseModified>
+		<msgAlreadyOpened>Arquivo\n\n&quot;%s&quot;\n\njá foi aberto Designer.</msgAlreadyOpened>
+		<msgFileExists>Arquivo &quot;%s&quot; já existe. Deseja substitui-lo?</msgFileExists>
+		<msgNoActiveForm>Não há um form aberto no Designer, esta operação não pode continuar.</msgNoActiveForm>
+		<msgUnrecoverable>O Koda não conseguiu abrir este form, analise os relatórios de erros:\n\n  %s</msgUnrecoverable>
+		<msgNoKodaUpdates>Você tem a versão mais recente.</msgNoKodaUpdates>
+		<msgNewKodaUpdate>Uma nova versão do Koda foi encontrada(%s%s). Deseja abrir a página para fazer o download?</msgNewKodaUpdate>
+		<msgErrorUpdate>Não foi possível receber as informações sobre novas versões.</msgErrorUpdate>
+		<msgNoFormsInScript>Nenhum código gerado pelo Koda foi encontrado no script.</msgNoFormsInScript>
+		<msgNoFormIdent>Não é possível encontrar a seção do form no script. Provavelmente você removeu o identificador. Nenhum script foi atualizado!</msgNoFormIdent>
+		<msgFormHaveNoScript>Este form não está associado a um script.</msgFormHaveNoScript>
+		<msgNotImplemented>Este comando ainda não foi implementado.</msgNotImplemented>
+		<msgWarningTitle>Atenção</msgWarningTitle>
+		<msgInfoTitle>Informação</msgInfoTitle>
+		<msgConfirmTitle>Confirmar</msgConfirmTitle>
+		<msgErrorTitle>Erro</msgErrorTitle>
+		<strErrOpFailed>Operação Falhou!</strErrOpFailed>
+		<strAssociated>Associado</strAssociated>
+		<strNotAssociated>Não associado</strNotAssociated>
+		<strObjInit>Iniciando ...</strObjInit>
+		<strObjCreatedOk>O objeto foi criado com sucesso</strObjCreatedOk>
+		<strObjCreatedErr>Erro ao criar o objeto!</strObjCreatedErr>
+	</messages>
+	<form name="DesignerMain">
+		<caption>Koda FormDesigner</caption>
+		<btnNewTemplate property="Hint">Novo Template.</btnNewTemplate>
+		<btnOpenForm property="Hint">Abrir Form</btnOpenForm>
+		<btnSaveForm property="Hint">Salvar Form</btnSaveForm>
+		<btnRemoveForm property="Hint">Fechar Form</btnRemoveForm>
+		<btnRunForm property="Hint">Executar Form</btnRunForm>
+		<btnNewForm property="Hint">Novo Form</btnNewForm>
+		<tabStandard property="Caption">Básico</tabStandard>
+		<btnTMainMenu property="Hint">Menu Principal</btnTMainMenu>
+		<btnTLabel property="Hint">Label</btnTLabel>
+		<btnTEdit property="Hint">Input</btnTEdit>
+		<btnTMemo property="Hint">Edit</btnTMemo>
+		<btnTButton property="Hint">Button</btnTButton>
+		<btnTCheckBox property="Hint">CheckBox</btnTCheckBox>
+		<btnTRadioButton property="Hint">RadioButton</btnTRadioButton>
+		<btnTListBox property="Hint">ListBox</btnTListBox>
+		<btnTComboBox property="Hint">ComboBox</btnTComboBox>
+		<btnTPopupMenu property="Hint">Popup Menu</btnTPopupMenu>
+		<btnTGroupBox property="Hint">GroupBox</btnTGroupBox>
+		<tabAdditional property="Caption">Adicional</tabAdditional>
+		<btnTImage property="Hint">Imagem</btnTImage>
+		<btnTIcon property="Hint">Icon</btnTIcon>
+		<btnTShape property="Hint">Grafico</btnTShape>
+		<btnTSpinEdit property="Hint">Updown</btnTSpinEdit>
+		<btnTAnimate property="Hint">Avi</btnTAnimate>
+		<btnTTrayMenu property="Hint">TrayMenu</btnTTrayMenu>
+		<tabWin32 property="Caption">Win32</tabWin32>
+		<btnTTrackBar property="Hint">Slider</btnTTrackBar>
+		<btnTProgressBar property="Hint">Progress</btnTProgressBar>
+		<btnTDatePick property="Hint">Date Picker</btnTDatePick>
+		<btnMonthCal property="Hint">Month Calendar</btnMonthCal>
+		<btnTTreeView property="Hint">TreeView</btnTTreeView>
+		<btnTListView property="Hint">ListView</btnTListView>
+		<btnTTab property="Hint">Tabbed Panel</btnTTab>
+		<btnTObj property="Hint">Objeto COM</btnTObj>
+		<mnuNewTabCnt property="Caption">&amp;Nova Página</mnuNewTabCnt>
+		<mnuCutCnt property="Caption">Recortar</mnuCutCnt>
+		<mnuCopyCnt property="Caption">&amp;Copiar</mnuCopyCnt>
+		<mnuPasteCnt property="Caption">&amp;Colar</mnuPasteCnt>
+		<mnuDeleteCnt property="Caption">&amp;Deletar</mnuDeleteCnt>
+		<mnuSelectAllCnt property="Caption">Selecionar Tudo</mnuSelectAllCnt>
+		<mnuTabOrderCnt property="Caption">&amp;Ordem dos Objetos</mnuTabOrderCnt>
+		<mnuAlignToGridCnt property="Caption">Alinhar à &amp;grade</mnuAlignToGridCnt>
+		<mnuControlCnt property="Caption">Contro&amp;le</mnuControlCnt>
+		<mnuBringToFrontCnt property="Caption">Enviar para frente</mnuBringToFrontCnt>
+		<mnuSendToBack property="Caption">Enviar para atrás.</mnuSendToBack>
+		<mnuLockCnt property="Caption">Travar</mnuLockCnt>
+		<mnuUnLockCnt property="Caption">Destravar</mnuUnLockCnt>
+		<mnuNoInsertIn property="Caption">Bloquear Inserção</mnuNoInsertIn>
+		<mnuNoCopy property="Caption">Bloquear Cópia</mnuNoCopy>
+		<mnuFile property="Caption">Arquivo</mnuFile>
+		<mnuNew property="Caption">Novo...</mnuNew>
+		<mnuOpen property="Caption">Abir</mnuOpen>
+		<mnuFormClose property="Caption">Fechar Form</mnuFormClose>
+		<mnuSave property="Caption">Salvar</mnuSave>
+		<mnuSaveAs property="Caption">Salvar Como...</mnuSaveAs>
+		<mnuImport property="Caption">Importar</mnuImport>
+		<mnuImportAu3 property="Caption">Au3 GUI script</mnuImportAu3>
+		<mnuExit property="Caption">Sair</mnuExit>
+		<mnuEdit property="Caption">Editar</mnuEdit>
+		<mnuCut property="Caption">Recortar</mnuCut>
+		<mnuCopy property="Caption">Copiar</mnuCopy>
+		<mnuPaste property="Caption">Colar</mnuPaste>
+		<mnuDelete property="Caption">Deletar</mnuDelete>
+		<mnuSelectAll property="Caption">Selecionar Tudo</mnuSelectAll>
+		<mnuTabOrder property="Caption">Ordem dos Objetos</mnuTabOrder>
+		<mnuView property="Caption">Exibir</mnuView>
+		<mnuTreeView property="Caption">Árvore de Objetos</mnuTreeView>
+		<mnuObjectInspector property="Caption">Inspetor de Objetos</mnuObjectInspector>
+		<mnuFormList property="Caption">Lista de Forms</mnuFormList>
+		<mnuForms property="Caption">Forms</mnuForms>
+		<mnuOptions property="Caption">Opções</mnuOptions>
+		<mnuOptionsDlg property="Caption">Opções...</mnuOptionsDlg>
+		<mnuRememberPos property="Caption">Lembrar Posição</mnuRememberPos>
+		<mnuTools property="Caption">&amp;Ferramentas</mnuTools>
+		<mnuGenerateCode property="Caption">Gerar Código...</mnuGenerateCode>
+		<mnuGenerateAdvanced property="Caption">Gerar Código com Opções</mnuGenerateAdvanced>
+		<mnuUpdate property="Caption">Atualizar o Script</mnuUpdate>
+		<mnuRunForm property="Caption">Executar o Form</mnuRunForm>
+		<mnuHelp property="Caption">Ajuda</mnuHelp>
+		<mnuHelpContent property="Caption">Tópicos da Ajuda</mnuHelpContent>
+		<mnuCheckNewVersion property="Caption">Verificar Última Versão</mnuCheckNewVersion>
+		<mnuAbout property="Caption">Sobre...</mnuAbout>
+	</form>
+	<form name="frmFormList">
+		<caption>Lista de Forms</caption>
+		<tipNotSaved property="Caption">Form não Salvo</tipNotSaved>
+		<tipForm property="Caption"> Form</tipForm>
+		<tipScript property="Caption">Script</tipScript>
+		<FormList property="Columns">
+			<item idx="0">Form</item>
+			<item idx="1">Caminho</item>
+		</FormList>
+		<btnFormAdd property="Hint">Novo Form</btnFormAdd>
+		<btnFormDel property="Hint">Fechar Form</btnFormDel>
+		<mnuFormDel property="Caption">Fechar Form</mnuFormDel>
+		<mnuFormAdd property="Caption">Novo Form</mnuFormAdd>
+	</form>
+	<form name="PInsp">
+		<caption>Inspetor de Objetos</caption>
+		<ModeTabSet property="Tabs">
+			<line idx="0">Propiedades</line>
+			<line idx="1">Styles</line>
+			<line idx="2">ExStyles</line>
+		</ModeTabSet>
+		<btnResetStyle property="Caption">Resetar</btnResetStyle>
+		<btnResetExStyle property="Caption">Resetar</btnResetExStyle>
+	</form>
+	<form name="ConfigDlg">
+		<caption>Opções</caption>
+		<OptTreeView property="Items">
+			<item idx="0">Geral</item>
+			<item idx="1">Gerador de Scripts</item>
+			<item idx="2">Formatação</item>
+			<item idx="3">Templates</item>
+			<item idx="4">Design</item>
+			<item idx="5">Idioma</item>
+		</OptTreeView>
+		<grpGeneralAssociate property="Caption">Associação</grpGeneralAssociate>
+		<btnAssociate property="Caption">Associar</btnAssociate>
+		<btnUnassociate property="Caption">Remover</btnUnassociate>
+		<grpGeneralAuPath property="Caption">Executar o Form...</grpGeneralAuPath>
+		<cbGeneralAuPath property="Items">
+			<line idx="0">Automaticamente</line>
+			<line idx="1">Manualmente...</line>
+		</cbGeneralAuPath>
+		<grpGeneralStartup property="Caption">Ao Iniciar o Koda...</grpGeneralStartup>
+		<cbGeneralStartup property="Items">
+			<line idx="0">Criar novo form</line>
+			<line idx="1">Abir o último form</line>
+			<line idx="2">Abrir form...</line>
+		</cbGeneralStartup>
+		<cbGeneralBackup property="Caption">Criar Backup</cbGeneralBackup>
+		<grpDesignerOptions property="Caption">Opções do gerador de Scripts</grpDesignerOptions>
+		<cbCodegenPopulate property="Caption">Gerar eventos para todos os controls</cbCodegenPopulate>
+		<cbCodegenPopulate property="Hint">Isto vai gerar variaveis ou funções para todos os controls, mesmo tendo eventos setados ou não.</cbCodegenPopulate>
+		<cbCodegenExpandVars property="Caption">Expandir variáveis do tipo %var%</cbCodegenExpandVars>
+		<cbCodegenExpandVars property="Hint">Se o texto tem variaveis do tipo %VAR%, ele vai gerar como uma variável, ao invés de string.</cbCodegenExpandVars>
+		<cbCodegenOnEvent property="Caption">Gerar código OnEvent</cbCodegenOnEvent>
+		<cbCodegenOnEvent property="Hint">Vai gerar o código usando eventos, ao invés de loops.</cbCodegenOnEvent>
+		<GroupBox3 property="Caption">Opções de Formatação</GroupBox3>
+		<lblSepChar property="Caption">Separar Usando:</lblSepChar>
+		<grpIndent property="Caption">Código de espaçamento</grpIndent>
+		<lblIndentBy property="Caption">Aplicar espaçamento usando</lblIndentBy>
+		<lblInitial property="Caption">Espaçamento inicial</lblInitial>
+		<cbSymbol property="Items">
+			<line idx="0">TAB</line>
+			<line idx="1">Espaço</line>
+		</cbSymbol>
+		<grpVariables property="Caption">Variáveis</grpVariables>
+		<lblScope property="Caption">Definir variáveis com:</lblScope>
+		<cbScope property="Items">
+			<line idx="0">Nenhum</line>
+			<line idx="1">Global</line>
+			<line idx="2">Local</line>
+		</cbScope>
+		<cbCodegenStripPrefix property="Caption">Remover o prefixo "A" em nomes de Objetos</cbCodegenStripPrefix>
+		<rbLoop property="Caption">Loop</rbLoop>
+		<rbEvents property="Caption">Eventos</rbEvents>
+		<TemplatesList property="Columns">
+			<item idx="0">Nome do Exemplo</item>
+			<item idx="1">Padrão</item>
+		</TemplatesList>
+		<grpDesignerGrid property="Caption">Opções da Grade</grpDesignerGrid>
+		<cbDesignerDispalyGrid property="Caption">Mostrar Grade</cbDesignerDispalyGrid>
+		<cbDesignerSnapToGrid property="Caption">Prender à Grade</cbDesignerSnapToGrid>
+		<grpDesignerGridSize property="Caption">Tamanho da Grade</grpDesignerGridSize>
+		<lblDesignerGridX property="Caption">&amp;X</lblDesignerGridX>
+		<lblDesignerGridY property="Caption">&amp;Y</lblDesignerGridY>
+		<grpDesignerOther property="Caption">Outras Opções</grpDesignerOther>
+		<cbDesignerReflect property="Caption">Aplicar mudanças ao form em tempo real</cbDesignerReflect>
+		<cbDesignerSafe property="Caption">Não aplicar efeitos inseguros(transparência etc.)</cbDesignerSafe>
+		<cbDesignerOnEvent property="Caption">Editor de Eventos Avançado(para modo OnEvent)</cbDesignerOnEvent>
+		<grpWindows property="Caption">Janelas</grpWindows>
+		<lblDesignerPosSaving property="Caption">Tamanho e Posição</lblDesignerPosSaving>
+		<cbDesignerWinSnap property="Caption">Prender Janelas</cbDesignerWinSnap>
+		<cbDesignerSavePos property="Items">
+			<line idx="0">Não Salvar</line>
+			<line idx="1">Automaticamente</line>
+			<line idx="2">Manualmente</line>
+		</cbDesignerSavePos>
+		<cbDesignerKeepLayout property="Caption">Manter o layout padrão</cbDesignerKeepLayout>
+		<cbDesignerKeepLayout property="Hint">Mantém o layout padrão da janela enquanto estiver movendo.</cbDesignerKeepLayout>
+		<lblActiveLang property="Caption">Idioma Padrão: </lblActiveLang>
+		<LangList property="Columns">
+			<item idx="0">Idioma</item>
+			<item idx="1">Nome Nativo</item>
+			<item idx="2">Autor</item>
+			<item idx="3">Versão</item>
+		</LangList>
+		<btnCreateTemplate property="Caption">Criar Template</btnCreateTemplate>
+		<btnCancel property="Caption">Cancelar</btnCancel>
+		<btnOK property="Caption">Ok</btnOK>
+		<btnApply property="Caption">Aplicar</btnApply>
+		<mnuNew property="Caption">Novo</mnuNew>
+		<mnuEdit property="Caption">Editar</mnuEdit>
+		<mnuDelete property="Caption">Deletar</mnuDelete>
+		<mnuDuplicate property="Caption">Duplicar</mnuDuplicate>
+		<mnuSetDef property="Caption">Tornar Padrão</mnuSetDef>
+	</form>
+	<form name="frmDesignerCode">
+		<caption>Codigo</caption>
+		<mnuCopyToClipboard property="Caption">&amp;Copiar código</mnuCopyToClipboard>
+		<mnuSaveToFile property="Caption">&amp;Salvar em...</mnuSaveToFile>
+		<mnuInsertIntoScite property="Caption">&amp;Inserir no Scite</mnuInsertIntoScite>
+	</form>
+	<form name="frmAdvGenerate">
+		<caption>Gerar Código com Opções</caption>
+		<grpDesignerOptions property="Caption">Opções do Gerador</grpDesignerOptions>
+		<cbCodegenPopulate property="Caption">Gerar eventos para todos os Controles</cbCodegenPopulate>
+		<cbCodegenExpandVars property="Caption">Expandir variáveis %var%</cbCodegenExpandVars>
+		<cbCodegenOnEvent property="Caption">Gerar códigos OnEvent</cbCodegenOnEvent>
+		<btnGenerate property="Caption">Gerar</btnGenerate>
+		<btnCancel property="Caption">Cancelar</btnCancel>
+		<grpTemplate property="Caption">Template</grpTemplate>
+		<btnManage property="Caption">Editar</btnManage>
+	</form>
+	<form name="frmAboutBox">
+		<caption>Sobre</caption>
+		<lblHomePage property="Caption">Homepage</lblHomePage>
+		<lblVersion property="Caption">Versão</lblVersion>
+		<btnOK property="Caption">OK</btnOK>
+	</form>
+	<form name="frmTemplateEditor">
+		<caption>Editor de Templates</caption>
+		<lblName property="Caption">Nome do Template</lblName>
+		<lblText property="Caption">Texto do Template</lblText>
+		<btnOK property="Caption">OK</btnOK>
+	</form>
+	<form name="frmObjectTree">
+		<caption>Árvore de Objetos</caption>
+	</form>
+	<form name="frmChooseScript">
+		<caption>Escolher Script</caption>
+		<lblShooseHint property="Caption">O Form &quot;%s&quot; que você quer abrir, é usado por mais de um Script. Por favor, escolha apenas um.</lblShooseHint>
+		<ScriptsList property="Columns">
+			<item idx="0">Nome do Script</item>
+			<item idx="1">Última Modificação</item>
+		</ScriptsList>
+		<btnOK property="Caption">OK</btnOK>
+		<btnCancel property="Caption">Cancelar</btnCancel>
+	</form>
+	<form name="frmPictureEditor">
+		<caption>Editor de Imagens</caption>
+		<btnImgOk property="Caption">OK</btnImgOk>
+		<btnImgCancel property="Caption">Cancelar</btnImgCancel>
+		<btnImgHelp property="Caption">Ajuda</btnImgHelp>
+		<grpImgPicGroupBox property="Caption">Imagem escolhida:</grpImgPicGroupBox>
+		<btnImgLoad property="Caption">&amp;Carregar...</btnImgLoad>
+		<btnImgSave property="Caption">&amp;Salvar...</btnImgSave>
+		<btnImgClear property="Caption">&amp;Apagar</btnImgClear>
+		<grpImages property="Caption">Imagens no arquivo</grpImages>
+		<cbSmallIcons property="Caption">Ícones Pequenos</cbSmallIcons>
+	</form>
+	<form name="frmAXObjectEditor">
+		<caption>Objetos ActiveX</caption>
+		<lblLoadStatus property="Caption">Status: </lblLoadStatus>
+		<lblPath property="Caption">Caminho:</lblPath>
+		<CompList property="Columns">
+			<item idx="0">Nome do Componente</item>
+		</CompList>
+		<btnOK property="Caption">OK</btnOK>
+		<btnCancel property="Caption">Cancelar</btnCancel>
+	</form>
+	<form name="frmGalleryBrowser">
+		<caption>Novo Form</caption>
+		<lblTGDescr property="Caption">Descrição:</lblTGDescr>
+		<btnTGOK property="Caption">OK</btnTGOK>
+		<btnTGCancel property="Caption">Cancelar</btnTGCancel>
+		<btnTGHelp property="Caption">&amp;Ajuda</btnTGHelp>
+		<tabGroups property="Tabs">
+			<line idx="0">Padrão</line>
+		</tabGroups>
+		<lvItems property="Columns">
+			<item idx="0">Nome</item>
+			<item idx="1">Descrição</item>
+		</lvItems>
+		<mnuTGLargeIcons property="Caption">Ver &amp;Ícones Grandes</mnuTGLargeIcons>
+		<mnuTGSmallIcons property="Caption">Ver &amp;Ícones Pequenos</mnuTGSmallIcons>
+		<mnuTGList property="Caption">Ver L&amp;ista</mnuTGList>
+		<mnuTGDetails property="Caption">Ver &amp;Detailhes</mnuTGDetails>
+	</form>
+	<form name="frmTreeViewEditor">
+		<caption>Editor de Items da TreeView</caption>
+		<grpTVItems property="Caption">Items</grpTVItems>
+		<btnTVNew property="Caption">Novo &amp;Item</btnTVNew>
+		<btnTVNewSub property="Caption">Novo &amp;Subitem</btnTVNewSub>
+		<btnTVDelete property="Caption">&amp;Deletar</btnTVDelete>
+		<grpTVProperties property="Caption">Propiedades do Item</grpTVProperties>
+		<lblTVText property="Caption">Texto:</lblTVText>
+		<btnTVCancel property="Caption">Cancelar</btnTVCancel>
+		<btnTVApply property="Caption">&amp;Aplicar</btnTVApply>
+		<btnTVOk property="Caption">OK</btnTVOk>
+		<btnTVHelp property="Caption">&amp;Ajuda</btnTVHelp>
+	</form>
+	<form name="frmListViewEditor">
+		<caption>Editor de Items da ListView</caption>
+		<grpLVItems property="Caption">Items</grpLVItems>
+		<btnLVNew property="Caption">Novo &amp;Item</btnLVNew>
+		<btnLVDelete property="Caption">&amp;Deletar</btnLVDelete>
+		<btnLVNewSub property="Caption">Novo &amp;SubItem</btnLVNewSub>
+		<grpLVProperties property="Caption">Propiedades do Item</grpLVProperties>
+		<lblLVCaption property="Caption">&amp;Texto:</lblLVCaption>
+		<btnLVOk property="Caption">OK</btnLVOk>
+		<btnLVCancel property="Caption">Cancelar</btnLVCancel>
+		<btnLVApply property="Caption">&amp;Aplicar</btnLVApply>
+		<btnLVHelp property="Caption">&amp;Ajuda</btnLVHelp>
+	</form>
+	<form name="frmCollectionEditor">
+		<caption>Colunas</caption>
+		<btnAdd property="Hint">Adicionar Item</btnAdd>
+		<btnDelete property="Hint">Deletar Item</btnDelete>
+		<btnUp property="Hint">Mover Para Cima</btnUp>
+		<btnDown property="Hint">Mover Para Baixo</btnDown>
+		<mnuColRefresh property="Caption">Atualizar</mnuColRefresh>
+	</form>
+	<form name="frmEventEditor">
+		<caption>Editor de Eventos</caption>
+		<grpNotify property="Caption">Notificação do Controle</grpNotify>
+		<grpEvent property="Caption">Evento do Controle</grpEvent>
+		<rbEditFunc property="Caption">Notificar</rbEditFunc>
+		<rbNone property="Caption">Nenhum</rbNone>
+		<btnDefault property="Caption">Padrão</btnDefault>
+		<btnOK property="Caption">OK</btnOK>
+		<btnCancel property="Caption">Cancelar</btnCancel>
+	</form>
+	<form name="frmMenuBuilder">
+		<caption>Menu Designer</caption>
+		<InsertItem property="Caption">&amp;Inserir</InsertItem>
+		<DeleteItem property="Caption">&amp;Deletar</DeleteItem>
+		<CreateSubmenu property="Caption">&amp;Criar Submenu</CreateSubmenu>
+	</form>
+</language>
