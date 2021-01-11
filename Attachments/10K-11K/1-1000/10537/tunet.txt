@@ -1,0 +1,66 @@
+1red!" Configuración de ciber 1"
+    DHCP habilitado:                         No
+    Direcci¢n IP:                           192.168.0.79
+    M scara de subred:                           255.255.255.0
+    Puerta de enlace predeterminada :                      192.168.0.2
+     1Mapeo                                M:   \\C-4\mp3
+     2Mapeo                                N:   \\
+     3Mapeo                                O:  \\
+2red!"Configuración de ciber 2"
+    DHCP habilitado:                         No
+    Direcci¢n IP:                           192.168.0.129
+    M scara de subred:                           255.255.255.0
+    Puerta de enlace predeterminada :                      192.168.0.2
+     1Mapeo                                M:   \\C-4\mp3
+     2Mapeo                                N:   \\
+     3Mapeo                                O:  \\
+3red!"Configuración de ciber adsl1"
+    DHCP habilitado:                         No
+    Direcci¢n IP:                           192.168.0.130
+    M scara de subred:                           255.255.255.0
+    Puerta de enlace predeterminada :                      192.168.0.1
+     1Mapeo                                M:   \\C-4\mp3
+     2Mapeo                                N:   \\
+     3Mapeo                                O:  \\
+4red!"Configuración de Fuerte 1"
+    DHCP habilitado:                         No
+    Direcci¢n IP:                           192.168.2.129
+    M scara de subred:                           255.255.255.0
+    Puerta de enlace predeterminada :                      192.168.2.2
+     1Mapeo                                M:   \\C-4\mp3
+     2Mapeo                                N:   \\
+     3Mapeo                                O:  \\
+5red!"Configuración de Fuerte 2"
+    DHCP habilitado:                         No
+    Direcci¢n IP:                           192.168.2.130
+    M scara de subred:                           255.255.255.0
+    Puerta de enlace predeterminada :                      192.168.2.2
+     1Mapeo                                M:   \\C-4\mp3
+     2Mapeo                                N:   \\
+     3Mapeo                                O:  \\
+6red! "Configuración dinámica con servidor "
+    DHCP habilitado:                         S¡
+    M‚trica de interfaz:                      0
+    Servidores DNS configurados a trav‚s de DHCP:  Ninguno 
+    Servidores WINS configurados a trav‚s de DHCP: Ninguno 
+     1Mapeo                                M:   \\
+     2Mapeo                                N:   \\
+     3Mapeo                                O:  \\
+7red!"Configuración de Villar"
+    DHCP habilitado:                         No
+    Direcci¢n IP:                           192.168.10.135
+    M scara de subred:                           255.255.255.0
+    Puerta de enlace predeterminada :                      192.168.10.1
+     1Mapeo                                M:   \\
+     2Mapeo                                N:   \\
+     3Mapeo                                O:  \\
+  8red!"Configuración especial"
+    DHCP habilitado:                         No
+    Direcci¢n IP:                           192.168.0.129
+    M scara de subred:                           255.255.255.0
+    Puerta de enlace predeterminada :                      192.168.0.2
+     1Mapeo                                M:   \\C-4L\200
+     2Mapeo                                N:   \\
+     3Mapeo                                O:  \\
+     
+     
