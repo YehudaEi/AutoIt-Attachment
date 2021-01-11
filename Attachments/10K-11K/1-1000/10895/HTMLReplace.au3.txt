@@ -1,0 +1,12 @@
+Func _HTMLReplace($sString)
+	Local $aReplace[5] = ['', '"', '&', '<', '>', ]
+	Local $aEntity[5] = ['', '&quot;', '&amp;', '&lt;', '&gt;', ]
+	Local $aDecimal[5] = ['', '&#34;', '&#38', '&#60;', '&#62', ]
+	Local $aHex[5] = ['', '&#x22;', '&#x26', '&#x3C', '&#x3E', ]
+	For $iCC = 1 To UBound($aReplace) - 1
+		$sString = StringReplace($sString, $aEntity[$iCC], $aReplace[$iCC])
+		$sString = StringReplace($sString, $aDecimal[$iCC], $aReplace[$iCC])
+		$sString = StringReplace($sString, $aHex[$iCC], $aReplace[$iCC])
+	Next
+	Return $sString
+EndFunc
