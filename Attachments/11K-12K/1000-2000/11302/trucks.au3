@@ -11,7 +11,7 @@ Do
 	$top3 = Random(10, @DesktopHeight-60)
 Until ($top3 < ($top1-60) OR $top3 > ($top1+60)) AND ($top3 < ($top2-60) OR $top3 > ($top2+60))
 
-$speed = 90 ; range from 1 to 100
+$speed = 55 ; range from 1 to 100
 
 $GUI = GUICreate("                      ", @DesktopWidth+5, @DesktopHeight, 0, 0, $WS_POPUP, BitOr($WS_EX_TOPMOST, $WS_EX_TOOLWINDOW))
 GUISetBkColor("0x000000")
