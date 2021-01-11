@@ -62,8 +62,7 @@ While 1
 	Case $msg = $g_btnRotate
 		_RotateShape()
 	Case $msg = $g_btnDrop
-		AdlibDisable()
-		AdlibEnable("_MoveShapeDown", 25)
+		AdlibRegister("_MoveShapeDown", 25)
 	EndSelect
 WEnd
 GUIDelete()
@@ -82,8 +81,8 @@ Func _NewShape()
 	If Not $g_bGameStarted Then
 		$nShape = Random(1, 7, 1)
 		; Block types
-		;  1   2   3   4   5    6   7    
-		;  X 
+		;  1   2   3   4   5    6   7
+		;  X
 		;  X   XX   X  XX   XX  XX   XX
 		;  X   XX  XXX  XX XX    X   X
 		;  X                     X   X
@@ -222,7 +221,7 @@ Func _MoveShape($nMoveX, $nMoveY)
 	Local $nCollision, $i, $j
 	Local $bFilled, $x, $y
 	Local $sScoreText, $nScore
-	
+
 	If _CollisionTest($nMoveX, $nMoveY) Then
 		If $nMoveY = 1 Then
 			If $g_nShapeY < 1 Then
@@ -247,7 +246,7 @@ Func _MoveShape($nMoveX, $nMoveY)
                 For $j = 0 To ($BOARD_HEIGHT-1)
                     $bFilled = True
                     For $i = 0 To ($BOARD_WIDTH-1)
-                        If $g_aBoard[$i][$j] = $EMPTY_COLOUR Then 
+                        If $g_aBoard[$i][$j] = $EMPTY_COLOUR Then
 							$bFilled = False
 							ExitLoop
 						EndIf
@@ -256,7 +255,7 @@ Func _MoveShape($nMoveX, $nMoveY)
 						; Increase score
 						$sScoreText = GUICtrlRead($g_lblScore)
 						$nScore = Number(StringRight($sScoreText, StringLen($sScoreText)-7))+10
-						If Mod($nScore, 50) = 0 Then 
+						If Mod($nScore, 50) = 0 Then
 							; Reduce game tick by 10 every 50 points scored
 							$g_nGameTick -= 10
 						EndIf
@@ -285,14 +284,14 @@ EndFunc
 
 Func _RotateShape()
 	Local $i, $j, $aTempShape[4][4]
-	
+
 	; Copy & rotate to temporary array
     For $i = 0 To 3
         For $j = 0 To 3
             $aTempShape[3-$j][$i] = $g_aGameShape[$i][$j]
 		Next
 	Next
-	
+
 	; Check collision of temporary array with borders
     For $i = 0 To 3
         For $j = 0 To 3
@@ -367,7 +366,7 @@ EndFunc
 
 Func _DrawGameShape($bRemove = False)
 	Local $i, $j
-	
+
 	For $i = 0 To 3
 		For $j = 0 To 3
 			If $g_aGameShape[$i][$j] <> $EMPTY_COLOUR Then
@@ -384,7 +383,7 @@ EndFunc
 Func _DrawGameBoard()
 	Local $i, $j
 	Local $x, $y
-	
+
 	$x = 20
 	$y = 20
 	For $i = 0 To $BOARD_WIDTH-1
@@ -402,7 +401,7 @@ EndFunc
 Func _DrawPreviewBoard()
 	Local $i, $j
 	Local $x, $y
-	
+
 	$x = 340
 	$y = 40
 	GUICtrlCreateLabel("Next Shape:", $x, 20, 104, 18, $SS_CENTER)
@@ -420,7 +419,7 @@ EndFunc
 
 Func _RedrawGameBoard()
 	Local $i, $j
-	
+
 	For $i = 0 To $BOARD_WIDTH-1
 		For $j = 0 To $BOARD_HEIGHT-1
 			If $g_aBoard[$i][$j] = $EMPTY_COLOUR Then
@@ -435,7 +434,7 @@ EndFunc
 Func _NewGame()
 	Local $i, $j
 
-	AdlibDisable()	
+	AdlibDisable()
 	HotKeySet("{LEFT}", "_MoveShapeLeft")
 	HotKeySet("{RIGHT}", "_MoveShapeRight")
 	HotKeySet("{DOWN}", "_RotateShape")
@@ -451,5 +450,5 @@ Func _NewGame()
 	$g_bGameStarted = True
 	_DrawGameShape()
 	$g_nGameTick = 500
-	AdlibEnable("_MoveShapeDown", $g_nGameTick)	
+	AdlibEnable("_MoveShapeDown", $g_nGameTick)
 EndFunc
