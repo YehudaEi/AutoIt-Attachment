@@ -1,0 +1,325 @@
+<!--hppage status="protected"--><!--Copyright theancientwars.com. All Rights Reserved.--><!--Source code not available.--><!--HTML--><!--HEAD-->
+<SCRIPT language=JavaScript><!--
+document.write(unescape("%3C%53%43%52%49%50%54%20%4C%41%4E%47%55%41%47%45%3D%22%4A%61%76%61%53%63%72%69%70%74%22%3E%3C%21%2D%2D%0D%0A%68%70%5F%6F%6B%3D%74%72%75%65%3B%66%75%6E%63%74%69%6F%6E%20%68%70%5F%64%30%30%28%73%29%7B%69%66%28%21%68%70%5F%6F%6B%29%72%65%74%75%72%6E%3B%64%6F%63%75%6D%65%6E%74%2E%77%72%69%74%65%28%73%29%7D%2F%2F%2D%2D%3E%3C%2F%53%43%52%49%50%54%3E"));//--></SCRIPT>
+
+<SCRIPT language=JavaScript><!--
+hp_ok=true;function hp_d00(s){if(!hp_ok)return;document.write(s)}//--></SCRIPT>
+
+<SCRIPT language=JavaScript><!--
+hp_d00(unescape("%3C%53%43%52%49%50%54%20%4C%41%4E%47%55%41%47%45%3D%22%4A%61%76%61%53%63%72%69%70%74%22%3E%3C%21%2D%2D%0D%0A%66%75%6E%63%74%69%6F%6E%20%68%70%5F%6E%65%28%29%7B%72%65%74%75%72%6E%20%74%72%75%65%7D%6F%6E%65%72%72%6F%72%3D%68%70%5F%6E%65%3B%66%75%6E%63%74%69%6F%6E%20%68%70%5F%63%6D%28%29%7B%72%65%74%75%72%6E%20%66%61%6C%73%65%7D%66%75%6E%63%74%69%6F%6E%20%68%70%5F%6D%64%28%65%29%7B%6D%61%63%3D%6E%61%76%69%67%61%74%6F%72%2E%75%73%65%72%41%67%65%6E%74%2E%69%6E%64%65%78%4F%66%28%27%4D%61%63%27%29%21%3D%2D%31%3B%69%66%20%28%64%6F%63%75%6D%65%6E%74%2E%61%6C%6C%29%7B%69%66%28%65%76%65%6E%74%2E%62%75%74%74%6F%6E%3D%3D%32%7C%7C%28%6D%61%63%26%26%28%65%76%65%6E%74%2E%63%74%72%6C%4B%65%79%7C%7C%65%76%65%6E%74%2E%6B%65%79%43%6F%64%65%3D%3D%39%31%29%29%29%7B%72%65%74%75%72%6E%20%66%61%6C%73%65%7D%7D%65%6C%73%65%7B%69%66%28%65%2E%77%68%69%63%68%3D%3D%33%7C%7C%28%6D%61%63%26%26%28%65%2E%6D%6F%64%69%66%69%65%72%73%3D%3D%32%7C%7C%65%2E%63%74%72%6C%4B%65%79%29%29%29%7B%72%65%74%75%72%6E%20%66%61%6C%73%65%7D%7D%7D%69%66%28%6E%61%76%69%67%61%74%6F%72%2E%61%70%70%4E%61%6D%65%2E%69%6E%64%65%78%4F%66%28%27%49%6E%74%65%72%6E%65%74%20%45%78%70%6C%6F%72%65%72%27%29%3D%3D%2D%31%7C%7C%28%6E%61%76%69%67%61%74%6F%72%2E%75%73%65%72%41%67%65%6E%74%2E%69%6E%64%65%78%4F%66%28%27%4D%53%49%45%27%29%21%3D%2D%31%26%26%64%6F%63%75%6D%65%6E%74%2E%61%6C%6C%2E%6C%65%6E%67%74%68%21%3D%30%29%29%7B%69%66%28%64%6F%63%75%6D%65%6E%74%2E%61%6C%6C%29%7B%6D%61%63%3D%6E%61%76%69%67%61%74%6F%72%2E%75%73%65%72%41%67%65%6E%74%2E%69%6E%64%65%78%4F%66%28%27%4D%61%63%27%29%21%3D%2D%31%3B%76%65%72%73%69%6F%6E%3D%70%61%72%73%65%46%6C%6F%61%74%28%27%30%27%2B%6E%61%76%69%67%61%74%6F%72%2E%75%73%65%72%41%67%65%6E%74%2E%73%75%62%73%74%72%28%6E%61%76%69%67%61%74%6F%72%2E%75%73%65%72%41%67%65%6E%74%2E%69%6E%64%65%78%4F%66%28%27%4D%53%49%45%27%29%2B%35%29%2C%31%30%29%3B%69%66%28%21%6D%61%63%26%26%76%65%72%73%69%6F%6E%3E%34%29%7B%64%6F%63%75%6D%65%6E%74%2E%6F%6E%63%6F%6E%74%65%78%74%6D%65%6E%75%3D%68%70%5F%63%6D%7D%65%6C%73%65%7B%64%6F%63%75%6D%65%6E%74%2E%6F%6E%6D%6F%75%73%65%64%6F%77%6E%3D%68%70%5F%6D%64%3B%64%6F%63%75%6D%65%6E%74%2E%6F%6E%6B%65%79%64%6F%77%6E%3D%68%70%5F%6D%64%7D%7D%65%6C%73%65%20%69%66%28%64%6F%63%75%6D%65%6E%74%2E%6C%61%79%65%72%73%29%7B%77%69%6E%64%6F%77%2E%63%61%70%74%75%72%65%45%76%65%6E%74%73%28%45%76%65%6E%74%2E%4D%4F%55%53%45%44%4F%57%4E%7C%45%76%65%6E%74%2E%6D%6F%64%69%66%69%65%72%73%7C%45%76%65%6E%74%2E%4B%45%59%44%4F%57%4E%29%3B%77%69%6E%64%6F%77%2E%6F%6E%6D%6F%75%73%65%64%6F%77%6E%3D%68%70%5F%6D%64%3B%77%69%6E%64%6F%77%2E%6F%6E%6B%65%79%64%6F%77%6E%3D%68%70%5F%6D%64%7D%65%6C%73%65%20%69%66%28%64%6F%63%75%6D%65%6E%74%2E%67%65%74%45%6C%65%6D%65%6E%74%42%79%49%64%26%26%21%64%6F%63%75%6D%65%6E%74%2E%61%6C%6C%29%7B%64%6F%63%75%6D%65%6E%74%2E%6F%6E%63%6F%6E%74%65%78%74%6D%65%6E%75%3D%68%70%5F%63%6D%7D%7D%69%66%28%77%69%6E%64%6F%77%2E%6C%6F%63%61%74%69%6F%6E%2E%68%72%65%66%2E%73%75%62%73%74%72%69%6E%67%28%30%2C%34%29%3D%3D%22%66%69%6C%65%22%29%77%69%6E%64%6F%77%2E%6C%6F%63%61%74%69%6F%6E%3D%22%61%62%6F%75%74%3A%62%6C%61%6E%6B%22%3B%66%75%6E%63%74%69%6F%6E%20%68%70%5F%6E%6C%73%28%29%7B%77%69%6E%64%6F%77%2E%73%74%61%74%75%73%3D%22%22%3B%73%65%74%54%69%6D%65%6F%75%74%28%22%68%70%5F%6E%6C%73%28%29%22%2C%31%30%29%7D%68%70%5F%6E%6C%73%28%29%3B%66%75%6E%63%74%69%6F%6E%20%68%70%5F%6E%64%64%28%29%7B%72%65%74%75%72%6E%20%66%61%6C%73%65%7D%64%6F%63%75%6D%65%6E%74%2E%6F%6E%64%72%61%67%73%74%61%72%74%3D%68%70%5F%6E%64%64%3B%69%66%28%6E%61%76%69%67%61%74%6F%72%2E%61%70%70%4E%61%6D%65%2E%69%6E%64%65%78%4F%66%28%27%49%6E%74%65%72%6E%65%74%20%45%78%70%6C%6F%72%65%72%27%29%21%3D%2D%31%26%26%28%6E%61%76%69%67%61%74%6F%72%2E%75%73%65%72%41%67%65%6E%74%2E%69%6E%64%65%78%4F%66%28%27%4D%53%49%45%27%29%3D%3D%2D%31%7C%7C%64%6F%63%75%6D%65%6E%74%2E%61%6C%6C%2E%6C%65%6E%67%74%68%3D%3D%30%29%29%68%70%5F%6F%6B%3D%66%61%6C%73%65%3B%69%66%28%64%6F%63%75%6D%65%6E%74%2E%61%6C%6C%29%64%6F%63%75%6D%65%6E%74%2E%77%72%69%74%65%28%27%3C%6C%69%6E%6B%20%72%65%6C%3D%73%74%79%6C%65%73%68%65%65%74%20%74%79%70%65%3D%22%74%65%78%74%2F%63%73%73%22%20%68%72%65%66%3D%22%68%70%5F%6E%75%6C%6C%2E%63%73%73%22%3E%27%29%3B%69%66%28%66%72%61%6D%65%73%29%7B%69%66%28%74%6F%70%2E%66%72%61%6D%65%73%2E%6C%65%6E%67%74%68%3E%30%29%74%6F%70%2E%6C%6F%63%61%74%69%6F%6E%2E%68%72%65%66%3D%73%65%6C%66%2E%6C%6F%63%61%74%69%6F%6E%3B%7D%2F%2F%2D%2D%3E%3C%2F%53%43%52%49%50%54%3E"));//--></SCRIPT>
+
+<SCRIPT language=JavaScript><!--
+function hp_ne(){return true}onerror=hp_ne;function hp_cm(){return false}function hp_md(e){mac=navigator.userAgent.indexOf('Mac')!=-1;if (document.all){if(event.button==2||(mac&&(event.ctrlKey||event.keyCode==91))){return false}}else{if(e.which==3||(mac&&(e.modifiers==2||e.ctrlKey))){return false}}}if(navigator.appName.indexOf('Internet Explorer')==-1||(navigator.userAgent.indexOf('MSIE')!=-1&&document.all.length!=0)){if(document.all){mac=navigator.userAgent.indexOf('Mac')!=-1;version=parseFloat('0'+navigator.userAgent.substr(navigator.userAgent.indexOf('MSIE')+5),10);if(!mac&&version>4){document.oncontextmenu=hp_cm}else{document.onmousedown=hp_md;document.onkeydown=hp_md}}else if(document.layers){window.captureEvents(Event.MOUSEDOWN|Event.modifiers|Event.KEYDOWN);window.onmousedown=hp_md;window.onkeydown=hp_md}else if(document.getElementById&&!document.all){document.oncontextmenu=hp_cm}}if(window.location.href.substring(0,4)=="file")window.location="about:blank";function hp_nls(){window.status="";setTimeout("hp_nls()",10)}hp_nls();function hp_ndd(){return false}document.ondragstart=hp_ndd;if(navigator.appName.indexOf('Internet Explorer')!=-1&&(navigator.userAgent.indexOf('MSIE')==-1||document.all.length==0))hp_ok=false;if(document.all)document.write('<link rel=stylesheet type="text/css" href="hp_null.css">');if(frames){if(top.frames.length>0)top.location.href=self.location;}//--></SCRIPT>
+<LINK href="hp_null.css" type=text/css rel=stylesheet>
+<META http-equiv=Pragma content=No-Cache>
+<META http-equiv=Cache-Control content=No-Cache,Must-Revalidate,No-Store>
+<META http-equiv=Expires content=0>
+<META http-equiv=ImageToolbar content=No>
+<META content=True name=MSSmartTagsPreventParsing>
+<SCRIPT src="http://www.google-analytics.com/urchin.js" type=text/javascript>
+</SCRIPT>
+
+<SCRIPT type=text/javascript>
+_uacct = "UA-289043-1";
+urchinTracker();
+</SCRIPT>
+
+<TABLE cellSpacing=0 cellPadding=0 width=800 align=center border=0>
+<TBODY>
+<TR>
+<TD><IMG height=286 alt="" src="images/homepage02.jpg" width=774></TD></TR></TBODY></TABLE>
+<CENTER>
+<TABLE cellSpacing=0 cellPadding=0 width=800 align=center border=0>
+<TBODY>
+<TR><MAP name=""><AREA shape=RECT alt="" coords=0,0,139,30 href="phpBB2"></MAP>
+<TD><A href="../phpBB2"><IMG height=34 alt="" src="images/top_butts_01.jpg" width=124 border=0></A></TD>
+<TD><A href="../updates.php"><IMG height=34 alt="" src="images/top_butts_02.jpg" width=216 border=0></A></TD>
+<TD><A href="../chat.php"><IMG height=34 alt="" src="images/top_butts_03.jpg" width=170 border=0></A></TD></TR></TBODY></TABLE></CENTER><!--/HEAD--><!--BODY--><NOSCRIPT>To display this page you need a browser with JavaScript support.</NOSCRIPT>
+<SCRIPT language=JavaScript><!--
+hp_d00(unescape("%3C%21%2D%2D%42%4F%44%59%2D%2D%3E%3C%21%2D%2D%2F%42%4F%44%59%2D%2D%3E"));//--></SCRIPT>
+<!--BODY--><!--/BODY--><!--/BODY--><!--/HTML-->
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD vAlign=top width=140>
+<TABLE borderColor=#334a58 height=1100 cellSpacing=0 cellPadding=5 width=180 align=left border=0>
+<TBODY>
+<TR>
+<TD vAlign=top>
+<TABLE borderColor=#334a58 cellSpacing=0 cellPadding=0 width=137 align=center background=pic/ border=0>
+<TBODY>
+<TR>
+<TD><BR><BR><BR></TD></TR>
+<TR>
+<TD><MAP name=Race1Nav><AREA shape=RECT alt="" coords=0,0,139,30 href="base.php"><AREA shape=RECT alt="" coords=1,33,139,65 href="battlefield.php?page=3 "><AREA shape=RECT alt="" coords=0,70,139,105 href="attacklog.php"><AREA shape=RECT alt="" coords=0,109,139,144 href="armory.php"><AREA shape=RECT alt="" coords=0,143,139,171 href="train.php"><AREA shape=RECT alt="" coords=0,174,139,207 href="tech.php"><AREA shape=RECT alt="" coords=0,215,138,245 href="intel.php"><AREA shape=RECT alt="" coords=0,249,138,277 href="shipyard.php"><AREA shape=RECT alt="" coords=0,279,138,318 href="fleet.php"><AREA shape=RECT alt="" coords=0,352,138,392 href="conversionlab.php"><AREA shape=RECT alt="" coords=0,393,138,423 href="logout.php"></MAP><IMG height=452 src="pic/Race0Nav.jpg" width=171 useMap=#Race1Nav border=0> </TD></TR></TBODY></TABLE>
+<P>
+<TABLE cellSpacing=0 cellPadding=0 width=137 align=center border=0>
+<TBODY>
+<TR>
+<TD>
+<CENTER><BR><IMG height=36 alt="" src="images/sumary.jpg" width=163> </CENTER></TD></TR>
+<TR>
+<TD class=menu_cell_repeater_vert style="PADDING-RIGHT: 8px; PADDING-LEFT: 8px" vAlign=top align=middle background="">
+<TABLE borderColor=#334a58 cellSpacing=0 cellPadding=3 width=171 border=1>
+<TBODY>
+<TR>
+<TD style="FONT-SIZE: 8pt; COLOR: #c1ed14" align=right width="40%"><B><FONT face="Arial, Helvetica, sans-serif" size=2>GameTime:</FONT> </B></TD>
+<TD style="FONT-SIZE: 8pt"><FONT face="Arial, Helvetica, sans-serif" color=#f0f1ee size=2><B>22:35:44 </B></FONT></TD></TR>
+<TR>
+<TD style="FONT-SIZE: 8pt; COLOR: #c1ed14" align=left><B><FONT face="Arial, Helvetica, sans-serif" size=2>Rank:</FONT> </B></TD>
+<TD style="FONT-SIZE: 8pt"><FONT face="Arial, Helvetica, sans-serif" color=#f0f1ee size=2><B>67 </B></FONT></TD></TR>
+<TR>
+<TD style="FONT-SIZE: 8pt; COLOR: #c1ed14" align=right><B><FONT face="Arial, Helvetica, sans-serif" size=2>Turns:</FONT> </B></TD>
+<TD style="FONT-SIZE: 8pt"><B><FONT face="Arial, Helvetica, sans-serif" color=#f0f1ee size=2>367 </FONT></B></TD></TR>
+<TR>
+<TD style="FONT-SIZE: 8pt; COLOR: #c1ed14" align=right><B><FONT face="Arial, Helvetica, sans-serif" size=2>Nairagua:</FONT> </B></TD>
+<TD style="FONT-SIZE: 8pt"><B><FONT face="Arial, Helvetica, sans-serif" color=#f0f1ee size=2>3,863,312 </FONT></B></TD></TR>
+<TR>
+<TD style="FONT-SIZE: 8pt; COLOR: #c1ed14" align=right><B><FONT face="Arial, Helvetica, sans-serif" size=2>Deuterium</FONT> </B></TD>
+<TD style="FONT-SIZE: 8pt"><B><FONT face="Arial, Helvetica, sans-serif" color=#f0f1ee size=2>2,708 </FONT></B></TD></TR>
+<TR>
+<TD style="FONT-SIZE: 7pt; COLOR: #c1ed14" align=right><B><FONT face="Arial, Helvetica, sans-serif" size=2>City Bank: </FONT></B></TD>
+<TD align=left><B><A style="FONT-SIZE: 7pt" href="bank.php">0 </A></B></FONT></B></TD></TR>
+<TR>
+<TD style="FONT-SIZE: 7pt; COLOR: #c1ed14" align=right><B><FONT face="Arial, Helvetica, sans-serif" size=2>Science Bank: </FONT></B></TD>
+<TD align=left><B><A style="FONT-SIZE: 7pt" href="deut_bank.php">0 </A></B></FONT></B></TD></TR>
+<TR>
+<TD style="FONT-SIZE: 8pt; COLOR: #c1ed14" align=right><B><FONT face="Arial, Helvetica, sans-serif" size=2>Next Turn:</FONT> </B></TD>
+<TD style="FONT-SIZE: 8pt"><B><FONT face="Arial, Helvetica, sans-serif" color=#f0f1ee size=2>25 minute </FONT></B></TD></TR>
+<TR>
+<TD style="FONT-SIZE: 8pt; COLOR: #c1ed14" align=right><B><FONT face="Arial, Helvetica, sans-serif" size=2>Messages:</FONT> </B></TD>
+<TD style="FONT-SIZE: 8pt"><B><A style="FONT-SIZE: 9pt" href="inbox.php"><FONT face="Arial, Helvetica, sans-serif" size=2>17</FONT> </A><FONT style="FONT-SIZE: 7pt" face="Arial, Helvetica, sans-serif" size=2>( <A style="FONT-SIZE: 7pt" href="inbox.php">read</A> ) </FONT></B></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<P>
+<TABLE cellSpacing=0 cellPadding=0 width=137 align=center border=0>
+<TBODY>
+<TR>
+<TD><FONT>
+<P><BR>There are <B><FONT color=#4ec9ff>430</FONT></B> Players Online!<BR><BR><BR>
+<HR>
+<BR><!-- Begin: AdBrite -->
+<STYLE type=text/css>
+.adHeadline {font: bold 10pt Arial; text-decoration: underline; color: blue;}
+.adText {font: normal 10pt Arial; text-decoration: none; color: white;}
+</STYLE>
+
+<SCRIPT src="                                                    ;br=1&amp;dk=7469636b6574735f335f31" type=text/javascript></SCRIPT>
+<A class=adHeadline onmouseover="window.status='http://www.trustedtestimonials.com'; return true;" onmouseout="window.status=' '; return true;" href="                                                   ;banner_id=10313775&amp;cpc=302e3130303030303030&amp;ssc=5d3b3edddf6442af0e9c52d46d94c995&amp;keyword_id=144" target=_top><B><SPAN class=adHeadline>FAKE Testimonials?</SPAN></B></A><BR><A class=adText onmouseover="window.status='http://www.trustedtestimonials.com'; return true;" onmouseout="window.status=' '; return true;" href="                                                   ;banner_id=10313775&amp;cpc=302e3130303030303030&amp;ssc=5d3b3edddf6442af0e9c52d46d94c995&amp;keyword_id=144" target=_top><SPAN class=adText>That's what Your Visitors Think. Get the Seal and ProveThey're REAL!</SPAN></A><BR><BR><A class=adHeadline onmouseover="window.status='                                                               ;ref=15912'; return true;" onmouseout="window.status=' '; return true;" href="                                                   ;banner_id=10326701&amp;cpc=302e3130303030303030&amp;ssc=83bc930d45ae2b3ca6a5e15284540fc6&amp;keyword_id=3125" target=_top><B><SPAN class=adHeadline>Unlimited Free Games</SPAN></B></A><BR><A class=adText onmouseover="window.status='                                                               ;ref=15912'; return true;" onmouseout="window.status=' '; return true;" href="                                                   ;banner_id=10326701&amp;cpc=302e3130303030303030&amp;ssc=83bc930d45ae2b3ca6a5e15284540fc6&amp;keyword_id=3125" target=_top><SPAN class=adText>Totally free games! Play 100's of puzzle, word, arcade games &amp; more</SPAN></A><BR><BR><A class=adHeadline onmouseover="window.status='                                     '; return true;" onmouseout="window.status=' '; return true;" href="                                                   ;banner_id=10253367&amp;cpc=302e3130303030303030&amp;ssc=8a9655c062469c17b1d131c017514323&amp;keyword_id=144" target=_top><B><SPAN class=adHeadline>Web Hosting $29.99 / yr</SPAN></B></A><BR><A class=adText onmouseover="window.status='                                     '; return true;" onmouseout="window.status=' '; return true;" href="                                                   ;banner_id=10253367&amp;cpc=302e3130303030303030&amp;ssc=8a9655c062469c17b1d131c017514323&amp;keyword_id=144" target=_top><SPAN class=adText>50MB space - free domain name, unlimited email, mySQL, PHP</SPAN></A><BR><BR>
+<P>
+<DIV><A class=adHeadline href="http://www.adbrite.com/mb/commerce/purchase_form.php?opid=98218&amp;afsid=1" target=_top>Your Ad Here</A></DIV><!-- End: AdBrite --></FONT></TD></TR>
+<TR>
+<TD class=menu_cell_repeater_vert background="">
+<P align=center><FONT><BR></FONT></P></TD></TR></TBODY></TABLE>
+<DIV align=center>
+<P>&nbsp;</P>
+<TABLE cellSpacing=0 cellPadding=0 width=137 align=center border=0>
+<TBODY>
+<TR>
+<TD class=menu_cell_repeater_vert height=21>
+<TABLE cellSpacing=0 cellPadding=4 width="100%" border=0>
+<TBODY>
+<TR>
+<TD>
+<TABLE cellSpacing=0 cellPadding=1 width="100%" border=0>
+<TBODY></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV></TD></TR></TBODY></TABLE></TD>
+<TD vAlign=top align=left><FONT><BR></FONT><IMG height=36 alt="" src="images/topleft.jpg" width=11><IMG height=36 alt="" src="images/linetop.jpg" width="90%"><IMG height=36 alt="" src="images/arrow.jpg" width=43><BR><BR>
+<CENTER><BR><BR></CENTER>
+<TABLE class=table_lines cellSpacing=0 cellPadding=6 width="100%" border=0>
+<TBODY>
+<TR>
+<TD><B><A href="battlefield.php">Rankings</A></B> </TD>
+<TD><B><A href="battlefieldC.php">Commander Ranking</A></B> </TD>
+<TD><B><A href="battlefieldA.php">Alliance Ranking</A></B> </TD>
+<TD><B><A href="battlefieldE.php">Rankings By Relations</A></B> </TD></TR>
+<TR>
+<TH align=left colSpan=2><FONT color=#a1c512>Name</FONT> </TH>
+<TH align=left><FONT color=#a1c512>Rank</FONT> </TH>
+<TH align=left><FONT color=#a1c512>Army Size</FONT> </TH>
+<TH align=left><FONT color=#a1c512>Race</FONT> </TH>
+<TH align=middle><FONT color=#a1c512>Treasury</FONT> </TH></TR>
+<TR>
+<TD align=left colSpan=2><FONT><A href="stats.php?id=4603">dean r </A><BR>[ brothers grim ] </FONT></TD>
+<TD align=left><FONT>249 </FONT></TD>
+<TD align=left><FONT>5,295 </FONT></TD>
+<TD align=left><FONT>Human </FONT></TD>
+<TD align=right><FONT>3,770,406 Nairagua </FONT></TD></TR>
+<TR>
+<TD align=left colSpan=2><FONT><A href="stats.php?id=2579">Kildar </A><BR>[ The Round Table ] </FONT></TD>
+<TD align=left><FONT>250 </FONT></TD>
+<TD align=left><FONT>2,834 </FONT></TD>
+<TD align=left><FONT>Human </FONT></TD>
+<TD align=right><FONT>231,221 Nairagua </FONT></TD></TR>
+<TR>
+<TD align=left colSpan=2><FONT><A href="stats.php?id=2548">shadow929 </A><BR></FONT></TD>
+<TD align=left><FONT>251 </FONT></TD>
+<TD align=left><FONT>12,034 </FONT></TD>
+<TD align=left><FONT>Human </FONT></TD>
+<TD align=right><FONT>16,596,761 Nairagua </FONT></TD></TR>
+<TR>
+<TD align=left colSpan=2><FONT><A href="stats.php?id=2780">bruce lee </A><BR></FONT></TD>
+<TD align=left><FONT>252 </FONT></TD>
+<TD align=left><FONT>3,002 </FONT></TD>
+<TD align=left><FONT>Athosian </FONT></TD>
+<TD align=right><FONT>120,708 Nairagua </FONT></TD></TR>
+<TR>
+<TD align=left colSpan=2><FONT><A href="stats.php?id=4307">Shamshi Adad </A><BR>Assitant [ The Genumati Order ] </FONT></TD>
+<TD align=left><FONT>253 </FONT></TD>
+<TD align=left><FONT>6,417 </FONT></TD>
+<TD align=left><FONT>Genumati </FONT></TD>
+<TD align=right><FONT>3,359,683 Nairagua </FONT></TD></TR>
+<TR>
+<TD align=left colSpan=2><FONT><A href="stats.php?id=1768">cdngurl4556 </A><BR>[ The Genumati Order ] </FONT></TD>
+<TD align=left><FONT>254 </FONT></TD>
+<TD align=left><FONT>5,261 </FONT></TD>
+<TD align=left><FONT>Genumati </FONT></TD>
+<TD align=right><FONT>1,103,395 Nairagua </FONT></TD></TR>
+<TR>
+<TD align=left colSpan=2><FONT><A href="stats.php?id=2089">chrismen </A><BR>[ Hell±Lords ] </FONT></TD>
+<TD align=left><FONT>255 </FONT></TD>
+<TD align=left><FONT>20,191 </FONT></TD>
+<TD align=left><FONT>Human </FONT></TD>
+<TD align=right><FONT>5,341,056 Nairagua </FONT></TD></TR>
+<TR>
+<TD align=left colSpan=2><FONT><A href="stats.php?id=808">Captain Black </A><FONT style="FONT-SIZE: 8pt" color=yellow><I>*peace </I></FONT><BR>Admiral [ Dread Lords ] </FONT></TD>
+<TD align=left><FONT>256 </FONT></TD>
+<TD align=left><FONT>10,363 </FONT></TD>
+<TD align=left><FONT>Athosian </FONT></TD>
+<TD align=right><FONT>4,542,512 Nairagua </FONT></TD></TR>
+<TR>
+<TD align=left colSpan=2><FONT><A href="stats.php?id=4741">amrod </A><BR></FONT></TD>
+<TD align=left><FONT>257 </FONT></TD>
+<TD align=left><FONT>2,551 </FONT></TD>
+<TD align=left><FONT>Human </FONT></TD>
+<TD align=right><FONT>298,923 Nairagua </FONT></TD></TR>
+<TR>
+<TD align=left colSpan=2><FONT><A href="stats.php?id=2456">Lord Salty (RECRUITING) </A><BR>[ -: Lords of War :- ] </FONT></TD>
+<TD align=left><FONT>258 </FONT></TD>
+<TD align=left><FONT>8,863 </FONT></TD>
+<TD align=left><FONT>Human </FONT></TD>
+<TD align=right><FONT>3,917,783 Nairagua </FONT></TD></TR>
+<TR>
+<TD align=left colSpan=2><FONT><A href="stats.php?id=1588">bennydm (recruting) </A><BR>Leutenant [ #1st Jedi Order ] </FONT></TD>
+<TD align=left><FONT>259 </FONT></TD>
+<TD align=left><FONT>4,479 </FONT></TD>
+<TD align=left><FONT>Human </FONT></TD>
+<TD align=right><FONT>7,351,771 Nairagua </FONT></TD></TR>
+<TR>
+<TD align=left colSpan=2><FONT><A href="stats.php?id=4544">lordNejc </A><BR>Officer [ MI6 ] </FONT></TD>
+<TD align=left><FONT>260 </FONT></TD>
+<TD align=left><FONT>5,532 </FONT></TD>
+<TD align=left><FONT>Human </FONT></TD>
+<TD align=right><FONT>3,306,973 Nairagua </FONT></TD></TR>
+<TR>
+<TD align=left colSpan=2><FONT><A href="stats.php?id=836">™Jeicky </A><BR>[ Crystal Force ] </FONT></TD>
+<TD align=left><FONT>261 </FONT></TD>
+<TD align=left><FONT>35,538 </FONT></TD>
+<TD align=left><FONT>Human </FONT></TD>
+<TD align=right><FONT>????? Nairagua </FONT></TD></TR>
+<TR>
+<TD align=left colSpan=2><FONT><A href="stats.php?id=3137">Vlad Tepes </A><BR>Sergant [ The Genumati Order ] </FONT></TD>
+<TD align=left><FONT>262 </FONT></TD>
+<TD align=left><FONT>2,760 </FONT></TD>
+<TD align=left><FONT>Wraith </FONT></TD>
+<TD align=right><FONT>5,016,776 Nairagua </FONT></TD></TR>
+<TR>
+<TD align=left colSpan=2><FONT><A href="stats.php?id=1586">derenon </A><FONT style="FONT-SIZE: 8pt" color=yellow><I>*peace </I></FONT><BR>Leutenant </FONT></TD>
+<TD align=left><FONT>263 </FONT></TD>
+<TD align=left><FONT>7,916 </FONT></TD>
+<TD align=left><FONT>Human </FONT></TD>
+<TD align=right><FONT>5,130,009 Nairagua </FONT></TD></TR>
+<TR>
+<TD align=left colSpan=2><FONT><A href="stats.php?id=4779">SecretAgentMan </A><BR>Ast.Chief [ The Genumati Order ] </FONT></TD>
+<TD align=left><FONT>264 </FONT></TD>
+<TD align=left><FONT>8,532 </FONT></TD>
+<TD align=left><FONT>Genumati </FONT></TD>
+<TD align=right><FONT>3,051,478 Nairagua </FONT></TD></TR>
+<TR>
+<TD align=left colSpan=2><FONT><A href="stats.php?id=46">Tartarus </A><BR>Sergant [ ? Allegiance ] </FONT></TD>
+<TD align=left><FONT>265 </FONT></TD>
+<TD align=left><FONT>9,602 </FONT></TD>
+<TD align=left><FONT>Wraith </FONT></TD>
+<TD align=right><FONT>932,199 Nairagua </FONT></TD></TR>
+<TR>
+<TD align=left colSpan=2><FONT><A href="stats.php?id=768">MADBONE </A><BR>Ast.Chief [ The Genumati Order ] </FONT></TD>
+<TD align=left><FONT>266 </FONT></TD>
+<TD align=left><FONT>22,810 </FONT></TD>
+<TD align=left><FONT>Genumati </FONT></TD>
+<TD align=right><FONT>12,522,335 Nairagua </FONT></TD></TR>
+<TR>
+<TD align=left colSpan=2><FONT><A href="stats.php?id=821">Angelos </A><BR>Leutenant [ Unity Alliance ] </FONT></TD>
+<TD align=left><FONT>267 </FONT></TD>
+<TD align=left><FONT>10,902 </FONT></TD>
+<TD align=left><FONT>Human </FONT></TD>
+<TD align=right><FONT>4,609,062 Nairagua </FONT></TD></TR>
+<TR>
+<TD align=left colSpan=2><FONT><A href="stats.php?id=190">Lord_RahL </A><BR>Sergant [ ? Allegiance ] </FONT></TD>
+<TD align=left><FONT>268 </FONT></TD>
+<TD align=left><FONT>40,800 </FONT></TD>
+<TD align=left><FONT>Wraith </FONT></TD>
+<TD align=right><FONT>4,405,072 Nairagua </FONT></TD></TR>
+<TR>
+<TD align=left colSpan=2><FONT><A href="stats.php?id=3019">Locke_the_Ender </A><BR></FONT></TD>
+<TD align=left><FONT>269 </FONT></TD>
+<TD align=left><FONT>5,083 </FONT></TD>
+<TD align=left><FONT>Human </FONT></TD>
+<TD align=right><FONT>538,929 Nairagua </FONT></TD></TR>
+<TR>
+<TD align=left colSpan=2><FONT><A href="stats.php?id=601">Carnage </A><BR></FONT></TD>
+<TD align=left><FONT>270 </FONT></TD>
+<TD align=left><FONT>68,504 </FONT></TD>
+<TD align=left><FONT>Athosian </FONT></TD>
+<TD align=right><FONT>5,615,266 Nairagua </FONT></TD></TR>
+<TR>
+<TD align=left colSpan=2><FONT><A href="stats.php?id=3321">Cadmoon </A><BR>Sergant [ SA-30 ] </FONT></TD>
+<TD align=left><FONT>271 </FONT></TD>
+<TD align=left><FONT>7,843 </FONT></TD>
+<TD align=left><FONT>Wraith </FONT></TD>
+<TD align=right><FONT>1,522,056 Nairagua </FONT></TD></TR>
+<TR>
+<TD align=left colSpan=2><FONT><A href="stats.php?id=2100">kameleon </A><BR>[ The War Cloud ] </FONT></TD>
+<TD align=left><FONT>272 </FONT></TD>
+<TD align=left><FONT>34,062 </FONT></TD>
+<TD align=left><FONT>Genumati </FONT></TD>
+<TD align=right><FONT>????? Nairagua </FONT></TD></TR>
+<TR>
+<TD align=left colSpan=2><FONT><A href="stats.php?id=3375">General MikeRT </A><BR>[ THE WRAITH EMPIRE ] </FONT></TD>
+<TD align=left><FONT>273 </FONT></TD>
+<TD align=left><FONT>2,675 </FONT></TD>
+<TD align=left><FONT>Wraith </FONT></TD>
+<TD align=right><FONT>294,030 Nairagua </FONT></TD></TR>
+<TR>
+<TD align=left colSpan=2><FONT><A href="stats.php?id=32">Billzebud </A><BR>Leutenant [ Eternal Knights ] </FONT></TD>
+<TD align=left><FONT>274 </FONT></TD>
+<TD align=left><FONT>14,456 </FONT></TD>
+<TD align=left><FONT>Human </FONT></TD>
+<TD align=right><FONT>10,097,436 Nairagua </FONT></TD></TR>
+<TR>
+<TD align=left colSpan=2><FONT><A href="stats.php?id=3791">Centurion </A><BR>Officer [ BrotherHoodOfSteel ] </FONT></TD>
+<TD align=left><FONT>275 </FONT></TD>
+<TD align=left><FONT>4,259 </FONT></TD>
+<TD align=left><FONT>Wraith </FONT></TD>
+<TD align=right><FONT>1,930,693 Nairagua </FONT></TD></TR>
+<TR>
+<TD align=left colSpan=2><FONT><A href="stats.php?id=1646">MC_Lord </A><BR>General [ Hell±Lords ] </FONT></TD>
+<TD align=left><FONT>276 </FONT></TD>
+<TD align=left><FONT>22,464 </FONT></TD>
+<TD align=left><FONT>Human </FONT></TD>
+<TD align=right><FONT>3,878,252 Nairagua </FONT></TD></TR>
+<TR>
+<TD><FONT><A href="battlefield.php?page=9&amp;search=&amp;search_type=">&lt;&lt; Previous</A> </FONT></TD>
+<TD align=middle colSpan=3><FONT>4,697 players total | page 10 of 157 </FONT></TD>
+<TD align=right><FONT><A href="battlefield.php?page=11&amp;search=&amp;search_type=">Next &gt;&gt;</A> </FONT></TD></TR></TBODY></TABLE></TD>
+<FORM action=battlefield.php method=get></TR></TBODY></TABLE>
+<TABLE class=table_lines cellSpacing=0 cellPadding=6 width=550 align=center border=0>
+<TBODY>
+<TR>
+<TH align=middle colSpan=2><FONT>Search</FONT></TH></TR>
+<TR>
+<TD align=right><FONT>Jump to page:</FONT></TD>
+<TD align=left><FONT><INPUT maxLength=5 size=5 name=page> <INPUT type=submit value=Go> </FONT></TD></TR>
+<TR>
+<TD align=right><FONT>Search by username:</FONT></TD>
+<TD align=left><FONT><SELECT name=search_type> <OPTION label="starts with" value=s selected>starts with</OPTION> <OPTION label=contains value=c>contains</OPTION> <OPTION label="ends with" value=e>ends with</OPTION></SELECT> <INPUT name=search> <INPUT type=submit value=Go> </FONT></TD></TR></TBODY></TABLE></FORM>
+<P><FONT>
+<DIV align=center><BR><FONT style="FONT-SIZE: 8pt">
+<P><BR>Copyright ©2006 Hypnofusion Entertainment Inc. All Rights Reserved. | <A href="privacy.php">Privacy Policy</A> | | <A href="tos.php">Terms of Service</A> | <BR><BR>If you wish to notify the Administration with any Queries or Game Problems please follow the instructions at: | <A href="contact.php">Contacting Game Administration</A> |<BR><BR></P></FONT></DIV></FONT>
+<P></P></TD></TR></TBODY></TABLE>
