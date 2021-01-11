@@ -1,0 +1,191 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../onyxcommon/common/stylesheet/common.css">
+            <link rel="stylesheet" type="text/css" href="../stylesheet/default.css">
+                <script language="javascript" src="../common/javascript/cache.js"></script>
+                <script language="javascript" src="../common/javascript/timer.js"></script>
+                <script language="javascript" src="../common/javascript/cached_data.js"></script>
+                <script LANGUAGE="javascript" src="../common/javascript/common.js"></script>
+                <script LANGUAGE="javascript" src="../common/javascript/validation.js"></script>
+                <script language="javascript" src="../onyxcommon/common/javascript/references.js"></script>
+                <script language="javascript" src="../onyxcommon/navbarcontrol/nav_bar_control.js"></script>
+                <script language="javascript" src="navigation_bar.js"></script>
+                <script language="javascript" src="../common/javascript/mrulistdisplay.js"></script>
+                <script language="javascript" src="../common/javascript/quick_search_display.js"></script>
+                <script language="javascript" src="../res/navbar/navigation_bar_res.js"></script>
+                <script LANGUAGE="javascript">
+			var moMRUPopup;
+			var moPopup
+			var oMainFrame = window.top;
+			var mbCancelClick = false
+			
+			var moQuickSearchDisplay = new cQuickSearchDisplay();
+			moPopup = moQuickSearchDisplay.pop()
+			var goMRUListDisplay = new cMRUListDisplay("");
+			moMRUPopup = goMRUListDisplay.buildMRUPopup(oMainFrame.goMRUList);
+			
+			function jsShowMRUList(){
+				if(!moMRUPopup.isOpen && !mbCancelClick){
+					moMRUPopup = goMRUListDisplay.buildMRUPopup(oMainFrame.goMRUList);
+					moMRUPopup.show(115, -12, 160, 208, document.all.divQuickBar);
+					document.all.iconMRUListOn.style.display		= 'none';
+					document.all.iconMRUList.style.display			= 'none';
+					document.all.iconMRUListCloseOn.style.display	= 'inline';
+					document.all.iconMRUListClose.style.display		= 'none';				
+				}
+				else{
+					document.all.iconMRUListOn.style.display		= 'inline';
+					document.all.iconMRUList.style.display			= 'none';
+					document.all.iconMRUListCloseOn.style.display	= 'none';
+					document.all.iconMRUListClose.style.display		= 'none';
+					mbCancelClick = false;			
+				}
+			}
+			function jsMRUListHidden(){
+					document.all.iconMRUListOn.style.display		= 'none';
+					document.all.iconMRUList.style.display			= 'inline';
+					document.all.iconMRUListCloseOn.style.display	= 'none';
+					document.all.iconMRUListClose.style.display		= 'none';
+					mbCancelClick = true;
+					window.setTimeout(jsEnableClick,500)
+			}
+			
+			function jsEnableClick(){
+				mbCancelClick = false;
+			}
+			
+			function jsMRUListLoadCustomer(psPrimaryId, psCustomerType){	
+				moMRUPopup.hide();
+				oMainFrame.idFrameCRM.location =  "../powerpage/otm_loadPowerPage.asp?CustomerId=" + psPrimaryId ;
+				document.all.iconMRUListOn.style.display		= 'none';
+				document.all.iconMRUList.style.display			= 'inline';
+				document.all.iconMRUListCloseOn.style.display	= 'none';
+				document.all.iconMRUListClose.style.display		= 'none';
+				mbCancelClick = true;
+				window.setTimeout(jsEnableClick,500)
+			}	
+			
+			function jsPageInit(){
+				document.all.spnQuickSearch.innerHTML = res_QuickSearch;
+				document.all.spnQuickList.innerHTML	= res_QuickList;
+			}		
+				
+			function jsQuickListHghlt(poElement){
+				poElement.className = 'clsQuickListItemHghlt'
+			}		
+			function jsQuickListLowlt(poElement){
+				poElement.className = 'clsQuickListItem'
+			}
+			
+			function jsSearchBeginHghlt(){
+				document.all.iconSearchStart.style.display		= 'none';
+				document.all.iconSearchStartOn.style.display	= 'inline';
+			}
+			function jsSearchBeginLowlt(){
+				document.all.iconSearchStart.style.display		= 'inline';
+				document.all.iconSearchStartOn.style.display	= 'none';
+			}
+			
+			function jsQuickSearchCtrlHghlt(){
+				event.srcElement.className = 'clsQuickItemControlHghlt';
+				if(!moPopup.isOpen){
+					document.all.iconQuickSearchOn.style.display		= 'inline';
+					document.all.iconQuickSearch.style.display			= 'none';
+					document.all.iconQuickSearchCloseOn.style.display	= 'none';
+					document.all.iconQuickSearchClose.style.display		= 'none';
+				}
+				else{
+					document.all.iconQuickSearchOn.style.display		= 'none';
+					document.all.iconQuickSearch.style.display			= 'none';
+					document.all.iconQuickSearchCloseOn.style.display	= 'inline';
+					document.all.iconQuickSearchClose.style.display		= 'none';
+				}							
+			}
+			function jsQuickSearchCtrlLowlt(){
+				event.srcElement.className = '';
+				if(!moPopup.isOpen){
+					document.all.iconQuickSearchOn.style.display		= 'none';
+					document.all.iconQuickSearch.style.display			= 'inline';
+					document.all.iconQuickSearchCloseOn.style.display	= 'none';
+					document.all.iconQuickSearchClose.style.display		= 'none';
+				}
+				else{
+					document.all.iconQuickSearchOn.style.display		= 'none';
+					document.all.iconQuickSearch.style.display			= 'none';
+					document.all.iconQuickSearchCloseOn.style.display	= 'none';
+					document.all.iconQuickSearchClose.style.display		= 'inline';
+				}
+			}
+			function jsQuickListCtrlHghlt(){
+				event.srcElement.className = 'clsQuickItemControlHghlt'
+				if(!moMRUPopup.isOpen){
+					document.all.iconMRUListOn.style.display		= 'inline';
+					document.all.iconMRUList.style.display			= 'none';
+					document.all.iconMRUListCloseOn.style.display	= 'none';
+					document.all.iconMRUListClose.style.display		= 'none';
+				}
+				else{
+					document.all.iconMRUListOn.style.display		= 'none';
+					document.all.iconMRUList.style.display			= 'none';
+					document.all.iconMRUListCloseOn.style.display	= 'inline';
+					document.all.iconMRUListClose.style.display		= 'none';
+				}
+			}
+			function jsQuickListCtrlLowlt(){
+				event.srcElement.className = '';
+				if(!moMRUPopup.isOpen){				
+					document.all.iconMRUListOn.style.display		= 'none';
+					document.all.iconMRUList.style.display			= 'inline';
+					document.all.iconMRUListCloseOn.style.display	= 'none';
+					document.all.iconMRUListClose.style.display		= 'none';
+				}
+				else{
+					document.all.iconMRUListOn.style.display		= 'none';
+					document.all.iconMRUList.style.display			= 'none';
+					document.all.iconMRUListCloseOn.style.display	= 'none';
+					document.all.iconMRUListClose.style.display		= 'inline';
+				}
+			}
+			function jsResizeNavBar(){
+			    var iBodyOffset = document.body.offsetHeight;
+			    var iQuickBarOffset = document.all.divQuickBar.offsetHeight;
+			    var oNavBar = document.getElementById("divNavBarControl");
+			    if (iBodyOffset >= iQuickBarOffset) {
+			        oNavBar.style.height = iBodyOffset - iQuickBarOffset;
+			    } else {
+			        oNavBar.style.height = 0;
+			    }
+			}
+                </script>
+                <script language="javascript" for="window" event="onresize">
+		jsResizeNavBar()
+                </script>
+    </head>
+    <body leftmargin="0" onload="javascript:jsPageInit();jsBuildNavBarControl();jsSetDefaultSearch();jsResizeNavBar();">
+        <div style="overflow-x:hidden;width:115px;height:100%" class="clsNavBar">
+            <div id="divQuickBar">
+                <div class="clsQuickItemNavBar">
+                    <br />
+                    <div style="cursor:hand" onclick="jsPopQuickSearchList()" onmouseover="jsQuickSearchCtrlHghlt()" onmouseout="jsQuickSearchCtrlLowlt()">
+                        <span style="width:103px;">  <span id="spnQuickSearch"></span></span><img id="iconQuickSearch" src="../images/imgquickrightoff.gif" align="top" /><img id="iconQuickSearchOn" src="../images/imgquickrighton.gif" align="top" style="display:none" /><img id="iconQuickSearchClose" src="../images/imgquickleftoff.gif" align="top" style="display:none" /><img id="iconQuickSearchCloseOn" src="../images/imgquicklefton.gif" align="top" style="display:none" />
+                    </div>
+                    <div style="padding-bottom:5px">
+                        <span style="width:103px;">  <span id="spnSearchField"></span></span>
+                    </div>
+                    <div nowrap>
+                        <input id="txtSearch" type="text" style="width:89px;" onkeypress="jsSearchKeyPress()" /><img id="iconSearchStart" src="../images/searchiconoff.gif" width="16px" height="19px" align="top" onclick="jsSearchRun()" onmouseover="jsSearchBeginHghlt()" style="margin-left:8px;cursor:hand;" /><img id="iconSearchStartOn" src="../images/searchiconon.gif" width="16px" height="19px" align="top" onclick="jsSearchRun()" onmouseout="jsSearchBeginLowlt()" style="margin-left:8px;display:none;cursor:hand;" />
+                    </div>
+                    <br />
+                    <div style="cursor:hand" onclick="jsShowMRUList()" onmouseover="jsQuickListCtrlHghlt()" onmouseout="jsQuickListCtrlLowlt()">
+                        <span style="width:103px;">  <span id="spnQuickList"></span></span><img id="iconMRUList" src="../images/imgquickrightoff.gif" align="top" /><img id="iconMRUListOn" src="../images/imgquickrighton.gif" align="top" style="display:none" /><img id="iconMRUListClose" src="../images/imgquickleftoff.gif" align="top" style="display:none" /><img id="iconMRUListCloseOn" src="../images/imgquicklefton.gif" align="top" style="display:none" />
+                    </div>
+                </div>
+                <img src="../images/btmedge.gif" />
+                <br />
+            </div>
+            <div id="divNavBarControl" style="overflow-y:auto;width:115px;overflow-x:hidden;"></div>
+        </div>
+    </body>
+</html>
