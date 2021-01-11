@@ -1,0 +1,6 @@
+\\Serverb8na2\HOME
+\\Serverb8na2\CTB
+\\Serverb8na2\CTB\CTB
+\\Serverb8na2\CTB\Servergroup
+\\Serverb8na2\Servertest
+\\Serverb8na1\HOME
