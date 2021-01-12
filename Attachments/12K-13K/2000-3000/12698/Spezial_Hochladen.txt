@@ -1,0 +1,346 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow" />
+<meta name="keywords" content="Spezial:Hochladen,Lizenzvorlagen für Bilder,Textvorlagen,Urheberrechte beachten,Bildrechte,FAQ zu Bildern,Spezial:Hochladen,Liste der IPA-Zeichen,Sonderzeichen" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (Deutsch)" />
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html" />
+		<title>Hochladen - Wikipedia</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "/skins-1.5/monobook/main.css?39"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="/skins-1.5/common/commonPrint.css?39" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/skins-1.5/monobook/IE50Fixes.css?39";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/skins-1.5/monobook/IE55Fixes.css?39";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/skins-1.5/monobook/IE60Fixes.css?39";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/skins-1.5/monobook/IE70Fixes.css?39";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/skins-1.5/common/IEFixes.js?39"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		
+		
+
+			<script language='javascript' src='                                       '></script>
+
+<script type= "text/javascript">/*<![CDATA[*/
+var skin = "monobook";
+var stylepath = "/skins-1.5";
+var wgArticlePath = "/wiki/$1";
+var wgScriptPath = "/w";
+var wgServer = "http://de.wikipedia.org";
+var wgCanonicalNamespace = "Special";
+var wgCanonicalSpecialPageName = "Upload";
+var wgNamespaceNumber = -1;
+var wgPageName = "Spezial:Hochladen";
+var wgTitle = "Hochladen";
+var wgArticleId = 0;
+var wgIsArticle = false;
+var wgUserName = "autoit@web.de";
+var wgUserLanguage = "de";
+var wgContentLanguage = "de";
+var wgBreakFrames = false;
+var wgCurRevisionId = 0;
+/*]]>*/</script>
+                
+		<script type="text/javascript" src="/skins-1.5/common/wikibits.js?39"><!-- wikibits js --></script>
+		<script type="text/javascript" src="/w/index.php?title=-&amp;action=raw&amp;smaxage=0&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "/w/index.php?title=MediaWiki:Common.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=2678400";
+@import "/w/index.php?title=MediaWiki:Monobook.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=2678400";
+@import "/w/index.php?title=-&action=raw&gen=css&maxage=2678400&smaxage=0&ts=20061229110757";
+@import "/w/index.php?title=Benutzer:autoit%40web.de/monobook.css&action=raw&ctype=text/css";
+/*]]>*/</style>
+		<script type="text/javascript" src="/w/index.php?title=Benutzer:autoit%40web.de/monobook.js&amp;action=raw&amp;ctype=text/javascript&amp;dontcountme=s"></script>
+		<!-- Head Scripts -->
+		<script type="text/javascript" src="/skins-1.5/common/ajax.js?39"></script>
+	</head>
+<body  class="mediawiki ns--1 ltr page-Spezial_Hochladen">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+		<div id="siteNotice"><script type="text/javascript" language="JavaScript">
+<!--
+var cookieName = "dismissSiteNotice=";
+var cookiePos = document.cookie.indexOf(cookieName);
+var siteNoticeID = "3.6";
+var siteNoticeValue = "\x3cdiv id=\"fundraising\" class=\"plainlinks\" style=\"margin-top:5px; text-align: center;\"\x3e\n\x3cb\x3e\x3ca href=\"http://wikimediafoundation.org/wiki/Schenke_Wissen\" class=\"extiw\" title=\"wikimedia:Schenke_Wissen\"\x3eSchenke Wissen\x3c/a\x3e und \x3ca href=\"http://wikimediafoundation.org/wiki/Spenden\" class=\"extiw\" title=\"wikimedia:Spenden\"\x3espende für Wikipedia!\x3c/a\x3e\x3c/b\x3e \x3cbr/\x3e\x3cimg src=\"http://upload.wikimedia.org/fundraising/2006/meter.png\" width=\"300\" height=\"15\" alt=\"...\" /\x3e\x3cbr/\x3e\x3c/div\x3e\n";
+var cookieValue = "";
+var msgClose = "Verbergen";
+
+if (cookiePos > -1) {
+	cookiePos = cookiePos + cookieName.length;
+	var endPos = document.cookie.indexOf(";", cookiePos);
+	if (endPos > -1) {
+		cookieValue = document.cookie.substring(cookiePos, endPos);
+	} else {
+		cookieValue = document.cookie.substring(cookiePos);
+	}
+}
+if (cookieValue != siteNoticeID) {
+	function dismissNotice() {
+		var date = new Date();
+		date.setTime(date.getTime() + 30*86400*1000);
+		document.cookie = cookieName + siteNoticeID + "; expires="+date.toGMTString() + "; path=/";
+		var element = document.getElementById('siteNotice');
+		element.parentNode.removeChild(element);
+	}
+	document.writeln('<table width="100%"><tr><td width="80%">'+siteNoticeValue+'</td>');
+	document.writeln('<td width="20%" align="right">[<a href="javascript:dismissNotice();">'+msgClose+'</a>]</td></tr></table>');
+}
+-->
+</script></div>		<h1 class="firstHeading">Hochladen</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">aus Wikipedia, der freien Enzyklopädie</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Wechseln zu: <a href="#column-one">Navigation</a>, <a href="#searchInput">Suche</a></div>			<!-- start content -->
+			<div id="uploadtext"><div id="uploadpage-copywarn-copywarn" class="hintergrundfarbe2 rahmenfarbe3" style="margin:0em; padding:4px; border-style: solid; font-size: 95%;margin-bottom: .5em;">
+<table>
+<tr>
+<td>Neu hier? Nimm dir bitte ein paar Minuten Zeit und lies die <b><a href="/wiki/Hilfe:FAQ_zu_Bildern" title="Hilfe:FAQ zu Bildern">Hilfe:FAQ zu Bildern</a></b>. Wenn du Lizenz oder Quelle nicht korrekt angibst, wird dein Bild wahrscheinlich sehr schnell wieder gelöscht.
+</td><td width="25%" align="center" style="font-size:110%"> <b><a href="/wiki/Wikipedia:Urheberrechte_beachten" title="Wikipedia:Urheberrechte beachten">Kopieren urheberrechtlich geschützter Werke verboten!</a></b>
+</td></tr></table>
+</div>
+<a name="1._Gib_der_Datei_einen_sinnvollen_Namen_ohne_Sonderzeichen"></a><h3> <span class="mw-headline">1. Gib der Datei einen sinnvollen Namen ohne Sonderzeichen</span></h3>
+<p>Nach dem Hochladen kann der Dateiname nicht geändert werden.
+</p>
+<a name="2._Kopiere_den_Mustertext_links_in_das_Eingabefeld_und_f.C3.BClle_ihn_aus"></a><h3> <span class="mw-headline">2. Kopiere den Mustertext links in das Eingabefeld und fülle ihn aus</span></h3>
+<table>
+
+<tr>
+<td width="25%">
+<pre>&#123;&#123;Information
+|Beschreibung=
+|Quelle=
+|Urheber=
+|Datum=
+|Genehmigung=
+|Andere Versionen=
+|Anmerkungen=
+&#125;&#125;</pre>
+</td><td width="75%">
+<ul><li> <b>Beschreibung</b>: Was stellt das Bild dar?
+</li><li> <b>Quelle</b>: Woher stammt das Bild?  (ggf. URL oder <i>selbst fotografiert</i>)
+</li><li> <b>Urheber</b>: Wer hat es erstellt? (ggf. mit ~~~ signieren)
+</li><li> <b>Datum</b>: Wann ist das Bild entstanden und/oder erstveröffentlicht?
+</li><li> <b>Genehmigung</b> <i>(bei fremden Bildern)</i>: Wie lautet der genaue Text, in dem der Rechteinhaber die <a href="/wiki/Wikipedia:Textvorlagen#Einverst.C3.A4ndniserkl.C3.A4rung_f.C3.BCr_alle_Anfragen" title="Wikipedia:Textvorlagen">Erlaubnis für eine freie Lizenz</a> erteilt? Leite die Erlaubnis unbedingt zusätzlich an <a href="mailto:permissions-de@wikimedia.org?subject=Upload-Formular" class="external text" title="mailto:permissions-de@wikimedia.org?subject=Upload-Formular" rel="nofollow">permissions-de@wikimedia.org</a> weiter. Bildname nennen nicht vergessen!
+</li><li> <b>Andere Versionen</b> <i>(sofern vorhanden)</i>: Links auf andere hochgeladene Versionen dieser Datei
+</li></ul>
+</td></tr></table>
+<a name="3._W.C3.A4hle_die_zutreffende_Lizenz_aus_dem_Men.C3.BC_aus"></a><h3> <span class="mw-headline">3. Wähle die zutreffende Lizenz aus dem Menü aus</span></h3>
+<p>oder verwende einen gesonderten <a href="/wiki/Wikipedia:Lizenzvorlagen_f%C3%BCr_Bilder" title="Wikipedia:Lizenzvorlagen für Bilder">Lizenzbaustein</a>.<br/>Falls du dir über die Lizenz nicht sicher bist, kannst du gerne auf der <a href="/wiki/Wikipedia_Diskussion:Bildrechte" title="Wikipedia Diskussion:Bildrechte">Diskussionsseite&nbsp;zu&nbsp;Bildrechten</a> nachfragen.
+</p></div>
+	<form id='upload' method='post' enctype='multipart/form-data' action="/wiki/Spezial:Hochladen">
+		<table border='0'>
+		<tr>
+<!--  I tried to change these following elements  - keyword: autoit	  //-->
+			<td align='right' valign='top'><label for='wpUploadFile'>Quelldatei:</label></td>
+			<td align='left'>
+				<input tabindex='1' type='file' name='wpUploadFile' id='wpUploadFile' onchange='fillDestFilename("wpUploadFile")' size='40' /><input type='hidden' name='wpSourceType' value='file' />
+			</td>
+		</tr>
+		<tr>
+			<td align='right'><label for='wpDestFile'>Dateiname ändern:</label></td>
+			<td align='left'>
+				<input tabindex='2' type='text' name='wpDestFile' id='wpDestFile' size='40' value="" />
+			</td>
+		</tr>
+		<tr>
+			<td align='right'><label for='wpUploadDescription'><p>Beschreibung/Quelle:
+</p></label></td>
+			<td align='left'>
+				<textarea tabindex='3' name='wpUploadDescription' id='wpUploadDescription' rows='6' cols='80'></textarea>
+	   
+			</td>
+		</tr>
+		<tr>
+<!--  attention: this a combobox	  //-->		
+			<td align='right'><label for='wpLicense'>Lizenz:</label></td>
+			<td align='left'>
+				<script type='text/javascript' src="/skins-1.5/common/upload.js"></script>
+				<select name='wpLicense' id='wpLicense' tabindex='4'
+					onchange='licenseSelectorCheck()'>
+					<option value=''>keine Vorauswahl (Lizenz im Beschreibungsfeld; Bilder ohne Lizenz werden gelöscht)</option>
+					<option value="BLU" title="{{BLU}}">unbekannt (ich weiß nicht genau; Bilder ohne Lizenz werden gelöscht)</option>
+<option value="Bild-PD-alt" title="{{Bild-PD-alt}}">gemeinfrei (public domain), da Schutzdauer abgelaufen</option>
+<option value="Bild-PD" title="{{Bild-PD}}">gemeinfrei (public domain)</option>
+<option value="Bild-CC-by-sa/2.0/de" title="{{Bild-CC-by-sa/2.0/de}}">CC-by-sa: Creative Commons Attribution-ShareAlike 2.0 Germany </option>
+<option value="Bild-GFDL" title="{{Bild-GFDL}}">GFDL: GNU-Lizenz für freie Dokumentation</option>
+<option value="Bild-GFDL-OpenGeoDB" title="{{Bild-GFDL-OpenGeoDB}}">GFDL-OpenGeoDB (nur für entsprechende Karten)</option>
+
+				</select>
+			</td>
+			</tr>
+			<tr>
+		
+		<td></td>
+		<td>
+			<input tabindex='7' type='checkbox' name='wpWatchthis' id='wpWatchthis'  value='true' />
+			<label for='wpWatchthis'>Diese Seite beobachten</label>
+			<input tabindex='8' type='checkbox' name='wpIgnoreWarning' id='wpIgnoreWarning' value='true' />
+			<label for='wpIgnoreWarning'>Warnungen ignorieren</label>
+		</td>
+	</tr>
+	<tr>
+		<td></td>
+<!--  at least: here is the submit button	  //-->	
+		<td align='left'><input tabindex='9' type='submit' name='wpUpload' value="Datei hochladen" /></td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td align='left'>
+		<p><br />
+</p>
+<div id="specialchars" style="margin-top:3px; border-style:solid; border-width:1px; border-color:#aaaaaa; padding:1px; text-align:left; background-color:white;" title="Klicke auf das gewünschte Sonderzeichen">
+<p class="specialbasic" id="Standard">
+<a href="/wiki/Hilfe:Sonderzeichen" title="Hilfe:Sonderzeichen">Sonderzeichen</a>:
+<a onclick="insertTags('Ä','','');return false" href="#">Ä</a>
+<a onclick="insertTags('ä','','');return false" href="#">ä</a>
+<a onclick="insertTags('Ö','','');return false" href="#">Ö</a>
+<a onclick="insertTags('ö','','');return false" href="#">ö</a>
+<a onclick="insertTags('ß','','');return false" href="#">ß</a>
+<a onclick="insertTags('Ü','','');return false" href="#">Ü</a>
+<a onclick="insertTags('ü','','');return false" href="#">ü</a> |
+<a onclick="insertTags('„','“','');return false" href="#">„“</a>
+<a onclick="insertTags('’','','');return false" href="#">’</a>
+<a onclick="insertTags('‚','‘','');return false" href="#">‚‘</a>
+<a onclick="insertTags('“','”','');return false" href="#">“”</a>
+<a onclick="insertTags('«','»','');return false" href="#">«»</a>
+<a onclick="insertTags('–','','');return false" href="#">–</a> |
+<a onclick="insertTags('+','','');return false" href="#">+</a>
+<a onclick="insertTags('−','','');return false" href="#">−</a>
+<a onclick="insertTags('·','','');return false" href="#">·</a>
+<a onclick="insertTags('×','','');return false" href="#">×</a>
+<a onclick="insertTags('÷','','');return false" href="#">÷</a>
+<a onclick="insertTags('≈','','');return false" href="#">≈</a>
+<a onclick="insertTags('≠','','');return false" href="#">≠</a>
+<a onclick="insertTags('±','','');return false" href="#">±</a>
+<a onclick="insertTags('≤','','');return false" href="#">≤</a>
+<a onclick="insertTags('≥','','');return false" href="#">≥</a>
+<a onclick="insertTags('²','','');return false" href="#">²</a>
+<a onclick="insertTags('³','','');return false" href="#">³</a>
+<a onclick="insertTags('½','','');return false" href="#">½</a>
+<a onclick="insertTags('€','','');return false" href="#">€</a>
+<a onclick="insertTags('†','','');return false" href="#">†</a>
+<a onclick="insertTags('#','','');return false" href="#">#</a>
+<a onclick="insertTags('*','','');return false" href="#">*</a>
+<a onclick="insertTags('‰','','');return false" href="#">‰</a>
+<a onclick="insertTags('§','','');return false" href="#">§</a>
+<a onclick="insertTags('…','','');return false" href="#">…</a>
+<a onclick="insertTags('→','','');return false" href="#">→</a>
+<a onclick="insertTags('↔','','');return false" href="#">↔</a> |
+<a onclick="insertTags('&amp;','nbsp;','');return false" href="#">&amp;nbsp;</a>
+<a onclick="insertTags('[[',']]','');return false" href="#">[[]]</a>
+<a onclick="insertTags('|','','');return false" href="#">|</a>
+<a onclick="insertTags('{{','}}','');return false" href="#">{{}}</a>
+<a onclick="insertTags('~~~~','','');return false" href="#">~~~~</a> |
+<a onclick="insertTags('°','','');return false" href="#">°</a>
+<a onclick="insertTags('′','','');return false" href="#">′</a>
+<a onclick="insertTags('″','','');return false" href="#">″</a>
+</p>
+<p class="specialbasic" id="WikiSyntax" style="display:none">
+WikiSyntax:
+<font face="Arial Unicode MS,Lucida Sans Unicode,MS Mincho,Arial,sans-serif" style="text-decoration:none;"><a onclick="insertTags('[[Kategorie:',']]','');return false" href="#">[[Kategorie:]]</a>
+<a onclick="insertTags('[[Bild:',']]','');return false" href="#">[[Bild:]]</a>
+<a onclick="insertTags('#REDIRECT [[',']]','');return false" href="#">#REDIRECT [[]]</a>
+<a onclick="insertTags('&lt;ref&gt;','&lt;/ref&gt;','');return false" href="#">&lt;ref&gt;&lt;/ref&gt;</a>
+<a onclick="insertTags('&lt;ref name=\&quot;','\&quot;&gt;&lt;/ref&gt;','');return false" href="#">&lt;ref name=&quot;&quot;&gt;&lt;/ref&gt;</a>
+<a onclick="insertTags('&lt;references/&gt;','','');return false" href="#">&lt;references/&gt;</a></font> 
+</p>
+</div>
+
+		</td>
+	</tr>
+
+	</table>
+	</form><div class="printfooter">
+Von „<a href="http://de.wikipedia.org/wiki/Spezial:Hochladen">http://de.wikipedia.org/wiki/Spezial:Hochladen</a>“</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Diese Seite</h5>
+		<ul>
+				 <li id="ca-nstab-special" class="selected"><a href="/wiki/Spezial:Hochladen">Spezialseite</a></li>
+		</ul>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Persönliche Werkzeuge</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-userpage"><a href="/wiki/Benutzer:autoit%40web.de">autoit@web.de</a></li>
+				<li id="pt-mytalk"><a href="/wiki/Benutzer_Diskussion:autoit%40web.de">Eigene Diskussion</a></li>
+				<li id="pt-preferences"><a href="/wiki/Spezial:Einstellungen">Einstellungen</a></li>
+				<li id="pt-watchlist"><a href="/wiki/Spezial:Beobachtungsliste">Beobachtungsliste</a></li>
+				<li id="pt-mycontris"><a href="/wiki/Spezial:Beitr%C3%A4ge/autoit%40web.de">Eigene Beiträge</a></li>
+				<li id="pt-logout"><a href="/w/index.php?title=Spezial:Abmelden&amp;returnto=Spezial:Hochladen">Abmelden</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(http://upload.wikimedia.org/wikipedia/de/b/bc/Wiki.png);" href="/wiki/Hauptseite" title="Hauptseite"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+		<div class='portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-mainpage"><a href="/wiki/Hauptseite">Hauptseite</a></li>
+				<li id="n-aboutsite"><a href="/wiki/Wikipedia:%C3%9Cber_Wikipedia">Über Wikipedia</a></li>
+				<li id="n-topics"><a href="/wiki/Portal:Wikipedia_nach_Themen">Themenportale</a></li>
+				<li id="n-alphindex"><a href="/wiki/Spezial:Alle_Seiten">Von A bis Z</a></li>
+				<li id="n-randompage"><a href="/wiki/Spezial:Zuf%C3%A4llige_Seite">Zufälliger Artikel</a></li>
+			</ul>
+		</div>
+	</div>
+		<div class='portlet' id='p-Mitmachen'>
+		<h5>Mitmachen</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-help"><a href="/wiki/Wikipedia:Hilfe">Hilfe</a></li>
+				<li id="n-portal"><a href="/wiki/Wikipedia:Portal">Wikipedia-Portal</a></li>
+				<li id="n-recentchanges"><a href="/wiki/Spezial:Letzte_%C3%84nderungen">Letzte Änderungen</a></li>
+				<li id="n-sitesupport"><a href="http://wikimediafoundation.org/wiki/Spenden">Spenden</a></li>
+			</ul>
+		</div>
+	</div>
+		<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Suche</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/wiki/Spezial:Suche" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Artikel" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Suche" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Werkzeuge</h5>
+		<div class="pBody">
+			<ul>
+<li id="t-upload"><a href="/wiki/Spezial:Hochladen">Hochladen</a></li>
+<li id="t-specialpages"><a href="/wiki/Spezial:Spezialseiten">Spezialseiten</a></li>
+			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/">                                                                                               </a></div>
+				<div id="f-copyrightico"><a href="http://wikimediafoundation.org/"><img src="/images/wikimedia-button.png" border="0" alt="Wikimedia Foundation"/></a></div>
+			<ul id="f-list">
+				<li id="privacy"><a href="/wiki/Wikipedia:Datenschutz" title="Wikipedia:Datenschutz">Datenschutz</a></li>
+				<li id="about"><a href="/wiki/Wikipedia:%C3%9Cber_Wikipedia" title="Wikipedia:Über Wikipedia">Über Wikipedia</a></li>
+				<li id="disclaimer"><a href="/wiki/Wikipedia:Impressum" title="Wikipedia:Impressum">Impressum</a></li>
+			</ul>
+		</div>
+		
+	
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by srv63 in 0.623 secs. -->
+<script language='javascript'>postamble();</script>
+</body></html>
