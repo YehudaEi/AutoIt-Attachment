@@ -1,0 +1,998 @@
+diff -ruN john-1.6.37/src/byteorder.h john-1.6.37-mscash/src/byteorder.h
+--- john-1.6.37/src/byteorder.h	1970-01-01 01:00:00.000000000 +0100
++++ john-1.6.37-mscash/src/byteorder.h	2005-01-26 10:01:01.000000000 +0100
+@@ -0,0 +1,274 @@
++/* 
++   Unix SMB/Netbios implementation.
++   Version 1.9.
++   SMB Byte handling
++   Copyright (C) Andrew Tridgell 1992-1998
++   
++   This program is free software; you can redistribute it and/or modify
++   it under the terms of the GNU General Public License as published by
++   the Free Software Foundation; either version 2 of the License, or
++   (at your option) any later version.
++   
++   This program is distributed in the hope that it will be useful,
++   but WITHOUT ANY WARRANTY; without even the implied warranty of
++   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++   GNU General Public License for more details.
++   
++   You should have received a copy of the GNU General Public License
++   along with this program; if not, write to the Free Software
++   Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
++*/
++
++#ifndef _BYTEORDER_H
++#define _BYTEORDER_H
++
++/*
++   This file implements macros for machine independent short and 
++   int manipulation
++
++Here is a description of this file that I emailed to the samba list once:
++
++> I am confused about the way that byteorder.h works in Samba. I have
++> looked at it, and I would have thought that you might make a distinction
++> between LE and BE machines, but you only seem to distinguish between 386
++> and all other architectures.
++> 
++> Can you give me a clue?
++
++sure.
++
++The distinction between 386 and other architectures is only there as
++an optimisation. You can take it out completely and it will make no
++difference. The routines (macros) in byteorder.h are totally byteorder
++independent. The 386 optimsation just takes advantage of the fact that
++the x86 processors don't care about alignment, so we don't have to
++align ints on int boundaries etc. If there are other processors out
++there that aren't alignment sensitive then you could also define
++CAREFUL_ALIGNMENT=0 on those processors as well.
++
++Ok, now to the macros themselves. I'll take a simple example, say we
++want to extract a 2 byte integer from a SMB packet and put it into a
++type called uint16 that is in the local machines byte order, and you
++want to do it with only the assumption that uint16 is _at_least_ 16
++bits long (this last condition is very important for architectures
++that don't have any int types that are 2 bytes long)
++
++You do this:
++
++#define CVAL(buf,pos) (((unsigned char *)(buf))[pos])
++#define PVAL(buf,pos) ((unsigned)CVAL(buf,pos))
++#define SVAL(buf,pos) (PVAL(buf,pos)|PVAL(buf,(pos)+1)<<8)
++
++then to extract a uint16 value at offset 25 in a buffer you do this:
++
++char *buffer = foo_bar();
++uint16 xx = SVAL(buffer,25);
++
++We are using the byteoder independence of the ANSI C bitshifts to do
++the work. A good optimising compiler should turn this into efficient
++code, especially if it happens to have the right byteorder :-)
++
++I know these macros can be made a bit tidier by removing some of the
++casts, but you need to look at byteorder.h as a whole to see the
++reasoning behind them. byteorder.h defines the following macros:
++
++SVAL(buf,pos) - extract a 2 byte SMB value
++IVAL(buf,pos) - extract a 4 byte SMB value
++SVALS(buf,pos) signed version of SVAL()
++IVALS(buf,pos) signed version of IVAL()
++
++SSVAL(buf,pos,val) - put a 2 byte SMB value into a buffer
++SIVAL(buf,pos,val) - put a 4 byte SMB value into a buffer
++SSVALS(buf,pos,val) - signed version of SSVAL()
++SIVALS(buf,pos,val) - signed version of SIVAL()
++
++RSVAL(buf,pos) - like SVAL() but for NMB byte ordering
++RSVALS(buf,pos) - like SVALS() but for NMB byte ordering
++RIVAL(buf,pos) - like IVAL() but for NMB byte ordering
++RIVALS(buf,pos) - like IVALS() but for NMB byte ordering
++RSSVAL(buf,pos,val) - like SSVAL() but for NMB ordering
++RSIVAL(buf,pos,val) - like SIVAL() but for NMB ordering
++RSIVALS(buf,pos,val) - like SIVALS() but for NMB ordering
++
++it also defines lots of intermediate macros, just ignore those :-)
++
++*/
++
++/* some switch macros that do both store and read to and from SMB buffers */
++
++#define RW_PCVAL(read,inbuf,outbuf,len) \
++	{ if (read) { PCVAL (inbuf,0,outbuf,len); } \
++	else      { PSCVAL(inbuf,0,outbuf,len); } }
++
++#define RW_PIVAL(read,big_endian,inbuf,outbuf,len) \
++	{ if (read) { if (big_endian) { RPIVAL(inbuf,0,outbuf,len); } else { PIVAL(inbuf,0,outbuf,len); } } \
++	else      { if (big_endian) { RPSIVAL(inbuf,0,outbuf,len); } else { PSIVAL(inbuf,0,outbuf,len); } } }
++
++#define RW_PSVAL(read,big_endian,inbuf,outbuf,len) \
++	{ if (read) { if (big_endian) { RPSVAL(inbuf,0,outbuf,len); } else { PSVAL(inbuf,0,outbuf,len); } } \
++	else      { if (big_endian) { RPSSVAL(inbuf,0,outbuf,len); } else { PSSVAL(inbuf,0,outbuf,len); } } }
++
++#define RW_CVAL(read, inbuf, outbuf, offset) \
++	{ if (read) { (outbuf) = CVAL (inbuf,offset); } \
++	else      { SCVAL(inbuf,offset,outbuf); } }
++
++#define RW_IVAL(read, big_endian, inbuf, outbuf, offset) \
++	{ if (read) { (outbuf) = ((big_endian) ? RIVAL(inbuf,offset) : IVAL (inbuf,offset)); } \
++	else      { if (big_endian) { RSIVAL(inbuf,offset,outbuf); } else { SIVAL(inbuf,offset,outbuf); } } }
++
++#define RW_SVAL(read, big_endian, inbuf, outbuf, offset) \
++	{ if (read) { (outbuf) = ((big_endian) ? RSVAL(inbuf,offset) : SVAL (inbuf,offset)); } \
++	else      { if (big_endian) { RSSVAL(inbuf,offset,outbuf); } else { SSVAL(inbuf,offset,outbuf); } } }
++
++#undef CAREFUL_ALIGNMENT
++
++/* we know that the 386 can handle misalignment and has the "right" 
++   byteorder */
++#ifdef __i386__
++#define CAREFUL_ALIGNMENT 0
++#endif
++
++#ifndef CAREFUL_ALIGNMENT
++#define CAREFUL_ALIGNMENT 1
++#endif
++
++#define CVAL(buf,pos) (((unsigned char *)(buf))[pos])
++#define PVAL(buf,pos) ((unsigned)CVAL(buf,pos))
++#define SCVAL(buf,pos,val) (CVAL(buf,pos) = (val))
++
++
++#if CAREFUL_ALIGNMENT
++
++#define SVAL(buf,pos) (PVAL(buf,pos)|PVAL(buf,(pos)+1)<<8)
++#define IVAL(buf,pos) (SVAL(buf,pos)|SVAL(buf,(pos)+2)<<16)
++#define SSVALX(buf,pos,val) (CVAL(buf,pos)=(val)&0xFF,CVAL(buf,pos+1)=(val)>>8)
++#define SIVALX(buf,pos,val) (SSVALX(buf,pos,val&0xFFFF),SSVALX(buf,pos+2,val>>16))
++#define SVALS(buf,pos) ((int16)SVAL(buf,pos))
++#define IVALS(buf,pos) ((int32)IVAL(buf,pos))
++#define SSVAL(buf,pos,val) SSVALX((buf),(pos),((uint16)(val)))
++#define SIVAL(buf,pos,val) SIVALX((buf),(pos),((uint32)(val)))
++#define SSVALS(buf,pos,val) SSVALX((buf),(pos),((int16)(val)))
++#define SIVALS(buf,pos,val) SIVALX((buf),(pos),((int32)(val)))
++
++#else /* CAREFUL_ALIGNMENT */
++
++/* this handles things for architectures like the 386 that can handle
++   alignment errors */
++/*
++   WARNING: This section is dependent on the length of int16 and int32
++   being correct 
++*/
++
++/* get single value from an SMB buffer */
++#define SVAL(buf,pos) (*(const uint16 *)((const char *)(buf) + (pos)))
++#define IVAL(buf,pos) (*(const uint32 *)((const char *)(buf) + (pos)))
++#define SVALS(buf,pos) (*(const int16 *)((const char *)(buf) + (pos)))
++#define IVALS(buf,pos) (*(const int32 *)((const char *)(buf) + (pos)))
++
++/* store single value in an SMB buffer */
++#define SVALMOD(buf,pos) (*(uint16 *)((char *)(buf) + (pos)))
++#define IVALMOD(buf,pos) (*(uint32 *)((char *)(buf) + (pos)))
++#define SVALSMOD(buf,pos) (*(int16 *)((char *)(buf) + (pos)))
++#define IVALSMOD(buf,pos) (*(int32 *)((char *)(buf) + (pos)))
++
++#define SSVAL(buf,pos,val) SVALMOD(buf,pos)=((uint16)(val))
++#define SIVAL(buf,pos,val) IVALMOD(buf,pos)=((uint32)(val))
++#define SSVALS(buf,pos,val) SVALSMOD(buf,pos)=((int16)(val))
++#define SIVALS(buf,pos,val) IVALSMOD(buf,pos)=((int32)(val))
++
++#endif /* CAREFUL_ALIGNMENT */
++
++/* macros for reading / writing arrays */
++
++#define SMBMACRO(macro,buf,pos,val,len,size) \
++{ uint32 l; for (l = 0; l < (uint32)(len); l++) (val)[l] = macro((buf), (pos) + (size)*l); }
++
++#define SSMBMACRO(macro,buf,pos,val,len,size) \
++{ uint32 l; for (l = 0; l < (uint32)(len); l++) macro((buf), (pos) + (size)*l, (val)[l]); }
++
++/* reads multiple data from an SMB buffer */
++#define PCVAL(buf,pos,val,len) SMBMACRO(CVAL,buf,pos,val,len,1)
++#define PSVAL(buf,pos,val,len) SMBMACRO(SVAL,buf,pos,val,len,2)
++#define PIVAL(buf,pos,val,len) SMBMACRO(IVAL,buf,pos,val,len,4)
++#define PCVALS(buf,pos,val,len) SMBMACRO(CVALS,buf,pos,val,len,1)
++#define PSVALS(buf,pos,val,len) SMBMACRO(SVALS,buf,pos,val,len,2)
++#define PIVALS(buf,pos,val,len) SMBMACRO(IVALS,buf,pos,val,len,4)
++
++/* stores multiple data in an SMB buffer */
++#define PSCVAL(buf,pos,val,len) SSMBMACRO(SCVAL,buf,pos,val,len,1)
++#define PSSVAL(buf,pos,val,len) SSMBMACRO(SSVAL,buf,pos,val,len,2)
++#define PSIVAL(buf,pos,val,len) SSMBMACRO(SIVAL,buf,pos,val,len,4)
++#define PSCVALS(buf,pos,val,len) SSMBMACRO(SCVALS,buf,pos,val,len,1)
++#define PSSVALS(buf,pos,val,len) SSMBMACRO(SSVALS,buf,pos,val,len,2)
++#define PSIVALS(buf,pos,val,len) SSMBMACRO(SIVALS,buf,pos,val,len,4)
++
++
++/* now the reverse routines - these are used in nmb packets (mostly) */
++#define SREV(x) ((((x)&0xFF)<<8) | (((x)>>8)&0xFF))
++#define IREV(x) ((SREV(x)<<16) | (SREV((x)>>16)))
++
++#define RSVAL(buf,pos) SREV(SVAL(buf,pos))
++#define RSVALS(buf,pos) SREV(SVALS(buf,pos))
++#define RIVAL(buf,pos) IREV(IVAL(buf,pos))
++#define RIVALS(buf,pos) IREV(IVALS(buf,pos))
++#define RSSVAL(buf,pos,val) SSVAL(buf,pos,SREV(val))
++#define RSSVALS(buf,pos,val) SSVALS(buf,pos,SREV(val))
++#define RSIVAL(buf,pos,val) SIVAL(buf,pos,IREV(val))
++#define RSIVALS(buf,pos,val) SIVALS(buf,pos,IREV(val))
++
++/* reads multiple data from an SMB buffer (big-endian) */
++#define RPSVAL(buf,pos,val,len) SMBMACRO(RSVAL,buf,pos,val,len,2)
++#define RPIVAL(buf,pos,val,len) SMBMACRO(RIVAL,buf,pos,val,len,4)
++#define RPSVALS(buf,pos,val,len) SMBMACRO(RSVALS,buf,pos,val,len,2)
++#define RPIVALS(buf,pos,val,len) SMBMACRO(RIVALS,buf,pos,val,len,4)
++
++/* stores multiple data in an SMB buffer (big-endian) */
++#define RPSSVAL(buf,pos,val,len) SSMBMACRO(RSSVAL,buf,pos,val,len,2)
++#define RPSIVAL(buf,pos,val,len) SSMBMACRO(RSIVAL,buf,pos,val,len,4)
++#define RPSSVALS(buf,pos,val,len) SSMBMACRO(RSSVALS,buf,pos,val,len,2)
++#define RPSIVALS(buf,pos,val,len) SSMBMACRO(RSIVALS,buf,pos,val,len,4)
++
++#define DBG_RW_PCVAL(charmode,string,depth,base,read,inbuf,outbuf,len) \
++	{ RW_PCVAL(read,inbuf,outbuf,len) \
++	DEBUG(5,("%s%04x %s: ", \
++             tab_depth(depth), base,string)); \
++    if (charmode) print_asc(5, (unsigned char*)(outbuf), (len)); else \
++	{ uint32 idx; for (idx = 0; idx < len; idx++) { DEBUG(5,("%02x ", (outbuf)[idx])); } } \
++	DEBUG(5,("\n")); } 
++
++#define DBG_RW_PSVAL(charmode,string,depth,base,read,big_endian,inbuf,outbuf,len) \
++	{ RW_PSVAL(read,big_endian,inbuf,outbuf,len) \
++	DEBUG(5,("%s%04x %s: ", \
++             tab_depth(depth), base,string)); \
++    if (charmode) print_asc(5, (unsigned char*)(outbuf), 2*(len)); else \
++	{ uint32 idx; for (idx = 0; idx < len; idx++) { DEBUG(5,("%04x ", (outbuf)[idx])); } } \
++	DEBUG(5,("\n")); }
++
++#define DBG_RW_PIVAL(charmode,string,depth,base,read,big_endian,inbuf,outbuf,len) \
++	{ RW_PIVAL(read,big_endian,inbuf,outbuf,len) \
++	DEBUG(5,("%s%04x %s: ", \
++             tab_depth(depth), base,string)); \
++    if (charmode) print_asc(5, (unsigned char*)(outbuf), 4*(len)); else \
++	{ uint32 idx; for (idx = 0; idx < len; idx++) { DEBUG(5,("%08x ", (outbuf)[idx])); } } \
++	DEBUG(5,("\n")); }
++
++#define DBG_RW_CVAL(string,depth,base,read,inbuf,outbuf) \
++	{ RW_CVAL(read,inbuf,outbuf,0) \
++	DEBUG(5,("%s%04x %s: %02x\n", \
++             tab_depth(depth), base, string, outbuf)); }
++
++#define DBG_RW_SVAL(string,depth,base,read,big_endian,inbuf,outbuf) \
++	{ RW_SVAL(read,big_endian,inbuf,outbuf,0) \
++	DEBUG(5,("%s%04x %s: %04x\n", \
++             tab_depth(depth), base, string, outbuf)); }
++
++#define DBG_RW_IVAL(string,depth,base,read,big_endian,inbuf,outbuf) \
++	{ RW_IVAL(read,big_endian,inbuf,outbuf,0) \
++	DEBUG(5,("%s%04x %s: %08x\n", \
++             tab_depth(depth), base, string, outbuf)); }
++
++/* Alignment macros. */
++#define ALIGN4(p,base) ((p) + ((4 - (PTR_DIFF((p), (base)) & 3)) & 3))
++#define ALIGN2(p,base) ((p) + ((2 - (PTR_DIFF((p), (base)) & 1)) & 1))
++
++#endif /* _BYTEORDER_H */
+diff -ruN john-1.6.37/src/john.c john-1.6.37-mscash/src/john.c
+--- john-1.6.37/src/john.c	2003-09-15 10:17:17.000000000 +0200
++++ john-1.6.37-mscash/src/john.c	2005-01-26 10:01:01.000000000 +0100
+@@ -38,6 +38,7 @@
+ 
+ extern struct fmt_main fmt_DES, fmt_BSDI, fmt_MD5, fmt_BF;
+ extern struct fmt_main fmt_AFS, fmt_LM;
++extern struct fmt_main fmt_mscash;
+ 
+ extern int unshadow(int argc, char **argv);
+ extern int unafs(int argc, char **argv);
+@@ -64,6 +65,7 @@
+ 	john_register_one(&fmt_BF);
+ 	john_register_one(&fmt_AFS);
+ 	john_register_one(&fmt_LM);
++	john_register_one(&fmt_mscash);
+ 
+ 	if (!fmt_list) {
+ 		fprintf(stderr, "Unknown ciphertext format name requested\n");
+diff -ruN john-1.6.37/src/loader.c john-1.6.37-mscash/src/loader.c
+--- john-1.6.37/src/loader.c	2003-10-01 03:26:25.000000000 +0200
++++ john-1.6.37-mscash/src/loader.c	2005-01-26 11:20:00.000000000 +0100
+@@ -286,7 +286,8 @@
+ 	struct db_password *current_pw, *last_pw;
+ 	struct list_main *words;
+ 	size_t pw_size, salt_size;
+-
++	extern struct fmt_main fmt_mscash;
++	
+ 	count = ldr_split_line(&login, &ciphertext, &gecos, &home,
+ 		NULL, &db->format, db->options, line);
+ 	if (count <= 0) return;
+@@ -311,7 +312,13 @@
+ 	}
+ 
+ 	for (index = 0; index < count; index++) {
+-		piece = format->methods.split(ciphertext, index);
++		if (db->format == &fmt_mscash)
++		{
++			piece = (char *) mem_alloc(strlen(login) + strlen(ciphertext) + 4);
++			sprintf(piece, "M$%s#%s", login, ciphertext);
++		}
++		else
++			piece = format->methods.split(ciphertext, index);
+ 
+ 		binary = format->methods.binary(piece);
+ 		pw_hash = LDR_HASH_FUNC(binary);
+@@ -636,6 +643,7 @@
+ 	int pass, found, chars;
+ 	int hash;
+ 	struct db_cracked *current;
++	extern struct fmt_main fmt_mscash;
+ 
+ 	format = NULL;
+ 	count = ldr_split_line(&login, &ciphertext, &gecos, &home,
+@@ -646,6 +654,12 @@
+ 
+ 	if (format) {
+ 		split = format->methods.split;
++		if(format == &fmt_mscash)
++		{
++			char * ciphertext2 = (char *) mem_alloc(strlen(login) + strlen(ciphertext) + 4);
++			sprintf(ciphertext2, "M$%s#%s", login, ciphertext);
++			ciphertext = ciphertext2;
++		}
+ 	} else {
+ 		split = fmt_default_split;
+ 		count = 1;
+Les fichiers binaires john-1.6.37/src/.loader.c.swp et john-1.6.37-mscash/src/.loader.c.swp sont différents.
+diff -ruN john-1.6.37/src/Makefile john-1.6.37-mscash/src/Makefile
+--- john-1.6.37/src/Makefile	2003-11-30 03:02:25.000000000 +0100
++++ john-1.6.37-mscash/src/Makefile	2005-01-26 10:01:01.000000000 +0100
+@@ -27,6 +27,9 @@
+ 	BF_fmt.o BF_std.o \
+ 	AFS_fmt.o \
+ 	LM_fmt.o \
++	smbencrypt.o \
++	md4.o \
++	mscash_fmt.o \
+ 	batch.o bench.o charset.o common.o compiler.o config.o cracker.o \
+ 	external.o formats.o getopt.o idle.o inc.o john.o list.o loader.o \
+ 	logger.o math.o memory.o misc.o options.o params.o path.o recovery.o \
+diff -ruN john-1.6.37/src/md4.c john-1.6.37-mscash/src/md4.c
+--- john-1.6.37/src/md4.c	1970-01-01 01:00:00.000000000 +0100
++++ john-1.6.37-mscash/src/md4.c	2005-01-26 10:01:01.000000000 +0100
+@@ -0,0 +1,262 @@
++/*
++ * This is an OpenSSL-compatible implementation of the RSA Data Security,
++ * Inc. MD4 Message-Digest Algorithm (RFC 1320).
++ *
++ * Written by Solar Designer <solar at openwall.com> in 2005, and placed
++ * in the public domain.  There's absolutely no warranty.
++ *
++ * This differs from Colin Plumb's older public domain implementation in
++ * that no 32-bit integer data type is required, there's no compile-time
++ * endianness configuration, and the function prototypes match OpenSSL's.
++ * The primary goals are portability and ease of use.
++ *
++ * This implementation is meant to be fast, but not as fast as possible.
++ * Some known optimizations are not included to reduce source code size
++ * and avoid compile-time configuration.
++ */
++
++#ifndef HAVE_OPENSSL
++
++#include <string.h>
++
++#include "md4.h"
++
++/*
++ * The basic MD4 functions.
++ *
++ * F and G are optimized compared to their RFC 1320 definitions, with the
++ * optimization for F borrowed from Colin Plumb's MD5 implementation.
++ */
++#define F(x, y, z)			((z) ^ ((x) & ((y) ^ (z))))
++#define G(x, y, z)			(((x) & ((y) | (z))) | ((y) & (z)))
++#define H(x, y, z)			((x) ^ (y) ^ (z))
++
++/*
++ * The MD4 transformation for all three rounds.
++ */
++#define STEP(f, a, b, c, d, x, s) \
++	(a) += f((b), (c), (d)) + (x); \
++	(a) = (((a) << (s)) | (((a) & 0xffffffff) >> (32 - (s))));
++
++/*
++ * SET reads 4 input bytes in little-endian byte order and stores them
++ * in a properly aligned word in host byte order.
++ *
++ * The check for little-endian architectures which tolerate unaligned
++ * memory accesses is just an optimization.  Nothing will break if it
++ * doesn't work.
++ */
++#if defined(__i386__) || defined(__vax__)
++#define SET(n) \
++	(*(MD4_u32plus *)&ptr[(n) * 4])
++#define GET(n) \
++	SET(n)
++#else
++#define SET(n) \
++	(ctx->block[(n)] = \
++	(MD4_u32plus)ptr[(n) * 4] | \
++	((MD4_u32plus)ptr[(n) * 4 + 1] << 8) | \
++	((MD4_u32plus)ptr[(n) * 4 + 2] << 16) | \
++	((MD4_u32plus)ptr[(n) * 4 + 3] << 24))
++#define GET(n) \
++	(ctx->block[(n)])
++#endif
++
++/*
++ * This processes one or more 64-byte data blocks, but does NOT update
++ * the bit counters.  There're no alignment requirements.
++ */
++static void *body(MD4_CTX *ctx, void *data, unsigned long size)
++{
++	unsigned char *ptr;
++	MD4_u32plus a, b, c, d;
++	MD4_u32plus saved_a, saved_b, saved_c, saved_d;
++
++	ptr = data;
++
++	a = ctx->a;
++	b = ctx->b;
++	c = ctx->c;
++	d = ctx->d;
++
++	do {
++		saved_a = a;
++		saved_b = b;
++		saved_c = c;
++		saved_d = d;
++
++/* Round 1 */
++		STEP(F, a, b, c, d, SET(0), 3)
++		STEP(F, d, a, b, c, SET(1), 7)
++		STEP(F, c, d, a, b, SET(2), 11)
++		STEP(F, b, c, d, a, SET(3), 19)
++		STEP(F, a, b, c, d, SET(4), 3)
++		STEP(F, d, a, b, c, SET(5), 7)
++		STEP(F, c, d, a, b, SET(6), 11)
++		STEP(F, b, c, d, a, SET(7), 19)
++		STEP(F, a, b, c, d, SET(8), 3)
++		STEP(F, d, a, b, c, SET(9), 7)
++		STEP(F, c, d, a, b, SET(10), 11)
++		STEP(F, b, c, d, a, SET(11), 19)
++		STEP(F, a, b, c, d, SET(12), 3)
++		STEP(F, d, a, b, c, SET(13), 7)
++		STEP(F, c, d, a, b, SET(14), 11)
++		STEP(F, b, c, d, a, SET(15), 19)
++
++/* Round 2 */
++		STEP(G, a, b, c, d, GET(0) + 0x5a827999, 3)
++		STEP(G, d, a, b, c, GET(4) + 0x5a827999, 5)
++		STEP(G, c, d, a, b, GET(8) + 0x5a827999, 9)
++		STEP(G, b, c, d, a, GET(12) + 0x5a827999, 13)
++		STEP(G, a, b, c, d, GET(1) + 0x5a827999, 3)
++		STEP(G, d, a, b, c, GET(5) + 0x5a827999, 5)
++		STEP(G, c, d, a, b, GET(9) + 0x5a827999, 9)
++		STEP(G, b, c, d, a, GET(13) + 0x5a827999, 13)
++		STEP(G, a, b, c, d, GET(2) + 0x5a827999, 3)
++		STEP(G, d, a, b, c, GET(6) + 0x5a827999, 5)
++		STEP(G, c, d, a, b, GET(10) + 0x5a827999, 9)
++		STEP(G, b, c, d, a, GET(14) + 0x5a827999, 13)
++		STEP(G, a, b, c, d, GET(3) + 0x5a827999, 3)
++		STEP(G, d, a, b, c, GET(7) + 0x5a827999, 5)
++		STEP(G, c, d, a, b, GET(11) + 0x5a827999, 9)
++		STEP(G, b, c, d, a, GET(15) + 0x5a827999, 13)
++
++/* Round 3 */
++		STEP(H, a, b, c, d, GET(0) + 0x6ed9eba1, 3)
++		STEP(H, d, a, b, c, GET(8) + 0x6ed9eba1, 9)
++		STEP(H, c, d, a, b, GET(4) + 0x6ed9eba1, 11)
++		STEP(H, b, c, d, a, GET(12) + 0x6ed9eba1, 15)
++		STEP(H, a, b, c, d, GET(2) + 0x6ed9eba1, 3)
++		STEP(H, d, a, b, c, GET(10) + 0x6ed9eba1, 9)
++		STEP(H, c, d, a, b, GET(6) + 0x6ed9eba1, 11)
++		STEP(H, b, c, d, a, GET(14) + 0x6ed9eba1, 15)
++		STEP(H, a, b, c, d, GET(1) + 0x6ed9eba1, 3)
++		STEP(H, d, a, b, c, GET(9) + 0x6ed9eba1, 9)
++		STEP(H, c, d, a, b, GET(5) + 0x6ed9eba1, 11)
++		STEP(H, b, c, d, a, GET(13) + 0x6ed9eba1, 15)
++		STEP(H, a, b, c, d, GET(3) + 0x6ed9eba1, 3)
++		STEP(H, d, a, b, c, GET(11) + 0x6ed9eba1, 9)
++		STEP(H, c, d, a, b, GET(7) + 0x6ed9eba1, 11)
++		STEP(H, b, c, d, a, GET(15) + 0x6ed9eba1, 15)
++
++		a += saved_a;
++		b += saved_b;
++		c += saved_c;
++		d += saved_d;
++
++		ptr += 64;
++	} while (size -= 64);
++
++	ctx->a = a;
++	ctx->b = b;
++	ctx->c = c;
++	ctx->d = d;
++
++	return ptr;
++}
++
++void MD4_Init(MD4_CTX *ctx)
++{
++	ctx->a = 0x67452301;
++	ctx->b = 0xefcdab89;
++	ctx->c = 0x98badcfe;
++	ctx->d = 0x10325476;
++
++	ctx->lo = 0;
++	ctx->hi = 0;
++}
++
++void MD4_Update(MD4_CTX *ctx, void *data, unsigned long size)
++{
++	MD4_u32plus saved_lo;
++	unsigned long used, free;
++
++	saved_lo = ctx->lo;
++	if ((ctx->lo = (saved_lo + size) & 0x1fffffff) < saved_lo)
++		ctx->hi++;
++	ctx->hi += size >> 29;
++
++	used = saved_lo & 0x3f;
++
++	if (used) {
++		free = 64 - used;
++
++		if (size < free) {
++			memcpy(&ctx->buffer[used], data, size);
++			return;
++		}
++
++		memcpy(&ctx->buffer[used], data, free);
++		data = (unsigned char *)data + free;
++		size -= free;
++		body(ctx, ctx->buffer, 64);
++	}
++
++	if (size >= 64) {
++		data = body(ctx, data, size & ~(unsigned long)0x3f);
++		size &= 0x3f;
++	}
++
++	memcpy(ctx->buffer, data, size);
++}
++
++void MD4_Final(unsigned char *result, MD4_CTX *ctx)
++{
++	unsigned long used, free;
++
++	used = ctx->lo & 0x3f;
++
++	ctx->buffer[used++] = 0x80;
++
++	free = 64 - used;
++
++	if (free < 8) {
++		memset(&ctx->buffer[used], 0, free);
++		body(ctx, ctx->buffer, 64);
++		used = 0;
++		free = 64;
++	}
++
++	memset(&ctx->buffer[used], 0, free - 8);
++
++	ctx->lo <<= 3;
++	ctx->buffer[56] = ctx->lo;
++	ctx->buffer[57] = ctx->lo >> 8;
++	ctx->buffer[58] = ctx->lo >> 16;
++	ctx->buffer[59] = ctx->lo >> 24;
++	ctx->buffer[60] = ctx->hi;
++	ctx->buffer[61] = ctx->hi >> 8;
++	ctx->buffer[62] = ctx->hi >> 16;
++	ctx->buffer[63] = ctx->hi >> 24;
++
++	body(ctx, ctx->buffer, 64);
++
++	result[0] = ctx->a;
++	result[1] = ctx->a >> 8;
++	result[2] = ctx->a >> 16;
++	result[3] = ctx->a >> 24;
++	result[4] = ctx->b;
++	result[5] = ctx->b >> 8;
++	result[6] = ctx->b >> 16;
++	result[7] = ctx->b >> 24;
++	result[8] = ctx->c;
++	result[9] = ctx->c >> 8;
++	result[10] = ctx->c >> 16;
++	result[11] = ctx->c >> 24;
++	result[12] = ctx->d;
++	result[13] = ctx->d >> 8;
++	result[14] = ctx->d >> 16;
++	result[15] = ctx->d >> 24;
++
++	memset(ctx, 0, sizeof(*ctx));
++}
++
++void mdfour(unsigned char *out, unsigned char *in, int n)
++{
++	MD4_CTX ctx;
++	MD4_Init(&ctx);
++	MD4_Update(&ctx, in, n);
++	MD4_Final(out, &ctx);
++}
++
++#endif
+diff -ruN john-1.6.37/src/md4.h john-1.6.37-mscash/src/md4.h
+--- john-1.6.37/src/md4.h	1970-01-01 01:00:00.000000000 +0100
++++ john-1.6.37-mscash/src/md4.h	2005-01-26 10:01:01.000000000 +0100
+@@ -0,0 +1,29 @@
++/*
++ * This is an OpenSSL-compatible implementation of the RSA Data Security,
++ * Inc. MD4 Message-Digest Algorithm (RFC 1320).
++ *
++ * Written by Solar Designer <solar at openwall.com> in 2005, and placed
++ * in the public domain.  See md4.c for more information.
++ */
++
++#ifdef HAVE_OPENSSL
++#include <openssl/md4.h>
++#elif !defined(_MD4_H)
++#define _MD4_H
++
++/* Any 32-bit or wider unsigned integer data type will do */
++typedef unsigned long MD4_u32plus;
++
++typedef struct {
++	MD4_u32plus lo, hi;
++	MD4_u32plus a, b, c, d;
++	unsigned char buffer[64];
++	MD4_u32plus block[16];
++} MD4_CTX;
++
++extern void MD4_Init(MD4_CTX *ctx);
++extern void MD4_Update(MD4_CTX *ctx, void *data, unsigned long size);
++extern void MD4_Final(unsigned char *result, MD4_CTX *ctx);
++
++extern void mdfour(unsigned char *out, unsigned char *in, int n);
++#endif
+diff -ruN john-1.6.37/src/mscash_fmt.c john-1.6.37-mscash/src/mscash_fmt.c
+--- john-1.6.37/src/mscash_fmt.c	1970-01-01 01:00:00.000000000 +0100
++++ john-1.6.37-mscash/src/mscash_fmt.c	2005-01-26 10:56:15.000000000 +0100
+@@ -0,0 +1,213 @@
++/*
++ * Copyright (c) 2004 Simon Marechal
++ * bartavelle@bandecon.com
++ *
++ * This is a plugin that adds Microsoft credential's cache hashing algorithm,
++ * MS Cache Hash, a.k.a. MS Cash. This patch is invasive because john doesn't
++ * support the use of the username easily within the current framework.
++ * In order to get those hashes, use the CacheDump utility :
++ *
++ *                                            
++ *
++ * It uses 
++ * - smbencrypt.c Copyright (C) Andrew Tridgell 1997-1998
++ * - md4.c, md4.h Copyright (C) Solar Designer
++ *  
++ */
++
++#include <string.h>
++
++#include "arch.h"
++#include "misc.h"
++#include "common.h"
++#include "formats.h"
++#include "md4.h"
++
++#define FORMAT_LABEL			"mscash"
++#define FORMAT_NAME			"M$ Cache Hash"
++#define ALGORITHM_NAME			"mscash"
++
++#define BENCHMARK_COMMENT		""
++#define BENCHMARK_LENGTH		-1
++
++#define PLAINTEXT_LENGTH		32
++
++#define BINARY_SIZE			16
++//max username size is 64, double for unicode "optimization"
++#define SALT_SIZE			(64*2)
++#define CIPHERTEXT_LENGTH		(BINARY_SIZE*2 + SALT_SIZE)
++
++#define MIN_KEYS_PER_CRYPT		1
++#define MAX_KEYS_PER_CRYPT		1
++
++static struct fmt_tests mscash_tests[] = {
++	{"M$test1#64cd29e36a8431a2b111378564a10631", "test1" },
++	{"M$test2#ab60bdb4493822b175486810ac2abe63", "test2" },
++	{"M$test3#14dd041848e12fc48c0aa7a416a4a00c", "test3" },
++	{"M$test4#b945d24866af4b01a6d89b9d932a153c", "test4" },
++	{NULL}
++};
++
++static char saved_key[PLAINTEXT_LENGTH + 1];
++//stores the ciphertext for value currently being tested
++static char crypt_key[BINARY_SIZE+1];
++
++static int salt_length; //the length of the current username
++static unsigned short cur_salt[SALT_SIZE/2]; //current salt
++
++extern void E_md4hash(unsigned char *passwd, unsigned char *p16);
++
++static int valid(char *ciphertext)
++{
++	int i;
++	int l;
++
++	/*
++	 * 2 cases
++	 * 1 - it comes from the disk, and does not have M$ + salt
++	 * 2 - it comes from memory, and has got M$ + salt + # + blah
++	 */
++
++	if (!memcmp(ciphertext, "M$", 2))
++	{
++		l = strlen(ciphertext) - PLAINTEXT_LENGTH;
++		if(ciphertext[l-1]!='#')
++			return 0;
++	}
++	else
++	{
++		if(strlen(ciphertext)!=PLAINTEXT_LENGTH)
++			return 0;
++		l = 0;
++	}
++	for (i = l; i < l + PLAINTEXT_LENGTH; i++){
++		if (!(  (('0' <= ciphertext[i])&&(ciphertext[i] <= '9')) ||
++					(('a' <= ciphertext[i])&&(ciphertext[i] <= 'f'))  
++					|| (('A' <= ciphertext[i])&&(ciphertext[i] <= 'F'))))
++			return 0;
++	}
++	
++	return 1;
++}
++
++//salt is unicode, so let's say it's unsigned short
++static void mscash_set_salt(void *salt) {
++	salt_length = 0;
++	while( ((unsigned char *)salt)[salt_length]!='#' )
++	{
++#if ARCH_LITTLE_ENDIAN
++		cur_salt[salt_length] = ((unsigned char *)salt)[salt_length];
++#else
++		cur_salt[salt_length] = ((unsigned char *)salt)[salt_length] << 8;
++#endif
++		salt_length ++;
++	}
++	cur_salt[salt_length] = 0;
++}
++
++static void mscash_set_key(char *key, int index) {
++	strnzcpy(saved_key, key, PLAINTEXT_LENGTH+1);
++}
++
++static char *mscash_get_key(int index) {
++    return saved_key;
++}
++
++static int mscash_cmp_all(void *binary, int index) { 
++	int i=0;
++	while(i<BINARY_SIZE)
++	{
++		if(((char *)binary)[i]!=((char *)crypt_key)[i])
++			return 0;
++		i++;
++	}
++	return 1;
++}
++
++static void mscash_crypt_all(int count) {  
++	unsigned char buffer[BINARY_SIZE+SALT_SIZE];
++	// get plaintext input in saved_key put it into ciphertext crypt_key
++	
++	//stage 1 : build nt hash of password
++	E_md4hash(saved_key, buffer);
++
++	//stage 2 : append cleartext to buffer
++	memcpy(buffer+BINARY_SIZE, cur_salt, salt_length*2);
++
++	//stage 3 : generate final hash and put it in crypt_key
++	mdfour(crypt_key, buffer, BINARY_SIZE+salt_length*2);
++}
++
++static void * mscash_binary(char *ciphertext) 
++{
++	static unsigned char realcipher[BINARY_SIZE];
++	int i;
++	
++	int l = strlen(ciphertext);
++	for(i=0; i<BINARY_SIZE ;i++)
++	{
++		realcipher[i] = atoi16[ARCH_INDEX(ciphertext[i*2+l-BINARY_SIZE*2])]*16 + atoi16[ARCH_INDEX(ciphertext[i*2+l-BINARY_SIZE*2+1])];
++	}
++	return (void *)realcipher;
++}
++
++static void * mscash_get_salt(char * ciphertext)
++{
++	static unsigned char out[SALT_SIZE];
++	int l;
++
++	l = strlen(ciphertext);
++	strncpy(out, ciphertext + 2, l - PLAINTEXT_LENGTH + 1);
++	return out;
++}
++
++static int mscash_cmp_one(void *binary, int count){
++	return (1);
++}
++
++static int mscash_cmp_exact(char *source, int count){
++	return 1;
++	//return (!memcmp(mscash_binary(source), crypt_key, BINARY_SIZE));
++}
++
++struct fmt_main fmt_mscash = {
++	{
++		FORMAT_LABEL,
++		FORMAT_NAME,
++		ALGORITHM_NAME,
++		BENCHMARK_COMMENT,
++		BENCHMARK_LENGTH,
++		PLAINTEXT_LENGTH,
++		BINARY_SIZE,
++		SALT_SIZE,
++		MIN_KEYS_PER_CRYPT,
++		MAX_KEYS_PER_CRYPT,
++		FMT_CASE | FMT_8_BIT,
++		mscash_tests
++	}, {
++		fmt_default_init,
++		valid,
++		fmt_default_split,
++		mscash_binary,
++		mscash_get_salt,
++		{
++			fmt_default_binary_hash,
++			fmt_default_binary_hash,
++			fmt_default_binary_hash
++		},
++		fmt_default_salt_hash,
++		mscash_set_salt,
++		mscash_set_key,
++		mscash_get_key,
++		fmt_default_clear_keys,
++		mscash_crypt_all,
++		{
++			fmt_default_get_hash,
++			fmt_default_get_hash,
++			fmt_default_get_hash
++		},
++		mscash_cmp_all,
++		mscash_cmp_one,
++		mscash_cmp_exact
++	}
++};
+diff -ruN john-1.6.37/src/options.c john-1.6.37-mscash/src/options.c
+--- john-1.6.37/src/options.c	2004-02-23 17:07:54.000000000 +0100
++++ john-1.6.37-mscash/src/options.c	2005-01-26 10:01:01.000000000 +0100
+@@ -101,7 +101,7 @@
+ "--salts=[-]COUNT           load salts with[out] at least COUNT passwords " \
+ 	"only\n" \
+ "--format=NAME              force ciphertext format NAME: " \
+-	"DES/BSDI/MD5/BF/AFS/LM\n" \
++	"DES/BSDI/MD5/BF/AFS/LM/mscash\n" \
+ "--save-memory=LEVEL        enable memory saving, at LEVEL 1..3\n"
+ 
+ void opt_init(int argc, char **argv)
+diff -ruN john-1.6.37/src/smbencrypt.c john-1.6.37-mscash/src/smbencrypt.c
+--- john-1.6.37/src/smbencrypt.c	1970-01-01 01:00:00.000000000 +0100
++++ john-1.6.37-mscash/src/smbencrypt.c	2005-01-26 10:01:01.000000000 +0100
+@@ -0,0 +1,106 @@
++/* 
++   Unix SMB/Netbios implementation.
++   Version 1.9.
++   SMB parameters and setup
++   Copyright (C) Andrew Tridgell 1992-1998
++   Modified by Jeremy Allison 1995.
++   
++   This program is free software; you can redistribute it and/or modify
++   it under the terms of the GNU General Public License as published by
++   the Free Software Foundation; either version 2 of the License, or
++   (at your option) any later version.
++   
++   This program is distributed in the hope that it will be useful,
++   but WITHOUT ANY WARRANTY; without even the implied warranty of
++   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++   GNU General Public License for more details.
++   
++   You should have received a copy of the GNU General Public License
++   along with this program; if not, write to the Free Software
++   Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
++*/
++
++
++#include <sys/types.h>
++#include <string.h>
++
++
++#ifndef uchar
++#define uchar unsigned char
++#endif
++
++#if !defined(uint16) && !defined(HAVE_UINT16_FROM_RPC_RPC_H)
++#if (SIZEOF_SHORT == 4)
++#define uint16 __ERROR___CANNOT_DETERMINE_TYPE_FOR_INT16;
++#else /* SIZEOF_SHORT != 4 */
++#define uint16 unsigned short
++#endif /* SIZEOF_SHORT != 4 */
++#endif
++
++#if !defined(int16) && !defined(HAVE_INT16_FROM_RPC_RPC_H)
++#if (SIZEOF_SHORT == 4)
++#define int16 __ERROR___CANNOT_DETERMINE_TYPE_FOR_INT16;
++#else /* SIZEOF_SHORT != 4 */
++#define int16 short
++#endif /* SIZEOF_SHORT != 4 */
++#endif
++
++#include "byteorder.h"
++
++extern void mdfour(unsigned char *out, unsigned char *in, int n);
++
++
++/* Routines for Windows NT MD4 Hash functions. */
++static int _my_wcslen(int16 *str)
++{
++	int len = 0;
++	while(*str++ != 0)
++		len++;
++	return len;
++}
++
++/*
++ * Convert a string into an NT UNICODE string.
++ * Note that regardless of processor type 
++ * this must be in intel (little-endian)
++ * format.
++ */
++ 
++int _my_mbstowcs(int16 *dst, uchar *src, int len)
++{
++	int i;
++	int16 val;
++ 
++	for(i = 0; i < len; i++) {
++		val = *src;
++		SSVAL(dst,0,val);
++		dst++;
++		src++;
++		if(val == 0)
++			break;
++	}
++	return i;
++}
++
++/* 
++ * Creates the MD4 Hash of the users password in NT UNICODE.
++ */
++ 
++void E_md4hash(uchar *passwd, uchar *p16)
++{
++	int len;
++	int16 wpwd[129];
++	
++	/* Password cannot be longer than 128 characters */
++	len = strlen((char *)passwd);
++	if(len > 128)
++		len = 128;
++	/* Password must be converted to NT unicode */
++	_my_mbstowcs(wpwd, passwd, len);
++	wpwd[len] = 0; /* Ensure string is null terminated */
++	/* Calculate length in bytes */
++	len = _my_wcslen(wpwd) * sizeof(int16);
++
++	mdfour(p16, (unsigned char *)wpwd, len);
++}
++
