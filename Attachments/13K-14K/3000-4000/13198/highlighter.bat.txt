@@ -1,0 +1,40 @@
+[]
+name=Batch files
+author=lokster
+ext=.bat;.cmd
+lex=12
+DefaultStyle=0x000000,0xFFFFFF,10,Courier New,0,0,0
+
+# internal commands
+words0=rem set if exist errorlevel for in do break call chcp cd chdir choice 
+cls country ctty date del erase dir echo exit goto loadfix loadhigh mkdir md 
+move path pause prompt rename ren rmdir rd shift time type ver verify vol com 
+con lpt nul color copy defined else not start
+
+#external commands
+words1=
+
+# Default
+style0=0x000000,0xFFFFFF,10,Courier New,0,0,0
+
+# Comment (rem or ::)
+style1=0x008000,0xFFFFFF,10,Courier New,0,1,0
+
+# Keywords
+style2=0x000000,0xFFFFFF,10,Courier New,1,0,0
+
+# Label (line beginning with ':')
+style3=0xFF8000,0xFFFFFF,10,Courier New,1,0,0
+
+# Hide command character ('@')
+style4=0x0000FF,0xFFFFFF,10,Courier New,1,0,0
+
+# External commands
+style5=0x000000,0xFFFFFF,10,Courier New,0,1,0
+
+# Variable: %%x (x is almost whatever, except space and %), %n (n in [0-9]), %EnvironmentVar%
+style6=0xFF0000,0xFFFFFF,10,Courier New,1,0,0
+
+# Operator: * ? < > |
+style7=0x000000,0xFFFFFF,10,Courier New,1,0,0
+
