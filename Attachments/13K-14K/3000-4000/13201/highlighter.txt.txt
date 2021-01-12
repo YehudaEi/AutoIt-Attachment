@@ -1,0 +1,7 @@
+[]
+name=Plain text
+author=lokster
+ext=.txt
+lex=0
+DefaultStyle=0x000000,0xFFFFFF,10,Courier New,0,0,0
+
