@@ -1,0 +1,176 @@
+
+Interacting with Microsoft Diskpart version 5.1.3565
+through the Diskpart Automation API version 0.21
+
+****************************************************************************************************
+Executing: list disk
+****************************************************************************************************
+  Disk ###  Status      Size     Free     Dyn  Gpt
+  --------  ----------  -------  -------  ---  ---
+  Disk 0    Online        56 GB      0 B          
+  Disk 5    Online        75 GB      0 B          
+  Disk 6    Online       932 GB      0 B          
+****************************************************************************************************
+Executing: list volume
+****************************************************************************************************
+  Volume ###  Ltr  Label        Fs     Type           Size  Status     Info    
+  ----------  ---  -----------  -----  ----------  -------  ---------  --------
+  Volume 0                             DVD-ROM         0 B                     
+  Volume 1    J                        DVD-ROM         0 B                     
+  Volume 2    E                        DVD-ROM         0 B                     
+  Volume 3    C    IL3WRRAM     NTFS   Partition     56 GB  Healthy    System  
+  Volume 4                             Removeable      0 B                     
+  Volume 5                             Removeable      0 B                     
+  Volume 6                             Removeable      0 B                     
+  Volume 7    K    FINANCE      FAT32  Removeable   241 MB                     
+  Volume 8    D    TEST DISK    NTFS   Partition     75 GB  Healthy            
+  Volume 9    F    PC Archive   NTFS   Partition    932 GB  Healthy            
+****************************************************************************************************
+Volume 3 has disks:
+****************************************************************************************************
+  Volume ###  Ltr  Label        Fs     Type           Size  Status     Info    
+  ----------  ---  -----------  -----  ----------  -------  ---------  --------
+  Volume 3    C    IL3WRRAM     NTFS   Partition     56 GB  Healthy    System  
+
+	  Disk ###  Status      Size     Free     Dyn  Gpt
+	  --------  ----------  -------  -------  ---  ---
+	  Disk 0    Online        56 GB      0 B          
+****************************************************************************************************
+Volume 8 has disks:
+****************************************************************************************************
+  Volume ###  Ltr  Label        Fs     Type           Size  Status     Info    
+  ----------  ---  -----------  -----  ----------  -------  ---------  --------
+  Volume 8    D    TEST DISK    NTFS   Partition     75 GB  Healthy            
+
+	  Disk ###  Status      Size     Free     Dyn  Gpt
+	  --------  ----------  -------  -------  ---  ---
+	  Disk 5    Online        75 GB      0 B          
+****************************************************************************************************
+Volume 9 has disks:
+****************************************************************************************************
+  Volume ###  Ltr  Label        Fs     Type           Size  Status     Info    
+  ----------  ---  -----------  -----  ----------  -------  ---------  --------
+  Volume 9    F    PC Archive   NTFS   Partition    932 GB  Healthy            
+
+	  Disk ###  Status      Size     Free     Dyn  Gpt
+	  --------  ----------  -------  -------  ---  ---
+	  Disk 6    Online       932 GB      0 B          
+****************************************************************************************************
+Details for disk 0
+****************************************************************************************************
+HTS721060G9AT00
+Disk ID: 45E7994C
+Type   : IDE
+Bus    : 0
+Target : 0
+LUN ID : 0
+
+  Volume ###  Ltr  Label        Fs     Type           Size  Status     Info    
+  ----------  ---  -----------  -----  ----------  -------  ---------  --------
+  Volume 3    C    IL3WRRAM     NTFS   Partition     56 GB  Healthy    System  
+
+	  Partition ###  Type                 Size   Offset
+	  -------------  ----------------  -------  -------
+	  Partition 1    Primary             56 GB    32 KB
+****************************************************************************************************
+Details for disk 5
+****************************************************************************************************
+ION USB 2.0 DRIVE USB Device
+Disk ID: E8DEE4B7
+Type   : USB
+Bus    : 0
+Target : 0
+LUN ID : 0
+
+  Volume ###  Ltr  Label        Fs     Type           Size  Status     Info    
+  ----------  ---  -----------  -----  ----------  -------  ---------  --------
+  Volume 8    D    TEST DISK    NTFS   Partition     75 GB  Healthy            
+
+	  Partition ###  Type                 Size   Offset
+	  -------------  ----------------  -------  -------
+	  Partition 1    Primary             75 GB    32 KB
+****************************************************************************************************
+Details for disk 6
+****************************************************************************************************
+Maxtor OneTouch IIIs USB Device
+Disk ID: 1CCE2CD3
+Type   : USB
+Bus    : 0
+Target : 0
+LUN ID : 0
+
+  Volume ###  Ltr  Label        Fs     Type           Size  Status     Info    
+  ----------  ---  -----------  -----  ----------  -------  ---------  --------
+  Volume 9    F    PC Archive   NTFS   Partition    932 GB  Healthy            
+
+	  Partition ###  Type                 Size   Offset
+	  -------------  ----------------  -------  -------
+	  Partition 1    Primary            932 GB    32 KB
+****************************************************************************************************
+Details for disk 0 - Including full partition details
+****************************************************************************************************
+HTS721060G9AT00
+Disk ID: 45E7994C
+Type   : IDE
+Bus    : 0
+Target : 0
+LUN ID : 0
+
+  Volume ###  Ltr  Label        Fs     Type           Size  Status     Info    
+  ----------  ---  -----------  -----  ----------  -------  ---------  --------
+  Volume 3    C    IL3WRRAM     NTFS   Partition     56 GB  Healthy    System  
+
+	  Partition 1
+	  Type  : 07
+	  Hidden: No
+	  Active: Yes
+
+	  Partition ###  Type                 Size   Offset
+	  -------------  ----------------  -------  -------
+	  Partition 1    Primary             56 GB    32 KB
+****************************************************************************************************
+Details for disk 5 - Including full partition details
+****************************************************************************************************
+ION USB 2.0 DRIVE USB Device
+Disk ID: E8DEE4B7
+Type   : USB
+Bus    : 0
+Target : 0
+LUN ID : 0
+
+  Volume ###  Ltr  Label        Fs     Type           Size  Status     Info    
+  ----------  ---  -----------  -----  ----------  -------  ---------  --------
+  Volume 8    D    TEST DISK    NTFS   Partition     75 GB  Healthy            
+
+	  Partition 1
+	  Type  : 07
+	  Hidden: No
+	  Active: No
+
+	  Partition ###  Type                 Size   Offset
+	  -------------  ----------------  -------  -------
+	  Partition 1    Primary             75 GB    32 KB
+****************************************************************************************************
+Details for disk 6 - Including full partition details
+****************************************************************************************************
+Maxtor OneTouch IIIs USB Device
+Disk ID: 1CCE2CD3
+Type   : USB
+Bus    : 0
+Target : 0
+LUN ID : 0
+
+  Volume ###  Ltr  Label        Fs     Type           Size  Status     Info    
+  ----------  ---  -----------  -----  ----------  -------  ---------  --------
+  Volume 9    F    PC Archive   NTFS   Partition    932 GB  Healthy            
+
+	  Partition 1
+	  Type  : 07
+	  Hidden: No
+	  Active: No
+
+	  Partition ###  Type                 Size   Offset
+	  -------------  ----------------  -------  -------
+	  Partition 1    Primary            932 GB    32 KB
+****************************************************************************************************
+Microsoft diskpart process termination code was 0
