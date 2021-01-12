@@ -1,0 +1,1051 @@
+<html>
+<head>
+	<title>Order Status</title>
+	<META NAME="TITLE" CONTENT="Order Status">
+	<META NAME="DESCRIPTION" CONTENT="Find information about your open orders, your order activity, and your filled orders (trades) for the time period of your choosing.">
+	<script language="javascript">
+		parent.init('snapticket','/cgi-bin/apps/u/EquityTrade?snapid=snap');
+		//fields sorted by these variables
+		var sortorder = "DOWN";  
+		var sortfield = "date";
+		var topbtns = false;
+ 
+	   //quick select vars
+        var allCheckName = "allOpenOrders";
+        var allCount = 1;
+		var totalItems = 1;
+        var qs = [];  //do not load quick select objects until user attempts to cancel
+	   
+	   qs["CETH"] = [2563617320];
+		    
+		//do not load object until user attempts to cancel/modify order
+		var holdOrder = []; var holdComplexOrder = []; 
+		var rowidmap = [];
+ 
+ 	holdOrder["2563617320"] = "new Openorder('2563617320','CETH','Limit','2600','0.67','','12','20','06','','open'); ";
+	
+
+ 	
+	</script>
+	<script language="javascript" src="/amer/scripts/Openorder.js"></script>
+	<script language="javascript" src="/amer/scripts/universal.js"></script>
+	<script language="javascript" src="/amer/scripts/orderstatus.js"></script>
+	<script language="javascript" src="/amer/scripts/quickselect.js"></script>
+	<script language="javascript" src="/amer/scripts/more.js"></script>
+	<link rel="stylesheet" type="text/css" href="/amer/css/universal.css">
+	<link rel="stylesheet" type="text/css" href="/amer/css/quickselect.css">
+	<link rel="stylesheet" type="text/css" href="/amer/css/headers.css">
+	<link rel="stylesheet" type="text/css" href="/amer/css/more.css">
+	<link rel="stylesheet" type="text/css" href="/amer/css/tables.css">
+	<link rel="stylesheet" type="text/css" href="/amer/css/broadcast.css">
+	<link rel="stylesheet" type="text/css" href="/amer/css/errors.css">
+	<style>
+		.expandicon, .collapseicon {cursor:pointer;cursor:hand;margin-top:2px;width:11px; height:11px; background-repeat:no-repeat;border:none;}
+		.expandicon {background-image:url(/amer/images/btn_plus.gif);}
+		.collapseicon {background-image:url(/amer/images/btn_minus.gif);}
+		.orderstring{color:#003366;font-size:10px;}
+		.osCriteria td { white-space:nowrap; }
+		.highlightOn {background-color:#ff9900;width:3px;height:26px;font-size:1px; line-height:1px;}
+		.highlightOff {background-color:#fff;width:3px;height:26px;font-size:1px; line-height:1px;}
+		#nestedsectable td {border:none}
+		.t0 a { color:#2e66b5; font-weight:bold; }
+		.t0 tr.header td { border-bottom:1px solid #d8d8d8; }
+		.t0 tr.header td a { font-weight:normal; }
+		.t0 tr.osspacerrow td { background-color:#fff; height:6px; }
+		.t0 tr.bottomBorder td { border-top:1px solid #808080; height:1px; line-height:1px; }
+		.t0 tr.rows td { background-color:#ededed; border-bottom:1px solid #ededed; color:#666666; border-top:none; }
+		.t0 tr.rows td a { color:#666666; font-weight:normal; }
+		.t0 tr.rowssec td { background-color:#f4f4f4; border-bottom:1px solid #ededed; color:#666666; font-family:arial; }
+		.t0 tr.openrows td { background-color:#d8e8da; }
+		.t0 tr.openrowssec td { background-color:#eff7eb; border-bottom:1px solid #D5DEE8; color:#666666; font-family:arial; }
+		.t0 tr.pendingrows td { background-color:#FFF8DB;}
+		.t0 tr.pendingrowssec td { background-color:#fffcee; border-bottom:1px solid #fcedb0; color:#666666; font-family:arial; }	
+		.t0 tr.cancelrows td { background-color:#ffe4af; border:none; }
+		.t0 tr.cancelrowssec td { background-color:#fff3e5; border-bottom:1px solid #ffeacb; color:#666666; font-family:arial; }
+		.modifiedtext { border:2px solid #ff9900; }
+		td.rejected_order td { font-weight:bold; font-size:11px; white-space:normal; }
+		td.rejected_order td.rejected_order_label { color:#FF0000; padding:0 5px 0 0; white-space:nowrap; }
+	</style>
+</head>
+<body onLoad=" init();">
+<div class="navigation">
+<table cellspacing="0" class="headerDropdownsTable">
+	<tr>
+		<td><a href="/cgi-bin/apps/u/Home" class="noHover"><img src='/amer/images/logo_apex.gif' alt='Home'>
+</a></td>
+		<td width="100%"><div class="spacer">&nbsp;</div></td>
+		<td style="vertical-align:bottom; padding-bottom:5px;">
+		<table cellspacing="0">
+			<tr class="headerLabels">
+			
+				<td>Shortcuts</td>
+							
+			
+				<td colspan="2">Get Quotes</td>
+				<td colspan="2">Search</td>				
+			
+				<td height="15">Account</td>
+				<td align="right" style="padding-right:3px;"><a href="#" onclick="top.location.href='/cgi-bin/apps/LogOut'">Log Off</a></td>
+			</tr>	
+			<tr>
+			
+				<td style="padding-right:8px;"><form name="myShortcutsform" id="myShortcutsform" >
+						<select name="myShortcuts" style="width:149px; background-color:#FFF8DB;" onchange="if (this.value != 'none') { parent.myShortcuts('/cgi-bin/apps/u/AccountSettings?pagehandler=PHShortcutsLauncher&id=',this.value); return false; }">
+							<option value="none">Select...</option>
+							
+							<option value="SSQ">Quicklaunch Streamer Suite&#153;</option>
+<option value="STC">Streamer Console</option>
+<option value="SP">Streamer Portfolio</option>
+<option value="SC">Streamer Charts</option>
+
+<option value="CC">Command Center</option>
+
+<option value="BP">Balances &amp; Positions</option>
+<option value="OS">Order Status</option>
+
+<option value="MMD">Market Motion Detector</option>
+
+
+<option value="QS">QuoteScope&#153;</option>
+
+<option value="TS">Trade Stocks</option>
+
+<option value="TO">Trade Options</option>
+
+
+<option value="TMF">Trade Mutual Funds</option>
+
+<option value="HS">History &amp; Statements</option>
+<option value="WL">Watch Lists</option>
+<option value="CH">Charts</option>
+
+							
+							<option value="none">---------------------------</option>
+							<option value="ES" style="font-weight:bold;">Edit shortcuts</option>
+						</select>
+					</form></td>
+									
+			
+				<!--start quote form-->
+				<form name="findform" id="findform" method="get" onsubmit="return parent.submitFind(document.findform, 'https://research.ameritrade.com/wwws/stocks/overview/overview.asp?CDI=A000000013076936&user_id=A000000013076936&Domain=https://wwws.ameritrade.com&vendorDomain=ameritrade.com&wDir=wwws');">
+				<!-- if example text in the input field changes, make those changes also in main.js //pd -->
+				<td><input type="text" name="symbol" style="width:100px" value="ex: MSFT, +IBMAT" onClick="parent.clearField(this.form)"></td>
+				<td class="buttonPad" style="padding-right:8px;"><input type="hidden" value="go"><a href="#" id="navgobtn2" class="btnLinkOff" onclick="return parent.submitFind(document.findform, 'https://research.ameritrade.com/wwws/stocks/overview/overview.asp?CDI=A000000013076936&user_id=A000000013076936&Domain=https://wwws.ameritrade.com&vendorDomain=ameritrade.com&wDir=wwws');">Go</a></td>
+				</form>
+						<form name="searchform" id="searchform" onSubmit="return parent.launchSearchBox(document.searchform);">
+				<!-- if example text in the input field changes, make those changes also in main.js //pd -->								
+				<td valign="middle"><input type="text" name="search" style="width:107px;" value="ex: Margin trading" onClick="parent.clearField(this.form)"></td>
+				<td class="buttonPad" style="padding-right:8px;"><input type="hidden" value="go"><a href="#" id="navgobtn1" class="btnLinkOff" onclick="if (parent.launchSearchBox(document.searchform)) document.searchform.submit();">Go</a></td>				
+							</form>
+							<!--end search form-->
+			
+				<form name="linkform" id="linkform">
+							
+				<td colspan="2"><select name="link" style="width:116px;" onchange="eval(this.value);">
+					
+						<option value="">more4don</option>
+					
+						<option value="">-----------------------------</option>
+						<option value="location.href='/cgi-bin/apps/u/AccountManagement'" style="color:#D5801E; font-weight:bold;">Link Accounts</option>
+					</select></td>
+			
+				</form>
+			</tr>
+		</table></td>
+	</tr>
+</table>
+<script type="text/javascript">
+	function linkTarget(url){
+		
+		window.location.href = url;
+		
+	}
+</script>
+<div id="topNav">
+	<table id="nav" width="100%" cellspacing="0">
+		<tbody>
+			<tr id="navIndicator">
+				<td colspan="2" id="homeIndicator"><div class="indicator1"></div><div class="indicator2"></div></td>
+				<td id="portfolioIndicator"><div class="indicator1"></div><div class="indicator2"></div></td>
+				<td id="tradeIndicator"><div class="indicator1"></div><div class="indicator2"></div></td>
+				<td id="researchIndicator"><div class="indicator1"></div><div class="indicator2"></div></td>
+				<td id="toolsIndicator"><div class="indicator1"></div><div class="indicator2"></div></td>
+				
+				<td id="goalsIndicator"><div class="indicator1"></div><div class="indicator2"></div></td>
+				
+				<td colspan="2" id="clientIndicator"><div class="indicator1"></div><div class="indicator2"></div></td>
+			</tr>
+			<tr><td colspan="9" valign="top"><div style="margin-left: 0px; margin-right: 2px;" id="topCurveUpper" class="hr">&nbsp;</div></td></tr>
+			<tr><td colspan="9" valign="top"><div style="margin-left: 0px; margin-right: 1px;" id="topCurveLower" class="hr">&nbsp;</div></td></tr>
+			<tr onclick="this.blur();" id="navBg">
+				<td id="leftBorder">&nbsp;</td>
+				<td class="menuOff" id="home" onmouseover="parent.changeBgColor(this);" onmouseout="parent.changeBgColor(this);" onclick="linkTarget('/cgi-bin/apps/u/Home');"><div><a href="#">Home</a></div></td>
+				<td class="menuOff" id="portfolio" onmouseover="parent.changeBgColor(this);" onmouseout="parent.changeBgColor(this);" onclick="parent.subMenu('portfolio');"><div><a>Portfolio &amp; Accounts</a></div></td>
+				<td class="menuOff" id="trade" onmouseover="parent.changeBgColor(this);" onmouseout="parent.changeBgColor(this);" onclick="parent.subMenu('trade');"><div><a>Trade</a></div></td>
+				<td class="menuOff" id="research" onmouseover="parent.changeBgColor(this);" onmouseout="parent.changeBgColor(this);" onclick="parent.subMenu('research');"><div><a>Research &amp; Ideas</a></div></td>
+				<td class="menuOff" id="tools" onmouseover="parent.changeBgColor(this);" onmouseout="parent.changeBgColor(this);" onclick="parent.subMenu('tools');"><div><a>Trading Tools</a></div></td>
+				
+				<td class="menuOff" id="goals" onmouseover="parent.changeBgColor(this);" onmouseout="parent.changeBgColor(this);" onclick="parent.subMenu('goals');"><div><a>Planning &amp; Retirement</a></div></td>
+				
+				<td class="menuOff" id="client" onmouseover="parent.changeBgColor(this);" onmouseout="parent.changeBgColor(this);" onclick="parent.subMenu('client');"><div><a>Client Services</a></div></td>
+			</tr>
+			<tr>
+				<td id="subMenu" colspan="9" class="subnavHeight">
+					<div class="subMenuItem" id="homeMenu">
+						<div class="spacer" style="height: 26px;"></div>
+					</div>
+					<div class="subMenuItem" id="portfolioMenu">
+						<table cellspacing="0">
+							<tbody>
+								<tr id="portfolioMenuRow">
+									<td class="portfolioPadLeft">&nbsp;</td>
+									<td class="subMenuOff" id="portfolioBalances" onmouseover="parent.changeSubMenuBgColor(this);" onmouseout="parent.changeSubMenuBgColor(this);" onclick="linkTarget('/cgi-bin/apps/u/BalancesAndPositions');"><a href="#">Balances &amp; Positions</a></td>
+									<td style="padding-left: 0pt; padding-right: 0pt; width: 1px;" class="subdivider">|</td>
+		
+		
+									<td class="subMenuOff" id="portfolioGain" onmouseover="parent.changeSubMenuBgColor(this);" onmouseout="parent.changeSubMenuBgColor(this);" onclick="parent.openNewWin('/cgi-bin/apps/u/BalancesAndPositions?pagehandler=PHGainskeeperStart');"><a href="#">Gain/Loss</a></td>
+									<td style="padding-left: 0pt; padding-right: 0pt; width: 1px;" class="subdivider">|</td>
+		
+		
+									<td class="subMenuOff" id="portfolioWatchLists" onmouseover="parent.changeSubMenuBgColor(this);" onmouseout="parent.changeSubMenuBgColor(this);" onclick="linkTarget('/cgi-bin/apps/u/WatchListDisplay');"><a href="#">Watch Lists</a></td>
+									<td style="padding-left: 0pt; padding-right: 0pt; width: 1px;" class="subdivider">|</td>
+									<td class="subMenuOff" id="portfolioHistory" onmouseover="parent.changeSubMenuBgColor(this);" onmouseout="parent.changeSubMenuBgColor(this);" onclick="linkTarget('/cgi-bin/apps/u/History');"><a href="#">History &amp; Statements</a></td>
+									<td style="padding-left: 0pt; padding-right: 0pt; width: 1px;" class="subdivider">|</td>
+		
+									<td class="subMenuOff" id="portfolioDeposits" onmouseover="parent.changeSubMenuBgColor(this);" onmouseout="parent.changeSubMenuBgColor(this);" onclick="linkTarget('/cgi-bin/apps/u/CreateBankTransaction');"><a href="#">Deposits &amp; Withdrawals</a></td>
+									<td style="padding-left: 0pt; padding-right: 0pt; width: 1px;" class="subdivider">|</td>
+		
+		
+									<td class="subMenuOff" id="portfolioCash" onmouseover="parent.changeSubMenuBgColor(this);" onmouseout="parent.changeSubMenuBgColor(this);" onclick="linkTarget('/cgi-bin/apps/u/Checking');"><a href="#">Cash Management</a></td>
+									<td style="padding-left: 0pt; padding-right: 0pt; width: 1px;" class="subdivider">|</td>
+		
+									<td class="subMenuOff" id="portfolioProfile" onmouseover="parent.changeSubMenuBgColor(this);" onmouseout="parent.changeSubMenuBgColor(this);" onclick="linkTarget('/cgi-bin/apps/u/AccountSettings');"><a href="#">My Profile</a></td>
+									<td class="portfolioPadRight">&nbsp;</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="subMenuItem" id="tradeMenu">
+						<table align="center" cellspacing="0">
+							<tbody>
+								<tr id="tradeMenuRow">
+									<td class="tradePadLeft">&nbsp;</td>
+									<td class="subMenuOff" id="tradeOrder" onmouseover="parent.changeSubMenuBgColor(this);" onmouseout="parent.changeSubMenuBgColor(this);" onclick="linkTarget('/cgi-bin/apps/u/ConsolidatedOrderStatus');"><a href="#">Order Status</a></td>
+									<td style="padding-left: 0pt; padding-right: 0pt; width: 1px;" class="subdivider">|</td>
+									<td class="subMenuOff" id="tradeStocks" onmouseover="parent.changeSubMenuBgColor(this);" onmouseout="parent.changeSubMenuBgColor(this);" onclick="linkTarget('/cgi-bin/apps/u/EquityTrade');"><a href="#">Stocks</a></td>
+									<td style="padding-left: 0pt; padding-right: 0pt; width: 1px;" class="subdivider">|</td>
+									
+									<td class="subMenuOff" id="tradeOptions" onmouseover="parent.changeSubMenuBgColor(this);" onmouseout="parent.changeSubMenuBgColor(this);" onclick="linkTarget('/cgi-bin/apps/u/OptionTrade');"><a href="#">Options</a></td>
+									<td style="padding-left: 0pt; padding-right: 0pt; width: 1px;" class="subdivider">|</td>
+																		
+									
+									<td class="subMenuOff" id="tradeMutualFunds" onmouseover="parent.changeSubMenuBgColor(this);" onmouseout="parent.changeSubMenuBgColor(this);" onclick="linkTarget('/cgi-bin/apps/u/EnhancedMutualFundBuy');"><a href="#">Mutual Funds</a></td>
+									<td style="padding-left: 0pt; padding-right: 0pt; width: 1px;" class="subdivider">|</td>
+																		
+									<td class="subMenuOff" id="tradeFixedIncome" onmouseover="parent.changeSubMenuBgColor(this);" onmouseout="parent.changeSubMenuBgColor(this);" onclick="linkTarget('/cgi-bin/apps/u/PLoad?pagename=orders/fixedIncome.html');"><a href="#">Bonds &amp; CDs</a></td>									
+																		
+									<td style="padding-left: 0pt; padding-right: 0pt; width: 1px;" class="subdivider">|</td>
+									<td class="subMenuOff" id="tradeSavedOrders" onmouseover="parent.changeSubMenuBgColor(this);" onmouseout="parent.changeSubMenuBgColor(this);" onclick="linkTarget('/cgi-bin/apps/u/SavedOrders');"><a href="#">Saved Orders</a></td>									
+																		
+									
+									
+									<td style="padding-left: 0pt; padding-right: 0pt; width: 1px;" class="subdivider">|</td>
+									<td class="subMenuOff" id="tradeTriggers" onmouseover="parent.changeSubMenuBgColor(this);" onmouseout="parent.changeSubMenuBgColor(this);" onclick="linkTarget('/cgi-bin/apps/u/TradeTriggersTerms');"><a href="#">Trade Triggers&trade;</a></td>
+									
+									
+									<td class="tradePadRight">&nbsp;</td>					
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="subMenuItem" id="researchMenu">
+						<table align="center" cellspacing="0">
+							<tbody>
+								<tr class="20" id="researchMenuRow">
+									<td class="researchPadLeft">&nbsp;</td>
+									<td class="subMenuOff" id="researchMarkets" onMouseOver="parent.changeSubMenuBgColor(this);" onMouseOut="parent.changeSubMenuBgColor(this);" onclick="linkTarget('https://research.ameritrade.com/wwws/markets/overview/overview.asp?CDI=A000000013076936&user_id=A000000013076936&Domain=https://wwws.ameritrade.com&vendorDomain=ameritrade.com&wDir=wwws');"><a href="#">Markets</a></td>
+									<td style="padding-left: 0pt; padding-right: 0pt; width: 1px;" class="subdivider">|</td>
+									<td class="subMenuOff" id="researchStocks" onMouseOver="parent.changeSubMenuBgColor(this);" onMouseOut="parent.changeSubMenuBgColor(this);" onclick="linkTarget('https://research.ameritrade.com/wwws/stocks/overview/overview.asp?CDI=A000000013076936&user_id=A000000013076936&Domain=https://wwws.ameritrade.com&vendorDomain=ameritrade.com&wDir=wwws');"><a href="#">Stocks</a></td>
+									<td style="padding-left: 0pt; padding-right: 0pt; width: 1px;" class="subdivider">|</td>
+									
+									<td class="subMenuOff" id="researchOptions" onMouseOver="parent.changeSubMenuBgColor(this);" onMouseOut="parent.changeSubMenuBgColor(this);" onclick="linkTarget('/cgi-bin/apps/u/OptionChain?source=frameset&type=CP&range=N&expire=AL&tabid=0');"><a href="#">Options</a></td>
+									<td style="padding-left: 0pt; padding-right: 0pt; width: 1px;" class="subdivider">|</td>
+										
+									
+									<td class="subMenuOff" id="researchMutualFunds" onMouseOver="parent.changeSubMenuBgColor(this);" onMouseOut="parent.changeSubMenuBgColor(this);" onclick="linkTarget('https://research.ameritrade.com/wwws/mutualfunds/overview/overview.asp?CDI=A000000013076936&user_id=A000000013076936&Domain=https://wwws.ameritrade.com&vendorDomain=ameritrade.com&wDir=wwws');"><a href="#">Mutual Funds</a></td>
+									<td style="padding-left: 0pt; padding-right: 0pt; width: 1px;" class="subdivider">|</td>
+									
+									
+									<td class="subMenuOff" id="researchETFs" onMouseOver="parent.changeSubMenuBgColor(this);" onMouseOut="parent.changeSubMenuBgColor(this);" onclick="linkTarget('https://research.ameritrade.com/wwws/etfs/overview/overview.asp?CDI=A000000013076936&user_id=A000000013076936&Domain=https://wwws.ameritrade.com&vendorDomain=ameritrade.com&wDir=wwws');"><a href="#">ETFs</a></td>
+									<td style="padding-left: 0pt; padding-right: 0pt; width: 1px;" class="subdivider">|</td>
+									
+									<td class="subMenuOff" id="researchFixedIncome" onMouseOver="parent.changeSubMenuBgColor(this);" onMouseOut="parent.changeSubMenuBgColor(this);" onclick="linkTarget('https://valubond.ameritrade.com/wsi/data/company/tdat/Overview.asp?CDI=A000000013076936&user_id=A000000013076936&Domain=https://wwws.ameritrade.com&vendorDomain=ameritrade.com&wDir=wwws');"><a href="#">Bonds &amp; CDs</a></td>
+									<td style="padding-left: 0pt; padding-right: 0pt; width: 1px;" class="subdivider">|</td>
+									
+									<td class="subMenuOff" id="researchAlerts" onMouseOver="parent.changeSubMenuBgColor(this);" onMouseOut="parent.changeSubMenuBgColor(this);" onClick="var rapop=window.open('/cgi-bin/apps/u/AccountSettings?pagehandler=PHOnMoneyAlerts','randa','resizable=yes,scrollbars=yes,width=650,height=450');rapop.focus();"><a href="#">Alerts</a></td>
+									<td style="padding-left: 0pt; padding-right: 0pt; width: 1px;" class="subdivider">|</td>
+									
+									<td class="subMenuOff" id="researchCharts" onMouseOver="parent.changeSubMenuBgColor(this);" onMouseOut="parent.changeSubMenuBgColor(this);" onclick="linkTarget('https://research.ameritrade.com/wwws/stocks/charts/charts.asp?display=nonav&CDI=A000000013076936&user_id=A000000013076936&Domain=https://wwws.ameritrade.com&vendorDomain=ameritrade.com&wDir=wwws');"><a href="#">Charts</a></td>
+									
+									<td style="padding-left: 0pt; padding-right: 0pt; width: 1px;" class="subdivider">|</td>
+									<td class="subMenuOff" id="researchIdeas" onMouseOver="parent.changeSubMenuBgColor(this);" onMouseOut="parent.changeSubMenuBgColor(this);" onclick="linkTarget('/cgi-bin/apps/u/InvestingIdeas');"><a href="#">Ideas</a></td>
+									
+									<td class="researchPadRight">&nbsp;</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="subMenuItem" id="toolsMenu">
+						<table align="center" cellspacing="0">
+							<tbody>
+								<td class="toolsPadLeft">&nbsp;</td>
+								<td class="subMenuOff" id="toolsOverview" onmouseover="parent.changeSubMenuBgColor(this);" onmouseout="parent.changeSubMenuBgColor(this);" onclick="linkTarget('/cgi-bin/apps/u/PLoad?pagename=tradingtools/overview.html');"><a href="#">All Tools</a></td>
+								<td style="padding-left: 0pt; padding-right: 0pt; width: 1px;" class="subdivider">|</td>
+								<td class="subMenuOff" id="toolsDevelop" onmouseover="parent.changeSubMenuBgColor(this);" onmouseout="parent.changeSubMenuBgColor(this);" onclick="linkTarget('/cgi-bin/apps/u/PLoad?pagename=tradingtools/developIdeas.html');"><a href="#">Develop Ideas</a></td>
+								<td style="padding-left: 0pt; padding-right: 0pt; width: 1px;" class="subdivider">|</td>
+								<td class="subMenuOff" id="toolsMonitor" onmouseover="parent.changeSubMenuBgColor(this);" onmouseout="parent.changeSubMenuBgColor(this);" onclick="linkTarget('/cgi-bin/apps/u/PLoad?pagename=tradingtools/monitorMarkets.html');"><a href="#">Monitor Markets</a></td>
+								<td style="padding-left: 0pt; padding-right: 0pt; width: 1px;" class="subdivider">|</td>
+								<td class="subMenuOff" id="toolsTrading" onmouseover="parent.changeSubMenuBgColor(this);" onmouseout="parent.changeSubMenuBgColor(this);" onclick="linkTarget('/cgi-bin/apps/u/PLoad?pagename=tradingtools/tradingPlatforms.html');"><a href="#">Trading Platforms</a></td>
+								<td style="padding-left: 0pt; padding-right: 0pt; width: 1px;" class="subdivider">|</td>
+								<td class="subMenuOff" id="toolsStreamer" onmouseover="parent.changeSubMenuBgColor(this);" onmouseout="parent.changeSubMenuBgColor(this);" onclick="linkTarget('/cgi-bin/apps/u/StreamerOverview');"><a href="#">Streamer Suite</a></td>
+								<td class="toolsPadRight">&nbsp;</td>
+							</tbody>
+						</table>
+					</div>
+					
+					<div class="subMenuItem" id="goalsMenu">
+						<table align="right" cellspacing="0">
+							<tbody>
+								<tr id="goalsMenuRow">
+									<td class="planningPadLeft">&nbsp;</td>
+									<td class="subMenuOff" id="goalsPortfolio" onmouseover="parent.changeSubMenuBgColor(this);" onmouseout="parent.changeSubMenuBgColor(this);" onclick="linkTarget('/cgi-bin/apps/u/PLoad?pagename=planning/portfolioGuidance.html');"><a href="#">Portfolio Guidance</a></td>
+									<td style="padding-left: 0pt; padding-right: 0pt; width: 1px;" class="subdivider">|</td>
+									<td class="subMenuOff" id="goalsIRA" onmouseover="parent.changeSubMenuBgColor(this);" onmouseout="parent.changeSubMenuBgColor(this);" onclick="linkTarget('/cgi-bin/apps/u/PLoad?pagename=planning/iraRollover.html');"><a href="#">IRA Rollover</a></td>
+									<td style="padding-left: 0pt; padding-right: 0pt; width: 1px;" class="subdivider">|</td>
+									<td class="subMenuOff" id="goalsRetirement" onmouseover="parent.changeSubMenuBgColor(this);" onmouseout="parent.changeSubMenuBgColor(this);" onclick="linkTarget('/cgi-bin/apps/u/PLoad?pagename=planning/retirement.html');"><a href="#">Retirement</a></td>
+									<td style="padding-left: 0pt; padding-right: 0pt; width: 1px;" class="subdivider">|</td>
+									<td class="subMenuOff" id="goalsCollege" onmouseover="parent.changeSubMenuBgColor(this);" onmouseout="parent.changeSubMenuBgColor(this);" onclick="linkTarget('/cgi-bin/apps/u/PLoad?pagename=planning/college.html');"><a href="#">College</a></td>
+									<td style="padding-left: 0pt; padding-right: 0pt; width: 1px;" class="subdivider">|</td>
+									<td class="subMenuOff" id="goalsTaxes" onmouseover="parent.changeSubMenuBgColor(this);" onmouseout="parent.changeSubMenuBgColor(this);" onclick="linkTarget('/cgi-bin/apps/u/PLoad?pagename=planning/taxes.html');"><a href="#">Taxes</a></td>
+									<td style="padding-left: 0pt; padding-right: 0pt; width: 1px;" class="subdivider">|</td>
+									<td class="subMenuOff" id="goalsSmallBusiness" onmouseover="parent.changeSubMenuBgColor(this);" onmouseout="parent.changeSubMenuBgColor(this);" onclick="linkTarget('/cgi-bin/apps/u/PLoad?pagename=planning/smallBusiness.html');"><a href="#">Small Business</a></td>
+									<td style="padding-left: 0pt; padding-right: 0pt; width: 1px;" class="subdivider">|</td>
+									<td class="subMenuOff" id="goalsAdvisor" onmouseover="parent.changeSubMenuBgColor(this);" onmouseout="parent.changeSubMenuBgColor(this);" onclick="linkTarget('/cgi-bin/apps/u/PLoad?pagename=planning/advisorReferral.html');"><a href="#">Advisor Referral</a></td>
+									<td class="planningPadRight">&nbsp;</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					
+					<div class="subMenuItem" id="clientMenu">
+						<table align="right" cellspacing="0">
+							<tbody>
+								<tr class="30" id="clientMenuRow">
+									<td class="clientPadLeft">&nbsp;</td>
+									<td class="subMenuOff" id="clientContact" onmouseover="parent.changeSubMenuBgColor(this);" onmouseout="parent.changeSubMenuBgColor(this);" onclick="linkTarget('/cgi-bin/apps/u/PLoad?pagename=clientbenefits/contactUs.html');"><a href="#">Contact Us</a></td>
+									<td style="padding-left: 0pt; padding-right: 0pt; width: 1px;" class="subdivider">|</td>
+									
+									<td class="subMenuOff" id="clientHelp" onmouseover="parent.changeSubMenuBgColor(this);" onmouseout="parent.changeSubMenuBgColor(this);" onclick="parent.helpCenter('/cgi-bin/apps/u/help/main');"><a href="#">Help</a></td>
+									<td style="padding-left: 0pt; padding-right: 0pt; width: 1px;" class="subdivider">|</td>
+        														
+									<td class="subMenuOff" id="clientForms" onmouseover="parent.changeSubMenuBgColor(this);" onmouseout="parent.changeSubMenuBgColor(this);" onclick="linkTarget('/cgi-bin/apps/u/PLoad?pagename=forms/account_forms.html');"><a href="#">Forms &amp; Agreements</a></td>
+									<td style="padding-left: 0pt; padding-right: 0pt; width: 1px;" class="subdivider">|</td>
+									<td class="subMenuOff" id="clientSecurity" onmouseover="parent.changeSubMenuBgColor(this);" onmouseout="parent.changeSubMenuBgColor(this);" onclick="linkTarget('/cgi-bin/apps/u/PLoad?pagename=securitycenter/securityCenter.html');"><a href="#">Security Center</a></td>
+									<td style="padding-left: 0pt; padding-right: 0pt; width: 1px;" class="subdivider">|</td>
+									
+									<td class="subMenuOff" id="clientPromo" onmouseover="parent.changeSubMenuBgColor(this);" onmouseout="parent.changeSubMenuBgColor(this);" onclick="linkTarget('/cgi-bin/apps/u/ClientBenefits?pagehandler=PHClientBenefits');"><a href="#">Promotions</a></td>
+									<td style="padding-left: 0pt; padding-right: 0pt; width: 1px;" class="subdivider">|</td>
+									
+				
+									<td class="subMenuOff" id="clientApex" onmouseover="parent.changeSubMenuBgColor(this);" onmouseout="parent.changeSubMenuBgColor(this);" onclick="linkTarget('/cgi-bin/apps/u/PLoad?pagename=legal/apex_overview.html');"><a href="#">Apex</a></td>
+									<td style="padding-left: 0pt; padding-right: 0pt; width: 1px;" class="subdivider">|</td>
+		
+									<td class="subMenuOff" id="clientPricing" onmouseover="parent.changeSubMenuBgColor(this);" onmouseout="parent.changeSubMenuBgColor(this);" onclick="parent.openNewWin('http://www.tdameritrade.com/pricing.html',780,537);"><a href="#">Pricing</a></td>
+									
+									<td style="padding-left: 0pt; padding-right: 0pt; width: 1px;" class="subdivider">|</td>									
+        					<td class="subMenuOff" id="clientTypes" onmouseover="parent.changeSubMenuBgColor(this);" onmouseout="parent.changeSubMenuBgColor(this);" onclick="parent.openNewWin('http://www.tdameritrade.com/standardaccounts.html',780,537);"><a href="#">Account Types</a></td>
+									
+									
+									<td style="padding-left: 0pt; padding-right: 0pt; width: 1px;" class="subdivider">|</td>
+									<td class="subMenuOff" id="clientNewAccount" onmouseover="parent.changeSubMenuBgColor(this);" onmouseout="parent.changeSubMenuBgColor(this);" onclick="parent.openNewWin('http://www.tdameritrade.com/openaccount.html',780,537);"><a href="#">Open an Account</a></td>
+        					
+									<td class="clientPadRight">&nbsp;</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<script language="javascript">
+	//initialize form and shortcut close buttons
+	if( document.getElementById("navgobtn1") )
+		btnInit("navgobtn1",true,true,false,false,false,false,true,false);
+	if(document.getElementById("navgobtn2"))
+		btnInit("navgobtn2",true,true,false,false,false,false,true,false);
+</script>
+</div>
+
+<script type="text/javascript">
+	if (document.getElementById("homeOrder")){
+		displayNav('home','Order');
+	}
+	else{
+		displayNav('trade','Order');
+	}
+</script>
+
+
+<div class="title">
+<table cellspacing="0" class="title">
+	<tr>
+		<td><div class="spacer" style="width:10px;">&nbsp;</div></td>
+		<td>Wed Dec 20 2006 11:25:08 AM EST</td>
+		
+		<td id="offerContainer" style="display:none;"><div class="spacer" style="width:17px;">&nbsp;</div></td>
+		<td width="100%"></td>
+		
+		<td><a href="#" onclick="formatOrderStatus(false); return false;">Export data</a></td>
+		<td class="sep">|</td>
+				
+		
+		
+		<td><a href="#" onclick="formatOrderStatus(true);  return false;">Printer-friendly page</a></td>
+		<td class="sep">|</td>
+		
+		
+		<td style="padding: 0 3px 0 0;"><a href="#" onclick="parent.helpCenter('/cgi-bin/apps/u/help/main?target=placingOrders/orderStatus/mainOrderStatus');"><img src="/amer/images/icn_help.gif" alt="" /></a></td>
+		<td><a href="#" onclick="parent.helpCenter('/cgi-bin/apps/u/help/main?target=placingOrders/orderStatus/mainOrderStatus');">Page help</a></td>
+		
+		<td><div class="spacer" style="width:10px;">&nbsp;</div></td>
+	</tr>
+</table>
+</div>
+
+
+<div class="contentFrame">
+	<div class="mainTitle">Order Status </div>
+</div>
+
+
+
+
+
+<div class="contentFrame">
+
+
+ 
+
+
+
+	
+	 
+
+
+<form name="osfilter" action="/cgi-bin/apps/u/ConsolidatedOrderStatus" method="post" enctype="application/x-www-form-urlencoded">
+	<input type="hidden" name="pagehandler" value="PHConsolidatedOrderStatus">	
+	<input type="hidden" name="sort" value="date">
+	<input type="hidden" name="order" value="DOWN">
+<table cellspacing="0" class="h01a">
+	<tr>
+		<td><div class="rtop"><div class="r1">&nbsp;</div><div class="r2">&nbsp;</div><div class="r3">&nbsp;</div><div class="r4">&nbsp;</div></div>
+			<div class="h0headers">View orders<div class="refreshHeaderIcon2"><a href="#" onClick="document.osfilter.submit();return false;" class="noHover"><img src="/amer/images/icn_refreshHeader.gif"></a></div></div></td>		
+		<td width="100%">
+		
+			<span id="expandlink" style="font:normal 9px verdana; display:none;">&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" onClick="toggleAllRows(3,false);return false;"><strong>Hide order details</strong></a></span>
+			<span id="collapselink" style="font:normal 9px verdana;">&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" onClick="toggleAllRows(3,true);return false;"><strong>Expand order details</strong></a></span>
+		
+		</td>		
+		<td><a href="#" onClick="location.href = '/cgi-bin/apps/u/BalancesAndPositions';return false;" class="h0Links">Balances &amp; Positions</a></td>	
+	</tr>
+</table>
+<table cellspacing="0" class="osCriteria" style="margin-top:5px;">
+	<tr>
+		<td><div class="spacer" style="width:10px; height:30px;">&nbsp;</div></td>
+		<td>View:</td>
+		<td style="padding-left:4px;"><select name="type">
+				<option value="all" SELECTED>All</option>
+				<option value="open" >Open</option>
+				<option value="filled" >Filled</option>
+				<option value="open/filled" >Open/Filled</option>
+				<option value="canceled" >Canceled</option>
+				<option value="expired" >Expired</option>
+				<option value="pending" >Pending</option>
+				
+				<option value="exercised" >Exercised</option>
+				
+			</select></td>
+		<td nowrap style="padding:0 8px;">orders entered</td>
+		<td><select name="days" onChange="setCriteria(this.options[this.selectedIndex].value,this.form.days)" style="width:125px">
+				<option value="0" SELECTED>today</option>
+				<option value="1" >yesterday</option>
+				<option value="7" >past 7 days</option>
+				<option value="14" >past 14 days</option>
+				<option value="30" >past 30 days</option>
+				<option value="60" >past 60 days</option>
+				<option value="-">---------------------</option>
+				<option value="date" >select date/range</option>
+			</select></td>
+		<td>
+		<div id="daterange" style="display:none">
+			<table cellspacing="0">
+				<tr>
+					<td><div class="spacer" style="width:6px;">&nbsp;</div></td>
+					<td>
+						<select name="fromMonth" onChange="writeDays(this.options[this.selectedIndex].value,this.form.fromDay,this.form.fromYear.options[this.form.fromYear.selectedIndex].value)" style="width:100px;">
+							<option value="1" >January</option>
+							<option value="2" >February</option>
+							<option value="3" >March</option>
+							<option value="4" >April</option>
+							<option value="5" >May</option>
+							<option value="6" >June</option>
+							<option value="7" >July</option>
+							<option value="8" >August</option>
+							<option value="9" >September</option>
+							<option value="10" >October</option>
+							<option value="11" >November</option>
+							<option value="12" SELECTED>December</option>
+						</select>
+						<select name="fromDay">
+							<option value="1" >1</option>
+							<option value="2" >2</option>
+							<option value="3" >3</option>
+							<option value="4" >4</option>
+							<option value="5" >5</option>
+							<option value="6" >6</option>
+							<option value="7" >7</option>
+							<option value="8" >8</option>
+							<option value="9" >9</option>
+							<option value="10" >10</option>
+							<option value="11" >11</option>
+							<option value="12" >12</option>
+							<option value="13" SELECTED>13</option>
+							<option value="14" >14</option>
+							<option value="15" >15</option>
+							<option value="16" >16</option>
+							<option value="17" >17</option>
+							<option value="18" >18</option>
+							<option value="19" >19</option>
+							<option value="20" >20</option>
+							<option value="21" >21</option>
+							<option value="22" >22</option>
+							<option value="23" >23</option>
+							<option value="24" >24</option>
+							<option value="25" >25</option>
+							<option value="26" >26</option>
+							<option value="27" >27</option>
+							<option value="28" >28</option>
+							<option value="29">29</option>
+							<option value="30" >30</option>
+							<option value="31" >31</option>
+						</select>
+						<select name="fromYear" onChange="writeDays(this.form.fromMonth.options[this.form.fromMonth.selectedIndex].value,this.form.fromDay,this.options[this.selectedIndex].value)" style="width:60px">
+							<option value="2006" SELECTED>2006</option>
+								 
+						</select>
+					</td>
+					<td><div class="spacer" style="width:4px;">&nbsp;</div></td>
+					<td>to</td>
+					<td><div class="spacer" style="width:4px;">&nbsp;</div></td>
+					<td>
+						<select name="toMonth" onChange="writeDays(this.options[this.selectedIndex].value,this.form.toDay,this.form.toYear.options[this.form.toYear.selectedIndex].value)" style="width:100px">
+							<option value="1" >January</option>
+							<option value="2" >February</option>
+							<option value="3" >March</option>
+							<option value="4" >April</option>
+							<option value="5" >May</option>
+							<option value="6" >June</option>
+							<option value="7" >July</option>
+							<option value="8" >August</option>
+							<option value="9" >September</option>
+							<option value="10" >October</option>
+							<option value="11" >November</option>
+							<option value="12" SELECTED>December</option>
+						</select>
+						<select name="toDay">
+							<option value="1" >1</option>
+							<option value="2" >2</option>
+							<option value="3" >3</option>
+							<option value="4" >4</option>
+							<option value="5" >5</option>
+							<option value="6" >6</option>
+							<option value="7" >7</option>
+							<option value="8" >8</option>
+							<option value="9" >9</option>
+							<option value="10" >10</option>
+							<option value="11" >11</option>
+							<option value="12" >12</option>
+							<option value="13" >13</option>
+							<option value="14" >14</option>
+							<option value="15" >15</option>
+							<option value="16" >16</option>
+							<option value="17" >17</option>
+							<option value="18" >18</option>
+							<option value="19" >19</option>
+							<option value="20" SELECTED>20</option>
+							<option value="21" >21</option>
+							<option value="22" >22</option>
+							<option value="23" >23</option>
+							<option value="24" >24</option>
+							<option value="25" >25</option>
+							<option value="26" >26</option>
+							<option value="27" >27</option>
+							<option value="28" >28</option>
+							<option value="29">29</option>
+							<option value="30" >30</option>
+							<option value="31" >31</option>
+						</select>
+						<select name="toYear" onChange="writeDays(this.form.toMonth.options[this.form.toMonth.selectedIndex].value,this.form.toDay,this.options[this.selectedIndex].value)" style="width:60px">
+							<option value="2006" SELECTED>2006</option>
+								
+						</select> 
+					</td>
+				</tr>			
+			</table>
+		</div>
+		</td>
+		<td><div class="spacer" style="width:4px;">&nbsp;</div></td>
+		<td><a href="#" id="gobtn" class="btnLinkOff" onClick="submitCriteria();return false;">Go</a></td>
+		<td width="100%"><div class="spacer" style="width:6px;">&nbsp;</div></td>
+	</tr>
+</table>		
+</form>
+<form name="displayopenorders" onSubmit="return false">
+
+<table width="100%" cellspacing="0" style="margin-bottom:3px;">
+	<tr>
+		<td><div class="spacer" style="width:4px">&nbsp;</div></td>
+		
+		<td class="qselectcell">
+			<img src="/amer/images/quickselect.gif" id="qselectmenu" alt="" width="139" height="21"  border="0" onClick="toggleQuickSelect();"  onmouseover="clearTimeout(window.tid); clearTimeout(window.delay);" onMouseOut="window.tid = setTimeout('toggleQuickSelect(true)', 500);" class="on">
+			<div id="quickselect" style="position:absolute;z-index:99;width:139px;visibility:hidden;" onMouseOver="clearTimeout(window.tid); clearTimeout(window.delay);" onMouseOut="window.tid = setTimeout('toggleQuickSelect(true)', 500);">
+				<div id="qrows">
+					<div id="rowall" class="quickrow" onMouseOver="changeColorRow('rowall','quickhighlight');" onMouseOut="if (document.getElementById('all').checked==false) changeColorRow('rowall','quickrow');">
+						<div class="quicksymbol" onClick="flagSelectsOnClick('all');">All open orders</div>
+						<div class="quickcheck"><input id="all" type="checkbox" class="checkbox" style="cursor:none" onClick="flagSelects('all',this.checked);"></div>
+					</div>	
+					       
+					<div id="rowCETH" class="quickrow" onMouseOver="changeColorRow('rowCETH','quickhighlight');" onMouseOut="if (document.getElementById('CETH').checked==false) changeColorRow('rowCETH','quickrow');">
+						<div class="quicksymbol" onClick="flagSelectsOnClick('CETH');">CETH</div>
+						<div class="quickcheck"><input id="CETH" type="checkbox" class="checkbox" onClick="flagSelects(this.id,this.checked);"></div>
+					 </div> 
+					    
+				</div>
+				<div><img class="lcorner" src="/amer/images/corner2.gif" alt="" width="2" height="2" border="0"><span class="quickbottom">&nbsp;</span><img class="rcorner" src="/amer/images/corner1.gif" alt="" width="2" height="2" border="0"></div>
+			</div>
+			
+		</td>
+		<td width="100%"><div class="spacer" style="width:6px">&nbsp;</div></td>
+		
+	</tr>
+</table>
+
+ 
+<table cellspacing="0" class="t0" style="border-bottom:none;">
+	<tr class="header">
+		<td style="border:none; background-color:#fff;"><div class="spacer" style="width:3px">&nbsp;</div></td>
+		<td style="border:none; background-color:#fff;"><div class="spacer" style="width:1px;">&nbsp;</div></td>
+		<td><div class="spacer" style="width:4px;">&nbsp;</div></td>
+		<td></td>
+		<td><div class="spacer" style="width:16px;">&nbsp;</div></td>
+		<td><div class="spacer">&nbsp;</div></td>
+		<td width="14%"><a href="#" onClick="newSort('status');return false;">Status</a> <img id="statussort" src="/amer/images/clear.gif" alt="" width="6" height="6" border="0"></td> 
+		<td width="8%"><a href="#" onClick="newSort('action');return false;">Action</a> <img id="actionsort" src="/amer/images/clear.gif" alt="" width="6" height="6" border="0"></td>
+		<td align="right"><a href="#" onClick="newSort('quantity');return false;">Quantity</a> <img id="quantitysort" src="/amer/images/clear.gif" alt="" width="6" height="6" border="0"></td>
+		<td width="6%"><div class="spacer" style="width:4px;">&nbsp;</div></td>
+		<td width="11%"><a href="#" onClick="newSort('symbol');return false;">Symbol</a> <img id="symbolsort" src="/amer/images/clear.gif" alt="" width="6" height="6" border="0"></td>
+		<td width="12%"><a href="#" onClick="newSort('terms');return false;">Type</a> <img id="termssort" src="/amer/images/clear.gif" alt="" width="6" height="6" border="0"></td>
+		<td align="right"><a href="#" onClick="newSort('price');return false;">Price</a> <img id="pricesort" src="/amer/images/clear.gif" alt="" width="6" height="6" border="0"></td>
+		<td width="6%"><div class="spacer" style="width:6px;">&nbsp;</div></td>
+		<td align="right"><a href="#" onClick="newSort('actPrice');return false;">Act. Price</a> <img id="actPricesort" src="/amer/images/clear.gif" alt="" width="6" height="6" border="0"></td>
+		<td width="6%"><div class="spacer" style="width:6px;">&nbsp;</div></td>
+		<td width="12%"><a href="#" onClick="newSort('expire');return false;">Expiration</a> <img id="expiresort" src="/amer/images/clear.gif" alt="" width="6" height="6" border="0"></td>
+		<td width="11%"><a href="#" onClick="newSort('reporteddate');return false;">Reported</a> <img id="reporteddatesort" src="/amer/images/clear.gif" alt="" width="6" height="6" border="0"></td>
+	</tr>
+
+  
+	
+ 
+ 	<tr class="openrows" id="0" name="orderid2563617320"> 
+		<td style="border:none;background-color:#fff"><div id="holder0" class="highlightOff">&nbsp;</div><script language="javascript">rowidmap[2563617320] = 0;</script></td>
+		<td style="border:none;background-color:#fff"><div class="spacer" style="width:1px">&nbsp;</div></td>
+		<td></td>	
+		<td><a href="#" id="0link" onClick="toggleRow('0'); return false;" title="Click here to expand" class="noHover"><div class="expandicon" id="0img"></div></a></td>		
+	
+		
+		<td><input id="!T2563617320_CETH" type="checkbox" class="checkbox" onClick="toggleTextField('0','2563617320',this.checked);"></td>
+		
+	
+		<td></td>
+		<td style="padding-right:4px;font-weight:bold;">Open</td>	
+		<td style="font-weight:bold;">Sell</td>
+		<td align="right" style="padding-right:9px;"><input type="text" id="Quantity_2563617320" class="text" style="width:45px;text-align:right;" value="2600"  onKeyUp="return changeHandler(this.id,this.value)" ><div id="2563617320QTEXT" style="display:none;width:47px;">2600</div></td>
+ 		<td></td>
+		<td style="padding-right:4px"><a href="#" onClick="parent.viewQuote('CETH');return false;">CETH</a></td>
+		<td style="padding-right:4px"><div id="Ordtype_2563617320holder" style="width:85px;">
+			<select id="Ordtype_2563617320" class="select" style="width:85px;" onChange="togglePriceFields('2563617320',this.options[this.selectedIndex].value);changeHandler(this.id,this.options[this.selectedIndex].value);">
+				<option value="Limit" SELECTED>Limit</option>
+				<option value="Stop Market" >Stop Market</option>
+				<option value="Stop Limit" >Stop Limit</option>
+				<option value="Market" >Market</option>		
+			</select>
+			</div>
+			<div id="2563617320OTEXT" style="display:none;width:85px;">Limit</div>
+			</td>
+		<td align="right" style="padding-right:9px;"><input id="Price_2563617320" type="text" class="text" style="text-align:right;width:55px;" value="0.67" onKeyUp="return changeHandler(this.id,this.value)"><div id="2563617320PTEXT" style="display:none;width:55px;">0.67</div></td>
+	 	<td></td>
+		<td align="right" style="padding-right:9px;"><input id="Actprice_2563617320" type="text" class="text" style="text-align:right;display:none;width:55px;" value="" onKeyUp="return changeHandler(this.id,this.value)"><div id="2563617320ATEXT" style="display:inline;width:55px;">--</div></td>
+ 		<td></td>
+		<td style="padding-right:2px"><input id="ExpireMonth_2563617320" type="text" class="text" style="width:18px;" onKeyUp="return changeHandler(this.id,this.value)" value="12" maxlength="2"><input id="ExpireDay_2563617320" type="text" class="text" style="width:18px; margin-right:2px; margin-left:2px;" onKeyUp="return changeHandler(this.id,this.value)" value="20" maxlength="2"><input id="ExpireYear_2563617320" type="text" class="text" style="width:18px;" onKeyUp="return changeHandler(this.id,this.value)" maxlength="2" value="06"><div id="2563617320ETEXT" style="display:none;width:51px;">12 20 06</div></td> 
+		<td style="padding-right:10px">--</td>
+	</tr>
+  	<tr class="openrowssec" id="0sec" name="orderid2563617320sec" style="display:none">
+		<td style="border:none;background-color:#fff"><div id="holder0sec" class="highlightOff">&nbsp;</div></td>
+		<td style="border:none;background-color:#fff"></td>
+		<td colspan="4"></td>
+		<td colspan="12">
+			<table cellspacing="0" width="100%" id="nestedsectable">
+				<tr>
+					<td nowrap>Order No. 2563617320</td>
+					<td><div style="width:6px;display:inline;">&nbsp;</div></td>
+					<td width="85%">Convergence Ethanol Inc Com </td>
+					<td style="width:68px;">Bid: 0.63&nbsp;<div class="spacer" style="width:68px;">&nbsp;</div></td>		
+					<td style="width:68px;">Ask: 0.67&nbsp;<div class="spacer" style="width:68px;">&nbsp;</div></td>	
+				
+				  
+					<td style="width:66px;">Last: 0.69&nbsp;<div class="spacer" style="width:66px;">&nbsp;</div></td> 
+				  
+				
+					<td></td>
+					<td width="5%"><div class="spacer" style="width:12px">&nbsp;</div></td>
+					<td>Entered:11:22:11&nbsp;12/20/06</td>
+					<td width="10%"><div class="spacer" style="width:6px">&nbsp;</div></td>
+					<td class="morecell">
+						
+						
+					
+				    <a href="#" id="morelink_0" onMouseOver="showMoreTitle(this);" onClick="showMoreDetails('0','CETH',['Session:` Day Order','Routing:` Auto Routing','Sp. instructions:` none','Expiration time:` 16:00:00'],'CETH Additional Information');return false;"><div id="more_0" class="moreicon"></div></a> 
+						
+						
+					 
+					</td>
+					<td><div class="spacer" style="width:6px">&nbsp;</div></td>
+				</tr>				
+				
+				
+			</table>		
+		</td>
+	</tr>  
+    
+
+  
+	
+	<tr class="osspacerrow"><td colspan="18"><div class="spacer">&nbsp;</div></td></tr>
+	
+ 
+ 	<tr class="rows" id="1" name="orderid2563612698"> 
+		<td style="border:none;background-color:#fff"><div id="holder1" class="highlightOff">&nbsp;</div><script language="javascript">rowidmap[2563612698] = 1;</script></td>
+		<td style="border:none;background-color:#fff"><div class="spacer" style="width:1px">&nbsp;</div></td>
+		<td></td>	
+		<td><a href="#" id="1link" onClick="toggleRow('1'); return false;" title="Click here to expand" class="noHover"><div class="expandicon" id="1img"></div></a></td>		
+	
+		
+		<td></td>
+		
+	
+		<td></td>
+		<td style="padding-right:4px;">Canceled</td>	
+		<td >Sell</td>
+		<td align="right" style="padding-right:9px;">2600</td>
+ 		<td></td>
+		<td style="padding-right:4px"><a href="#" onClick="parent.viewQuote('CETH');return false;">CETH</a></td>
+		<td style="padding-right:4px">Limit</td>
+		<td align="right" style="padding-right:9px;">0.68</td>
+	 	<td></td>
+		<td align="right" style="padding-right:9px;">--</td>
+ 		<td></td>
+		<td style="padding-right:2px">--</td> 
+		<td style="padding-right:10px">11:22:12 12/20/06</td>
+	</tr>
+  	<tr class="rowssec" id="1sec" name="orderid2563612698sec" style="display:none">
+		<td style="border:none;background-color:#fff"><div id="holder1sec" class="highlightOff">&nbsp;</div></td>
+		<td style="border:none;background-color:#fff"></td>
+		<td colspan="4"></td>
+		<td colspan="12">
+			<table cellspacing="0" width="100%" id="nestedsectable">
+				<tr>
+					<td nowrap>Order No. 2563612698</td>
+					<td><div style="width:6px;display:inline;">&nbsp;</div></td>
+					<td width="85%">Convergence Ethanol Inc Com </td>
+					<td style="width:68px;">&nbsp;<div class="spacer" style="width:68px;">&nbsp;</div></td>		
+					<td style="width:68px;">&nbsp;<div class="spacer" style="width:68px;">&nbsp;</div></td>	
+				
+					
+					<td style="width:66px;"><div class="spacer" style="width:66px;">&nbsp;</div></td> 
+					
+				
+					<td><div class="spacer" style="width:12px;">&nbsp;</div></td>
+					<td width="5%"><div class="spacer" style="width:12px">&nbsp;</div></td>
+					<td>Entered:11:21:14&nbsp;12/20/06</td>
+					<td width="10%"><div class="spacer" style="width:6px">&nbsp;</div></td>
+					<td class="morecell">
+						
+						
+					
+				     
+						
+						
+					<a href="#" id="morelink_1" onMouseOver="showMoreTitle(this);" onClick="showMoreDetails('1','CETH',['Session:` Day Order','Routing:` Auto Routing','Sp. instructions:` none'],'CETH Additional Information');return false;"><div id="more_1" class="moreicon"></div></a> 
+					</td>
+					<td><div class="spacer" style="width:6px">&nbsp;</div></td>
+				</tr>				
+				
+				
+			</table>		
+		</td>
+	</tr>  
+    
+
+  
+	
+	<tr class="osspacerrow"><td colspan="18"><div class="spacer">&nbsp;</div></td></tr>
+	
+ 
+ 	<tr class="rows" id="2" name="orderid2563598809"> 
+		<td style="border:none;background-color:#fff"><div id="holder2" class="highlightOff">&nbsp;</div><script language="javascript">rowidmap[2563598809] = 2;</script></td>
+		<td style="border:none;background-color:#fff"><div class="spacer" style="width:1px">&nbsp;</div></td>
+		<td></td>	
+		<td><a href="#" id="2link" onClick="toggleRow('2'); return false;" title="Click here to expand" class="noHover"><div class="expandicon" id="2img"></div></a></td>		
+	
+		
+		<td></td>
+		
+	
+		<td></td>
+		<td style="padding-right:4px;">Canceled</td>	
+		<td >Sell</td>
+		<td align="right" style="padding-right:9px;">2600</td>
+ 		<td></td>
+		<td style="padding-right:4px"><a href="#" onClick="parent.viewQuote('CETH');return false;">CETH</a></td>
+		<td style="padding-right:4px">Limit</td>
+		<td align="right" style="padding-right:9px;">0.69</td>
+	 	<td></td>
+		<td align="right" style="padding-right:9px;">--</td>
+ 		<td></td>
+		<td style="padding-right:2px">--</td> 
+		<td style="padding-right:10px">11:21:15 12/20/06</td>
+	</tr>
+  	<tr class="rowssec" id="2sec" name="orderid2563598809sec" style="display:none">
+		<td style="border:none;background-color:#fff"><div id="holder2sec" class="highlightOff">&nbsp;</div></td>
+		<td style="border:none;background-color:#fff"></td>
+		<td colspan="4"></td>
+		<td colspan="12">
+			<table cellspacing="0" width="100%" id="nestedsectable">
+				<tr>
+					<td nowrap>Order No. 2563598809</td>
+					<td><div style="width:6px;display:inline;">&nbsp;</div></td>
+					<td width="85%">Convergence Ethanol Inc Com </td>
+					<td style="width:68px;">&nbsp;<div class="spacer" style="width:68px;">&nbsp;</div></td>		
+					<td style="width:68px;">&nbsp;<div class="spacer" style="width:68px;">&nbsp;</div></td>	
+				
+					
+					<td style="width:66px;"><div class="spacer" style="width:66px;">&nbsp;</div></td> 
+					
+				
+					<td><div class="spacer" style="width:12px;">&nbsp;</div></td>
+					<td width="5%"><div class="spacer" style="width:12px">&nbsp;</div></td>
+					<td>Entered:11:18:22&nbsp;12/20/06</td>
+					<td width="10%"><div class="spacer" style="width:6px">&nbsp;</div></td>
+					<td class="morecell">
+						
+						
+					
+				     
+						
+						
+					<a href="#" id="morelink_2" onMouseOver="showMoreTitle(this);" onClick="showMoreDetails('2','CETH',['Session:` Day Order','Routing:` Auto Routing','Sp. instructions:` none'],'CETH Additional Information');return false;"><div id="more_2" class="moreicon"></div></a> 
+					</td>
+					<td><div class="spacer" style="width:6px">&nbsp;</div></td>
+				</tr>				
+				
+				
+			</table>		
+		</td>
+	</tr>  
+    
+
+</table>
+<table style="border-bottom:none;">
+	<tr>
+		<td><div class="spacer" style="width:3px">&nbsp;</div></td>
+		<td><div class="spacer" style="width:1px;">&nbsp;</div></td>
+		<td width="100%" style="border-top:1px solid #808080; padding: 5px 0 10px 0;" class="footnote">
+<div class="delayed" style="margin-right:4px;">D</div>Market data is <a href="javascript:void(0)" onclick="window.open('https://research.ameritrade.com/wwws/delayedinfo.asp?CDI=A000000013076936&user_id=A000000013076936&Domain=https://wwws.ameritrade.com&vendorDomain=ameritrade.com&wDir=wwws	','','width=705,height=500,scrollbars=yes')" class="delayedLink">delayed</a>.
+
+<!-- CAUTION: Must change multipleReview page... js escaped version. -->
+</td>
+	</tr>
+</table>
+
+ 
+<table cellspacing="0" style="margin-left:4px;">
+	<tr>
+		<td><a href="#" id="bottomCancel" class="btnLinkOff" onClick="submitString();return false;">Cancel</a></td>
+		<td><div class="spacer" style="width:8px;">&nbsp;</div></td>
+		<td><a href="#" id="bottomReplace" class="btnLinkOff" onClick="submitString();return false;">Replace</a></td>
+		<td><div class="spacer" style="width:8px;">&nbsp;</div></td>
+		<td><a href="#" id="bottomCancelReplace" class="btnLinkOff" onClick="submitString();return false;">Cancel & Replace</a></td>
+		<td><div class="spacer" style="width:18px;">&nbsp;</div></td>
+		<td width="100%" class="orderstring" id="ordstring">&nbsp;</td>
+		<td><a href="#" id="bottomUndo" class="btnLinkOff" onClick="undoAllChanges();return false;">Undo All</a></td>
+	</tr>
+</table> 
+ 
+
+<script language="javascript">
+var sortUp = new Image(6,6);
+var sortDown = new Image(6,6);
+sortUp.src = "/amer/images/sort_up.gif";	
+sortDown.src = "/amer/images/sort_down.gif";	
+</script>
+ 
+</form>
+<!-- outer table-->
+</div>
+<div id="disclaimerShell">
+	<p class="disclaimerItalic">Options are not suitable for all investors as the special risks inherent to options trading may expose investors to potentially rapid and substantial losses. Please read <a href="http://www.optionsclearing.com/publications/risks/riskchap1.jsp" target="_blank">Characteristics and Risks of Standardized Options</a> before investing in options.</p>
+	
+	
+	
+	
+	<p class="footnote"><a href="http://www.tdameritrade.com/forms/ATI5334.pdf" target="_blank">Apply for options trading</a>.</p>
+	
+	
+	
+	
+	
+	
+	<p class="footnote">Please review the <a href="#" onClick="parent.popLegal('/cgi-bin/apps/u/MarginReq?filter=A');">Special Margin Requirements</a> for certain securities.</p>
+	
+	
+	<p class="footnote">Orders for OTCBB securities are subject to the <a href="#" onClick="parent.popLegal('/cgi-bin/apps/u/PLoad?pagename=legal/otcbb_traderules.html');">OTCBB Securities Trading Rules</a>.</p>
+	
+	<div class="footnote"><p>Extended-hours quotations may be delayed, may reflect only the securities closing price, and may not include information from all extended-hours market participants. Extended-Hours Trading is subject to the <a href="#" onClick="parent.popLegal('/cgi-bin/apps/u/PLoad?pagename=legal/exthrs_traderules.html');">Extended-Hours Trading Rules</a>.</p></div>
+	
+	<div class="footnote"><p>Execution price, speed and liquidity are affected by many factors, including market volatility, size and type of order and available market centers.  Price can change quickly in fast market conditions, resulting in an execution price different from the quote displayed at order entry.  We cannot guarantee prices on market orders. In addition, there is the risk that outages involving your access to the Internet or our own systems may interfere with your ability to access your online account. If you experience difficulties, please contact a <a href="/cgi-bin/apps/u/PLoad?pagename=clientbenefits/contactUs.html">Client Services representative.</a></p></div>
+</div>
+
+<script type="text/javascript">
+	var frameLocation = document.location.href;
+	function getFooterLink(url){
+		if (frameLocation.indexOf("display") > -1){
+			parent.opener.top.main.location.href = url;
+			parent.opener.focus();
+		}
+		else{
+			
+			top.main.location.href = url;
+			
+		}
+	}
+</script>
+<div id="footerShell">
+	<div id="footerShellLinks">
+		<a href="#" onclick="getFooterLink('/cgi-bin/apps/u/PLoad?pagename=clientbenefits/contactUs.html');">Contact Us</a>
+		<span class="divider">|</span>
+		<a href="                   " target="_blank">TD AMERITRADE Holding Corp.</a>
+		<br />
+		<a href="#" onclick="getFooterLink('/cgi-bin/apps/u/PLoad?pagename=legal/minimum_requirements.html');">Minimum Requirements</a>
+		<span class="divider">|</span>
+		<a href="http://www.tdameritrade.com/forms/ATI800.pdf" target="_blank">Privacy</a>
+		<span class="divider">|</span>
+		<a href="#" onclick="getFooterLink('/cgi-bin/apps/u/PLoad?pagename=securitycenter/securityCenter.html');">Security Center</a>
+		<span class="divider">|</span>
+		<a href="#" onclick="getFooterLink('/cgi-bin/apps/u/PLoad?pagename=forms/account_forms.html');">Forms &amp; Agreements</a>
+	</div>
+		Unauthorized access and use is prohibited. Usage is monitored. TD AMERITRADE, Division of TD AMERITRADE, Inc., member NASD/<a href="http://www.sipc.org/" target="_blank">SIPC</a>. TD AMERITRADE is a trademark jointly owned by TD AMERITRADE IP Company, Inc. and The Toronto-Dominion Bank. &copy; 2006 TD AMERITRADE IP Company, Inc. All rights reserved. Used with permission.
+
+		<br>
+		<br>
+		
+	As your agreement for the receipt and use of market data provides, the securities markets (1) reserve all rights to the market data that they make available; (2) do not guarantee that data; and (3) shall not be liable for any loss due either to their negligence or to any cause beyond their reasonable control.<BR><BR>
+	YOUR RECEIPT AND USE OF THIS SERVICE IS SUBJECT TO THE TERMS AND CONDITIONS OF YOUR <a href="http://www.tdameritrade.com/forms/exchange.pdf" target="_blank">ELECTRONIC AGREEMENT</a> WITH TD AMERITRADE.<BR>
+
+
+</div>
+
+
+
+
+<!-- VERSION: prd lapp3 - dev_WEB_2006_12_maint_BUILD_13 -->
+<!-- File: orders/consolidatedOrderStatus.html PHConsolidatedOrderStatus -->
+
+  
+<form action="/cgi-bin/apps/u/OrderStatusReview" method="POST" enctype="application/x-www-form-urlencoded" name="openorders">
+	<input type="hidden" name="cancelreplacenow" value="">
+	<input type="hidden" name="pagehandler" value="PHOrderStatusReview">
+</form>
+<!--MORE INFO-->
+<!--MORE INFO-->
+<div id="displaymore" class="moreinfo" style="display:none;z-index:999;background-color:#f4f4f4;position:absolute;width:247px;">
+<table cellspacing="0"><tr><td>	
+	<table width="247" cellspacing="0" class="h01aw" style="margin-bottom:0px">
+		<tr>
+			<td><div class="spacer" style="width:8px; height:24px;">&#160;</div></td>
+			<td width="100%" style="padding:3px 0;"><div id="moreDesc" style="display:inline"></td>
+			<td><div class="spacer" style="width:6px;">&#160;</div></td>
+			<td valign="top" style="padding-top:4px"><a href="#" id="closelink" onClick="return false;"><img src="/amer/images/icon_attach_green.gif"></a></td>
+			<td><div class="spacer" style="width:4px;">&#160;</div></td>
+		</tr>
+	</table>
+	<table width="100%" cellspacing="0" class="p01">
+		<tr class="headerspace">
+			<td rowspan="3"><div class="spacer" style="width:8px;">&nbsp;</div></td>
+			<td width="100%"></td>
+			<td rowspan="3"><div class="spacer" style="width:6px;">&nbsp;</div></td>
+		</tr>
+		<tr>
+			<td id="dynamicmore">&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="3" style="height:5px"></td>
+		</tr>
+	</table></td></tr>
+</table>
+</div> 
+<iframe src="/amer/images/clear.gif" id="moreCover" marginwidth="0" marginheight="0" frameborder="0" style="position:absolute; left:0px;top:0px;width:10;height:10;visibility:visible;z-index:900;border:0px" border="0"></iframe>
+
+ 
+<script language="javascript">
+	//initialize form buttons
+	btnInit("gobtn",false,true,false,false,false,false,true,false);
+	 
+		  		 
+		btnInit("bottomCancel",true,false);
+		btnInit("bottomReplace",true,false);
+		btnInit("bottomCancelReplace",true,false);
+		btnInit("bottomUndo",false,false);
+	 
+</script>
+<form name="viewtriggers" action="/cgi-bin/apps/u/TradeTriggers" method="post">
+	<input type="hidden" name="page_action" value="VIEW">
+	<input type="hidden" name="__chx" value="JAZOPT ">
+</form>
+<form name="osprint" action="/cgi-bin/apps/u/ConsolidatedOrderStatus" method="post">
+	<input type="hidden" name="mode" value="print">
+	<input type="hidden" name="sort" value="date">
+	<input type="hidden" name="order" value="DOWN">
+	<input type="hidden" name="type" value="">
+	<input type="hidden" name="days" value="">
+	<input type="hidden" name="fromMonth" value="">
+	<input type="hidden" name="fromDay" value="">
+	<input type="hidden" name="fromYear" value="">
+	<input type="hidden" name="toMonth" value="">
+	<input type="hidden" name="toDay" value="">
+	<input type="hidden" name="toYear" value="">
+</form>
+</body>
+</html>
