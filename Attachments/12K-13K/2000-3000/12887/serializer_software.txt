@@ -1,0 +1,84 @@
+[Program]
+Total=13
+
+[1]
+Name=mIRC
+Read=HKEY_CURRENT_USER\Software\mIRC\License
+Readkey=
+Userkey=(|2|)
+Userkey2=HKEY_CURRENT_USER\Software\mIRC\UserName
+Userkey3=
+
+[2]
+Name=PartitionMagic 8.0
+Read=HKEY_LOCAL_MACHINE\SOFTWARE\PowerQuest\PartitionMagic\8.0\UserInfo
+Readkey=SerialNumber
+Userkey=Name
+
+[3]
+Name=Sony Vegas 7.0
+Read=HKEY_LOCAL_MACHINE\SOFTWARE\Sony Media Software\Vegas\7.0\License
+Readkey=CurrentKey
+Userkey=
+
+[4]
+Name=Sony Video Capture 6.0
+Read=HKEY_LOCAL_MACHINE\SOFTWARE\Sony Media Software\Video Capture\6.0\License
+Readkey=Currentkey
+Userkey=
+
+[5]
+Name=M$ Office 2003
+Read=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\11.0\Registration
+Readkey=(|1|)
+Readkey2=DigitalProductID
+Userkey=
+
+[6]
+Name=M$ Office XP
+Read=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\10.0\Registration
+Readkey=(|1|)
+Readkey2=DigitalProductID
+Userkey=
+
+[7]
+Name=Call of Duty
+Read=HKEY_LOCAL_MACHINE\SOFTWARE\Activision\Call of Duty
+Readkey=codkey
+Userkey=
+
+[8]
+Name=Call of Duty 2
+Read=HKEY_LOCAL_MACHINE\SOFTWARE\Activision\Call of Duty 2
+Readkey=codkey
+Userkey=
+
+[9]
+Name=ScanSoft OmniPageSE2.0
+Read=HKEY_LOCAL_MACHINE\SOFTWARE\ScanSoft\OmniPageSE2.0
+Readkey=SerialNumber
+Userkey=UserName
+
+[10]
+Name=TuneUp Utilities 2007
+Read=HKEY_LOCAL_MACHINE\SOFTWARE\TuneUp\Utilities\6.0
+Readkey=RegCode
+Userkey=UserName
+
+[11]
+Name=Alcohol 120%
+Read=HKEY_CURRENT_USER\Software\Alcohol Soft\Alcohol 120%\Info
+Readkey=ServerKey
+Userkey=UserName
+
+[12]
+Name=Nero
+Read=HKEY_LOCAL_MACHINE\SOFTWARE\Ahead\Nero - Burning Rom\Info
+Readkey=Serial6
+Userkey=User
+
+[13]
+Name=Winzip
+Read=HKEY_CURRENT_USER\Software\Nico Mak Computing\WinZip\WinIni
+Readkey=SN1
+Userkey=Name1
