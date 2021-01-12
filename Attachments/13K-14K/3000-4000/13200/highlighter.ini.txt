@@ -1,0 +1,30 @@
+[]
+name=Configuration files
+author=lokster
+ext=.properties;.ini;.inf;.reg;.url;.cfg;.cnf;.aut
+lex=9
+DefaultStyle=0x000000,0xFFFFFF,10,Courier New,0,0,0
+style0=
+style2=
+
+# Default
+style0=0x0000FF,0xFFFFFF,10,Courier New,0,0,0
+
+# Comment
+style1=0x008000,0xFFFFFF,10,Courier New,0,1,0
+
+# Section
+style2=0xFF0000,0xFFFFFF,10,Courier New,1,0,0
+
+# Assignment operator
+style3=
+
+# Default value (@)
+style4=
+
+# Key
+style5=0xFF0000,0xFFFFFF,10,Courier New,0,0,0
+
+# Matched Operators
+style34=
+style35=
