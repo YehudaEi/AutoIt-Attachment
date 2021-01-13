@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>IE Feedback</title>
+<style type="text/css">
+	.autoit {display:none;}
+	.blather {font-size:30px}
+</style>
+
+<script type="text/javascript">
+
+function changeInfo(whatInfo){
+ document.getElementById("feedback").innerHTML = whatInfo
+}
+</script>
+
+<meta name="NetsparkQuiltingResult" total-length="545" removed="0" rules-found="w2341,w2707" />
+</head>
+
+<body>
+<div id="feedback" class="autoit">NOTHING</div>
+<center>
+	<font class="blather">AutoIt Feedback Test</font><br><br>
+<button onclick="changeInfo('macro1');">MACRO 1</button>
+<button onclick="changeInfo('macro2');">MACRO 2</button>
+</body>
+</html>
