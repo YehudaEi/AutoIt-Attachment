@@ -1,0 +1,71 @@
+GUICreate
+GUICtrlCreateAvi
+GUICtrlCreateButton
+GUICtrlCreateCombo
+GUICtrlCreateContextMenu
+GUICtrlCreateDate
+GUICtrlCreateDummy
+GUICtrlCreateEdit
+GUICtrlCreateGraphic
+GUICtrlCreateGroup
+GUICtrlCreateIcon
+GUICtrlCreateInput
+GUICtrlCreateLabel
+GUICtrlCreateList
+GUICtrlCreateListView
+GUICtrlCreateListViewItem
+GUICtrlCreateMenu
+GUICtrlCreateMenuItem
+GUICtrlCreateMonthCal
+GUICtrlCreateObj
+GUICtrlCreatePic
+GUICtrlCreateProgress
+GUICtrlCreateRadio
+GUICtrlCreateSlider
+GUICtrlCreateTab
+GUICtrlCreateTabItem
+GUICtrlCreateTreeView
+GUICtrlCreateTreeViewItem
+GUICtrlCreateUpdown
+GUICtrlDelete
+GUICtrlRegisterListViewSort
+GUICtrlSetBkColor
+GUICtrlSetColor
+GUICtrlSetCursor
+GUICtrlSetData
+GUICtrlSetFont
+GUICtrlSetGraphic
+GUICtrlSetImage
+GUICtrlSetLimit
+GUICtrlSetOnEvent
+GUICtrlSetPos
+GUICtrlSetResizing
+GUICtrlSetState
+GUICtrlSetStyle
+GUICtrlSetTip
+GUISetBkColor
+GUISetCoord
+GUISetCursor
+GUISetFont
+GUISetHelp
+GUISetIcon
+GUISetOnEvent
+GUISetState
+GUIDelete
+GUICloseOnESC (Option)
+GUICoordMode (Option)
+GUIDataSeparatorChar (Option)
+GUICtrlGetHandle
+GUICtrlGetState
+GUICtrlRead
+GUICtrlRecvMsg
+GUICtrlSendMsg
+GUICtrlSendToDummy
+GUIEventOptions (Option)
+GUIGetCursorInfo
+GUIGetMsg
+GUIOnEventMode (Option)
+GUIRegisterMsg
+GUIResizeMode (Option)
+GUIStartGroup
+GUISwitch
