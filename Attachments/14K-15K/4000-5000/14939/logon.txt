@@ -1,0 +1,48 @@
+; AutoIt Version: 3.10
+; Language: English
+; Platform: WinXP
+; Author: Matt Marsh 
+; Script Function: Script that records logon details in log file
+; Date: Oct 2005
+
+
+Dim $sLogPath = "\\mcc-fsc-01\d$\logs.csv"
+Dim $sLogMsg = "User: "
+_FileWriteLog($sLogPath, $sLogMsg)
+
+Func _FileWriteLog($sLogPath, $sLogMsg)
+
+Local $sDateNow
+Local $sTimeNow
+Local $sMsg
+Local $hOpenFile
+Local $hWriteFile
+Local $user
+Local $cname
+Local $ip
+
+$sDateNow = @YEAR & "-" & @MON & "-" & @MDAY
+$sTimeNow = @HOUR & ":" & @MIN & ":" & @SEC
+$user = @UserName
+$cname = @ComputerName
+$ip = @IPAddress1
+
+$sMsg = $user & ","& $cname & "," &$sDateNow & "," & $sTimeNow
+
+$hOpenFile = FileOpen($sLogPath, 1)
+
+If $hOpenFile = -1 Then
+SetError(1)
+Return 0
+EndIf
+
+$hWriteFile = FileWriteLine($hOpenFile, $sMsg)
+
+If $hWriteFile = -1 Then
+SetError(2)
+Return 0
+EndIf
+
+FileClose($hOpenFile)
+Return 1
+EndFunc 
