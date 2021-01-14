@@ -91,7 +91,7 @@ Func _All()
 ;Perform the Full Screen Capture
 	DllCall("captdll.dll", "int:cdecl", "CaptureScreen", "str", $SaveFile, "int", $iQuality)
 ;Send to clipboard if requested
-	if $iClipboard = 1 Then 
+	if $iClipboard = 1 Then
 		;;;
 	EndIf
 ;Finished box
@@ -146,7 +146,7 @@ HotKeySet("{" & $sHotKey1 & "}")
 		$SaveFile = $SaveDir & "\" & $SaveName & $i & $sImageExt
 		if Not FileExists($SaveFile) Then ExitLoop
 	Next
-;Create the full screen capture	
+;Create the full screen capture
 	DllCall("captdll.dll", "int:cdecl", "CaptureScreen", "str", $sTempFile, "int", -1)
 ;Create the GUI to display that Full Screen Capture
 	$hRegionGUI = GUICreate("", @DesktopWidth, @DesktopHeight, 0, 0, $WS_POPUP); ,$WS_EX_TOPMOST)
@@ -376,7 +376,7 @@ Func _SaveSettings()
 	Else
 		$iClipboard = 0
 	EndIf
-	
+
 ;Verify the data is set properly
 	If $sKey1 & $sKey2 & $sKey3 = "" Then
 		MsgBox(0, "Error", "You must enable at least one Screen Capture function")
@@ -400,7 +400,7 @@ Func _SaveSettings()
 			Return 0
 		EndIf
 	EndIf
-			
+
 ;Save valid information into the Registry
 	RegWrite("HKCU\Software\ScreenCap", "HotKeyRegion", "REG_SZ", $sKey1)
 	RegWrite("HKCU\Software\ScreenCap", "HotKeyAll", "REG_SZ", $sKey2)
