@@ -1,0 +1,73 @@
+/*
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+this code is written by:
+Programmer:haitham hamed housin
+description: get the PIII processor serial number (psn) like intel format
+USE:to restrict your programs to run on single computer
+classification: security 
+demand: i need information about P4 PSN i can't belive that they ignore it
+
+need more information contact me 
+
+e-mail: haitham_hamed@yahoo.com
+icq#148814438
+
+or 
+get the PIII PSN .pdf file for more understanding from intel
+
+www.intel.com
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+void CPiiisnDlg::GetProcessorSeialNumbet(bool withSeparator)
+{
+DWORD  t,m,b; //top,middle,botttom
+DWORD* serial;
+  _asm
+  {
+    mov   eax,1 //programmer: I need a Service ?
+         //processor: what type baby?
+      //eax = 3 --> 
+       //eax: top 32 bits are the processor signature bits
+         
+
+       //programmer:this
+    cpuid     //_emit 0x0f |cpuid mean this tow instruction
+          //_emit 0xa2 |instead of writing them 
+       //       
+    //mean:the sevice i want the processor serial number
+
+ mov   t,eax // top 32 bits are the processor signature bits
+           /* 
+          eax = 3 --> 
+        ecx: middle 32 bits are the processor signature bits
+         edx: bottom 32 bits are the processor signature bits
+      */
+    mov   eax,3
+    cpuid
+    mov   m,edx// middle 32 bits are the processor signature bits
+    mov   b,ecx// bottom 32 bits are the processor signature bits
+  }
+
+  // copy the locals into the pointer variables passed in
+  serial[0] = b;
+  serial[1] = m;
+  serial[2] = t;
+
+
+CString temp;
+m_SN.Empty();
+static char hex_chars[16] = {'0','1','2','3','4','5','6','7',
+                 '8','9','A','B','C','D','E','F'};
+for (int dw_count = 2; dw_count>=0; dw_count--)
+  {
+    for (int bp=28; bp>=0; bp-=4)
+    {
+      DWORD nibble = (serial[dw_count] >> bp) & 0x0f;
+      temp.Format("%c", hex_chars[nibble]);
+   m_SN+=temp;
+      if ((bp == 16) || ((bp == 0) && (dw_count!=0)) )
+    if(withSeparator)m_SN+="-";
+    }
+  }
+UpdateData(FALSE);
+}
