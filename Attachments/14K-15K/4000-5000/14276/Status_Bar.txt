@@ -1,0 +1,40 @@
+
+...
+
+Func Create_Status_Bar()
+	Local	$status_width[2]=[$global_main_window_width*0.5, $global_main_window_width*0.5]
+	Local	$status_text[2]=[$const_preprocessor_idle_text, ""]
+	Local	$size
+	Local	$height
+	
+	$status_bar_handle = _GUICtrlStatusBarCreate($main_window_handle,$status_width , $status_text)
+	If _GUICtrlStatusBarIsSimple ( $status_bar_handle ) Then
+		MsgBox(64, "Statusbar is simple", "")
+	Else
+			MsgBox(64, "Statusbar is complex", "")	
+EndIf
+
+	$control_progress_status = _GUICtrlStatusBarCreateProgress ( $status_bar_handle, 1)
+	If @error <>0  Then MsgBox(48, "Create_Status_Bar()", "error with : _GUICtrlStatusBarCreateProgress ()")
+	GUICtrlSetData ($control_progress_status,50)
+	
+	$size = _GUICtrlStatusBarGetRect ( $status_bar_handle )
+	$height = $size[3] - $size[1]
+	GUISwitch($main_window_handle)
+	
+	Return $height
+EndFunc
+
+...
+
+
+$main_window_handle = GUICreate($const_window_title, $global_main_window_width, $global_main_window_height, -1, -1, BitOR($WS_THICKFRAME, $WS_EX_WINDOWEDGE, $WS_MINIMIZEBOX, $WS_CAPTION, $WS_SYSMENU, $WS_SIZEBOX, $WS_MAXIMIZEBOX) )
+
+...
+
+
+GUISetState(@SW_SHOW, $main_window_handle)
+GUISetState(@SW_SHOW, $status_bar_handle)
+_GUICtrlStatusBarResize ( $status_bar_handle )
+
+...
