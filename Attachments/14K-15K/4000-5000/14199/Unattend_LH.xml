@@ -1,0 +1,260 @@
+<?xml version="1.0"?>
+<unattend xmlns="urn:schemas-microsoft-com:unattend" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State">
+    <servicing>
+        <package action="configure">
+            <assemblyIdentity name="Microsoft-Windows-Foundation-Package" version="6.0.6001.16497" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="" />
+            <selection name="NetFx3" state="true" />
+            <selection name="SimpleTCP" state="false" />
+        </package>
+        <package action="configure">
+            <assemblyIdentity name="Microsoft-Windows-NetFx3-OC-Package" version="6.0.6001.16497" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="en-US" />
+        </package>
+        <package action="configure">
+            <assemblyIdentity name="Microsoft-Windows-NetFx3-OC-Package" version="6.0.6001.16497" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="" />
+        </package>
+        <package action="configure">
+            <assemblyIdentity name="Microsoft-Windows-Server-LanguagePack-Package" version="6.0.6001.16497" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="en-US" />
+        </package>
+    </servicing>
+    <!-- Do not have empty elements. Delete such elements instead. Values should be assumed to be case sensitive. Boolean types have valid values as true,false,0,1 and are case sensitive. Other examples of case sensitive values are Drive Letters (only upper case C-Z supported), Format, Type. -->
+    <settings pass="windowsPE">
+        <component name="Microsoft-Windows-Setup" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" processorArchitecture="x86">
+            <UserData>
+                <AcceptEula>true</AcceptEula>
+                <FullName>Unknown</FullName>
+                <Organization>Unknown</Organization>
+                <ProductKey>
+                    <WillShowUI>OnError</WillShowUI>
+                    <Key>XXXXX-XXXXX-XXXXX-XXXXX-XXXXX</Key>
+                </ProductKey>
+            </UserData>
+            <ImageInstall>
+                <OSImage>
+                    <InstallFrom>
+                        <MetaData>
+                            <Key>/IMAGE/INDEX</Key>
+                            <Value>2</Value>
+                        </MetaData>
+                    </InstallFrom>
+                    <WillShowUI>OnError</WillShowUI>
+                    <InstallTo>
+                        <DiskID>0</DiskID>
+                        <PartitionID>1</PartitionID>
+                    </InstallTo>
+                </OSImage>
+            </ImageInstall>
+            <EnableFirewall>false</EnableFirewall>
+            <Restart>Restart</Restart>
+        </component>
+        <component name="Microsoft-Windows-International-Core-WinPE" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" processorArchitecture="x86">
+            <SetupUILanguage>
+                <UILanguage>en-US</UILanguage>
+                <WillShowUI>OnError</WillShowUI>
+            </SetupUILanguage>
+            <!-- This is the only required element for this component -->
+            <UILanguage>en-US</UILanguage>
+            <SystemLocale>en-US</SystemLocale>
+            <UserLocale>en-US</UserLocale>
+            <InputLocale>0409:00000409</InputLocale>
+        </component>
+        <component name="Microsoft-Windows-TCPIP" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <Interfaces>
+                <Interface wcm:action="add">
+                    <Ipv4Settings>
+                        <DhcpEnabled>true</DhcpEnabled>
+                        <RouterDiscoveryEnabled>false</RouterDiscoveryEnabled>
+                    </Ipv4Settings>
+                    <Identifier>Test</Identifier>
+                </Interface>
+            </Interfaces>
+        </component>
+    </settings>
+    <settings pass="specialize">
+        <!-- Any Deployment settings in specialize pass go in here
+    <component name="Microsoft-Windows-Deployment" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" processorArchitecture="x86">
+    </component>
+-->
+        <component name="Microsoft-Windows-Shell-Setup" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" processorArchitecture="x86">
+            <ComputerName>*</ComputerName>
+            <ProductKey>XXXXX-XXXXX-XXXXX-XXXXX-XXXXX</ProductKey>
+            <CopyProfile>true</CopyProfile>
+            <DisableAutoDaylightTimeSet>false</DisableAutoDaylightTimeSet>
+            <BluetoothTaskbarIconEnabled>false</BluetoothTaskbarIconEnabled>
+            <RegisteredOrganization>Unknown</RegisteredOrganization>
+            <RegisteredOwner>Unknown</RegisteredOwner>
+            <TimeZone>Central Standard Time</TimeZone>
+            <StartPanelOff>true</StartPanelOff>
+            <OEMInformation>
+                <HelpCustomized>false</HelpCustomized>
+                <Manufacturer>Unknown</Manufacturer>
+                <SupportHours>24/7</SupportHours>
+                <SupportPhone>1-800-555-5555</SupportPhone>
+                <SupportURL>https://my.Unknown.com</SupportURL>
+                <Model>Windows Longhorn Server</Model>
+                <Logo>C:\Windows\System32\oemlogo.bmp</Logo>
+            </OEMInformation>
+            <DoNotCleanTaskBar>true</DoNotCleanTaskBar>
+            <ShowWindowsLive>false</ShowWindowsLive>
+            <Display>
+                <ColorDepth>16</ColorDepth>
+                <HorizontalResolution>1024</HorizontalResolution>
+                <RefreshRate>60</RefreshRate>
+                <VerticalResolution>768</VerticalResolution>
+                <DPI>96</DPI>
+            </Display>
+        </component>
+        <component name="Microsoft-Windows-UnattendedJoin" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" processorArchitecture="x86">
+            <Identification>
+                <Credentials>
+                    <!--<Domain>UserDomain</Domain>-->
+                    <Username>Administrator</Username>
+                    <Password>StrongPassword</Password>
+                </Credentials>
+                <!--<JoinDomain>MachineDomainToBeJoined</JoinDomain>
+			You can either have JoinDomain or JoinWorkgroup but not both.-->
+                <JoinWorkgroup>Workgroup</JoinWorkgroup>
+            </Identification>
+        </component>
+        <component name="Networking-MPSSVC-Svc" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <DomainProfile_LogFile>C:\Windows\system32\LogFiles\Firewall\pfirewall.log</DomainProfile_LogFile>
+            <PrivateProfile_LogFile>C:\Windows\system32\LogFiles\Firewall\pfirewall.log</PrivateProfile_LogFile>
+            <PublicProfile_LogFile>C:\Windows\system32\LogFiles\Firewall\pfirewall.log</PublicProfile_LogFile>
+        </component>
+        <component name="Microsoft-Windows-powercpl" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <PreferredPlan>8c5e7fda-e8bf-4a96-9a85-a6e23a8c635a</PreferredPlan>
+        </component>
+        <component name="Microsoft-Windows-TerminalServices-LocalSessionManager" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <fDenyTSConnections>false</fDenyTSConnections>
+        </component>
+        <component name="Microsoft-Windows-Deployment" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <RunAsynchronous>
+                <RunAsynchronousCommand wcm:action="add">
+                    <Order>1</Order>
+                    <Description>Registry Additions</Description>
+                    <Path>reg import C:\rs-temp\HKLM.reg</Path>
+                </RunAsynchronousCommand>
+                <RunAsynchronousCommand wcm:action="add">
+                    <Order>2</Order>
+                    <Description>Registry Additions</Description>
+                    <Path>reg import C:\rs-temp\HKCU.reg</Path>
+                </RunAsynchronousCommand>
+                <RunAsynchronousCommand wcm:action="add">
+                    <Order>3</Order>
+                    <Description>Registry Additions</Description>
+                    <Path>reg import C:\rs-temp\HKCR.reg</Path>
+                </RunAsynchronousCommand>
+            </RunAsynchronous>
+        </component>
+    </settings>
+    <settings pass="oobeSystem">
+        <component name="Microsoft-Windows-Shell-Setup" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" processorArchitecture="x86">
+            <AutoLogon>
+                <Enabled>true</Enabled>
+                <Username>Administrator</Username>
+                <Password>
+                    <Value>UwB0AHIAbwBuAGcAUABhAHMAcwB3AG8AcgBkAFAAYQBzAHMAdwBvAHIAZAA=</Value>
+                    <PlainText>false</PlainText>
+                </Password>
+                <LogonCount>1</LogonCount>
+                <Domain>WORKGROUP</Domain>
+            </AutoLogon>
+            <BluetoothTaskbarIconEnabled>false</BluetoothTaskbarIconEnabled>
+            <!--<ClientApplications>
+        <Internet>path to browser executable</Internet>
+        <Mail>path to email executable</Mail>
+        <Media>path to media executable</Media>
+        <IM>path to instant messaging executable</IM>
+        <JavaVM>path to Java VM executable</JavaVM>
+      </ClientApplications>-->
+            <!--<Display>
+        <HorizontalResolution>1280</HorizontalResolution>
+        <VerticalResolution>1024</VerticalResolution>
+        <ColorDepth>32</ColorDepth>
+        <RefreshRate>60</RefreshRate>
+      </Display>-->
+            <!--<FolderLocations>
+		<ProfilesDirectory>%SystemDrive%\Profiles</ProfilesDirectory>
+        <ProgramData>%SystemDrive%\AppData</ProgramData>
+        <ProgramFiles>%SystemDrive%\Program Files</ProgramFiles>
+      </FolderLocations>-->
+            <!--<FirstLogonCommands>
+        <SynchronousCommand>
+          <Order>1</Order>
+          <CommandLine>cmd /c echo GuiRunOnce is called at date-time: %DATE%-%TIME% &gt;&gt; \GuiRunOnceRan.txt</CommandLine>
+          <Description>Make a file in the systemdrive to indicate that guirunonce ran</Description>
+        </SynchronousCommand>
+        <SynchronousCommand>
+          <Order>2</Order>
+          <CommandLine>cmd /c \Tests\InstallWTT.cmd \\tkbgitwttct09\wttinstall</CommandLine>
+          <Description>Install WTT</Description>
+        </SynchronousCommand>
+      </FirstLogonCommands>-->
+            <!--<LogonCommands>
+        <AsynchronousCommand>
+          <Order>1</Order>
+          <CommandLine>cmd /c echo Logon occurred at date-time: %DATE%-%TIME% &gt;&gt; \Logon.log</CommandLine>
+          <Description>Make a file in the systemdrive to indicate that Logon occurred</Description>
+        </AsynchronousCommand>
+      </LogonCommands>-->
+            <!--<OEMInformation>
+        <Manufacturer>OEM name here</Manufacturer>
+        <Model>Model name here</Model>
+        <Logo>path to bitmap file</Logo>
+      </OEMInformation>-->
+            <OOBE>
+                <HideEULAPage>true</HideEULAPage>
+                <ProtectYourPC>1</ProtectYourPC>
+                <SkipUserOOBE>true</SkipUserOOBE>
+                <NetworkLocation>Other</NetworkLocation>
+            </OOBE>
+            <!--<RegisteredOwner>John Doe</RegisteredOwner>
+      <RegisteredOrganization>Doe Corp.</RegisteredOrganization>
+      <StartPanelLinks>
+        <MFULink0>%UserProfile%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Accessories\Command Prompt.lnk</MFULink0>
+        <MFULink1>%UserProfile%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Accessories\Notepad.lnk</MFULink1>
+      </StartPanelLinks>-->
+            <StartPanelOff>true</StartPanelOff>
+            <!--<Themes>
+        <DefaultThemesOff>false</DefaultThemesOff>
+        <CustomDefaultThemeFile>path to .theme file</CustomDefaultThemeFile>
+      </Themes>-->
+            <DisableAutoDaylightTimeSet>false</DisableAutoDaylightTimeSet>
+            <TimeZone>Central Standard Time</TimeZone>
+            <UserAccounts>
+                <AdministratorPassword>
+                    <Value>UwB0AHIAbwBuAGcAUABhAHMAcwB3AG8AcgBkAEEAZABtAGkAbgBpAHMAdAByAGEAdABvAHIAUABhAHMAcwB3AG8AcgBkAA==</Value>
+                    <PlainText>false</PlainText>
+                </AdministratorPassword>
+            </UserAccounts>
+            <VisualEffects>
+                <FontSmoothing>ClearType</FontSmoothing>
+            </VisualEffects>
+            <RegisteredOrganization>Unknown</RegisteredOrganization>
+            <RegisteredOwner>Unknown</RegisteredOwner>
+            <ShowWindowsLive>false</ShowWindowsLive>
+            <DoNotCleanTaskBar>true</DoNotCleanTaskBar>
+        </component>
+    </settings>
+    <settings pass="auditUser">
+        <component name="Microsoft-Windows-Deployment" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <RunAsynchronous>
+                <RunAsynchronousCommand wcm:action="add">
+                    <Order>2</Order>
+                    <Description>Registry Additions</Description>
+                    <Path>reg import C:\rs-temp\HKCU.reg</Path>
+                </RunAsynchronousCommand>
+                <RunAsynchronousCommand wcm:action="add">
+                    <Order>1</Order>
+                    <Description>Registry Additions</Description>
+                    <Path>reg import C:\rs-temp\HKLM.reg</Path>
+                </RunAsynchronousCommand>
+                <RunAsynchronousCommand wcm:action="add">
+                    <Order>3</Order>
+                    <Path>reg import C:\rs-temp\HKCR.reg</Path>
+                    <Description>Registry Additions</Description>
+                </RunAsynchronousCommand>
+            </RunAsynchronous>
+        </component>
+    </settings>
+    <cpi:offlineImage cpi:source="wim://10.6.3.132/win2k7/lhx86/sources/install.wim#Windows Longhorn SERVERENTERPRISE" xmlns:cpi="urn:schemas-microsoft-com:cpi" />
+</unattend>
