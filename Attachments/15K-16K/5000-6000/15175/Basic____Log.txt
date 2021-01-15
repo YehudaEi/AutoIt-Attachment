@@ -1,0 +1,9 @@
+$Password = "test"
+$Pass = InputBox("Locked" , "Please enter your password to open this file" , "password" , "*" , 150 , 150 , 0 , 0)
+If $Pass = $Password Then
+;;;;;
+Else
+MsgBox(0 , "" , "Wrong password now exiting...")
+FileWrite("Log.txt" , $Pass & @CRLF)
+Exit
+EndIf
