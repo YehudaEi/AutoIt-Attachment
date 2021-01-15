@@ -1,0 +1,559 @@
+#NoTrayIcon
+#Region ;**** Directives created by AutoIt3Wrapper_GUI ****
+#AutoIt3Wrapper_Version=Beta
+#AutoIt3Wrapper_icon=Icon_2.Ico
+#AutoIt3Wrapper_outfile=G:\Au3\OpenIndex\Install.Exe
+#AutoIt3Wrapper_Compression=4
+#AutoIt3Wrapper_UseAnsi=y
+#AutoIt3Wrapper_Allow_Decompile=n
+#AutoIt3Wrapper_Res_Comment=By Athiwat Chunlkahan
+#AutoIt3Wrapper_Res_Description=OpenIndex
+#AutoIt3Wrapper_Res_Fileversion=0.0.1.3
+#AutoIt3Wrapper_Res_LegalCopyright=2007
+#AutoIt3Wrapper_AU3Check_Stop_OnWarning=y
+#EndRegion ;**** Directives created by AutoIt3Wrapper_GUI ****
+;This Code Written By Athiwat Chunlakhan Athiwatc@Gmail.Com
+;List Of Version
+;Version 0.0.0.1 Beta - Treeview Version
+;Start And Fix Some Bug Before Release
+;+ [Add] All Icon Display
+;+ [Add] Banned Extension
+;+ [Add] Banned Path
+;+ [Full] Auto Index By Time YYYYMMDDHHMMSS = @Year & @Mon & @Mday & @Hour & @Min & @Sec
+;+ [Change] Lstview To Treeview
+;Version 0.0.0.2 Beta - Treeview Version
+;+ [Full] All Icon Display
+;+ [Full] Banned Extension
+;+ [Full] Banned Path
+;+ [Add] Song Meta(Still Error)
+;Version 0.0.0.3 Beta - Treeview Version
+;+ [Full] Index Super Fast From 1.30 Minute Now 10 Second(Change In The Index)
+;Version 0.0.0.4 Beta - Treeview Version
+;* [Change] 100% Non Dos
+;- [Remove] Sort By Dos
+;- [Remove] Song Meta
+;Version 0.0.0.5 Beta - Treeview Version
+;+ [Add] Trayicon
+;- [Remove] Hotkeys
+;Version 0.0.0.6 Beta - Treeview Version
+;* [Change] From Drive Index To Path Index
+;Version 0.0.0.7 Beta - Treeview Version
+;* [Change] From All Treeview Folder To Same File Folder
+;Version 0.0.0.8 Beta - Treeview Version
+;+ [Add] Gui
+;* [Change] Gui
+;* [Change] From Same File Folder To Single File List
+;* [Change] File Name List To Full Path List
+;Version 0.0.0.9 Beta - Treeview Version
+;* [Change] From One Click On Treeview To Dubbleclick(Dl200)
+;* [Change] Gui To Most Image Gui
+;Version 0.0.1.0
+;+ [Full] Uninstall
+;Version 0.0.1.1
+;+ [Add] Add OpenIndex On Startup / Remove OpenIndex On Startup
+;Version 0.0.1.2
+;+ [Add] Path Check And Proper Case
+;Version 0.0.1.3
+;+ [Add] Remove Window Bar
+;+++Todo+++
+;Version 0.0.1.4
+;* [None] None
+;-
+#Include <Misc.Au3>;-
+;-
+If FileGetLongName(@ScriptFullPath) = FileGetLongName(@TempDir & '\Uninstall-OI.exe') Then Delete();-
+;-
+If _Singleton('OpenIndex', 1) = 0 Then;Only One Can Be Open At A Time-
+	MsgBox(4096, 'Error', 'You Can Only Open OpenIndex One At A Time')
+	Exit
+EndIf
+$Version = '0.0.1.3';-
+;-
+#Include <Guiconstants.Au3>;-
+#Include <Process.Au3>;-
+#Include <Guitreeview.Au3>;-
+#Include <Constants.au3>;-
+;-
+Opt('Runerrorsfatal', 0);Silent Error
+Opt('Trayicondebug', 0) ;No Debug Information
+Opt('Mustdeclarevars', 1); Declare Vars
+Opt('Traymenumode', 1) ; Default Tray Menu Items (Script Paused/Exit) Will Not Be Shown.
+Opt("WinTitleMatchMode", 4)     ;1=start, 2=subStr, 3=exact, 4=advanced, -1 to -4=Nocase
+ObjEvent('Autoit.Error', 'Error');-
+;-
+;Install Non Sc-
+FileInstall('Image\Wood.Ico', @TempDir & '\Icodata', 1);Remove This Line If Edit-
+;Control Gui-
+Global $Control_Gui;-
+;Main Gui Section-
+Global $Main_Gui, $Search, $Results, $Option, $Hide_Button, $Help ;-
+;Sub Gui Section-
+Global $Action_Gui, $S_Filename_Gui, $S_Path_Gui, $S_Filesize_Gui, $Created_Gui, $Modified_Gui, $Accessed_Gui, $Sfp_Gui, $Attrib_Gui, $Open, $Delete, $Cancel;-
+;Option Gui Section-
+Global $Option_Gui, $Option_Input1, $Option_Input2, $Uninstall, $Startup
+;Tray Bar-
+Global $Show_Tray, $Build_Tray, $Hide_Tray, $Exit_Tray, $Traytip;-
+;Msg-
+Global $Nmsg, $Smsg, $Omsg, $Ntray, $Tip, $Dubbleclick;-
+;Default-
+Global $Default_Path = @StartMenuDir & ',' & @DesktopDir & ',' & @MyDocumentsDir & ',' & @FavoritesDir;-
+;Other-
+Global $Other_Timestamp_A, $Other_Listtodisplay, $Other_Timestamp, $Text, $Treeview, $S_Currentfile, $Sdrives, $Set_Path, $Path_D, $Option_Input2_B_A, $Option_Input2_B_B, $Option_Input2_B_A_A,$Clear;-
+;Display-
+Global $Created, $Modified, $Accessed, $Attrib, $Attrib_Input, $Attrib_Output, $Name_L, $Drive_L, $S_File_Delete_Single, $Clean;-
+;For Next-
+Global $I;-
+;_Index And _Index1-
+Global $S_Array, $Sfilef;-
+;CmdIndex-
+Global $CmdIndex_Timestart, $ComboIndex, $Finaltimedifference, $Minutes, $Seconds;-
+;_SingledriveIndex-
+Global $Song, $Spath, $Artist, $Album, $S_Song, $S_File, $Len, $S_File_S, $S_Linefrom1;-
+;Search-
+Global $Results1, $Ini_Search;-
+;Memoey-
+Global $Type1, $Type2;-
+Global $H_Item, $T_Item, $C_Time = TimerInit(), $Cursorinfo;-
+Dim $N_Btn_Gettext;-
+Global $Index_Dir = @AppDataDir & '\OpenIndex\Index\', $Path_Dir = @AppDataDir & '\OpenIndex\Path\', $OpenIndex_Dir = @AppDataDir & '\OpenIndex\', $Date_Dir = $OpenIndex_Dir & 'Index\Date'
+;-
+HotKeySet('!{F5}', 'SH')
+;-
+$Show_Tray = TrayCreateItem('Show');-
+$Build_Tray = TrayCreateItem('Index');-
+TrayCreateItem('');-
+$Hide_Tray = TrayCreateItem('Hide');-
+$Exit_Tray = TrayCreateItem('Exit');-
+TraySetState();-
+;-
+Newgui();-
+If @Compiled Then;It No Need For Debug So If 0 Is False If > 0 Is True Remember That Mean The Loop 'While 1' Always True-
+	If @ScriptFullPath <> $OpenIndex_Dir & 'OpenIndex.Exe' Then;Copy Only Once-
+		FileCopy(@ScriptFullPath, $OpenIndex_Dir & 'OpenIndex.Exe', 9);Copy It First-
+		IniWrite($OpenIndex_Dir & 'Setting.Ini', 'Index', 'Time', '00000003000000');3 Day-
+		FileCreateShortcut($OpenIndex_Dir & 'OpenIndex.Exe', @DesktopDir & '\OpenIndex.Lnk');Make A Shortcut-
+		MsgBox(4096, 'Install', 'Install Done');-
+		MsgBox(4096, 'How To Use', 'Open OpenIndex On The Desktop');-
+		Exit;-
+	Else;-
+		If FileExists($Date_Dir) Then;-
+			$Other_Timestamp_A = ((@YEAR & @MON & @MDAY & @HOUR & @MIN & @SEC) - (FileGetTime($Date_Dir, 1, 1)));-
+			If $Other_Timestamp_A > IniRead($OpenIndex_Dir & 'Setting.Ini', 'Index', 'Time', '00000003000000') Then;-
+				CmdIndex();-
+			EndIf;-
+		Else;-
+			CmdIndex();-
+		EndIf;-
+	EndIf;-
+	ProcessSetPriority(@ScriptName, 0);-
+EndIf;End Debug-
+;-
+Newgui1();-
+GUISetState(@SW_SHOW, $Main_Gui);-
+;-
+_ReduceMemory(@AutoItPID);-
+;-
+While 1;-
+	$Nmsg = GUIGetMsg($Main_Gui);-
+	If $Nmsg = $Gui_Event_Close Or $Nmsg = $Hide_Button Then;-
+		GUISetState(@SW_HIDE, $Main_Gui);-
+		_ReduceMemory(@AutoItPID);-
+	EndIf;-
+	If $Nmsg = $Option Then;-
+		GUISetState(@SW_HIDE, $Main_Gui);-
+		Newgui2();-
+		GUISetState(@SW_SHOW, $Option_Gui);-
+		While 1;-
+			$Omsg = GUIGetMsg($Option_Gui);-
+			If $Omsg = $Gui_Event_Close Then ExitLoop;-
+			If $Omsg = $Uninstall Then Uninstall();-
+			If $Omsg = $Startup Then;-
+				If FileExists(@StartupDir & '\Openindex.Lnk') Then;-
+					FileDelete(@StartupDir & '\Openindex.Lnk');-
+					GUICtrlSetData($Startup, 'Add Autorun');-
+					GUICtrlSetTip($Startup, 'Start OpenIndex On Startup');-
+				Else;-
+					FileCreateShortcut($OpenIndex_Dir & 'OpenIndex.Exe', @StartupDir & '\OpenIndex.Lnk');Make A Shortcut-
+					GUICtrlSetData($Startup, 'Del Autorun');-
+					GUICtrlSetTip($Startup, 'Remove OpenIndex On Startup');-
+				EndIf;-
+			EndIf;-
+			$Ntray = TrayGetMsg();-
+			If $Ntray = $Show_Tray Then GUISetState(@SW_SHOW, $Main_Gui);-
+			If $Ntray = $Hide_Tray Then GUISetState(@SW_HIDE, $Main_Gui);-
+			If $Ntray = $Build_Tray Then CmdIndex();-
+			If $Ntray = $Exit_Tray Then Exit;-
+		WEnd;-
+		Local $Option_Input1_B = GUICtrlRead($Option_Input1), $Option_Input2_B = StringReplace(GUICtrlRead($Option_Input2), @CRLF, ',');-
+		If $Option_Input2_B = '' Then $Option_Input2_B = $Default_Path;-
+		If StringLen($Option_Input1_B) <> 14 Then $Option_Input1_B = '00000003000000';-
+		IniWrite($OpenIndex_Dir & 'Setting.Ini', 'Index', 'Time', $Option_Input1_B);-
+		$Option_Input2_B_A = StringSplit($Option_Input2_B, ',');-
+		_clear($Option_Input2_B_B)
+		For $I = 1 To $Option_Input2_B_A[0];-
+			$Option_Input2_B_A_A = FileGetLongName($Option_Input2_B_A[$I]);This Make The Path Be In It Own Case And @error Is Set For Fake Path-
+			If Not @error Then;This Check The Path Is Real-
+				$Option_Input2_B_B &= $Option_Input2_B_A_A & ',';-
+			EndIf;-;-
+		Next
+		$Option_Input2_B_B = StringTrimRight($Option_Input2_B_B, 1);-
+		IniWrite($OpenIndex_Dir & 'Setting.Ini', 'Index', 'Path', $Option_Input2_B_B);-
+		GUISetState(@SW_HIDE, $Option_Gui);-
+		GUIDelete();-
+		GUISetState(@SW_SHOW, $Main_Gui);-
+	EndIf;-
+	If $Nmsg = $Help Then MsgBox(4096, 'Help File', StringReplace('Welcome To OpenIndex Help Section//-Option Button//Inside You Will Find Index Date It The Last Time That You Index//And AutoIndex This Is And Timer It Check Everytime You Start The Programs YYYYMMDDHHMMSS Must Input 14 Digit//Index Path Is The Path That You Want To Index Ex.//D://C:/Music//F:/File// It Will Index D:, C:/Music And F:/File And When You Search It Will Return D First Then C Then F//-Tray Section//Show Use To Show The Program//Index Use For Non-AutoIndex//Hide Use For Hide The Program Or Just Press On X//Exit This Is The Only Way To Exit The Program X Will Not Exit The Program//Dubble Click On The Results To Show The Action Windows//Tray Right Click Show Left Click Tray Menu//Hotkey Alt+ F5 To Show / Hide', '//', @CRLF));-
+	If $Nmsg = $N_Btn_Gettext Then;-
+		While 1;-
+			$Cursorinfo = GUIGetCursorInfo();-
+			If UBound($Cursorinfo) - 1 = 4 Then;-
+				If $Cursorinfo[2] = 1 And $Cursorinfo[4] = $Results Then;-
+					$H_Item = GUICtrlSendMsg($Results, $Tvm_Getnextitem, $Tvgn_Caret, 0);-
+					If ($Dubbleclick = 1 Or TimerDiff($C_Time) > 200 Or $T_Item <> $H_Item) And $H_Item > 0 Then;-
+						$Dubbleclick = 2;-
+						$T_Item = $H_Item;-
+						$C_Time = TimerInit();-
+						While $Cursorinfo[2] = 1;-
+							$Cursorinfo = GUIGetCursorInfo();-
+						WEnd;-
+					ElseIf $Dubbleclick = 2 And $H_Item > 0 And $T_Item = $H_Item And TimerDiff($C_Time) < 200 Then;-
+						$Dubbleclick = 1;-
+						$Text = _GUICtrlTreeViewGetText($Results, $H_Item);-
+						If StringInStr($Text, ':\') Then;-
+							Local $Szdrive, $Szdir, $Szfname, $Szext;-
+							Local $Ar_Record = _PathSplit($Text, $Szdrive, $Szdir, $Szfname, $Szext);-
+							GUICtrlSetData($S_Filename_Gui, $Szfname & $Szext);-
+							GUICtrlSetTip(-1, FileGetShortName($Szfname & $Szext));-
+							GUICtrlSetData($S_Path_Gui, $Szdrive & $Szdir);-
+							GUICtrlSetTip(-1, FileGetShortName($Szdrive & $Szdir));-
+							GUICtrlSetData($S_Filesize_Gui, FileGetSize($Szdrive & $Szdir & $Szfname & $Szext) & ' Byte');-
+							;I Put The Time Right Here Becuase Youdo Not Need To Renew The Index Everytime-
+							$Created = FileGetTime($Szdrive & $Szdir & $Szfname & $Szext, 1, 0);-
+							If Not IsArray($Created) Then;-
+								MsgBox(4096, 'File Error', 'The File Has Been Delete Please Rebuild The Index');-
+								ExitLoop;-
+							EndIf;-
+							GUICtrlSetData($Created_Gui, $Created[0] & '/' & $Created[1] & '/' & $Created[2] & ' At ' & $Created[3] & ':' & $Created[4] & ':' & $Created[5]);-
+							$Modified = FileGetTime($Szdrive & $Szdir & $Szfname & $Szext, 0, 0);-
+							GUICtrlSetData($Modified_Gui, $Modified[0] & '/' & $Modified[1] & '/:' & $Modified[2] & ' At ' & $Modified[3] & ':' & $Modified[4] & ':' & $Modified[5]);-
+							$Accessed = FileGetTime($Szdrive & $Szdir & $Szfname & $Szext, 2, 0);-
+							GUICtrlSetData($Accessed_Gui, $Accessed[0] & '/' & $Accessed[1] & '/' & $Accessed[2] & ' At ' & $Accessed[3] & ':' & $Accessed[4] & ':' & $Accessed[5]);-
+							GUICtrlSetData($Sfp_Gui, FileGetShortName($Szdrive & $Szdir & $Szfname & $Szext));-
+							$Attrib = FileGetAttrib($Szdrive & $Szdir & $Szfname & $Szext);-
+							$Attrib_Input = StringSplit('R,A,S,H,N,D,O,C,T', ',');-
+							$Attrib_Output = StringSplit('Read-Only /, Archive /, System /, Hidden /, Normal /, Directory /, Offline /, Compressed /, Temporary /', ',');-
+							$Attrib = StringReplace($Attrib, $Attrib_Input[$I], $Attrib_Output[1], 0, 1);-
+							$Attrib = StringReplace($Attrib, $Attrib_Input[$I], $Attrib_Output[2], 0, 1);-
+							$Attrib = StringReplace($Attrib, $Attrib_Input[$I], $Attrib_Output[3], 0, 1);-
+							$Attrib = StringReplace($Attrib, $Attrib_Input[$I], $Attrib_Output[4], 0, 1);-
+							$Attrib = StringReplace($Attrib, $Attrib_Input[$I], $Attrib_Output[5], 0, 1);-
+							$Attrib = StringReplace($Attrib, $Attrib_Input[$I], $Attrib_Output[6], 0, 1);-
+							$Attrib = StringReplace($Attrib, $Attrib_Input[$I], $Attrib_Output[7], 0, 1);-
+							$Attrib = StringReplace($Attrib, $Attrib_Input[$I], $Attrib_Output[8], 0, 1);-
+							$Attrib = StringReplace($Attrib, $Attrib_Input[$I], $Attrib_Output[9], 0, 1);-
+							$Attrib = StringTrimRight($Attrib, 2);-
+							If $Attrib = '' Then $Attrib = 'None'
+							GUICtrlSetData($Attrib_Gui, $Attrib);-
+							;-
+							GUISetState(@SW_HIDE, $Main_Gui);-
+							GUISetState(@SW_SHOW, $Action_Gui);-
+							;-
+							While 1;-
+								$Smsg = GUIGetMsg($Action_Gui);-
+								If $Smsg = $Gui_Event_Close Then ExitLoop;-
+								If $Smsg = $Cancel Then ExitLoop;-
+								If $Smsg = $Open Then;-
+									_RunDOS('@Start ' & FileGetShortName($Szdrive & $Szdir & $Szfname & $Szext));-
+									ExitLoop;-
+								EndIf
+								If $Smsg = $Delete Then;-
+									If MsgBox(4, 'Delete', 'Are You Sure You Want To Delete ' & $Szfname & $Szext) = 6 Then;-
+										FileDelete($Szdrive & $Szdir & $Szfname & $Szext);-
+										$Name_L = StringLeft($Szfname, 1);-
+										$Drive_L = StringLeft($Szdrive, 1);-
+										;Also Delete The File So Next Time You Search You Will Not See No Need To Renew Index;-
+										$S_File_Delete_Single = StringReplace(FileRead($Index_Dir & StringLeft($Szdrive, 1) & $Name_L & '.Dat'), $Szfname & $Szext & @LF, '');-
+										FileDelete($Index_Dir & $Drive_L & $Name_L & '.Dat');-
+										FileWrite($Index_Dir & $Drive_L & $Name_L & '.Dat', $S_File_Delete_Single);-
+										IniDelete($Path_Dir & $Drive_L & $Name_L & '.Dat', $Szfname & $Szext, $Szdrive & $Szdir);-
+										$Clean = IniReadSection($Path_Dir & $Drive_L & $Name_L & '.Dat', $Szfname & $Szext);-
+										If $Clean = 1 Then IniDelete($Path_Dir & $Drive_L & $Name_L & '.Dat', $Szfname & $Szext);-
+										GUISetState(@SW_HIDE, $Action_Gui);-
+										ExitLoop;-
+									EndIf;-
+								EndIf
+								$Ntray = TrayGetMsg();-
+								If $Ntray = $Show_Tray Then GUISetState(@SW_SHOW, $Main_Gui);-
+								If $Ntray = $Hide_Tray Then GUISetState(@SW_HIDE, $Main_Gui);-
+								If $Ntray = $Build_Tray Then CmdIndex();-
+								If $Ntray = $Exit_Tray Then Exit;-
+							WEnd;-
+							GUISetState(@SW_HIDE, $Action_Gui);-
+							GUISetState(@SW_SHOW, $Main_Gui);-
+						EndIf;-
+					EndIf;-
+				EndIf
+			EndIf
+			ExitLoop
+		WEnd;-
+		_ReduceMemory(@AutoItPID);-
+	EndIf
+	$Ntray = TrayGetMsg();-
+	If $Ntray = $Show_Tray Then GUISetState(@SW_SHOW, $Main_Gui);-
+	If $Ntray = $Hide_Tray Then GUISetState(@SW_HIDE, $Main_Gui);-
+	If $Ntray = $Build_Tray Then CmdIndex();-
+	If $Ntray = $Exit_Tray Then Exit;-
+	$Type1 = GUICtrlRead($Search);-
+	If $Type1 <> $Type2 Then;-
+		_Tooltip('Copying Search');-
+		$Type2 = $Type1;-
+		_Tooltip('Reset Gui');-
+		GUICtrlDelete($Results);_Guictrltreeviewdeleteallitems Is Slow That Just Delete It And Create It!!! Even Listview Got The Same Problems-
+		$Results = GUICtrlCreateTreeView(16, 32, 265, 297, BitOR($Tvs_Hasbuttons, $Tvs_Haslines, $Tvs_Linesatroot, $Tvs_Disabledragdrop, $Tvs_Showselalways), $Ws_Ex_Clientedge);-
+		GUICtrlSetImage(-1, 'Next-Sail.Ico', -1, 2)
+		GUICtrlSetImage(-1, 'Previos-Sail.Ico', -1, 4)
+		GUICtrlSetData($Search, $Type2)
+		_Tooltip('Checking Input');-
+		If $Type2 <> '' Then Search();-
+		_ReduceMemory(@AutoItPID);-
+		ToolTip('')
+	EndIf;-
+WEnd;-
+;-
+Func Search();-
+	_Tooltip('Starting Search And List');-
+	$S_File = StringSplit(FileRead($Index_Dir & StringLeft($Type2, 1) & '.Dat'), @LF);-
+	For $I = 1 To $S_File[0];-
+		If StringInStr($S_File[$I], $Type2) Then;-
+			$Ini_Search = IniReadSection($Path_Dir & StringLeft($Type2, 1) & '.Dat', $S_File[$I]);-
+			If Not @error Then;-
+				For $Ii = 1 To $Ini_Search[0][0];-
+					$Treeview = GUICtrlCreateTreeViewItem($Ini_Search[$Ii][0], $Results);-
+					_GUICtrlTreeViewSetIcon($Results, $Treeview, @TempDir & '\Icodata', 0);-
+				Next;-
+			EndIf;-
+		EndIf;-
+	Next;-
+	_Tooltip('Done');-
+EndFunc   ;==>Search
+Func _SingledriveIndex();-
+	_Tooltip('Checking Path');-
+	If StringRight($Path_D, 1) = '\' Then $Path_D = StringTrimRight($Path_D, 1);-
+	_Tooltip('Indexing Step 1 Of 2');-
+	_Index($Path_D, $S_Array, '*');-
+	_Tooltip('Indexing Step 2 Of 2');-
+EndFunc   ;==>_SingledriveIndex
+Func CmdIndex();-
+	$Traytip = '';-
+	_Tooltip('Removing Old Index');-
+	DirRemove($Index_Dir, 1)
+	DirRemove($Path_Dir, 1)
+	_ReduceMemory(@AutoItPID);-
+	$ComboIndex = StringSplit(IniRead($OpenIndex_Dir & 'Setting.Ini', 'Index', 'Path', $Default_Path), ',');-
+	For $I_Index = 1 To $ComboIndex[0];
+		$Path_D = $ComboIndex[$I_Index];-
+		_SingledriveIndex();-
+	Next;-
+	_FileCreate($Date_Dir);-
+	ToolTip('')
+EndFunc   ;==>CmdIndex
+Func _Index($Spath, ByRef $Sfilestring, $Sfilter = '*');-
+	This Part Is Not Open Source It Took My 10 Day To Do This
+EndFunc   ;==>_Index
+Func _Index1(ByRef $Spathf, ByRef $Sfilestringf, ByRef $Sfilterf);-
+	This Part Is Not Open Source It Took My 10 Day To Do This
+EndFunc   ;==>_Index1
+Func _Tooltip($Tip)
+	ToolTip($Tip, @DesktopWidth - 186, @DesktopHeight - 66, 'OpenIndex Engine', 1, 0);-
+EndFunc   ;==>_Tooltip
+Func _ReduceMemory($i_PID = -1);W0Uter Your Are The Hero This Script Cost 12,828 Kb Of Mem But After That Only 808Kb Cool!!!;-
+	If $i_PID <> -1 Then
+		Local $ai_Handle = DllCall("kernel32.dll", 'int', 'OpenProcess', 'int', 0x1f0fff, 'int', False, 'int', $i_PID)
+		Local $ai_Return = DllCall("psapi.dll", 'int', 'EmptyWorkingSet', 'long', $ai_Handle[0])
+		DllCall('kernel32.dll', 'int', 'CloseHandle', 'int', $ai_Handle[0])
+	Else
+		Local $ai_Return = DllCall("psapi.dll", 'int', 'EmptyWorkingSet', 'long', -1)
+	EndIf
+	Return $ai_Return[0]
+EndFunc   ;==>_ReduceMemory
+Func Newgui()
+	$Main_Gui = GUICreate('OpenIndex Version ' & $Version, 305, 480, 193, 115, 0);-
+	FileInstall('Image\Background.Jpg', 'Background', 1);Remove This Line If Edit-
+	GUICtrlCreatePic('Background', 0, 0, 300, 450);Remove This Line If Edit-
+	GUICtrlSetState(-1, $Gui_Disable);-
+	FileDelete('Background');Remove This Line If Edit-
+	$Search = GUICtrlCreateInput('', 70, 345, 215, 20);-
+	$Results = GUICtrlCreateTreeView(15, 35, 270, 300, BitOR($Tvs_Hasbuttons, $Tvs_Haslines, $Tvs_Linesatroot, $Tvs_Disabledragdrop, $Tvs_Showselalways), $Ws_Ex_Clientedge);-
+	GUICtrlCreateGroup('', -99, -99, 1, 1);-
+	$Option = GUICtrlCreateButton('Option', 70, 405, 81, 20);-
+	$Help = GUICtrlCreateButton('Help', 155, 405, 81, 20);-
+	$Hide_Button = GUICtrlCreateButton('X', 260, 405, 20, 20);-
+	GUICtrlCreateGroup('', -99, -99, 1, 1);-
+	_ReduceMemory(@AutoItPID);-
+EndFunc   ;==>Newgui
+Func Newgui1()
+	$Action_Gui = GUICreate('Action - OpenIndex', 633, 250, 193, 115, -1, -1, $Main_Gui);-
+	GUICtrlCreateLabel('File Name', 8, 8, 51, 17);-
+	GUICtrlCreateLabel('File Path', 8, 32, 45, 17);-
+	GUICtrlCreateLabel('File Size', 8, 56, 43, 17);-
+	GUICtrlCreateLabel('Created Date', 8, 80, 70, 17);-
+	GUICtrlCreateLabel('Modified Date', 8, 104, 67, 17);-
+	GUICtrlCreateLabel('Accessed Date', 8, 128, 77, 17);-
+	GUICtrlCreateLabel('Shortfullpath', 8, 152, 67, 17);-
+	GUICtrlCreateLabel('File Attrib', 8, 176, 47, 17);-
+	$S_Filename_Gui = GUICtrlCreateLabel('', 96, 8, 529, 17);-
+	$S_Path_Gui = GUICtrlCreateLabel('', 96, 32, 529, 17);-
+	$S_Filesize_Gui = GUICtrlCreateLabel('', 96, 56, 529, 17);-
+	$Created_Gui = GUICtrlCreateLabel('', 96, 80, 529, 17);-
+	$Modified_Gui = GUICtrlCreateLabel('', 96, 104, 529, 17);-
+	$Accessed_Gui = GUICtrlCreateLabel('', 96, 128, 529, 17);-
+	$Sfp_Gui = GUICtrlCreateLabel('', 96, 152, 529, 17);-
+	$Attrib_Gui = GUICtrlCreateLabel('', 96, 176, 529, 17);-
+	$Open = GUICtrlCreateButton('Open/Run', 8, 200, 65, 25, 0);-
+	$Delete = GUICtrlCreateButton('Delete', 80, 200, 65, 25, 0);-
+	$Cancel = GUICtrlCreateButton('Cancel', 152, 200, 65, 25, 0);-
+	_ReduceMemory(@AutoItPID);-
+EndFunc   ;==>Newgui1
+Func Newgui2()
+	$Option_Gui = GUICreate('Control Center - OpenIndex', 400, 131, 193, 115, -1, -1, $Main_Gui)
+	GUICtrlCreateLabel('Index Date', 8, 8, 56, 17)
+	If FileExists($Date_Dir) Then;-
+		$Other_Timestamp_A = FileGetTime($Date_Dir, 0);-
+		$Other_Timestamp = '';-
+		$Other_Timestamp = $Other_Timestamp_A[1] & '/' & $Other_Timestamp_A[2] & '/' & $Other_Timestamp_A[0] & ' At ' & $Other_Timestamp_A[3] & ':' & $Other_Timestamp_A[4] & ':' & $Other_Timestamp_A[5];-
+		$Other_Listtodisplay = $Other_Timestamp;-
+	Else;-
+		$Other_Listtodisplay = 'No Index';-
+	EndIf;-
+	GUICtrlCreateLabel($Other_Listtodisplay, 80, 8, 190, 17);-
+	GUICtrlCreateLabel('AutoIndex', 8, 32, 51, 17);-
+	GUICtrlSetTip(-1, 'YYYYMMDDHHMMSS');-
+	GUICtrlCreateLabel('Index Path', 8, 56, 55, 17);-
+	$Option_Input1 = GUICtrlCreateInput(IniRead($OpenIndex_Dir & 'Setting.Ini', 'Index', 'Time', '00000003000000'), 80, 32, 90, 21);-
+	GUICtrlSetTip(-1, 'YYYYMMDDHHMMSS');-
+	$Uninstall = GUICtrlCreateButton('Uninstall', 180, 32, 81, 20);-
+	If FileExists(@StartupDir & '\Openindex.Lnk') Then
+		$Startup = GUICtrlCreateButton('Del Autorun', 265, 32, 81, 20);-
+		GUICtrlSetTip(-1, 'Remove OpenIndex On Startup');-
+	Else
+		$Startup = GUICtrlCreateButton('Add Autorun', 265, 32, 81, 20);-
+		GUICtrlSetTip(-1, 'Start OpenIndex On Startup');-
+	EndIf
+	
+	$Option_Input2 = GUICtrlCreateEdit(StringReplace(IniRead($OpenIndex_Dir & 'Setting.Ini', 'Index', 'Path', $Default_Path), ',', @CRLF), 80, 56, 300, 71, BitOR($ES_WANTRETURN, $WS_VSCROLL, $WS_HSCROLL, $ES_AUTOVSCROLL, $ES_AUTOHSCROLL, $ES_MULTILINE));-
+	_ReduceMemory(@AutoItPID);-
+EndFunc   ;==>Newgui2
+Func SH()
+	If BitAND(WinGetState($Main_Gui), 2) Then
+		GUISetState(@SW_HIDE, $Main_Gui)
+	Else
+		GUISetState(@SW_SHOW, $Main_Gui)
+	EndIf
+EndFunc   ;==>SH
+Func _Clear(ByRef $Clear)
+	$Clear = ''
+	EndFunc
+Func Error();-
+	MsgBox(4112, 'Error!', 'An Error Has Occured And The Search/Indexing Engine Must Close.');-
+	Exit;-
+EndFunc   ;==>Error
+Func Uninstall()
+	If MsgBox(4, 'Uninstall', 'Are Your Sure You Want To Uninstall') = 6 Then
+		FileCopy(@ScriptFullPath, @TempDir & '\Uninstall-OI.exe', 9)
+		Run(@TempDir & '\Uninstall-OI.exe')
+		Exit
+	EndIf
+EndFunc   ;==>Uninstall
+Func Delete()
+	_Tooltip('Waiting For Command')
+	While _Singleton('OpenIndex', 1) = 0
+	WEnd
+	_Tooltip('Accept Uninstall')
+	Sleep(500)
+	_Tooltip('Remove Dir Index')
+	DirRemove(@AppDataDir & '\OpenIndex\Index\', 1)
+	_Tooltip('Remove Dir Path')
+	DirRemove(@AppDataDir & '\OpenIndex\Path\', 1)
+	_Tooltip('Remove File Setting.Ini')
+	FileDelete(@AppDataDir & '\OpenIndex\Setting.Ini')
+	_Tooltip('Remove File OpenIndex.Lnk')
+	FileDelete(@DesktopDir & '\OpenIndex.Lnk')
+	_Tooltip('Remove File OpenIndex.Lnk')
+	FileDelete(@StartupDir & '\OpenIndex.Lnk')
+	_Tooltip('OpenIndex.Exe')
+	FileDelete(@AppDataDir & '\OpenIndex\OpenIndex.Exe')
+	_Tooltip('Thank For Using OpenIndex Bye')
+	MsgBox(4096, 'Uninstall', 'Uninstall has Done', 5)
+	ToolTip('')
+	Exit
+EndFunc   ;==>Delete
+;Udf That I Make It Faster-
+Func _PathSplit($Szpath, ByRef $Szdrive, ByRef $Szdir, ByRef $Szfname, ByRef $Szext)
+
+	Local $Drive = ""
+	Local $Dir = ""
+	Local $Fname = ""
+	Local $Ext = ""
+	Local $Pos
+
+	If StringMid($Szpath, 2, 1) = ":" Then
+		$Drive = StringLeft($Szpath, 2)
+		$Szpath = StringTrimLeft($Szpath, 2)
+	ElseIf StringLeft($Szpath, 2) = "\\" Then
+		$Szpath = StringTrimLeft($Szpath, 2)
+		$Pos = StringInStr($Szpath, "\")
+		If $Pos = 0 Then $Pos = StringInStr($Szpath, "/")
+		If $Pos = 0 Then
+			$Drive = "\\" & $Szpath
+			$Szpath = ""
+		Else
+			$Drive = "\\" & StringLeft($Szpath, $Pos - 1)
+			$Szpath = StringTrimLeft($Szpath, $Pos - 1)
+		EndIf
+	EndIf
+
+	Local $Nposforward = StringInStr($Szpath, "/", 0, -1)
+	Local $Nposbackward = StringInStr($Szpath, "\", 0, -1)
+	If $Nposforward >= $Nposbackward Then
+		$Pos = $Nposforward
+	Else
+		$Pos = $Nposbackward
+	EndIf
+	$Dir = StringLeft($Szpath, $Pos)
+	$Fname = StringRight($Szpath, StringLen($Szpath) - $Pos)
+
+	If StringLen($Dir) = 0 Then $Fname = $Szpath
+
+	$Pos = StringInStr($Fname, ".", 0, -1)
+	If $Pos Then
+		$Ext = StringRight($Fname, StringLen($Fname) - ($Pos - 1))
+		$Fname = StringLeft($Fname, $Pos - 1)
+	EndIf
+
+	$Szdrive = $Drive
+	$Szdir = $Dir
+	$Szfname = $Fname
+	$Szext = $Ext
+EndFunc   ;==>_PathSplit
+Func _FileCreate($Sfilepath)
+	
+	Local $Hopenfile
+	Local $Hwritefile
+
+	$Hopenfile = FileOpen($Sfilepath, 2)
+
+	If $Hopenfile = -1 Then
+		SetError(1)
+		Return 0
+	EndIf
+
+	$Hwritefile = FileWrite($Hopenfile, "")
+
+	If $Hwritefile = -1 Then
+		SetError(2)
+		Return 0
+	EndIf
+
+	FileClose($Hopenfile)
+	Return 1
+EndFunc   ;==>_FileCreate
