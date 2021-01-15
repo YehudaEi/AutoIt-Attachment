@@ -1,0 +1,26 @@
+#include <GUIConstants.au3>
+$Pass = "test"
+$Form1 = GUICreate("Password Dialog", 252, 100, 0, 0)
+$MaskEdit1 = GUICtrlCreateInput("password", 8, 32, 233, 21 , $ES_PASSWORD,$ES_AUTOHSCROLL)
+$Button1 = GUICtrlCreateButton("&OK", 86, 64, 75, 25, 0)
+$Button2 = GUICtrlCreateButton("&Cancel", 167, 64, 75, 25, 0)
+$Label1 = GUICtrlCreateLabel("Enter password", 8, 12, 77, 17)
+GUISetState(@SW_SHOW)
+
+While 1
+	$nMsg = GUIGetMsg()
+	Switch $nMsg
+		Case $GUI_EVENT_CLOSE
+			Exit
+		Case $Button1
+			If $Pass = GUICtrlRead($MaskEdit1) Then 
+				ExitLoop
+			Else
+				MsgBox(0 , "" , "Wrong password")
+				Exit
+				EndIf
+		Case $Button2
+			Exit
+			EndSwitch
+WEnd
+
