@@ -1,0 +1,22 @@
+* Summit200-24:8 # show snmp community
+
+Community Index  : private
+Community Name   : private
+Security Name    : v1v2c_rw
+Context EngineID : 80:00:07:7c:03:00:04:96:27:18:0b 'H'
+Context Name     :
+Transport Tag    : 
+Storage Type     : Permanent
+Row Status       : Active
+
+Community Index  : public
+Community Name   : public
+Security Name    : v1v2c_ro
+Context EngineID : 80:00:07:7c:03:00:04:96:27:18:0b 'H'
+Context Name     :
+Transport Tag    : 
+Storage Type     : Permanent
+Row Status       : Active
+
+Total num. of entries in snmpCommunityTable : 2
+* Summit200-24:9 # 
