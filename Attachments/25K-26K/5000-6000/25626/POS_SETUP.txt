@@ -1,0 +1,58 @@
+#include <GuiConstantsEx.au3>
+#include <WindowsConstants.au3>
+#include <GuiIPAddress.au3>
+
+;This adds till name, till number and till IP.
+;Till name = POS & till number
+;IP = xxx.xxx.xxx.10 + till number
+
+
+
+
+
+
+
+
+
+Example()
+Func Example()
+
+	GUICreate("Till Setup", 400, 300)
+	GUICtrlCreateLabel("Please note IP = Till number + 10", 100, 50)
+	$Till = GUICtrlCreateInput("", 200, 150, 100)
+	GUICtrlCreateLabel("Enter Till Number", 100, 152)
+	$IP = GUICtrlCreateInput("", 200, 204, 100)
+	GUICtrlCreateLabel("Enter IP Address", 100, 206)
+	$Button = GUICtrlCreateButton("OK", 200, 250, 100)
+
+	GUISetState()
+	$POS = "POS"
+
+	While 1
+		$msg = GUIGetMsg()
+		Select
+			Case $msg = $GUI_EVENT_CLOSE
+				ExitLoop
+
+				GUIDelete()
+
+			Case $msg = $Button
+				;Run("notepad.exe")
+				;WinWaitActive("Untitled - Notepad")
+				$Till1 = $POS & GUICtrlRead($Till)
+				$IP1 = GUICtrlRead($IP)
+				RegWrite("hkey_local_machine\system\Controlset001\control\computername\computername", "computername", "REG_SZ", $Till1)
+				RegWrite("hkey_local_machine\system\Controlset001\Services\tcpip\parameters", "NV Hostname", "REG_SZ", $Till1)
+				RegWrite("hkey_local_machine\system\CurrentControlset\control\computername\Computername", "computername", "REG_SZ", $Till1)
+				RegWrite("hkey_local_machine\system\Controlset001\Services\tcpip\parameters", "nv hostname", "REG_SZ", $Till1)
+				RegWrite("hkey_local_machine\system\Controlset001\Services\lanmanserver\parameters", "srvcomment", "REG_SZ", $Till1)
+				RegWrite("hkey_local_machine\system\Controlset\Services\lanmanserver\parameters", "srvcomment ", "REG_SZ", $Till1)
+				;_GUICtrlIpAddress_Set ($IP1)
+				
+				
+				;Send($Till1 & @CRLF)
+				;Send($IP1)
+				GUIDelete()
+		EndSelect
+	WEnd
+EndFunc   ;==>Example
