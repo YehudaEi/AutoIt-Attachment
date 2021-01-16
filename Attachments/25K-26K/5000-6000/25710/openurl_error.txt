@@ -1,0 +1,47 @@
+My code:
+	_FFTabSetSelected()
+	_FFOpenUrl("http://facebook.com/")
+	_FFSetValueById("email", $logins[$least][0])
+	_FFSetValueById("pass", $logins[$least][1])
+	_FFFormSubmit("menubar_login", "id")
+	_FFLoadWait()
+	_FFClickLink("http://apps.facebook.com/mobwars/")
+
+
+Console output:
+>"C:\Program Files\AutoIt3\SciTE\AutoIt3Wrapper\AutoIt3Wrapper.exe" /run /prod /ErrorStdOut /in "C:\Users\Bob\Documents\autoit\fb.au3" /autoit3dir "C:\Program Files\AutoIt3" /UserParams    
++>09:47:26 Starting AutoIt3Wrapper v.1.10.1.14    Environment(Language:0409  Keyboard:00000409  OS:WIN_VISTA/Service Pack 1  CPU:X86  ANSI)
+>Running AU3Check (1.54.14.0)  from:C:\Program Files\AutoIt3
++>09:47:27 AU3Check ended.rc:0
+>Running:(3.3.0.0):C:\Program Files\AutoIt3\autoit3.exe "C:\Users\Bob\Documents\autoit\fb.au3"  
+_FFConnect: OS:	WIN_VISTA WIN32_NT 6001 Service Pack 1
+_FFConnect: AutoIt:	3.3.0.0
+_FFConnect: FF.au3:	0.5.3.0b-9
+_FFConnect: IP:	127.0.0.1
+_FFConnect: Port:	4243
+_FFConnect: Delay: 	2ms
+_FFConnect: Socket: 	664
+_FFConnect: Browser:	Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.9.0.8) Gecko/2009040117 Firefox/3.0.8 CometBird/3.0.8
+_FFSendJavaScripts: Sending functions to FireFox ........... done
+__FFSend: try{gBrowser.tabContainer.selectedIndex = 0}catch(e){'_FFCmd_Err';};
+__FFRecv: _FFCmd_Err
+_FFOpenURL: http://facebook.com/
+__FFSend: try{window.content.frames["top"].document.location.href="http://facebook.com/";}catch(e){'_FFCmd_Err';};
+__FFRecv: _FFCmd_Err
+__FFSend: try{window.content.frames["top"].document.getElementById('email').value='**************';}catch(e){'_FFCmd_Err';};
+_FFOpenURL ==> No match: http://facebook.com/
+__FFRecv: _FFCmd_Err
+__FFSend: try{window.content.frames["top"].document.getElementById('pass').value='**************';}catch(e){'_FFCmd_Err';};
+_FFSetValueById ==> No match: $sID: email
+__FFRecv: _FFCmd_Err
+__FFSend: try{window.content.frames["top"].document.getElementById('menubar_login').elements.length;}catch(e){'_FFCmd_Err';};
+_FFSetValueById ==> No match: $sID: pass
+__FFRecv: _FFCmd_Err
+_FFLoadWait: _FFFormSubmit ==> No match: No Elements found in form: getElementById('menubar_login')
+.............................................................................
+
+_FFLoadWait ==> Timeout: Can not check site status.
+__FFSend: try{FFau3.SearchLink("href","http://apps.facebook.com/mobwars/","top");}catch(e){'_FFCmd_Err';};
+__FFRecv: -3
+_FFDisConnect: disconnected
+_FFLinkClick ==> No match: $vSearch: http://apps.facebook.com/mobwars/
