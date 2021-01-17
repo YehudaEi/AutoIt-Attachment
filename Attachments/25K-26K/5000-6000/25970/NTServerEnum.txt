@@ -1,0 +1,84 @@
+#pragma option dll
+#pragma option lst
+#pragma option 3
+#pragma option w
+
+#define UNICODE
+#include <windows.h>
+
+#define NERR_Success 0
+
+extern WINAPI "Netapi32.dll"{
+	dword NetServerEnum(
+			dword   servername,
+			dword 	level,
+			byte 	*bufptr,
+			dword 	prefmaxlen,
+			dword	*entriesread,
+			dword	*totalentries,
+			dword   servertype,
+			char	*domain,
+			dword	*resumehandle);
+
+	dword NetApiBufferFree(LPVOID pBuffer);
+}
+
+
+_export WCHAR NTServerEnum(dword dwType)
+dword *pBuf = NULL;
+dword *pTmpBuf;
+dword dwLevel = 100;
+dword dwPrefMaxLen = 0x400;
+dword dwEntriesRead = 0;
+dword dwTotalEntries = 0;
+dword dwResumeHandle = 0;
+dword dwServerType = dwType;
+dword nStatus;
+dword i;
+char* pszServerName = NULL;
+char* pszDomainName = NULL;
+WCHAR pszRet[0x400] = 0, pszTmp[256];
+{
+	nStatus = NetServerEnum(pszServerName, 
+				dwLevel, 
+				#pBuf, 
+				dwPrefMaxLen, 
+				#dwEntriesRead,
+				#dwTotalEntries,
+				dwServerType,
+				pszDomainName,
+				#dwResumeHandle);
+
+	pTmpBuf = pBuf;
+						
+	if((nStatus == NERR_Success) || (nStatus == ERROR_MORE_DATA))
+	{
+		if(pTmpBuf != NULL)
+		{
+			for (i = 0; i < dwEntriesRead; i++)
+			{
+				IF(pTmpBuf == NULL)
+				{
+					lstrcpy(#pszRet, L"Unknown error");
+					break;
+				}
+				EBX = pTmpBuf; EBX = DSDWORD[EBX+4];
+				
+				wsprintf(#pszTmp, L"%s|", EBX);
+				lstrcat(#pszRet, #pszTmp);
+				
+				pTmpBuf += 8;
+			}
+			EBX = #pszRet; ECX = lstrlen(EBX); $dec ECX
+			DSDWORD[EBX+ECX*2] = 0;
+		}
+	}
+	else
+		wsprintf(#pszRet, L"Error: %d\n", nStatus);
+		
+	
+	IF(pBuf != NULL)
+		NetApiBufferFree(pBuf);
+
+	EAX = #pszRet;
+}
