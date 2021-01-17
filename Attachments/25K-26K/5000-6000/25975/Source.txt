@@ -1,0 +1,988 @@
+
+<!-------------------------------------------------------------------->
+<!-- Copyright © 2001, 2002, 2003 by Cisco Systems, Inc. All rights reserved. -->
+<!-------------------------------------------------------------------->
+<!-- /pages/accountLogon.jsp
+<!-------------------------------------------------------------------->
+<!-- This page authenticates a SESMSession user/account.
+<!-- The user is asked for their username and password.
+<!-------------------------------------------------------------------->
+<!-- Author: Ken Jarrad/Abhijit
+<!-------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html><!-- #BeginTemplate "/Templates/bannerOnlyTemplate.dwt" -->
+<head>
+<script language="JavaScript"> 
+<!-------------------------------------------------------------------->
+<!-- /decorators/LoginCookie.js
+<!-------------------------------------------------------------------->
+<!-- Author: Shilna Justin (TCS)
+<!-------------------------------------------------------------------->
+
+
+
+<!--
+
+function saveCookie()
+{
+
+var status=0;
+for( i=0;i<document.authenticateForm.save.length; i++)
+{
+if(document.authenticateForm.save[i].checked)
+{
+
+status = document.authenticateForm.save[i].value;
+}
+}
+
+
+if( (status == 0) || status == 1)
+{
+
+setCookies(100,status);
+}
+else if ( status == 2)
+{
+deleteCookies("myCookie");
+
+}
+var newWindow = window.open('','','width=0,height=0,scrollbars=no, screenX>5000');
+
+if(!newWindow){
+alert("Please enable Pop-ups for this site before Logging in.") ;
+return false;
+}else
+newWindow.close();
+
+}
+
+function deleteCookies(name)
+{
+if (getCookie(name)) 
+{
+document.cookie = name + "=" +"; expires=Thu, 01-Jan-70 00:00:01 GMT";
+}
+document.authenticateForm.username.value = document.authenticateForm.user.value+"@"+document.authenticateForm.ServerList.value; 
+}
+
+function setCookies(expiredays,selectValue)
+{
+var ExpireDate = new Date();
+var values = null;
+ExpireDate.setTime(ExpireDate.getTime() + (expiredays * 24*3600*1000));
+if(selectValue== 0)
+{
+values = document.authenticateForm.user.value + "|" + document.authenticateForm.ServerList.value;
+
+}
+else if( selectValue == 1)
+{
+values = document.authenticateForm.user.value +"|" + document.authenticateForm.ServerList.value + "|" + document.authenticateForm.password.value;
+
+}
+document.cookie="myCookie="+escape(values) + ((expiredays == null)?"" : ";expires=" + ExpireDate.toGMTString()); 
+
+//Add serverList
+
+
+
+if(document.authenticateForm.user.value.indexOf("@") == -1 )
+{
+document.authenticateForm.username.value = document.authenticateForm.user.value+"@"+document.authenticateForm.ServerList.value; 
+}
+else
+{
+document.authenticateForm.username.value = document.authenticateForm.user.value; 
+} 
+}
+
+function getCookie(name)
+{
+if(document.cookie.length > 0)
+{
+begin = document.cookie.indexOf(name+"=");
+if(begin != -1)
+{
+begin += name.length+1;
+end = document.cookie.indexOf(";",begin);
+if(end == -1)
+{
+end = document.cookie.length;
+} 
+return unescape(document.cookie.substring(begin,end));
+}
+}
+return null;
+}
+
+function loadCookies()
+{
+var setUser = getCookie("myCookie");
+if(setUser == null)
+document.authenticateForm.save[2].checked="checked";
+
+
+if(setUser)
+{ 
+splitValue = setUser.indexOf("|");
+
+if(splitValue == -1)
+{
+document.authenticateForm.user.value=setUser;
+document.authenticateForm.save[0].checked="checked";
+}
+else
+{
+var username = setUser.substring(0,splitValue);
+document.authenticateForm.user.value = username;
+
+
+temp = setUser.substring(splitValue+1);
+tmpSplitValue = temp.indexOf("|");
+
+if(tmpSplitValue == -1)
+{
+document.authenticateForm.ServerList.value = temp;
+document.authenticateForm.save[0].checked="checked";
+
+}
+else
+{
+document.authenticateForm.ServerList.value = temp.substring(0,tmpSplitValue);
+document.authenticateForm.password.value = temp.substring(tmpSplitValue+1);
+document.authenticateForm.save[1].checked="checked";
+}
+}
+}
+}
+
+
+//-->
+
+
+</script>
+<script language="JavaScript">
+<!--
+/*
+*/
+
+var message="You Can't do the Right click operation on this page" 
+
+function click(e) {
+if (document.all) {
+if (event.button == 2) {
+alert(message);
+return false;
+}
+}
+if (document.layers) {
+if (e.which == 3) {
+alert(message);
+return false;
+}
+}
+}
+if (document.layers) {
+document.captureEvents(Event.MOUSEDOWN);
+}
+document.onmousedown=click;
+// --> 
+
+</script>
+<script LANGUAGE="JavaScript">
+<!--
+
+
+
+//-->
+</SCRIPT>
+
+<!-- #BeginEditable "head" --> 
+<title>TI BB WEB DIALER</title>
+<!-- #EndEditable --> 
+<link rel="stylesheet" href="/images_new/style.css" type="text/css">
+
+</head>
+
+<body onload= "loadCookies();" bgcolor="#666666" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" >
+
+
+<table width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+<!-- Banner -->
+<!--<tr> 
+<td height="97" bgcolor="25459C" valign="top" align="left"><a href="                                    " target="_blank"><img src="/images_new/logo.gif" width="136" height="93" border="0"></a></td>
+<td height="97" bgcolor="25459C" valign="top" align="right"><a href="                   " target="_blank"><img src="/images_new/vsnl1.gif" width="200" height="50" border="0"></a></td>
+</tr>-->
+<!-- End Banner -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0076)                                                                             -->
+<!-------------------------------------------------------------------->
+<!-- /pages/accountLogonBody.jsp -->
+<!-------------------------------------------------------------------->
+<!-- This page authenticates a SESMSession user/account. -->
+<!-- The user is asked for their username and password. test -->
+<!-------------------------------------------------------------------->
+<!-- Author: Bhupendra Singh & Pradeep Angari -->
+<!-------------------------------------------------------------------->
+<HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<HEAD>
+<TITLE>Tata Indicom Broadband</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1"><LINK
+href="/styles/sun_webauth.css" type=text/css
+rel=stylesheet>
+
+<script language="JavaScript">
+// this function is called when the user clicks on logon button ,it checks the values entered by the user and it will perform savecookie duo to the user option in this function 
+
+function check()
+{
+
+if( document.authenticateForm.user.value=='')
+{
+alert("Please enter the user name")
+document.authenticateForm.user.focus();
+return false
+}
+
+
+else if(document.authenticateForm.ServerList.value=='select')
+{
+alert("Please select the domain")
+
+return false
+}
+
+else if(document.authenticateForm.password.value=='' )
+{
+alert("Please enter the password")
+document.authenticateForm.password.focus();
+return false
+}
+else {
+//calling the function saveCookie--------
+saveCookie()
+document.getElementById("but").disabled=true;
+document.authenticateForm.submit();
+
+
+}
+
+
+// to save or delete the cookies ------------------------------
+function saveCookie()
+{
+
+var status=0;
+for( i=0;i<document.authenticateForm.save.length; i++)
+{
+if(document.authenticateForm.save[i].checked)
+{
+
+status = document.authenticateForm.save[i].value;
+
+}
+}
+if( (status == 0) || status == 1)
+{
+
+setCookies(100,status);
+
+}
+else if (status == 2)
+{
+//calling the function deleteCookies------------------
+deleteCookies("myCookie");
+
+
+}
+
+}
+// to delete the cookies -----------------------
+function deleteCookies(name)
+{
+
+// detectPopupBlocker();
+if (getCookie(name))
+{
+document.cookie = name + "=" +"; expires=Thu, 01-Jan-70 00:00:01 GMT";
+}
+document.authenticateForm.username.value = document.authenticateForm.user.value+"@"+document.authenticateForm.ServerList.value;
+
+
+}
+//save the cookies and it's expire date ------------------------
+function setCookies(expiredays,selectValue)
+{
+
+var ExpireDate = new Date();
+var values = null;
+ExpireDate.setTime(ExpireDate.getTime() + (expiredays * 24*3600*1000));
+if(selectValue== 0)
+{
+values = document.authenticateForm.user.value + "|" + document.authenticateForm.ServerList.value;
+//alert(values)
+
+}
+else if(selectValue == 1)
+{
+values =document.authenticateForm.user.value +"|" + document.authenticateForm.ServerList.value + "|" + document.authenticateForm.password.value;
+
+}
+document.cookie="myCookie="+escape(values) + ((expiredays == null)?"" : ";expires=" + ExpireDate.toGMTString());
+
+
+if(document.authenticateForm.user.value.indexOf("@") == -1 )
+{
+document.authenticateForm.username.value = document.authenticateForm.user.value+"@"+document.authenticateForm.ServerList.value;
+
+}
+else
+{
+document.authenticateForm.username.value = document.authenticateForm.user.value;
+
+}
+}
+// to get the saved cookies --------------------------
+function getCookie(name)
+{
+if(document.cookie.length > 0)
+{
+begin = document.cookie.indexOf(name+"=");
+if(begin != -1)
+{
+begin += name.length+1;
+end = document.cookie.indexOf(";",begin);
+if(end == -1)
+{
+end = document.cookie.length;
+}
+return unescape(document.cookie.substring(begin,end));
+}
+}
+return null;
+}
+// to load the saved cookies into the input fields ----------------
+function loadCookies()
+{
+
+var setUser = getCookie("myCookie");
+
+if(setUser == null)
+document.authenticateForm.save[2].checked="checked";
+
+
+if(setUser)
+{
+splitValue = setUser.indexOf("|");
+
+if(splitValue == -1)
+{
+document.authenticateForm.user.value=setUser;
+
+document.authenticateForm.save[0].checked="checked";
+
+}
+else
+{
+var username = setUser.substring(0,splitValue);
+document.authenticateForm.user.value = username;
+
+
+
+temp = setUser.substring(splitValue+1);
+tmpSplitValue = temp.indexOf("|");
+
+if(tmpSplitValue == -1)
+{
+document.authenticateForm.ServerList.value = temp;
+document.authenticateForm.save[0].checked="checked";
+
+}
+else
+{
+document.authenticateForm.ServerList.value = temp.substring(0,tmpSplitValue);
+document.authenticateForm.password.value = temp.substring(tmpSplitValue+1);
+document.authenticateForm.save[1].checked="checked";
+}
+}
+}
+}
+
+
+
+
+}
+</script>
+
+
+<script language="javascript">
+
+
+function citySection(){
+//var hh=city.selectedIndex;
+var dd=document.contact.city.options[document.contact.city.selectedIndex].value;
+//alert(dd);
+document.contact.number.value=dd;
+
+}
+//state--------
+function stateSection(){
+//alert("pp");
+//var hh=state.selectedIndex;
+var dd=state.options[state.selectedIndex].value;
+if(dd==""){ //
+}
+
+else{
+wino = 'distributors-new.htm#'+ dd,
+myWin = window.open(wino,'mywindow','width=620,height=300,scrollbars=yes') ;
+
+}
+
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+<td colspan="2" height="26" align="center" >
+<!-------------------------------------------------------------------->
+<!-- Copyright © 2002 by Cisco Systems, Inc. All rights reserved.
+<!-------------------------------------------------------------------->
+<!-- /pages/messagesText.jsp
+<!-------------------------------------------------------------------->
+<!-- Display the 'text' of the session messages.
+<!-- The message timestamp is not displayed.
+<!-- Each message is written on a new line with style "Message".
+<!-------------------------------------------------------------------->
+<!-- This page is suffixed 'text' because its output is intended to be
+<!-- included into another page.
+<!-------------------------------------------------------------------->
+<!-- Author: Ken Jarrad
+<!-------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&nbsp;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+</tr>
+
+<META content="MSHTML 6.00.2900.3086" name=GENERATOR>
+
+</head>
+
+
+
+
+
+
+
+
+<BODY leftMargin=0 background="/images_web/page_bg.gif"
+topMargin=0
+onload="MM_openBrWindow('myacc.htm','','scrollbars=yes,resizable=yes,width=250,height=250')"
+marginheight="0" marginwidth="0">
+
+<TABLE cellSpacing=0 cellPadding=0 width=779 align=center bgColor=#ffffff
+border=0>
+<TBODY>
+<TR>
+<TD vAlign=top width=220><A
+href="                                  "
+target=_blank><IMG height=196
+src="/images_web/tataindicombroadband_logo.jpg"
+width=220 border=0></A><BR>
+<TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+<TBODY>
+<TR>
+<TD vAlign=top width=43 rowSpan=2><A
+href="                                                                   "
+target=_blank><IMG height=45
+src="/images_web/renew_icon.jpg" width=43
+border=0></A></TD>
+<TD><A
+href="                                                                   "
+target=_blank><IMG height=13
+src="/images_web/renew.jpg" width=158
+border=0></A></TD></TR>
+<TR>
+<TD class=textbox><A class=textbox
+href="                                                     "
+target=_blank>How to Renew?</A><BR><A class=textbox
+href="                                                                   "
+target=_blank>Renew Now</A></TD></TR></TBODY></TABLE><BR>
+<TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+<TBODY>
+<TR>
+<TD vAlign=top align=middle width=43 rowSpan=2><A
+href="                                                    "
+target=_blank><IMG height=40
+src="/images_web/easypayment_icon.jpg" width=37
+border=0></A></TD>
+<TD><A href="                                                    "
+target=_blank><IMG height=13
+src="/images_web/easypayment.jpg" width=125
+border=0></A></TD></TR>
+<TR>
+<TD class=textbox><A class=textbox
+href="                                                    "
+target=_blank>More than 3000 places <BR>to pay your Tata Indicom
+Broadband bill.</A></TD></TR></TBODY></TABLE><BR></TD>
+
+
+<TD vAlign=top align=middle
+background="/images_web/centre_bg.jpg"><BR><BR><BR><BR><BR><A href="                                                                 "
+target=_blank><IMG
+height=266 src="/images_web/AD.jpg" width=277 border=0></A> </TD>
+
+<TD vAlign=top width=260
+background="/images_web/centre_bg.jpg">
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD vAlign=bottom width=8
+background="/images_web/sign_in_1.jpg"><IMG
+height=1 src="/images_web/sign_in_1.jpg"
+width=8></TD>
+<TD vAlign=top bgColor=#d4e78e>
+<DIV align=center><BR><BR><IMG height=31
+src="/images_web/sign_in_head.jpg"
+width=205></DIV><BR>
+<FORM name="authenticateForm" action="                                                        " method="post">
+
+<TABLE cellSpacing=4 cellPadding=0 width="100%" align=center
+border=0>
+
+<TBODY>
+<TR>
+<TD class=blue_big noWrap>User Name</TD>
+<TD><INPUT class=textbox size=22 name="user"> </TD></TR>
+<TR>
+<input type="hidden" name="username" value="user">
+<TD align=middle colSpan=2 height=1><IMG height=1
+src="/images_web/trans.gif" width=1></TD></TR>
+<TR>
+<TD align=middle><IMG height=20
+src="/images_web/@.jpg" width=20></TD>
+<TD><SELECT id=ServerList name=ServerList class=textbox>
+<option value="select" selected >Please select domain</option>
+<option value="vsnl.net">vsnl.net</option>
+<option value="tcs.vsnl.net">tcs.vsnl.net</option>
+<option value="prepaid.vsnl.net">prepaid.vsnl.net</option>
+<option value="postpaid.vsnl.net">postpaid.vsnl.net</option>
+<option value="tvh.vsnl.net">tvh.vsnl.net</option>
+<option value="ss.vsnl.net">ss.vsnl.net</option>
+<option value="vsnl.co.in">vsnl.co.in</option>
+<option value="ad1.vsnl.net.in">ad1.vsnl.net.in</option>
+<option value="postpaid.eth.net">postpaid.eth.net</option>
+<option value="bgl.vsnl.net.in">bgl.vsnl.net.in</option>
+<option value="blr.vsnl.net.in">blr.vsnl.net.in</option>
+<option value="bom1.vsnl.net.in">bom1.vsnl.net.in</option>
+<option value="bom2.vsnl.net.in">bom2.vsnl.net.in</option>
+<option value="bom3.vsnl.net.in">bom3.vsnl.net.in</option>
+<option value="bom4.vsnl.net.in">bom4.vsnl.net.in</option>
+<option value="bom5.vsnl.net.in">bom5.vsnl.net.in</option>
+<option value="bom6.vsnl.net.in">bom6.vsnl.net.in</option>
+<option value="bom7.vsnl.net.in">bom7.vsnl.net.in</option>
+<option value="bom8.vsnl.net.in">bom8.vsnl.net.in</option>
+<option value="bom9.vsnl.net.in">bom9.vsnl.net.in</option>
+<option value="cal.vsnl.net.in">cal.vsnl.net.in</option>
+<option value="cal2.vsnl.net.in">cal2.vsnl.net.in</option>
+<option value="cal3.vsnl.net.in">cal3.vsnl.net.in</option>
+<option value="del1.vsnl.net.in">del1.vsnl.net.in</option>
+<option value="del2.vsnl.net.in">del2.vsnl.net.in</option>
+<option value="del3.vsnl.net.in">del3.vsnl.net.in</option>
+<option value="del5.vsnl.net.in">del5.vsnl.net.in</option>
+<option value="del6.vsnl.net.in">del6.vsnl.net.in</option>
+<option value="eth.net">eth.net</option>
+<option value="giasbg01.vsnl.net.in">giasbg01.vsnl.net.in</option>
+<option value="giasbm01.vsnl.net.in">giasbm01.vsnl.net.in</option>
+<option value="giasbma.vsnl.net.in">giasbma.vsnl.net.in</option>
+<option value="giasbmb.vsnl.net.in">giasbmb.vsnl.net.in</option>
+<option value="giasbmc.vsnl.net.in">giasbmc.vsnl.net.in</option>
+<option value="giascl01.vsnl.net.in">giascl01.vsnl.net.in</option>
+<option value="giasdl01.vsnl.net.in">giasdl01.vsnl.net.in</option>
+<option value="giasdl02.vsnl.net.in">giasdl02.vsnl.net.in</option>
+<option value="giasmd01.vsnl.net.in">giasmd01.vsnl.net.in</option>
+<option value="giaspn01.vsnl.net.in">giaspn01.vsnl.net.in</option>
+<option value="jla.vsnl.net.in">jla.vsnl.net.in</option>
+<option value="mail.vsnl.com">mail.vsnl.com</option>
+<option value="md1.vsnl.net.in">md1.vsnl.net.in</option>
+<option value="md2.vsnl.net.in">md2.vsnl.net.in</option>
+<option value="md3.vsnl.net.in">md3.vsnl.net.in</option>
+<option value="md4.vsnl.net.in">md4.vsnl.net.in</option>
+<option value="md5.vsnl.net.in">md5.vsnl.net.in</option>
+<option value="nda.vsnl.net.in">nda.vsnl.net.in</option>
+<option value="ndb.vsnl.net.in">ndb.vsnl.net.in</option>
+<option value="ndc.vsnl.net.in">ndc.vsnl.net.in</option>
+<option value="nde.vsnl.net.in">nde.vsnl.net.in</option>
+<option value="ndf.vsnl.net.in">ndf.vsnl.net.in</option>
+<option value="pn1.vsnl.net.in">pn1.vsnl.net.in</option>
+<option value="pn2.vsnl.net.in">pn2.vsnl.net.in</option>
+<option value="pn3.vsnl.net.in">pn3.vsnl.net.in</option>
+<option value="vsnl.com">vsnl.com</option>
+<option value="vsnl.in">vsnl.in</option>
+</SELECT> </TD></TR>
+<TR>
+<TD class=blue_big colSpan=2 height=1><IMG height=1
+src="/images_web/trans.gif" width=1></TD></TR>
+<TR>
+<TD class=blue_big>Password</TD>
+<TD><INPUT class=textbox type=password size=22
+name=password></TD></TR>
+<TR>
+<TD class=blue_big colSpan=2 height=1><IMG height=1
+src="/images_web/trans.gif" width=1></TD></TR>
+<TR>
+<TD class=blue_big>&nbsp;</TD>
+<TD align=middle> <INPUT type=image height=22 width=110
+src="/images_web/login.gif" border=0 name="but" id="but" onclick="return check();">
+</TD></TR>
+<TR>
+<TD class=blue_big>&nbsp;</TD>
+<TD><A class=links
+href="                                                               "
+target=_blank><B>Forgot password?</B></A> </TD></TR>
+<TR>
+<TD colSpan=2>
+<TABLE cellSpacing=5 cellPadding=0 width="90%" align=center
+border=0>
+<TBODY>
+<TR>
+<TD><INPUT type=radio name="save" value=0
+></TD>
+<TD class=links align=left>Save User Name</TD></TR>
+<TR>
+<TD><INPUT type=radio value=1 name="save"
+></TD>
+<TD class=links align=left>Save User Name &amp;
+Password</TD></TR>
+<TR>
+<TD vAlign=top><INPUT type="radio" name="save" value=2
+></TD>
+<TD class=links align=left>Do not save either User Name
+or
+Password</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></FORM></TD>
+<TD vAlign=top width=19
+background="/images_web/sign_in_3.jpg"><IMG
+height=97 src="/images_web/sign_in_2.jpg"
+width=19></TD></TR>
+<TR>
+<TD vAlign=top height=17><IMG height=17
+src="/images_web/sign_in_4.jpg" width=8></TD>
+<TD align=middle
+background="/images_web/sign_in_6.jpg"><IMG
+height=17 src="/images_web/sign_in_6.jpg"
+width=1></TD>
+<TD vAlign=top><IMG height=17
+src="/images_web/sign_in_5.jpg"
+width=19></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width=779 align=center bgColor=#ffffff
+border=0>
+<TBODY>
+<TR>
+<TD vAlign=top align=middle colSpan=3>
+<TABLE cellSpacing=0 cellPadding=0 width="90%" align=center border=0>
+<TBODY>
+<TR>
+<TD width=64><IMG height=69
+src="/images_web/ccare_1.jpg" width=64></TD>
+<TD vAlign=bottom>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD background="/images_web/ccare_2.jpg">
+<TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+<TBODY>
+<TR>
+<td align="left" class="links"><b>For Customer support number please select your city</b>
+<table border="0" cellspacing="0" cellpadding="4">
+<form name="contact">
+<tr>
+<td><select name="city" class="textbox" onChange="citySection()">
+<option selected>Select City</option>
+<option value="079 60607070">Ahmedabad</option>
+<option value="0240 6622002">Aurangabad</option>
+<option value="080 60607070">Bangalore</option>
+<option value="0265 6530121">Baroda</option>
+<option value="0755 4250121">Bhopal</option>
+<option value="0495 2727720">Calicut</option>
+<option value="0172 2236108/109 ">Chandigarh</option>
+<option value="044 60607070">Chennai</option>
+<option value="0422 6608282">Coimbatore</option>
+<option value="0484 2421720">Cochin</option>
+<option value="011 60607070">Delhi</option>
+<option value="0484 2421720">Ernakulam</option>
+<option value="011 60607070">Faridabad</option>
+<option value="079 60607070">Gandhinagar</option>
+<option value="011 60607070">Ghaziabad</option>
+<option value="011 60607070">Gurgaon</option>
+<option value="040 60607070">Guntur</option>
+<option value="0832 2783121">Goa</option>
+<option value="040 60607070">Hyderabad</option>
+<option value="0731 4020121">Indore</option>
+<option value="0141 5118765">Jaipur</option>
+<option value="040 60607070">Kanchipuram</option>
+<option value="0497 2709471">Kannur</option>
+<option value="0891 6668282 ">Kakinada</option>
+<option value="0231 2660121">Kolhapur</option>
+<option value="033 60607070">Kolkata</option>
+<option value="0522 6500560/2231707/2201997/">Lucknow</option>
+<option value="0161 5058282">Ludhiana</option>
+<option value="0452 6540121">Madurai</option>
+<option value="022 60607070">Mumbai</option>
+<option value="0821 6611121">Mysore</option>
+<option value="0712 2547825">Nagpur</option>
+<option value="0253 6601001">Nashik</option>
+<option value="011 60607070">Noida</option>
+<option value="040 60607070">Nellore</option>
+<option value="0413 2228765">Pondicherry</option>
+<option value="020 66110121">Pune</option>
+<option value="0891 6668282 ">Rajmundry</option>
+<option value="0427 6540121">Salem</option>
+<option value="0261 6620121">Surat</option>
+<option value="048 2428765">Trichur</option>
+<option value="0431 6540121">Trichy</option>
+<option value="0471 2700295">Thiruvananthapuram</option>
+<option value="040 60607070">Tirupati</option>
+<option value="9544 60607070">Vellore</option>
+<option value="0866 6660121">Vijaywada</option>
+<option value="0891 6668282">Vishakhapatnam</option>
+
+</select>
+</td>
+<td class="textbox"><strong>Number</strong></td>
+<td><input name="number" type="text" class="textbox"></td>
+</tr>
+</form>
+</table></td>
+<TD width=1><IMG height=29
+src="/images_web/divider.jpg"
+width=1></TD>
+<TD class=links noWrap align=left><B>Write to us at:
+</B><BR><A class=links
+href="mailto:customerservice@tatacommunications.com"><B>customerservice@tatacommunications.com</B>
+</A></TD></TR></TBODY></TABLE></TD>
+<TD width=13><IMG height=57
+src="/images_web/ccare_3.jpg"
+width=13></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE><BR></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width=779 align=center bgColor=#ffffff
+border=0>
+<TBODY>
+<TR>
+<TD bgColor=#e8e9ed height=100>
+<TABLE cellSpacing=0 cellPadding=5 width=779 align=center border=0>
+<TBODY>
+<TR>
+<TD class=links align=middle>From movies to gaming, learning to
+business, security solutions to communication, you can access all
+this and much more with <BR>Tata Indicom Broadband.
+<B><A
+href="                                                            "
+target=_blank></B> Click here </A>after you have logged in and
+enjoy all these services.</TD></TR></TBODY></TABLE>
+<MARQUEE onmouseover=this.scrollAmount=0 onmouseout=this.scrollAmount=4
+scrollAmount=4>
+<TABLE height=100 cellSpacing=0 cellPadding=5 width="100%" bgColor=#e8e9ed
+border=0>
+<TBODY>
+<TR class=links align=middle>
+<TD><B><IMG height=69 
+src="/images_web/hosting_tn.jpg"
+width=109><BR>Website Hosting</B></TD>
+<TD><B><IMG height=69 
+src="/images_web/domain_tn.jpg"
+width=109><BR>Domain Registration</B></TD>
+<TD><B><IMG height=69 
+src="/images_web/email_tn.jpg"
+width=109><BR>Business Mail</B></TD>
+<TD><B><IMG height=69 
+src="/images_web/security_tn.jpg"
+width=109><BR>PC Security</B></TD>
+<TD><B><IMG height=69 
+src="/images_web/collabrix_tn.jpg"
+width=109><BR>Collabrix</B></TD>
+<TD><B><IMG height=69 
+src="/images_web/mobsec_tn.jpg"
+width=109><BR>Mobile Security</B></TD>
+<TD><B><IMG height=69 
+src="/images_web/web2sms_tn.jpg"
+width=109><BR>Web2SMS</B></TD>
+<TD><B><IMG title=" Watch over 160 full-length full screen movies"
+height=69 src="/images_web/ad_movie.jpg"
+width=109><BR>Movies</B></TD>
+<TD><B><IMG height=69
+src="/images_web/ad_music.jpg"
+width=109><BR>Music</B></TD>
+<TD><B><IMG height=69
+src="/images_web/ad_games.jpg"
+width=109><BR>Games</B></TD>
+<TD><B><IMG height=69
+src="/images_web/ad_cartoons.jpg"
+width=109><BR>Cartoons </B></TD>
+<TD><B><IMG height=69
+src="/images_web/ad_britt.jpg"
+width=109><BR>Britannica</B></TD>
+<TD><B><IMG height=69
+src="/images_web/ad_onlinetest.jpg"
+width=109><BR>Online Tests</B></TD>
+<TD><B><IMG height=69
+src="/images_web/ad_schoolrev.jpg"
+width=109><BR>School Revision</B></TD>
+<TD><B><IMG height=69
+src="/images_web/ad_fashion.jpg"
+width=109><BR>Fashion</B></TD>
+<TD><B><IMG height=69
+src="/images_web/ad_cookery.jpg"
+width=109><BR>Cookery</B></TD>
+<TD><B><IMG height=69
+src="/images_web/ad_trend.jpg" width=109><BR>Anti
+Virus</B></TD>
+<TD><B><IMG height=69 src="/images_web/ad_buss.jpg"
+width=109><BR>Business Services</B></TD>
+<TD><B><IMG height=69 src="/images_web/ad_mail.jpg"
+width=109><BR>Mail services </B></TD>
+<TD><B><IMG height=69 src="/images_web/don.jpg"
+width=109><BR>Movies</B></TD>
+<TD><B><IMG height=69 src="/images_web/e2g.jpg"
+width=109><BR>English to go</B></TD>
+<TD><B><IMG height=69 src="/images_web/internet_monitoring.jpg"
+width=109><BR>Internet Monitering</B></TD>
+<TD><B><IMG height=69 src="/images_web/NIIT.jpg"
+width=109><BR>Live Classes</B></TD>
+<TD><B><IMG height=69 src="/images_web/personality.jpg"
+width=109><BR>IQ Tests</B></TD>
+<TD><B><IMG height=69 src="/images_web/picsq.jpg"
+width=109><BR>Print Photo</B></TD>
+<TD><B><IMG height=69 src="/images_web/radio.jpg"
+width=109><BR>Online radio</B></TD>
+<TD><B><IMG height=69 src="/images_web/skillsoft.jpg"
+width=109><BR>Skill Soft</B></TD>
+<TD><B><IMG height=69 src="/images_web/spyware.jpg"
+width=109><BR>Anti Spyware</B></TD>
+<TD><B><IMG height=69 src="/images_web/webacc.jpg"
+width=109><BR>Web Accelerator</B></TD></TR></TBODY></TABLE></MARQUEE></TD></TR>
+<TR>
+<TD align=right><A
+href="                                 "
+target=_blank><IMG height=57 src="/images_web/vsnl.jpg"
+width=133 border=0></TD></A></TR></TBODY>
+</TABLE>
+</BODY>
+</HTML>
+
+
+
+<tr bgcolor="25459C"> 
+<td colspan="2" height="40"><h6></h6>&nbsp;</td>
+</tr>
+</table>
+</body>
+</html> 
+
