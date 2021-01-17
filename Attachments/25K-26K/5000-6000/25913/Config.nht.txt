@@ -1,0 +1,19 @@
+;########################################## These script will declare some variables ##########################################
+
+Global $alertTitle="Thông báo";Declare the title of MsgBox()
+Global $dataFileName="data.nht";Declare the file name to save when check version
+Global $projectVersion="1.0";Declare the version of project in case of not set
+Global $filePrefix="SMP";Declare the file name before the dot
+Global $fileExtension="exe";Declare the extension of file
+Global $fileName=$filePrefix&"."&$fileExtension;Declare the File name
+Global $percentPerAction=Number(100/5);Declare the percentage that is up every action
+Global $currentProgress=0;Declare the progress of doing nothing
+Global $linkCheckVersion="                                        ";Declare the link to check new version value;
+Global $linkCheckFileUrl="                                                   ";Declare the link that used to download new project
+Global $linkCheckNewFeatures="                                            ";Declare the link that used to show new update-features
+Global $speedOfUpdate=1;Declare the speed (ms) of each up progress
+Global $percentPerUp=0.5;Declare the percent to progress each time
+Global Const $Flag_UTF8=4;
+Global Const $Flag_ANSI=1;
+
+;########################################## End declaring #####################################################################
