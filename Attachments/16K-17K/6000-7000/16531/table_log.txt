@@ -1,0 +1,687 @@
+>"C:\Program Files\AutoIt3\SciTE\AutoIt3Wrapper\AutoIt3Wrapper.exe" /run /prod /ErrorStdOut /in "P:\Tools\AutoIt3\Old Scripts\browser.au3" /autoit3dir "C:\Program Files\AutoIt3" /UserParams    
++>16:05:29 Starting AutoIt3Wrapper v.1.9.2
+>Running AU3Check (1.54.7.0)  from:C:\Program Files\AutoIt3
++>16:05:30 AU3Check ended.rc:0
+>Running:(3.2.4.9):C:\Program Files\AutoIt3\autoit3.exe "P:\Tools\AutoIt3\Old Scripts\browser.au3"    
+Debug: There are 19 tables on this page.
+Debug: Table 0
+Debug:      There are 51 rows in this table.
+Debug:           Row 0: 0
+Debug:           Row 0: 0
+Debug:           Row 0: Labor Hours by Agent – Subtotal by Date Prompt Page
+
+Start DateEnd Date
+
+
+
+
+JanFebMarAprMayJun
+JulAugSepOctNovDec
+SunMonTueWedThuFriSat
+1
+2345678
+9101112131415
+16171819202122
+23242526272829
+30
+
+
+
+
+
+JanFebMarAprMayJun
+JulAugSepOctNovDec
+SunMonTueWedThuFriSat
+1
+2345678
+9101112131415
+16171819202122
+23242526272829
+30
+
+
+
+
+
+Agent Name
+
+
+**NAMES REMOVED**
+
+Select all Deselect all
+
+
+
+CancelFinish
+Debug:           Row 0: Labor Hours by Agent – Subtotal by Date Prompt Page
+Debug:           Row 0: 
+Start DateEnd Date
+
+
+
+
+JanFebMarAprMayJun
+JulAugSepOctNovDec
+SunMonTueWedThuFriSat
+1
+2345678
+9101112131415
+16171819202122
+23242526272829
+30
+
+
+
+
+
+JanFebMarAprMayJun
+JulAugSepOctNovDec
+SunMonTueWedThuFriSat
+1
+2345678
+9101112131415
+16171819202122
+23242526272829
+30
+
+
+
+
+
+Agent Name
+
+
+**NAMES REMOVED**
+
+Select all Deselect all
+
+
+
+CancelFinish
+Debug:           Row 0: 0
+Debug:           Row 0: Start DateEnd Date
+Debug:           Row 0: 0
+Debug:           Row 0: 
+
+
+JanFebMarAprMayJun
+JulAugSepOctNovDec
+SunMonTueWedThuFriSat
+1
+2345678
+9101112131415
+16171819202122
+23242526272829
+30
+
+
+
+
+
+JanFebMarAprMayJun
+JulAugSepOctNovDec
+SunMonTueWedThuFriSat
+1
+2345678
+9101112131415
+16171819202122
+23242526272829
+30
+Debug:           Row 0: 
+
+
+JanFebMarAprMayJun
+JulAugSepOctNovDec
+SunMonTueWedThuFriSat
+1
+2345678
+9101112131415
+16171819202122
+23242526272829
+30
+Debug:           Row 0: 0
+Debug:           Row 0: 0
+Debug:           Row 0: 
+JanFebMarAprMayJun
+JulAugSepOctNovDec
+SunMonTueWedThuFriSat
+1
+2345678
+9101112131415
+16171819202122
+23242526272829
+30
+Debug:           Row 0: 0
+Debug:           Row 0: JanFebMarAprMayJun
+Debug:           Row 0: JulAugSepOctNovDec
+Debug:           Row 0: SunMonTueWedThuFriSat
+Debug:           Row 0: 1
+Debug:           Row 0: 2345678
+Debug:           Row 0: 9101112131415
+Debug:           Row 0: 16171819202122
+Debug:           Row 0: 23242526272829
+Debug:           Row 0: 30
+Debug:           Row 0: 
+
+
+JanFebMarAprMayJun
+JulAugSepOctNovDec
+SunMonTueWedThuFriSat
+1
+2345678
+9101112131415
+16171819202122
+23242526272829
+30
+Debug:           Row 0: 0
+Debug:           Row 0: 0
+Debug:           Row 0: 
+JanFebMarAprMayJun
+JulAugSepOctNovDec
+SunMonTueWedThuFriSat
+1
+2345678
+9101112131415
+16171819202122
+23242526272829
+30
+Debug:           Row 0: 0
+Debug:           Row 0: JanFebMarAprMayJun
+Debug:           Row 0: JulAugSepOctNovDec
+Debug:           Row 0: SunMonTueWedThuFriSat
+Debug:           Row 0: 1
+Debug:           Row 0: 2345678
+Debug:           Row 0: 9101112131415
+Debug:           Row 0: 16171819202122
+Debug:           Row 0: 23242526272829
+Debug:           Row 0: 30
+Debug:           Row 0: 0
+Debug:           Row 0: 0
+Debug:           Row 0: Agent Name
+Debug:           Row 0: 0
+Debug:           Row 0: 
+
+**NAMES REMOVED**
+
+Select all Deselect all
+Debug:           Row 0: 
+
+**NAMES REMOVED**
+
+Select all Deselect all
+Debug:           Row 0: 0
+Debug:           Row 0: 0
+Debug:           Row 0: **NAMES REMOVED**
+Debug:           Row 0: 0
+Debug:           Row 0: Select all Deselect all
+Debug:           Row 0: 0
+Debug:           Row 0: CancelFinish
+Debug:           Row 0: 0
+Debug: Table 1
+Debug:      There are 0 rows in this table.
+Debug: Table 2
+Debug:      There are 48 rows in this table.
+Debug:           Row 0: Labor Hours by Agent – Subtotal by Date Prompt Page
+Debug:           Row 0: 
+Start DateEnd Date
+
+
+
+
+JanFebMarAprMayJun
+JulAugSepOctNovDec
+SunMonTueWedThuFriSat
+1
+2345678
+9101112131415
+16171819202122
+23242526272829
+30
+
+
+
+
+
+JanFebMarAprMayJun
+JulAugSepOctNovDec
+SunMonTueWedThuFriSat
+1
+2345678
+9101112131415
+16171819202122
+23242526272829
+30
+
+
+
+
+
+Agent Name
+
+
+**NAMES REMOVED**
+
+Select all Deselect all
+
+
+
+CancelFinish
+Debug:           Row 0: 0
+Debug:           Row 0: Start DateEnd Date
+Debug:           Row 0: 0
+Debug:           Row 0: 
+
+
+JanFebMarAprMayJun
+JulAugSepOctNovDec
+SunMonTueWedThuFriSat
+1
+2345678
+9101112131415
+16171819202122
+23242526272829
+30
+
+
+
+
+
+JanFebMarAprMayJun
+JulAugSepOctNovDec
+SunMonTueWedThuFriSat
+1
+2345678
+9101112131415
+16171819202122
+23242526272829
+30
+Debug:           Row 0: 
+
+
+JanFebMarAprMayJun
+JulAugSepOctNovDec
+SunMonTueWedThuFriSat
+1
+2345678
+9101112131415
+16171819202122
+23242526272829
+30
+Debug:           Row 0: 0
+Debug:           Row 0: 0
+Debug:           Row 0: 
+JanFebMarAprMayJun
+JulAugSepOctNovDec
+SunMonTueWedThuFriSat
+1
+2345678
+9101112131415
+16171819202122
+23242526272829
+30
+Debug:           Row 0: 0
+Debug:           Row 0: JanFebMarAprMayJun
+Debug:           Row 0: JulAugSepOctNovDec
+Debug:           Row 0: SunMonTueWedThuFriSat
+Debug:           Row 0: 1
+Debug:           Row 0: 2345678
+Debug:           Row 0: 9101112131415
+Debug:           Row 0: 16171819202122
+Debug:           Row 0: 23242526272829
+Debug:           Row 0: 30
+Debug:           Row 0: 
+
+
+JanFebMarAprMayJun
+JulAugSepOctNovDec
+SunMonTueWedThuFriSat
+1
+2345678
+9101112131415
+16171819202122
+23242526272829
+30
+Debug:           Row 0: 0
+Debug:           Row 0: 0
+Debug:           Row 0: 
+JanFebMarAprMayJun
+JulAugSepOctNovDec
+SunMonTueWedThuFriSat
+1
+2345678
+9101112131415
+16171819202122
+23242526272829
+30
+Debug:           Row 0: 0
+Debug:           Row 0: JanFebMarAprMayJun
+Debug:           Row 0: JulAugSepOctNovDec
+Debug:           Row 0: SunMonTueWedThuFriSat
+Debug:           Row 0: 1
+Debug:           Row 0: 2345678
+Debug:           Row 0: 9101112131415
+Debug:           Row 0: 16171819202122
+Debug:           Row 0: 23242526272829
+Debug:           Row 0: 30
+Debug:           Row 0: 0
+Debug:           Row 0: 0
+Debug:           Row 0: Agent Name
+Debug:           Row 0: 0
+Debug:           Row 0: 
+
+**NAMES REMOVED**
+
+Select all Deselect all
+Debug:           Row 0: 
+
+**NAMES REMOVED**
+
+Select all Deselect all
+Debug:           Row 0: 0
+Debug:           Row 0: 0
+Debug:           Row 0: **NAMES REMOVED**
+Debug:           Row 0: 0
+Debug:           Row 0: Select all Deselect all
+Debug:           Row 0: 0
+Debug:           Row 0: CancelFinish
+Debug:           Row 0: 0
+Debug: Table 3
+Debug:      There are 45 rows in this table.
+Debug:           Row 0: 0
+Debug:           Row 0: Start DateEnd Date
+Debug:           Row 0: 0
+Debug:           Row 0: 
+
+
+JanFebMarAprMayJun
+JulAugSepOctNovDec
+SunMonTueWedThuFriSat
+1
+2345678
+9101112131415
+16171819202122
+23242526272829
+30
+
+
+
+
+
+JanFebMarAprMayJun
+JulAugSepOctNovDec
+SunMonTueWedThuFriSat
+1
+2345678
+9101112131415
+16171819202122
+23242526272829
+30
+Debug:           Row 0: 
+
+
+JanFebMarAprMayJun
+JulAugSepOctNovDec
+SunMonTueWedThuFriSat
+1
+2345678
+9101112131415
+16171819202122
+23242526272829
+30
+Debug:           Row 0: 0
+Debug:           Row 0: 0
+Debug:           Row 0: 
+JanFebMarAprMayJun
+JulAugSepOctNovDec
+SunMonTueWedThuFriSat
+1
+2345678
+9101112131415
+16171819202122
+23242526272829
+30
+Debug:           Row 0: 0
+Debug:           Row 0: JanFebMarAprMayJun
+Debug:           Row 0: JulAugSepOctNovDec
+Debug:           Row 0: SunMonTueWedThuFriSat
+Debug:           Row 0: 1
+Debug:           Row 0: 2345678
+Debug:           Row 0: 9101112131415
+Debug:           Row 0: 16171819202122
+Debug:           Row 0: 23242526272829
+Debug:           Row 0: 30
+Debug:           Row 0: 
+
+
+JanFebMarAprMayJun
+JulAugSepOctNovDec
+SunMonTueWedThuFriSat
+1
+2345678
+9101112131415
+16171819202122
+23242526272829
+30
+Debug:           Row 0: 0
+Debug:           Row 0: 0
+Debug:           Row 0: 
+JanFebMarAprMayJun
+JulAugSepOctNovDec
+SunMonTueWedThuFriSat
+1
+2345678
+9101112131415
+16171819202122
+23242526272829
+30
+Debug:           Row 0: 0
+Debug:           Row 0: JanFebMarAprMayJun
+Debug:           Row 0: JulAugSepOctNovDec
+Debug:           Row 0: SunMonTueWedThuFriSat
+Debug:           Row 0: 1
+Debug:           Row 0: 2345678
+Debug:           Row 0: 9101112131415
+Debug:           Row 0: 16171819202122
+Debug:           Row 0: 23242526272829
+Debug:           Row 0: 30
+Debug:           Row 0: 0
+Debug:           Row 0: 0
+Debug:           Row 0: Agent Name
+Debug:           Row 0: 0
+Debug:           Row 0: 
+
+**NAMES REMOVED**
+
+Select all Deselect all
+Debug:           Row 0: 
+
+**NAMES REMOVED**
+
+Select all Deselect all
+Debug:           Row 0: 0
+Debug:           Row 0: 0
+Debug:           Row 0: **NAMES REMOVED**
+Debug:           Row 0: 0
+Debug:           Row 0: Select all Deselect all
+Debug:           Row 0: 0
+Debug:           Row 0: CancelFinish
+Debug: Table 4
+Debug:      There are 14 rows in this table.
+Debug:           Row 0: 
+
+
+JanFebMarAprMayJun
+JulAugSepOctNovDec
+SunMonTueWedThuFriSat
+1
+2345678
+9101112131415
+16171819202122
+23242526272829
+30
+Debug:           Row 0: 0
+Debug:           Row 0: 0
+Debug:           Row 0: 
+JanFebMarAprMayJun
+JulAugSepOctNovDec
+SunMonTueWedThuFriSat
+1
+2345678
+9101112131415
+16171819202122
+23242526272829
+30
+Debug:           Row 0: 0
+Debug:           Row 0: JanFebMarAprMayJun
+Debug:           Row 0: JulAugSepOctNovDec
+Debug:           Row 0: SunMonTueWedThuFriSat
+Debug:           Row 0: 1
+Debug:           Row 0: 2345678
+Debug:           Row 0: 9101112131415
+Debug:           Row 0: 16171819202122
+Debug:           Row 0: 23242526272829
+Debug:           Row 0: 30
+Debug: Table 5
+Debug:      There are 2 rows in this table.
+Debug:           Row 0: 0
+Debug:           Row 0: 0
+Debug: Table 6
+Debug:      There are 11 rows in this table.
+Debug:           Row 0: 
+JanFebMarAprMayJun
+JulAugSepOctNovDec
+SunMonTueWedThuFriSat
+1
+2345678
+9101112131415
+16171819202122
+23242526272829
+30
+Debug:           Row 0: 0
+Debug:           Row 0: JanFebMarAprMayJun
+Debug:           Row 0: JulAugSepOctNovDec
+Debug:           Row 0: SunMonTueWedThuFriSat
+Debug:           Row 0: 1
+Debug:           Row 0: 2345678
+Debug:           Row 0: 9101112131415
+Debug:           Row 0: 16171819202122
+Debug:           Row 0: 23242526272829
+Debug:           Row 0: 30
+Debug: Table 7
+Debug:      There are 1 rows in this table.
+Debug:           Row 0: 0
+Debug: Table 8
+Debug:      There are 2 rows in this table.
+Debug:           Row 0: JanFebMarAprMayJun
+Debug:           Row 0: JulAugSepOctNovDec
+Debug: Table 9
+Debug:      There are 7 rows in this table.
+Debug:           Row 0: SunMonTueWedThuFriSat
+Debug:           Row 0: 1
+Debug:           Row 0: 2345678
+Debug:           Row 0: 9101112131415
+Debug:           Row 0: 16171819202122
+Debug:           Row 0: 23242526272829
+Debug:           Row 0: 30
+Debug: Table 10
+Debug:      There are 14 rows in this table.
+Debug:           Row 0: 
+
+
+JanFebMarAprMayJun
+JulAugSepOctNovDec
+SunMonTueWedThuFriSat
+1
+2345678
+9101112131415
+16171819202122
+23242526272829
+30
+Debug:           Row 0: 0
+Debug:           Row 0: 0
+Debug:           Row 0: 
+JanFebMarAprMayJun
+JulAugSepOctNovDec
+SunMonTueWedThuFriSat
+1
+2345678
+9101112131415
+16171819202122
+23242526272829
+30
+Debug:           Row 0: 0
+Debug:           Row 0: JanFebMarAprMayJun
+Debug:           Row 0: JulAugSepOctNovDec
+Debug:           Row 0: SunMonTueWedThuFriSat
+Debug:           Row 0: 1
+Debug:           Row 0: 2345678
+Debug:           Row 0: 9101112131415
+Debug:           Row 0: 16171819202122
+Debug:           Row 0: 23242526272829
+Debug:           Row 0: 30
+Debug: Table 11
+Debug:      There are 2 rows in this table.
+Debug:           Row 0: 0
+Debug:           Row 0: 0
+Debug: Table 12
+Debug:      There are 11 rows in this table.
+Debug:           Row 0: 
+JanFebMarAprMayJun
+JulAugSepOctNovDec
+SunMonTueWedThuFriSat
+1
+2345678
+9101112131415
+16171819202122
+23242526272829
+30
+Debug:           Row 0: 0
+Debug:           Row 0: JanFebMarAprMayJun
+Debug:           Row 0: JulAugSepOctNovDec
+Debug:           Row 0: SunMonTueWedThuFriSat
+Debug:           Row 0: 1
+Debug:           Row 0: 2345678
+Debug:           Row 0: 9101112131415
+Debug:           Row 0: 16171819202122
+Debug:           Row 0: 23242526272829
+Debug:           Row 0: 30
+Debug: Table 13
+Debug:      There are 1 rows in this table.
+Debug:           Row 0: 0
+Debug: Table 14
+Debug:      There are 2 rows in this table.
+Debug:           Row 0: JanFebMarAprMayJun
+Debug:           Row 0: JulAugSepOctNovDec
+Debug: Table 15
+Debug:      There are 7 rows in this table.
+Debug:           Row 0: SunMonTueWedThuFriSat
+Debug:           Row 0: 1
+Debug:           Row 0: 2345678
+Debug:           Row 0: 9101112131415
+Debug:           Row 0: 16171819202122
+Debug:           Row 0: 23242526272829
+Debug:           Row 0: 30
+Debug: Table 16
+Debug:      There are 6 rows in this table.
+Debug:           Row 0: 
+
+**NAMES REMOVED**
+
+Select all Deselect all
+Debug:           Row 0: 0
+Debug:           Row 0: 0
+Debug:           Row 0: 0
+Debug:           Row 0: **NAMES REMOVED**
+Debug:           Row 0: Select all Deselect all
+Debug: Table 17
+Debug:      There are 2 rows in this table.
+Debug:           Row 0: 0
+Debug:           Row 0: 0
+Debug: Table 18
+Debug:      There are 3 rows in this table.
+Debug:           Row 0: **NAMES REMOVED**
+Debug:           Row 0: 0
+Debug:           Row 0: Select all Deselect all
++>16:06:05 AutoIT3.exe ended.rc:0
++>16:06:06 AutoIt3Wrapper Finished
+>Exit code: 0    Time: 37.044
