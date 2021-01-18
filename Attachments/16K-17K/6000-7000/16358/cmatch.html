@@ -1,0 +1,289 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>Leoastro.com ...matching.html</TITLE>
+<meta name="NetsparkQuiltingResult" total-length="12569" removed="0" rules-found="w6769,w5189,w5534,w2707,w4390,w4391,w2341,w240,w3104,w3937,w4397" />
+</HEAD>
+<SCRIPT LANGUAGE="javascript" 
+SRC="../../js/india_ka.js"><!--
+//-->
+</SCRIPT>
+<SCRIPT LANGUAGE="javascript" 
+SRC="../../js/usa_ma.js"><!--
+//-->
+</SCRIPT>
+<script language="javascript" src="../js/deg_min.js">
+<!--
+//-->
+</script>
+<script Language="javascript">
+<!--
+function chkInput()
+{
+ var msg = "Do not leave the following fields blank:\n";
+ var key = "";
+ if (document.matching.bavailcountry[1].checked)
+ {
+        if (document.matching.bncountry.value.length <= 0) key+=" [] boy country name\n";
+        if (document.matching.bnplace.value.length <= 0) key+=" [] boy place name\n";
+        if (document.matching.btimezonehours.selectedIndex == 0) key+=" [] boy timezone hours\n";
+        if (document.matching.btimezoneminutes.selectedIndex == 0) key+=" [] boy timezone minutes\n";
+        if (document.matching.blatdegrees.selectedIndex == 0) key+=" [] boy latitude degrees\n";
+        if (document.matching.blatminutes.selectedIndex == 0) key+=" [] boy latitude minutes\n";
+        if (document.matching.blongdegrees.selectedIndex == 0) key+=" [] boy longitude degrees\n";
+        if (document.matching.blongminutes.selectedIndex == 0) key+=" [] boy longitude minutes\n";
+ }
+ else if (document.matching.bavailcountry[0].checked)
+ {
+ }
+ else
+ {
+ key+=" [] select boy place available/not available list button \n";
+ }
+ if (document.matching.gavailcountry[1].checked)
+ {
+        if (document.matching.gncountry.value.length <= 0) key+=" [] girl country name\n";
+        if (document.matching.gnplace.value.length <= 0) key+=" [] girl place name\n";
+        if (document.matching.gtimezonehours.selectedIndex == 0) key+=" [] girl timezone hours\n";
+        if (document.matching.gtimezoneminutes.selectedIndex == 0) key+=" [] girl timezone minutes\n";
+        if (document.matching.glatdegrees.selectedIndex == 0) key+=" [] girl latitude degrees\n";
+        if (document.matching.glatminutes.selectedIndex == 0) key+=" [] girl latitude minutes\n";
+        if (document.matching.glongdegrees.selectedIndex == 0) key+=" [] girl longitude degrees\n";
+        if (document.matching.glongminutes.selectedIndex == 0) key+=" [] girl longitude minutes\n";
+ }
+ else if (document.matching.gavailcountry[0].checked)
+ {
+ }
+ else
+ {
+ key+=" [] select girl place available/not available list button \n";
+ }
+ if (key != "")
+ {
+  alert(msg + key);
+  return false;
+ }
+}
+function placeselected(place)
+{
+        place.selectedIndex=0;
+}
+//-->
+</script>
+<BODY leftMargin=0 topMargin=0 valign=middle align=center bgcolor=linen>
+<FONT face=helvitica size=3>
+<FORM method=post name="matching" onSubmit="return chkInput()" action="matching">
+<TABLE border=0 cellPadding=0 cellSpacing=0 height=330 width=570>
+  <TBODY>
+  <TR>
+  <TD align=left vAlign=top width=10%>
+  </TD>
+    <TD align=left vAlign=top width=90%>
+    <br>
+    <font color=green ><DIV align=left><strong>Boys' Particulars</strong><BR><BR>
+    <font color=red ><DIV align=left>Name
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <font face=Ariel size=3><input type=text name=bname readonly value="Unknown"></font><br><br>
+                  Date of Birth
+                  <input type=text size=3 name=bday readonly value="24">
+                  <input type=text size=3 name=bmonth readonly value="12">
+                  <input type=text size=5 name=byear readonly  value="1983">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Time of Birth
+                  <input type=text size=3 name=bhours readonly value="19">
+                  <input type=text size=3 name=bminutes readonly value="54">
+                  <BR><BR><FONT color=green ><STRONG>
+                  <DIV align=left>Location 
+                  Coordinates of Your Birth Place or Nearest Place</DIV></STRONG></FONT>
+                   <BR><FONT color=#bb19ff size=2><STRONG> FIRST TICK BUTTON AT AVAILABILITY LIST TO SEE PLACE LIST </STRONG></FONT>
+        <BR><BR><INPUT 
+                  name=bavailcountry type=radio value=bavailcountry 
+ONCLICK="india_ka(document.matching.bplace),placeselected(document.matching.bplace)">
+<FONT color=green ><STRONG>Check Availability in
+                  list</FONT></STRONG><BR><BR>Country
+                  <input type=text name=bcountry readonly value="India">
+                  &nbsp;&nbsp;State
+                  <input type=text name=bstate readonly value="Karnataka">
+                  <br><br>
+                  <font color=green><strong>
+                  Now Select Place</strong></font>
+<SELECT name="bplace" size=1 
+<OPTION value="select place" selected> &nbsp;&nbsp;select &nbsp; place &nbsp;&nbsp; </OPTION>
+<OPTION value="select place" > &nbsp;&nbsp;select &nbsp; place &nbsp;&nbsp; </OPTION>
+<OPTION value="select place" > &nbsp;&nbsp;select &nbsp; place &nbsp;&nbsp; </OPTION>
+<OPTION value="select place" > &nbsp;&nbsp;select &nbsp; place &nbsp;&nbsp; </OPTION>
+<OPTION value="select place" > &nbsp;&nbsp;select &nbsp; place &nbsp;&nbsp; </OPTION>
+</SELECT>
+                  <BR><BR><INPUT name=bavailcountry value=bnotavailcountry type=radio 
+ONCLICK="deg_min(document.matching.btimezonehours,4),
+deg_min(document.matching.btimezoneminutes,3),
+deg_min(document.matching.blatdegrees,1),
+deg_min(document.matching.blatminutes,3),
+deg_min(document.matching.blongdegrees,2),
+deg_min(document.matching.blongminutes,3)"
+>
+                  <FONT color=green ><STRONG>If&nbsp;&nbsp;Not Available in list enter the 
+                  particulars</FONT></STRONG><BR><BR>Country
+                  <INPUT type=text maxLength=25 name=bncountry size=20>&nbsp;&nbsp;&nbsp; Place 
+                  <INPUT type=text maxLength=25 name=bnplace size=20>&nbsp;&nbsp;&nbsp; 
+                  <br><br> 
+                  Time Zone&nbsp;&nbsp;&nbsp;&nbsp;
+      <SELECT name="btimezonehours" size=1 >
+<OPTION value=hh>hh</OPTION>
+<OPTION value=hh>hh</OPTION>
+<OPTION value=hh>hh</OPTION>
+<OPTION value=hh>hh</OPTION>
+</SELECT>
+    <SELECT name="btimezoneminutes" size=1 >
+<OPTION value=mm>mm</OPTION>
+<OPTION value=mm>mm</OPTION>
+<OPTION value=mm>mm</OPTION>
+<OPTION value=mm>mm</OPTION>
+</SELECT>
+    <br><br>
+    Latitude &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Degrees&nbsp;
+  <SELECT name="blatdegrees" size=1 >
+<OPTION value=deg>deg</OPTION>
+<OPTION value=deg>deg</OPTION>
+<OPTION value=deg>deg</OPTION>
+<OPTION value=deg>deg</OPTION>
+</SELECT>
+        &nbsp;&nbsp;
+        Minutes&nbsp
+  <SELECT name="blatminutes" size=1 >
+<OPTION value=min>min</OPTION>
+<OPTION value=min>min</OPTION>
+<OPTION value=min>min</OPTION>
+<OPTION value=min>min</OPTION>
+</SELECT>
+        &nbsp;&nbsp;
+        North/South &nbsp;
+  <SELECT name=blatsign size=1> <OPTION selected 
+        value=N>N</OPTION>
+        <OPTION value=S>S</OPTION></SELECT>
+        <BR><BR>
+        Longitude&nbsp;&nbsp;&nbsp;&nbsp;Degrees&nbsp;
+  <SELECT name="blongdegrees" size=1 >
+<OPTION value=deg>deg</OPTION>
+<OPTION value=deg>deg</OPTION>
+<OPTION value=deg>deg</OPTION>
+<OPTION value=deg>deg</OPTION>
+</SELECT>
+        &nbsp;&nbsp;
+        Minutes&nbsp
+  <SELECT name="blongminutes" size=1 >
+<OPTION value=min>min</OPTION>
+<OPTION value=min>min</OPTION>
+<OPTION value=min>min</OPTION>
+<OPTION value=min>min</OPTION>
+</SELECT>
+        &nbsp;&nbsp;
+        East/West&nbsp&nbsp;&nbsp;&nbsp;&nbsp;
+  <SELECT name=blongsign size=1> <OPTION selected 
+        value=E>E</OPTION>
+        <OPTION value=W>W</OPTION></SELECT><BR><BR><BR>
+    <font color=green >
+    <DIV align=left><strong>Girls' Particulars</strong><BR><BR>
+    <font color=red ><DIV align=left>Name
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <font face=Ariel size=3><input type=text name=gname readonly value="Unknown"></font>
+    <br><br>
+     Date of Birth
+     <input type=text size=3 name=gday readonly value="27">
+     <input type=text size=3 name=gmonth readonly value="12">
+     <input type=text size=5 name=gyear readonly value="1983">
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Time of Birth
+     <input type=text size=3 name=ghours readonly value="7">
+     <input type=text size=3 name=gminutes readonly value="54">
+                  <BR><BR><FONT color=green ><STRONG>
+                  <DIV align=left>Location 
+                  Coordinates of Your Birth Place or Nearest Place</DIV></STRONG></FONT>
+                   <BR><FONT color=#bb19ff size=2><STRONG> FIRST TICK BUTTON AT AVAILABILITY LIST TO SEE PLACE LIST </STRONG></FONT>
+        <BR><BR><INPUT 
+                  name=gavailcountry type=radio value=gavailcountry
+ONCLICK="usa_ma(document.matching.gplace),placeselected(document.matching.gplace)">
+<FONT color=green ><STRONG>Check Availability in 
+                  list</FONT></STRONG><BR><BR>Country
+                  <input type=text name=gcountry readonly value="USA">
+                  &nbsp;&nbsp;State
+                  <input type=text name=gstate readonly value="USA MA">
+                  <br><br>
+                  <font color=green><strong>Now Select Place</strong></font>
+<SELECT name="gplace" size=1 
+<OPTION value="select place" selected> &nbsp;&nbsp;select &nbsp; place &nbsp;&nbsp; </OPTION>
+<OPTION value="select place" > &nbsp;&nbsp;select &nbsp; place &nbsp;&nbsp; </OPTION>
+<OPTION value="select place" > &nbsp;&nbsp;select &nbsp; place &nbsp;&nbsp; </OPTION>
+<OPTION value="select place" > &nbsp;&nbsp;select &nbsp; place &nbsp;&nbsp; </OPTION>
+<OPTION value="select place" > &nbsp;&nbsp;select &nbsp; place &nbsp;&nbsp; </OPTION>
+</SELECT>
+                  <BR><BR><INPUT name=gavailcountry value=gnotavailcountry type=radio 
+ONCLICK="deg_min(document.matching.gtimezonehours,4),
+deg_min(document.matching.gtimezoneminutes,3),
+deg_min(document.matching.glatdegrees,1),
+deg_min(document.matching.glatminutes,3),
+deg_min(document.matching.glongdegrees,2),
+deg_min(document.matching.glongminutes,3)"
+>
+                  <FONT color=green ><STRONG>If&nbsp;&nbsp;Not Available in list enter the 
+                  particulars</FONT></STRONG><BR><BR>Country
+                  <INPUT type=text maxLength=25 name=gncountry size=20>&nbsp;&nbsp;&nbsp; Place
+                  <INPUT type=text maxLength=25 name=gnplace size=20>&nbsp;&nbsp;&nbsp; 
+                  <br><br> 
+                  Time Zone&nbsp;&nbsp;&nbsp;&nbsp;
+      <SELECT name="gtimezonehours" size=1 >
+<OPTION value=hh>hh</OPTION>
+<OPTION value=hh>hh</OPTION>
+<OPTION value=hh>hh</OPTION>
+<OPTION value=hh>hh</OPTION>
+</SELECT>
+    <SELECT name="gtimezoneminutes" size=1 >
+<OPTION value=mm>mm</OPTION>
+<OPTION value=mm>mm</OPTION>
+<OPTION value=mm>mm</OPTION>
+<OPTION value=mm>mm</OPTION>
+</SELECT>
+        <br><br>
+        Latitude&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Degrees&nbsp;
+  <SELECT name="glatdegrees" size=1 >
+<OPTION value=deg>deg</OPTION>
+<OPTION value=deg>deg</OPTION>
+<OPTION value=deg>deg</OPTION>
+<OPTION value=deg>deg</OPTION>
+</SELECT>
+        &nbsp;&nbsp;
+        Minutes&nbsp;
+  <SELECT name="glatminutes" size=1 >
+<OPTION value=min>min</OPTION>
+<OPTION value=min>min</OPTION>
+<OPTION value=min>min</OPTION>
+<OPTION value=min>min</OPTION>
+</SELECT>
+        &nbsp;&nbsp;
+        North/South &nbsp;
+  <SELECT name=glatsign size=1><OPTION selected 
+        value=N>N</OPTION>
+        <OPTION value=S>S</OPTION></SELECT>
+        <BR><BR>
+        Longitude&nbsp;&nbsp;&nbsp;&nbsp;Degrees&nbsp;
+  <SELECT name="glongdegrees" size=1 >
+<OPTION value=deg>deg</OPTION>
+<OPTION value=deg>deg</OPTION>
+<OPTION value=deg>deg</OPTION>
+<OPTION value=deg>deg</OPTION>
+</SELECT>
+        &nbsp;&nbsp;
+        Minutes&nbsp;
+  <SELECT name="glongminutes" size=1 >
+<OPTION value=min>min</OPTION>
+<OPTION value=min>min</OPTION>
+<OPTION value=min>min</OPTION>
+<OPTION value=min>min</OPTION>
+</SELECT>
+        &nbsp;&nbsp;East/West&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <SELECT name=glongsign 
+        size=1> <OPTION selected 
+        value=E>E</OPTION>
+        <OPTION value=W>W</OPTION></SELECT>
+        <BR><BR><BR>
+        <DIV align=center><INPUT name=matching_submit type=submit value=Proceed color=red></DIV></FONT></DIV>
+</TD></TR></TBODY></TABLE>
+</FORM></FONT></BODY></HTML>
