@@ -1,0 +1,110 @@
+	
+; check if day is a sat or sun
+If @WDAY <> 1 And @WDAY <> 7 Then
+
+	;get passwords from File
+	$file = FileOpen("//3.110.5.51/ontime_data/35997.txt", 0)
+
+	; Check if file opened for reading OK
+	If $file = -1 Then
+		MsgBox(0, "Error", "Unable to open file.")
+		Exit
+	EndIf
+
+	; Read in lines of text until the EOF is reached
+	$intra = FileReadLine($file, 1)
+	$ipass = FileReadLine($file, 2)
+	$ontime = FileReadLine($file, 3)
+	$opass = FileReadLine($file, 4)
+	$inhrs = FileReadLine($file, 5)
+	$inmins = FileReadLine($file, 6)
+	$outhrs = FileReadLine($file, 7)
+	$outmins = FileReadLine($file, 8)
+	$shift = FileReadLine($file, 9)
+	$location = FileReadLine($file, 10)
+	$sub_project = FileReadLine($file, 11)
+	$phase = FileReadLine($file, 12)
+	$task = FileReadLine($file, 13)
+	$activity = FileReadLine($file, 14)
+	$submit = FileReadLine($file, 15)
+
+	FileClose($file)
+	;setup registry for intranet
+	RegDelete("HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings", "AutoConfigURL")
+	RegDelete("HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings", "ProxyServer")
+	RegWrite("HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings", "ProxyServer", "REG_SZ", "172.16.184.5:80")
+	RegWrite("HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings", "ProxyEnable", "REG_DWORD", "1")
+	Run("C:\Program Files\Internet Explorer\iexplore.exe                                    ")
+	WinWaitActive("Connect to")
+	Send("!u")
+	Send("satyam\" & $intra)
+	Send("!p")
+	Send($ipass)
+	Send("{TAB}{TAB}{SPACE}")
+	Sleep(1000)
+	$oIE = _IEAttach("Login")
+	_IELoadWait($oIE)
+	$frm = _IEFormGetObjByName($oIE, "Form1")
+	$logid = _IEFormElementGetObjByName($frm, "txtId")
+	_IEFormElementSetValue($logid, $ontime)
+	$logpass = _IEFormElementGetObjByName($frm, "txtPwd")
+	_IEFormElementSetValue($logpass, $opass)
+	$logbut = _IEFormElementGetObjByName($frm, "btnLogin")
+	_IEAction($logbut, "click")
+	WinWait("Microsoft Internet Explorer", "")
+	If Not WinActive("Microsoft Internet Explorer", "") Then WinActivate("Microsoft Internet Explorer", "")
+	WinWaitActive("Microsoft Internet Explorer", "")
+	Send("{SPACE}")
+	_IELoadWait($oIE)
+
+	$IEFrame = _IEFrameGetObjByName($oIE, "Inside_tsms")
+	$id = _IEGetObjByName($IEFrame, "ddInTimeHr")
+	_IEFormElementOptionSelect($id, $inhrs, 1, "byValue")
+	$id = _IEGetObjByName($IEFrame, "ddInTimeMin")
+	_IEFormElementOptionSelect($id, $inmins, 1, "byValue")
+	$id = _IEGetObjByName($IEFrame, "ddOutTimeHr")
+	_IEFormElementOptionSelect($id, $outhrs, 1, "byValue")
+	$id = _IEGetObjByName($IEFrame, "ddOutTimeMin")
+	_IEFormElementOptionSelect($id, $outmins, 1, "byValue")
+	$id = _IEGetObjByName($IEFrame, "ddShift")
+	_IEFormElementOptionSelect($id, $shift, 1, "byValue")
+	$id = _IEGetObjByName($IEFrame, "ddLocation")
+	_IEFormElementOptionSelect($id, $location, 1, "byValue")
+	$id = _IEGetObjByName($IEFrame, "ddSubProjs")
+	_IEFormElementOptionSelect($id, $sub_project, 1, "byText", 1)
+	$id = _IEGetObjByName($IEFrame, "ddPhase")
+	_IEAction($id, "focus")
+	WinActivate("Time Sheet Management System")
+	For $i = 1 To $phase
+		Send("{DOWN}")
+	Next
+	$id = _IEGetObjByName($IEFrame, "btnAddRow")
+	_IEAction($id, "click")
+	_IELoadWait($IEFrame)
+	$id = _IEGetObjByName($IEFrame, "ddTasks2")
+	_IEFormElementOptionSelect($id, $task, 1, "byText")
+	$id = _IEGetObjByName($IEFrame, "ddAct2")
+	_IEFormElementOptionSelect($id, $activity, 1, "byText")
+	$id = _IEGetObjByName($IEFrame, "ddHrs1")
+	_IEFormElementOptionSelect($id, "9", 1, "byText")
+	$id = _IEGetObjByName($IEFrame, "ddStatus1")
+	_IEAction($id, "focus")
+	Send("{DOWN}")
+	_IELoadWait($IEFrame)
+	If $submit = 0 Then
+		$oSubmit = _IEGetObjByName($IEFrame, "btnSubmit")
+		_IEAction($oSubmit, "click")
+		_IELoadWait($IEFrame)
+		MsgBox(0, "Ontime Filled", "Your Ontime has been submitted - Dont Forget to Do the same Tommorow :) Good Day !")
+	EndIf
+	;Reset registry for Internet
+	RegDelete("HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings", "ProxyServer")
+	RegDelete("HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings", "AutoConfigURL")
+	RegWrite("HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings", "AutoConfigURL", "REG_SZ", "                                                  ")
+	RegWrite("HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings", "ProxyEnable", "REG_DWORD", "0")
+
+EndIf
+
+; ----------------------------------------------------------------------------
+
+; ----------------------------------------------------------------------------
