@@ -1,0 +1,27 @@
+;
+; CheckInterval=20
+; 	minutes between checks (default = 20 minutes)
+;
+; NumberofMessagestoSend=2
+; 	will only send out two sets of e-mails if any site is down.
+;
+; once all sites are back up again an e-mail will be sent
+; if any site is found to be down again.
+
+[Defaults]
+NumberofMessagestoSend=2
+CheckInterval=20
+MailServer=123.456.789.0
+MailFrom=user@domain.com
+
+[Siteurls]
+URL1=                                  
+URL2=                                 
+URL3=                                 
+URL4=                                  
+URL5=                                  
+
+[MailTo]
+Add1=alertuser1@domain.com
+Add2=alertuser2@domain.com
+
