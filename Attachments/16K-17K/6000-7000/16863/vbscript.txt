@@ -1,0 +1,25 @@
+Set oFileObj = CreateObject("Scripting.FileSystemObject")
+ Set WshShell = WScript.CreateObject("WScript.Shell")
+ Set objFM = WScript.CreateObject ("FMPRO.Application")
+ Const TemporaryFolder = 2
+ Set tfolder =  oFileObj.GetSpecialFolder(TemporaryFolder)
+ FileName = tfolder &  "\FM_Text.txt"
+ Set txtfile = oFileObj.CreateTextFile(filename, True)
+ txtfile.Close
+ Set txtfile = Nothing
+  'Here is where you would do any outside action, gather data, ...
+  strData1 = "test"   'just to prove this example works, would normaly use data collected outside of filemaker
+  'strIndex is the Index field from the filemaker file
+ strIndex = "1"
+  Set objTextFile = oFileObj.OpenTextFile(FileName, 2, True)
+    'Next line writes a single line of text in Comma Delimited format any data you collect should be added here.
+ objTextFile.write (strindex & "," &  strData1 )
+  objTextFile.Close
+     Wscript.Sleep 10
+   Set objTextFile = Nothing
+   Wscript.Sleep 1000
+  objFM.Visible = True ' show FMPro
+   WshShell.AppActivate ("FileMaker Pro ")
+ Set objFMfiles = objFM.Documents.Open( "C:\Users\aholtzapfel\Desktop\ActiveX.fp7","admin","") 
+ objFMfiles.DoFMScript ("import") ' call this FM script
+ 
