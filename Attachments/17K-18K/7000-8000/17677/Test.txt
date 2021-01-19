@@ -1,0 +1,4 @@
+admin,admin
+santosh, for this user name password is admin but i am not entering for this user name in the file
+yahhoo,yehoo
+santoo,sant
