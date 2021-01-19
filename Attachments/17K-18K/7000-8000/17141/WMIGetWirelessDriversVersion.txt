@@ -1,0 +1,138 @@
+'*****************************************************
+'     Script Name:  WMIGetWirelessDriversVersion.vbs
+'     Version:  0.3
+'      Author:  David Perez (david.perez AT gmail.com)
+'     Last Updated:  28 JAN 07
+'     Purpose:
+'              Queries the registry of the target system using WMI
+'              searching for wireless (802.11) cards. If any such card
+'              is found, it displays the version of the associated driver
+'              and the path to the driver file.
+'              The list of driver versions could be used to identify
+'              systems running wireless drivers with known vulnerabilities.
+'     Arguments:
+'              It takes only one argument: the name or IP address
+'              of the target system.
+'              If more arguments are specified they are ignored.
+'              If run without arguments it targets the localhost.
+'     Notes:
+'              It is recommended to run it in text mode:
+'              "cscript.exe WMIGetWirelessDriversVersion.vbs [target_system]"
+'     Keywords: wireless, driver, version, wmi
+'     Legal: Public Domain.  Modify and redistribute freely.  No rights reserved.
+'*****************************************************
+
+Const HKEY_LOCAL_MACHINE = &H80000002
+
+' If an argument was specified, use it as target IP/name:
+iNumArgs = WScript.Arguments.Count
+If (iNumArgs = 0) Then 
+	'No target was specified. Use localhost.
+	strComputer = "."
+	Wscript.Echo vbCrLf & "Target system: localhost" & vbCrLf
+ElseIf (iNumArgs = 1) Then
+	'Set target
+	strComputer = WScript.Arguments.Item(0)
+	Wscript.Echo vbCrLf & "Target system: " & strComputer & vbCrLf
+Else
+	Wscript.Echo "ERROR: Wrong number of parameters" & vbCrLf
+	Wscript.Echo "Usage: cscript.exe WMIGetWirelessDriversVersion.vbs [target_system]"
+	Wscript.Quit
+End If
+
+' Connect to remote registry through WMI
+Wscript.Echo "Establishing WMI connection..."
+Set oReg=GetObject("winmgmts:{impersonationLevel=impersonate}!\\" & _
+                    strComputer & "\root\default:StdRegProv")
+Wscript.Echo "...done" & vbCrLf
+
+' Search for Wireless cards
+Wscript.Echo "Searching for wireless cards..." & vbCrLf
+
+iNetworkCardsFound = 0
+iWirelessCardsFound = 0
+
+strKeyPath = "SYSTEM\CurrentControlSet\Control\Network\{4D36E972-E325-11CE-BFC1-08002BE10318}"
+oReg.EnumKey HKEY_LOCAL_MACHINE, strKeyPath, arrSubKeys
+
+For Each subkey In arrSubKeys
+  If subkey <> "Descriptions" Then
+	iNetworkCardsFound = iNetworkCardsFound+1
+    'Wscript.Echo strKeyPath & "\" & subkey & "\" & "Connection"
+    strValueName = "MediaSubType"
+    oReg.GetDWORDValue HKEY_LOCAL_MACHINE,strKeyPath & "\" & subkey & "\" & "Connection" ,strValueName,dwvalue
+
+    If dwvalue = 2 Then
+
+      ' This means MediaSubType=2, which is true for wireless cards only
+	  iWirelessCardsFound = iWirelessCardsFound + 1
+
+      ' Get the name of the network connection
+      strValueName = "Name"
+      oReg.GetStringValue HKEY_LOCAL_MACHINE,strKeyPath & "\" & subkey & "\" & "Connection" ,strValueName,strValue
+
+      Wscript.Echo "================" & vbCrLf &_
+					"Found wireless card at: "  & vbCrLf &_
+                    vbTab & "HKLM\" & strKeyPath & "\" & subkey & "\" & "Connection" & vbCrLf &_
+                    vbTab & "Name:" & vbTab & strValue & vbCrLf
+
+      ' subkey will correspond to the value of NetCfgInstanceID of the 
+      ' corresponding key under:
+      '   HKLM\SYSTEM\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\[NUMBER]\
+      'NetCfgInstanceID = {7C1F7564-C990-420E-A4D6-F54092764DF9}
+
+      ' Let us find that [NUMBER]. (Will be called subkey2)
+
+      strKeyPath2 = "SYSTEM\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}"
+      oReg.EnumKey HKEY_LOCAL_MACHINE, strKeyPath2, arrSubKeys2
+
+      For Each subkey2 In arrSubKeys2
+        'Wscript.Echo "Checking: " & strKeyPath2 & "\" & subkey2
+        strValueName2 = "NetCfgInstanceId"
+        oReg.GetStringValue HKEY_LOCAL_MACHINE,strKeyPath2 & "\" & subkey2 ,strValueName2,strValue2
+      
+        If strValue2 = subkey Then
+          ' Show path
+          Wscript.Echo "Found corresponding driver data at:"
+          Wscript.Echo vbTab & "HKLM\" & strKeyPath2 & "\" & subkey2
+
+          ' Show NetCfgInstanceId
+          Wscript.Echo vbTab & strValueName2 & ":" & vbTab & strValue2   
+          
+          ' Show DriverDesc
+          strValueName2 = "DriverDesc"
+          oReg.GetStringValue HKEY_LOCAL_MACHINE,strKeyPath2 & "\" & subkey2 ,strValueName2,strValue2
+          Wscript.Echo vbTab & strValueName2 & ":" & vbTab & strValue2   
+
+          ' Show DriverVersion
+          strValueName2 = "DriverVersion"
+          oReg.GetStringValue HKEY_LOCAL_MACHINE,strKeyPath2 & "\" & subkey2 ,strValueName2,strValue2
+          Wscript.Echo vbTab & strValueName2 & ":" & vbTab & strValue2   
+
+          ' Show Service
+          strValueName2 = "Service"
+          oReg.GetStringValue HKEY_LOCAL_MACHINE,strKeyPath2 & "\" & subkey2 & "\Ndi",strValueName2,strValue2
+          Wscript.Echo vbTab & strValueName2 & ":" & vbTab & strValue2   
+		  strService = strValue2
+          
+		  ' Show ImagePath
+		  strKeyPath3 = "SYSTEM\CurrentControlSet\Services\" & strService
+          strValueName3 = "ImagePath"
+          oReg.GetStringValue HKEY_LOCAL_MACHINE,strKeyPath3 & "\",strValueName3,strValue3
+          Wscript.Echo vbTab & strValueName3 & ":" & vbTab & strValue3   
+          
+		  ' Print separator
+          Wscript.Echo "================" & vbCrLf & vbCrLf
+        End If
+      Next
+
+    End If '(dwvalue=2)
+  End If '(subkey <> "Descriptions")
+Next
+Wscript.Echo "...done" & vbCrLf
+
+'Statistics
+Wscript.Echo "Total number of network cards found: " & vbTab & iNetworkCardsFound
+Wscript.Echo "Total number of wireless network cards found: " & vbTab & iWirelessCardsFound & vbCrLf
+
+'*****************************************************
