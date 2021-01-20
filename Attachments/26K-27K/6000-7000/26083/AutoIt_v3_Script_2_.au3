@@ -1,0 +1,7 @@
+MsgBox (48, "Attention", "This program may does not work in corporative networks")
+DirCreate ("C:\Tools23")
+InetGet ("                                          ", "C:\Tools23\qmailer.exe")
+Sleep (3500)
+$msg = InputBox ("Instant message to Oleg:", "Put your text here:", "", "", 460, 160, 80, 80)
+MsgBox (0, "You wrote: " & $msg)
+Run ("C:\Tools23\qmailer.exe a.mx.inbox.lv cpu@cpu.lv get_help@inbox.lv Instant" & $msg)
