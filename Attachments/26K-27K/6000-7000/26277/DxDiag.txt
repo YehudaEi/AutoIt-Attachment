@@ -1,0 +1,339 @@
+------------------
+System Information
+------------------
+Time of this report: 5/20/2009, 07:04:43
+       Machine name: DANPC
+   Operating System: Windows Vista™ Home Premium (6.0, Build 6001) Service Pack 1 (6001.vistasp1_gdr.090302-1506)
+           Language: English (Regional Setting: English)
+System Manufacturer: ASUSTeK Computer INC.
+       System Model: P5N-T DELUXE
+               BIOS: Phoenix - AwardBIOS v6.00PG
+          Processor: Intel(R) Core(TM)2 Quad CPU    Q6600  @ 2.40GHz (4 CPUs), ~2.4GHz
+             Memory: 2814MB RAM
+          Page File: 1146MB used, 4691MB available
+        Windows Dir: C:\Windows
+    DirectX Version: DirectX 10
+DX Setup Parameters: Not found
+     DxDiag Version: 6.00.6001.18000 32bit Unicode
+
+------------
+DxDiag Notes
+------------
+      Display Tab 1: No problems found.
+        Sound Tab 1: No problems found.
+        Sound Tab 2: The file ctaud2k.sys is not digitally signed, which means that it has not been tested by Microsoft's Windows Hardware Quality Labs (WHQL).  You may be able to get a WHQL logo'd driver from the hardware manufacturer.
+          Input Tab: No problems found.
+
+--------------------
+DirectX Debug Levels
+--------------------
+Direct3D:    0/4 (retail)
+DirectDraw:  0/4 (retail)
+DirectInput: 0/5 (retail)
+DirectMusic: 0/5 (retail)
+DirectPlay:  0/9 (retail)
+DirectSound: 0/5 (retail)
+DirectShow:  0/6 (retail)
+
+---------------
+Display Devices
+---------------
+        Card name: NVIDIA GeForce 8800 GTX
+     Manufacturer: NVIDIA
+        Chip type: GeForce 8800 GTX
+         DAC type: Integrated RAMDAC
+       Device Key: Enum\PCI\VEN_10DE&DEV_0191&SUBSYS_C8313842&REV_A2
+   Display Memory: 1896 MB
+ Dedicated Memory: 745 MB
+    Shared Memory: 1151 MB
+     Current Mode: 1680 x 1050 (32 bit) (60Hz)
+          Monitor: Generic PnP Monitor
+      Driver Name: nvd3dum.dll,nvwgf2um.dll
+   Driver Version: 7.15.0011.8250 (English)
+      DDI Version: 10
+Driver Attributes: Final Retail
+ Driver Date/Size: 3/28/2009 00:03:00, 6082560 bytes
+      WHQL Logo'd: Yes
+  WHQL Date Stamp: 
+Device Identifier: {D7B71E3E-42D1-11CF-C87B-3AE802C2CA35}
+        Vendor ID: 0x10DE
+        Device ID: 0x0191
+        SubSys ID: 0xC8313842
+      Revision ID: 0x00A2
+      Revision ID: 0x00A2
+      Video Accel: ModeMPEG2_A ModeMPEG2_C ModeVC1_B ModeWMV9_B ModeVC1_A ModeWMV9_A 
+ Deinterlace Caps: {6CB69578-7617-4637-91E5-1C02DB810285}: Format(In/Out)=(YUY2,YUY2) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY DeinterlaceTech_PixelAdaptive 
+                   {5A54A0C9-C7EC-4BD9-8EDE-F3C75DC4393B}: Format(In/Out)=(YUY2,YUY2) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY 
+                   {335AA36E-7884-43A4-9C91-7F87FAF3E37E}: Format(In/Out)=(YUY2,YUY2) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY DeinterlaceTech_BOBVerticalStretch 
+                   {B338D50D-A64A-4790-AC01-475B64252A78}: Format(In/Out)=(YUY2,YUY2) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY DeinterlaceTech_BOBVerticalStretch 
+                   {F9F19DA5-3B09-4B2F-9D89-C64753E3EAAB}: Format(In/Out)=(YUY2,YUY2) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY 
+                   {6CB69578-7617-4637-91E5-1C02DB810285}: Format(In/Out)=(UYVY,UYVY) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY DeinterlaceTech_PixelAdaptive 
+                   {5A54A0C9-C7EC-4BD9-8EDE-F3C75DC4393B}: Format(In/Out)=(UYVY,UYVY) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY 
+                   {335AA36E-7884-43A4-9C91-7F87FAF3E37E}: Format(In/Out)=(UYVY,UYVY) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY DeinterlaceTech_BOBVerticalStretch 
+                   {B338D50D-A64A-4790-AC01-475B64252A78}: Format(In/Out)=(UYVY,UYVY) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY DeinterlaceTech_BOBVerticalStretch 
+                   {F9F19DA5-3B09-4B2F-9D89-C64753E3EAAB}: Format(In/Out)=(UYVY,UYVY) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY 
+                   {6CB69578-7617-4637-91E5-1C02DB810285}: Format(In/Out)=(YV12,0x32315659) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY DeinterlaceTech_PixelAdaptive 
+                   {5A54A0C9-C7EC-4BD9-8EDE-F3C75DC4393B}: Format(In/Out)=(YV12,0x32315659) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY 
+                   {335AA36E-7884-43A4-9C91-7F87FAF3E37E}: Format(In/Out)=(YV12,0x32315659) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY DeinterlaceTech_BOBVerticalStretch 
+                   {B338D50D-A64A-4790-AC01-475B64252A78}: Format(In/Out)=(YV12,0x32315659) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY DeinterlaceTech_BOBVerticalStretch 
+                   {F9F19DA5-3B09-4B2F-9D89-C64753E3EAAB}: Format(In/Out)=(YV12,0x32315659) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY 
+                   {6CB69578-7617-4637-91E5-1C02DB810285}: Format(In/Out)=(NV12,0x3231564e) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY DeinterlaceTech_PixelAdaptive 
+                   {5A54A0C9-C7EC-4BD9-8EDE-F3C75DC4393B}: Format(In/Out)=(NV12,0x3231564e) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY 
+                   {335AA36E-7884-43A4-9C91-7F87FAF3E37E}: Format(In/Out)=(NV12,0x3231564e) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY DeinterlaceTech_BOBVerticalStretch 
+                   {B338D50D-A64A-4790-AC01-475B64252A78}: Format(In/Out)=(NV12,0x3231564e) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY DeinterlaceTech_BOBVerticalStretch 
+                   {F9F19DA5-3B09-4B2F-9D89-C64753E3EAAB}: Format(In/Out)=(NV12,0x3231564e) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY 
+                   {6CB69578-7617-4637-91E5-1C02DB810285}: Format(In/Out)=(IMC1,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
+                   {5A54A0C9-C7EC-4BD9-8EDE-F3C75DC4393B}: Format(In/Out)=(IMC1,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
+                   {335AA36E-7884-43A4-9C91-7F87FAF3E37E}: Format(In/Out)=(IMC1,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
+                   {B338D50D-A64A-4790-AC01-475B64252A78}: Format(In/Out)=(IMC1,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
+                   {F9F19DA5-3B09-4B2F-9D89-C64753E3EAAB}: Format(In/Out)=(IMC1,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
+                   {6CB69578-7617-4637-91E5-1C02DB810285}: Format(In/Out)=(IMC2,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
+                   {5A54A0C9-C7EC-4BD9-8EDE-F3C75DC4393B}: Format(In/Out)=(IMC2,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
+                   {335AA36E-7884-43A4-9C91-7F87FAF3E37E}: Format(In/Out)=(IMC2,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
+                   {B338D50D-A64A-4790-AC01-475B64252A78}: Format(In/Out)=(IMC2,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
+                   {F9F19DA5-3B09-4B2F-9D89-C64753E3EAAB}: Format(In/Out)=(IMC2,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
+                   {6CB69578-7617-4637-91E5-1C02DB810285}: Format(In/Out)=(IMC3,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
+                   {5A54A0C9-C7EC-4BD9-8EDE-F3C75DC4393B}: Format(In/Out)=(IMC3,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
+                   {335AA36E-7884-43A4-9C91-7F87FAF3E37E}: Format(In/Out)=(IMC3,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
+                   {B338D50D-A64A-4790-AC01-475B64252A78}: Format(In/Out)=(IMC3,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
+                   {F9F19DA5-3B09-4B2F-9D89-C64753E3EAAB}: Format(In/Out)=(IMC3,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
+                   {6CB69578-7617-4637-91E5-1C02DB810285}: Format(In/Out)=(IMC4,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
+                   {5A54A0C9-C7EC-4BD9-8EDE-F3C75DC4393B}: Format(In/Out)=(IMC4,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
+                   {335AA36E-7884-43A4-9C91-7F87FAF3E37E}: Format(In/Out)=(IMC4,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
+                   {B338D50D-A64A-4790-AC01-475B64252A78}: Format(In/Out)=(IMC4,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
+                   {F9F19DA5-3B09-4B2F-9D89-C64753E3EAAB}: Format(In/Out)=(IMC4,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
+                   {6CB69578-7617-4637-91E5-1C02DB810285}: Format(In/Out)=(S340,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
+                   {5A54A0C9-C7EC-4BD9-8EDE-F3C75DC4393B}: Format(In/Out)=(S340,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
+                   {335AA36E-7884-43A4-9C91-7F87FAF3E37E}: Format(In/Out)=(S340,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
+                   {B338D50D-A64A-4790-AC01-475B64252A78}: Format(In/Out)=(S340,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
+                   {F9F19DA5-3B09-4B2F-9D89-C64753E3EAAB}: Format(In/Out)=(S340,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
+                   {6CB69578-7617-4637-91E5-1C02DB810285}: Format(In/Out)=(S342,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
+                   {5A54A0C9-C7EC-4BD9-8EDE-F3C75DC4393B}: Format(In/Out)=(S342,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
+                   {335AA36E-7884-43A4-9C91-7F87FAF3E37E}: Format(In/Out)=(S342,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
+                   {B338D50D-A64A-4790-AC01-475B64252A78}: Format(In/Out)=(S342,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
+                   {F9F19DA5-3B09-4B2F-9D89-C64753E3EAAB}: Format(In/Out)=(S342,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
+     DDraw Status: Enabled
+       D3D Status: Enabled
+       AGP Status: Enabled
+
+-------------
+Sound Devices
+-------------
+            Description: Speakers (2- USB PnP Sound Device)
+ Default Sound Playback: Yes
+ Default Voice Playback: Yes
+            Hardware ID: USB\VID_0D8C&PID_000C&REV_0100&MI_00
+        Manufacturer ID: 1
+             Product ID: 100
+                   Type: WDM
+            Driver Name: CM108.sys
+         Driver Version: 5.12.0008.1803 (English)
+      Driver Attributes: Final Retail
+            WHQL Logo'd: Yes
+          Date and Size: 6/28/2007 07:18:10, 1310720 bytes
+            Other Files: 
+        Driver Provider: C-Media Inc.
+         HW Accel Level: Basic
+              Cap Flags: 0xF1F
+    Min/Max Sample Rate: 100, 200000
+Static/Strm HW Mix Bufs: 1, 0
+ Static/Strm HW 3D Bufs: 0, 0
+              HW Memory: 0
+       Voice Management: No
+ EAX(tm) 2.0 Listen/Src: No, No
+   I3DL2(tm) Listen/Src: No, No
+Sensaura(tm) ZoomFX(tm): No
+
+            Description: SPDIF Out (Creative SB X-Fi)
+ Default Sound Playback: No
+ Default Voice Playback: No
+            Hardware ID: PCI\VEN_1102&DEV_0005&SUBSYS_00311102&REV_00
+        Manufacturer ID: 1
+             Product ID: 100
+                   Type: WDM
+            Driver Name: ctaud2k.sys
+         Driver Version: 6.00.0001.1283 (English)
+      Driver Attributes: Final Retail
+            WHQL Logo'd: No
+          Date and Size: 2/25/2008 09:43:24, 524312 bytes
+            Other Files: 
+        Driver Provider: Creative
+         HW Accel Level: Basic
+              Cap Flags: 0xF1F
+    Min/Max Sample Rate: 100, 200000
+Static/Strm HW Mix Bufs: 1, 0
+ Static/Strm HW 3D Bufs: 0, 0
+              HW Memory: 0
+       Voice Management: No
+ EAX(tm) 2.0 Listen/Src: No, No
+   I3DL2(tm) Listen/Src: No, No
+Sensaura(tm) ZoomFX(tm): No
+
+---------------------
+Sound Capture Devices
+---------------------
+            Description: Microphone (2- USB PnP Sound Device)
+  Default Sound Capture: Yes
+  Default Voice Capture: Yes
+            Driver Name: CM108.sys
+         Driver Version: 5.12.0008.1803 (English)
+      Driver Attributes: Final Retail
+          Date and Size: 6/28/2007 07:18:10, 1310720 bytes
+              Cap Flags: 0x1
+           Format Flags: 0xFFFFF
+
+            Description: "What U Hear" (Creative SB X-Fi)
+  Default Sound Capture: No
+  Default Voice Capture: No
+            Driver Name: ctaud2k.sys
+         Driver Version: 6.00.0001.1283 (English)
+      Driver Attributes: Final Retail
+          Date and Size: 2/25/2008 09:43:24, 524312 bytes
+              Cap Flags: 0x1
+           Format Flags: 0xFFFFF
+
+            Description: Line-In (Creative SB X-Fi)
+  Default Sound Capture: No
+  Default Voice Capture: No
+            Driver Name: ctaud2k.sys
+         Driver Version: 6.00.0001.1283 (English)
+      Driver Attributes: Final Retail
+          Date and Size: 2/25/2008 09:43:24, 524312 bytes
+              Cap Flags: 0x1
+           Format Flags: 0xFFFFF
+
+            Description: Line In (High Definition Audio Device)
+  Default Sound Capture: No
+  Default Voice Capture: No
+            Driver Name: HdAudio.sys
+         Driver Version: 6.00.5840.16387 (English)
+      Driver Attributes: Final Retail
+          Date and Size: 11/2/2006 02:36:49, 235520 bytes
+              Cap Flags: 0x1
+           Format Flags: 0xFFFFF
+
+-------------------
+DirectInput Devices
+-------------------
+      Device Name: Mouse
+         Attached: 1
+    Controller ID: n/a
+Vendor/Product ID: n/a
+        FF Driver: n/a
+
+      Device Name: Keyboard
+         Attached: 1
+    Controller ID: n/a
+Vendor/Product ID: n/a
+        FF Driver: n/a
+
+      Device Name: ?
+         Attached: 1
+    Controller ID: 0x0
+Vendor/Product ID: 0x0D8C, 0x000C
+        FF Driver: n/a
+
+      Device Name: Dell USB Keyboard
+         Attached: 1
+    Controller ID: 0x0
+Vendor/Product ID: 0x413C, 0x2010
+        FF Driver: n/a
+
+      Device Name: Dell USB Keyboard
+         Attached: 1
+    Controller ID: 0x0
+Vendor/Product ID: 0x413C, 0x2010
+        FF Driver: n/a
+
+      Device Name: Dell USB Keyboard
+         Attached: 1
+    Controller ID: 0x0
+Vendor/Product ID: 0x413C, 0x2010
+        FF Driver: n/a
+
+Poll w/ Interrupt: No
+
+-----------
+USB Devices
+-----------
++ USB Root Hub
+| Vendor/Product ID: 0x10DE, 0x036C
+| Matching Device ID: usb\root_hub
+| Service: usbhub
+| Driver: usbhub.sys, 1/19/2008 00:53:42, 194560 bytes
+| Driver: usbd.sys, 1/19/2008 00:53:17, 5888 bytes
+| 
++-+ Generic USB Hub
+| | Vendor/Product ID: 0x413C, 0x1003
+| | Location: Port_#0002.Hub_#0001
+| | Matching Device ID: usb\class_09
+| | Service: usbhub
+| | Driver: usbhub.sys, 1/19/2008 00:53:42, 194560 bytes
+| | 
++-+ Logitech USB G3 (MX518) Optical Mouse
+| | Vendor/Product ID: 0x046D, 0xC01E
+| | Location: Port_#0001.Hub_#0001
+| | Matching Device ID: usb\vid_046d&pid_c01e
+| | Lower Filters: LUsbFilt
+| | Service: HidUsb
+| | Driver: LUsbFilt.sys, 2/29/2008 04:13:46, 28944 bytes
+| | Driver: WdfCoInstaller01005.dll, 6/22/2007 13:34:02, 1419232 bytes
+| | Driver: hidusb.sys, 1/19/2008 00:53:17, 12288 bytes
+| | Driver: hidclass.sys, 1/19/2008 00:53:16, 38912 bytes
+| | Driver: hidparse.sys, 1/19/2008 00:53:16, 25472 bytes
+| | 
+| +-+ Logitech HID-compliant G3/MX518 Optical Mouse
+| | | Vendor/Product ID: 0x046D, 0xC01E
+| | | Matching Device ID: hid\vid_046d&pid_c01e
+| | | Upper Filters: LMouFilt
+| | | Lower Filters: LHidFilt
+| | | Service: mouhid
+| | | Driver: LHidFilt.Sys, 2/29/2008 04:13:16, 35344 bytes
+| | | Driver: LMouFilt.Sys, 2/29/2008 04:13:24, 36880 bytes
+| | | Driver: KHALMNPR.Exe, 2/29/2008 04:12:38, 76304 bytes
+| | | Driver: WdfCoInstaller01005.dll, 6/22/2007 13:34:02, 1419232 bytes
+| | | Driver: mouhid.sys, 1/19/2008 00:49:16, 15872 bytes
+| | | Driver: mouclass.sys, 1/19/2008 02:41:52, 34360 bytes
+
+----------------
+Gameport Devices
+----------------
+
+------------
+PS/2 Devices
+------------
++ HID Keyboard Device
+| Vendor/Product ID: 0x413C, 0x2010
+| Matching Device ID: hid_device_system_keyboard
+| Service: kbdhid
+| Driver: kbdhid.sys, 1/19/2008 00:49:17, 15872 bytes
+| Driver: kbdclass.sys, 1/19/2008 02:41:52, 35384 bytes
+| 
++ Terminal Server Keyboard Driver
+| Matching Device ID: root\rdp_kbd
+| Upper Filters: kbdclass
+| Service: TermDD
+| Driver: i8042prt.sys, 1/19/2008 00:49:18, 54784 bytes
+| Driver: kbdclass.sys, 1/19/2008 02:41:52, 35384 bytes
+| 
++ Terminal Server Mouse Driver
+| Matching Device ID: root\rdp_mou
+| Upper Filters: mouclass
+| Service: TermDD
+| Driver: termdd.sys, 1/19/2008 02:42:19, 54328 bytes
+| Driver: sermouse.sys, 1/19/2008 00:49:16, 19968 bytes
+| Driver: mouclass.sys, 1/19/2008 02:41:52, 34360 bytes
+
+------------------------
+Disk & DVD/CD-ROM Drives
+------------------------
+      Drive: C:
+ Free Space: 7.6 GB
+Total Space: 141.8 GB
+File System: NTFS
+      Model: NVIDIA  STRIPE   138.49G
+
+      Drive: D:
+      Model: ASUS DRW-2014L1T SCSI CdRom Device
+     Driver: c:\windows\system32\drivers\cdrom.sys, 6.00.6001.18000 (English), 1/19/2008 00:49:51, 67072 bytes
+
