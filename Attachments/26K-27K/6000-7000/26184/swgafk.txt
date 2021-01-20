@@ -1,0 +1,703 @@
+;SWG AFK Grinding program v1.00
+
+Global $Paused, $Showme
+HotKeySet("{PAUSE}", "TogglePause")
+HotKeySet("{ESC}", "Terminate")
+HotKeySet("{F9}", "ShowMe")
+Opt("MouseClickDragDelay", 130)
+
+#include <Misc.au3>
+#include <GuiConstants.au3>
+
+Sleep ( 400 )
+Send ("{F9}")
+Sleep (3000)
+
+While 1
+If MsgBox( 4096 + 262144 + 1, "SWG WINDOWS WARNING","YOU MUST RUN SWG IN BORDERLESS WINDOWS MODE." & @CRLF & "GO TO THE SWG LAUNCHPAD >> GAME OPTIONS >> GRAPHICS." & @CRLF & "CHECK OFF THE FIRST TWO BOXES.") = 2 Then Exit
+ExitLoop
+WEnd
+
+While 1
+If MsgBox( 4096 + 262144 + 1, "HOTKEYS","Defined Hotkeys" & @CRLF & "ESC: Will cancel the program (you will start from the beginning again)" & @CRLF & "PAUSE: Will pause the program (you will continue from where you stopped)") = 2 Then Exit
+ExitLoop
+WEnd
+
+MsgBox( 4096 + 262144 + 0, "AFK Grinding Setup", "This program requires the user to:" & @CRLF & "1) Place crafting tools and macros in toolbar slots 1 - 7" & @CRLF & "2) Choose the schematic required"  & @CRLF & "3) Click on each resource needed to make that item"  & @CRLF & "" & @CRLF & "It will then automate the grinding process until the next schematic is needed at which point it will ask for more user input")
+
+MsgBox( 4096 + 262144 + 0, "AFK Grinding Setup", "This program assumes the following:" & @CRLF & "" & @CRLF & "1) You have written the following in-game SWG macros (if not do so now):"  & @CRLF & "   a) CraftingStages" & @CRLF & "     /nextCraftingStage;" & @CRLF & "     /nextCraftingStage;" & @CRLF & "     /nextCraftingStage;" & @CRLF & "     /nextCraftingStage;" & @CRLF & "     /createPrototype Practice noitem;" & @CRLF & "     /createPrototype Practice noitem;" & @CRLF & "" & @CRLF & "   b) Default" & @CRLF & "     /ui action defaultButton;" & @CRLF & "" & @CRLF & "2) That you will use the following resources and amounts for your crafting:" & @CRLF & "   a) Mineral Survey Tools - 1,620 Steel" & @CRLF & "   b) Wind Power Generators - 6,650 Steel / 1,400 Ore / 1,050 Aluminum" & @CRLF & "   c) Weapon Crafting Stations - 69,750 Steel" & @CRLF & "   d) Fountains - 385,000 Ore / 115,500 Steel / 192,500 Water" & @CRLF & "   e) Gungan Heads - 110,000 Ore / 55,000 Gemstone" & @CRLF & "" & @CRLF & "Totaling:" & @CRLF & "193,520 Steel / 496,400 Ore / 1,050 Aluminum / 192,500 Water / 55,000 Gemstone" & @CRLF & "   f) I recommend you get 10% more of each resource than needed")
+
+MsgBox( 4096 + 262144 + 0, "AFK Grinding Setup", "Settings and items of note:" & @CRLF & "" & @CRLF & "1) Uncheck <Confirm Crafting Actions> (Goto Options >> Misc)" & @CRLF & "2) Check <Actions Can Be Fired From Toolbar> (Goto Options >> Keymap)" & @CRLF & "3) All resources must be in your main inventory" & @CRLF & "4) It is best to zoom all the way in to minimize any potential lag" & @CRLF & "5) Open an empty backback up as the background" & @CRLF & "6) You should be in, on, or next to a PRIVATE Structure Crafting Station" & @CRLF & "7) Approximate time for each crafting phase is as follows:" & @CRLF & "    Phase 1: 7 minutes" & @CRLF & "    Phase 2: 4 minutes"& @CRLF & "    Phase 3: 23 minutes" & @CRLF & "    Phase 4: 42 minutes" & @CRLF & "    Phase 5: 7 minutes")
+
+;Phase 1 - Survey Tools
+MsgBox( 4096 + 262144 + 0, "AFK Grinding Setup", "To do:" & @CRLF & "1) Place your Weapon Crafting Tools in slots 1 to 5"  & @CRLF & "2) Place your CraftingStages macro in slot 6" & @CRLF & "3) Place your Default macro in slot 7" & @CRLF & "" & @CRLF & "Click OK after you have placed your tools and macros")
+
+MsgBox( 4096 + 262144 + 0, "SURVEY TOOLS", "To do:" & @CRLF & "1) Open your 1st crafting tool and select the schematic for Mineral Survey Tool" & @CRLF & "2) Click the NEXT button on the crafting window" & @CRLF & "" & @CRLF & "Click OK after you have chosen your schematic and clicked the NEXT button")
+
+SplashTextOn("SURVEY TOOLS", "Click once on the STEEL for the Mineral Survey Tool", 400, 50, -1, -1, 0, "Courier", 12)
+While 1
+Sleep ( 100 )
+If _IsPressed("01") Then
+$pos = MouseGetPos()
+ExitLoop
+EndIf
+WEnd
+SplashOff()
+$steelx = $pos[0]
+$steely = $pos[1]
+Sleep ( 1000 )
+
+SplashTextOn("SURVEY TOOLS", "Close the crafting window by clicking on the X in the upper right corner", 400, 50, -1, -1, 0, "Courier", 12)
+While 1
+Sleep ( 100 )
+If _IsPressed("01") Then
+$pos = MouseGetPos()
+ExitLoop
+EndIf
+WEnd
+SplashOff()
+$winclosex = $pos[0]
+$winclosey = $pos[1]
+Sleep ( 1000 )
+
+SplashTextOn("SURVEY TOOLS", "Auto-crafting will start in 5 seconds", 400, 50, -1, -1, 0, "Courier", 12)
+Sleep ( 5000 )
+SplashOff()
+
+$i = 0 
+Do 
+	If WinActive( "Star Wars Galaxies", "" ) Then 
+		Send ( "{1}" ) ;fires crafting tool in slot 1
+		Sleep ( 1500 )
+		Send ( "{7}" ) ;fires the Default macro to "click" the NEXT button
+		Sleep ( 1500 )
+		MouseClick ( "left" , $steelx, $steely, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $steelx, $steely, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $steelx, $steely, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $steelx, $steely, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 2000 )
+		Send ( "{6}" ) ;fires the CraftingStages macro to complete the craft
+		Sleep ( 1000 )
+		MouseClick ( "left" , $winclosex, $winclosey, 1, 10 ) ;moves the mouse and closes to crafting window if there is a lag issue
+		Sleep ( 1000 )
+	
+		Send ( "{2}" ) ;fires crafting tool in slot 2
+		Sleep ( 1500 )
+		Send ( "{7}" ) ;fires the Default macro to "click" the NEXT button
+		Sleep ( 1500 )
+		MouseClick ( "left" , $steelx, $steely, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $steelx, $steely, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $steelx, $steely, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $steelx, $steely, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 2000 )
+		Send ( "{6}" ) ;fires the CraftingStages macro to complete the craft
+		Sleep ( 1000 )
+		MouseClick ( "left" , $winclosex, $winclosey, 1, 10 ) ;moves the mouse and closes to crafting window if there is a lag issue
+		Sleep ( 1000 )
+	
+		Send ( "{3}" ) ;fires crafting tool in slot 3
+		Sleep ( 1500 )
+		Send ( "{7}" ) ;fires the Default macro to "click" the NEXT button
+		Sleep ( 1500 )
+		MouseClick ( "left" , $steelx, $steely, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $steelx, $steely, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $steelx, $steely, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $steelx, $steely, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 2000 )
+		Send ( "{6}" ) ;fires the CraftingStages macro to complete the craft
+		Sleep ( 1000 )
+		MouseClick ( "left" , $winclosex, $winclosey, 1, 10 ) ;moves the mouse and closes to crafting window if there is a lag issue
+		Sleep ( 1000 )
+	
+		Send ( "{4}" ) ;fires crafting tool in slot 4
+		Sleep ( 1500 )
+		Send ( "{7}" ) ;fires the Default macro to "click" the NEXT button
+		Sleep ( 1500 )
+		MouseClick ( "left" , $steelx, $steely, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $steelx, $steely, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $steelx, $steely, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $steelx, $steely, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 2000 )
+		Send ( "{6}" ) ;fires the CraftingStages macro to complete the craft
+		Sleep ( 1000 )
+		MouseClick ( "left" , $winclosex, $winclosey, 1, 10 ) ;moves the mouse and closes to crafting window if there is a lag issue
+		Sleep ( 1000 )
+	
+		Send ( "{5}" ) ;fires crafting tool in slot 5
+		Sleep ( 1500 )
+		Send ( "{7}" ) ;fires the Default macro to "click" the NEXT button
+		Sleep ( 1500 )
+		MouseClick ( "left" , $steelx, $steely, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $steelx, $steely, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $steelx, $steely, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $steelx, $steely, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 2000 )
+		Send ( "{6}" ) ;fires the CraftingStages macro to complete the craft
+		Sleep ( 1000 )
+		MouseClick ( "left" , $winclosex, $winclosey, 1, 10 ) ;moves the mouse and closes to crafting window if there is a lag issue
+		Sleep ( 1000 )
+	
+		$i = $i + 1
+	EndIf
+Until $i = 12
+
+;Phase 2 - Wind Power Generators
+MsgBox( 4096 + 262144 + 0, "AFK Grinding Setup", "To do:" & @CRLF & "1) Place your Structure Crafting Tools in slots 1 to 5"  & @CRLF & "2) Place your CraftingStages macro in slot 6" & @CRLF & "3) Place your Default macro in slot 7" & @CRLF & "" & @CRLF & "Click OK after you have placed your tools and macros")
+
+MsgBox( 4096 + 262144 + 0, "WIND POWER GENERATORS", "To do:" & @CRLF & "1) Open your 1st crafting tool and select the schematic for Wind Power Generator" & @CRLF & "2) Click the NEXT button on the crafting window" & @CRLF & "" & @CRLF & "Click OK after you have chosen your schematic and clicked the NEXT button")
+
+SplashTextOn("WIND POWER GENERATORS", "Click once on the STEEL for the Wind Power Generator", 400, 50, -1, -1, 0, "Courier", 12)
+While 1
+Sleep ( 100 )
+If _IsPressed("01") Then
+$pos = MouseGetPos()
+ExitLoop
+EndIf
+WEnd
+SplashOff()
+$steelx = $pos[0]
+$steely = $pos[1]
+Sleep ( 1000 )
+
+SplashTextOn("WIND POWER GENERATORS", "Click once on the ALUMINUM for the Wind Power Generator", 400, 50, -1, -1, 0, "Courier", 12)
+While 1
+Sleep ( 100 )
+If _IsPressed("01") Then
+$pos = MouseGetPos()
+ExitLoop
+EndIf
+WEnd
+SplashOff()
+$alumx = $pos[0]
+$alumy = $pos[1]
+Sleep ( 1000 )
+
+SplashTextOn("WIND POWER GENERATORS", "Click once on the ORE for the Wind Power Generator", 400, 50, -1, -1, 0, "Courier", 12)
+While 1
+Sleep ( 100 )
+If _IsPressed("01") Then
+$pos = MouseGetPos()
+ExitLoop
+EndIf
+WEnd
+SplashOff()
+$orex = $pos[0]
+$orey = $pos[1]
+Sleep ( 1000 )
+
+SplashTextOn("WIND POWER GENERATORS", "Close the crafting window by clicking on the X in the upper right corner", 400, 50, -1, -1, 0, "Courier", 12)
+While 1
+Sleep ( 100 )
+If _IsPressed("01") Then
+$pos = MouseGetPos()
+ExitLoop
+EndIf
+WEnd
+SplashOff()
+$winclosex = $pos[0]
+$winclosey = $pos[1]
+Sleep ( 1000 )
+
+SplashTextOn("WIND POWER GENERATORS", "Auto-crafting will start in 5 seconds", 400, 50, -1, -1, 0, "Courier", 12)
+Sleep ( 5000 )
+SplashOff()
+
+$i = 0 
+Do 
+	If WinActive( "Star Wars Galaxies", "" ) Then 
+		Send ( "{1}" ) ;fires crafting tool in slot 1
+		Sleep ( 1500 )
+		Send ( "{7}" ) ;fires the Default macro to "click" the NEXT button
+		Sleep ( 1500 )
+		MouseClick ( "left" , $steelx, $steely, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $steelx, $steely, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $alumx, $alumy, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $alumx, $alumy, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $orex, $orey, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 2000 )
+		Send ( "{6}" ) ;fires the CraftingStages macro to complete the craft
+		Sleep ( 1000 )
+		MouseClick ( "left" , $winclosex, $winclosey, 1, 10 ) ;moves the mouse and closes to crafting window if there is a lag issue
+		Sleep ( 1000 )
+	
+		Send ( "{2}" ) ;fires crafting tool in slot 2
+		Sleep ( 1500 )
+		Send ( "{7}" ) ;fires the Default macro to "click" the NEXT button
+		Sleep ( 1500 )
+		MouseClick ( "left" , $steelx, $steely, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $steelx, $steely, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $alumx, $alumy, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $alumx, $alumy, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $orex, $orey, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 2000 )
+		Send ( "{6}" ) ;fires the CraftingStages macro to complete the craft
+		Sleep ( 1000 )
+		MouseClick ( "left" , $winclosex, $winclosey, 1, 10 ) ;moves the mouse and closes to crafting window if there is a lag issue
+		Sleep ( 1000 )
+	
+		Send ( "{3}" ) ;fires crafting tool in slot 3
+		Sleep ( 1500 )
+		Send ( "{7}" ) ;fires the Default macro to "click" the NEXT button
+		Sleep ( 1500 )
+		MouseClick ( "left" , $steelx, $steely, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $steelx, $steely, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $alumx, $alumy, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $alumx, $alumy, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $orex, $orey, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 2000 )
+		Send ( "{6}" ) ;fires the CraftingStages macro to complete the craft
+		Sleep ( 1000 )
+		MouseClick ( "left" , $winclosex, $winclosey, 1, 10 ) ;moves the mouse and closes to crafting window if there is a lag issue
+		Sleep ( 1000 )
+	
+		Send ( "{4}" ) ;fires crafting tool in slot 4
+		Sleep ( 1500 )
+		Send ( "{7}" ) ;fires the Default macro to "click" the NEXT button
+		Sleep ( 1500 )
+		MouseClick ( "left" , $steelx, $steely, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $steelx, $steely, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $alumx, $alumy, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $alumx, $alumy, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $orex, $orey, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 2000 )
+		Send ( "{6}" ) ;fires the CraftingStages macro to complete the craft
+		Sleep ( 1000 )
+		MouseClick ( "left" , $winclosex, $winclosey, 1, 10 ) ;moves the mouse and closes to crafting window if there is a lag issue
+		Sleep ( 1000 )
+	
+		Send ( "{5}" ) ;fires crafting tool in slot 5
+		Sleep ( 1500 )
+		Send ( "{7}" ) ;fires the Default macro to "click" the NEXT button
+		Sleep ( 1500 )
+		MouseClick ( "left" , $steelx, $steely, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $steelx, $steely, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $alumx, $alumy, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $alumx, $alumy, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $orex, $orey, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 2000 )
+		Send ( "{6}" ) ;fires the CraftingStages macro to complete the craft
+		Sleep ( 1000 )
+		MouseClick ( "left" , $winclosex, $winclosey, 1, 10 ) ;moves the mouse and closes to crafting window if there is a lag issue
+		Sleep ( 1000 )
+	
+		$i = $i + 1
+	EndIf
+Until $i = 7
+	
+;Phase 3 - Crafting Stations
+MsgBox( 4096 + 262144 + 0, "WEAPON CRAFTING STATIONS", "To do:" & @CRLF & "1) Open your 1st crafting tool and select the schematic for Weapon, Droids, and General Item Crafting Station" & @CRLF & "2) Click the NEXT button on the crafting window" & @CRLF & "" & @CRLF & "Click OK after you have chosen your schematic and clicked the NEXT button")
+
+SplashTextOn("WEAPON CRAFTING STATIONS", "Click once on the STEEL for the Weapon Crafting Staion", 400, 50, -1, -1, 0, "Courier", 12)
+While 1
+Sleep ( 100 )
+If _IsPressed("01") Then
+$pos = MouseGetPos()
+ExitLoop
+EndIf
+WEnd
+SplashOff()
+$steelx = $pos[0]
+$steely = $pos[1]
+Sleep ( 1000 )
+
+SplashTextOn("WEAPON CRAFTING STATIONS", "Close the crafting window by clicking on the X in the upper right corner", 400, 50, -1, -1, 0, "Courier", 12)
+While 1
+Sleep ( 100 )
+If _IsPressed("01") Then
+$pos = MouseGetPos()
+ExitLoop
+EndIf
+WEnd
+SplashOff()
+$winclosex = $pos[0]
+$winclosey = $pos[1]
+Sleep ( 1000 )
+
+SplashTextOn("WEAPON CRAFTING STATIONS", "Auto-crafting will start in 5 seconds", 400, 50, -1, -1, 0, "Courier", 12)
+Sleep ( 5000 )
+SplashOff()
+
+$i = 0 
+Do 
+	If WinActive( "Star Wars Galaxies", "" ) Then 
+		Send ( "{1}" ) ;fires crafting tool in slot 1
+		Sleep ( 1500 )
+		Send ( "{7}" ) ;fires the Default macro to "click" the NEXT button
+		Sleep ( 1500 )
+		MouseClick ( "left" , $steelx, $steely, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $steelx, $steely, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 2000 )
+		Send ( "{6}" ) ;fires the CraftingStages macro to complete the craft
+		Sleep ( 1000 )
+		MouseClick ( "left" , $winclosex, $winclosey, 1, 10 ) ;moves the mouse and closes to crafting window if there is a lag issue
+		Sleep ( 1000 )
+	
+		Send ( "{2}" ) ;fires crafting tool in slot 2
+		Sleep ( 1500 )
+		Send ( "{7}" ) ;fires the Default macro to "click" the NEXT button
+		Sleep ( 1500 )
+		MouseClick ( "left" , $steelx, $steely, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $steelx, $steely, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 2000 )
+		Send ( "{6}" ) ;fires the CraftingStages macro to complete the craft
+		Sleep ( 1000 )
+		MouseClick ( "left" , $winclosex, $winclosey, 1, 10 ) ;moves the mouse and closes to crafting window if there is a lag issue
+		Sleep ( 1000 )
+	
+		Send ( "{3}" ) ;fires crafting tool in slot 3
+		Sleep ( 1500 )
+		Send ( "{7}" ) ;fires the Default macro to "click" the NEXT button
+		Sleep ( 1500 )
+		MouseClick ( "left" , $steelx, $steely, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $steelx, $steely, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 2000 )
+		Send ( "{6}" ) ;fires the CraftingStages macro to complete the craft
+		Sleep ( 1000 )
+		MouseClick ( "left" , $winclosex, $winclosey, 1, 10 ) ;moves the mouse and closes to crafting window if there is a lag issue
+		Sleep ( 1000 )
+	
+		Send ( "{4}" ) ;fires crafting tool in slot 4
+		Sleep ( 1500 )
+		Send ( "{7}" ) ;fires the Default macro to "click" the NEXT button
+		Sleep ( 1500 )
+		MouseClick ( "left" , $steelx, $steely, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $steelx, $steely, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 2000 )
+		Send ( "{6}" ) ;fires the CraftingStages macro to complete the craft
+		Sleep ( 1000 )
+		MouseClick ( "left" , $winclosex, $winclosey, 1, 10 ) ;moves the mouse and closes to crafting window if there is a lag issue
+		Sleep ( 1000 )
+	
+		Send ( "{5}" ) ;fires crafting tool in slot 5
+		Sleep ( 1500 )
+		Send ( "{7}" ) ;fires the Default macro to "click" the NEXT button
+		Sleep ( 1500 )
+		MouseClick ( "left" , $steelx, $steely, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $steelx, $steely, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 2000 )
+		Send ( "{6}" ) ;fires the CraftingStages macro to complete the craft
+		Sleep ( 1000 )
+		MouseClick ( "left" , $winclosex, $winclosey, 1, 10 ) ;moves the mouse and closes to crafting window if there is a lag issue
+		Sleep ( 10000 )
+	
+		$i = $i + 1
+	EndIf
+Until $i = 31
+
+;Phase 4 - Fountains
+MsgBox( 4096 + 262144 + 0, "FOUNTAINS", "To do:" & @CRLF & "1) Open your 1st crafting tool and select the schematic for Fountain" & @CRLF & "2) Click the NEXT button on the crafting window" & @CRLF & "" & @CRLF & "Click OK after you have chosen your schematic and clicked the NEXT button")
+
+SplashTextOn("FOUNTAINS", "Click once on the ORE for the Fountain", 400, 50, -1, -1, 0, "Courier", 12)
+While 1
+Sleep ( 100 )
+If _IsPressed("01") Then
+$pos = MouseGetPos()
+ExitLoop
+EndIf
+WEnd
+SplashOff()
+$orex = $pos[0]
+$orey = $pos[1]
+Sleep ( 1000 )
+
+SplashTextOn("FOUNTAINS", "Click once on the STEEL for the Fountain", 400, 50, -1, -1, 0, "Courier", 12)
+While 1
+Sleep ( 100 )
+If _IsPressed("01") Then
+$pos = MouseGetPos()
+ExitLoop
+EndIf
+WEnd
+SplashOff()
+$steelx = $pos[0]
+$steely = $pos[1]
+Sleep ( 1000 )
+
+SplashTextOn("FOUNTAINS", "Click once on the WATER for the Fountain", 400, 50, -1, -1, 0, "Courier", 12)
+While 1
+Sleep ( 100 )
+If _IsPressed("01") Then
+$pos = MouseGetPos()
+ExitLoop
+EndIf
+WEnd
+SplashOff()
+$waterx = $pos[0]
+$watery = $pos[1]
+Sleep ( 1000 )
+
+SplashTextOn("FOUNTAINS", "Close the crafting window by clicking on the X in the upper right corner", 400, 50, -1, -1, 0, "Courier", 12)
+While 1
+Sleep ( 100 )
+If _IsPressed("01") Then
+$pos = MouseGetPos()
+ExitLoop
+EndIf
+WEnd
+SplashOff()
+$winclosex = $pos[0]
+$winclosey = $pos[1]
+Sleep ( 1000 )
+
+SplashTextOn("FOUNTAIN", "Auto-crafting will start in 5 seconds", 400, 50, -1, -1, 0, "Courier", 12)
+Sleep ( 5000 )
+SplashOff()
+
+$i = 0 
+Do 
+	If WinActive( "Star Wars Galaxies", "" ) Then 
+		Send ( "{1}" ) ;fires crafting tool in slot 1
+		Sleep ( 1500 )
+		Send ( "{7}" ) ;fires the Default macro to "click" the NEXT button
+		Sleep ( 1500 )
+		MouseClick ( "left" , $orex, $orey, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $steelx, $steely, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $waterx, $watery, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 2000 )
+		Send ( "{6}" ) ;fires the CraftingStages macro to complete the craft
+		Sleep ( 1000 )
+		MouseClick ( "left" , $winclosex, $winclosey, 1, 10 ) ;moves the mouse and closes to crafting window if there is a lag issue
+		Sleep ( 1000 )
+	
+		Send ( "{2}" ) ;fires crafting tool in slot 2
+		Sleep ( 1500 )
+		Send ( "{7}" ) ;fires the Default macro to "click" the NEXT button
+		Sleep ( 1500 )
+		MouseClick ( "left" , $orex, $orey, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $steelx, $steely, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $waterx, $watery, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 2000 )
+		Send ( "{6}" ) ;fires the CraftingStages macro to complete the craft
+		Sleep ( 1000 )
+		MouseClick ( "left" , $winclosex, $winclosey, 1, 10 ) ;moves the mouse and closes to crafting window if there is a lag issue
+		Sleep ( 1000 )
+	
+		Send ( "{3}" ) ;fires crafting tool in slot 3
+		Sleep ( 1500 )
+		Send ( "{7}" ) ;fires the Default macro to "click" the NEXT button
+		Sleep ( 1500 )
+		MouseClick ( "left" , $orex, $orey, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $steelx, $steely, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $waterx, $watery, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 2000 )
+		Send ( "{6}" ) ;fires the CraftingStages macro to complete the craft
+		Sleep ( 1000 )
+		MouseClick ( "left" , $winclosex, $winclosey, 1, 10 ) ;moves the mouse and closes to crafting window if there is a lag issue
+		Sleep ( 1000 )
+	
+		Send ( "{4}" ) ;fires crafting tool in slot 4
+		Sleep ( 1500 )
+		Send ( "{7}" ) ;fires the Default macro to "click" the NEXT button
+		Sleep ( 1500 )
+		MouseClick ( "left" , $orex, $orey, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $steelx, $steely, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $waterx, $watery, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 2000 )
+		Send ( "{6}" ) ;fires the CraftingStages macro to complete the craft
+		Sleep ( 1000 )
+		MouseClick ( "left" , $winclosex, $winclosey, 1, 10 ) ;moves the mouse and closes to crafting window if there is a lag issue
+		Sleep ( 1000 )
+	
+		Send ( "{5}" ) ;fires crafting tool in slot 5
+		Sleep ( 1500 )
+		Send ( "{7}" ) ;fires the Default macro to "click" the NEXT button
+		Sleep ( 1500 )
+		MouseClick ( "left" , $orex, $orey, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $steelx, $steely, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $waterx, $watery, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 2000 )
+		Send ( "{6}" ) ;fires the CraftingStages macro to complete the craft
+		Sleep ( 1000 )
+		MouseClick ( "left" , $winclosex, $winclosey, 1, 10 ) ;moves the mouse and closes to crafting window if there is a lag issue
+		Sleep ( 1000 )
+	
+		$i = $i + 1
+	EndIf
+Until $i = 77
+
+;Phase 5 - Gungan Heads
+MsgBox( 4096 + 262144 + 0, "GUNGAN HEADS", "To do:" & @CRLF & "1) Open your 1st crafting tool and select the schematic for Gungan Head Statue" & @CRLF & "2) Click the NEXT button on the crafting window" & @CRLF & "" & @CRLF & "Click OK after you have chosen your schematic and clicked the NEXT button")
+
+SplashTextOn("GUNGAN HEADS", "Click once on the ORE for the Gungan Head Statue", 400, 50, -1, -1, 0, "Courier", 12)
+While 1
+Sleep ( 100 )
+If _IsPressed("01") Then
+$pos = MouseGetPos()
+ExitLoop
+EndIf
+WEnd
+SplashOff()
+$orex = $pos[0]
+$orey = $pos[1]
+Sleep ( 1000 )
+
+SplashTextOn("GUNGAN HEADS", "Click once on the GEMSTONE for the Gungan Head Statue", 400, 50, -1, -1, 0, "Courier", 12)
+While 1
+Sleep ( 100 )
+If _IsPressed("01") Then
+$pos = MouseGetPos()
+ExitLoop
+EndIf
+WEnd
+SplashOff()
+$gemx = $pos[0]
+$gemy = $pos[1]
+Sleep ( 1000 )
+
+SplashTextOn("GUNGAN HEADS", "Close the crafting window by clicking on the X in the upper right corner", 400, 50, -1, -1, 0, "Courier", 12)
+While 1
+Sleep ( 100 )
+If _IsPressed("01") Then
+$pos = MouseGetPos()
+ExitLoop
+EndIf
+WEnd
+SplashOff()
+$winclosex = $pos[0]
+$winclosey = $pos[1]
+Sleep ( 1000 )
+
+SplashTextOn("GUNGAN HEADS", "Auto-crafting will start in 5 seconds", 400, 50, -1, -1, 0, "Courier", 12)
+Sleep ( 5000 )
+SplashOff()
+
+$i = 0 
+Do 
+	If WinActive( "Star Wars Galaxies", "" ) Then 
+		Send ( "{1}" ) ;fires crafting tool in slot 1
+		Sleep ( 1500 )
+		Send ( "{7}" ) ;fires the Default macro to "click" the NEXT button
+		Sleep ( 1500 )
+		MouseClick ( "left" , $orex, $orey, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $gemx, $gemy, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 2000 )
+		Send ( "{6}" ) ;fires the CraftingStages macro to complete the craft
+		Sleep ( 1000 )
+		MouseClick ( "left" , $winclosex, $winclosey, 1, 10 ) ;moves the mouse and closes to crafting window if there is a lag issue
+		Sleep ( 1000 )
+	
+		Send ( "{2}" ) ;fires crafting tool in slot 2
+		Sleep ( 1500 )
+		Send ( "{7}" ) ;fires the Default macro to "click" the NEXT button
+		Sleep ( 1500 )
+		MouseClick ( "left" , $orex, $orey, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $gemx, $gemy, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 2000 )
+		Send ( "{6}" ) ;fires the CraftingStages macro to complete the craft
+		Sleep ( 1000 )
+		MouseClick ( "left" , $winclosex, $winclosey, 1, 10 ) ;moves the mouse and closes to crafting window if there is a lag issue
+		Sleep ( 1000 )
+	
+		Send ( "{3}" ) ;fires crafting tool in slot 3
+		Sleep ( 1500 )
+		Send ( "{7}" ) ;fires the Default macro to "click" the NEXT button
+		Sleep ( 1500 )
+		MouseClick ( "left" , $orex, $orey, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $gemx, $gemy, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 2000 )
+		Send ( "{6}" ) ;fires the CraftingStages macro to complete the craft
+		Sleep ( 1000 )
+		MouseClick ( "left" , $winclosex, $winclosey, 1, 10 ) ;moves the mouse and closes to crafting window if there is a lag issue
+		Sleep ( 1000 )
+	
+		Send ( "{4}" ) ;fires crafting tool in slot 4
+		Sleep ( 1500 )
+		Send ( "{7}" ) ;fires the Default macro to "click" the NEXT button
+		Sleep ( 1500 )
+		MouseClick ( "left" , $orex, $orey, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $gemx, $gemy, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 2000 )
+		Send ( "{6}" ) ;fires the CraftingStages macro to complete the craft
+		Sleep ( 1000 )
+		MouseClick ( "left" , $winclosex, $winclosey, 1, 10 ) ;moves the mouse and closes to crafting window if there is a lag issue
+		Sleep ( 1000 )
+	
+		Send ( "{5}" ) ;fires crafting tool in slot 5
+		Sleep ( 1500 )
+		Send ( "{7}" ) ;fires the Default macro to "click" the NEXT button
+		Sleep ( 1500 )
+		MouseClick ( "left" , $orex, $orey, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 200 )
+		MouseClick ( "left" , $gemx, $gemy, 2, 10 ) ;moves the mouse and double clicks the resource
+		Sleep ( 2000 )
+		Send ( "{6}" ) ;fires the CraftingStages macro to complete the craft
+		Sleep ( 1000 )
+		MouseClick ( "left" , $winclosex, $winclosey, 1, 10 ) ;moves the mouse and closes to crafting window if there is a lag issue
+		Sleep ( 1000 )
+	
+		$i = $i + 1
+	EndIf
+Until $i = 11
+
+MsgBox( 4096 + 262144 + 0, "CONGRATULATIONS", "You have succesfully completed the SWG AFK Grinding program.  Congratulations on becoming a level 90 Structures Trader!!")
+
+Func TogglePause() ;Following script makes the "pause" option work correctly
+$Paused = NOT $Paused
+While $Paused
+sleep(100)
+ToolTip('Script is "Paused"',0,0)
+WEnd
+ToolTip("")
+EndFunc
+
+Func ShowMe()
+$ShowMe = Not $ShowMe
+EndFunc ;==>ShowMe
+
+Func Terminate()
+Exit 0
+EndFunc 
