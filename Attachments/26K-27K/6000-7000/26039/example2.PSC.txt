@@ -1,0 +1,24 @@
+0|KeysDown|51 - Synth Strings 2|-|25|00:00:000
+2|Pause|-|4000|-|00:00:000
+3|KeysDown|51 - Synth Strings 2|-|28,32,37|00:04:000
+4|Pause|-|4000|-|00:04:000
+5|KeysUp|51 - Synth Strings 2|-|25,28,32,37|00:08:000
+5|KeysDown|51 - Synth Strings 2|-|18,30,33,37|00:08:000
+6|Pause|-|2000|-|00:08:000
+7|D|51 - Synth Strings 2|1000|42|00:10:000
+8|C|51 - Synth Strings 2|1000|40|00:11:000
+9|KeysUp|51 - Synth Strings 2|-|18,30,33,37|00:12:000
+10|KeysDown|51 - Synth Strings 2|-|25,28,32,37|00:12:000
+11|Pause|-|4000|-|00:12:000
+12|KeysUp|51 - Synth Strings 2|-|28,32,37|00:16:000
+13|KeysDown|51 - Synth Strings 2|-|40,44,49|00:16:000
+14|Pause|-|4000|-|00:16:000
+15|KeysUp|51 - Synth Strings 2|-|25,40,44,49|00:20:000
+16|KeysDown|51 - Synth Strings 2|-|30,42,45,49|00:20:000
+17|Pause|-|2000|-|00:20:000
+18|D|51 - Synth Strings 2|1000|54|00:22:000
+19|C|51 - Synth Strings 2|1000|52|00:23:000
+20|KeysUp|51 - Synth Strings 2|-|30,42,45,49|00:24:000
+21|KeysDown|51 - Synth Strings 2|-|25,40,44,49,61,64,73|00:24:000
+22|Pause|-|4000|-|00:24:000
+23|KeysUp|51 - Synth Strings 2|-|25,40,44,49,61,64,73|00:28:000
