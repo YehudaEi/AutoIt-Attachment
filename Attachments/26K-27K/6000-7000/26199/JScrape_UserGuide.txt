@@ -1,0 +1,99 @@
+JScrape Version 0.4, 16th May 2009
+User Guide
+
+
+Contents
+1. Introduction
+	1.1 Licencing
+2. JScrape
+	2.1 How to use JScrape as an image capture device
+	2.2 How to use JScrape to scrape text
+3. Known issues
+
+Guide
+1. Introduction
+
+JScrape is a tool to help you create AutoIT scripts that can read ('scrape') text from any part of the desktop.
+
+JScrape.au3 itself is a tool for gathering text in a particular font. 
+
+JScrapelib.au3 is a small collection of library functions that you can adapt to make your script recognise text.
+
+1.1 Licencing
+
+JScrape is licenced under GNU General Public License.
+
+2. JScrape
+
+JScrape has three functions
+
+It acts as a slightly improved version of AutoIT's window info tool, telling you the cursor's current location in the active window and on the desktop
+It allows you to capture an image from anywhere on the desktop, and tells you its checksum and any pixel colours you identify. This information can be used in your scripts with the AutoIt functions PixelSearch() and PixelGetColor() [sic]
+It can search the captured image for anything that looks like a character. It then presents you with a list, and asks you to tell it which character you see. When you have identified or deleted all the characters in the list, it saves the information it has gathered, either as raw data (recommended) or as an AutoIT function.
+
+2.1 How to use JScrape as an image capture device
+
+Run the script
+Click on “Capture Image” button
+Decide which part of the desktop you want to capture. If you want to capture part of a window, it's best to click on the window now
+Move the mouse to the top-left corner of the image you want to capture, and press F1
+Move the mouse to the top-right corner of the image, and press F1
+The image will appear in JScrape's window, as will its height and its coordinates
+“Desktop XY” refers to the image's coordinates on the desktop
+“Window” refers to the image's coordinates in the active window
+“Client” refers to the image's coordinates in the client area of the active window
+This information can be useful when writing your scripts
+Move the cursor over the captured image, and notice that the cursor's coordinates change as you move your mouse
+Identifying the colour of one of the pixels in the image will make your scripts search for and find the image much faster.
+Click “Choose Colours”
+Move the mouse over the captured image, and press F1
+The grey box next to the button is set to the colour you chose, and beneath it you'll see the colour in decimal (required by the PixelSearch() function)
+Click in the “image name” box, and give the image a useful name
+For example, if you captured an image of the taskbar, call it “taskbar1”
+Press “return”
+Open the file “details.txt” in a suitable text editor; you'll see all the information you have collected
+You can also see the filename of the captured image. Find it and open it in an image viewer, if you want to
+NB The “Load Image” button doesn't work yet
+
+2.2 How to use JScrape to scrape text
+
+Carry out all the steps in 2.1, but this time, choose the colour of the text you want to scrape. You can choose up to three different colours, this might be useful for some applications, but it's usually necessary to chose only one colour
+Click “Scrape Text” and wait
+If the scrape was successful, a character will appear in the large black box at the bottom of the window
+Use the “Up” and “Down” buttons to move through the list
+Click on “Size Sort”. This will move the smallest characters to the top of the list
+There may be some mis-scraped characters or other rubbish. Click on the “Delete” button and they will disappear, one by one
+Now, for the remaining letters
+Type the letter in the “Enter Char” box. If you see the letter “D”, type an upper-case “D” in the box and press <return>
+Notice that the character has been moved from the “not found list” to the “found list”
+Notice also that there is also one “found” character and one less “not found” character in the boxes beneath “Enter Char”
+“Width” and “Height” tells you the character's size in pixels, and “Xpos” / “Ypos” tells you the top-left corner of the character's location in the captured image
+If you enter a character but change your mind, click “Undo”. You can use the “Undo” button as many times as you need
+When you approach the end of the list, you'll often see characters that are not separated by clear space. For example, if you see “nt” joined together, your options are
+1.Type “nt” into the “Enter Char” box. Your script won't be able to recognise “n” and “t” individually, but it will be able to recognise them together. This might be very useful if your script only searches a particular type of window
+2.Delete the character and forget it
+3.Split the character into two
+Examine the character carefully, and decide in which numbered column the LEFT-MOST character ends. If “n” ended in column 7 and “t” started in column 8, then you would need the number 7
+Click the “Split” button
+Enter the number and press <return> (or close the popup window to cancel the split)
+The left-most character will be displayed, and the remaining character(s) will have been moved elsewhere in the list
+If you aren't happy with the result, use the “Undo” button to recombine the characters. “Undo” can remember all your deletions, but it can only undo one split operation
+You can start again at any time by using the “Undo All” button (which, remember, will undo all deletions, but only one split)
+To recombine all your split characters, you could scrape the image again. Just click the “Scrape Text” button a second time
+Eventually, all the characters will have moved to the “found” list and the big black box will be empty
+Click the “ASCII Sort” button to sort the list in alphabetical order
+Click the “Save” button
+You can save the character list as raw data (in which case your script will need to use FileOpen(), FileReadLine() and FileClose() functions) or as a complete AutoIT function, or both
+Choose a file name for each, or click “cancel” for one or both
+
+3. Known issues
+
+JScrape is alpha software. Known problems include
+
+1.Captured image disappears if window is minimised or moved partially off the desktop
+2.'Load image' button loads the image, but won't display it
+3.RefreshLocator() function doesn't display a rectangular locator on a scraped image
+4.No way to save images with unique filenames, without image display getting disabled
+5.GUIGetMsg sends multiple button pushes, instead of just one (eg $Flag_imagecapture_current)
+6.6. When all scraped characters are marked "known", some input controls can't be blanked (and show zero)
+
