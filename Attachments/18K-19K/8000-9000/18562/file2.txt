@@ -1,0 +1,4 @@
+%/SIP/%		Tim 	Nash		
+%/ISDN/%	Nash	Roger		
+%/h225%		Kumar			
+%/h323%		Kumar			
