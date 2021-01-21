@@ -1,0 +1,51 @@
+; this is a slim exmerge.ini, devoid of all default comments
+; for this to work you need to replace the %USERNAME% placeholder with the specific information
+; you also need to configure the DataImportMethod, which directs exmerge.exe to either backup or archive
+
+[EXMERGE]
+MergeAction=0
+SourceServerName=EXCHANGE_SERVER 
+DomainControllerForSourceServer=DOMAIN_CONTROLLER 
+SrcServerLDAP-Port=
+DestServerName=""
+DomainControllerForDestServer=""
+DestServerLDAP-Port=""
+DataDirectoryName="f:\data\exmerge\%USERNAME%"
+LogFileName="f:\logs\exmerge\%USERNAME%\exmerge.log"
+LoggingLevel="0"
+SelectMessageStartDate=""
+SelectMessageEndDate=""
+FileContainingListOfMessageSubjects=""
+SubjectStringMatchCriteria="0"
+FileContainingListOfAttachmentNames=""
+AttachmentNameStringMatchCriteria="0"
+FoldersProcessed="2"
+ListOfFolders=""
+FileContainingListOfFolders=""
+ApplyActionToSubFolders="1"
+DelimiterUsedInMailboxFile="0"
+FileContainingListOfDatabases="f:\scripts\exmerge\%USERNAME%\databases.txt"
+RestoreDB="0"
+FileContainingListOfMailboxes="f:\scripts\exmerge\%USERNAME%\mailboxes.txt"
+DateAttribute="0"
+; this configures the action
+; 1=backup (copies data, nothing changed in database)
+; 3=archive (removes data, whatever exmerge exports is also removed from database)
+;DataImportMethod=3
+ReplaceDataOnlyIfSourceItemIsMoreRecent="1"
+CopyUserData="1"
+CopyAssociatedFolderData="1"
+CopyFolderPermissions="0"
+CopyDeletedItemsFromDumpster="0"
+RemoveIntermediatePSTFiles="1"
+UseThisPSTFileForAllMailboxes=""
+StartingIndex=""
+EndingIndex=""
+MapFolderNameToLocalisedName="0"
+RenameFoldersBasedOnFolderMappings="0"
+RenameSpecialFolders="1"
+[Folder Name Mappings]
+[International]
+DefaultLocaleID="1033"
+UseLastLogonLocaleID="0"
+
