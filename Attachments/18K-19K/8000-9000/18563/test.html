@@ -1,0 +1,931 @@
+<HTML {955246E3-6933-480d-B146-2462CE868767}="true" {95F2CBFC-289F-4e9e-9972-50F36660DAEC}="0" {55671E03-16F5-412c-97E7-648282E1183B}="true" {F92F6ACC-5E50-4482-BC62-9D8DF61E5A32}="6"><HEAD><TITLE>Bank Hapoalim</TITLE>
+<META charset=iso-8859-8 http-equiv=Content-Type content=text/html></META>
+<META http-equiv=imagetoolbar content=no></META>
+<SCRIPT language=JavaScript>
+function encode(str2Search)
+{
+var newstr='';
+ abc = new String ('>+<???????????????????????????\"\'`!@$%^&()#*\\{} ');
+a123 = new Array ("16","43","15","224","225","226","227","228","229","230","231","232","233","234","235","236",
+"237","238","239","240","241","242","243","244","245","246","247","248","249","250","34","31","30","29","28","27","26","25","24","23","22","21","20","19","18","17","32");
+
+ for (i=0;i<str2Search.length;i++)
+{
+var found=false;
+  for (j=0;j<abc.length;j++)
+{
+if (str2Search.charAt(i)==abc.charAt(j))
+{
+newstr= newstr+ '*' + a123[j];
+found=true;
+break;
+}
+}
+if (!found) newstr= newstr+'*' +str2Search.charAt(i);
+}
+newstr=newstr.substring(1,newstr.length);
+return newstr;
+}
+// -->
+</SCRIPT>
+
+<SCRIPT language=JavaScript>
+function replaceString(st, sstr, dstr) {
+place = st.indexOf(sstr);
+  while (place >-1) {
+st = st.substring(0, place) + dstr + st.substring(place+sstr.length);
+place = st.indexOf(sstr);
+}
+return st;
+}
+
+function reverse(s) {
+r = "";
+  for (i = 0; i <s.length; i++) {
+r=s.charAt(i) + r;
+}
+return r;
+}
+
+function getbunch(s) {
+var dir = contains(rtl,s.charAt(0)); // 1 = rtl, 0 = ltr
+gotten = s.charAt(0);
+gottentype = dir;
+  for (i = 1; i <s.length && dir == contains(rtl,s.charAt(i)); i++) {
+gotten += s.charAt(i);
+}
+}
+
+function endsWith(str, test){
+return str.indexOf(test) == (str.length - 1);
+}
+
+function prepareMsg(str,msgType,switchlang) {
+if (language == 'EN') {
+return str;
+}
+var agent=navigator.userAgent;
+if (msgType == 'select') {
+var mac = false;
+    if (agent.indexOf("Macintosh") >-1) {
+str = replaceString(str, '"', '');
+mac = true;
+}
+    if ((agent.indexOf("MSIE") > -1) || (agent.indexOf("AIX") > -1) || mac || agent.indexOf("Mozilla/5.0") >-1)
+return top.vis2log(str);
+return str;
+}
+return top.vis2log(str);
+}
+
+var rtl;
+var gotten;  // slurped string
+var gottentype; // 1 is gotten is rtl
+var hebletters = "???????????????????????????";
+var engletters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+rtl="- ???????????????????????????().";
+function vis2log_UTF8(str, addHide, englishChar){
+var res = str;
+if(window.BasicPageUTF8){
+res = top.vis2log(str);
+if(addHide){
+res = addHide_UTF8(res, englishChar);
+}
+}
+return res;
+}
+
+function addHide_UTF8(str, englishChar){
+var res = str;
+if(window.BasicPageUTF8){
+var c = '?';
+if(englishChar){
+c = 'i';
+}
+    res = "<FONT class=hide>" + c + "</FONT>" + res + "<FONT class=hide>" + c + "</FONT>";
+}
+return res;
+}
+
+function addTable_Utf8(tdArr, class1, id){
+  var res = '<TABLE border="0" cellpadding="0" cellspacing="0" class="' + class1 + '" id="' + id + '"><TR align="right">';
+  for(var i = 0; i <tdArr.length; i++){
+var cur = tdArr[i];
+if(cur){
+      res += '<TD>' + cur + '</TD>';
+}
+}
+  res += '</TR></TABLE>';
+return res;
+}
+
+function vis2log(str, saveParenthesis) {
+str = replaceString(str, '&amp;', '&');
+if(!containshebletter(str)){
+return str;
+}
+if(saveParenthesis){
+str = replaceString(str, '(', '#####');
+str = replaceString(str, ')', '(');
+str = replaceString(str, '#####', ')');
+}
+var idx = str.indexOf("\n");
+  if (idx >0) // don't use -1, to avoid Netscape bug
+str = str.substring(idx + 1) + "\n" + str.substring(0, idx);
+
+var resp = "";
+while (str != "") {
+getbunch(str);
+str = str.substring(gotten.length,str.length);
+if (gottentype == 1) {
+resp = reverse(gotten) + resp;
+}
+else {
+resp = gotten + resp;
+}
+}
+return resp;
+}
+
+function valert(s) {
+alert(top.prepareMsg(s,'alert'));
+}
+
+function contains(s,c) {
+if (s.indexOf(c) == -1)
+return 0;
+else
+return 1;
+}
+function containshebletter(s) {
+  for (i = 0; i <hebletters.length; i++) {
+if (contains(s,hebletters.charAt(i))) {
+return true;
+}
+}
+return false;
+}
+// -->
+</SCRIPT>
+
+<SCRIPT language=javaScript src="/new_images/SCRIPTS/tmicha.js?M=M544344"></SCRIPT>
+
+<SCRIPT language=javaScript src="/new_images/SCRIPTS/MainFrameSet.js?M=M544344"></SCRIPT>
+
+<SCRIPT language=javaScript src="/new_images/SCRIPTS/MainFrameSetMenu.js?M=M544344"></SCRIPT>
+
+<SCRIPT language=javaScript>    var menuOn = false; vers=1;  </SCRIPT>
+
+<SCRIPT language=JavaScript1.2 describe="menuAndVars">
+var allBanks = "912";
+var hnMenu = "2";
+var dtcs = 99999999;
+var dtcdb = 99999999;
+if (top.frames.length!=0) {
+top.location=self.document.location;
+}
+
+function ReLoad() {
+window.location.reload();
+}
+function nullPage(rek) {
+if (rek == 1)
+    return "<" + "h" + "tml><body></body></" + "h" + "tml>";
+if (lastAccess != '')
+     return "<" + "h" + "tml><body bgcolor=white><B><H2><center>Last access at "+lastAccess+"</center></H2></B></body></" + "h" + "tml>";
+else
+     return "<" + "h" + "tml><body bgcolor=white><B><H2><center>please wait...</center></H2></B></body></" + "h" + "tml>";
+}
+
+function update(s, fl){
+try{
+if(!fl)
+eval(s);
+else if(fl == "get")
+return eval(s);
+}
+catch (e) {
+}
+}
+
+function Logoff(logOffParam) {
+try{
+parent.frames.BODY.closeHalon();
+}
+catch (e) {
+}
+var adddress = '/cgi-bin/poalwwwc?language='+lang+'&reqName=Logoff&usm='+usm;
+if (logOffParam)
+adddress += "&logOffParam="+logOffParam;
+if (isIsky)
+adddress += "&u=i";
+if(peilimUser == 'yes')
+adddress +='&peilim=yes';
+pressedLogOff = true;
+top.location.href = adddress+getClientTime();
+closeWind();
+closeWindIsracard();
+return;
+}
+var tmpp = "2";
+
+var language = "EN";
+var show_MainFrameSetKeys = '|ShukHoonUnion_after|';
+var PaymentsAtClickKey = 'yes';
+var show_arrDefMenuTran   = false;
+var show_doPostTrasaction = show_MainFrameSetKeys.indexOf("|doPostTrasaction|") >-1;
+var show_ShukHoonUnion    = "befor";
+if(show_MainFrameSetKeys.indexOf("|ShukHoonUnion_after|") >-1){
+show_ShukHoonUnion = "after";
+}
+if(show_MainFrameSetKeys.indexOf("|ShukHoonUnion_msg|") >-1){
+show_ShukHoonUnion = "msg";
+}
+
+var defForShukView = "shuk";
+if(show_MainFrameSetKeys.indexOf("|ShukHoon_defForShukView|") >-1){
+defForShukView = "tik";
+}
+
+var usm = '';
+var toMode = "";
+var bank = '';
+var comeFromBank = bank;
+var currSugSherut = "4|";
+var currSugUser = "";
+var isIsky = (currSugSherut == "7|");
+var browserName = navigator.appName;
+var lang = language;
+var menuAddr = 'https://www.bankpoalim.co.il/';
+var envParam = 'P';
+var lastAccess = '2008-01-18 14:18:42';
+
+var doc=0;
+var sty=0;
+var wind = null;
+var windIsracard = null;
+var cook = "";
+var boldLinkAtSideMenu = '|SellStocksReyonit|SellStocksReyonit*change|';
+var showPratiFromIski = "";
+var boldLinkAtSideIskiMenu = '|Hatvot|WebMail*Inbox|SellStocksReyonit|SellStocksReyonit*change|';
+var doOpenHalonPopStr = 'no';
+var tabSelect = "";
+
+if("no" == "yes"){
+var TimeOutInShuk = "";
+var userTimeoutSite = "";
+if (userTimeoutSite == '-1' || userTimeoutSite == '-2')
+alert("??? ?? ????? ??? ????? ????? ??? ??? ??? ?????");
+}
+
+var niyarotTabColor = "";
+var privateBankingUser = 'no';
+var kgmCodeMenahel = "";
+if (kgmCodeMenahel == "")
+kgmCodeMenahel="no";
+var peilimUser = '';
+if(peilimUser == 'yes')
+isIsky=false;
+if (tabSelect == "maof")
+niyarotTabColor = "blue";
+else
+niyarotTabColor = "red";
+var currTransactionId = "";
+var orgTransactionId = "Last60TransactionsInEng";
+var paymentMenuExist = 'no';
+var existShukHoon   = 'no';
+
+var redirectOptions = "|Isracard|Amex|";
+var sacharHutzOptions = "";
+var show_newVCONFRM = "yes"
+var req_bankpoalimDomain = 'login.bankhapoalim.co.il';
+var show_old_vcon_firm = (browserName.indexOf("Microsoft") == -1 || show_newVCONFRM == "noShow" || !window.showModalDialog || language == "EN");
+var script_nameVar = "/cgi-bin/poalwwwc";
+
+var MB_OUT = '';
+if(MB_OUT == '')
+MB_OUT = false;
+var defaultFirstTran = "action|Last60TransactionsInEng";
+
+var metaStr = '';
+var webMailNumNewMsg = '';
+var mybillsWait = '';
+var joinedToClick = 'no';
+var browserName = navigator.appName;
+if (browserName.indexOf("Microsoft") == -1)
+joinedToClick = 'no';
+var numDeals = '0';
+var checks = 'null';
+if (browserName.indexOf("Microsoft") >-1) {
+  metaStr = '<META HTTP-EQUIV="Content-Type" CONTENT="text/html" charset="windows-1255">';
+}
+else {
+  metaStr = '<META HTTP-EQUIV="Content-Type" CONTENT="text/html" charset="iso-8859-8">';
+}
+
+paramArray = new Array();
+paramArray["show_hebFont1"] = 'Arial(Hebrew)';
+paramArray["show_newJSfile"] = '544344';
+paramArray["ShukHoon*first"] = 'ShukHoon*first';
+
+var userScrollMsg = "";
+var menus = new Object();
+var menus_number = new Array();
+var saveSubMenu, saveActivSubMenu;
+var userAg = navigator.userAgent;
+var existHatraotIdkunSH = 'no'
+
+
+function toNewMode() {
+if ('yes'=='yes' && ''!='true' && toMode=='7'){
+var rnd="_"+Math.round(Math.random()*100000);
+window.name="PoalimWindow" + rnd;
+handler = window.open('https://' + req_bankpoalimDomain + '/cgi-bin/poalwwwc?language='+lang+'&reqName=getLogonIski'+getClientTime(),rnd, 'toolbar=no, menubar=no, resizable=no, scrollbars=no, width=535, height=418');
+}
+else {
+var address = '/cgi-bin/poalwwwc?reqName=MainFrameSet&language='+lang+'&newMode='+toMode+getClientTime();
+if (toMode == '7')
+address += "&u=i";
+top.location.href = address+getClientTime();
+}
+}
+
+function buildFrames(transactionId, moreParams) {
+sub = searchForSubMenuByTranId(transactionId);
+currTransactionId = transactionId;
+if (moreParams)
+transactionId += "#"+moreParams;
+saveSubMenu = ""+sub;
+
+if (saveSubMenu == 'Options' ){
+top.niyarotTabColor = "blue";
+buildUpperFrame("Niyaot-erech", "IN performTransactionAndbuildSideFrame 1", false);
+}
+else{
+top.niyarotTabColor = "red";
+buildUpperFrame(saveSubMenu, "IN performTransactionAndbuildSideFrame 2", false);
+}
+buildSideFrame(saveSubMenu, '');
+}
+
+var currentStepInTran=0; var NumberOfStagesInTran=0;
+function changeStepForAlert(currentStep, NumberOfStages) {
+currentStepInTran = currentStep;
+NumberOfStagesInTran = NumberOfStages;
+}
+
+
+var prevTran = "";
+var changesInPage = "";
+function checkBreakOp() {
+var test = true;
+if (prevTran == "HokChange*TranToBanks" && currentStepInTran == 2)
+test = false;
+    if (test && currentStepInTran > 1 && (currentStepInTran <NumberOfStagesInTran || (currentStepInTran == NumberOfStagesInTran && prevTran == "SimulationMaof&SIMULATION"))) {
+if (lang == 'EN')
+var resss = confirm("The transaction was not completed.Would you like to continue any way?");
+else
+var resss = confimContinue()
+if (resss == false)
+return false;
+currentStepInTran = 0; NumberOfStagesInTran = 0;
+}
+top.update("changesInPage = ''");
+return true;
+}
+
+function closeWindIsracard() {
+if (windIsracard != null) {
+if (windIsracard.closed)
+return;
+windIsracard.close();
+windIsracard = null;
+}
+}
+
+function openWindIsracardWithAttr(adress, attr) {
+var browserName = navigator.appName;
+if (""=="yes")
+adress = "https://login.bankhapoalim.co.il/new_images/userSnif/cartisAshrai/isracardMoreInfo.jpg";
+   if (browserName.indexOf("Microsoft") >-1) {
+windIsracard = window.open(adress, 'win', attr);
+top.checkHalonBlocked(windIsracard);
+     if (MSIE_VER() >= 5)
+windIsracard.focus()
+}
+else {
+windIsracard = window.open(adress, 'win', attr);
+}
+}
+
+function checkChangePresentationPoalim(transactionId){
+var res = transactionId;
+if(window.newPresentationPoalim){
+if(transactionId == 'PaymentMenu'){
+res = 'PaymentMenuPoalim';
+}
+if(transactionId == 'WebMail*Inbox'){
+res = 'GenInfoMenu';
+}
+}
+return res;
+}
+
+function performTransaction(transactionId, requestName, performTranInFrame) {
+var handlerOfTran = null;
+if(window.isMenuBlocked && isMenuBlocked == "Y")
+return;
+
+currTmpTransactionId = transactionId;
+var pos = currTmpTransactionId.indexOf("#");
+  if(pos >-1){
+currTmpTransactionId = currTmpTransactionId.substring(0, pos);
+}
+
+if(requestName != 'openHalon'){
+if (checkBreakOp() == false) {
+checkBreakOpGlobal = true;
+return;
+}
+}
+checkBreakOpGlobal = false;
+if(showTimeOut != "no")
+closeWind();
+
+if (transactionId == '') {
+transactionId = 'Last60Transactions';
+saveSubMenu = 'Shekel';
+}
+
+if (requestName == '')
+requestName = 'action';
+
+var pos = transactionId.indexOf("#");
+var moreParams = "";
+  if (pos >-1) {
+moreParams = "&"+transactionId.substring(pos+1);
+transactionId = transactionId.substring(0, pos);
+}
+
+saveActivSubMenu = saveSubMenu;
+currTransactionId = transactionId;
+prevTran = transactionId;
+
+if (hnMenu=="l" && "|Supplier|PaymentsMyBills*iriot|PaymentsMyBills*hinuch|PaymentsMyBills*gaz|PaymentsMyBills*nosafim|Taharifon|Hatvot|InfoSummary|Mashcanta|Dictionary|LimitCount".indexOf("|"+transactionId+"|") != -1) {
+openWindow('http://portal1.bnhpgroup.com:9090/wwwbankhapoalimcoil/prtal_error.html');
+return;
+}
+if (redirectOptions.indexOf("|"+transactionId) != -1)
+requestName = 'redirect';
+else if (sacharHutzOptions.indexOf("|"+transactionId) != -1)
+requestName = 'sacharHutz';
+
+if (requestName == 'redirect' && (transactionId == 'Mail' || transactionId == 'MailTrash')) {
+usm = 'yes';
+}
+else if (transactionId == 'Isracard' || transactionId == 'Amex' || transactionId == 'Supplier' || transactionId == 'Test') {
+var address = '/cgi-bin/poalwwwc?reqName='+requestName+'&language='+lang+'&transactionId='+transactionId+'&subMenuName='+saveSubMenu + getClientTime();
+var attr = 'status=1,toolbar=0, menubar=0, resizable=1, scrollbars=1, width=770, height=500, left=5, top=5';
+openWindIsracardWithAttr(address, attr);
+top.showTimeoutMsg(true);
+return;
+}
+else if (transactionId == 'InfoSummary') {
+openWindow('http://www.bankhapoalim.co.il/icmm/uploads/files/skirot_files/EconomicReport_m.pdf')
+return;
+}
+else if (transactionId == 'Dictionary') {
+if (isIsky)
+openWindow("http://www.bankhapoalim.co.il/wps/portal/!ut/p/_.cmd/cs/ce/7_0_A/s./7_0_29P/_s.7_0_A/7_0_29P");
+else
+openWindow('http://www.bankhapoalim.co.il/wps/portal/!ut/p/_.cmd/cs/ce/7_0_A/s./7_0_29P/_s.7_0_A/7_0_29P')
+return;
+}
+else if (transactionId == 'LimitCount') {
+openWindow('http://www.bankisrael.gov.il/black.html')
+return;
+}
+else if (transactionId == 'NewsInSite') {
+openWindow('http://www.bankhapoalim.co.il/wps/portal/!ut/p/_.cmd/cs/ce/7_0_A/s./7_0_28N/_s.7_0_A/7_0_28N?categoryID=557&contentID=12353');
+return;
+}
+else if (transactionId == 'Hatvot') {
+if(bank==414){
+openWindow("http://www.bankotsar.co.il/bankotsar/site/he/bankOtsar.asp?pi=1677&doc_id=4773");
+}
+else if(bank==004){
+openWindow("http://www.bankyahav.co.il/yahav/R4_direct_internet.htm");
+}
+else{
+openWindow("http://www.bankhapoalim.co.il/files/hatavot.html");
+}
+return;
+}
+else if (transactionId == 'Taharifon') {
+var linkToTaarifon = "http://www.bankhapoalim.co.il/wps/portal/!ut/p/.cmd/cs/.ce/7_0_A/.s/7_0_4M1/_s.7_0_A/7_0_4M1";
+openWindow(linkToTaarifon);
+return;
+}
+else if (transactionId == 'Mashcanta') {
+var linkToMashcanta = "http://mashkanta.bankhapoalim.co.il";
+openWindow(linkToMashcanta);
+return;
+}
+else if (transactionId == 'HatraotAboutPg') {
+var linkToHatraotAboutPg = "http://www.bankhapoalim.co.il/wps/portal/!ut/p/_.cmd/cs/ce/7_0_A/s./7_0_28N/_s.7_0_A/7_0_28N?categoryID=549&contentID=12978";
+openWindow(linkToHatraotAboutPg);
+return;
+}
+else if (transactionId == 'NewAggView*osh') {
+top.showTimeoutMsg(true);
+showTimeOut = "no";
+openWindWithAttr('/Agg/index.jsp?transId=11', 'resizable=1, scrollbars=1, width=' + (screen.width - 25) + ', height=' + (screen.height - 70) + ', left=5, top=5')
+return;
+}
+else if (transactionId == 'NewAggView*matach') {
+top.showTimeoutMsg(true);
+showTimeOut = "no";
+openWindWithAttr('/Agg/index.jsp?transId=12', 'resizable=1, scrollbars=1, width=' + (screen.width - 25) + ', height=' + (screen.height - 70) + ', left=5, top=5')
+return;
+}
+else if (transactionId == 'Forex') {
+handlerOfTran = window.open("", 'win', 'toolbar=1, menubar=1, resizable=1, status=1, scrollbars=1, width=635, height=505, top=100, left=100');
+}
+else if (transactionId == 'MailAboutPg') {
+var linkToHatraotAboutPg = "http://www.bankhapoalim.co.il/wps/portal/!ut/p/_.cmd/cs/ce/7_0_A/s./7_0_28N/_s.7_0_A/7_0_28N?contentID=13316&categoryID=557";
+if(bank==414)
+linkToHatraotAboutPg = "http://www.bankotsar.co.il/bankotsar/site/he/bankOtsar.asp?pi=1657&doc_id=4637";
+openWindow(linkToHatraotAboutPg);
+return;
+}
+top.showTimeoutMsg(true);
+
+var callTranFromWhere = getCallTranFromWhere();
+url = "/cgi-bin/poalwwwc?ctfw=" + callTranFromWhere + "&reqName="+requestName+"&language="+lang+"&transactionId="+transactionId+"&subMenuName="+saveSubMenu+"&ts=625733&tf="+Math.random()+"&usm="+usm+(isIsky?"&u=i":"")+moreParams+getClientTime();
+setCallTranFromWhere(null);
+
+frameHref = parent.frames.BODY;
+if(performTranInFrame == true && existShukHoon == "yes"){
+if(frameHref.MIDDLE){
+frameHref = frameHref.MIDDLE;
+if(frames.STAM.closeHalon){
+frames.STAM.closeHalon();
+}
+}
+}
+
+if (handlerOfTran){
+frameHref = handlerOfTran;
+}
+doTransactionUrl(url, frameHref);
+}
+
+
+var showTimeOut = "yes";// to clear time out in basic page
+
+var numTimesReload = "1";
+var tsfo = 0;
+
+function getClientTime() {
+var strRet = "&fromSubMenu="+window.saveActivSubMenu+"&bxx=";
+if ("yes"=="yes") {
+var ddd = new Date();
+strRet += "&tcfo="+ddd.getTime()+"&mmx="+numTimesReload+"&qwrt=625733";
+        if (tsfo >0) {
+strRet += "&tsfo="+tsfo;
+tsfo = 0;
+}
+strRet += "&dtcdb="+dtcdb;
+}
+return strRet;
+}
+
+function getClientQwrt() {
+return "&qwrt=625733";
+}
+
+var do_errortrap = "no";
+function errortrap(msg,url,line){
+try{
+if(do_errortrap == "yes"){
+      if(!window.noWrite && navigator.appName.indexOf("Microsoft") >-1){
+url = '/cgi-bin/poalwwwc?reqName=errortrap&tranClassName='+window.tranClassName+'&err=req-Frame ['+msg+']'+line;
+top.frames.STAM.location.href = url+getClientTime();
+}
+}
+}
+catch (e) {}
+}
+
+function showAlertToUser(msg){
+  if(!window.noWrite && navigator.appName.indexOf("Microsoft") >-1) {
+url = "/cgi-bin/poalwwwc?reqName=VCONFIRM&txt="+encode(msg)+"&language=HE";
+top.frames.STAM.location.href = url+getClientTime();
+}
+alert(msg);
+}
+
+var timeoutMsgUnused = parseFloat('11');
+var timeLeftToTimeOut = -1;
+
+
+function initMenus() {
+try{
+/*
+   if(screen.width >1024){
+frameset_time_out = document.getElementById("FRAMESET_TIME_OUT");
+var menuWidth = 1125;
+var space = (screen.width - menuWidth) / 2;
+frameset_time_out.cols = space + ", *, " + space;
+}
+*/
+
+if(window.isIsky){
+document.frames["TIME_OUT_ISKI"].location.href = "/cgi-bin/poalwwwc?&reqName=checkMinikeyTimeout";
+}
+}
+catch(e){}
+
+
+var bankCode = getBankCode();
+if(bankCode == "414"){
+document.title = "??? ???? ?????";
+}
+
+if(browserName.indexOf("Microsoft") == -1) {
+if(parseInt(window.numTimesReload) == 1){
+ReLoad();
+return;
+}
+}
+
+
+orgTransactionId = checkChangePresentationPoalim(orgTransactionId);
+if(orgTransactionId == "TabMenuPage"){
+orgTransactionId = paramArray["ShukHoon*first"];
+}
+ if(timeoutMsgUnused >0){
+showTimeoutMsg();
+}
+
+if(do_errortrap == "yes"){
+window.onerror=errortrap;
+}
+
+top.defMenus();
+
+var subMenuName = "Shekel";
+if(subMenuName != "ShukHoon" && window.show_arrDefMenuTran){
+showLoadImgFlag = true;
+}
+
+
+if (subMenuName.charAt(0)== "!") {
+subMenuName = subMenuName.substring(1);
+currTransactionId = subMenuName;
+subMenuName = top.searchForSubMenuByTranId(subMenuName);
+}
+else if (subMenuName == "" || subMenuName == "null" || (subMenuName == "ishi" && !window.haveIshiMenu)) {
+subMenuName = top.searchForSubMenuByTranId(orgTransactionId);
+if(numTimesReload == "1" && menus["ishi"]){
+subMenuName = "ishi";
+}
+}
+
+if (currTransactionId=="")
+currTransactionId = orgTransactionId;
+
+top.build_redLine_Frame();
+top.buildUpperFrame(subMenuName, "IN initMenus 1", true);
+top.buildMenues(subMenuName);
+saveActivSubMenu = subMenuName;
+var enterStatus = "0";
+if (enterStatus == '-1')
+alert("??? ?? ?????? ????? ???? ???????");
+
+var lastStepInAction = "";
+if (lastStepInAction != '')
+alert("??? ????? ?????? ?????, ?? ????? ????? ?????? ???? ?????? ?????? ?? ????  ????? / ????? ??????");
+
+if ("P"=="D")
+return;
+
+if (currSugSherut != '6|' && !window.haveShownMsg) {
+var tranName = orgTransactionId;
+var pos = tranName.indexOf("#");
+   var tran = (pos >-1 ? tranName.substring(0, pos) : tranName);
+if (redirectOptions.indexOf("|"+tran) != -1) {
+if (tranName.substring(0,4) == 'Mail')
+usm = 'yes';
+parent.frames.BODY.location.href = "/cgi-bin/poalwwwc?&reqName=redirect&language="+lang+"&transactionId="   + orgTransactionId + "&subMenuName=" + subMenuName + "&ts=625733&tf="+Math.random()+"&usm=yes"+(isIsky?"&u=i":"")+"&dtcs="+dtcs+getClientTime();
+}
+else if (sacharHutzOptions.indexOf("|"+tran) != -1){
+parent.frames.BODY.location.href = "/cgi-bin/poalwwwc?&reqName=sacharHutz&language="+lang+"&transactionId=" + orgTransactionId + "&subMenuName=" + subMenuName + "&ts=625733&tf="+Math.random()+(isIsky?"&u=i":"")+"&dtcs="+dtcs+getClientTime();
+}
+else{
+var moreParams = "";
+if(existShukHoon == "yes" && (subMenuName=='ShukHoon')){
+       if(orgTransactionId.indexOf("ShukHoon") >-1){
+orgTransactionId = paramArray["ShukHoon*first"];
+}
+moreParams += "&orgTransactionId=" + orgTransactionId + '&w=' + screen.width;
+orgTransactionId = paramArray["ShukHoon*first"];
+oldFrameSetBody = document.getElementById("FRAMESET_BODY").cols;
+document.getElementById("FRAMESET_BODY").cols = "*, 0, 3";
+}
+else {
+var newMenuName = searchForSubMenuByTranId(orgTransactionId);
+if (!newMenuName)
+newMenuName = "";
+if (newMenuName)
+subMenuName = newMenuName;
+}
+var url = "/cgi-bin/poalwwwc?ctfw=init&reqName=action&language="+lang+"&transactionId="+orgTransactionId+moreParams+"&subMenuName="+subMenuName + "&ts=625733&tf="+Math.random()+(isIsky?"&u=i":"")+"&dtcs="+dtcs+getClientTime();
+doTransactionUrl(url, parent.frames.BODY);
+}
+}
+haveShownMsg = false;
+}
+
+function getBankCode(){
+var bankCode = '';
+return bankCode;
+}
+
+function getBankName(){
+var bankCode = getBankCode();
+if (bankCode =="414"){
+return vis2log_UTF8("???????? ????");
+}
+return vis2log_UTF8("???????? ??????");
+}
+
+BasicPageUTF8 = (""=="Y");
+
+function getLogoLittle(){
+var res = "/new_images/HE/LOGO_NEW_LITTLE.GIF";
+var bankCode = getBankCode();
+if(bankCode == "414"){
+res = '/new_images/HE/LOGO_CONFIRM_' + comeFromBank + '.gif';
+}
+return res;
+}
+
+// -->
+</SCRIPT>
+<MENU_PRATI>
+<SCRIPT>
+kgmCodeMenahel = "";
+if (kgmCodeMenahel == "")
+kgmCodeMenahel="no";
+function defMenus() {
+var activeHomePage   = 'no';
+haveIshiMenu = false;
+var b1 = "*** BEGIN PRATI ***";
+ishi = 'PeryMfAll|ShiaruchStocks*PerutTik';
+if(activeHomePage == 'yes') {
+addSubMenu('Homepage', '???? ??', 'Home Page', 'RikuzItrotKolel', '');
+addEntryToSubMenu('Homepage', 'Msgs', '?????? ??????', 'HIDE', 'label');
+if('no' == 'yes')
+addEntryToSubMenu('Homepage', 'ManofList*new', '????? ??????','HIDE', 'action');
+if('no' == 'yes')
+addEntryToSubMenu('Homepage', 'NewsInSite', '???? ??? ???', 'HIDE', 'out');
+addEntryToSubMenu('Homepage', 'MyMsgs', '??? ????? ????', 'HIDE', 'label');
+if('no' == 'yes')
+addEntryToSubMenu('Homepage', 'WebMail*Inbox', '???? ???? ', 'HIDE', 'action');
+if('no' == 'yes')
+addEntryToSubMenu('Homepage', 'DoarNet', '??????? - ?? ????', 'HIDE', 'action');
+if('no' == 'yes')
+addEntryToSubMenu('Homepage', 'DoarNetIdkun', '????? - ?? ????', 'HIDE', 'action');
+addEntryToSubMenu('Homepage', 'MailAboutPg', '?????? ?? ????', 'HIDE', 'action');
+}
+else {
+if (lang == "HE" && ishi != '') {
+addSubMenu('ishi', '???? ?????', '', 'ishi');
+addEntryToSubMenu('ishi', 'myMenu', '???? ?????', '', 'label');
+haveIshiMenu = true;
+}
+}
+
+addSubMenu('Shekel', '?"??', 'NIS Account', 'RikuzItrotKolel', '');
+addEntryToSubMenu('Shekel', 'infoAcc', '?????? ????', 'NIS Account Info', 'label');
+addEntryToSubMenu('Shekel', 'Last60TransactionsInEng', '', 'Recent account activity', 'action');
+addEntryToSubMenu('Shekel', 'RikuzItrotKolel', '?????? ?????? ?????', 'Account summary', 'action');
+if (lang == "EN" || allBanks.indexOf("912") == -1 && allBanks.indexOf("000") == -1)
+
+if (lang == "EN" || allBanks.indexOf("912") == -1 && allBanks.indexOf("000") == -1)
+
+
+
+
+
+
+
+
+
+addSubMenu('Investments', '???????? ???????', 'Investments', 'Pery', '');
+
+
+addEntryToSubMenu('Investments', 'Deposit','?????? ???????','Deposits Info', 'label');
+addEntryToSubMenu('Investments', 'PeryMfAll','HIDE','NIS deposits', 'action');
+
+
+
+addEntryToSubMenu('Investments', 'DepositMatach','?"?? ???????','HIDE', 'label');
+addEntryToSubMenu('Investments', 'ForeignDeposits', '??????? ?????', 'Foreign&nbsp;currency&nbsp;deposits', 'action');
+
+
+if (kgmCodeMenahel !="no"){
+}
+
+
+addSubMenu('ShukHoonUnion', '???? ???', 'Securities', 'Securities', '');
+addEntryToSubMenu('ShukHoonUnion', 'SecuritiesInfo', '??? ?????', 'Securities Info', 'label');
+addEntryToSubMenu('ShukHoonUnion', 'ShiaruchStocks*PerutTik', '??? ??? ?????? ???', 'Portfolio details', 'action');
+addSubMenu('Niyaot-erech', '?????? ?"??', 'Securities', 'Securities', '');
+addEntryToSubMenu('Niyaot-erech', 'SecuritiesInfo', '??? ?????? ??? ???', 'Securities Info', 'label');
+addEntryToSubMenu('Niyaot-erech', 'ShiaruchStocks*PerutTik', '?"?? ??? ?????', 'Portfolio details', 'action');
+
+
+
+
+
+
+
+
+
+addSubMenu('ForeinCurrency', '?"??', 'Foreign Currency', 'ExchangeRates', '');
+
+addEntryToSubMenu('ForeinCurrency', 'Info2', '?"?? ?"??', 'Foreign Currency Account', 'label');
+addEntryToSubMenu('ForeinCurrency', 'MatachTran','??????? ??????','Recent account activity', 'action');
+addEntryToSubMenu('ForeinCurrency', 'LastForeign','?"?? ?????? ??????', 'Foreign Currency', 'action');
+
+
+
+
+addEntryToSubMenu('ForeinCurrency', 'Info', '?"?? ???????', 'HIDE', 'label');
+addEntryToSubMenu('ForeinCurrency', 'ForeignDeposits', '?"?? ??????? ?????','Breakdown of deposits', 'action');
+
+
+
+
+addEntryToSubMenu('ForeinCurrency', 'operations1', '?"?? ????', 'Foreign Currency Rates', 'label');
+addEntryToSubMenu('ForeinCurrency', 'AvgXchgRates','?????? ?????','Representative rates', 'action');
+addEntryToSubMenu('ForeinCurrency', 'ExchangeRatesTran','?????? ????','Exchange rates', 'action');
+addEntryToSubMenu('ForeinCurrency', 'RatesMitztalbim','??????? ?????','Cross rates', 'action');
+addEntryToSubMenu('ForeinCurrency', 'LatestExchangeRates','?????? ?????','Latest exchange rates', 'action');
+
+
+
+addSubMenu('GenInfoMenu', '??????? ????', 'Financial Info', 'BankMessages', '');
+
+
+
+
+
+
+if (kgmCodeMenahel =="no"){
+}
+
+
+addEntryToSubMenu('GenInfoMenu', 'Info', '???? ????', 'General Info', 'label');
+addEntryToSubMenu('GenInfoMenu', 'Indices','?????','Indexes', 'action');
+
+
+
+
+
+addSubMenu('Tools', 'HIDE', 'Tools', 'aa', '');
+addEntryToSubMenu('Tools', 'Space', 'HIDE', 'Tools', 'label');
+addEntryToSubMenu('Tools', 'getChangePasswordInFramePage', 'HIDE','Change your password', 'action');
+
+
+addSubMenuToSubMenu('Options'    , 'Niyaot-erech' ,   'Options');
+var b2= "*** END PRATI ***";
+
+if(activeHomePage == 'yes'){
+addEntryToSubMenu('Homepage', 'myMenu', '???? ?????', 'HIDE', 'label');
+addEntryToSubMenu('Homepage', 'UserDefining*firstTime', '?????? ?????? ?????','HIDE', 'action');
+if (lang == "HE" && ishi != '')
+haveIshiMenu = true;
+}
+setIshiMenu(ishi,activeHomePage);
+if(haveIshiMenu)
+addEntryToSubMenu(activeHomePage == 'yes'? 'Homepage': 'ishi','UserDefining*queckNavigationPage', '????? ?????? ?????' ,'HIDE', 'action');
+else {
+if(activeHomePage == 'yes')
+addEntryToSubMenu('Homepage','UserDefining*queckNavigationPage', '???? ????? ?????' ,'HIDE', 'action');
+}
+numMailMsg = '';
+
+
+
+
+}
+
+</SCRIPT>
+</MENU_PRATI>
+<meta name="NetsparkQuiltingResult" total-length="28658" removed="0" rules-found="w3123,w4889,w6750,w8757,w73,w4947,w4577,w6774,w2341,w3397,w240,w3937,w2645,w8130,w6769,w5511,w5110,w8724,w7210,w8539,w4375" />
+</HEAD><FRAMESET id=FRAMESET_TIME_OUT border=0 onbeforeunload=doOnUnLoad() frameSpacing=0 frameBorder=0 onload=top.initMenus(); cols="0,8, *, 8" onunload=doOnUnLoad()><FRAME name=TIME_OUT_ISKI marginWidth=0 marginHeight=0 src="/new_images/nullPage.html" noResize scrolling=no><FRAME name=SPACE_LEFT marginWidth=0 marginHeight=0 src="/new_images/nullPage.html" noResize scrolling=no><FRAMESET border=0 onbeforeunload=doOnUnLoad() frameSpacing=0 rows="93, *" frameBorder=0 onload=top.initMenus(); onunload=doOnUnLoad()><FRAME title="?? ????? ????" name=UPPER marginWidth=0 marginHeight=0 src="/new_images/nullPage.html" noResize scrolling=no><FRAMESET border=0 onbeforeunload=doOnUnLoad() frameSpacing=0 frameBorder=0 onload=top.initMenus(); cols="3, 170, *" onunload=doOnUnLoad()><FRAME name=RED_LINE marginWidth=0 marginHeight=0 src="/new_images/nullPage.html" noResize scrolling=no><FRAME title="?? ????? ????" name=LOWER marginWidth=0 marginHeight=0 src="/new_images/nullPage.html"><FRAMESET border=0 onbeforeunload=doOnUnLoad() frameSpacing=0 rows=0,* frameBorder=0 onload=top.initMenus(); onunload=doOnUnLoad()><FRAME name=STAM marginWidth=0 marginHeight=0 src="/cgi-bin/poalwwwc?reqName=stamFrame&amp;u=p" noResize scrolling=no><FRAME title="????? ?????" name=BODY marginWidth=0 marginHeight=0 src="/new_images/nullPage.html" noResize onload=top.doOnFrameLoad(frames.BODY)></FRAMESET></FRAMESET></FRAMESET><FRAME name=SPACE_RIGHT marginWidth=0 marginHeight=0 src="/new_images/nullPage.html" noResize><NOFRAMES>
+  This site requires at least Netscape 2.0, with JavaScript Enabled.
+ </NOFRAMES></FRAMESET></HTML>
