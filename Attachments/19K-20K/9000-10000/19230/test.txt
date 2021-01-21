@@ -1,0 +1,98 @@
+Frame 0:<DIV class=divExpanded id=divExpandCollapse>
+<DIV class=divHeaderMainTitle id=divHeaderMainTitle title=Home style="DISPLAY: none; CURSOR: hand"></DIV>
+<DIV id=divBanner>
+<DIV id=divHeaderMainLogo>
+<DIV id=divHeaderMainLogoLink><A title=Home href="                                                    " target=Content>_________ </A></DIV></DIV>
+<DIV class=divHeaderHotSpot id=divHeaderHotSpot>
+<DIV id=divsettings><A class="HeaderLink ClassMLXchangeOnly" onmouseover="window.status='Settings';dropdownCreate(event.srcElement,'menu[@AppFeatureID=29]/dropdown');return true;" onmouseout="dropdownCreateCancel();return true;" href="                                                            " target=Content><SPAN>Settings</SPAN></A></DIV><A class=HeaderIcon id=icontempoHome title=Home href="                                                    " target=Content></A><A class=HeaderIcon id=icontempoEmail title=Email href="javascript:ComposeMessage()" target=""></A><A class=HeaderIcon id=icontempoHelp title=Help href="javascript:top.Header.DisplayHelp('                                    ')" target=""></A><A class=HeaderIcon id=icontempoSignout title="Log Off" href="                                             " target=_top></A><A class=imgExpanded id=imgExpandCollapse href="                                                         "></A></DIV></DIV>
+<DIV class=divToolButtons id=divToolButtons></DIV></DIV>
+<DIV id=divHeaderUserName><A class=HeaderLink onclick=ShowSignInAsDlg() href="                                                         ">Signed in as:&nbsp;<SPAN class=Text_HeaderLoginUser id=UserLabel>William Hanenburg</SPAN></A></DIV>
+<DIV id=divHeaderShadowCollapsed style="DISPLAY: none"></DIV>
+<DIV id=divHeaderShadowExpanded></DIV>
+<DIV id=divHeaderSignInAsLink><A class=UserIDLink id=SignInAsUserLabel onclick=ShowSignInAsDlg() href="                                                         ">William Hanenburg</A></DIV>
+<DIV id=divDateTime>Monday, March 3</DIV>
+<DIV id=MenuBar>
+<TABLE class=MainMenuExpanded id=menu cellSpacing=0 cellPadding=0 border=0>
+<TBODY>
+<TR height=17>
+<TD id=home noWrap align=middle><A class=MenuCellInactive id=txtlinkhome hideFocus onmouseover="window.status='Home';dropdownCreate(event.srcElement,'menu[@AppFeatureID=1]/dropdown');return true;" onmouseout="dropdownCreateCancel();return true;" href="javascript:ChangeMenu('home');ChangeContent('/4.1.16.39/Home/Home.asp', '');">Home </A><A class=MenuCellImage id=imglinkhome onmouseover="window.status='Home';dropdownCreate(event.srcElement,'menu[@AppFeatureID=1]/dropdown');return true;" onmouseout="dropdownCreateCancel();return true;" href="javascript:ChangeMenu('home');ChangeContent('/4.1.16.39/Home/Home.asp', '');"></A></TD>
+<TD id=listingmgr noWrap align=middle><A class=MenuCellActive id=txtlinklistingmgr hideFocus onmouseover="window.status='Search';dropdownCreate(event.srcElement,'menu[@AppFeatureID=392]/dropdown');return true;" onmouseout="dropdownCreateCancel();return true;" href="javascript:ChangeMenu('listingmgr');ChangeContent('javascript:ShowListingSearchFrame(null, null,\'L,X\')', 'L,X');">Search </A><A class=MenuCellImage id=imglinklistingmgr onmouseover="window.status='Search';dropdownCreate(event.srcElement,'menu[@AppFeatureID=392]/dropdown');return true;" style="CURSOR: hand" onmouseout="dropdownCreateCancel();return true;" href="javascript:ChangeMenu('listingmgr');ChangeContent('javascript:ShowListingSearchFrame(null, null,\'L,X\')', 'L,X');"></A></TD>
+<TD id=hotsheetmgr noWrap align=middle><A class=MenuCellInactive id=txtlinkhotsheetmgr hideFocus onmouseover="window.status='Hotsheet';dropdownCreate(event.srcElement,'menu[@AppFeatureID=14]/dropdown');return true;" onmouseout="dropdownCreateCancel();return true;" href="javascript:ChangeMenu('hotsheetmgr');ChangeContent('/4.1.16.39/Search/Hotsheet/HotsheetSearchFrame.asp', '/4.1.16.39/Images/icoHotsheet_Small.gif');">Hotsheet </A><A class=MenuCellImage id=imglinkhotsheetmgr onmouseover="window.status='Hotsheet';dropdownCreate(event.srcElement,'menu[@AppFeatureID=14]/dropdown');return true;" style="CURSOR: hand" onmouseout="dropdownCreateCancel();return true;" href="javascript:ChangeMenu('hotsheetmgr');ChangeContent('/4.1.16.39/Search/Hotsheet/HotsheetSearchFrame.asp', '/4.1.16.39/Images/icoHotsheet_Small.gif');"></A></TD>
+<TD id=cma noWrap align=middle><A class=MenuCellInactive id=txtlinkcma hideFocus onmouseover="window.status='CMA &amp; Reports';dropdownCreate(event.srcElement,'menu[@AppFeatureID=254]/dropdown');return true;" onmouseout="dropdownCreateCancel();return true;" href="javascript:ChangeMenu('cma');ChangeContent('/4.1.16.39/CMA/CMAManager.asp', '/4.1.16.39/Images/icoCMAManager_Small.gif');">CMA &amp; Reports </A><A class=MenuCellImage id=imglinkcma onmouseover="window.status='CMA &amp; Reports';dropdownCreate(event.srcElement,'menu[@AppFeatureID=254]/dropdown');return true;" style="CURSOR: hand" onmouseout="dropdownCreateCancel();return true;" href="javascript:ChangeMenu('cma');ChangeContent('/4.1.16.39/CMA/CMAManager.asp', '/4.1.16.39/Images/icoCMAManager_Small.gif');"></A></TD>
+<TD id=clientmgr noWrap align=middle><A class=MenuCellInactive id=txtlinkclientmgr hideFocus onmouseover="window.status='Prospects';dropdownCreate(event.srcElement,'menu[@AppFeatureID=269]/dropdown');return true;" onmouseout="dropdownCreateCancel();return true;" href="javascript:ChangeMenu('clientmgr');ChangeContent('javascript:ShowListingSearchFrame(null, null,\'L,X\',\'/4.1.16.39/Search/Notification/NotificationManager.asp\')', '/4.1.16.39/Images/icoRecent_Small.gif');">Prospects </A><A class=MenuCellImage id=imglinkclientmgr onmouseover="window.status='Prospects';dropdownCreate(event.srcElement,'menu[@AppFeatureID=269]/dropdown');return true;" style="CURSOR: hand" onmouseout="dropdownCreateCancel();return true;" href="javascript:ChangeMenu('clientmgr');ChangeContent('javascript:ShowListingSearchFrame(null, null,\'L,X\',\'/4.1.16.39/Search/Notification/NotificationManager.asp\')', '/4.1.16.39/Images/icoRecent_Small.gif');"></A></TD>
+<TD id=partnersites noWrap align=middle><A class=MenuCellInactive id=txtlinkpartnersites hideFocus onmouseover="window.status='Public Records';dropdownCreate(event.srcElement,'menu[@AppFeatureID=470]/dropdown');return true;" onmouseout="dropdownCreateCancel();return true;" href="javascript:ChangeMenu('partnersites');ChangeContent('/4.1.16.39/Search/PartnerSites.asp', '/4.1.16.39/Images/TaxSearch1.gif');">Public Records </A><A class=MenuCellImage id=imglinkpartnersites onmouseover="window.status='Public Records';dropdownCreate(event.srcElement,'menu[@AppFeatureID=470]/dropdown');return true;" style="CURSOR: hand" onmouseout="dropdownCreateCancel();return true;" href="javascript:ChangeMenu('partnersites');ChangeContent('/4.1.16.39/Search/PartnerSites.asp', '/4.1.16.39/Images/TaxSearch1.gif');"></A></TD>
+<TD id=tempoFinancials noWrap align=middle><A class=MenuCellInactive id=txtlinktempoFinancials hideFocus onmouseover="window.status='Financials';dropdownCreate(event.srcElement,'menu[@AppFeatureID=317]/dropdown');return true;" onmouseout="dropdownCreateCancel();return true;" href="javascript:ChangeMenu('tempoFinancials');ChangeContent('/4.1.16.39/CMA/NetSheetManager.asp', '');">Financials </A><A class=MenuCellImage id=imglinktempoFinancials onmouseover="window.status='Financials';dropdownCreate(event.srcElement,'menu[@AppFeatureID=317]/dropdown');return true;" onmouseout="dropdownCreateCancel();return true;" href="javascript:ChangeMenu('tempoFinancials');ChangeContent('/4.1.16.39/CMA/NetSheetManager.asp', '');"></A></TD>
+<TD id=tempoMemberInfo noWrap align=middle><A class=MenuCellInactive id=txtlinktempoMemberInfo hideFocus onmouseover="window.status='Member Info';dropdownCreate(event.srcElement,'menu[@AppFeatureID=348]/dropdown');return true;" onmouseout="dropdownCreateCancel();return true;" href="javascript:ChangeMenu('tempoMemberInfo');ChangeContent('javascript:ShowListingSearchFrame(\'U\', true)', '');">Member Info </A><A class=MenuCellImage id=imglinktempoMemberInfo onmouseover="window.status='Member Info';dropdownCreate(event.srcElement,'menu[@AppFeatureID=348]/dropdown');return true;" onmouseout="dropdownCreateCancel();return true;" href="javascript:ChangeMenu('tempoMemberInfo');ChangeContent('javascript:ShowListingSearchFrame(\'U\', true)', '');"></A></TD>
+<TD id=tools noWrap align=middle><A class=MenuCellInactive id=txtlinktools hideFocus onmouseover="window.status='My Tools';dropdownCreate(event.srcElement,'menu[@AppFeatureID=373]/dropdown');return true;" onmouseout="dropdownCreateCancel();return true;" href="javascript:ChangeMenu('tools');ChangeContent('javascript: ShowSettingsFrame(\'P\')', '');">My Tools </A><A class=MenuCellImage id=imglinktools onmouseover="window.status='My Tools';dropdownCreate(event.srcElement,'menu[@AppFeatureID=373]/dropdown');return true;" onmouseout="dropdownCreateCancel();return true;" href="javascript:ChangeMenu('tools');ChangeContent('javascript: ShowSettingsFrame(\'P\')', '');"></A></TD></TR></TBODY></TABLE></DIV>
+<FORM style="DISPLAY: none" name=userdata><!-- These are set by the onBodyLoad function from the Default.asp values. --><INPUT id=user type=hidden value="William Hanenburg" name=user> <INPUT id=businessname type=hidden name=businessname> <INPUT id=userid type=hidden name=userid> </FORM>
+<FORM id=formHelp style="DISPLAY: none" name=formHelp method=get><INPUT id=site type=hidden name=site> <INPUT id=login type=hidden name=login> <INPUT id=topic type=hidden name=topic> </FORM><?XML:NAMESPACE PREFIX = IE /><IE:clientCaps id=htcClientCaps></IE:clientCaps>
+
+Frame 1:<TABLE id=appFrameTable style="TABLE-LAYOUT: fixed" height="100%" cellPadding=0 border=0>
+<TBODY>
+<TR id=trSearchTitle height=20>
+<TD id=appframeNW>
+<TD id=appframeN>
+<TABLE cellPadding=0 border=0>
+<TBODY>
+<TR>
+<TD id=Ltitle>
+<TD id=Ctitle noWrap><SPAN class=titlespan id=spanTitle>Property Search: </SPAN><SPAN class=titlespan id=spanSubTitle>My Last RES Search</SPAN><SPAN id=Rtitle>&nbsp;</SPAN> </TD>
+<TD id=tdReturn style="DISPLAY: none" vAlign=bottom align=right><SPAN class=icon16ButtonOFF onselectstart="return false;" onmousedown="if (!this.disabled) this.className='icon16ButtonDOWN';" id=spanReturn onmouseover="if (!this.disabled) this.className='icon16ButtonON';" title=Return onmouseout="if (!this.disabled) this.className='icon16ButtonOFF';"><IMG class=icon16 height=16 src="/4.1.16.39/Images/Tempo/icons/16x16/backup.png" width=16>Return </SPAN></TD></TR></TBODY></TABLE></TD>
+<TD id=appframeNE></TD>
+<TR id=trSearchTabs style="DISPLAY: block" height=25>
+<TD id=appframeW>
+<TD id=appframeMain>
+<TABLE style="TABLE-LAYOUT: fixed" height="100%" cellSpacing=0 cellPadding=0 width="100%" border=0>
+<COLGROUP>
+<COL width=190></COL>
+<COL></COL></COLGROUP>
+<TBODY>
+<TR height=23>
+<TD id=MainTabBar style="BORDER-TOP: #aaaaaa 1px solid; FONT-WEIGHT: bold; FONT-SIZE: 8pt; FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr=#264798, endColorstr=#EEEEEE, GradientType=1); WIDTH: 100%; COLOR: #ffffff; FONT-FAMILY: Tahoma" noWrap colSpan=2><SPAN style="WIDTH: 550px"><SPAN class=TabControl id=tabControlFrames style="MARGIN-TOP: 5px; POSITION: relative; TOP: 1px" onChangeTab="ChangeFrameTab()" onError="onHTCError()" tabclass="ButtonTab">
+<TABLE id=tblTabControl style="TABLE-LAYOUT: fixed" borderColor=green cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD tabIndex=0>
+<TABLE borderColor=red cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD class=ButtonTabInactiveLeft>&nbsp;</TD>
+<TD class=ButtonTabInactiveMiddle vAlign=top noWrap>Search Criteria </TD>
+<TD class=ButtonTabInactiveRight></TD></TR></TBODY></TABLE></TD>
+<TD style="PADDING-LEFT: 3px" tabIndex=1>
+<TABLE borderColor=red cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD class=ButtonTabActiveLeft>&nbsp;</TD>
+<TD class=ButtonTabActiveMiddle vAlign=top noWrap>Search Results </TD>
+<TD class=ButtonTabActiveRight></TD></TR></TBODY></TABLE></TD>
+<TD style="PADDING-LEFT: 3px" tabIndex=2>
+<TABLE borderColor=red cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD class=ButtonTabInactiveLeft>&nbsp;</TD>
+<TD class=ButtonTabInactiveMiddle vAlign=top noWrap>Details </TD>
+<TD class=ButtonTabInactiveRight></TD></TR></TBODY></TABLE></TD>
+<TD style="DISPLAY: none; PADDING-LEFT: 3px" tabIndex=3>
+<TABLE borderColor=red cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD class=ButtonTabInactiveLeft>&nbsp;</TD>
+<TD class=ButtonTabInactiveMiddle vAlign=top noWrap>Statistics </TD>
+<TD class=ButtonTabInactiveRight></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></SPAN></SPAN></TD></TR></TBODY></TABLE>
+<TD id=appframeE></TD>
+<TR>
+<TD id=appframeW>
+<TD id=appframeMain width="100%" height="100%"><IFRAME class=FeatureFrame id=frameCriteria style="DISPLAY: none; POSITION: relative" name=frameCriteria src="/4.1.16.39/Search/Listing/ListingManager.asp" frameBorder=0></IFRAME><IFRAME class=FeatureFrame id=frameResults style="DISPLAY: block; POSITION: relative" name=frameResults src="/4.1.16.39/Search/Listing/SearchResults.asp" frameBorder=0></IFRAME><IFRAME class=FeatureFrame id=frameDetails style="DISPLAY: none; POSITION: relative" name=frameDetails src="about:blank" frameBorder=0></IFRAME><IFRAME class=FeatureFrame id=frameOther style="DISPLAY: none; POSITION: relative" name=frameOther src="about:blank" frameBorder=0></IFRAME></TD>
+<TD id=appframeE></TD>
+<TR id=trSearchFooter height=2>
+<TD id=appframeSW>
+<TD id=appframeS>
+<TD id=appframeSE></TD></TR></TBODY></TABLE>
+
+Frame 2:0
+
+Frame 3:<OBJECT id=GDIPlus style="DISPLAY: none" codeBase=/4.1.16.39/Control/Helper.cab#VERSION=1,0,2,1 height=0 width=0 classid=CLSID:9A5FA170-E20B-4BFD-88B8-9F0DEDFD697B VIEWASTEXT></OBJECT>
+<OBJECT id=objectSharc style="DISPLAY: none" codeBase=/4.1.16.39/Control/IRCSharc.cab#VERSION=2,0,717,0 height=0 onerror=onAXInstallError() width=0 classid=CLSID:83AB6E4D-CDD7-11D3-B5E7-00104B9AFF6E MAYSCRIPT VIEWASTEXT><PARAM NAME="_Version" VALUE="65537"><PARAM NAME="_ExtentX" VALUE="2646"><PARAM NAME="_ExtentY" VALUE="1323"><PARAM NAME="_StockProps" VALUE="0"></OBJECT>
+
+Frame 4:0
