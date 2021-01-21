@@ -1,0 +1,681 @@
+
+
+//	Returns some informtion
+//	Input	Output
+//	0	version as hexadecimal value, 0x0105 = 1.05
+//	1	compilation date and time, as char*
+//	2	size of struct DBF
+//	3	size of struct Options
+//
+int	GetVerCDBFlib	(int i);
+
+//	Input:	year
+//	Output: TRUE for leap, FALSE for other
+//
+BOOL	if_leap_year	(int year);
+
+//	open database (open file, allocate memory, set options, 
+//	read header, fields etc)
+//	Input:	pointer to filename
+//	Output:	pointer to struct DBF or NULL if error
+
+struct	DBF* OpenBase	(char *filename);
+
+//	close database (close file, release memory etc)
+//	Input:	pointer to DBF file
+//
+void	CloseBase	(struct DBF *d);
+
+//	set default options for database
+//	Input:	pointer to DBF file
+//
+void	SetDefOptions	(struct DBF *d);
+
+//	open file
+//	Input:	pointer to filename
+//	Output: handle or NULL
+//
+HANDLE	Open_File	(char* filename);
+
+//	close DBF file
+//	Input:	pointer to DBF file
+//
+void	Close_File	(struct DBF *d);
+
+//	read header (first 32 bytes)
+//	Input:	pointer to DBF file
+//	Output: TRUE if OK, FALSE if error
+//
+BOOL	ReadHeader	(struct DBF *d);
+
+//	read fields and allocate memory
+//	Input:	pointer to DBF file
+//	Output: TRUE if OK, FALSE if error
+//
+BOOL	ReadFields	(struct DBF *d);
+
+//	detect type of memo-field
+//	Input:	pointer to DBF file
+//	Output: 0-dBase_III, 1-FoxPro, 2-dBase_IV, 3-VisualFox, 4-Other
+//
+int	GetMemoType	(struct DBF *d);
+
+//	the check of  type of field
+//	Input:	type like 'C', 'N', ...
+//	Output: TRUE if OK, FALSE if error
+//
+BOOL	ValidField	(char	c);
+
+//	read record into read/write area
+//	Input:	pointer to DBF file, number of record
+//	Output: TRUE if OK, FALSE if error
+//
+BOOL	ReadRecord	(struct DBF *d, unsigned long n);
+
+//	seek to record
+//	Input:	pointer to DBF file, number of record
+//	Output: TRUE if OK, FALSE if error
+//
+BOOL	SeekRecord	(struct DBF *d, unsigned long n);
+
+//	write record from read/write area
+//	Input:	pointer to DBF file, number of record
+//	Output: TRUE if OK, FALSE if error
+//
+BOOL	WriteRecord	(struct DBF *d, unsigned long n);
+
+//	read one field into read/write area
+//	Input:	pointer to DBF file, number of record, number of field
+//	Output: TRUE if OK, FALSE if error
+//
+BOOL	ReadField	(struct DBF *d, unsigned long n, int field);
+
+//	seek to field
+//	Input:	pointer to DBF file, number of record, number of field
+//	Output: TRUE if OK, FALSE if error
+//
+BOOL	SeekField	(struct DBF *d, unsigned long n, int field);
+
+//	write one field from read/write area
+//	Input:	pointer to DBF file, number of record, number of field
+//	Output: TRUE if OK, FALSE if error
+//
+BOOL	WriteField	(struct DBF *d, unsigned long n, int field);
+
+//	the empty character for this field
+//	Input:	pointer to DBF file, number of field
+//	Output: character, usually 0x20 or 0x00
+//
+char	FieldBlankChar	(struct DBF *d, int n);
+
+//	return the real length of field
+//	Input:	pointer to DBF file, number of field
+//	Output: length
+//
+int	GetLenField	(struct DBF *d, int n);
+
+//	return the length of field as string
+//	Input:	pointer to DBF file, number of field
+//	Output: length
+//
+int	GetLenView	(struct DBF *d, int n);
+
+//	return the max length of field between previous functions
+//	Input:	pointer to DBF file, number of field
+//	Output: length
+//
+int	GetLenMax	(struct DBF *d, int n);
+
+//	return the type as string
+//	Input:	pointer to DBF file, number of field
+//	Output: pointer to string
+//
+char*	GetTypeName	(struct DBF *d, int n);
+
+//	determine type - digital or not
+//	Input:	pointer to DBF file, number of field
+//	Output: TRUE if N,F,I,Y,B, FALSE otherwise
+//
+BOOL	if_digit_type	(struct DBF *d, int n);
+
+//	determine type - memo or not
+//	Input:	pointer to DBF file, number of field
+//	Output: TRUE if M,G,B, FALSE otherwise
+//
+BOOL	if_memo_type	(struct DBF *d, int n);
+
+//	Get Character field as string
+//	Input:	pointer to DBF file, number of field
+//	Output:	pointer to d->str
+//
+char*	GetString	(struct DBF *d, int n);
+
+//	Get Numeric, Float, Memo, General field as long
+//	Input:	pointer to DBF file, number of field
+//	Output:	value
+//
+long	GetNumeric	(struct DBF *d, int n);
+
+//	Get Integer, Memo, General field as long
+//	Input:	pointer to DBF file, number of field
+//	Output:	value
+//
+long	GetInt		(struct DBF *d, int n);
+
+//	Get Numeric, Flost field as double
+//	Input:	pointer to DBF file, number of field
+//	Output:	value
+//
+double	GetFloat	(struct DBF *d, int n);
+
+//	Get Date, DateTime as integer
+//	Input:	pointer to DBF file, number of field
+//	Output:	value
+//
+int	GetDateTime	(struct DBF *d, int n);
+
+//	Get Logical as BOOL
+//	Input:	pointer to DBF file, number of field
+//	Output:	TRUE/FALSE
+//
+BOOL	GetBool 	(struct DBF *d, int n);
+
+//	Get Double as double
+//	Input:	pointer to DBF file, number of field
+//	Output:	value
+//
+double	GetDouble	(struct DBF *d, int n);
+
+//	Get Currency as double
+//	Input:	pointer to DBF file, number of field
+//	Output:	value
+//
+double	GetCurrency	(struct DBF *d, int n);
+
+//	Get Date, DateTime as struct tm
+//	Input:	pointer to DBF file, number of field
+//	Output:	struct tm
+//
+struct	tm GetDT	(struct DBF *d, int n);
+
+//	Get any field as string
+//	Input:	pointer to DBF file, number of field
+//	Output:	pointer to d->str
+//
+char*	GetStr		(struct DBF *d, int n);
+
+//	get any digital field as double
+//	Input:	pointer to DBF file, number of field
+//	Output:	value
+//
+double	GetValue (struct DBF *d, int n);
+
+//	get sign of digital field
+//	Input:	pointer to DBF file, number of field
+//	Output:	-1 if negative, 0 if zero, 1 if positive
+//
+int	GetSign 	(struct DBF *d, int n);
+
+//	Get memo as string
+//	Input:	pointer to DBF file, number of field
+//	Output:	pointer to string, you can assign this to d->memo_block
+//
+char*	GetMemo 	(struct DBF *d, int n);
+
+//	Release memory, it's makes free(d->memo_block);
+//	Input:	pointer to DBF file
+//	
+void	FreeMemo	(struct DBF *d);
+
+//	clear record in read/write area (d->record_block)
+//	Input:	pointer to DBF file
+//
+void	ClearRecord	(struct DBF *d);
+
+//	clear field in read/write area (d->record_block)
+//	Input:	pointer to DBF file
+//
+void	ClearField	(struct DBF *d, int n);
+
+//	write header
+//	Input:	pointer to DBF file
+//	Output:	TRUE if OK, FALSE otherwise
+//
+BOOL	WriteHeader	(struct DBF *d);
+
+//	insert string in Character field into read/write area
+//	Input:	pointer to DBF file, number of field, null-terminated string
+//
+void	SetString	(struct DBF *d, int n, char *s);
+
+//	insert long in Numeric, Float, Memo, General field into read/write area
+//	Input:	pointer to DBF file, number of field, value
+//
+void	SetNumeric	(struct DBF *d, int n, long l);
+
+//	insert double in Numeric, Float field into read/write area
+//	Input:	pointer to DBF file, number of field, value
+//
+void	SetFloat	(struct DBF *d, int n, double l);
+
+//	insert BOOL in Logical field into read/write area
+//	Input:	pointer to DBF file, number of field, value - FALSE=0, TRUE-otherwise
+//
+void	SetBool 	(struct DBF *d, int n, BOOL value);
+
+//	insert BOOL in Logical field into read/write area
+//	Input:	pointer to DBF file, number of field, value - TRUE-'Y','y','T','t', FALSE-otherwise
+//
+void	SetLogical	(struct DBF *d, int n, char c);
+
+//	insert long in Integer field into read/write area
+//	Input:	pointer to DBF file, number of field, value
+//
+void	SetInt		(struct DBF *d, int n, long x);
+
+//	insert double in Double field into read/write area
+//	Input:	pointer to DBF file, number of field, value
+//
+void	SetDouble	(struct DBF *d, int n, double x);
+
+//	insert double in Currency field into read/write area
+//	Input:	pointer to DBF file, number of field, value
+//
+void	SetCurrency	(struct DBF *d, int n, double x);
+
+//	insert year,month,day in Date,DateTime field into read/write area
+//	Input:	pointer to DBF file, number of field, year,month,day
+//
+void	SetDate 	(struct DBF *d, int n, int year, int mon, int day);
+
+//	insert year,month,day,hour,minute,seconds in Date,DateTime field into read/write area
+//	Input:	pointer to DBF file, number of field, year,month,day
+//
+void	SetDateTime	(struct DBF *d, int n, int year, int mon, int day, int hr, int min, int sec);	//set datetime into read/write area
+
+//	insert long in Date,DateTime field into read/write area
+//	Input:	pointer to DBF file, number of field, value
+//
+void	SetDateTimeI	(struct DBF *d, int n, int t);
+
+//	insert year,month,day in Date,DateTime field into read/write area
+//	Input:	pointer to DBF file, number of field, string like 25.02.2001
+//
+void	SetDateS	(struct DBF *d, int n, char *s);
+
+//	insert year,month,day in Date,DateTime field into read/write area
+//	Input:	pointer to DBF file, number of field, string like 25.02.2001 11:34:56
+//
+void	SetDateTimeS	(struct DBF *d, int n, char *s);
+
+//	write memo into .DBT or .FPT file and 
+//	insert long or double into .DBF file, but do not write!
+//	you should call WriteField or WriteRecord
+//	Input:	pointer to DBF file, number of field, null-terminated string
+//	Output:	TRUE if OK, FALSE otherwise
+//
+BOOL	SetMemo 	(struct DBF *d, int n, char *s); //write memo
+
+//	insert any value into read/write area
+//	Input:	pointer to DBF file, number of field, null-terminated string, double value
+//	if type of field 'C', 'M', 'G', 'L' - null-terminated string is used, value is ignored
+//	otherwise - value is used, null-terminated string is ignored
+//
+void	SetValue	(struct DBF *d, int i, char *s, double b);
+
+//	get blocksize for this file
+//	Input:	pointer to DBF file
+//	Output:	value
+//
+int	GetBlockSize	(struct DBF *d);
+
+//	append record to database
+//	Input:	pointer to DBF file, if empty==TRUE, append blank record, 
+//	if empty==FALSE, append record with information in the d->record_block
+//	Output:	TRUE if OK, FALSE otherwise
+//
+BOOL	AppendBlank	(struct DBF *d, BOOL empty);
+
+//	delete record from database
+//	Input:	pointer to DBF file, number of record
+//	Output:	TRUE if OK, FALSE otherwise
+//
+BOOL	Delete		(struct DBF *d, int n);
+
+//	insert record to database
+//	Input:	pointer to DBF file, number of record, if empty==TRUE
+//	insert blank record, if empty==FALSE append record with information
+//	in the d->record_block
+//	Output:	TRUE if OK, FALSE otherwise
+//
+BOOL	Insert		(struct DBF *d, int n, BOOL empty);
+
+//	truncate database
+//	Input:	pointer to DBF file, last record
+//	Output:	TRUE if OK, FALSE otherwise
+//
+BOOL	Truncate	(struct DBF *d, int n);
+
+//	pack database
+//	Input:	pointer to DBF file, action,
+//	if what=  0 - pack all, 1 - dbf only, 2 - memo only
+//	Output:	TRUE if OK, FALSE otherwise
+//
+BOOL	Pack		(struct DBF *d, int what);
+
+//	zap database
+//	Input:	pointer to DBF file
+//	Output:	TRUE if OK, FALSE otherwise
+//
+BOOL	Zap		(struct DBF *d);
+
+//	mark record as deleted
+//	Input:	pointer to DBF file, number of record
+//	Output:	TRUE if OK, FALSE otherwise
+//
+BOOL	DeleteRecord	(struct DBF *d, int n);
+
+//	recall record
+//	Input:	pointer to DBF file, number of record
+//	Output:	TRUE if OK, FALSE otherwise
+//
+BOOL	RecallRecord	(struct DBF *d, int n);
+
+//	invert marker of deleting
+//	Input:	pointer to DBF file, number of record
+//	Output:	TRUE if OK, FALSE otherwise
+//
+BOOL	InverseRecord	(struct DBF *d, int n);
+
+//	get field number by name
+//	Input:	pointer to DBF file, field name
+//	Output:	number or -1, if not exist
+//
+int	GetFieldNum	(struct DBF *d, char *s);
+
+//	seek to string
+//	Input:	pointer to DBF file, number of field, pointer to string,
+//	exact. If exact == FALSE - returns nearest value
+//	Output:	number of record, or -1 if not found and exact==TRUE
+//	Database should be sorted by field #n
+//
+int	SeekValue	(struct DBF *d, int n, char *s, BOOL exact);
+
+//	returns quantity of records
+//	Input:	pointer to DBF file
+//	Output:	record count
+//
+int	reccount	(struct DBF *d);
+
+//	returns quantity of fields
+//	Input:	pointer to DBF file
+//	Output:	field count
+//
+int	fieldcount	(struct DBF *d);
+
+//	returns real number of record
+//	Input:	pointer to DBF file, number of record
+//	Output:	real number of record
+//
+int	recno		(struct DBF *d, int   i);
+
+//	returns real number of field
+//	Input:	pointer to DBF file, number of field
+//	Output:	real number of field
+//
+int	fieldno 	(struct DBF *d, int   i);
+
+//	check on conformity to the given condition
+//	Input:	pointer to DBF file, condition
+//	Output:	TRUE if OK, FALSE otherwise
+//
+BOOL	ValidRecord	(struct DBF *d, char *s);
+
+//	set filter
+//	Input:	pointer to DBF file, filter's condition, callback function or NULL
+//	function must be described as: typedef void __stdcall FCallBack();
+//	if filter's condition == NULL, then use old condition string
+//	if filter's condition != NULL, then merge old and new condition string
+//	if filter's condition == (char*)-1, then hide deleted records
+//
+void	set_filter	(struct DBF *d, char *s, FCallBack* fn);
+
+//	remove filter, but save filter's condition
+//	Input:	pointer to DBF file
+//
+void	ClearFilter	(struct DBF *d);
+
+//	remove filter and remove filter's condition
+//	Input:	pointer to DBF file
+//
+void	ClearAllFilter	(struct DBF *d);
+
+//	returns lenght of field name or length of header
+//	Input:	pointer to DBF file, number of field
+//	Output:	length
+//
+int	GetLenHeader	(struct DBF *d, int n);
+
+//	returns field name or header
+//	Input:	pointer to DBF file, number of field
+//	Output:	pointer to string
+//
+char*	GetHeader	(struct DBF *d, int n); //field name
+
+//	copy record from d->record_block to d->copy_of_record
+//	Input:	pointer to DBF file
+//
+void	DupRecord	(struct DBF *d);
+
+//	paste record from d->copy_of_record to d->record_block
+//	Input:	pointer to DBF file
+//
+void	DupToRecord	(struct DBF *d);
+
+//	set order of records
+//	Input:	pointer to DBF file, fields delimited with comma or semicolon, 
+//	callback function or NULL
+//	function must be described as: typedef void __stdcall FCallBack();
+//	Output:	TRUE if OK, FALSE otherwise
+//
+BOOL	SortBase	(struct DBF *d, char *s, FCallBack* fn);
+
+//	set normal order of records
+//	Input:	pointer to DBF file
+//
+void	ClearSort	(struct DBF *d);
+
+//	set name of file of headers
+//	Input:	pointer to DBF file, pointer to filename
+//	if filename == NULL then use default name
+//
+void	SetAliasName	(struct DBF *d, char *s);
+
+//	read file of headers .hdr
+//	Input:	pointer to DBF file
+//
+void	ReadAlias	(struct DBF *d);
+
+//	write file of headers .hdr
+//	Input:	pointer to DBF file
+//
+void	WriteAlias	(struct DBF *d);
+
+//	set separator for date field
+//	Input:	pointer to DBF file, character like '.', '/' etc
+//
+void	SetDateSeparator(struct DBF *d, char c);
+
+//	check number of records
+//	Input:	pointer to DBF file
+//	Output:	FALSE if record count was not changed, TRUE if was changed
+//
+BOOL	RefreshDatabase (struct DBF *d);
+
+//	returns real number of record
+//	Input:	pointer to DBF file, number of record
+//	Output:	real number of record
+//
+int	GetOrder	(struct DBF *d, int i);
+
+//	deletes spaces from strings area (d->str)
+//	Input:	pointer to DBF file, action
+//	if action=1 trim right, if action=2 trim left, if action=3 all trim 
+//
+char*	DStrTrim	(struct DBF *d, int trim);
+
+//	Parses the string s and returns the value of the evaluated string
+//	Input:	pointer to string, pointer to error result
+//	Output:	value, if att != 0
+//
+double	Evaluate	(char *s, int *att);	//calculate s, att=1 if error found
+
+//	Fill field structure by given information
+//	Input:	pointer to field, field name, field type, field size
+//
+void	CreateField	(struct Field *fld, char *name, char type, int size);
+
+//	Create new database (.dbf) and memo file (.dbt or .fpt)
+//	Input:	filename, pointer to fields, number of fields,
+//		type of the memo fields, blocksize, create memo file or not
+//	Output:	TRUE if OK, FALSE otherwise
+//
+BOOL	CreateDatabase	(char *filename, struct Field *fld, int n, int _type, int blocksize, BOOL memo);
+
+//	Create memo file (.dbt or .fpt)
+//	Input:	filename, type of the memo fields, blocksize
+//	Output:	TRUE if OK, FALSE otherwise
+//
+BOOL	CreateMemoFile	(char *filename, int _type, int blocksize);
+
+//	Return length of decimal part
+//	Input:	pointer to DBF file, number of field
+//	Output:	length
+//
+int     GetLowLen       (struct DBF *d, int n);
+
+//	Return length of whole part
+//	Input:	pointer to DBF file, number of field
+//	Output:	length
+//
+int     GetHighLen      (struct DBF *d, int n);
+
+//	Return total length of field
+//	Input:	pointer to DBF file, number of field
+//	Output:	length
+//
+int     GetAllLen       (struct DBF *d, int n);
+
+//	Return name of field
+//	Input:	pointer to DBF file, number of field
+//	Output:	length
+//
+char*   GetFieldName    (struct DBF *d, int n);
+
+//	Allocate memory for calculated fields
+//	Input:	pointer to DBF file
+//	Output:	TRUE - OK, FALSE - fail
+//
+BOOL    GetMemCalcField (struct DBF* d);
+
+//	Release memory for calculated fields
+//	Input:	pointer to DBF file
+//
+void    FreeMemCalcField(struct DBF* d);
+
+//	Return number of calculated field by name
+//	Input:	pointer to DBF file, name of field
+//	Output:	number of field or -1
+//
+int     GetCalcI        (struct DBF* d, char *name);
+
+//	Add a calculated field.
+//	Input:	pointer to DBF file, name of field, expression
+//	Output:	TRUE - OK, FALSE - fail
+//
+BOOL    AddCalcField    (struct DBF* d, char *name, char *expr);
+
+//	Delete calculated field by name
+//	Input:	pointer to DBF file, name of field
+//
+void    DelCalcField    (struct DBF* d, char *name);
+
+//	Delete calculated field by number
+//	Input:	pointer to DBF file, number of field
+//
+void    DelCalcFieldI   (struct DBF* d, int i);
+
+//	Detection type of field by name
+//	Input:	pointer to DBF file, name of field
+//	Output:	TRUE if digit, FALSE otherwise
+//
+BOOL    if_digit_calc   (struct DBF* d, char *name);
+
+//	Detection type of field by name
+//	Input:	pointer to DBF file, name of field
+//	Output:	TRUE if digit, FALSE otherwise
+//
+BOOL    if_digit_calci  (struct DBF* d, int i);
+
+//	Return string if calculated field is not digit
+//	Input:	pointer to DBF file, name of field
+//	Output:	pointer to string
+//
+char*   GetCalcString   (struct DBF* d, char *name);
+
+//	Return string if calculated field is not digit
+//	Input:	pointer to DBF file, number of field
+//	Output:	pointer to string
+//
+char*   GetCalcStringI  (struct DBF* d, int i);
+
+//	Return value of calculated field
+//	Input:	pointer to DBF file, name of field
+//	Output:	value
+//
+double  GetCalcValue    (struct DBF* d, char *name);
+
+//	Return value of calculated field
+//	Input:	pointer to DBF file, number of field
+//	Output:	value
+//
+double  GetCalcValueI   (struct DBF* d, int i);
+
+//	Set password for I/O operations
+//	Input:	pointer to DBF file, password
+//	Output:	TRUE - OK, FALSE - fail
+//
+BOOL    PreparePassword (struct DBF* d, char *s);
+
+//	Remove password for I/O operations
+//	Input:	pointer to DBF file
+//
+void    RemovePassword  (struct DBF* d);
+
+
+//////	Internal functions ///////////////////////////////////////
+
+int     Compare         (const void *a, const void *b, struct DBF *d);
+int     FoxPro_BlockSize(struct DBF *d);
+void    GetCompStr      (char *s, char *t, struct DBF *d);
+char*   Get_FoxPro      (struct DBF *d, int n);
+char*   Get_dBase3      (struct DBF *d, int n);
+char*   Get_dBase4      (struct DBF *d, int n);
+BOOL    ReadByte        (struct DBF *d, unsigned long n);
+BOOL    SeekMemo        (struct DBF *d, int blocksize, int block);
+BOOL    SeekMemoZero    (struct DBF *d);
+int     Set_FoxPro      (struct DBF *d, char *s);
+int     Set_dBase3      (struct DBF *d, char *s);
+int     Set_dBase4      (struct DBF *d, char *s);
+void    UpperCase       (unsigned char *s);
+BOOL    WriteByte       (struct DBF *d, unsigned long n);
+int     analizator      (struct DBF *d, char *s);
+char*   cdbfstrtok      (char *string, const char *control);
+char    cnd             (struct DBF *d, char *s);
+int     dBase4_BlockSize(struct DBF *d);
+void    eval            (struct DBF *d, char  o);
+BOOL    get_fields      (struct DBF *d, char *s, int *sn, int* sv);
+int     makecalcstring  (struct DBF *d, char *s, char *z, int *cn);
+void    real_sort       (struct DBF *d, int **tb, FCallBack* fn);
+char*   StrEval         (char *s, struct DBF *d);
+void    CheckBrackets   (char *s);
