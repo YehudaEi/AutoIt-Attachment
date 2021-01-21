@@ -1,0 +1,2020 @@
+====
+Function Name     : SDL_AddTimer
+Address           : 0x6810a740
+Relative Address  : 0x0000a740
+Ordinal           : 1 (0x1)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_AllocRW
+Address           : 0x68108960
+Relative Address  : 0x00008960
+Ordinal           : 2 (0x2)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_AudioDriverName
+Address           : 0x68101b50
+Relative Address  : 0x00001b50
+Ordinal           : 3 (0x3)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_AudioInit
+Address           : 0x68102200
+Relative Address  : 0x00002200
+Ordinal           : 4 (0x4)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_AudioQuit
+Address           : 0x68102140
+Relative Address  : 0x00002140
+Ordinal           : 5 (0x5)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_BuildAudioCVT
+Address           : 0x68104330
+Relative Address  : 0x00004330
+Ordinal           : 6 (0x6)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_CDClose
+Address           : 0x68105cc0
+Relative Address  : 0x00005cc0
+Ordinal           : 7 (0x7)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_CDEject
+Address           : 0x68105c90
+Relative Address  : 0x00005c90
+Ordinal           : 8 (0x8)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_CDName
+Address           : 0x681057c0
+Relative Address  : 0x000057c0
+Ordinal           : 9 (0x9)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_CDNumDrives
+Address           : 0x68105790
+Relative Address  : 0x00005790
+Ordinal           : 10 (0xa)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_CDOpen
+Address           : 0x68105810
+Relative Address  : 0x00005810
+Ordinal           : 11 (0xb)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_CDPause
+Address           : 0x68105b90
+Relative Address  : 0x00005b90
+Ordinal           : 12 (0xc)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_CDPlay
+Address           : 0x68105b50
+Relative Address  : 0x00005b50
+Ordinal           : 13 (0xd)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_CDPlayTracks
+Address           : 0x68105990
+Relative Address  : 0x00005990
+Ordinal           : 14 (0xe)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_CDResume
+Address           : 0x68105bf0
+Relative Address  : 0x00005bf0
+Ordinal           : 15 (0xf)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_CDStatus
+Address           : 0x681058b0
+Relative Address  : 0x000058b0
+Ordinal           : 16 (0x10)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_CDStop
+Address           : 0x68105c40
+Relative Address  : 0x00005c40
+Ordinal           : 17 (0x11)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_ClearError
+Address           : 0x68101710
+Relative Address  : 0x00001710
+Ordinal           : 18 (0x12)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_CloseAudio
+Address           : 0x68101c70
+Relative Address  : 0x00001c70
+Ordinal           : 19 (0x13)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_CondBroadcast
+Address           : 0x6813e790
+Relative Address  : 0x0003e790
+Ordinal           : 20 (0x14)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_CondSignal
+Address           : 0x6813e710
+Relative Address  : 0x0003e710
+Ordinal           : 21 (0x15)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_CondWait
+Address           : 0x6813e8f0
+Relative Address  : 0x0003e8f0
+Ordinal           : 22 (0x16)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_CondWaitTimeout
+Address           : 0x6813e830
+Relative Address  : 0x0003e830
+Ordinal           : 23 (0x17)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_ConvertAudio
+Address           : 0x681042e0
+Relative Address  : 0x000042e0
+Ordinal           : 24 (0x18)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_ConvertSurface
+Address           : 0x68128fb0
+Relative Address  : 0x00028fb0
+Ordinal           : 25 (0x19)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_CreateCond
+Address           : 0x6813e670
+Relative Address  : 0x0003e670
+Ordinal           : 26 (0x1a)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_CreateCursor
+Address           : 0x68125e70
+Relative Address  : 0x00025e70
+Ordinal           : 27 (0x1b)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_CreateMutex
+Address           : 0x6813e0e0
+Relative Address  : 0x0003e0e0
+Ordinal           : 28 (0x1c)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_CreateRGBSurface
+Address           : 0x68128d30
+Relative Address  : 0x00028d30
+Ordinal           : 29 (0x1d)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_CreateRGBSurfaceFrom
+Address           : 0x681292d0
+Relative Address  : 0x000292d0
+Ordinal           : 30 (0x1e)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_CreateSemaphore
+Address           : 0x6813e250
+Relative Address  : 0x0003e250
+Ordinal           : 31 (0x1f)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_CreateThread
+Address           : 0x6810a300
+Relative Address  : 0x0000a300
+Ordinal           : 32 (0x20)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_CreateYUVOverlay
+Address           : 0x6812c4b0
+Relative Address  : 0x0002c4b0
+Ordinal           : 33 (0x21)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_Delay
+Address           : 0x6813ea10
+Relative Address  : 0x0003ea10
+Ordinal           : 34 (0x22)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_DestroyCond
+Address           : 0x6813e600
+Relative Address  : 0x0003e600
+Ordinal           : 35 (0x23)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_DestroyMutex
+Address           : 0x6813e160
+Relative Address  : 0x0003e160
+Ordinal           : 36 (0x24)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_DestroySemaphore
+Address           : 0x6813e2f0
+Relative Address  : 0x0003e2f0
+Ordinal           : 37 (0x25)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_DisplayFormat
+Address           : 0x681295d0
+Relative Address  : 0x000295d0
+Ordinal           : 38 (0x26)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_DisplayFormatAlpha
+Address           : 0x68129640
+Relative Address  : 0x00029640
+Ordinal           : 39 (0x27)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_DisplayYUVOverlay
+Address           : 0x6812c630
+Relative Address  : 0x0002c630
+Ordinal           : 40 (0x28)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_EnableKeyRepeat
+Address           : 0x68107040
+Relative Address  : 0x00007040
+Ordinal           : 41 (0x29)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_EnableUNICODE
+Address           : 0x68106b90
+Relative Address  : 0x00006b90
+Ordinal           : 42 (0x2a)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_Error
+Address           : 0x68101730
+Relative Address  : 0x00001730
+Ordinal           : 43 (0x2b)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_EventState
+Address           : 0x68106980
+Relative Address  : 0x00006980
+Ordinal           : 44 (0x2c)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_FillRect
+Address           : 0x68128790
+Relative Address  : 0x00028790
+Ordinal           : 45 (0x2d)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_Flip
+Address           : 0x68129a80
+Relative Address  : 0x00029a80
+Ordinal           : 46 (0x2e)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_FreeCursor
+Address           : 0x68125dc0
+Relative Address  : 0x00025dc0
+Ordinal           : 47 (0x2f)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_FreeRW
+Address           : 0x681085c0
+Relative Address  : 0x000085c0
+Ordinal           : 48 (0x30)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_FreeSurface
+Address           : 0x68128c50
+Relative Address  : 0x00028c50
+Ordinal           : 49 (0x31)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_FreeWAV
+Address           : 0x681056d0
+Relative Address  : 0x000056d0
+Ordinal           : 50 (0x32)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_FreeYUVOverlay
+Address           : 0x6812c7f0
+Relative Address  : 0x0002c7f0
+Ordinal           : 51 (0x33)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_GetAppState
+Address           : 0x681060c0
+Relative Address  : 0x000060c0
+Ordinal           : 60 (0x3c)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_GetAudioStatus
+Address           : 0x68101be0
+Relative Address  : 0x00001be0
+Ordinal           : 61 (0x3d)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_GetClipRect
+Address           : 0x681283a0
+Relative Address  : 0x000283a0
+Ordinal           : 62 (0x3e)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_GetCursor
+Address           : 0x68124d00
+Relative Address  : 0x00024d00
+Ordinal           : 63 (0x3f)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_getenv
+Address           : 0x68109050
+Relative Address  : 0x00009050
+Ordinal           : 191 (0xbf)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_GetError
+Address           : 0x681016f0
+Relative Address  : 0x000016f0
+Ordinal           : 64 (0x40)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_GetEventFilter
+Address           : 0x68106970
+Relative Address  : 0x00006970
+Ordinal           : 65 (0x41)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_GetGammaRamp
+Address           : 0x68126370
+Relative Address  : 0x00026370
+Ordinal           : 66 (0x42)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_GetKeyName
+Address           : 0x68106c00
+Relative Address  : 0x00006c00
+Ordinal           : 67 (0x43)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_GetKeyRepeat
+Address           : 0x68107a60
+Relative Address  : 0x00007a60
+Ordinal           : 68 (0x44)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_GetKeyState
+Address           : 0x68106bc0
+Relative Address  : 0x00006bc0
+Ordinal           : 69 (0x45)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_GetModState
+Address           : 0x68106be0
+Relative Address  : 0x00006be0
+Ordinal           : 70 (0x46)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_GetMouseState
+Address           : 0x68107ac0
+Relative Address  : 0x00007ac0
+Ordinal           : 71 (0x47)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_GetRelativeMouseState
+Address           : 0x68107af0
+Relative Address  : 0x00007af0
+Ordinal           : 74 (0x4a)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_GetRGB
+Address           : 0x68127150
+Relative Address  : 0x00027150
+Ordinal           : 72 (0x48)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_GetRGBA
+Address           : 0x68127030
+Relative Address  : 0x00027030
+Ordinal           : 73 (0x49)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_GetThreadID
+Address           : 0x6810a500
+Relative Address  : 0x0000a500
+Ordinal           : 75 (0x4b)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_GetTicks
+Address           : 0x6813e950
+Relative Address  : 0x0003e950
+Ordinal           : 76 (0x4c)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_GetVideoInfo
+Address           : 0x681293b0
+Relative Address  : 0x000293b0
+Ordinal           : 77 (0x4d)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_GetVideoSurface
+Address           : 0x68129390
+Relative Address  : 0x00029390
+Ordinal           : 78 (0x4e)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_GetWMInfo
+Address           : 0x6812c470
+Relative Address  : 0x0002c470
+Ordinal           : 79 (0x4f)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_GL_GetAttribute
+Address           : 0x6812a1b0
+Relative Address  : 0x0002a1b0
+Ordinal           : 52 (0x34)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_GL_GetProcAddress
+Address           : 0x68129570
+Relative Address  : 0x00029570
+Ordinal           : 53 (0x35)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_GL_LoadLibrary
+Address           : 0x6812a070
+Relative Address  : 0x0002a070
+Ordinal           : 54 (0x36)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_GL_Lock
+Address           : 0x6812a240
+Relative Address  : 0x0002a240
+Ordinal           : 55 (0x37)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_GL_SetAttribute
+Address           : 0x6812a0d0
+Relative Address  : 0x0002a0d0
+Ordinal           : 56 (0x38)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_GL_SwapBuffers
+Address           : 0x6812a210
+Relative Address  : 0x0002a210
+Ordinal           : 57 (0x39)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_GL_Unlock
+Address           : 0x6812a850
+Relative Address  : 0x0002a850
+Ordinal           : 58 (0x3a)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_GL_UpdateRects
+Address           : 0x6812a4e0
+Relative Address  : 0x0002a4e0
+Ordinal           : 59 (0x3b)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_Has3DNow
+Address           : 0x68106000
+Relative Address  : 0x00006000
+Ordinal           : 80 (0x50)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_Has3DNowExt
+Address           : 0x68106020
+Relative Address  : 0x00006020
+Ordinal           : 81 (0x51)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_HasAltiVec
+Address           : 0x68106080
+Relative Address  : 0x00006080
+Ordinal           : 82 (0x52)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_HasMMX
+Address           : 0x68105fc0
+Relative Address  : 0x00005fc0
+Ordinal           : 83 (0x53)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_HasMMXExt
+Address           : 0x68105fe0
+Relative Address  : 0x00005fe0
+Ordinal           : 84 (0x54)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_HasRDTSC
+Address           : 0x68105fa0
+Relative Address  : 0x00005fa0
+Ordinal           : 85 (0x55)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_HasSSE
+Address           : 0x68106040
+Relative Address  : 0x00006040
+Ordinal           : 86 (0x56)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_HasSSE2
+Address           : 0x68106060
+Relative Address  : 0x00006060
+Ordinal           : 87 (0x57)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_iconv
+Address           : 0x681092e0
+Relative Address  : 0x000092e0
+Ordinal           : 192 (0xc0)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_iconv_close
+Address           : 0x68109ce0
+Relative Address  : 0x00009ce0
+Ordinal           : 193 (0xc1)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_iconv_open
+Address           : 0x681091c0
+Relative Address  : 0x000091c0
+Ordinal           : 194 (0xc2)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_iconv_string
+Address           : 0x68109d10
+Relative Address  : 0x00009d10
+Ordinal           : 195 (0xc3)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_Init
+Address           : 0x681012c0
+Relative Address  : 0x000012c0
+Ordinal           : 88 (0x58)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_InitSubSystem
+Address           : 0x68101150
+Relative Address  : 0x00001150
+Ordinal           : 89 (0x59)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_JoystickClose
+Address           : 0x6812eed0
+Relative Address  : 0x0002eed0
+Ordinal           : 90 (0x5a)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_JoystickEventState
+Address           : 0x6812f520
+Relative Address  : 0x0002f520
+Ordinal           : 91 (0x5b)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_JoystickGetAxis
+Address           : 0x6812ed50
+Relative Address  : 0x0002ed50
+Ordinal           : 92 (0x5c)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_JoystickGetBall
+Address           : 0x6812edf0
+Relative Address  : 0x0002edf0
+Ordinal           : 93 (0x5d)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_JoystickGetButton
+Address           : 0x6812ee80
+Relative Address  : 0x0002ee80
+Ordinal           : 94 (0x5e)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_JoystickGetHat
+Address           : 0x6812eda0
+Relative Address  : 0x0002eda0
+Ordinal           : 95 (0x5f)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_JoystickIndex
+Address           : 0x6812ec60
+Relative Address  : 0x0002ec60
+Ordinal           : 96 (0x60)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_JoystickName
+Address           : 0x6812eba0
+Relative Address  : 0x0002eba0
+Ordinal           : 97 (0x61)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_JoystickNumAxes
+Address           : 0x6812ec90
+Relative Address  : 0x0002ec90
+Ordinal           : 98 (0x62)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_JoystickNumBalls
+Address           : 0x6812ecf0
+Relative Address  : 0x0002ecf0
+Ordinal           : 99 (0x63)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_JoystickNumButtons
+Address           : 0x6812ed20
+Relative Address  : 0x0002ed20
+Ordinal           : 100 (0x64)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_JoystickNumHats
+Address           : 0x6812ecc0
+Relative Address  : 0x0002ecc0
+Ordinal           : 101 (0x65)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_JoystickOpen
+Address           : 0x6812efe0
+Relative Address  : 0x0002efe0
+Ordinal           : 102 (0x66)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_JoystickOpened
+Address           : 0x6812ebf0
+Relative Address  : 0x0002ebf0
+Ordinal           : 103 (0x67)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_JoystickUpdate
+Address           : 0x6812f4f0
+Relative Address  : 0x0002f4f0
+Ordinal           : 104 (0x68)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_KillThread
+Address           : 0x6810a520
+Relative Address  : 0x0000a520
+Ordinal           : 105 (0x69)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_Linked_Version
+Address           : 0x68101400
+Relative Address  : 0x00001400
+Ordinal           : 106 (0x6a)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_ListModes
+Address           : 0x681293d0
+Relative Address  : 0x000293d0
+Ordinal           : 107 (0x6b)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_LoadBMP_RW
+Address           : 0x68124050
+Relative Address  : 0x00024050
+Ordinal           : 108 (0x6c)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_LoadFunction
+Address           : 0x6813ebd0
+Relative Address  : 0x0003ebd0
+Ordinal           : 109 (0x6d)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_LoadObject
+Address           : 0x6813eb40
+Relative Address  : 0x0003eb40
+Ordinal           : 110 (0x6e)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_LoadWAV_RW
+Address           : 0x68104dc0
+Relative Address  : 0x00004dc0
+Ordinal           : 111 (0x6f)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_LockAudio
+Address           : 0x68101c30
+Relative Address  : 0x00001c30
+Ordinal           : 112 (0x70)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_LockSurface
+Address           : 0x68128220
+Relative Address  : 0x00028220
+Ordinal           : 113 (0x71)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_LockYUVOverlay
+Address           : 0x6812c5c0
+Relative Address  : 0x0002c5c0
+Ordinal           : 114 (0x72)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_LowerBlit
+Address           : 0x681283d0
+Relative Address  : 0x000283d0
+Ordinal           : 115 (0x73)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_MapRGB
+Address           : 0x68126f00
+Relative Address  : 0x00026f00
+Ordinal           : 116 (0x74)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_MapRGBA
+Address           : 0x68126f90
+Relative Address  : 0x00026f90
+Ordinal           : 117 (0x75)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_memcmp
+Address           : 0x68109e90
+Relative Address  : 0x00009e90
+Ordinal           : 196 (0xc4)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_MixAudio
+Address           : 0x681047d0
+Relative Address  : 0x000047d0
+Ordinal           : 118 (0x76)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_mutexP
+Address           : 0x6813e1b0
+Relative Address  : 0x0003e1b0
+Ordinal           : 197 (0xc5)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_mutexV
+Address           : 0x6813e200
+Relative Address  : 0x0003e200
+Ordinal           : 198 (0xc6)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_NumJoysticks
+Address           : 0x6812eb90
+Relative Address  : 0x0002eb90
+Ordinal           : 119 (0x77)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_OpenAudio
+Address           : 0x68101c90
+Relative Address  : 0x00001c90
+Ordinal           : 120 (0x78)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_PauseAudio
+Address           : 0x68101c10
+Relative Address  : 0x00001c10
+Ordinal           : 121 (0x79)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_PeepEvents
+Address           : 0x681064b0
+Relative Address  : 0x000064b0
+Ordinal           : 122 (0x7a)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_PollEvent
+Address           : 0x68106840
+Relative Address  : 0x00006840
+Ordinal           : 123 (0x7b)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_PumpEvents
+Address           : 0x681067f0
+Relative Address  : 0x000067f0
+Ordinal           : 124 (0x7c)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_PushEvent
+Address           : 0x681068f0
+Relative Address  : 0x000068f0
+Ordinal           : 125 (0x7d)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_putenv
+Address           : 0x68108f90
+Relative Address  : 0x00008f90
+Ordinal           : 199 (0xc7)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_Quit
+Address           : 0x681013e0
+Relative Address  : 0x000013e0
+Ordinal           : 126 (0x7e)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_QuitSubSystem
+Address           : 0x68101300
+Relative Address  : 0x00001300
+Ordinal           : 127 (0x7f)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_ReadBE16
+Address           : 0x68108cf0
+Relative Address  : 0x00008cf0
+Ordinal           : 132 (0x84)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_ReadBE32
+Address           : 0x68108d60
+Relative Address  : 0x00008d60
+Ordinal           : 133 (0x85)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_ReadBE64
+Address           : 0x68108dc0
+Relative Address  : 0x00008dc0
+Ordinal           : 134 (0x86)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_ReadLE16
+Address           : 0x68108cc0
+Relative Address  : 0x00008cc0
+Ordinal           : 135 (0x87)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_ReadLE32
+Address           : 0x68108d30
+Relative Address  : 0x00008d30
+Ordinal           : 136 (0x88)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_ReadLE64
+Address           : 0x68108d90
+Relative Address  : 0x00008d90
+Ordinal           : 137 (0x89)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_RegisterApp
+Address           : 0x68130210
+Relative Address  : 0x00030210
+Ordinal           : 138 (0x8a)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_RemoveTimer
+Address           : 0x6810a7c0
+Relative Address  : 0x0000a7c0
+Ordinal           : 139 (0x8b)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_RWFromConstMem
+Address           : 0x68108c70
+Relative Address  : 0x00008c70
+Ordinal           : 128 (0x80)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_RWFromFile
+Address           : 0x68108990
+Relative Address  : 0x00008990
+Ordinal           : 130 (0x82)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_RWFromFP
+Address           : 0x68108be0
+Relative Address  : 0x00008be0
+Ordinal           : 129 (0x81)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_RWFromMem
+Address           : 0x68108c20
+Relative Address  : 0x00008c20
+Ordinal           : 131 (0x83)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_SaveBMP_RW
+Address           : 0x68124740
+Relative Address  : 0x00024740
+Ordinal           : 140 (0x8c)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_SemPost
+Address           : 0x6813e430
+Relative Address  : 0x0003e430
+Ordinal           : 141 (0x8d)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_SemTryWait
+Address           : 0x6813e3c0
+Relative Address  : 0x0003e3c0
+Ordinal           : 142 (0x8e)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_SemValue
+Address           : 0x6813e400
+Relative Address  : 0x0003e400
+Ordinal           : 143 (0x8f)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_SemWait
+Address           : 0x6813e3e0
+Relative Address  : 0x0003e3e0
+Ordinal           : 144 (0x90)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_SemWaitTimeout
+Address           : 0x6813e340
+Relative Address  : 0x0003e340
+Ordinal           : 145 (0x91)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_SetAlpha
+Address           : 0x68128090
+Relative Address  : 0x00028090
+Ordinal           : 146 (0x92)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_SetClipRect
+Address           : 0x681282a0
+Relative Address  : 0x000282a0
+Ordinal           : 147 (0x93)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_SetColorKey
+Address           : 0x68127f60
+Relative Address  : 0x00027f60
+Ordinal           : 148 (0x94)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_SetColors
+Address           : 0x6812a030
+Relative Address  : 0x0002a030
+Ordinal           : 149 (0x95)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_SetCursor
+Address           : 0x68125af0
+Relative Address  : 0x00025af0
+Ordinal           : 150 (0x96)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_SetError
+Address           : 0x68101420
+Relative Address  : 0x00001420
+Ordinal           : 151 (0x97)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_SetEventFilter
+Address           : 0x68106930
+Relative Address  : 0x00006930
+Ordinal           : 152 (0x98)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_SetGamma
+Address           : 0x68126600
+Relative Address  : 0x00026600
+Ordinal           : 153 (0x99)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_SetGammaRamp
+Address           : 0x68126490
+Relative Address  : 0x00026490
+Ordinal           : 154 (0x9a)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_SetModState
+Address           : 0x68106bf0
+Relative Address  : 0x00006bf0
+Ordinal           : 155 (0x9b)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_SetModuleHandle
+Address           : 0x681300d0
+Relative Address  : 0x000300d0
+Ordinal           : 156 (0x9c)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_SetPalette
+Address           : 0x68129c30
+Relative Address  : 0x00029c30
+Ordinal           : 157 (0x9d)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_SetTimer
+Address           : 0x6810a870
+Relative Address  : 0x0000a870
+Ordinal           : 158 (0x9e)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_SetVideoMode
+Address           : 0x6812b2f0
+Relative Address  : 0x0002b2f0
+Ordinal           : 159 (0x9f)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_ShowCursor
+Address           : 0x68125d00
+Relative Address  : 0x00025d00
+Ordinal           : 160 (0xa0)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_SoftStretch
+Address           : 0x68127a50
+Relative Address  : 0x00027a50
+Ordinal           : 161 (0xa1)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_strlcat
+Address           : 0x68109f30
+Relative Address  : 0x00009f30
+Ordinal           : 200 (0xc8)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_strlcpy
+Address           : 0x68109ee0
+Relative Address  : 0x00009ee0
+Ordinal           : 201 (0xc9)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_strtod
+Address           : 0x68109fa0
+Relative Address  : 0x00009fa0
+Ordinal           : 202 (0xca)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_ThreadID
+Address           : 0x6813e590
+Relative Address  : 0x0003e590
+Ordinal           : 162 (0xa2)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_UnloadObject
+Address           : 0x6813ec70
+Relative Address  : 0x0003ec70
+Ordinal           : 163 (0xa3)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_UnlockAudio
+Address           : 0x68101c50
+Relative Address  : 0x00001c50
+Ordinal           : 164 (0xa4)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_UnlockSurface
+Address           : 0x68128730
+Relative Address  : 0x00028730
+Ordinal           : 165 (0xa5)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_UnlockYUVOverlay
+Address           : 0x6812c600
+Relative Address  : 0x0002c600
+Ordinal           : 166 (0xa6)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_UnregisterApp
+Address           : 0x68130110
+Relative Address  : 0x00030110
+Ordinal           : 167 (0xa7)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_UpdateRect
+Address           : 0x681299f0
+Relative Address  : 0x000299f0
+Ordinal           : 168 (0xa8)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_UpdateRects
+Address           : 0x68129760
+Relative Address  : 0x00029760
+Ordinal           : 169 (0xa9)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_UpperBlit
+Address           : 0x681284e0
+Relative Address  : 0x000284e0
+Ordinal           : 170 (0xaa)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_VideoDriverName
+Address           : 0x68129350
+Relative Address  : 0x00029350
+Ordinal           : 171 (0xab)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_VideoInit
+Address           : 0x6812b010
+Relative Address  : 0x0002b010
+Ordinal           : 172 (0xac)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_VideoModeOK
+Address           : 0x68129410
+Relative Address  : 0x00029410
+Ordinal           : 173 (0xad)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_VideoQuit
+Address           : 0x6812aeb0
+Relative Address  : 0x0002aeb0
+Ordinal           : 174 (0xae)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_WaitEvent
+Address           : 0x68106880
+Relative Address  : 0x00006880
+Ordinal           : 181 (0xb5)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_WaitThread
+Address           : 0x6810a4b0
+Relative Address  : 0x0000a4b0
+Ordinal           : 182 (0xb6)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_WarpMouse
+Address           : 0x68124d10
+Relative Address  : 0x00024d10
+Ordinal           : 183 (0xb7)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_WasInit
+Address           : 0x681013c0
+Relative Address  : 0x000013c0
+Ordinal           : 184 (0xb8)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_WM_GetCaption
+Address           : 0x6812a9c0
+Relative Address  : 0x0002a9c0
+Ordinal           : 175 (0xaf)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_WM_GrabInput
+Address           : 0x6812ae20
+Relative Address  : 0x0002ae20
+Ordinal           : 176 (0xb0)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_WM_IconifyWindow
+Address           : 0x6812c380
+Relative Address  : 0x0002c380
+Ordinal           : 177 (0xb1)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_WM_SetCaption
+Address           : 0x6812a8f0
+Relative Address  : 0x0002a8f0
+Ordinal           : 178 (0xb2)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_WM_SetIcon
+Address           : 0x6812a9f0
+Relative Address  : 0x0002a9f0
+Ordinal           : 179 (0xb3)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_WM_ToggleFullScreen
+Address           : 0x6812c3b0
+Relative Address  : 0x0002c3b0
+Ordinal           : 180 (0xb4)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_WriteBE16
+Address           : 0x68108e50
+Relative Address  : 0x00008e50
+Ordinal           : 185 (0xb9)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_WriteBE32
+Address           : 0x68108ec0
+Relative Address  : 0x00008ec0
+Ordinal           : 186 (0xba)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_WriteBE64
+Address           : 0x68108f30
+Relative Address  : 0x00008f30
+Ordinal           : 187 (0xbb)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_WriteLE16
+Address           : 0x68108e10
+Relative Address  : 0x00008e10
+Ordinal           : 188 (0xbc)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_WriteLE32
+Address           : 0x68108e90
+Relative Address  : 0x00008e90
+Ordinal           : 189 (0xbd)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
+====
+Function Name     : SDL_WriteLE64
+Address           : 0x68108f00
+Relative Address  : 0x00008f00
+Ordinal           : 190 (0xbe)
+Filename          : SDL.dll
+Full Path         : C:\Documents and Settings\adrian\Desktop\SDL-1.2.13-win32\SDL.dll
+Type              : Exported Function
+====
+
