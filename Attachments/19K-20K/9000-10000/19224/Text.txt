@@ -1,0 +1,46 @@
+Document
+	HTML
+		HEAD
+		BODY 	id=theBody class=CoverPage
+			TABLE
+				TBODY
+					TR id=trHeader class=trHeaderExpanded
+					TR
+						TD
+							TABLE
+								TBODY	
+									TR
+	TD
+	TD
+										TD
+	IFRAME
+		HTML
+			HEAD
+			BODY class=CoverPage
+				TABLE id=appFrameTable
+					TBODY
+						TR id=trSearchTitle
+						TR id=trSearchTabs
+						TR
+							TD
+							TD
+								IFRAME 
+								IFRAME
+HTML
+HEAD
+BODY id=theBody class=NoScroll
+TABLE
+TBODY
+TR id=SearchResultTableHeaderT
+TR
+TD colspan=2
+!
+																									TABLE
+																										TBODY
+																											TR
+TD
+SmartGrid id=GridControl name=GridControl 
+						
+
+<?IMPORT NAMESPACE = IRC IMPLEMENTATION = "                                                                        " DECLARENAMESPACE /><IRC:SmartGrid id=GridControl onreadystatechange=InitGrid() style="OVERFLOW-Y: hidden; OVERFLOW-X: hidden; WIDTH: 100%; HEIGHT: 100%" name="GridControl" onError="GridError()" expando="true" QuickLink="true" onActiveContentClick="ShowActiveContent()" onQuickLinkHover="setQuickLinkContent()" onVisibleRowsChange="UpdateStatusLine();UpdateMultiFieldSort(parent.xmlSearchResults);" onColumnRequest="parent.searchGetColData(event.objColReq, this)" onDataRequest="parent.searchGetRowData(this, event.objRowsReq)" onAllSelected="AllRowsSelected()" onExpandRow="ExpandRow(event.pExpandSpan, event.iRow, event.sSysID)" onRowChecked="GridRowClicked()" onGridReady="FilterGrid()"></IRC:SmartGrid>
+
