@@ -1,0 +1,190 @@
+<form name="compose" id="compose_entry" action="/forum/compose/entry/new/35530781/" method="post">
+
+<div class="yui-main">
+    <div class="yui-b">
+
+        <!-- START MAIN COMPOSER -->
+        <div id="compose" class="gaia-info alt">
+            <div class="hd">
+                <div class="rc_top_left">&nbsp;</div>
+                <div class="rc_top_right">&nbsp;</div>
+                <h3>Post a Reply</h3>
+                <div class="form_buttons">
+                    <input type="submit" name="action_preview" id="btn-preview-top" class="btn-preview" value="preview" />
+                    <input type="submit" name="action_submit" id="btn-submit-top" class="btn-submit" value="submit" />
+                </div>
+            </div>
+
+            <div class="bd">
+
+                                
+                <fieldset>
+                    <label for="message">Message</label>
+                
+                    <div id="editor">
+    <div id="format_controls">
+
+        <ul class="format-inline">
+            <li><a href="#" id="format-bold" class="bold" title="Bold text - [b][/b]">Bold text</a></li>
+            <li><a href="#" id="format-italics" class="italics" title="Italicize text - [i][/i]">Italicize text</a></li>
+            <li><a href="#" id="format-underline" class="underline" title="Underline text - [u][/u]">Underline text</a></li>
+            <li><a href="#" id="format-strike" class="strike" title="Strike text - [strike][/strike]">Strike text</a></li>
+        </ul>
+
+        <ul class="format-text">
+            <li><a href="#" id="format-textcolor" title="Change text color">Change text color</a></li>
+            <li><a href="#" id="format-textsize" title="Change text size">Change text size</a></li>
+            <li><a href="#" id="format-align-left" class="align-left" title="Left align - [align=left][/align]">Left align</a></li>
+            <li><a href="#" id="format-align-center" class="align-center" title="Center align - [align=center][/align]">Center align</a></li>
+            <li><a href="#" id="format-align-right" class="align-right" title="Right align - [align=right][/align]">Right align</a></li>
+        </ul>
+
+        <ul class="format-elements">
+            <li><a href="#" id="format-quote" class="quote" title="Quote - [quote][/quote]">Quote</a></li>
+            <li><a href="#" id="format-code" class="code" title="Code - [code][/code]">Code</a></li>
+            <li><a href="#" id="format-url" class="url" title="Add URL - [url=http://restofurl]Webpage Title[/url]">Add URL</a></li>
+        </ul>
+
+        <ul class="format-images">
+            <li><a href="#" id="format-image" class="image" title="Add image - [img]http://restofurl[/img]">Add Image</a></li>
+            <li><a href="#" id="format-imageleft" class="imageleft" title="Add left-aligned image - [imgleft]http://restofurl[/imgleft]">Add left-aligned image</a></li>
+            <li><a href="#" id="format-imageright" class="imageright" title="Add right-aligned image - [imgright]http://restofurl[/imgright]">Add right-aligned image</a></li>
+            <li><a href="#" id="format-imagemap" class="imagemap" title="Add image map - [imgmap]http://restofurl[/imgmap]">Add image map</a></li>
+        </ul>
+
+        <ul class="format-extra">
+            <li><a href="#" id="format-media" title="Add Media">Add Media</a></li>
+        </ul>
+
+    </div>
+
+    <ul id="emoticons">
+    <li><a href="#" class="biggrin" title="Very Happy - :D">Very Happy</a></li>
+    <li><a href="#" class="smile" title="Smile - :)">Smile</a></li>
+    <li><a href="#" class="embarassed" title="Embarassed - :oops:">Embarassed</a></li>
+    <li><a href="#" class="crying" title="Crying - T_T">Crying</a></li>
+    <li><a href="#" class="stare" title="Stare - :stare:">Stare</a></li>
+
+    <li><a href="#" class="xd" title="XD - :XD">XD</a></li>
+    <li><a href="#" class="nodding" title=":3 Nodding - :3nod:">:3 Nodding</a></li>
+    <li><a href="#" class="biglaugh" title="Big Laugh - :big:">Big Laugh</a></li>
+    <li><a href="#" class="gonk" title="Gonk - :gonk:">Gonk</a></li>
+    <li><a href="#" class="scream" title="Scream - :scream:">Scream</a></li>
+
+    <li><a href="#" class="stressed" title="Stressed - :vein:">Stressed</a></li>
+    <li><a href="#" class="sweat" title="Sweat - :sweat:">Sweat</a></li>
+    <li><a href="#" class="heart" title="Heart - :heart:">Heart</a></li>
+    <li><a href="#" class="domokun" title="Domokun - :domo:">Domokun</a></li>
+    <li><a href="#" class="xp" title="XP - :xp:">XP</a></li>
+
+    <li><a href="#" class="whee" title="Whee! - :whee:">Whee!</a></li>
+    <li><a href="#" class="wink" title="Wink - :wink:">Wink</a></li>
+    <li><a href="#" class="sad" title="Sad - :(">Sad</a></li>
+    <li><a href="#" class="surprised" title="Surprised - :o">Surprised</a></li>
+    <li><a href="#" class="shocked" title="Shocked - :shock:">Shocked</a></li>
+
+    <li><a href="#" class="confused" title="Confused - :?">Confused</a></li>
+    <li><a href="#" class="cool" title="Cool - 8)">Cool</a></li>
+    <li><a href="#" class="laughing" title="Laughing - :lol:">Laughing</a></li>
+    <li><a href="#" class="mad" title="Mad - :x">Mad</a></li>
+    <li><a href="#" class="razz" title="Razz - :P">Razz</a></li>
+
+    <li><a href="#" class="verysad" title="Very sad - :cry:">Very sad</a></li>
+    <li><a href="#" class="evil" title="Evil - :evil:">Evil</a></li>
+    <li><a href="#" class="twisted" title="Twisted evil - :twisted:">Twisted evil</a></li>
+    <li><a href="#" class="rolleyes" title="Rolling eyes - :roll:">Rolling eyes</a></li>
+    <li><a href="#" class="exclaim" title="Exclamation! - :!:">Exclamation!</a></li>
+
+    <li><a href="#" class="question" title="Question? - :?:">Question?</a></li>
+    <li><a href="#" class="idea" title="Idea - :idea:">Idea</a></li>
+    <li><a href="#" class="arrow" title="Arrow - :arrow:">Arrow</a></li>
+    <li><a href="#" class="neutral" title="Neutral - :|">Neutral</a></li>
+    <li><a href="#" class="mrgreen" title="Mr. Green - :mrgreen:">Mr. Green</a></li>
+
+    <li><a href="#" class="ninja" title="Ninja - :ninja:">Ninja</a></li>
+    <li><a href="#" class="cutelaugh" title="Cute laugh - :cute:">Cute laugh</a></li>
+    <li><a href="#" class="rofl" title="ROFL - :rofl:">ROFL</a></li>
+    <li><a href="#" class="pirate" title="Pirate - :pirate:">Pirate</a></li>
+    <li><a href="#" class="talk2hand" title="Talk to the hand - :talk2hand:">Talk to the hand</a></li>
+
+    <li><a href="#" class="burning" title="AUGH! My eyes! - :burning:">AUGH! My eyes!</a></li>
+    <li><a href="#" class="cheese" title="Cheese and whine - :cheese:">Cheese and whine</a></li>
+    <li><a href="#" class="dramallama" title="Drama llama - :dramallama:">Drama llama</a></li>
+    <li><a href="#" class="wahmbulance" title="Wahhhhhmbulance - :wahmbulance:">Wahhhhhmbulance</a></li>
+    <li><a href="#" class="emo" title="Emo - :emo:">Emo</a></li>
+    </ul>
+    <div class="clear"></div>
+
+    <div id="editor-textsize" class="picker">
+        <div class="hd"><h3>Text Size</h3></div>
+        <div class="bd">
+            <ul id="editor_palette_textsize">
+            <li><a href="#" class="xsmall" title="Extra small - [size=7][/size]">Extra Small</a></li>
+            <li><a href="#" class="small" title="Small - [size=9][/size]">Small</a></li>
+            <li><a href="#" class="normal" title="Normal - [size=12][/size]">Normal</a></li>
+            <li><a href="#" class="large" title="Large - [size=18][/size]">Large</a></li>
+            <li><a href="#" class="xlarge" title="Extra large - [size=24][/size]">Extra large</a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+        <div class="ft"></div>
+    </div>
+
+    <div id="editor-textcolor" class="picker">
+        <div class="hd"><h3>Text Color</h3></div>
+        <div class="bd">
+            <ul id="editor_palette_textcolor">
+            <li><a href="#" class="darkred" title="Dark Red - [color=darkred][/color]">Dark Red</a></li>
+            <li><a href="#" class="red" title="Red - [color=red][/color]">Red</a></li>
+            <li><a href="#" class="orange" title="Orange - [color=orange][/color]">Orange</a></li>
+            <li><a href="#" class="brown" title="Brown - [color=brown][/color]">Brown</a></li>
+            <li><a href="#" class="yellow" title="Yellow - [color=yellow][/color]">Yellow</a></li>
+            <li><a href="#" class="green" title="Green - [color=green][/color]">Green</a></li>
+            <li><a href="#" class="olive" title="Olive - [color=olive][/color]">Olive</a></li>
+            <li><a href="#" class="cyan" title="Cyan - [color=cyan][/color]">Cyan</a></li>
+            <li><a href="#" class="blue" title="Blue - [color=blue][/color]">Blue</a></li>
+            <li><a href="#" class="darkblue" title="Dark Blue - [color=dark blue][/color]">Dark Blue</a></li>
+            <li><a href="#" class="indigo" title="Indigo - [color=indigo][/color]">Indigo</a></li>
+            <li><a href="#" class="violet" title="Violet - [color=violet][/color]">Violet</a></li>
+            <li><a href="#" class="white" title="White - [color=white][/color]">White</a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+        <div class="ft"></div>
+    </div>
+
+    <div id="editor-media" class="picker">
+        <div class="hd"><h3>Add Media</h3></div>
+        <div class="bd">
+            <script type="text/javascript">
+            var jwidget_src = '                                                                                                                                                                                                                                            ';
+            </script>
+            <iframe id="jwidget"
+                src=""
+                border="0"
+                frameborder="0"
+                scrollbars="no"></iframe>
+        </div>
+        <div class="ft"></div>
+    </div>
+</div>
+
+                    <textarea name="message" id="message" wrap="virtual"></textarea>
+                </fieldset>
+
+                                        
+                    
+                <div class="clear"></div>
+            </div>
+
+            <div class="ft">
+                <div class="rc_bottom_left">&nbsp;</div>
+                <div class="rc_bottom_right">&nbsp;</div>
+                <input type="hidden" name="nonce" value="1787090833.1199334078.224177321" />
+                <div class="form_buttons">
+                    <input type="submit" name="action_preview" id="btn-preview" class="btn-preview" value="preview" />
+                    <input type="submit" name="action_submit" id="btn-submit" class="btn-submit" value="submit" />
+                </div>
+            </div>
+        </div>
+        <!-- END MAIN COMPOSER -->
