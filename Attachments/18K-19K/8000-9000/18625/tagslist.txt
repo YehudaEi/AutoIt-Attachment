@@ -1,0 +1,2625 @@
+General OR Non Weather Specific/SUN/MOON
+(note, to turn off having units included, go to control panel, webfiles/web page setup, custom web page setup)
+========================================
+%customscreenownlabelusethistag%  Use this tag for a title/description label on the custom screen
+%loadfile%..................Loads a text file into this location, e.g %loadfile%c:\wdisplay\webfiles\test.txt#  the # is needed at the end of the full path and file name
+%loadfile1% ................uses only the 1st line in the file
+%loadfilenocrlf%............does not add any CR or LF
+%time% .....................current time
+%date% .....................current date
+%sunrise% ..................sun rise time (make sure you have the correct lat/lon
+		            in view/sun moon)
+%sunset% ...................sunset time
+%dayornight%................If day time, its says Day, if night time, its says, Night (based on your sunrise/sunset)
+%timeofdaygreeting%.........E.g Morning, Afternoon, etc
+%moonrise% .................moon rise time
+%moonset% ..................moon set time
+%moonrisedate% .............moon rise date
+%moonsetdate% ..............moon set date
+%moonage%...................current age of the moon (days since new moon)
+%moonphasename%.............Moon age description
+%moonphase%.................Moon phase %
+%marchequinox%..............March equinox date
+%junesolstice%..............June solstice date
+%sepequinox%................September equinox date
+%decsolstice%...............December solstice date
+%moonperihel%...............Next Moon perihel date
+%moonaphel%.................Next moon perihel date
+%moonperigee%...............Next moon perigee date
+%moonapogee%................Next moon apogee date
+%newmoon%...................Date/time of the next/last new moon
+%nextnewmoon%...............Date/time of the next new moon for next month
+%firstquarter%..............Date/time of the next/last first quarter moon
+%lastquarter%...............Date/time of the next/last last quarter moon
+%fullmoon%..................Date/time of the next/last full moon
+%fullmoondate%..............Date of the next/last full moon (date only)
+%suneclipse%................Next sun eclipse
+%mooneclipse%...............Next moon eclipse date
+%easterdate%................Next easter date
+%chinesenewyear%............Chinese new year
+%pesachdate%................Pesach date
+%suntransit%................Sun transit time
+%moontransit%...............Moon transit time
+%changeinday%...............Hours and fraction of an hour the day length has changed since yesterday
+%changeindaydec%............Hours and fraction of an hour the day length has changed since 21st Dec
+%changeindayjun%............Hours and fraction of an hour the day length has changed since 21st Jun
+%hoursofpossibledaylight%...Total hours/minutes of possible daylight for today
+%daylengthyesterday%........Yesterdays' reading (updated at 11:46pm)
+%weathercond% ..............current weather conditions, based on your data
+%weathercondinput%..........text you have entered under input daily weather for weather conditions now
+%weatherreport% ............current weather conditions from selected METAR
+%metar/report=%NZAA.MET     Insert downloaded METARS or weather reports/warnings.
+		            Please replace NZAA.MET with the file name downloaded.Note: use <pre> and </pre> html tags 
+%uncodedmetar/report=%NZAA.MET     Un decoded (raw) only
+
+
+
+%extrametarlabel% ..........extra METAR label from the metar.gif
+%metarcloudreport% .........cloud METAR label from the metar.gif
+%statusmessage% ............special status message
+%warningemailalarm%.........For the warning email custom email (what warning was exceeded)
+%NOAAEvent%.................if you have setup the Noaa warning system (if nor warning, then it will be NO CURRENT 
+ADVISORIES)
+%NOAAEvent2%................if you have #2 setup the Noaa warning system (if nor warning, then it will be NO CURRENT 
+ADVISORIES)
+%noaawarningraw%............Actual warning event from the noaa xml warning program
+%noaawarningraw2%...........Actual warning event from the noaa xml warning program, setup #2
+%noaawarningscroll%.........Html warning file inserted (noaawarningscroll.html) to provide scrolling warning to page
+%noaawarningscroll2%........Html warning file inserted (noaawarningscroll.html) to provide scrolling warning to page, setup #2
+%wdversion%.................Weather Display version number you are running
+%wdbuild%...................Build number
+%inputdailyweather%.........The text you enter for current weather conditions
+%formateddate%..............Date with "January", for example, in it
+%current alarm flashing%....What it says - for the weather warning....
+%time-minute%...............Current minute
+%time-hour%.................Current hour
+%date-day%..................Current day
+%date-month%................Current month
+%date-year%.................Current year
+%monthname%.................Current month name
+%dayname%...................Current day name
+%utctime-minute%............UTC Current minute
+%utctime-hour%..............UTC Current hour
+%utcdate-day%...............UTC Current day
+%utcdate-month%.............UTC Current month
+%utcdate-year%..............UTC Current year
+%cloudheightfeet%...........Estimated cloud base height, feet, (based on dew point, and you height above sea  level...enter
+%cloudheightmeters%.........Estimated cloud base height, metres, (based on dew point, and you height above sea
+
+%stationaltitude%...........Station altitude, feet, as set in the units setup
+this under setup)
+%stationlatitude%...........Latitude (from the sun moon rise/set setup)
+%stationlongitude%..........Longtitude (from the sun moon rise/set setup)
+%stationname%...............Station name, from noaa setup, or clientraw real time ftp
+%noaacityname%..............City name,from the noaa setup (in the av/ext setup)
+%noaastatename%.............State name, from the noaa setup
+
+level...enter this under setup)
+
+%windowsuptime% ............Windows up time
+%freememory% ...............amount of free memory on the pc
+%timeofnextupdate%..........Time of next Update/Upload of the weather data to your web page (based on the web table update 
+
+time)
+%Startimedate%..............Time/date WD was started
+%Startime%..................Just the time of when started
+%Stardate%..................Just the date of when started
+%datareceivedcount%.........Data from station received count
+
+
+%5dayforecastday1%..........Forecast from the 5 day forecast graphic image from a downloaded NOAA zone forecast file (which 
+
+must be first selected),,,,repeat up to day 8
+%rawdataheader%.............Raw weather data for first line of web for sharing raw data with others
+%hoursofpossibledaylight%...Total hours/minutes of possible daylight for today
+%seaconditions% The expected local sea conditions based on the BFT average windspeed
+%heatcolourword%............How hot/cold it feels at the moment, based on the humidex, used with the conditionscolour.jpg 
+
+image (which is updated with the gizmo.gif)
+%filenamewapgraph%..........The current minute stamped .wbmp graph for use with a custom wap page (temp/hum graph)
+%filenamewapgraph2%.........The current minute stamped .wbmp graph for use with a custom wap page (baro/wind graph).
+i.e use this code:
+<img alt="WapSeer Control" src="%filenamewapgraph%" vspace="0" hspace="0" align="middle"/>
+<img alt="WapSeer Control" src="%filenamewapgraph2%" vspace="0" hspace="0" align="middle"/>
+%batteryvolts%..............Rain wise 2000/Weather Hawk/ battery level
+%iconnumber%................Current icon number
+
+
+US Navy
+=======
+%usnavycloudheight1%........Cloud height from the ceilometer, feet
+%usnavycloudheight2%........Cloud height from the ceilometer, feet
+%usnavycloudheight3%........Cloud height from the ceilometer, feet
+%usnavycloudtype1%..........Cloud type
+%usnavycloudtype2%..........Cloud type
+%usnavycloudtype3%..........Cloud type
+%watertempcelsius%..........Water temperature, oC
+%watertempfaren%............Water temperature, oF
+%visibility%................Visibility (miles)
+%visibilitykm%..............Visibility (km)
+Averages/Extreme
+================
+%yeartodateavtemp%..........Average temperature so far for the year
+%yeartodateavwind%..........Average windspeed so far for the year
+%yeartodategstwind%.........Average gustspeed so far for the year
+%monthtodateavtemp%.........Average temperature so far for the month
+%monthtodateavtempcelsius%..Average temperature so far for the month, celsius always
+%monthtodateavtemp31%.......Average temperature so far for the last 31 days
+%monthtodateavtempcelsius%31Average temperature so far for the last 31 days, celsius always
+%monthtodateavhum%..........Average humidity so far for the month
+%monthtodateavdp%...........Average dew point so far for the month
+%monthtodateavdpcelsius%....Average dew point so far for the month, celsius always
+%monthtodateavbaro%.........Average barometer so far for the month
+%monthtodateavbaromb%.......Average barometer so far for the month,  mb (hPa) always
+%monthtodateavspeed%........Average windspeed so far for the month
+%monthtodateavspeedkts%.....Average windspeed so far for the month, knots always
+%monthtodateavspeedms%......Average windspeed so far for the month, m/s always
+%monthtodateavspeedkmh%.....Average windspeed so far for the month, kmh always
+%monthtodateavgust%.........Average gustspeed so far for the month
+%monthtodateavgustkts%......Average gustspeed so far for the month, knots always
+%monthtodateavgustms%.......Average gustspeed so far for the month, m/s always
+%monthtodateavgustkmh%......Average gustspeed so far for the month, kmh always
+%monthtodateavdir%..........Average direction so far for the month
+%monthtodateavdirword%......Average direction so far for the month, in words
+%monthtodatemaxgustdirword%.Max gust direction in words.
+%monthtodatemaxgustdirdeg%..Max gust direction in Degrees.
+%monthtodatemaxtemp%........Maximum temperature so far for the month
+%monthtodatemaxtempcelsius%.Maximum temperature so far for the month, celsius always
+%monthtodatemintemp%........Minimum temperature so far for the month
+%monthtodatemintempcelsius%.Minimum temperature so far for the month, celsius always
+%monthtodatemaxhum%.........Maximum humidity so far for the month
+%monthtodateminhum%.........Minimum humidity so far for the month
+%monthtodatemaxdp%..........Maximum dew point so far for the month
+%monthtodatemaxdpcelsius%...Maximum dew point so far for the month, celsius always
+%monthtodatemindp%..........Minimum dew point so far for the month
+%monthtodatemindpcelsius%...Minimum dew point so far for the month, celsius always
+%monthtodatemaxbaro%........Maximum barometer so far for the month
+%monthtodatemaxbaromb%......Maximum barometer so far for the month, mb (hpa) always
+%monthtodateminbaro%........Minimum barometer so far for the month
+%monthtodateminbaromb%......Minimum barometer so far for the month, mb (hpa) always
+%monthtodatemaxwind%........Maximum av speed so far for the month
+%monthtodatemaxwindms%......Maximum av speed so far for the month, m/s always
+%monthtodatemaxwindkts%.....Maximum av speed so far for the month, knots always
+%monthtodatemaxwindkmh%.....Maximum av speed so far for the month, kmh always
+%monthtodatemaxgust%........Maximum max gust so far for the month
+%monthtodatemaxgustms%......Maximum max gust so far for the month, m/s aways
+%monthtodatemaxgustkts%.....Maximum max gust so far for the month, knots aways
+%monthtodatemaxgustkmh%.....Maximum max gust so far for the month, kmh aways
+
+%last24houravtemp%..........Average temperature last 24 hours
+%houraveragetemp%...........Average temperature for the hour (put the hour number immediatly after this tag,and then the 
+
+month and then the year numbers 
+e.g  %houraveragetemp%08032003  for the average temperature for 8am (use a 24 hour clock) (hour preceding that, for the 
+
+month of March 2003)
+%houraveragehum%............Same thing, but for humidity
+
+%last24houravbaro%..........Average barometer last 24 hours
+%last24houravhum%...........Average humidity last 24 hours
+%tempfortimedate%...........Actual temperature for the hour (put the hour number immediatly after this tag,and then the
+
+month and then the year numbers 
+
+%last24houravtempclimate%......Average temperature for the last preceeding 24 hours from your data records
+%last24houravtempclimatediff%..Difference from this days last preceeding 24 hour temperature compared to the average from your data records
+
+%daysTmax<-15C%.............Days where the maximum temperature did not go over -15oC (current month)
+%daysTmax<-10C%.............Days where the maximum temperature did not go over -10oC (current month)
+%daysTmax<-5C%..............Days where the maximum temperature did not go over -5oC (current month)
+%daysTmax<0C%...............Days where the maximum temperature did not go over 0oC (current month)
+%daysTmax<5C%...............Days where the maximum temperature did not go over 5oC (current month)
+%daysTmax<10C%..............Days where the maximum temperature did not go over 10oC (current month)
+%daysTmax<15C%..............Days where the maximum temperature did not go over 15oC (current month)
+%daysTmax<20C%..............Days where the maximum temperature did not go over 20oC (current month)
+
+%daysTmin<25C%..............Days where the minimum temperature went below 25oC
+%daysTmin<20C%..............Days where the minimum temperature went below 20oC
+%daysTmin<15C%..............Days where the minimum temperature went below 15oC
+%daysTmin<10C%..............Days where the minimum temperature went below 10oC
+%daysTmin<5C%...............Days where the minimum temperature went below 5oC
+%daysTmin<0C%...............Days where the minimum temperature went below 0oC
+%daysTmin<-5C%..............Days where the minimum temperature went below -5oC
+%daysTmin<-10C%.............Days where the minimum temperature went below -10oC
+%daysTmin<-15C%.............Days where the minimum temperature went below -15oC
+%daysTmin<-20C%.............Days where the minimum temperature went below -20oC
+%daysTmin<-25C%.............Days where the minimum temperature went below -25oC
+
+
+%daysTmax>-20C%..............Days where the maximum temperature went over -20oC
+%daysTmax>-15C%..............Days where the maximum temperature went over -15oC
+%daysTmax>-5C%..............Days where the maximum temperature went over -5oC
+%daysTmax>0C%...............Days where the maximum temperature went over 0oC
+%daysTmax>5C%...............Days where the maximum temperature went over 5oC
+%daysTmax>10C%..............Days where the maximum temperature went over 10oC
+%daysTmax>15C%..............Days where the maximum temperature went over 15oC
+%daysTmax>20C%..............Days where the maximum temperature went over 20oC
+%daysTmax>25C%..............Days where the maximum temperature went over 25oC
+%daysTmax>30C%..............Days where the maximum temperature went over 30oC
+%daysTmax>35C%..............Days where the maximum temperature went over 35oC
+%daysTmax>38C%..............Days where the maximum temperature went over 38oC (100F)
+%daysTmax>40C%..............Days where the maximum temperature went over 40oC
+%daysTmax>44C%..............Days where the maximum temperature went over 44oC
+%daysTmax>47C%..............Days where the maximum temperature went over 47oC
+%daysTmax>49C%..............Days where the maximum temperature went over 49oC
+
+
+%daysTmaxyear<-15C%.........Days where the maximum temperature did not go over -15oC (year to date)
+%daysTmaxyear<-10C%.........Days where the maximum temperature did not go over -10oC (year to date)
+%daysTmaxyear<-5C%..........Days where the maximum temperature did not go over -5oC (year to date)
+%daysTmaxyear<0C%...........Days where the maximum temperature did not go over 0oC (year to date) 
+%daysTmaxyear<5C%...........Days where the maximum temperature did not go over 5oC (year to date) 
+%daysTmaxyear<10C%..........Days where the maximum temperature did not go over 10oC (year to date) 
+%daysTmaxyear<15C%..........Days where the maximum temperature did not go over 15oC (year to date) 
+%daysTmaxyear<20C%..........Days where the maximum temperature did not go over 20oC (year to date) 
+
+
+
+%daysTminyear<25C%..........Days where the minimum temperature went below 25oC
+%daysTminyear<20C%..........Days where the minimum temperature went below 20oC
+%daysTminyear<15C%..........Days where the minimum temperature went below 15oC
+%daysTminyear<10C%..........Days where the minimum temperature went below 10oC
+%daysTminyear<5C%...........Days where the minimum temperature went below 5oC
+%daysTminyear<0C%...........Days where the minimum temperature went below 0oC
+%daysTminyear<-5C%..........Days where the minimum temperature went below -5oC
+%daysTminyear<-10C%.........Days where the minimum temperature went below -10oC
+%daysTminyear<-15C%.........Days where the minimum temperature went below -15oC
+%daysTminyear<-20C%.........Days where the minimum temperature went below -20oC
+%daysTminyear<-25C%.........Days where the minimum temperature went below -25oC
+
+
+%daysTmaxyear>-15C%..........Days where the maximum temperature went over -15oC
+%daysTmaxyear>-10C%.........Days where the maximum temperature went over -10oC
+%daysTmaxyear>-5C%..........Days where the maximum temperature went over -5oC
+%daysTmaxyear>0C%...........Days where the maximum temperature went over 0oC
+%daysTmaxyear>5C%...........Days where the maximum temperature went over 5oC
+%daysTmaxyear>10C%..........Days where the maximum temperature went over 10oC
+%daysTmaxyear>15C%..........Days where the maximum temperature went over 15oC
+%daysTmaxyear>20C%..........Days where the maximum temperature went over 20oC
+%daysTmaxyear>25C%..........Days where the maximum temperature went over 25oC
+%daysTmaxyear>30C%..........Days where the maximum temperature went over 30oC
+%daysTmaxyear>35C%..........Days where the maximum temperature went over 35oC
+%daysTmaxyear>38C%..........Days where the maximum temperature went over 38oC (100F)
+%daysTmaxyear>40C%..........Days where the maximum temperature went over 40oC
+%daysTmaxyear>44C%..........Days where the maximum temperature went over 44oC
+%daysTmaxyear>47C%..........Days where the maximum temperature went over 47oC
+%daysTmaxyear>49C%..........Days where the maximum temperature went over 49oC
+
+
+
+
+Using the logfiles instead of datafiles
+
+
+
+
+%daysTmax<0Clg%...............Days where the maximum temperature did not go over 0oC (current month)
+%daysTmax<5Clg%...............Days where the maximum temperature did not go over 0oC (current month)
+%daysTmax<10Clg%..............Days where the maximum temperature did not go over 10oC (current month)
+%daysTmax<15Clg%..............Days where the maximum temperature did not go over 15oC (current month)
+%daysTmax<20Clg%..............Days where the maximum temperature did not go over 20oC (current month)
+%daysTmin<0Clg%...............Days where the minimum temperature went below 0oC
+%daysTmin<-15Clg%.............Days where the minimum temperature went below -15oC
+
+
+%daysTmax>20Clg%..............Days where the maximum temperature went over 20oC
+%daysTmax>25Clg%..............Days where the maximum temperature went over 25oC
+%daysTmax>30Clg%..............Days where the maximum temperature went over 30oC
+%daysTmax>35Clg%..............Days where the maximum temperature went over 35oC
+%daysTmax>40Clg%..............Days where the maximum temperature went over 40oC
+%daysTmax>44Clg%..............Days where the maximum temperature went over 44oC
+%daysTmax>47Clg%..............Days where the maximum temperature went over 47oC
+%daysTmax>49Clg%..............Days where the maximum temperature went over 49oC
+
+
+
+%daysTmaxyear<0Clg%...........Days where the maximum temperature did not go over 0oC (year to date) 
+%daysTmaxyear<5Clg%...........Days where the maximum temperature did not go over 5oC (year to date) 
+%daysTmaxyear<10Clg%..........Days where the maximum temperature did not go over 10oC (year to date) 
+%daysTmaxyear<15Clg%..........Days where the maximum temperature did not go over 15oC (year to date) 
+%daysTmaxyear<20Clg%..........Days where the maximum temperature did not go over 20oC (year to date) 
+%daysTminyear<0Clg%...........Days where the minimum temperature went below 0oC
+%daysTminyear<-15Clg%.........Days where the minimum temperature went below -15oC
+
+
+
+
+%daysTmaxyear>20Clg%..........Days where the maximum temperature went over 20oC
+%daysTmaxyear>25Clg%..........Days where the maximum temperature went over 25oC
+%daysTmaxyear>30Clg%..........Days where the maximum temperature went over 30oC
+%daysTmaxyear>35Clg%..........Days where the maximum temperature went over 35oC
+%daysTmaxyear>40Clg%..........Days where the maximum temperature went over 40oC
+%daysTmaxyear>44Clg%..........Days where the maximum temperature went over 44oC
+%daysTmaxyear>47Clg%..........Days where the maximum temperature went over 47oC
+%daysTmaxyear>49Clg%..........Days where the maximum temperature went over 49oC
+
+%hddmonth%..................Heating degree days month to date
+%cddmonth%..................Cooling degree days month to date
+%hddday%....................Heating degree days ,today
+%cddday%....................Cooling degree days ,today
+%cddyear%...................Cooling degree days year to date (slow)
+%hddyear%...................Heating degree days year to date (slow)
+
+%raindifffromav%............Difference between the current month to date rainfall and the average rainfall for the month 
+
+(total for the current month)
+%raindifffromavyear%........Difference between the current year to date and the average for the year to date (includes 
+
+current month as total)  (from your entered averages)
+%tsum%.....................Year to date T Sum temperature
+
+%avtempjan%................Average temperature for january from your data
+%avtempfeb%................Average temperature for february from your data
+%avtempmar%................Average temperature for march from your data
+%avtempapr%................Average temperature for april from your data
+%avtempmay%................Average temperature for may from your data
+%avtempjun%................Average temperature for june from your data
+%avtempjul%................Average temperature for july from your data
+%avtempaug%................Average temperature for august from your data
+%avtempsep%................Average temperature for september from your data
+%avtempoct%................Average temperature for october from your data
+%avtempnov%................Average temperature for november from your data
+%avtempdec%................Average temperature for december from your data
+
+%avtempjannow%................Average temperature for january for this year only
+%avtempfebnow%................Average temperature for february for this year only
+%avtempmarnow%................Average temperature for march for this year only
+%avtempaprnow%................Average temperature for april for this year only
+%avtempmaynow%................Average temperature for may for this year only
+%avtempjunnow%................Average temperature for june for this year only
+%avtempjulnow%................Average temperature for july for this year only
+%avtempaugnow%................Average temperature for august for this year only
+%avtempsepnow%................Average temperature for september for this year only
+%avtempoctnow%................Average temperature for october for this year only
+%avtempnovnow%................Average temperature for november for this year only
+%avtempdecnow%................Average temperature for december for this year only
+
+%gddmonth%.................Growing degrees days, month to date.
+%gddyear%..................Growing degrees days, year to date.
+
+Tags from the daily averages/extreme page (month to date) (note that will still need to be enabled)
+=========================================
+
+%averagesextdata1%
+     "   "             i.e in the same data sequence as that appears on the averages/extreme page (e.g february2003.htm)
+		       the last 31 are the rain for the day of the month (blank if no rain that day)	
+%averagesextdata66% 
+
+
+%averagetempfordaytimeofyearfromyourdata%..The average temperature for the day you would expect from your data records for 
+
+that day (updates at midnight and midday)
+%maxtempfordaytimeofyearfromyourdata%.....Max temperature to be expected for the day from your data records (you need t 2 
+
+years of data)
+%mintempfordaytimeofyearfromyourdata%....The minimum of above
+
+%maxtempfortodayfromyourdata%............The maximum temperature reached for this day, from your data records
+%mintempfortodayfromyourdata%............The minimum temperature reached for this day, from your data records
+%yearmaxtempfortodayfromyourdata%........The year the above reading was reached
+%yearmintempfortodayfromyourdata%
+
+%WUmaxtemp%...............Todays average max temperature from the selected Wunderground almanac station
+%WUmintemp%...............Todays average min temperature from the selected Wunderground almanac station
+
+%WUmaxtempr%..............Todays record max temperature from the selected Wunderground almanac station
+%WUmintempr%..............Todays record min temperature from the selected Wunderground almanac station
+%WUmaxtempryr%............Year that it occured
+%WUmintempryr%............year that it occured
+
+
+%currentmonthtodatefilename%....The filename, of the current averages/extreme web file (e.g April2004.htm)
+%dropdownlist%...................Creates the drop down list selection
+
+%maxtempweek%.........Max temp over the last week
+%mintempweek%.........Min temp over the last week
+%maxheatweek%.........Max heat index over the last week
+%minheatweek%.........Min heat index over the last week
+%minchillweek%........Min windchill over the last week
+%maxdewweek%..........Max dew over the last week
+%mindewweek%..........Min dew over the last week
+%maxbaroweek%.........Max baro over the last week
+%minbaroweek%.........Min baro over the last week
+%maxhumweek%..........Max hum over the last week
+%minhumweek%..........Min hum over the last week
+%maxwindweek%.........Max wind (average) over the last week
+%maxgustweek%.........Min gust over the last week
+
+%maxtempweekday%.....Day of max temp over the last week
+%mintempweekday%.....Day of min temp over the last week
+
+%maxheatweekday%.....Day of max heat index over the last week
+%minheatweekday%.....Day of min heat index over the last week
+%minchillweekday%....Day of min wind\hill over the last week
+%maxbaroweekday%.....Day of max baro over the last week
+%minbaroweekday%.....Day of min baro over the last week
+%maxhumweekday%......Day of max hum over the last week
+%minhumweekday%......Day of min hum over the last week
+%maxdewweekday%......Day of max dew over the last week
+%mindewweekday%......Day of min dew over the last week
+%maxwindweekday%.....Day of mMax wind (average) over the last week
+%maxgustweekday%.....Day of min gust over the last week
+
+%avtempweek%..........Average temp over the week
+%avhumweek%...........Average hum over the week
+%avbaroweek%..........Average baro over the week
+%avwindweek%..........Average wind over the week
+%avgustweek%..........Average gust over the week
+%rainforweek%............total rain over the last 7 days (from graph data)
+
+Temperature/Humidity
+====================
+Current:
+--------
+%temp% .....................temperature
+%tempnodp% .................temperature, no decimal place
+%tempnodpf% ................temperature, no decimal place always F
+%dewnodp%...................dew point, no decimal place
+%hum% ......................humidity
+%dew% ......................dew point
+%dewdep%....................dew point depression
+%heati% ....................current heat index
+%heatinodp% ................current heat index,no decimal place
+%maxtemp% ..................today's maximum temperature
+%maxtempnodp% ..............today's maximum temperature, no decimal place
+%maxtempt% .................time this occurred
+%mintemp% ..................today's minimum temperature
+%mintempnodp% ..............today's minimum temperature, no decimal place
+%mintempt% .................time this occurred
+%maxtempmetric%.............todays maximum temperature in oC
+%mintempmetric%.............todays minimum temperature in oC
+%windch% ...................current wind-chill
+%windchnodp% ...............current wind-chill, no decimal place
+%minwindch% ................minimum wind-chill
+%minwindcht% ...............time this occurred
+%maxwindchill% .............maximum wind-chill
+%maxwindchillt% ............time this occurred
+%highhum% ..................high humidity
+%highhumt% .................time this occurred
+%lowhum% ...................low humidity
+%lowhumt% ..................time this occurred
+%indoortemp% ...............indoor temperature
+%indoorhum% ................indoor humidity
+%maxdew% ...................high dew point
+%maxdewt% ..................time this occurred
+%mindew% ...................low dew point
+%mindewt% ..................time this occurred
+%maxheat% ..................high heat index
+%maxheatt% .................time this occurred
+%minheat% ..................low heat index
+%minheatt% .................time this occurred
+%avtempsince6amUSA%.........Average temperature since 6am in oF
+%avtempsince6am%............Average temperature since 6am in oC
+%avtempsince6pmUSA%.........Average temperature since 6pm in oF
+%avtempsince6pm%............Average temperature since 6pm in oC
+%tempinmetric% .............outdoor temperature always in metric (even if US units selected)
+%dewinmetric% ..............dew point always in metric
+%heatindexinmetric% ........heat index always in metric
+%windchillinmetric% ........wind chill always in metric
+%maxheatinmetric% ..........maximum heat always in metric
+%minheatinmetric% ..........minimum heat always in metric
+%maxhighdewinmetric%........maximum dew point always in metric
+%minlowdewinmetric%.........minimum dew point always in metric
+%maxhighchillinmetric%......maximum high windchill always in metric
+%minlowchillinmetric%.......minimum low windchill always in metric
+%wetbulb%...................Current wet bulb reading
+%tempinusa%.................Temperature in oF
+%dewinusa%..................Dew point temperature in oF
+%hightempinusa%.............Today's high temp in oF
+%lowtempinusa%..............Today's low temp in oF
+%indoortempinmetric%........Indoor temperature always in oC
+%dewchangelasthour%.........Dew point change last hour
+%barochangelasthour%........Baro change last hour
+%tempchangelasthourmetric%..Temperature change last hour always in metric
+%tempchangelasthourfaren%...Temperature change last hour always in faren
+%wholeroundedtempcelcius%...Temperature rounded to whole number, celsius
+%wholeroundedtempfaren%.....Temperature rounded to whole number, faren
+%humchangelasthour%.........Humidity change last hour
+%maxindoortemp%.............Maximum indoor temperature
+%maxindoortempcelsius%......Maximum indoor temperature, celsius always
+%minindoortemp%.............Minimum indoor temperature
+%minindoortempcelsius%......Minimum indoor temperature, celsius always
+%maxindoortempt%............Time of Maximum indoor temperature
+%minindoortempt%............Time of Minimum indoor temperature
+%watertempcelsius%..........US Navy water temperature, celsius
+%watertempfaren%............US Navy water temperature, faren
+%visibility%................US Navy visibility reading (miles)
+%soiltemp%..................Current soil temperature
+%apparenttemp%..............Apparent temperature
+%apparentsolartemp%.........Apparent temperature in the sun (you need a solar sensor)
+%apparenttempc%.............Apparent temperature, °C
+%apparentsolartempc%........Apparent temperature in the sun, °C (you need a solar sensor)
+%apparenttempf%.............Apparent temperature, °F
+%apparentsolartempf%........Apparent temperature in the sun, °F (you need a solar sensor)
+%hiapparenttemp%............Hi apparent temp for the day
+%loapparenttemp%............Lo apparent temp for the day
+%hiapparenttemptime%........Hi apparent temp for the day time
+%loapparenttemptime%........Lo apparent temp for the day time
+%extratemp1%................Extra temperature sensor 1 (change through to 8)
+%indoordewfaren%............Indoor dew point (oF)
+%indoordewcelsius%..........Indoor dew point (oC)
+%humidexfaren%..............Humidex value in oF
+%humidexcelsius%............Humidex value in oC
+%todayhihumidex%............Daily max Humidex
+%todaylohumidex%............Daily low Humidex
+%maxtemplast24hours%........The maximum temperature in the last immediate 24 hours
+%mintemplast24hours%........The minimum temperature in the last immediate 24 hours
+%maxtemplast24hourst%.......Time/date of the maximum temperature in the last immediate 24 hours
+%mintemplast24hourst%.......Time/date of the minimum temperature in the last immediate 24 hours
+%blackglobe%................Black globe temperature from Environdata weather master 2000 station (oC)
+%THI%.......................Heat stress calculation (oC)
+%HLI%.......................Heat stress load (used with Cattle), gust windspeed used  (oC)
+%HLIavwind%.................Heat stress load (used with Cattle), average windspeed used (oC)
+%THIf%......................Heat stress calculation (oF)
+%HLIf%......................Heat stress load (used with Cattle), gust windspeed used  (oF)
+%HLIavwindf%................Heat stress load (used with Cattle), average windspeed used (oF)
+%maxindoorhum%..............Maximum indoor humidity
+%minindoorhum%..............Minimum indoor humidity
+%dailyhighindoorhumtime%....Time of maximum indoor humidity
+%dailylowindoorhumtime%.....Time of minimum indoor humidity
+%airdensity%................Current air density, kg/m3
+%abshum%....................Absolute humidity, kg/m3
+%todaylowgrass%.............Current grass minimum
+%timeoflowgrass%............Time that occured
+%generalextratemp1%.........If using non standard extra temperature sensors, but will work for any station
+%generalextratemp2%
+%generalextratemp3%
+%generalextratemp4%
+%generalextratemp5%
+%generalextratemp6%
+%generalextratemp7%
+%generalextratemp8%
+%generalextratemp1C%........If using non standard extra temperature sensors, but will work for any station, oC always
+%generalextratemp2C%
+%generalextratemp3C%
+%generalextratemp4C%
+%generalextratemp5C%
+%generalextratemp6C%
+%generalextratemp7C%
+%generalextratemp8C%
+%generalextratemp1F%.........If using non standard extra temperature sensors, but will work for any station oF always
+%generalextratemp2F%
+%generalextratemp3F%
+%generalextratemp4F%
+%generalextratemp5F%
+%generalextratemp6F%
+%generalextratemp7F%
+%generalextratemp8F%
+%wetbulbdiff%...............Difference between the wet bulb temperature and the outdoor temperature
+%maxsoiltemp%...............Maxium daily soil temperature (either you have set a extra temperature sensor as soil or its a 
+%soiltempincelsius%.........Soil temperature oC (no matter what units selected in WD)
+VP soil temperature)
+%minsoiltemp%...............Minimum daily soil temperature
+%feelslike%.................Shows heat index or humidex or windchill (if less than 16oC)
+%feelslikedp%...............same, but shows it with a decimal place
+%dailyhitemp12%.............Hi temperature since 6am (to 6pm (resets then)
+%dailylotemp12%.............Low temperature since 6am (to 6pm (resets then)
+%nightlyhitemp12%...........HI temperature since 6pm (till 6am, resets then)
+%nightlylotemp12%...........Low temperature since 6pm (till 6am, resets then)
+%VPextratemp1high%..........Davis VP extra temp 1 high 
+%VPextratemp2high%..........Davis VP extra temp 2 high 
+%VPextratemp3high%..........Davis VP extra temp 3 high 
+%VPextratemp4high%..........Davis VP extra temp 4 high 
+%VPextratemp5high%..........Davis VP extra temp 5 high 
+%VPextratemp6high%..........Davis VP extra temp 6 high 
+%VPextratemp7high%..........Davis VP extra temp 7 high 
+%VPextratemp1low%..........Davis VP extra temp 1 low
+%VPextratemp2low%..........Davis VP extra temp 2 low 
+%VPextratemp3low%..........Davis VP extra temp 3 low 
+%VPextratemp4low%..........Davis VP extra temp 4 low 
+%VPextratemp5low%..........Davis VP extra temp 5 low 
+%VPextratemp6low%..........Davis VP extra temp 6 low 
+%VPextratemp7low%..........Davis VP extra temp 7 low 
+%VPextrahum1high%..........Davis VP extra hum 1 high
+%VPextrahum1high%..........Davis VP extra hum 2 high
+%VPextrahum1high%..........Davis VP extra hum 3 high
+%VPextrahum1high%..........Davis VP extra hum 4 high
+%VPextrahum1high%..........Davis VP extra hum 5 high
+%VPextrahum1high%..........Davis VP extra hum 6 high
+%VPextrahum1high%..........Davis VP extra hum 7 high
+%VPextrahum1low%..........Davis VP extra hum 1 low
+%VPextrahum1low%..........Davis VP extra hum 2 low
+%VPextrahum1low%..........Davis VP extra hum 3 low
+%VPextrahum1low%..........Davis VP extra hum 4 low
+%VPextrahum1low%..........Davis VP extra hum 5 low
+%VPextrahum1low%..........Davis VP extra hum 6 low
+%VPextrahum1low%..........Davis VP extra hum 7 low
+
+%VPextratemp1hightime%..........Davis VP extra temp 1 high time
+%VPextratemp2hightime%..........Davis VP extra temp 2 high time
+%VPextratemp3hightime%..........Davis VP extra temp 3 high time
+%VPextratemp4hightime%..........Davis VP extra temp 4 high time
+%VPextratemp5hightime%..........Davis VP extra temp 5 high time
+%VPextratemp6hightime%..........Davis VP extra temp 6 high time
+%VPextratemp7hightime%..........Davis VP extra temp 7 high time
+%VPextratemp1lowtime%..........Davis VP extra temp 1 low time
+%VPextratemp2lowtime%..........Davis VP extra temp 2 low time
+%VPextratemp3lowtime%..........Davis VP extra temp 3 low time
+%VPextratemp4lowtime%..........Davis VP extra temp 4 low time
+%VPextratemp5lowtime%..........Davis VP extra temp 5 low time
+%VPextratemp6lowtime%..........Davis VP extra temp 6 low time
+%VPextratemp7lowtime%..........Davis VP extra temp 7 low time
+%VPextrahum1hightime%..........Davis VP extra hum 1 high time
+%VPextrahum1hightime%..........Davis VP extra hum 2 high time
+%VPextrahum1hightime%..........Davis VP extra hum 3 high time
+%VPextrahum1hightime%..........Davis VP extra hum 4 high time
+%VPextrahum1hightime%..........Davis VP extra hum 5 high time
+%VPextrahum1hightime%..........Davis VP extra hum 6 high time
+%VPextrahum1hightime%..........Davis VP extra hum 7 high time
+%VPextrahum1lowtime%..........Davis VP extra hum 1 low time
+%VPextrahum1lowtime%..........Davis VP extra hum 2 low time
+%VPextrahum1lowtime%..........Davis VP extra hum 3 low time
+%VPextrahum1lowtime%..........Davis VP extra hum 4 low time
+%VPextrahum1lowtime%..........Davis VP extra hum 5 low time
+%VPextrahum1lowtime%..........Davis VP extra hum 6 low time
+%VPextrahum1lowtime%..........Davis VP extra hum 7 low time
+
+%wetbulbextratemp1%...........Wet bulb temperature from extra temp1 and extra hum1 reading
+%wetbulbextratemp2%...........Wet bulb temperature from extra temp2 and extra hum2 reading
+%wetbulbextratemp3%...........Wet bulb temperature from extra temp3 and extra hum3 reading
+%wetbulbextratemp4%...........Wet bulb temperature from extra temp4 and extra hum4 reading
+%wetbulbextratemp5%...........Wet bulb temperature from extra temp5 and extra hum5 reading
+
+
+
+Yesterday:
+----------
+%tempchangehour%............Temperature change in the last hour
+%maxdewyest%................Yesterday's max dew point
+%maxdewyestt%...............Time of yesterday's max dew point
+%mindewyest%................Yesterday's min dew point
+%mindewyestt%...............Time of yesterday's min dew point
+%maxhumyestt%...............Time of yesterday's max humidity
+%minhumyest%................Yesterday's min humidity
+%minhumyestt%...............Time of yesterday's min humidity
+%maxchillyest%..............Yesterday's max windchill
+%maxchillyestt%.............Time of yesterday's max windchill
+%minchillyest%..............Yesterday's min windchill
+%minchillyestt%.............Time of yesterday's min windchill
+%maxheatyest%...............Yesterday's max heatindex
+%maxheatyestt%..............Time of yesterday's max heatindex
+%minheatyest%...............Yesterday's min heatindex
+%minheatyestt%..............Time of yesterday's min heatindex
+%maxtempyest%...............Yesterday's max temperature
+%maxtempyestt%..............Time of yesterday's max temperature
+%mintempyest%...............Yesterday's min temperature
+%mintempyestt%..............Time of yesterday's min temperature
+%maxindoortempyest%.........Yesterday's Maximum indoor temperature
+%minindoortempyest%.........Yesterday's Minimum indoor temperature
+%maxindoortempyestt%........Time of yesterday's Maximum indoor temperature
+%minindoortempyestt%........Time of yesterday's Minimum indoor temperature
+%maxtempyestnodp%...........Yesterday's max temperature no decimal point
+%mintempyestnodp%...........Yesterday's min temperature no decimal point
+
+
+Trends:
+-------
+%tempchange24hour%..........Temperature change in the last 24 hours (from the trends, includes units)
+%barochange24hour%..........Barometer change in the last 24 hours (from the trends, includes units)
+%humchange24hour%...........Humdidity change in the last 24 hours (from the trends, includes units)
+%windchange24hour%..........Wind change in the last 24 hours (from the trends, includes units)
+%dewchange24hour%...........Dew change in the last 24 hours (from the trends, includes units)
+%rainchange24hour%..........Rain change in the last 24 hours (from the trends, includes units)
+%temp24hoursago%............The temperature 24 hours ago
+%baro24hoursago%............The barometer 24 hour ago
+%wind24hoursago%............The windspeed 24 hours ago
+%gust24hoursago%............The gustspeed 24 hours ago
+%dir24hoursago%.............The wind direction 24 hours ago
+%hum24hoursago%.............The humidity 24 hours ago
+%dew24hoursago%.............The dewpoint 24 hours ago
+%solar24hoursago%...........Solar wm/2 24 hours ago
+%uv24hoursago%..............Davis VP UV 24 hours ago
+%apparentsolartemp24hourago%  Solar wm/2 24hours ago
+
+%maxtempyrago%..............Maximum temperature this day 1 year ago (if you have that data) 
+%mintempyrago%..............Minimum temperature this day 1 year ago (if you have that data)
+%avtempyrago%...............Average temperature (for the whole day ) this day 1 year ago (if you have that data) 
+%maxbaroyrago%..............Maximum barometer this day 1 year ago (if you have that data) 
+%minbaroyrago%..............Minimum barometer this day 1 year ago (if you have that data)
+%avbaroyrago%...............Average barometer (for the whole day ) this day 1 year ago (if you have that data) 
+%maxhumyrago%...............Maximum humidity this day 1 year ago (if you have that data) 
+%minhumyrago%...............Minimum humidity this day 1 year ago (if you have that data)
+%avhumyrago%................Average humidity (for the whole day ) this day 1 year ago (if you have that data) 
+%maxwindyrago%..............Maximum gust speed this day 1 year ago (if you have that data) 
+%minwindyrago%..............Minimum gust speed this day 1 year ago (if you have that data)
+%avwindyrago%...............Average windspeed (for the whole day ) this day 1 year ago (if you have that data) 
+%maxdewyrago%...............Maximum dew point this day 1 year ago (if you have that data) 
+%mindewyrago%...............Minimum dew point this day 1 year ago (if you have that data)
+%avdewyrago%................Average dew point (for the whole day ) this day 1 year ago (if you have that data) 
+%chillyearago%..............Min Windchill year ago (updates from the trends update), for the whole day
+%heatyearago%...............Max heat index year ago (updates from the trends update), for the whole day
+
+%hoursoffrost%..............Hours of overnight air frost
+
+Wind
+====
+Current:
+--------
+
+%avgspd% ...................average wind speed (current)
+%avnodp% ...................current average wind speed, no dec. place.
+%avnodpmph% ................current average wind speed, no dec. place., mph always
+%gstspd% ...................current/gust wind speed
+%gustnodp% .................current/gust wind speed, no dec. place.
+%gustnodpmph% ..............current/gust wind speed, no dec. place., mph always
+%dirdeg% ...................wind direction (degrees)
+%dirlabel% .................wind direction (NNE etc)
+%dirlabeldutch%.............wind direction (NNE etc), Dutch
+%dirlabelfrench%............wind direction (NNE etc), French (or german)
+%winddirinwords%............Wind direction in words
+%winddirinwordsdutch%.......Wind direction in words, Dutch
+%winddirinwordsfrench%......Wind direction in words, French
+%maxgst% ...................today's maximum wind speed
+%maxgstnodp% ...............today's maximum wind speed, no dec. place
+%maxgstwords%............... "        "       "     ", with words, i.e westerly (i.e for telephone)
+%maxgstdirectionletter%.....Max Gust direction, i.e. W
+%maxavgdirectionletter%.....Max Averge direction, i.e. W
+%maxgstt% ..................time this occurred
+%maxavgspd% ................maximum average wind speed
+%maxavgspdt% ...............time this occurred
+%maxgsthr% .................maximum gust last hour
+%maxgsthrt% ................time this occurred
+%maxgustlastimediatehour%...Maximum gust for the last prior 1 hour period
+%maxgustlastimediatehourtime%  time that the max gust last prior 1 hour occured
+%maxgustlastimediatehourdir% Direction from Max gust last prior 1 hour period
+%maxgustlastimediatehourdirword% Direction from Max gust last prior 1 hour period, in words, e.g N
+%maxgustlastimediatehourdirwords% Direction from Max gust last prior 1 hour period, in words, e.g northerly
+%maxgustlastimediate10%.....Maximum gust for the last immediate 10 minute period
+%maxgustlastimediate15%.....Maximum gust for the last 10 to 15 minutes
+%maxgustlastimediate30%.....Maximum gust for the last 15 to 30 minutes
+%maxgustlastimediate60%.....Maximum gust for the last 30 to 60 minutes
+%maxgustlastimediate120%....Maximum gust for the last 60 to 120 minutes
+%avwindlastimediate10%......Average wind for the last immediate 10 minute period
+%avwindlastimediate15%......Average wind for the last 10 to 15 minutes
+%avwindlastimediate30%......Average wind for the last 15 to 30 minutes
+%avwindlastimediate60%......Average wind for the last 30 to 60 minutes
+%avwindlastimediate120%.....Average wind for the last 60 to 120 minutes
+%avdirlastimediate10%.......Average dir wind for the last immediate 10 minute period
+%avdirlastimediate15%.......Average dir wind for the 10 to 15 minutes
+%avdirlastimediate30%.......Average dir wind for the 15 to 30 minutes
+%avdirlastimediate60%.......Average dir wind for the 30 to 60 minutes
+%avdirlastimediate120%......Average dir wind for the 60 to 120 minutes
+%avdir10minute% ............average ten minute wind direction (degrees)
+%avtenminutewind% ..........average ten minute wind speed
+%1mingustwind% .............maximum gust in the last minute
+%max1minuteavwind% .........maximum 1 minute average wind speed (since the reset time)
+%max1minuteavwinddata% .....maximum 1 minute average wind speed , last hour, from the 1 minute logged average speed data
+%avspeedinmetric% ..........current average wind speed always in knots
+%gustspeedinmetric% ........current gust speed always in knots
+%avspeedinkmh% .............current average wind speed always in kmh
+%gustspeedinkmh% ...........current gust speed always in kmh
+%beaufortnum% ..............Beaufort wind force number
+%currbftspeed%..............Current Beaufort wind speed
+%todaygustspeedinmetric%....Today's maximum gust in knots
+%maxgustlasthourinmetric%...Maximum gust last hour in knots
+%10minavspeedinmetric%......Average 10 minute speed in knots
+%10minavspeedinkmh%.........Average 10 minute speed in kmh
+%maxavspeedinkts%...........Maximum daily average speed in kts
+%maxgustlasthourkts%........Maximum gust imeediate last hour in kts
+%maxgustlastmininkts%.......Maximum gust last minute in kts
+%max1minavspeedlast12hrs%...Maximum 1 mintue average speed in kts last 12 hours
+%maxdailygustinkts%.........Maximum daily gust in kts
+%windgaugepointer%..........Create your own windspeed dial (will replace this with avwindpoint1  for 1 kt speed, etc
+%gustgaugepointer%..........Create your own windspeed dial (will replace this with gustwindpoint1  for 1 kt speed, etc
+%10minuteavspeedbft%........10 minute average speed, in bft number
+%windinmph%.................Average wind in mph always
+%gustinmph%.................Gust wind in mph always
+%curdir10minutelabel%.......Current average 10 minute wind direction label  (i.e NNE)
+%currentavtenminutewindms%..Current average 10 minute windspeed in m/s
+%highavtenminutewind%.......Highest average 10 minute windspeed in the last 12 hours (in the units you have selected)
+%highavtenminutewindms%.....Highest average 10 minute windspeed in the last 12 hours, m/s
+%highavtenminutewindkts%....Highest average 10 minute windspeed in the last 12 hours,knots
+%highavtenminutewindkmh%....Highest average 10 minute windspeed in the last 12 hours,kmh
+%todaygustspeedinm/s%.......Today's maximum gust in m/s
+%maxgustlasthourinm/s%......Maximum gust last hour in m/s
+%10minavspeedinm/s%.........Average 10 minute speed in m/s
+%maxavspeedinm/s%...........Maximum daily average speed in m/s
+%maxgustlasthourm/s%........Maximum gust immediate last hour in m/s
+%maxgustlastmininm/s%.......Maximum gust last minute in m/s
+%todaygustspeedinkmh%.......Today's maximum gust in kmh
+%max1minavspeedlast12hrsm/s%...Maximum 1 mintue average speed in kts last 12 hours
+%maxdailygustinm/s%.........Maximum daily gust in m/s
+%maxdailygustinmph%.........Maximum daily gust in mph
+%windruntodatethismonth%....Wind run to date this month
+%windruntodatethisyear%.....Wind run to date this year
+%windruntoday%..............Wind run today
+%windrunyesterday%..........Wind run yesterday
+%bftspeedtext%..............Beaufort scale in text (i.e Fresh Breeze)
+%bftspeedtext10%............Beaufort scale in text (i.e Fresh Breeze), based on 10 minute average
+%last24houravdir%...........Last 24 hours average direction
+%last24houravdirword%.......Last 24 hours average direction in words
+%last24houravdirday%........Average direction so far for today (from midnight)
+%last24houravdirwordday%....Average direction in words for today (from midnight)
+%avgspeedsincereset%........Average windspeed since the daily reset time
+
+Yesterday:
+----------
+%maxgustyest%...............Yesterday's max gust speed
+%maxgustyestnodir%..........Yesterday's max gust speed, no direction
+%maxgustyestt%..............Time of yesterday's max gust speed
+%maxaverageyest%............Yesterday's max average speed
+%maxaverageyestnodir%.......Yesterday's max average speed, no direction
+%maxaverageyestt%...........Time of yesterday's max average speed
+
+
+Baromometer
+===========
+Current:
+--------
+%baro% .....................barometric pressure
+%trend% ....................amount of change in the last hour
+%highbaro% .................high pressure
+%highbarot% ................time this occurred
+%lowbaro% ..................low pressure
+%lowbarot% .................time this occurred
+%pressurechangein3hour% ....pressure change in the last 3 hours
+%pressurechangein6hour% ....pressure change in the last 6 hours
+%pressurechangein12hour% ...pressure change in the last 12 hours
+%pressurechangein24hour% ...pressure change in the last 24 hours 
+%pressuretrendname% ........pressure trend (i.e. "falling"), last hour
+%pressuretrendname3hour% ...pressure trend (i.e. "falling"), last 3 hours
+%maxbaroinmetric%...........maximum pressure always in metric
+%minbaroinmetric%...........minimum pressure always in metric
+%baroinusa%.................Current barometer reading in inches.
+%baroinusa2dp%..............Current barometer reading in inches, 2 decimal places only.
+%baroinmetric%..............Current barometer reading in metric.
+%baroinkpa%.................Current baro in kpa
+%currentpressureinmb%.......Current barometer always in mb (hpa is the same value);
+%pressurechangehourinmb%....Pressure change last hour in mb
+%pressurechange3hourinmb%...Pressure change last 3 hours in mb
+%pressurechange6hourinmb%...Pressure change last 6 hours in mb
+%pressurechange12hourinmb%..Pressure change last 12 hours in mb
+%pressurechange24hourinmb%..Pressure change last 24 hours in mb
+%baroininches2dp%...........Pressure in inches to decimal places only
+
+%vpforecasttext%............Forecast text from the Davis VP
+%vapourpressure%............Vapour pressure (kpa)
+%forecasticonword%..........Words for the forecast icon
+
+Yesterday:
+----------
+%maxbaroyest%...............Yesterday's max barometer
+%maxbaroyestt%..............Time of yesterday's max barometer
+%minbaroyest%...............Yesterday's min barometer
+%minbaroyestt%..............Time of yesterday's min barometer
+%maxhumyest%................Yesterday's max humidity
+
+Rain
+====
+Current:
+--------
+%dayrn% ....................today's rain
+%dayrnusa% .................today's rain, in inches
+%monthrn% ..................rain so far this month
+%yearrn% ...................rain so far this year
+%hourrn% ...................rain in the last hour
+%maxhourrn%.................Max rain last hour for the day
+%maxhourrnt%................Max rain last hour for the day, time that occured
+%maxrain/minlasthour% ......maximum rain per minute in the last hour
+%maxrain/hourlast6hours% ...maximum rain per hour in the past 6 hours
+%totalrainlast3hours%.......Total rain last 3 hours
+%totalrainlast6hours%.......Total rain last 6 hours
+%totalrainlast24hours%......Total rain last 24 hours
+%currentmonthaveragerain%...Your average monthly rain you have entered (current month)
+%currentmonthaveragetemp%...Your average monthly temperature you have entered (current month)
+%dayswithnorain%............Consecutative days with no rain
+%dayswithrain%..............Days with rain for the month
+%consecdayswithrain%........Consecutive days with rain for the month
+%dayswithrainyear%..........Days with rain for the year
+%rainduration%..............Current rain episode duration, minutes
+%todayraininmm%.............Today's rain in mm
+%monthraininmm%.............Monthly rain in mm
+%yearlyraininmm%............Yearly rain in mm
+%rainlasthourmm%............Rain last hour in mm
+%rainlast3hourmm%...........Rain last 3 hours in mm
+%rainlast6hourmm%...........Rain last 6 hours in mm
+%rainlast10min%.............Rain last hour in mm
+%maxrain/minlasthourmm%.....Maximum rain per minute last hour in mm
+%maxrain/hourlast6hoursmm%..Maximum rain per hour last 6 hours in mm
+%maxrain/hourlast6hoursusa%.Maximum rain per hour last 6 hours in inches always
+%timeoflastrainalways%......Time that the last rain tip was recorded (not reset).
+%dateoflastrainalways%......Date that the last rain tip was recorded (not rest).
+%timeoflastrain%............Time that the last rain tip was recorded.
+%dateoflastrain%............Date that the last rain tip was recorded.
+%currentrainrate%...........Current rain rate, mm/min(or in/min)
+%currentrainratehr%.........Current rain rate, mm/hr (or in./hr)
+%maxrainrate%...............Max rain rate,for the day, mm/min (or in./min)
+%maxrainratehr%.............Max rain rate,for the day, mm/hr (or in.mm)
+%maxrainratetime%...........Time that occurred
+%raincurrentweek%...........Total rain last 7 days
+%maxrain/hourlastmonthtodate% Max rain for hour month to date
+%monthrnusa%................Month rain total in inches always
+%yearrnusa%................ Year rain total in inches always
+%hourrnusa%.................Rain last hour, in inches always
+
+%raintodatemonthago%........Rain to date last month (via the trends)
+%raintodateyearago%.........Rain to date last year (via the trends)
+
+
+%avrainjan%.................Average rain for january from your records (under view, rain chart)
+%avrainfeb%.................Average rain for february from your records (under view, rain chart)
+%avrainmar%.................Average rain for march from your records (under view, rain chart)
+%avrainapr%.................Average rain for april from your records (under view, rain chart)
+%avrainmay%.................Average rain for may from your records (under view, rain chart)
+%avrainjun%.................Average rain for jun from your records (under view, rain chart)
+%avrainjul%.................Average rain for jun from your records (under view, rain chart)
+%avrainaug%.................Average rain for aug from your records (under view, rain chart)
+%avrainsep%.................Average rain for sep from your records (under view, rain chart)
+%avrainoct%.................Average rain for oct from your records (under view, rain chart)
+%avrainnov%.................Average rain for nov from your records (under view, rain chart)
+%avraindec%.................Average rain for dec from your records (under view, rain chart)
+
+%rainjan%................. rain for january from your records (under view, rain chart) (for last year)
+%rainfeb%................. rain for february from your records (under view, rain chart)
+%rainmar%................. rain for march from your records (under view, rain chart)
+%rainapr%................. rain for april from your records (under view, rain chart)
+%rainmay%................. rain for may from your records (under view, rain chart)
+%rainjun%................. rain for jun from your records (under view, rain chart)
+%rainjul%................. rain for jun from your records (under view, rain chart)
+%rainaug%................. rain for aug from your records (under view, rain chart)
+%rainsep%..................rain for sep from your records (under view, rain chart)
+%rainoct%................. rain for oct from your records (under view, rain chart)
+%rainnov%................. rain for nov from your records (under view, rain chart)
+%raindec%................. rain for dec from your records (under view, rain chart)
+
+
+%nowrainjan%................. rain for january from your records (under view, rain chart) (current year to date or for current month)
+%nowrainfeb%................. rain for february from your records (under view, rain chart)
+%nowrainmar%................. rain for march from your records (under view, rain chart)
+%nowrainapr%................. rain for april from your records (under view, rain chart)
+%nowrainmay%................. rain for may from your records (under view, rain chart)
+%nowrainjun%................. rain for jun from your records (under view, rain chart)
+%nowrainjul%................. rain for jun from your records (under view, rain chart)
+%nowrainaug%................. rain for aug from your records (under view, rain chart)
+%nowrainsep%..................rain for sep from your records (under view, rain chart)
+%nowrainoct%................. rain for oct from your records (under view, rain chart)
+%nowrainnov%................. rain for nov from your records (under view, rain chart)
+%nowraindec%................. rain for dec from your records (under view, rain chart)
+
+%myavjanrain%.................the average rain for your station that you have entered under my climate data under view, averages/extremes
+%myavfebrain%
+%myavmarrain%
+%myavaprrain%
+%myavmayrain%
+%myavjunrain%
+%myavjulrain%
+%myavaugrain%
+%myavseprain%
+%myavoctrain%
+%myavnovrain%
+%myavdecrain%
+
+%vpstormrainstart%...........Davis VP Storm rain start date
+%vpstormrain%................Davis VP Storm rain value
+
+Yesterday:
+----------
+%ystdyrain% ................yesterday’s rain
+%yesterdayrain%.............Yesterday rain
+%yesterdayrainmm%...........Yesterday rain in mm always
+%ystdyrainusa%..............Yesterday rain in inches always
+Over the last Week
+------------------
+%rainonmonday%.............Rain on monday
+%rainontuesday%............Rain tuesday
+%rainonwedensday%..........Rain on wedensday
+%rainonthursday%...........Rain on thursday
+%rainonfriday%.............Rain on friday
+%rainonsaturday%...........Rain on saturday
+%rainonsunday%.............Rain on sunday
+
+
+Fire Weather
+============
+%FWIffmc%...................Fire weather index fine fuel moisture code
+%FWIbui%.................... "    "       "    build up index
+%FWIisi%.................... "    "       "    initial spread index
+%FWIdmc%.................... "    "       "    duff moisture code
+%FWIdc%..................... "    "       "    drought code
+%FWIfwi%.................... "    "       "    fire weather index
+%chandler%..................Chandler burning index
+
+Sunshine/Solar/ET
+=================
+%Currentsolardescription%...Current cloud cover based on the solar sensor
+%sunshinehourstodatemonth%..Sunshine hours from the solar sensor
+%sunshinehourstodateyear%..  "        "    "    "    "    "  
+%sunshinehourstodateday%...  "        "    "    "    "    "  
+%sunshineyesterday%..........Yesterday sunshine hours
+%VPsolar%.................. Solar energy number (W/M2)
+%VPuv%......................UV number 
+%VPet%......................Evaportranspiration (daily)
+%VPetmonth%.................Evaportranspiration (month to date)
+%highsolar%.................Daily high solar (for Davis VP and Grow stations)
+%lowsolar%..................Daily low solar (for Davis VP and Grow stations)
+%highuv%....................Daily high UV (for Davis VP stations)
+%lowuv%.....................Daily low UV (for Davis VP stations)
+%currentsolarpercent%.......Current solar percent for stations with a temperature solar sensor (like the dallas 1 wire)
+%currentwdet%...............The current evapotranspiration rate calculated by WD every minute
+%yesterdaywdet%.............The final reading at midnight of WD's ET
+%yesterdaydaviset%..........The final reading at midnight of Davis ET
+%etcurrentweek%.............ET total for the last 7 days
+%raincurrentweek%...........Total rain last 7 days
+%growsolar%.................Current solar reading from a Davis Grow station
+%hoursofpossibledaylight%...Total hours/minutes of possible daylight for today
+%daylengthyesterday%........Yesterdays' reading (updated at 11:46pm)
+%highsolartime%.............Time that the daily high solar occured
+%lowsolartime%..............Time that the daily low solar occured
+%highuvtime%................Time that the daily high UV occured
+%lowuvtime%.................Time that the daily low UV occured
+%highsolaryest%.............Yesterday's high solar
+%highsolaryesttime%.........Time of yesterday's high solar
+%highuvyest%................Yesterday's high UV
+%highuvyesttime%............Time of yesterday's high UV
+%maxsolarfortime%...........Max solar expected for the time of day
+%sunshinehoursinlastwholehour%  Sunshine hours in the last immediate full hour
+%sunshinehoursinlast10%.....Sunshine hours last 10 minutes (fraction of hour)
+%sunshinehoursinlast60%.....Sunshine hours last 60 minutes
+%sunshinehoursinlast10percent%.....Sunshine hours last 10 minutes (fraction of hour, percent of max possible)
+%sunshinehoursinlast60percent%.....Sunshine hours last 60 minutes (fraction of hour, percent of max possible)
+%burntime%..................Time (minutes) to burn (normal skin) at the current UV rate, from the Davis VP with UV sensor
+%THSW%......................Current Davis THSW index (temperature/humdidity/solar/wind) . You need a solar sensor, and have 
+
+the solar setup.
+%hiTHSW%....................Hi THSW today
+%loTHSW%....................Lo THSW today
+
+VP soil temp/moisture/extra temperature/humidity
+==================================================
+
+%VPsoilmoisture%............Davis VP soil moisture
+%VPsoilmoisture2%...........Davis VP soil moisture, # 2 sensor
+%VPsoilmoisture3%...........Davis VP soil moisture, # 3 sensor
+%VPsoilmoisture4%...........Davis VP soil moisture, # 4 sensor
+%VPsoiltemp2%...............Davis VP soil temperature #2
+%VPsoiltemp3%...............Davis VP soil temperature #3
+%VPsoiltemp4%...............Davis VP soil temperature #4
+%VPextratemp1%..............Davis VP extra temperature #1
+%VPextratemp2%..............Davis VP extra temperature #2
+%VPextratemp1hi%............Davis VP extra temp 1 daily high
+%VPextratemp1lo%............Davis VP extra temp 1 daily low
+%VPextratemp2hi%............Davis VP extra temp 2 daily high
+%VPextratemp2lo%............Davis VP extra temp 2 daily low
+%VPextratemp3hi%............Davis VP extra temp 3 daily high
+%VPextratemp3lo%............Davis VP extra temp 3 daily low
+%VPextratemp4hi%............Davis VP extra temp 4 daily high
+%VPextratemp4lo%............Davis VP extra temp 4 daily low
+%VPextrahum1%...............Davis VP extra humidity #1
+%VPextrahum2%...............Davis VP extra humidity #2
+%VPleaf%....................Davis VP leaf wetness
+%VPleaf2%...................Davis VP leaf wetness, # 2 sensor
+%VPleaf3%...................Davis VP leaf wetness, # 3 sensor
+%VPleaf4%...................Davis VP leaf wetness, # 4 sensor
+%hiVPleaf%..................Davis VP leaf wetness, daily high (#1 sensor)
+%loVPleaf%..................Davis VP leaf wetness, daily low
+%hiVPsoilmoisture%..........Davis VP soil moisture, daily high
+%loVPsoilmoisture%..........Davis VP soil moisture, daily low
+%hiVPsoilmoisture2%.........Davis VP soil moisture, daily high #2
+%loVPsoilmoisture2%.........Davis VP soil moisture, daily low #2
+%hiVPsoilmoisture3%.........Davis VP soil moisture, daily high #3
+%loVPsoilmoisture3%.........Davis VP soil moisture, daily low #3
+%hiVPsoilmoisture4%.........Davis VP soil moisture, daily high #4
+%loVPsoilmoisture4%.........Davis VP soil moisture, daily low #4
+
+%hiVPsoiltemp2%..........Davis VP soil temp, daily high. # 2 sensor
+%loVPsoiltemp2%..........Davis VP soil temp, daily low, # 2 sensor
+%hiVPsoiltemp3%..........Davis VP soil temp, daily high, # 3 sensor
+%loVPsoiltemp3%..........Davis VP soil temp, daily low, # 3 sensor
+%hiVPsoiltemp4%..........Davis VP soil temp, daily high, # 4 sensor
+%loVPsoiltemp4%..........Davis VP soil temp, daily low, # 4 sensor
+
+
+%leafminlast10min%..........Minutes last 10 minutes leaf wetness was above zero
+%leafminlast60min%..........Minutes last 60 minutes leaf wetness was above zero
+%leafminlast10min2%.........Minutes last 10 minutes leaf wetness #2 was above zero
+%leafminlast60min2%.........Minutes last 60 minutes leaf wetness #2 was above zero
+%vpconsolebattery%..........The Console battery, volts
+%vpissstatus%...............ISS battery status flag
+%vpreception%...............The recpetion of the data from the ISS status,Total packets received, Total packets missed, 
+
+Number of resynchronizations, The largest number of packets in a row that were received., and the number of CRC errors 
+
+detected. 
+%vpreception2%..............The current % reception
+
+WS2000/WMR900h/La crosse 2010-13 data logger
+============================================
+%ws2000sen1t%...............Temperature of sensor 1 for the WS2000/WMR900h or La Crosse station . Change the 1 to any number 
+
+up to 9
+%ws2000sen1h%...............Humidity of sensor 1 for the WS2000/WMR900h or La Crosse station . Change the 1 to any number up 
+
+to 8
+%hiws2000sen1t%.............Daily high Temperature of sensor 1 for the WS2000/WMR900h or La Crosse station . Change the 1 to 
+
+any number up to 9
+%lows2000sen1t%.............Daily low temperature of sensor 1 for the WS2000/WMR900h or La Crosse station . Change the 1 to 
+
+any number up to 9
+%hiws2000sen1h%.............Daily high humidity of sensor 1 for the WS2000/WMR900h or La Crosse station . Change the 1 to 
+
+any number up to 9
+%lows2000sen1h%.............Daily low humidity of sensor 1 for the WS2000/WMR900h or La Crosse station . Change the 1 to any 
+
+number up to 9
+%hiws2000sen1ht%............Time of daily high humidity (1 to 9)
+%lows2000sen1ht%............Time of daily low humidity (1 to 9)
+%hiws2000sen1tt%............Time of daily high temperature (1 to 9)
+%lows2000sen1tt%............Time of daily low temperature (1 to 9)
+
+%ws2010sensorstatus1%........Status of sensor #1  (you need to have ticked to get these updated in the ws2010-13 data setup)
+%ws2010sensorstatus2%........Status of sensor #2
+%ws2010sensorstatus3%........Status of sensor #3
+%ws2010sensorstatus4%........Status of sensor #4
+%ws2010sensorstatus5%........Status of sensor #5
+%ws2010sensorstatus6%........Status of sensor #6
+%ws2010sensorstatus7%........Status of sensor #7
+%ws2010sensorstatus8%........Status of sensor #8
+%ws2010sensorstatusrain%.. ..Status of the rain sensor
+%ws2010sensorstatuswind%.. ..Status of the wind sensor
+%ws2010sensorstatusindoor%...Status of the indoor sensor
+
+Record Readings
+===============
+%recordhightemp%............All time record high temperature
+%recordlowtemp%.............All time record low temperature
+%recordwindgust%............All time record high wind gust
+%recordwindspeed%...........All time record high average speed
+%recorddailyrain%...........All time record daily rain
+%recordlowchill%............All time record low windchill
+%recordlowchillhour%........All time record low windchill, hour
+%recordlowchillminute%......All time record low windchill, minute
+%recordlowchillday%.........All time record low windchill, day
+%recordlowchillmonth%.......All time record low windchill, month
+%recordlowchillyear%........All time record low windchill, year
+%recordhighbaro%............All time record high barometer
+%recordlowbaro%.............All time record low barometer
+%recorddailyrainday%........Day of record daily rain
+%recorddailyrainmonth%......Month of record daily rain
+%recorddailyrainyear%.......Year of record daily rain
+%recordlowbaroday%..........Day of record low baro
+%recordhighbaroday%.........Day of record high baro
+%recordlowbaromonth%........Month of record low baro
+%recordhighbaromonth%.......Month of record high baro
+%recordlowbaroyear%.........Year of record low baro
+%recordhighbaroyear%........Year of record high baro
+%recordlowtempday%..........Day of record low temperature
+%recordhightempday%.........Day of record high temperature
+%recordlowtempmonth%........Month of record low temperature
+%recordhightempmonth%.......Month of record high temperature
+%recordlowtempyear%.........Year of record low temperature
+%recordhightempyear%........Year of record high temperature
+%recordhighgustday%.........Day of record high wind gust
+%recordhighgustmonth%.......Month of record high wind gust
+%recordhighgustyear%........Year of record high wind gust
+%recordhighavwindday%.......Day of record high wind average speed
+%recordhighavwindmonth%.....Month of record high wind average speed
+%recordhighavwindyear%......Year of record high wind average speed
+%recordhighheatindex%.......Record high heat index
+%recordhighheatindexday%....Record high heat index day
+%recordhighheatindexmonth%....Record high heat index month
+%recordhighheatindexyear%...Record high heat index year
+%coldestnightonrecord%......Coldest night on record (6pm to 6am)
+%coldestdayonrecord%........Coldest day on record (6pm to 6am)
+%warmestnightonrecord%......Warmest night on record (6am to 6pm)
+%warmestdayonrecord%........Warmest day on record (6am to 6pm)
+%recordhighdew%.............Record high dew point
+%recordhighdewday%..........Record high dew point, day
+%recordhighdewmonth%........Record high dew point, month
+%recordhighdewyear%.........Record high dew point, year
+%recordlowdew%..............Record low dew point
+%recordlowdewday%...........Record low dew point, day
+%recordlowdewmonth%.........Record low dew point, month
+%recordlowdewyear%..........Record low dew point, year
+%recordhighhum%.............Record high humidity
+%recordhighhumday%..........Record high humdidity, day
+%recordhighhummonth%........Record high humidity, month
+%recordhighhumyear%.........Record high humdiity, year
+%recordlowhum%..............Record low humidity
+%recordlowhumday%...........Record low humdity, day
+%recordlowhummonth%.........Record low humdity, month
+%recordlowhumyear%..........Record low humdity, year
+%recordhighsolar%...........Record high solar
+%recordhighsolarday%........Record high solar, day
+%recordhighsolarmonth%......Record high solar, month
+%recordhighsolaryear%.......Record high solar, year
+%recordhighuv%..............Record high uv
+%recordhighuvday%...........Record high uv, day
+%recordhighuvmonth%.........Record high uv, month
+%recordhighuvyear%..........Record high uv, year
+
+%recordhighsoil%............Record high soil temp
+%recordlowsoil%.............Record low soil temp
+%recordhighsoilday%.........Record high soil temp ,day
+%recordlowsoilday%..........Record low soil temp, day
+%recordhighsoilmonth%.......Record high soil temp ,month
+%recordlowsoilmonth%........Record low soil temp, month
+%recordhighsoilyear%........Record high soil temp ,year
+%recordlowsoilyear%.........Record low soil temp, year
+
+%recordhighsoil2%............Record high soil temp sensor # 2
+%recordlowsoil2%.............Record low soil temp 2
+%recordhighsoilday2%.........Record high soil temp ,day 2
+%recordlowsoilday2%..........Record low soil temp, day 2
+%recordhighsoilmonth2%.......Record high soil temp ,month 2
+%recordlowsoilmonth2%........Record low soil temp, month 2
+%recordhighsoilyear2%........Record high soil temp ,year 2
+%recordlowsoilyear2%.........Record low soil temp, year 2
+
+%recordhighsoil3%............Record high soil temp sensor # 3
+%recordlowsoil3%.............Record low soil temp 3
+%recordhighsoilday3%.........Record high soil temp ,day 3
+%recordlowsoilday3%..........Record low soil temp, day 3
+%recordhighsoilmonth3%.......Record high soil temp ,month 3
+%recordlowsoilmonth3%........Record low soil temp, month 3
+%recordhighsoilyear3%........Record high soil temp ,year 3
+%recordlowsoilyear3%.........Record low soil temp, year 3
+
+%recordhighsoil4%............Record high soil temp sensor # 4
+%recordlowsoil4%.............Record low soil temp 4
+%recordhighsoilday4%.........Record high soil temp ,day 4
+%recordlowsoilday4%..........Record low soil temp, day 4
+%recordhighsoilmonth4%.......Record high soil temp ,month 4
+%recordlowsoilmonth4%........Record low soil temp, month 4
+%recordhighsoilyear4%........Record high soil temp ,year 4
+%recordlowsoilyear4%.........Record low soil temp, year 4
+
+%recordlowgrass%............Record low grass temp
+%recordlowgrassday%.........Record low grass temp, day
+%recordlowgrassmonth%.......Record low grass temp, month
+%recordlowgrassyear%........Record low grass temp, year
+%recordhighthsw%............Record high THSW
+%recordlowthsw%.............REcord low THSW
+%recordhighwindrun%.........Record high wind run
+%recordhighwindrunday%......Record high wind run, day
+%recordhighwindrunmth%......Record high wind run, month
+%recordhighwindrunyr%.......Record high wind run, year
+%recordhighrainmth%.........Record high rain total for month
+%recordhighrainmthmth%......Record high rain for, month
+%recordhighrainmthyr%.......Record high rain for, year
+%recordrainrate%............Record rain rate
+%recordrainrateday%.........Record rain rate day
+%recordrainratemonth%.......Record rain rate month
+%recordrainrateyear%........Record rain rate year
+%recordrainratehour%........Record rain rate hour
+%recordrainratemin%.........Record rain rate minute
+
+
+%recorddaysnorain%...........All time Record days with no rain 
+%recorddaysnorainday%........Day of month record days with no rain
+%recorddaysnorainmonth%......Month of month record days with no rain
+%recorddaysnorainyear%.......year of month record days with no rain
+
+
+%recorddayswithrain%...........Alltime  record days with rain 
+%recorddayswithrainday%........Day of month record days with  rain
+%recorddayswithrainmonth%......Month of month record days with  rain
+%recorddayswithrainyear%.......year of month record days with rain
+
+
+for current month to date:
+---------------------------
+
+%mrecordhightemp%............All time record high temperature
+%mrecordlowtemp%.............All time record low temperature
+%mrecordwindgust%............All time record high wind gust
+%mrecordwindspeed%...........All time record high average speed
+%mrecorddailyrain%...........All time record daily rain
+%mrecordlowchill%............All time record low windchill
+%mrecordlowchillhour%........All time record low windchill, hour
+%mrecordlowchillminute%......All time record low windchill, minute
+%mrecordlowchillday%
+%mrecordlowchillmonth%.......All time Record low windchill month
+%mrecordlowchillyear%
+%mrecordhighbaro%............All time record high barometer
+%mrecordlowbaro%.............All time record low barometer
+%mrecorddailyrainday%........Day of record daily rain
+%mrecorddailyrainmonth%......Month of record daily rain
+%mrecorddailyrainyear%.......Year of record daily rain
+%mrecordlowbaroday%..........Day of record low baro
+%mrecordhighbaroday%.........Day of record high baro
+%mrecordlowbaromonth%........Month of record low baro
+%mrecordhighbaromonth%.......Month of record high baro
+%mrecordlowbaroyear%.........Year of record low baro
+%mrecordhighbaroyear%........Year of record high baro
+%mrecordlowtempday%..........Day of record low temperature
+%mrecordhightempday%.........Day of record high temperature
+%mrecordlowtempmonth%........Month of record low temperature
+%mrecordhightempmonth%.......Month of record high temperature
+%mrecordlowtempyear%.........Year of record low temperature
+%mrecordhightempyear%........Year of record high temperature
+%mrecordhighgustday%.........Day of record high wind gust
+%mrecordhighgustmonth%.......Month of record high wind gust
+%mrecordhighgustyear%........Year of record high wind gust
+%mrecordhighavwindday%.......Day of record high wind average speed
+%mrecordhighavwindmonth%.....Month of record high wind average speed
+%mrecordhighavwindyear%......Year of record high wind average speed
+%mrecordhighheatindex%.......Record high heat index
+%mrecordhighheatindexday%....Record high heat index day
+%mrecordhighheatindexmonth%....Record high heat index month
+%mrecordhighheatindexyear%...Record high heat index year
+%mcoldestnightonrecord%......Coldest night on record (6pm to 6am)
+%mcoldestdayonrecord%........Coldest day on record (6am to 6pm)
+%mwarmestnightonrecord%......Warmest night on record (6pm to 6am)
+%mwarmestdayonrecord%........Warmest day on record (6am to 6pm)
+%mrecorddailyrainday%........Day of record daily rain
+%mrecordhighdew%.............Record high dew point
+%mrecordhighdewday%..........Record high dew point, day
+%mrecordhighdewmonth%........Record high dew point, month
+%mrecordhighdewyear%.........Record high dew point, year
+%mrecordlowdew%..............Record low dew point
+%mrecordlowdewday%...........Record low dew point, day
+%mrecordlowdewmonth%.........Record low dew point, month
+%mrecordlowdewyear%..........Record low dew point, year
+%mrecordhighhum%.............Record high humidity
+%mrecordhighhumday%..........Record high humdidity, day
+%mrecordhighhummonth%........Record high humidity, month
+%mrecordhighhumyear%.........Record high humdiity, year
+%mrecordlowhum%..............Record low humidity
+%mrecordlowhumday%...........Record low humdity, day
+%mrecordlowhummonth%.........Record low humdity, month
+%mrecordlowhumyear%..........Record low humdity, year
+%mrecordhighsolar%...........Record high solar
+%mrecordhighsolarday%........Record high solar, day
+%mrecordhighsolarmonth%......Record high solar, month
+%mrecordhighsolaryear%.......Record high solar, year
+%mrecordhighuv%..............Record high uv
+%mrecordlhighuvday%..........Record high uv, day
+%mrecordhighuvmonth%.........Record high uv, month
+%mrecordhighuvyear%..........Record high uv, year
+
+%mrecordhighsoil%............Record high soil temp
+%mrecordlowsoil%.............Record low soil temp
+%mrecordhighsoilday%.........Record high soil temp ,day
+%mrecordlowsoilday%..........Record low soil temp, day
+%mrecordhighsoilmonth%.......Record high soil temp ,month
+%mrecordlowsoilmonth%........Record low soil temp, month
+%mrecordhighsoilyear%........Record high soil temp ,year
+%mrecordlowsoilyear%.........Record low soil temp, year
+
+
+%mrecordhighsoil2%........... Record high soil temp sensor #2
+%mrecordlowsoil2%.............Record low soil 2
+%mrecordhighsoilday2%.........Record high soil temp ,day 2
+%mrecordlowsoilday2%..........Record low soil temp, day 2
+%mrecordhighsoilmonth2%.......Record high soil temp ,month 2
+%mrecordlowsoilmonth2%........Record low soil temp, month 2
+%mrecordhighsoilyear2%........Record high soil temp ,year 2
+%mrecordlowsoilyear2%.........Record low soil temp, year 2
+
+%mrecordhighsoil3%........... Record high soil temp sensor #3
+%mrecordlowsoil3%.............Record low soil 3
+%mrecordhighsoilday3%.........Record high soil temp ,day 3
+%mrecordlowsoilday3%..........Record low soil temp, day 3
+%mrecordhighsoilmonth3%.......Record high soil temp ,month 3
+%mrecordlowsoilmonth3%........Record low soil temp, month 3
+%mrecordhighsoilyear3%........Record high soil temp ,year 3
+%mrecordlowsoilyear3%.........Record low soil temp, year 3
+
+%mrecordhighsoil4%........... Record high soil temp sensor #4
+%mrecordlowsoil4%.............Record low soil 4
+%mrecordhighsoilday4%.........Record high soil temp ,day 4
+%mrecordlowsoilday4%..........Record low soil temp, day 4
+%mrecordhighsoilmonth4%.......Record high soil temp ,month 4
+%mrecordlowsoilmonth4%........Record low soil temp, month 4
+%mrecordhighsoilyear4%........Record high soil temp ,year 4
+%mrecordlowsoilyear4%.........Record low soil temp, year 4
+
+
+%mrecordlowgrass%............Record low grass temp
+%mrecordlowgrassday%.........Record low grass temp, day
+%mrecordlowgrassmonth%.......Record low grass temp, month
+%mrecordlowgrassyear%........Record low grass temp, year
+%mrecordhighthsw%............Record high THSW
+%mrecordlowthsw%.............REcord low THSW
+%mrecordhighwindrun%.........Record high wind run for month
+%mrecordhighwindrunday%......Record high wind run, day
+%mrecordhighwindrunmth%......Record high wind run, month
+%mrecordhighwindrunyr%.......Record high wind run, year
+%mrecordhighrainmth%.........Record high rain for month
+%mrecordhighrainmthmth%......Record high rain for month, month
+%mrecordhighrainmthyr%.......Record high rain for month, year
+%mrecordrainrate%............Record rain rate
+%mrecordrainrateday%.........Record rain rate day
+%mrecordrainratemonth%.......Record rain rate month
+%mrecordrainrateyear%........Record rain rate year
+%mrecordrainratehour%........Record rain rate hour
+%mrecordrainratemin%.........Record rain rate minute
+
+
+%mrecorddaysnorain%...........Month to date record days with no rain 
+%mrecorddaysnorainday%........Day of month record days with no rain
+%mrecorddaysnorainmonth%......Month of month record days with no rain
+
+%mrecorddayswithrain%...........Month to date record days with rain 
+%mrecorddayswithrainday%........Day of month record days with  rain
+%mrecorddayswithrainmonth%......Month of month record days with  rain
+
+for current year to date:
+---------------------------
+
+%yrecordhightemp%............Record high temperature
+%yrecordlowtemp%.............record low temperature
+%yrecordwindgust%............record high wind gust
+%yrecordwindspeed%...........record high average speed
+%yrecorddailyrain%...........record daily rain
+%yrecordlowchill%............record low windchill
+%yrecordlowchillhour%........record low windchill, hour
+%yrecordlowchillminute%......record low windchill, minute
+%yrecordlowchillday%.........record low windchill, day
+%yrecordlowchillmonth%.......record low windchill, minute
+%yrecordlowchillyear%........record low windchill, year
+%yrecordhighbaro%............All time record high barometer
+%yrecordlowbaro%.............All time record low barometer
+%yrecorddailyrainday%........Day of record daily rain
+%yrecorddailyrainmonth%......Month of record daily rain
+%yrecorddailyrainyear%.......Year of record daily rain
+%yrecordlowbaroday%..........Day of record low baro
+%yrecordhighbaroday%.........Day of record high baro
+%yrecordlowbaromonth%........Month of record low baro
+%yrecordhighbaromonth%.......Month of record high baro
+%yrecordlowbaroyear%.........Year of record low baro
+%yrecordhighbaroyear%........Year of record high baro
+%yrecordlowtempday%..........Day of record low temperature
+%yrecordhightempday%.........Day of record high temperature
+%yrecordlowtempmonth%........Month of record low temperature
+%yrecordhightempmonth%.......Month of record high temperature
+%yrecordlowtempyear%.........Year of record low temperature
+%yrecordhightempyear%........Year of record high temperature
+%yrecordhighgustday%.........Day of record high wind gust
+%yrecordhighgustmonth%.......Month of record high wind gust
+%yrecordhighgustyear%........Year of record high wind gust
+%yrecordhighavwindday%.......Day of record high wind average speed
+%yrecordhighavwindmonth%.....Month of record high wind average speed
+%yrecordhighavwindyear%......Year of record high wind average speed
+%yrecordhighheatindex%.......Record high heat index
+%yrecordhighheatindexday%....Record high heat index day
+%yrecordhighheatindexmonth%....Record high heat index month
+%yrecordhighheatindexyear%...Record high heat index year
+%ycoldestnightonrecord%......Coldest night on record (6pm to 6am)
+%ycoldestdayonrecord%........Coldest day on record (6am to 6pm)
+%ywarmestnightonrecord%......Warmest night on record (6pm to 6am)
+%ywarmestdayonrecord%........Warmest day on record (6am to 6pm)
+%yrecorddailyrainday%........Day of record daily rain
+%yrecordlowchillmonth%
+%yrecordlowchillday%
+%yrecordhighdew%.............Record high dew point
+%yrecordhighdewday%..........Record high dew point, day
+%yrecordhighdewmonth%........Record high dew point, month
+%yrecordhighdewyear%.........Record high dew point, year
+%yrecordlowdew%..............Record low dew point
+%yrecordlowdewday%...........Record low dew point, day
+%yrecordlowdewmonth%.........Record low dew point, month
+%yrecordlowdewyear%..........Record low dew point, year
+%yrecordhighhum%.............Record high humidity
+%yrecordhighhumday%..........Record high humdidity, day
+%yrecordhighhummonth%........Record high humidity, month
+%yrecordhighhumyear%.........Record high humdiity, year
+%yrecordlowhum%..............Record low humidity
+%yrecordlowhumday%...........Record low humdity, day
+%yrecordlowhummonth%.........Record low humdity, month
+%yrecordlowhumyear%..........Record low humdity, year
+%yrecordhighsolar%...........Record high solar
+%yrecordhighsolarday%........Record high solar, day
+%yrecordhighsolarmonth%......Record high solar, month
+%yrecordhighsolaryear%.......Record high solar, year
+%yrecordhighuv%..............Record high uv
+%yrecordhighuvday%...........Record high uv, day
+%yrecordhighuvmonth%.........Record high uv, month
+%yrecordhighuvyear%..........Record high uv, year
+
+%yrecordhighsoil%............Record high soil temp
+%yrecordlowsoil%.............Record low soil temp
+%yrecordhighsoilday%.........Record high soil temp ,day
+%yrecordlowsoilday%..........Record low soil temp, day
+%yrecordhighsoilmonth%.......Record high soil temp ,month
+%yrecordlowsoilmonth%........Record low soil temp, month
+%yrecordhighsoilyear%........Record high soil temp ,year
+%yrecordlowsoilyear%.........Record low soil temp, year
+
+%yrecordhighsoil2%............Record high soil temp sensor #2
+%yrecordlowsoil2%.............Record low soil temp 2
+%yrecordhighsoilday2%.........Record high soil temp ,day 2
+%yrecordlowsoilday2%..........Record low soil temp, day 2
+%yrecordhighsoilmonth2%.......Record high soil temp ,month 2
+%yrecordlowsoilmonth2%........Record low soil temp, month 2
+%yrecordhighsoilyear2%........Record high soil temp ,year 2
+%yrecordlowsoilyear2%.........Record low soil temp, year 2
+
+%yrecordhighsoil3%............Record high soil temp sensor #3
+%yrecordlowsoil3%.............Record low soil temp 3
+%yrecordhighsoilday3%.........Record high soil temp ,day 3
+%yrecordlowsoilday3%..........Record low soil temp, day 3
+%yrecordhighsoilmonth3%.......Record high soil temp ,month 3
+%yrecordlowsoilmonth3%........Record low soil temp, month 3
+%yrecordhighsoilyear3%........Record high soil temp ,year 3
+%yrecordlowsoilyear3%.........Record low soil temp, year 3
+
+%yrecordhighsoil4%............Record high soil temp sensor #4
+%yrecordlowsoil4%.............Record low soil temp 4
+%yrecordhighsoilday4%.........Record high soil temp ,day 4
+%yrecordlowsoilday4%..........Record low soil temp, day 4
+%yrecordhighsoilmonth4%.......Record high soil temp ,month 4
+%yrecordlowsoilmonth4%........Record low soil temp, month 4
+%yrecordhighsoilyear4%........Record high soil temp ,year 4
+%yrecordlowsoilyear4%.........Record low soil temp, year 4
+
+
+
+%yrecordlowgrass%............Record low grass temp
+%yrecordlowgrassday%.........Record low grass temp, day
+%yrecordlowgrassmonth%.......Record low grass temp, month
+%yrecordlowgrassyear%........Record low grass temp, year
+%yrecordhighthsw%............Record high THSW
+%yrecordlowthsw%.............REcord low THSW
+%yrecordhighwindrun%.........Record high wind run for year
+%yrecordhighwindrunday%......Record high wind run, day
+%yrecordhighwindrunmth%......Record high wind run, month
+%yrecordhighwindrunyr%.......Record high wind run, year
+%yrecordhighrainmth%.........Record high rain for year
+%yrecordhighrainmthmth%......Record high rain for year, month
+%yrecordhighrainmthyr%.......Record high rain for year, year
+%yrecordrainrate%............Record rain rate
+%yrecordrainrateday%.........Record rain rate day
+%yrecordrainratemonth%.......Record rain rate month
+%yrecordrainrateyear%........Record rain rate year
+%yrecordrainratehour%........Record rain rate hour
+%yrecordrainratemin%.........Record rain rate minute
+
+%yrecorddaysnorain%...........Year to date Record days with no rain 
+%yrecorddaysnorainday%........Day of year record days with no rain
+%yrecorddaysnorainmonth%......Month of year record days with no rain
+
+
+
+%yrecorddayswithrain%...........Month to date record days with rain 
+%yrecorddayswithrainday%........Day of month record days with  rain
+%yrecorddayswithrainmonth%......Month of month record days with  rain
+
+
+
+EXtra temperature all time records
+-----------------------------------
+
+%recordhighextratemp1%...... Record high extra temp 1
+%recordlowextratemp1%....... Record low extra temp 1
+%mrecordhighextratemp1%......Month record high extra temp 1
+%mrecordlowextratemp1%.......Month record low extra temp 1
+%yrecordhighextratemp1%......Year record high extra temp 1
+%yrecordlowextratemp1%.......Year record low extra temp 1
+%recordhighextratemp2%...... Record high extra temp 2
+%recordlowextratemp2%....... Record low extra temp 2
+%mrecordhighextratemp2%......Month record high extra temp 2
+%mrecordlowextratemp2%.......Month record low extra temp 2
+%yrecordhighextratemp2%......Year record high extra temp 2
+%yrecordlowextratemp2%.......Year record low extra temp 2
+%recordhighextratemp3%...... Record high extra temp 3
+%recordlowextratemp3%....... Record low extra temp 3
+%recordhighextratemp4%...... Record high extra temp 4
+%recordlowextratemp4%....... Record low extra temp 4
+%mrecordhighextratemp3%......Month record high extra temp 3
+%mrecordlowextratemp3%.......Month record low extra temp 3
+%mrecordhighextratemp4%......Month record high extra temp 4
+%mrecordlowextratemp4%.......Month record low extra temp 4
+%yrecordhighextratemp3%......Year record high extra temp 3
+%yrecordlowextratemp3%.......Year record low extra temp 3
+%yrecordhighextratemp4%......Year record high extra temp 4 (note, if dallas hum #2 used, then the temperature from that used for extra temp 4)
+%yrecordlowextratemp4%.......Year record low extra temp 4
+
+%recordhighextratemp1day%....Day of record high extra temp 1
+%recordhighextratemp2day%....Day of record high extra temp 2
+%recordhighextratemp3day%....Day of record high extra temp 3
+%recordhighextratemp4day%....Day of record high extra temp 4
+%recordlowextratemp1day%.....Day of record low extra temp 1
+%recordlowextratemp2day%.....Day of record low extra temp 2
+%recordlowextratemp3day%.....Day of record low extra temp 3
+%recordlowextratemp4day%.....Day of record low extra temp 4
+%recordhighextratemp1mth%....Month of record high extra temp 1
+%recordhighextratemp2mth%....Month of record high extra temp 2
+%recordhighextratemp3mth%....Month of record high extra temp 3
+%recordhighextratemp4mth%....Month of record high extra temp 4
+%recordlowextratemp1mth%.....Month of record low extra temp 1
+%recordlowextratemp2mth%.....Month of record low extra temp 2
+%recordlowextratemp3mth%.....Month of record low extra temp 3
+%recordlowextratemp4mth%.....Month of record low extra temp 4
+%recordhighextratemp1yr%.....Year of record high extra temp 1
+%recordhighextratemp2yr%.....Year of record high extra temp 2
+%recordhighextratemp3yr%.....Year of record high extra temp 3
+%recordhighextratemp4yr%.....Year of record high extra temp 4
+%recordlowextratemp1yr%......Year of record low extra temp 1
+%recordlowextratemp2yr%......Year of record low extra temp 2
+%recordlowextratemp3yr%......Year of record low extra temp 3
+%recordlowextratemp4yr%......Year of record low extra temp 4
+%recordhighextratemp1hr%.....Hour of record high extra temp 1
+%recordhighextratemp2hr%.....Hour of record high extra temp 2
+%recordhighextratemp3hr%.....Hour of record high extra temp 3
+%recordhighextratemp4hr%.....Hour of record high extra temp 4
+%recordlowextratemp1hr%......Hour of record low extra temp 1
+%recordlowextratemp2hr%......Hour of record low extra temp 2
+%recordlowextratemp3hr%......Hour of record low extra temp 3
+%recordlowextratemp4hr%......Hour of record low extra temp 4
+%recordhighextratemp1min%....Minute of record high extra temp 1
+%recordhighextratemp2min%....Minute of record high extra temp 2
+%recordhighextratemp3min%....Minute of record high extra temp 3
+%recordhighextratemp4min%....Minute of record high extra temp 4
+%recordlowextratemp1min%.....Minute of record low extra temp 1
+%recordlowextratemp2min%.....Minute of record low extra temp 2
+%recordlowextratemp3min%.....Minute of record low extra temp 3
+%recordlowextratemp4min%.....Minute of record low extra temp 4
+
+%mrecordhighextratemp1day%....Day of month record high extra temp 1
+%mrecordhighextratemp2day%....Day of month record high extra temp 2
+%mrecordhighextratemp3day%....Day of month record high extra temp 3
+%mrecordhighextratemp4day%....Day of month record high extra temp 4
+%mrecordlowextratemp1day%.....Day of month record low extra temp 1
+%mrecordlowextratemp2day%.....Day of month record low extra temp 2
+%mrecordlowextratemp3day%.....Day of month record low extra temp 3
+%mrecordlowextratemp4day%.....Day of month record low extra temp 4
+%mrecordhighextratemp1mth%....Month of month record high extra temp 1
+%mrecordhighextratemp2mth%....Month of month record high extra temp 2
+%mrecordhighextratemp3mth%....Month of month record high extra temp 3
+%mrecordhighextratemp4mth%....Month of month record high extra temp 4
+%mrecordlowextratemp1mth%.....Month of month record low extra temp 1
+%mrecordlowextratemp2mth%.....Month of month record low extra temp 2
+%mrecordlowextratemp3mth%.....Month of month record low extra temp 3
+%mrecordlowextratemp4mth%.....Month of month record low extra temp 4
+%mrecordhighextratemp1yr%.....Year of month record high extra temp 1
+%mrecordhighextratemp2yr%.....Year of month record high extra temp 2
+%mrecordhighextratemp3yr%.....Year of month record high extra temp 3
+%mrecordhighextratemp4yr%.....Year of month record high extra temp 4
+%mrecordlowextratemp1yr%......Year of month record low extra temp 1
+%mrecordlowextratemp2yr%......Year of month record low extra temp 2
+%mrecordlowextratemp3yr%......Year of month record low extra temp 3
+%mrecordlowextratemp4yr%......Year of month record low extra temp 4
+%mrecordhighextratemp1hr%.....Hour of month record high extra temp 1
+%mrecordhighextratemp2hr%.....Hour of month record high extra temp 2
+%mrecordhighextratemp3hr%.....Hour of month record high extra temp 3
+%mrecordhighextratemp4hr%.....Hour of month record high extra temp 4
+%mrecordlowextratemp1hr%......Hour of month record low extra temp 1
+%mrecordlowextratemp2hr%......Hour of month record low extra temp 2
+%mrecordlowextratemp3hr%......Hour of month record low extra temp 3
+%mrecordlowextratemp4hr%......Hour of month record low extra temp 4
+%mrecordhighextratemp1min%....Minute of month record high extra temp 1
+%mrecordhighextratemp2min%....Minute of month record high extra temp 2
+%mrecordhighextratemp3min%....Minute of month record high extra temp 3
+%mrecordhighextratemp4min%....Minute of month record high extra temp 4
+%mrecordlowextratemp1min%.....Minute of month record low extra temp 1
+%mrecordlowextratemp2min%.....Minute of month record low extra temp 2
+%mrecordlowextratemp3min%.....Minute of month record low extra temp 3
+%mrecordlowextratemp4min%.....Minute of month record low extra temp 4
+
+
+
+%yrecordhighextratemp1day%....Day of year record high extra temp 1
+%yrecordhighextratemp2day%....Day of year record high extra temp 2
+%yrecordhighextratemp3day%....Day of year record high extra temp 3
+%yrecordhighextratemp4day%....Day of year record high extra temp 4
+%yrecordlowextratemp1day%.....Day of year record low extra temp 1
+%yrecordlowextratemp2day%.....Day of year record low extra temp 2
+%yrecordlowextratemp3day%.....Day of year record low extra temp 3
+%yrecordlowextratemp4day%.....Day of year record low extra temp 4
+%yrecordhighextratemp1mth%....Month of year record high extra temp 1
+%yrecordhighextratemp2mth%....Month of year record high extra temp 2
+%yrecordhighextratemp3mth%....Month of year record high extra temp 3
+%yrecordhighextratemp4mth%....Month of year record high extra temp 4
+%yrecordlowextratemp1mth%.....Month of year record low extra temp 1
+%yrecordlowextratemp2mth%.....Month of year record low extra temp 2
+%yrecordlowextratemp3mth%.....Month of year record low extra temp 3
+%yrecordlowextratemp4mth%.....Month of year record low extra temp 4
+%yrecordhighextratemp1yr%.....Year of year record high extra temp 1
+%yrecordhighextratemp2yr%.....Year of year record high extra temp 2
+%yrecordhighextratemp3yr%.....Year of year record high extra temp 3
+%yrecordhighextratemp4yr%.....Year of year record high extra temp 4
+%yrecordlowextratemp1yr%......Year of year record low extra temp 1
+%yrecordlowextratemp2yr%......Year of year record low extra temp 2
+%yrecordlowextratemp3yr%......Year of year record low extra temp 3
+%yrecordlowextratemp4yr%......Year of year record low extra temp 4
+%yrecordhighextratemp1hr%.....Hour of year record high extra temp 1
+%yrecordhighextratemp2hr%.....Hour of year record high extra temp 2
+%yrecordhighextratemp3hr%.....Hour of year record high extra temp 3
+%yrecordhighextratemp4hr%.....Hour of year record high extra temp 4
+%yrecordlowextratemp1hr%......Hour of year record low extra temp 1
+%yrecordlowextratemp2hr%......Hour of year record low extra temp 2
+%yrecordlowextratemp3hr%......Hour of year record low extra temp 3
+%yrecordlowextratemp4hr%......Hour of year record low extra temp 4
+%yrecordhighextratemp1min%....Minute of year record high extra temp 1
+%yrecordhighextratemp2min%....Minute of year record high extra temp 2
+%yrecordhighextratemp3min%....Minute of year record high extra temp 3
+%yrecordhighextratemp4min%....Minute of year record high extra temp 4
+%yrecordlowextratemp1min%.....Minute of year record low extra temp 1
+%yrecordlowextratemp2min%.....Minute of year record low extra temp 2
+%yrecordlowextratemp3min%.....Minute of year record low extra temp 3
+%yrecordlowextratemp4min%.....Minute of year record low extra temp 4
+
+
+Dallas 1 Wire , Note: Now supports up to 10 for the tags  (also labjack hi/lo temperature readings use these tags too)
+==============
+%dallasextratemp1%..........Dallas 1 wire current extra temp sensor temperature
+%dallasextratemp2%..........Dallas 1 wire current 2nd extra temp sensor temperature
+%dallasextratemp3%..........Dallas 1 wire current 3rd extra temp sensor temperature
+%dallasextratemp4%..........Dallas 1 wire current 4th extra temp sensor temperature
+%dallasextratemp5%..........Dallas 1 wire current 5th extra temp sensor temperature
+%dallasextratemp6%..........Dallas 1 wire current 6th extra temp sensor temperature
+%dallasextratemp7%..........Dallas 1 wire current 7th extra temp sensor temperature
+%dallasextratemp8%..........Dallas 1 wire current 8th extra temp sensor temperature
+%dallasextratemp9%..........Dallas 1 wire current 9th extra temp sensor temperature
+%dallasextratemp10%..........Dallas 1 wire current 10th extra temp sensor temperature
+
+%dallasextratemp1low%.......Dallas 1 wire low extra temp sensor temperature
+%dallasextratemp2low%.......Dallas 1 wire low 2nd extra temp sensor temperature
+%dallasextratemp3low%.......Dallas 1 wire low 3rd extra temp sensor temperature
+%dallasextratemp4low%.......Dallas 1 wire low 4th extra temp sensor temperature
+%dallasextratemp5low%.......Dallas 1 wire low 5th extra temp sensor temperature
+%dallasextratemp6low%.......Dallas 1 wire low 6th extra temp sensor temperature
+%dallasextratemp7low%.......Dallas 1 wire low 7th extra temp sensor temperature
+%dallasextratemp8low%.......Dallas 1 wire low 8th extra temp sensor temperature
+%dallasextratemp9low%.......Dallas 1 wire low 9th extra temp sensor temperature
+%dallasextratemp10low%.......Dallas 1 wire low 10th extra temp sensor temperature
+
+%dallasextratemp1high%......Dallas 1 wire high extra temp sensor temperature
+%dallasextratemp2high%......Dallas 1 wire high 2nd extra temp sensor temperature
+%dallasextratemp3high%......Dallas 1 wire high 3rd extra temp sensor temperature
+%dallasextratemp4high%......Dallas 1 wire high 4th extra temp sensor temperature
+%dallasextratemp5high%......Dallas 1 wire high 5th extra temp sensor temperature
+%dallasextratemp6high%......Dallas 1 wire high 6th extra temp sensor temperature
+%dallasextratemp7high%......Dallas 1 wire high 7th extra temp sensor temperature
+%dallasextratemp8high%......Dallas 1 wire high 8th extra temp sensor temperature
+%dallasextratemp9high%......Dallas 1 wire high 9th extra temp sensor temperature
+%dallasextratemp10high%......Dallas 1 wire high 10th extra temp sensor temperature
+
+%dallasextratemp1lowtime%...Dallas 1 wire low time extra temp sensor temperature
+%dallasextratemp2lowtime%...Dallas 1 wire low time of 2nd extra temp sensor temperature
+%dallasextratemp3lowtime%...Dallas 1 wire low time of 3rd extra temp sensor temperature
+%dallasextratemp4lowtime%...Dallas 1 wire low time of 4th extra temp sensor temperature
+%dallasextratemp5lowtime%...Dallas 1 wire low time of 5th extra temp sensor temperature
+%dallasextratemp6lowtime%...Dallas 1 wire low time of 6th extra temp sensor temperature
+%dallasextratemp7lowtime%...Dallas 1 wire low time of 7th extra temp sensor temperature 
+%dallasextratemp8lowtime%...Dallas 1 wire low time of 8th extra temp sensor temperature
+%dallasextratemp9lowtime%...Dallas 1 wire low time of 9th extra temp sensor temperature
+%dallasextratemp10lowtime%...Dallas 1 wire low time of 10th extra temp sensor temperature
+
+%dallasextratemp1hightime%..Dallas 1 wire high time of extra temp sensor temperature
+%dallasextratemp2hightime%..Dallas 1 wire high time of 2nd extra temp sensor temperature
+%dallasextratemp3hightime%..Dallas 1 wire high time of 3rd extra temp sensor temperature
+%dallasextratemp4hightime%..Dallas 1 wire high time of 4th extra temp sensor temperature
+%dallasextratemp5hightime%..Dallas 1 wire high time of 5th extra temp sensor temperature
+%dallasextratemp6hightime%..Dallas 1 wire high time of 6th extra temp sensor temperature
+%dallasextratemp7hightime%..Dallas 1 wire high time of 7th extra temp sensor temperature
+%dallasextratemp8hightime%..Dallas 1 wire high time of 8th extra temp sensor temperature
+%dallasextratemp9hightime%..Dallas 1 wire high time of 9th extra temp sensor temperature
+%dallasextratemp10hightime%..Dallas 1 wire high time of 10th extra temp sensor temperature
+
+%dallasextrahum%............Dallas 1 wire current humidity
+%dallasextrahumhigh%........Dallas 1 wire humidity high
+%dallasextrahumlow%.........Dallas 1 wire  humidity low
+%dallasextrahumhightime%....Dallas 1 wire  humidity high time
+%dallasextrahumlowtime%.....Dallas 1 wire  humidity low time
+%dallasextrahum2%...........Dallas 1 wire 2nd extra humidity
+%dallasextrahum2high%.......Dallas 1 wire 2nd humidity high
+%dallasextrahum2low%........Dallas 1 wire 2nd humidity low
+%dallasextrahum2hightime%...Dallas 1 wire 2nd humidity high time
+%dallasextrahum2lowtime%....Dallas 1 wire 2nd humidity low time
+%dallasextrahum3%...........Dallas 1 wire 3rd extra humidity
+%dallasextrahum3high%.......Dallas 1 wire 3rd humidity high
+%dallasextrahum3low%........Dallas 1 wire 3rd humidity low
+%dallasextrahum3hightime%...Dallas 1 wire 3rd humidity high time
+%dallasextrahum3lowtime%....Dallas 1 wire 3rd humidity low time
+%dallasextrahum4%...........Dallas 1 wire 4th extra humidity
+%dallasextrahum4high%.......Dallas 1 wire 4th humidity high
+%dallasextrahum4low%........Dallas 1 wire 4th humidity low
+%dallasextrahum4hightime%...Dallas 1 wire 4th humidity high time
+%dallasextrahum4lowtime%....Dallas 1 wire 4th humidity low time
+
+%dallassolarvolts%..........Volts from a dallas 1 wire solar sensor
+%barometertemperature%......Temperature from a Bray/Jennings or AAG barometer
+
+%dallashumtemp%.............Current Dallas 1 wire humidity sensor temperature
+%highdallashumtemp%.........Daily high "   "  "      "       "       "
+%lowdallashumtemp%..........Daily low "   "  "      "       "       "
+%highdallashumtempt%........Time of Daily high "   "  "      "       "       "
+%lowdallashumtempt%.........Time of Daily low "   "  "      "       "       "
+
+%dallashumtemp2%.............Current Dallas 1 wire humidity sensor temperature #2
+%highdallashumtemp2%.........Daily high "   "  "      "       "       "
+%lowdallashumtemp2%..........Daily low "   "  "      "       "       "
+%highdallashumtemp2t%........Time of Daily high "   "  "      "       "       "
+%lowdallashumtemp2t%.........Time of Daily low "   "  "      "       "       "
+
+
+%dallashumtemp3%.............Current Dallas 1 wire humidity sensor temperature #3
+%highdallashumtemp3%.........Daily high "   "  "      "       "       "
+%lowdallashumtemp3%..........Daily low "   "  "      "       "       "
+%highdallashumtemp3t%........Time of Daily high "   "  "      "       "       "
+%lowdallashumtemp3t%.........Time of Daily low "   "  "      "       "       "
+
+%dallashumtemp4%.............Current Dallas 1 wire humidity sensor temperature #4
+%highdallashumtemp4%.........Daily high "   "  "      "       "       "
+%lowdallashumtemp4%..........Daily low "   "  "      "       "       "
+%highdallashumtemp4t%........Time of Daily high "   "  "      "       "       "
+%lowdallashumtemp4t%.........Time of Daily low "   "  "      "       "       "
+Lightning counts
+================
+%lighteningcountlasthour%...Lightening count last immediate hour
+%lighteningcountlastminute%...Lightening count last minute
+%lighteningcountlast5minutes%..Lightening count 5 minutes
+%lighteningcountlast12hour% ..Lightening count last 12 hours
+%lighteningcountlast30minutes% ..Lightening count last 30 minutes
+
+%lighteningcountlasthournextstorm%...Lightening count last immediate hour, from the nextstorm integration
+%lighteningcountlastminutenextstorm%...Lightening count last minute
+%lighteningcountlast12hournextstorm% ..Lightening count last 12 hours
+%lighteningcountlast30minutesnextstorm% ..Lightening count last 30 minutes
+
+%nexstormbearing%...........Bearing (degrees) from last nexstorm strike recorded
+%nexstormdistance%..........Last distance of the last nexstorm recorded strike
+
+%lighteningcount%...........Lightening counts since noon
+%lighteningcountmonth%......Lightening counts this month
+%lighteningcountyear%.......Lightening counts this year
+%lighteningcountnoon%.......Lightening counts since noon (the correct one)
+%lighteningcountlasttime%...Time of last count
+%lighteningcountmidnight%.. Lightening counts since midnight
+%lighteningcountnoonwire%...Lightening counts since noon for 1 wire or labjack
+%lighteningcountmidnightwire%...Lightening counts since midnight for 1 wire or labjack
+%countsday1%................Total counts recorded for day 1 (current month)
+%countsday2%................Total counts recorded for day 2 (current month)
+carryon to
+%countsday31%................Total counts recorded for day 31 (current month)
+WMR918/68
+===============
+%Solar%.....................WMR918/68 and WS2000 Solar sensor
+%wmr918/68extrahum%.........WMR918/68 extra sensor #1 humidity
+%wmr918/68extrahum2%........WMR918/68 extra sensor #2 humidity
+%wmr918/68extrahum3%........WMR918/68 extra sensor #3 humidity
+%wmr918/68extratemp%........WMR918/68 extra sensor #1 temperature
+%wmr918/68extratemp2%.......WMR918/68 extra sensor #2 temperature
+%wmr918/68extratemp3%.......WMR918/68 extra sensor #3 temperature
+%wmr918/68extratemphigh%....WMR918/68 extra sensor #1 high temperature
+%wmr918/68extratemphigh2%...WMR918/68 extra sensor #2 high temperature
+%wmr918/68extratemphigh3%...WMR918/68 extra sensor #3 high temperature
+%wmr918/68extrahumhigh%.....WMR918/68 extra sensor #1 high humidity
+%wmr918/68extrahumhigh2%....WMR918/68 extra sensor #2 high humidity
+%wmr918/68extrahumhigh3%....WMR918/68 extra sensor #3 high humidity
+%wmr918/68temphightime%.....WMR918/68 extra sensor #1 temperature high time
+%wmr918/68temphightime2%....WMR918/68 extra sensor #2 temperature high time
+%wmr918/68temphightime3%....WMR918/68 extra sensor #3 temperature high time
+%wmr918/68extratemplow%.....WMR918/68 extra sensor #1 low temperature
+%wmr918/68extratemplow2%....WMR918/68 extra sensor #2 low temperature
+%wmr918/68extratemplow3%....WMR918/68 extra sensor #3 low temperature
+%wmr918/68extrahumlow%......WMR918/68 extra sensor #1 low humidity
+%wmr918/68extrahumlow2%.....WMR918/68 extra sensor #2 low humidity
+%wmr918/68extrahumlow3%.....WMR918/68 extra sensor #3 low humidity
+%wmr918/68templowtime%......WMR918/68 extra sensor #1 temperature low time
+%wmr918/68templowtime2%.....WMR918/68 extra sensor #2 temperature low time
+%wmr918/68templowtime3%.....WMR918/68 extra sensor #3 temperature low time
+%wmr918/68extrahumhightime%.WMR918/68 extra sensor #1 high humidity time
+%wmr918/68extrahumhigh2time%.WMR918/68 extra sensor #2 high humidity time
+%wmr918/68extrahumhigh3time%.WMR918/68 extra sensor #3 high humidity time
+%wmr918/68extrahumlowtime%..WMR918/68 extra sensor #1 low humidity time
+%wmr918/68extrahumlow2time%.WMR918/68 extra sensor #2 low humidity time
+%wmr918/68extrahumlow3time%.WMR918/68 extra sensor #3 low humidity time
+%wmr918/68tempbat3%.........Battery status of the extra temp hum #3
+%wmr918/68tempbat2%.........Battery status of the extra temp hum #2
+%wmr918/68tempbat1%.........Battery status of the extra temp hum #1
+%wmr918/68tempbat%..........Battery status of the temp hum sensor
+%wmr918/68consbat%..........Battery status of the console
+%wmr918/68rainbat%..........Battery status of the rain gauge
+%wmr918/68windbat%..........Battery status of the wind sensor
+
+
+Snow
+=====
+
+%snowseasonin.%.............Snow for season you have entered under input daily weather, inches
+%snowmonthin.%..............Snow for month you have entered under input daily weather, inches
+%snowtodayin.%..............Snow for today you have entered under input daily weather, inches
+%snowseasoncm%..............Snow for season you have entered under input daily weather, cm
+%snowmonthcm%...............Snow for month you have entered under input daily weather, cm
+%snowtodaycm%...............Snow for today you have entered under input daily weather, cm
+%snowyesterday%.............Yesterdays' snow
+%snowheight%................Estimated height snow will fall at
+%snowheightnew%.............Estimated height snow will fall at, new formula
+
+%snownowin.%................Current snow depth, inches.
+%snownowcm%.................Current snow depth, cm.
+
+%snowrain%..................rain measure by a heated rain gauge when temp below freezing times 10 to give estimated snow fall
+
+Download metars  
+================
+
+%downloadedmetar1extrasky%.Sky conditions
+%downloadedmetar1sky%......More sky conditions
+%downloadedmetar1cloud%....Cloud conditions or weather
+%downloadedmetar1press%....Barometer reading
+%downloadedmetar1humi%.....Humidity reading
+%downloadedmetar1dewp%.....Dew point reading
+%downloadedmetar1temp%.....Temperature reading
+%downloadedmetar1tempcelsius%.....Temperature reading in celsius
+%downloadedmetar1wind%.....Wind readings (speed and direction)
+%downloadedmetar1location%.Metar name and time stamp
+%downloadedmetar1vis%......Visibility
+%downloadedmetar1name%.....Just the metar name. (1st 10 metars only)
+%downloadedmetar1time%.....Just the time of update.(1st 10 metars only)
+%downloadedmetar1rainlasthour%  Rain in the last hour (if its available)
+%downloadedmetar1windonly%..Shows just the windspeed only  (1st 10 metars only)
+%downloadedmetar1dironly%...Shows direction in letter (1st 10 metars only)
+%downloadedmetar1dironlydir%.. Shows dir in degrees.(1st 10 metars only)
+Repeat this for up to 50 downloaded airport metars (i.e %downloadedmetar2location% for the next one)
+
+%metar/report=%NZAA.MET     Insert downloaded METARS or weather reports/warnings.
+		            Please replace NZAA.MET with the file name downloaded.Note: use <pre> and </pre> html tags 
+
+before  and after this custom tag
+                            and also note you can use the tag to add other text files to your page too, if those files are 
+
+in the metar download dir
+
+
+%5dayforecastday1%..........Forecast from the 5 day forecast graphic image from a downloaded NOAA zone forecast file (which 
+
+must be first selected),,,,repeat up to day 8
+%5dayforecastdayday1%.......Day (i.e Monday, tuesday, etc)...Forecast from the 5 day forecast graphic image from a 
+
+downloaded NOAA zone forecast file (which must be first selected),,,,repeat up to day 8
+%5dayforecasttimestamp%.....The heading and time stamp from the NOAA downloaded forecast.
+Note, for XML, use the format %d5ayforecastday1%
+%downloadedmetarrainlasthour% Rain in the last hour from the main downloaded metar (if it is in the metar)
+
+Current weather warning/forecast from input daily weather
+---------------------------------------------------------
+%dailywarning/forecast%
+
+GPS
+---
+%gpslat%  IF you have a GPS unit setup in weather display
+%gpslong%
+
+%wapstationname%......Station name for the WAP
+
+Tags for using comma decimal place
+----------------------------------
+%temp,%..................Current temperature
+%windch,%................Current windchill 
+%heati,%.................Current heat index
+%dew,%...................Current dew point
+%currentpressureinmb,%...Current barometer reading (mb/hpa)
+%avgspd,%................Average windspeed
+%gstspd,%................Current (gust) speed
+%dayrn,%.................Today's rain
+%hourrn,%................Rain last hour
+%monthrn,%...............Month to date rain
+%yearrn,%................Year to date rain
+%yesterdayrain,%.........Yesterday's rain
+
+
+%customscreenownlabelusethistag%
+----------------------------------------------------------
+Mesomap stations data (If you have setup and are using the mesomap feature)
+----------------------------------------------------------   
+%mesomaptemp1%
+%mesomaphum1%
+%mesomapdew1%
+%mesomapspeed1%
+%mesomapgust1%
+%mesomapdir1%
+%mesomapbaro1%
+%mesomaprain1%
+%mesomaptime1%
+%mesomaptemp2%
+%mesomaphum2%
+%mesomapdew2%
+%mesomapspeed2%
+%mesomapgust2%
+%mesomapdir2%
+%mesomapbaro2%
+%mesomaprain2%
+%mesomaptime2%
+%mesomaptemp3%
+%mesomaphum3%
+%mesomapdew3%
+%mesomapspeed3%
+%mesomapgust3%
+%mesomapdir3%
+%mesomapbaro3%
+%mesomaprain3%
+%mesomaptime3%
+%mesomaptemp4%
+%mesomaphum4%
+%mesomapdew4%
+%mesomapspeed4%
+%mesomapgust4%
+%mesomapdir4%
+%mesomapbaro4%
+%mesomaprain4%
+%mesomaptime4%
+%mesomaptemp5%
+%mesomaphum5%
+%mesomapdew5%
+%mesomapspeed5%
+%mesomapgust5%
+%mesomapdir5%
+%mesomapbaro5%
+%mesomaprain5%
+%mesomaptime5%
+%mesomaptemp6%
+%mesomaphum6%
+%mesomapdew6%
+%mesomapspeed6%
+%mesomapgust6%
+%mesomapdir6%
+%mesomapbaro6%
+%mesomaprain6%
+%mesomaptime6%
+%mesomaptemp7%
+%mesomaphum7%
+%mesomapdew7%
+%mesomapspeed7%
+%mesomapgust7%
+%mesomapdir7%
+%mesomapbaro7%
+%mesomaprain7%
+%mesomaptime7%
+%mesomaptemp8%
+%mesomaphum8%
+%mesomapdew8%
+%mesomapspeed8%
+%mesomapgust8%
+%mesomapdir8%
+%mesomapbaro8%
+%mesomaprain8%
+%mesomaptime8%
+%mesomaptemp9%
+%mesomaphum9%
+%mesomapdew9%
+%mesomapspeed9%
+%mesomapgust9%
+%mesomapdir9%
+%mesomapbaro9%
+%mesomaprain9%
+%mesomaptime9%
+%mesomaptemp10%
+%mesomaphum10%
+%mesomapdew10%
+%mesomapspeed10%
+%mesomapgust10%
+%mesomapdir10%
+%mesomapbaro10%
+%mesomaprain10%
+%mesomaptime10%
+%mesomaptemp11%
+%mesomaphum11%
+%mesomapdew11%
+%mesomapspeed11%
+%mesomapgust11%
+%mesomapdir11%
+%mesomapbaro11%
+%mesomaprain11%
+%mesomaptime11%
+%mesomaptemp12%
+%mesomaphum12%
+%mesomapdew12%
+%mesomapspeed12%
+%mesomapgust12%
+%mesomapdir12%
+%mesomapbaro12%
+%mesomaprain12%
+%mesomaptime12%
+%mesomaptemp13%
+%mesomaphum13%
+%mesomapdew13%
+%mesomapspeed13%
+%mesomapgust13%
+%mesomapdir13%
+%mesomapbaro13%
+%mesomaprain13%
+%mesomaptime13%
+%mesomaptemp14%
+%mesomaphum14%
+%mesomapdew14%
+%mesomapspeed14%
+%mesomapgust14%
+%mesomapdir14%
+%mesomapbaro14%
+%mesomaprain14%
+%mesomaptime14%
+%mesomaptemp15%
+%mesomaphum15%
+%mesomapdew15%
+%mesomapspeed15%
+%mesomapgust15%
+%mesomapdir15%
+%mesomapbaro15%
+%mesomaprain15%
+%mesomaptime15%
+%mesomaptemp16%
+%mesomaphum16%
+%mesomapdew16%
+%mesomapspeed16%
+%mesomapgust16%
+%mesomapdir16%
+%mesomapbaro16%
+%mesomaprain16%
+%mesomaptime16%
+%mesomaptemp17%
+%mesomaphum17%
+%mesomapdew17%
+%mesomapspeed17%
+%mesomapgust17%
+%mesomapdir17%
+%mesomapbaro17%
+%mesomaprain17%
+%mesomaptime17%
+%mesomaptemp18%
+%mesomaphum18%
+%mesomapdew18%
+%mesomapspeed18%
+%mesomapgust18%
+%mesomapdir18%
+%mesomapbaro18%
+%mesomaprain18%
+%mesomaptime18%
+%mesomaptemp19%
+%mesomaphum19%
+%mesomapdew19%
+%mesomapspeed19%
+%mesomapgust19%
+%mesomapdir19%
+%mesomapbaro19%
+%mesomaprain19%
+%mesomaptime19%
+%mesomaptemp20%
+%mesomaphum20%
+%mesomapdew20%
+%mesomapspeed20%
+%mesomapgust20%
+%mesomapdir20%
+%mesomapbaro20%
+%mesomaprain20%
+%mesomaptime20%
+%mesomaptemp21%
+%mesomaphum21%
+%mesomapdew21%
+%mesomapspeed21%
+%mesomapgust21%
+%mesomapdir21%
+%mesomapbaro21%
+%mesomaprain21%
+%mesomaptime21%
+%mesomaptemp22%
+%mesomaphum22%
+%mesomapdew22%
+%mesomapspeed22%
+%mesomapgust22%
+%mesomapdir22%
+%mesomapbaro22%
+%mesomaprain22%
+%mesomaptime22%
+%mesomaptemp23%
+%mesomaphum23%
+%mesomapdew23%
+%mesomapspeed23%
+%mesomapgust23%
+%mesomapdir23%
+%mesomapbaro23%
+%mesomaprain23%
+%mesomaptime23%
+%mesomaptemp24%
+%mesomaphum24%
+%mesomapdew24%
+%mesomapspeed24%
+%mesomapgust24%
+%mesomapdir24%
+%mesomapbaro24%
+%mesomaprain24%
+%mesomaptime24%
+%mesomaptemp25%
+%mesomaphum25%
+%mesomapdew25%
+%mesomapspeed25%
+%mesomapgust25%
+%mesomapdir25%
+%mesomapbaro25%
+%mesomaprain25%
+%mesomaptime25%
+%mesomaptemp26%
+%mesomaphum26%
+%mesomapdew26%
+%mesomapspeed26%
+%mesomapgust26%
+%mesomapdir26%
+%mesomapbaro26%
+%mesomaprain26%
+%mesomaptime26%
+%mesomaptemp27%
+%mesomaphum27%
+%mesomapdew27%
+%mesomapspeed27%
+%mesomapgust27%
+%mesomapdir27%
+%mesomapbaro27%
+%mesomaprain27%
+%mesomaptime27%
+%mesomaptemp28%
+%mesomaphum28%
+%mesomapdew28%
+%mesomapspeed28%
+%mesomapgust28%
+%mesomapdir28%
+%mesomapbaro28%
+%mesomaprain28%
+%mesomaptime28%
+%mesomaptemp29%
+%mesomaphum29%
+%mesomapdew29%
+%mesomapspeed29%
+%mesomapgust29%
+%mesomapdir29%
+%mesomapbaro29%
+%mesomaprain29%
+%mesomaptime29%
+%mesomaptemp30%
+%mesomaphum30%
+%mesomapdew30%
+%mesomapspeed30%
+%mesomapgust30%
+%mesomapdir30%
+%mesomapbaro30%
+%mesomaprain30%
+%mesomaptime30%
+%mesomaptemp31%
+%mesomaphum31%
+%mesomapdew31%
+%mesomapspeed31%
+%mesomapgust31%
+%mesomapdir31%
+%mesomapbaro31%
+%mesomaprain31%
+%mesomaptemp32%
+%mesomaphum32%
+%mesomapdew32%
+%mesomapspeed32%
+%mesomapgust32%
+%mesomapdir32%
+%mesomapbaro32%
+%mesomaprain32%
+%mesomaptemp33%
+%mesomaphum33%
+%mesomapdew33%
+%mesomapspeed33%
+%mesomapgust33%
+%mesomapdir33%
+%mesomapbaro33%
+%mesomaprain33%
+%mesomaptemp34%
+%mesomaphum34%
+%mesomapdew34%
+%mesomapspeed34%
+%mesomapgust34%
+%mesomapdir34%
+%mesomapbaro34%
+%mesomaprain34%
+%mesomaptemp35%
+%mesomaphum35%
+%mesomapdew35%
+%mesomapspeed35%
+%mesomapgust35%
+%mesomapdir35%
+%mesomapbaro35%
+%mesomaprain35%
+%mesomaptemp36%
+%mesomaphum36%
+%mesomapdew36%
+%mesomapspeed36%
+%mesomapgust36%
+%mesomapdir36%
+%mesomapbaro36%
+%mesomaprain36%
+%mesomaptemp37%
+%mesomaphum37%
+%mesomapdew37%
+%mesomapspeed37%
+%mesomapgust37%
+%mesomapdir37%
+%mesomapbaro37%
+%mesomaprain37%
+%mesomaptemp38%
+%mesomaphum38%
+%mesomapdew38%
+%mesomapspeed38%
+%mesomapgust38%
+%mesomapdir38%
+%mesomapbaro38%
+%mesomaprain38%
+%mesomaptemp39%
+%mesomaphum39%
+%mesomapdew39%
+%mesomapspeed39%
+%mesomapgust39%
+%mesomapdir39%
+%mesomapbaro39%
+%mesomaprain39%
+%mesomaptemp40%
+%mesomaphum40%
+%mesomapdew40%
+%mesomapspeed40%
+%mesomapgust40%
+%mesomapdir40%
+%mesomapbaro40%
+%mesomaprain40%
+
+
+%mesomapmaxtempclient1%  *** available from clientraw.txt data source
+%mesomapmaxtempclient2%
+%mesomapmaxtempclient3%
+%mesomapmaxtempclient4%
+%mesomapmaxtempclient5%
+%mesomapmaxtempclient6%
+%mesomapmaxtempclient7%
+%mesomapmaxtempclient8%
+%mesomapmaxtempclient9%
+%mesomapmaxtempclient10%
+%mesomapmaxtempclient11%
+%mesomapmaxtempclient12%
+%mesomapmaxtempclient13%
+%mesomapmaxtempclient14%
+%mesomapmaxtempclient15%
+%mesomapmaxtempclient16%
+%mesomapmaxtempclient17%
+%mesomapmaxtempclient18%
+%mesomapmaxtempclient19%
+%mesomapmaxtempclient20%
+%mesomapmaxtempclient21% 
+%mesomapmaxtempclient22%
+%mesomapmaxtempclient23%
+%mesomapmaxtempclient24%
+%mesomapmaxtempclient25%
+%mesomapmaxtempclient26%
+%mesomapmaxtempclient27%
+%mesomapmaxtempclient28%
+%mesomapmaxtempclient29%
+%mesomapmaxtempclient30%
+%mesomapmaxtempclient31%
+%mesomapmaxtempclient32%
+%mesomapmaxtempclient33%
+%mesomapmaxtempclient34%
+%mesomapmaxtempclient35%
+%mesomapmaxtempclient36%
+%mesomapmaxtempclient37%
+%mesomapmaxtempclient38%
+%mesomapmaxtempclient39%
+%mesomapmaxtempclient40%
+
+
+%mesomapmintempclient1%  
+%mesomapmintempclient2%
+%mesomapmintempclient3%
+%mesomapmintempclient4%
+%mesomapmintempclient5%
+%mesomapmintempclient6%
+%mesomapmintempclient7%
+%mesomapmintempclient8%
+%mesomapmintempclient9%
+%mesomapmintempclient10%
+%mesomapmintempclient11%
+%mesomapmintempclient12%
+%mesomapmintempclient13%
+%mesomapmintempclient14%
+%mesomapmintempclient15%
+%mesomapmintempclient16%
+%mesomapmintempclient17%
+%mesomapmintempclient18%
+%mesomapmintempclient19%
+%mesomapmintempclient20%
+%mesomapmintempclient21%  
+%mesomapmintempclient22%
+%mesomapmintempclient23%
+%mesomapmintempclient24%
+%mesomapmintempclient25%
+%mesomapmintempclient26%
+%mesomapmintempclient27%
+%mesomapmintempclient28%
+%mesomapmintempclient29%
+%mesomapmintempclient30%
+%mesomapmintempclient31%
+%mesomapmintempclient32%
+%mesomapmintempclient33%
+%mesomapmintempclient34%
+%mesomapmintempclient35%
+%mesomapmintempclient36%
+%mesomapmintempclient37%
+%mesomapmintempclient38%
+%mesomapmintempclient39%
+%mesomapmintempclient40%
+
+
+%mesomapweatherconditions1%
+%mesomapweatherconditions2%
+%mesomapweatherconditions3%
+%mesomapweatherconditions4%
+%mesomapweatherconditions5%
+%mesomapweatherconditions6%
+%mesomapweatherconditions7%
+%mesomapweatherconditions8%
+%mesomapweatherconditions9%
+%mesomapweatherconditions10%
+%mesomapweatherconditions11%
+%mesomapweatherconditions12%
+%mesomapweatherconditions13%
+%mesomapweatherconditions14%
+%mesomapweatherconditions15%
+%mesomapweatherconditions16%
+%mesomapweatherconditions17%
+%mesomapweatherconditions18%
+%mesomapweatherconditions19%
+%mesomapweatherconditions20%
+%mesomapweatherconditions21%
+%mesomapweatherconditions22%
+%mesomapweatherconditions23%
+%mesomapweatherconditions24%
+%mesomapweatherconditions25%
+%mesomapweatherconditions26%
+%mesomapweatherconditions27%
+%mesomapweatherconditions28%
+%mesomapweatherconditions29%
+%mesomapweatherconditions30%
+%mesomapweatherconditions31%
+%mesomapweatherconditions32%
+%mesomapweatherconditions33%
+%mesomapweatherconditions34%
+%mesomapweatherconditions35%
+%mesomapweatherconditions36%
+%mesomapweatherconditions37%
+%mesomapweatherconditions38%
+%mesomapweatherconditions39%
+%mesomapweatherconditions40%
+
+%mesomaptimedate1%
+%mesomaptimedate2%
+%mesomaptimedate3%
+%mesomaptimedate4%
+%mesomaptimedate5%
+%mesomaptimedate6%
+%mesomaptimedate7%
+%mesomaptimedate8%
+%mesomaptimedate9%
+%mesomaptimedate10%
+%mesomaptimedate11%
+%mesomaptimedate12%
+%mesomaptimedate13%
+%mesomaptimedate14%
+%mesomaptimedate15%
+%mesomaptimedate16%
+%mesomaptimedate17%
+%mesomaptimedate18%
+%mesomaptimedate19%
+%mesomaptimedate20%
+%mesomaptimedate21%
+%mesomaptimedate22%
+%mesomaptimedate23%
+%mesomaptimedate24%
+%mesomaptimedate25%
+%mesomaptimedate26%
+%mesomaptimedate27%
+%mesomaptimedate28%
+%mesomaptimedate29%
+%mesomaptimedate30%
+%mesomaptimedate31%
+%mesomaptimedate32%
+%mesomaptimedate33%
+%mesomaptimedate34%
+%mesomaptimedate36%
+%mesomaptimedate37%
+%mesomaptimedate38%
+%mesomaptimedate39%
+%mesomaptimedate40%
+
+
+History data
+------------
+
+%temp0minuteago%  ****this one is needed for all the others to work
+%wind0minuteago%
+%gust0minuteago%
+%dir0minuteago%
+%hum0minuteago%
+%dew0minuteago%
+%baro0minuteago%
+%rain0minuteago%
+%VPsolar0minuteago% ....note you need to tick , store solar as extra temp 4 in the solar setup
+%VPuv0minuteago%
+
+%temp1minuteago%
+%wind1minuteago%
+%gust1minuteago%
+%dir1minuteago%
+%hum1minuteago%
+%dew1minuteago%
+%baro1minuteago%
+%rain1minuteago%
+%VPsolar1minuteago%
+%VPuv1minuteago%
+
+%temp2minuteago%
+%wind2minuteago%
+%gust2minuteago%
+%dir2minuteago%
+%hum2minuteago%
+%dew2minuteago%
+%baro2minuteago%
+%rain2minuteago%
+%VPsolar2minuteago%
+%VPuv2minuteago%
+
+
+%temp3minuteago%
+%wind3minuteago%
+%gust3minuteago%
+%dir3minuteago%
+%hum3minuteago%
+%dew3minuteago%
+%baro3minuteago%
+%rain3minuteago%
+%VPsolar3minuteago%
+%VPuv3minuteago%
+
+
+%temp4minuteago%
+%wind4minuteago%
+%gust4minuteago%
+%dir4minuteago%
+%hum4minuteago%
+%dew4minuteago%
+%baro4minuteago%
+%rain4minuteago%
+%VPsolar4minuteago%
+%VPuv4minuteago%
+
+
+%temp5minuteago%
+%wind5minuteago%
+%gust5minuteago%
+%dir5minuteago%
+%hum5minuteago%
+%dew5minuteago%
+%baro5minuteago%
+%rain5minuteago%
+%VPsolar5minuteago%
+%VPuv5minuteago%
+
+repeat up to 
+
+%temp120minuteago%
+%wind120minuteago%
+%gust120minuteago%
+%dir120minuteago%
+%hum120minuteago%
+%dew120minuteago%
+%baro120minuteago%
+%rain120minuteago%
+%VPsolar120minuteago%
+%VPuv120minuteago%
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
