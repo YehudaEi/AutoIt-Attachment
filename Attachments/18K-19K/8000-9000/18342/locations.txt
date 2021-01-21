@@ -1,0 +1,21 @@
+.Dun Morogh
+..Eisenschmiede
+...Schneider
+...Verzauberer
+...Schmied
+...FlugPunkt
+...Hexenmeisterlehrer
+...Magierlehrer
+...Bank
+...Auktionshaus
+...Gasthaus
+.Rotkammgebirge
+..Seelenhain
+...Gasthaus
+...Drei Ecken
+.Westfall
+..Späherkuppe
+...Späherturm
+.Wald von Elwynn
+..Goldhain
+...Gasthaus
