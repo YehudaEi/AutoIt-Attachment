@@ -1,0 +1,242 @@
+$oIE = _IEAttach ("                             ", "URL")
+$colFrames = _IEFrameGetCollection($oIE)
+$iFrameCnt = @extended
+$file = FileOpen("C:\Documents and Settings\bill\My Documents\test.txt", 2)
+$colFrames = _IEFrameGetCollection($oIE,1)
+$colFrames0= _IEFrameGetCollection($colFrames,1)
+$iFrameCnt = @extended
+FileWrite($file, "For oIE11 There are " & $iFrameCnt & " frames." & @LF)
+FileWrite($file, @CRLF & " " & @CRLF)
+FileWrite($file, "Frame oIE11:" & _IEBodyReadHTML($colFrames0) & @LF)
+FileWrite($file, @CRLF & " " & @CRLF)
+$iFrameCnt = ""
+
+
+For oIE11 There are 4 frames.
+
+ 
+Frame oIE11:<TABLE height="100%" cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR id=SearchResultTableHeaderT height="1%">
+<TD colSpan=2>
+<TABLE class=ContentSectionTitleTab cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD>
+<TABLE width="100%" border=0>
+<TBODY>
+<TR>
+<TD class=ContentSectionButtonsTop align=right></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD>
+<TABLE class="ContentSectionTitleTab ClassTempoOnly" width="100%">
+<TBODY>
+<TR>
+<TD class=TabActiveLeft>
+<TD class=TabActiveMiddle>Search Results: <SPAN id=MsgLineT><B>6 Listings / 6 Selected</B></SPAN></TD>
+<TD class=TabActiveRight></TD></TR></TBODY></TABLE></TD></TR><!-- beginning of the search list  -->
+<TR class=ContentSectionHeader id=trSearchList style="DISPLAY: none">
+<TD>
+<TABLE height="100%" cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD class=ClassTempoOnly align=right width="49%"><SPAN class=iconButton24OFF onmousedown="this.className='iconButton24DOWN';" id=spanPrevSearch onmouseover="this.className='iconButton24ON';" title="Previous Prospect Search" onclick=PreviousSelected() onmouseout="this.className='iconButton24OFF';"><SPAN class=iconButtonOFF id=icon_prev></SPAN>&nbsp; </SPAN></TD>
+<TD class=ClassMlxchangeOnly align=right width="49%"><IMG id=imgPrevious onclick=PreviousSelected() height=21 alt=Previous src="/4.1.16.39/Images/Prev_Arrow.gif" width=21>&nbsp; </TD>
+<TD id=tdSearchList width="2%">
+<TD class=ClassMlxchangeOnly align=left width="49%"><IMG id=imgNext onclick=NextSelected() height=21 alt=Next src="/4.1.16.39/Images/Next_Arrow.gif" width=21>&nbsp; </TD>
+<TD class=ClassTempoOnly align=left width="49%"><SPAN class=iconButton24OFF onmousedown="this.className='iconButton24DOWN';" id=spanNextSearch onmouseover="this.className='iconButton24ON';" title="Next Prospect Search" onclick=NextSelected() onmouseout="this.className='iconButton24OFF';">&nbsp;<SPAN class=iconButtonOFF id=icon_next></SPAN> </SPAN></TD></TR></TBODY></TABLE></TD></TR><!-- end of the search list -->
+<TR>
+<TD id=tdSearchResultTableHeader>
+<TABLE height="100%" cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD>
+<TABLE width="100%" border=0>
+<TBODY>
+<TR>
+<TD class=ClassMlxChangeOnly align=left><SPAN class=ContentSectionSubTypeName id=spanSubTypeName>Residential</SPAN></TD>
+<TD><!-- Filters -->
+<TABLE id=Table2 cellSpacing=0 cellPadding=2 width="100%" border=0>
+<TBODY>
+<TR>
+<TD id=tdNavTitle width="100%" colSpan=4></TD></TR>
+<TR width="100%">
+<TD width="5%"><IMG class=ClassMlxchangeOnly src="/4.1.16.39/Images/icoFindListing_Small.gif">&nbsp;&nbsp;</TD>
+<TD class=FilterLabel id=gridlist noWrap width="30%"><B>Columns: </B><SELECT class=Text_Small id=selGridList onchange=GridSelected(this.value)> <OPTION value=108 selected>Residential System Grid</OPTION> <OPTION value=845>BPO Detached</OPTION></SELECT> <IMG title="Column Manager" style="CURSOR: hand" onclick=javascript:parent.ShowColumnManager() src="                                                               "> &nbsp; <SPAN class=ClassTempoOnly><IMG id=imgSaveGrid title="Save Grid" style="CURSOR: hand" onclick=saveGridSettings() src="                                                                        "> </SPAN></TD>
+<TD class=Filterlabel noWrap width="20%"><SPAN class=ClassMlxchangeOnly>Filter: <SELECT class=Text_Small id=selectionfilter onchange=SetSelectFilter(this.value,this.selectedIndex) name=Select> <OPTION value=all selected>Show all</OPTION> <OPTION value=sel>Show selected</OPTION> <OPTION value=unsel>Show unselected</OPTION></SELECT> </SPAN><SPAN class=ClassTempoOnly>Display: <SELECT class=Text_Small id=selectionfilter onchange=SetSelectFilter(this.value,this.selectedIndex) name=Select> <OPTION value=all>All</OPTION> <OPTION value=sel selected>Selected</OPTION> <OPTION value=unsel>Unselected</OPTION></SELECT> </SPAN></TD>
+<TD class=FilterLabel id=statusfilter noWrap width="30%"><SPAN class=FilterLabel>Status:</SPAN> <SELECT class=FilterInput id=ValueFilter style="WIDTH: 75%" name=ValueFilter> <OPTION value="" selected>All</OPTION> <OPTION value=ACT>Active</OPTION> <OPTION value=PEND>Pending</OPTION> <OPTION value=SOLD>Sold</OPTION> <OPTION value=EXP>Expired</OPTION> <OPTION value=WITH>Withdrawn</OPTION> <OPTION value=CANC>Cancelled</OPTION></SELECT> </TD>
+<TD class=FilterLabel id=tdPriceFilter noWrap align=right width="15%"><SPAN>Price:&nbsp; <?IMPORT NAMESPACE = IRC IMPLEMENTATION = "                                                              " DECLARENAMESPACE /><IRC:POP_SLIDER id=PriceFilter onchange="onChangePriceFilter()" Round="1000"></IRC:POP_SLIDER></SPAN></TD></TR></TBODY></TABLE></TD>
+<TD class=ClassTempoOnly align=right><SPAN class=icon16ButtonOFF onmousedown="this.className='icon16ButtonDOWN';" onmouseover="this.className='icon16ButtonON';" title=Sort onclick="sort_pane.style.display = sort_pane.style.display=='none' ? '' : 'none'; &#13;&#10;                                        SearchResultSortToggleCollapseIcon.style.display = sort_pane.style.display;&#13;&#10;                                        SearchResultSortToggleExpandIcon.style.display = sort_pane.style.display=='none' ? '' : 'none';" onmouseout="this.className='icon16ButtonOFF';"><SPAN class=iconButtonOFF id=SearchResultSortToggleExpandIcon></SPAN><SPAN class=iconButtonOFF id=SearchResultSortToggleCollapseIcon style="DISPLAY: none"></SPAN>&nbsp;Multi-Field&nbsp;Sort </SPAN></TD></TR></TBODY></TABLE></TD></TR>
+<TR id=sort_pane style="DISPLAY: none">
+<TD align=right>
+<TABLE>
+<TBODY>
+<TR>
+<TD class=FilterLabel noWrap align=right>Sort By: <SPAN class=StdText id=spanMultiSortSel1><SELECT class=Text_Small id=selMultiFieldSortList1 onchange=OnMultiFieldSortListChanged(1)> <OPTION value=139>ML #</OPTION> <OPTION value=102 selected>Status</OPTION> <OPTION value=1652>Style</OPTION> <OPTION value=1365>Address</OPTION> <OPTION value=226>Zip</OPTION> <OPTION value=61>Comm</OPTION> <OPTION value=133>Map Coord</OPTION> <OPTION value=48>Bd</OPTION> <OPTION value=1603>Bt</OPTION> <OPTION value=192>Est SF</OPTION> <OPTION value=224>Yr Blt</OPTION> <OPTION value=103>LTP</OPTION> <OPTION value=100>Low LP</OPTION> <OPTION value=99>High LP</OPTION> <OPTION value=3>AMT</OPTION> <OPTION value=96>LD</OPTION> <OPTION value=182>SP</OPTION> <OPTION value=59>COE Date</OPTION><OPTION value=-1></OPTION></SELECT> </SPAN></TD>
+<TD align=left width=24>
+<TABLE cellSpacing=0 cellPadding=0 border=0>
+<TBODY>
+<TR>
+<TD><SPAN class=ascbtn_on id=btnMultiSortAsc1 title="Sort Ascending (0-9, A-Z)" onclick="ToggleAscDescButtons(btnMultiSortAsc1, btnMultiSortDesc1);" NAME="asc1"><SPAN class="iconButtonOFF search_results_sort_asc_icon"></SPAN></SPAN></TD>
+<TD><SPAN class=descbtn_off id=btnMultiSortDesc1 title="Sort Descending (Z-A, 9-0)" onclick="ToggleAscDescButtons(btnMultiSortDesc1, btnMultiSortAsc1);" NAME="desc1"><SPAN class="iconButtonOFF search_results_sort_desc_icon"></SPAN></SPAN></TD></TR></TBODY></TABLE></TD>
+<TD class=FilterLabel noWrap align=right>Then By: <SPAN class=StdText id=spanMultiSortSel2><SELECT class=Text_Small id=selMultiFieldSortList2 onchange=OnMultiFieldSortListChanged(2)> <OPTION value=139>ML #</OPTION>  <OPTION value=1652>Style</OPTION> <OPTION value=1365>Address</OPTION> <OPTION value=226 selected>Zip</OPTION> <OPTION value=61>Comm</OPTION> <OPTION value=133>Map Coord</OPTION> <OPTION value=48>Bd</OPTION> <OPTION value=1603>Bt</OPTION> <OPTION value=192>Est SF</OPTION> <OPTION value=224>Yr Blt</OPTION> <OPTION value=103>LTP</OPTION> <OPTION value=100>Low LP</OPTION> <OPTION value=99>High LP</OPTION> <OPTION value=3>AMT</OPTION> <OPTION value=96>LD</OPTION> <OPTION value=182>SP</OPTION> <OPTION value=59>COE Date</OPTION><OPTION value=-1></OPTION></SELECT> </SPAN></TD>
+<TD align=left width=24>
+<TABLE cellSpacing=0 cellPadding=0 border=0>
+<TBODY>
+<TR>
+<TD><SPAN class=ascbtn_on id=btnMultiSortAsc2 title="Sort Ascending (0-9, A-Z)" onclick="ToggleAscDescButtons(btnMultiSortAsc2, btnMultiSortDesc2);" NAME="asc2"><SPAN class="iconButtonOFF search_results_sort_asc_icon"></SPAN></SPAN></TD>
+<TD><SPAN class=descbtn_off id=btnMultiSortDesc2 title="Sort Descending (Z-A, 9-0)" onclick="ToggleAscDescButtons(btnMultiSortDesc2, btnMultiSortAsc2);" NAME="desc2"><SPAN class="iconButtonOFF search_results_sort_desc_icon"></SPAN></SPAN></TD></TR></TBODY></TABLE></TD>
+<TD class=FilterLabel noWrap align=right>Then By: <SPAN class=StdText id=spanMultiSortSel3><SELECT class=Text_Small id=selMultiFieldSortList3 onchange=OnMultiFieldSortListChanged(3)> <OPTION value=139>ML #</OPTION>  <OPTION value=1652>Style</OPTION> <OPTION value=1365>Address</OPTION>  <OPTION value=61>Comm</OPTION> <OPTION value=133>Map Coord</OPTION> <OPTION value=48>Bd</OPTION> <OPTION value=1603>Bt</OPTION> <OPTION value=192>Est SF</OPTION> <OPTION value=224>Yr Blt</OPTION> <OPTION value=103>LTP</OPTION> <OPTION value=100>Low LP</OPTION> <OPTION value=99 selected>High LP</OPTION> <OPTION value=3>AMT</OPTION> <OPTION value=96>LD</OPTION> <OPTION value=182>SP</OPTION> <OPTION value=59>COE Date</OPTION><OPTION value=-1></OPTION></SELECT> </SPAN></TD>
+<TD align=left width=24>
+<TABLE id=Table5 cellSpacing=0 cellPadding=0 border=0>
+<TBODY>
+<TR>
+<TD><SPAN class=ascbtn_on id=btnMultiSortAsc3 title="Sort Ascending (0-9, A-Z)" onclick="ToggleAscDescButtons(btnMultiSortAsc3, btnMultiSortDesc3);" NAME="asc3"><SPAN class="iconButtonOFF search_results_sort_asc_icon"></SPAN></SPAN></TD>
+<TD><SPAN class=descbtn_off id=btnMultiSortDesc3 title="Sort Descending (Z-A, 9-0)" onclick="ToggleAscDescButtons(btnMultiSortDesc3, btnMultiSortAsc3);" NAME="desc3"><SPAN class="iconButtonOFF search_results_sort_desc_icon"></SPAN></SPAN></TD></TR></TBODY></TABLE></TD>
+<TD align=right><INPUT class=btn id=Button2 onclick=SetSortColumns() type=button value="  Sort  " name=Button2> </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD id=GridContainer style="WIDTH: 100%" width="50%" colSpan=2 height="100%" oldwidth><!-- Grid -->
+<TABLE height="100%" cellSpacing=0 cellPadding=0 width="100%">
+<TBODY>
+<TR height="98%">
+<TD width="100%"><?IMPORT NAMESPACE = IRC IMPLEMENTATION = "                                                                        " /><IRC:SmartGrid id=GridControl onreadystatechange=InitGrid() style="OVERFLOW-Y: hidden; OVERFLOW-X: hidden; WIDTH: 100%; HEIGHT: 100%" name="GridControl" onError="GridError()" expando="true" QuickLink="true" onActiveContentClick="ShowActiveContent()" onQuickLinkHover="setQuickLinkContent()" onVisibleRowsChange="UpdateStatusLine();UpdateMultiFieldSort(parent.xmlSearchResults);" onColumnRequest="parent.searchGetColData(event.objColReq, this)" onDataRequest="parent.searchGetRowData(this, event.objRowsReq)" onAllSelected="AllRowsSelected()" onExpandRow="ExpandRow(event.pExpandSpan, event.iRow, event.sSysID)" onRowChecked="GridRowClicked()" onGridReady="FilterGrid()"></IRC:SmartGrid></TD></TR>
+<TR id=CritContainer style="DISPLAY: none" height="1%">
+<TD style="BORDER-RIGHT: #33478f 1px solid; PADDING-RIGHT: 8px; PADDING-LEFT: 8px; PADDING-BOTTOM: 8px; BORDER-LEFT: #33478f 1px solid; PADDING-TOP: 8px" align=middle width="100%" ?>
+<DIV id=CriteriaBlock></DIV></TD></TR>
+<TR height="1%">
+<TD class=ContentSectionFooter>
+<TABLE class=ContentSectionFooterTable cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD id=tdMapOptions style="FONT-SIZE: 8pt" width="70%"><SPAN class=ClassTempoOnly id=spanTempoOnly></SPAN><SPAN onmouseup=GridControl.stopMovingResults();UpdateGridButtons();CheckFilterMap(); class=icon16ButtonDISABLED onmousedown="this.className='icon16ButtonDOWN'; GridControl.moveResultsUp();" id=MoveLineUpBtn onmouseover="this.className='icon16ButtonON';" title="Move Listing Up" disabled onmouseout="this.className='icon16ButtonOFF'; GridControl.stopMovingResults();"><SPAN class=icon16ButtonOFF id=SearchResultMoveUpIcon></SPAN>Move Up </SPAN><SPAN onmouseup=GridControl.stopMovingResults();UpdateGridButtons();CheckFilterMap(); class=icon16ButtonDISABLED onmousedown="this.className='icon16ButtonDOWN'; GridControl.moveResultsDown();" id=MoveLineDownBtn onmouseover="this.className='icon16ButtonON';" title="Move Listing Down" disabled onmouseout="this.className='icon16ButtonOFF'; GridControl.stopMovingResults();"><SPAN class=icon16ButtonOFF id=SearchResultMoveDownIcon></SPAN>Move Down </SPAN><SPAN class=icon16ButtonOFF onmousedown="this.className='icon16ButtonDOWN';" id=RecommendBtn onmouseover="this.className='icon16ButtonON';" title=Recommend style="DISPLAY: none" onclick=ChangeSavedListingType(1) onmouseout="this.className='icon16ButtonOFF';"><SPAN class=icon16ButtonOFF id=icon_recommend></SPAN>&nbsp;Recommend </SPAN><SPAN class=icon16ButtonOFF onmousedown="this.className='icon16ButtonDOWN';" id=RejectBtn onmouseover="this.className='icon16ButtonON';" title=Reject style="DISPLAY: none" onclick=ChangeSavedListingType(4) onmouseout="this.className='icon16ButtonOFF';"><SPAN class=icon16ButtonOFF id=icon_reject></SPAN>&nbsp;Reject </SPAN><SPAN class=icon16ButtonOff onmousedown="this.className='icon16ButtonDOWN';" id=ShCrit onmouseover="this.className='icon16ButtonON';" title="Show Criteria" onclick=RenderCriteria() onmouseout="this.className='icon16ButtonOFF';"><SPAN class=icon16ButtonOFF id=SearchResultShowCritIcon></SPAN>&nbsp;Show Criteria </SPAN><SPAN class=icon16ButtonOff onmousedown="this.className='icon16ButtonDOWN';" id=HiCrit onmouseover="this.className='icon16ButtonON';" title="Hide Criteria" style="DISPLAY: none" onclick="HiCrit.style.display = CritContainer.style.display = 'none'; ShCrit.style.display = ''; GridControl.ResizeNow()" onmouseout="this.className='icon16ButtonOFF';"><SPAN class=icon16ButtonOFF id=SearchResultHideCritIcon></SPAN>&nbsp;Hide Criteria </SPAN><SPAN class=icon16ButtonOff onmousedown="this.className='icon16ButtonDOWN';" id=spanMarkViewed onmouseover="this.className='icon16ButtonON';" title="Mark as Viewed" style="DISPLAY: none" onclick=markAsRead() onmouseout="this.className='icon16ButtonOFF';"><SPAN class=icon16ButtonOFF id=icon_markviewed></SPAN>&nbsp;Mark as Viewed </SPAN><SPAN class=icon16ButtonOff onmousedown="this.className='icon16ButtonDOWN';" id=spanMarkAsNew onmouseover="this.className='icon16ButtonON';" title="Mark as New" style="DISPLAY: none" onclick=markAsUnread() onmouseout="this.className='icon16ButtonOFF';"><SPAN class=icon16ButtonOFF id=icon_marknew></SPAN>&nbsp;Mark as New </SPAN></TD>
+<TD id=tdShowMap style="DISPLAY: block; FONT-SIZE: 8pt" noWrap align=right width="30%"><SPAN class="icon16ButtonOff " onmousedown="this.className='icon16ButtonDOWN';" id=spanShowMap onmouseover="this.className='icon16ButtonON';" title="Show Map" onclick=ShowHideMap() onmouseout="this.className='icon16ButtonOFF';"><SPAN class="icon16ButtonOFF map_icon"></SPAN>&nbsp;Show Map </SPAN></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD>
+<TD id=tdMapContainer style="DISPLAY: none" width="50%">
+<TABLE height="100%" cellSpacing=0 cellPadding=0 width="100%">
+<TBODY>
+<TR vAlign=center height="100%">
+<TD id=tdMapResizeBar align=middle width=4></TD>
+<TD id=tdMap></TD></TR></TBODY></TABLE></TD></TR>
+<TR id=SearchResultTableFooterT height="1%">
+<TD colSpan=2>
+<TABLE cellSpacing=0 cellPadding=0 width="100%">
+<TBODY>
+<TR>
+<TD>
+<DIV class=ContentSectionButtonsBottom><SPAN class=iconButtonOFF onmousedown="this.className='iconButtonDOWN';" id=spanReviseSearch onmouseover="this.className='iconButtonON';" title="Revise Search" style="DISPLAY: inline" onclick="parent.Show('Criteria')" onmouseout="this.className='iconButtonOFF';"><SPAN class=iconButtonOFF id=SearchResultReviseSearchIcon></SPAN>Revise&nbsp;Search </SPAN><SPAN class=iconButtonOFF onmousedown="this.className='iconButtonDOWN';" id=spanSaveSearch onmouseover="this.className='iconButtonON';" title="Save Search" style="DISPLAY: inline" onclick=saveSearch() onmouseout="this.className='iconButtonOFF';"><SPAN class=iconButtonOFF id=SearchResultSaveSearchIcon></SPAN>Save&nbsp;Search </SPAN><SPAN class=iconButtonOFF onmousedown="this.className='iconButtonDOWN';" id=spanMapView onmouseover="this.className='iconButtonON';" title=Map style="DISPLAY: inline" onclick=parent.ShowMapView() onmouseout="this.className='iconButtonOFF';"><SPAN class=iconButtonOFF id=icon_map></SPAN>&nbsp;Map </SPAN><SPAN class=iconButtonOFF onmousedown="this.className='iconButtonDOWN';" id=spanDrivingDirectins onmouseover="this.className='iconButtonON';" title="Driving Directions" style="DISPLAY: inline" onclick=parent.ShowDirection() onmouseout="this.className='iconButtonOFF';"><SPAN class=iconButtonOFF id=icon_driving_directions></SPAN>&nbsp;Driving Directions </SPAN><SPAN class=iconButtonOFF onmousedown="this.className='iconButtonDOWN';" id=spanDownload onmouseover="this.className='iconButtonON';" title=Download style="DISPLAY: inline" onclick=parent.ShowExport(false) onmouseout="this.className='iconButtonOFF';"><SPAN class=iconButtonOFF id=SearchResultDownloadIcon></SPAN>&nbsp;Download </SPAN><SPAN class=iconButtonOFF onmousedown="this.className='iconButtonDOWN';" id=spanCreateCMA onmouseover="this.className='iconButtonON';" title="CMA Wizard" style="DISPLAY: inline" onclick=createCMA() onmouseout="this.className='iconButtonOFF';"><SPAN class=iconButtonOFF id=SearchResultCmaIcon></SPAN>&nbsp;CMA </SPAN><SPAN class=iconButtonOFF onmousedown="this.className='iconButtonDOWN';" id=spanSearchResultStatistics onmouseover="this.className='iconButtonON';" title=Statistics onclick=ShowCriteriaAndStatistics() onmouseout="this.className='iconButtonOFF';"><SPAN class=iconButtonOFF id=SearchResultStatsIcon></SPAN>&nbsp;Statistics </SPAN><SPAN class=iconButtonOFF onmousedown="this.className='iconButtonDOWN';" id=spanTransferListings onmouseover="this.className='iconButtonON';" title="Transfer Listings" style="DISPLAY: none" onclick="parent.ShowOther('/4.1.16.39/Tools/Admin/TransferListingsFS.asp')" onmouseout="this.className='iconButtonOFF';"><SPAN class=iconButtonOFF id=icon_export></SPAN>&nbsp;Transfer Listings </SPAN><SPAN class=iconButtonOFF onmousedown="this.className='iconButtonDOWN';" id=spanOneLineCma onmouseover="this.className='iconButtonON';" title="One-Line CMA" style="DISPLAY: none" onclick=parent.ShowCmaGridReport() onmouseout="this.className='iconButtonOFF';"><SPAN class=iconButtonOFF id=SearchResultOneLineCMAIcon></SPAN>&nbsp;Quick CMA </SPAN></DIV></TD>
+<TD align=right>
+<TABLE>
+<TBODY>
+<TR>
+<TD><SPAN class=iconButtonOFF onmousedown="onMouseEventButton(this, 'onmousedown')" id=spanEmailIcon onmouseover="onMouseEventButton(this, 'onmouseover')" title=Email style="DISPLAY: inline" onclick=EmailResults() onmouseout="onMouseEventButton(this, 'onmouseout')"><SPAN class=iconButtonOFF id=SearchResultEmailSearchIcon></SPAN>Email </SPAN><SPAN class=iconButtonOFF onmousedown="onMouseEventButton(this, 'onmousedown')" id=spanPrintIcon onmouseover="onMouseEventButton(this, 'onmouseover')" title=Print onclick=PrintGrid() onmouseout="onMouseEventButton(this, 'onmouseout')"><SPAN class=iconButtonOFF id=SearchResultPrintSearchIcon></SPAN>Print </SPAN></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+<TR id=SearchResultTableFooterX height="1%">
+<TD colSpan=2>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR vAlign=top height=2>
+<TD colSpan=2></TD></TR>
+<TR class=BlueBack height=15>
+<TD class=ActionPadMessage id=MsgLine align=middle colSpan=2><B>6 selected; 6 shown; 139 total</B></TD></TR>
+<TR>
+<TD class=Action id=ActionControl style="BEHAVIOR: url('/4.1.16.39/Behaviors/action.htc')" noWrap width="20%" onError="actionError()" XMLObject="g_xmlActions">
+<TABLE class=Text_Small_Blue id=tblActionHost cellSpacing=0 cellPadding=0 border=0>
+<TBODY>
+<TR>
+<TD noWrap><B id=boldActionLabel>More:</B>&nbsp;</TD>
+<TD><SELECT id=ActionOption> <OPTION selected>Export Data</OPTION> <OPTION>Export Image</OPTION> <OPTION>Save Grid</OPTION></SELECT>&nbsp;</TD>
+<TD class=GoButton id=spanGoButton style="BACKGROUND-COLOR: white" name="btnActionGo" onclickcode="tblActionHost.parentElement.GoAction()" label="Go"><A onclick=if(!this.disabled)eval(this.onClickCode) href="                                                                                                               ()" onClickCode="tblActionHost.parentElement.GoAction()"><IMG onmousedown="this.src='/4.1.16.39/Images/btnGoClick.gif'" id=btnActionGo onmouseover="this.src='/4.1.16.39/Images/btnGoHover.gif'" onmouseout="this.src='/4.1.16.39/Images/btnGo.gif'" src="                                                       " border=0></A></TD></TR></TBODY></TABLE></TD>
+<TD id=tdNavButtons align=right width="80%">
+<TABLE id=tableActionPad cellSpacing=0 cellPadding=0 border=0>
+<TBODY>
+<TR class=ActionPadIconBackground height=30 width="100%">
+<TD>
+<TABLE height="100%" cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD class=ActionPadIconBackground width=3 height="100%"></TD>
+<TD>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR id=trActionPadIcons height=10>
+<TD class=ActionPadIconContainer vAlign=bottom align=middle height="100%"><IMG id=btnCriteria onmouseover="document.all.btnCriteria.src='/4.1.16.39/Images//MLX3/ico_criteria_backHover.gif'" onclick=GoBack() onmouseout="document.all.btnCriteria.src='/4.1.16.39/Images//MLX3/ico_criteria_back.gif'" src="                                                                         "></IMG></TD>
+<TD class=ActionPadIconContainer vAlign=bottom align=middle height="100%"><IMG id=btnDisplays onmouseover="document.all.btnDisplays.src='/4.1.16.39/Images//MLX3/ico_details_forwardHover.gif'" onclick=parent.ShowDetails() onmouseout="document.all.btnDisplays.src='/4.1.16.39/Images//MLX3/ico_details_forward.gif'" src="                                                                           "></IMG></TD>
+<TD class=ActionPadIconContainer vAlign=bottom align=middle height="100%"><SPAN style="WIDTH: 20px; HEIGHT: 100%"></SPAN></TD>
+<TD class=ActionPadIconContainer vAlign=bottom align=middle height="100%"><IMG id=btnPrint onmouseover="document.all.btnPrint.src='/4.1.16.39/Images//MLX3/ico_printHover.gif'" onclick=PrintGrid() onmouseout="document.all.btnPrint.src='/4.1.16.39/Images//MLX3/ico_print.gif'" src="                                                                 "></IMG></TD>
+<TD class=ActionPadIconContainer vAlign=bottom align=middle height="100%"><IMG id=btnEmail onmouseover="document.all.btnEmail.src='/4.1.16.39/Images//MLX3/ico_emailHover.gif'" onclick=EmailResults() onmouseout="document.all.btnEmail.src='/4.1.16.39/Images//MLX3/ico_email.gif'" src="                                                                 "></IMG></TD>
+<TD class=ActionPadIconContainer vAlign=bottom align=middle height="100%"><IMG id=btnSaveSearch onmouseover="document.all.btnSaveSearch.src='/4.1.16.39/Images//MLX3/ico_saveHover.gif'" style="DISPLAY: inline" onclick=saveSearch() onmouseout="document.all.btnSaveSearch.src='/4.1.16.39/Images//MLX3/ico_save.gif'" src="                                                                "></IMG></TD>
+<TD class=ActionPadIconContainer vAlign=bottom align=middle height="100%"><IMG id=btnEditListing onmouseover="document.all.btnEditListing.src='/4.1.16.39/Images//MLX3/ico_editlistingHover.gif'" style="DISPLAY: none" onclick=EditListing() onmouseout="document.all.btnEditListing.src='/4.1.16.39/Images//MLX3/ico_editlisting.gif'" src="                                                                       "></IMG></TD>
+<TD class=ActionPadIconContainer vAlign=bottom align=middle height="100%"><IMG id=btnDirections onmouseover="document.all.btnDirections.src='/4.1.16.39/Images//MLX3/ico_directionsHover.gif'" onclick=parent.ShowDirection() onmouseout="document.all.btnDirections.src='/4.1.16.39/Images//MLX3/ico_directions.gif'" src="                                                                      "></IMG></TD>
+<TD class=ActionPadIconContainer vAlign=bottom align=middle height="100%"><IMG id=btnMapView onmouseover="document.all.btnMapView.src='/4.1.16.39/Images//MLX3/ico_mapHover.gif'" onclick=parent.ShowMapView() onmouseout="document.all.btnMapView.src='/4.1.16.39/Images//MLX3/ico_map.gif'" src="                                                               "></IMG></TD>
+<TD class=ActionPadIconContainer vAlign=bottom align=middle height="100%"><IMG id=btnCreateCma onmouseover="document.all.btnCreateCma.src='/4.1.16.39/Images//MLX3/ico_createCMAHover.gif'" onclick=createCMA() onmouseout="document.all.btnCreateCma.src='/4.1.16.39/Images//MLX3/ico_createCMA.gif'" src="                                                                     "></IMG></TD>
+<TD class=ActionPadIconContainer vAlign=bottom align=middle height="100%"><IMG id=btnCharts onmouseover="document.all.btnCharts.src='/4.1.16.39/Images//MLX3/ico_chartsHover.gif'" style="DISPLAY: none" onclick="parent.ShowChartDialog(parent.xmlVisibleRows, null)" onmouseout="document.all.btnCharts.src='/4.1.16.39/Images//MLX3/ico_charts.gif'" src="                                                                  "></IMG></TD>
+<TD class=ActionPadIconContainer vAlign=bottom align=middle height="100%"><IMG id=btnStatistics onmouseover="document.all.btnStatistics.src='/4.1.16.39/Images/btnStatisticsHover.gif'" onclick=ShowCriteriaAndStatistics(); onmouseout="document.all.btnStatistics.src='/4.1.16.39/Images/btnStatistics.gif'" src="                                                               "></IMG></TD></TR>
+<TR id=trActionPadLabels height=8>
+<TD class=ActionPadLabelContainer vAlign=top align=middle height="100%">
+<TABLE class=Text_Small id=tblbtnCriteria onmouseover="document.all.btnCriteria.src='/4.1.16.39/Images//MLX3/ico_criteria_backHover.gif'" onclick=GoBack() onmouseout="document.all.btnCriteria.src='/4.1.16.39/Images//MLX3/ico_criteria_back.gif'" cellSpacing=0 cellPadding=0 border=0>
+<TBODY>
+<TR>
+<TD>&nbsp;</TD>
+<TD class=ActionPadLabel id=btnCriteriaLabel vAlign=top noWrap align=middle>Criteria</TD></TR></TBODY></TABLE></TD>
+<TD class=ActionPadLabelContainer vAlign=top align=middle height="100%">
+<TABLE class=Text_Small id=tblbtnDisplays onmouseover="document.all.btnDisplays.src='/4.1.16.39/Images//MLX3/ico_details_forwardHover.gif'" onclick=parent.ShowDetails() onmouseout="document.all.btnDisplays.src='/4.1.16.39/Images//MLX3/ico_details_forward.gif'" cellSpacing=0 cellPadding=0 border=0>
+<TBODY>
+<TR>
+<TD>&nbsp;</TD>
+<TD class=ActionPadLabel id=btnDisplaysLabel vAlign=top noWrap align=middle>Details</TD></TR></TBODY></TABLE></TD>
+<TD class=ActionPadLabelContainer vAlign=top align=middle height="100%"><SPAN style="WIDTH: 20px; HEIGHT: 100%"></SPAN></TD>
+<TD class=ActionPadLabelContainer vAlign=top align=middle height="100%">
+<TABLE class=Text_Small id=tblbtnPrint onmouseover="document.all.btnPrint.src='/4.1.16.39/Images//MLX3/ico_printHover.gif'" onclick=PrintGrid() onmouseout="document.all.btnPrint.src='/4.1.16.39/Images//MLX3/ico_print.gif'" cellSpacing=0 cellPadding=0 border=0>
+<TBODY>
+<TR>
+<TD>&nbsp;</TD>
+<TD class=ActionPadLabel id=btnPrintLabel vAlign=top noWrap align=middle>Print</TD></TR></TBODY></TABLE></TD>
+<TD class=ActionPadLabelContainer vAlign=top align=middle height="100%">
+<TABLE class=Text_Small id=tblbtnEmail onmouseover="document.all.btnEmail.src='/4.1.16.39/Images//MLX3/ico_emailHover.gif'" onclick=EmailResults() onmouseout="document.all.btnEmail.src='/4.1.16.39/Images//MLX3/ico_email.gif'" cellSpacing=0 cellPadding=0 border=0>
+<TBODY>
+<TR>
+<TD>&nbsp;</TD>
+<TD class=ActionPadLabel id=btnEmailLabel vAlign=top noWrap align=middle>Email</TD></TR></TBODY></TABLE></TD>
+<TD class=ActionPadLabelContainer vAlign=top align=middle height="100%">
+<TABLE class=Text_Small id=tblbtnSaveSearch onmouseover="document.all.btnSaveSearch.src='/4.1.16.39/Images//MLX3/ico_saveHover.gif'" style="DISPLAY: inline" onclick=saveSearch() onmouseout="document.all.btnSaveSearch.src='/4.1.16.39/Images//MLX3/ico_save.gif'" cellSpacing=0 cellPadding=0 border=0>
+<TBODY>
+<TR>
+<TD>&nbsp;</TD>
+<TD class=ActionPadLabel id=btnSaveSearchLabel vAlign=top noWrap align=middle>Save Search</TD></TR></TBODY></TABLE></TD>
+<TD class=ActionPadLabelContainer vAlign=top align=middle height="100%">
+<TABLE class=Text_Small id=tblbtnEditListing onmouseover="document.all.btnEditListing.src='/4.1.16.39/Images//MLX3/ico_editlistingHover.gif'" style="DISPLAY: none" onclick=EditListing() onmouseout="document.all.btnEditListing.src='/4.1.16.39/Images//MLX3/ico_editlisting.gif'" cellSpacing=0 cellPadding=0 border=0>
+<TBODY>
+<TR>
+<TD>&nbsp;</TD>
+<TD class=ActionPadLabel id=btnEditListingLabel vAlign=top noWrap align=middle>Edit</TD></TR></TBODY></TABLE></TD>
+<TD class=ActionPadLabelContainer vAlign=top align=middle height="100%">
+<TABLE class=Text_Small id=tblbtnDirections onmouseover="document.all.btnDirections.src='/4.1.16.39/Images//MLX3/ico_directionsHover.gif'" onclick=parent.ShowDirection() onmouseout="document.all.btnDirections.src='/4.1.16.39/Images//MLX3/ico_directions.gif'" cellSpacing=0 cellPadding=0 border=0>
+<TBODY>
+<TR>
+<TD>&nbsp;</TD>
+<TD class=ActionPadLabel id=btnDirectionsLabel vAlign=top noWrap align=middle>Directions</TD></TR></TBODY></TABLE></TD>
+<TD class=ActionPadLabelContainer vAlign=top align=middle height="100%">
+<TABLE class=Text_Small id=tblbtnMapView onmouseover="document.all.btnMapView.src='/4.1.16.39/Images//MLX3/ico_mapHover.gif'" onclick=parent.ShowMapView() onmouseout="document.all.btnMapView.src='/4.1.16.39/Images//MLX3/ico_map.gif'" cellSpacing=0 cellPadding=0 border=0>
+<TBODY>
+<TR>
+<TD>&nbsp;</TD>
+<TD class=ActionPadLabel id=btnMapViewLabel vAlign=top noWrap align=middle>Map View</TD></TR></TBODY></TABLE></TD>
+<TD class=ActionPadLabelContainer vAlign=top align=middle height="100%">
+<TABLE class=Text_Small id=tblbtnCreateCma onmouseover="document.all.btnCreateCma.src='/4.1.16.39/Images//MLX3/ico_createCMAHover.gif'" onclick=createCMA() onmouseout="document.all.btnCreateCma.src='/4.1.16.39/Images//MLX3/ico_createCMA.gif'" cellSpacing=0 cellPadding=0 border=0>
+<TBODY>
+<TR>
+<TD>&nbsp;</TD>
+<TD class=ActionPadLabel id=btnCreateCmaLabel vAlign=top noWrap align=middle>CMA</TD></TR></TBODY></TABLE></TD>
+<TD class=ActionPadLabelContainer vAlign=top align=middle height="100%">
+<TABLE class=Text_Small id=tblbtnCharts onmouseover="document.all.btnCharts.src='/4.1.16.39/Images//MLX3/ico_chartsHover.gif'" style="DISPLAY: none" onclick="parent.ShowChartDialog(parent.xmlVisibleRows, null)" onmouseout="document.all.btnCharts.src='/4.1.16.39/Images//MLX3/ico_charts.gif'" cellSpacing=0 cellPadding=0 border=0>
+<TBODY>
+<TR>
+<TD>&nbsp;</TD>
+<TD class=ActionPadLabel id=btnChartsLabel vAlign=top noWrap align=middle>Charts</TD></TR></TBODY></TABLE></TD>
+<TD class=ActionPadLabelContainer vAlign=top align=middle height="100%">
+<TABLE class=Text_Small id=tblbtnStatistics onmouseover="document.all.btnStatistics.src='/4.1.16.39/Images/btnStatisticsHover.gif'" onclick=ShowCriteriaAndStatistics(); onmouseout="document.all.btnStatistics.src='/4.1.16.39/Images/btnStatistics.gif'" cellSpacing=0 cellPadding=0 border=0>
+<TBODY>
+<TR>
+<TD>&nbsp;</TD>
+<TD class=ActionPadLabel id=btnStatisticsLabel vAlign=top noWrap align=middle>Statistics</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD>
+<TD class=ActionPadIconBackground width=3 height="100%"></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE><SPAN id=spanResizeBar style="DISPLAY: none; BACKGROUND: silver; LEFT: 0px; BORDER-LEFT: gray 1px solid; WIDTH: 2px; POSITION: absolute; TOP: 0px; HEIGHT: 0px"></SPAN>
+
+ 
