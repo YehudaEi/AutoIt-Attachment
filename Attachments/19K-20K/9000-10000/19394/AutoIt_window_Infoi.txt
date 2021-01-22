@@ -1,0 +1,26 @@
+Basic Window Info
+-----------------
+
+Title:  Windows Internet Explorer
+Class: #32770
+
+Basic Control Info
+----------------- 
+
+Class: Button
+Instance: 1
+
+Control
+-------
+Class			Button
+Instance		1
+ClassnameNN		Button1
+ID			1
+Text			OK
+Position		71, 60
+Size			75, 23
+ControlClick Coords	33, 15
+Style			0x50030001
+ExStyle			0x00000004
+Handle			0x07290BBC
+
