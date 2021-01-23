@@ -1,0 +1,186 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>Function _IsPressed</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <link href="../css/default.css" rel="stylesheet" type="text/css">
+
+<meta name="NetsparkQuiltingResult" total-length="6449" removed="0" rules-found="w3123,w2341,w5189,w2707,w6774,w3704" />
+</head>
+
+<body>
+<h1>Function Reference</h1>
+<font size="+1">_IsPressed</font>
+<hr size="2">
+<p>Check if key has been pressed<br></p>
+
+<p class="codeheader">
+#Include &lt;Misc.au3&gt;<br>
+_IsPressed ( $s_hexKey [, $v_dll = 'user32.dll' ] )<br>
+</p>
+<p>&nbsp;</p>
+
+<p><b>Parameters</b></p>
+<table border="1" width="100%" cellspacing="0" cellpadding="3" bordercolor="#C0C0C0">
+  <tr>
+    <td width="15%">$s_hexKey</td>
+    <td width="85%">key to check for</td>
+  </tr>
+  <tr>
+   <td>$v_dll</td>
+   <td>Optional: Handle to dll or default to user32.dll</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+
+<p><b>Return Value</b></p>
+<table width="100%">
+  <tr>
+    <td width="10%" valign="top">Success:</td>
+    <td width="90%">Returns 1 if true.</td>
+  </tr>
+  <tr>
+    <td valign="top">Failure:</td>
+    <td>Returns 0 if false.</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+
+<p><b>Remarks</b></p>
+&nbsp;&nbsp;01 Left mouse button<br>
+&nbsp;&nbsp;02 Right mouse button<br>
+&nbsp;&nbsp;04 Middle mouse button (three-button mouse)<br>
+&nbsp;&nbsp;05 Windows 2000/XP: X1 mouse button<br>
+&nbsp;&nbsp;06 Windows 2000/XP: X2 mouse button<br>
+&nbsp;&nbsp;08 BACKSPACE key<br>
+&nbsp;&nbsp;09 TAB key<br>
+&nbsp;&nbsp;0C CLEAR key<br>
+&nbsp;&nbsp;0D ENTER key<br>
+&nbsp;&nbsp;10 SHIFT key<br>
+&nbsp;&nbsp;11 CTRL key<br>
+&nbsp;&nbsp;12 ALT key<br>
+&nbsp;&nbsp;13 PAUSE key<br>
+&nbsp;&nbsp;14 CAPS LOCK key<br>
+&nbsp;&nbsp;1B ESC key<br>
+&nbsp;&nbsp;20 SPACEBAR<br>
+&nbsp;&nbsp;21 PAGE UP key<br>
+&nbsp;&nbsp;22 PAGE DOWN key<br>
+&nbsp;&nbsp;23 END key<br>
+&nbsp;&nbsp;24 HOME key<br>
+&nbsp;&nbsp;25 LEFT ARROW key<br>
+&nbsp;&nbsp;26 UP ARROW key<br>
+&nbsp;&nbsp;27 RIGHT ARROW key<br>
+&nbsp;&nbsp;28 DOWN ARROW key<br>
+&nbsp;&nbsp;29 SELECT key<br>
+&nbsp;&nbsp;2A PRINT key<br>
+&nbsp;&nbsp;2B EXECUTE key<br>
+&nbsp;&nbsp;2C PRINT SCREEN key<br>
+&nbsp;&nbsp;2D INS key<br>
+&nbsp;&nbsp;2E DEL key<br>
+&nbsp;&nbsp;30 0 key<br>
+&nbsp;&nbsp;31 1 key<br>
+&nbsp;&nbsp;32 2 key<br>
+&nbsp;&nbsp;33 3 key<br>
+&nbsp;&nbsp;34 4 key<br>
+&nbsp;&nbsp;35 5 key<br>
+&nbsp;&nbsp;36 6 key<br>
+&nbsp;&nbsp;37 7 key<br>
+&nbsp;&nbsp;38 8 key<br>
+&nbsp;&nbsp;39 9 key<br>
+&nbsp;&nbsp;41 A key<br>
+&nbsp;&nbsp;42 B key<br>
+&nbsp;&nbsp;43 C key<br>
+&nbsp;&nbsp;44 D key<br>
+&nbsp;&nbsp;45 E key<br>
+&nbsp;&nbsp;46 F key<br>
+&nbsp;&nbsp;47 G key<br>
+&nbsp;&nbsp;48 H key<br>
+&nbsp;&nbsp;49 I key<br>
+&nbsp;&nbsp;4A J key<br>
+&nbsp;&nbsp;4B K key<br>
+&nbsp;&nbsp;4C L key<br>
+&nbsp;&nbsp;4D M key<br>
+&nbsp;&nbsp;4E N key<br>
+&nbsp;&nbsp;4F O key<br>
+&nbsp;&nbsp;50 P key<br>
+&nbsp;&nbsp;51 Q key<br>
+&nbsp;&nbsp;52 R key<br>
+&nbsp;&nbsp;53 S key<br>
+&nbsp;&nbsp;54 T key<br>
+&nbsp;&nbsp;55 U key<br>
+&nbsp;&nbsp;56 V key<br>
+&nbsp;&nbsp;57 W key<br>
+&nbsp;&nbsp;58 X key<br>
+&nbsp;&nbsp;59 Y key<br>
+&nbsp;&nbsp;5A Z key<br>
+&nbsp;&nbsp;5B Left Windows key<br>
+&nbsp;&nbsp;5C Right Windows key<br>
+&nbsp;&nbsp;60 Numeric keypad 0 key<br>
+&nbsp;&nbsp;61 Numeric keypad 1 key<br>
+&nbsp;&nbsp;62 Numeric keypad 2 key<br>
+&nbsp;&nbsp;63 Numeric keypad 3 key<br>
+&nbsp;&nbsp;64 Numeric keypad 4 key<br>
+&nbsp;&nbsp;65 Numeric keypad 5 key<br>
+&nbsp;&nbsp;66 Numeric keypad 6 key<br>
+&nbsp;&nbsp;67 Numeric keypad 7 key<br>
+&nbsp;&nbsp;68 Numeric keypad 8 key<br>
+&nbsp;&nbsp;69 Numeric keypad 9 key<br>
+&nbsp;&nbsp;6A Multiply key<br>
+&nbsp;&nbsp;6B Add key<br>
+&nbsp;&nbsp;6C Separator key<br>
+&nbsp;&nbsp;6D Subtract key<br>
+&nbsp;&nbsp;6E Decimal key<br>
+&nbsp;&nbsp;6F Divide key<br>
+&nbsp;&nbsp;70 F1 key<br>
+&nbsp;&nbsp;71 F2 key<br>
+&nbsp;&nbsp;72 F3 key<br>
+&nbsp;&nbsp;73 F4 key<br>
+&nbsp;&nbsp;74 F5 key<br>
+&nbsp;&nbsp;75 F6 key<br>
+&nbsp;&nbsp;76 F7 key<br>
+&nbsp;&nbsp;77 F8 key<br>
+&nbsp;&nbsp;78 F9 key<br>
+&nbsp;&nbsp;79 F10 key<br>
+&nbsp;&nbsp;7A F11 key<br>
+&nbsp;&nbsp;7B F12 key<br>
+&nbsp;&nbsp;7C-7F F13 key - F16 key<br>
+&nbsp;&nbsp;80H-87H F17 key - F24 key<br>
+&nbsp;&nbsp;90 NUM LOCK key<br>
+&nbsp;&nbsp;91 SCROLL LOCK key<br>
+&nbsp;&nbsp;A0 Left SHIFT key<br>
+&nbsp;&nbsp;A1 Right SHIFT key<br>
+&nbsp;&nbsp;A2 Left CONTROL key<br>
+&nbsp;&nbsp;A3 Right CONTROL key<br>
+&nbsp;&nbsp;A4 Left MENU key<br>
+&nbsp;&nbsp;A5 Right MENU key<br>
+<br>
+<p>&nbsp;</p>
+
+<p><b>Related</b></p>
+None.
+<p>&nbsp;</p>
+
+<p><b>Example</b></p>
+<p class="codebox">
+<br>
+<span><span class="S11">#include</span><span class="S0"> </span><span class="S7">&lt;Misc.au3&gt;</span><br>
+<br>
+<span class="S9">$dll</span><span class="S0"> </span><span class="S8">=</span><span class="S0"> </span><span class="S4">DllOpen</span><span class="S8">(</span><span class="S7">"user32.dll"</span><span class="S8">)</span><br>
+<br>
+<span class="S5">While</span><span class="S0"> </span><span class="S3">1</span><br>
+<span class="S0">&nbsp; &nbsp; </span><span class="S4">Sleep</span><span class="S0"> </span><span class="S8">(</span><span class="S0"> </span><span class="S3">250</span><span class="S0"> </span><span class="S8">)</span><br>
+<span class="S0">&nbsp; &nbsp; </span><span class="S5">If</span><span class="S0"> </span><span class="S15">_IsPressed</span><span class="S8">(</span><span class="S7">"23"</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$dll</span><span class="S8">)</span><span class="S0"> </span><span class="S5">Then</span><br>
+<span class="S0">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="S4">MsgBox</span><span class="S8">(</span><span class="S3">0</span><span class="S8">,</span><span class="S7">"_IsPressed"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"End Key Pressed"</span><span class="S8">)</span><br>
+<span class="S0">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="S5">ExitLoop</span><br>
+<span class="S0">&nbsp; &nbsp; </span><span class="S5">EndIf</span><br>
+<span class="S5">WEnd</span><br>
+<span class="S4">DllClose</span><span class="S8">(</span><span class="S9">$dll</span><span class="S8">)</span></span><br>
+<br><OBJECT id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11" width=58 height=57>
+<PARAM name="Command" value="ShortCut">
+<PARAM name="Button" value="Text:Open this Script">
+<PARAM name="Item1" value=",Examples\HelpFile\_IsPressed.au3,">
+</OBJECT>
+<p>&nbsp;</p>
+
+</body>
+</html>
