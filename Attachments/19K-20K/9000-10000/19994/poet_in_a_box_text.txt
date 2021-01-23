@@ -1,0 +1,3894 @@
+; <AUT2EXE VERSION: 3.2.2.0>
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-START: C:\Documents and Settings\Owner\Desktop\Poet In A Box Demo.txt>
+; ----------------------------------------------------------------------------
+
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-START: C:\Program Files\AutoIt3\Include\GuiConstants.au3>
+; ----------------------------------------------------------------------------
+
+; Include Version:3.1.1.107  (2/04/2006)
+
+; ------------------------------------------------------------------------------
+;
+; AutoIt Version: 3.1.1 (beta)
+; Language:       English
+; Description:    Stub file providing compatibility between the new
+;						library design and the old.
+;
+; ------------------------------------------------------------------------------
+
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-START: C:\Program Files\AutoIt3\Include\GUIDefaultConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ------------------------------------------------------------------------------
+;
+; AutoIt Version: 3.1.1 (beta)
+; Language:       English
+; Description:    AutoIt-GUI default control styles.
+;
+; ------------------------------------------------------------------------------
+
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-START: C:\Program Files\AutoIt3\Include\WindowsConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ------------------------------------------------------------------------------
+;
+; AutoIt Version: 3.1.1 (beta)
+; Language:       English
+; Description:    Windows constants.
+;
+; ------------------------------------------------------------------------------
+
+; Window Styles
+Global Const $WS_TILED				= 0
+Global Const $WS_OVERLAPPED 		= 0
+Global Const $WS_MAXIMIZEBOX		= 0x00010000
+Global Const $WS_MINIMIZEBOX		= 0x00020000
+Global Const $WS_TABSTOP			= 0x00010000
+Global Const $WS_GROUP				= 0x00020000
+Global Const $WS_SIZEBOX			= 0x00040000
+Global Const $WS_THICKFRAME			= 0x00040000
+Global Const $WS_SYSMENU			= 0x00080000
+Global Const $WS_HSCROLL			= 0x00100000
+Global Const $WS_VSCROLL			= 0x00200000
+Global Const $WS_DLGFRAME 			= 0x00400000
+Global Const $WS_BORDER				= 0x00800000
+Global Const $WS_CAPTION			= 0x00C00000
+Global Const $WS_OVERLAPPEDWINDOW	= 0x00CF0000
+Global Const $WS_TILEDWINDOW		= 0x00CF0000
+Global Const $WS_MAXIMIZE			= 0x01000000
+Global Const $WS_CLIPCHILDREN		= 0x02000000
+Global Const $WS_CLIPSIBLINGS		= 0x04000000
+Global Const $WS_DISABLED 			= 0x08000000
+Global Const $WS_VISIBLE			= 0x10000000
+Global Const $WS_MINIMIZE			= 0x20000000
+Global Const $WS_CHILD				= 0x40000000
+Global Const $WS_POPUP				= 0x80000000
+Global Const $WS_POPUPWINDOW		= 0x80880000
+
+; Dialog Styles
+Global Const $DS_MODALFRAME 		= 0x80
+Global Const $DS_SETFOREGROUND		= 0x00000200
+Global Const $DS_CONTEXTHELP		= 0x00002000
+
+; Window Extended Styles
+Global Const $WS_EX_ACCEPTFILES			= 0x00000010
+Global Const $WS_EX_MDICHILD			= 0x00000040
+Global Const $WS_EX_APPWINDOW			= 0x00040000
+Global Const $WS_EX_CLIENTEDGE			= 0x00000200
+Global Const $WS_EX_CONTEXTHELP			= 0x00000400
+Global Const $WS_EX_DLGMODALFRAME 		= 0x00000001
+Global Const $WS_EX_LEFTSCROLLBAR 		= 0x00004000
+Global Const $WS_EX_OVERLAPPEDWINDOW	= 0x00000300
+Global Const $WS_EX_RIGHT				= 0x00001000
+Global Const $WS_EX_STATICEDGE			= 0x00020000
+Global Const $WS_EX_TOOLWINDOW			= 0x00000080
+Global Const $WS_EX_TOPMOST				= 0x00000008
+Global Const $WS_EX_TRANSPARENT			= 0x00000020
+Global Const $WS_EX_WINDOWEDGE			= 0x00000100
+Global Const $WS_EX_LAYERED				= 0x00080000
+
+; Messages
+Global Const $WM_SIZE = 0x05
+Global Const $WM_SIZING = 0x0214
+Global Const $WM_USER = 0X400
+Global Const $WM_GETTEXTLENGTH = 0x000E
+Global Const $WM_GETTEXT = 0x000D
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-END: C:\Program Files\AutoIt3\Include\WindowsConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-START: C:\Program Files\AutoIt3\Include\AVIConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ------------------------------------------------------------------------------
+;
+; AutoIt Version: 3.1.1 (beta)
+; Language:       English
+; Description:    AVI Constants.
+;
+; ------------------------------------------------------------------------------
+
+; Styles
+Global Const $ACS_CENTER			= 1
+Global Const $ACS_TRANSPARENT		= 2
+Global Const $ACS_AUTOPLAY			= 4
+Global Const $ACS_TIMER				= 8
+Global Const $ACS_NONTRANSPARENT	= 16
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-END: C:\Program Files\AutoIt3\Include\AVIConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-START: C:\Program Files\AutoIt3\Include\ComboConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ------------------------------------------------------------------------------
+;
+; AutoIt Version: 3.1.1 (beta)
+; Language:       English
+; Description:    ComboBox constants.
+;
+; ------------------------------------------------------------------------------
+; Combo
+Global Const $CBS_SIMPLE			= 0x0001
+Global Const $CBS_DROPDOWN			= 0x0002
+Global Const $CBS_DROPDOWNLIST		= 0x0003
+Global Const $CBS_AUTOHSCROLL		= 0x0040
+Global Const $CBS_OEMCONVERT		= 0x0080
+Global Const $CBS_SORT				= 0x0100
+Global Const $CBS_NOINTEGRALHEIGHT	= 0x0400
+Global Const $CBS_DISABLENOSCROLL	= 0x0800
+Global Const $CBS_UPPERCASE			= 0x2000
+Global Const $CBS_LOWERCASE			= 0x4000
+
+; Error checking
+Global Const $CB_ERR = -1
+Global Const $CB_ERRATTRIBUTE = -3
+Global Const $CB_ERRREQUIRED = -4
+Global Const $CB_ERRSPACE = -2
+Global Const $CB_OKAY = 0
+
+; Messages to send to combobox
+Global Const $CB_ADDSTRING = 0x143
+Global Const $CB_DELETESTRING = 0x144
+Global Const $CB_DIR = 0x145
+Global Const $CB_FINDSTRING = 0x14C
+Global Const $CB_FINDSTRINGEXACT = 0x158
+Global Const $CB_GETCOUNT = 0x146
+Global Const $CB_GETCURSEL = 0x147
+Global Const $CB_GETDROPPEDCONTROLRECT = 0x152
+Global Const $CB_GETDROPPEDSTATE = 0x157
+Global Const $CB_GETDROPPEDWIDTH = 0X15f
+Global Const $CB_GETEDITSEL = 0x140
+Global Const $CB_GETEXTENDEDUI = 0x156
+Global Const $CB_GETHORIZONTALEXTENT = 0x15d
+Global Const $CB_GETITEMDATA = 0x150
+Global Const $CB_GETITEMHEIGHT = 0x154
+Global Const $CB_GETLBTEXT = 0x148
+Global Const $CB_GETLBTEXTLEN = 0x149
+Global Const $CB_GETLOCALE = 0x15A
+Global Const $CB_GETMINVISIBLE = 0x1702
+Global Const $CB_GETTOPINDEX = 0x15b
+Global Const $CB_INITSTORAGE = 0x161
+Global Const $CB_LIMITTEXT = 0x141
+Global Const $CB_RESETCONTENT = 0x14B
+Global Const $CB_INSERTSTRING = 0x14A
+Global Const $CB_SELECTSTRING = 0x14D
+Global Const $CB_SETCURSEL = 0x14E
+Global Const $CB_SETDROPPEDWIDTH = 0x160
+Global Const $CB_SETEDITSEL = 0x142
+Global Const $CB_SETEXTENDEDUI = 0x155
+Global Const $CB_SETHORIZONTALEXTENT = 0x15e
+Global Const $CB_SETITEMDATA = 0x151
+Global Const $CB_SETITEMHEIGHT = 0x153
+Global Const $CB_SETLOCALE = 0x15
+Global Const $CB_SETMINVISIBLE = 0x1701
+Global Const $CB_SETTOPINDEX = 0x15c
+Global Const $CB_SHOWDROPDOWN = 0x14F
+
+; attributes
+Global Const $CB_DDL_ARCHIVE = 0x20
+Global Const $CB_DDL_DIRECTORY = 0x10
+Global Const $CB_DDL_DRIVES = 0x4000
+Global Const $CB_DDL_EXCLUSIVE = 0x8000
+Global Const $CB_DDL_HIDDEN = 0x2
+Global Const $CB_DDL_READONLY = 0x1
+Global Const $CB_DDL_READWRITE = 0x0
+Global Const $CB_DDL_SYSTEM = 0x4
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-END: C:\Program Files\AutoIt3\Include\ComboConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-START: C:\Program Files\AutoIt3\Include\DateTimeConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ------------------------------------------------------------------------------
+;
+; AutoIt Version: 3.1.1 (beta)
+; Language:       English
+; Description:    DateTime Control Constants.
+;
+; ------------------------------------------------------------------------------
+
+; Date
+Global Const $DTS_SHORTDATEFORMAT	= 0
+Global Const $DTS_UPDOWN			= 1
+Global Const $DTS_SHOWNONE			= 2
+Global Const $DTS_LONGDATEFORMAT	= 4
+Global Const $DTS_TIMEFORMAT		= 9
+Global Const $DTS_RIGHTALIGN		= 32
+
+; MonthCal
+Global Const $MCS_NOTODAY			= 16
+Global Const $MCS_NOTODAYCIRCLE		= 8
+Global Const $MCS_WEEKNUMBERS		= 4
+
+Global Const $MCM_FIRST = 0x1000
+Global Const $MCM_GETCOLOR = ($MCM_FIRST + 11)
+Global Const $MCM_GETFIRSTDAYOFWEEK = ($MCM_FIRST + 16)
+Global Const $MCM_GETMAXSELCOUNT = ($MCM_FIRST + 3)
+Global Const $MCM_GETMAXTODAYWIDTH = ($MCM_FIRST + 21)
+Global Const $MCM_GETMINREQRECT = ($MCM_FIRST + 9)
+Global Const $MCM_GETMONTHDELTA = ($MCM_FIRST + 19)
+Global Const $MCS_MULTISELECT = 0x2
+Global Const $MCM_SETCOLOR = ($MCM_FIRST + 10)
+Global Const $MCM_SETFIRSTDAYOFWEEK = ($MCM_FIRST + 15)
+Global Const $MCM_SETMAXSELCOUNT = ($MCM_FIRST + 4)
+Global Const $MCM_SETMONTHDELTA = ($MCM_FIRST + 20)
+
+Global Const $MCSC_BACKGROUND = 0
+Global Const $MCSC_MONTHBK = 4
+Global Const $MCSC_TEXT = 1
+Global Const $MCSC_TITLEBK = 2
+Global Const $MCSC_TITLETEXT = 3
+Global Const $MCSC_TRAILINGTEXT = 5
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-END: C:\Program Files\AutoIt3\Include\DateTimeConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-START: C:\Program Files\AutoIt3\Include\EditConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ------------------------------------------------------------------------------
+;
+; AutoIt Version: 3.1.1 (beta)
+; Language:       English
+; Description:    Edit Constants.
+;
+; ------------------------------------------------------------------------------
+
+; Styles
+Global Const $ES_LEFT				= 0
+Global Const $ES_CENTER				= 1
+Global Const $ES_RIGHT				= 2
+Global Const $ES_MULTILINE			= 4
+Global Const $ES_UPPERCASE			= 8
+Global Const $ES_LOWERCASE			= 16
+Global Const $ES_PASSWORD			= 32
+Global Const $ES_AUTOVSCROLL		= 64
+Global Const $ES_AUTOHSCROLL		= 128
+Global Const $ES_NOHIDESEL			= 256
+Global Const $ES_OEMCONVERT			= 1024
+Global Const $ES_READONLY			= 2048
+Global Const $ES_WANTRETURN			= 4096
+Global Const $ES_NUMBER				= 8192
+;Global Const $ES_DISABLENOSCROLL = 8192
+;Global Const $ES_SUNKEN = 16384
+;Global Const $ES_VERTICAL = 4194304
+;Global Const $ES_SELECTIONBAR = 16777216
+
+; Error checking
+Global Const $EC_ERR = -1
+
+; Messages to send to edit control
+Global Const $ECM_FIRST = 0X1500
+Global Const $EM_CANUNDO = 0xC6
+Global Const $EM_EMPTYUNDOBUFFER = 0xCD
+Global Const $EM_GETFIRSTVISIBLELINE = 0xCE
+Global Const $EM_GETLINE = 0xC4
+Global Const $EM_GETLINECOUNT = 0xBA
+Global Const $EM_GETMODIFY = 0xB8
+Global Const $EM_GETRECT = 0xB2
+Global Const $EM_GETSEL = 0xB0
+Global Const $EM_LINEFROMCHAR = 0xC9
+Global Const $EM_LINEINDEX = 0xBB
+Global Const $EM_LINELENGTH = 0xC1
+Global Const $EM_LINESCROLL = 0xB6
+Global Const $EM_REPLACESEL = 0xC2
+Global Const $EM_SCROLL = 0xB5
+Global Const $EM_SCROLLCARET = 0x00B7
+Global Const $EM_SETMODIFY = 0xB9
+Global Const $EM_SETSEL = 0xB1
+Global Const $EM_UNDO = 0xC7
+Global Const $EM_SETREADONLY = 0x00CF
+Global Const $EM_SETTABSTOPS = 0x00CB
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-END: C:\Program Files\AutoIt3\Include\EditConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-START: C:\Program Files\AutoIt3\Include\StaticConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ------------------------------------------------------------------------------
+;
+; AutoIt Version: 3.1.1 (beta)
+; Language:       English
+; Description:    Static (label, pic, icon) Constants.
+;
+; ------------------------------------------------------------------------------
+
+; Label/Pic/Icon
+Global Const $SS_LEFT			= 0
+Global Const $SS_CENTER			= 1
+Global Const $SS_RIGHT			= 2
+Global Const $SS_ICON			= 3
+Global Const $SS_BLACKRECT		= 4
+Global Const $SS_GRAYRECT		= 5
+Global Const $SS_WHITERECT		= 6
+Global Const $SS_BLACKFRAME		= 7
+Global Const $SS_GRAYFRAME		= 8
+Global Const $SS_WHITEFRAME		= 9
+Global Const $SS_SIMPLE			= 11
+Global Const $SS_LEFTNOWORDWRAP	= 12
+Global Const $SS_BITMAP			= 15
+Global Const $SS_ETCHEDHORZ		= 16
+Global Const $SS_ETCHEDVERT		= 17
+Global Const $SS_ETCHEDFRAME	= 18
+Global Const $SS_NOPREFIX		= 0x0080
+Global Const $SS_NOTIFY			= 0x0100
+Global Const $SS_CENTERIMAGE	= 0x0200
+Global Const $SS_RIGHTJUST		= 0x0400
+Global Const $SS_SUNKEN			= 0x1000
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-END: C:\Program Files\AutoIt3\Include\StaticConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-START: C:\Program Files\AutoIt3\Include\ListBoxConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ------------------------------------------------------------------------------
+;
+; AutoIt Version: 3.1.1 (beta)
+; Language:       English
+; Description:    ListBox Constants.
+;
+; ------------------------------------------------------------------------------
+
+; Styles
+Global Const $LBS_NOTIFY			= 0x0001
+Global Const $LBS_SORT				= 0x0002
+Global Const $LBS_USETABSTOPS		= 0x0080
+Global Const $LBS_NOINTEGRALHEIGHT	= 0x0100
+Global Const $LBS_DISABLENOSCROLL	= 0x1000
+Global Const $LBS_NOSEL				= 0x4000
+Global Const $LBS_STANDARD			= 0xA00003
+
+; Errors
+Global Const $LB_ERR = -1
+Global Const $LB_ERRATTRIBUTE = -3
+Global Const $LB_ERRREQUIRED = -4
+Global Const $LB_ERRSPACE = -2
+
+; Messages to send to listbox
+Global Const $LB_ADDSTRING = 0x180
+Global Const $LB_DELETESTRING = 0x182
+Global Const $LB_DIR = 0x18D
+Global Const $LB_FINDSTRING = 0x18F
+Global Const $LB_FINDSTRINGEXACT = 0x1A2
+Global Const $LB_GETANCHORINDEX = 0x019D
+Global Const $LB_GETCARETINDEX = 0x019F
+Global Const $LB_GETCOUNT = 0x18B
+Global Const $LB_GETCURSEL = 0x188
+Global Const $LB_GETHORIZONTALEXTENT = 0x193
+Global Const $LB_GETITEMRECT = 0x198
+Global Const $LB_GETLISTBOXINFO = 0x01B2
+Global Const $LB_GETLOCALE = 0x1A6
+Global Const $LB_GETSEL = 0x0187
+Global Const $LB_GETSELCOUNT = 0x0190
+Global Const $LB_GETSELITEMS = 0X191
+Global Const $LB_GETTEXT = 0x0189
+Global Const $LB_GETTEXTLEN = 0x018A
+Global Const $LB_GETTOPINDEX = 0x018E
+Global Const $LB_INSERTSTRING = 0x181
+Global Const $LB_RESETCONTENT = 0x184
+Global Const $LB_SELECTSTRING = 0x18C
+Global Const $LB_SETITEMHEIGHT = 0x1A0
+Global Const $LB_SELITEMRANGE = 0x19B
+Global Const $LB_SELITEMRANGEEX = 0x0183
+Global Const $LB_SETANCHORINDEX = 0x19C
+Global Const $LB_SETCARETINDEX = 0x19E
+Global Const $LB_SETCURSEL = 0x186
+Global Const $LB_SETHORIZONTALEXTENT = 0x194
+Global Const $LB_SETLOCALE = 0x1A5
+Global Const $LB_SETSEL = 0x0185
+Global Const $LB_SETTOPINDEX = 0x197
+
+Global Const $LBS_MULTIPLESEL = 0x8
+
+; attributes
+Global Const $DDL_ARCHIVE = 0x20
+Global Const $DDL_DIRECTORY = 0x10
+Global Const $DDL_DRIVES = 0x4000
+Global Const $DDL_EXCLUSIVE = 0x8000
+Global Const $DDL_HIDDEN = 0x2
+Global Const $DDL_READONLY = 0x1
+Global Const $DDL_READWRITE = 0x0
+Global Const $DDL_SYSTEM = 0x4
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-END: C:\Program Files\AutoIt3\Include\ListBoxConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-START: C:\Program Files\AutoIt3\Include\ListViewConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ------------------------------------------------------------------------------
+;
+; AutoIt Version: 3.2.0
+; Language:       English
+; Description:    ListView Constants.
+;
+; ------------------------------------------------------------------------------
+
+; Styles
+Global Const $LVS_ICON	 			= 0x0000
+Global Const $LVS_REPORT 			= 0x0001
+Global Const $LVS_SMALLICON			= 0x0002
+Global Const $LVS_LIST				= 0x0003
+Global Const $LVS_EDITLABELS		= 0x0200
+Global Const $LVS_NOCOLUMNHEADER	= 0x4000
+Global Const $LVS_NOSORTHEADER		= 0x8000
+Global Const $LVS_SINGLESEL			= 0x0004
+Global Const $LVS_SHOWSELALWAYS		= 0x0008
+Global Const $LVS_SORTASCENDING		= 0X0010
+Global Const $LVS_SORTDESCENDING	= 0x0020
+Global Const $LVS_NOLABELWRAP		= 0x0080
+
+; listView Extended Styles
+Global Const $LVS_EX_FULLROWSELECT		= 0x00000020
+Global Const $LVS_EX_GRIDLINES			= 0x00000001
+Global Const $LVS_EX_SUBITEMIMAGES		= 0x00000002
+Global Const $LVS_EX_CHECKBOXES			= 0x00000004
+Global Const $LVS_EX_TRACKSELECT		= 0x00000008
+Global Const $LVS_EX_HEADERDRAGDROP		= 0x00000010
+Global Const $LVS_EX_FLATSB				= 0x00000100
+Global Const $LVS_EX_BORDERSELECT		= 0x00008000
+;Global Const $LVS_EX_MULTIWORKAREAS		= 0x00002000
+;Global Const $LVS_EX_SNAPTOGRID			= 0x00080000
+;Global Const $LVS_EX_DOUBLEBUFFER		= 0x00010000
+Global Const $LVS_EX_HIDELABELS = 0x20000
+Global Const $LVS_EX_INFOTIP = 0x400
+Global Const $LVS_EX_LABELTIP = 0x4000
+Global Const $LVS_EX_ONECLICKACTIVATE = 0x40
+Global Const $LVS_EX_REGIONAL = 0x200
+Global Const $LVS_EX_SINGLEROW = 0x40000
+Global Const $LVS_EX_TWOCLICKACTIVATE = 0x80
+;~ Global Const $LVS_EX_TRACKSELECT = 0x8
+Global Const $LVS_EX_UNDERLINEHOT = 0x800
+Global Const $LVS_EX_UNDERLINECOLD = 0x1000
+
+; error
+Global Const $LV_ERR = -1
+
+
+; Messages to send to listview
+Global Const $CCM_FIRST = 0x2000
+Global Const $CCM_GETUNICODEFORMAT = ($CCM_FIRST + 6)
+Global Const $CCM_SETUNICODEFORMAT = ($CCM_FIRST + 5)
+Global Const $CLR_NONE = 0xFFFFFFFF
+Global Const $LVM_FIRST = 0x1000
+
+Global Const $LV_VIEW_DETAILS = 0x1
+Global Const $LV_VIEW_ICON = 0x0
+Global Const $LV_VIEW_LIST = 0x3
+Global Const $LV_VIEW_SMALLICON = 0x2
+Global Const $LV_VIEW_TILE = 0x4
+
+Global Const $LVCF_FMT = 0x1
+Global Const $LVCF_WIDTH = 0x2
+Global Const $LVCF_TEXT = 0x4
+Global Const $LVCFMT_CENTER = 0x2
+Global Const $LVCFMT_LEFT = 0x0
+Global Const $LVCFMT_RIGHT = 0x1
+
+Global Const $LVA_ALIGNLEFT = 0x1
+Global Const $LVA_ALIGNTOP = 0x2
+Global Const $LVA_DEFAULT = 0x0
+Global Const $LVA_SNAPTOGRID = 0x5
+
+Global Const $LVIF_STATE = 0x8
+Global Const $LVIF_TEXT = 0x1
+
+Global Const $LVFI_PARAM = 0x1
+Global Const $LVFI_PARTIAL = 0x8
+Global Const $LVFI_STRING = 0x2
+Global Const $LVFI_WRAP = 0x20
+
+Global Const $VK_LEFT = 0x25
+Global Const $VK_RIGHT = 0x27
+Global Const $VK_UP = 0x26
+Global Const $VK_DOWN = 0x28
+Global Const $VK_END = 0x23
+Global Const $VK_PRIOR = 0x21
+Global Const $VK_NEXT = 0x22
+
+Global Const $LVIR_BOUNDS = 0
+
+Global Const $LVIS_CUT = 0x4
+Global Const $LVIS_DROPHILITED = 0x8
+Global Const $LVIS_FOCUSED = 0x1
+Global Const $LVIS_OVERLAYMASK = 0xF00
+Global Const $LVIS_SELECTED = 0x2
+Global Const $LVIS_STATEIMAGEMASK = 0xF000
+
+Global Const $LVM_ARRANGE = ($LVM_FIRST + 22)
+Global Const $LVM_CANCELEDITLABEL = ($LVM_FIRST + 179)
+Global Const $LVM_DELETECOLUMN = 0x101C
+Global Const $LVM_DELETEITEM = 0x1008
+Global Const $LVM_DELETEALLITEMS = 0x1009
+Global Const $LVM_EDITLABELA = ($LVM_FIRST + 23)
+Global Const $LVM_EDITLABEL = $LVM_EDITLABELA
+Global Const $LVM_ENABLEGROUPVIEW = ($LVM_FIRST + 157)
+Global Const $LVM_ENSUREVISIBLE = ($LVM_FIRST + 19)
+Global Const $LVM_FINDITEM = ($LVM_FIRST + 13)
+Global Const $LVM_GETBKCOLOR = ($LVM_FIRST + 0)
+Global Const $LVM_GETCALLBACKMASK = ($LVM_FIRST + 10)
+Global Const $LVM_GETCOLUMNORDERARRAY = ($LVM_FIRST + 59)
+Global Const $LVM_GETCOLUMNWIDTH = ($LVM_FIRST + 29)
+Global Const $LVM_GETCOUNTPERPAGE = ($LVM_FIRST + 40)
+Global Const $LVM_GETEDITCONTROL = ($LVM_FIRST + 24)
+Global Const $LVM_GETEXTENDEDLISTVIEWSTYLE = ($LVM_FIRST + 55)
+Global Const $LVM_GETHEADER = ($LVM_FIRST + 31)
+Global Const $LVM_GETHOTCURSOR = ($LVM_FIRST + 63)
+Global Const $LVM_GETHOTITEM = ($LVM_FIRST + 61)
+Global Const $LVM_GETHOVERTIME = ($LVM_FIRST + 72)
+Global Const $LVM_GETIMAGELIST = ($LVM_FIRST + 2)
+Global Const $LVM_GETITEMA = ($LVM_FIRST + 5)
+Global Const $LVM_GETITEMCOUNT = 0x1004
+Global Const $LVM_GETITEMSTATE = ($LVM_FIRST + 44)
+Global Const $LVM_GETITEMTEXTA = ($LVM_FIRST + 45);
+Global Const $LVM_GETNEXTITEM = 0x100c
+Global Const $LVM_GETSELECTEDCOLUMN = ($LVM_FIRST + 174)
+Global Const $LVM_GETSELECTEDCOUNT = ($LVM_FIRST + 50)
+Global Const $LVM_GETSUBITEMRECT = ($LVM_FIRST + 56);
+Global Const $LVM_GETTOPINDEX = ($LVM_FIRST + 39)
+Global Const $LVM_GETUNICODEFORMAT = $CCM_GETUNICODEFORMAT
+Global Const $LVM_GETVIEW = ($LVM_FIRST + 143)
+Global Const $LVM_GETVIEWRECT = ($LVM_FIRST + 34)
+Global Const $LVM_INSERTCOLUMNA = ($LVM_FIRST + 27)
+Global Const $LVM_INSERTITEMA = ($LVM_FIRST + 7)
+Global Const $LVM_REDRAWITEMS = ($LVM_FIRST + 21)
+Global Const $LVM_SETUNICODEFORMAT = $CCM_SETUNICODEFORMAT
+Global Const $LVM_SCROLL = ($LVM_FIRST + 20)
+Global Const $LVM_SETBKCOLOR = 0x1001
+Global Const $LVM_SETCALLBACKMASK = ($LVM_FIRST + 11)
+Global Const $LVM_SETCOLUMNA = ($LVM_FIRST + 26)
+Global Const $LVM_SETCOLUMNORDERARRAY = ($LVM_FIRST + 58)
+Global Const $LVM_SETCOLUMNWIDTH = 0x101E
+Global Const $LVM_SETEXTENDEDLISTVIEWSTYLE = 0x1036
+Global Const $LVM_SETHOTITEM = ($LVM_FIRST + 60)
+Global Const $LVM_SETHOVERTIME = ($LVM_FIRST + 71)
+Global Const $LVM_SETICONSPACING = ($LVM_FIRST + 53)
+Global Const $LVM_SETITEMCOUNT = ($LVM_FIRST + 47)
+Global Const $LVM_SETITEMPOSITION = ($LVM_FIRST + 15)
+Global Const $LVM_SETITEMSTATE = ($LVM_FIRST + 43)
+Global Const $LVM_SETITEMTEXTA = ($LVM_FIRST + 46)
+Global Const $LVM_SETSELECTEDCOLUMN = ($LVM_FIRST + 140)
+Global Const $LVM_SETTEXTCOLOR = ($LVM_FIRST + 36)
+Global Const $LVM_SETTEXTBKCOLOR = ($LVM_FIRST + 38)
+Global Const $LVM_SETVIEW = ($LVM_FIRST + 142)
+Global Const $LVM_UPDATE = ($LVM_FIRST + 42)
+
+Global Const $LVNI_ABOVE = 0x100
+Global Const $LVNI_BELOW = 0x200
+Global Const $LVNI_TOLEFT = 0x400
+Global Const $LVNI_TORIGHT = 0x800
+Global Const $LVNI_ALL = 0x0
+Global Const $LVNI_CUT = 0x4
+Global Const $LVNI_DROPHILITED = 0x8
+Global Const $LVNI_FOCUSED = 0x1
+Global Const $LVNI_SELECTED = 0x2
+
+Global Const $LVSCW_AUTOSIZE = -1
+Global Const $LVSCW_AUTOSIZE_USEHEADER = -2
+
+Global Const $LVSICF_NOINVALIDATEALL = 0x1
+Global Const $LVSICF_NOSCROLL = 0x2
+
+Global Const $LVSIL_NORMAL = 0
+Global Const $LVSIL_SMALL = 1
+Global Const $LVSIL_STATE = 2
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-END: C:\Program Files\AutoIt3\Include\ListViewConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-START: C:\Program Files\AutoIt3\Include\SliderConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ------------------------------------------------------------------------------
+;
+; AutoIt Version: 3.1.1 (beta)
+; Language:       English
+; Description:    Slider Constants
+;
+; ------------------------------------------------------------------------------
+
+; Styles
+Global Const $TBS_AUTOTICKS	= 0x0001
+Global Const $TBS_VERT		= 0x0002
+Global Const $TBS_HORZ		= 0x0000
+Global Const $TBS_TOP		= 0x0004
+Global Const $TBS_BOTTOM	= 0x0000
+Global Const $TBS_LEFT		= 0x0004
+Global Const $TBS_RIGHT		= 0x0000
+Global Const $TBS_BOTH		= 0x0008
+Global Const $TBS_NOTICKS	= 0x0010
+Global Const $TBS_NOTHUMB	= 0x0080
+
+; Messages
+Global Const $TWM_USER = 0x400	; WM_USER
+Global Const $TBM_CLEARTICS = ($TWM_USER + 9)
+Global Const $TBM_GETLINESIZE = ($TWM_USER + 24)
+Global Const $TBM_GETPAGESIZE = ($TWM_USER + 22)
+Global Const $TBM_GETNUMTICS = ($TWM_USER + 16)
+Global Const $TBM_GETPOS = $TWM_USER
+Global Const $TBM_GETRANGEMAX = ($TWM_USER + 2)
+Global Const $TBM_GETRANGEMIN = ($TWM_USER + 1)
+Global Const $TBM_SETLINESIZE = ($TWM_USER + 23)
+Global Const $TBM_SETPAGESIZE = ($TWM_USER + 21)
+Global Const $TBM_SETPOS = ($TWM_USER + 5)
+Global Const $TBM_SETTICFREQ = ($TWM_USER + 20)
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-END: C:\Program Files\AutoIt3\Include\SliderConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-START: C:\Program Files\AutoIt3\Include\TreeViewConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ------------------------------------------------------------------------------
+;
+; AutoIt Version: 3.1.1 (beta)
+; Language:       English
+; Description:    TreeView Constants.
+;
+; ------------------------------------------------------------------------------
+
+; Styles
+Global Const $TVS_HASBUTTONS     	= 0x0001
+Global Const $TVS_HASLINES       	= 0x0002
+Global Const $TVS_LINESATROOT    	= 0x0004
+;Global Const $TVS_EDITLABELS      = 0x0008
+Global Const $TVS_DISABLEDRAGDROP	= 0x0010
+Global Const $TVS_SHOWSELALWAYS		= 0x0020
+;Global Const $TVS_RTLREADING     = 0x0040
+Global Const $TVS_NOTOOLTIPS		= 0x0080
+Global Const $TVS_CHECKBOXES		= 0x0100
+Global Const $TVS_TRACKSELECT		= 0x0200
+Global Const $TVS_SINGLEEXPAND		= 0x0400
+;Global Const $TVS_INFOTIP        = 0x0800
+Global Const $TVS_FULLROWSELECT		= 0x1000
+Global Const $TVS_NOSCROLL			= 0x2000
+Global Const $TVS_NONEVENHEIGHT		= 0x4000
+
+Global Const $TVE_COLLAPSE			= 0x0001
+Global Const $TVE_EXPAND			= 0x0002
+Global Const $TVE_TOGGLE			= 0x0003
+Global Const $TVE_EXPANDPARTIAL		= 0x4000
+Global Const $TVE_COLLAPSERESET = 0x8000
+
+Global Const $TVGN_ROOT				= 0x0000
+Global Const $TVGN_NEXT				= 0x0001
+Global Const $TVGN_PARENT			= 0x0003
+Global Const $TVGN_CHILD			= 0x0004
+Global Const $TVGN_CARET			= 0x0009
+
+Global Const $TVI_ROOT				= 0xFFFF0000
+Global Const $TVI_FIRST				= 0xFFFF0001
+Global Const $TVI_LAST				= 0xFFFF0002
+Global Const $TVI_SORT				= 0xFFFF0003
+
+Global Const $TVIF_TEXT = 0x0001
+Global Const $TVIF_IMAGE			= 0x0002
+Global Const $TVIF_PARAM			= 0x0004
+Global Const $TVIF_STATE			= 0x0008
+Global Const $TVIF_HANDLE			= 0x0010
+Global Const $TVIF_SELECTEDIMAGE	= 0x0020
+Global Const $TVIF_CHILDREN			= 0x0040
+
+Global Const $TVIS_SELECTED			= 0x0002
+Global Const $TVIS_CUT				= 0x0004
+Global Const $TVIS_DROPHILITED		= 0x0008
+Global Const $TVIS_BOLD				= 0x0010
+Global Const $TVIS_EXPANDED			= 0x0020
+Global Const $TVIS_EXPANDEDONCE		= 0x0040
+Global Const $TVIS_EXPANDPARTIAL	= 0x0080
+Global Const $TVIS_OVERLAYMASK		= 0x0F00
+Global Const $TVIS_STATEIMAGEMASK = 0xF000
+
+; Messages to send to TreeView
+Global Const $TV_FIRST				= 0x1100
+Global Const $TVM_INSERTITEM		= $TV_FIRST + 0
+Global Const $TVM_DELETEITEM		= $TV_FIRST + 1
+Global Const $TVM_EXPAND			= $TV_FIRST + 2
+Global Const $TVM_GETCOUNT			= $TV_FIRST + 5
+Global Const $TVM_GETINDENT			= $TV_FIRST + 6
+Global Const $TVM_SETINDENT			= $TV_FIRST + 7
+Global Const $TVM_GETIMAGELIST		= $TV_FIRST + 8
+Global Const $TVM_SETIMAGELIST		= $TV_FIRST + 9
+Global Const $TVM_GETNEXTITEM		= $TV_FIRST + 10
+Global Const $TVM_SELECTITEM		= $TV_FIRST + 11
+Global Const $TVM_GETITEM			= $TV_FIRST + 12
+Global Const $TVM_SETITEM			= $TV_FIRST + 13
+Global Const $TVM_SORTCHILDREN		= $TV_FIRST + 19
+Global Const $TVM_ENSUREVISIBLE		= $TV_FIRST + 20
+Global Const $TVM_SETBKCOLOR		= $TV_FIRST + 29
+Global Const $TVM_SETTEXTCOLOR		= $TV_FIRST + 30
+Global Const $TVM_GETBKCOLOR		= $TV_FIRST + 31
+Global Const $TVM_GETTEXTCOLOR		= $TV_FIRST + 32
+Global Const $TVM_SETLINECOLOR		= $TV_FIRST + 40
+Global Const $TVM_GETLINECOLOR		= $TV_FIRST + 41
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-END: C:\Program Files\AutoIt3\Include\TreeViewConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-START: C:\Program Files\AutoIt3\Include\UpDownConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ------------------------------------------------------------------------------
+;
+; AutoIt Version: 3.1.1
+; Language:       English
+; Description:    UpDown Constants.
+;
+; ------------------------------------------------------------------------------
+
+; Styles
+Global Const $UDS_WRAP 				= 0x0001
+Global Const $UDS_SETBUDDYINT		= 0x0002
+Global Const $UDS_ALIGNRIGHT 		= 0x0004
+Global Const $UDS_ALIGNLEFT			= 0x0008
+Global Const $UDS_ARROWKEYS 		= 0x0020
+Global Const $UDS_HORZ 				= 0x0040
+Global Const $UDS_NOTHOUSANDS 		= 0x0080
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-END: C:\Program Files\AutoIt3\Include\UpDownConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; Control default styles
+Global Const $GUI_SS_DEFAULT_AVI		= $ACS_TRANSPARENT
+Global Const $GUI_SS_DEFAULT_BUTTON		= 0
+Global Const $GUI_SS_DEFAULT_CHECKBOX	= 0
+Global Const $GUI_SS_DEFAULT_COMBO		= BitOR($CBS_DROPDOWN, $CBS_AUTOHSCROLL, $WS_VSCROLL)
+Global Const $GUI_SS_DEFAULT_DATE		= $DTS_LONGDATEFORMAT
+Global Const $GUI_SS_DEFAULT_EDIT		= BitOR($ES_WANTRETURN, $WS_VSCROLL, $WS_HSCROLL, $ES_AUTOVSCROLL, $ES_AUTOHSCROLL)
+Global Const $GUI_SS_DEFAULT_GRAPHIC	= 0
+Global Const $GUI_SS_DEFAULT_GROUP		= 0
+Global Const $GUI_SS_DEFAULT_ICON		= $SS_NOTIFY
+Global Const $GUI_SS_DEFAULT_INPUT		= BitOR($ES_LEFT, $ES_AUTOHSCROLL)
+Global Const $GUI_SS_DEFAULT_LABEL		= 0
+Global Const $GUI_SS_DEFAULT_LIST		= BitOR($LBS_SORT, $WS_BORDER, $WS_VSCROLL, $LBS_NOTIFY)
+Global Const $GUI_SS_DEFAULT_LISTVIEW	= BitOR($LVS_SHOWSELALWAYS, $LVS_SINGLESEL)
+Global Const $GUI_SS_DEFAULT_MONTHCAL	= 0
+Global Const $GUI_SS_DEFAULT_PIC		= $SS_NOTIFY
+Global Const $GUI_SS_DEFAULT_PROGRESS	= 0
+Global Const $GUI_SS_DEFAULT_RADIO		= 0
+Global Const $GUI_SS_DEFAULT_SLIDER		= $TBS_AUTOTICKS
+Global Const $GUI_SS_DEFAULT_TAB		= 0
+Global Const $GUI_SS_DEFAULT_TREEVIEW	= BitOR($TVS_HASBUTTONS, $TVS_HASLINES, $TVS_LINESATROOT, $TVS_DISABLEDRAGDROP, $TVS_SHOWSELALWAYS)
+Global Const $GUI_SS_DEFAULT_UPDOWN		= $UDS_ALIGNRIGHT
+Global Const $GUI_SS_DEFAULT_GUI		= BitOR($WS_MINIMIZEBOX, $WS_CAPTION, $WS_POPUP, $WS_SYSMENU)
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-END: C:\Program Files\AutoIt3\Include\GUIDefaultConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-START: C:\Program Files\AutoIt3\Include\GUIConstantsEx.au3>
+; ----------------------------------------------------------------------------
+
+
+; ------------------------------------------------------------------------------
+;
+; AutoIt Version: 3.1.1 (beta)
+; Language:       English
+; Description:    Constants to be used in GUI applications.
+;
+; ------------------------------------------------------------------------------
+
+
+; Events and messages
+Global Const $GUI_EVENT_CLOSE			= -3
+Global Const $GUI_EVENT_MINIMIZE		= -4
+Global Const $GUI_EVENT_RESTORE			= -5
+Global Const $GUI_EVENT_MAXIMIZE		= -6
+Global Const $GUI_EVENT_PRIMARYDOWN		= -7
+Global Const $GUI_EVENT_PRIMARYUP		= -8
+Global Const $GUI_EVENT_SECONDARYDOWN	= -9
+Global Const $GUI_EVENT_SECONDARYUP		= -10
+Global Const $GUI_EVENT_MOUSEMOVE		= -11
+Global Const $GUI_EVENT_RESIZED			= -12
+Global Const $GUI_EVENT_DROPPED			= -13
+
+Global Const $GUI_RUNDEFMSG				= 'GUI_RUNDEFMSG'
+
+; State
+Global Const $GUI_AVISTOP		= 0
+Global Const $GUI_AVISTART		= 1
+Global Const $GUI_AVICLOSE		= 2
+
+Global Const $GUI_CHECKED		= 1
+Global Const $GUI_INDETERMINATE	= 2
+Global Const $GUI_UNCHECKED		= 4
+
+Global Const $GUI_DROPACCEPTED	= 8
+Global Const $GUI_NODROPACCEPTED = 4096
+Global Const $GUI_ACCEPTFILES	= $GUI_DROPACCEPTED	; to be suppressed
+
+Global Const $GUI_SHOW			= 16
+Global Const $GUI_HIDE 			= 32
+Global Const $GUI_ENABLE		= 64
+Global Const $GUI_DISABLE		= 128
+
+Global Const $GUI_FOCUS			= 256
+Global Const $GUI_NOFOCUS		= 8192
+Global Const $GUI_DEFBUTTON		= 512
+
+Global Const $GUI_EXPAND		= 1024
+Global Const $GUI_ONTOP			= 2048
+
+
+; Font
+Global Const $GUI_FONTITALIC	= 2
+Global Const $GUI_FONTUNDER		= 4
+Global Const $GUI_FONTSTRIKE	= 8
+
+
+; Resizing
+Global Const $GUI_DOCKAUTO			= 0x0001
+Global Const $GUI_DOCKLEFT			= 0x0002
+Global Const $GUI_DOCKRIGHT			= 0x0004
+Global Const $GUI_DOCKHCENTER		= 0x0008
+Global Const $GUI_DOCKTOP			= 0x0020
+Global Const $GUI_DOCKBOTTOM		= 0x0040
+Global Const $GUI_DOCKVCENTER		= 0x0080
+Global Const $GUI_DOCKWIDTH			= 0x0100
+Global Const $GUI_DOCKHEIGHT		= 0x0200
+
+Global Const $GUI_DOCKSIZE			= 0x0300	; width+height
+Global Const $GUI_DOCKMENUBAR		= 0x0220	; top+height
+Global Const $GUI_DOCKSTATEBAR		= 0x0240	; bottom+height
+Global Const $GUI_DOCKALL			= 0x0322	; left+top+width+height
+Global Const $GUI_DOCKBORDERS		= 0x0066	; left+top+right+bottom
+
+; Graphic
+Global Const $GUI_GR_CLOSE		= 1
+Global Const $GUI_GR_LINE		= 2
+Global Const $GUI_GR_BEZIER		= 4
+Global Const $GUI_GR_MOVE		= 6
+Global Const $GUI_GR_COLOR		= 8
+Global Const $GUI_GR_RECT		= 10
+Global Const $GUI_GR_ELLIPSE	= 12
+Global Const $GUI_GR_PIE		= 14
+Global Const $GUI_GR_DOT		= 16
+Global Const $GUI_GR_PIXEL		= 18
+Global Const $GUI_GR_HINT		= 20
+Global Const $GUI_GR_REFRESH	= 22
+Global Const $GUI_GR_PENSIZE	= 24
+Global Const $GUI_GR_NOBKCOLOR	= -2
+
+; Background color special flags
+Global Const $GUI_BKCOLOR_DEFAULT = -1
+Global Const $GUI_BKCOLOR_TRANSPARENT = -2
+Global Const $GUI_BKCOLOR_LV_ALTERNATE = 0xFE000000
+
+; Other
+Global Const $GUI_WS_EX_PARENTDRAG =      0x00100000
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-END: C:\Program Files\AutoIt3\Include\GUIConstantsEx.au3>
+; ----------------------------------------------------------------------------
+
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-START: C:\Program Files\AutoIt3\Include\WindowsConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-END: C:\Program Files\AutoIt3\Include\WindowsConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-START: C:\Program Files\AutoIt3\Include\ComboConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-END: C:\Program Files\AutoIt3\Include\ComboConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-START: C:\Program Files\AutoIt3\Include\ListViewConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-END: C:\Program Files\AutoIt3\Include\ListViewConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-START: C:\Program Files\AutoIt3\Include\StaticConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-END: C:\Program Files\AutoIt3\Include\StaticConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-START: C:\Program Files\AutoIt3\Include\ButtonConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ------------------------------------------------------------------------------
+;
+; AutoIt Version: 3.1.1 (beta)
+; Language:       English
+; Description:    Button (Group, Radio, Checkbox, Button) Constants.
+;
+; ------------------------------------------------------------------------------
+
+; Group
+Global Const $BS_GROUPBOX		= 0x0007
+
+; Button
+Global Const $BS_BOTTOM			= 0x0800
+Global Const $BS_CENTER			= 0x0300
+Global Const $BS_DEFPUSHBUTTON	= 0x0001
+Global Const $BS_LEFT			= 0x0100
+Global Const $BS_MULTILINE		= 0x2000
+Global Const $BS_PUSHBOX		= 0x000A
+Global Const $BS_PUSHLIKE		= 0x1000
+Global Const $BS_RIGHT			= 0x0200
+Global Const $BS_RIGHTBUTTON	= 0x0020
+Global Const $BS_TOP			= 0x0400
+Global Const $BS_VCENTER		= 0x0C00
+Global Const $BS_FLAT			= 0x8000
+Global Const $BS_ICON			= 0x0040
+Global Const $BS_BITMAP			= 0x0080
+
+; Checkbox
+Global Const $BS_3STATE			= 0x0005
+Global Const $BS_AUTO3STATE		= 0x0006
+Global Const $BS_AUTOCHECKBOX	= 0x0003
+Global Const $BS_CHECKBOX		= 0x0002
+
+; Radio
+Global Const $BS_AUTORADIOBUTTON	= 0x0009
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-END: C:\Program Files\AutoIt3\Include\ButtonConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-START: C:\Program Files\AutoIt3\Include\ListBoxConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-END: C:\Program Files\AutoIt3\Include\ListBoxConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-START: C:\Program Files\AutoIt3\Include\TabConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ------------------------------------------------------------------------------
+;
+; AutoIt Version: 3.1.1 (beta)
+; Language:       English
+; Description:    Tab Constants.
+;
+; ------------------------------------------------------------------------------
+; Styles
+Global Const $TCS_SCROLLOPPOSITE	= 0x0001
+Global Const $TCS_BOTTOM			= 0x0002
+Global Const $TCS_RIGHT				= 0x0002
+Global Const $TCS_MULTISELECT		= 0x0004
+Global Const $TCS_FLATBUTTONS		= 0x0008
+Global Const $TCS_FORCEICONLEFT		= 0x0010
+Global Const $TCS_FORCELABELLEFT	= 0x0020
+Global Const $TCS_HOTTRACK			= 0x0040
+Global Const $TCS_VERTICAL			= 0x0080
+Global Const $TCS_TABS				= 0x0000
+Global Const $TCS_BUTTONS			= 0x0100
+Global Const $TCS_SINGLELINE		= 0x0000
+Global Const $TCS_MULTILINE			= 0x0200
+Global Const $TCS_RIGHTJUSTIFY		= 0x0000
+Global Const $TCS_FIXEDWIDTH		= 0x0400
+Global Const $TCS_RAGGEDRIGHT		= 0x0800
+Global Const $TCS_FOCUSONBUTTONDOWN = 0x1000
+Global Const $TCS_OWNERDRAWFIXED	= 0x2000
+Global Const $TCS_TOOLTIPS			= 0x4000
+Global Const $TCS_FOCUSNEVER		= 0x8000
+
+; Tab Extended Styles
+Global Const $TCS_EX_FLATSEPARATORS 	= 0x1
+;Global Const $TCS_EX_REGISTERDROP 		= 0x2
+
+; Error checking
+Global Const $TC_ERR = -1
+
+; event(s)
+Global Const $TCIS_BUTTONPRESSED = 0x1
+
+; extended styles
+;~ Global Const $TCS_EX_FLATSEPARATORS = 0x1
+Global Const $TCS_EX_REGISTERDROP = 0x2
+
+; Messages to send to Tab control
+Global Const $TCM_FIRST = 0x1300
+Global Const $TCM_DELETEALLITEMS = ($TCM_FIRST + 9)
+Global Const $TCM_DELETEITEM = ($TCM_FIRST + 8)
+Global Const $TCM_DESELECTALL = ($TCM_FIRST + 50)
+Global Const $TCM_GETCURFOCUS = ($TCM_FIRST + 47)
+Global Const $TCM_GETCURSEL = ($TCM_FIRST + 11)
+Global Const $TCM_GETEXTENDEDSTYLE = ($TCM_FIRST + 53)
+Global Const $TCM_GETITEMCOUNT = ($TCM_FIRST + 4)
+Global Const $TCM_GETITEMRECT = ($TCM_FIRST + 10)
+Global Const $TCM_GETROWCOUNT = ($TCM_FIRST + 44)
+Global Const $TCM_SETITEMSIZE = $TCM_FIRST + 41
+
+Global Const $TCCM_FIRST = 0X2000
+Global Const $TCCM_GETUNICODEFORMAT = ($TCCM_FIRST + 6)
+Global Const $TCM_GETUNICODEFORMAT = $TCCM_GETUNICODEFORMAT
+
+Global Const $TCM_HIGHLIGHTITEM = ($TCM_FIRST + 51)
+Global Const $TCM_SETCURFOCUS = ($TCM_FIRST + 48)
+Global Const $TCM_SETCURSEL = ($TCM_FIRST + 12)
+Global Const $TCM_SETMINTABWIDTH = ($TCM_FIRST + 49)
+Global Const $TCM_SETPADDING = ($TCM_FIRST + 43)
+
+Global Const $TCCM_SETUNICODEFORMAT = ($TCCM_FIRST + 5)
+Global Const $TCM_SETUNICODEFORMAT = $TCCM_SETUNICODEFORMAT
+
+Global Const $TCN_FIRST = -550
+Global Const $TCN_SELCHANGE = ($TCN_FIRST - 1)
+Global Const $TCN_SELCHANGING = ($TCN_FIRST - 2)
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-END: C:\Program Files\AutoIt3\Include\TabConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-START: C:\Program Files\AutoIt3\Include\EditConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-END: C:\Program Files\AutoIt3\Include\EditConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-START: C:\Program Files\AutoIt3\Include\DateTimeConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-END: C:\Program Files\AutoIt3\Include\DateTimeConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-START: C:\Program Files\AutoIt3\Include\SliderConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-END: C:\Program Files\AutoIt3\Include\SliderConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-START: C:\Program Files\AutoIt3\Include\TreeViewConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-END: C:\Program Files\AutoIt3\Include\TreeViewConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-START: C:\Program Files\AutoIt3\Include\ProgressConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ------------------------------------------------------------------------------
+;
+; AutoIt Version: 3.1.1 (beta)
+; Language:       English
+; Description:    Progress Constants.
+;
+; ------------------------------------------------------------------------------
+
+; Styles
+Global Const $PBS_SMOOTH	= 1
+Global Const $PBS_VERTICAL	= 4
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-END: C:\Program Files\AutoIt3\Include\ProgressConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-START: C:\Program Files\AutoIt3\Include\AVIConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-END: C:\Program Files\AutoIt3\Include\AVIConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-START: C:\Program Files\AutoIt3\Include\UpDownConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-END: C:\Program Files\AutoIt3\Include\UpDownConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-END: C:\Program Files\AutoIt3\Include\GuiConstants.au3>
+; ----------------------------------------------------------------------------
+
+
+Dim $show = 0, $Child_[11], $children = 10, $Radio[11]
+
+$Main = GUICreate("Create A Poem using Pre-Written lyrics. demo 100 liner.", 516, 323, (@DesktopWidth - 516) / 2, (@DesktopHeight - 323) / 2)
+
+$Button_1 = GUICtrlCreateButton("&Next >", 335, 290, 80, 25)
+$Button_2 = GUICtrlCreateButton("< &Back", 250, 290, 80, 25)
+$Button_3 = GUICtrlCreateButton("&Exit", 420, 290, 80, 25)
+$Button_4 = GUICtrlCreateButton("Notepad", 165, 290, 80, 25)
+$Button_6 = GUICtrlCreateButton("View", 80, 290, 80, 25)
+$Button_7 = GUICtrlCreateButton("buy", 10, 290, 60, 25)
+GUISetState()
+
+
+$Child_[1] = GUICreate("", 508, 238, 1, 1, BitOR($WS_CHILD, $WS_TABSTOP) + $WS_DLGFRAME, -1, $Main)
+$Label_1 = GuiCtrlCreateLabel("an untitled notepad must be open inorder to use this software.You're on Page 1", 40, 140, 290, 30)
+GUICtrlSetFont(-1, 10, 650)
+$Button_line1 = GUICtrlCreateButton("LINE 1",170,5,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line2 = GUICtrlCreateButton("LINE 2",170,30,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line3 = GUICtrlCreateButton("LINE 3",170,55,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line4 = GUICtrlCreateButton("LINE 4",170,80,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line5 = GUICtrlCreateButton("LINE 5",170,105,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line6 = GUICtrlCreateButton("LINE 6",250,5,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line7 = GUICtrlCreateButton("LINE 7",250,30,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line8 = GUICtrlCreateButton("LINE 8",250,55,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line9 = GUICtrlCreateButton("LINE 9",250,80,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line10 = GUICtrlCreateButton("LINE 10",250,105,70,20)
+GUISetState()
+
+
+
+
+
+
+$Child_[2] = GUICreate("", 508, 238, 1, 1, BitOR($WS_CHILD, $WS_TABSTOP) + $WS_DLGFRAME, -1, $Main)
+$Label_1 = GuiCtrlCreateLabel("an untitled notepad must be open inorder to use this software.You're on Page 2", 40, 140, 290, 30)
+GUICtrlSetFont(-1, 10, 650)
+$Button_line11 = GUICtrlCreateButton("LINE 11",170,5,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line12 = GUICtrlCreateButton("LINE 12",170,30,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line13 = GUICtrlCreateButton("LINE 13",170,55,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line14 = GUICtrlCreateButton("LINE 14",170,80,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line15 = GUICtrlCreateButton("LINE 15",170,105,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line16 = GUICtrlCreateButton("LINE 16",250,5,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line17 = GUICtrlCreateButton("LINE 17",250,30,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line18 = GUICtrlCreateButton("LINE 18",250,55,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line19 = GUICtrlCreateButton("LINE 19",250,80,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line20 = GUICtrlCreateButton("LINE 20",250,105,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+GUISetState(@SW_HIDE)
+
+$Child_[3] = GUICreate("", 508, 238, 1, 1, BitOR($WS_CHILD, $WS_TABSTOP) + $WS_DLGFRAME, -1, $Main)
+$Label_1 = GuiCtrlCreateLabel("an untitled notepad must be open inorder to use this software.You're on Page 3", 40, 140, 290, 30)
+GUICtrlSetFont(-1, 10, 650)
+$Button_line21 = GUICtrlCreateButton("LINE 21",170,5,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line22 = GUICtrlCreateButton("LINE 22",170,30,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line23 = GUICtrlCreateButton("LINE 23",170,55,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line24 = GUICtrlCreateButton("LINE 24",170,80,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line25 = GUICtrlCreateButton("LINE 25",170,105,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line26 = GUICtrlCreateButton("LINE 26",250,5,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line27 = GUICtrlCreateButton("LINE 27",250,30,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line28 = GUICtrlCreateButton("LINE 28",250,55,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line29 = GUICtrlCreateButton("LINE 29",250,80,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line30 = GUICtrlCreateButton("LINE 30",250,105,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+GUISetState(@SW_HIDE)
+
+$Child_[4] = GUICreate("", 508, 238, 1, 1, BitOR($WS_CHILD, $WS_TABSTOP) + $WS_DLGFRAME, -1, $Main)
+$Label_1 = GuiCtrlCreateLabel("an untitled notepad must be open inorder to use this software.You're on Page 4", 40, 140, 290, 30)
+GUICtrlSetFont(-1, 10, 650)
+$Button_line31 = GUICtrlCreateButton("LINE 31",170,5,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line32 = GUICtrlCreateButton("LINE 32",170,30,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line33 = GUICtrlCreateButton("LINE 33",170,55,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line34 = GUICtrlCreateButton("LINE 34",170,80,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line35 = GUICtrlCreateButton("LINE 35",170,105,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line36 = GUICtrlCreateButton("LINE 36",250,5,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line37 = GUICtrlCreateButton("LINE 37",250,30,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line38 = GUICtrlCreateButton("LINE 38",250,55,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line39 = GUICtrlCreateButton("LINE 39",250,80,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line40 = GUICtrlCreateButton("LINE 40",250,105,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+GUISetState(@SW_HIDE)
+
+
+$Child_[5] = GUICreate("", 508, 238, 1, 1, BitOR($WS_CHILD, $WS_TABSTOP) + $WS_DLGFRAME, -1, $Main)
+$Label_1 = GuiCtrlCreateLabel("an untitled notepad must be open inorder to use this software.You're on Page 5", 40, 140, 290, 30)
+GUICtrlSetFont(-1, 10, 650)
+$Button_line41 = GUICtrlCreateButton("LINE 41",170,5,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line42 = GUICtrlCreateButton("LINE 42",170,30,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line43 = GUICtrlCreateButton("LINE 43",170,55,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line44 = GUICtrlCreateButton("LINE 44",170,80,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line45 = GUICtrlCreateButton("LINE 45",170,105,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line46 = GUICtrlCreateButton("LINE 46",250,5,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line47 = GUICtrlCreateButton("LINE 47",250,30,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line48 = GUICtrlCreateButton("LINE 48",250,55,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line49 = GUICtrlCreateButton("LINE 49",250,80,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line50 = GUICtrlCreateButton("LINE 50",250,105,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+GUISetState(@SW_HIDE)
+
+
+
+
+
+
+$Child_[6] = GUICreate("", 508, 238, 1, 1, BitOR($WS_CHILD, $WS_TABSTOP) + $WS_DLGFRAME, -1, $Main)
+$Label_1 = GuiCtrlCreateLabel("an untitled notepad must be open inorder to use this software.You're on Page 6", 40, 140, 290, 30)
+GUICtrlSetFont(-1, 10, 650)
+$Button_line51 = GUICtrlCreateButton("LINE 51",170,5,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line52 = GUICtrlCreateButton("LINE 52",170,30,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line53 = GUICtrlCreateButton("LINE 53",170,55,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line54 = GUICtrlCreateButton("LINE 54",170,80,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line55 = GUICtrlCreateButton("LINE 55",170,105,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line56 = GUICtrlCreateButton("LINE 56",250,5,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line57 = GUICtrlCreateButton("LINE 57",250,30,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line58 = GUICtrlCreateButton("LINE 58",250,55,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line59 = GUICtrlCreateButton("LINE 59",250,80,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line60 = GUICtrlCreateButton("LINE 60",250,105,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+GUISetState(@SW_HIDE)
+
+
+
+
+
+$Child_[7] = GUICreate("", 508, 238, 1, 1, BitOR($WS_CHILD, $WS_TABSTOP) + $WS_DLGFRAME, -1, $Main)
+$Label_1 = GuiCtrlCreateLabel("an untitled notepad must be open inorder to use this software.You're on Page 7", 40, 140, 290, 30)
+GUICtrlSetFont(-1, 10, 650)
+$Button_line61 = GUICtrlCreateButton("LINE 61",170,5,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line62 = GUICtrlCreateButton("LINE 62",170,30,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line63 = GUICtrlCreateButton("LINE 63",170,55,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line64 = GUICtrlCreateButton("LINE 64",170,80,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line65 = GUICtrlCreateButton("LINE 65",170,105,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line66 = GUICtrlCreateButton("LINE 66",250,5,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line67 = GUICtrlCreateButton("LINE 67",250,30,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line68 = GUICtrlCreateButton("LINE 68",250,55,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line69 = GUICtrlCreateButton("LINE 69",250,80,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line70 = GUICtrlCreateButton("LINE 70",250,105,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+GUISetState(@SW_HIDE)
+
+$Child_[8] = GUICreate("", 508, 238, 1, 1, BitOR($WS_CHILD, $WS_TABSTOP) + $WS_DLGFRAME, -1, $Main)
+$Label_1 = GuiCtrlCreateLabel("an untitled notepad must be open inorder to use this software.You're on Page 8", 40, 140, 290, 30)
+GUICtrlSetFont(-1, 10, 650)
+$Button_line71 = GUICtrlCreateButton("LINE 71",170,5,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line72 = GUICtrlCreateButton("LINE 72",170,30,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line73 = GUICtrlCreateButton("LINE 73",170,55,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line74 = GUICtrlCreateButton("LINE 74",170,80,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line75 = GUICtrlCreateButton("LINE 75",170,105,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line76 = GUICtrlCreateButton("LINE 76",250,5,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line77 = GUICtrlCreateButton("LINE 77",250,30,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line78 = GUICtrlCreateButton("LINE 78",250,55,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line79 = GUICtrlCreateButton("LINE 79",250,80,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line80 = GUICtrlCreateButton("LINE 80",250,105,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+GUISetState(@SW_HIDE)
+
+$Child_[9] = GUICreate("", 508, 238, 1, 1, BitOR($WS_CHILD, $WS_TABSTOP) + $WS_DLGFRAME, -1, $Main)
+$Label_1 = GuiCtrlCreateLabel("an untitled notepad must be open inorder to use this software.You're on Page 9", 40, 140, 290, 30)
+GUICtrlSetFont(-1, 10, 650)
+$Button_line81 = GUICtrlCreateButton("LINE 81",170,5,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line82 = GUICtrlCreateButton("LINE 82",170,30,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line83 = GUICtrlCreateButton("LINE 83",170,55,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line84 = GUICtrlCreateButton("LINE 84",170,80,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line85 = GUICtrlCreateButton("LINE 85",170,105,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line86 = GUICtrlCreateButton("LINE 86",250,5,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line87 = GUICtrlCreateButton("LINE 87",250,30,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line88 = GUICtrlCreateButton("LINE 88",250,55,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line89 = GUICtrlCreateButton("LINE 89",250,80,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line90 = GUICtrlCreateButton("LINE 90",250,105,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+GUISetState(@SW_HIDE)
+
+
+
+
+$Child_[10] = GUICreate("", 508, 238, 1, 1, BitOR($WS_CHILD, $WS_TABSTOP) + $WS_DLGFRAME, -1, $Main)
+$Label_1 = GuiCtrlCreateLabel("an untitled notepad must be open inorder to use this software.You're on Page 10", 40, 140, 290, 30)
+GUICtrlSetFont(-1, 10, 650)
+$Button_line91 = GUICtrlCreateButton("LINE 91",170,5,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line92 = GUICtrlCreateButton("LINE 92",170,30,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line93 = GUICtrlCreateButton("LINE 93",170,55,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line94 = GUICtrlCreateButton("LINE 94",170,80,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line95 = GUICtrlCreateButton("LINE 95",170,105,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line96 = GUICtrlCreateButton("LINE 96",250,5,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line97 = GUICtrlCreateButton("LINE 97",250,30,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line98 = GUICtrlCreateButton("LINE 98",250,55,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line99 = GUICtrlCreateButton("LINE 99",250,80,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+$Button_line100 = GUICtrlCreateButton("LINE 100",250,105,70,20)
+GUICtrlSetResizing(-1,$GUI_DOCKALL)
+GUISetState(@SW_HIDE)
+
+
+
+
+
+
+While 1
+   $msg = GUIGetMsg()
+
+    Select
+        Case $msg = $GUI_EVENT_CLOSE Or $msg = $Button_3
+            ExitLoop
+        Case $msg = $Button_1
+            Set_Next()
+        Case $msg = $Button_2
+            Set_Back()
+        Case $msg = $Button_4
+send("{altdown}{tab}{altup}")
+sleep(100)
+       if winactive("Untitled - Notepad")  then
+send("{altdown}{tab}{altup}")
+MsgBox(4096, "Poet In A Box Demo", "You have already opened an Untitled - Notepad.")
+
+
+
+else
+send("{altdown}{tab}{altup}")
+run("notepad.exe")
+winwaitactive("Untitled - Notepad")
+send("{altdown}{tab}{altup}")
+
+
+endif
+
+
+
+        Case $msg = $Button_6
+send("{altdown}{tab}{altup}")
+sleep(100)
+       if winactive("Untitled - Notepad")  then
+sleep(9999999999999999999999999999999999999999999)
+
+
+
+
+else
+send("{altdown}{tab}{altup}")
+sleep(100)
+MsgBox(4096, "Poet In A Box Demo", "You must Create work before you can view it. To create work open notepad, and pick lines to add to your poem.")
+
+
+endif
+
+ Case $msg = $Button_7
+	 send("{lwindown}{r}{lwinup}")
+	 sleep(800)
+	 send("                   ")
+	 sleep(100)
+	 send("{enter}")
+
+
+Case $msg = $button_line1
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Softly the evening vespers Hallow the closing day;")
+send("{enter}")
+send("Sweetly the Savior whispers,   Come to the throne")
+send("{enter}")
+send("and pray.........................................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+else
+send("{altdown}{tab}{altup}")
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+
+
+endif
+
+
+Case $msg = $button_line2
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("My prayer for you today,     Is that you trust and")
+send("{enter}")
+send("always obey On this day keep calling;   He’ll keep")
+send("{enter}")
+send("you from falling..................................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+else
+send("{altdown}{tab}{altup}")
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+
+endif
+
+
+
+Case $msg = $button_line3
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Come, ere the shadows lengthen,      Bring Him thy")
+send("{enter}")
+send("burdened heart;           Come where His grace may")
+send("{enter}")
+send("strengthen, Come from thy cares apart.............")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+else
+send("{altdown}{tab}{altup}")
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+
+
+endif
+
+
+Case $msg = $button_line4
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Smiles of His love await thee, Lighting His lovely")
+send("{enter}")
+send("face; Just to behold His beauty,      Dwell in the")
+send("{enter}")
+send("secret place......................................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line5
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Boldly we may approach Him,     Mercy and grace to")
+send("{enter}")
+send("own; Tempted like us,        He bid us Come to the")
+send("{enter}")
+send("Father’s throne...................................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+
+endif
+
+
+Case $msg = $button_line6
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("The Spirit and the gifts are ours through Him, Who")
+send("{enter}")
+send("with us sideth: Let good and kindred go,      this")
+send("{enter}")
+send("mortal life also..................................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+else
+send("{altdown}{tab}{altup}")
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line7
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("That creator of the universe Calls me his own,  It")
+send("{enter}")
+send("amazes me That the one who lets me wander,  Always")
+send("{enter}")
+send("leads me home.....................................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+else
+send("{altdown}{tab}{altup}")
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+Case $msg = $button_line8
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Now I Have found me a place In your heart, Where I")
+send("{enter}")
+send("Forever will stay; Now I Will not be afraid of the")
+send("{enter}")
+send("darkness Cause I Will whisper you name............")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+else
+send("{altdown}{tab}{altup}")
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+
+endif
+
+
+Case $msg = $button_line9
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Deep inside of me There's a holy sanctuary,      A")
+send("{enter}")
+send("place full of dreams There you speak to me;  And I")
+send("{enter}")
+send("follow your sweet voice To the refuge,     of your")
+send("{enter}")
+send("peace.............................................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line10
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("There's a light that shines on my life,      Comes")
+send("{enter}")
+send("straight from your heart;    Down from above These")
+send("{enter}")
+send("dreams that fill up my mind;    They glide on your")
+send("{enter}")
+send("wings; They soar on your love.....................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line11
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Rejoice in the Lord always and again I say,  again")
+send("{enter}")
+send("I say Rejoice Rejoice in the Lord always and again")
+send("{enter}")
+send("I say, again I say Rejoice........................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line12
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Come bless the Lord, Come bless the Lord,     draw")
+send("{enter}")
+send("near to worship Christ the Lord;     And bless his")
+send("{enter}")
+send("name,His holy name, Declaring he is good..........")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line13
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("I love the Christ, the Son of God,   Who died that")
+send("{enter}")
+send("I might live; I would my gratitude express, A gift")
+send("{enter}")
+send("unto Him give.....................................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line14
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("My gift is small, it is my all, Accept it,    Lord,")
+send("{enter}")
+send("I pray; Let self be slain,  let Jesus reign Within")
+send("{enter}")
+send("my heart always...................................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line15
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("I fail to find a sacrifice,     Or fitting gift to")
+send("{enter}")
+send("bring; Earth’s treasures have too little worth, To")
+send("{enter}")
+send("offer to my King..................................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+Case $msg = $button_line16
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("No gift, what so ever grand or great,   Could have")
+send("{enter}")
+send("payed the debt I owe;   except the one who was sent")
+send("{enter}")
+send("to wash my sins as white as snow..................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+Case $msg = $button_line17
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("My full heart I gladly yield For service,     Lord,")
+send("{enter}")
+send("to Thee; To bear the blessed gospel light,    That")
+send("{enter}")
+send("others Christ may see.............................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+Case $msg = $button_line18
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("This is for the saints,   a message for the saints,")
+send("{enter}")
+send("this is for the saints............................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+Case $msg = $button_line19
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Why can’t I wait on the Lord,  why can’t I wait on")
+send("{enter}")
+send("Jesus?    Job waited, tell me why; if it takes all")
+send("{enter}")
+send("day, all night, I’ll wait on the Lord.............")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line20
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("The day is dim, the situation critical, my chances")
+send("{enter}")
+send("slim, but I won’t go getting all analytical,   God")
+send("{enter}")
+send("made me a promise and His word is true,     If you")
+send("{enter}")
+send("trust in God like me, He’ll do the same for you...")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+
+endif
+
+
+
+
+
+Case $msg = $button_line21
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("When it gets right down to it,   seems all hope is")
+send("{enter}")
+send("gone; don’t give up, don’t give in................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line22
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("They that wait shall renew their strength,    they")
+send("{enter}")
+send("shall mount up of wings as eagles.  They shall run")
+send("{enter}")
+send("and never get weary, they shall walk and not faint.")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line23
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("A mighty fortress is our God,      a bulwark never")
+send("{enter}")
+send("failing; Our helper he,   amid the flood of mortal")
+send("{enter}")
+send("ills prevailing...................................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line24
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Did we in our strength confide, our striving would")
+send("{enter}")
+send("be losing; Were not the right Man on our side, the")
+send("{enter}")
+send("Man of God's own choosing.........................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line25
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("And though this world, with devils filled,  should")
+send("{enter}")
+send("threaten to undo us,     We will not fear, for God")
+send("{enter}")
+send("hath willed his truth to triumph through us.......")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+Case $msg = $button_line26
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("I put on the armor of God this morning,   it Helps")
+send("{enter}")
+send("me to allude Hells warning........................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+Case $msg = $button_line27
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("I put on the my breastplate of Righteousness,  And")
+send("{enter}")
+send("the helmet of Salvation, I’m a soldier in the Army")
+send("{enter}")
+send("of the Lord.......................................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+Case $msg = $button_line28
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("well He has given us the tools we need,     at His")
+send("{enter}")
+send("purpose, we’re gonna fulfill;  Though our enemy is")
+send("{enter}")
+send("powerful Our God is in control....................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+Case $msg = $button_line29
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("With the Holy One of God, And our Sword, we cannot")
+send("{enter}")
+send("fail; And when Evil works against us,    Don’t you")
+send("{enter}")
+send("know God will prevail.............................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line30
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Clothe Yourself with truth,     soldiers And cover")
+send("{enter}")
+send("your feet with His peace;        You gotta prepare")
+send("{enter}")
+send("yourself for the battle,  And He will give you the")
+send("{enter}")
+send("victory...........................................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+
+endif
+
+
+
+
+
+Case $msg = $button_line31
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("I’m a soldier in the army,   Got my war clothes on")
+send("{enter}")
+send("I’m a soldier in the army Of the Lord, of the Lord.")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line32
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Do you hear a still, small voice,  a knock at your")
+send("{enter}")
+send("heart’s door?  Jesus is gently calling you to life")
+send("{enter}")
+send("forevermore.......................................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line33
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("From heaven’s glory He came down, to die in bitter")
+send("{enter}")
+send("shame,  That in this moment you could find freedom")
+send("{enter}")
+send("from guilt and blame..............................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line34
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Does your heart with turmoil rage, as God convicts")
+send("{enter}")
+send("of sin?     Know the delight of perfect peace; ask")
+send("{enter}")
+send("Jesus to come in..................................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line35
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Surrender to His pleading voice;  receive His love")
+send("{enter}")
+send("today. Take that first step to Calvary;  no longer")
+send("{enter}")
+send("to delay..........................................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+Case $msg = $button_line36
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Time is quickly passing by;    this moment will be")
+send("{enter}")
+send("gone.    Angels in heaven wait to sing salvation’s")
+send("{enter}")
+send("vict’ry song......................................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+Case $msg = $button_line37
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Respond just now to His sweet voice;     let go of")
+send("{enter}")
+send("foolish pride.   Ask Jesus to forgive your sin and")
+send("{enter}")
+send("in your heart abide...............................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+Case $msg = $button_line38
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("lord, Long my restless soul had sought Refuge from")
+send("{enter}")
+send("the troubled sea; Struggling vainly till I thought")
+send("{enter}")
+send("There was no repose for me........................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+Case $msg = $button_line39
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("As my spirit, terror-filled,    Breasted storm and")
+send("{enter}")
+send("tide alone, Jesus came—the tempest stilled, Hushed")
+send("{enter}")
+send("its loud and angry moan...........................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line40
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Standing on the restless wave, Reached His hand my")
+send("{enter}")
+send("soul to save......................................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+
+endif
+
+
+Case $msg = $button_line41
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Jesus, Master of the sea,      Never let my vessel")
+send("{enter}")
+send("strand; Keep me sheltered in the lee,       In the")
+send("{enter}")
+send("hollow of Thy hand................................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+else
+send("{altdown}{tab}{altup}")
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+
+
+endif
+
+
+Case $msg = $button_line42
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Free from storm and tempest shock, Anchored deeply")
+send("{enter}")
+send("in salvation's rock...............................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+else
+send("{altdown}{tab}{altup}")
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+
+endif
+
+
+
+Case $msg = $button_line43
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Safely by the rock-bound coast,            And the")
+send("{enter}")
+send("treacherous breakers past,   Guide me, lest my way")
+send("{enter}")
+send("be lost, Into heaven’s port at last...............")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+else
+send("{altdown}{tab}{altup}")
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+
+
+endif
+
+
+Case $msg = $button_line44
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Stormy seas no more I’ll sail— Safe at last within")
+send("{enter}")
+send("the veil..........................................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line45
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("And can it be that I should gain,   an interest in")
+send("{enter}")
+send("the Savior's blood, Died he for me? who caused his")
+send("{enter}")
+send("pain, for me? who him to death pursued????????????")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+
+endif
+
+
+Case $msg = $button_line46
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Amazing love, How can it be that thou,      my God,")
+send("{enter}")
+send("shouldst die for me? Amazing love,   How can it be")
+send("{enter}")
+send("that thou, my God, shouldest die for me???????????")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+else
+send("{altdown}{tab}{altup}")
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line47
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Tis mystery all the Immortal dies. Who can explore")
+send("{enter}")
+send("his strange design?   In vain the firstborn seraph")
+send("{enter}")
+send("tries to sound the depths of love divine..........")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+else
+send("{altdown}{tab}{altup}")
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+Case $msg = $button_line48
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("'Tis mercy all, Let earth adore;   let angel minds")
+send("{enter}")
+send("inquire no more...................................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+else
+send("{altdown}{tab}{altup}")
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+
+endif
+
+
+Case $msg = $button_line49
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("He left his Father's throne above,     so free, so")
+send("{enter}")
+send("infinite his grace,     emptied Himself of all but")
+send("{enter}")
+send("love, and bled for Adam's helpless race...........")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line50
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("'Tis mercy all, immense and free,     for O my God,")
+send("{enter}")
+send("it found out me....................................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line51
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Long my imprisoned spirit lay,   fast bound in sin")
+send("{enter}")
+send("and nature's night;           thine eye diffused a")
+send("{enter}")
+send("quickening ray; I woke,    the dungeon flamed with")
+send("{enter}")
+send("light.............................................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line52
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("my chains fell off, my heart is free, forever with")
+send("{enter}")
+send("you I will always be..............................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line53
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("No condemnation now I dread;     Jesus, and all in")
+send("{enter}")
+send("him, is mine; alive in him, my living Head........")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line54
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Blessed Spirit, for the asking,    Thou didst come")
+send("{enter}")
+send("into my heart; to never from Thee depart..........")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line55
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Oh, this well of living water, Springing up within")
+send("{enter}")
+send("my soul, life eternal to me giving,     Praise the")
+send("{enter}")
+send("Lord, I now am whole..............................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+Case $msg = $button_line56
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Thou dost witness to the cleansing,   I was bought")
+send("{enter}")
+send("by your blood;      your love has filled me like a")
+send("{enter}")
+send("cleansing flood...................................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+Case $msg = $button_line57
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Oh, this wondrous,  blessed anointing Which within")
+send("{enter}")
+send("me doth abide, Witnessing to Jesus’ merit   In Thy")
+send("{enter}")
+send("guidance I confide................................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+Case $msg = $button_line58
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Now I taste of heaven’s sweetness,   For my Savior")
+send("{enter}")
+send("in me lives; Oh,  the richness and completeness Of")
+send("{enter}")
+send("this rest the Spirit gives........................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+Case $msg = $button_line59
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("If I had to live one day without You,  I know that")
+send("{enter}")
+send("it's something I could not do.....................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line60
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Accustomed to talking to You every day,     You're")
+send("{enter}")
+send("never more than an arm's length away..............")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+
+endif
+
+
+
+
+
+Case $msg = $button_line61
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Lord, guide my feet down life's narrow way,    And")
+send("{enter}")
+send("open my heart to Your love each day...............")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line62
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("You took me in like a child from the cold.     You")
+send("{enter}")
+send("warmed my heart with a love untold................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line63
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("You are the answer You are the answer to my prayer.")
+send("{enter}")
+send("...................................................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line64
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Now I know You were there all the time;      Those")
+send("{enter}")
+send("nights I thought no one heard,  You were embracing")
+send("{enter}")
+send("my every word.....................................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line65
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Your love has given me A warmth,    that brings me")
+send("{enter}")
+send("to my knees; you have set my heart free...........")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+Case $msg = $button_line66
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("There are still times I fear,      I won't make it")
+send("{enter}")
+send("through But just as you always do,    You carry me")
+send("{enter}")
+send("when I'm too weak to stand;  This is why I'll walk")
+send("{enter}")
+send("with you for all my life..........................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+Case $msg = $button_line67
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("I want the whole world to find The kind,   of love")
+send("{enter}")
+send("that brings peace of mind;   The kind of love that")
+send("{enter}")
+send("comes from Christ.................................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+Case $msg = $button_line68
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Is there anybody here that love my Jesus, Is there")
+send("{enter}")
+send("anybody here that love my lord....................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+Case $msg = $button_line69
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("everybody praise Him, put up your hands and praise")
+send("{enter}")
+send("Him go tell somebody his story,   come on give Him")
+send("{enter}")
+send("glory.............................................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line70
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("come on clap your hands now, come on do your dance")
+send("{enter}")
+send("now where the spirit of the lord is...............")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+
+endif
+
+
+
+
+
+Case $msg = $button_line71
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Why be bound the lord can set you free,  everybody")
+send("{enter}")
+send("in this place sing along with me..................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line72
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Anything is possible,        In Him all things are")
+send("{enter}")
+send("possible, All you do is keep the faith, don't give")
+send("{enter}")
+send("up 'cause it's never too late.....................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line73
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("There is a way That you can have everything,  that")
+send("{enter}")
+send("you've always dreamed of; There is a way Just keep")
+send("{enter}")
+send("your feet on the ground;   while you reach for the")
+send("{enter}")
+send("heavens There is a way............................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line74
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("It may be hard for you now,     but it's gonna get")
+send("{enter}")
+send("better Your life will change, I've seen it done in")
+send("{enter}")
+send("the past, so never say never......................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line75
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Where is your faith, You can speak to the mountain")
+send("{enter}")
+send("and it will be moved;    I tell you friend that is")
+send("{enter}")
+send("the truth.........................................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+Case $msg = $button_line76
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Kick that dust off Your shoes today.       Are you")
+send("{enter}")
+send("ready to give God the praise??????????????????????")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+Case $msg = $button_line77
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Stand to your feet, show me what you got:  I wanna")
+send("{enter}")
+send("see you dance, as soon as the beat drops..........")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+Case $msg = $button_line78
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("you can praise Him In the morning,  You can praise")
+send("{enter}")
+send("Him in the evening, In and out of every season....")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+Case $msg = $button_line79
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("This world sometimes seems cruel and cold,     And")
+send("{enter}")
+send("pain doth pierce my very soul, But there's a place,")
+send("{enter}")
+send("a secret place, a place where I can go............")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line80
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("You shall hide me in your tabernacle,     from the")
+send("{enter}")
+send("rain and storm, and even when my enemies pursue me,")
+send("{enter}")
+send("you'll keep me safe from harm.....................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+
+endif
+
+
+
+
+
+
+Case $msg = $button_line81
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("I could have been dead,   sleeping in my grave but")
+send("{enter}")
+send("God blessed me, too see another day...............")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line82
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Even when I did wrong He was still there,   I'm so")
+send("{enter}")
+send("glad that God still hears a sinners prayer........")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line83
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("I walked to the church on a Sunday morning,  stood")
+send("{enter}")
+send("outside,       contemplating weather I should walk")
+send("{enter}")
+send("through the door..................................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line84
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Christ eternal, living God,    with you someday my")
+send("{enter}")
+send("soul will trout...................................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line85
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Down at the cross where my Savior died, down where")
+send("{enter}")
+send("for cleansing from sin I cried;  there to my heart")
+send("{enter}")
+send("was the blood applied.............................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+Case $msg = $button_line86
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Your blood has washed all my sins away,  Your Word,")
+send("{enter}")
+send("I promise I shall obey;  I shall believe as I walk")
+send("{enter}")
+send("by faith..........................................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+Case $msg = $button_line87
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Lord I'll bless Your name,  You deserve the praise;")
+send("{enter}")
+send("..................................................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+Case $msg = $button_line88
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("It was Your blood that was shed for me,     it was")
+send("{enter}")
+send("that same blood that set me free..................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+Case $msg = $button_line89
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("I know Christ He died for my sins,   and all of my")
+send("{enter}")
+send("iniquities.   I know Christ He died for my sins he")
+send("{enter}")
+send("was the one to bleed..............................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line90
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("O brother,       will you bear the cross For Jesus")
+send("{enter}")
+send("everywhere,        Count all things gained for Him")
+send("{enter}")
+send("And all His favor share???????????????????????????")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+
+endif
+
+
+
+
+
+Case $msg = $button_line91
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Bear the cross, bear the cross,  Ever stand by the")
+send("{enter}")
+send("cross alone; Bear the cross, bear the cross,   For")
+send("{enter}")
+send("the blood-stained cross we own....................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line92
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("The glorious cross I love to bear,   For Christ my")
+send("{enter}")
+send("Tblessed Lord;  Nor in the conflict will I fear, He")
+send("{enter}")
+send("doth all grace afford.............................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line93
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("How sweet will be the cross to you,    When all is")
+send("{enter}")
+send("left behind,    When all things lost but Christ in")
+send("{enter}")
+send("view Within thy heart enshrined...................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line94
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Yes, Lord, I did choose to answer the door,   I'll")
+send("{enter}")
+send("be Rejoicing with you forever more................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line95
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Too many storms have passed your way,   And you’re")
+send("{enter}")
+send("all washed out cause it rained on your parade.....")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+Case $msg = $button_line96
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("You are living your life like a castaway, searched")
+send("{enter}")
+send("for strength inside, was it all in vain;     Seems")
+send("{enter}")
+send("nobody cares about you anyway.....................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+Case $msg = $button_line97
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("the deeper you dig,    you find more and more pain")
+send("{enter}")
+send("Don’t let your tomorrow be like yesterday;    Pray")
+send("{enter}")
+send("for peace in Jesus name...........................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+Case $msg = $button_line98
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("Be Blessed, Don’t live life in distress;    You're")
+send("{enter}")
+send("problems to God you can express...................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+Case $msg = $button_line99
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("He will erase any guilt or shame,   any bad habits")
+send("{enter}")
+send("you’ve got,   You won’t wanna do em again, Yes you")
+send("{enter}")
+send("all can change....................................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+endif
+
+
+Case $msg = $button_line100
+send("{altdown}{tab}{altup}")
+sleep(100)
+if winactive("Untitled - Notepad")  then
+sleep(150)
+send("The body they may kill:  God's truth abideth still,")
+send("{enter}")
+send("his kingdom is forever.............................")
+send("{enter}")
+send("{enter}")
+sleep(1000)
+send("{altdown}{tab}{altup}")
+sleep(9999999999999999999999999999999999999999)
+
+else
+send("{altdown}{tab}{altup}")
+
+MsgBox(4096, "Poet In A Box Demo", "you must open an untitled notepad to get this to work.")
+
+endif
+
+
+
+
+endselect
+
+
+WEnd
+
+
+
+
+Func Set_Done()
+for $x = 1 to UBound($radio) -1
+    If _IsChecked($radio[$x]) Then MsgBox(0x0,"#" & $x, "You selected Radio " & $x, 2)
+    Next
+EndFunc
+
+Func Set_Next()
+
+    For $x = 1 To $children - 1
+        $Nwin = WinGetState($Child_[$x])
+        If $Nwin > 5 Then
+            GUISetState(@SW_HIDE, $Child_[$x])
+            GUISetState(@SW_SHOW, $Child_[$x + 1])
+            Return
+        EndIf
+    Next
+
+EndFunc   ;==>Set_Next
+
+Func Set_Back()
+
+    For $x = $children To 1 Step - 1
+        $Nwin = WinGetState($Child_[$x])
+        If $Nwin > 5 Then
+            GUISetState(@SW_HIDE, $Child_[$x])
+            GUISetState(@SW_SHOW, $Child_[$x - 1])
+            Return
+        EndIf
+    Next
+
+EndFunc   ;==>Set_Back
+
+Func _IsChecked($control)
+    Return BitAND(GUICtrlRead($control), $GUI_CHECKED) = $GUI_CHECKED
+EndFunc
+
+
+
+
+; ----------------------------------------------------------------------------
+; <AUT2EXE INCLUDE-END: C:\Documents and Settings\Owner\Desktop\Poet In A Box Demo.txt>
+; ----------------------------------------------------------------------------
+
