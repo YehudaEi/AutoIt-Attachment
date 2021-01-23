@@ -1,0 +1,7 @@
+CPU SPEED (GHz) Processor 0: 2.9
+CPU SPEED (GHz) Processor 1: 2.9
+CPU Name 0:               Intel(R) Pentium(R) D CPU 3.00GHz
+CPU Name 1:               Intel(R) Pentium(R) D CPU 3.00GHz
+RAM Memory in KB 2096300
+RAM Memory in MB 2047.2
+Videocard: NVIDIA GeForce 8600 GTS
