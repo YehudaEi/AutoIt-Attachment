@@ -1,0 +1,65 @@
+[What is the strongest bone in the human body?]
+Answer1 = Femur
+Answer2 = Jaw
+Answer3 = Cranium
+Correct = Answer1
+
+[What is the name of the liquid jelly inside the eye?]
+Answer1 = Jelly
+Answer2 = Water
+Answer3 = Vitreus Humor
+Correct  = Answer3
+
+[At what month does a fetus grow fingerprints?]
+Answer1 = 3 months
+Answer2 = 8 months
+Answer3 = Not until birth
+Correct = Answer1
+
+[How many bones are in a baby/adult?]
+Answer1 = 100/410
+Answer2 = 200/250
+Answer3 = 300/206
+Correct = Answer3
+
+[How many muscles does it take to smile?]
+Answer1 = 2
+Answer2 = 17
+Answer3 = 43
+Correct = Answer2
+
+[How much force does could an average person exert on the jaw while biting?]
+Answer1 = 200lbs
+Answer2 = 50lbs
+Answer3 = 500lbs
+Correct = Answer1
+
+[How long is a fetus in the womb?]
+Answer1 = 9 Days
+Answer2 = 8 1/2 Months
+Answer3 = 9 Months
+Correct = Answer3
+
+[How big is the left lung compared to the right lung?]
+Answer1 = Bigger
+Answer2 = Smaller
+Answer3 = Same size
+Correct = Answer2
+
+[What bone in the human body is not connected to another?]
+Answer1 = Deltoid
+Answer2 = Hyroid
+Answer3 = Patella
+Correct = Answer2
+
+[How many cells in our body die in a minute?]
+Answer1 =300,000,000
+Answer2 = 2
+Answer3 = 100,000
+Correct = Answer1
+
+[What acid does your stomach produce?]
+Answer1 = Mucus
+Answer2 = None
+Answer3 = Hydrochloric
+Correct = Answer3
