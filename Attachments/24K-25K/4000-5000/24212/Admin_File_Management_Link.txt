@@ -1,0 +1,9 @@
+
+Here is the link for the Admin File Management v1.1 download - (198 kb)
+
+                                                                        File Management v1.1.zip
+
+
+To understand my reasons for using this download method, please visit this AutoIt post -
+
+http://www.autoitscript.com/forum/index.php?showtopic=71862
