@@ -1,0 +1,186 @@
+#include <GUIConstants.au3>
+#include <EzSkin.au3>
+
+#Region ### START Koda GUI section ### Form=
+$Form1 = GUICreate("Pannello", 625, 432, 192, 121)
+$Button1 = GUICtrlCreateButton("Hard Disk Esterno (J)", 200, 51, 113, 25, 0)
+$Button2 = GUICtrlCreateButton("Note Pad", 128, 387, 121, 25, 0)
+$Button3 = GUICtrlCreateButton("C:\", 200, 83, 113, 25, 0)
+$Button4 = GUICtrlCreateButton("Documenti", 200, 115, 113, 25, 0)
+$Button5 = GUICtrlCreateButton("Calcolatrice", 496, 387, 121, 25, 0)
+$Button6 = GUICtrlCreateButton("Windows Media Player", 8, 387, 113, 25, 0)
+$Button7 = GUICtrlCreateButton("Paint", 256, 355, 113, 25, 0)
+$Button8 = GUICtrlCreateButton("uTorrent", 256, 387, 113, 25, 0)
+$Button9 = GUICtrlCreateButton("ScItE Script Editor", 376, 387, 113, 25, 0)
+$Group1 = GUICtrlCreateGroup("Cartelle Importanti", 192, 35, 241, 209)
+$Button10 = GUICtrlCreateButton("L:\", 200, 147, 113, 25, 0)
+$Button11 = GUICtrlCreateButton("Video", 200, 179, 113, 25, 0)
+$Button12 = GUICtrlCreateButton("Musica", 200, 211, 113, 25, 0)
+$Button13 = GUICtrlCreateButton("Immagini", 320, 51, 105, 25, 0)
+$Button14 = GUICtrlCreateButton("Scuola", 320, 83, 105, 25, 0)
+$Button15 = GUICtrlCreateButton("Programmi", 320, 115, 105, 25, 0)
+$Button16 = GUICtrlCreateButton("Desktop", 320, 147, 105, 25, 0)
+$Button17 = GUICtrlCreateButton("Unità CD/DVD", 320, 179, 105, 25, 0)
+$Button18 = GUICtrlCreateButton("Documenti Condivisi", 320, 211, 105, 25, 0)
+GUICtrlCreateGroup("", -99, -99, 1, 1)
+$Group2 = GUICtrlCreateGroup("Programmi", 8, 339, 609, 81)
+$Button19 = GUICtrlCreateButton("Microsoft Office", 8, 355, 113, 25, 0)
+$Button20 = GUICtrlCreateButton("DOS", 128, 355, 121, 25, 0)
+$Button21 = GUICtrlCreateButton("ConvertXtoDVD", 376, 355, 113, 25, 0)
+$Button22 = GUICtrlCreateButton("MSN", 496, 355, 121, 25, 0)
+GUICtrlCreateGroup("", -99, -99, 1, 1)
+$Group3 = GUICtrlCreateGroup("Siti", 8, 259, 609, 81)
+$Button23 = GUICtrlCreateButton("Hacking Style", 8, 275, 113, 25, 0)
+$Button24 = GUICtrlCreateButton("WarezItalia", 8, 307, 113, 25, 0)
+$Button25 = GUICtrlCreateButton("YouTube", 128, 275, 121, 25, 0)
+$Button26 = GUICtrlCreateButton("Mininova", 128, 307, 121, 25, 0)
+$Button27 = GUICtrlCreateButton("Autoit", 256, 275, 113, 25, 0)
+$Button28 = GUICtrlCreateButton("Ciao Cross Club", 256, 307, 113, 25, 0)
+$Button29 = GUICtrlCreateButton("Programmi Free", 376, 275, 113, 25, 0)
+$Button30 = GUICtrlCreateButton("Google", 376, 307, 113, 25, 0)
+$Button31 = GUICtrlCreateButton("SoftArchive", 496, 275, 121, 25, 0)
+$Button32 = GUICtrlCreateButton("Hacking 2.0", 496, 307, 121, 25, 0)
+GUICtrlCreateGroup("", -99, -99, 1, 1)
+$sfondo1 = GUICtrlCreatePic("J:\Andrea\Foto\100_0210.JPG", 0, -13, 636, 444, BitOR($SS_NOTIFY,$WS_GROUP,$WS_CLIPSIBLINGS))
+GuiCtrlSetState(-1,$GUI_DISABLE)
+$Button33 = GUICtrlCreateButton("Nome computer", 8, 35, 121, 25, 0)
+$Group4 = GUICtrlCreateGroup("Info PC", 0, 16, 137, 170)
+GuiCtrlSetState(-1,$GUI_DISABLE)
+$Button34 = GUICtrlCreateButton("Service Pack", 8, 64, 121, 25, 0)
+$Button35 = GUICtrlCreateButton("Riavvia Computer", 8, 92, 121, 25, 0)
+$Button36 = GUICtrlCreateButton("Apri lettore CD", 8, 122, 121, 25, 0)
+$Button37 = GUICtrlCreateButton("Chiudi lettore cd", 8, 150, 121, 25, 0)
+GUICtrlCreateGroup("", -99, -99, 1, 1)
+$Button38 = GUICtrlCreateButton("Cambia Sfondo", 480, 48, 113, 25, 0)
+$input= guictrlcreateinput ("",480,75)
+GUISetState(@SW_SHOW)
+#EndRegion ### END Koda GUI section ###
+
+if FileExists ("C:/Documents and Settings/Andrea/Desktop/database.txt") then
+$sfondo = fileread ("C:/Documents and Settings/Andrea/Desktop/database.txt")
+else
+$sfondo = $sfondo1
+endif
+GuiCtrlSetImage (-1,$sfondo1)
+
+While 1
+	$nMsg = GUIGetMsg()
+	Switch $nMsg
+		Case $GUI_EVENT_CLOSE
+			Exit
+		Case $GUI_EVENT_MINIMIZE
+		Case $GUI_EVENT_RESTORE
+		Case $GUI_EVENT_MAXIMIZE
+			
+		Case $Button1
+			ShellExecute("J:/")
+		Case $Button2
+			Run("notepad.exe")
+		Case $Button3
+			ShellExecute(@HomeDrive)
+		Case $Button4
+			ShellExecute("C:/Documents and Settings/Andrea/Documenti")
+		Case $Button5	
+			run("CALC.EXE")
+		Case $Button6
+			run("cmd.exe")
+			sleep (1000)
+			send ("start wmplayer.exe")
+			send("{enter}")
+			sleep (1000)
+			processclose("cmd.exe")
+		Case $Button7
+			run("mspaint.exe")
+		Case $Button15
+			ShellExecute(@ProgramsDir)	
+		Case $Button16
+			ShellExecute(@DesktopDir)	
+		Case $Button18
+			ShellExecute(@DocumentsCommonDir)	
+		Case $Button32
+			MsgBox(64,"Hacking 2.0","                                    ")
+		Case $Button31
+			MsgBox(64,"SoftArchive","                      ")
+		Case $Button30
+			MsgBox(64,"Google","                    ")
+		Case $Button33
+			MsgBox(64,"Nome Computer",@computerName)
+		Case $Button29
+			MsgBox(64,"Programmi Free","                            ")
+		Case $Button28
+			MsgBox(64,"Ciao Cross Club","                           ")
+		Case $Button27
+			MsgBox(64,"Autoit","http://www.autoitscript.com/autoit3/index.shtml")
+		Case $Button26
+			MsgBox(64,"Mininova","                       ")
+		Case $Button25
+			MsgBox(64,"Youtube","                     ")
+		Case $Button24
+			MsgBox(64"WarezItalia","                         ")
+		Case $Button23
+			MsgBox(64,"Hacking Style","                                      ")
+		Case $Button22
+			Run("cmd.exe")
+			sleep (1000)
+			send("start msnmsgr.exe")
+			send("{enter}")
+			sleep (1000)
+			processclose("cmd.exe")
+		Case $Button35
+			ShutDown (6)
+		Case $Button34
+			MsgBox(64,"Il tuo service pack è",@osservicepack)
+		Case $Button17
+			ShellExecute("I:/")
+		Case $Button8
+			Run("cmd.exe")
+			sleep (1000)
+			send("start C:\Programmi\uTorrent\uTorrent.exe")
+			send("{enter}")
+			sleep (1000)
+			processclose("cmd.exe")
+		Case $Button19
+			ShellExecute("C:\Documents and Settings\All Users\Menu Avvio\Programmi\Microsoft Office")
+		Case $Button20
+			Run("cmd.exe")
+		Case $Button11
+			ShellExecute("C:/Documents and Settings/Andrea/Documenti/Video")
+		Case $Button10
+			ShellExecute("L:/")
+		Case $Button12	
+			ShellExecute("C:/Documents and Settings/Andrea/Documenti/Musica")
+		Case $Button13
+			ShellExecute("C:/Documents and Settings/Andrea/Documenti/Immagini")
+		Case $Button9
+			Run("cmd.exe")
+			sleep (1000)
+			send("start C:\Programmi\AutoIt3\SciTE\SciTE.exe")
+			send("{enter}")
+			sleep (1000)
+			processclose("cmd.exe")
+		Case $Button14	
+			ShellExecute("C:/Documents and Settings/Andrea/Documenti/Scuola")
+		Case $Button36
+			CDTray("I:/","open")
+		Case $Button37
+			CDTray("I:/","close")
+		Case $Button21
+			Run("cmd.exe")
+			sleep (1000)
+			send("start J:\Andrea\Programmi\Vso_ConvertiXtoDvd\ConvertXtoDvd.exe")
+			send("{enter}")
+			sleep (1000)
+			processclose("cmd.exe")
+		Case $Button38
+				$input= guictrlcreateinput ("",480,75)
+				$sfondo = FIleOpenDialog ("Inserisci il percorso dell'immagine di sfondo",@desktopDir,"Immagini (*.Jpg;*.Png)")
+				GuiCtrlSetImage (-1,guictrlread ($input))
+				GUICtrlSetData($input, $sfondo)
+				FileWriteLine("C:/Documents and Settings/Andrea/Desktop/database.txt",guictrlread ($input))			
+				
+			EndSwitch
+		
+
+	WEnd
+
+
