@@ -1,0 +1,23 @@
+<question id="$READ2"	correct=""	layout="$READ3"	title="$READ4"	directions="$READ5"	passage="$READ6">
+<text>1.  QUESTION TEXT 1 WOULD BE HERE</text>
+<explanation>
+<text></text>
+</explanation>
+<answer id="A"><text>A.	ANSWER TEXT A COPIED HERE</text></answer>
+<answer id="B"><text>B.	ANSWER TEXT B COPIED HERE</text></answer>
+<answer id="C"><text>C.	ANSWER TEXT C COPIED HERE</text></answer>
+<answer id="D"><text>D.	ANSWER TEXT D COPIED HERE</text></answer>
+<answer id="E"><text>E.	ANSWER TEXT E COPIED HERE</text></answer>
+</question>
+
+<question id=""	correct=""	layout=""	title=""	directions=""	passage="">
+<text>2.  QUESTION TEXT 1 WOULD BE HERE</text>
+<explanation>
+<text></text>
+</explanation>
+<answer id="A"><text>A.	ANSWER TEXT A COPIED HERE</text></answer>
+<answer id="B"><text>B.	ANSWER TEXT B COPIED HERE</text></answer>
+<answer id="C"><text>C.	ANSWER TEXT C COPIED HERE</text></answer>
+<answer id="D"><text>D.	ANSWER TEXT D COPIED HERE</text></answer>
+<answer id="E"><text>E.	ANSWER TEXT E COPIED HERE</text></answer>
+</question>
