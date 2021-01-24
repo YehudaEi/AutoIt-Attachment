@@ -1,0 +1,45 @@
+[b][11-sep-2008] Version 3.9.0[/b]
+Yes, yes, I know it took some time to make a new version of the Universal ScreenMate, but I finally made it
+[url="                                                 ;11753321;/fileinfo.html"]Download link for the installer+editor[/url] (FileFront)
+[url="                                    "]Mirror[/url] (SendSpace)
+Here's what's new since last version: 
+ + added: 2 new characters: a robot that looks a little like wall-e, and a Blob thing with 5 custom animations
+ + changed: the editor and screenmate supports now PNG images - thus you can create semitransparent characters or anything your imagination might cook up
+ + improved: the editor! I hope I made it more user friendly - it now has lots of text to guide you
+ + fixed: bugs of all sorts
+
+Hope you enjoy i; Feel free to comment :)
+P.S. Many thanks go to james3mg for long long lists of suggestions/wishes and bugs
+
+[img]                                                     [/img]
+
+[b][23-apr-2008] Version 3.7.1[/b]
+[url="                                          ;10057781;/fileinfo.html"]Download link for the installer+editor[/url]
+Firstly I would like to thank everyone for the replies (especially to james3mg).
+Secondly... well, the new version of Mario Screenmate is out there. Most probably the next version will be renamed into "Universal Screenmate"
+The best thing I added this time is the Character editor. With this anyone ca make skins/characters, translate their quotes into anylanguage and many other...
+I also released the source of SuperMarioScreenmate v3.6; for those interested check the attachment. ...and yes, I am planning to release sources for the editor, but only after I launch the next version (same for the screenmate) 
+P.S. This version si beta momentarly. In a week or so I'll fix all the bugs and glitches and write a help file. Anyone is invited to make characters, and with your approval I will include them into the next release.
+Cheers,
+  Adrian
+
+
+[b][11-mar-2008] Version 3.6[/b]
+The new version of Super Mario Screen Mate is available [url="                                              ;9785371;/fileinfo.html"]here[/url]
+New:
+   + the screenmate is skinnable (future releases will include an editor too)
+   + posibility of making screenshots
+   + options added for both the screen mate and the menu
+Enhanced:
+   + colorpicker
+   + many optimizations
+Fixed:
+   + colorpicker now works fine
+   + the IP adress is updated every time the menu is shown
+
+[b][old] Version 'too old to remember'[/b]
+Hello! Do you think anyone would keep a Mario as a screenmate on his/her desktop??? and it's not only a screenmate.
+Here's what it can do:
++ jump, run, walk, throw fireballs at the mouse causing it to go away, chase he mouse or say things... (only on the screen)
++ his behaviour varyes due to his mood; he can be walky, angry, sleepy or talky :)
+You can set him to remind you of something, make him go away, get the color underneath your mouse pointer (like #FF0000), set him to automatically shutdown your computer or search on the net using Google, YouTube or Wikipedia
