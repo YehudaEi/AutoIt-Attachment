@@ -1,0 +1,50 @@
+[General]
+;//*//General/Resolution//*//Resolution represents width x height of the window (in pixels).
+;//*//General/Resolution/800x600//*//In this example, it's 800x600
+Resolution=800x600
+;//*//General/Full Screen//*//Full Screen Key
+;//*//General/Full Screen/False//*//FALSE in this case
+Full Screen=False
+;//*//General/Location//*//location...
+;//*//General/Location/C:\Program\Run.exe//*//location of the application
+;//*//General//*//This is General Section, all important informations are stored here...
+Location=C:\Program\Run.exe
+[Data]
+Pi=3.14
+;//*//Data/E//*//This is some coef.
+;//*//Data/E/240//*//can be 240, 360, 400 or 500
+E=240
+Dif=134.48
+Sq=2
+Mass=164
+Fb=2.5
+Tr=1.1
+Direction=1
+Angle=30
+Speed=88
+g=9.81
+Distance=1489,33
+Turbo Radio=True
+Wind Radio=True
+;//*//Data//*//This is Data section
+Rain Checkbox=False
+[Setup]
+Print=true
+Pages=1
+Keyboard=qwerty (108)
+Mouse=Logitech LX3
+Color=0x00FF00
+;//*//Setup//*//This is Setup Section
+etc=...
+[Section1]
+Key1=Value1
+Key2=Value2
+Key3=Value3
+[Section2]
+Key1=Value1
+Key2=Value2
+Key3=Value3
+Key4=Value4
+Key5=Value5
+[Section3]
+Key1=Value1
