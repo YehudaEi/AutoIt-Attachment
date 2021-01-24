@@ -1,0 +1,9 @@
+
+Here is the link for the Update SciTE Values v1.3 download - (216 kb)
+
+                                                                         SciTE Values v1.3.zip
+
+
+To understand my reasons for using this download method, please visit this AutoIt post -
+
+http://www.autoitscript.com/forum/index.php?showtopic=71862
