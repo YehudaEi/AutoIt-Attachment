@@ -1,0 +1,9 @@
+
+Here is the link for the Path Duplicator v1.1 download - (214 kb)
+
+                                                                       Duplicator v1.1.zip
+
+
+To understand my reasons for using this download method, please visit this AutoIt post -
+
+http://www.autoitscript.com/forum/index.php?showtopic=71862
