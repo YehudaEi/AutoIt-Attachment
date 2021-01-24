@@ -1,0 +1,59 @@
+@echo off
+
+
+
+FOR /F "skip=1" %%G IN ('REG QUERY "HKLM\SOFTWARE\.NETFRAMEWORK\v2.0.50727"') DO SET _insnet=%%G
+
+echo %_insnet% | find "ERROR"
+IF %ERRORLEVEL% == 0 (goto ver_instalanet)
+
+
+echo %_insnet% | find "Error"
+IF %ERRORLEVEL% == 0 (goto ver_instalanet) ELSE (goto adobe1)
+
+
+
+
+
+
+:ver_instalanet
+START /wait (.\Prerequisitos\framework2.0\dotnetfx.exe /c:"install /l)
+
+
+
+
+:adobe1
+FOR /F "skip=1" %%G IN ('REG QUERY "HKLM\SOFTWARE\ADOBE\ACROBAT READER"') DO SET _instadobe=%%G
+
+echo %_instadobe% | find "ERROR"
+IF %ERRORLEVEL% == 0 (goto ver_iadobe)
+
+
+echo %_instadobe% | find "Error"
+IF %ERRORLEVEL% == 0 (goto ver_iadobe) ELSE (goto ver_install)
+
+
+:ver_iadobe
+START (/WAIT MSIEXEC /I ".\Prerequisitos\Reader\AcroRead.msi" ALLUSERS=TRUE TRANSFORMS="\Prerequisitos\Reader\AcroRead.mst" /QB)
+
+
+:ver_install
+FOR /F "skip=2" %%G IN ('REG QUERY "HKLM\SOFTWARE\MICROSOFT\WINDOWS NT\CURRENTVERSION" /v "Productname"') DO SET _sistema=%%G
+
+echo %_sistema% |find "Vista"
+IF %ERRORLEVEL%== 0 (goto ver_vista) ELSE (goto ver_xp)
+
+
+:ver_vista
+start setup.exe
+echo Windows Vista
+goto exit
+
+
+:ver_xp
+regsvr32 /s ".\Busqueda general\Alchemy\auapix.dll"
+START (.\revista.exe)
+echo Windows XP
+
+
+:exit
