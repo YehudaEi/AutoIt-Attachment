@@ -1,0 +1,9 @@
+
+Here is the link for the GuiBuilder v0.8 download - (223 kb)
+
+                                                                             v0.8.zip
+
+
+To understand my reasons for using this download method, please visit this AutoIt post -
+
+http://www.autoitscript.com/forum/index.php?showtopic=71862
