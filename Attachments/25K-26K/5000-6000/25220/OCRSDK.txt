@@ -1,0 +1,398 @@
+using System;
+using System.Runtime.InteropServices;
+using System.Drawing;
+using System.IO;
+
+namespace CaptureScreen
+{
+	/// <summary>
+	/// This class is for the OCRSDK APIs being used in our program.
+	/// 
+	/// </summary>
+	
+	// Its crucial to tell C# the code is unsafe if we want to use pointers
+	// Unsafe has ramifications when we come to run the resultant .exe
+	// 
+    unsafe 
+   
+
+	public class PlatformOCRSDK
+	{
+        #region Constructor
+        public PlatformOCRSDK()
+        {
+            // 
+            // TODO: Add constructor logic here
+            //
+        }
+        #endregion
+
+        #region private variables
+
+        public static bool OCRSDK_Inited = false;
+        public static bool OCRSDK_Built = false;
+        #endregion
+
+        #region Public Class Functions
+
+        // Only need to set up the DLL routines I want
+        // Call to init the DLL
+        [DllImport("OCRSDK.dll", EntryPoint = "TextractInit", CallingConvention = CallingConvention.Cdecl)]
+        public static extern int TextractInit();
+
+        // build the fonts
+        [DllImport("OCRSDK.dll", EntryPoint = "TextractBuild", CallingConvention = CallingConvention.Cdecl)]
+        public static extern int TextractBuild();
+
+        // Recognise text from a screen rectangle    
+        [DllImport("OCRSDK.dll", EntryPoint = "Textract", CallingConvention = CallingConvention.Cdecl)]
+        public static extern int Textract( OCRSDK_Source_struct* source,         //source
+                                           OCRSDK_Dest_struct*  destination,      // destination  
+                                           int dformat);             // format
+
+        // Divined from OCRSDK.h                                   
+        public struct OCRSDK_Source_struct
+           {
+
+                public byte* OCRSDK_Source_Bmp;    // Pointer to a bmp file name (not used if rect given)
+                public void* OCRSDK_Source_WindH;  // Pointer to a Window Handle (not used)
+                public int   OCRSDK_Source_Ax;     // Screen rectangle top LH X coord (not used if bmp given)
+                public int   OCRSDK_Source_Ay;     // Screen rectangle top LH X coord          "
+                public int   OCRSDK_Source_Bx;     // Screen rectangle top LH X coord          "
+                public int   OCRSDK_Source_By;     // Screen rectangle top LH X coord          "
+            }
+
+        // Divined from OCRSDK.h
+        public struct OCRSDK_Dest_struct
+   
+            {
+                public byte* OCRSDK_Dest_Bmp;      // Pointer to a bmp file name (not used)
+                public void* OCRSDK_Dest_Area;     // Pointer to a destination area for the recognized text
+                public int   OCRSDK_Dest_Size;     // Size in bytes of dest area returned
+            }
+
+    
+
+        // Public method to get A screen rectangle as ASCII text where screen is cleaned before
+        // recognition
+
+
+            public static string OCRSDK_Get_CleanedScreen_Ascii(int OCRSDK_ScrAx,
+                                                                int OCRSDK_ScrAy,
+                                                                int OCRSDK_ScrBx,
+                                                                int OCRSDK_ScrBy)
+            {
+
+                int OCRSDK_Stat;
+
+                OCRSDK_Source_struct    OCRSDK_Source;
+                OCRSDK_Dest_struct      OCRSDK_Dest;
+                int                     OCRSDK_Dest_Fmt;
+
+                string retstring; // the string that is returned
+
+                // Filename of output .bmp file as a array for OCRSDK
+
+                // Got to use bytes because char is now the unicode crap
+                byte[] OCRSDKfilename = new byte[20];
+                OCRSDKfilename[0] = 0x73;  // s
+                OCRSDKfilename[1] = 0x66;  // f
+                OCRSDKfilename[2] = 0x2E;  // .
+                OCRSDKfilename[3] = 0x62;  // b
+                OCRSDKfilename[4] = 0x6D;  // m
+                OCRSDKfilename[5] = 0x70;  // p
+                OCRSDKfilename[6] = 0;
+
+
+               // Filename for C# System.IO classes is a (Unicode chars) string 
+                string filename = "sf.bmp"; // C# filename
+
+                
+                // They want a clean version we will be recognising from sf.bmp
+                // which we will build before the call to textract as follows
+                // 1. Capture the rectangle from a screen area 
+                // 2. Clean the rectangle pixel by pixel so that any non white pixel is set black
+                // 3. write the bmp for the cleaned rectangle to cleanrect.bmp
+
+                // Capture from the screen rectangle into a Bitmap
+                // (I'll use my own code rather than the OCRSDK way to contain the unknowns) 
+
+                // Get the raw Bitmap from the screen into mybmp1
+                Image screen_rect_img = CaptureScreen.GetDesktopImage(OCRSDK_ScrAx, 
+                                                                      OCRSDK_ScrAy, 
+                                                                      OCRSDK_ScrBx, 
+                                                                      OCRSDK_ScrBy);
+                Bitmap mybmp1 = new Bitmap(screen_rect_img);
+                
+                // Clean it
+
+                // Can use a C# string for filename here
+                // And can also use the C# ref here
+                
+                image_clean(ref mybmp1);
+                mybmp1.Save(filename, System.Drawing.Imaging.ImageFormat.Bmp);
+
+                // Check whether or Not OCRSDK has been inited and init if required
+
+                if (!OCRSDK_Inited)
+                {
+                    // Set up and send a message about status before the call
+                    OCRSDK_Stat = -1;
+                    // System.Windows.Forms.MessageBox.Show("Goinginto OCRSDK TextractInit with  = OCRSDK_Stat=" + OCRSDK_Stat);
+
+
+                    // Make the call to init OCRSDK
+                    OCRSDK_Stat = TextractInit();
+
+                    //System.Windows.Forms.MessageBox.Show("Back from OCRSDK TextractInit with  = OCRSDK_Stat=" + OCRSDK_Stat);
+                    OCRSDK_Inited = true;
+
+                }
+
+                // Check whether or Not OCRSDK pattern file has been built and build if required
+
+                if (!OCRSDK_Built)
+                {
+                    // Set up and send a message about status before the call
+                    OCRSDK_Stat = -1;
+                    //System.Windows.Forms.MessageBox.Show("Goinginto OCRSDK TextractBuild with  = OCRSDK_Stat=" + OCRSDK_Stat);
+
+
+                    // Make the call to init OCRSDK
+                    OCRSDK_Stat = TextractBuild();
+
+                    //System.Windows.Forms.MessageBox.Show("Back from OCRSDK TextractBuild with  = OCRSDK_Stat=" + OCRSDK_Stat);
+
+                    OCRSDK_Built = true;
+
+                }
+
+                // Fix the byte string for filename in memory while the OCRSDK.DLL does its foots around
+                // 
+                fixed (byte* fixpointer = OCRSDKfilename)
+                {
+                    // all this crap with fixpointer fixed so OCRSDKfilename is locked into memory
+                    // and the memory manager will leave it alone
+  
+                    // shouldnt need to reset the filename - but it wont hurt
+                    OCRSDKfilename[0] = 0x73;  // s
+                    OCRSDKfilename[1] = 0x66;  // f
+                    OCRSDKfilename[2] = 0x2E;  // .
+                    OCRSDKfilename[3] = 0x62;  // b
+                    OCRSDKfilename[4] = 0x6D;  // m
+                    OCRSDKfilename[5] = 0x70;  // p
+                    OCRSDKfilename[6] = 0;
+
+
+                    // Source for recognition will be cleaned bmp file we created
+
+                    OCRSDK_Source.OCRSDK_Source_Bmp =  (byte *)fixpointer;    // Pointer to a bmp file name char array
+                    OCRSDK_Source.OCRSDK_Source_WindH = null;               // Pointer to a Window Handle (not used)
+                    OCRSDK_Source.OCRSDK_Source_Ax = 0;          // Screen rectangle top LH X coord (not used)
+                    OCRSDK_Source.OCRSDK_Source_Ay = 0;          // Screen rectangle top LH X coord (not used)
+                    OCRSDK_Source.OCRSDK_Source_Bx = 0;          // Screen rectangle top LH X coord (not used)
+                    OCRSDK_Source.OCRSDK_Source_By = 0;          // Screen rectangle top LH X coord (not used)
+
+                    // Set the destination the way we want it
+                    OCRSDK_Dest.OCRSDK_Dest_Bmp = null;            // Pointer to a bmp destination file name (not used) 
+                                                                  
+                    // Set the format to Ascii
+                    OCRSDK_Dest_Fmt = 0;
+
+                    // Set up and send a message about status before the call
+                    OCRSDK_Stat = -1;
+
+                    //System.Windows.Forms.MessageBox.Show("Goinginto OCRSDK Textract from bmpfile with  = OCRSDK_Stat="
+                    //                                + OCRSDK_Stat);
+
+
+                    // Make the call that should get text from the file sf.bmp
+                    OCRSDK_Stat = Textract(&OCRSDK_Source,          // Source structure pointer
+                                           &OCRSDK_Dest,            // Dest structure pointer
+                                            OCRSDK_Dest_Fmt);       // Required format
+
+                    
+                    //System.Windows.Forms.MessageBox.Show("Backfrom OCRSDK Textract from bmpfile with  = OCRSDK_Stat="
+                    //                + OCRSDK_Stat);
+                    //System.Windows.Forms.MessageBox.Show("OCRSDK Textract No of chars found =" + OCRSDK_Dest.OCRSDK_Dest_Size);
+
+                } // Close out the scope where we fixed the pointer to the filename
+         
+                // Examine and set the return string    
+                // If there was nothing there return "" in the string, else return what OCRSDK found
+
+                if ((OCRSDK_Dest.OCRSDK_Dest_Size != 0)
+                                             &&
+                      ((sbyte*)OCRSDK_Dest.OCRSDK_Dest_Area != null))
+                {
+	                // build a C# string (unicode chars etc etc) from the ASCII bytes in Dest_Area
+                    string mystring = new string((sbyte*)OCRSDK_Dest.OCRSDK_Dest_Area, 0, OCRSDK_Dest.OCRSDK_Dest_Size);
+                    retstring = mystring;
+                }
+                else
+                {
+                    string mystring = "";
+                    retstring = mystring;
+                }
+                // System.Windows.Forms.MessageBox.Show(" found =" + retstring);
+
+
+                return retstring;
+            }// Ends OCRSDK_Get_CleanScreen_Ascii
+
+
+
+
+
+            public static string OCRSDK_Get_Screen_Ascii(int OCRSDK_ScrAx,
+                                                          int OCRSDK_ScrAy,
+                                                          int OCRSDK_ScrBx,
+                                                          int OCRSDK_ScrBy)
+            {
+
+                int OCRSDK_Stat;
+
+                OCRSDK_Source_struct OCRSDK_Source;
+                OCRSDK_Dest_struct OCRSDK_Dest;
+                int OCRSDK_Dest_Fmt;
+
+                string retstring; // the string that is returned
+
+
+                // Check whether or Not OCRSDK has been inited and init if required
+
+                if (!OCRSDK_Inited)
+                {
+                    // Set up and send a message about status before the call
+                    OCRSDK_Stat = -1;
+                    // System.Windows.Forms.MessageBox.Show("Goinginto OCRSDK TextractInit with  = OCRSDK_Stat=" + OCRSDK_Stat);
+
+
+                    // Make the call to init OCRSDK
+                    OCRSDK_Stat = TextractInit();
+
+                    //System.Windows.Forms.MessageBox.Show("Back from OCRSDK TextractInit with  = OCRSDK_Stat=" + OCRSDK_Stat);
+
+                    OCRSDK_Inited = true;
+
+                }
+
+                // Check whether or Not OCRSDK pattern file has been built and build if required
+
+                if (!OCRSDK_Built)
+                {
+                    // Set up and send a message about status before the call
+                    OCRSDK_Stat = -1;
+                    //System.Windows.Forms.MessageBox.Show("Goinginto OCRSDK TextractBuild with  = OCRSDK_Stat=" + OCRSDK_Stat);
+
+
+                    // Make the call to init OCRSDK
+                    OCRSDK_Stat = TextractBuild();
+
+                    //System.Windows.Forms.MessageBox.Show("Back from OCRSDK TextractBuild with  = OCRSDK_Stat=" + OCRSDK_Stat);
+
+                    OCRSDK_Built = true;
+
+                }
+                // Non cleaned version
+                // Get the text directly from the screen
+
+
+                // Set up and send a message about status before the call
+                OCRSDK_Stat = -1;
+                //System.Windows.Forms.MessageBox.Show("Goinginto OCRSDK Textract from rect with  = OCRSDK_Stat=" + OCRSDK_Stat);
+
+                // Set Source the way we want it
+
+                OCRSDK_Source.OCRSDK_Source_Bmp = null;       // Pointer to a bmp file name (not used)
+                OCRSDK_Source.OCRSDK_Source_WindH = null;       // Pointer to a Window Handle (not used)
+                OCRSDK_Source.OCRSDK_Source_Ax = OCRSDK_ScrAx;  // Screen rectangle top LH X coord
+                OCRSDK_Source.OCRSDK_Source_Ay = OCRSDK_ScrAy;  // Screen rectangle top LH X coord
+                OCRSDK_Source.OCRSDK_Source_Bx = OCRSDK_ScrBx;  // Screen rectangle top LH X coord
+                OCRSDK_Source.OCRSDK_Source_By = OCRSDK_ScrBy;  // Screen rectangle top LH X coord
+
+
+                // Set the destination the way we want it
+                OCRSDK_Dest.OCRSDK_Dest_Bmp = null;            // Pointer to a bmp file name (not used)
+
+                // Set the format to Ascii
+                OCRSDK_Dest_Fmt = 0;
+
+
+                // Make the call that should get ASCII from screen into destination
+                OCRSDK_Stat = Textract( &OCRSDK_Source,    // Source structure pointer
+                                        &OCRSDK_Dest,      // Dest structure pointer
+                                        OCRSDK_Dest_Fmt);  // Required format
+
+                //System.Windows.Forms.MessageBox.Show("Back from OCRSDK Textract from rect = OCRSDK_Stat=" + OCRSDK_Stat);
+                //System.Windows.Forms.MessageBox.Show("OCRSDK Textract No of chars found =" + OCRSDK_Dest.OCRSDK_Dest_Size);
+            
+
+                // Examine and set the return string    
+                // If there was nothing there return "" in the string, else return what OCRSDK found
+
+                if ((OCRSDK_Dest.OCRSDK_Dest_Size != 0)
+                                             &&
+                      ((sbyte*)OCRSDK_Dest.OCRSDK_Dest_Area != null))
+                {
+                    string mystring = new string((sbyte*)OCRSDK_Dest.OCRSDK_Dest_Area, 0, OCRSDK_Dest.OCRSDK_Dest_Size);
+                    retstring = mystring;
+                }
+                else
+                {
+                    string mystring = "";
+                    retstring = mystring;
+                }
+                // System.Windows.Forms.MessageBox.Show(" found =" + retstring);
+
+
+                return retstring;
+            }// Ends OCRSDK_Get_Screen_Ascii
+
+
+
+        public static void image_clean(ref Bitmap bmp1)
+        {
+            // "Cleans" a bitmap so that text recognition does not get confused
+            // - if a pixel is set to any value other then 0xFFFFFF (or yellow or purple) it is set to black 0x000000 
+            // Slow and tedious in C# - do it pixel by pixel until can figure a faster way
+            // Gone are the days of memcmp memcpy to do this sort of thing
+
+            // Valid text is either white (most of time) Purple (footnotes) or Yellow (highlighted)
+            
+            Color mycolor;
+            for (int x = 0; x < bmp1.Width; x++)
+            {
+                for (int y = 0; y < bmp1.Height ; y++)
+                {
+                    mycolor =bmp1.GetPixel(x, y);
+                    if( ! (  (mycolor.R == 0xFF)     // Not white
+                                     &&
+                             (mycolor.G == 0xFF)
+                                     &&
+                              (mycolor.B == 0xFF) )
+                          &&
+                          ! (  (mycolor.R == 0xA7)     // Not Purple
+                                     &&
+                             (mycolor.G == 0xA7)
+                                     &&
+                              (mycolor.B == 0xA7) )
+                        &&
+                        ! (  (mycolor.R == 0xFF)     // Not yellow
+                                     &&
+                             (mycolor.G == 0xFF)
+                                     &&
+                              (mycolor.B == 0x00) )
+                        )
+
+                    {
+                        bmp1.SetPixel(x,y,Color.Black);
+                    }
+                }// ends for loop on y    
+            }// ends for loop on x
+
+        }
+        #endregion Public Class Functions
+
+    }// ends class Platform_OCRSDK
+}
