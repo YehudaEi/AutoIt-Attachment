@@ -1,0 +1,132 @@
+#include <GUIConstantsEx.au3>
+#include <WindowsConstants.au3>
+#include <EditConstants.au3>
+#include <File.au3>
+
+;----------------------------------------------------------------------
+;   Script Author:    Steve Bradham  - stev379
+;   Creation Date:    June 18, 2008
+;   Script Function:  Create and compile a batch command into an exe
+;
+;
+;	Function:         Compile a one line batch file command line into an exe
+;	Instructions:	  Type a script name Example TestCompiler.au3
+;				      Enter a one line batch command exactly as you would for a batch file
+;				      Click CompileEXE to compile your batch command into an executable.  The executable will be 
+;				      placed in your script's directory
+;
+;   NOTES:            Add a fileinstall for the Aut2Exe folder and if statements to check for it. - Done
+;
+;   Requisites:       See the _CreateDirs() function at the bottom of the script for FileInstall requisites.
+;				      You must have the directories and AutoIT files in place when you compiled the script.
+;          
+;----------------------------------------------------------------------
+
+
+Opt('MustDeclareVars', 1)
+
+Dim $msg, $cmd, $cmd_RD
+Dim $btn_RUNtest, $btn_CompileBAT, $btn_CompileEXE
+Dim $File, $Filename, $filewrite, $filename_RD, $fileToCompile, $fileCompiled
+Dim $LineCount, $dest
+Dim $i
+Dim $Scrapfile, $ScrapFileRD, $ScrapfileToRD
+Dim $Edit, $Edit_RD
+Global $Script
+Global $Scriptname, $ScriptnameEXT
+
+_CreateDirs()
+_CreateCompiledEXE()
+
+Func _CreateCompiledEXE()
+    Local $msg
+    GUICreate("Compile batch command into a .exe", 550, 500)
+		GUICtrlCreateLabel("Enter a one line batch command to test your syntax", 20, 10, 250, 20)	
+		$cmd = GUICtrlCreateInput("", 20, 30, 350, 20)
+		GUICtrlCreateLabel("Enter Filename to create - You must use a .BAT extension to compile a BAT.", 20, 107, 400, 20)	
+		GUICtrlCreateLabel("You must use a .AU3 extension to compile an EXE.", 138, 125, 400, 20)		
+		$filename = GUICtrlCreateInput("", 20, 145, 350, 20)
+		$btn_RUNtest = GUICtrlCreateButton("Run Test", 30, 55)
+		$btn_CompileBAT = GUICtrlCreateButton("CompileBAT", 30, 175)
+		$btn_CompileEXE = GUICtrlCreateButton("CompileEXE", 105, 175)		
+		GUICtrlCreateLabel("Enter text exactly as you would for a batch file", 20, 225, 250, 20)
+		$Edit = GUICtrlCreateEdit("", 20, 250, 500, 230)		
+    GUISetState(@SW_SHOW)    
+
+    While 1
+		
+	    $msg = GUIGetMsg()
+        If $msg = $GUI_EVENT_CLOSE Then ExitLoop
+
+		Select
+			Case $msg = $GUI_EVENT_CLOSE
+				ExitLoop			
+			Case $msg = $btn_RUNtest
+				$cmd_RD = GUICtrlRead($cmd)
+				Run(@ComSpec & " /c " & $cmd_RD)				
+			Case $msg = $btn_CompileBAT
+				$Edit_RD = GUICtrlRead($edit)
+				$filename_RD = GUICtrlRead($filename)
+				If Not _FileCreate($filename_RD) Then MsgBox(4096, "Error", @error)				
+				Sleep(500)				
+				$filewrite = FileOpen($filename_RD, 1)	
+				FileWrite($filewrite, $edit_RD)				
+				FileClose($filewrite)				
+			Case $msg = $btn_CompileEXE								
+				$Edit_RD = GUICtrlRead($Edit)
+				$Scrapfile = "Scrapfile.txt"
+				If Not _FileCreate($Scrapfile) Then MsgBox(4096, "Error", @error)				
+				Sleep(500)				
+				$filewrite = FileOpen($Scrapfile, 1)					
+				FileWrite($filewrite, $Edit_RD)				
+				FileClose($filewrite)				
+				$filename_RD = GUICtrlRead($filename)
+				If Not _Filecreate($filename_RD) Then MsgBox(4096, "Error", @error)
+				$LineCount = _FileCountLines($Scrapfile)				
+				$ScrapfileToRD = FileOpen($Scrapfile, 0)
+				$fileToCompile = FileOpen($filename_RD, 1)				
+				FileWriteLine($fileToCompile, '#NoTrayIcon')
+				For $i = 1 to $LineCount
+					$ScrapFileRD = FileReadLine($ScrapfileToRD, $i)
+					Sleep(50)
+					FileWriteLine($fileToCompile, 'Run(@comspec & '' /c ' & $ScrapFileRD & ''','''','''')')
+				Next
+				
+				FileClose($ScrapfileToRD)
+				FileClose($fileToCompile)
+		
+				Sleep(3000)
+				_Compile(_RemoveExtension($filename_RD))
+		EndSelect		
+	WEnd	
+	GUIDelete()	
+EndFunc   ;_CreateRUN
+
+FileDelete($Scrapfile)
+FileDelete($filename_RD)
+
+Func _Compile($Scriptname)
+	Run("C:\Scripts\Aut2Exe\Aut2Exe.exe /in " & @ScriptDir & "\" & $Scriptname & ".au3 /out " & _
+	@ScriptDir & "\" & $Scriptname & ".exe /icon C:\Scripts\Aut2Exe\Icons\SETUP03.ICO")
+EndFunc ;_Compile
+
+
+Func _RemoveExtension($ScriptnameEXT)
+	$Scriptname = stringleft($ScriptnameEXT, stringlen($ScriptnameEXT)-4)
+	Return $Scriptname
+EndFunc ;_RemoveExtension
+
+
+Func _CreateDirs()
+	If Not FileExists ("C:\Scripts\Aut2Exe") Then
+		DirCreate("C:\Scripts\Aut2Exe\Icons")
+		FileInstall([ENTER YOUR SCRIPT DIRECTORY HERE]\Aut2exe.exe", "C:\Scripts\Aut2Exe\Aut2exe.exe")
+		FileInstall([ENTER YOUR SCRIPT DIRECTORY HERE]\Aut2exe_x64.exe", "C:\Scripts\Aut2Exe\Aut2exe_x64.exe")
+		FileInstall([ENTER YOUR SCRIPT DIRECTORY HERE]\Aut2exeA.exe", "C:\Scripts\Aut2Exe\Aut2exeA.exe")
+		FileInstall([ENTER YOUR SCRIPT DIRECTORY HERE]\AutoItASC.bin", "C:\Scripts\Aut2Exe\AutoItASC.bin")
+		FileInstall([ENTER YOUR SCRIPT DIRECTORY HERE]\AutoItSC.bin", "C:\Scripts\Aut2Exe\AutoItSC.bin")
+		FileInstall([ENTER YOUR SCRIPT DIRECTORY HERE]\AutoItSC_x64.bin", "C:\Scripts\Aut2Exe\AutoItSC_x64.bin")
+		FileInstall([ENTER YOUR SCRIPT DIRECTORY HERE]\upx.exe", "C:\Scripts\Aut2Exe\upx.exe")
+		FileInstall([ENTER YOUR SCRIPT DIRECTORY HERE]\Icons\Setup03.ico", "C:\Scripts\Aut2Exe\Icons\Setup03.ico")
+	EndIf
+EndFunc  ;_CreateDirs
