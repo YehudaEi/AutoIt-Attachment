@@ -1,0 +1,8 @@
+
+Here is the link for the RGBColor Selector v2.1 download - (136 kb)
+
+                                                                           Selector v2.1.zip
+
+To understand my reasons for using this download method, please visit this AutoIt post -
+
+http://www.autoitscript.com/forum/index.php?showtopic=71862
