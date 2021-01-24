@@ -1,0 +1,10 @@
+Grid	Bredde/længde tddd.ddddd°
+Datum	WGS 84
+
+Header	Name	Description	Type	Position	Altitude	Depth	Proximity	Temperature	Display Mode	Color	Symbol	Facility	City	State	Country	Date Modified	Link	Categories
+
+Waypoint	12345678901234567890		User Waypoint	N57.08568 E9.90831					Symbol & Name	Unknown	City (Small)					12/21/2008 6:21:29 PM 		
+Waypoint	1234567890123456789012345678		User Waypoint	N57.05442 E9.94498					Symbol & Name	Unknown	City (Small)					12/21/2008 6:21:40 PM 		
+Waypoint	123456789012345678901234567890		User Waypoint	N57.07167 E9.90980					Symbol & Name	Unknown	City (Small)					12/21/2008 6:21:51 PM 		
+Waypoint	1234567890123456789012345678901		User Waypoint	N57.05927 E9.93259					Symbol & Name	Unknown	City (Small)					12/21/2008 6:22:16 PM 		
+
