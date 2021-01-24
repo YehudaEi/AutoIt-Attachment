@@ -1,0 +1,12 @@
+;program created Feb 2009 to run Slacker.com automatically so I can wake up to a household full of music.
+Run(@ProgramFilesDir & "\Internet Explorer\IEXPLORE.EXE")
+WinWaitActive("Google - Windows Internet Explorer")
+WinSetState("Google - Windows Internet Explorer","",@SW_MAXIMIZE)
+MouseClick("",225,40)
+send("                       ")
+send("{ENTER}")
+WinSetState("Slacker Personal Radio - Listen to Free Internet Radio Stations - Windows Internet Explorer","",@SW_MAXIMIZE)
+Sleep(20000)
+MouseClick("",481,386)
+Sleep(2000)
+MouseClick("",818,386)	
