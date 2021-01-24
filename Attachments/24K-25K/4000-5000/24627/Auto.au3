@@ -1,0 +1,3204 @@
+﻿
+#region _Memory
+
+Func _MEMORYOPEN($IV_PID, $IV_DESIREDACCESS = 2035711, $IV_INHERITHANDLE = 1)
+	If Not ProcessExists($IV_PID) Then
+		SetError(1)
+		Return 0
+	EndIf
+	Local $AH_HANDLE[2] = [DllOpen("kernel32.dll")]
+	If @error Then
+		SetError(2)
+		Return 0
+	EndIf
+	Local $AV_OPENPROCESS = DllCall($AH_HANDLE[0], "int", "OpenProcess", "int", $IV_DESIREDACCESS, "int", $IV_INHERITHANDLE, "int", $IV_PID)
+	If @error Then
+		DllClose($AH_HANDLE[0])
+		SetError(3)
+		Return 0
+	EndIf
+	$AH_HANDLE[1] = $AV_OPENPROCESS[0]
+	Return $AH_HANDLE
+EndFunc
+
+
+Func _MEMORYREAD($IV_ADDRESS, $AH_HANDLE, $SV_TYPE = "dword")
+	If Not IsArray($AH_HANDLE) Then
+		SetError(1)
+		Return 0
+	EndIf
+	Local $V_BUFFER = DllStructCreate($SV_TYPE)
+	If @error Then
+		SetError(@error + 1)
+		Return 0
+	EndIf
+	DllCall($AH_HANDLE[0], "int", "ReadProcessMemory", "int", $AH_HANDLE[1], "int", $IV_ADDRESS, "ptr", DllStructGetPtr($V_BUFFER), "int", DllStructGetSize($V_BUFFER), "int", "")
+	If Not @error Then
+		Local $V_VALUE = DllStructGetData($V_BUFFER, 1)
+		Return $V_VALUE
+	Else
+		SetError(6)
+		Return 0
+	EndIf
+EndFunc
+
+
+Func _MEMORYWRITE($IV_ADDRESS, $AH_HANDLE, $V_DATA, $SV_TYPE = "dword")
+	If Not IsArray($AH_HANDLE) Then
+		SetError(1)
+		Return 0
+	EndIf
+	Local $V_BUFFER = DllStructCreate($SV_TYPE)
+	If @error Then
+		SetError(@error + 1)
+		Return 0
+	Else
+		DllStructSetData($V_BUFFER, 1, $V_DATA)
+		If @error Then
+			SetError(6)
+			Return 0
+		EndIf
+	EndIf
+	DllCall($AH_HANDLE[0], "int", "WriteProcessMemory", "int", $AH_HANDLE[1], "int", $IV_ADDRESS, "ptr", DllStructGetPtr($V_BUFFER), "int", DllStructGetSize($V_BUFFER), "int", "")
+	If Not @error Then
+		Return 1
+	Else
+		SetError(7)
+		Return 0
+	EndIf
+EndFunc
+
+
+Func _MEMORYCLOSE($AH_HANDLE)
+	If Not IsArray($AH_HANDLE) Then
+		SetError(1)
+		Return 0
+	EndIf
+	DllCall($AH_HANDLE[0], "int", "CloseHandle", "int", $AH_HANDLE[1])
+	If Not @error Then
+		DllClose($AH_HANDLE[0])
+		Return 1
+	Else
+		DllClose($AH_HANDLE[0])
+		SetError(2)
+		Return 0
+	EndIf
+EndFunc
+
+
+Func SETPRIVILEGE($PRIVILEGE, $BENABLE)
+	Const $TOKEN_ADJUST_PRIVILEGES = 32
+	Const $TOKEN_QUERY = 8
+	Const $SE_PRIVILEGE_ENABLED = 2
+	Local $HTOKEN, $SP_AUXRET, $SP_RET, $HCURRPROCESS, $NTOKENS, $NTOKENINDEX, $PRIV
+	$NTOKENS = 1
+	$LUID = DllStructCreate("dword;int")
+	If IsArray($PRIVILEGE) Then $NTOKENS = UBound($PRIVILEGE)
+	$TOKEN_PRIVILEGES = DllStructCreate("dword;dword[" & (3 * $NTOKENS) & "]")
+	$NEWTOKEN_PRIVILEGES = DllStructCreate("dword;dword[" & (3 * $NTOKENS) & "]")
+	$HCURRPROCESS = DllCall("kernel32.dll", "hwnd", "GetCurrentProcess")
+	$SP_AUXRET = DllCall("advapi32.dll", "int", "OpenProcessToken", "hwnd", $HCURRPROCESS[0], "int", BitOR($TOKEN_ADJUST_PRIVILEGES, $TOKEN_QUERY), "int_ptr", 0)
+	If $SP_AUXRET[0] Then
+		$HTOKEN = $SP_AUXRET[3]
+		DllStructSetData($TOKEN_PRIVILEGES, 1, 1)
+		$NTOKENINDEX = 1
+		While $NTOKENINDEX <= $NTOKENS
+			If IsArray($PRIVILEGE) Then
+				$PRIV = $PRIVILEGE[$NTOKENINDEX - 1]
+			Else
+				$PRIV = $PRIVILEGE
+			EndIf
+			$RET = DllCall("advapi32.dll", "int", "LookupPrivilegeValue", "str", "", "str", $PRIV, "ptr", DllStructGetPtr($LUID))
+			If $RET[0] Then
+				If $BENABLE Then
+					DllStructSetData($TOKEN_PRIVILEGES, 2, $SE_PRIVILEGE_ENABLED, (3 * $NTOKENINDEX))
+				Else
+					DllStructSetData($TOKEN_PRIVILEGES, 2, 0, (3 * $NTOKENINDEX))
+				EndIf
+				DllStructSetData($TOKEN_PRIVILEGES, 2, DllStructGetData($LUID, 1), (3 * ($NTOKENINDEX - 1)) + 1)
+				DllStructSetData($TOKEN_PRIVILEGES, 2, DllStructGetData($LUID, 2), (3 * ($NTOKENINDEX - 1)) + 2)
+				DllStructSetData($LUID, 1, 0)
+				DllStructSetData($LUID, 2, 0)
+			EndIf
+			$NTOKENINDEX += 1
+		WEnd
+		$RET = DllCall("advapi32.dll", "int", "AdjustTokenPrivileges", "hwnd", $HTOKEN, "int", 0, "ptr", DllStructGetPtr($TOKEN_PRIVILEGES), "int", DllStructGetSize($NEWTOKEN_PRIVILEGES), "ptr", DllStructGetPtr($NEWTOKEN_PRIVILEGES), "int_ptr", 0)
+		$F = DllCall("kernel32.dll", "int", "GetLastError")
+	EndIf
+	$NEWTOKEN_PRIVILEGES = 0
+	$TOKEN_PRIVILEGES = 0
+	$LUID = 0
+	If $SP_AUXRET[0] = 0 Then Return 0
+	$SP_AUXRET = DllCall("kernel32.dll", "int", "CloseHandle", "hwnd", $HTOKEN)
+	If Not $RET[0] And Not $SP_AUXRET[0] Then Return 0
+	Return $RET[0]
+EndFunc
+
+#endregion _Memory
+Dim $OPCODE = ""
+
+Func INT2HEX($VALUE, $N)
+	Dim $TMP1, $TMP2, $I
+	$TMP1 = StringRight("0000000" & Hex($VALUE), $N)
+	For $I = 0 To StringLen($TMP1) / 2 - 1
+		$TMP2 = $TMP2 & StringMid($TMP1, StringLen($TMP1) - 1 - 2 * $I, 2)
+	Next
+	Return $TMP2
+EndFunc
+
+
+Func LEAVE()
+	$OPCODE = $OPCODE & "C9"
+EndFunc
+
+
+Func PUSHAD()
+	$OPCODE = $OPCODE & "60"
+EndFunc
+
+
+Func POPAD()
+	$OPCODE = $OPCODE & "61"
+EndFunc
+
+
+Func NOP()
+	$OPCODE = $OPCODE & "90"
+EndFunc
+
+
+Func RET()
+	$OPCODE = $OPCODE & "C3"
+EndFunc
+
+
+Func RETA($I)
+	$OPCODE = $OPCODE & INT2HEX($I, 4)
+EndFunc
+
+
+Func IN_AL_DX()
+	$OPCODE = $OPCODE & "EC"
+EndFunc
+
+
+Func TEST_EAX_EAX()
+	$OPCODE = $OPCODE & "85C0"
+EndFunc
+
+
+Func ADD_EAX_EDX()
+	$OPCODE = $OPCODE & "03C2"
+EndFunc
+
+
+Func ADD_EBX_EAX()
+	$OPCODE = $OPCODE & "03D8"
+EndFunc
+
+
+Func ADD_EAX_DWORD_PTR($I)
+	$OPCODE = $OPCODE & "0305" & INT2HEX($I, 8)
+EndFunc
+
+
+Func ADD_EBX_DWORD_PTR($I)
+	$OPCODE = $OPCODE & "031D" & INT2HEX($I, 8)
+EndFunc
+
+
+Func ADD_EBP_DWORD_PTR($I)
+	$OPCODE = $OPCODE & "032D" & INT2HEX($I, 8)
+EndFunc
+
+
+Func ADD_EAX($I)
+	$OPCODE = $OPCODE & "05" & INT2HEX($I, 8)
+EndFunc
+
+
+Func ADD_EBX($I)
+	$OPCODE = $OPCODE & "83C3" & INT2HEX($I, 8)
+EndFunc
+
+
+Func ADD_ECX($I)
+	$OPCODE = $OPCODE & "83C1" & INT2HEX($I, 8)
+EndFunc
+
+
+Func ADD_EDX($I)
+	$OPCODE = $OPCODE & "83C2" & INT2HEX($I, 8)
+EndFunc
+
+
+Func ADD_ESI($I)
+	$OPCODE = $OPCODE & "83C6" & INT2HEX($I, 8)
+EndFunc
+
+
+Func ADD_ESP($I)
+	$OPCODE = $OPCODE & "83C4" & INT2HEX($I, 8)
+EndFunc
+
+
+Func CALL_EAX()
+	$OPCODE = $OPCODE & "FFD0"
+EndFunc
+
+
+Func CALL_EBX()
+	$OPCODE = $OPCODE & "FFD3"
+EndFunc
+
+
+Func CALL_ECX()
+	$OPCODE = $OPCODE & "FFD1"
+EndFunc
+
+
+Func CALL_EDX()
+	$OPCODE = $OPCODE & "FFD2"
+EndFunc
+
+
+Func CALL_ESI()
+	$OPCODE = $OPCODE & "FFD2"
+EndFunc
+
+
+Func CALL_ESP()
+	$OPCODE = $OPCODE & "FFD4"
+EndFunc
+
+
+Func CALL_EBP()
+	$OPCODE = $OPCODE & "FFD5"
+EndFunc
+
+
+Func CALL_EDI()
+	$OPCODE = $OPCODE & "FFD7"
+EndFunc
+
+
+Func CALL_DWORD_PTR($I)
+	$OPCODE = $OPCODE & "FF15" & INT2HEX($I, 8)
+EndFunc
+
+
+Func CALL_DWORD_PTR_EAX()
+	$OPCODE = $OPCODE & "FF10"
+EndFunc
+
+
+Func CALL_DWORD_PTR_EBX()
+	$OPCODE = $OPCODE & "FF13"
+EndFunc
+
+
+Func CMP_EAX($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "83F8" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "3D" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func CMP_EAX_EDX()
+	$OPCODE = $OPCODE & "3BC2"
+EndFunc
+
+
+Func CMP_EAX_DWORD_PTR($I)
+	$OPCODE = $OPCODE & "3B05" & INT2HEX($I, 8)
+EndFunc
+
+
+Func CMP_DWORD_PTR_EAX($I)
+	$OPCODE = $OPCODE & "3905" & INT2HEX($I, 8)
+EndFunc
+
+
+Func DEC_EAX()
+	$OPCODE = $OPCODE & "48"
+EndFunc
+
+
+Func DEC_EBX()
+	$OPCODE = $OPCODE & "4B"
+EndFunc
+
+
+Func DEC_ECX()
+	$OPCODE = $OPCODE & "49"
+EndFunc
+
+
+Func DEC_EDX()
+	$OPCODE = $OPCODE & "4A"
+EndFunc
+
+
+Func IDIV_EAX()
+	$OPCODE = $OPCODE & "F7F8"
+EndFunc
+
+
+Func IDIV_EBX()
+	$OPCODE = $OPCODE & "F7FB"
+EndFunc
+
+
+Func IDIV_ECX()
+	$OPCODE = $OPCODE & "F7F9"
+EndFunc
+
+
+Func IDIV_EDX()
+	$OPCODE = $OPCODE & "F7FA"
+EndFunc
+
+
+Func IMUL_EAX_EDX()
+	$OPCODE = $OPCODE & "0FAFC2"
+EndFunc
+
+
+Func IMUL_EAX($I)
+	$OPCODE = $OPCODE & "6BC0" & INT2HEX($I, 2)
+EndFunc
+
+
+Func IMULB_EAX($I)
+	$OPCODE = $OPCODE & "69C0" & INT2HEX($I, 8)
+EndFunc
+
+
+Func INC_EAX()
+	$OPCODE = $OPCODE & "40"
+EndFunc
+
+
+Func INC_EBX()
+	$OPCODE = $OPCODE & "43"
+EndFunc
+
+
+Func INC_ECX()
+	$OPCODE = $OPCODE & "41"
+EndFunc
+
+
+Func INC_EDX()
+	$OPCODE = $OPCODE & "42"
+EndFunc
+
+
+Func INC_EDI()
+	$OPCODE = $OPCODE & "47"
+EndFunc
+
+
+Func INC_ESI()
+	$OPCODE = $OPCODE & "46"
+EndFunc
+
+
+Func INC_DWORD_PTR_EAX()
+	$OPCODE = $OPCODE & "FF00"
+EndFunc
+
+
+Func INC_DWORD_PTR_EBX()
+	$OPCODE = $OPCODE & "FF03"
+EndFunc
+
+
+Func INC_DWORD_PTR_ECX()
+	$OPCODE = $OPCODE & "FF01"
+EndFunc
+
+
+Func INC_DWORD_PTR_EDX()
+	$OPCODE = $OPCODE & "FF02"
+EndFunc
+
+
+Func JMP_EAX()
+	$OPCODE = $OPCODE & "FFE0"
+EndFunc
+
+
+Func MOV_DWORD_PTR_EAX($I)
+	$OPCODE = $OPCODE & "A3" & INT2HEX($I, 8)
+EndFunc
+
+
+Func MOV_EAX($I)
+	$OPCODE = $OPCODE & "B8" & INT2HEX($I, 8)
+EndFunc
+
+
+Func MOV_EBX($I)
+	$OPCODE = $OPCODE & "BB" & INT2HEX($I, 8)
+EndFunc
+
+
+Func MOV_ECX($I)
+	$OPCODE = $OPCODE & "B9" & INT2HEX($I, 8)
+EndFunc
+
+
+Func MOV_EDX($I)
+	$OPCODE = $OPCODE & "BA" & INT2HEX($I, 8)
+EndFunc
+
+
+Func MOV_ESI($I)
+	$OPCODE = $OPCODE & "BE" & INT2HEX($I, 8)
+EndFunc
+
+
+Func MOV_ESP($I)
+	$OPCODE = $OPCODE & "BC" & INT2HEX($I, 8)
+EndFunc
+
+
+Func MOV_EBP($I)
+	$OPCODE = $OPCODE & "BD" & INT2HEX($I, 8)
+EndFunc
+
+
+Func MOV_EDI($I)
+	$OPCODE = $OPCODE & "BF" & INT2HEX($I, 8)
+EndFunc
+
+
+Func MOV_EBX_DWORD_PTR($I)
+	$OPCODE = $OPCODE & "8B1D" & INT2HEX($I, 8)
+EndFunc
+
+
+Func MOV_ECX_DWORD_PTR($I)
+	$OPCODE = $OPCODE & "8B0D" & INT2HEX($I, 8)
+EndFunc
+
+
+Func MOV_EAX_DWORD_PTR($I)
+	$OPCODE = $OPCODE & "A1" & INT2HEX($I, 8)
+EndFunc
+
+
+Func MOV_EDX_DWORD_PTR($I)
+	$OPCODE = $OPCODE & "8B15" & INT2HEX($I, 8)
+EndFunc
+
+
+Func MOV_ESI_DWORD_PTR($I)
+	$OPCODE = $OPCODE & "8B35" & INT2HEX($I, 8)
+EndFunc
+
+
+Func MOV_ESP_DWORD_PTR($I)
+	$OPCODE = $OPCODE & "8B25" & INT2HEX($I, 8)
+EndFunc
+
+
+Func MOV_EBP_DWORD_PTR($I)
+	$OPCODE = $OPCODE & "8B2D" & INT2HEX($I, 8)
+EndFunc
+
+
+Func MOV_EAX_DWORD_PTR_EAX()
+	$OPCODE = $OPCODE & "8B00"
+EndFunc
+
+
+Func MOV_EAX_DWORD_PTR_EBP()
+	$OPCODE = $OPCODE & "8B4500"
+EndFunc
+
+
+Func MOV_EAX_DWORD_PTR_EBX()
+	$OPCODE = $OPCODE & "8B03"
+EndFunc
+
+
+Func MOV_EAX_DWORD_PTR_ECX()
+	$OPCODE = $OPCODE & "8B01"
+EndFunc
+
+
+Func MOV_EAX_DWORD_PTR_EDX()
+	$OPCODE = $OPCODE & "8B02"
+EndFunc
+
+
+Func MOV_EAX_DWORD_PTR_EDI()
+	$OPCODE = $OPCODE & "8B07"
+EndFunc
+
+
+Func MOV_EAX_DWORD_PTR_ESP()
+	$OPCODE = $OPCODE & "8B0424"
+EndFunc
+
+
+Func MOV_EAX_DWORD_PTR_ESI()
+	$OPCODE = $OPCODE & "8B06"
+EndFunc
+
+
+Func MOV_EAX_DWORD_PTR_EAX_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8B40" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8B80" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func MOV_EAX_DWORD_PTR_ESP_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8B4424" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8B8424" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func MOV_EAX_DWORD_PTR_EBX_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8B43" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8B83" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func MOV_EAX_DWORD_PTR_ECX_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8B41" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8B81" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func MOV_EAX_DWORD_PTR_EDX_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8B42" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8B82" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func MOV_EAX_DWORD_PTR_EDI_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8B47" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8B87" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func MOV_EAX_DWORD_PTR_EBP_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8B45" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8B85" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func MOV_EAX_DWORD_PTR_ESI_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8B46" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8B86" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func MOV_EBX_DWORD_PTR_EAX_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8B58" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8B98" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func MOV_EBX_DWORD_PTR_ESP_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8B5C24" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8B9C24" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func MOV_EBX_DWORD_PTR_EBX_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8B5B" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8B9B" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func MOV_EBX_DWORD_PTR_ECX_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8B59" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8B99" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func MOV_EBX_DWORD_PTR_EDX_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8B5A" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8B9A" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func MOV_EBX_DWORD_PTR_EDI_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8B5F" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8B9F" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func MOV_EBX_DWORD_PTR_EBP_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8B5D" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8B9D" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func MOV_EBX_DWORD_PTR_ESI_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8B5E" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8B9E" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func MOV_ECX_DWORD_PTR_EAX_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8B48" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8B88" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func MOV_ECX_DWORD_PTR_ESP_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8B4C24" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8B8C24" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func MOV_ECX_DWORD_PTR_EBX_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8B4B" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8B8B" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func MOV_ECX_DWORD_PTR_ECX_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8B49" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8B89" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func MOV_ECX_DWORD_PTR_EDX_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8B4A" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8B8A" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func MOV_ECX_DWORD_PTR_EDI_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8B4F" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8B8F" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func MOV_ECX_DWORD_PTR_EBP_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8B4D" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8B8D" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func MOV_ECX_DWORD_PTR_ESI_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8B4E" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8B8E" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func MOV_EDX_DWORD_PTR_EAX_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8B50" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8B90" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func MOV_EDX_DWORD_PTR_ESP_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8B5424" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8B9424" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func MOV_EDX_DWORD_PTR_EBX_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8B53" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8B93" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func MOV_EDX_DWORD_PTR_ECX_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8B51" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8B91" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func MOV_EDX_DWORD_PTR_EDX_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8B52" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8B92" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func MOV_EDX_DWORD_PTR_EDI_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8B57" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8B97" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func MOV_EDX_DWORD_PTR_EBP_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8B55" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8B95" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func MOV_EDX_DWORD_PTR_ESI_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8B56" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8B96" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func MOV_EBX_DWORD_PTR_EAX()
+	$OPCODE = $OPCODE & "8B18"
+EndFunc
+
+
+Func MOV_EBX_DWORD_PTR_EBP()
+	$OPCODE = $OPCODE & "8B5D00"
+EndFunc
+
+
+Func MOV_EBX_DWORD_PTR_EBX()
+	$OPCODE = $OPCODE & "8B1B"
+EndFunc
+
+
+Func MOV_EBX_DWORD_PTR_ECX()
+	$OPCODE = $OPCODE & "8B19"
+EndFunc
+
+
+Func MOV_EBX_DWORD_PTR_EDX()
+	$OPCODE = $OPCODE & "8B1A"
+EndFunc
+
+
+Func MOV_EBX_DWORD_PTR_EDI()
+	$OPCODE = $OPCODE & "8B1F"
+EndFunc
+
+
+Func MOV_EBX_DWORD_PTR_ESP()
+	$OPCODE = $OPCODE & "8B1C24"
+EndFunc
+
+
+Func MOV_EBX_DWORD_PTR_ESI()
+	$OPCODE = $OPCODE & "8B1E"
+EndFunc
+
+
+Func MOV_ECX_DWORD_PTR_EAX()
+	$OPCODE = $OPCODE & "8B08"
+EndFunc
+
+
+Func MOV_ECX_DWORD_PTR_EBP()
+	$OPCODE = $OPCODE & "8B4D00"
+EndFunc
+
+
+Func MOV_ECX_DWORD_PTR_EBX()
+	$OPCODE = $OPCODE & "8B0B"
+EndFunc
+
+
+Func MOV_ECX_DWORD_PTR_ECX()
+	$OPCODE = $OPCODE & "8B09"
+EndFunc
+
+
+Func MOV_ECX_DWORD_PTR_EDX()
+	$OPCODE = $OPCODE & "8B0A"
+EndFunc
+
+
+Func MOV_ECX_DWORD_PTR_EDI()
+	$OPCODE = $OPCODE & "8B0F"
+EndFunc
+
+
+Func MOV_ECX_DWORD_PTR_ESP()
+	$OPCODE = $OPCODE & "8B0C24"
+EndFunc
+
+
+Func MOV_ECX_DWORD_PTR_ESI()
+	$OPCODE = $OPCODE & "8B0E"
+EndFunc
+
+
+Func MOV_EDX_DWORD_PTR_EAX()
+	$OPCODE = $OPCODE & "8B10"
+EndFunc
+
+
+Func MOV_EDX_DWORD_PTR_EBP()
+	$OPCODE = $OPCODE & "8B5500"
+EndFunc
+
+
+Func MOV_EDX_DWORD_PTR_EBX()
+	$OPCODE = $OPCODE & "8B13"
+EndFunc
+
+
+Func MOV_EDX_DWORD_PTR_ECX()
+	$OPCODE = $OPCODE & "8B11"
+EndFunc
+
+
+Func MOV_EDX_DWORD_PTR_EDX()
+	$OPCODE = $OPCODE & "8B12"
+EndFunc
+
+
+Func MOV_EDX_DWORD_PTR_EDI()
+	$OPCODE = $OPCODE & "8B17"
+EndFunc
+
+
+Func MOV_EDX_DWORD_PTR_ESI()
+	$OPCODE = $OPCODE & "8B16"
+EndFunc
+
+
+Func MOV_EDX_DWORD_PTR_ESP()
+	$OPCODE = $OPCODE & "8B1424"
+EndFunc
+
+
+Func MOV_EAX_EBP()
+	$OPCODE = $OPCODE & "8BC5"
+EndFunc
+
+
+Func MOV_EAX_EBX()
+	$OPCODE = $OPCODE & "8BC3"
+EndFunc
+
+
+Func MOV_EAX_ECX()
+	$OPCODE = $OPCODE & "8BC1"
+EndFunc
+
+
+Func MOV_EAX_EDI()
+	$OPCODE = $OPCODE & "8BC7"
+EndFunc
+
+
+Func MOV_EAX_EDX()
+	$OPCODE = $OPCODE & "8BC2"
+EndFunc
+
+
+Func MOV_EAX_ESI()
+	$OPCODE = $OPCODE & "8BC6"
+EndFunc
+
+
+Func MOV_EAX_ESP()
+	$OPCODE = $OPCODE & "8BC4"
+EndFunc
+
+
+Func MOV_EBX_EBP()
+	$OPCODE = $OPCODE & "8BDD"
+EndFunc
+
+
+Func MOV_EBX_EAX()
+	$OPCODE = $OPCODE & "8BD8"
+EndFunc
+
+
+Func MOV_EBX_ECX()
+	$OPCODE = $OPCODE & "8BD9"
+EndFunc
+
+
+Func MOV_EBX_EDI()
+	$OPCODE = $OPCODE & "8BDF"
+EndFunc
+
+
+Func MOV_EBX_EDX()
+	$OPCODE = $OPCODE & "8BDA"
+EndFunc
+
+
+Func MOV_EBX_ESI()
+	$OPCODE = $OPCODE & "8BDE"
+EndFunc
+
+
+Func MOV_EBX_ESP()
+	$OPCODE = $OPCODE & "8BDC"
+EndFunc
+
+
+Func MOV_ECX_EBP()
+	$OPCODE = $OPCODE & "8BCD"
+EndFunc
+
+
+Func MOV_ECX_EAX()
+	$OPCODE = $OPCODE & "8BC8"
+EndFunc
+
+
+Func MOV_ECX_EBX()
+	$OPCODE = $OPCODE & "8BCB"
+EndFunc
+
+
+Func MOV_ECX_EDI()
+	$OPCODE = $OPCODE & "8BCF"
+EndFunc
+
+
+Func MOV_ECX_EDX()
+	$OPCODE = $OPCODE & "8BCA"
+EndFunc
+
+
+Func MOV_ECX_ESI()
+	$OPCODE = $OPCODE & "8BCE"
+EndFunc
+
+
+Func MOV_ECX_ESP()
+	$OPCODE = $OPCODE & "8BCC"
+EndFunc
+
+
+Func MOV_EDX_EBP()
+	$OPCODE = $OPCODE & "8BD5"
+EndFunc
+
+
+Func MOV_EDX_EBX()
+	$OPCODE = $OPCODE & "8BD3"
+EndFunc
+
+
+Func MOV_EDX_ECX()
+	$OPCODE = $OPCODE & "8BD1"
+EndFunc
+
+
+Func MOV_EDX_EDI()
+	$OPCODE = $OPCODE & "8BD7"
+EndFunc
+
+
+Func MOV_EDX_EAX()
+	$OPCODE = $OPCODE & "8BD0"
+EndFunc
+
+
+Func MOV_EDX_ESI()
+	$OPCODE = $OPCODE & "8BD6"
+EndFunc
+
+
+Func MOV_EDX_ESP()
+	$OPCODE = $OPCODE & "8BD4"
+EndFunc
+
+
+Func MOV_ESI_EBP()
+	$OPCODE = $OPCODE & "8BF5"
+EndFunc
+
+
+Func MOV_ESI_EBX()
+	$OPCODE = $OPCODE & "8BF3"
+EndFunc
+
+
+Func MOV_ESI_ECX()
+	$OPCODE = $OPCODE & "8BF1"
+EndFunc
+
+
+Func MOV_ESI_EDI()
+	$OPCODE = $OPCODE & "8BF7"
+EndFunc
+
+
+Func MOV_ESI_EAX()
+	$OPCODE = $OPCODE & "8BF0"
+EndFunc
+
+
+Func MOV_ESI_EDX()
+	$OPCODE = $OPCODE & "8BF2"
+EndFunc
+
+
+Func MOV_ESI_ESP()
+	$OPCODE = $OPCODE & "8BF4"
+EndFunc
+
+
+Func MOV_ESP_EBP()
+	$OPCODE = $OPCODE & "8BE5"
+EndFunc
+
+
+Func MOV_ESP_EBX()
+	$OPCODE = $OPCODE & "8BE3"
+EndFunc
+
+
+Func MOV_ESP_ECX()
+	$OPCODE = $OPCODE & "8BE1"
+EndFunc
+
+
+Func MOV_ESP_EDI()
+	$OPCODE = $OPCODE & "8BE7"
+EndFunc
+
+
+Func MOV_ESP_EAX()
+	$OPCODE = $OPCODE & "8BE0"
+EndFunc
+
+
+Func MOV_ESP_EDX()
+	$OPCODE = $OPCODE & "8BE2"
+EndFunc
+
+
+Func MOV_ESP_ESI()
+	$OPCODE = $OPCODE & "8BE6"
+EndFunc
+
+
+Func MOV_EDI_EBP()
+	$OPCODE = $OPCODE & "8BFD"
+EndFunc
+
+
+Func MOV_EDI_EAX()
+	$OPCODE = $OPCODE & "8BF8"
+EndFunc
+
+
+Func MOV_EDI_EBX()
+	$OPCODE = $OPCODE & "8BFB"
+EndFunc
+
+
+Func MOV_EDI_ECX()
+	$OPCODE = $OPCODE & "8BF9"
+EndFunc
+
+
+Func MOV_EDI_EDX()
+	$OPCODE = $OPCODE & "8BFA"
+EndFunc
+
+
+Func MOV_EDI_ESI()
+	$OPCODE = $OPCODE & "8BFE"
+EndFunc
+
+
+Func MOV_EDI_ESP()
+	$OPCODE = $OPCODE & "8BFC"
+EndFunc
+
+
+Func MOV_EBP_EDI()
+	$OPCODE = $OPCODE & "8BDF"
+EndFunc
+
+
+Func MOV_EBP_EAX()
+	$OPCODE = $OPCODE & "8BE8"
+EndFunc
+
+
+Func MOV_EBP_EBX()
+	$OPCODE = $OPCODE & "8BEB"
+EndFunc
+
+
+Func MOV_EBP_ECX()
+	$OPCODE = $OPCODE & "8BE9"
+EndFunc
+
+
+Func MOV_EBP_EDX()
+	$OPCODE = $OPCODE & "8BEA"
+EndFunc
+
+
+Func MOV_EBP_ESI()
+	$OPCODE = $OPCODE & "8BEE"
+EndFunc
+
+
+Func MOV_EBP_ESP()
+	$OPCODE = $OPCODE & "8BEC"
+EndFunc
+
+
+Func PUSH($I)
+	$OPCODE = $OPCODE & "68" & INT2HEX($I, 8)
+EndFunc
+
+
+Func PUSH_DWORD_PTR($I)
+	$OPCODE = $OPCODE & "FF35" & INT2HEX($I, 8)
+EndFunc
+
+
+Func PUSH_EAX()
+	$OPCODE = $OPCODE & "50"
+EndFunc
+
+
+Func PUSH_ECX()
+	$OPCODE = $OPCODE & "51"
+EndFunc
+
+
+Func PUSH_EDX()
+	$OPCODE = $OPCODE & "52"
+EndFunc
+
+
+Func PUSH_EBX()
+	$OPCODE = $OPCODE & "53"
+EndFunc
+
+
+Func PUSH_ESP()
+	$OPCODE = $OPCODE & "54"
+EndFunc
+
+
+Func PUSH_EBP()
+	$OPCODE = $OPCODE & "55"
+EndFunc
+
+
+Func PUSH_ESI()
+	$OPCODE = $OPCODE & "56"
+EndFunc
+
+
+Func PUSH_EDI()
+	$OPCODE = $OPCODE & "57"
+EndFunc
+
+
+Func LEA_EAX_DWORD_PTR_EAX_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8D40" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8D80" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func LEA_EAX_DWORD_PTR_EBX_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8D43" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8D83" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func LEA_EAX_DWORD_PTR_ECX_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8D41" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8D81" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func LEA_EAX_DWORD_PTR_EDX_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8D42" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8D82" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func LEA_EAX_DWORD_PTR_ESI_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8D46" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8D86" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func LEA_EAX_DWORD_PTR_ESP_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8D40" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8D80" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func LEA_EAX_DWORD_PTR_EBP_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8D4424" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8D8424" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func LEA_EAX_DWORD_PTR_EDI_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8D47" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8D87" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func LEA_EBX_DWORD_PTR_EAX_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8D58" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8D98" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func LEA_EBX_DWORD_PTR_ESP_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8D5C24" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8D9C24" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func LEA_EBX_DWORD_PTR_EBX_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8D5B" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8D9B" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func LEA_EBX_DWORD_PTR_ECX_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8D59" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8D99" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func LEA_EBX_DWORD_PTR_EDX_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8D5A" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8D9A" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func LEA_EBX_DWORD_PTR_EDI_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8D5F" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8D9F" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func LEA_EBX_DWORD_PTR_EBP_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8D5D" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8D9D" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func LEA_EBX_DWORD_PTR_ESI_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8D5E" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8D9E" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func LEA_ECX_DWORD_PTR_EAX_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8D48" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8D88" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func LEA_ECX_DWORD_PTR_ESP_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8D4C24" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8D8C24" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func LEA_ECX_DWORD_PTR_EBX_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8D4B" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8D8B" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func LEA_ECX_DWORD_PTR_ECX_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8D49" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8D89" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func LEA_ECX_DWORD_PTR_EDX_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8D4A" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8D8A" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func LEA_ECX_DWORD_PTR_EDI_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8D4F" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8D8F" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func LEA_ECX_DWORD_PTR_EBP_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8D4D" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8D8D" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func LEA_ECX_DWORD_PTR_ESI_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8D4E" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8D8E" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func LEA_EDX_DWORD_PTR_EAX_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8D50" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8D90" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func LEA_EDX_DWORD_PTR_ESP_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8D5424" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8D9424" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func LEA_EDX_DWORD_PTR_EBX_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8D53" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8D93" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func LEA_EDX_DWORD_PTR_ECX_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8D51" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8D91" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func LEA_EDX_DWORD_PTR_EDX_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8D52" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8D92" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func LEA_EDX_DWORD_PTR_EDI_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8D57" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8D97" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func LEA_EDX_DWORD_PTR_EBP_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8D55" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8D95" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func LEA_EDX_DWORD_PTR_ESI_ADD($I)
+	If $I <= 255 Then
+		$OPCODE = $OPCODE & "8D56" & INT2HEX($I, 2)
+	Else
+		$OPCODE = $OPCODE & "8D96" & INT2HEX($I, 8)
+	EndIf
+EndFunc
+
+
+Func POP_EAX()
+	$OPCODE = $OPCODE & "58"
+EndFunc
+
+
+Func POP_EBX()
+	$OPCODE = $OPCODE & "5B"
+EndFunc
+
+
+Func POP_ECX()
+	$OPCODE = $OPCODE & "59"
+EndFunc
+
+
+Func POP_EDX()
+	$OPCODE = $OPCODE & "5A"
+EndFunc
+
+
+Func POP_ESI()
+	$OPCODE = $OPCODE & "5E"
+EndFunc
+
+
+Func POP_ESP()
+	$OPCODE = $OPCODE & "5C"
+EndFunc
+
+
+Func POP_EDI()
+	$OPCODE = $OPCODE & "5F"
+EndFunc
+
+
+Func POP_EBP()
+	$OPCODE = $OPCODE & "5D"
+EndFunc
+
+
+Func INJECTCODE($PID)
+	If $PID <> 0 And $OPCODE <> "" Then
+		Local $DATA = DllStructCreate("byte[" & StringLen($OPCODE) / 2 & "]")
+		For $I = 1 To DllStructGetSize($DATA)
+			DllStructSetData($DATA, 1, Dec(StringMid($OPCODE, ($I - 1) * 2 + 1, 2)), $I)
+		Next
+		Local $RESULT, $PROCESS, $ADD, $THREAD
+		$RESULT = DllCall("Kernel32.Dll", "int", "OpenProcess", "int", 2035711, "int", 0, "int", $PID)
+		$PROCESS = $RESULT[0]
+		$RESULT = DllCall("Kernel32.dll", "ptr", "VirtualAllocEx", "int", $PROCESS, "ptr", 0, "int", DllStructGetSize($DATA), "int", 4096, "int", 64)
+		$ADD = $RESULT[0]
+		$RESULT = DllCall("kernel32.dll", "int", "WriteProcessMemory", "int", $PROCESS, "ptr", $ADD, "ptr", DllStructGetPtr($DATA), "int", DllStructGetSize($DATA), "int", 0)
+		$RESULT = DllCall("kernel32.dll", "int", "CreateRemoteThread", "int", $PROCESS, "ptr", 0, "int", 0, "int", $ADD, "ptr", 0, "int", 0, "int", 0)
+		$THREAD = $RESULT[0]
+		Do
+			$RESULT = DllCall("kernel32.dll", "int", "WaitForSingleObject", "int", $THREAD, "int", 50)
+		Until $RESULT[0] <> 258
+		DllCall("Kernel32.dll", "int", "CloseHandle", "int", $THREAD)
+		$RESULT = DllCall("Kernel32.dll", "ptr", "VirtualFreeEx", "hwnd", $PROCESS, "ptr", DllStructGetPtr($DATA), "int", DllStructGetSize($DATA), "int", 32768)
+		DllCall("Kernel32.dll", "int", "CloseHandle", "int", $PROCESS)
+		$OPCODE = ""
+		$DATA = 0
+	EndIf
+EndFunc
+
+#NoTrayIcon
+Dim $BASEADD = 9812644
+Dim $MEMID, $PID, $SENDOK, $TITLE, $MOB_ID_ADD, $SELECTED, $TIMERSTAMP, $TRAYMODE = False, $VOICE = False
+Dim $STEP, $CURENTX, $CURENTY, $CURENTZ, $CURENTHIGH, $CURENTID, $FLYTO = False, $TELE, $PAUSE = False, $OLDTITLE
+Dim $ARRPOS[33][5], $QPOS, $QSTART, $QLINE[33][2]
+$ARRPOS[0][0] = 1332.25646972656
+$ARRPOS[0][1] = 953.382995605469
+$ARRPOS[0][2] = 222.527297973633
+$ARRPOS[0][3] = 350
+$ARRPOS[0][4] = 214854.9654
+$ARRPOS[1][0] = 1227.08850097656
+$ARRPOS[1][1] = 983.867248535156
+$ARRPOS[1][2] = 221.789321899414
+$ARRPOS[1][3] = 240
+$ARRPOS[1][4] = 214854.9512
+$ARRPOS[2][0] = -1718.5703125
+$ARRPOS[2][1] = 60.0923042297363
+$ARRPOS[2][2] = 222.269195556641
+$ARRPOS[2][3] = 350
+$ARRPOS[2][4] = 214855.09
+$ARRPOS[3][0] = 985.284729003906
+$ARRPOS[3][1] = 4202.10546875
+$ARRPOS[3][2] = 221.142944335938
+$ARRPOS[3][3] = 600
+$ARRPOS[3][4] = 214853.422
+$ARRPOS[4][0] = -1822.7060546875
+$ARRPOS[4][1] = -1280.06506347656
+$ARRPOS[4][2] = 526.278015136719
+$ARRPOS[4][3] = 600
+$ARRPOS[4][4] = 214855.4038
+$ARRPOS[5][0] = 588.619995117188
+$ARRPOS[5][1] = 433.897216796875
+$ARRPOS[5][2] = 221.326080322266
+$ARRPOS[5][3] = 600
+$ARRPOS[5][4] = 214855.1799
+$ARRPOS[6][0] = 1864.9677734375
+$ARRPOS[6][1] = 147.816268920898
+$ARRPOS[6][2] = 244.612747192383
+$ARRPOS[6][3] = 300
+$ARRPOS[6][4] = 214855.3029
+$ARRPOS[7][0] = 1865.40600585938
+$ARRPOS[7][1] = 168.423980712891
+$ARRPOS[7][2] = 241.363983154297
+$ARRPOS[7][3] = 255
+$ARRPOS[7][4] = 214855.2471
+$ARRPOS[8][0] = 1815.07299804688
+$ARRPOS[8][1] = 1358.53076171875
+$ARRPOS[8][2] = 222.055358886719
+$ARRPOS[8][3] = 300
+$ARRPOS[8][4] = 214854.9598
+$ARRPOS[9][0] = 2212.51171875
+$ARRPOS[9][1] = 1738.38012695313
+$ARRPOS[9][2] = 224.783737182617
+$ARRPOS[9][3] = 300
+$ARRPOS[9][4] = 214854.5476
+$ARRPOS[10][0] = 2556.16333007813
+$ARRPOS[10][1] = 3064.0595703125
+$ARRPOS[10][2] = 221.282272338867
+$ARRPOS[10][3] = 300
+$ARRPOS[10][4] = 214853.9159
+$ARRPOS[11][0] = 2653.32080078125
+$ARRPOS[11][1] = 4185.2890625
+$ARRPOS[11][2] = 254.462188720703
+$ARRPOS[11][3] = 300
+$ARRPOS[11][4] = 214853.5591
+$ARRPOS[12][0] = 310.819580078125
+$ARRPOS[12][1] = 1865.34301757813
+$ARRPOS[12][2] = 224.10009765625
+$ARRPOS[12][3] = 400
+$ARRPOS[12][4] = 214854.3479
+$ARRPOS[13][0] = -437.257720947266
+$ARRPOS[13][1] = 2378.36352539063
+$ARRPOS[13][2] = 325.011810302734
+$ARRPOS[13][3] = 400
+$ARRPOS[13][4] = 214854.2352
+$ARRPOS[14][0] = -659.376647949219
+$ARRPOS[14][1] = 2770.82763671875
+$ARRPOS[14][2] = 221.874176025391
+$ARRPOS[14][3] = 400
+$ARRPOS[14][4] = 214853.6934
+$ARRPOS[15][0] = -2764.8798828125
+$ARRPOS[15][1] = 405.421539306641
+$ARRPOS[15][2] = 524.823608398438
+$ARRPOS[15][3] = 600
+$ARRPOS[15][4] = 214855.0151
+$ARRPOS[16][0] = -2572.66259765625
+$ARRPOS[16][1] = 916.269409179688
+$ARRPOS[16][2] = 524.698120117188
+$ARRPOS[16][3] = 600
+$ARRPOS[16][4] = 214854.7038
+$ARRPOS[17][0] = -1156.36328125
+$ARRPOS[17][1] = 166.741470336914
+$ARRPOS[17][2] = 527.825134277344
+$ARRPOS[17][3] = 650
+$ARRPOS[17][4] = 214855.0631
+$ARRPOS[18][0] = 342.911529541016
+$ARRPOS[18][1] = -918.580505371094
+$ARRPOS[18][2] = 222.047286987305
+$ARRPOS[18][3] = 560
+$ARRPOS[18][4] = 214855.5781
+$ARRPOS[19][0] = 649.3681640625
+$ARRPOS[19][1] = -2105.470703125
+$ARRPOS[19][2] = 255.491439819336
+$ARRPOS[19][3] = 550
+$ARRPOS[19][4] = 214855.9556
+$ARRPOS[20][0] = 2662.94067382813
+$ARRPOS[20][1] = -1810.2060546875
+$ARRPOS[20][2] = 230.298126220703
+$ARRPOS[20][3] = 400
+$ARRPOS[20][4] = 214856.0319
+$ARRPOS[21][0] = 2670.07983398438
+$ARRPOS[21][1] = -1758.71313476563
+$ARRPOS[21][2] = 230.536682128906
+$ARRPOS[21][3] = 250
+$ARRPOS[21][4] = 214856.0331
+$ARRPOS[22][0] = 1473.18603515625
+$ARRPOS[22][1] = -1772.87963867188
+$ARRPOS[22][2] = 231.485870361328
+$ARRPOS[22][3] = 400
+$ARRPOS[22][4] = 214855.9618
+$ARRPOS[23][0] = 1491.13842773438
+$ARRPOS[23][1] = -1738.70397949219
+$ARRPOS[23][2] = 227.138305664063
+$ARRPOS[23][3] = 235
+$ARRPOS[23][4] = 214855.9617
+$ARRPOS[24][0] = 1395.62109375
+$ARRPOS[24][1] = -1348.28576660156
+$ARRPOS[24][2] = 221.415954589844
+$ARRPOS[24][3] = 300
+$ARRPOS[24][4] = 214855.6065
+$ARRPOS[25][0] = 2394.01318359375
+$ARRPOS[25][1] = -741.867797851563
+$ARRPOS[25][2] = 222.331771850586
+$ARRPOS[25][3] = 450
+$ARRPOS[25][4] = 214855.7031
+$ARRPOS[26][0] = 2404.41064453125
+$ARRPOS[26][1] = 148.097015380859
+$ARRPOS[26][2] = 222.461685180664
+$ARRPOS[26][3] = 450
+$ARRPOS[26][4] = 214855.3057
+$ARRPOS[27][0] = 2544.73510742188
+$ARRPOS[27][1] = 1.35281920433044
+$ARRPOS[27][2] = 229.687759399414
+$ARRPOS[27][3] = 250
+$ARRPOS[27][4] = 214855.3042
+$ARRPOS[28][0] = 2640.30810546875
+$ARRPOS[28][1] = 603.626220703125
+$ARRPOS[28][2] = 222.564727783203
+$ARRPOS[28][3] = 450
+$ARRPOS[28][4] = 214854.979
+$ARRPOS[29][0] = 2427.19409179688
+$ARRPOS[29][1] = 643.448120117188
+$ARRPOS[29][2] = 222.591491699219
+$ARRPOS[29][3] = 250
+$ARRPOS[29][4] = 214854.9788
+$ARRPOS[30][0] = -2180.81982421875
+$ARRPOS[30][1] = 3168.82080078125
+$ARRPOS[30][2] = 228.42155456543
+$ARRPOS[30][3] = 550
+$ARRPOS[30][4] = 214853.5656
+$ARRPOS[31][0] = 1311.45153320313
+$ARRPOS[31][1] = 913.4642578125
+$ARRPOS[31][2] = 222.324615478516
+$ARRPOS[31][3] = 500
+$ARRPOS[31][4] = 214854.9758
+$ARRPOS[32][0] = 1311.45153320313
+$ARRPOS[32][1] = 913.4642578125
+$ARRPOS[32][2] = 222.324615478516
+$ARRPOS[32][3] = 500
+$ARRPOS[32][4] = 214854.9758
+$QLINE[0][0] = 1
+$QLINE[0][1] = 1
+$QLINE[1][0] = 9
+$QLINE[1][1] = 1
+$QLINE[2][0] = 0
+$QLINE[2][1] = 1
+$QLINE[3][0] = 0
+$QLINE[3][1] = 1
+$QLINE[4][0] = 3
+$QLINE[4][1] = 1
+$QLINE[5][0] = 0
+$QLINE[5][1] = 1
+$QLINE[6][0] = 0
+$QLINE[6][1] = 1
+$QLINE[7][0] = 0
+$QLINE[7][1] = 1
+$QLINE[8][0] = 0
+$QLINE[8][1] = 1
+$QLINE[9][0] = 0
+$QLINE[9][1] = 1
+$QLINE[10][0] = 0
+$QLINE[10][1] = 1
+$QLINE[11][0] = 4
+$QLINE[11][1] = 1
+$QLINE[12][0] = 3
+$QLINE[12][1] = 1
+$QLINE[13][0] = 0
+$QLINE[13][1] = 1
+$QLINE[14][0] = 5
+$QLINE[14][1] = 1
+$QLINE[15][0] = 9
+$QLINE[15][1] = 1
+$QLINE[16][0] = 0
+$QLINE[16][1] = 1
+$QLINE[17][0] = 0
+$QLINE[17][1] = 1
+$QLINE[18][0] = 0
+$QLINE[18][1] = 1
+$QLINE[19][0] = 0
+$QLINE[19][1] = 1
+$QLINE[20][0] = 0
+$QLINE[20][1] = 1
+$QLINE[21][0] = 3
+$QLINE[21][1] = 1
+$QLINE[22][0] = 0
+$QLINE[22][1] = 1
+$QLINE[23][0] = 0
+$QLINE[23][1] = 1
+$QLINE[24][0] = 0
+$QLINE[24][1] = 1
+$QLINE[25][0] = 0
+$QLINE[25][1] = 1
+$QLINE[26][0] = 0
+$QLINE[26][1] = 1
+$QLINE[27][0] = 0
+$QLINE[27][1] = 1
+$QLINE[28][0] = 0
+$QLINE[28][1] = 1
+$QLINE[29][0] = 0
+$QLINE[29][1] = 1
+$QLINE[30][0] = 3
+$QLINE[30][1] = 1
+$QLINE[31][0] = 2
+$QLINE[31][1] = 1
+Dim $DCTLT[5], $DCVHT[5], $DCKTT[5], $DCTVT[5], $DCDKT[5], $DCPMT[5], $DCCTT[5], $DCMTT[5], $DCLNTR[5], $DCDBT[5], $DCTMND[5], $DCLNT[5]
+Dim $DCDNT[5], $DCNT[5], $DCVKT[5], $DCTPBL[5], $DCVLT[5], $DCVMT[5], $DCTMC[5], $DCKHC[5], $DCLQD[5], $DCDTST[5], $DCTPBL[5], $DCTLP[5]
+$DCTLT[0] = 1638.73254394531
+$DCTLT[1] = 815.103210449219
+$DCTLT[2] = 221.587524414063
+$DCTLT[4] = 214854.9348
+$DCVHT[0] = -1482.10803222656
+$DCVHT[1] = 975.193969726563
+$DCVHT[2] = 257.738311767578
+$DCVHT[4] = 214854.7637
+$DCKTT[0] = 478.792053222656
+$DCKTT[1] = 3247.16674804688
+$DCKTT[2] = 260.996459960938
+$DCKTT[4] = 214853.776
+$DCTVT[0] = -755.169616699219
+$DCTVT[1] = -1357.69384765625
+$DCTVT[2] = 224.51806640625
+$DCTVT[4] = 214855.5114
+$DCDKT[0] = -1698.50646972656
+$DCDKT[1] = 100.092468261719
+$DCDKT[2] = 221.923736572266
+$DCDKT[4] = 214855.101
+$DCPMT[0] = 998.814331054688
+$DCPMT[1] = 4163.560546875
+$DCPMT[2] = 222.322982788086
+$DCPMT[4] = 214853.4316
+$DCDNT[0] = -1796.89489746094
+$DCDNT[1] = -1350.66076660156
+$DCDNT[2] = 526.281494140625
+$DCDNT[4] = 214855.4034
+$DCNT[0] = 2375.07763671875
+$DCNT[1] = 2827.5908203125
+$DCNT[2] = 221.423416137695
+$DCNT[4] = 214853.9675
+$DCVKT[0] = 2631.97998046875
+$DCVKT[1] = 4184.28173828125
+$DCVKT[2] = 254.685745239258
+$DCVKT[4] = 214853.5238
+$DCTPBL[0] = -279.656158447266
+$DCTPBL[1] = 2120.60620117188
+$DCTPBL[2] = 225.111541748047
+$DCTPBL[4] = 214854.2999
+$DCVLT[0] = -2832.13452148438
+$DCVLT[1] = 3089.43408203125
+$DCVLT[2] = 381.437072753906
+$DCVLT[4] = 214853.5671
+$DCLNTR[0] = 466.123687744141
+$DCLNTR[1] = -2143.11840820313
+$DCLNTR[2] = 284.29052734375
+$DCLNTR[4] = 214855.9066
+$DCVMT[0] = 1456.34851074219
+$DCVMT[1] = -1759.07434082031
+$DCVMT[2] = 234.297729492188
+$DCVMT[4] = 214855.9657
+$DCTMC[0] = 2675.21508789063
+$DCTMC[1] = -1795.55187988281
+$DCTMC[2] = 229.719650268555
+$DCTMC[4] = 214856.0325
+$DCCTT[0] = 1386.01245117188
+$DCCTT[1] = -1367.24267578125
+$DCCTT[2] = 220.548812866211
+$DCCTT[4] = 214855.6067
+$DCMTT[0] = 2417.5771484375
+$DCMTT[1] = -787.066955566406
+$DCMTT[2] = 237.667770385742
+$DCMTT[4] = 214855.6637
+$DCKHC[0] = 498.589721679688
+$DCKHC[1] = 173.468200683594
+$DCKHC[2] = 222.879089355469
+$DCKHC[4] = 214855.1786
+$DCLQD[0] = 2200.68994140625
+$DCLQD[1] = 1746.94714355469
+$DCLQD[2] = 224.249740600586
+$DCLQD[4] = 214854.4907
+$DCDTST[0] = 329.985260009766
+$DCDTST[1] = -907.417053222656
+$DCDTST[2] = 222.568069458008
+$DCDTST[4] = 214855.5777
+$DCDBT[0] = -2113.455078125
+$DCDBT[1] = 3140.5234375
+$DCDBT[2] = 243.465896606445
+$DCDBT[4] = 214853.5651
+$DCTMND[0] = -664.560852050781
+$DCTMND[1] = 2735.00537109375
+$DCTMND[2] = 223.849533081055
+$DCTMND[4] = 214853.744
+$DCTPBL[0] = -279.633361816406
+$DCTPBL[1] = 2120.9580078125
+$DCTPBL[2] = 225.308303833008
+$DCTPBL[4] = 214854.2999
+$DCLNT[0] = -2749.94165039063
+$DCLNT[1] = 403.520874023438
+$DCLNT[2] = 525.274963378906
+$DCLNT[4] = 214855.0157
+$DCTLP[0] = -1194.66687011719
+$DCTLP[1] = 172.961990356445
+$DCTLP[2] = 524.896240234375
+$DCTLP[4] = 214855.1127
+Dim $NPCMOVE[24][2]
+$NPCMOVE[1][0] = 401
+$NPCMOVE[1][1] = 216
+$NPCMOVE[2][0] = 266
+$NPCMOVE[2][1] = 208
+$NPCMOVE[3][0] = 351
+$NPCMOVE[3][1] = 113
+$NPCMOVE[4][0] = 299
+$NPCMOVE[4][1] = 310
+$NPCMOVE[5][0] = 258
+$NPCMOVE[5][1] = 247
+$NPCMOVE[6][0] = 373
+$NPCMOVE[6][1] = 70
+$NPCMOVE[7][0] = 253
+$NPCMOVE[7][1] = 309
+$NPCMOVE[8][0] = 433
+$NPCMOVE[8][1] = 130
+$NPCMOVE[9][0] = 342
+$NPCMOVE[9][1] = 171
+$NPCMOVE[10][0] = 211
+$NPCMOVE[10][1] = 235
+$NPCMOVE[11][0] = 208
+$NPCMOVE[11][1] = 120
+$NPCMOVE[12][0] = 394
+$NPCMOVE[12][1] = 327
+$NPCMOVE[13][0] = 448
+$NPCMOVE[13][1] = 329
+$NPCMOVE[14][0] = 392
+$NPCMOVE[14][1] = 312
+$NPCMOVE[15][0] = 435
+$NPCMOVE[15][1] = 285
+$NPCMOVE[19][0] = 438
+$NPCMOVE[19][1] = 247
+$NPCMOVE[16][0] = 410
+$NPCMOVE[16][1] = 245
+$NPCMOVE[17][0] = 353
+$NPCMOVE[17][1] = 245
+$NPCMOVE[18][0] = 350
+$NPCMOVE[18][1] = 343
+$NPCMOVE[20][0] = 239
+$NPCMOVE[20][1] = 116
+$NPCMOVE[21][0] = 343
+$NPCMOVE[21][1] = 290
+$NPCMOVE[22][0] = 317
+$NPCMOVE[22][1] = 160
+$NPCMOVE[23][0] = 280
+$NPCMOVE[23][1] = 245
+$MAINFORM = GUICreate("AutoKBC", 195, 140, 203, 136)
+$INTITLE1 = GUICtrlCreateInput("Element Client", 40, 8, 80, 21)
+$BTNHELP = GUICtrlCreateButton("Help", 136, 8, 49, 17, 0)
+GUICtrlSetOnEvent($BTNHELP, "Help")
+$BTNSTART = GUICtrlCreateButton("Start", 136, 40, 49, 17, 0)
+GUICtrlSetOnEvent($BTNSTART, "Sendmouseclick")
+$BTNTITLE = GUICtrlCreateButton("Title", 136, 65, 49, 17, 0)
+GUICtrlSetOnEvent($BTNTITLE, "ChangeTitle")
+$BTNEXIT = GUICtrlCreateButton("Exit", 136, 90, 49, 17, 0)
+GUICtrlSetOnEvent($BTNEXIT, "AltQ")
+$LABEL1 = GUICtrlCreateLabel("Title", 8, 10, 24, 17)
+$LABEL2 = GUICtrlCreateLabel("Name:", 8, 40, 35, 17)
+$LBLNAME = GUICtrlCreateLabel("Player's Name", 48, 40, 70, 17)
+$LABEL4 = GUICtrlCreateLabel("Next Quest: ", 8, 90, 60, 17)
+$INQSTART = GUICtrlCreateInput("00", 70, 90, 25, 17)
+$BTNNEXT = GUICtrlCreateButton(">>", 100, 90, 20, 17, 0)
+GUICtrlSetOnEvent($BTNNEXT, "JumpQuest")
+$LABEL6 = GUICtrlCreateLabel("Time:", 8, 64, 30, 17)
+$LBLTIME = GUICtrlCreateLabel("0 : 0 : 0", 48, 64, 70, 17)
+$CHKFLY = GUICtrlCreateCheckbox("Fly only", 8, 115)
+$CHKQUEST = GUICtrlCreateCheckbox("Chua lam Quest", 90, 115)
+TraySetState(2)
+If WinExists("KBC 1") Then
+	$I = 0
+	Do
+		$I = $I + 1
+	Until Not WinExists("KBC " & $I)
+	GUICtrlSetData($INTITLE1, "KBC " & ($I - 1))
+EndIf
+HotKeySet("{PAUSE}", "TogglePause")
+GUISetState(@SW_SHOW)
+Opt("GUIOnEventMode", 1)
+Opt("MouseClickDownDelay", 50)
+Opt("WinTitleMatchMode", 3)
+While 1
+	If $SENDOK And (Not $PAUSE) Then
+		GUICtrlSetData($INQSTART, $QPOS)
+		SHOWTIME()
+		REFRESH()
+	EndIf
+	Sleep(1000)
+WEnd
+
+Func TOGGLEPAUSE()
+	AUTORUN(GETPX(), GETPY(), GETPZ())
+	$PAUSE = Not $PAUSE
+EndFunc
+
+
+Func CHANGETITLE()
+	$I = 1
+	Do
+		$STITLE = "KBC " & $I
+		$I = $I + 1
+	Until Not WinExists($STITLE)
+	If WinExists("Element Client") Then
+		WinSetTitle("Element Client", "", $STITLE)
+	Else
+		MsgBox(0, "Error", "Khong ton tai cua so Element Client")
+	EndIf
+EndFunc
+
+
+Func SENDMOUSECLICK()
+	$TITLE = GUICtrlRead($INTITLE1)
+	$OLDTITLE = $TITLE
+	If WinExists($TITLE & "-Use") Then
+		WinSetTitle($TITLE & "-Use", "", $TITLE)
+	EndIf
+	If WinExists($TITLE) Then
+		$PID = WinGetProcess($TITLE)
+		$MEMID = _MEMORYOPEN($PID)
+		$SENDOK = Not ($SENDOK)
+	Else
+		$SENDOK = False
+		MsgBox(0, "Error", "Ten cua so khong ton tai")
+	EndIf
+	$QSTART = GUICtrlRead($INQSTART)
+	If ($QSTART < 0) Or ($QSTART > 32) Then
+		MsgBox(0, "Error", "Khong ton tai Quest so " & $QSTART)
+		$SENDOK = False
+	EndIf
+	If $SENDOK Then
+		WinActivate($TITLE)
+		WinMove($TITLE, "", 1, 1, 660, 480)
+		GUICtrlSetData($BTNSTART, "Stop")
+		$QPOS = $QSTART
+		$PNAME = _MEMORYREAD(_MEMORYREAD(_MEMORYREAD(_MEMORYREAD($BASEADD, $MEMID) + 32, $MEMID) + 1520, $MEMID), $MEMID, "wchar[9]")
+		GUICtrlSetData($LBLNAME, $PNAME)
+		$MOB_ID_ADD = _MEMORYREAD(_MEMORYREAD($BASEADD, $MEMID) + 32, $MEMID) + 2636
+		$SELECTED = False
+		If GUICtrlRead($CHKFLY) = $GUI_UNCHECKED Then
+			$FLYTO = False
+		Else
+			$FLYTO = True
+		EndIf
+		If GUICtrlRead($CHKQUEST) = $GUI_CHECKED Then
+			$QLINE[8][1] = 2
+			$QLINE[23][1] = 2
+			$QLINE[24][1] = 2
+			$QLINE[26][1] = 2
+			$QLINE[27][1] = 2
+			$QLINE[17][1] = 1
+		Else
+			$QLINE[8][1] = 1
+			$QLINE[22][1] = 1
+			$QLINE[23][1] = 1
+			$QLINE[24][1] = 1
+			$QLINE[26][1] = 1
+			$QLINE[27][1] = 1
+			$QLINE[17][1] = 1
+		EndIf
+		$PAUSE = False
+		$TIMERSTAMP = TimerInit()
+		_MEMORYWRITE($MOB_ID_ADD, $MEMID, 0)
+		Sleep(2000)
+		MouseMove(320, 240, 0)
+		Sleep(1000)
+		MouseWheel("up", 30)
+		Sleep(2000)
+		MouseWheel("up", 30)
+		Sleep(2000)
+		$STEP = 1
+		If $QPOS = 2 Then
+			$STEP = 3
+			QUEST2()
+		ElseIf $QPOS = 3 Then
+			$STEP = 4
+			QUEST3()
+		ElseIf $QPOS = 4 Then
+			$STEP = 4
+			QUEST4()
+		ElseIf $QPOS = 5 Then
+			$STEP = 3
+			QUEST5()
+		ElseIf $QPOS = 6 Then
+			$STEP = 2
+			QUEST5()
+		ElseIf $QPOS = 10 Then
+			$STEP = 2
+			QUEST10()
+		ElseIf $QPOS = 12 Then
+			$STEP = 5
+			QUEST12()
+		ElseIf $QPOS = 15 Then
+			$STEP = 5
+			QUEST15()
+		ElseIf $QPOS = 17 Then
+			$STEP = 4
+			QUEST17()
+		ElseIf $QPOS = 18 Then
+			$STEP = 6
+			QUEST18()
+		ElseIf $QPOS = 19 Then
+			$STEP = 2
+			QUEST19()
+		ElseIf $QPOS = 20 Then
+			$STEP = 3
+			QUEST20()
+		ElseIf $QPOS = 22 Then
+			$STEP = 2
+			QUEST22()
+		ElseIf $QPOS = 25 Then
+			$STEP = 2
+			QUEST25()
+		ElseIf $QPOS = 26 Then
+			$STEP = 2
+			QUEST26()
+		ElseIf $QPOS = 30 Then
+			$STEP = 3
+			QUEST30()
+		ElseIf $QPOS = 31 Then
+			$STEP = 3
+			QUEST31()
+		Else
+			$CURENTX = $ARRPOS[$QPOS][0]
+			$CURENTY = $ARRPOS[$QPOS][1]
+			$CURENTZ = $ARRPOS[$QPOS][2]
+			$CURENTHIGH = $ARRPOS[$QPOS][3]
+			$CURENTID = $ARRPOS[$QPOS][4]
+			$TELE = 0
+		EndIf
+	Else
+		GUICtrlSetData($BTNSTART, "Start")
+		If WinExists($OLDTITLE & "-Use") Then
+			WinSetTitle($OLDTITLE & "-Use", "", $OLDTITLE)
+		EndIf
+		_MEMORYCLOSE($MEMID)
+	EndIf
+EndFunc
+
+
+Func CHECKPOS($VARX, $VARY, $VARR)
+	If (Abs(GETPX() - $VARX) <= $VARR) And (Abs(GETPY() - $VARY) <= $VARR) Then
+		Return True
+	Else
+		Return False
+	EndIf
+EndFunc
+
+
+Func CHECKHIGH($VARZ, $VARR)
+	If Abs(GETPZ() - $VARZ) <= $VARR Then
+		Return True
+	Else
+		Return False
+	EndIf
+EndFunc
+
+
+Func MOVETO($VARX, $VARY, $VARZ, $VARHIGH)
+	If (GETPZ() < $VARHIGH - 0.25) And (Not CHECKPOS($VARX, $VARY, 0.25)) Then
+		AUTORUN(GETPX(), GETPY(), $VARHIGH)
+		Sleep(1500)
+	ElseIf (GETPZ() >= $VARHIGH - 0.25) And (Not CHECKPOS($VARX, $VARY, 0.25)) Then
+		AUTORUN($VARX, $VARY, GETPZ())
+		Sleep(1500)
+	ElseIf CHECKPOS($VARX, $VARY, 0.25) And (Not CHECKHIGH($VARZ, 0.05)) Then
+		AUTORUN($VARX, $VARY, $VARZ)
+		Sleep(1500)
+	EndIf
+EndFunc
+
+
+Func SELECTNPC($NPCID)
+	If Not $SELECTED Then
+		Do
+			$ACTIVE_TITLE = WinGetTitle("[ACTIVE]")
+		Until (StringRight($ACTIVE_TITLE, 4) <> "-Use") Or ($ACTIVE_TITLE = $TITLE) Or (Not $SENDOK)
+		$STATE = WinGetState($TITLE, "")
+		If $ACTIVE_TITLE <> $TITLE Then
+			WinActivate($TITLE)
+		EndIf
+		WinSetTitle($TITLE, "", $TITLE & "-Use")
+		$TITLE = $TITLE & "-Use"
+		If ($QPOS = 22) And ($STEP = 1) Then
+			Sleep(500)
+			ControlClick($TITLE, "", "", "left", 2, 364, 416)
+			Sleep(50)
+			ControlClick($TITLE, "", "", "left", 2, 364, 416)
+			Sleep(500)
+			ControlClick($TITLE, "", "", "left", 2, 364, 416)
+			Sleep(50)
+			ControlClick($TITLE, "", "", "left", 2, 364, 416)
+			Sleep(500)
+		ElseIf ($QPOS = 15) And ($STEP = 1) Then
+			Sleep(500)
+			ControlClick($TITLE, "", "", "left", 2, 335, 425)
+			Sleep(50)
+			ControlClick($TITLE, "", "", "left", 2, 335, 425)
+			Sleep(500)
+			ControlClick($TITLE, "", "", "left", 2, 335, 425)
+			Sleep(50)
+			ControlClick($TITLE, "", "", "left", 2, 335, 425)
+			Sleep(500)
+		Else
+			Sleep(500)
+			ControlClick($TITLE, "", "", "left", 2, 323, 372)
+			Sleep(50)
+			ControlClick($TITLE, "", "", "left", 2, 323, 372)
+			Sleep(500)
+			ControlClick($TITLE, "", "", "left", 2, 323, 372)
+			Sleep(50)
+			ControlClick($TITLE, "", "", "left", 2, 323, 372)
+			Sleep(500)
+		EndIf
+		If GETCURENTMOBID() = $NPCID Then
+			$SELECTED = True
+		Else
+			$CURENTHIGH = $CURENTZ + 20
+			$SELECTED = False
+		EndIf
+		If BitAND($STATE, 16) Then
+			WinSetState($TITLE, "", @SW_MINIMIZE)
+		EndIf
+		WinSetTitle($TITLE, "", StringTrimRight($TITLE, 4))
+		$TITLE = StringTrimRight($TITLE, 4)
+		WinActivate($ACTIVE_TITLE)
+	EndIf
+EndFunc
+
+
+Func SELECTQUEST($QNUMBER)
+	Do
+		$ACTIVE_TITLE = WinGetTitle("[ACTIVE]")
+	Until (StringRight($ACTIVE_TITLE, 4) <> "-Use") Or ($ACTIVE_TITLE = $TITLE) Or (Not $SENDOK)
+	$STATE = WinGetState($TITLE, "")
+	If $ACTIVE_TITLE <> $TITLE Then
+		WinActivate($TITLE)
+	EndIf
+	WinSetTitle($TITLE, "", $TITLE & "-Use")
+	$TITLE = $TITLE & "-Use"
+	Sleep(500)
+	If ($QLINE[$QNUMBER][0] <= 5) And ($QLINE[$QNUMBER][0] <> 0) Then
+		ControlClick($TITLE, "", "", "left", 1, 45, 302 + ($QLINE[$QNUMBER][0] - 1) * 17)
+	ElseIf ($QLINE[$QNUMBER][0] <> 0) Then
+		ControlClick($TITLE, "", "", "left", 20, 285, 384)
+		Sleep(200)
+		ControlClick($TITLE, "", "", "left", 20, 285, 384)
+		Sleep(200)
+		ControlClick($TITLE, "", "", "left", 20, 285, 384)
+		Sleep(200)
+		ControlClick($TITLE, "", "", "left", 20, 285, 384)
+		Sleep(200)
+		ControlClick($TITLE, "", "", "left", 1, 45, 302 + 17 * ($QLINE[$QNUMBER][0] - 6))
+	EndIf
+	Sleep(500)
+	ControlClick($TITLE, "", "", "left", 1, 45, 302 + ($QLINE[$QNUMBER][1] - 1) * 17)
+	Sleep(500)
+	ControlClick($TITLE, "", "", "left", 1, 45, 302)
+	Sleep(500)
+	ControlSend($TITLE, "", "", "{ESC}")
+	Sleep(500)
+	ControlSend($TITLE, "", "", "{ESC}")
+	Sleep(500)
+	If BitAND($STATE, 16) Then
+		WinSetState($TITLE, "", @SW_MINIMIZE)
+	EndIf
+	WinSetTitle($TITLE, "", StringTrimRight($TITLE, 4))
+	$TITLE = StringTrimRight($TITLE, 4)
+	WinActivate($ACTIVE_TITLE)
+EndFunc
+
+
+Func TELEPORT($ZONE)
+	Do
+		$ACTIVE_TITLE = WinGetTitle("[ACTIVE]")
+	Until (StringRight($ACTIVE_TITLE, 4) <> "-Use") Or ($ACTIVE_TITLE = $TITLE) Or (Not $SENDOK)
+	$STATE = WinGetState($TITLE, "")
+	If $ACTIVE_TITLE <> $TITLE Then
+		WinActivate($TITLE)
+	EndIf
+	WinSetTitle($TITLE, "", $TITLE & "-Use")
+	$TITLE = $TITLE & "-Use"
+	Sleep(500)
+	ControlClick($TITLE, "", "", "left", 1, 45, 302)
+	Sleep(1000)
+	MouseClick("left", $NPCMOVE[$ZONE][0], $NPCMOVE[$ZONE][1], 1, 2)
+	Sleep(5000)
+	If BitAND($STATE, 16) Then
+		WinSetState($TITLE, "", @SW_MINIMIZE)
+	EndIf
+	WinSetTitle($TITLE, "", StringTrimRight($TITLE, 4))
+	$TITLE = StringTrimRight($TITLE, 4)
+	WinActivate($ACTIVE_TITLE)
+EndFunc
+
+
+Func QUEST2()
+	If $STEP = 1 Then
+		$CURENTX = $DCTLT[0]
+		$CURENTY = $DCTLT[1]
+		$CURENTZ = $DCTLT[2]
+		$CURENTHIGH = $CURENTZ + 170
+		$CURENTID = $DCTLT[4]
+		$TELE = 2
+	ElseIf $STEP = 2 Then
+		$CURENTX = $DCVHT[0]
+		$CURENTY = $DCVHT[1]
+		$CURENTZ = $DCVHT[2]
+		$CURENTHIGH = $CURENTZ + 3
+		$CURENTID = $DCVHT[4]
+		$TELE = 5
+	ElseIf $STEP = 3 Then
+		$CURENTX = $ARRPOS[$QPOS][0]
+		$CURENTY = $ARRPOS[$QPOS][1]
+		$CURENTZ = $ARRPOS[$QPOS][2]
+		$CURENTHIGH = $CURENTZ + 10
+		$CURENTID = $ARRPOS[$QPOS][4]
+		$TELE = 0
+	EndIf
+EndFunc
+
+
+Func QUEST3()
+	If $STEP = 1 Then
+		$CURENTX = $DCDKT[0]
+		$CURENTY = $DCDKT[1]
+		$CURENTZ = $DCDKT[2]
+		$CURENTHIGH = $CURENTZ + 10
+		$CURENTID = $DCDKT[4]
+		$TELE = 2
+	ElseIf $STEP = 2 Then
+		$CURENTX = $DCVHT[0]
+		$CURENTY = $DCVHT[1]
+		$CURENTZ = $DCVHT[2]
+		$CURENTHIGH = $CURENTZ + 3
+		$CURENTID = $DCVHT[4]
+		$TELE = 3
+	ElseIf $STEP = 3 Then
+		$CURENTX = $DCKTT[0]
+		$CURENTY = $DCKTT[1]
+		$CURENTZ = $DCKTT[2]
+		$CURENTHIGH = $CURENTZ + 3
+		$CURENTID = $DCKTT[4]
+		$TELE = 6
+	ElseIf $STEP = 4 Then
+		$CURENTX = $ARRPOS[$QPOS][0]
+		$CURENTY = $ARRPOS[$QPOS][1]
+		$CURENTZ = $ARRPOS[$QPOS][2]
+		$CURENTHIGH = $CURENTZ + 10
+		$CURENTID = $ARRPOS[$QPOS][4]
+		$TELE = 0
+	EndIf
+EndFunc
+
+
+Func QUEST4()
+	If $STEP = 1 Then
+		$CURENTX = $DCPMT[0]
+		$CURENTY = $DCPMT[1]
+		$CURENTZ = $DCPMT[2]
+		$CURENTHIGH = $CURENTZ + 10
+		$CURENTID = $DCPMT[4]
+		$TELE = 3
+	ElseIf $STEP = 2 Then
+		$CURENTX = $DCKTT[0]
+		$CURENTY = $DCKTT[1]
+		$CURENTZ = $DCKTT[2]
+		$CURENTHIGH = $CURENTZ + 3
+		$CURENTID = $DCKTT[4]
+		$TELE = 4
+	ElseIf $STEP = 3 Then
+		$CURENTX = $DCTVT[0]
+		$CURENTY = $DCTVT[1]
+		$CURENTZ = $DCTVT[2]
+		$CURENTHIGH = $CURENTZ + 3
+		$CURENTID = $DCTVT[4]
+		$TELE = 7
+	ElseIf $STEP = 4 Then
+		$CURENTX = $ARRPOS[$QPOS][0]
+		$CURENTY = $ARRPOS[$QPOS][1]
+		$CURENTZ = $ARRPOS[$QPOS][2]
+		$CURENTHIGH = $CURENTZ + 10
+		$CURENTID = $ARRPOS[$QPOS][4]
+		$TELE = 0
+	EndIf
+EndFunc
+
+
+Func QUEST5()
+	If $STEP = 1 Then
+		$CURENTX = $DCDNT[0]
+		$CURENTY = $DCDNT[1]
+		$CURENTZ = $DCDNT[2]
+		$CURENTHIGH = $CURENTZ + 10
+		$CURENTID = $DCDNT[4]
+		$TELE = 4
+	ElseIf $STEP = 2 Then
+		$CURENTX = $DCTVT[0]
+		$CURENTY = $DCTVT[1]
+		$CURENTZ = $DCTVT[2]
+		$CURENTHIGH = $CURENTZ + 3
+		$CURENTID = $DCTVT[4]
+		$TELE = 1
+	ElseIf $STEP = 3 Then
+		$CURENTX = $DCTLT[0]
+		$CURENTY = $DCTLT[1]
+		$CURENTZ = $DCTLT[2]
+		$CURENTHIGH = $CURENTZ + 3
+		$CURENTID = $DCTLT[4]
+		$TELE = 17
+	ElseIf $STEP = 4 Then
+		$CURENTX = $ARRPOS[$QPOS][0]
+		$CURENTY = $ARRPOS[$QPOS][1]
+		$CURENTZ = $ARRPOS[$QPOS][2]
+		$CURENTHIGH = $CURENTZ + 10
+		$CURENTID = $ARRPOS[$QPOS][4]
+		$TELE = 0
+	EndIf
+EndFunc
+
+
+Func QUEST6()
+	If $STEP = 1 Then
+		$CURENTX = $DCKHC[0]
+		$CURENTY = $DCKHC[1]
+		$CURENTZ = $DCKHC[2]
+		$CURENTHIGH = $CURENTZ + 10
+		$CURENTID = $DCKHC[4]
+		$TELE = 16
+	ElseIf $STEP = 2 Then
+		$CURENTX = $ARRPOS[$QPOS][0]
+		$CURENTY = $ARRPOS[$QPOS][1]
+		$CURENTZ = $ARRPOS[$QPOS][2]
+		$CURENTHIGH = $CURENTZ + 10
+		$CURENTID = $ARRPOS[$QPOS][4]
+		$TELE = 0
+	EndIf
+EndFunc
+
+
+Func QUEST10()
+	If $STEP = 1 Then
+		$CURENTX = $DCLQD[0]
+		$CURENTY = $DCLQD[1]
+		$CURENTZ = $DCLQD[2]
+		$CURENTHIGH = $CURENTZ + 10
+		$CURENTID = $DCLQD[4]
+		$TELE = 8
+	ElseIf $STEP = 2 Then
+		$CURENTX = $ARRPOS[$QPOS][0]
+		$CURENTY = $ARRPOS[$QPOS][1]
+		$CURENTZ = $ARRPOS[$QPOS][2]
+		$CURENTHIGH = $CURENTZ + 10
+		$CURENTID = $ARRPOS[$QPOS][4]
+		$TELE = 0
+	EndIf
+EndFunc
+
+
+Func QUEST12()
+	If $STEP = 1 Then
+		$CURENTX = $DCVKT[0]
+		$CURENTY = $DCVKT[1]
+		$CURENTZ = $DCVKT[2]
+		$CURENTHIGH = $CURENTZ + 3
+		$CURENTID = $DCVKT[4]
+		$TELE = 8
+	ElseIf $STEP = 2 Then
+		$CURENTX = $DCNT[0]
+		$CURENTY = $DCNT[1]
+		$CURENTZ = $DCNT[2]
+		$CURENTHIGH = $CURENTZ + 3
+		$CURENTID = $DCNT[4]
+		$TELE = 3
+	ElseIf $STEP = 3 Then
+		$CURENTX = $DCKTT[0]
+		$CURENTY = $DCKTT[1]
+		$CURENTZ = $DCKTT[2]
+		$CURENTHIGH = $CURENTZ + 3
+		$CURENTID = $DCKTT[4]
+		$TELE = 1
+	ElseIf $STEP = 4 Then
+		$CURENTX = $DCTLT[0]
+		$CURENTY = $DCTLT[1]
+		$CURENTZ = $DCTLT[2]
+		$CURENTHIGH = $CURENTZ + 3
+		$CURENTID = $DCTLT[4]
+		$TELE = 9
+	ElseIf $STEP = 5 Then
+		$CURENTX = $ARRPOS[$QPOS][0]
+		$CURENTY = $ARRPOS[$QPOS][1]
+		$CURENTZ = $ARRPOS[$QPOS][2]
+		$CURENTHIGH = $CURENTZ + 20
+		$CURENTID = $ARRPOS[$QPOS][4]
+		$TELE = 0
+	EndIf
+EndFunc
+
+
+Func QUEST15()
+	If $STEP = 1 Then
+		$CURENTX = $DCTMND[0]
+		$CURENTY = $DCTMND[1]
+		$CURENTZ = $DCTMND[2]
+		$CURENTHIGH = $CURENTZ + 10
+		$CURENTID = $DCTMND[4]
+		$TELE = 22
+	ElseIf $STEP = 2 Then
+		$CURENTX = $DCTPBL[0]
+		$CURENTY = $DCTPBL[1]
+		$CURENTZ = $DCTPBL[2]
+		$CURENTHIGH = $CURENTZ + 3
+		$CURENTID = $DCTPBL[4]
+		$TELE = 3
+	ElseIf $STEP = 3 Then
+		$CURENTX = $DCKTT[0]
+		$CURENTY = $DCKTT[1]
+		$CURENTZ = $DCKTT[2]
+		$CURENTHIGH = $CURENTZ + 3
+		$CURENTID = $DCKTT[4]
+		$TELE = 2
+	ElseIf $STEP = 4 Then
+		$CURENTX = $DCVHT[0]
+		$CURENTY = $DCVHT[1]
+		$CURENTZ = $DCVHT[2]
+		$CURENTHIGH = $CURENTZ + 3
+		$CURENTID = $DCVHT[4]
+		$TELE = 10
+	ElseIf $STEP = 5 Then
+		$CURENTX = $ARRPOS[$QPOS][0]
+		$CURENTY = $ARRPOS[$QPOS][1]
+		$CURENTZ = $ARRPOS[$QPOS][2]
+		$CURENTHIGH = $CURENTZ + 10
+		$CURENTID = $ARRPOS[$QPOS][4]
+		$TELE = 0
+	EndIf
+EndFunc
+
+
+Func QUEST17()
+	If $STEP = 1 Then
+		$CURENTX = $DCLNT[0]
+		$CURENTY = $DCLNT[1]
+		$CURENTZ = $DCLNT[2]
+		$CURENTHIGH = 600
+		$CURENTID = $DCLNT[4]
+		$TELE = 2
+	ElseIf $STEP = 2 Then
+		$CURENTX = $DCVHT[0]
+		$CURENTY = $DCVHT[1]
+		$CURENTZ = $DCVHT[2]
+		$CURENTHIGH = $CURENTZ + 3
+		$CURENTID = $DCVHT[4]
+		$TELE = 5
+	ElseIf $STEP = 3 Then
+		$CURENTX = $DCDKT[0]
+		$CURENTY = $DCDKT[1]
+		$CURENTZ = $DCDKT[2]
+		$CURENTHIGH = $CURENTZ + 10
+		$CURENTID = $DCDKT[4]
+		$TELE = 23
+	ElseIf $STEP = 4 Then
+		$QLINE[17][1] = 1
+		$CURENTX = $ARRPOS[$QPOS][0]
+		$CURENTY = $ARRPOS[$QPOS][1]
+		$CURENTZ = $ARRPOS[$QPOS][2]
+		$CURENTHIGH = $CURENTZ + 10
+		$CURENTID = $ARRPOS[$QPOS][4]
+		$TELE = 0
+	ElseIf $STEP = 5 Then
+		$QLINE[17][1] = 2
+		$CURENTX = $ARRPOS[$QPOS][0]
+		$CURENTY = $ARRPOS[$QPOS][1]
+		$CURENTZ = $ARRPOS[$QPOS][2]
+		$CURENTHIGH = $CURENTZ + 5
+		$CURENTID = $ARRPOS[$QPOS][4]
+		$TELE = 0
+	EndIf
+EndFunc
+
+
+Func QUEST18()
+	If $STEP = 1 Then
+		$CURENTX = $DCTLP[0]
+		$CURENTY = $DCTLP[1]
+		$CURENTZ = $DCTLP[2]
+		$CURENTHIGH = $CURENTZ + 20
+		$CURENTID = $DCTLP[4]
+		$TELE = 5
+	ElseIf $STEP = 2 Then
+		$CURENTX = $DCDKT[0]
+		$CURENTY = $DCDKT[1]
+		$CURENTZ = $DCDKT[2]
+		$CURENTHIGH = $CURENTZ + 10
+		$CURENTID = $DCDKT[4]
+		$TELE = 2
+	ElseIf $STEP = 3 Then
+		$CURENTX = $DCVHT[0]
+		$CURENTY = $DCVHT[1]
+		$CURENTZ = $DCVHT[2]
+		$CURENTHIGH = $CURENTZ + 3
+		$CURENTID = $DCVHT[4]
+		$TELE = 1
+	ElseIf $STEP = 4 Then
+		$CURENTX = $DCTLT[0]
+		$CURENTY = $DCTLT[1]
+		$CURENTZ = $DCTLT[2]
+		$CURENTHIGH = $CURENTZ + 3
+		$CURENTID = $DCTLT[4]
+		$TELE = 17
+	ElseIf $STEP = 5 Then
+		$CURENTX = $DCKHC[0]
+		$CURENTY = $DCKHC[1]
+		$CURENTZ = $DCKHC[2]
+		$CURENTHIGH = $CURENTZ + 3
+		$CURENTID = $DCKHC[4]
+		$TELE = 21
+	ElseIf $STEP = 6 Then
+		$CURENTX = $ARRPOS[$QPOS][0]
+		$CURENTY = $ARRPOS[$QPOS][1]
+		$CURENTZ = $ARRPOS[$QPOS][2]
+		$CURENTHIGH = $CURENTZ + 10
+		$CURENTID = $ARRPOS[$QPOS][4]
+		$TELE = 0
+	EndIf
+EndFunc
+
+
+Func QUEST19()
+	If $STEP = 1 Then
+		$CURENTX = $DCDTST[0]
+		$CURENTY = $DCDTST[1]
+		$CURENTZ = $DCDTST[2]
+		$CURENTHIGH = $CURENTZ + 10
+		$CURENTID = $DCDTST[4]
+		$TELE = 18
+	ElseIf $STEP = 2 Then
+		$CURENTX = $ARRPOS[$QPOS][0]
+		$CURENTY = $ARRPOS[$QPOS][1]
+		$CURENTZ = $ARRPOS[$QPOS][2]
+		$CURENTHIGH = $CURENTZ + 10
+		$CURENTID = $ARRPOS[$QPOS][4]
+		$TELE = 0
+	EndIf
+EndFunc
+
+
+Func QUEST20()
+	If $STEP = 1 Then
+		$CURENTX = $DCLNTR[0]
+		$CURENTY = $DCLNTR[1]
+		$CURENTZ = $DCLNTR[2]
+		$CURENTHIGH = $CURENTZ + 40
+		$CURENTID = $DCLNTR[4]
+		$TELE = 12
+	ElseIf $STEP = 2 Then
+		$CURENTX = $DCVMT[0]
+		$CURENTY = $DCVMT[1]
+		$CURENTZ = $DCVMT[2]
+		$CURENTHIGH = $CURENTZ + 10
+		$CURENTID = $DCVMT[4]
+		$TELE = 13
+	ElseIf $STEP = 3 Then
+		$CURENTX = $ARRPOS[$QPOS][0]
+		$CURENTY = $ARRPOS[$QPOS][1]
+		$CURENTZ = $ARRPOS[$QPOS][2]
+		$CURENTHIGH = $CURENTZ + 20
+		$CURENTID = $ARRPOS[$QPOS][4]
+		$TELE = 0
+	EndIf
+EndFunc
+
+
+Func QUEST22()
+	If $STEP = 1 Then
+		$CURENTX = $DCTMC[0]
+		$CURENTY = $DCTMC[1]
+		$CURENTZ = $DCTMC[2]
+		$CURENTHIGH = $CURENTZ + 60
+		$CURENTID = $DCTMC[4]
+		$TELE = 12
+	ElseIf $STEP = 2 Then
+		$CURENTX = $ARRPOS[$QPOS][0]
+		$CURENTY = $ARRPOS[$QPOS][1]
+		$CURENTZ = $ARRPOS[$QPOS][2]
+		$CURENTHIGH = $CURENTZ + 10
+		$CURENTID = $ARRPOS[$QPOS][4]
+		$TELE = 0
+	ElseIf $STEP = 3 Then
+		$CURENTX = $ARRPOS[$QPOS][0]
+		$CURENTY = $ARRPOS[$QPOS][1]
+		$CURENTZ = $ARRPOS[$QPOS][2]
+		$CURENTHIGH = $CURENTZ + 10
+		$CURENTID = $ARRPOS[$QPOS][4]
+		$TELE = 0
+	EndIf
+EndFunc
+
+
+Func QUEST25()
+	If $STEP = 1 Then
+		$CURENTX = $DCCTT[0]
+		$CURENTY = $DCCTT[1]
+		$CURENTZ = $DCCTT[2]
+		$CURENTHIGH = $CURENTZ + 40
+		$CURENTID = $DCCTT[4]
+		$TELE = 15
+	ElseIf $STEP = 2 Then
+		$CURENTX = $ARRPOS[$QPOS][0]
+		$CURENTY = $ARRPOS[$QPOS][1]
+		$CURENTZ = $ARRPOS[$QPOS][2]
+		$CURENTHIGH = $CURENTZ + 10
+		$CURENTID = $ARRPOS[$QPOS][4]
+		$TELE = 0
+	EndIf
+EndFunc
+
+
+Func QUEST26()
+	If $STEP = 1 Then
+		$CURENTX = $DCMTT[0]
+		$CURENTY = $DCMTT[1]
+		$CURENTZ = $DCMTT[2]
+		$CURENTHIGH = $CURENTZ + 30
+		$CURENTID = $DCMTT[4]
+		$TELE = 19
+	ElseIf $STEP = 2 Then
+		$CURENTX = $ARRPOS[$QPOS][0]
+		$CURENTY = $ARRPOS[$QPOS][1]
+		$CURENTZ = $ARRPOS[$QPOS][2]
+		$CURENTHIGH = $CURENTZ + 20
+		$CURENTID = $ARRPOS[$QPOS][4]
+		$TELE = 0
+	EndIf
+EndFunc
+
+
+Func QUEST30()
+	If $STEP = 1 Then
+		$CURENTX = $DCTLT[0]
+		$CURENTY = $DCTLT[1]
+		$CURENTZ = $DCTLT[2]
+		$CURENTHIGH = $CURENTZ + 200
+		$CURENTID = $DCTLT[4]
+		$TELE = 11
+	ElseIf $STEP = 2 Then
+		$CURENTX = $DCVLT[0]
+		$CURENTY = $DCVLT[1]
+		$CURENTZ = $DCVLT[2]
+		$CURENTHIGH = $CURENTZ + 10
+		$CURENTID = $DCVLT[4]
+		$TELE = 20
+	ElseIf $STEP = 3 Then
+		$CURENTX = $ARRPOS[$QPOS][0]
+		$CURENTY = $ARRPOS[$QPOS][1]
+		$CURENTZ = $ARRPOS[$QPOS][2]
+		$CURENTHIGH = $CURENTZ + 20
+		$CURENTID = $ARRPOS[$QPOS][4]
+		$TELE = 0
+	EndIf
+EndFunc
+
+
+Func QUEST31()
+	If $STEP = 1 Then
+		$CURENTX = $DCDBT[0]
+		$CURENTY = $DCDBT[1]
+		$CURENTZ = $DCDBT[2]
+		$CURENTHIGH = $CURENTZ + 200
+		$CURENTID = $DCDBT[4]
+		$TELE = 11
+	ElseIf $STEP = 2 Then
+		$CURENTX = $DCVLT[0]
+		$CURENTY = $DCVLT[1]
+		$CURENTZ = $DCVLT[2]
+		$CURENTHIGH = $CURENTZ + 200
+		$CURENTID = $DCVLT[4]
+		$TELE = 1
+	ElseIf $STEP = 3 Then
+		$CURENTX = $ARRPOS[$QPOS][0]
+		$CURENTY = $ARRPOS[$QPOS][1]
+		$CURENTZ = $ARRPOS[$QPOS][2]
+		$CURENTHIGH = $CURENTZ + 200
+		$CURENTID = $ARRPOS[$QPOS][4]
+		$TELE = 0
+	EndIf
+EndFunc
+
+
+Func REFRESH()
+	If $QPOS = 32 Then
+		Beep(100, 100)
+		MOVETO($CURENTX, $CURENTY, $CURENTZ, $CURENTHIGH)
+		SENDMOUSECLICK()
+	EndIf
+	If CHECKPOS($CURENTX, $CURENTY, 100) And $CURENTHIGH > $CURENTZ + 20 Then
+		$CURENTHIGH = $CURENTZ + 20
+	EndIf
+	If (Not CHECKPOS($CURENTX, $CURENTY, 0.15)) Or (Not CHECKHIGH($CURENTZ, 0.05)) Then
+		MOVETO($CURENTX, $CURENTY, $CURENTZ, $CURENTHIGH)
+	Else
+		SELECTNPC($CURENTID)
+	EndIf
+	If $SELECTED Then
+		If $FLYTO Then
+			SELECTQUEST($QPOS)
+			$SELECTED = False
+			$QPOS = $QPOS + 1
+			$CURENTX = $ARRPOS[$QPOS][0]
+			$CURENTY = $ARRPOS[$QPOS][1]
+			$CURENTZ = $ARRPOS[$QPOS][2]
+			$CURENTHIGH = $ARRPOS[$QPOS][3]
+			$CURENTID = $ARRPOS[$QPOS][4]
+		Else
+			If ($TELE = 0) Then
+				SELECTQUEST($QPOS)
+				$SELECTED = False
+				If ($QPOS = 17) And ($STEP = 4) Then
+					$STEP = 5
+				ElseIf ($QPOS = 22) And ($STEP = 2) Then
+					$STEP = 3
+				Else
+					$CURENTX = $ARRPOS[$QPOS][0]
+					$CURENTY = $ARRPOS[$QPOS][1]
+					$CURENTZ = $ARRPOS[$QPOS][2]
+					AUTORUN($CURENTX, $CURENTY, $CURENTZ)
+					Sleep(1000)
+					$QPOS = $QPOS + 1
+					$STEP = 1
+				EndIf
+				If $QPOS = 2 Then
+					QUEST2()
+				ElseIf $QPOS = 3 Then
+					QUEST3()
+				ElseIf $QPOS = 4 Then
+					QUEST4()
+				ElseIf $QPOS = 5 Then
+					QUEST5()
+				ElseIf $QPOS = 6 Then
+					QUEST6()
+				ElseIf $QPOS = 10 Then
+					QUEST10()
+				ElseIf $QPOS = 12 Then
+					QUEST12()
+				ElseIf $QPOS = 15 Then
+					QUEST15()
+				ElseIf $QPOS = 17 Then
+					QUEST17()
+				ElseIf $QPOS = 18 Then
+					QUEST18()
+				ElseIf $QPOS = 19 Then
+					QUEST19()
+				ElseIf $QPOS = 20 Then
+					QUEST20()
+				ElseIf $QPOS = 22 Then
+					QUEST22()
+				ElseIf $QPOS = 25 Then
+					QUEST25()
+				ElseIf $QPOS = 26 Then
+					QUEST26()
+				ElseIf $QPOS = 30 Then
+					QUEST30()
+				ElseIf $QPOS = 31 Then
+					QUEST31()
+				ElseIf $QPOS <> 32 Then
+					$CURENTX = $ARRPOS[$QPOS][0]
+					$CURENTY = $ARRPOS[$QPOS][1]
+					$CURENTZ = $ARRPOS[$QPOS][2]
+					$CURENTHIGH = $ARRPOS[$QPOS][3]
+					$CURENTID = $ARRPOS[$QPOS][4]
+					$TELE = 0
+				EndIf
+			Else
+				TELEPORT($TELE)
+				$SELECTED = False
+				$STEP = $STEP + 1
+				If $QPOS = 2 Then
+					QUEST2()
+				ElseIf $QPOS = 3 Then
+					QUEST3()
+				ElseIf $QPOS = 4 Then
+					QUEST4()
+				ElseIf $QPOS = 5 Then
+					QUEST5()
+				ElseIf $QPOS = 6 Then
+					QUEST6()
+				ElseIf $QPOS = 10 Then
+					QUEST10()
+				ElseIf $QPOS = 12 Then
+					QUEST12()
+				ElseIf $QPOS = 15 Then
+					QUEST15()
+				ElseIf $QPOS = 17 Then
+					QUEST17()
+				ElseIf $QPOS = 18 Then
+					QUEST18()
+				ElseIf $QPOS = 19 Then
+					QUEST19()
+				ElseIf $QPOS = 20 Then
+					QUEST20()
+				ElseIf $QPOS = 22 Then
+					QUEST22()
+				ElseIf $QPOS = 25 Then
+					QUEST25()
+				ElseIf $QPOS = 26 Then
+					QUEST26()
+				ElseIf $QPOS = 30 Then
+					QUEST30()
+				ElseIf $QPOS = 31 Then
+					QUEST31()
+				EndIf
+			EndIf
+		EndIf
+	EndIf
+EndFunc
+
+
+Func GETPX()
+	Return _MEMORYREAD(_MEMORYREAD(_MEMORYREAD($BASEADD, $MEMID) + 32, $MEMID) + 60, $MEMID, "float")
+EndFunc
+
+
+Func GETPY()
+	Return _MEMORYREAD(_MEMORYREAD(_MEMORYREAD($BASEADD, $MEMID) + 32, $MEMID) + 68, $MEMID, "float")
+EndFunc
+
+
+Func GETPZ()
+	Return _MEMORYREAD(_MEMORYREAD(_MEMORYREAD($BASEADD, $MEMID) + 32, $MEMID) + 64, $MEMID, "float")
+EndFunc
+
+
+Func AUTORUN($X, $Y, $Z)
+	Local $RESULT, $PROCESS, $CODE_ADD, $THREAD, $PARAM_ADD
+	Local $PARAM = DllStructCreate("float [3]")
+	DllStructSetData($PARAM, 1, $X, 1)
+	DllStructSetData($PARAM, 1, $Z, 2)
+	DllStructSetData($PARAM, 1, $Y, 3)
+	$RESULT = DllCall("Kernel32.Dll", "int", "OpenProcess", "int", 2035711, "int", 0, "int", $PID)
+	$PROCESS = $RESULT[0]
+	$RESULT = DllCall("Kernel32.dll", "ptr", "VirtualAllocEx", "int", $PROCESS, "ptr", 0, "int", DllStructGetSize($PARAM), "int", 4096, "int", 64)
+	$PARAM_ADD = $RESULT[0]
+	$RESULT = DllCall("kernel32.dll", "int", "WriteProcessMemory", "int", $PROCESS, "ptr", $PARAM_ADD, "ptr", DllStructGetPtr($PARAM), "int", DllStructGetSize($PARAM), "int", 0)
+	Local $FLY = 0
+	Local $A = _MEMORYREAD(9810948, $MEMID)
+	$A = _MEMORYREAD($A + 28, $MEMID)
+	$A = _MEMORYREAD($A + 32, $MEMID)
+	$A = _MEMORYREAD($A + 1540, $MEMID)
+	If $A = 2 Or $A = 1 Then
+		$FLY = 1
+	EndIf
+	$OPCODE = ""
+	PUSHAD()
+	MOV_EDX(9810948)
+	MOV_ECX_DWORD_PTR_EDX()
+	MOV_EDX_DWORD_PTR_ECX_ADD(28)
+	$OPCODE &= "8B7220"
+	MOV_ECX_DWORD_PTR_ESI_ADD(3060)
+	MOV_EAX_DWORD_PTR_ESI_ADD(1540)
+	PUSH(1)
+	MOV_EDX(4584528)
+	CALL_EDX()
+	MOV_EDI_EAX()
+	PUSH($PARAM_ADD)
+	PUSH($FLY)
+	MOV_ECX_EDI()
+	MOV_EDX(4599680)
+	CALL_EDX()
+	PUSH(0)
+	PUSH(1)
+	PUSH_EDI()
+	PUSH(1)
+	MOV_ECX_DWORD_PTR_ESI_ADD(3060)
+	MOV_EDX(4585552)
+	CALL_EDX()
+	POPAD()
+	RET()
+	INJECTCODE($PID)
+EndFunc
+
+
+Func GETCURENTMOBID()
+	$CURMOBID = _MEMORYREAD($MOB_ID_ADD, $MEMID)
+	Return $CURMOBID
+EndFunc
+
+
+Func GETGUILDNAME()
+	Dim $GN = ""
+	Dim $A = _MEMORYREAD($BASEADD, $MEMID)
+	$A = _MEMORYREAD($A + 32, $MEMID)
+	$A = _MEMORYREAD($A + 1752, $MEMID)
+	$A = _MEMORYREAD($A + 12, $MEMID)
+	$A = _MEMORYREAD($A, $MEMID)
+	$A = _MEMORYREAD($A, $MEMID)
+	$GN = _MEMORYREAD($A, $MEMID, "wchar[9]")
+	Return $GN
+EndFunc
+
+
+Func SHOWTIME()
+	$TIME = Int(TimerDiff($TIMERSTAMP) / 1000)
+	$TIMEH = Int($TIME / 3600)
+	$TIME = $TIME - $TIMEH * 3600
+	$TIMEM = Int($TIME / 60)
+	$TIME = $TIME - $TIMEM * 60
+	GUICtrlSetData($LBLTIME, $TIMEH & " : " & $TIMEM & " : " & $TIME)
+EndFunc
+
+
+Func HELP()
+	MsgBox(0, "Huong dan su dung", "Chuong trinh auto chay Quest Khuc Biet Cham (bay lan luot den tung NPC tu 1-30 de nhan Q) - TGHM ver 41")
+	Do
+	Until Not WinExists("Huong dan su dung")
+	MsgBox(0, "Huong dan su dung", "Auto nay chi su dung duoc voi nhung nhan vat da lam het tat ca cac Q tai cac NPC nhan KBC")
+	Do
+	Until Not WinExists("Huong dan su dung")
+	MsgBox(0, "Huong dan su dung", "Dieu dac biet quan trong: Chi co thanh vien Guild [S]phinX su dung duoc chuong trinh nay")
+	Do
+	Until Not WinExists("Huong dan su dung")
+	MsgBox(0, "Huong dan su dung", "Truoc khi chay Auto can phai chon game o che do cua so, relog game, chon che do hien thi ten Guild tren dau nhan vat")
+	Do
+	Until Not WinExists("Huong dan su dung")
+	MsgBox(0, "Huong dan su dung", "Sau khi log vao game cho nhan vat bay len, tuyet doi khong thay doi goc nhin cua nhan vat")
+	Do
+	Until Not WinExists("Huong dan su dung")
+	MsgBox(0, "Huong dan su dung", "Nhap ten cua so game can chay KBC vao o Title")
+	Do
+	Until Not WinExists("Huong dan su dung")
+	MsgBox(0, "Huong dan su dung", "Nhap so thu tu cua Quest KBC bat dau vao o Next Quest")
+	Do
+	Until Not WinExists("Huong dan su dung")
+	MsgBox(0, "Huong dan su dung", "Neu khong muon su dung NPC di chuyen (chi bay) thi chon Fly only")
+	Do
+	Until Not WinExists("Huong dan su dung")
+	MsgBox(0, "Huong dan su dung", "Nut Title dung de doi ten cua so Element Client thanh KBC x (dung cho mo nhieu cua so)")
+	Do
+	Until Not WinExists("Huong dan su dung")
+	MsgBox(0, "Huong dan su dung", "Neu chay KBC cho nhieu account thi phai doi ten cac cua so chay KBC thanh KBC 1, KBC 2 ... bang cach dung nut Title, sau do phai de cac cua so auto o che do minimize")
+	Do
+	Until Not WinExists("Huong dan su dung")
+	MsgBox(0, "Huong dan su dung", "Trong khi dang chay KBC muon tam dung thi an Pause")
+	Do
+	Until Not WinExists("Huong dan su dung")
+	MsgBox(0, "Huong dan su dung", "Neu nhan vat chua lam het Quest, can phai ghi lai xem Q KBC tai cac NPC nam o dong thu may (vi du Q KBC so 2,Q nhiem vu o dong 3, Q KBC o dong 2 thi ghi la Q2-3-2)")
+	Do
+	Until Not WinExists("Huong dan su dung")
+	MsgBox(0, "Huong dan su dung", "Sau do gui toan bo thong tin ve cac NPC den hop thu hoangduong2002@gmail.com, tieu de Q KBC - ten nhan vat trong game, de duoc nhan ban auto phu hop voi nhan vat")
+	Do
+	Until Not WinExists("Huong dan su dung")
+	MsgBox(0, "Huong dan su dung", "Neu su dung che do Fly only thi nen lam truoc cac Quest so 1-2-3-4 cho do mat thoi gian bay qua lau")
+	Do
+	Until Not WinExists("Huong dan su dung")
+	MsgBox(0, "Huong dan su dung", "Cua so ban auto KBC luon phai mo (khong duoc minimize)"
+EndFunc
+
+
+Func JUMPQUEST()
+	$QPOS = $QPOS + 1
+	$STEP = 1
+	If $QPOS = 2 Then
+		$STEP = 3
+		QUEST2()
+	ElseIf $QPOS = 3 Then
+		$STEP = 4
+		QUEST3()
+	ElseIf $QPOS = 4 Then
+		$STEP = 4
+		QUEST4()
+	ElseIf $QPOS = 5 Then
+		$STEP = 3
+		QUEST5()
+	ElseIf $QPOS = 6 Then
+		$STEP = 2
+		QUEST6()
+	ElseIf $QPOS = 10 Then
+		$STEP = 2
+		QUEST10()
+	ElseIf $QPOS = 12 Then
+		$STEP = 5
+		QUEST12()
+	ElseIf $QPOS = 15 Then
+		$STEP = 5
+		QUEST15()
+	ElseIf $QPOS = 17 Then
+		$STEP = 4
+		QUEST17()
+	ElseIf $QPOS = 18 Then
+		$STEP = 6
+		QUEST18()
+	ElseIf $QPOS = 19 Then
+		$STEP = 2
+		QUEST19()
+	ElseIf $QPOS = 20 Then
+		$STEP = 3
+		QUEST20()
+	ElseIf $QPOS = 22 Then
+		$STEP = 2
+		QUEST22()
+	ElseIf $QPOS = 25 Then
+		$STEP = 2
+		QUEST25()
+	ElseIf $QPOS = 26 Then
+		$STEP = 2
+		QUEST26()
+	ElseIf $QPOS = 30 Then
+		$STEP = 3
+		QUEST30()
+	ElseIf $QPOS = 31 Then
+		$STEP = 3
+		QUEST31()
+	Else
+		$CURENTX = $ARRPOS[$QPOS][0]
+		$CURENTY = $ARRPOS[$QPOS][1]
+		$CURENTZ = $ARRPOS[$QPOS][2]
+		$CURENTHIGH = $ARRPOS[$QPOS][3]
+		$CURENTID = $ARRPOS[$QPOS][4]
+		$TELE = 0
+	EndIf
+EndFunc
+
+
+Func ALTQ()
+	If WinExists($OLDTITLE & "-Use") Then
+		WinSetTitle($OLDTITLE & "-Use", "", $OLDTITLE)
+	EndIf
+	_MEMORYCLOSE($MEMID)
+	Exit
+EndFunc
