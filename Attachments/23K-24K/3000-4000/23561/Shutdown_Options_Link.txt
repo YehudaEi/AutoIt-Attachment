@@ -1,0 +1,9 @@
+
+Here is the link for the Shutdown Options v6.4 download - (910 kb)
+
+                                                                           Options v6.4.zip
+
+
+To understand my reasons for using this download method, please visit this AutoIt post -
+
+http://www.autoitscript.com/forum/index.php?showtopic=71862
