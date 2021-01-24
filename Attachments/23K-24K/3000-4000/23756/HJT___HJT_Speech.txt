@@ -1,0 +1,46 @@
+Go to [b]Start[/b] > [b]My Computer[/b]
+Go to [b]Tools[/b] > [b]Folder Options[/b]
+Click on the [b]View[/b] tab
+Untick the following:[list]
+[*][b]Hide extensions for known file types[/b]
+[*][b]Hide protected operating system files (Recommended)[/b]
+[/list]You will get a message warning you about showing protected operating system files, click [b]Yes[/b]
+Make sure this option is selected:[list]
+[*][b]Show hidden files and folders[/b]
+[/list]Click [b]Apply[/b] and then click [b]OK[/b]
+
+Go to [b]Start[/b] > [b]Control Panel[/b] > [b]Add or Remove Programs[/b].
+
+Remove the following programs, if they are present.
+[color=blue][b]
+@@@@@Programs to Delete@@@@@
+[/b][/color]
+If you are unsure of how to use Add or Remove Programs, the please see this tutorial: 
+[url=http://www.bleepingcomputer.com/forums/topic42133.html][color=red][b]How To Remove An Installed Program From Your Computer[/b][/color][/url]
+
+[b]Run [color=blue]HijackThis[/color][/b].
+Click on [b]Do a system scan only[/b].
+Place a checkmark next to these lines (if still present).
+
+[b]
+@@@@@Hijackthis Lines@@@@@
+[/b]
+
+Then close all windows except [color=blue][b]HijackThis[/b][/color] and click [b]Fix Checked[/b].
+
+[b]Restart[/b]
+
+Use [color=blue][b]Windows Explorer[/b][/color] to find and delete these [b]files[/b] if they exist. If they don't, let me know:
+@@@@@Files to delete@@@@@
+
+And these [b]folders[/b]:
+@@@@@Folders to delete@@@@@
+
+[i][color=green][b]As an example:[/b]
+To delete C:\WINDOWS\[b]badfile.dll[/b]
+Double click the [b]My Computer[/b] icon on your Desktop. Or click on the Windows KEY + E.
+Double click on [b]Local Disc (C:\)[/b]
+Double click on the [b]Windows[/b] folder,
+Right click on [b]badfile.dll[/b] and then from the menu that appears, click on [b]Delete[/b][/color][/i]
+
+Finally, please post a new [color=blue][b]HijackThis[/b][/color] log, and a description of any remaining problems.
