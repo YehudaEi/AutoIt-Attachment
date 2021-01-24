@@ -1,0 +1,1543 @@
+>"C:\Programme\AutoIt3\SciTE\AutoIt3Wrapper\AutoIt3Wrapper.exe" /prod /AU3Check /in "C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3"
++>16:16:19 Starting AutoIt3Wrapper v.1.10.1.14    Environment(Language:0407  Keyboard:00000407  OS:WIN_XP/Service Pack 3  CPU:X86  ANSI)
+>Running AU3Check (1.54.14.0)  params:-d -w 1 -w 2 -w 3 -w 4 -w 5 -w 6  from:C:\Programme\AutoIt3
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(243,76) : WARNING: $TM_mn_Icon_2: declared, but not used in func.
+Func _TrayMenu_SetIcon($TM_mn_Icon_1, $TM_mn_INum_1 = 0, $TM_mn_Icon_2 = ""
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(243,94) : WARNING: $TM_mn_INum_2: declared, but not used in func.
+Func _TrayMenu_SetIcon($TM_mn_Icon_1, $TM_mn_INum_1 = 0, $TM_mn_Icon_2 = "", $TM_mn_INum_2 = 0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(312,28) : WARNING: $TM_type: possibly used before declaration.
+		If $ref > UBound($TM_type)
+		~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(317,20) : WARNING: $TM_gui_cnt possibly not declared/created yet
+			$TM_gui_cnt += 1
+			~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(319,122) : WARNING: $TM_shdw_GUI possibly not declared/created yet
+			$TM_shdw_GUI[$TM_gui_cnt] = GUICreate("", 0, 0, -1000, -1000, $TM_def_shdw_style, $TM_def_ex_style);, $TM_main_GUI[0])
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(320,125) : WARNING: $TM_main_GUI possibly not declared/created yet
+			$TM_main_GUI[$TM_gui_cnt] = GUICreate("", 0, 0, -1000, -1000, $TM_def_style, $TM_def_ex_style, $TM_shdw_GUI[$TM_gui_cnt])
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(321,63) : WARNING: $TM_gui_pic possibly not declared/created yet
+			$TM_gui_pic[$TM_gui_cnt] = GUICtrlCreatePic("", 0, 0, 0, 0)
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(324,30) : WARNING: $TM_last possibly not declared/created yet
+			$TM_last[$TM_gui_cnt] = -1
+			~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(325,46) : WARNING: $TM_Itm_def_w: possibly used before declaration.
+			$TM_gui_def_w[$TM_gui_cnt] = $TM_Itm_def_w
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(325,46) : WARNING: $TM_gui_def_w possibly not declared/created yet
+			$TM_gui_def_w[$TM_gui_cnt] = $TM_Itm_def_w
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(326,46) : WARNING: $TM_Itm_def_h: possibly used before declaration.
+			$TM_gui_def_h[$TM_gui_cnt] = $TM_Itm_def_h
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(326,46) : WARNING: $TM_gui_def_h possibly not declared/created yet
+			$TM_gui_def_h[$TM_gui_cnt] = $TM_Itm_def_h
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(327,48) : WARNING: $TM_Itm_blk_h: possibly used before declaration.
+			$TM_gui_def_blk[$TM_gui_cnt] = $TM_Itm_blk_h
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(327,48) : WARNING: $TM_gui_def_blk possibly not declared/created yet
+			$TM_gui_def_blk[$TM_gui_cnt] = $TM_Itm_blk_h
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(328,37) : WARNING: $TM_MenIcon: possibly used before declaration.
+			GUICtrlSetState($TM_MenIcon[$ref],
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(329,35) : WARNING: $TM_mn_orig possibly not declared/created yet
+			$TM_mn_orig[$TM_gui_cnt] = $ref
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(334,24) : WARNING: $TM_Itm_cnt possibly not declared/created yet
+	$TM_Itm_cnt[$ref] += 1
+	~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(335,41) : WARNING: $TM_Itm_max_cnt: possibly used before declaration.
+	If $TM_Itm_cnt[$ref] > $TM_Itm_max_cnt Then
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(336,26) : WARNING: $t already declared/assigned
+	Dim $t = $TM_gui_cnt + 1,
+	~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(336,48) : WARNING: $n already declared/assigned
+	Dim $t = $TM_gui_cnt + 1, $n = $TM_Itm_max_cnt
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(337,23) : WARNING: $TM_Itm possibly not declared/created yet
+	ReDim $TM_Itm[$t][$n],
+	~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(337,44) : WARNING: $TM_Itm_top possibly not declared/created yet
+	ReDim $TM_Itm[$t][$n], $TM_Itm_top[$t][$n],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(337,65) : WARNING: $TM_Itm_bot possibly not declared/created yet
+	ReDim $TM_Itm[$t][$n], $TM_Itm_top[$t][$n], $TM_Itm_bot[$t][$n]
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(341,67) : WARNING: $TM_pad_le: possibly used before declaration.
+		$TM_Itm[$ref][$t] = GUICtrlCreateLabel(__TM_Pad($txt, $TM_pad_le,
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(341,79) : WARNING: $TM_pad_ri: possibly used before declaration.
+		$TM_Itm[$ref][$t] = GUICtrlCreateLabel(__TM_Pad($txt, $TM_pad_le, $TM_pad_ri)
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(342,33) : WARNING: $TM_ft_size: possibly used before declaration.
+		GUICtrlSetFont(-1, $TM_ft_size,
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(342,47) : WARNING: $TM_ft_width: possibly used before declaration.
+		GUICtrlSetFont(-1, $TM_ft_size, $TM_ft_width,
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(342,60) : WARNING: $TM_ft_attr: possibly used before declaration.
+		GUICtrlSetFont(-1, $TM_ft_size, $TM_ft_width, $TM_ft_attr,
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(342,68) : WARNING: $TM_ft: possibly used before declaration.
+		GUICtrlSetFont(-1, $TM_ft_size, $TM_ft_width, $TM_ft_attr, $TM_ft)
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(343,38) : WARNING: $TM_col_it_bk: possibly used before declaration.
+		GUICtrlSetBkColor(-1, $TM_col_it_bk)
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(344,36) : WARNING: $TM_col_it_ft: possibly used before declaration.
+		GUICtrlSetColor(-1, $TM_col_it_ft)
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(350,40) : WARNING: $TM_def_radio_Icon: possibly used before declaration.
+			$TM_usr_icn[$n] = $TM_def_radio_Icon
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(350,40) : WARNING: $TM_usr_icn possibly not declared/created yet
+			$TM_usr_icn[$n] = $TM_def_radio_Icon
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(351,40) : WARNING: $TM_def_radio_INum: possibly used before declaration.
+			$TM_usr_inm[$n] = $TM_def_radio_INum
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(351,40) : WARNING: $TM_usr_inm possibly not declared/created yet
+			$TM_usr_inm[$n] = $TM_def_radio_INum
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(352,48) : WARNING: $TM_def_radio_Icon_2nd: possibly used before declaration.
+			$TM_usr_icn_2nd[$n] = $TM_def_radio_Icon_2nd
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(352,48) : WARNING: $TM_usr_icn_2nd possibly not declared/created yet
+			$TM_usr_icn_2nd[$n] = $TM_def_radio_Icon_2nd
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(353,48) : WARNING: $TM_def_radio_INum_2nd: possibly used before declaration.
+			$TM_usr_inm_2nd[$n] = $TM_def_radio_INum_2nd
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(353,48) : WARNING: $TM_usr_inm_2nd possibly not declared/created yet
+			$TM_usr_inm_2nd[$n] = $TM_def_radio_INum_2nd
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(356,40) : WARNING: $TM_def_check_Icon: possibly used before declaration.
+			$TM_usr_icn[$n] = $TM_def_check_Icon
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(357,40) : WARNING: $TM_def_check_INum: possibly used before declaration.
+			$TM_usr_inm[$n] = $TM_def_check_INum
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(358,48) : WARNING: $TM_def_check_Icon_2nd: possibly used before declaration.
+			$TM_usr_icn_2nd[$n] = $TM_def_check_Icon_2nd
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(359,48) : WARNING: $TM_def_check_INum_2nd: possibly used before declaration.
+			$TM_usr_inm_2nd[$n] = $TM_def_check_INum_2nd
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(361,37) : WARNING: $TM_def_men_Icon: possibly used before declaration.
+		$TM_men_icn[$n] = $TM_def_men_Icon
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(361,37) : WARNING: $TM_men_icn possibly not declared/created yet
+		$TM_men_icn[$n] = $TM_def_men_Icon
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(362,37) : WARNING: $TM_def_men_INum: possibly used before declaration.
+		$TM_men_inm[$n] = $TM_def_men_INum
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(362,37) : WARNING: $TM_men_inm possibly not declared/created yet
+		$TM_men_inm[$n] = $TM_def_men_INum
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(363,45) : WARNING: $TM_def_men_Icon_2nd: possibly used before declaration.
+		$TM_men_icn_2nd[$n] = $TM_def_men_Icon_2nd
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(363,45) : WARNING: $TM_men_icn_2nd possibly not declared/created yet
+		$TM_men_icn_2nd[$n] = $TM_def_men_Icon_2nd
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(364,45) : WARNING: $TM_def_men_INum_2nd: possibly used before declaration.
+		$TM_men_inm_2nd[$n] = $TM_def_men_INum_2nd
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(364,45) : WARNING: $TM_men_inm_2nd possibly not declared/created yet
+		$TM_men_inm_2nd[$n] = $TM_def_men_INum_2nd
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(365,78) : WARNING: $TM_UsrIcon possibly not declared/created yet
+		$TM_UsrIcon[$n] = GUICtrlCreateIcon($TM_usr_icn[$n], $TM_usr_inm[$n], 0, 0)
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(370,34) : WARNING: $TM_Itm_h: possibly used before declaration.
+		$TM_Itm_height[$n] = $TM_Itm_h;
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(370,34) : WARNING: $TM_Itm_height possibly not declared/created yet
+		$TM_Itm_height[$n] = $TM_Itm_h;
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(375,42) : WARNING: $TM_col_it_bk_top: possibly used before declaration.
+		GUICtrlSetBkColor(-1, $TM_col_it_bk_top)
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(378,42) : WARNING: $TM_col_it_bk_bot: possibly used before declaration.
+		GUICtrlSetBkColor(-1, $TM_col_it_bk_bot)
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(389,54) : WARNING: $TM_IsIcon possibly not declared/created yet
+	ReDim $TM_IsIcon[$TM_MenIcon[$TM_Itm[$ref][$t]] + 1]
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(402,75) : WARNING: $TM_IsChecked: possibly used before declaration.
+			$TM_IsChecked[$TM_Itm[$ref][$i + 1]] = $TM_IsChecked[$TM_Itm[$ref][$i]]
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(403,59) : WARNING: $TM_origin possibly not declared/created yet
+			$TM_origin[$TM_Itm[$ref][$i + 1]] = $ref & "," & $i + 1
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(417,40) : WARNING: $TM_last_created possibly not declared/created yet
+	$TM_last_created = $ref & "," & $count
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(421,44) : WARNING: $TM_col_it_ft_2nd: possibly used before declaration.
+	$TM_itm_ft_col_2nd[$t] = $TM_col_it_ft_2nd
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(421,44) : WARNING: $TM_itm_ft_col_2nd possibly not declared/created yet
+	$TM_itm_ft_col_2nd[$t] = $TM_col_it_ft_2nd
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(422,44) : WARNING: $TM_col_it_bk_2nd: possibly used before declaration.
+	$TM_itm_bk_col_2nd[$t] = $TM_col_it_bk_2nd
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(422,44) : WARNING: $TM_itm_bk_col_2nd possibly not declared/created yet
+	$TM_itm_bk_col_2nd[$t] = $TM_col_it_bk_2nd
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(423,42) : WARNING: $TM_def_usr_ISz: possibly used before declaration.
+	$TM_usr_icn_sz_2nd[$t] = $TM_def_usr_ISz
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(423,42) : WARNING: $TM_usr_icn_sz_2nd possibly not declared/created yet
+	$TM_usr_icn_sz_2nd[$t] = $TM_def_usr_ISz
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(424,42) : WARNING: $TM_def_men_ISz: possibly used before declaration.
+	$TM_men_icn_sz_2nd[$t] = $TM_def_men_ISz
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(424,42) : WARNING: $TM_men_icn_sz_2nd possibly not declared/created yet
+	$TM_men_icn_sz_2nd[$t] = $TM_def_men_ISz
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(425,40) : WARNING: $TM_pad_le_2nd: possibly used before declaration.
+	$TM_itm_pad_l_2nd[$t] = $TM_pad_le_2nd
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(425,40) : WARNING: $TM_itm_pad_l_2nd possibly not declared/created yet
+	$TM_itm_pad_l_2nd[$t] = $TM_pad_le_2nd
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(426,40) : WARNING: $TM_pad_ri_2nd: possibly used before declaration.
+	$TM_itm_pad_r_2nd[$t] = $TM_pad_ri_2nd
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(426,40) : WARNING: $TM_itm_pad_r_2nd possibly not declared/created yet
+	$TM_itm_pad_r_2nd[$t] = $TM_pad_ri_2nd
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(427,37) : WARNING: $TM_itm_ft_width possibly not declared/created yet
+	$TM_itm_ft_width[$t] = $TM_ft_width
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(428,38) : WARNING: $TM_usr_icn_sz possibly not declared/created yet
+	$TM_usr_icn_sz[$t] = $TM_def_usr_ISz
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(429,38) : WARNING: $TM_men_icn_sz possibly not declared/created yet
+	$TM_men_icn_sz[$t] = $TM_def_men_ISz
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(430,36) : WARNING: $TM_itm_ft_col possibly not declared/created yet
+	$TM_itm_ft_col[$t] = $TM_col_it_ft
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(431,36) : WARNING: $TM_itm_bk_col possibly not declared/created yet
+	$TM_itm_bk_col[$t] = $TM_col_it_bk
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(432,35) : WARNING: $TM_itm_ft_attr possibly not declared/created yet
+	$TM_itm_ft_attr[$t] = $TM_ft_attr
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(433,35) : WARNING: $TM_itm_ft_size possibly not declared/created yet
+	$TM_itm_ft_size[$t] = $TM_ft_size
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(434,35) : WARNING: $TM_Select_Mode: possibly used before declaration.
+	$TM_itm_sel[$t] = $TM_Select_Mode
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(434,35) : WARNING: $TM_itm_sel possibly not declared/created yet
+	$TM_itm_sel[$t] = $TM_Select_Mode
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(435,32) : WARNING: $TM_itm_pad_l possibly not declared/created yet
+	$TM_itm_pad_l[$t] = $TM_pad_le
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(436,32) : WARNING: $TM_itm_pad_r possibly not declared/created yet
+	$TM_itm_pad_r[$t] = $TM_pad_ri
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(437,28) : WARNING: $TM_itm_txt_2nd possibly not declared/created yet
+	$TM_itm_txt_2nd[$t] = $txt
+	~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(438,25) : WARNING: $TM_itm_ft possibly not declared/created yet
+	$TM_itm_ft[$t] = $TM_ft
+	~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(439,24) : WARNING: $TM_itm_txt possibly not declared/created yet
+	$TM_itm_txt[$t] = $txt
+	~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(440,52) : WARNING: $TM_itm_img: possibly used before declaration.
+	$TM_itm_pic[$t] = GUICtrlCreatePic($TM_itm_img[$t],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(440,65) : WARNING: $TM_itm_pic possibly not declared/created yet
+	$TM_itm_pic[$t] = GUICtrlCreatePic($TM_itm_img[$t], 0, 0, 0, 0)
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(308,14) : WARNING: $m: declared, but not used in func.
+	Local $t, $m,
+	~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(321,63) : WARNING: $TM_gui_pic: declared, but not used in func.
+			$TM_gui_pic[$TM_gui_cnt] = GUICtrlCreatePic("", 0, 0, 0, 0)
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(324,30) : WARNING: $TM_last: declared, but not used in func.
+			$TM_last[$TM_gui_cnt] = -1
+			~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(325,46) : WARNING: $TM_gui_def_w: declared, but not used in func.
+			$TM_gui_def_w[$TM_gui_cnt] = $TM_Itm_def_w
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(326,46) : WARNING: $TM_gui_def_h: declared, but not used in func.
+			$TM_gui_def_h[$TM_gui_cnt] = $TM_Itm_def_h
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(327,48) : WARNING: $TM_gui_def_blk: declared, but not used in func.
+			$TM_gui_def_blk[$TM_gui_cnt] = $TM_Itm_blk_h
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(329,35) : WARNING: $TM_mn_orig: declared, but not used in func.
+			$TM_mn_orig[$TM_gui_cnt] = $ref
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(352,48) : WARNING: $TM_usr_icn_2nd: declared, but not used in func.
+			$TM_usr_icn_2nd[$n] = $TM_def_radio_Icon_2nd
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(353,48) : WARNING: $TM_usr_inm_2nd: declared, but not used in func.
+			$TM_usr_inm_2nd[$n] = $TM_def_radio_INum_2nd
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(363,45) : WARNING: $TM_men_icn_2nd: declared, but not used in func.
+		$TM_men_icn_2nd[$n] = $TM_def_men_Icon_2nd
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(364,45) : WARNING: $TM_men_inm_2nd: declared, but not used in func.
+		$TM_men_inm_2nd[$n] = $TM_def_men_INum_2nd
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(370,34) : WARNING: $TM_Itm_height: declared, but not used in func.
+		$TM_Itm_height[$n] = $TM_Itm_h;
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(389,54) : WARNING: $TM_IsIcon: declared, but not used in func.
+	ReDim $TM_IsIcon[$TM_MenIcon[$TM_Itm[$ref][$t]] + 1]
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(403,59) : WARNING: $TM_origin: declared, but not used in func.
+			$TM_origin[$TM_Itm[$ref][$i + 1]] = $ref & "," & $i + 1
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(421,44) : WARNING: $TM_itm_ft_col_2nd: declared, but not used in func.
+	$TM_itm_ft_col_2nd[$t] = $TM_col_it_ft_2nd
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(422,44) : WARNING: $TM_itm_bk_col_2nd: declared, but not used in func.
+	$TM_itm_bk_col_2nd[$t] = $TM_col_it_bk_2nd
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(423,42) : WARNING: $TM_usr_icn_sz_2nd: declared, but not used in func.
+	$TM_usr_icn_sz_2nd[$t] = $TM_def_usr_ISz
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(424,42) : WARNING: $TM_men_icn_sz_2nd: declared, but not used in func.
+	$TM_men_icn_sz_2nd[$t] = $TM_def_men_ISz
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(425,40) : WARNING: $TM_itm_pad_l_2nd: declared, but not used in func.
+	$TM_itm_pad_l_2nd[$t] = $TM_pad_le_2nd
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(426,40) : WARNING: $TM_itm_pad_r_2nd: declared, but not used in func.
+	$TM_itm_pad_r_2nd[$t] = $TM_pad_ri_2nd
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(427,37) : WARNING: $TM_itm_ft_width: declared, but not used in func.
+	$TM_itm_ft_width[$t] = $TM_ft_width
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(428,38) : WARNING: $TM_usr_icn_sz: declared, but not used in func.
+	$TM_usr_icn_sz[$t] = $TM_def_usr_ISz
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(429,38) : WARNING: $TM_men_icn_sz: declared, but not used in func.
+	$TM_men_icn_sz[$t] = $TM_def_men_ISz
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(430,36) : WARNING: $TM_itm_ft_col: declared, but not used in func.
+	$TM_itm_ft_col[$t] = $TM_col_it_ft
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(431,36) : WARNING: $TM_itm_bk_col: declared, but not used in func.
+	$TM_itm_bk_col[$t] = $TM_col_it_bk
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(432,35) : WARNING: $TM_itm_ft_attr: declared, but not used in func.
+	$TM_itm_ft_attr[$t] = $TM_ft_attr
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(433,35) : WARNING: $TM_itm_ft_size: declared, but not used in func.
+	$TM_itm_ft_size[$t] = $TM_ft_size
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(434,35) : WARNING: $TM_itm_sel: declared, but not used in func.
+	$TM_itm_sel[$t] = $TM_Select_Mode
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(435,32) : WARNING: $TM_itm_pad_l: declared, but not used in func.
+	$TM_itm_pad_l[$t] = $TM_pad_le
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(436,32) : WARNING: $TM_itm_pad_r: declared, but not used in func.
+	$TM_itm_pad_r[$t] = $TM_pad_ri
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(437,28) : WARNING: $TM_itm_txt_2nd: declared, but not used in func.
+	$TM_itm_txt_2nd[$t] = $txt
+	~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(438,25) : WARNING: $TM_itm_ft: declared, but not used in func.
+	$TM_itm_ft[$t] = $TM_ft
+	~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(439,24) : WARNING: $TM_itm_txt: declared, but not used in func.
+	$TM_itm_txt[$t] = $txt
+	~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(440,65) : WARNING: $TM_itm_pic: declared, but not used in func.
+	$TM_itm_pic[$t] = GUICtrlCreatePic($TM_itm_img[$t], 0, 0, 0, 0)
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(481,31) : WARNING: $TM_Itm: possibly used before declaration.
+	$s_ID = $TM_Itm[$x[1]][$x[2]]
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(489,52) : WARNING: $TM_itm_txt: possibly used before declaration.
+		GUICtrlSetData($s_ID, __TM_Pad($TM_itm_txt[$s_ID],
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(489,74) : WARNING: $TM_itm_pad_l: possibly used before declaration.
+		GUICtrlSetData($s_ID, __TM_Pad($TM_itm_txt[$s_ID], $TM_itm_pad_l[$s_ID],
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(489,96) : WARNING: $TM_itm_pad_r: possibly used before declaration.
+		GUICtrlSetData($s_ID, __TM_Pad($TM_itm_txt[$s_ID], $TM_itm_pad_l[$s_ID], $TM_itm_pad_r[$s_ID])
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(507,44) : WARNING: $TM_Itm_bot: possibly used before declaration.
+		GUICtrlSetState($TM_Itm_bot[$x[1]][$x[2]],
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(508,44) : WARNING: $TM_Itm_top: possibly used before declaration.
+		GUICtrlSetState($TM_Itm_top[$x[1]][$x[2]],
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(510,37) : WARNING: $TM_UsrIcon: possibly used before declaration.
+		GUICtrlSetState($TM_UsrIcon[$s_ID],
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(558,42) : WARNING: $TM_def_indt_Icon: possibly used before declaration.
+			$TM_usr_icn[$s_ID] = $TM_def_indt_Icon
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(558,42) : WARNING: $TM_usr_icn possibly not declared/created yet
+			$TM_usr_icn[$s_ID] = $TM_def_indt_Icon
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(559,42) : WARNING: $TM_def_indt_INum: possibly used before declaration.
+			$TM_usr_inm[$s_ID] = $TM_def_indt_INum
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(559,42) : WARNING: $TM_usr_inm possibly not declared/created yet
+			$TM_usr_inm[$s_ID] = $TM_def_indt_INum
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(560,50) : WARNING: $TM_def_indt_Icon_2nd: possibly used before declaration.
+			$TM_usr_icn_2nd[$s_ID] = $TM_def_indt_Icon_2nd
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(560,50) : WARNING: $TM_usr_icn_2nd possibly not declared/created yet
+			$TM_usr_icn_2nd[$s_ID] = $TM_def_indt_Icon_2nd
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(561,50) : WARNING: $TM_def_indt_INum_2nd: possibly used before declaration.
+			$TM_usr_inm_2nd[$s_ID] = $TM_def_indt_INum_2nd
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(561,50) : WARNING: $TM_usr_inm_2nd possibly not declared/created yet
+			$TM_usr_inm_2nd[$s_ID] = $TM_def_indt_INum_2nd
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(568,40) : WARNING: $TM_main_GUI: possibly used before declaration.
+		__TM_IconSetImage($TM_main_GUI[$x[1]],
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(568,123) : WARNING: $TM_usr_icn_sz: possibly used before declaration.
+		__TM_IconSetImage($TM_main_GUI[$x[1]], $TM_UsrIcon[$s_ID], $TM_usr_icn[$s_ID], $TM_usr_inm[$s_ID], $TM_usr_icn_sz[$s_ID])
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(560,50) : WARNING: $TM_usr_icn_2nd: declared, but not used in func.
+			$TM_usr_icn_2nd[$s_ID] = $TM_def_indt_Icon_2nd
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(561,50) : WARNING: $TM_usr_inm_2nd: declared, but not used in func.
+			$TM_usr_inm_2nd[$s_ID] = $TM_def_indt_INum_2nd
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(650,26) : WARNING: $TM_gui_cnt: possibly used before declaration.
+	If $s_ID <= $TM_gui_cnt And
+	~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(712,34) : WARNING: $TM_itm_pic: possibly used before declaration.
+	GUICtrlDelete($TM_itm_pic[$s_ID])
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(713,34) : WARNING: $TM_Itm_w possibly not declared/created yet
+	$TM_Itm_w[$x[1]] = $TM_Itm_def_w
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(715,35) : WARNING: $TM_Itm_cnt: possibly used before declaration.
+	For $i = 0 To $TM_Itm_cnt[$x[1]] -
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(724,53) : WARNING: $TM_origin possibly not declared/created yet
+			$TM_origin[$TM_Itm[$x[1]][$i]] = $x[1] & "," & $i
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(725,52) : WARNING: $TM_IsIcon possibly not declared/created yet
+			$TM_IsIcon[$TM_UsrIcon[$TM_Itm[$x[1]][$i]]] -= 1
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(705,60) : WARNING: $pos: declared, but not used in func.
+	Local $pos = ControlGetPos($TM_main_GUI[$x[1]], "", $s_ID)
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(713,34) : WARNING: $TM_Itm_w: declared, but not used in func.
+	$TM_Itm_w[$x[1]] = $TM_Itm_def_w
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(724,53) : WARNING: $TM_origin: declared, but not used in func.
+			$TM_origin[$TM_Itm[$x[1]][$i]] = $x[1] & "," & $i
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(725,52) : WARNING: $TM_IsIcon: declared, but not used in func.
+			$TM_IsIcon[$TM_UsrIcon[$TM_Itm[$x[1]][$i]]] -= 1
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(760,57) : WARNING: $TM_itm_txt_2nd: possibly used before declaration.
+	If $mode Then Return SetExtended($TM_itm_txt_2nd[$s_ID],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(791,60) : WARNING: $TM_Itm_height: possibly used before declaration.
+	$TM_gui_h[$x[1]] -= $TM_Itm_height[$TM_Itm[$x[1]][$x[2]]] +
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(791,69) : WARNING: $TM_gui_h possibly not declared/created yet
+	$TM_gui_h[$x[1]] -= $TM_Itm_height[$TM_Itm[$x[1]][$x[2]]] + $height
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(791,69) : WARNING: $TM_gui_h: declared, but not used in func.
+	$TM_gui_h[$x[1]] -= $TM_Itm_height[$TM_Itm[$x[1]][$x[2]]] + $height
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(829,44) : WARNING: $TM_itm_sel possibly not declared/created yet
+	$TM_itm_sel[$TM_Itm[$x[1]][$x[2]]] = $mode
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(829,44) : WARNING: $TM_itm_sel: declared, but not used in func.
+	$TM_itm_sel[$TM_Itm[$x[1]][$x[2]]] = $mode
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(866,50) : WARNING: $TM_usr_icn possibly not declared/created yet
+	If $name1 <> -1 Then $TM_usr_icn[$s_ID] = $name1
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(867,50) : WARNING: $TM_usr_inm possibly not declared/created yet
+	If $icon1 <> -1 Then $TM_usr_inm[$s_ID] = $icon1
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(869,55) : WARNING: $TM_usr_icn_2nd possibly not declared/created yet
+		If $name2 <> -1 Then $TM_usr_icn_2nd[$s_ID] = $name2
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(870,55) : WARNING: $TM_usr_inm_2nd possibly not declared/created yet
+		If $name2 <> -1 Then $TM_usr_inm_2nd[$s_ID] = $icon2
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(869,55) : WARNING: $TM_usr_icn_2nd: declared, but not used in func.
+		If $name2 <> -1 Then $TM_usr_icn_2nd[$s_ID] = $name2
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(870,55) : WARNING: $TM_usr_inm_2nd: declared, but not used in func.
+		If $name2 <> -1 Then $TM_usr_inm_2nd[$s_ID] = $icon2
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(913,50) : WARNING: $TM_men_icn possibly not declared/created yet
+	If $name1 <> -1 Then $TM_men_icn[$s_ID] = $name1
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(914,50) : WARNING: $TM_men_inm possibly not declared/created yet
+	If $icon1 <> -1 Then $TM_men_inm[$s_ID] = $icon1
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(916,55) : WARNING: $TM_men_icn_2nd possibly not declared/created yet
+		If $name2 <> -1 Then $TM_men_icn_2nd[$s_ID] = $name2
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(917,55) : WARNING: $TM_men_inm_2nd possibly not declared/created yet
+		If $name2 <> -1 Then $TM_men_inm_2nd[$s_ID] = $icon2
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(916,55) : WARNING: $TM_men_icn_2nd: declared, but not used in func.
+		If $name2 <> -1 Then $TM_men_icn_2nd[$s_ID] = $name2
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(917,55) : WARNING: $TM_men_inm_2nd: declared, but not used in func.
+		If $name2 <> -1 Then $TM_men_inm_2nd[$s_ID] = $icon2
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(959,53) : WARNING: $TM_men_icn_sz possibly not declared/created yet
+	If $size2 <> -1 Then $TM_men_icn_sz[$s_ID] = $size2
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(960,60) : WARNING: $TM_usr_icn_sz_2nd possibly not declared/created yet
+	If $size1 <> -1 Then $TM_usr_icn_sz_2nd[$s_ID] = $size1sel
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(961,60) : WARNING: $TM_men_icn_sz_2nd possibly not declared/created yet
+	If $size2 <> -1 Then $TM_men_icn_sz_2nd[$s_ID] = $size2sel
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(960,60) : WARNING: $TM_usr_icn_sz_2nd: declared, but not used in func.
+	If $size1 <> -1 Then $TM_usr_icn_sz_2nd[$s_ID] = $size1sel
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(961,60) : WARNING: $TM_men_icn_sz_2nd: declared, but not used in func.
+	If $size2 <> -1 Then $TM_men_icn_sz_2nd[$s_ID] = $size2sel
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(998,90) : WARNING: $ret possibly not declared/created yet
+	$ret = GUICtrlSetData($s_ID, __TM_Pad($txt, $TM_itm_pad_l[$s_ID], $TM_itm_pad_r[$s_ID]))
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1040,35) : WARNING: $TM_itm_pad_l_2nd possibly not declared/created yet
+	$TM_itm_pad_l_2nd[$s_ID] = $padls
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1041,35) : WARNING: $TM_itm_pad_r_2nd possibly not declared/created yet
+	$TM_itm_pad_r_2nd[$s_ID] = $padrs
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1042,104) : WARNING: $ret possibly not declared/created yet
+	$ret = GUICtrlSetData($s_ID, __TM_Pad($TM_itm_txt[$s_ID], $TM_itm_pad_l[$s_ID], $TM_itm_pad_r[$s_ID]))
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1040,35) : WARNING: $TM_itm_pad_l_2nd: declared, but not used in func.
+	$TM_itm_pad_l_2nd[$s_ID] = $padls
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1041,35) : WARNING: $TM_itm_pad_r_2nd: declared, but not used in func.
+	$TM_itm_pad_r_2nd[$s_ID] = $padrs
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1085,34) : WARNING: $TM_itm_ft_width possibly not declared/created yet
+	$TM_itm_ft_width[$s_ID] = $width
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1086,32) : WARNING: $TM_itm_ft_attr possibly not declared/created yet
+	$TM_itm_ft_attr[$s_ID] = $attr
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1087,32) : WARNING: $TM_itm_ft_size possibly not declared/created yet
+	$TM_itm_ft_size[$s_ID] = $size
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1088,27) : WARNING: $TM_itm_ft possibly not declared/created yet
+	$TM_itm_ft[$s_ID] = $name
+	~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1085,34) : WARNING: $TM_itm_ft_width: declared, but not used in func.
+	$TM_itm_ft_width[$s_ID] = $width
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1086,32) : WARNING: $TM_itm_ft_attr: declared, but not used in func.
+	$TM_itm_ft_attr[$s_ID] = $attr
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1087,32) : WARNING: $TM_itm_ft_size: declared, but not used in func.
+	$TM_itm_ft_size[$s_ID] = $size
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1088,27) : WARNING: $TM_itm_ft: declared, but not used in func.
+	$TM_itm_ft[$s_ID] = $name
+	~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1131,38) : WARNING: $TM_itm_ft_width_2nd possibly not declared/created yet
+	$TM_itm_ft_width_2nd[$s_ID] = $width
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1132,36) : WARNING: $TM_itm_ft_attr_2nd possibly not declared/created yet
+	$TM_itm_ft_attr_2nd[$s_ID] = $attr
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1133,36) : WARNING: $TM_itm_ft_size_2nd possibly not declared/created yet
+	$TM_itm_ft_size_2nd[$s_ID] = $size
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1134,31) : WARNING: $TM_itm_ft_2nd possibly not declared/created yet
+	$TM_itm_ft_2nd[$s_ID] = $name
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1131,38) : WARNING: $TM_itm_ft_width_2nd: declared, but not used in func.
+	$TM_itm_ft_width_2nd[$s_ID] = $width
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1132,36) : WARNING: $TM_itm_ft_attr_2nd: declared, but not used in func.
+	$TM_itm_ft_attr_2nd[$s_ID] = $attr
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1133,36) : WARNING: $TM_itm_ft_size_2nd: declared, but not used in func.
+	$TM_itm_ft_size_2nd[$s_ID] = $size
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1134,31) : WARNING: $TM_itm_ft_2nd: declared, but not used in func.
+	$TM_itm_ft_2nd[$s_ID] = $name
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1166,41) : WARNING: $TM_itm_ft_col possibly not declared/created yet
+			$TM_itm_ft_col[$s_ID] = $TM_col_it_ft
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1171,49) : WARNING: $TM_itm_ft_col_2nd possibly not declared/created yet
+			$TM_itm_ft_col_2nd[$s_ID] = $TM_col_it_ft_2nd
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1171,49) : WARNING: $TM_itm_ft_col_2nd: declared, but not used in func.
+			$TM_itm_ft_col_2nd[$s_ID] = $TM_col_it_ft_2nd
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1210,40) : WARNING: $TM_itm_bk_col possibly not declared/created yet
+		$TM_itm_bk_col[$s_ID] = $TM_col_it_bk
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1215,48) : WARNING: $TM_itm_bk_col_2nd possibly not declared/created yet
+		$TM_itm_bk_col_2nd[$s_ID] = $TM_col_it_bk_2nd
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1215,48) : WARNING: $TM_itm_bk_col_2nd: declared, but not used in func.
+		$TM_itm_bk_col_2nd[$s_ID] = $TM_col_it_bk_2nd
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1256,31) : WARNING: $TM_itm_style possibly not declared/created yet
+	$TM_itm_style[$s_ID] = $style
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1257,38) : WARNING: $TM_itm_style_2nd possibly not declared/created yet
+	$TM_itm_style_2nd[$s_ID] = $selected
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1256,31) : WARNING: $TM_itm_style: declared, but not used in func.
+	$TM_itm_style[$s_ID] = $style
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1257,38) : WARNING: $TM_itm_style_2nd: declared, but not used in func.
+	$TM_itm_style_2nd[$s_ID] = $selected
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1289,32) : WARNING: $TM_itm_img_2nd possibly not declared/created yet
+	$TM_itm_img_2nd[$s_ID] = $pic2
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1289,32) : WARNING: $TM_itm_img_2nd: declared, but not used in func.
+	$TM_itm_img_2nd[$s_ID] = $pic2
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1325,35) : WARNING: $TM_gui_pic: possibly used before declaration.
+			GUICtrlSetImage($TM_gui_pic[$i],
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1392,30) : WARNING: $TM_SideBar_size possibly not declared/created yet
+	$TM_SideBar_size[$s_ID] = ""
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1394,24) : WARNING: $TM_SideBar: possibly used before declaration.
+	If $TM_SideBar[$s_ID] Then
+	~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1392,30) : WARNING: $TM_SideBar_size: declared, but not used in func.
+	$TM_SideBar_size[$s_ID] = ""
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1423,21) : WARNING: $TM_last: possibly used before declaration.
+	If $TM_last[$s_ID] =
+	~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1636,21) : WARNING: $TM_gui_w possibly not declared/created yet
+			$TM_gui_w[$i] = 0
+			~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1637,21) : WARNING: $TM_gui_h possibly not declared/created yet
+			$TM_gui_h[$i] = 0
+			~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1638,33) : WARNING: $TM_Itm_w possibly not declared/created yet
+			$TM_Itm_w[$i] = $TM_Itm_def_w
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1644,40) : WARNING: $TM_itm_ft_col possibly not declared/created yet
+					$TM_itm_ft_col[$t] = $TM_col_it_ft
+					~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1645,48) : WARNING: $TM_itm_ft_col_2nd possibly not declared/created yet
+					$TM_itm_ft_col_2nd[$t] = $TM_col_it_ft_2nd
+					~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1646,40) : WARNING: $TM_itm_bk_col possibly not declared/created yet
+					$TM_itm_bk_col[$t] = $TM_col_it_bk
+					~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1647,48) : WARNING: $TM_itm_bk_col_2nd possibly not declared/created yet
+					$TM_itm_bk_col_2nd[$t] = $TM_col_it_bk_2nd
+					~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1648,39) : WARNING: $TM_itm_sel possibly not declared/created yet
+					$TM_itm_sel[$t] = $TM_Select_Mode
+					~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1649,41) : WARNING: $TM_itm_ft_width possibly not declared/created yet
+					$TM_itm_ft_width[$t] = $TM_ft_width
+					~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1650,39) : WARNING: $TM_itm_ft_attr possibly not declared/created yet
+					$TM_itm_ft_attr[$t] = $TM_ft_attr
+					~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1651,39) : WARNING: $TM_itm_ft_size possibly not declared/created yet
+					$TM_itm_ft_size[$t] = $TM_ft_size
+					~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1652,29) : WARNING: $TM_itm_ft possibly not declared/created yet
+					$TM_itm_ft[$t] = $TM_ft
+					~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1681,48) : WARNING: $TM_shdw_GUI: possibly used before declaration.
+			GUISetBkColor($TM_shdw_col, $TM_shdw_GUI[$i])
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1604,52) : WARNING: $TM_Check_Auto_Mode: declared, but not used in func.
+	Global $TM_Check_Auto_Mode = 1	;	auto-uncheck-item
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	~	~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1605,51) : WARNING: $TM_Radio_Auto_Mode: declared, but not used in func.
+	Global $TM_Radio_Auto_Mode = 1	;	auto_radio_group
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	~	~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1611,52) : WARNING: $TM_Itm_def_style: declared, but not used in func.
+	Global $TM_Itm_def_style = 0 	;	default item style
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	~	~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1612,59) : WARNING: $TM_Close_Delay: declared, but not used in func.
+	Global $TM_Close_Delay = 300	;	delay for popup closing ms
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~	~	~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1615,58) : WARNING: $TM_Open_Delay: declared, but not used in func.
+	Global $TM_Open_Delay = 300	;	delay for popup opening ms
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~	~	~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1617,47) : WARNING: $TM_Resize_Mode: declared, but not used in func.
+	Global $TM_Resize_Mode = 1 	;	autom. resizing
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~	~	~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1619,49) : WARNING: $TM_Frequency: declared, but not used in func.
+	Global $TM_Frequency = 50 	;	callback frequency
+	~~~~~~~~~~~~~~~~~~~~~~~~~~	~	~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1626,43) : WARNING: $TM_Shdw_Mode: declared, but not used in func.
+	Global $TM_Shdw_Mode = 1 	;	shadow on/off
+	~~~~~~~~~~~~~~~~~~~~~~~~~	~	~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1636,21) : WARNING: $TM_gui_w: declared, but not used in func.
+			$TM_gui_w[$i] = 0
+			~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1637,21) : WARNING: $TM_gui_h: declared, but not used in func.
+			$TM_gui_h[$i] = 0
+			~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1638,33) : WARNING: $TM_Itm_w: declared, but not used in func.
+			$TM_Itm_w[$i] = $TM_Itm_def_w
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1644,40) : WARNING: $TM_itm_ft_col: declared, but not used in func.
+					$TM_itm_ft_col[$t] = $TM_col_it_ft
+					~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1645,48) : WARNING: $TM_itm_ft_col_2nd: declared, but not used in func.
+					$TM_itm_ft_col_2nd[$t] = $TM_col_it_ft_2nd
+					~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1646,40) : WARNING: $TM_itm_bk_col: declared, but not used in func.
+					$TM_itm_bk_col[$t] = $TM_col_it_bk
+					~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1647,48) : WARNING: $TM_itm_bk_col_2nd: declared, but not used in func.
+					$TM_itm_bk_col_2nd[$t] = $TM_col_it_bk_2nd
+					~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1648,39) : WARNING: $TM_itm_sel: declared, but not used in func.
+					$TM_itm_sel[$t] = $TM_Select_Mode
+					~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1649,41) : WARNING: $TM_itm_ft_width: declared, but not used in func.
+					$TM_itm_ft_width[$t] = $TM_ft_width
+					~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1650,39) : WARNING: $TM_itm_ft_attr: declared, but not used in func.
+					$TM_itm_ft_attr[$t] = $TM_ft_attr
+					~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1651,39) : WARNING: $TM_itm_ft_size: declared, but not used in func.
+					$TM_itm_ft_size[$t] = $TM_ft_size
+					~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1652,29) : WARNING: $TM_itm_ft: declared, but not used in func.
+					$TM_itm_ft[$t] = $TM_ft
+					~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1774,36) : WARNING: $TM_Check_Auto_Mode possibly not declared/created yet
+	$TM_Check_Auto_Mode = ($mode1 > 0)
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1775,36) : WARNING: $TM_Radio_Auto_Mode possibly not declared/created yet
+	$TM_Radio_Auto_Mode = ($mode2 > 0)
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1774,36) : WARNING: $TM_Check_Auto_Mode: declared, but not used in func.
+	$TM_Check_Auto_Mode = ($mode1 > 0)
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1775,36) : WARNING: $TM_Radio_Auto_Mode: declared, but not used in func.
+	$TM_Radio_Auto_Mode = ($mode2 > 0)
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1816,41) : WARNING: $TM_itm_sel possibly not declared/created yet
+				$TM_itm_sel[$TM_Itm[$i][$j]] = $mode
+				~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1816,41) : WARNING: $TM_itm_sel: declared, but not used in func.
+				$TM_itm_sel[$TM_Itm[$i][$j]] = $mode
+				~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1862,29) : WARNING: $t already declared/assigned
+				Dim $t = $TM_Itm[$i][$j],
+				~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1862,51) : WARNING: $o already declared/assigned
+				Dim $t = $TM_Itm[$i][$j], $o = $TM_UsrIcon[$t],
+				~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1862,83) : WARNING: $p already declared/assigned
+				Dim $t = $TM_Itm[$i][$j], $o = $TM_UsrIcon[$t], $p = ControlGetPos($g, "", $o)
+				~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1867,29) : WARNING: $o already declared/assigned
+				Dim $o = $TM_MenIcon[$t],
+				~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1867,61) : WARNING: $p already declared/assigned
+				Dim $o = $TM_MenIcon[$t], $p = ControlGetPos($g, "", $o)
+				~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1869,30) : WARNING: $u already declared/assigned
+					Dim $u = $TM_def_usr_ISz,
+					~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1869,47) : WARNING: 'Dim' deprecated as declaration. Prefer to use Local or Global.
+					Dim $u = $TM_def_usr_ISz, $q = $p[2] - $u
+					~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1873,41) : WARNING: $TM_men_icn_sz possibly not declared/created yet
+				$TM_men_icn_sz[$t] = $TM_def_men_ISz
+				~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1874,45) : WARNING: $TM_usr_icn_sz_2nd possibly not declared/created yet
+				$TM_usr_icn_sz_2nd[$t] = $TM_def_usr_ISz
+				~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1875,45) : WARNING: $TM_men_icn_sz_2nd possibly not declared/created yet
+				$TM_men_icn_sz_2nd[$t] = $TM_def_men_ISz
+				~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1883,31) : WARNING: $g already declared/assigned
+		Dim $g = $TM_main_GUI[$s_ID],
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1883,56) : WARNING: $t already declared/assigned
+		Dim $g = $TM_main_GUI[$s_ID], $t = $TM_Itm[$s_ID][$j],
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1883,78) : WARNING: $o already declared/assigned
+		Dim $g = $TM_main_GUI[$s_ID], $t = $TM_Itm[$s_ID][$j], $o = $TM_UsrIcon[$t],
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1883,110) : WARNING: $p already declared/assigned
+		Dim $g = $TM_main_GUI[$s_ID], $t = $TM_Itm[$s_ID][$j], $o = $TM_UsrIcon[$t], $p = ControlGetPos($g, "", $o)
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1889,27) : WARNING: $o already declared/assigned
+		Dim $o = $TM_MenIcon[$t],
+		~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1889,59) : WARNING: $p already declared/assigned
+		Dim $o = $TM_MenIcon[$t], $p = ControlGetPos($g, "", $o)
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1873,41) : WARNING: $TM_men_icn_sz: declared, but not used in func.
+				$TM_men_icn_sz[$t] = $TM_def_men_ISz
+				~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1874,45) : WARNING: $TM_usr_icn_sz_2nd: declared, but not used in func.
+				$TM_usr_icn_sz_2nd[$t] = $TM_def_usr_ISz
+				~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1875,45) : WARNING: $TM_men_icn_sz_2nd: declared, but not used in func.
+				$TM_men_icn_sz_2nd[$t] = $TM_def_men_ISz
+				~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1941,33) : WARNING: $TM_Itm_w possibly not declared/created yet
+			$TM_Itm_w[$i] = $TM_Itm_def_w
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1948,44) : WARNING: $TM_itm_pad_l_2nd possibly not declared/created yet
+					$TM_itm_pad_l_2nd[$t] = $TM_pad_le_2nd
+					~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1949,44) : WARNING: $TM_itm_pad_r_2nd possibly not declared/created yet
+					$TM_itm_pad_r_2nd[$t] = $TM_pad_ri_2nd
+					~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1941,33) : WARNING: $TM_Itm_w: declared, but not used in func.
+			$TM_Itm_w[$i] = $TM_Itm_def_w
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1948,44) : WARNING: $TM_itm_pad_l_2nd: declared, but not used in func.
+					$TM_itm_pad_l_2nd[$t] = $TM_pad_le_2nd
+					~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(1949,44) : WARNING: $TM_itm_pad_r_2nd: declared, but not used in func.
+					$TM_itm_pad_r_2nd[$t] = $TM_pad_ri_2nd
+					~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2008,10) : WARNING: $t: declared, but not used in func.
+	Local $t
+	~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2066,10) : WARNING: $t: declared, but not used in func.
+	Local $t
+	~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2118,52) : WARNING: $TM_itm_ft_col possibly not declared/created yet
+				$TM_itm_ft_col[$TM_Itm[$i][$j]] = $TM_col_it_ft
+				~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2119,60) : WARNING: $TM_itm_ft_col_2nd possibly not declared/created yet
+				$TM_itm_ft_col_2nd[$TM_Itm[$i][$j]] = $TM_col_it_ft_2nd
+				~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2118,52) : WARNING: $TM_itm_ft_col: declared, but not used in func.
+				$TM_itm_ft_col[$TM_Itm[$i][$j]] = $TM_col_it_ft
+				~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2119,60) : WARNING: $TM_itm_ft_col_2nd: declared, but not used in func.
+				$TM_itm_ft_col_2nd[$TM_Itm[$i][$j]] = $TM_col_it_ft_2nd
+				~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2169,52) : WARNING: $TM_itm_bk_col possibly not declared/created yet
+				$TM_itm_bk_col[$TM_Itm[$i][$j]] = $TM_col_it_bk
+				~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2170,60) : WARNING: $TM_itm_bk_col_2nd possibly not declared/created yet
+				$TM_itm_bk_col_2nd[$TM_Itm[$i][$j]] = $TM_col_it_bk_2nd
+				~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2169,52) : WARNING: $TM_itm_bk_col: declared, but not used in func.
+				$TM_itm_bk_col[$TM_Itm[$i][$j]] = $TM_col_it_bk
+				~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2170,60) : WARNING: $TM_itm_bk_col_2nd: declared, but not used in func.
+				$TM_itm_bk_col_2nd[$TM_Itm[$i][$j]] = $TM_col_it_bk_2nd
+				~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2219,48) : WARNING: $TM_Itm_def_style: possibly used before declaration.
+	If $style = -1 Then $style = $TM_Itm_def_style
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2228,39) : WARNING: $TM_itm_style_2nd possibly not declared/created yet
+					$TM_itm_style_2nd[$t] = $selected
+					~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2229,32) : WARNING: $TM_itm_style possibly not declared/created yet
+					$TM_itm_style[$t] = $style
+					~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2228,39) : WARNING: $TM_itm_style_2nd: declared, but not used in func.
+					$TM_itm_style_2nd[$t] = $selected
+					~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2229,32) : WARNING: $TM_itm_style: declared, but not used in func.
+					$TM_itm_style[$t] = $style
+					~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2285,30) : WARNING: $TM_gui_def_w possibly not declared/created yet
+			$TM_gui_def_w[$i] = $width
+			~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2286,31) : WARNING: $TM_gui_def_h possibly not declared/created yet
+			$TM_gui_def_h[$i] = $height
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2287,32) : WARNING: $TM_gui_def_blk possibly not declared/created yet
+			$TM_gui_def_blk[$i] = $blank
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2285,30) : WARNING: $TM_gui_def_w: declared, but not used in func.
+			$TM_gui_def_w[$i] = $width
+			~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2286,31) : WARNING: $TM_gui_def_h: declared, but not used in func.
+			$TM_gui_def_h[$i] = $height
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2287,32) : WARNING: $TM_gui_def_blk: declared, but not used in func.
+			$TM_gui_def_blk[$i] = $blank
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2417,42) : WARNING: $TM_usr_icn possibly not declared/created yet
+					$TM_usr_icn[$t] = $TM_def_radio_Icon
+					~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2418,42) : WARNING: $TM_usr_inm possibly not declared/created yet
+					$TM_usr_inm[$t] = $TM_def_radio_INum
+					~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2419,50) : WARNING: $TM_usr_icn_2nd possibly not declared/created yet
+					$TM_usr_icn_2nd[$t] = $TM_def_radio_Icon_2nd
+					~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2420,50) : WARNING: $TM_usr_inm_2nd possibly not declared/created yet
+					$TM_usr_inm_2nd[$t] = $TM_def_radio_INum_2nd
+					~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2419,50) : WARNING: $TM_usr_icn_2nd: declared, but not used in func.
+					$TM_usr_icn_2nd[$t] = $TM_def_radio_Icon_2nd
+					~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2420,50) : WARNING: $TM_usr_inm_2nd: declared, but not used in func.
+					$TM_usr_inm_2nd[$t] = $TM_def_radio_INum_2nd
+					~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2468,40) : WARNING: $TM_men_icn possibly not declared/created yet
+					$TM_men_icn[$t] = $TM_def_men_Icon
+					~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2469,40) : WARNING: $TM_men_inm possibly not declared/created yet
+					$TM_men_inm[$t] = $TM_def_men_INum
+					~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2470,48) : WARNING: $TM_men_icn_2nd possibly not declared/created yet
+					$TM_men_icn_2nd[$t] = $TM_def_men_Icon_2nd
+					~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2471,48) : WARNING: $TM_men_inm_2nd possibly not declared/created yet
+					$TM_men_inm_2nd[$t] = $TM_def_men_INum_2nd
+					~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2472,86) : WARNING: $TM_men_icn_sz: possibly used before declaration.
+					__TM_IconSetImage($i, $j, $TM_def_men_Icon, $TM_def_men_INum, $TM_men_icn_sz[$t])
+					~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2468,40) : WARNING: $TM_men_icn: declared, but not used in func.
+					$TM_men_icn[$t] = $TM_def_men_Icon
+					~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2469,40) : WARNING: $TM_men_inm: declared, but not used in func.
+					$TM_men_inm[$t] = $TM_def_men_INum
+					~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2470,48) : WARNING: $TM_men_icn_2nd: declared, but not used in func.
+					$TM_men_icn_2nd[$t] = $TM_def_men_Icon_2nd
+					~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2471,48) : WARNING: $TM_men_inm_2nd: declared, but not used in func.
+					$TM_men_inm_2nd[$t] = $TM_def_men_INum_2nd
+					~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2500,25) : WARNING: $TM_Open_Delay possibly not declared/created yet
+	$TM_Open_Delay = $mode1
+	~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2501,26) : WARNING: $TM_Close_Delay possibly not declared/created yet
+	$TM_Close_Delay = $mode2
+	~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2500,25) : WARNING: $TM_Open_Delay: declared, but not used in func.
+	$TM_Open_Delay = $mode1
+	~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2501,26) : WARNING: $TM_Close_Delay: declared, but not used in func.
+	$TM_Close_Delay = $mode2
+	~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2530,45) : WARNING: $TM_col_gui_bk possibly not declared/created yet
+		If $s_ID = -1 Then $TM_col_gui_bk = $color
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2599,43) : WARNING: $TM_Shdw_Mode possibly not declared/created yet
+		If $s_ID = -1 Then $TM_Shdw_Mode = $mode
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2638,43) : WARNING: $TM_shdw_col possibly not declared/created yet
+		If $s_ID = -1 Then $TM_shdw_col = $color
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2674,45) : WARNING: $TM_shdw_trans possibly not declared/created yet
+		If $s_ID = -1 Then $TM_shdw_trans = $trans
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2780,36) : WARNING: $TM_def_check_Icon_2nd already declared/assigned
+	Global $TM_def_check_Icon_2nd = ""
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2781,36) : WARNING: $TM_def_check_INum_2nd already declared/assigned
+	Global $TM_def_check_INum_2nd = ""
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2782,36) : WARNING: $TM_def_radio_Icon_2nd already declared/assigned
+	Global $TM_def_radio_Icon_2nd = ""
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2783,36) : WARNING: $TM_def_radio_INum_2nd already declared/assigned
+	Global $TM_def_radio_INum_2nd = ""
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2784,35) : WARNING: $TM_def_indt_Icon_2nd already declared/assigned
+	Global $TM_def_indt_Icon_2nd = ""
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2785,35) : WARNING: $TM_def_indt_INum_2nd already declared/assigned
+	Global $TM_def_indt_INum_2nd = ""
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2786,34) : WARNING: $TM_def_men_Icon_2nd already declared/assigned
+	Global $TM_def_men_Icon_2nd = ""
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2787,34) : WARNING: $TM_def_men_INum_2nd already declared/assigned
+	Global $TM_def_men_INum_2nd = ""
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2791,29) : WARNING: $TM_Itm_max_cnt already declared/assigned
+	Global $TM_Itm_max_cnt = ""
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2715,32) : WARNING: $TM_itm_ft_width_2nd: declared, but not used in func.
+	Global $TM_itm_ft_width_2nd[1]
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2716,31) : WARNING: $TM_itm_ft_attr_2nd: declared, but not used in func.
+	Global $TM_itm_ft_attr_2nd[1]
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2717,31) : WARNING: $TM_itm_ft_size_2nd: declared, but not used in func.
+	Global $TM_itm_ft_size_2nd[1]
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2718,30) : WARNING: $TM_itm_ft_col_2nd: declared, but not used in func.
+	Global $TM_itm_ft_col_2nd[1]
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2719,30) : WARNING: $TM_itm_bk_col_2nd: declared, but not used in func.
+	Global $TM_itm_bk_col_2nd[1]
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2720,30) : WARNING: $TM_usr_icn_sz_2nd: declared, but not used in func.
+	Global $TM_usr_icn_sz_2nd[1]
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2721,30) : WARNING: $TM_men_icn_sz_2nd: declared, but not used in func.
+	Global $TM_men_icn_sz_2nd[1]
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2722,29) : WARNING: $TM_itm_style_2nd: declared, but not used in func.
+	Global $TM_itm_style_2nd[1]
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2723,29) : WARNING: $TM_itm_pad_l_2nd: declared, but not used in func.
+	Global $TM_itm_pad_l_2nd[1]
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2724,29) : WARNING: $TM_itm_pad_r_2nd: declared, but not used in func.
+	Global $TM_itm_pad_r_2nd[1]
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2725,28) : WARNING: $TM_itm_ft_width: declared, but not used in func.
+	Global $TM_itm_ft_width[1]
+	~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2726,28) : WARNING: $TM_SideBar_size: declared, but not used in func.
+	Global $TM_SideBar_size[1]
+	~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2728,27) : WARNING: $TM_itm_img_2nd: declared, but not used in func.
+	Global $TM_itm_img_2nd[1]
+	~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2730,27) : WARNING: $TM_usr_icn_2nd: declared, but not used in func.
+	Global $TM_usr_icn_2nd[1]
+	~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2731,27) : WARNING: $TM_usr_inm_2nd: declared, but not used in func.
+	Global $TM_usr_inm_2nd[1]
+	~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2732,27) : WARNING: $TM_men_icn_2nd: declared, but not used in func.
+	Global $TM_men_icn_2nd[1]
+	~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2733,27) : WARNING: $TM_men_inm_2nd: declared, but not used in func.
+	Global $TM_men_inm_2nd[1]
+	~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2734,27) : WARNING: $TM_itm_ft_size: declared, but not used in func.
+	Global $TM_itm_ft_size[1]
+	~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2735,27) : WARNING: $TM_itm_ft_attr: declared, but not used in func.
+	Global $TM_itm_ft_attr[1]
+	~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2736,27) : WARNING: $TM_gui_def_blk: declared, but not used in func.
+	Global $TM_gui_def_blk[1]
+	~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2737,26) : WARNING: $TM_itm_ft_col: declared, but not used in func.
+	Global $TM_itm_ft_col[1]
+	~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2738,26) : WARNING: $TM_itm_bk_col: declared, but not used in func.
+	Global $TM_itm_bk_col[1]
+	~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2739,26) : WARNING: $TM_itm_ft_2nd: declared, but not used in func.
+	Global $TM_itm_ft_2nd[1]
+	~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2743,25) : WARNING: $TM_itm_style: declared, but not used in func.
+	Global $TM_itm_style[1]
+	~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2747,25) : WARNING: $TM_gui_def_w: declared, but not used in func.
+	Global $TM_gui_def_w[1]
+	~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2748,25) : WARNING: $TM_gui_def_h: declared, but not used in func.
+	Global $TM_gui_def_h[1]
+	~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2752,23) : WARNING: $TM_itm_sel: declared, but not used in func.
+	Global $TM_itm_sel[1]
+	~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2755,23) : WARNING: $TM_mn_orig: declared, but not used in func.
+	Global $TM_mn_orig[1]
+	~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2757,23) : WARNING: $TM_usr_icn: declared, but not used in func.
+	Global $TM_usr_icn[1]
+	~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2758,23) : WARNING: $TM_usr_inm: declared, but not used in func.
+	Global $TM_usr_inm[1]
+	~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2759,23) : WARNING: $TM_men_icn: declared, but not used in func.
+	Global $TM_men_icn[1]
+	~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2760,23) : WARNING: $TM_men_inm: declared, but not used in func.
+	Global $TM_men_inm[1]
+	~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2762,22) : WARNING: $TM_IsIcon: declared, but not used in func.
+	Global $TM_IsIcon[1]
+	~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2763,22) : WARNING: $TM_origin: declared, but not used in func.
+	Global $TM_origin[1]
+	~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2764,22) : WARNING: $TM_itm_ft: declared, but not used in func.
+	Global $TM_itm_ft[1]
+	~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2765,21) : WARNING: $TM_Itm_w: declared, but not used in func.
+	Global $TM_Itm_w[1]
+	~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2767,21) : WARNING: $TM_gui_w: declared, but not used in func.
+	Global $TM_gui_w[1]
+	~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2768,21) : WARNING: $TM_gui_h: declared, but not used in func.
+	Global $TM_gui_h[1]
+	~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2770,19) : WARNING: $TM_sb1: declared, but not used in func.
+	Global $TM_sb1[1]
+	~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2771,19) : WARNING: $TM_sb2: declared, but not used in func.
+	Global $TM_sb2[1]
+	~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2772,19) : WARNING: $TM_sb3: declared, but not used in func.
+	Global $TM_sb3[1]
+	~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2773,19) : WARNING: $TM_sb4: declared, but not used in func.
+	Global $TM_sb4[1]
+	~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2774,19) : WARNING: $TM_sb5: declared, but not used in func.
+	Global $TM_sb5[1]
+	~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2775,19) : WARNING: $TM_sb6: declared, but not used in func.
+	Global $TM_sb6[1]
+	~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2776,19) : WARNING: $TM_sb7: declared, but not used in func.
+	Global $TM_sb7[1]
+	~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2777,19) : WARNING: $TM_sb8: declared, but not used in func.
+	Global $TM_sb8[1]
+	~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2778,19) : WARNING: $TM_sb9: declared, but not used in func.
+	Global $TM_sb9[1]
+	~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2779,19) : WARNING: $TM_sb0: declared, but not used in func.
+	Global $TM_sb0[1]
+	~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2788,30) : WARNING: $TM_last_created: declared, but not used in func.
+	Global $TM_last_created = ""
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2789,30) : WARNING: $TM_kill_timeout: declared, but not used in func.
+	Global $TM_kill_timeout = ""
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2790,30) : WARNING: $TM_open_timeout: declared, but not used in func.
+	Global $TM_open_timeout = ""
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2792,27) : WARNING: $TM_last_open: declared, but not used in func.
+	Global $TM_last_open = ""
+	~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2793,26) : WARNING: $TM_show_2nd: declared, but not used in func.
+	Global $TM_show_2nd = ""
+	~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2794,26) : WARNING: $TM_win2kill: declared, but not used in func.
+	Global $TM_win2kill = ""
+	~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2795,26) : WARNING: $TM_win2open: declared, but not used in func.
+	Global $TM_win2open = ""
+	~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2797,22) : WARNING: $TM_show: declared, but not used in func.
+	Global $TM_show = ""
+	~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2798,22) : WARNING: $TM_kill: declared, but not used in func.
+	Global $TM_kill = ""
+	~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2799,22) : WARNING: $TM_open: declared, but not used in func.
+	Global $TM_open = ""
+	~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2822,14) : WARNING: $TM_open: possibly used before declaration.
+	If $TM_open And
+	~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2822,57) : WARNING: $TM_open_timeout: possibly used before declaration.
+	If $TM_open And TimerDiff($TM_open) > $TM_open_timeout Then
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2824,26) : WARNING: $TM_IsIcon: possibly used before declaration.
+		If $n<UBound($TM_IsIcon)
+		~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2826,36) : WARNING: $TM_last_open: possibly used before declaration.
+			If @error = 0 And $TM_last_open =
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2827,21) : WARNING: $TM_show_2nd: possibly used before declaration.
+				If $TM_show_2nd >
+				~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2828,27) : WARNING: $TM_win2open: possibly used before declaration.
+				__TM_Show($TM_win2open)
+				~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2831,27) : WARNING: 'Dim' deprecated as declaration. Prefer to use Local or Global.
+		Dim $TM_kill_timeout = 0,
+		~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2833,14) : WARNING: $TM_kill: possibly used before declaration.
+	If $TM_kill And
+	~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2833,84) : WARNING: $TM_win2kill: possibly used before declaration.
+	If $TM_kill And TimerDiff($TM_kill) > $TM_kill_timeout Then __TM_Hide($TM_win2kill)
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2839,55) : WARNING: $TM_mn_orig: possibly used before declaration.
+			$TM_last[0] = __TM_Select($TM_mn_orig[$TM_show_2nd],
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2843,14) : WARNING: $TM_show: possibly used before declaration.
+	If $TM_show =
+	~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2869,115) : WARNING: $TM_Close_Delay: possibly used before declaration.
+			If $hRef = 0 And $TM_type[$n] <> $TM_show_2nd And $TM_show_2nd > 0 Then __TM_Hide($TM_show_2nd, $TM_Close_Delay)
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2875,57) : WARNING: $TM_Open_Delay: possibly used before declaration.
+			If $TM_type[$n] > 0 Then __TM_Show($n, $TM_Open_Delay)
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2879,70) : WARNING: $g possibly not declared/created yet
+	$g = DllCall("user32.dll", "int", "GetAsyncKeyState", "int", "0x0D")
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2882,48) : WARNING: $TM_Radio_Auto_Mode: possibly used before declaration.
+		If $TM_type[$n] = -1 And $TM_Radio_Auto_Mode Then
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2884,41) : WARNING: $TM_origin: possibly used before declaration.
+			Local $x = StringSplit($TM_origin[$n],
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2893,30) : WARNING: $TM_Check_Auto_Mode: possibly used before declaration.
+		ElseIf $TM_Check_Auto_Mode Then
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2916,27) : WARNING: $TM_itm_sel: possibly used before declaration.
+	If BitAND($TM_itm_sel[$t],
+	~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2916,79) : WARNING: $TM_itm_ft_col_2nd: possibly used before declaration.
+	If BitAND($TM_itm_sel[$t], 1) Then GUICtrlSetColor($t, $TM_itm_ft_col_2nd[$t])
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2917,81) : WARNING: $TM_itm_bk_col_2nd: possibly used before declaration.
+	If BitAND($TM_itm_sel[$t], 2) Then GUICtrlSetBkColor($t, $TM_itm_bk_col_2nd[$t])
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2918,158) : WARNING: $TM_usr_icn_2nd: possibly used before declaration.
+	If BitAND($TM_itm_sel[$t], 4) And BitAND(GUICtrlGetState($TM_UsrIcon[$t]), 16) Then __TM_IconSetImage($TM_main_GUI[$n], $TM_UsrIcon[$t], $TM_usr_icn_2nd[$t],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2918,179) : WARNING: $TM_usr_inm_2nd: possibly used before declaration.
+	If BitAND($TM_itm_sel[$t], 4) And BitAND(GUICtrlGetState($TM_UsrIcon[$t]), 16) Then __TM_IconSetImage($TM_main_GUI[$n], $TM_UsrIcon[$t], $TM_usr_icn_2nd[$t], $TM_usr_inm_2nd[$t],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2918,203) : WARNING: $TM_usr_icn_sz_2nd: possibly used before declaration.
+	If BitAND($TM_itm_sel[$t], 4) And BitAND(GUICtrlGetState($TM_UsrIcon[$t]), 16) Then __TM_IconSetImage($TM_main_GUI[$n], $TM_UsrIcon[$t], $TM_usr_icn_2nd[$t], $TM_usr_inm_2nd[$t], $TM_usr_icn_sz_2nd[$t])
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2919,158) : WARNING: $TM_men_icn_2nd: possibly used before declaration.
+	If BitAND($TM_itm_sel[$t], 8) And BitAND(GUICtrlGetState($TM_MenIcon[$t]), 16) Then __TM_IconSetImage($TM_main_GUI[$n], $TM_MenIcon[$t], $TM_men_icn_2nd[$t],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2919,179) : WARNING: $TM_men_inm_2nd: possibly used before declaration.
+	If BitAND($TM_itm_sel[$t], 8) And BitAND(GUICtrlGetState($TM_MenIcon[$t]), 16) Then __TM_IconSetImage($TM_main_GUI[$n], $TM_MenIcon[$t], $TM_men_icn_2nd[$t], $TM_men_inm_2nd[$t],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2919,203) : WARNING: $TM_men_icn_sz_2nd: possibly used before declaration.
+	If BitAND($TM_itm_sel[$t], 8) And BitAND(GUICtrlGetState($TM_MenIcon[$t]), 16) Then __TM_IconSetImage($TM_main_GUI[$n], $TM_MenIcon[$t], $TM_men_icn_2nd[$t], $TM_men_inm_2nd[$t], $TM_men_icn_sz_2nd[$t])
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2920,80) : WARNING: $TM_itm_ft_size_2nd: possibly used before declaration.
+	If BitAND($TM_itm_sel[$t], 16) Then GUICtrlSetFont($t, $TM_itm_ft_size_2nd[$t],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2920,106) : WARNING: $TM_itm_ft_width_2nd: possibly used before declaration.
+	If BitAND($TM_itm_sel[$t], 16) Then GUICtrlSetFont($t, $TM_itm_ft_size_2nd[$t], $TM_itm_ft_width_2nd[$t],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2920,131) : WARNING: $TM_itm_ft_attr_2nd: possibly used before declaration.
+	If BitAND($TM_itm_sel[$t], 16) Then GUICtrlSetFont($t, $TM_itm_ft_size_2nd[$t], $TM_itm_ft_width_2nd[$t], $TM_itm_ft_attr_2nd[$t],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2920,151) : WARNING: $TM_itm_ft_2nd: possibly used before declaration.
+	If BitAND($TM_itm_sel[$t], 16) Then GUICtrlSetFont($t, $TM_itm_ft_size_2nd[$t], $TM_itm_ft_width_2nd[$t], $TM_itm_ft_attr_2nd[$t], $TM_itm_ft_2nd[$t])
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2921,139) : WARNING: $TM_itm_img_2nd: possibly used before declaration.
+	If BitAND($TM_itm_sel[$t], 32) And BitAND(GUICtrlGetState($TM_itm_pic[$t]), 16) Then GUICtrlSetImage($TM_itm_pic[$t], $TM_itm_img_2nd[$t])
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2922,108) : WARNING: $TM_itm_pad_l_2nd: possibly used before declaration.
+	If BitAND($TM_itm_sel[$t], 64) Then GUICtrlSetData($t, __TM_Pad($TM_itm_txt_2nd[$t], $TM_itm_pad_l_2nd[$t],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2922,131) : WARNING: $TM_itm_pad_r_2nd: possibly used before declaration.
+	If BitAND($TM_itm_sel[$t], 64) Then GUICtrlSetData($t, __TM_Pad($TM_itm_txt_2nd[$t], $TM_itm_pad_l_2nd[$t], $TM_itm_pad_r_2nd[$t])
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2923,91) : WARNING: $TM_itm_style_2nd: possibly used before declaration.
+	If BitAND($TM_itm_sel[$t], 128) Then GUICtrlSetStyle($t, BitOR(768, $TM_itm_style_2nd[$t])
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2941,75) : WARNING: $TM_itm_ft_col: possibly used before declaration.
+	If BitAND($TM_itm_sel[$t], 1) Then GUICtrlSetColor($t, $TM_itm_ft_col[$t])
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2942,77) : WARNING: $TM_itm_bk_col: possibly used before declaration.
+	If BitAND($TM_itm_sel[$t], 2) Then GUICtrlSetBkColor($t, $TM_itm_bk_col[$t])
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2943,154) : WARNING: $TM_usr_icn: possibly used before declaration.
+	If BitAND($TM_itm_sel[$t], 4) And BitAND(GUICtrlGetState($TM_UsrIcon[$t]), 16) Then __TM_IconSetImage($TM_main_GUI[$n], $TM_UsrIcon[$t], $TM_usr_icn[$t],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2943,171) : WARNING: $TM_usr_inm: possibly used before declaration.
+	If BitAND($TM_itm_sel[$t], 4) And BitAND(GUICtrlGetState($TM_UsrIcon[$t]), 16) Then __TM_IconSetImage($TM_main_GUI[$n], $TM_UsrIcon[$t], $TM_usr_icn[$t], $TM_usr_inm[$t],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2944,154) : WARNING: $TM_men_icn: possibly used before declaration.
+	If BitAND($TM_itm_sel[$t], 8) And BitAND(GUICtrlGetState($TM_MenIcon[$t]), 16) Then __TM_IconSetImage($TM_main_GUI[$n], $TM_MenIcon[$t], $TM_men_icn[$t],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2944,171) : WARNING: $TM_men_inm: possibly used before declaration.
+	If BitAND($TM_itm_sel[$t], 8) And BitAND(GUICtrlGetState($TM_MenIcon[$t]), 16) Then __TM_IconSetImage($TM_main_GUI[$n], $TM_MenIcon[$t], $TM_men_icn[$t], $TM_men_inm[$t],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2945,76) : WARNING: $TM_itm_ft_size: possibly used before declaration.
+	If BitAND($TM_itm_sel[$t], 16) Then GUICtrlSetFont($t, $TM_itm_ft_size[$t],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2945,98) : WARNING: $TM_itm_ft_width: possibly used before declaration.
+	If BitAND($TM_itm_sel[$t], 16) Then GUICtrlSetFont($t, $TM_itm_ft_size[$t], $TM_itm_ft_width[$t],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2945,119) : WARNING: $TM_itm_ft_attr: possibly used before declaration.
+	If BitAND($TM_itm_sel[$t], 16) Then GUICtrlSetFont($t, $TM_itm_ft_size[$t], $TM_itm_ft_width[$t], $TM_itm_ft_attr[$t],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2945,135) : WARNING: $TM_itm_ft: possibly used before declaration.
+	If BitAND($TM_itm_sel[$t], 16) Then GUICtrlSetFont($t, $TM_itm_ft_size[$t], $TM_itm_ft_width[$t], $TM_itm_ft_attr[$t], $TM_itm_ft[$t])
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2948,87) : WARNING: $TM_itm_style: possibly used before declaration.
+	If BitAND($TM_itm_sel[$t], 128) Then GUICtrlSetStyle($t, BitOR(768, $TM_itm_style[$t])
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3014,28) : WARNING: $TM_gui_w: possibly used before declaration.
+	If $pos[0] + $TM_gui_w[0] +
+	~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3015,58) : WARNING: $TM_gui_h: possibly used before declaration.
+	WinMove($TM_main_GUI[0], "", $x, $pos[1] - $TM_gui_h[0] -
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3016,70) : WARNING: $TM_SideBar_size: possibly used before declaration.
+	ControlMove($TM_main_GUI[0], "", $TM_gui_pic[0], $TM_SideBar_size[0],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3018,19) : WARNING: $TM_Shdw_Mode: possibly used before declaration.
+	If $TM_Shdw_Mode Then
+	~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3042,103) : WARNING: $TM_open already declared/assigned
+		Dim $TM_win2open = $hRef, $TM_open_timeout = $timeout, $TM_last_open = $hRef, $TM_open = TimerInit()
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3072,56) : WARNING: 'Dim' deprecated as declaration. Prefer to use Local or Global.
+		Dim $TM_win2kill = $hRef, $TM_kill_timeout = $timeout,
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3072,80) : WARNING: $TM_kill already declared/assigned
+		Dim $TM_win2kill = $hRef, $TM_kill_timeout = $timeout, $TM_kill = TimerInit()
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3075,19) : WARNING: $TM_kill already declared/assigned
+	Dim $TM_kill = "",
+	~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3075,37) : WARNING: $TM_show_2nd already declared/assigned
+	Dim $TM_kill = "", $TM_show_2nd = 0
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3072,56) : WARNING: $TM_kill_timeout: declared, but not used in func.
+		Dim $TM_win2kill = $hRef, $TM_kill_timeout = $timeout,
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3118,57) : WARNING: $TM_Itm_w possibly not declared/created yet
+	ReDim $TM_main_GUI[$n], $TM_shdw_GUI[$n], $TM_Itm_w[$n],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3118,186) : WARNING: $TM_gui_def_w possibly not declared/created yet
+	ReDim $TM_main_GUI[$n], $TM_shdw_GUI[$n], $TM_Itm_w[$n], $TM_Itm_h[$n], $TM_gui_w[$n], $TM_gui_h[$n], $TM_Itm_cnt[$n], $TM_last[$n], $TM_mn_orig[$n], $TM_gui_pic[$n], $TM_gui_def_w[$n],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3118,205) : WARNING: $TM_gui_def_h possibly not declared/created yet
+	ReDim $TM_main_GUI[$n], $TM_shdw_GUI[$n], $TM_Itm_w[$n], $TM_Itm_h[$n], $TM_gui_w[$n], $TM_gui_h[$n], $TM_Itm_cnt[$n], $TM_last[$n], $TM_mn_orig[$n], $TM_gui_pic[$n], $TM_gui_def_w[$n], $TM_gui_def_h[$n],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3118,226) : WARNING: $TM_gui_def_blk possibly not declared/created yet
+	ReDim $TM_main_GUI[$n], $TM_shdw_GUI[$n], $TM_Itm_w[$n], $TM_Itm_h[$n], $TM_gui_w[$n], $TM_gui_h[$n], $TM_Itm_cnt[$n], $TM_last[$n], $TM_mn_orig[$n], $TM_gui_pic[$n], $TM_gui_def_w[$n], $TM_gui_def_h[$n], $TM_gui_def_blk[$n],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3118,278) : WARNING: $TM_sb1 possibly not declared/created yet
+	ReDim $TM_main_GUI[$n], $TM_shdw_GUI[$n], $TM_Itm_w[$n], $TM_Itm_h[$n], $TM_gui_w[$n], $TM_gui_h[$n], $TM_Itm_cnt[$n], $TM_last[$n], $TM_mn_orig[$n], $TM_gui_pic[$n], $TM_gui_def_w[$n], $TM_gui_def_h[$n], $TM_gui_def_blk[$n], $TM_SideBar[$n], $TM_SideBar_size[$n], $TM_sb1[$n],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3118,291) : WARNING: $TM_sb2 possibly not declared/created yet
+	ReDim $TM_main_GUI[$n], $TM_shdw_GUI[$n], $TM_Itm_w[$n], $TM_Itm_h[$n], $TM_gui_w[$n], $TM_gui_h[$n], $TM_Itm_cnt[$n], $TM_last[$n], $TM_mn_orig[$n], $TM_gui_pic[$n], $TM_gui_def_w[$n], $TM_gui_def_h[$n], $TM_gui_def_blk[$n], $TM_SideBar[$n], $TM_SideBar_size[$n], $TM_sb1[$n], $TM_sb2[$n],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3118,304) : WARNING: $TM_sb3 possibly not declared/created yet
+	ReDim $TM_main_GUI[$n], $TM_shdw_GUI[$n], $TM_Itm_w[$n], $TM_Itm_h[$n], $TM_gui_w[$n], $TM_gui_h[$n], $TM_Itm_cnt[$n], $TM_last[$n], $TM_mn_orig[$n], $TM_gui_pic[$n], $TM_gui_def_w[$n], $TM_gui_def_h[$n], $TM_gui_def_blk[$n], $TM_SideBar[$n], $TM_SideBar_size[$n], $TM_sb1[$n], $TM_sb2[$n], $TM_sb3[$n],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3118,317) : WARNING: $TM_sb4 possibly not declared/created yet
+	ReDim $TM_main_GUI[$n], $TM_shdw_GUI[$n], $TM_Itm_w[$n], $TM_Itm_h[$n], $TM_gui_w[$n], $TM_gui_h[$n], $TM_Itm_cnt[$n], $TM_last[$n], $TM_mn_orig[$n], $TM_gui_pic[$n], $TM_gui_def_w[$n], $TM_gui_def_h[$n], $TM_gui_def_blk[$n], $TM_SideBar[$n], $TM_SideBar_size[$n], $TM_sb1[$n], $TM_sb2[$n], $TM_sb3[$n], $TM_sb4[$n],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3118,330) : WARNING: $TM_sb5 possibly not declared/created yet
+	ReDim $TM_main_GUI[$n], $TM_shdw_GUI[$n], $TM_Itm_w[$n], $TM_Itm_h[$n], $TM_gui_w[$n], $TM_gui_h[$n], $TM_Itm_cnt[$n], $TM_last[$n], $TM_mn_orig[$n], $TM_gui_pic[$n], $TM_gui_def_w[$n], $TM_gui_def_h[$n], $TM_gui_def_blk[$n], $TM_SideBar[$n], $TM_SideBar_size[$n], $TM_sb1[$n], $TM_sb2[$n], $TM_sb3[$n], $TM_sb4[$n], $TM_sb5[$n],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3118,343) : WARNING: $TM_sb6 possibly not declared/created yet
+	ReDim $TM_main_GUI[$n], $TM_shdw_GUI[$n], $TM_Itm_w[$n], $TM_Itm_h[$n], $TM_gui_w[$n], $TM_gui_h[$n], $TM_Itm_cnt[$n], $TM_last[$n], $TM_mn_orig[$n], $TM_gui_pic[$n], $TM_gui_def_w[$n], $TM_gui_def_h[$n], $TM_gui_def_blk[$n], $TM_SideBar[$n], $TM_SideBar_size[$n], $TM_sb1[$n], $TM_sb2[$n], $TM_sb3[$n], $TM_sb4[$n], $TM_sb5[$n], $TM_sb6[$n],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3118,356) : WARNING: $TM_sb7 possibly not declared/created yet
+	ReDim $TM_main_GUI[$n], $TM_shdw_GUI[$n], $TM_Itm_w[$n], $TM_Itm_h[$n], $TM_gui_w[$n], $TM_gui_h[$n], $TM_Itm_cnt[$n], $TM_last[$n], $TM_mn_orig[$n], $TM_gui_pic[$n], $TM_gui_def_w[$n], $TM_gui_def_h[$n], $TM_gui_def_blk[$n], $TM_SideBar[$n], $TM_SideBar_size[$n], $TM_sb1[$n], $TM_sb2[$n], $TM_sb3[$n], $TM_sb4[$n], $TM_sb5[$n], $TM_sb6[$n], $TM_sb7[$n],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3118,369) : WARNING: $TM_sb8 possibly not declared/created yet
+	ReDim $TM_main_GUI[$n], $TM_shdw_GUI[$n], $TM_Itm_w[$n], $TM_Itm_h[$n], $TM_gui_w[$n], $TM_gui_h[$n], $TM_Itm_cnt[$n], $TM_last[$n], $TM_mn_orig[$n], $TM_gui_pic[$n], $TM_gui_def_w[$n], $TM_gui_def_h[$n], $TM_gui_def_blk[$n], $TM_SideBar[$n], $TM_SideBar_size[$n], $TM_sb1[$n], $TM_sb2[$n], $TM_sb3[$n], $TM_sb4[$n], $TM_sb5[$n], $TM_sb6[$n], $TM_sb7[$n], $TM_sb8[$n],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3118,382) : WARNING: $TM_sb9 possibly not declared/created yet
+	ReDim $TM_main_GUI[$n], $TM_shdw_GUI[$n], $TM_Itm_w[$n], $TM_Itm_h[$n], $TM_gui_w[$n], $TM_gui_h[$n], $TM_Itm_cnt[$n], $TM_last[$n], $TM_mn_orig[$n], $TM_gui_pic[$n], $TM_gui_def_w[$n], $TM_gui_def_h[$n], $TM_gui_def_blk[$n], $TM_SideBar[$n], $TM_SideBar_size[$n], $TM_sb1[$n], $TM_sb2[$n], $TM_sb3[$n], $TM_sb4[$n], $TM_sb5[$n], $TM_sb6[$n], $TM_sb7[$n], $TM_sb8[$n], $TM_sb9[$n],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3118,395) : WARNING: $TM_sb0 possibly not declared/created yet
+	ReDim $TM_main_GUI[$n], $TM_shdw_GUI[$n], $TM_Itm_w[$n], $TM_Itm_h[$n], $TM_gui_w[$n], $TM_gui_h[$n], $TM_Itm_cnt[$n], $TM_last[$n], $TM_mn_orig[$n], $TM_gui_pic[$n], $TM_gui_def_w[$n], $TM_gui_def_h[$n], $TM_gui_def_blk[$n], $TM_SideBar[$n], $TM_SideBar_size[$n], $TM_sb1[$n], $TM_sb2[$n], $TM_sb3[$n], $TM_sb4[$n], $TM_sb5[$n], $TM_sb6[$n], $TM_sb7[$n], $TM_sb8[$n], $TM_sb9[$n], $TM_sb0[$n]
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3118,57) : WARNING: $TM_Itm_w: declared, but not used in func.
+	ReDim $TM_main_GUI[$n], $TM_shdw_GUI[$n], $TM_Itm_w[$n],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3118,186) : WARNING: $TM_gui_def_w: declared, but not used in func.
+	ReDim $TM_main_GUI[$n], $TM_shdw_GUI[$n], $TM_Itm_w[$n], $TM_Itm_h[$n], $TM_gui_w[$n], $TM_gui_h[$n], $TM_Itm_cnt[$n], $TM_last[$n], $TM_mn_orig[$n], $TM_gui_pic[$n], $TM_gui_def_w[$n],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3118,205) : WARNING: $TM_gui_def_h: declared, but not used in func.
+	ReDim $TM_main_GUI[$n], $TM_shdw_GUI[$n], $TM_Itm_w[$n], $TM_Itm_h[$n], $TM_gui_w[$n], $TM_gui_h[$n], $TM_Itm_cnt[$n], $TM_last[$n], $TM_mn_orig[$n], $TM_gui_pic[$n], $TM_gui_def_w[$n], $TM_gui_def_h[$n],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3118,226) : WARNING: $TM_gui_def_blk: declared, but not used in func.
+	ReDim $TM_main_GUI[$n], $TM_shdw_GUI[$n], $TM_Itm_w[$n], $TM_Itm_h[$n], $TM_gui_w[$n], $TM_gui_h[$n], $TM_Itm_cnt[$n], $TM_last[$n], $TM_mn_orig[$n], $TM_gui_pic[$n], $TM_gui_def_w[$n], $TM_gui_def_h[$n], $TM_gui_def_blk[$n],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3118,278) : WARNING: $TM_sb1: declared, but not used in func.
+	ReDim $TM_main_GUI[$n], $TM_shdw_GUI[$n], $TM_Itm_w[$n], $TM_Itm_h[$n], $TM_gui_w[$n], $TM_gui_h[$n], $TM_Itm_cnt[$n], $TM_last[$n], $TM_mn_orig[$n], $TM_gui_pic[$n], $TM_gui_def_w[$n], $TM_gui_def_h[$n], $TM_gui_def_blk[$n], $TM_SideBar[$n], $TM_SideBar_size[$n], $TM_sb1[$n],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3118,291) : WARNING: $TM_sb2: declared, but not used in func.
+	ReDim $TM_main_GUI[$n], $TM_shdw_GUI[$n], $TM_Itm_w[$n], $TM_Itm_h[$n], $TM_gui_w[$n], $TM_gui_h[$n], $TM_Itm_cnt[$n], $TM_last[$n], $TM_mn_orig[$n], $TM_gui_pic[$n], $TM_gui_def_w[$n], $TM_gui_def_h[$n], $TM_gui_def_blk[$n], $TM_SideBar[$n], $TM_SideBar_size[$n], $TM_sb1[$n], $TM_sb2[$n],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3118,304) : WARNING: $TM_sb3: declared, but not used in func.
+	ReDim $TM_main_GUI[$n], $TM_shdw_GUI[$n], $TM_Itm_w[$n], $TM_Itm_h[$n], $TM_gui_w[$n], $TM_gui_h[$n], $TM_Itm_cnt[$n], $TM_last[$n], $TM_mn_orig[$n], $TM_gui_pic[$n], $TM_gui_def_w[$n], $TM_gui_def_h[$n], $TM_gui_def_blk[$n], $TM_SideBar[$n], $TM_SideBar_size[$n], $TM_sb1[$n], $TM_sb2[$n], $TM_sb3[$n],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3118,317) : WARNING: $TM_sb4: declared, but not used in func.
+	ReDim $TM_main_GUI[$n], $TM_shdw_GUI[$n], $TM_Itm_w[$n], $TM_Itm_h[$n], $TM_gui_w[$n], $TM_gui_h[$n], $TM_Itm_cnt[$n], $TM_last[$n], $TM_mn_orig[$n], $TM_gui_pic[$n], $TM_gui_def_w[$n], $TM_gui_def_h[$n], $TM_gui_def_blk[$n], $TM_SideBar[$n], $TM_SideBar_size[$n], $TM_sb1[$n], $TM_sb2[$n], $TM_sb3[$n], $TM_sb4[$n],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3118,330) : WARNING: $TM_sb5: declared, but not used in func.
+	ReDim $TM_main_GUI[$n], $TM_shdw_GUI[$n], $TM_Itm_w[$n], $TM_Itm_h[$n], $TM_gui_w[$n], $TM_gui_h[$n], $TM_Itm_cnt[$n], $TM_last[$n], $TM_mn_orig[$n], $TM_gui_pic[$n], $TM_gui_def_w[$n], $TM_gui_def_h[$n], $TM_gui_def_blk[$n], $TM_SideBar[$n], $TM_SideBar_size[$n], $TM_sb1[$n], $TM_sb2[$n], $TM_sb3[$n], $TM_sb4[$n], $TM_sb5[$n],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3118,343) : WARNING: $TM_sb6: declared, but not used in func.
+	ReDim $TM_main_GUI[$n], $TM_shdw_GUI[$n], $TM_Itm_w[$n], $TM_Itm_h[$n], $TM_gui_w[$n], $TM_gui_h[$n], $TM_Itm_cnt[$n], $TM_last[$n], $TM_mn_orig[$n], $TM_gui_pic[$n], $TM_gui_def_w[$n], $TM_gui_def_h[$n], $TM_gui_def_blk[$n], $TM_SideBar[$n], $TM_SideBar_size[$n], $TM_sb1[$n], $TM_sb2[$n], $TM_sb3[$n], $TM_sb4[$n], $TM_sb5[$n], $TM_sb6[$n],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3118,356) : WARNING: $TM_sb7: declared, but not used in func.
+	ReDim $TM_main_GUI[$n], $TM_shdw_GUI[$n], $TM_Itm_w[$n], $TM_Itm_h[$n], $TM_gui_w[$n], $TM_gui_h[$n], $TM_Itm_cnt[$n], $TM_last[$n], $TM_mn_orig[$n], $TM_gui_pic[$n], $TM_gui_def_w[$n], $TM_gui_def_h[$n], $TM_gui_def_blk[$n], $TM_SideBar[$n], $TM_SideBar_size[$n], $TM_sb1[$n], $TM_sb2[$n], $TM_sb3[$n], $TM_sb4[$n], $TM_sb5[$n], $TM_sb6[$n], $TM_sb7[$n],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3118,369) : WARNING: $TM_sb8: declared, but not used in func.
+	ReDim $TM_main_GUI[$n], $TM_shdw_GUI[$n], $TM_Itm_w[$n], $TM_Itm_h[$n], $TM_gui_w[$n], $TM_gui_h[$n], $TM_Itm_cnt[$n], $TM_last[$n], $TM_mn_orig[$n], $TM_gui_pic[$n], $TM_gui_def_w[$n], $TM_gui_def_h[$n], $TM_gui_def_blk[$n], $TM_SideBar[$n], $TM_SideBar_size[$n], $TM_sb1[$n], $TM_sb2[$n], $TM_sb3[$n], $TM_sb4[$n], $TM_sb5[$n], $TM_sb6[$n], $TM_sb7[$n], $TM_sb8[$n],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3118,382) : WARNING: $TM_sb9: declared, but not used in func.
+	ReDim $TM_main_GUI[$n], $TM_shdw_GUI[$n], $TM_Itm_w[$n], $TM_Itm_h[$n], $TM_gui_w[$n], $TM_gui_h[$n], $TM_Itm_cnt[$n], $TM_last[$n], $TM_mn_orig[$n], $TM_gui_pic[$n], $TM_gui_def_w[$n], $TM_gui_def_h[$n], $TM_gui_def_blk[$n], $TM_SideBar[$n], $TM_SideBar_size[$n], $TM_sb1[$n], $TM_sb2[$n], $TM_sb3[$n], $TM_sb4[$n], $TM_sb5[$n], $TM_sb6[$n], $TM_sb7[$n], $TM_sb8[$n], $TM_sb9[$n],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3118,395) : WARNING: $TM_sb0: declared, but not used in func.
+	ReDim $TM_main_GUI[$n], $TM_shdw_GUI[$n], $TM_Itm_w[$n], $TM_Itm_h[$n], $TM_gui_w[$n], $TM_gui_h[$n], $TM_Itm_cnt[$n], $TM_last[$n], $TM_mn_orig[$n], $TM_gui_pic[$n], $TM_gui_def_w[$n], $TM_gui_def_h[$n], $TM_gui_def_blk[$n], $TM_SideBar[$n], $TM_SideBar_size[$n], $TM_sb1[$n], $TM_sb2[$n], $TM_sb3[$n], $TM_sb4[$n], $TM_sb5[$n], $TM_sb6[$n], $TM_sb7[$n], $TM_sb8[$n], $TM_sb9[$n], $TM_sb0[$n]
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3180,27) : WARNING: $TM_Itm_w: possibly used before declaration.
+	If $x > $TM_Itm_w[$hRef] Then
+	~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3204,30) : WARNING: $t already declared/assigned
+		Dim $t = $TM_Itm[$hRef][$i],
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3204,55) : WARNING: $h already declared/assigned
+		Dim $t = $TM_Itm[$hRef][$i], $h = $TM_Itm_height[$t],
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3204,80) : WARNING: $u already declared/assigned
+		Dim $t = $TM_Itm[$hRef][$i], $h = $TM_Itm_height[$t], $u = $TM_usr_icn_sz[$t],
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3204,105) : WARNING: $m already declared/assigned
+		Dim $t = $TM_Itm[$hRef][$i], $h = $TM_Itm_height[$t], $u = $TM_usr_icn_sz[$t], $m = $TM_men_icn_sz[$t]
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3217,86) : WARNING: $TM_sb1: possibly used before declaration.
+	If $TM_SideBar[$hRef] And $mode=0 Then __TM_Create_Sidebar($hRef, $s, $TM_sb1[$hRef],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3217,102) : WARNING: $TM_sb2: possibly used before declaration.
+	If $TM_SideBar[$hRef] And $mode=0 Then __TM_Create_Sidebar($hRef, $s, $TM_sb1[$hRef], $TM_sb2[$hRef],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3217,118) : WARNING: $TM_sb3: possibly used before declaration.
+	If $TM_SideBar[$hRef] And $mode=0 Then __TM_Create_Sidebar($hRef, $s, $TM_sb1[$hRef], $TM_sb2[$hRef], $TM_sb3[$hRef],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3217,134) : WARNING: $TM_sb4: possibly used before declaration.
+	If $TM_SideBar[$hRef] And $mode=0 Then __TM_Create_Sidebar($hRef, $s, $TM_sb1[$hRef], $TM_sb2[$hRef], $TM_sb3[$hRef], $TM_sb4[$hRef],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3217,150) : WARNING: $TM_sb5: possibly used before declaration.
+	If $TM_SideBar[$hRef] And $mode=0 Then __TM_Create_Sidebar($hRef, $s, $TM_sb1[$hRef], $TM_sb2[$hRef], $TM_sb3[$hRef], $TM_sb4[$hRef], $TM_sb5[$hRef],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3217,166) : WARNING: $TM_sb6: possibly used before declaration.
+	If $TM_SideBar[$hRef] And $mode=0 Then __TM_Create_Sidebar($hRef, $s, $TM_sb1[$hRef], $TM_sb2[$hRef], $TM_sb3[$hRef], $TM_sb4[$hRef], $TM_sb5[$hRef], $TM_sb6[$hRef],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3217,182) : WARNING: $TM_sb7: possibly used before declaration.
+	If $TM_SideBar[$hRef] And $mode=0 Then __TM_Create_Sidebar($hRef, $s, $TM_sb1[$hRef], $TM_sb2[$hRef], $TM_sb3[$hRef], $TM_sb4[$hRef], $TM_sb5[$hRef], $TM_sb6[$hRef], $TM_sb7[$hRef],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3217,198) : WARNING: $TM_sb8: possibly used before declaration.
+	If $TM_SideBar[$hRef] And $mode=0 Then __TM_Create_Sidebar($hRef, $s, $TM_sb1[$hRef], $TM_sb2[$hRef], $TM_sb3[$hRef], $TM_sb4[$hRef], $TM_sb5[$hRef], $TM_sb6[$hRef], $TM_sb7[$hRef], $TM_sb8[$hRef],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3217,214) : WARNING: $TM_sb9: possibly used before declaration.
+	If $TM_SideBar[$hRef] And $mode=0 Then __TM_Create_Sidebar($hRef, $s, $TM_sb1[$hRef], $TM_sb2[$hRef], $TM_sb3[$hRef], $TM_sb4[$hRef], $TM_sb5[$hRef], $TM_sb6[$hRef], $TM_sb7[$hRef], $TM_sb8[$hRef], $TM_sb9[$hRef],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3217,230) : WARNING: $TM_sb0: possibly used before declaration.
+	If $TM_SideBar[$hRef] And $mode=0 Then __TM_Create_Sidebar($hRef, $s, $TM_sb1[$hRef], $TM_sb2[$hRef], $TM_sb3[$hRef], $TM_sb4[$hRef], $TM_sb5[$hRef], $TM_sb6[$hRef], $TM_sb7[$hRef], $TM_sb8[$hRef], $TM_sb9[$hRef], $TM_sb0[$hRef],
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3291,27) : ERROR: $iAngle already declared as parameter
+		Dim $iAngle = 1119092736,
+		~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3291,62) : WARNING: $iYt already declared/assigned
+		Dim $iAngle = 1119092736, $iYt = ($iW - $iHeight) / 2 - $iW
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3298,27) : ERROR: $iAngle already declared as parameter
+		Dim $iAngle = 1132920832,
+		~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3298,56) : WARNING: $iYt already declared/assigned
+		Dim $iAngle = 1132920832, $iYt = ($iW - $iHeight) / 2
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3368,28) : WARNING: $TM_shdw_col: possibly used before declaration.
+	GUISetBkColor($TM_shdw_col,
+	~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3369,50) : WARNING: $TM_shdw_trans: possibly used before declaration.
+	WinSetTrans($TM_shdw_GUI[$x], "", $TM_shdw_trans)
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3408,23) : WARNING: $t possibly not declared/created yet
+		$t = $TM_Itm[$i][$j]
+		~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3434,23) : WARNING: $t possibly not declared/created yet
+		$t = $TM_Itm[$i][$j]
+		~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3476,53) : WARNING: $TM_last_created: possibly used before declaration.
+	If $x = -1 Then Return StringSplit($TM_last_created,
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3540,29) : WARNING: $hWndGUI: declared, but not used in func.
+Func __TM_Interrupt($hWndGUI,
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3540,37) : WARNING: $MsgID: declared, but not used in func.
+Func __TM_Interrupt($hWndGUI, $MsgID)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3564,96) : WARNING: $TM_timer: possibly used before declaration.
+	$TM_timer = DllCall("user32.dll", "int", "SetTimer", "hwnd", $TM_main_GUI[0], "int", $TM_timer,
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3573,36) : WARNING: $x: declared, but not used in func.
+Func _TrayMenu_SetFlashIntervall($x)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3643,38) : WARNING: $hUser32Dll: possibly used before declaration.
+	Local $bResult = DllCall($hUser32Dll,
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3715,41) : WARNING: $hLib possibly not declared/created yet
+	$hLib = _WinAPI_LoadLibrary ($filename)
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3716,62) : WARNING: $IMAGE_BITMAP: possibly used before declaration.
+	$hbmp = _WinAPI_LoadImage ($hLib, $imageIndex, $IMAGE_BITMAP,
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3716,86) : WARNING: $LR_DEFAULTCOLOR: possibly used before declaration.
+	$hbmp = _WinAPI_LoadImage ($hLib, $imageIndex, $IMAGE_BITMAP, 0, 0, $LR_DEFAULTCOLOR)
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3716,87) : WARNING: $hbmp possibly not declared/created yet
+	$hbmp = _WinAPI_LoadImage ($hLib, $imageIndex, $IMAGE_BITMAP, 0, 0, $LR_DEFAULTCOLOR)
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3793,40) : WARNING: $hComctl32Dll: possibly used before declaration.
+	Local $bResult = DllCall($hComctl32Dll,
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3851,39) : WARNING: $hMsimg32Dll: possibly used before declaration.
+	Local $nResult = DllCall($hMsimg32Dll,
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3867,20) : WARNING: $bUseRGBColors: possibly used before declaration.
+	If $bUseRGBColors Then
+	~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(2762,22) : WARNING: $TM_IsIcon: declared global in function only. Prefer top of file.
+	Global $TM_IsIcon[1]
+	~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3715,40) : ERROR: _WinAPI_LoadLibrary(): undefined function.
+	$hLib = _WinAPI_LoadLibrary ($filename)
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3716,86) : ERROR: _WinAPI_LoadImage(): undefined function.
+	$hbmp = _WinAPI_LoadImage ($hLib, $imageIndex, $IMAGE_BITMAP, 0, 0, $LR_DEFAULTCOLOR)
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3718,28) : ERROR: _WinAPI_FreeLibrary(): undefined function.
+	_WinAPI_FreeLibrary ($hLib)
+	~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3(3719,29) : ERROR: _WinAPI_DeleteObject(): undefined function.
+	_WinAPI_DeleteObject ($hbmp)
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Dokumente und Einstellungen\Greenhorn\Desktop\_TrayMenu_v0.91\_TrayMenu.au3 - 6 error(s), 506 warning(s)
+!>16:16:21 AU3Check ended.rc:2
++>16:16:21 AutoIt3Wrapper Finished
+>Exit code: 0    Time: 2.347
