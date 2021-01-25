@@ -1,0 +1,4 @@
+_Db_Write($pFile, $nIndex, $sText) Writes to a database (Requires #Include <Database.au3>)
+_Db_Read($pFile, $nIndex) Reads a database (Requires #Include <Database.au3>)
+_Db_GetIndex($pFile) Gets the number of indexes in a database file (Requires #Include <Database.au3>)
+_Db_AddIndexes($pFile, $nIndexes) Adds more space for data in the database file (Requires #Include <Database.au3>)
