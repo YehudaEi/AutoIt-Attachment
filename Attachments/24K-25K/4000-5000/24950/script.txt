@@ -1,0 +1,2463 @@
+
+#include <GUIConstants.au3>
+#include <EditConstants.au3>
+#Include <GuiTreeView.au3>
+#include <WindowsConstants.au3>
+#include <EditConstants.au3>
+#Include <GuiEdit.au3>
+
+Local $avArray[120]
+Global $tab_geb = 9999, $tab_gro = 9999   ; <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Global $CheckBox[31]
+Global $newvak
+Global $vakcount = 1
+Global $top = 50
+Global $left = 15
+Global $count = 0
+Global $vtotal = 1
+Global $place
+
+Opt("GUIOnEventMode", 1)
+
+Global $IniPath1 = @ScriptDir & "\Groepen\*.ini", $IniPath2 = @ScriptDir & "\Gebruikers\*.ini"
+
+$Gui = GUICreate("Cijfer Registratie Systeem | Hoofdscherm", 780, 430)
+GUISetOnEvent($GUI_EVENT_CLOSE, "closegui_gui")
+$menu_bestand = GUICtrlCreateMenu("&Bestand")
+$menu_bestand_exit = GUICtrlCreateMenuItem("Afsluiten", $menu_bestand)
+GUICtrlSetOnEvent(-1, "menu")
+$menu_Groepen = GUICtrlCreateMenu("&Groepen")
+$menu_groepen_toevoegen = GUICtrlCreateMenuItem("Toevoegen", $menu_groepen)
+GUICtrlSetOnEvent(-1, "menu")
+$menu_groepen_wijzigen = GUICtrlCreateMenuItem("Wijzigen", $menu_groepen)
+GUICtrlSetOnEvent(-1, "menu")
+$menu_groepen_verwijderen = GUICtrlCreateMenuItem("Verwijderen", $menu_groepen)
+GUICtrlSetOnEvent(-1, "menu")
+$menu_gebruikers = GUICtrlCreateMenu("&Gebruikers")
+$menu_gebruikers_toevoegen = GUICtrlCreateMenuItem("Toevoegen", $menu_gebruikers)
+GUICtrlSetOnEvent(-1, "menu")
+$menu_gebruikers_wijzigen = GUICtrlCreateMenuItem("Wijzigen", $menu_gebruikers)
+GUICtrlSetOnEvent(-1, "menu")
+$menu_gebruikers_verwijderen = GUICtrlCreateMenuItem("Verwijderen", $menu_gebruikers)
+GUICtrlSetOnEvent(-1, "menu")
+$menu_vakken = GUICtrlCreateMenu("&Vakken")
+$menu_vakken_toevoegen = GUICtrlCreateMenuItem("Toevoegen", $menu_vakken)
+GUICtrlSetOnEvent(-1, "menu")
+$menu_vakken_wijzigen = GUICtrlCreateMenuItem("Wijzigen", $menu_vakken)
+GUICtrlSetOnEvent(-1, "menu")
+$menu_vakken_verwijderen = GUICtrlCreateMenuItem("Verwijderen", $menu_vakken)
+GUICtrlSetOnEvent(-1, "menu")
+$menu_cijfers = GUICtrlCreateMenu("&Cijfers")
+$menu_cijfers_toevoegen = GUICtrlCreateMenuItem("Toevoegen", $menu_cijfers)
+GUICtrlSetOnEvent(-1, "menu")
+$menu_cijfers_wijzigen = GUICtrlCreateMenuItem("Wijzigen", $menu_cijfers)
+GUICtrlSetOnEvent(-1, "menu")
+$menu_cijfers_verwijderen = GUICtrlCreateMenuItem("Verwijderen", $menu_cijfers)
+GUICtrlSetOnEvent(-1, "menu")
+$menu_beoordeling = GUICtrlCreateMenu("Beoord&elingen")
+$menu_beoordeling_toevoegen = GUICtrlCreateMenuItem("Toevoegen", $menu_beoordeling)
+GUICtrlSetOnEvent(-1, "menu")
+$menu_beoordeling_wijzigen = GUICtrlCreateMenuItem("Wijzigen", $menu_beoordeling)
+GUICtrlSetOnEvent(-1, "menu")
+$menu_beoordeling_verwijderen = GUICtrlCreateMenuItem("Verwijderen", $menu_beoordeling)
+GUICtrlSetOnEvent(-1, "menu")
+
+$menu_docent = GUICtrlCreateMenu("&Docenten")
+$menu_docent_toevoegen = GUICtrlCreateMenuItem("Toevoegen", $menu_docent)
+GUICtrlSetOnEvent(-1, "menu")
+$menu_docent_wijzigen = GUICtrlCreateMenuItem("Wijzigen", $menu_docent)
+GUICtrlSetOnEvent(-1, "menu")
+$menu_docent_verwijderen = GUICtrlCreateMenuItem("Verwijderen", $menu_docent)
+GUICtrlSetOnEvent(-1, "menu")
+
+$menu_help = GUICtrlCreateMenu("&Help")
+$menu_help_Help = GUICtrlCreateMenuItem("Help onderwerpen", $menu_help)
+GUICtrlSetOnEvent(-1, "menu")
+$menu_help_over = GUICtrlCreateMenuItem("Info", $menu_help)
+GUICtrlSetOnEvent(-1, "menu")
+$TV = GUICtrlCreateTreeView(5, 35, 120, 350)
+$TVI1 = GUICtrlCreateTreeViewItem("Groepen", $TV)
+GUICtrlSetColor(-1, 0x0000C0)
+GUICtrlSetState(-1, $GUI_DEFBUTTON)
+TVLoadIni($TVI1, $IniPath1)
+$TVI2 = GUICtrlCreateTreeViewItem("Gebruikers", $TV)
+GUICtrlSetColor(-1, 0x0000C0)
+GUICtrlSetState(-1, $GUI_DEFBUTTON)
+TVLoadIni($TVI2, $IniPath2)
+
+GUISetState (@SW_SHOW, $Gui)
+
+$Gui_addvak = GUICreate("Cijfer Registratie Systeem | Nieuw vak", 450, 275, -1, -1, -1, -1, $Gui)
+GUISetOnEvent($GUI_EVENT_CLOSE, "closegui_addvak")
+GUICtrlCreateLabel("vak:", 10, 10)
+$vak1 = GUICtrlCreateInput("", 55, 7, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 10, 35)
+$vak2 = GUICtrlCreateInput("", 55, 32, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 10, 60)
+$vak3 = GUICtrlCreateInput("", 55, 57, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 10, 85)
+$vak4 = GUICtrlCreateInput("", 55, 82, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 10, 110)
+$vak5 = GUICtrlCreateInput("", 55, 107, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 10, 135)
+$vak6 = GUICtrlCreateInput("", 55, 132, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 110, 10)
+$vak7 = GUICtrlCreateInput("", 155, 7, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 110, 35)
+$vak8 = GUICtrlCreateInput("", 155, 32, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 110, 60)
+$vak9 = GUICtrlCreateInput("", 155, 57, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 110, 85)
+$vak10 = GUICtrlCreateInput("", 155, 82, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 110, 110)
+$vak11 = GUICtrlCreateInput("", 155, 107, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 110, 135)
+$vak12 = GUICtrlCreateInput("", 155, 132, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 210, 10)
+$vak13 = GUICtrlCreateInput("", 255, 7, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 210, 35)
+$vak14 = GUICtrlCreateInput("", 255, 32, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 210, 60)
+$vak15 = GUICtrlCreateInput("", 255, 57, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 10, 160)
+$vak16 = GUICtrlCreateInput("", 55, 157, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 10, 185)
+$vak17 = GUICtrlCreateInput("", 55, 182, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 10, 210)
+$vak18 = GUICtrlCreateInput("", 55, 207, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 10, 235)
+$vak19 = GUICtrlCreateInput("", 55, 232, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 110, 160)
+$vak20 = GUICtrlCreateInput("", 155, 157, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 110, 185)
+$vak21 = GUICtrlCreateInput("", 155, 182, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 110, 210)
+$vak22 = GUICtrlCreateInput("", 155, 207, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 110, 235)
+$vak23 = GUICtrlCreateInput("", 155, 232, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 210, 85)
+$vak24 = GUICtrlCreateInput("", 255, 82, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 210, 110)
+$vak25 = GUICtrlCreateInput("", 255, 107, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 210, 135)
+$vak26 = GUICtrlCreateInput("", 255, 132, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 210, 160)
+$vak27 = GUICtrlCreateInput("", 255, 157, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 210, 185)
+$vak28 = GUICtrlCreateInput("", 255, 182, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 210, 210)
+$vak29 = GUICtrlCreateInput("", 255, 207, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 210, 235)
+$vak30 = GUICtrlCreateInput("", 255, 232, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateButton("OK", 350, 235, 80, 35)
+GUICtrlSetOnEvent(-1, "addvak")
+GUISetState (@SW_HIDE, $Gui_addvak)
+
+$Gui_addgroup = GUICreate("Cijfer Registratie Systeem | Nieuwe groep", 450, 275, -1, -1, -1, -1, $Gui)
+GUISetOnEvent($GUI_EVENT_CLOSE, "closegui_addgroup") 
+GUICtrlCreateLabel("Groepnaam:", 10, 10)
+$newgroup = GUICtrlCreateInput("", 80, 7, 100, 20)
+GUICtrlCreateGroup("Vakken", 10, 30, 430, 243)
+GUICtrlCreateButton("OK", 350, 235, 80, 35)
+GUICtrlSetOnEvent(-1, "GroupAddOK")
+GUISetState(@SW_HIDE, $Gui_addgroup)
+
+$Gui_adduser = GUICreate("Cijfer Registratie Systeem | Nieuwe gebruiker", 	350, 255, -1, -1, -1, -1, $Gui)
+GUISetOnEvent($GUI_EVENT_CLOSE, "closegui_adduser")
+GUICtrlCreateLabel("Naam                  :", 10, 10)
+$naam1 = GUICtrlCreateInput("", 100, 7, 140, 20)
+GUICtrlCreateLabel("Adres                  :", 10, 40)
+$adres1 = GUICtrlCreateInput("", 100, 37, 140, 20)
+GUICtrlCreateLabel("Postcode            :", 10, 70)
+$postcode1 = GUICtrlCreateInput("", 100, 67, 140, 20)
+GUICtrlCreateLabel("Woonplaats        :", 10, 100)
+$woonplaats1 = GUICtrlCreateInput("", 100, 97, 140, 20)
+GUICtrlCreateLabel("Telefoonnummer :", 10, 130)
+$telefoon1 = GUICtrlCreateInput("", 100, 127, 140, 20)
+GUICtrlCreateLabel("Email adres         :", 10, 160)
+$email1 = GUICtrlCreateInput("", 100, 157, 140, 20)
+GUICtrlCreateLabel("OV-nummer         :", 10, 190)
+$ovn1 = GUICtrlCreateInput("", 100, 187, 140, 20)
+GUICtrlCreateLabel("Groep                  :", 10, 220)
+$groupselect = GUICtrlCreateCombo("", 100, 217, 80, 20) 
+$adduser_OK = GUICtrlCreateButton("OK", 250, 210, 80, 30)
+GUICtrlSetOnEvent(-1, "adduser_save")
+GUISetState(@SW_HIDE, $Gui_adduser)
+
+$Gui_addmark = GUICreate("Cijfer Registratie Systeem | Cijfer Toevoegen", 	350, 255, -1, -1, -1, -1, $Gui)
+GUISetOnEvent($GUI_EVENT_CLOSE, "closegui_guiaddmark")
+GUICtrlCreateLabel("OV-Nummer                  :", 10, 10)
+$ov1 = GUICtrlCreateInput("", 100, 7, 80, 20)
+$ovselect = GUICtrlCreateButton("selecteer", 190, 7, 60, 20)
+GUICtrlSetOnEvent(-1, "addmark_select")
+GUICtrlCreateLabel("Vak                  :", 10, 40)
+$mvak1 = GUICtrlCreateCombo("", 100, 37, 60, 20)
+$mvak2 = GUICtrlCreateCombo("Rapport 1 \ Cijfer 1", 190, 37, 150, 20)
+GUICtrlSetData($mvak2, "Rapport 1 \ Cijfer 2|Rapport 1 \ Cijfer 3|Rapport 1 \ Cijfer 4|Rapport 1 \ Rapport Cijfer|Rapport 2 \ Cijfer 1|Rapport 2 \ Cijfer 2|Rapport 2 \ Cijfer 3|Rapport 2 \ Cijfer 4|Rapport 2 \ Rapport Cijfer|Rapport 3 \ Cijfer 1|Rapport 3 \ Cijfer 2|Rapport 3 \ Cijfer 3|Rapport 3 \ Cijfer 4|Rapport 3 \ Rapport Cijfer")
+GUICtrlCreateLabel("Cijfer            :", 10, 70)
+$cijfer1 = GUICtrlCreateInput("", 100, 67, 50, 20)
+$addmark_OK = GUICtrlCreateButton("OK", 250, 210, 80, 30)
+GUICtrlSetOnEvent(-1, "addmark_save")
+GUISetState(@SW_HIDE, $Gui_addmark)
+
+$Gui_editgroup = GUICreate("Cijfer Registratie Systeem | Wijzig groep", 450, 275, -1, -1, -1, -1, $Gui)
+GUISetOnEvent($GUI_EVENT_CLOSE, "Closegui_editgroup") 
+GUICtrlCreateLabel("Groepnaam:", 10, 10)
+$editgroup = GUICtrlCreateInput("", 80, 7, 100, 20)
+$ovselect = GUICtrlCreateButton("selecteer", 190, 7, 60, 20)
+GUICtrlSetOnEvent(-1, "editgroup_select")
+GUICtrlCreateGroup("Vakken", 10, 30, 430, 243)
+GUICtrlCreateButton("OK", 350, 235, 80, 35)
+GUICtrlSetOnEvent(-1, "GroupEditOK")
+GUISetState(@SW_HIDE, $Gui_editgroup)
+
+$Gui_delgroup = GUICreate("Cijfer Registratie Systeem | Groep verwijderen", 280, 75, -1, -1, -1, -1, $Gui)
+GUISetOnEvent($GUI_EVENT_CLOSE, "closegui_delgroup")
+GUICtrlCreateLabel("Groep:", 60, 30)
+$delgroups = GUICtrlCreateCombo("", 120, 27, 100, 20)
+$delgroupok = GUICtrlCreateButton("OK", 230, 5, 45, 65)
+GUICtrlSetOnEvent(-1, "Delgroup")
+GUISetState (@SW_HIDE, $Gui_delgroup)
+
+$Gui_edituser = GUICreate("Cijfer Registratie Systeem | Wijzig gebruiker", 	350, 255, -1, -1, -1, -1, $Gui)
+GUISetOnEvent($GUI_EVENT_CLOSE, "closegui_edituser")
+GUICtrlCreateLabel("OV-nummer         :", 10, 10)
+$ovn2 = GUICtrlCreateInput("", 100, 7, 80, 20)
+$ovselect1 = GUICtrlCreateButton("selecteer", 190, 7, 60, 20)
+GUICtrlSetOnEvent(-1, "edituser_select")
+GUICtrlCreateLabel("Naam                  :", 10, 40)
+$naam2 = GUICtrlCreateInput("", 100, 37, 140, 20)
+GUICtrlCreateLabel("Adres                  :", 10, 70)
+$adres2 = GUICtrlCreateInput("", 100, 67, 140, 20)
+GUICtrlCreateLabel("Postcode            :", 10, 100)
+$postcode2 = GUICtrlCreateInput("", 100, 97, 140, 20)
+GUICtrlCreateLabel("Woonplaats        :", 10, 130)
+$woonplaats2 = GUICtrlCreateInput("", 100, 127, 140, 20)
+GUICtrlCreateLabel("Telefoonnummer :", 10, 160)
+$telefoon2 = GUICtrlCreateInput("", 100, 157, 140, 20)
+GUICtrlCreateLabel("Email adres         :", 10, 190)
+$email2 = GUICtrlCreateInput("", 100, 187, 140, 20)
+GUICtrlCreateLabel("Groep                  :", 10, 220)
+$groupselect2 = GUICtrlCreateCombo("", 100, 217, 80, 20) 
+$adduser_OK = GUICtrlCreateButton("OK", 250, 210, 80, 30)
+GUICtrlSetOnEvent(-1, "edituser_save")
+GUISetState(@SW_HIDE, $Gui_edituser)
+
+$Gui_deluser = GUICreate("Cijfer Registratie Systeem | Gebruiker verwijderen", 280, 75, -1, -1, -1, -1, $Gui)
+GUISetOnEvent($GUI_EVENT_CLOSE, "closegui_deluser")
+GUICtrlCreateLabel("OV-Nummer:", 60, 30)
+$groups = GUICtrlCreateCombo("", 120, 27, 100, 20)
+$delgroupok = GUICtrlCreateButton("OK", 230, 5, 45, 65)
+GUICtrlSetOnEvent(-1, "Deluser")
+GUISetState (@SW_HIDE, $Gui_deluser)
+
+$Gui_editvak = GUICreate("Cijfer Registratie Systeem | Wijzig vak", 450, 275, -1, -1, -1, -1, $Gui)
+GUISetOnEvent($GUI_EVENT_CLOSE, "closegui_editvak")
+GUICtrlCreateLabel("vak:", 10, 10)
+$editvak1 = GUICtrlCreateInput("", 55, 7, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 10, 35)
+$editvak2 = GUICtrlCreateInput("", 55, 32, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 10, 60)
+$editvak3 = GUICtrlCreateInput("", 55, 57, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 10, 85)
+$editvak4 = GUICtrlCreateInput("", 55, 82, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 10, 110)
+$editvak5 = GUICtrlCreateInput("", 55, 107, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 10, 135)
+$editvak6 = GUICtrlCreateInput("", 55, 132, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 110, 10)
+$editvak7 = GUICtrlCreateInput("", 155, 7, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 110, 35)
+$editvak8 = GUICtrlCreateInput("", 155, 32, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 110, 60)
+$editvak9 = GUICtrlCreateInput("", 155, 57, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 110, 85)
+$editvak10 = GUICtrlCreateInput("", 155, 82, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 110, 110)
+$editvak11 = GUICtrlCreateInput("", 155, 107, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 110, 135)
+$editvak12 = GUICtrlCreateInput("", 155, 132, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 210, 10)
+$editvak13 = GUICtrlCreateInput("", 255, 7, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 210, 35)
+$editvak14 = GUICtrlCreateInput("", 255, 32, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 210, 60)
+$editvak15 = GUICtrlCreateInput("", 255, 57, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 10, 160)
+$editvak16 = GUICtrlCreateInput("", 55, 157, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 10, 185)
+$editvak17 = GUICtrlCreateInput("", 55, 182, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 10, 210)
+$editvak18 = GUICtrlCreateInput("", 55, 207, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 10, 235)
+$editvak19 = GUICtrlCreateInput("", 55, 232, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 110, 160)
+$editvak20 = GUICtrlCreateInput("", 155, 157, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 110, 185)
+$editvak21 = GUICtrlCreateInput("", 155, 182, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 110, 210)
+$editvak22 = GUICtrlCreateInput("", 155, 207, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 110, 235)
+$editvak23 = GUICtrlCreateInput("", 155, 232, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 210, 85)
+$editvak24 = GUICtrlCreateInput("", 255, 82, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 210, 110)
+$editvak25 = GUICtrlCreateInput("", 255, 107, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 210, 135)
+$editvak26 = GUICtrlCreateInput("", 255, 132, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 210, 160)
+$editvak27 = GUICtrlCreateInput("", 255, 157, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 210, 185)
+$editvak28 = GUICtrlCreateInput("", 255, 182, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 210, 210)
+$editvak29 = GUICtrlCreateInput("", 255, 207, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateLabel("vak:", 210, 235)
+$editvak30 = GUICtrlCreateInput("", 255, 232, 40, 20)
+GUICtrlSetLimit(-1, "3", "3")
+GUICtrlCreateButton("OK", 350, 235, 80, 35)
+GUICtrlSetOnEvent(-1, "editvakok")
+GUISetState (@SW_HIDE, $Gui_editvak)
+
+$Gui_delvak = GUICreate("Cijfer Registratie Systeem | Verwijder vak", 150, 125, -1, -1, -1, -1, $Gui)
+GUISetOnEvent($GUI_EVENT_CLOSE, "closegui_delvak")
+GUICtrlCreateLabel("Vak:", 10, 40)
+$vakselectdel = GUICtrlCreateCombo("", 55, 37, 60, 20)
+GUICtrlSetOnEvent(-1, "delvak_save")
+GUISetState (@SW_HIDE, $Gui_delvak)
+
+$Gui_editmark = GUICreate("Cijfer Registratie Systeem | Cijfer Wijzigen", 	350, 255, -1, -1, -1, -1, $Gui)
+GUISetOnEvent($GUI_EVENT_CLOSE, "closegui_editmark")
+GUICtrlCreateLabel("OV-Nummer                  :", 10, 10)
+$ov3 = GUICtrlCreateInput("", 100, 7, 80, 20)
+$ovselect4 = GUICtrlCreateButton("selecteer", 190, 7, 60, 20)
+GUICtrlSetOnEvent(-1, "editmark_select")
+GUICtrlCreateLabel("Vak                  :", 10, 40)
+$vak4 = GUICtrlCreateCombo("", 100, 37, 60, 20)
+$vak5 = GUICtrlCreateCombo("Rapport 1 \ Cijfer 1", 190, 37, 150, 20)
+GUICtrlSetData($vak5, "Rapport 1 \ Cijfer 2|Rapport 1 \ Cijfer 3|Rapport 1 \ Cijfer 4|Rapport 1 \ Rapport Cijfer|Rapport 2 \ Cijfer 1|Rapport 2 \ Cijfer 2|Rapport 2 \ Cijfer 3|Rapport 2 \ Cijfer 4|Rapport 2 \ Rapport Cijfer|Rapport 3 \ Cijfer 1|Rapport 3 \ Cijfer 2|Rapport 3 \ Cijfer 3|Rapport 3 \ Cijfer 4|Rapport 3 \ Rapport Cijfer")
+GUICtrlCreateLabel("Cijfer            :", 10, 70)
+$cijfer4 = GUICtrlCreateInput("", 100, 67, 50, 20)
+$addmark_OK = GUICtrlCreateButton("OK", 250, 210, 80, 30)
+GUICtrlSetOnEvent(-1, "editmark_save")
+GUISetState(@SW_HIDE, $Gui_editmark)
+
+$Gui_delmark = GUICreate("Cijfer Registratie Systeem | Cijfer Verwijderen", 	350, 155, -1, -1, -1, -1, $Gui)
+GUISetOnEvent($GUI_EVENT_CLOSE, "closegui_delmark")
+GUICtrlCreateLabel("OV-Nummer                  :", 10, 10)
+$ov8 = GUICtrlCreateInput("", 100, 7, 80, 20)
+$ovselect = GUICtrlCreateButton("selecteer", 190, 7, 60, 20)
+GUICtrlSetOnEvent(-1, "delmark_select")
+GUICtrlCreateLabel("Vak                  :", 10, 40)
+$vak8 = GUICtrlCreateCombo("", 100, 37, 60, 20)
+$vak9 = GUICtrlCreateCombo("Rapport 1 \ Cijfer 1", 190, 37, 150, 20)
+GUICtrlSetData($vak9, "Rapport 1 \ Cijfer 2|Rapport 1 \ Cijfer 3|Rapport 1 \ Cijfer 4|Rapport 1 \ Rapport Cijfer|Rapport 2 \ Cijfer 1|Rapport 2 \ Cijfer 2|Rapport 2 \ Cijfer 3|Rapport 2 \ Cijfer 4|Rapport 2 \ Rapport Cijfer|Rapport 3 \ Cijfer 1|Rapport 3 \ Cijfer 2|Rapport 3 \ Cijfer 3|Rapport 3 \ Cijfer 4|Rapport 3 \ Rapport Cijfer")
+$editmark_OK = GUICtrlCreateButton("OK", 250, 110, 80, 30)
+GUICtrlSetOnEvent(-1, "delmark_save")
+GUISetState(@SW_HIDE, $Gui_delmark)
+
+$gui_addbeoordeling = GUICreate("Cijfer Registratie Systeem | Beoordeling toevoegen" , 350, 490, -1, -1, -1, -1, $Gui)
+GUISetOnEvent($GUI_EVENT_CLOSE, "closegui_addbeoordeling")
+GUICtrlCreateLabel("Gebruiker:", 10, 10)
+$addbeoordeling_user = GUICtrlCreateInput("", 80, 7, 80, 20)
+$userselect = GUICtrlCreateButton("selecteer", 170, 7, 60, 20)
+GUICtrlSetOnEvent(-1, "addbeoordeling_select")
+$addbeoordeling_group = GUICtrlCreateLabel("Groep:", 10, 40, 100)
+GUICtrlCreateLabel("Docent:", 10, 70)
+$addbeoordeling_docent = GUICtrlCreateCombo("", 80, 67, 100, 20)
+GUICtrlCreateLabel("Beoordeling:", 10, 100)
+$addbeoordeling = GUICtrlCreateEdit("", 10, 97, 330, 330, $ES_WANTRETURN + $WS_VSCROLL)
+_GUICtrlEdit_SetMargins($addbeoordeling, $EC_RIGHTMARGIN, 0, 10)
+GUICtrlCreateButton("Opslaan", 125, 450, 100, 30)
+GUICtrlSetOnEvent(-1, "addbeoordeling_save")
+GUISetState(@SW_HIDE, $gui_addbeoordeling)
+
+$gui_editbeoordeling = GUICreate("Cijfer Registratie Systeem | Beoordeling wijzigen" , 350, 490, -1, -1, -1, -1, $Gui)
+GUISetOnEvent($GUI_EVENT_CLOSE, "closegui_editbeoordeling")
+GUICtrlCreateLabel("Gebruiker:", 10, 10)
+$editbeoordeling_user = GUICtrlCreateInput("", 80, 7, 80, 20)
+$userselect = GUICtrlCreateButton("selecteer", 170, 7, 60, 20)
+GUICtrlSetOnEvent(-1, "editbeoordeling_select")
+$editbeoordeling_group = GUICtrlCreateLabel("Groep:", 10, 40, 100)
+GUICtrlCreateLabel("Docent:", 10, 70)
+$editbeoordeling_docent = GUICtrlCreateCombo("", 80, 67, 100, 20)
+$userselect = GUICtrlCreateButton("laden", 190, 67, 60, 20)
+GUICtrlSetOnEvent(-1, "editbeoordeling_load")
+GUICtrlCreateLabel("Beoordeling:", 10, 100)
+$editbeoordeling = GUICtrlCreateEdit("", 10, 97, 330, 330, $ES_WANTRETURN + $WS_VSCROLL)
+_GUICtrlEdit_SetMargins($editbeoordeling, $EC_RIGHTMARGIN, 0, 10)
+GUICtrlCreateButton("Opslaan", 125, 450, 100, 30)
+GUICtrlSetOnEvent(-1, "editbeoordeling_save")
+GUISetState(@SW_HIDE, $gui_editbeoordeling)
+
+$gui_delbeoordeling = GUICreate("Cijfer Registratie Systeem | Beoordeling verwijderen" , 350, 190, -1, -1, -1, -1, $Gui)
+GUISetOnEvent($GUI_EVENT_CLOSE, "closegui_delbeoordeling")
+GUICtrlCreateLabel("Gebruiker:", 10, 10)
+$delbeoordeling_user = GUICtrlCreateInput("", 80, 7, 80, 20)
+$userselect = GUICtrlCreateButton("selecteer", 170, 7, 60, 20)
+GUICtrlSetOnEvent(-1, "delbeoordeling_select")
+$delbeoordeling_group = GUICtrlCreateLabel("Groep:", 10, 40, 100)
+GUICtrlCreateLabel("Docent:", 10, 70)
+$delbeoordeling_docent = GUICtrlCreateCombo("", 80, 67, 100, 20)
+GUICtrlCreateButton("Verwijderen", 125, 150, 100, 30)
+GUICtrlSetOnEvent(-1, "delbeoordeling_save")
+GUISetState(@SW_HIDE, $gui_delbeoordeling)
+
+$Gui_adddocent = GUICreate("Cijfer Registratie Systeem | Nieuwe docent", 450, 275, -1, -1, -1, -1, $Gui)
+GUISetOnEvent($GUI_EVENT_CLOSE, "closegui_adddocent")
+GUICtrlCreateLabel("docent:", 10, 10)
+$docent1 = GUICtrlCreateInput("", 55, 7, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 10, 35)
+$docent2 = GUICtrlCreateInput("", 55, 32, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 10, 60)
+$docent3 = GUICtrlCreateInput("", 55, 57, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 10, 85)
+$docent4 = GUICtrlCreateInput("", 55, 82, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 10, 110)
+$docent5 = GUICtrlCreateInput("", 55, 107, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 10, 135)
+$docent6 = GUICtrlCreateInput("", 55, 132, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 110, 10)
+$docent7 = GUICtrlCreateInput("", 155, 7, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 110, 35)
+$docent8 = GUICtrlCreateInput("", 155, 32, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 110, 60)
+$docent9 = GUICtrlCreateInput("", 155, 57, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 110, 85)
+$docent10 = GUICtrlCreateInput("", 155, 82, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 110, 110)
+$docent11 = GUICtrlCreateInput("", 155, 107, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 110, 135)
+$docent12 = GUICtrlCreateInput("", 155, 132, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 210, 10)
+$docent13 = GUICtrlCreateInput("", 255, 7, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 210, 35)
+$docent14 = GUICtrlCreateInput("", 255, 32, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 210, 60)
+$docent15 = GUICtrlCreateInput("", 255, 57, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 10, 160)
+$docent16 = GUICtrlCreateInput("", 55, 157, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 10, 185)
+$docent17 = GUICtrlCreateInput("", 55, 182, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 10, 210)
+$docent18 = GUICtrlCreateInput("", 55, 207, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 10, 235)
+$docent19 = GUICtrlCreateInput("", 55, 232, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 110, 160)
+$docent20 = GUICtrlCreateInput("", 155, 157, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 110, 185)
+$docent21 = GUICtrlCreateInput("", 155, 182, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 110, 210)
+$docent22 = GUICtrlCreateInput("", 155, 207, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 110, 235)
+$docent23 = GUICtrlCreateInput("", 155, 232, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 210, 85)
+$docent24 = GUICtrlCreateInput("", 255, 82, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 210, 110)
+$docent25 = GUICtrlCreateInput("", 255, 107, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 210, 135)
+$docent26 = GUICtrlCreateInput("", 255, 132, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 210, 160)
+$docent27 = GUICtrlCreateInput("", 255, 157, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 210, 185)
+$docent28 = GUICtrlCreateInput("", 255, 182, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 210, 210)
+$docent29 = GUICtrlCreateInput("", 255, 207, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 210, 235)
+$docent30 = GUICtrlCreateInput("", 255, 232, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateButton("OK", 350, 235, 80, 35)
+GUICtrlSetOnEvent(-1, "docentadd_save")
+GUISetState (@SW_HIDE, $Gui_adddocent)
+
+$Gui_editdocent = GUICreate("Cijfer Registratie Systeem | Wijzig docent", 450, 275, -1, -1, -1, -1, $Gui)
+GUISetOnEvent($GUI_EVENT_CLOSE, "closegui_editdocent")
+GUICtrlCreateLabel("docent:", 10, 10)
+$editdocent1 = GUICtrlCreateInput("", 55, 7, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 10, 35)
+$editdocent2 = GUICtrlCreateInput("", 55, 32, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 10, 60)
+$editdocent3 = GUICtrlCreateInput("", 55, 57, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 10, 85)
+$editdocent4 = GUICtrlCreateInput("", 55, 82, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 10, 110)
+$editdocent5 = GUICtrlCreateInput("", 55, 107, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 10, 135)
+$editdocent6 = GUICtrlCreateInput("", 55, 132, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 110, 10)
+$editdocent7 = GUICtrlCreateInput("", 155, 7, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 110, 35)
+$editdocent8 = GUICtrlCreateInput("", 155, 32, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 110, 60)
+$editdocent9 = GUICtrlCreateInput("", 155, 57, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 110, 85)
+$editdocent10 = GUICtrlCreateInput("", 155, 82, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 110, 110)
+$editdocent11 = GUICtrlCreateInput("", 155, 107, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 110, 135)
+$editdocent12 = GUICtrlCreateInput("", 155, 132, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 210, 10)
+$editdocent13 = GUICtrlCreateInput("", 255, 7, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 210, 35)
+$editdocent14 = GUICtrlCreateInput("", 255, 32, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 210, 60)
+$editdocent15 = GUICtrlCreateInput("", 255, 57, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 10, 160)
+$editdocent16 = GUICtrlCreateInput("", 55, 157, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 10, 185)
+$editdocent17 = GUICtrlCreateInput("", 55, 182, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 10, 210)
+$editdocent18 = GUICtrlCreateInput("", 55, 207, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 10, 235)
+$editdocent19 = GUICtrlCreateInput("", 55, 232, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 110, 160)
+$editdocent20 = GUICtrlCreateInput("", 155, 157, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 110, 185)
+$editdocent21 = GUICtrlCreateInput("", 155, 182, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 110, 210)
+$editdocent22 = GUICtrlCreateInput("", 155, 207, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 110, 235)
+$editdocent23 = GUICtrlCreateInput("", 155, 232, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 210, 85)
+$editdocent24 = GUICtrlCreateInput("", 255, 82, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 210, 110)
+$editdocent25 = GUICtrlCreateInput("", 255, 107, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 210, 135)
+$editdocent26 = GUICtrlCreateInput("", 255, 132, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 210, 160)
+$editdocent27 = GUICtrlCreateInput("", 255, 157, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 210, 185)
+$editdocent28 = GUICtrlCreateInput("", 255, 182, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 210, 210)
+$editdocent29 = GUICtrlCreateInput("", 255, 207, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateLabel("docent:", 210, 235)
+$editdocent30 = GUICtrlCreateInput("", 255, 232, 40, 20)
+GUICtrlSetLimit(-1, "5", "3")
+GUICtrlCreateButton("OK", 350, 235, 80, 35)
+GUICtrlSetOnEvent(-1, "docentedit_save")
+GUISetState (@SW_HIDE, $Gui_editdocent)
+
+$Gui_deldocent = GUICreate("Cijfer Registratie Systeem | Verwijder docent", 150, 125, -1, -1, -1, -1, $Gui)
+GUISetOnEvent($GUI_EVENT_CLOSE, "closegui_deldocent")
+GUICtrlCreateLabel("Docent:", 10, 40)
+$docentselect = GUICtrlCreateCombo("", 55, 37, 60, 20)
+GUICtrlSetOnEvent(-1, "deldocent_save")
+GUISetState (@SW_HIDE, $Gui_deldocent)
+
+$gui_info = GUICreate("Informatie", 275, 100, -1, -1, -1, -1, $Gui)
+GUISetOnEvent($GUI_EVENT_CLOSE, "closegui_info")
+GUICtrlCreateLabel("Cijfer Registratie Systeem 4.9", 10, 10, 255)
+GUICtrlSetFont(-1, 10, 900)
+GUICtrlCreateLabel("© 2009 KeySoft", 10, 40, 255)
+GUICtrlCreateLabel("KeySoft is een onderdeel van KeyNet", 10, 60, 255)
+GUICtrlCreateButton("OK", 200, 70, 70, 25)
+GUICtrlSetOnEvent(-1, "closegui_info")
+GUISetState(@SW_HIDE, $gui_info)
+
+
+
+
+
+
+
+
+
+
+
+While 1
+    Sleep(100)
+Wend
+
+
+
+
+
+
+
+
+
+Func Event()
+    Switch @GUI_CtrlId
+        Case $GUI_EVENT_CLOSE
+            Exit
+        Case Else
+	$treemain = StringSplit(_GUICtrlTreeView_GetTree($TV), "|")
+	If $treemain[1] = "Gebruikers" Then
+
+   GUICtrlDelete($tab_gro) ; <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+   $tab_gro = 9999         ; <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+   $tab_geb = GUICtrlCreateTab(140, 25, 630, 380) 
+   
+   GUICtrlCreateTabItem("Algemeen")
+$Naam = GUICtrlCreateLabel("Naam:                  ", 150, 60, 300, 25)
+$ovnr = GUICtrlCreateLabel("OV-Nummer:        ", 150, 80, 300, 25)
+$adres = GUICtrlCreateLabel("Adres:                  ", 150, 100, 300, 25)
+$postcode = GUICtrlCreateLabel("Postcode:            ", 150, 120, 300, 25)
+$woonplaats = GUICtrlCreateLabel("Woonplaats:        ", 150, 140, 300, 25)
+$telefoonnr = GUICtrlCreateLabel("Telefoonnummer: ", 150, 160, 300, 25)
+$groep = GUICtrlCreateLabel("Groep:                  ", 150, 180, 300, 25)
+GUICtrlSetBkColor(-1, 0xffffff)
+GUICtrlCreateTabItem("Cijfers")
+$vakken = GUICtrlCreateLabel("", 150, 60, 550, 25)
+$toets1 = GUICtrlCreateLabel("Toets 1", 150, 90, 100, 25)
+$toets2 = GUICtrlCreateLabel("Toets 2", 150, 110, 100, 25)
+$toets3 = GUICtrlCreateLabel("Toets 3", 150, 130, 100, 25)
+$toets4 = GUICtrlCreateLabel("Toets 4", 150, 150, 100, 25)
+$rap1 = GUICtrlCreateLabel("Rapport 1", 150, 170, 100, 25)
+$toets5 = GUICtrlCreateLabel("Toets 5", 150, 190, 100, 25)
+$toets6 = GUICtrlCreateLabel("Toets 6", 150, 210, 100, 25)
+$toets7 = GUICtrlCreateLabel("Toets 7", 150, 230, 100, 25)
+$toets8 = GUICtrlCreateLabel("Toets 8", 150, 250, 100, 25)
+$rap2 = GUICtrlCreateLabel("Rapport 2", 150, 270, 100, 25)
+$toets9 = GUICtrlCreateLabel("Toets 9", 150, 290, 100, 25)
+$toets10 = GUICtrlCreateLabel("Toets 10", 150, 310, 100, 25)
+$toets11 = GUICtrlCreateLabel("Toets 11", 150, 330, 100, 25)
+$toets12 = GUICtrlCreateLabel("Toets 12", 150, 350, 100, 25)
+$rap3 = GUICtrlCreateLabel("Rapport 3", 150, 370, 100, 25)
+
+
+$cijfer0 = GUICtrlCreateLabel("", 220, 90, 100, 25)
+$cijfer1 = GUICtrlCreateLabel("", 220, 110, 100, 25)
+$cijfer2 = GUICtrlCreateLabel("", 220, 130, 100, 25)
+$cijfer3 = GUICtrlCreateLabel("", 220, 150, 100, 25)
+$cijfer4 = GUICtrlCreateLabel("", 220, 170, 100, 25)
+$cijfer5 = GUICtrlCreateLabel("", 220, 190, 100, 25)
+$cijfer6 = GUICtrlCreateLabel("", 220, 210, 100, 25)
+$cijfer7 = GUICtrlCreateLabel("", 220, 230, 100, 25)
+$cijfer8 = GUICtrlCreateLabel("", 220, 250, 100, 25)
+$cijfer9 = GUICtrlCreateLabel("", 220, 270, 100, 25)
+$cijfer10 = GUICtrlCreateLabel("", 220, 290, 100, 25)
+$cijfer11 = GUICtrlCreateLabel("", 220, 310, 100, 25)
+$cijfer12 = GUICtrlCreateLabel("", 220, 330, 100, 25)
+$cijfer13 = GUICtrlCreateLabel("", 220, 350, 100, 25)
+$cijfer14 = GUICtrlCreateLabel("", 220, 370, 100, 25)
+
+$cijfer15 = GUICtrlCreateLabel("", 270, 90, 100, 25)
+$cijfer16 = GUICtrlCreateLabel("", 270, 110, 100, 25)
+$cijfer17 = GUICtrlCreateLabel("", 270, 130, 100, 25)
+$cijfer18 = GUICtrlCreateLabel("", 270, 150, 100, 25)
+$cijfer19 = GUICtrlCreateLabel("", 270, 170, 100, 25)
+$cijfer20 = GUICtrlCreateLabel("", 270, 190, 100, 25)
+$cijfer21 = GUICtrlCreateLabel("", 270, 210, 100, 25)
+$cijfer22 = GUICtrlCreateLabel("", 270, 230, 100, 25)
+$cijfer23 = GUICtrlCreateLabel("", 270, 250, 100, 25)
+$cijfer24 = GUICtrlCreateLabel("", 270, 270, 100, 25)
+$cijfer25 = GUICtrlCreateLabel("", 270, 290, 100, 25)
+$cijfer26 = GUICtrlCreateLabel("", 270, 310, 100, 25)
+$cijfer27 = GUICtrlCreateLabel("", 270, 330, 100, 25)
+$cijfer28 = GUICtrlCreateLabel("", 270, 350, 100, 25)
+$cijfer29 = GUICtrlCreateLabel("", 270, 370, 100, 25)
+
+$cijfer30 = GUICtrlCreateLabel("", 320, 90, 100, 25)
+$cijfer31 = GUICtrlCreateLabel("", 320, 110, 100, 25)
+$cijfer32 = GUICtrlCreateLabel("", 320, 130, 100, 25)
+$cijfer33 = GUICtrlCreateLabel("", 320, 150, 100, 25)
+$cijfer34 = GUICtrlCreateLabel("", 320, 170, 100, 25)
+$cijfer35 = GUICtrlCreateLabel("", 320, 190, 100, 25)
+$cijfer36 = GUICtrlCreateLabel("", 320, 210, 100, 25)
+$cijfer37 = GUICtrlCreateLabel("", 320, 230, 100, 25)
+$cijfer38 = GUICtrlCreateLabel("", 320, 250, 100, 25)
+$cijfer39 = GUICtrlCreateLabel("", 320, 270, 100, 25)
+$cijfer40 = GUICtrlCreateLabel("", 320, 290, 100, 25)
+$cijfer41 = GUICtrlCreateLabel("", 320, 310, 100, 25)
+$cijfer42 = GUICtrlCreateLabel("", 320, 330, 100, 25)
+$cijfer43 = GUICtrlCreateLabel("", 320, 350, 100, 25)
+$cijfer44 = GUICtrlCreateLabel("", 320, 370, 100, 25)
+
+$cijfer45 = GUICtrlCreateLabel("", 370, 90, 100, 25)
+$cijfer46 = GUICtrlCreateLabel("", 370, 110, 100, 25)
+$cijfer47 = GUICtrlCreateLabel("", 370, 130, 100, 25)
+$cijfer48 = GUICtrlCreateLabel("", 370, 150, 100, 25)
+$cijfer49 = GUICtrlCreateLabel("", 370, 170, 100, 25)
+$cijfer50 = GUICtrlCreateLabel("", 370, 190, 100, 25)
+$cijfer51 = GUICtrlCreateLabel("", 370, 210, 100, 25)
+$cijfer52 = GUICtrlCreateLabel("", 370, 230, 100, 25)
+$cijfer53 = GUICtrlCreateLabel("", 370, 250, 100, 25)
+$cijfer54 = GUICtrlCreateLabel("", 370, 270, 100, 25)
+$cijfer55 = GUICtrlCreateLabel("", 370, 290, 100, 25)
+$cijfer56 = GUICtrlCreateLabel("", 370, 310, 100, 25)
+$cijfer57 = GUICtrlCreateLabel("", 370, 330, 100, 25)
+$cijfer58 = GUICtrlCreateLabel("", 370, 350, 100, 25)
+$cijfer59 = GUICtrlCreateLabel("", 370, 370, 100, 25)
+
+$cijfer60 = GUICtrlCreateLabel("", 420, 90, 100, 25)
+$cijfer61 = GUICtrlCreateLabel("", 420, 110, 100, 25)
+$cijfer62 = GUICtrlCreateLabel("", 420, 130, 100, 25)
+$cijfer63 = GUICtrlCreateLabel("", 420, 150, 100, 25)
+$cijfer64 = GUICtrlCreateLabel("", 420, 170, 100, 25)
+$cijfer65 = GUICtrlCreateLabel("", 420, 190, 100, 25)
+$cijfer66 = GUICtrlCreateLabel("", 420, 210, 100, 25)
+$cijfer67 = GUICtrlCreateLabel("", 420, 230, 100, 25)
+$cijfer68 = GUICtrlCreateLabel("", 420, 250, 100, 25)
+$cijfer69 = GUICtrlCreateLabel("", 420, 270, 100, 25)
+$cijfer70 = GUICtrlCreateLabel("", 420, 290, 100, 25)
+$cijfer71 = GUICtrlCreateLabel("", 420, 310, 100, 25)
+$cijfer72 = GUICtrlCreateLabel("", 420, 330, 100, 25)
+$cijfer73 = GUICtrlCreateLabel("", 420, 350, 100, 25)
+$cijfer74 = GUICtrlCreateLabel("", 420, 370, 100, 25)
+
+$cijfer75 = GUICtrlCreateLabel("", 470, 90, 100, 25)
+$cijfer76 = GUICtrlCreateLabel("", 470, 110, 100, 25)
+$cijfer77 = GUICtrlCreateLabel("", 470, 130, 100, 25)
+$cijfer78 = GUICtrlCreateLabel("", 470, 150, 100, 25)
+$cijfer79 = GUICtrlCreateLabel("", 470, 170, 100, 25)
+$cijfer80 = GUICtrlCreateLabel("", 470, 190, 100, 25)
+$cijfer81 = GUICtrlCreateLabel("", 470, 210, 100, 25)
+$cijfer82 = GUICtrlCreateLabel("", 470, 230, 100, 25)
+$cijfer83 = GUICtrlCreateLabel("", 470, 250, 100, 25)
+$cijfer84 = GUICtrlCreateLabel("", 470, 270, 100, 25)
+$cijfer85 = GUICtrlCreateLabel("", 470, 290, 100, 25)
+$cijfer86 = GUICtrlCreateLabel("", 470, 310, 100, 25)
+$cijfer87 = GUICtrlCreateLabel("", 470, 330, 100, 25)
+$cijfer88 = GUICtrlCreateLabel("", 470, 350, 100, 25)
+$cijfer89 = GUICtrlCreateLabel("", 470, 370, 100, 25)
+
+$cijfer90 = GUICtrlCreateLabel("", 520, 90, 100, 25)
+$cijfer91 = GUICtrlCreateLabel("", 520, 110, 100, 25)
+$cijfer92 = GUICtrlCreateLabel("", 520, 130, 100, 25)
+$cijfer93 = GUICtrlCreateLabel("", 520, 150, 100, 25)
+$cijfer94 = GUICtrlCreateLabel("", 520, 170, 100, 25)
+$cijfer95 = GUICtrlCreateLabel("", 520, 190, 100, 25)
+$cijfer96 = GUICtrlCreateLabel("", 520, 210, 100, 25)
+$cijfer97 = GUICtrlCreateLabel("", 520, 230, 100, 25)
+$cijfer98 = GUICtrlCreateLabel("", 520, 250, 100, 25)
+$cijfer99 = GUICtrlCreateLabel("", 520, 270, 100, 25)
+$cijfer100 = GUICtrlCreateLabel("", 520, 290, 100, 25)
+$cijfer101 = GUICtrlCreateLabel("", 520, 310, 100, 25)
+$cijfer102 = GUICtrlCreateLabel("", 520, 330, 100, 25)
+$cijfer103 = GUICtrlCreateLabel("", 520, 350, 100, 25)
+$cijfer104 = GUICtrlCreateLabel("", 520, 370, 100, 25)
+
+$cijfer105 = GUICtrlCreateLabel("", 570, 90, 100, 25)
+$cijfer106 = GUICtrlCreateLabel("", 570, 110, 100, 25)
+$cijfer107 = GUICtrlCreateLabel("", 570, 130, 100, 25)
+$cijfer108 = GUICtrlCreateLabel("", 570, 150, 100, 25)
+$cijfer109 = GUICtrlCreateLabel("", 570, 170, 100, 25)
+$cijfer110 = GUICtrlCreateLabel("", 570, 190, 100, 25)
+$cijfer111 = GUICtrlCreateLabel("", 570, 210, 100, 25)
+$cijfer112 = GUICtrlCreateLabel("", 570, 230, 100, 25)
+$cijfer113 = GUICtrlCreateLabel("", 570, 250, 100, 25)
+$cijfer114 = GUICtrlCreateLabel("", 570, 270, 100, 25)
+$cijfer115 = GUICtrlCreateLabel("", 570, 290, 100, 25)
+$cijfer116 = GUICtrlCreateLabel("", 570, 310, 100, 25)
+$cijfer117 = GUICtrlCreateLabel("", 570, 330, 100, 25)
+$cijfer118 = GUICtrlCreateLabel("", 570, 350, 100, 25)
+$cijfer119 = GUICtrlCreateLabel("", 570, 370, 100, 25)
+
+$cijfer120 = GUICtrlCreateLabel("", 620, 90, 100, 25)
+$cijfer121 = GUICtrlCreateLabel("", 620, 110, 100, 25)
+$cijfer122 = GUICtrlCreateLabel("", 620, 130, 100, 25)
+$cijfer123 = GUICtrlCreateLabel("", 620, 150, 100, 25)
+$cijfer124 = GUICtrlCreateLabel("", 620, 170, 100, 25)
+$cijfer125 = GUICtrlCreateLabel("", 620, 190, 100, 25)
+$cijfer126 = GUICtrlCreateLabel("", 620, 210, 100, 25)
+$cijfer127 = GUICtrlCreateLabel("", 620, 230, 100, 25)
+$cijfer128 = GUICtrlCreateLabel("", 620, 250, 100, 25)
+$cijfer129 = GUICtrlCreateLabel("", 620, 270, 100, 25)
+$cijfer130 = GUICtrlCreateLabel("", 620, 290, 100, 25)
+$cijfer131 = GUICtrlCreateLabel("", 620, 310, 100, 25)
+$cijfer132 = GUICtrlCreateLabel("", 620, 330, 100, 25)
+$cijfer133 = GUICtrlCreateLabel("", 620, 350, 100, 25)
+$cijfer134 = GUICtrlCreateLabel("", 620, 370, 100, 25)
+
+$cijfer135 = GUICtrlCreateLabel("", 670, 90, 100, 25)
+$cijfer136 = GUICtrlCreateLabel("", 670, 110, 100, 25)
+$cijfer137 = GUICtrlCreateLabel("", 670, 130, 100, 25)
+$cijfer138 = GUICtrlCreateLabel("", 670, 150, 100, 25)
+$cijfer139 = GUICtrlCreateLabel("", 670, 170, 100, 25)
+$cijfer140 = GUICtrlCreateLabel("", 670, 190, 100, 25)
+$cijfer141 = GUICtrlCreateLabel("", 670, 210, 100, 25)
+$cijfer142 = GUICtrlCreateLabel("", 670, 230, 100, 25)
+$cijfer143 = GUICtrlCreateLabel("", 670, 250, 100, 25)
+$cijfer144 = GUICtrlCreateLabel("", 670, 270, 100, 25)
+$cijfer145 = GUICtrlCreateLabel("", 670, 290, 100, 25)
+$cijfer146 = GUICtrlCreateLabel("", 670, 310, 100, 25)
+$cijfer147 = GUICtrlCreateLabel("", 670, 330, 100, 25)
+$cijfer148 = GUICtrlCreateLabel("", 670, 350, 100, 25)
+$cijfer149 = GUICtrlCreateLabel("", 670, 370, 100, 25)
+
+
+
+
+GUICtrlCreateTabItem("Beoordelingen")
+$beoordeling = GUICtrlCreateEdit("", 150, 60, 605, 330, $ES_READONLY + $ES_WANTRETURN + + $WS_VSCROLL)
+_GUICtrlEdit_SetMargins($beoordeling, $EC_RIGHTMARGIN, 0, 10)
+   
+   
+   
+   
+   $rnaam = IniRead(@ScriptDir & "\" & _TVGetItemTree($TV, "\") & ".ini", "Algemeen", "naam", "")
+   $rov = IniRead(@ScriptDir & "\" & _TVGetItemTree($TV, "\") & ".ini", "Algemeen", "OV", "")
+   $radres = IniRead(@ScriptDir & "\" & _TVGetItemTree($TV, "\") & ".ini", "Algemeen", "adres", "")
+   $rpostcode = IniRead(@ScriptDir & "\" & _TVGetItemTree($TV, "\") & ".ini", "Algemeen", "postcode", "")
+   $rwoonplaats = IniRead(@ScriptDir & "\" & _TVGetItemTree($TV, "\") & ".ini", "Algemeen", "woonplaats", "")
+   $rtelefoon = IniRead(@ScriptDir & "\" & _TVGetItemTree($TV, "\") & ".ini", "Algemeen", "telefoon", "")
+   $rgroep = IniRead(@ScriptDir & "\" & _TVGetItemTree($TV, "\") & ".ini", "Algemeen", "groep", "")
+   $rvakken = IniRead(@ScriptDir & "\groepen\" & $rgroep & ".ini", "Algemeen", "vakken", "")
+   $rbeoordeling = IniReadSection(@ScriptDir & "\" & _TVGetItemTree($TV, "\") & ".ini", "beoordeling")
+   $rvakken1 = StringReplace($rvakken, ",", "         ")
+   $avakken = StringSplit($rvakken, ",")
+   If 1 < UBound($avakken)-1 Then
+   $avakken1 = $avakken[1]
+   Else
+	$avakken1 = ""   
+   EndIf
+   If 2 < UBound($avakken)-1 Then
+   $avakken2 = $avakken[2]
+   Else
+	$avakken2 = ""   
+   EndIf
+   If 3 < UBound($avakken)-1 Then
+   $avakken3 = $avakken[3]
+   Else
+	$avakken3 = ""   
+   EndIf
+   If 4 < UBound($avakken)-1 Then
+   $avakken4 = $avakken[4]
+   Else
+	$avakken4 = ""   
+   EndIf
+   If 5 < UBound($avakken)-1 Then
+   $avakken5 = $avakken[5]
+   Else
+   $avakken5 = ""
+   EndIf
+   If 6 < UBound($avakken)-1 Then
+   $avakken6 = $avakken[6]
+   Else
+   $avakken6 = ""
+   EndIf
+   If 7 < UBound($avakken)-1 Then
+   $avakken7 = $avakken[7]
+   Else
+   $avakken7 = ""
+   EndIf
+   If 8 < UBound($avakken)-1 Then
+   $avakken8 = $avakken[8]
+   Else
+   $avakken8 = ""
+   EndIf
+   If 9 < UBound($avakken)-1 Then
+   $avakken9 = $avakken[9]
+   Else
+   $avakken9 = ""
+   EndIf
+   If 10 < UBound($avakken)-1 Then
+   $avakken10 = $avakken[10]
+   Else
+   $avakken10 = ""
+   EndIf
+         If Not @error Then 
+   GUICtrlSetData($Naam, "Naam:                  " & $rnaam)
+   GUICtrlSetData($ovnr, "OV-Nummer:        " & $rov)
+   GUICtrlSetData($adres, "Adres:                  " & $radres)
+   GUICtrlSetData($postcode, "Postcode:            " & $rpostcode)
+   GUICtrlSetData($woonplaats, "Woonplaats:        " & $rwoonplaats)
+   GUICtrlSetData($telefoonnr, "Telefoonnummer: " & $rtelefoon)
+   GUICtrlSetData($groep, "Groep:                  " & $rgroep)
+   GUICtrlSetData($vakken, "                       " & $rvakken1)
+   If IsArray($rbeoordeling) Then
+   _GUICtrlEdit_SetText($beoordeling, "")	   
+   For $i = 1 To $rbeoordeling[0][0]
+   _GUICtrlEdit_AppendText($beoordeling, $rbeoordeling[$i][0] & ":" & @CRLF & $rbeoordeling[$i][1] & @CRLF & @CRLF)
+   Next
+   EndIf
+   If $avakken1 = Not "" Then
+   $avk1 = StringSplit(IniRead(@ScriptDir & "\" & _TVGetItemTree($TV, "\") & ".ini", "Cijfers", $avakken1, ""), ",")
+   GUICtrlSetData($cijfer0, $avk1[1])
+   GUICtrlSetData($cijfer1, $avk1[2])
+   GUICtrlSetData($cijfer2, $avk1[3])
+   GUICtrlSetData($cijfer3, $avk1[4])
+   GUICtrlSetData($cijfer4, $avk1[5])
+   GUICtrlSetData($cijfer5, $avk1[6])
+   GUICtrlSetData($cijfer6, $avk1[7])
+   GUICtrlSetData($cijfer7, $avk1[8])
+   GUICtrlSetData($cijfer8, $avk1[9])
+   GUICtrlSetData($cijfer9, $avk1[10])
+   GUICtrlSetData($cijfer10, $avk1[11])
+   GUICtrlSetData($cijfer11, $avk1[12])
+   GUICtrlSetData($cijfer12, $avk1[13])
+   GUICtrlSetData($cijfer13, $avk1[14])
+   GUICtrlSetData($cijfer14, $avk1[15])
+   EndIf
+   If $avakken2 = Not "" Then
+   $avk2 = StringSplit(IniRead(@ScriptDir & "\" & _TVGetItemTree($TV, "\") & ".ini", "Cijfers", $avakken2, ""), ",")
+   GUICtrlSetData($cijfer15, $avk2[1])
+   GUICtrlSetData($cijfer16, $avk2[2])
+   GUICtrlSetData($cijfer17, $avk2[3])
+   GUICtrlSetData($cijfer18, $avk2[4])
+   GUICtrlSetData($cijfer19, $avk2[5])
+   GUICtrlSetData($cijfer20, $avk2[6])
+   GUICtrlSetData($cijfer21, $avk2[7])
+   GUICtrlSetData($cijfer22, $avk2[8])
+   GUICtrlSetData($cijfer23, $avk2[9])
+   GUICtrlSetData($cijfer24, $avk2[10])
+   GUICtrlSetData($cijfer25, $avk2[11])
+   GUICtrlSetData($cijfer26, $avk2[12])
+   GUICtrlSetData($cijfer27, $avk2[13])
+   GUICtrlSetData($cijfer28, $avk2[14])
+   GUICtrlSetData($cijfer29, $avk2[15])
+   EndIf
+   If $avakken3 = Not "" Then
+   $avk3 = StringSplit(IniRead(@ScriptDir & "\" & _TVGetItemTree($TV, "\") & ".ini", "Cijfers", $avakken3, ""), ",")
+   GUICtrlSetData($cijfer30, $avk3[1])
+   GUICtrlSetData($cijfer31, $avk3[2])
+   GUICtrlSetData($cijfer32, $avk3[3])
+   GUICtrlSetData($cijfer33, $avk3[4])
+   GUICtrlSetData($cijfer34, $avk3[5])
+   GUICtrlSetData($cijfer35, $avk3[6])
+   GUICtrlSetData($cijfer36, $avk3[7])
+   GUICtrlSetData($cijfer37, $avk3[8])
+   GUICtrlSetData($cijfer38, $avk3[9])
+   GUICtrlSetData($cijfer39, $avk3[10])
+   GUICtrlSetData($cijfer40, $avk3[11])
+   GUICtrlSetData($cijfer41, $avk3[12])
+   GUICtrlSetData($cijfer42, $avk3[13])
+   GUICtrlSetData($cijfer43, $avk3[14])
+   GUICtrlSetData($cijfer44, $avk3[15])
+   EndIf
+   If $avakken4 = Not "" Then
+   $avk4 = StringSplit(IniRead(@ScriptDir & "\" & _TVGetItemTree($TV, "\") & ".ini", "Cijfers", $avakken4, ""), ",")
+   GUICtrlSetData($cijfer45, $avk4[1])
+   GUICtrlSetData($cijfer46, $avk4[2])
+   GUICtrlSetData($cijfer47, $avk4[3])
+   GUICtrlSetData($cijfer48, $avk4[4])
+   GUICtrlSetData($cijfer49, $avk4[5])
+   GUICtrlSetData($cijfer50, $avk4[6])
+   GUICtrlSetData($cijfer51, $avk4[7])
+   GUICtrlSetData($cijfer52, $avk4[8])
+   GUICtrlSetData($cijfer53, $avk4[9])
+   GUICtrlSetData($cijfer54, $avk4[10])
+   GUICtrlSetData($cijfer55, $avk4[11])
+   GUICtrlSetData($cijfer56, $avk4[12])
+   GUICtrlSetData($cijfer57, $avk4[13])
+   GUICtrlSetData($cijfer58, $avk4[14])
+   GUICtrlSetData($cijfer59, $avk4[15])
+   EndIf
+   If $avakken5 = Not "" Then
+   $avk5 = StringSplit(IniRead(@ScriptDir & "\" & _TVGetItemTree($TV, "\") & ".ini", "Cijfers", $avakken5, ""), ",")
+   GUICtrlSetData($cijfer60, $avk5[1])
+   GUICtrlSetData($cijfer61, $avk5[2])
+   GUICtrlSetData($cijfer62, $avk5[3])
+   GUICtrlSetData($cijfer63, $avk5[4])
+   GUICtrlSetData($cijfer64, $avk5[5])
+   GUICtrlSetData($cijfer65, $avk5[6])
+   GUICtrlSetData($cijfer66, $avk5[7])
+   GUICtrlSetData($cijfer67, $avk5[8])
+   GUICtrlSetData($cijfer68, $avk5[9])
+   GUICtrlSetData($cijfer69, $avk5[10])
+   GUICtrlSetData($cijfer70, $avk5[11])
+   GUICtrlSetData($cijfer71, $avk5[12])
+   GUICtrlSetData($cijfer72, $avk5[13])
+   GUICtrlSetData($cijfer73, $avk5[14])
+   GUICtrlSetData($cijfer74, $avk5[15])
+   EndIf
+   If $avakken6 = Not "" Then
+   $avk6 = StringSplit(IniRead(@ScriptDir & "\" & _TVGetItemTree($TV, "\") & ".ini", "Cijfers", $avakken6, ""), ",")
+   GUICtrlSetData($cijfer75, $avk6[1])
+   GUICtrlSetData($cijfer76, $avk6[2])
+   GUICtrlSetData($cijfer77, $avk6[3])
+   GUICtrlSetData($cijfer78, $avk6[4])
+   GUICtrlSetData($cijfer79, $avk6[5])
+   GUICtrlSetData($cijfer80, $avk6[6])
+   GUICtrlSetData($cijfer81, $avk6[7])
+   GUICtrlSetData($cijfer82, $avk6[8])
+   GUICtrlSetData($cijfer83, $avk6[9])
+   GUICtrlSetData($cijfer84, $avk6[10])
+   GUICtrlSetData($cijfer85, $avk6[11])
+   GUICtrlSetData($cijfer86, $avk6[12])
+   GUICtrlSetData($cijfer87, $avk6[13])
+   GUICtrlSetData($cijfer88, $avk6[14])
+   GUICtrlSetData($cijfer89, $avk6[15])
+   EndIf
+   If $avakken7 = Not "" Then
+   $avk7 = StringSplit(IniRead(@ScriptDir & "\" & _TVGetItemTree($TV, "\") & ".ini", "Cijfers", $avakken7, ""), ",")
+   GUICtrlSetData($cijfer90, $avk7[1])
+   GUICtrlSetData($cijfer91, $avk7[2])
+   GUICtrlSetData($cijfer92, $avk7[3])
+   GUICtrlSetData($cijfer93, $avk7[4])
+   GUICtrlSetData($cijfer94, $avk7[5])
+   GUICtrlSetData($cijfer95, $avk7[6])
+   GUICtrlSetData($cijfer96, $avk7[7])
+   GUICtrlSetData($cijfer97, $avk7[8])
+   GUICtrlSetData($cijfer98, $avk7[9])
+   GUICtrlSetData($cijfer99, $avk7[10])
+   GUICtrlSetData($cijfer100, $avk7[11])
+   GUICtrlSetData($cijfer101, $avk7[12])
+   GUICtrlSetData($cijfer102, $avk7[13])
+   GUICtrlSetData($cijfer103, $avk7[14])
+   GUICtrlSetData($cijfer104, $avk7[15])
+   EndIf
+   If $avakken8 = Not "" Then   
+   $avk8 = StringSplit(IniRead(@ScriptDir & "\" & _TVGetItemTree($TV, "\") & ".ini", "Cijfers", $avakken8, ""), ",")
+   GUICtrlSetData($cijfer105, $avk8[1])
+   GUICtrlSetData($cijfer106, $avk8[2])
+   GUICtrlSetData($cijfer107, $avk8[3])
+   GUICtrlSetData($cijfer108, $avk8[4])
+   GUICtrlSetData($cijfer109, $avk8[5])
+   GUICtrlSetData($cijfer110, $avk8[6])
+   GUICtrlSetData($cijfer111, $avk8[7])
+   GUICtrlSetData($cijfer112, $avk8[8])
+   GUICtrlSetData($cijfer113, $avk8[9])
+   GUICtrlSetData($cijfer114, $avk8[10])
+   GUICtrlSetData($cijfer115, $avk8[11])
+   GUICtrlSetData($cijfer116, $avk8[12])
+   GUICtrlSetData($cijfer117, $avk8[13])
+   GUICtrlSetData($cijfer118, $avk8[14])
+   GUICtrlSetData($cijfer119, $avk8[15])
+   EndIf
+   if $avakken9 = Not "" Then
+   $avk9 = StringSplit(IniRead(@ScriptDir & "\" & _TVGetItemTree($TV, "\") & ".ini", "Cijfers", $avakken9, ""), ",")
+   GUICtrlSetData($cijfer120, $avk9[1])
+   GUICtrlSetData($cijfer121, $avk9[2])
+   GUICtrlSetData($cijfer122, $avk9[3])
+   GUICtrlSetData($cijfer123, $avk9[4])
+   GUICtrlSetData($cijfer124, $avk9[5])
+   GUICtrlSetData($cijfer125, $avk9[6])
+   GUICtrlSetData($cijfer126, $avk9[7])
+   GUICtrlSetData($cijfer127, $avk9[8])
+   GUICtrlSetData($cijfer128, $avk9[9])
+   GUICtrlSetData($cijfer129, $avk9[10])
+   GUICtrlSetData($cijfer130, $avk9[11])
+   GUICtrlSetData($cijfer131, $avk9[12])
+   GUICtrlSetData($cijfer132, $avk9[13])
+   GUICtrlSetData($cijfer133, $avk9[14])
+   GUICtrlSetData($cijfer134, $avk9[15])
+   EndIf
+   If $avakken10 = Not "" Then
+   $avk10 = StringSplit(IniRead(@ScriptDir & "\" & _TVGetItemTree($TV, "\") & ".ini", "Cijfers", $avakken10, ""), ",")
+   GUICtrlSetData($cijfer135, $avk10[1])
+   GUICtrlSetData($cijfer136, $avk10[2])
+   GUICtrlSetData($cijfer137, $avk10[3])
+   GUICtrlSetData($cijfer138, $avk10[4])
+   GUICtrlSetData($cijfer139, $avk10[5])
+   GUICtrlSetData($cijfer140, $avk10[6])
+   GUICtrlSetData($cijfer141, $avk10[7])
+   GUICtrlSetData($cijfer142, $avk10[8])
+   GUICtrlSetData($cijfer143, $avk10[9])
+   GUICtrlSetData($cijfer144, $avk10[10])
+   GUICtrlSetData($cijfer145, $avk10[11])
+   GUICtrlSetData($cijfer146, $avk10[12])
+   GUICtrlSetData($cijfer147, $avk10[13])
+   GUICtrlSetData($cijfer148, $avk10[14])
+   GUICtrlSetData($cijfer149, $avk10[15])   
+   EndIf
+  EndIf 
+Else
+
+GUICtrlDelete($tab_geb) ; <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+$tab_geb = 9999         ; <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+$tab_gro = GUICtrlCreateTab(140, 25, 630, 380)
+GUICtrlCreateTabItem("Deelnemers")
+GUICtrlCreateTabItem("Absentie")
+GuiCtrlcreateTabitem("")               
+EndIf			
+    EndSwitch
+EndFunc
+
+Func TVLoadIni($tviID, $iPath)
+    Local $FFFF, $FFNF, $STR
+    $FFFF = FileFindFirstFile($iPath)
+    If $FFFF = -1 Then Return -1
+    While 1
+        $FFNF = FileFindNextFile($FFFF)
+        If @error Then ExitLoop
+        $STR = StringTrimRight($FFNF, 4)
+        GUICtrlCreateTreeViewItem($STR, $tviID)
+        GUICtrlSetOnEvent(-1, "Event")
+        GUICtrlSetColor(-1, 0x0000C0)
+    WEnd
+    FileClose($FFFF)
+    Return 0
+EndFunc
+
+Func _TVGetItemTree($i_treeview, $s_sep_char, $h_tv_item = 0)
+    Local $szPath = "", $hParent, $h_item
+    If $h_tv_item <> 0 Then
+        $h_item = $h_tv_item
+    Else
+        $h_item = GUICtrlSendMsg($i_treeview, $TVM_GETNEXTITEM, $TVGN_CARET, 0)
+    EndIf
+    If $h_item > 0 Then
+        $szPath = _TVGetItemText($i_treeview, $h_item)
+        Do
+            $hParent = GUICtrlSendMsg($i_treeview, $TVM_GETNEXTITEM, $TVGN_PARENT, $h_item)
+            If $hParent > 0 Then $szPath = _TVGetItemText($i_treeview, $hParent) & $s_sep_char & $szPath
+            $h_item = $hParent
+        Until $h_item <= 0
+    EndIf
+
+    Return $szPath
+EndFunc  ;==>_TVGetItemTree
+
+Func _TVGetItemText($i_treeview, $h_item = 0); copy, name changed
+    Local $s_txt = ""
+    If $h_item = 0 Then Return ""
+    Local $st_txt = DllStructCreate("char[4096]")
+    Local $st_TVI = DllStructCreate("uint;uint;uint;uint;ptr;int;int;int;int;uint;int")
+    DllStructSetData($st_TVI, 1, $TVIF_TEXT)
+    DllStructSetData($st_TVI, 2, $h_item)
+    DllStructSetData($st_TVI, 5, DllStructGetPtr($st_txt))
+    DllStructSetData($st_TVI, 6, DllStructGetSize($st_txt))
+    If GUICtrlSendMsg($i_treeview, $TVM_GETITEM, 0, DllStructGetPtr($st_TVI)) Then $s_txt = DllStructGetData($st_txt, 1)
+    Return $s_txt
+EndFunc  ;==>_TVGetText
+
+
+
+Func menu()
+    
+    Switch @GUI_CTRLID
+  Case $menu_bestand_exit
+   Exit
+  Case $menu_gebruikers_toevoegen
+     useradd()
+ Case $menu_gebruikers_wijzigen 
+	 edituser()
+ Case $menu_gebruikers_verwijderen
+	 Deluserm()
+  Case $menu_groepen_toevoegen
+   group_vakadd()
+  Case $menu_groepen_wijzigen 
+	  Group_vakedit()
+  Case $menu_groepen_verwijderen 
+	  Group_del()
+  Case $menu_vakken_toevoegen
+   GUISetState(@SW_SHOW, $Gui_addvak)
+  Case $menu_vakken_wijzigen
+	  editvak()
+  Case $menu_vakken_verwijderen 
+	  delvak()
+  Case $menu_cijfers_toevoegen
+	GUISetState(@SW_SHOW, $Gui_addmark)
+  Case $menu_cijfers_wijzigen
+	GUISetState(@SW_SHOW, $Gui_editmark)
+  Case $menu_cijfers_verwijderen
+	GUISetState(@SW_SHOW, $Gui_delmark)	
+  Case $menu_beoordeling_toevoegen
+	GUISetState(@SW_SHOW, $gui_addbeoordeling)		
+  Case $menu_beoordeling_wijzigen
+	GUISetState(@SW_SHOW, $gui_editbeoordeling)		
+  Case $menu_beoordeling_verwijderen	
+	GUISetState(@SW_SHOW, $gui_delbeoordeling)
+  Case $menu_docent_toevoegen
+	GUISetState (@SW_SHOW, $Gui_adddocent)	
+  Case $menu_docent_wijzigen
+	editdocent()
+  Case $menu_docent_verwijderen
+	deldocent()
+  Case $menu_help_over
+	info()
+    EndSwitch
+EndFunc
+
+
+Func addvak()
+$new_vak1 = "vk" & GUICtrlRead($vak1) & ","
+$new_vak2 = "vk" & GUICtrlRead($vak2) & ","
+$new_vak3 = "vk" & GUICtrlRead($vak3) & ","
+$new_vak4 = "vk" & GUICtrlRead($vak4) & ","
+$new_vak5 = "vk" & GUICtrlRead($vak5) & ","
+$new_vak6 = "vk" & GUICtrlRead($vak6) & ","
+$new_vak7 = "vk" & GUICtrlRead($vak7) & ","
+$new_vak8 = "vk" & GUICtrlRead($vak8) & ","
+$new_vak9 = "vk" & GUICtrlRead($vak9) & ","
+$new_vak10 = "vk" & GUICtrlRead($vak10) & ","
+$new_vak11 = "vk" & GUICtrlRead($vak11) & ","
+$new_vak12 = "vk" & GUICtrlRead($vak12) & ","
+$new_vak13 = "vk" & GUICtrlRead($vak13) & ","
+$new_vak14 = "vk" & GUICtrlRead($vak14) & ","
+$new_vak15 = "vk" & GUICtrlRead($vak15) & ","
+$new_vak16 = "vk" & GUICtrlRead($vak16) & ","
+$new_vak17 = "vk" & GUICtrlRead($vak17) & ","
+$new_vak18 = "vk" & GUICtrlRead($vak18) & ","
+$new_vak19 = "vk" & GUICtrlRead($vak19) & ","
+$new_vak20 = "vk" & GUICtrlRead($vak20) & ","
+$new_vak21 = "vk" & GUICtrlRead($vak21) & ","
+$new_vak22 = "vk" & GUICtrlRead($vak22) & ","
+$new_vak23 = "vk" & GUICtrlRead($vak23) & ","
+$new_vak24 = "vk" & GUICtrlRead($vak24) & ","
+$new_vak25 = "vk" & GUICtrlRead($vak25) & ","
+$new_vak26 = "vk" & GUICtrlRead($vak26) & ","
+$new_vak27 = "vk" & GUICtrlRead($vak27) & ","
+$new_vak28 = "vk" & GUICtrlRead($vak28) & ","
+$new_vak29 = "vk" & GUICtrlRead($vak29) & ","
+$new_vak30 = "vk" & GUICtrlRead($vak30) & ","
+
+$newvak = $new_vak1 & $new_vak2 & $new_vak3 & $new_vak4 & $new_vak5 & $new_vak6 & $new_vak7 & $new_vak8 & $new_vak9 & $new_vak10 & $new_vak11 & $new_vak12 & $new_vak13 & $new_vak14 & $new_vak15 & $new_vak16 & $new_vak17 & $new_vak18 & $new_vak19 & $new_vak20 & $new_vak21 & $new_vak22 & $new_vak23 & $new_vak24 & $new_vak25 & $new_vak26 & $new_vak27 & $new_vak28 & $new_vak29 & $new_vak30
+$newvak = StringUpper($newvak)
+IniWrite("vakken.ini", "algemeen", "vakken", $newvak)
+
+MsgBox(64, "Cijfer Registratie Systeem | Melding", "Vak(ken) toegevoegd")
+EndFunc 
+
+Func group_vakadd()
+$count = 0    
+;###############################################################################################
+; Not GUICtrlSetState !!!!!!!!!!!!!
+GUISetState(@SW_SHOW, $Gui_addgroup)  
+;###############################################################################################
+; using @error was not working so set a default value to show error state
+$vakken = IniRead("vakken.ini", "Algemeen", "Vakken", "Error")
+
+If $vakken = "Error" Then
+;###############################################################################################
+    MsgBox(4096, "", "Error occurred, probably no INI file.")
+Else
+	$vakken = StringReplace($vakken, "vk", "")
+    $vakken_array = StringSplit($vakken, ",")
+	
+	
+ $left = 45
+    For $i = 0 To 5
+        $top = 50
+        For $j = 1 To 5
+            $k = $i * 5 + $j
+            If StringLen($vakken_array[$k]) > 2 Then
+                $CheckBox[$k] = GUICtrlCreateCheckbox("vk" & $k, $left, $top, 50, 20) 
+                $count += 1
+                $top += 20
+            EndIf
+        Next
+        $left += 65
+    Next
+
+
+
+    
+    
+    For $i = 1 To $count
+        If $vakken_array[$i] <> "" Then
+            GUICtrlSetData($CheckBox[$i], $vakken_array[$i])
+        EndIf
+    Next
+
+EndIf
+
+EndFunc
+
+Func GroupAddOK()
+    If GUICtrlRead($newgroup) = Not "" Then
+        $newgr2 = ""
+        For $f = $CheckBox[1] To $CheckBox[$count]
+            $newgr1 = BitAND(GUICtrlRead($f), $GUI_CHECKED)
+            If $newgr1 = $GUI_CHECKED Then
+                $newgr2 &= GUICtrlRead($f, 1) & ","
+            EndIf
+        Next        
+       
+;###############################################################################################
+; create subdirectory if it does not exist - told you yesterday!
+        If Not FileExists(@ScriptDir & "\groepen") Then DirCreate(@ScriptDir & "\Groepen")
+;###############################################################################################        
+       $ini_File = @ScriptDir & "\groepen\" & GUICtrlRead($newgroup) & ".ini"
+        IniWrite($ini_file, "algemeen", "vakken", $newgr2)
+		MsgBox(64, "Cijfer Registratie Systeem | Melding", "Nieuwe groep aangemaakt")
+    Else
+        MsgBox(64, "Cijfer Registratie Systeem | Melding", "Vul AUB een geldige naam in voor de groep")
+    EndIf
+EndFunc  ;==>GroupAddOK
+
+Func useradd()
+$search = FileFindFirstFile("groepen\*.ini")  
+
+; Check if the search was successful
+If $search = -1 Then
+    MsgBox(0, "Error", "No files/directories matched the search pattern")
+    Exit
+EndIf
+
+While 1
+    $file = FileFindNextFile($search) 
+    If @error Then ExitLoop
+    $stringnew = StringTrimRight($file, 4)
+    GUICtrlSetData($groupselect, $stringnew & "|")
+WEnd
+
+; Close the search handle
+FileClose($search)
+GUISetState(@SW_SHOW, $Gui_adduser)
+EndFunc
+
+Func adduser_save()
+If FileExists("gebruikers")	Then
+$naam = GUICtrlRead($naam1)
+$adres = GUICtrlRead($adres1)
+$postcode = GUICtrlRead($postcode1)
+$woonplaats = GUICtrlRead($woonplaats1)
+$telefoon = GUICtrlRead($telefoon1)
+$email = GUICtrlRead($email1)
+$ovn = GUICtrlRead($ovn1)
+$groep = GUICtrlRead($groupselect)
+
+IniWrite("Gebruikers\" & $ovn & ".ini", "Algemeen", "naam", $naam)
+IniWrite("Gebruikers\" & $ovn & ".ini", "Algemeen", "adres", $adres)
+IniWrite("Gebruikers\" & $ovn & ".ini", "Algemeen", "postcode", $postcode)
+IniWrite("Gebruikers\" & $ovn & ".ini", "Algemeen", "woonplaats", $woonplaats)
+IniWrite("Gebruikers\" & $ovn & ".ini", "Algemeen", "telefoon", $telefoon)
+IniWrite("Gebruikers\" & $ovn & ".ini", "Algemeen", "email", $email)
+IniWrite("Gebruikers\" & $ovn & ".ini", "Algemeen", "ov", $ovn)
+IniWrite("Gebruikers\" & $ovn & ".ini", "Algemeen", "groep", $groep)
+IniWriteSection("Gebruikers\" & $ovn & ".ini", "Cijfers", "")
+
+$vakken = IniRead("groepen\" & $groep & ".ini", "Algemeen", "Vakken", "")
+    $vakken = StringReplace($vakken, "vk", "")
+    $vakken_array = StringSplit($vakken, ",")
+    
+    For $i = 1 To $vakken_array[0]
+        If $vakken_array[$i] <> "" Then
+            IniWrite("Gebruikers\" & $ovn & ".ini", "Cijfers", $vakken_array[$i], ",,,,,,,,,,,,,,")
+        EndIf
+    Next
+
+
+
+IniWriteSection("Gebruikers\" & $ovn & ".ini", "Beoordeling", "")
+MsgBox(64, "Cijfer Registratie Systeem | Melding", "Gebruiker toegevoegd!")
+Else
+DirCreate("Gebruikers")
+
+$naam = GUICtrlRead($naam1)
+$adres = GUICtrlRead($adres1)
+$postcode = GUICtrlRead($postcode1)
+$woonplaats = GUICtrlRead($woonplaats1)
+$telefoon = GUICtrlRead($telefoon1)
+$email = GUICtrlRead($email1)
+$ovn = GUICtrlRead($ovn1)
+$groep = GUICtrlRead($groupselect)
+
+IniWrite("Gebruikers\" & $ovn & ".ini", "Algemeen", "naam", $naam)
+IniWrite("Gebruikers\" & $ovn & ".ini", "Algemeen", "adres", $adres)
+IniWrite("Gebruikers\" & $ovn & ".ini", "Algemeen", "postcode", $postcode)
+IniWrite("Gebruikers\" & $ovn & ".ini", "Algemeen", "woonplaats", $woonplaats)
+IniWrite("Gebruikers\" & $ovn & ".ini", "Algemeen", "telefoon", $telefoon)
+IniWrite("Gebruikers\" & $ovn & ".ini", "Algemeen", "email", $email)
+IniWrite("Gebruikers\" & $ovn & ".ini", "Algemeen", "ov", $ovn)
+IniWrite("Gebruikers\" & $ovn & ".ini", "Algemeen", "groep", $groep)
+IniWriteSection("Gebruikers\" & $ovn & ".ini", "Cijfers", "")
+
+$vakken = IniRead("groepen\" & $groep & ".ini", "Algemeen", "Vakken", "")
+    $vakken = StringReplace($vakken, "vk", "")
+    $vakken_array = StringSplit($vakken, ",")
+    
+    For $i = 1 To $vakken_array[0]
+        If $vakken_array[$i] <> "" Then
+            IniWrite("Gebruikers\" & $ovn & ".ini", "Cijfers", $vakken_array[$i], ",,,,,,,,,,,,,,")
+        EndIf
+    Next
+
+
+
+IniWriteSection("Gebruikers\" & $ovn & ".ini", "Beoordeling", "")
+MsgBox(64, "Cijfer Registratie Systeem | Melding", "Gebruiker toegevoegd!")
+EndIf
+EndFunc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Func Closegui_gui()
+   Exit
+EndFunc
+
+Func Closegui_addgroup()
+	GUICtrlSetData($newgroup, "")
+	;For $p=1 to $Checkbox[0]
+     ; $Checkbox[$i]=0    
+  ;Next
+     GUISetState(@SW_HIDE, $Gui_addgroup)   
+EndFunc
+
+Func Closegui_editgroup()
+	 GUICtrlSetData($editgroup, "")
+$vakken_array = 0
+     GUISetState(@SW_HIDE, $Gui_editgroup)   
+EndFunc
+
+Func closegui_delgroup()
+GUICtrlSetData($groups, "", "")	
+GUISetState(@SW_HIDE, $Gui_delgroup)
+EndFunc
+
+Func Closegui_adduser()
+GUICtrlSetData($naam1, "")
+GUICtrlSetData($adres1, "")
+GUICtrlSetData($postcode1, "")
+GUICtrlSetData($woonplaats1, "")
+GUICtrlSetData($telefoon1, "")
+GUICtrlSetData($email1, "")
+GUICtrlSetData($ovn1, "")
+GUISetState(@SW_HIDE, $Gui_adduser)   
+EndFunc
+
+Func closegui_edituser()
+GUICtrlSetData($ovn2, "")
+GUICtrlSetData($naam2, "")
+GUICtrlSetData($adres2, "")
+GUICtrlSetData($postcode2, "")
+GUICtrlSetData($woonplaats2, "")
+GUICtrlSetData($telefoon2, "")
+GUICtrlSetData($email2, "")
+GUICtrlSetData($groupselect2, "", "")
+GUISetState(@SW_HIDE, $Gui_edituser)   
+EndFunc
+
+Func closegui_deluser()
+GUICtrlSetData($groups, "", "")	
+GUISetState(@SW_HIDE, $Gui_deluser)
+EndFunc
+
+Func Closegui_addvak()
+GUICtrlSetData($vak1, "")
+GUICtrlSetData($vak2, "")
+GUICtrlSetData($vak3, "")
+GUICtrlSetData($vak4, "")
+GUICtrlSetData($vak5, "")
+GUICtrlSetData($vak6, "")
+GUICtrlSetData($vak7, "")
+GUICtrlSetData($vak8, "")
+GUICtrlSetData($vak9, "")
+GUICtrlSetData($vak10, "")
+GUICtrlSetData($vak11, "")
+GUICtrlSetData($vak12, "")
+GUICtrlSetData($vak13, "")
+GUICtrlSetData($vak14, "")
+GUICtrlSetData($vak15, "")
+GUICtrlSetData($vak16, "")
+GUICtrlSetData($vak17, "")
+GUICtrlSetData($vak18, "")
+GUICtrlSetData($vak19, "")
+GUICtrlSetData($vak20, "")
+GUICtrlSetData($vak21, "")
+GUICtrlSetData($vak22, "")
+GUICtrlSetData($vak23, "")
+GUICtrlSetData($vak24, "")
+GUICtrlSetData($vak25, "")
+GUICtrlSetData($vak26, "")
+GUICtrlSetData($vak27, "")
+GUICtrlSetData($vak28, "")
+GUICtrlSetData($vak29, "")
+GUICtrlSetData($vak30, "")
+GUISetState(@SW_HIDE, $Gui_addvak)
+EndFunc
+
+Func closegui_guiaddmark()
+GUICtrlSetData($ov1, "")
+GUICtrlSetData($mvak1, "")
+GUICtrlSetData($cijfer1, "")
+GUISetState(@SW_HIDE, $Gui_addmark)	
+EndFunc
+
+Func closegui_editmark()
+GUICtrlSetData($ov3, "")
+GUICtrlSetData($vak4, "")
+GUICtrlSetData($cijfer4, "")
+GUISetState(@SW_HIDE, $Gui_editmark)	
+EndFunc
+
+Func closegui_delmark()
+GUICtrlSetData($ov8, "")
+GUICtrlSetData($vak8, "")
+GUISetState(@SW_HIDE, $Gui_editmark)	
+EndFunc
+
+
+
+
+Func closegui_editvak()
+GUICtrlSetData($editvak1, "")
+GUICtrlSetData($editvak2, "")
+GUICtrlSetData($editvak3, "")
+GUICtrlSetData($editvak4, "")
+GUICtrlSetData($editvak5, "")
+GUICtrlSetData($editvak6, "")
+GUICtrlSetData($editvak7, "")
+GUICtrlSetData($editvak8, "")
+GUICtrlSetData($editvak9, "")
+GUICtrlSetData($editvak10, "")
+GUICtrlSetData($editvak11, "")
+GUICtrlSetData($editvak12, "")
+GUICtrlSetData($editvak13, "")
+GUICtrlSetData($editvak14, "")
+GUICtrlSetData($editvak15, "")
+GUICtrlSetData($editvak16, "")
+GUICtrlSetData($editvak17, "")
+GUICtrlSetData($editvak18, "")
+GUICtrlSetData($editvak19, "")
+GUICtrlSetData($editvak20, "")
+GUICtrlSetData($editvak21, "")
+GUICtrlSetData($editvak22, "")
+GUICtrlSetData($editvak23, "")
+GUICtrlSetData($editvak24, "")
+GUICtrlSetData($editvak25, "")
+GUICtrlSetData($editvak26, "")
+GUICtrlSetData($editvak27, "")
+GUICtrlSetData($editvak28, "")
+GUICtrlSetData($editvak29, "")
+GUICtrlSetData($editvak30, "")
+GUISetState(@SW_HIDE, $Gui_editvak)	
+EndFunc
+
+func closegui_delvak()
+GUICtrlSetData($vakselectdel, "")
+GUISetState(@SW_HIDE, $gui_delvak)
+EndFunc
+
+func closegui_addbeoordeling()
+GUICtrlSetData($addbeoordeling, "")
+GUICtrlSetData($addbeoordeling_user, "")
+GUICtrlSetData($addbeoordeling_group, "Groep:")
+GUISetState(@SW_HIDE, $gui_addbeoordeling)
+EndFunc
+
+func closegui_editbeoordeling()
+GUICtrlSetData($editbeoordeling, "")
+GUICtrlSetData($editbeoordeling_user, "")
+GUICtrlSetData($editbeoordeling_group, "Groep:")
+GUISetState(@SW_HIDE, $gui_editbeoordeling)
+EndFunc
+
+func closegui_delbeoordeling()
+GUICtrlSetData($delbeoordeling_user, "")
+GUICtrlSetData($delbeoordeling_group, "Groep:")
+GUISetState(@SW_HIDE, $gui_delbeoordeling)
+EndFunc
+
+Func Closegui_adddocent()
+GUICtrlSetData($docent1, "")
+GUICtrlSetData($docent2, "")
+GUICtrlSetData($docent3, "")
+GUICtrlSetData($docent4, "")
+GUICtrlSetData($docent5, "")
+GUICtrlSetData($docent6, "")
+GUICtrlSetData($docent7, "")
+GUICtrlSetData($docent8, "")
+GUICtrlSetData($docent9, "")
+GUICtrlSetData($docent10, "")
+GUICtrlSetData($docent11, "")
+GUICtrlSetData($docent12, "")
+GUICtrlSetData($docent13, "")
+GUICtrlSetData($docent14, "")
+GUICtrlSetData($docent15, "")
+GUICtrlSetData($docent16, "")
+GUICtrlSetData($docent17, "")
+GUICtrlSetData($docent18, "")
+GUICtrlSetData($docent19, "")
+GUICtrlSetData($docent20, "")
+GUICtrlSetData($docent21, "")
+GUICtrlSetData($docent22, "")
+GUICtrlSetData($docent23, "")
+GUICtrlSetData($docent24, "")
+GUICtrlSetData($docent25, "")
+GUICtrlSetData($docent26, "")
+GUICtrlSetData($docent27, "")
+GUICtrlSetData($docent28, "")
+GUICtrlSetData($docent29, "")
+GUICtrlSetData($docent30, "")
+GUISetState(@SW_HIDE, $Gui_adddocent)
+EndFunc
+
+Func Closegui_editdocent()
+GUICtrlSetData($editdocent1, "")
+GUICtrlSetData($editdocent2, "")
+GUICtrlSetData($editdocent3, "")
+GUICtrlSetData($editdocent4, "")
+GUICtrlSetData($editdocent5, "")
+GUICtrlSetData($editdocent6, "")
+GUICtrlSetData($editdocent7, "")
+GUICtrlSetData($editdocent8, "")
+GUICtrlSetData($editdocent9, "")
+GUICtrlSetData($editdocent10, "")
+GUICtrlSetData($editdocent11, "")
+GUICtrlSetData($editdocent12, "")
+GUICtrlSetData($editdocent13, "")
+GUICtrlSetData($editdocent14, "")
+GUICtrlSetData($editdocent15, "")
+GUICtrlSetData($editdocent16, "")
+GUICtrlSetData($editdocent17, "")
+GUICtrlSetData($editdocent18, "")
+GUICtrlSetData($editdocent19, "")
+GUICtrlSetData($editdocent20, "")
+GUICtrlSetData($editdocent21, "")
+GUICtrlSetData($editdocent22, "")
+GUICtrlSetData($editdocent23, "")
+GUICtrlSetData($editdocent24, "")
+GUICtrlSetData($editdocent25, "")
+GUICtrlSetData($editdocent26, "")
+GUICtrlSetData($editdocent27, "")
+GUICtrlSetData($editdocent28, "")
+GUICtrlSetData($editdocent29, "")
+GUICtrlSetData($editdocent30, "")
+GUISetState(@SW_HIDE, $Gui_editdocent)
+EndFunc
+
+Func closegui_deldocent()
+GUICtrlSetData($docentselect, "")
+GUISetState(@SW_HIDE, $Gui_deldocent)
+EndFunc
+
+Func closegui_info()
+GUISetState(@SW_HIDE, $gui_info)
+EndFunc
+
+
+
+
+Func addmark_select()
+If not FileExists("gebruikers\" & GUICtrlRead($ov1) & ".ini") Or GUICtrlRead($ov1) = "" Then
+MsgBox(16, "Cijfer Registratie Systeem | Melding", "Deze gebruiker bestaat niet of het invoerveld is leeg")
+Else
+
+$usergroup = IniRead("gebruikers\" & GUICtrlRead($ov1) & ".ini", "Algemeen", "Groep", "")
+
+If @error Then
+    MsgBox(4096, "", "Fatale fout")
+Exit	
+Else
+    
+	$vakken = IniRead("groepen\" & $usergroup & ".ini", "Algemeen", "Vakken", "")
+    $vakken_array = StringSplit($vakken, ",")
+    
+    For $i = 1 To $vakken_array[0]
+        If $vakken_array[$i] <> "" Then
+            GUICtrlSetData($mvak1, $vakken_array[$i])
+        EndIf
+    Next
+EndIf
+EndIf
+EndFunc
+
+Func addmark_save()
+If not FileExists("gebruikers\" & GUICtrlRead($ov1) & ".ini") Or GUICtrlRead($ov1) = "" Then
+MsgBox(16, "Cijfer Registratie Systeem | Melding", "Deze gebruiker bestaat niet of het invoerveld is leeg")
+Else	
+Switch GUICtrlRead($mvak2)
+    Case "Rapport 1 \ Cijfer 1"
+        $place = 1
+    Case "Rapport 1 \ Cijfer 2"
+        $place = 2
+    Case "Rapport 1 \ Cijfer 3"
+        $place = 3
+    Case "Rapport 1 \ Cijfer 4"
+        $place = 4
+    Case "Rapport 1 \ Rapport Cijfer"
+        $place = 5
+    Case "Rapport 2 \ Cijfer 1"
+        $place = 6
+    Case "Rapport 2 \ Cijfer 2"
+        $place = 7
+    Case "Rapport 2 \ Cijfer 3"
+        $place = 8
+    Case "Rapport 2 \ Cijfer 4"
+        $place = 9
+    Case "Rapport 2 \ Rapport Cijfer"
+        $place = 10
+    Case "Rapport 3 \ Cijfer 1"
+        $place = 11
+    Case "Rapport 3 \ Cijfer 2"
+        $place = 12
+    Case "Rapport 3 \ Cijfer 3"
+        $place = 13
+    Case "Rapport 3 \ Cijfer 4"
+        $place = 14
+    Case "Rapport 3 \ Rapport Cijfer"
+        $place = 15
+EndSwitch
+;ConsoleWrite($place&@lf)
+$temp=IniRead("gebruikers\" & GUICtrlRead($ov1) & ".ini", "Cijfers", GUICtrlRead($mvak1), "")
+;ConsoleWrite("Temp "&$temp&@lf)
+$ss=StringSplit($temp,",")
+$sInputBoxAnswer = GUICtrlRead($cijfer1)
+$ss[$place]=$sInputBoxAnswer
+$new=""
+for $ct=1 to $ss[0]
+    $new&=$ss[$ct]&","
+Next
+$new=StringTrimRight($new,1)
+IniWrite("gebruikers\" & GUICtrlRead($ov1) & ".ini", "Cijfers", GUICtrlRead($mvak1), $new)
+;EndSelect
+
+MsgBox(64, "Cijfer Registratie Systeem | Melding", "Cijfer toegevoegd!")
+
+;$stringinst = StringInStr(IniRead("gebruikers\" & GUICtrlRead($ov1) & ".ini", "Cijfers", GUICtrlRead($vak1), ""), ",", -1, -1, $place)
+;MsgBox(0, "", $stringinst)
+EndIf
+EndFunc	
+
+Func GroupEditOK()
+    If GUICtrlRead($editgroup) = Not "" Then
+        $newgr2 = ""
+        For $f = $CheckBox[1] To $CheckBox[$count]
+            $newgr1 = BitAND(GUICtrlRead($f), $GUI_CHECKED)
+            If $newgr1 = $GUI_CHECKED Then
+                $newgr2 &= GUICtrlRead($f, 1) & ","
+            EndIf
+        Next        
+        $ini_File = @ScriptDir & "\groepen\" & GUICtrlRead($editgroup) & ".ini"
+        IniWrite($ini_file, "algemeen", "vakken", $newgr2)
+    Else
+        MsgBox(64, "Cijfer Registratie Systeem | Melding", "Vul AUB een geldige naam in voor de groep")
+    EndIf
+EndFunc  ;==>GroupAddOK
+
+Func editgroup_select()
+    
+    If not FileExists("groepen\" & GUICtrlRead($editgroup) & ".ini") Or GUICtrlRead($editgroup) = "" Then
+        MsgBox(64, "Cijfer Registratie Systeem | Melding", "Deze groep bestaat niet, of het invoerveld is leeg")
+    Else
+        $vakken = IniRead("groepen\" & GUICtrlRead($editgroup) & ".ini", "Algemeen", "Vakken", "")
+        $vakken = StringReplace($vakken, "vk", "")
+        $vakken_array = StringSplit($vakken, ",")
+        
+        $vakken1 = IniRead("vakken.ini", "Algemeen", "Vakken", "")
+        $vakken1 = StringReplace($vakken1, "vk", "")
+        $vakken_array1 = StringSplit($vakken1, ",")
+        
+        If @error Then
+            MsgBox(4096, "", "Error occurred, probably no INI file.")
+        Else 
+            For $w = 1 To $vakken_array1[0]
+                If $vakken_array1[$w] <> "" Then
+                    For $v = 1 To $vakken_array[0]
+                        If $vakken_array1[$w] = $vakken_array[$v] Then GUICtrlSetState($Checkbox[$w], $GUI_CHECKED)
+                    Next
+                EndIf
+            Next
+        EndIf
+    EndIf
+
+EndFunc
+
+Func Group_vakedit()
+$count = 0    	
+GUISetState(@SW_SHOW, $Gui_editgroup)	
+$vakken = IniRead("vakken.ini", "Algemeen", "Vakken", "")
+
+If @error Then
+    MsgBox(4096, "", "Error occurred, probably no INI file.")
+Else
+    
+	
+	$vakken = StringReplace($vakken, "vk", "")
+    $vakken_array = StringSplit($vakken, ",")
+	
+	
+ $left = 45
+    For $i = 0 To 5
+        $top = 50
+        For $j = 1 To 5
+            $k = $i * 5 + $j
+            If StringLen($vakken_array[$k]) > 2 Then
+                $CheckBox[$k] = GUICtrlCreateCheckbox("vk" & $k, $left, $top, 50, 20) 
+                $count += 1
+                $top += 20
+            EndIf
+        Next
+        $left += 65
+    Next
+
+
+
+    
+    
+    For $i = 1 To $count
+        If $vakken_array[$i] <> "" Then
+            GUICtrlSetData($CheckBox[$i], $vakken_array[$i])
+        EndIf
+    Next
+
+EndIf
+EndFunc
+
+Func Group_del()
+GUISetState (@SW_SHOW, $Gui_delgroup)
+$gsearch = FileFindFirstFile("groepen\*.ini")  
+
+; Check if the search was successful
+If $gsearch = -1 Then
+	MsgBox(0, "Error", "No files/directories matched the search pattern")
+	Exit
+EndIf
+
+While 1
+	$gfile = FileFindNextFile($gsearch) 
+	If @error Then ExitLoop
+	GUICtrlSetData($delgroups, StringTrimRight($gfile, 4)) 
+WEnd
+
+; Close the search handle
+FileClose($gsearch)
+EndFunc
+
+Func Delgroup()
+$groups2 = GUICtrlRead($delgroups)	
+If $groups2 = Not "" Then
+$delgroup_warn = MsgBox(36, "Cijfer Registratie Systeem | Melding", "Het kan zijn dat er nog gebruikers in deze groep zitten. Weet u zeker dat u de groep " & $groups2 & " wilt verwijderen?")
+If $delgroup_warn = 6 Then
+FileDelete("groepen\" & $groups2 & ".ini")
+EndIf
+Else
+MsgBox(16, "Cijfer Registratie Systeem | Melding"	, "Er is geen groep geselecteerd.")
+EndIf
+EndFunc
+
+Func edituser_select()
+If not FileExists("gebruikers\" & GUICtrlRead($ovn2) & ".ini") Or GUICtrlRead($ovn2) = "" Then
+MsgBox(16, "Cijfer Registratie Systeem | Melding", "Deze gebruiker bestaat niet of het invoerveld is leeg")
+Else
+$r1 = IniRead("Gebruikers\" & GUICtrlRead($ovn2) & ".ini", "Algemeen", "naam", "")
+$r2 = IniRead("Gebruikers\" & GUICtrlRead($ovn2) & ".ini", "Algemeen", "adres", "")
+$r3 = IniRead("Gebruikers\" & GUICtrlRead($ovn2) & ".ini", "Algemeen", "postcode", "")
+$r4 = IniRead("Gebruikers\" & GUICtrlRead($ovn2) & ".ini", "Algemeen", "woonplaats", "")
+$r5 = IniRead("Gebruikers\" & GUICtrlRead($ovn2) & ".ini", "Algemeen", "telefoon", "")
+$r6 = IniRead("Gebruikers\" & GUICtrlRead($ovn2) & ".ini", "Algemeen", "email", "")
+$r7 = IniRead("Gebruikers\" & GUICtrlRead($ovn2) & ".ini", "Algemeen", "groep", "")
+GUICtrlSetData($naam2, $r1)
+GUICtrlSetData($adres2, $r2)
+GUICtrlSetData($postcode2, $r3)
+GUICtrlSetData($woonplaats2, $r4)
+GUICtrlSetData($telefoon2, $r5)
+GUICtrlSetData($email2, $r6)
+GUICtrlSetData($groupselect2, -1, $r7)
+EndIf
+EndFunc
+
+Func edituser_save()
+$naam = GUICtrlRead($naam2)
+$adres = GUICtrlRead($adres2)
+$postcode = GUICtrlRead($postcode2)
+$woonplaats = GUICtrlRead($woonplaats2)
+$telefoon = GUICtrlRead($telefoon2)
+$email = GUICtrlRead($email2)
+$ovn = GUICtrlRead($ovn2)
+$groep = GUICtrlRead($groupselect2)
+
+IniWrite("Gebruikers\" & $ovn & ".ini", "Algemeen", "naam", $naam)
+IniWrite("Gebruikers\" & $ovn & ".ini", "Algemeen", "adres", $adres)
+IniWrite("Gebruikers\" & $ovn & ".ini", "Algemeen", "postcode", $postcode)
+IniWrite("Gebruikers\" & $ovn & ".ini", "Algemeen", "woonplaats", $woonplaats)
+IniWrite("Gebruikers\" & $ovn & ".ini", "Algemeen", "telefoon", $telefoon)
+IniWrite("Gebruikers\" & $ovn & ".ini", "Algemeen", "email", $email)
+IniWrite("Gebruikers\" & $ovn & ".ini", "Algemeen", "ov", $ovn)
+IniWrite("Gebruikers\" & $ovn & ".ini", "Algemeen", "groep", $groep)
+EndFunc
+
+Func edituser()
+$search = FileFindFirstFile("groepen\*.ini")  
+
+; Check if the search was successful
+If $search = -1 Then
+    MsgBox(0, "Error", "No files/directories matched the search pattern")
+    Exit
+EndIf
+
+While 1
+    $file = FileFindNextFile($search) 
+    If @error Then ExitLoop
+    $stringnew = StringTrimRight($file, 4)
+    GUICtrlSetData($groupselect, $stringnew & "|")
+WEnd
+
+; Close the search handle
+FileClose($search)
+GUISetState(@SW_SHOW, $Gui_edituser)
+EndFunc
+
+Func Deluserm()
+$search = FileFindFirstFile("gebruikers\*.ini")  
+
+; Check if the search was successful
+If $search = -1 Then
+	MsgBox(0, "Error", "No files/directories matched the search pattern")
+	Exit
+EndIf
+
+While 1
+	$file = FileFindNextFile($search) 
+	If @error Then ExitLoop
+	GUICtrlSetData($groups, StringTrimRight($file, 4)) 
+WEnd
+
+; Close the search handle
+FileClose($search)
+GUISetState(@SW_SHOW, $Gui_deluser)
+EndFunc
+
+Func Deluser()
+$groups2 = GUICtrlRead($groups)	
+If $groups2 = Not "" Then
+$delgroup_warn = MsgBox(36, "Cijfer Registratie Systeem | Melding", "Als u deze gebruiker verwijderd, gaan alle gegevens van deze gebruiker verloren. Weet u zeker dat u de gebruiker " & $groups2 & " wilt verwijderen?")
+If $delgroup_warn = 6 Then
+FileDelete("gebruikers\" & $groups2 & ".ini")
+EndIf
+Else
+MsgBox(16, "Cijfer Registratie Systeem | Melding"	, "Er is geen gebruiker geselecteerd.")
+EndIf
+EndFunc
+
+Func editvak()
+GUISetState (@SW_SHOW, $Gui_editvak)
+$vakeditr = IniRead("vakken.ini", "algemeen", "vakken", "error")
+$vakeditr2 = StringSplit($vakeditr, ",")
+    For $i = 1 To $vakeditr2[0]
+        If $vakeditr2[$i] <> "" Then
+            Guictrlsetdata(Eval( "editvak" & $i ), StringTrimLeft($vakeditr2[$i], 2))
+        EndIf
+    Next
+EndFunc
+
+Func editvakok()
+$edit_vak1 = "vk" & GUICtrlRead($editvak1) & ","
+$edit_vak2 = "vk" & GUICtrlRead($editvak2) & ","
+$edit_vak3 = "vk" & GUICtrlRead($editvak3) & ","
+$edit_vak4 = "vk" & GUICtrlRead($editvak4) & ","
+$edit_vak5 = "vk" & GUICtrlRead($editvak5) & ","
+$edit_vak6 = "vk" & GUICtrlRead($editvak6) & ","
+$edit_vak7 = "vk" & GUICtrlRead($editvak7) & ","
+$edit_vak8 = "vk" & GUICtrlRead($editvak8) & ","
+$edit_vak9 = "vk" & GUICtrlRead($editvak9) & ","
+$edit_vak10 = "vk" & GUICtrlRead($editvak10) & ","
+$edit_vak11 = "vk" & GUICtrlRead($editvak11) & ","
+$edit_vak12 = "vk" & GUICtrlRead($editvak12) & ","
+$edit_vak13 = "vk" & GUICtrlRead($editvak13) & ","
+$edit_vak14 = "vk" & GUICtrlRead($editvak14) & ","
+$edit_vak15 = "vk" & GUICtrlRead($editvak15) & ","
+$edit_vak16 = "vk" & GUICtrlRead($editvak16) & ","
+$edit_vak17 = "vk" & GUICtrlRead($editvak17) & ","
+$edit_vak18 = "vk" & GUICtrlRead($editvak18) & ","
+$edit_vak19 = "vk" & GUICtrlRead($editvak19) & ","
+$edit_vak20 = "vk" & GUICtrlRead($editvak20) & ","
+$edit_vak21 = "vk" & GUICtrlRead($editvak21) & ","
+$edit_vak22 = "vk" & GUICtrlRead($editvak22) & ","
+$edit_vak23 = "vk" & GUICtrlRead($editvak23) & ","
+$edit_vak24 = "vk" & GUICtrlRead($editvak24) & ","
+$edit_vak25 = "vk" & GUICtrlRead($editvak25) & ","
+$edit_vak26 = "vk" & GUICtrlRead($editvak26) & ","
+$edit_vak27 = "vk" & GUICtrlRead($editvak27) & ","
+$edit_vak28 = "vk" & GUICtrlRead($editvak28) & ","
+$edit_vak29 = "vk" & GUICtrlRead($editvak29) & ","
+$edit_vak30 = "vk" & GUICtrlRead($editvak30) & ","
+$editvak = $edit_vak1 & $edit_vak2 & $edit_vak3 & $edit_vak4 & $edit_vak5 & $edit_vak6 & $edit_vak7 & $edit_vak8 & $edit_vak9 & $edit_vak10 & $edit_vak11 & $edit_vak12 & $edit_vak13 & $edit_vak14 & $edit_vak15 & $edit_vak16 & $edit_vak17 & $edit_vak18 & $edit_vak19 & $edit_vak20 & $edit_vak21 & $edit_vak22 & $edit_vak23 & $edit_vak24 & $edit_vak25 & $edit_vak26 & $edit_vak27 & $edit_vak28 & $edit_vak29 & $edit_vak30
+$editvak = StringUpper($editvak)
+IniWrite("vakken.ini", "algemeen", "vakken", $editvak)
+MsgBox(64, "Cijfer Registratie Systeem | Melding", "Vak(ken) gewijzigd")	
+EndFunc
+
+Func delvak_save()
+$delvaksave_vk = GUICtrlRead($vakselectdel)
+$temp=IniRead("vakken.ini", "Algemeen", "vakken", "error")
+$new5 = StringReplace($temp, "VK" &  $delvaksave_vk, "VK")
+MsgBox(0, "", $new5)
+IniWrite("vakken.ini", "Algemeen", "vakken", $new5)
+MsgBox(64, "Cijfer Registratie Systeem | Melding", "Vak verwijderd")	
+EndFunc	
+
+Func delvak()
+	GUISetState(@SW_SHOW, $gui_delvak)
+	$vakken = IniRead("vakken.ini", "Algemeen", "Vakken", "")
+    $vakken_array = StringSplit($vakken, ",")
+    
+    For $i = 1 To $vakken_array[0]
+	If $vakken_array[$i] = "vk" Then ContinueLoop
+	
+        If $vakken_array[$i] <> "" Then
+            GUICtrlSetData($vakselectdel, StringTrimLeft($vakken_array[$i], 2))
+        EndIf
+    Next	
+EndFunc	
+
+Func editmark_select()
+If not FileExists("gebruikers\" & GUICtrlRead($ov3) & ".ini") Or GUICtrlRead($ov3) = "" Then
+MsgBox(16, "Cijfer Registratie Systeem | Melding", "Deze gebruiker bestaat niet of het invoerveld is leeg")
+Else
+
+$usergroup = IniRead("gebruikers\" & GUICtrlRead($ov3) & ".ini", "Algemeen", "Groep", "")
+
+If @error Then
+    MsgBox(4096, "", "Fatale fout")
+Exit	
+Else
+    
+	$vakken = IniRead("groepen\" & $usergroup & ".ini", "Algemeen", "Vakken", "")
+    $vakken_array = StringSplit($vakken, ",")
+    
+    For $i = 1 To $vakken_array[0]
+        If $vakken_array[$i] <> "" Then
+            GUICtrlSetData($vak4, $vakken_array[$i])
+        EndIf
+    Next
+EndIf
+EndIf
+EndFunc
+
+Func editmark_save()
+If not FileExists("gebruikers\" & GUICtrlRead($ov3) & ".ini") Or GUICtrlRead($ov3) = "" Then
+MsgBox(16, "Cijfer Registratie Systeem | Melding", "Deze gebruiker bestaat niet of het invoerveld is leeg")
+Else	
+Switch GUICtrlRead($vak5)
+    Case "Rapport 1 \ Cijfer 1"
+        $place = 1
+    Case "Rapport 1 \ Cijfer 2"
+        $place = 2
+    Case "Rapport 1 \ Cijfer 3"
+        $place = 3
+    Case "Rapport 1 \ Cijfer 4"
+        $place = 4
+    Case "Rapport 1 \ Rapport Cijfer"
+        $place = 5
+    Case "Rapport 2 \ Cijfer 1"
+        $place = 6
+    Case "Rapport 2 \ Cijfer 2"
+        $place = 7
+    Case "Rapport 2 \ Cijfer 3"
+        $place = 8
+    Case "Rapport 2 \ Cijfer 4"
+        $place = 9
+    Case "Rapport 2 \ Rapport Cijfer"
+        $place = 10
+    Case "Rapport 3 \ Cijfer 1"
+        $place = 11
+    Case "Rapport 3 \ Cijfer 2"
+        $place = 12
+    Case "Rapport 3 \ Cijfer 3"
+        $place = 13
+    Case "Rapport 3 \ Cijfer 4"
+        $place = 14
+    Case "Rapport 3 \ Rapport Cijfer"
+        $place = 15
+EndSwitch
+;ConsoleWrite($place&@lf)
+$temp=IniRead("gebruikers\" & GUICtrlRead($ov3) & ".ini", "Cijfers", GUICtrlRead($vak4), "")
+;ConsoleWrite("Temp "&$temp&@lf)
+$ss=StringSplit($temp,",")
+$sInputBoxAnswer = GUICtrlRead($cijfer4)
+$ss[$place]=$sInputBoxAnswer
+$new=""
+for $ct=1 to $ss[0]
+    $new&=$ss[$ct]&","
+Next
+$new=StringTrimRight($new,1)
+IniWrite("gebruikers\" & GUICtrlRead($ov3) & ".ini", "Cijfers", GUICtrlRead($vak4), $new)
+MsgBox(64, "Cijfer Registratie Systeem | Melding", "Cijfer gewijzigd.")
+EndIf
+EndFunc	
+
+Func delmark_select()
+If not FileExists("gebruikers\" & GUICtrlRead($ov8) & ".ini") Or GUICtrlRead($ov8) = "" Then
+MsgBox(16, "Cijfer Registratie Systeem | Melding", "Deze gebruiker bestaat niet of het invoerveld is leeg")
+Else
+
+$usergroup = IniRead("gebruikers\" & GUICtrlRead($ov8) & ".ini", "Algemeen", "Groep", "")
+
+If @error Then
+    MsgBox(4096, "", "Fatale fout")
+Exit	
+Else
+    
+	$vakken = IniRead("groepen\" & $usergroup & ".ini", "Algemeen", "Vakken", "")
+    $vakken_array = StringSplit($vakken, ",")
+    
+    For $i = 1 To $vakken_array[0]
+        If $vakken_array[$i] <> "" Then
+            GUICtrlSetData($vak8, $vakken_array[$i])
+        EndIf
+    Next
+EndIf
+EndIf
+EndFunc
+
+Func delmark_save()
+If not FileExists("gebruikers\" & GUICtrlRead($ov8) & ".ini") Or GUICtrlRead($ov8) = "" Then
+MsgBox(16, "Cijfer Registratie Systeem | Melding", "Deze gebruiker bestaat niet of het invoerveld is leeg")
+Else	
+Switch GUICtrlRead($vak9)
+    Case "Rapport 1 \ Cijfer 1"
+        $place = 1
+    Case "Rapport 1 \ Cijfer 2"
+        $place = 2
+    Case "Rapport 1 \ Cijfer 3"
+        $place = 3
+    Case "Rapport 1 \ Cijfer 4"
+        $place = 4
+    Case "Rapport 1 \ Rapport Cijfer"
+        $place = 5
+    Case "Rapport 2 \ Cijfer 1"
+        $place = 6
+    Case "Rapport 2 \ Cijfer 2"
+        $place = 7
+    Case "Rapport 2 \ Cijfer 3"
+        $place = 8
+    Case "Rapport 2 \ Cijfer 4"
+        $place = 9
+    Case "Rapport 2 \ Rapport Cijfer"
+        $place = 10
+    Case "Rapport 3 \ Cijfer 1"
+        $place = 11
+    Case "Rapport 3 \ Cijfer 2"
+        $place = 12
+    Case "Rapport 3 \ Cijfer 3"
+        $place = 13
+    Case "Rapport 3 \ Cijfer 4"
+        $place = 14
+    Case "Rapport 3 \ Rapport Cijfer"
+        $place = 15
+EndSwitch
+;ConsoleWrite($place&@lf)
+$temp=IniRead("gebruikers\" & GUICtrlRead($ov8) & ".ini", "Cijfers", GUICtrlRead($vak8), "")
+;ConsoleWrite("Temp "&$temp&@lf)
+$ss=StringSplit($temp,",")
+$sInputBoxAnswer = ""
+$ss[$place]=$sInputBoxAnswer
+$new=""
+for $ct=1 to $ss[0]
+    $new&=$ss[$ct]&","
+Next
+$new=StringTrimRight($new,1)
+IniWrite("gebruikers\" & GUICtrlRead($ov8) & ".ini", "Cijfers", GUICtrlRead($vak8), $new)
+MsgBox(64, "Cijfer Registratie Systeem | Melding", "Cijfer verwijderd")
+EndIf
+EndFunc	
+
+Func addbeoordeling_select()
+If not FileExists("gebruikers\" & GUICtrlRead($addbeoordeling_user) & ".ini") Or GUICtrlRead($addbeoordeling_user) = "" Then
+MsgBox(16, "Cijfer Registratie Systeem | Melding", "Deze gebruiker bestaat niet of het invoerveld is leeg")
+Else
+$usergroup = IniRead("gebruikers\" & GUICtrlRead($addbeoordeling_user) & ".ini", "Algemeen", "Groep", "")
+$docenten = IniRead("groepen\" & $usergroup & ".ini", "Algemeen", "docenten", "")
+
+If @error Then
+    MsgBox(4096, "", "Fatale fout")
+Exit	
+Else
+    
+	$docenten = IniRead("groepen\" & $usergroup & ".ini", "Algemeen", "docenten", "")
+	GUICtrlSetData($addbeoordeling_group, "Groep:              " & $usergroup)
+    $docent_array = StringSplit($docenten, ",")
+    
+    For $i = 1 To $docent_array[0]
+        If $docent_array[$i] <> "" Then
+            GUICtrlSetData($addbeoordeling_docent, $docent_array[$i])
+        EndIf
+    Next
+EndIf
+EndIf
+EndFunc	
+
+Func addbeoordeling_save()
+IniWrite("gebruikers\" & GUICtrlRead($addbeoordeling_user) & ".ini", "beoordeling", GUICtrlRead($addbeoordeling_docent), GUICtrlRead($addbeoordeling))	
+MsgBox(64, "Cijfer Registratie Systeem | Melding", "Beoordling toegevoegd")
+EndFunc
+
+Func editbeoordeling_select()
+If not FileExists("gebruikers\" & GUICtrlRead($editbeoordeling_user) & ".ini") Or GUICtrlRead($editbeoordeling_user) = "" Then
+MsgBox(16, "Cijfer Registratie Systeem | Melding", "Deze gebruiker bestaat niet of het invoerveld is leeg")
+Else
+$usergroup = IniRead("gebruikers\" & GUICtrlRead($editbeoordeling_user) & ".ini", "Algemeen", "Groep", "")
+$docenten = IniRead("groepen\" & $usergroup & ".ini", "Algemeen", "docenten", "")
+
+If @error Then
+    MsgBox(4096, "", "Fatale fout")
+Exit	
+Else
+    
+	$docenten = IniRead("groepen\" & $usergroup & ".ini", "Algemeen", "docenten", "")
+	GUICtrlSetData($editbeoordeling_group, "Groep:              " & $usergroup)
+    $docent_array = StringSplit($docenten, ",")
+    
+    For $i = 1 To $docent_array[0]
+        If $docent_array[$i] <> "" Then
+            GUICtrlSetData($editbeoordeling_docent, $docent_array[$i])
+        EndIf
+    Next
+EndIf
+EndIf
+EndFunc	
+
+Func editbeoordeling_save()
+IniWrite("gebruikers\" & GUICtrlRead($editbeoordeling_user) & ".ini", "beoordeling", GUICtrlRead($editbeoordeling_docent), GUICtrlRead($editbeoordeling))	
+MsgBox(64, "Cijfer Registratie Systeem | Melding", "Beoordling toegevoegd")
+EndFunc
+
+Func editbeoordeling_load()
+GUICtrlSetData($editbeoordeling, IniRead("gebruikers\" & GUICtrlRead($editbeoordeling_user) & ".ini", "Beoordeling", GUICtrlRead($editbeoordeling_docent), "error"))
+EndFunc
+
+Func delbeoordeling_select()
+If not FileExists("gebruikers\" & GUICtrlRead($delbeoordeling_user) & ".ini") Or GUICtrlRead($delbeoordeling_user) = "" Then
+MsgBox(16, "Cijfer Registratie Systeem | Melding", "Deze gebruiker bestaat niet of het invoerveld is leeg")
+Else
+$usergroup = IniRead("gebruikers\" & GUICtrlRead($delbeoordeling_user) & ".ini", "Algemeen", "Groep", "")
+$docenten = IniRead("groepen\" & $usergroup & ".ini", "Algemeen", "docenten", "")
+
+If @error Then
+    MsgBox(4096, "", "Fatale fout")
+Exit	
+Else
+    
+	$docenten = IniRead("groepen\" & $usergroup & ".ini", "Algemeen", "docenten", "")
+	GUICtrlSetData($delbeoordeling_group, "Groep:              " & $usergroup)
+    $docent_array = StringSplit($docenten, ",")
+    
+    For $i = 1 To $docent_array[0]
+        If $docent_array[$i] <> "" Then
+            GUICtrlSetData($delbeoordeling_docent, $docent_array[$i])
+        EndIf
+    Next
+EndIf
+EndIf
+EndFunc	
+
+Func delbeoordeling_save()
+If MsgBox(68, "Cijfer Registratie Systeem | Melding", "Weet u zeker dat u deze beoordeling wilt verwijderen?") = 6 Then
+IniDelete("gebruikers\" & GUICtrlRead($delbeoordeling_user) & ".ini", "beoordeling", GUICtrlRead($delbeoordeling_docent))	
+MsgBox(64, "Cijfer Registratie Systeem | Melding", "Beoordeling verwijderd")
+EndIf
+EndFunc
+
+Func docentadd_save()
+$new_docent1 = "dc" & GUICtrlRead($docent1) & ","
+$new_docent2 = "dc" & GUICtrlRead($docent2) & ","
+$new_docent3 = "dc" & GUICtrlRead($docent3) & ","
+$new_docent4 = "dc" & GUICtrlRead($docent4) & ","
+$new_docent5 = "dc" & GUICtrlRead($docent5) & ","
+$new_docent6 = "dc" & GUICtrlRead($docent6) & ","
+$new_docent7 = "dc" & GUICtrlRead($docent7) & ","
+$new_docent8 = "dc" & GUICtrlRead($docent8) & ","
+$new_docent9 = "dc" & GUICtrlRead($docent9) & ","
+$new_docent10 = "dc" & GUICtrlRead($docent10) & ","
+$new_docent11 = "dc" & GUICtrlRead($docent11) & ","
+$new_docent12 = "dc" & GUICtrlRead($docent12) & ","
+$new_docent13 = "dc" & GUICtrlRead($docent13) & ","
+$new_docent14 = "dc" & GUICtrlRead($docent14) & ","
+$new_docent15 = "dc" & GUICtrlRead($docent15) & ","
+$new_docent16 = "dc" & GUICtrlRead($docent16) & ","
+$new_docent17 = "dc" & GUICtrlRead($docent17) & ","
+$new_docent18 = "dc" & GUICtrlRead($docent18) & ","
+$new_docent19 = "dc" & GUICtrlRead($docent19) & ","
+$new_docent20 = "dc" & GUICtrlRead($docent20) & ","
+$new_docent21 = "dc" & GUICtrlRead($docent21) & ","
+$new_docent22 = "dc" & GUICtrlRead($docent22) & ","
+$new_docent23 = "dc" & GUICtrlRead($docent23) & ","
+$new_docent24 = "dc" & GUICtrlRead($docent24) & ","
+$new_docent25 = "dc" & GUICtrlRead($docent25) & ","
+$new_docent26 = "dc" & GUICtrlRead($docent26) & ","
+$new_docent27 = "dc" & GUICtrlRead($docent27) & ","
+$new_docent28 = "dc" & GUICtrlRead($docent28) & ","
+$new_docent29 = "dc" & GUICtrlRead($docent29) & ","
+$new_docent30 = "dc" & GUICtrlRead($docent30) & ","
+
+$newdocent = $new_docent1 & $new_docent2 & $new_docent3 & $new_docent4 & $new_docent5 & $new_docent6 & $new_docent7 & $new_docent8 & $new_docent9 & $new_docent10 & $new_docent11 & $new_docent12 & $new_docent13 & $new_docent14 & $new_docent15 & $new_docent16 & $new_docent17 & $new_docent18 & $new_docent19 & $new_docent20 & $new_docent21 & $new_docent22 & $new_docent23 & $new_docent24 & $new_docent25 & $new_docent26 & $new_docent27 & $new_docent28 & $new_docent29 & $new_docent30
+$newdocent = StringUpper($newdocent)
+IniWrite("docenten.ini", "algemeen", "docenten", $newdocent)
+
+MsgBox(64, "Cijfer Registratie Systeem | Melding", "Docent(en) toegevoegd")
+EndFunc	
+
+Func docentedit_save()
+$edit_docent1 = "dc" & GUICtrlRead($editdocent1) & ","
+$edit_docent2 = "dc" & GUICtrlRead($editdocent2) & ","
+$edit_docent3 = "dc" & GUICtrlRead($editdocent3) & ","
+$edit_docent4 = "dc" & GUICtrlRead($editdocent4) & ","
+$edit_docent5 = "dc" & GUICtrlRead($editdocent5) & ","
+$edit_docent6 = "dc" & GUICtrlRead($editdocent6) & ","
+$edit_docent7 = "dc" & GUICtrlRead($editdocent7) & ","
+$edit_docent8 = "dc" & GUICtrlRead($editdocent8) & ","
+$edit_docent9 = "dc" & GUICtrlRead($editdocent9) & ","
+$edit_docent10 = "dc" & GUICtrlRead($editdocent10) & ","
+$edit_docent11 = "dc" & GUICtrlRead($editdocent11) & ","
+$edit_docent12 = "dc" & GUICtrlRead($editdocent12) & ","
+$edit_docent13 = "dc" & GUICtrlRead($editdocent13) & ","
+$edit_docent14 = "dc" & GUICtrlRead($editdocent14) & ","
+$edit_docent15 = "dc" & GUICtrlRead($editdocent15) & ","
+$edit_docent16 = "dc" & GUICtrlRead($editdocent16) & ","
+$edit_docent17 = "dc" & GUICtrlRead($editdocent17) & ","
+$edit_docent18 = "dc" & GUICtrlRead($editdocent18) & ","
+$edit_docent19 = "dc" & GUICtrlRead($editdocent19) & ","
+$edit_docent20 = "dc" & GUICtrlRead($editdocent20) & ","
+$edit_docent21 = "dc" & GUICtrlRead($editdocent21) & ","
+$edit_docent22 = "dc" & GUICtrlRead($editdocent22) & ","
+$edit_docent23 = "dc" & GUICtrlRead($editdocent23) & ","
+$edit_docent24 = "dc" & GUICtrlRead($editdocent24) & ","
+$edit_docent25 = "dc" & GUICtrlRead($editdocent25) & ","
+$edit_docent26 = "dc" & GUICtrlRead($editdocent26) & ","
+$edit_docent27 = "dc" & GUICtrlRead($editdocent27) & ","
+$edit_docent28 = "dc" & GUICtrlRead($editdocent28) & ","
+$edit_docent29 = "dc" & GUICtrlRead($editdocent29) & ","
+$edit_docent30 = "dc" & GUICtrlRead($editdocent30) & ","
+
+
+
+
+$edit_docent = $edit_docent1 & $edit_docent2 & $edit_docent3 & $edit_docent4 & $edit_docent5 & $edit_docent6 & $edit_docent7 & $edit_docent8 & $edit_docent9 & $edit_docent10 & $edit_docent11 & $edit_docent12 & $edit_docent13 & $edit_docent14 & $edit_docent15 & $edit_docent16 & $edit_docent17 & $edit_docent18 & $edit_docent19 & $edit_docent20 & $edit_docent21 & $edit_docent22 & $edit_docent23 & $edit_docent24 & $edit_docent25 & $edit_docent26 & $edit_docent27 & $edit_docent28 & $edit_docent29 & $edit_docent30
+$edit_docent = StringUpper($edit_docent)
+IniWrite("docenten.ini", "algemeen", "docenten", $edit_docent)
+
+MsgBox(64, "Cijfer Registratie Systeem | Melding", "Docent(en) toegevoegd")
+EndFunc	
+
+Func editdocent()
+GUISetState (@SW_SHOW, $Gui_editdocent)		
+$docenteditr = IniRead("docenten.ini", "algemeen", "docenten", "error")
+$docenteditr2 = StringSplit($docenteditr, ",")
+    For $i = 1 To $docenteditr2[0]
+        If $docenteditr2[$i] <> "" Then
+            Guictrlsetdata(Eval( "editdocent" & $i ), StringTrimLeft($docenteditr2[$i], 2))
+        EndIf
+    Next
+EndFunc	
+
+Func deldocent_save()
+If MsgBox(68, "Cijfer Registratie Systeem | Melding", "Weet u zeker dat u deze docent wilt verwijderen?") = 6 Then
+$deldocentsave_dc = GUICtrlRead($docentselect)
+$temp=IniRead("docenten.ini", "Algemeen", "Docenten", "error")
+$new = StringReplace($temp, "DC" &  $deldocentsave_dc, "")
+;MsgBox(0, "", $new)
+IniWrite("docenten.ini", "Algemeen", "Docenten", $new)
+MsgBox(64, "Cijfer Registratie Systeem | Melding", "Docent verwijderd")
+EndIf
+EndFunc	
+
+func deldocent()
+GUISetState(@SW_SHOW, $Gui_deldocent)	
+$deldocsp = StringSplit(IniRead("docenten.ini", "Algemeen", "Docenten", "error"), ",")
+For $i = 1 To $deldocsp[0]
+        If $deldocsp[$i] <> "" Then
+			;MsgBox(0, "", StringTrimLeft($deldocsp[$i], 2))
+			If $deldocsp[$i] = "dc" Then ContinueLoop
+			If StringLen($deldocsp[$i]) < 3 Then 
+			Else	
+			GUICtrlSetData($docentselect, StringTrimLeft($deldocsp[$i], 2))
+			EndIf
+        EndIf
+    Next
+EndFunc	
+
+Func Info()
+GUISetState(@SW_SHOW, $gui_info)
+EndFunc
