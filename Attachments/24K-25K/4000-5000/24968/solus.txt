@@ -1,0 +1,323 @@
+
+-------	Info	18/09/2008 12:36		------------------------------------------------
+-------	Info	18/09/2008 12:36		Initialisation: Default Proxy
+-------	Info	18/09/2008 12:36		Proxy Server Info - Source: 	Current User
+-------	Info	18/09/2008 12:36		Proxy Server Info - Server: 	                       
+-------	Info	18/09/2008 12:36		Proxy Server Info - ByPass:	<local>
+-------	Info	18/09/2008 11:36		SOLUS up to date already (2.20)
+-------	Info	18/09/2008 11:36		Security Model Check Returned: 233 :Switching to SQL Security
+-------	Info	18/09/2008 11:36		Security Model Check Returned: 18456 :Switching to SQL Security
+-------	Info	18/09/2008 11:36		SLG package not requested.
+-------	Info	18/09/2008 11:36		CSS package not requested.
+-------	Info	18/09/2008 11:36		Getting the SOLUS upgrade manifest...
+-------	Info	18/09/2008 11:36		Using default proxy:
+-------	Info	18/09/2008 11:36		Communicating with SOLUS Server as School: 9361111 at WW11 1JJ
+-------	Info	18/09/2008 11:36		ID:	cdbcf298-4b16-4bda-b85b-2a5018b4875c	Name:	SIMS 2008 08 August Main	From:	                                              
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSApplicationSetup 1.526.15.0 to 1.528.12.0 Upgrade.EXE from 1.526.15.0 to 1.528.12.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSApplicationSetup 1.528.12.0 to 1.529.3.0 Upgrade.EXE from 1.528.12.0 to 1.529.3.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSApplicationSetup 1.529.3.0 to 1.530.7.0 Upgrade.EXE from 1.529.3.0 to 1.530.7.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSApplicationSetup 1.530.7.0 to 1.532.14.0 Upgrade.EXE from 1.530.7.0 to 1.532.14.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSApplicationSetup 1.532.14.0 to 1.534.9.0 Upgrade.EXE from 1.532.14.0 to 1.534.9.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSApplicationSetup 1.534.9.0 to 1.536.10.0 Upgrade.EXE from 1.534.9.0 to 1.536.10.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSApplicationSetup 1.536.10.0 to 1.538.10.0 Upgrade.EXE from 1.536.10.0 to 1.538.10.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSApplicationSetup 1.538.10.0 to 1.538.13.0 Upgrade.EXE from 1.538.10.0 to 1.538.13.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSApplicationSetup 1.538.13.0 to 1.540.6.0 Upgrade.EXE from 1.538.13.0 to 1.540.6.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSApplicationSetup 1.540.6.0 to 1.542.5.0 Upgrade.EXE from 1.540.6.0 to 1.542.5.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSApplicationSetup 1.542.5.0 to 1.544.5.0 Upgrade.EXE from 1.542.5.0 to 1.544.5.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSApplicationSetup 1.544.5.0 to 1.546.13.0 Upgrade.EXE from 1.544.5.0 to 1.546.13.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSApplicationSetup 1.546.13.0 to 1.547.1.0 Upgrade.EXE from 1.546.13.0 to 1.547.1.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSApplicationSetup 1.547.1.0 to 1.548.7.0 Upgrade.EXE from 1.547.1.0 to 1.548.7.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSApplicationSetup 1.548.7.0 to 1.548.8.0 Upgrade.EXE from 1.548.7.0 to 1.548.8.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSApplicationSetup 1.548.8.0 to 1.550.11.0 Upgrade.EXE from 1.548.8.0 to 1.550.11.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSApplicationSetup 1.550.11.0 to 1.551.3.0 Upgrade.EXE from 1.550.11.0 to 1.551.3.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSApplicationSetup 1.551.3.0 to 1.552.6.0 Upgrade.EXE from 1.551.3.0 to 1.552.6.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSApplicationSetup 1.552.6.0 to 1.553.4.0 Upgrade.EXE from 1.552.6.0 to 1.553.4.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSApplicationSetup 1.553.4.0 to 1.554.10.0 Upgrade.EXE from 1.553.4.0 to 1.554.10.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSApplicationSetup 1.554.10.0 to 1.555.2.0 Upgrade.EXE from 1.554.10.0 to 1.555.2.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSApplicationSetup 1.555.2.0 to 1.556.7.0 Upgrade.EXE from 1.555.2.0 to 1.556.7.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSApplicationSetup 1.556.7.0 to 1.557.1.0 Upgrade.EXE from 1.556.7.0 to 1.557.1.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSApplicationSetup 1.557.1.0 to 1.557.2.0 Upgrade.EXE from 1.557.1.0 to 1.557.2.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSApplicationSetup 1.557.2.0 to 1.558.12.0 Upgrade.EXE from 1.557.2.0 to 1.558.12.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSApplicationSetup 1.558.12.0 to 1.560.7.0 Upgrade.EXE from 1.558.12.0 to 1.560.7.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSApplicationSetup 1.560.7.0 to 1.562.17.0 Upgrade.EXE from 1.560.7.0 to 1.562.17.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSApplicationSetup 1.562.17.0 to 1.564.5.0 Upgrade.EXE from 1.562.17.0 to 1.564.5.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSApplicationSetup 1.564.5.0 to 1.566.11.0 Upgrade.EXE from 1.564.5.0 to 1.566.11.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSApplicationSetup 1.566.11.0 to 1.566.12.0 Upgrade.EXE from 1.566.11.0 to 1.566.12.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSApplicationSetup 1.566.12.0 to 1.566.13.0 Upgrade.EXE from 1.566.12.0 to 1.566.13.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSApplicationSetup 1.566.13.0 to 1.568.10.0 Upgrade.EXE from 1.566.13.0 to 1.568.10.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSSQLApplicationSetup 1.526.15.0 to 1.528.11.0 Upgrade.EXE from 1.526.15.0 to 1.528.11.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSSQLApplicationSetup 1.528.11.0 to 1.529.3.0 Upgrade.EXE from 1.528.11.0 to 1.529.3.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSSQLApplicationSetup 1.529.3.0 to 1.530.6.0 Upgrade.EXE from 1.529.3.0 to 1.530.6.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSSQLApplicationSetup 1.530.6.0 to 1.532.13.0 Upgrade.EXE from 1.530.6.0 to 1.532.13.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSSQLApplicationSetup 1.532.13.0 to 1.534.9.0 Upgrade.EXE from 1.532.13.0 to 1.534.9.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSSQLApplicationSetup 1.534.9.0 to 1.534.11.0 Upgrade.EXE from 1.534.9.0 to 1.534.11.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSSQLApplicationSetup 1.534.11.0 to 1.536.10.0 Upgrade.EXE from 1.534.11.0 to 1.536.10.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSSQLApplicationSetup 1.536.10.0 to 1.538.10.0 Upgrade.EXE from 1.536.10.0 to 1.538.10.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSSQLApplicationSetup 1.538.10.0 to 1.538.12.0 Upgrade.EXE from 1.538.10.0 to 1.538.12.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSSQLApplicationSetup 1.538.12.0 to 1.540.5.0 Upgrade.EXE from 1.538.12.0 to 1.540.5.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSSQLApplicationSetup 1.540.5.0 to 1.542.5.0 Upgrade.EXE from 1.540.5.0 to 1.542.5.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSSQLApplicationSetup 1.542.5.0 to 1.544.5.0 Upgrade.EXE from 1.542.5.0 to 1.544.5.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSSQLApplicationSetup 1.544.5.0 to 1.546.11.0 Upgrade.EXE from 1.544.5.0 to 1.546.11.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSSQLApplicationSetup 1.546.11.0 to 1.548.7.0 Upgrade.EXE from 1.546.11.0 to 1.548.7.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSSQLApplicationSetup 1.548.7.0 to 1.548.8.0 Upgrade.EXE from 1.548.7.0 to 1.548.8.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSSQLApplicationSetup 1.548.8.0 to 1.550.11.0 Upgrade.EXE from 1.548.8.0 to 1.550.11.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSSQLApplicationSetup 1.550.11.0 to 1.551.3.0 Upgrade.EXE from 1.550.11.0 to 1.551.3.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSSQLApplicationSetup 1.551.3.0 to 1.552.6.0 Upgrade.EXE from 1.551.3.0 to 1.552.6.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSSQLApplicationSetup 1.552.6.0 to 1.553.4.0 Upgrade.EXE from 1.552.6.0 to 1.553.4.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSSQLApplicationSetup 1.553.4.0 to 1.554.10.0 Upgrade.EXE from 1.553.4.0 to 1.554.10.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSSQLApplicationSetup 1.554.10.0 to 1.555.2.0 Upgrade.EXE from 1.554.10.0 to 1.555.2.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSSQLApplicationSetup 1.555.2.0 to 1.556.7.0 Upgrade.EXE from 1.555.2.0 to 1.556.7.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSSQLApplicationSetup 1.556.7.0 to 1.558.12.0 Upgrade.EXE from 1.556.7.0 to 1.558.12.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSSQLApplicationSetup 1.558.12.0 to 1.560.7.0 Upgrade.EXE from 1.558.12.0 to 1.560.7.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSSQLApplicationSetup 1.560.7.0 to 1.562.17.0 Upgrade.EXE from 1.560.7.0 to 1.562.17.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSSQLApplicationSetup 1.562.17.0 to 1.564.6.0 Upgrade.EXE from 1.562.17.0 to 1.564.6.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSSQLApplicationSetup 1.564.6.0 to 1.566.11.0 Upgrade.EXE from 1.564.6.0 to 1.566.11.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSSQLApplicationSetup 1.566.11.0 to 1.566.12.0 Upgrade.EXE from 1.566.11.0 to 1.566.12.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSSQLApplicationSetup 1.566.12.0 to 1.566.13.0 Upgrade.EXE from 1.566.12.0 to 1.566.13.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSSQLApplicationSetup 1.566.13.0 to 1.568.10.0 Upgrade.EXE from 1.566.13.0 to 1.568.10.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSManualSetup 1.526.13.0 to 1.528.7.0 Upgrade.EXE from 1.526.13.0 to 1.528.7.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSManualSetup 1.528.7.0 to 1.530.4.0 Upgrade.EXE from 1.528.7.0 to 1.530.4.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSManualSetup 1.530.4.0 to 1.532.11.0 Upgrade.EXE from 1.530.4.0 to 1.532.11.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSManualSetup 1.532.11.0 to 1.534.9.0 Upgrade.EXE from 1.532.11.0 to 1.534.9.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSManualSetup 1.534.9.0 to 1.536.8.0 Upgrade.EXE from 1.534.9.0 to 1.536.8.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSManualSetup 1.536.8.0 to 1.538.9.0 Upgrade.EXE from 1.536.8.0 to 1.538.9.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSManualSetup 1.538.9.0 to 1.540.3.0 Upgrade.EXE from 1.538.9.0 to 1.540.3.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSManualSetup 1.540.3.0 to 1.542.2.0 Upgrade.EXE from 1.540.3.0 to 1.542.2.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSManualSetup 1.542.2.0 to 1.544.5.0 Upgrade.EXE from 1.542.2.0 to 1.544.5.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSManualSetup 1.544.5.0 to 1.546.12.0 Upgrade.EXE from 1.544.5.0 to 1.546.12.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSManualSetup 1.546.12.0 to 1.548.6.0 Upgrade.EXE from 1.546.12.0 to 1.548.6.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSManualSetup 1.548.6.0 to 1.550.11.0 Upgrade.EXE from 1.548.6.0 to 1.550.11.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSManualSetup 1.550.11.0 to 1.551.1.0 Upgrade.EXE from 1.550.11.0 to 1.551.1.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSManualSetup 1.551.1.0 to 1.552.5.0 Upgrade.EXE from 1.551.1.0 to 1.552.5.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSManualSetup 1.552.5.0 to 1.554.10.0 Upgrade.EXE from 1.552.5.0 to 1.554.10.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSManualSetup 1.554.10.0 to 1.555.2.0 Upgrade.EXE from 1.554.10.0 to 1.555.2.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSManualSetup 1.555.2.0 to 1.556.7.0 Upgrade.EXE from 1.555.2.0 to 1.556.7.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSManualSetup 1.556.7.0 to 1.558.11.0 Upgrade.EXE from 1.556.7.0 to 1.558.11.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSManualSetup 1.558.11.0 to 1.560.5.0 Upgrade.EXE from 1.558.11.0 to 1.560.5.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSManualSetup 1.560.5.0 to 1.562.16.0 Upgrade.EXE from 1.560.5.0 to 1.562.16.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSManualSetup 1.562.16.0 to 1.564.4.0 Upgrade.EXE from 1.562.16.0 to 1.564.4.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSManualSetup 1.564.4.0 to 1.566.12.0 Upgrade.EXE from 1.564.4.0 to 1.566.12.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSManualSetup 1.566.12.0 to 1.568.10.0 Upgrade.EXE from 1.566.12.0 to 1.568.10.0
+-------	Info	18/09/2008 11:36		OBSOLETE NovaSatelliteSetup 1.524.3.0 to 1.528.9.0 Upgrade.EXE from 1.524.3.0 to 1.528.9.0
+-------	Info	18/09/2008 11:36		OBSOLETE NovaSatelliteSetup 1.528.9.0 to 1.530.1.0 Upgrade.EXE from 1.528.9.0 to 1.530.1.0
+-------	Info	18/09/2008 11:36		OBSOLETE NovaSatelliteSetup 1.530.1.0 to 1.532.13.0 Upgrade.EXE from 1.530.1.0 to 1.532.13.0
+-------	Info	18/09/2008 11:36		OBSOLETE NovaSatelliteSetup 1.532.13.0 to 1.536.7.0 Upgrade.EXE from 1.532.13.0 to 1.536.7.0
+-------	Info	18/09/2008 11:36		OBSOLETE NovaSatelliteSetup 1.536.7.0 to 1.538.5.0 Upgrade.EXE from 1.536.7.0 to 1.538.5.0
+-------	Info	18/09/2008 11:36		OBSOLETE NovaSatelliteSetup 1.538.5.0 to 1.538.13.0 Upgrade.EXE from 1.538.5.0 to 1.538.13.0
+-------	Info	18/09/2008 11:36		OBSOLETE NovaSatelliteSetup 1.538.13.0 to 1.542.3.0 Upgrade.EXE from 1.538.13.0 to 1.542.3.0
+-------	Info	18/09/2008 11:36		OBSOLETE NovaSatelliteSetup 1.542.3.0 to 1.546.10.0 Upgrade.EXE from 1.542.3.0 to 1.546.10.0
+-------	Info	18/09/2008 11:36		OBSOLETE NovaSatelliteSetup 1.546.10.0 to 1.550.11.0 Upgrade.EXE from 1.546.10.0 to 1.550.11.0
+-------	Info	18/09/2008 11:36		OBSOLETE NovaSatelliteSetup 1.550.11.0 to 1.551.2.0 Upgrade.EXE from 1.550.11.0 to 1.551.2.0
+-------	Info	18/09/2008 11:36		OBSOLETE NovaSatelliteSetup 1.551.2.0 to 1.554.1.0 Upgrade.EXE from 1.551.2.0 to 1.554.1.0
+-------	Info	18/09/2008 11:36		OBSOLETE NOVASatelliteSetup 1.554.1.0 to 1.556.5.0 Upgrade.EXE from 1.554.1.0 to 1.556.5.0
+-------	Info	18/09/2008 11:36		OBSOLETE NovaSatelliteSetup 1.556.5.0 to 1.566.3.0 Upgrade.EXE from 1.556.5.0 to 1.566.3.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSAMPARKSetup 1.526.3.0 to 1.532.13.0 Upgrade.EXE from 1.526.3.0 to 1.532.13.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSAMPARKSetup 1.532.13.0 to 1.534.2.0 Upgrade.EXE from 1.532.13.0 to 1.534.2.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSAMPARKSetup 1.534.2.0 to 1.536.1.0 Upgrade.EXE from 1.534.2.0 to 1.536.1.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSAMPARKSetup 1.536.1.0 to 1.538.1.0 Upgrade.EXE from 1.536.1.0 to 1.538.1.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSAMPARKSetup 1.538.1.0 to 1.542.1.0 Upgrade.EXE from 1.538.1.0 to 1.542.1.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSAMPARKSetup 1.542.1.0 to 1.544.1.0 Upgrade.EXE from 1.542.1.0 to 1.544.1.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSAMPARKSetup 1.544.1.0 to 1.550.3.0 Upgrade.EXE from 1.544.1.0 to 1.550.3.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSAMPARKSetup 1.550.3.0 to 1.552.5.0 Upgrade.EXE from 1.550.3.0 to 1.552.5.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSAMPARKSetup 1.552.5.0 to 1.554.7.0 Upgrade.EXE from 1.552.5.0 to 1.554.7.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSAmparkSetup 1.554.7.0 to 1.556.1.0 Upgrade.EXE from 1.554.7.0 to 1.556.1.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSAmparkSetup 1.556.1.0 to 1.558.4.0 Upgrade.EXE from 1.556.1.0 to 1.558.4.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSAmparkSetup 1.558.4.0 to 1.562.2.0 Upgrade.EXE from 1.558.4.0 to 1.562.2.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSAmparkSetup 1.562.2.0 to 1.564.1.0 Upgrade.EXE from 1.562.2.0 to 1.564.1.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSAMPARKSetup 1.564.1.0 to 1.568.9.0 Upgrade.EXE from 1.564.1.0 to 1.568.9.0
+-------	Info	18/09/2008 11:36		OBSOLETE ADProvisioningServiceSetup 1.532.13.0 to 1.534.9.0 Upgrade.EXE from 1.532.13.0 to 1.534.9.0
+-------	Info	18/09/2008 11:36		OBSOLETE ADProvisioningServiceSetup 1.534.9.0 to 1.536.10.0 Upgrade.EXE from 1.534.9.0 to 1.536.10.0
+-------	Info	18/09/2008 11:36		OBSOLETE ADProvisioningServiceSetup 1.536.10.0 to 1.538.10.0 Upgrade.EXE from 1.536.10.0 to 1.538.10.0
+-------	Info	18/09/2008 11:36		OBSOLETE ADProvisioningServiceSetup 1.538.10.0 to 1.540.5.0 Upgrade.EXE from 1.538.10.0 to 1.540.5.0
+-------	Info	18/09/2008 11:36		OBSOLETE ADProvisioningServiceSetup 1.540.5.0 to 1.542.5.0 Upgrade.EXE from 1.540.5.0 to 1.542.5.0
+-------	Info	18/09/2008 11:36		OBSOLETE ADProvisioningServiceSetup 1.542.5.0 to 1.544.5.0 Upgrade.EXE from 1.542.5.0 to 1.544.5.0
+-------	Info	18/09/2008 11:36		OBSOLETE ADProvisioningServiceSetup 1.544.5.0 to 1.546.11.0 Upgrade.EXE from 1.544.5.0 to 1.546.11.0
+-------	Info	18/09/2008 11:36		OBSOLETE ADProvisioningServiceSetup 1.546.11.0 to 1.548.6.0 Upgrade.EXE from 1.546.11.0 to 1.548.6.0
+-------	Info	18/09/2008 11:36		OBSOLETE ADProvisioningServiceSetup 1.548.6.0 to 1.548.7.0 Upgrade.EXE from 1.548.6.0 to 1.548.7.0
+-------	Info	18/09/2008 11:36		OBSOLETE ADProvisioningServiceSetup 1.548.7.0 to 1.550.11.0 Upgrade.EXE from 1.548.7.0 to 1.550.11.0
+-------	Info	18/09/2008 11:36		OBSOLETE ADProvisioningServiceSetup 1.550.11.0 to 1.552.6.0 Upgrade.EXE from 1.550.11.0 to 1.552.6.0
+-------	Info	18/09/2008 11:36		OBSOLETE ADProvisioningServiceSetup 1.552.6.0 to 1.554.10.0 Upgrade.EXE from 1.552.6.0 to 1.554.10.0
+-------	Info	18/09/2008 11:36		OBSOLETE ADProvisioningServiceSetup 1.554.10.0 to 1.558.11.0 Upgrade.EXE from 1.554.10.0 to 1.558.11.0
+-------	Info	18/09/2008 11:36		OBSOLETE ADProvisioningServiceSetup 1.558.11.0 to 1.560.1.0 Upgrade.EXE from 1.558.11.0 to 1.560.1.0
+-------	Info	18/09/2008 11:36		OBSOLETE ADProvisioningServiceSetup 1.560.1.0 to 1.562.17.0 Upgrade.EXE from 1.560.1.0 to 1.562.17.0
+-------	Info	18/09/2008 11:36		OBSOLETE ADProvisioningServiceSetup 1.562.17.0 to 1.564.6.0 Upgrade.EXE from 1.562.17.0 to 1.564.6.0
+-------	Info	18/09/2008 11:36		OBSOLETE ADProvisioningServiceSetup 1.564.6.0 to 1.566.11.0 Upgrade.EXE from 1.564.6.0 to 1.566.11.0
+-------	Info	18/09/2008 11:36		OBSOLETE ADProvisioningServiceSetup 1.566.11.0 to 1.568.10.0 Upgrade.EXE from 1.566.11.0 to 1.568.10.0
+-------	Info	18/09/2008 11:36		OBSOLETE SIMSDocumentServerInstaller 1.566.11.0 to 1.566.12.0 Upgrade.EXE from 1.566.11.0 to 1.566.12.0
+-------	Info	18/09/2008 11:36		Downloading:	                                                       to 3.61.447 Upgrade.zip
+-------	Info	18/09/2008 11:36		Downloaded:	                                                       to 3.61.447 Upgrade.zip
+-------	Info	18/09/2008 11:36		Downloading:	                                                       to 3.61.447 Upgrade.zip.signature
+-------	Info	18/09/2008 11:36		Downloaded:	                                                       to 3.61.447 Upgrade.zip.signature
+-------	Info	18/09/2008 11:36		Downloading:	                                                       to 3.61.458 Upgrade.zip
+-------	Info	18/09/2008 11:36		Downloaded:	                                                       to 3.61.458 Upgrade.zip
+-------	Info	18/09/2008 11:36		Downloading:	                                                       to 3.61.458 Upgrade.zip.signature
+-------	Info	18/09/2008 11:36		Downloaded:	                                                       to 3.61.458 Upgrade.zip.signature
+-------	Info	18/09/2008 11:36		Downloading:	                                                       to 3.61.476 Upgrade.zip
+-------	Info	18/09/2008 11:37		Downloaded:	                                                       to 3.61.476 Upgrade.zip
+-------	Info	18/09/2008 11:37		Downloading:	                                                       to 3.61.476 Upgrade.zip.signature
+-------	Info	18/09/2008 11:37		Downloaded:	                                                       to 3.61.476 Upgrade.zip.signature
+-------	Info	18/09/2008 11:37		Downloading:	                                                                         1.568.10.0 to 1.570.7.0 Upgrade.EXE
+-------	Info	18/09/2008 11:37		Downloaded:	                                                                         1.568.10.0 to 1.570.7.0 Upgrade.EXE
+-------	Info	18/09/2008 11:37		Downloading:	                                                                         1.568.10.0 to 1.570.7.0 Upgrade.EXE.signature
+-------	Info	18/09/2008 11:37		Downloaded:	                                                                         1.568.10.0 to 1.570.7.0 Upgrade.EXE.signature
+-------	Info	18/09/2008 11:37		Downloading:	                                                                         1.570.7.0 to 1.572.7.0 Upgrade.EXE
+-------	Info	18/09/2008 11:37		Downloaded:	                                                                         1.570.7.0 to 1.572.7.0 Upgrade.EXE
+-------	Info	18/09/2008 11:37		Downloading:	                                                                         1.570.7.0 to 1.572.7.0 Upgrade.EXE.signature
+-------	Info	18/09/2008 11:37		Downloaded:	                                                                         1.570.7.0 to 1.572.7.0 Upgrade.EXE.signature
+-------	Info	18/09/2008 11:37		Downloading:	                                                                 1.566.3.0 to 1.570.10.0 Upgrade.EXE
+-------	Info	18/09/2008 11:37		Downloaded:	                                                                 1.566.3.0 to 1.570.10.0 Upgrade.EXE
+-------	Info	18/09/2008 11:37		Downloading:	                                                                 1.566.3.0 to 1.570.10.0 Upgrade.EXE.signature
+-------	Info	18/09/2008 11:37		Downloaded:	                                                                 1.566.3.0 to 1.570.10.0 Upgrade.EXE.signature
+-------	Info	18/09/2008 11:37		Downloading:	                                                                 1.570.10.0 to 1.572.7.0 Upgrade.EXE
+-------	Info	18/09/2008 11:38		Downloaded:	                                                                 1.570.10.0 to 1.572.7.0 Upgrade.EXE
+-------	Info	18/09/2008 11:38		Downloading:	                                                                 1.570.10.0 to 1.572.7.0 Upgrade.EXE.signature
+-------	Info	18/09/2008 11:38		Downloaded:	                                                                 1.570.10.0 to 1.572.7.0 Upgrade.EXE.signature
+-------	Info	18/09/2008 11:38		Downloading:	                                                                 1.572.7.0 to 1.574.11.0 Upgrade.EXE
+-------	Info	18/09/2008 11:38		Downloaded:	                                                                 1.572.7.0 to 1.574.11.0 Upgrade.EXE
+-------	Info	18/09/2008 11:38		Downloading:	                                                                 1.572.7.0 to 1.574.11.0 Upgrade.EXE.signature
+-------	Info	18/09/2008 11:38		Downloaded:	                                                                 1.572.7.0 to 1.574.11.0 Upgrade.EXE.signature
+-------	Info	18/09/2008 11:38		Downloading:	                                                              1.568.9.0 to 1.570.11.0 Upgrade.EXE
+-------	Info	18/09/2008 11:38		Downloaded:	                                                              1.568.9.0 to 1.570.11.0 Upgrade.EXE
+-------	Info	18/09/2008 11:38		Downloading:	                                                              1.568.9.0 to 1.570.11.0 Upgrade.EXE.signature
+-------	Info	18/09/2008 11:38		Downloaded:	                                                              1.568.9.0 to 1.570.11.0 Upgrade.EXE.signature
+-------	Info	18/09/2008 11:38		Downloading:	                                                              1.570.11.0 to 1.572.5.0 Upgrade.EXE
+-------	Info	18/09/2008 11:38		Downloaded:	                                                              1.570.11.0 to 1.572.5.0 Upgrade.EXE
+-------	Info	18/09/2008 11:38		Downloading:	                                                              1.570.11.0 to 1.572.5.0 Upgrade.EXE.signature
+-------	Info	18/09/2008 11:38		Downloaded:	                                                              1.570.11.0 to 1.572.5.0 Upgrade.EXE.signature
+-------	Info	18/09/2008 11:38		Downloading:	                                                              1.572.5.0 to 1.574.7.0 Upgrade.EXE
+-------	Info	18/09/2008 11:38		Downloaded:	                                                              1.572.5.0 to 1.574.7.0 Upgrade.EXE
+-------	Info	18/09/2008 11:38		Downloading:	                                                              1.572.5.0 to 1.574.7.0 Upgrade.EXE.signature
+-------	Info	18/09/2008 11:38		Downloaded:	                                                              1.572.5.0 to 1.574.7.0 Upgrade.EXE.signature
+-------	Info	18/09/2008 11:38		Downloading:	                                                                   1.568.10.0 to 1.568.11.0 Upgrade.EXE
+-------	Info	18/09/2008 11:40		Downloaded:	                                                                   1.568.10.0 to 1.568.11.0 Upgrade.EXE
+-------	Info	18/09/2008 11:40		Downloading:	                                                                   1.568.10.0 to 1.568.11.0 Upgrade.EXE.signature
+-------	Info	18/09/2008 11:40		Downloaded:	                                                                   1.568.10.0 to 1.568.11.0 Upgrade.EXE.signature
+-------	Info	18/09/2008 11:40		Downloading:	                                                                   1.568.11.0 to 1.570.11.0 Upgrade.EXE
+-------	Info	18/09/2008 11:42		Downloaded:	                                                                   1.568.11.0 to 1.570.11.0 Upgrade.EXE
+-------	Info	18/09/2008 11:42		Downloading:	                                                                   1.568.11.0 to 1.570.11.0 Upgrade.EXE.signature
+-------	Info	18/09/2008 11:42		Downloaded:	                                                                   1.568.11.0 to 1.570.11.0 Upgrade.EXE.signature
+-------	Info	18/09/2008 11:42		Downloading:	                                                                   1.570.11.0 to 1.570.12.0 Upgrade.EXE
+-------	Info	18/09/2008 11:44		Downloaded:	                                                                   1.570.11.0 to 1.570.12.0 Upgrade.EXE
+-------	Info	18/09/2008 11:44		Downloading:	                                                                   1.570.11.0 to 1.570.12.0 Upgrade.EXE.signature
+-------	Info	18/09/2008 11:44		Downloaded:	                                                                   1.570.11.0 to 1.570.12.0 Upgrade.EXE.signature
+-------	Info	18/09/2008 11:44		Downloading:	                                                                   1.570.12.0 to 1.570.13.0 Upgrade.EXE
+-------	Info	18/09/2008 11:45		Downloaded:	                                                                   1.570.12.0 to 1.570.13.0 Upgrade.EXE
+-------	Info	18/09/2008 11:45		Downloading:	                                                                   1.570.12.0 to 1.570.13.0 Upgrade.EXE.signature
+-------	Info	18/09/2008 11:45		Downloaded:	                                                                   1.570.12.0 to 1.570.13.0 Upgrade.EXE.signature
+-------	Info	18/09/2008 11:45		Downloading:	                                                                   1.570.13.0 to 1.572.9.0 Upgrade.EXE
+-------	Info	18/09/2008 11:46		Downloaded:	                                                                   1.570.13.0 to 1.572.9.0 Upgrade.EXE
+-------	Info	18/09/2008 11:46		Downloading:	                                                                   1.570.13.0 to 1.572.9.0 Upgrade.EXE.signature
+-------	Info	18/09/2008 11:46		Downloaded:	                                                                   1.570.13.0 to 1.572.9.0 Upgrade.EXE.signature
+-------	Info	18/09/2008 11:46		Downloading:	                                                                   1.572.9.0 to 1.574.12.0 Upgrade.EXE
+-------	Info	18/09/2008 11:49		Downloaded:	                                                                   1.572.9.0 to 1.574.12.0 Upgrade.EXE
+-------	Info	18/09/2008 11:49		Downloading:	                                                                   1.572.9.0 to 1.574.12.0 Upgrade.EXE.signature
+-------	Info	18/09/2008 11:49		Downloaded:	                                                                   1.572.9.0 to 1.574.12.0 Upgrade.EXE.signature
+-------	Info	18/09/2008 11:49		Downloading:	                                                                        
+-------	Info	18/09/2008 11:49		Downloaded:	                                                                        
+-------	Info	18/09/2008 11:49		Downloading:	                                                                                  
+-------	Info	18/09/2008 11:49		Downloaded:	                                                                                  
+-------	Info	18/09/2008 11:49		Downloading:	                                                                     1.570.7.0 to 1.572.4.0 Upgrade.EXE
+-------	Info	18/09/2008 11:49		Downloaded:	                                                                     1.570.7.0 to 1.572.4.0 Upgrade.EXE
+-------	Info	18/09/2008 11:49		Downloading:	                                                                     1.570.7.0 to 1.572.4.0 Upgrade.EXE.signature
+-------	Info	18/09/2008 11:49		Downloaded:	                                                                     1.570.7.0 to 1.572.4.0 Upgrade.EXE.signature
+-------	Info	18/09/2008 11:49		Downloading:	                                                                     1.572.4.0 to 1.574.11.0 Upgrade.EXE
+-------	Info	18/09/2008 11:56		Downloaded:	                                                                     1.572.4.0 to 1.574.11.0 Upgrade.EXE
+-------	Info	18/09/2008 11:56		Downloading:	                                                                     1.572.4.0 to 1.574.11.0 Upgrade.EXE.signature
+-------	Info	18/09/2008 11:56		Downloaded:	                                                                     1.572.4.0 to 1.574.11.0 Upgrade.EXE.signature
+-------	Info	18/09/2008 11:56		Downloading:	                                                              1.568.10.0 to 1.570.11.0 Upgrade.EXE
+-------	Info	18/09/2008 12:02		Downloaded:	                                                              1.568.10.0 to 1.570.11.0 Upgrade.EXE
+-------	Info	18/09/2008 12:02		Downloading:	                                                              1.568.10.0 to 1.570.11.0 Upgrade.EXE.signature
+-------	Info	18/09/2008 12:02		Downloaded:	                                                              1.568.10.0 to 1.570.11.0 Upgrade.EXE.signature
+-------	Info	18/09/2008 12:02		Downloading:	                                                              1.570.11.0 to 1.572.8.0 Upgrade.EXE
+-------	Info	18/09/2008 12:06		Downloaded:	                                                              1.570.11.0 to 1.572.8.0 Upgrade.EXE
+-------	Info	18/09/2008 12:06		Downloading:	                                                              1.570.11.0 to 1.572.8.0 Upgrade.EXE.signature
+-------	Info	18/09/2008 12:06		Downloaded:	                                                              1.570.11.0 to 1.572.8.0 Upgrade.EXE.signature
+-------	Info	18/09/2008 12:06		Downloading:	                                                              1.572.8.0 to 1.574.12.0 Upgrade.EXE
+-------	Info	18/09/2008 12:07		Downloaded:	                                                              1.572.8.0 to 1.574.12.0 Upgrade.EXE
+-------	Info	18/09/2008 12:07		Downloading:	                                                              1.572.8.0 to 1.574.12.0 Upgrade.EXE.signature
+-------	Info	18/09/2008 12:07		Downloaded:	                                                              1.572.8.0 to 1.574.12.0 Upgrade.EXE.signature
+-------	Info	18/09/2008 12:07		Downloading:	                                                                      1.568.10.0 to 1.570.11.0 Upgrade.EXE
+-------	Info	18/09/2008 12:07		Downloaded:	                                                                      1.568.10.0 to 1.570.11.0 Upgrade.EXE
+-------	Info	18/09/2008 12:07		Downloading:	                                                                      1.568.10.0 to 1.570.11.0 Upgrade.EXE.signature
+-------	Info	18/09/2008 12:07		Downloaded:	                                                                      1.568.10.0 to 1.570.11.0 Upgrade.EXE.signature
+-------	Info	18/09/2008 12:07		Downloading:	                                                                      1.570.11.0 to 1.570.13.0 Upgrade.EXE
+-------	Info	18/09/2008 12:07		Downloaded:	                                                                      1.570.11.0 to 1.570.13.0 Upgrade.EXE
+-------	Info	18/09/2008 12:07		Downloading:	                                                                      1.570.11.0 to 1.570.13.0 Upgrade.EXE.signature
+-------	Info	18/09/2008 12:07		Downloaded:	                                                                      1.570.11.0 to 1.570.13.0 Upgrade.EXE.signature
+-------	Info	18/09/2008 12:07		Downloading:	                                                                      1.570.13.0 to 1.572.9.0 Upgrade.EXE
+-------	Info	18/09/2008 12:08		Downloaded:	                                                                      1.570.13.0 to 1.572.9.0 Upgrade.EXE
+-------	Info	18/09/2008 12:08		Downloading:	                                                                      1.570.13.0 to 1.572.9.0 Upgrade.EXE.signature
+-------	Info	18/09/2008 12:08		Downloaded:	                                                                      1.570.13.0 to 1.572.9.0 Upgrade.EXE.signature
+-------	Info	18/09/2008 12:08		Downloading:	                                                                      1.572.9.0 to 1.574.12.0 Upgrade.EXE
+-------	Info	18/09/2008 12:08		Downloaded:	                                                                      1.572.9.0 to 1.574.12.0 Upgrade.EXE
+-------	Info	18/09/2008 12:08		Downloading:	                                                                      1.572.9.0 to 1.574.12.0 Upgrade.EXE.signature
+-------	Info	18/09/2008 12:08		Downloaded:	                                                                      1.572.9.0 to 1.574.12.0 Upgrade.EXE.signature
+-------	Info	18/09/2008 12:08		Notifying School Manager:	SIMS 2008 08 August Main	State:	DownloadSucceeded
+-------	Info	18/09/2008 12:08		Notifying School Manager:	SIMS 2008 08 August Main	State:	DownloadSucceeded	Succeeded
+-------	Info	18/09/2008 12:08		Applying Package: SIMS 2008 08 August Main
+-------	Info	18/09/2008 12:08		Applying File : ADProvisioningServiceSetup 1.568.10.0 to 1.570.7.0 Upgrade.EXE
+-------	Info	18/09/2008 12:08		Copying "D:\simshare\sims\Setups\ADProvisioningServiceSetup.EXE" to "D:\simshare\sims\Setups\cdbcf298-4b16-4bda-b85b-2a5018b4875c"
+-------	Info	18/09/2008 12:08		Applied : ADProvisioningServiceSetup 1.568.10.0 to 1.570.7.0 Upgrade.EXE
+-------	Info	18/09/2008 12:08		Applying File : ADProvisioningServiceSetup 1.570.7.0 to 1.572.7.0 Upgrade.EXE
+-------	Info	18/09/2008 12:08		Applied : ADProvisioningServiceSetup 1.570.7.0 to 1.572.7.0 Upgrade.EXE
+-------	Info	18/09/2008 12:08		Applying File : NovaSatelliteSetup 1.566.3.0 to 1.570.10.0 Upgrade.EXE
+-------	Info	18/09/2008 12:08		Copying "D:\simshare\sims\Setups\NovaSatelliteSetup.EXE" to "D:\simshare\sims\Setups\cdbcf298-4b16-4bda-b85b-2a5018b4875c"
+-------	Info	18/09/2008 12:08		Applied : NovaSatelliteSetup 1.566.3.0 to 1.570.10.0 Upgrade.EXE
+-------	Info	18/09/2008 12:08		Applying File : NovaSatelliteSetup 1.570.10.0 to 1.572.7.0 Upgrade.EXE
+-------	Info	18/09/2008 12:08		Applied : NovaSatelliteSetup 1.570.10.0 to 1.572.7.0 Upgrade.EXE
+-------	Info	18/09/2008 12:08		Applying File : NovaSatelliteSetup 1.572.7.0 to 1.574.11.0 Upgrade.EXE
+-------	Info	18/09/2008 12:08		Applied : NovaSatelliteSetup 1.572.7.0 to 1.574.11.0 Upgrade.EXE
+-------	Info	18/09/2008 12:08		Applying File : SIMSAMPARKSetup 1.568.9.0 to 1.570.11.0 Upgrade.EXE
+-------	Info	18/09/2008 12:08		Copying "D:\simshare\sims\Setups\SIMSAMPARKSetup.EXE" to "D:\simshare\sims\Setups\cdbcf298-4b16-4bda-b85b-2a5018b4875c"
+-------	Info	18/09/2008 12:08		Applied : SIMSAMPARKSetup 1.568.9.0 to 1.570.11.0 Upgrade.EXE
+-------	Info	18/09/2008 12:08		Applying File : SIMSAMPARKSetup 1.570.11.0 to 1.572.5.0 Upgrade.EXE
+-------	Info	18/09/2008 12:08		Applied : SIMSAMPARKSetup 1.570.11.0 to 1.572.5.0 Upgrade.EXE
+-------	Info	18/09/2008 12:08		Applying File : SIMSAMPARKSetup 1.572.5.0 to 1.574.7.0 Upgrade.EXE
+-------	Info	18/09/2008 12:09		Applied : SIMSAMPARKSetup 1.572.5.0 to 1.574.7.0 Upgrade.EXE
+-------	Info	18/09/2008 12:09		Applying File : SIMSApplicationSetup 1.568.10.0 to 1.568.11.0 Upgrade.EXE
+-------	Info	18/09/2008 12:09		Copying "D:\simshare\sims\Setups\SIMSApplicationSetup.EXE" to "D:\simshare\sims\Setups\cdbcf298-4b16-4bda-b85b-2a5018b4875c"
+-------	Info	18/09/2008 12:09		Applied : SIMSApplicationSetup 1.568.10.0 to 1.568.11.0 Upgrade.EXE
+-------	Info	18/09/2008 12:09		Applying File : SIMSApplicationSetup 1.568.11.0 to 1.570.11.0 Upgrade.EXE
+-------	Info	18/09/2008 12:09		Applied : SIMSApplicationSetup 1.568.11.0 to 1.570.11.0 Upgrade.EXE
+-------	Info	18/09/2008 12:09		Applying File : SIMSApplicationSetup 1.570.11.0 to 1.570.12.0 Upgrade.EXE
+-------	Info	18/09/2008 12:09		Applied : SIMSApplicationSetup 1.570.11.0 to 1.570.12.0 Upgrade.EXE
+-------	Info	18/09/2008 12:09		Applying File : SIMSApplicationSetup 1.570.12.0 to 1.570.13.0 Upgrade.EXE
+-------	Info	18/09/2008 12:09		Applied : SIMSApplicationSetup 1.570.12.0 to 1.570.13.0 Upgrade.EXE
+-------	Info	18/09/2008 12:09		Applying File : SIMSApplicationSetup 1.570.13.0 to 1.572.9.0 Upgrade.EXE
+-------	Info	18/09/2008 12:09		Applied : SIMSApplicationSetup 1.570.13.0 to 1.572.9.0 Upgrade.EXE
+-------	Info	18/09/2008 12:09		Applying File : SIMSApplicationSetup 1.572.9.0 to 1.574.12.0 Upgrade.EXE
+-------	Info	18/09/2008 12:09		Applied : SIMSApplicationSetup 1.572.9.0 to 1.574.12.0 Upgrade.EXE
+-------	Info	18/09/2008 12:09		Applying File : SIMSCentralServerSetup 1.570.7.0 to 1.572.4.0 Upgrade.EXE
+-------	Info	18/09/2008 12:09		Applied : SIMSCentralServerSetup 1.570.7.0 to 1.572.4.0 Upgrade.EXE
+-------	Info	18/09/2008 12:09		Applying File : SIMSCentralServerSetup 1.572.4.0 to 1.574.11.0 Upgrade.EXE
+-------	Info	18/09/2008 12:09		Applied : SIMSCentralServerSetup 1.572.4.0 to 1.574.11.0 Upgrade.EXE
+-------	Info	18/09/2008 12:09		Applying File : SIMSManualSetup 1.568.10.0 to 1.570.11.0 Upgrade.EXE
+-------	Info	18/09/2008 12:09		Copying "D:\simshare\sims\Setups\SIMSManualSetup.EXE" to "D:\simshare\sims\Setups\cdbcf298-4b16-4bda-b85b-2a5018b4875c"
+-------	Info	18/09/2008 12:09		Applied : SIMSManualSetup 1.568.10.0 to 1.570.11.0 Upgrade.EXE
+-------	Info	18/09/2008 12:09		Applying File : SIMSManualSetup 1.570.11.0 to 1.572.8.0 Upgrade.EXE
+-------	Info	18/09/2008 12:10		Applied : SIMSManualSetup 1.570.11.0 to 1.572.8.0 Upgrade.EXE
+-------	Info	18/09/2008 12:10		Applying File : SIMSManualSetup 1.572.8.0 to 1.574.12.0 Upgrade.EXE
+-------	Info	18/09/2008 12:10		Applied : SIMSManualSetup 1.572.8.0 to 1.574.12.0 Upgrade.EXE
+-------	Info	18/09/2008 12:10		Applying File : SIMSSQLApplicationSetup 1.568.10.0 to 1.570.11.0 Upgrade.EXE
+-------	Info	18/09/2008 12:10		Copying "D:\simshare\sims\Setups\SIMSSQLApplicationSetup.EXE" to "D:\simshare\sims\Setups\cdbcf298-4b16-4bda-b85b-2a5018b4875c"
+-------	Info	18/09/2008 12:10		Applied : SIMSSQLApplicationSetup 1.568.10.0 to 1.570.11.0 Upgrade.EXE
+-------	Info	18/09/2008 12:10		Applying File : SIMSSQLApplicationSetup 1.570.11.0 to 1.570.13.0 Upgrade.EXE
+-------	Info	18/09/2008 12:10		Applied : SIMSSQLApplicationSetup 1.570.11.0 to 1.570.13.0 Upgrade.EXE
+-------	Info	18/09/2008 12:10		Applying File : SIMSSQLApplicationSetup 1.570.13.0 to 1.572.9.0 Upgrade.EXE
+-------	Info	18/09/2008 12:10		Applied : SIMSSQLApplicationSetup 1.570.13.0 to 1.572.9.0 Upgrade.EXE
+-------	Info	18/09/2008 12:10		Applying File : SIMSSQLApplicationSetup 1.572.9.0 to 1.574.12.0 Upgrade.EXE
+-------	Info	18/09/2008 12:10		Applied : SIMSSQLApplicationSetup 1.572.9.0 to 1.574.12.0 Upgrade.EXE
+-------	Info	18/09/2008 12:10		Applying Database Upgrade : SIMS 2008 08 August Main
+-------	Info	18/09/2008 12:19		Applied Database Upgrade : SIMS 2008 08 August Main
+-------	Info	18/09/2008 12:19		Copied "D:\simshare\sims\Setups\cdbcf298-4b16-4bda-b85b-2a5018b4875c\SIMSApplicationSetup.EXE" and its signature back to "D:\simshare\sims\Setups"
+-------	Info	18/09/2008 12:19		Copied "D:\simshare\sims\Setups\cdbcf298-4b16-4bda-b85b-2a5018b4875c\SIMSSQLApplicationSetup.EXE" and its signature back to "D:\simshare\sims\Setups"
+-------	Info	18/09/2008 12:19		Copied "D:\simshare\sims\Setups\cdbcf298-4b16-4bda-b85b-2a5018b4875c\SIMSManualSetup.EXE" and its signature back to "D:\simshare\sims\Setups"
+-------	Info	18/09/2008 12:19		Copied "D:\simshare\sims\Setups\cdbcf298-4b16-4bda-b85b-2a5018b4875c\NovaSatelliteSetup.EXE" and its signature back to "D:\simshare\sims\Setups"
+-------	Info	18/09/2008 12:19		Copied "D:\simshare\sims\Setups\cdbcf298-4b16-4bda-b85b-2a5018b4875c\SIMSAMPARKSetup.EXE" and its signature back to "D:\simshare\sims\Setups"
+-------	Info	18/09/2008 12:19		Copied "D:\simshare\sims\Setups\cdbcf298-4b16-4bda-b85b-2a5018b4875c\ADProvisioningServiceSetup.EXE" and its signature back to "D:\simshare\sims\Setups"
+-------	Info	18/09/2008 12:19		Copied "D:\simshare\sims\Setups\cdbcf298-4b16-4bda-b85b-2a5018b4875c\SIMSCentralServerSetup.EXE" and its signature back to "D:\simshare\sims\Setups"
+-------	Info	18/09/2008 12:19		Successfully Executed SIMSCentralSetup 1.574.11.0
+!Failed	Info	18/09/2008 12:19		External File Deployer manifest files directory (I:\SIMS\ManifestFiles) cannot be found. Skipping External File Deployment step.
+-------	Info	18/09/2008 12:19		Notifying School Manager:	SIMS 2008 08 August Main	State:	InstallSucceeded
+-------	Info	18/09/2008 12:19		Notifying School Manager:	SIMS 2008 08 August Main	State:	InstallSucceeded	Succeeded
+-------	Info	18/09/2008 12:19		Removed package: SIMS 2008 08 August Main
