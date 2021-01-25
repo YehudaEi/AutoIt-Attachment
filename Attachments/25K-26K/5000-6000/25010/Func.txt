@@ -1,0 +1,55 @@
+OmPlrOpen 
+
+Description Establishes a connection to a Player object on a particular MediaDirector. 
+
+OmPlrError OmPlrOpen( 
+const TCHAR * pDirectorName, 
+const TCHAR * pPlayerName, 
+OmPlrHandle * pPlayerHandle); 
+
+Parameters 
+
+Parameter Description 
+
+pDirectorName 
+A required pointer to a string that is the MediaDirector name. For non- 
+Unicode builds, this is an 8-bit character string. For Unicode builds, this is a 
+16-bit character string. Maximum length of the string is 
+omPlrMaxDirectorNameLen. The MediaDirector name can be either in 
+the form of a domain name or a string that gives the “dotted IP address.” 
+Examples are “dirB38” and “10.35.80.208.” 
+
+pPlayerName 
+An optional pointer to a string that is the Player name. For non-Unicode 
+builds, this is an 8-bit character string. For Unicode builds, this is a 16-bit 
+character string. A value of 00 can be used as the pointer (i.e., a NULL 
+pointer) if you only want general information from the MediaDirector and 
+do not need to control a particular Player. Maximum length of the string is 
+omPlrMaxPlayerNameLen. 
+
+pPlayerHandle 
+A pointer used to return a “handle” for this connection. An arbitrary 
+number will be assigned to each connection. This number is returned to the 
+caller to be used as a “handle”. The “handle”, will be needed as a parameter 
+for all of the other function calls. 
+NOTE: A valid “handle” will never have a value of 00. 
+
+
+Return value A numeric value that defines success or error. A value of 0 indicates “all ok.”  Error codes are defined 
+in the file omplayerdefs.h. The error codes are assigned in ranges. The range for Player errors starts at 
+PLAYER_ERROR_BASE (0x00009000). 
+
+Remarks The default connection is made using TCP/IP protocol over the ethernet link. If the MediaDirector 
+name has a suffix of “:udp”, then the ethernet connection will be made using UDP/IP protocol. 
+A NULL pointer for the PlayerName could be used if all you wanted was to list the clips on a 
+MediaDirector. Or if you wanted to establish a connection and were then going to query for the set of 
+available players on a MediaDirector. All of the OmPlrClip… functions will work with a NULL Player 
+type of connection; many of the functions in this “Player discovery” category will also work.  You 
+need to connect to a specific Player in order to use the motion, timeline, and status function 
+categories. 
+By default, connections are opened in “Retry Open” mode that will automatically try to re-establish 
+connection to the MediaDirector if a future function call fails due to connection trouble. The 
+automatic re-connect will also be useful if there is a long period of inactivity, as the MediaDirector 
+closes any connection that has been idle for more than 8 minutes. 
+
+
