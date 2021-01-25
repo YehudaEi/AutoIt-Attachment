@@ -1,0 +1,9 @@
+
+Here is the link for the CDIni Database v3.6 download - (347 kb)
+
+                                                                        Database v3.6.zip
+
+
+To understand my reasons for using this download method, please visit this AutoIt post -
+
+http://www.autoitscript.com/forum/index.php?showtopic=71862
