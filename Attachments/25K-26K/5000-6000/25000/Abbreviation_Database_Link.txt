@@ -1,0 +1,9 @@
+
+Here is the link for the Abbreviation Database v2.9 download - (257 kb)
+
+                                                                               Database v2.9.zip
+
+
+To understand my reasons for using this download method, please visit this AutoIt post -
+
+http://www.autoitscript.com/forum/index.php?showtopic=71862
