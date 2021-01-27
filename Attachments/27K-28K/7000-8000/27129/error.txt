@@ -1,0 +1,7 @@
+OK
+Line 18  (File "C:\Documents and Settings\Thorn\Desktop\example - processlist.au3"):
+
+_FileWriteFromArray($rfile, $list[$i])
+_FileWriteFromArray($rfile, ^ ERROR
+
+Error: Array variable has incorrect number of subscripts or subscript dimension range exceeded.
