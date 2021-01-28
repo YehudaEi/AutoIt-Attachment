@@ -1,0 +1,4537 @@
+"Subject","Body","From: (Name)","From: (Type)","To: (Name)","To: (Address)","To: (Type)","CC: (Name)"
+"Re: NetOp","Hi Christine,
+
+A rebuild would indeed be quite a big job and it would leave you without your computer for a significant portion of the day.
+
+Initially just testing NetOp on another computer would be of help to see what happens. I'd hope it will work and then I would imagine a rebuild will do the job.
+
+SIMS and FMS would not be a problem as they reside on the Server anyway and would remain untouched. The only thing we'd need to be sure of is that I back up any files you have saved locally first.
+
+As regard replacing the Office PC's our team generally recommend this is done on a 4 year cycle which I expect you folks have reached by now. If you want to consider this we can look into some replacement options when you are ready.
+
+
+See you next week,
+
+Regards,
+
+Matt
+
+
+
+
+-----Original Message-----
+From: Secretary at Truro Nursery <secretary@truro-nursery.cornwall.sch.uk>
+To: Fletcher Matthew
+CC: head@truro-nursery.cornwall.sch.uk <head@truro-nursery.cornwall.sch.uk>
+Sent: Thu Jun 11 14:16:17 2009
+Subject: Re: NetOp
+
+Hi Matt
+
+This sounds like a mammoth task to me, but if you're prepared to take 
+it on that's great.     As long as we don't lose any of our files, etc 
+- especially Sims FMS and the .net database - major disaster !!
+
+I can get by with the help desk on most things without, but when it 
+comes to the Census each term it is a major problem without NetOp on my 
+machine.   Let's keep our fingers crossed this will work as we did 
+allocate the last SLA day to try to get this resolved.
+
+Pam and I were talking about it this week as we have both had little 
+""blips"" with both our  machines recently which we have managed to 
+correct with re-booting, but we were wondering if both the admin 
+machines were getting to the end of their shelf life.    However we did 
+not want to get new machines and then find that the problem still 
+existed.
+
+We'll look forward to seeing you next Tuesday.
+
+Chris
+
+----Original Message----
+From: mfletcher@cornwall.gov.uk
+Date: 11-Jun-2009 12:17
+To: 
+Subj: NetOp
+
+
+
+
+
+
+
+
+st1\:*{behavior:url(#default#ieooui) }
+
+
+
+
+
+
+
+
+Hi Christine,
+ 
+I hope you are in good form and everything is going well
+there at school.
+ 
+Natalie told me about the problems she had connecting to
+your machine the other day. As you know we now have NetOp working on 
+your
+Server but still not on your Office machine.
+I&#8217;d like to propose the following in order to
+resolve the issue. Next week I have an SLA
+visit with you and I&#8217;d like to propose that I use this time to 
+resolve
+the NetOp problem for you.
+I&#8217;d suggest NetOp is tested
+on another machine (one in the outreach office) and if that one works 
+then I&#8217;ll
+know that it is a specific issue with your machine and not with 
+general network
+configuration.
+ 
+If NetOp works on one of the Outreach machines then I&#8217;ll
+undertake to rebuild your machine from the ground up. Essentially this 
+means
+re-installing Windows, Office, Adobe, SIMS and FMS, plus the locally 
+configured
+printer. It would probably take up a sizeable chunk of the days visit.
+ 
+How does this strike you as a solution?
+ 
+ 
+ 
+Regards,
+ 
+Matt Fletcher,
+IMS Support,
+Cornwall
+  LA.
+ 
+mfletcher@cornwall.gov.uk
+http://www.cornwall.gov.uk/cypf/index.cfm?articleid=32512/
+01872 323263
+ 
+
+
+This e-mail and attachments are intended for above named only and may 
+be confidential. If they have come to you in error you must take no 
+action based on them, nor must you copy or show them to anyone; please 
+e-mail us immediately at enquiries@cornwall.gov.uk.
+Please note that this e-mail may be subject to recording and/or 
+monitoring in accordance with the relevant legislation and may need to 
+be disclosed under the Freedom of Information Act 2000 or the 
+Environmental Information Regulations 2004.
+Security Warning: It is the responsibility of the recipient to ensure 
+that this e-mail and any attachments are virus free. The Authority will 
+not accept liability for any damage caused by a virus.
+ 
+
+
+
+..
+","Fletcher Matthew","EX","'secretary@truro-nursery.cornwall.sch.uk'","secretary@truro-nursery.cornwall.sch.uk","SMTP"
+"Re: NetOp","Hi Christine,
+
+A rebuild would indeed be quite a big job and it would leave you without your computer for a significant portion of the day.
+
+Initially just testing NetOp on another computer would be of help to see what happens. I'd hope it will work and then I would imagine a rebuild will do the job.
+
+SIMS and FMS would not be a problem as they reside on the Server anyway and would remain untouched. The only thing we'd need to be sure of is that I back up any files you have saved locally first.
+
+As regard replacing the Office PC's our team generally recommend this is done on a 4 year cycle which I expect you folks have reached by now. If you want to consider this we can look into some replacement options when you are ready.
+
+
+See you next week,
+
+Regards,
+
+Matt
+
+
+
+
+-----Original Message-----
+From: Secretary at Truro Nursery <secretary@truro-nursery.cornwall.sch.uk>
+To: Fletcher Matthew
+CC: head@truro-nursery.cornwall.sch.uk <head@truro-nursery.cornwall.sch.uk>
+Sent: Thu Jun 11 14:16:17 2009
+Subject: Re: NetOp
+
+Hi Matt
+
+This sounds like a mammoth task to me, but if you're prepared to take 
+it on that's great.     As long as we don't lose any of our files, etc 
+- especially Sims FMS and the .net database - major disaster !!
+
+I can get by with the help desk on most things without, but when it 
+comes to the Census each term it is a major problem without NetOp on my 
+machine.   Let's keep our fingers crossed this will work as we did 
+allocate the last SLA day to try to get this resolved.
+
+Pam and I were talking about it this week as we have both had little 
+""blips"" with both our  machines recently which we have managed to 
+correct with re-booting, but we were wondering if both the admin 
+machines were getting to the end of their shelf life.    However we did 
+not want to get new machines and then find that the problem still 
+existed.
+
+We'll look forward to seeing you next Tuesday.
+
+Chris
+
+----Original Message----
+From: mfletcher@cornwall.gov.uk
+Date: 11-Jun-2009 12:17
+To: 
+Subj: NetOp
+
+
+
+
+
+
+
+
+st1\:*{behavior:url(#default#ieooui) }
+
+
+
+
+
+
+
+
+Hi Christine,
+ 
+I hope you are in good form and everything is going well
+there at school.
+ 
+Natalie told me about the problems she had connecting to
+your machine the other day. As you know we now have NetOp working on 
+your
+Server but still not on your Office machine.
+I&#8217;d like to propose the following in order to
+resolve the issue. Next week I have an SLA
+visit with you and I&#8217;d like to propose that I use this time to 
+resolve
+the NetOp problem for you.
+I&#8217;d suggest NetOp is tested
+on another machine (one in the outreach office) and if that one works 
+then I&#8217;ll
+know that it is a specific issue with your machine and not with 
+general network
+configuration.
+ 
+If NetOp works on one of the Outreach machines then I&#8217;ll
+undertake to rebuild your machine from the ground up. Essentially this 
+means
+re-installing Windows, Office, Adobe, SIMS and FMS, plus the locally 
+configured
+printer. It would probably take up a sizeable chunk of the days visit.
+ 
+How does this strike you as a solution?
+ 
+ 
+ 
+Regards,
+ 
+Matt Fletcher,
+IMS Support,
+Cornwall
+  LA.
+ 
+mfletcher@cornwall.gov.uk
+http://www.cornwall.gov.uk/cypf/index.cfm?articleid=32512/
+01872 323263
+ 
+
+
+This e-mail and attachments are intended for above named only and may 
+be confidential. If they have come to you in error you must take no 
+action based on them, nor must you copy or show them to anyone; please 
+e-mail us immediately at enquiries@cornwall.gov.uk.
+Please note that this e-mail may be subject to recording and/or 
+monitoring in accordance with the relevant legislation and may need to 
+be disclosed under the Freedom of Information Act 2000 or the 
+Environmental Information Regulations 2004.
+Security Warning: It is the responsibility of the recipient to ensure 
+that this e-mail and any attachments are virus free. The Authority will 
+not accept liability for any damage caused by a virus.
+ 
+
+
+
+..
+","Fletcher Matthew","EX","'secretary@truro-nursery.cornwall.sch.uk'","secretary@truro-nursery.cornwall.sch.uk","SMTP"
+"Re: NetOp","Hi Christine,
+
+It would indeed be quite a big job and it would leave you without a computer for a significant portion of the day.
+
+Initially just testing NetOp on another computer would be more help.
+
+SIMS and FMS would not be a problem as they reside on the Server anyway and would remain untouched. The only thing we'd need to be sure of is that I back up any files you have saved locally first.
+
+As regard replacing the Office PC's our team recommend this is done on a 4 year cycle which I expect you folks have reached.
+
+
+
+
+
+Important: This e-mail and its attachments are intended for the
+above-named only and may be confidential.  If they have come
+to you in error you must take no action based on them, nor must
+you copy or show them to anyone;  please e-mail us immediately
+at enquiries@cornwall.gov.uk
+
+Security Warning: Although this e-mail and its attachments have
+been screened and are believed to be free from any virus, it is
+the responsibility of the recipient to ensure that they are virus free.
+The Authority will not accept liability for any damage caused by a virus
+
+Please note that the Council may need to disclose this e-mail under the Freedom of Information Act 2000 or the Environmental Information Regulations 2004.
+
+-----Original Message-----
+From: Secretary at Truro Nursery <secretary@truro-nursery.cornwall.sch.uk>
+To: Fletcher Matthew
+CC: head@truro-nursery.cornwall.sch.uk <head@truro-nursery.cornwall.sch.uk>
+Sent: Thu Jun 11 14:16:17 2009
+Subject: Re: NetOp
+
+Hi Matt
+
+This sounds like a mammoth task to me, but if you're prepared to take 
+it on that's great.     As long as we don't lose any of our files, etc 
+- especially Sims FMS and the .net database - major disaster !!
+
+I can get by with the help desk on most things without, but when it 
+comes to the Census each term it is a major problem without NetOp on my 
+machine.   Let's keep our fingers crossed this will work as we did 
+allocate the last SLA day to try to get this resolved.
+
+Pam and I were talking about it this week as we have both had little 
+""blips"" with both our  machines recently which we have managed to 
+correct with re-booting, but we were wondering if both the admin 
+machines were getting to the end of their shelf life.    However we did 
+not want to get new machines and then find that the problem still 
+existed.
+
+We'll look forward to seeing you next Tuesday.
+
+Chris
+
+----Original Message----
+From: mfletcher@cornwall.gov.uk
+Date: 11-Jun-2009 12:17
+To: 
+Subj: NetOp
+
+
+
+
+
+
+
+
+st1\:*{behavior:url(#default#ieooui) }
+
+
+
+
+
+
+
+
+Hi Christine,
+ 
+I hope you are in good form and everything is going well
+there at school.
+ 
+Natalie told me about the problems she had connecting to
+your machine the other day. As you know we now have NetOp working on 
+your
+Server but still not on your Office machine.
+I&#8217;d like to propose the following in order to
+resolve the issue. Next week I have an SLA
+visit with you and I&#8217;d like to propose that I use this time to 
+resolve
+the NetOp problem for you.
+I&#8217;d suggest NetOp is tested
+on another machine (one in the outreach office) and if that one works 
+then I&#8217;ll
+know that it is a specific issue with your machine and not with 
+general network
+configuration.
+ 
+If NetOp works on one of the Outreach machines then I&#8217;ll
+undertake to rebuild your machine from the ground up. Essentially this 
+means
+re-installing Windows, Office, Adobe, SIMS and FMS, plus the locally 
+configured
+printer. It would probably take up a sizeable chunk of the days visit.
+ 
+How does this strike you as a solution?
+ 
+ 
+ 
+Regards,
+ 
+Matt Fletcher,
+IMS Support,
+Cornwall
+  LA.
+ 
+mfletcher@cornwall.gov.uk
+http://www.cornwall.gov.uk/cypf/index.cfm?articleid=32512/
+01872 323263
+ 
+
+
+This e-mail and attachments are intended for above named only and may 
+be confidential. If they have come to you in error you must take no 
+action based on them, nor must you copy or show them to anyone; please 
+e-mail us immediately at enquiries@cornwall.gov.uk.
+Please note that this e-mail may be subject to recording and/or 
+monitoring in accordance with the relevant legislation and may need to 
+be disclosed under the Freedom of Information Act 2000 or the 
+Environmental Information Regulations 2004.
+Security Warning: It is the responsibility of the recipient to ensure 
+that this e-mail and any attachments are virus free. The Authority will 
+not accept liability for any damage caused by a virus.
+ 
+
+
+
+..
+","Fletcher Matthew","EX","Fletcher Matthew","/O=CORNWALLCOUNTYCOUNCIL/OU=MAIN/CN=RECIPIENTS/CN=Mfletcher","EX"
+"Re: NetOp","Hi Christine,
+
+It would indeed be quite a big job and it would leave you without a computer for a significant portion of the day.
+
+Initially just testing NetOp on another computer would be more help.
+
+SIMS and FMS would not be a problem as they reside on the Server anyway and would remain untouched. The only thing we'd need to be sure of is that I back up any files you have saved locally first.
+
+As regard replacing the Office PC's our team recommend this is done on a 4 year cycle which I expect you folks have reached.
+
+
+
+
+
+Important: This e-mail and its attachments are intended for the
+above-named only and may be confidential.  If they have come
+to you in error you must take no action based on them, nor must
+you copy or show them to anyone;  please e-mail us immediately
+at enquiries@cornwall.gov.uk
+
+Security Warning: Although this e-mail and its attachments have
+been screened and are believed to be free from any virus, it is
+the responsibility of the recipient to ensure that they are virus free.
+The Authority will not accept liability for any damage caused by a virus
+
+Please note that the Council may need to disclose this e-mail under the Freedom of Information Act 2000 or the Environmental Information Regulations 2004.
+
+-----Original Message-----
+From: Secretary at Truro Nursery <secretary@truro-nursery.cornwall.sch.uk>
+To: Fletcher Matthew
+CC: head@truro-nursery.cornwall.sch.uk <head@truro-nursery.cornwall.sch.uk>
+Sent: Thu Jun 11 14:16:17 2009
+Subject: Re: NetOp
+
+Hi Matt
+
+This sounds like a mammoth task to me, but if you're prepared to take 
+it on that's great.     As long as we don't lose any of our files, etc 
+- especially Sims FMS and the .net database - major disaster !!
+
+I can get by with the help desk on most things without, but when it 
+comes to the Census each term it is a major problem without NetOp on my 
+machine.   Let's keep our fingers crossed this will work as we did 
+allocate the last SLA day to try to get this resolved.
+
+Pam and I were talking about it this week as we have both had little 
+""blips"" with both our  machines recently which we have managed to 
+correct with re-booting, but we were wondering if both the admin 
+machines were getting to the end of their shelf life.    However we did 
+not want to get new machines and then find that the problem still 
+existed.
+
+We'll look forward to seeing you next Tuesday.
+
+Chris
+
+----Original Message----
+From: mfletcher@cornwall.gov.uk
+Date: 11-Jun-2009 12:17
+To: 
+Subj: NetOp
+
+
+
+
+
+
+
+
+st1\:*{behavior:url(#default#ieooui) }
+
+
+
+
+
+
+
+
+Hi Christine,
+ 
+I hope you are in good form and everything is going well
+there at school.
+ 
+Natalie told me about the problems she had connecting to
+your machine the other day. As you know we now have NetOp working on 
+your
+Server but still not on your Office machine.
+I&#8217;d like to propose the following in order to
+resolve the issue. Next week I have an SLA
+visit with you and I&#8217;d like to propose that I use this time to 
+resolve
+the NetOp problem for you.
+I&#8217;d suggest NetOp is tested
+on another machine (one in the outreach office) and if that one works 
+then I&#8217;ll
+know that it is a specific issue with your machine and not with 
+general network
+configuration.
+ 
+If NetOp works on one of the Outreach machines then I&#8217;ll
+undertake to rebuild your machine from the ground up. Essentially this 
+means
+re-installing Windows, Office, Adobe, SIMS and FMS, plus the locally 
+configured
+printer. It would probably take up a sizeable chunk of the days visit.
+ 
+How does this strike you as a solution?
+ 
+ 
+ 
+Regards,
+ 
+Matt Fletcher,
+IMS Support,
+Cornwall
+  LA.
+ 
+mfletcher@cornwall.gov.uk
+http://www.cornwall.gov.uk/cypf/index.cfm?articleid=32512/
+01872 323263
+ 
+
+
+This e-mail and attachments are intended for above named only and may 
+be confidential. If they have come to you in error you must take no 
+action based on them, nor must you copy or show them to anyone; please 
+e-mail us immediately at enquiries@cornwall.gov.uk.
+Please note that this e-mail may be subject to recording and/or 
+monitoring in accordance with the relevant legislation and may need to 
+be disclosed under the Freedom of Information Act 2000 or the 
+Environmental Information Regulations 2004.
+Security Warning: It is the responsibility of the recipient to ensure 
+that this e-mail and any attachments are virus free. The Authority will 
+not accept liability for any damage caused by a virus.
+ 
+
+
+
+..
+","Fletcher Matthew","EX","Fletcher Matthew","/O=CORNWALLCOUNTYCOUNCIL/OU=MAIN/CN=RECIPIENTS/CN=Mfletcher","EX"
+"NetOp","Hi Christine,
+
+ 
+
+I hope you are in good form and everything is going well there at school.
+
+ 
+
+Natalie told me about the problems she had connecting to your machine the other day. As you know we now have NetOp working on your Server but still not on your Office machine.
+
+I’d like to propose the following in order to resolve the issue. Next week I have an SLA visit with you and I’d like to propose that I use this time to resolve the NetOp problem for you.
+
+I’d suggest NetOp is tested on another machine (one in the outreach office) and if that one works then I’ll know that it is a specific issue with your machine and not with general network configuration.
+
+ 
+
+If NetOp works on one of the Outreach machines then I’ll undertake to rebuild your machine from the ground up. Essentially this means re-installing Windows, Office, Adobe, SIMS and FMS, plus the locally configured printer. It would probably take up a sizeable chunk of the days visit.
+
+ 
+
+How does this strike you as a solution?
+
+ 
+
+ 
+
+ 
+
+Regards,
+
+ 
+
+Matt Fletcher,
+
+IMS Support,
+
+Cornwall LA.
+
+ 
+
+mfletcher@cornwall.gov.uk
+
+http://www.cornwall.gov.uk/cypf/index.cfm?articleid=32512/
+
+01872 323263
+
+ 
+
+","Fletcher Matthew","EX","'secretary@truro-nursery.cornwall.sch.uk'","secretary@truro-nursery.cornwall.sch.uk","SMTP"
+"NetOp","Hi Christine,
+
+ 
+
+I hope you are in good form and everything is going well there at school.
+
+ 
+
+Natalie told me about the problems she had connecting to your machine the other day. As you know we now have NetOp working on your Server but still not on your Office machine.
+
+I’d like to propose the following in order to resolve the issue. Next week I have an SLA visit with you and I’d like to propose that I use this time to resolve the NetOp problem for you.
+
+I’d suggest NetOp is tested on another machine (one in the outreach office) and if that one works then I’ll know that it is a specific issue with your machine and not with general network configuration.
+
+ 
+
+If NetOp works on one of the Outreach machines then I’ll undertake to rebuild your machine from the ground up. Essentially this means re-installing Windows, Office, Adobe, SIMS and FMS, plus the locally configured printer. It would probably take up a sizeable chunk of the days visit.
+
+ 
+
+How does this strike you as a solution?
+
+ 
+
+ 
+
+ 
+
+Regards,
+
+ 
+
+Matt Fletcher,
+
+IMS Support,
+
+Cornwall LA.
+
+ 
+
+mfletcher@cornwall.gov.uk
+
+http://www.cornwall.gov.uk/cypf/index.cfm?articleid=32512/
+
+01872 323263
+
+ 
+
+","Fletcher Matthew","EX","'secretary@truro-nursery.cornwall.sch.uk'","secretary@truro-nursery.cornwall.sch.uk","SMTP"
+"RE: Truro Nursery NetOp","Thanks Sokkha,
+
+ 
+
+Next time I’m there I’ll try a couple of things which will include removing the switch from the equation temporarily while a colleague tests the connection.
+
+ 
+
+Cheers,
+
+ 
+
+ 
+
+Matt Fletcher,
+
+IMS Support,
+
+Cornwall LA.
+
+ 
+
+________________________________
+
+From: Sokkha Monghay [mailto:smonghay@rm.com] 
+Sent: 14 April 2009 12:42
+To: Fletcher Matthew
+Subject: RE: Truro Nursery NetOp
+
+ 
+
+Hi Matthew,
+
+ 
+
+I don't know to be honest, we are in the realms of the LAN, which is something that I have minimal knowledge on.
+
+ 
+
+To summarise, testing from the Cisco router to the target machine on port 6502 failed.
+
+Testing from a local machine to the target machine on the same subnet worked. 
+
+ 
+
+It appears to work across the LAN but not when going through it. It may be worth trying to test across the switch, as it appears to be the only device in the network in between the target machine and the router.
+
+ 
+
+Thanks
+
+ 
+
+Sokkha
+
+ 
+
+________________________________
+
+From: Fletcher Matthew [mailto:mfletcher@cornwall.gov.uk] 
+Sent: 14 April 2009 12:26
+To: Sokkha Monghay
+Subject: RE: Truro Nursery NetOp
+
+Hi Sokkha,
+
+ 
+
+In that case then the answer is yes – the 24 port unmanaged switch.
+
+ 
+
+It is model:
+
+ 
+
+CNet PowerSWITCH
+
+CNSH 2400
+
+ 
+
+This shouldn’t make a difference though should it?
+
+ 
+
+ 
+
+Regards,
+
+ 
+
+Matt Fletcher,
+
+IMS Support,
+
+Cornwall LA.
+
+ 
+
+________________________________
+
+From: Sokkha Monghay [mailto:smonghay@rm.com] 
+Sent: 14 April 2009 12:19
+To: Fletcher Matthew
+Subject: RE: Truro Nursery NetOp
+
+ 
+
+Hi Matthew,
+
+ 
+
+Thanks for the email.
+
+ 
+
+I'm sorry for any miscommunication as there's no need to check between router and the line out.
+
+I needed a check to be performed ""between the server and the broadband router"", in this instance, it would be the Cisco 1700 and the target machine, 10.143.79.253.
+
+The testing my support team have done is from the Cisco 1700 facing the school LAN.
+
+ 
+
+Thanks
+
+Sokkha Monghay
+Network Administrator
+SWGfL Managed Service Team
+Email: smonghay@rm.com or support@swgfl.org.uk
+Tel: (+44) 0845 307 7870
+Fax: (+44) 01235 826999
+
+To keep up to date with SWGfL News and Events and SWGfL Support Information, please subscribe to our mailing lists at                                                         <                                                       > 
+
+Visit the website at                         <                        >  
+
+ 
+
+ 
+
+ 
+
+ 
+
+________________________________
+
+From: Fletcher Matthew [mailto:mfletcher@cornwall.gov.uk] 
+Sent: 14 April 2009 11:38
+To: Sokkha Monghay
+Subject: RE: Truro Nursery NetOp
+
+Hi Sokkha,
+
+ 
+
+I went down to the Nursery School last week to check whether as you asked me, “was there anything between the router and the line out?”
+
+I did find a device between the router and the phone line – a grey box with BT Markings on it (I’ve seen these in a few schools before, but not all), I thought there was something there but had to go down to check really.
+
+Here is in order the way the school is set up.
+
+ 
+
+I hope it helps as I’m at a dead loss now:
+
+ 
+
+ 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+*This grey BT Box was wall mounted and looks like it performs a similar job to a home ADSL filter although there is only one wire in to it and one out. It had the following lights and markings.
+
+ 
+
+ 
+
+Green indicates the light was on.
+
+ 
+
+PWR   CUST    BT   TEST   DSL1    DSL2
+
+ 
+
+ 
+
+The markings were all across the front of the thing but didn’t indicate a make/model at all, in fact they seemed like total rubbish, anyway as follows:
+
+ 
+
+TO-YQIMW       MXLC212933     NTESNEID        476503
+
+                                                SCHEME          468327
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Regards,
+
+ 
+
+Matt Fletcher,
+
+IMS Support,
+
+Cornwall LA.
+
+ 
+
+________________________________
+
+From: Sokkha Monghay [mailto:smonghay@rm.com] 
+Sent: 24 February 2009 12:05
+To: Fletcher Matthew
+Subject: RE: Truro Nursery
+
+ 
+
+Hi Matt,
+
+ 
+
+Thanks for the email.
+
+ 
+
+Regarding 10.143.79.253, can you confirm that there are no devices in between the server and the broadband router? The test that we performed was from the router, so something in between could be blocking the traffic. Once you've confirmed I'll check with my support team to test again.
+
+ 
+
+Regarding 10.143.79.29, this is different. There are a number of possibilities as to why the test failed:
+
+1) Anti virus software
+
+2) Local firewall settings
+
+You'll probably need to refer to the support company for further help with this one.
+
+ 
+
+Thanks
+
+Sokkha Monghay
+Network Administrator
+SWGfL Managed Service Team
+Email: smonghay@rm.com or support@swgfl.org.uk
+Tel: (+44) 0845 307 7870
+Fax: (+44) 01235 826999
+
+To keep up to date with SWGfL News and Events and SWGfL Support Information, please subscribe to our mailing lists at                                                         <                                                       > 
+
+Visit the website at                         <                        >  
+
+ 
+
+ 
+
+________________________________
+
+From: Fletcher Matthew [mailto:mfletcher@cornwall.gov.uk] 
+Sent: 24 February 2009 11:41
+To: Sokkha Monghay
+Subject: RE: Truro Nursery
+
+Thanks for this Sokkha,
+
+ 
+
+I have been to the site and I can indeed telnet to the servers IP from within the local network on port 6502 as demonstrated by the screenshot.
+
+Interestingly if I telnet on 6502 to the other machine in the LAN (Padmin1, IP = 29) which has NetOp installed I can’t connect – although the connection is not refused.
+
+(I tried telnet to the Padmin1 from a different machine and it connected but then dropped the connection instantly although I didn’t grab this screenshot).
+
+ 
+
+ 
+
+Can you be any further help as I’m really stuck now…
+
+ 
+
+ 
+
+Regards,
+
+ 
+
+Matt Fletcher,
+
+IMS Support,
+
+Cornwall LA.
+
+ 
+
+________________________________
+
+From: Sokkha Monghay [mailto:smonghay@rm.com] 
+Sent: 20 February 2009 10:13
+To: Fletcher Matthew
+Subject: RE: Truro Nursery
+
+ 
+
+Hi Matt,
+
+ 
+
+Firstly, Bishop Bronescombe has got a different set up to most schools in Cornwall. I'm not sure why, but there is an open action with my support team to change this.
+
+ 
+
+There is no need to instigate any port forwarding at the moment, as we have tested from the LAN interface of the router. 
+
+The test we did was a telnet on port 6502 to 10.143.79.253. The error we received was ""Connection refused by remote host"" 
+
+Best thing I can suggest is that you perform a telnet test on port 6502 from another host in the LAN, to see if it connects.
+
+ 
+
+Thanks
+
+ 
+
+Sokkha Monghay
+Network Administrator
+SWGfL Managed Service Team
+Email: smonghay@rm.com or support@swgfl.org.uk
+Tel: (+44) 0845 307 7870
+Fax: (+44) 01235 826999
+
+To keep up to date with SWGfL News and Events and SWGfL Support Information, please subscribe to our mailing lists at                                                         <                                                       > 
+
+Visit the website at                         <                        >  
+
+ 
+
+________________________________
+
+From: Fletcher Matthew [mailto:mfletcher@cornwall.gov.uk] 
+Sent: 20 February 2009 08:30
+To: Sokkha Monghay
+Subject: Truro Nursery
+
+Hi Sokkah,
+
+ 
+
+Just checked on the Server again and in fact when I use netstat correctly (with –a to show everything) port number 6502 is actually listed as listening and binded to the correct application.
+
+I’ve attached the text files for netstats results.
+
+ 
+
+My gut instinct is the local router needs port forwarding. The firewall exceptions on the Server itself are properly configured to allow this traffic.
+
+ 
+
+Regards,
+
+ 
+
+Matt Fletcher,
+
+IMS Support,
+
+Cornwall LA.
+
+ 
+
+mfletcher@cornwall.gov.uk
+
+http://www.cornwall.gov.uk/cypf/index.cfm?articleid=32512/
+
+01872 323263
+
+ 
+
+This e-mail and attachments are intended for above named only and may be confidential. If they have come to you in error you must take no action based on them, nor must you copy or show them to anyone; please e-mail us immediately at enquiries@cornwall.gov.uk.
+
+Please note that this e-mail may be subject to recording and/or monitoring in accordance with the relevant legislation and may need to be disclosed under the Freedom of Information Act 2000 or the Environmental Information Regulations 2004.
+
+Security Warning: It is the responsibility of the recipient to ensure that this e-mail and any attachments are virus free. The Authority will not accept liability for any damage caused by a virus.
+
+ 
+
+This message is confidential, so please treat it appropriately and for its intended purpose only. In particular, if it refers to any technical data, terms or prices not generally available or known, such items are ""commercially sensitive information"" within the terms of the Freedom of Information Act 2000 and related laws. As it would be prejudicial to RM's commercial interests if these were disclosed, please refrain from doing so. 
+
+As Internet communications are not secure, please be aware that RM cannot accept responsibility for its contents. Any views or opinions presented are those of the author only and not of RM. If you are not the intended recipient of this e-mail, please accept our apologies and arrange for copies of it to be deleted. For your information, RM may intercept incoming and outgoing email communications. 
+
+RM Education plc 
+Registered Office: New Mill House, 183 Milton Park, Abingdon, Oxfordshire, OX14 4SE, England 
+Registered Number: 1148594
+
+","Fletcher Matthew","EX","'Sokkha Monghay'","smonghay@rm.com","SMTP"
+"RE: Truro Nursery NetOp","Hi Matthew,
+ 
+I don't know to be honest, we are in the realms of the LAN, which is something that I have minimal knowledge on.
+ 
+To summarise, testing from the Cisco router to the target machine on port 6502 failed.
+Testing from a local machine to the target machine on the same subnet worked. 
+ 
+It appears to work across the LAN but not when going through it. It may be worth trying to test across the switch, as it appears to be the only device in the network in between the target machine and the router.
+ 
+Thanks
+ 
+Sokkha
+
+________________________________
+
+From: Fletcher Matthew [mailto:mfletcher@cornwall.gov.uk] 
+Sent: 14 April 2009 12:26
+To: Sokkha Monghay
+Subject: RE: Truro Nursery NetOp
+
+
+
+Hi Sokkha,
+
+ 
+
+In that case then the answer is yes – the 24 port unmanaged switch.
+
+ 
+
+It is model:
+
+ 
+
+CNet PowerSWITCH
+
+CNSH 2400
+
+ 
+
+This shouldn’t make a difference though should it?
+
+ 
+
+ 
+
+Regards,
+
+ 
+
+Matt Fletcher,
+
+IMS Support,
+
+Cornwall LA.
+
+ 
+
+________________________________
+
+From: Sokkha Monghay [mailto:smonghay@rm.com] 
+Sent: 14 April 2009 12:19
+To: Fletcher Matthew
+Subject: RE: Truro Nursery NetOp
+
+ 
+
+Hi Matthew,
+
+ 
+
+Thanks for the email.
+
+ 
+
+I'm sorry for any miscommunication as there's no need to check between router and the line out.
+
+I needed a check to be performed ""between the server and the broadband router"", in this instance, it would be the Cisco 1700 and the target machine, 10.143.79.253.
+
+The testing my support team have done is from the Cisco 1700 facing the school LAN.
+
+ 
+
+Thanks
+
+Sokkha Monghay
+Network Administrator
+SWGfL Managed Service Team
+Email: smonghay@rm.com or support@swgfl.org.uk
+Tel: (+44) 0845 307 7870
+Fax: (+44) 01235 826999
+
+To keep up to date with SWGfL News and Events and SWGfL Support Information, please subscribe to our mailing lists at                                                         <                                                       > 
+
+Visit the website at                         <                        >  
+
+ 
+
+ 
+
+ 
+
+ 
+
+________________________________
+
+From: Fletcher Matthew [mailto:mfletcher@cornwall.gov.uk] 
+Sent: 14 April 2009 11:38
+To: Sokkha Monghay
+Subject: RE: Truro Nursery NetOp
+
+Hi Sokkha,
+
+ 
+
+I went down to the Nursery School last week to check whether as you asked me, “was there anything between the router and the line out?”
+
+I did find a device between the router and the phone line – a grey box with BT Markings on it (I’ve seen these in a few schools before, but not all), I thought there was something there but had to go down to check really.
+
+Here is in order the way the school is set up.
+
+ 
+
+I hope it helps as I’m at a dead loss now:
+
+ 
+
+ 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+*This grey BT Box was wall mounted and looks like it performs a similar job to a home ADSL filter although there is only one wire in to it and one out. It had the following lights and markings.
+
+ 
+
+ 
+
+Green indicates the light was on.
+
+ 
+
+PWR   CUST    BT   TEST   DSL1    DSL2
+
+ 
+
+ 
+
+The markings were all across the front of the thing but didn’t indicate a make/model at all, in fact they seemed like total rubbish, anyway as follows:
+
+ 
+
+TO-YQIMW       MXLC212933     NTESNEID        476503
+
+                                                SCHEME          468327
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Regards,
+
+ 
+
+Matt Fletcher,
+
+IMS Support,
+
+Cornwall LA.
+
+ 
+
+________________________________
+
+From: Sokkha Monghay [mailto:smonghay@rm.com] 
+Sent: 24 February 2009 12:05
+To: Fletcher Matthew
+Subject: RE: Truro Nursery
+
+ 
+
+Hi Matt,
+
+ 
+
+Thanks for the email.
+
+ 
+
+Regarding 10.143.79.253, can you confirm that there are no devices in between the server and the broadband router? The test that we performed was from the router, so something in between could be blocking the traffic. Once you've confirmed I'll check with my support team to test again.
+
+ 
+
+Regarding 10.143.79.29, this is different. There are a number of possibilities as to why the test failed:
+
+1) Anti virus software
+
+2) Local firewall settings
+
+You'll probably need to refer to the support company for further help with this one.
+
+ 
+
+Thanks
+
+Sokkha Monghay
+Network Administrator
+SWGfL Managed Service Team
+Email: smonghay@rm.com or support@swgfl.org.uk
+Tel: (+44) 0845 307 7870
+Fax: (+44) 01235 826999
+
+To keep up to date with SWGfL News and Events and SWGfL Support Information, please subscribe to our mailing lists at                                                         <                                                       > 
+
+Visit the website at                         <                        >  
+
+ 
+
+ 
+
+________________________________
+
+From: Fletcher Matthew [mailto:mfletcher@cornwall.gov.uk] 
+Sent: 24 February 2009 11:41
+To: Sokkha Monghay
+Subject: RE: Truro Nursery
+
+Thanks for this Sokkha,
+
+ 
+
+I have been to the site and I can indeed telnet to the servers IP from within the local network on port 6502 as demonstrated by the screenshot.
+
+Interestingly if I telnet on 6502 to the other machine in the LAN (Padmin1, IP = 29) which has NetOp installed I can’t connect – although the connection is not refused.
+
+(I tried telnet to the Padmin1 from a different machine and it connected but then dropped the connection instantly although I didn’t grab this screenshot).
+
+ 
+
+ 
+
+Can you be any further help as I’m really stuck now…
+
+ 
+
+ 
+
+Regards,
+
+ 
+
+Matt Fletcher,
+
+IMS Support,
+
+Cornwall LA.
+
+ 
+
+________________________________
+
+From: Sokkha Monghay [mailto:smonghay@rm.com] 
+Sent: 20 February 2009 10:13
+To: Fletcher Matthew
+Subject: RE: Truro Nursery
+
+ 
+
+Hi Matt,
+
+ 
+
+Firstly, Bishop Bronescombe has got a different set up to most schools in Cornwall. I'm not sure why, but there is an open action with my support team to change this.
+
+ 
+
+There is no need to instigate any port forwarding at the moment, as we have tested from the LAN interface of the router. 
+
+The test we did was a telnet on port 6502 to 10.143.79.253. The error we received was ""Connection refused by remote host"" 
+
+Best thing I can suggest is that you perform a telnet test on port 6502 from another host in the LAN, to see if it connects.
+
+ 
+
+Thanks
+
+ 
+
+Sokkha Monghay
+Network Administrator
+SWGfL Managed Service Team
+Email: smonghay@rm.com or support@swgfl.org.uk
+Tel: (+44) 0845 307 7870
+Fax: (+44) 01235 826999
+
+To keep up to date with SWGfL News and Events and SWGfL Support Information, please subscribe to our mailing lists at                                                         <                                                       > 
+
+Visit the website at                         <                        >  
+
+ 
+
+________________________________
+
+From: Fletcher Matthew [mailto:mfletcher@cornwall.gov.uk] 
+Sent: 20 February 2009 08:30
+To: Sokkha Monghay
+Subject: Truro Nursery
+
+Hi Sokkah,
+
+ 
+
+Just checked on the Server again and in fact when I use netstat correctly (with –a to show everything) port number 6502 is actually listed as listening and binded to the correct application.
+
+I’ve attached the text files for netstats results.
+
+ 
+
+My gut instinct is the local router needs port forwarding. The firewall exceptions on the Server itself are properly configured to allow this traffic.
+
+ 
+
+Regards,
+
+ 
+
+Matt Fletcher,
+
+IMS Support,
+
+Cornwall LA.
+
+ 
+
+mfletcher@cornwall.gov.uk
+
+http://www.cornwall.gov.uk/cypf/index.cfm?articleid=32512/
+
+01872 323263
+
+ 
+
+This e-mail and attachments are intended for above named only and may be confidential. If they have come to you in error you must take no action based on them, nor must you copy or show them to anyone; please e-mail us immediately at enquiries@cornwall.gov.uk.
+
+Please note that this e-mail may be subject to recording and/or monitoring in accordance with the relevant legislation and may need to be disclosed under the Freedom of Information Act 2000 or the Environmental Information Regulations 2004.
+
+Security Warning: It is the responsibility of the recipient to ensure that this e-mail and any attachments are virus free. The Authority will not accept liability for any damage caused by a virus.
+
+ 
+
+This message is confidential, so please treat it appropriately and for its intended purpose only. In particular, if it refers to any technical data, terms or prices not generally available or known, such items are ""commercially sensitive information"" within the terms of the Freedom of Information Act 2000 and related laws. As it would be prejudicial to RM's commercial interests if these were disclosed, please refrain from doing so. 
+
+As Internet communications are not secure, please be aware that RM cannot accept responsibility for its contents. Any views or opinions presented are those of the author only and not of RM. If you are not the intended recipient of this e-mail, please accept our apologies and arrange for copies of it to be deleted. For your information, RM may intercept incoming and outgoing email communications. 
+
+RM Education plc 
+Registered Office: New Mill House, 183 Milton Park, Abingdon, Oxfordshire, OX14 4SE, England 
+Registered Number: 1148594
+
+","Sokkha Monghay","SMTP","Fletcher Matthew","/O=CORNWALLCOUNTYCOUNCIL/OU=MAIN/CN=RECIPIENTS/CN=MFLETCHER","EX"
+"RE: Truro Nursery NetOp","Hi Sokkha,
+
+ 
+
+In that case then the answer is yes – the 24 port unmanaged switch.
+
+ 
+
+It is model:
+
+ 
+
+CNet PowerSWITCH
+
+CNSH 2400
+
+ 
+
+This shouldn’t make a difference though should it?
+
+ 
+
+ 
+
+Regards,
+
+ 
+
+Matt Fletcher,
+
+IMS Support,
+
+Cornwall LA.
+
+ 
+
+________________________________
+
+From: Sokkha Monghay [mailto:smonghay@rm.com] 
+Sent: 14 April 2009 12:19
+To: Fletcher Matthew
+Subject: RE: Truro Nursery NetOp
+
+ 
+
+Hi Matthew,
+
+ 
+
+Thanks for the email.
+
+ 
+
+I'm sorry for any miscommunication as there's no need to check between router and the line out.
+
+I needed a check to be performed ""between the server and the broadband router"", in this instance, it would be the Cisco 1700 and the target machine, 10.143.79.253.
+
+The testing my support team have done is from the Cisco 1700 facing the school LAN.
+
+ 
+
+Thanks
+
+Sokkha Monghay
+Network Administrator
+SWGfL Managed Service Team
+Email: smonghay@rm.com or support@swgfl.org.uk
+Tel: (+44) 0845 307 7870
+Fax: (+44) 01235 826999
+
+To keep up to date with SWGfL News and Events and SWGfL Support Information, please subscribe to our mailing lists at                                                         <                                                       > 
+
+Visit the website at                         <                        >  
+
+ 
+
+ 
+
+ 
+
+ 
+
+________________________________
+
+From: Fletcher Matthew [mailto:mfletcher@cornwall.gov.uk] 
+Sent: 14 April 2009 11:38
+To: Sokkha Monghay
+Subject: RE: Truro Nursery NetOp
+
+Hi Sokkha,
+
+ 
+
+I went down to the Nursery School last week to check whether as you asked me, “was there anything between the router and the line out?”
+
+I did find a device between the router and the phone line – a grey box with BT Markings on it (I’ve seen these in a few schools before, but not all), I thought there was something there but had to go down to check really.
+
+Here is in order the way the school is set up.
+
+ 
+
+I hope it helps as I’m at a dead loss now:
+
+ 
+
+ 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+*This grey BT Box was wall mounted and looks like it performs a similar job to a home ADSL filter although there is only one wire in to it and one out. It had the following lights and markings.
+
+ 
+
+ 
+
+Green indicates the light was on.
+
+ 
+
+PWR   CUST    BT   TEST   DSL1    DSL2
+
+ 
+
+ 
+
+The markings were all across the front of the thing but didn’t indicate a make/model at all, in fact they seemed like total rubbish, anyway as follows:
+
+ 
+
+TO-YQIMW       MXLC212933     NTESNEID        476503
+
+                                                SCHEME          468327
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Regards,
+
+ 
+
+Matt Fletcher,
+
+IMS Support,
+
+Cornwall LA.
+
+ 
+
+________________________________
+
+From: Sokkha Monghay [mailto:smonghay@rm.com] 
+Sent: 24 February 2009 12:05
+To: Fletcher Matthew
+Subject: RE: Truro Nursery
+
+ 
+
+Hi Matt,
+
+ 
+
+Thanks for the email.
+
+ 
+
+Regarding 10.143.79.253, can you confirm that there are no devices in between the server and the broadband router? The test that we performed was from the router, so something in between could be blocking the traffic. Once you've confirmed I'll check with my support team to test again.
+
+ 
+
+Regarding 10.143.79.29, this is different. There are a number of possibilities as to why the test failed:
+
+1) Anti virus software
+
+2) Local firewall settings
+
+You'll probably need to refer to the support company for further help with this one.
+
+ 
+
+Thanks
+
+Sokkha Monghay
+Network Administrator
+SWGfL Managed Service Team
+Email: smonghay@rm.com or support@swgfl.org.uk
+Tel: (+44) 0845 307 7870
+Fax: (+44) 01235 826999
+
+To keep up to date with SWGfL News and Events and SWGfL Support Information, please subscribe to our mailing lists at                                                         <                                                       > 
+
+Visit the website at                         <                        >  
+
+ 
+
+ 
+
+________________________________
+
+From: Fletcher Matthew [mailto:mfletcher@cornwall.gov.uk] 
+Sent: 24 February 2009 11:41
+To: Sokkha Monghay
+Subject: RE: Truro Nursery
+
+Thanks for this Sokkha,
+
+ 
+
+I have been to the site and I can indeed telnet to the servers IP from within the local network on port 6502 as demonstrated by the screenshot.
+
+Interestingly if I telnet on 6502 to the other machine in the LAN (Padmin1, IP = 29) which has NetOp installed I can’t connect – although the connection is not refused.
+
+(I tried telnet to the Padmin1 from a different machine and it connected but then dropped the connection instantly although I didn’t grab this screenshot).
+
+ 
+
+ 
+
+Can you be any further help as I’m really stuck now…
+
+ 
+
+ 
+
+Regards,
+
+ 
+
+Matt Fletcher,
+
+IMS Support,
+
+Cornwall LA.
+
+ 
+
+________________________________
+
+From: Sokkha Monghay [mailto:smonghay@rm.com] 
+Sent: 20 February 2009 10:13
+To: Fletcher Matthew
+Subject: RE: Truro Nursery
+
+ 
+
+Hi Matt,
+
+ 
+
+Firstly, Bishop Bronescombe has got a different set up to most schools in Cornwall. I'm not sure why, but there is an open action with my support team to change this.
+
+ 
+
+There is no need to instigate any port forwarding at the moment, as we have tested from the LAN interface of the router. 
+
+The test we did was a telnet on port 6502 to 10.143.79.253. The error we received was ""Connection refused by remote host"" 
+
+Best thing I can suggest is that you perform a telnet test on port 6502 from another host in the LAN, to see if it connects.
+
+ 
+
+Thanks
+
+ 
+
+Sokkha Monghay
+Network Administrator
+SWGfL Managed Service Team
+Email: smonghay@rm.com or support@swgfl.org.uk
+Tel: (+44) 0845 307 7870
+Fax: (+44) 01235 826999
+
+To keep up to date with SWGfL News and Events and SWGfL Support Information, please subscribe to our mailing lists at                                                         <                                                       > 
+
+Visit the website at                         <                        >  
+
+ 
+
+________________________________
+
+From: Fletcher Matthew [mailto:mfletcher@cornwall.gov.uk] 
+Sent: 20 February 2009 08:30
+To: Sokkha Monghay
+Subject: Truro Nursery
+
+Hi Sokkah,
+
+ 
+
+Just checked on the Server again and in fact when I use netstat correctly (with –a to show everything) port number 6502 is actually listed as listening and binded to the correct application.
+
+I’ve attached the text files for netstats results.
+
+ 
+
+My gut instinct is the local router needs port forwarding. The firewall exceptions on the Server itself are properly configured to allow this traffic.
+
+ 
+
+Regards,
+
+ 
+
+Matt Fletcher,
+
+IMS Support,
+
+Cornwall LA.
+
+ 
+
+mfletcher@cornwall.gov.uk
+
+http://www.cornwall.gov.uk/cypf/index.cfm?articleid=32512/
+
+01872 323263
+
+ 
+
+This e-mail and attachments are intended for above named only and may be confidential. If they have come to you in error you must take no action based on them, nor must you copy or show them to anyone; please e-mail us immediately at enquiries@cornwall.gov.uk.
+
+Please note that this e-mail may be subject to recording and/or monitoring in accordance with the relevant legislation and may need to be disclosed under the Freedom of Information Act 2000 or the Environmental Information Regulations 2004.
+
+Security Warning: It is the responsibility of the recipient to ensure that this e-mail and any attachments are virus free. The Authority will not accept liability for any damage caused by a virus.
+
+ 
+
+This message is confidential, so please treat it appropriately and for its intended purpose only. In particular, if it refers to any technical data, terms or prices not generally available or known, such items are ""commercially sensitive information"" within the terms of the Freedom of Information Act 2000 and related laws. As it would be prejudicial to RM's commercial interests if these were disclosed, please refrain from doing so. 
+
+As Internet communications are not secure, please be aware that RM cannot accept responsibility for its contents. Any views or opinions presented are those of the author only and not of RM. If you are not the intended recipient of this e-mail, please accept our apologies and arrange for copies of it to be deleted. For your information, RM may intercept incoming and outgoing email communications. 
+
+RM Education plc 
+Registered Office: New Mill House, 183 Milton Park, Abingdon, Oxfordshire, OX14 4SE, England 
+Registered Number: 1148594
+
+","Fletcher Matthew","EX","'Sokkha Monghay'","smonghay@rm.com","SMTP"
+"RE: Truro Nursery NetOp","Hi Matthew,
+ 
+Thanks for the email.
+ 
+I'm sorry for any miscommunication as there's no need to check between router and the line out.
+I needed a check to be performed ""between the server and the broadband router"", in this instance, it would be the Cisco 1700 and the target machine, 10.143.79.253.
+The testing my support team have done is from the Cisco 1700 facing the school LAN.
+ 
+Thanks
+Sokkha Monghay
+Network Administrator
+SWGfL Managed Service Team
+Email: smonghay@rm.com or support@swgfl.org.uk
+Tel: (+44) 0845 307 7870
+Fax: (+44) 01235 826999
+
+To keep up to date with SWGfL News and Events and SWGfL Support Information, please subscribe to our mailing lists at                                                         <                                                       > 
+
+Visit the website at                         <                        >  
+
+ 
+ 
+ 
+
+________________________________
+
+From: Fletcher Matthew [mailto:mfletcher@cornwall.gov.uk] 
+Sent: 14 April 2009 11:38
+To: Sokkha Monghay
+Subject: RE: Truro Nursery NetOp
+
+
+
+Hi Sokkha,
+
+ 
+
+I went down to the Nursery School last week to check whether as you asked me, “was there anything between the router and the line out?”
+
+I did find a device between the router and the phone line – a grey box with BT Markings on it (I’ve seen these in a few schools before, but not all), I thought there was something there but had to go down to check really.
+
+Here is in order the way the school is set up.
+
+ 
+
+I hope it helps as I’m at a dead loss now:
+
+ 
+
+ 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+*This grey BT Box was wall mounted and looks like it performs a similar job to a home ADSL filter although there is only one wire in to it and one out. It had the following lights and markings.
+
+ 
+
+ 
+
+Green indicates the light was on.
+
+ 
+
+PWR   CUST    BT   TEST   DSL1    DSL2
+
+ 
+
+ 
+
+The markings were all across the front of the thing but didn’t indicate a make/model at all, in fact they seemed like total rubbish, anyway as follows:
+
+ 
+
+TO-YQIMW       MXLC212933     NTESNEID        476503
+
+                                                SCHEME          468327
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Regards,
+
+ 
+
+Matt Fletcher,
+
+IMS Support,
+
+Cornwall LA.
+
+ 
+
+________________________________
+
+From: Sokkha Monghay [mailto:smonghay@rm.com] 
+Sent: 24 February 2009 12:05
+To: Fletcher Matthew
+Subject: RE: Truro Nursery
+
+ 
+
+Hi Matt,
+
+ 
+
+Thanks for the email.
+
+ 
+
+Regarding 10.143.79.253, can you confirm that there are no devices in between the server and the broadband router? The test that we performed was from the router, so something in between could be blocking the traffic. Once you've confirmed I'll check with my support team to test again.
+
+ 
+
+Regarding 10.143.79.29, this is different. There are a number of possibilities as to why the test failed:
+
+1) Anti virus software
+
+2) Local firewall settings
+
+You'll probably need to refer to the support company for further help with this one.
+
+ 
+
+Thanks
+
+Sokkha Monghay
+Network Administrator
+SWGfL Managed Service Team
+Email: smonghay@rm.com or support@swgfl.org.uk
+Tel: (+44) 0845 307 7870
+Fax: (+44) 01235 826999
+
+To keep up to date with SWGfL News and Events and SWGfL Support Information, please subscribe to our mailing lists at                                                         <                                                       > 
+
+Visit the website at                         <                        >  
+
+ 
+
+ 
+
+________________________________
+
+From: Fletcher Matthew [mailto:mfletcher@cornwall.gov.uk] 
+Sent: 24 February 2009 11:41
+To: Sokkha Monghay
+Subject: RE: Truro Nursery
+
+Thanks for this Sokkha,
+
+ 
+
+I have been to the site and I can indeed telnet to the servers IP from within the local network on port 6502 as demonstrated by the screenshot.
+
+Interestingly if I telnet on 6502 to the other machine in the LAN (Padmin1, IP = 29) which has NetOp installed I can’t connect – although the connection is not refused.
+
+(I tried telnet to the Padmin1 from a different machine and it connected but then dropped the connection instantly although I didn’t grab this screenshot).
+
+ 
+
+ 
+
+Can you be any further help as I’m really stuck now…
+
+ 
+
+ 
+
+Regards,
+
+ 
+
+Matt Fletcher,
+
+IMS Support,
+
+Cornwall LA.
+
+ 
+
+________________________________
+
+From: Sokkha Monghay [mailto:smonghay@rm.com] 
+Sent: 20 February 2009 10:13
+To: Fletcher Matthew
+Subject: RE: Truro Nursery
+
+ 
+
+Hi Matt,
+
+ 
+
+Firstly, Bishop Bronescombe has got a different set up to most schools in Cornwall. I'm not sure why, but there is an open action with my support team to change this.
+
+ 
+
+There is no need to instigate any port forwarding at the moment, as we have tested from the LAN interface of the router. 
+
+The test we did was a telnet on port 6502 to 10.143.79.253. The error we received was ""Connection refused by remote host"" 
+
+Best thing I can suggest is that you perform a telnet test on port 6502 from another host in the LAN, to see if it connects.
+
+ 
+
+Thanks
+
+ 
+
+Sokkha Monghay
+Network Administrator
+SWGfL Managed Service Team
+Email: smonghay@rm.com or support@swgfl.org.uk
+Tel: (+44) 0845 307 7870
+Fax: (+44) 01235 826999
+
+To keep up to date with SWGfL News and Events and SWGfL Support Information, please subscribe to our mailing lists at                                                         <                                                       > 
+
+Visit the website at                         <                        >  
+
+ 
+
+________________________________
+
+From: Fletcher Matthew [mailto:mfletcher@cornwall.gov.uk] 
+Sent: 20 February 2009 08:30
+To: Sokkha Monghay
+Subject: Truro Nursery
+
+Hi Sokkah,
+
+ 
+
+Just checked on the Server again and in fact when I use netstat correctly (with –a to show everything) port number 6502 is actually listed as listening and binded to the correct application.
+
+I’ve attached the text files for netstats results.
+
+ 
+
+My gut instinct is the local router needs port forwarding. The firewall exceptions on the Server itself are properly configured to allow this traffic.
+
+ 
+
+Regards,
+
+ 
+
+Matt Fletcher,
+
+IMS Support,
+
+Cornwall LA.
+
+ 
+
+mfletcher@cornwall.gov.uk
+
+http://www.cornwall.gov.uk/cypf/index.cfm?articleid=32512/
+
+01872 323263
+
+ 
+
+This e-mail and attachments are intended for above named only and may be confidential. If they have come to you in error you must take no action based on them, nor must you copy or show them to anyone; please e-mail us immediately at enquiries@cornwall.gov.uk.
+
+Please note that this e-mail may be subject to recording and/or monitoring in accordance with the relevant legislation and may need to be disclosed under the Freedom of Information Act 2000 or the Environmental Information Regulations 2004.
+
+Security Warning: It is the responsibility of the recipient to ensure that this e-mail and any attachments are virus free. The Authority will not accept liability for any damage caused by a virus.
+
+ 
+
+This message is confidential, so please treat it appropriately and for its intended purpose only. In particular, if it refers to any technical data, terms or prices not generally available or known, such items are ""commercially sensitive information"" within the terms of the Freedom of Information Act 2000 and related laws. As it would be prejudicial to RM's commercial interests if these were disclosed, please refrain from doing so. 
+
+As Internet communications are not secure, please be aware that RM cannot accept responsibility for its contents. Any views or opinions presented are those of the author only and not of RM. If you are not the intended recipient of this e-mail, please accept our apologies and arrange for copies of it to be deleted. For your information, RM may intercept incoming and outgoing email communications. 
+
+RM Education plc 
+Registered Office: New Mill House, 183 Milton Park, Abingdon, Oxfordshire, OX14 4SE, England 
+Registered Number: 1148594
+
+","Sokkha Monghay","SMTP","Fletcher Matthew","/O=CORNWALLCOUNTYCOUNCIL/OU=MAIN/CN=RECIPIENTS/CN=MFLETCHER","EX"
+"RE: Truro Nursery NetOp","Hi Sokkha,
+
+ 
+
+I went down to the Nursery School last week to check whether as you asked me, “was there anything between the router and the line out?”
+
+I did find a device between the router and the phone line – a grey box with BT Markings on it (I’ve seen these in a few schools before, but not all), I thought there was something there but had to go down to check really.
+
+Here is in order the way the school is set up.
+
+ 
+
+I hope it helps as I’m at a dead loss now:
+
+ 
+
+ 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+*This grey BT Box was wall mounted and looks like it performs a similar job to a home ADSL filter although there is only one wire in to it and one out. It had the following lights and markings.
+
+ 
+
+ 
+
+Green indicates the light was on.
+
+ 
+
+PWR   CUST    BT   TEST   DSL1    DSL2
+
+ 
+
+ 
+
+The markings were all across the front of the thing but didn’t indicate a make/model at all, in fact they seemed like total rubbish, anyway as follows:
+
+ 
+
+TO-YQIMW       MXLC212933     NTESNEID        476503
+
+                                                SCHEME          468327
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Regards,
+
+ 
+
+Matt Fletcher,
+
+IMS Support,
+
+Cornwall LA.
+
+ 
+
+________________________________
+
+From: Sokkha Monghay [mailto:smonghay@rm.com] 
+Sent: 24 February 2009 12:05
+To: Fletcher Matthew
+Subject: RE: Truro Nursery
+
+ 
+
+Hi Matt,
+
+ 
+
+Thanks for the email.
+
+ 
+
+Regarding 10.143.79.253, can you confirm that there are no devices in between the server and the broadband router? The test that we performed was from the router, so something in between could be blocking the traffic. Once you've confirmed I'll check with my support team to test again.
+
+ 
+
+Regarding 10.143.79.29, this is different. There are a number of possibilities as to why the test failed:
+
+1) Anti virus software
+
+2) Local firewall settings
+
+You'll probably need to refer to the support company for further help with this one.
+
+ 
+
+Thanks
+
+Sokkha Monghay
+Network Administrator
+SWGfL Managed Service Team
+Email: smonghay@rm.com or support@swgfl.org.uk
+Tel: (+44) 0845 307 7870
+Fax: (+44) 01235 826999
+
+To keep up to date with SWGfL News and Events and SWGfL Support Information, please subscribe to our mailing lists at                                                         <                                                       > 
+
+Visit the website at                         <                        >  
+
+ 
+
+ 
+
+________________________________
+
+From: Fletcher Matthew [mailto:mfletcher@cornwall.gov.uk] 
+Sent: 24 February 2009 11:41
+To: Sokkha Monghay
+Subject: RE: Truro Nursery
+
+Thanks for this Sokkha,
+
+ 
+
+I have been to the site and I can indeed telnet to the servers IP from within the local network on port 6502 as demonstrated by the screenshot.
+
+Interestingly if I telnet on 6502 to the other machine in the LAN (Padmin1, IP = 29) which has NetOp installed I can’t connect – although the connection is not refused.
+
+(I tried telnet to the Padmin1 from a different machine and it connected but then dropped the connection instantly although I didn’t grab this screenshot).
+
+ 
+
+ 
+
+Can you be any further help as I’m really stuck now…
+
+ 
+
+ 
+
+Regards,
+
+ 
+
+Matt Fletcher,
+
+IMS Support,
+
+Cornwall LA.
+
+ 
+
+________________________________
+
+From: Sokkha Monghay [mailto:smonghay@rm.com] 
+Sent: 20 February 2009 10:13
+To: Fletcher Matthew
+Subject: RE: Truro Nursery
+
+ 
+
+Hi Matt,
+
+ 
+
+Firstly, Bishop Bronescombe has got a different set up to most schools in Cornwall. I'm not sure why, but there is an open action with my support team to change this.
+
+ 
+
+There is no need to instigate any port forwarding at the moment, as we have tested from the LAN interface of the router. 
+
+The test we did was a telnet on port 6502 to 10.143.79.253. The error we received was ""Connection refused by remote host"" 
+
+Best thing I can suggest is that you perform a telnet test on port 6502 from another host in the LAN, to see if it connects.
+
+ 
+
+Thanks
+
+ 
+
+Sokkha Monghay
+Network Administrator
+SWGfL Managed Service Team
+Email: smonghay@rm.com or support@swgfl.org.uk
+Tel: (+44) 0845 307 7870
+Fax: (+44) 01235 826999
+
+To keep up to date with SWGfL News and Events and SWGfL Support Information, please subscribe to our mailing lists at                                                         <                                                       > 
+
+Visit the website at                         <                        >  
+
+ 
+
+________________________________
+
+From: Fletcher Matthew [mailto:mfletcher@cornwall.gov.uk] 
+Sent: 20 February 2009 08:30
+To: Sokkha Monghay
+Subject: Truro Nursery
+
+Hi Sokkah,
+
+ 
+
+Just checked on the Server again and in fact when I use netstat correctly (with –a to show everything) port number 6502 is actually listed as listening and binded to the correct application.
+
+I’ve attached the text files for netstats results.
+
+ 
+
+My gut instinct is the local router needs port forwarding. The firewall exceptions on the Server itself are properly configured to allow this traffic.
+
+ 
+
+Regards,
+
+ 
+
+Matt Fletcher,
+
+IMS Support,
+
+Cornwall LA.
+
+ 
+
+mfletcher@cornwall.gov.uk
+
+http://www.cornwall.gov.uk/cypf/index.cfm?articleid=32512/
+
+01872 323263
+
+ 
+
+This e-mail and attachments are intended for above named only and may be confidential. If they have come to you in error you must take no action based on them, nor must you copy or show them to anyone; please e-mail us immediately at enquiries@cornwall.gov.uk.
+
+Please note that this e-mail may be subject to recording and/or monitoring in accordance with the relevant legislation and may need to be disclosed under the Freedom of Information Act 2000 or the Environmental Information Regulations 2004.
+
+Security Warning: It is the responsibility of the recipient to ensure that this e-mail and any attachments are virus free. The Authority will not accept liability for any damage caused by a virus.
+
+ 
+
+This message is confidential, so please treat it appropriately and for its intended purpose only. In particular, if it refers to any technical data, terms or prices not generally available or known, such items are ""commercially sensitive information"" within the terms of the Freedom of Information Act 2000 and related laws. As it would be prejudicial to RM's commercial interests if these were disclosed, please refrain from doing so. 
+
+As Internet communications are not secure, please be aware that RM cannot accept responsibility for its contents. Any views or opinions presented are those of the author only and not of RM. If you are not the intended recipient of this e-mail, please accept our apologies and arrange for copies of it to be deleted. For your information, RM may intercept incoming and outgoing email communications. 
+
+RM Education plc 
+Registered Office: New Mill House, 183 Milton Park, Abingdon, Oxfordshire, OX14 4SE, England 
+Registered Number: 1148594
+
+","Fletcher Matthew","EX","'Sokkha Monghay'","smonghay@rm.com","SMTP"
+"RE: Truro Nursery","Thanks Sokkha,
+
+ 
+
+I’ll have to do that next time I am in school, I only popped in today because I was in the immediate area following a visit to another school.
+
+ 
+
+My thought is that there may be a switch in between the broadband router and the server but to the best of my knowledge it is a very basic unmanaged one which the internal traffic would have had to pass through.
+
+I expect antivirus is probably to blame for the other IP I didn’t check and disable it although I did disable the firewall – I suppose the connection could be getting dropped or failing because the traffic doesn’t originate from the expected application.
+
+ 
+
+Next time I’m in school is the 17th of March I’ll do a quick sketch up of how the router, switches and server are configured when I’m there and mail you it.
+
+ 
+
+Regards,
+
+ 
+
+Matt Fletcher,
+
+IMS Support,
+
+Cornwall LA.
+
+ 
+
+________________________________
+
+From: Sokkha Monghay [mailto:smonghay@rm.com] 
+Sent: 24 February 2009 12:05
+To: Fletcher Matthew
+Subject: RE: Truro Nursery
+
+ 
+
+Hi Matt,
+
+ 
+
+Thanks for the email.
+
+ 
+
+Regarding 10.143.79.253, can you confirm that there are no devices in between the server and the broadband router? The test that we performed was from the router, so something in between could be blocking the traffic. Once you've confirmed I'll check with my support team to test again.
+
+ 
+
+Regarding 10.143.79.29, this is different. There are a number of possibilities as to why the test failed:
+
+1) Anti virus software
+
+2) Local firewall settings
+
+You'll probably need to refer to the support company for further help with this one.
+
+ 
+
+Thanks
+
+Sokkha Monghay
+Network Administrator
+SWGfL Managed Service Team
+Email: smonghay@rm.com or support@swgfl.org.uk
+Tel: (+44) 0845 307 7870
+Fax: (+44) 01235 826999
+
+To keep up to date with SWGfL News and Events and SWGfL Support Information, please subscribe to our mailing lists at                                                         <                                                       > 
+
+Visit the website at                         <                        >  
+
+ 
+
+ 
+
+________________________________
+
+From: Fletcher Matthew [mailto:mfletcher@cornwall.gov.uk] 
+Sent: 24 February 2009 11:41
+To: Sokkha Monghay
+Subject: RE: Truro Nursery
+
+Thanks for this Sokkha,
+
+ 
+
+I have been to the site and I can indeed telnet to the servers IP from within the local network on port 6502 as demonstrated by the screenshot.
+
+Interestingly if I telnet on 6502 to the other machine in the LAN (Padmin1, IP = 29) which has NetOp installed I can’t connect – although the connection is not refused.
+
+(I tried telnet to the Padmin1 from a different machine and it connected but then dropped the connection instantly although I didn’t grab this screenshot).
+
+ 
+
+ 
+
+Can you be any further help as I’m really stuck now…
+
+ 
+
+ 
+
+Regards,
+
+ 
+
+Matt Fletcher,
+
+IMS Support,
+
+Cornwall LA.
+
+ 
+
+________________________________
+
+From: Sokkha Monghay [mailto:smonghay@rm.com] 
+Sent: 20 February 2009 10:13
+To: Fletcher Matthew
+Subject: RE: Truro Nursery
+
+ 
+
+Hi Matt,
+
+ 
+
+Firstly, Bishop Bronescombe has got a different set up to most schools in Cornwall. I'm not sure why, but there is an open action with my support team to change this.
+
+ 
+
+There is no need to instigate any port forwarding at the moment, as we have tested from the LAN interface of the router. 
+
+The test we did was a telnet on port 6502 to 10.143.79.253. The error we received was ""Connection refused by remote host"" 
+
+Best thing I can suggest is that you perform a telnet test on port 6502 from another host in the LAN, to see if it connects.
+
+ 
+
+Thanks
+
+ 
+
+Sokkha Monghay
+Network Administrator
+SWGfL Managed Service Team
+Email: smonghay@rm.com or support@swgfl.org.uk
+Tel: (+44) 0845 307 7870
+Fax: (+44) 01235 826999
+
+To keep up to date with SWGfL News and Events and SWGfL Support Information, please subscribe to our mailing lists at                                                         <                                                       > 
+
+Visit the website at                         <                        >  
+
+ 
+
+________________________________
+
+From: Fletcher Matthew [mailto:mfletcher@cornwall.gov.uk] 
+Sent: 20 February 2009 08:30
+To: Sokkha Monghay
+Subject: Truro Nursery
+
+Hi Sokkah,
+
+ 
+
+Just checked on the Server again and in fact when I use netstat correctly (with –a to show everything) port number 6502 is actually listed as listening and binded to the correct application.
+
+I’ve attached the text files for netstats results.
+
+ 
+
+My gut instinct is the local router needs port forwarding. The firewall exceptions on the Server itself are properly configured to allow this traffic.
+
+ 
+
+Regards,
+
+ 
+
+Matt Fletcher,
+
+IMS Support,
+
+Cornwall LA.
+
+ 
+
+mfletcher@cornwall.gov.uk
+
+http://www.cornwall.gov.uk/cypf/index.cfm?articleid=32512/
+
+01872 323263
+
+ 
+
+This e-mail and attachments are intended for above named only and may be confidential. If they have come to you in error you must take no action based on them, nor must you copy or show them to anyone; please e-mail us immediately at enquiries@cornwall.gov.uk.
+
+Please note that this e-mail may be subject to recording and/or monitoring in accordance with the relevant legislation and may need to be disclosed under the Freedom of Information Act 2000 or the Environmental Information Regulations 2004.
+
+Security Warning: It is the responsibility of the recipient to ensure that this e-mail and any attachments are virus free. The Authority will not accept liability for any damage caused by a virus.
+
+ 
+
+This message is confidential, so please treat it appropriately and for its intended purpose only. In particular, if it refers to any technical data, terms or prices not generally available or known, such items are ""commercially sensitive information"" within the terms of the Freedom of Information Act 2000 and related laws. As it would be prejudicial to RM's commercial interests if these were disclosed, please refrain from doing so. 
+
+As Internet communications are not secure, please be aware that RM cannot accept responsibility for its contents. Any views or opinions presented are those of the author only and not of RM. If you are not the intended recipient of this e-mail, please accept our apologies and arrange for copies of it to be deleted. For your information, RM may intercept incoming and outgoing email communications. 
+
+RM Education plc 
+Registered Office: New Mill House, 183 Milton Park, Abingdon, Oxfordshire, OX14 4SE, England 
+Registered Number: 1148594
+
+","Fletcher Matthew","EX","'Sokkha Monghay'","smonghay@rm.com","SMTP"
+"RE: Truro Nursery","Hi Matt,
+ 
+Thanks for the email.
+ 
+Regarding 10.143.79.253, can you confirm that there are no devices in between the server and the broadband router? The test that we performed was from the router, so something in between could be blocking the traffic. Once you've confirmed I'll check with my support team to test again.
+ 
+Regarding 10.143.79.29, this is different. There are a number of possibilities as to why the test failed:
+1) Anti virus software
+2) Local firewall settings
+You'll probably need to refer to the support company for further help with this one.
+ 
+Thanks
+Sokkha Monghay
+Network Administrator
+SWGfL Managed Service Team
+Email: smonghay@rm.com or support@swgfl.org.uk
+Tel: (+44) 0845 307 7870
+Fax: (+44) 01235 826999
+
+To keep up to date with SWGfL News and Events and SWGfL Support Information, please subscribe to our mailing lists at                                                         <                                                       > 
+
+Visit the website at                         <                        >  
+
+ 
+
+________________________________
+
+From: Fletcher Matthew [mailto:mfletcher@cornwall.gov.uk] 
+Sent: 24 February 2009 11:41
+To: Sokkha Monghay
+Subject: RE: Truro Nursery
+
+
+
+Thanks for this Sokkha,
+
+ 
+
+I have been to the site and I can indeed telnet to the servers IP from within the local network on port 6502 as demonstrated by the screenshot.
+
+Interestingly if I telnet on 6502 to the other machine in the LAN (Padmin1, IP = 29) which has NetOp installed I can’t connect – although the connection is not refused.
+
+(I tried telnet to the Padmin1 from a different machine and it connected but then dropped the connection instantly although I didn’t grab this screenshot).
+
+ 
+
+ 
+
+Can you be any further help as I’m really stuck now…
+
+ 
+
+ 
+
+Regards,
+
+ 
+
+Matt Fletcher,
+
+IMS Support,
+
+Cornwall LA.
+
+ 
+
+________________________________
+
+From: Sokkha Monghay [mailto:smonghay@rm.com] 
+Sent: 20 February 2009 10:13
+To: Fletcher Matthew
+Subject: RE: Truro Nursery
+
+ 
+
+Hi Matt,
+
+ 
+
+Firstly, Bishop Bronescombe has got a different set up to most schools in Cornwall. I'm not sure why, but there is an open action with my support team to change this.
+
+ 
+
+There is no need to instigate any port forwarding at the moment, as we have tested from the LAN interface of the router. 
+
+The test we did was a telnet on port 6502 to 10.143.79.253. The error we received was ""Connection refused by remote host"" 
+
+Best thing I can suggest is that you perform a telnet test on port 6502 from another host in the LAN, to see if it connects.
+
+ 
+
+Thanks
+
+ 
+
+Sokkha Monghay
+Network Administrator
+SWGfL Managed Service Team
+Email: smonghay@rm.com or support@swgfl.org.uk
+Tel: (+44) 0845 307 7870
+Fax: (+44) 01235 826999
+
+To keep up to date with SWGfL News and Events and SWGfL Support Information, please subscribe to our mailing lists at                                                         <                                                       > 
+
+Visit the website at                         <                        >  
+
+ 
+
+________________________________
+
+From: Fletcher Matthew [mailto:mfletcher@cornwall.gov.uk] 
+Sent: 20 February 2009 08:30
+To: Sokkha Monghay
+Subject: Truro Nursery
+
+Hi Sokkah,
+
+ 
+
+Just checked on the Server again and in fact when I use netstat correctly (with –a to show everything) port number 6502 is actually listed as listening and binded to the correct application.
+
+I’ve attached the text files for netstats results.
+
+ 
+
+My gut instinct is the local router needs port forwarding. The firewall exceptions on the Server itself are properly configured to allow this traffic.
+
+ 
+
+Regards,
+
+ 
+
+Matt Fletcher,
+
+IMS Support,
+
+Cornwall LA.
+
+ 
+
+mfletcher@cornwall.gov.uk
+
+http://www.cornwall.gov.uk/cypf/index.cfm?articleid=32512/
+
+01872 323263
+
+ 
+
+This e-mail and attachments are intended for above named only and may be confidential. If they have come to you in error you must take no action based on them, nor must you copy or show them to anyone; please e-mail us immediately at enquiries@cornwall.gov.uk.
+
+Please note that this e-mail may be subject to recording and/or monitoring in accordance with the relevant legislation and may need to be disclosed under the Freedom of Information Act 2000 or the Environmental Information Regulations 2004.
+
+Security Warning: It is the responsibility of the recipient to ensure that this e-mail and any attachments are virus free. The Authority will not accept liability for any damage caused by a virus.
+
+ 
+
+This message is confidential, so please treat it appropriately and for its intended purpose only. In particular, if it refers to any technical data, terms or prices not generally available or known, such items are ""commercially sensitive information"" within the terms of the Freedom of Information Act 2000 and related laws. As it would be prejudicial to RM's commercial interests if these were disclosed, please refrain from doing so. 
+
+As Internet communications are not secure, please be aware that RM cannot accept responsibility for its contents. Any views or opinions presented are those of the author only and not of RM. If you are not the intended recipient of this e-mail, please accept our apologies and arrange for copies of it to be deleted. For your information, RM may intercept incoming and outgoing email communications. 
+
+RM Education plc 
+Registered Office: New Mill House, 183 Milton Park, Abingdon, Oxfordshire, OX14 4SE, England 
+Registered Number: 1148594
+
+","Sokkha Monghay","SMTP","Fletcher Matthew","/O=CORNWALLCOUNTYCOUNCIL/OU=MAIN/CN=RECIPIENTS/CN=MFLETCHER","EX"
+"RE: Truro Nursery","Thanks for this Sokkha,
+
+ 
+
+I have been to the site and I can indeed telnet to the servers IP from within the local network on port 6502 as demonstrated by the screenshot.
+
+Interestingly if I telnet on 6502 to the other machine in the LAN (Padmin1, IP = 29) which has NetOp installed I can’t connect – although the connection is not refused.
+
+(I tried telnet to the Padmin1 from a different machine and it connected but then dropped the connection instantly although I didn’t grab this screenshot).
+
+ 
+
+ 
+
+Can you be any further help as I’m really stuck now…
+
+ 
+
+ 
+
+Regards,
+
+ 
+
+Matt Fletcher,
+
+IMS Support,
+
+Cornwall LA.
+
+ 
+
+________________________________
+
+From: Sokkha Monghay [mailto:smonghay@rm.com] 
+Sent: 20 February 2009 10:13
+To: Fletcher Matthew
+Subject: RE: Truro Nursery
+
+ 
+
+Hi Matt,
+
+ 
+
+Firstly, Bishop Bronescombe has got a different set up to most schools in Cornwall. I'm not sure why, but there is an open action with my support team to change this.
+
+ 
+
+There is no need to instigate any port forwarding at the moment, as we have tested from the LAN interface of the router. 
+
+The test we did was a telnet on port 6502 to 10.143.79.253. The error we received was ""Connection refused by remote host"" 
+
+Best thing I can suggest is that you perform a telnet test on port 6502 from another host in the LAN, to see if it connects.
+
+ 
+
+Thanks
+
+ 
+
+Sokkha Monghay
+Network Administrator
+SWGfL Managed Service Team
+Email: smonghay@rm.com or support@swgfl.org.uk
+Tel: (+44) 0845 307 7870
+Fax: (+44) 01235 826999
+
+To keep up to date with SWGfL News and Events and SWGfL Support Information, please subscribe to our mailing lists at                                                         <                                                       > 
+
+Visit the website at                         <                        >  
+
+ 
+
+________________________________
+
+From: Fletcher Matthew [mailto:mfletcher@cornwall.gov.uk] 
+Sent: 20 February 2009 08:30
+To: Sokkha Monghay
+Subject: Truro Nursery
+
+Hi Sokkah,
+
+ 
+
+Just checked on the Server again and in fact when I use netstat correctly (with –a to show everything) port number 6502 is actually listed as listening and binded to the correct application.
+
+I’ve attached the text files for netstats results.
+
+ 
+
+My gut instinct is the local router needs port forwarding. The firewall exceptions on the Server itself are properly configured to allow this traffic.
+
+ 
+
+Regards,
+
+ 
+
+Matt Fletcher,
+
+IMS Support,
+
+Cornwall LA.
+
+ 
+
+mfletcher@cornwall.gov.uk
+
+http://www.cornwall.gov.uk/cypf/index.cfm?articleid=32512/
+
+01872 323263
+
+ 
+
+This e-mail and attachments are intended for above named only and may be confidential. If they have come to you in error you must take no action based on them, nor must you copy or show them to anyone; please e-mail us immediately at enquiries@cornwall.gov.uk.
+
+Please note that this e-mail may be subject to recording and/or monitoring in accordance with the relevant legislation and may need to be disclosed under the Freedom of Information Act 2000 or the Environmental Information Regulations 2004.
+
+Security Warning: It is the responsibility of the recipient to ensure that this e-mail and any attachments are virus free. The Authority will not accept liability for any damage caused by a virus.
+
+ 
+
+This message is confidential, so please treat it appropriately and for its intended purpose only. In particular, if it refers to any technical data, terms or prices not generally available or known, such items are ""commercially sensitive information"" within the terms of the Freedom of Information Act 2000 and related laws. As it would be prejudicial to RM's commercial interests if these were disclosed, please refrain from doing so. 
+
+As Internet communications are not secure, please be aware that RM cannot accept responsibility for its contents. Any views or opinions presented are those of the author only and not of RM. If you are not the intended recipient of this e-mail, please accept our apologies and arrange for copies of it to be deleted. For your information, RM may intercept incoming and outgoing email communications. 
+
+RM Education plc 
+Registered Office: New Mill House, 183 Milton Park, Abingdon, Oxfordshire, OX14 4SE, England 
+Registered Number: 1148594
+
+","Fletcher Matthew","EX","'Sokkha Monghay'","smonghay@rm.com","SMTP"
+"RE: Truro Nursery","Thanks Sokkha
+
+ 
+
+Regards,
+
+ 
+
+Matt Fletcher,
+
+IMS Support,
+
+Cornwall LA.
+
+ 
+
+________________________________
+
+From: Sokkha Monghay [mailto:smonghay@rm.com] 
+Sent: 20 February 2009 10:13
+To: Fletcher Matthew
+Subject: RE: Truro Nursery
+
+ 
+
+Hi Matt,
+
+ 
+
+Firstly, Bishop Bronescombe has got a different set up to most schools in Cornwall. I'm not sure why, but there is an open action with my support team to change this.
+
+ 
+
+There is no need to instigate any port forwarding at the moment, as we have tested from the LAN interface of the router. 
+
+The test we did was a telnet on port 6502 to 10.143.79.253. The error we received was ""Connection refused by remote host"" 
+
+Best thing I can suggest is that you perform a telnet test on port 6502 from another host in the LAN, to see if it connects.
+
+ 
+
+Thanks
+
+ 
+
+Sokkha Monghay
+Network Administrator
+SWGfL Managed Service Team
+Email: smonghay@rm.com or support@swgfl.org.uk
+Tel: (+44) 0845 307 7870
+Fax: (+44) 01235 826999
+
+To keep up to date with SWGfL News and Events and SWGfL Support Information, please subscribe to our mailing lists at                                                         <                                                       > 
+
+Visit the website at                         <                        >  
+
+ 
+
+________________________________
+
+From: Fletcher Matthew [mailto:mfletcher@cornwall.gov.uk] 
+Sent: 20 February 2009 08:30
+To: Sokkha Monghay
+Subject: Truro Nursery
+
+Hi Sokkah,
+
+ 
+
+Just checked on the Server again and in fact when I use netstat correctly (with –a to show everything) port number 6502 is actually listed as listening and binded to the correct application.
+
+I’ve attached the text files for netstats results.
+
+ 
+
+My gut instinct is the local router needs port forwarding. The firewall exceptions on the Server itself are properly configured to allow this traffic.
+
+ 
+
+Regards,
+
+ 
+
+Matt Fletcher,
+
+IMS Support,
+
+Cornwall LA.
+
+ 
+
+mfletcher@cornwall.gov.uk
+
+http://www.cornwall.gov.uk/cypf/index.cfm?articleid=32512/
+
+01872 323263
+
+ 
+
+This e-mail and attachments are intended for above named only and may be confidential. If they have come to you in error you must take no action based on them, nor must you copy or show them to anyone; please e-mail us immediately at enquiries@cornwall.gov.uk.
+
+Please note that this e-mail may be subject to recording and/or monitoring in accordance with the relevant legislation and may need to be disclosed under the Freedom of Information Act 2000 or the Environmental Information Regulations 2004.
+
+Security Warning: It is the responsibility of the recipient to ensure that this e-mail and any attachments are virus free. The Authority will not accept liability for any damage caused by a virus.
+
+ 
+
+This message is confidential, so please treat it appropriately and for its intended purpose only. In particular, if it refers to any technical data, terms or prices not generally available or known, such items are ""commercially sensitive information"" within the terms of the Freedom of Information Act 2000 and related laws. As it would be prejudicial to RM's commercial interests if these were disclosed, please refrain from doing so. 
+
+As Internet communications are not secure, please be aware that RM cannot accept responsibility for its contents. Any views or opinions presented are those of the author only and not of RM. If you are not the intended recipient of this e-mail, please accept our apologies and arrange for copies of it to be deleted. For your information, RM may intercept incoming and outgoing email communications. 
+
+RM Education plc 
+Registered Office: New Mill House, 183 Milton Park, Abingdon, Oxfordshire, OX14 4SE, England 
+Registered Number: 1148594
+
+","Fletcher Matthew","EX","'Sokkha Monghay'","smonghay@rm.com","SMTP"
+"RE: Truro Nursery","Hi Matt,
+ 
+Firstly, Bishop Bronescombe has got a different set up to most schools in Cornwall. I'm not sure why, but there is an open action with my support team to change this.
+ 
+There is no need to instigate any port forwarding at the moment, as we have tested from the LAN interface of the router. 
+The test we did was a telnet on port 6502 to 10.143.79.253. The error we received was ""Connection refused by remote host"" 
+Best thing I can suggest is that you perform a telnet test on port 6502 from another host in the LAN, to see if it connects.
+ 
+Thanks
+ 
+Sokkha Monghay
+Network Administrator
+SWGfL Managed Service Team
+Email: smonghay@rm.com or support@swgfl.org.uk
+Tel: (+44) 0845 307 7870
+Fax: (+44) 01235 826999
+
+To keep up to date with SWGfL News and Events and SWGfL Support Information, please subscribe to our mailing lists at                                                         <                                                       > 
+
+Visit the website at                         <                        >  
+
+
+________________________________
+
+From: Fletcher Matthew [mailto:mfletcher@cornwall.gov.uk] 
+Sent: 20 February 2009 08:30
+To: Sokkha Monghay
+Subject: Truro Nursery
+
+
+
+Hi Sokkah,
+
+ 
+
+Just checked on the Server again and in fact when I use netstat correctly (with –a to show everything) port number 6502 is actually listed as listening and binded to the correct application.
+
+I’ve attached the text files for netstats results.
+
+ 
+
+My gut instinct is the local router needs port forwarding. The firewall exceptions on the Server itself are properly configured to allow this traffic.
+
+ 
+
+Regards,
+
+ 
+
+Matt Fletcher,
+
+IMS Support,
+
+Cornwall LA.
+
+ 
+
+mfletcher@cornwall.gov.uk
+
+http://www.cornwall.gov.uk/cypf/index.cfm?articleid=32512/
+
+01872 323263
+
+ 
+
+This e-mail and attachments are intended for above named only and may be confidential. If they have come to you in error you must take no action based on them, nor must you copy or show them to anyone; please e-mail us immediately at enquiries@cornwall.gov.uk.
+
+Please note that this e-mail may be subject to recording and/or monitoring in accordance with the relevant legislation and may need to be disclosed under the Freedom of Information Act 2000 or the Environmental Information Regulations 2004.
+
+Security Warning: It is the responsibility of the recipient to ensure that this e-mail and any attachments are virus free. The Authority will not accept liability for any damage caused by a virus.
+
+ 
+
+This message is confidential, so please treat it appropriately and for its intended purpose only. In particular, if it refers to any technical data, terms or prices not generally available or known, such items are ""commercially sensitive information"" within the terms of the Freedom of Information Act 2000 and related laws. As it would be prejudicial to RM's commercial interests if these were disclosed, please refrain from doing so. 
+
+As Internet communications are not secure, please be aware that RM cannot accept responsibility for its contents. Any views or opinions presented are those of the author only and not of RM. If you are not the intended recipient of this e-mail, please accept our apologies and arrange for copies of it to be deleted. For your information, RM may intercept incoming and outgoing email communications. 
+
+RM Education plc 
+Registered Office: New Mill House, 183 Milton Park, Abingdon, Oxfordshire, OX14 4SE, England 
+Registered Number: 1148594
+
+","Sokkha Monghay","SMTP","Fletcher Matthew","/O=CORNWALLCOUNTYCOUNCIL/OU=MAIN/CN=RECIPIENTS/CN=MFLETCHER","EX"
+"Truro Nursery","Hi Sokkah,
+
+ 
+
+Just checked on the Server again and in fact when I use netstat correctly (with –a to show everything) port number 6502 is actually listed as listening and binded to the correct application.
+
+I’ve attached the text files for netstats results.
+
+ 
+
+My gut instinct is the local router needs port forwarding. The firewall exceptions on the Server itself are properly configured to allow this traffic.
+
+ 
+
+Regards,
+
+ 
+
+Matt Fletcher,
+
+IMS Support,
+
+Cornwall LA.
+
+ 
+
+mfletcher@cornwall.gov.uk
+
+http://www.cornwall.gov.uk/cypf/index.cfm?articleid=32512/
+
+01872 323263
+
+ 
+
+","Fletcher Matthew","EX","'Sokkha Monghay'","smonghay@rm.com","SMTP"
+"RE: NetOp - Truro nursery School (TR1 3RJ)","Thanks Sokkah,
+
+ 
+
+We had a very similar problem not long ago with a different school (Bishop Bronescombe) and you guys sorted something out for them in the end (there was a particular problem for the IP range they use I believe) – I was wondering if it was a similar issue.
+
+As always, thanks for your help I will persist in trying to get netstat to report 6502 as listening on TCP and then test again. (Do you know a quick way to open a given port and bind it to a program on Server 2003)?
+
+ 
+
+Did you check if it was related to the local routers port forwarding / access list?
+
+ 
+
+ 
+
+ 
+
+Regards,
+
+ 
+
+Matt Fletcher,
+
+IMS Support,
+
+Cornwall LA.
+
+ 
+
+________________________________
+
+From: Sokkha Monghay [mailto:smonghay@rm.com] 
+Sent: 19 February 2009 16:09
+To: Fletcher Matthew
+Subject: RE: NetOp - Truro nursery School (TR1 3RJ)
+
+ 
+
+Hi Matt,
+
+ 
+
+If you are able to connect to other servers, then there is no problem with the SWGfL Firewall. The rule on the firewall is done by ranges, i.e. if there was a failure of the rule, I would expect more servers to be uncontactable.
+
+ 
+
+Thanks
+
+ 
+
+Sokkha
+
+ 
+
+________________________________
+
+From: Fletcher Matthew [mailto:mfletcher@cornwall.gov.uk] 
+Sent: 19 February 2009 16:05
+To: Sokkha Monghay
+Subject: RE: NetOp - Truro nursery School (TR1 3RJ)
+
+Thanks Sokkha,
+
+ 
+
+I can indeed NetOp to schools – an example of a school IP that I can currently connect to might be 10.0.52.20 (a server at Looe Community School) this is working at present.
+
+Internally running “netstat –a” didn’t return a reference for 6502. 6502 is definitely accessible through the firewall as it is an exclusion.
+
+I’m now trying to open the port binded to NetOp but cant work out how (NetOp normally does it for you).
+
+ 
+
+Cheers,
+
+ 
+
+Matt Fletcher,
+
+IMS Support,
+
+Cornwall LA.
+
+ 
+
+________________________________
+
+From: Sokkha Monghay [mailto:smonghay@rm.com] 
+Sent: 19 February 2009 12:52
+To: Fletcher Matthew
+Subject: RE: NetOp - Truro nursery School (TR1 3RJ)
+
+ 
+
+Hi Matt,
+
+ 
+
+My support team have provided me with an update.
+
+ 
+
+By the looks of things, the local servers, 10.143.79.253 and 10.143.79.21, is not responded on port 6502. 
+
+We performed a test from the the school's broadband router.
+
+ 
+
+Can you arrange for a local test to be performed to confirm that the server is listening?
+
+ 
+
+Thanks
+
+Sokkha Monghay
+Network Administrator
+SWGfL Managed Service Team
+Email: smonghay@rm.com or support@swgfl.org.uk
+Tel: (+44) 0845 307 7870
+Fax: (+44) 01235 826999
+
+To keep up to date with SWGfL News and Events and SWGfL Support Information, please subscribe to our mailing lists at                                                         <                                                       > 
+
+Visit the website at                         <                        >  
+
+ 
+
+________________________________
+
+From: Fletcher Matthew [mailto:mfletcher@cornwall.gov.uk] 
+Sent: 19 February 2009 11:31
+To: Sokkha Monghay
+Subject: RE: NetOp - Truro nursery School (TR1 3RJ)
+
+Thanks Sokkha,
+
+ 
+
+I can connect to the 62.171.195.94 address okay for other NetOp activity.
+
+The Nursery School Server and workstation both have NetOp exclusions set up in the Firewalls so traffic on the 6502 port is allowed.
+
+ 
+
+If I can help any further let me know.
+
+ 
+
+Regards,
+
+ 
+
+Matt Fletcher,
+
+IMS Support,
+
+Cornwall LA.
+
+ 
+
+________________________________
+
+From: Sokkha Monghay [mailto:smonghay@rm.com] 
+Sent: 19 February 2009 11:13
+To: Fletcher Matthew
+Subject: RE: NetOp - Truro nursery School (TR1 3RJ)
+
+ 
+
+Hi Matthew,
+
+ 
+
+Thanks for the information, it's really useful.
+
+ 
+
+To summarise:
+
+ 
+
+Your IP of 10.10.141.25 is a private IP address, so the SWGfL Network should not see this. It's probably that like you say, the 193.35.158.40 is presented instead.
+
+The IP 62.171.195.94 is a SWGfL IP address, however the physical server could belong to anyone. I have an inkling that it's at another school in Cornwall, but I'll check this.
+
+From the Nursery School, I'm not surprised that the tracert failed, as it's possible that access is only allowed on the NetOp ports, tracert works on ICMP, which is different.
+
+The router change may have affected the set up, as there may be access lists on the router that drops traffic.
+
+ 
+
+My actions:
+
+1) Check the ownership of 62.171.195.94
+
+I'd like to confirm that you can connect to this server okay from your PC.
+
+2) Check the router from 62.171.195.94 to the Truro Nursery IP addresses.
+
+ 
+
+I'll update you as soon as I can.
+
+ 
+
+Thanks
+
+Sokkha Monghay
+Network Administrator
+SWGfL Managed Service Team
+Email: smonghay@rm.com or support@swgfl.org.uk
+Tel: (+44) 0845 307 7870
+Fax: (+44) 01235 826999
+
+To keep up to date with SWGfL News and Events and SWGfL Support Information, please subscribe to our mailing lists at                                                         <                                                       > 
+
+Visit the website at                         <                        >  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+________________________________
+
+From: Fletcher Matthew [mailto:mfletcher@cornwall.gov.uk] 
+Sent: 19 February 2009 11:03
+To: Sokkha Monghay
+Cc: support@swgfl.org.uk
+Subject: NetOp - Truro nursery School (TR1 3RJ)
+
+Hi Sokkha,
+
+ 
+
+Thanks for your reply, this is the information as best I can give you:
+
+ 
+
+ 
+
+ 
+
+ 
+
+1) Source IP address:
+
+ 
+
+Presumably by this you mean the local authority. 
+
+The IP of the end user will obviously vary according to DHCP but the address you have been given is typical for the LA here in Cornwall. 
+
+Today I am working off 10.10.141.25
+
+If I use www.whatismyip.com <http://www.whatismyip.com/>  then I get 193.35.158.40 (presumably this is the outward interface on Cornwall County Councils Proxy Server.
+
+To connect to a school we first access a gateway Server at 62.171.195.94 (SWGfL)?? which routes us to connect to schools.
+
+I tried to tracert to the 62 (gateway) address I’ve given you but my network permissions here don’t allow it.
+
+ 
+
+ 
+
+ 
+
+ 
+
+2) Ports and protocols in use:
+
+ 
+
+6502
+
+Transport Control Protocol
+
+Internet Protocol
+
+The product is NetOp Remote Control
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+3) Destination Address:
+
+ 
+
+Using the software we have a list of IP Addresses like the two 10.X.X.X addresses shown below – access is granted by passing a request to the 62 (gateway) address first.
+
+ 
+
+Two machines have NetOp Installed at the nursery school.
+
+Network Server              10.143.79.253
+
+Admin Computer            10.143.79.21
+
+ 
+
+If I use www.whatismyip.com <http://www.whatismyip.com/>  then my current IP address on that Server is listed as 62.171.194.37 (I guess that is the outbound interface on the schools router)?
+
+If I use tracert from the nursery school Network Server to the gateway (62.171.195.94) address I get the following:
+
+ 
+
+ 
+
+Tracing route to 62.171.195.94 over a maximum of 30 hops
+
+ 
+
+1    <1 ms    <1 ms    <1 ms  10.143.79.254 
+
+2     3 ms     3 ms     3 ms  10.104.21.42 
+
+3     3 ms     3 ms     3 ms  10.104.10.222 
+
+4     4 ms     3 ms     3 ms  10.104.198.74 
+
+5     4 ms     4 ms     4 ms  10.104.226.65 
+
+6     7 ms     7 ms     7 ms  vacc5.ex-vpn.vpn-acc.bt.net [217.32.236.252] 
+
+7    17 ms    16 ms    16 ms  192.168.70.206 
+
+  8     *        *        *     Request timed out. 
+
+  9     *        *        *     Request timed out.
+
+10     *        *        *     Request timed out.
+
+11     *        *        *     Request timed out.
+
+12     *        *        *     Request timed out.
+
+13     *        *        *     Request timed out.
+
+14     *        *        *     Request timed out.
+
+15     *        *        *     Request timed out.
+
+16     *        *        *     Request timed out.
+
+17     *        *        *     Request timed out.
+
+18     *        *        *     Request timed out.
+
+19     *        *        *     Request timed out.
+
+20     *        *        *     Request timed out.
+
+21     *        *        *     Request timed out.
+
+22     *        *        *     Request timed out.
+
+23     *        *        *     Request timed out.
+
+24     *        *        *     Request timed out.
+
+25     *        *        *     Request timed out.
+
+26     *        *        *     Request timed out.
+
+27     *        *        *     Request timed out.
+
+28     *        *        *     Request timed out.
+
+29     *        *        *     Request timed out.
+
+30     *        *        *     Request timed out.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+4) History:
+
+ 
+
+The service has worked before on both machines.
+
+It failed sometime last summer and hasn’t worked since.
+
+I believe a new router was fitted (roughly) at that time in order to migrate from ADSL although this is probably unlinked.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Hope this is some help,
+
+ 
+
+ 
+
+Regards,
+
+ 
+
+Matt Fletcher,
+
+IMS Support,
+
+Cornwall LA.
+
+ 
+
+mfletcher@cornwall.gov.uk
+
+http://www.cornwall.gov.uk/cypf/index.cfm?articleid=32512/
+
+01872 323263
+
+ 
+
+ 
+
+ 
+
+Hello
+
+ 
+
+I`ve been asked to investigate this call and I need following
+
+information:
+
+ 
+
+1) Source IP address
+
+This IP address has been provided before as 10.10.142.130. This does not
+
+look right as our records state the IP address belongs to a different
+
+Local Authority. 
+
+Chances are, this is a private IP range used within the LA network,
+
+please can someone confirm what IP address is presented when trying to
+
+NetOp
+
+ 
+
+2) Ports and Protocols in use.
+
+This has been given as http and port 80. Is this correct, as it refers
+
+to the product called NetOp On Demand Remote Control. Previous updates
+
+stated that the product in use in NetOp Remote Control, which is
+
+different.
+
+ 
+
+3) Destination address
+
+In the software how is access granted. Do you enter IP address of Truro
+
+Nursery, 10.143.79.21?
+
+ 
+
+4) Has this service ever worked before?
+
+ 
+
+Thanks
+
+Sokkha Monghay
+
+Network Administrator
+
+SWGfL Managed Service Team
+
+Email: smonghay@rm.com or support@swgfl.org.uk
+
+Tel: (+44) 0845 307 7870
+
+Fax: (+44) 01235 826999
+
+ 
+
+To keep up to date with SWGfL News and Events and SWGfL Support
+
+Information, please subscribe to our mailing lists at
+
+                                                       
+
+ 
+
+ 
+
+ 
+
+This e-mail and attachments are intended for above named only and may be confidential. If they have come to you in error you must take no action based on them, nor must you copy or show them to anyone; please e-mail us immediately at enquiries@cornwall.gov.uk.
+
+Please note that this e-mail may be subject to recording and/or monitoring in accordance with the relevant legislation and may need to be disclosed under the Freedom of Information Act 2000 or the Environmental Information Regulations 2004.
+
+Security Warning: It is the responsibility of the recipient to ensure that this e-mail and any attachments are virus free. The Authority will not accept liability for any damage caused by a virus.
+
+ 
+
+This message is confidential, so please treat it appropriately and for its intended purpose only. In particular, if it refers to any technical data, terms or prices not generally available or known, such items are ""commercially sensitive information"" within the terms of the Freedom of Information Act 2000 and related laws. As it would be prejudicial to RM's commercial interests if these were disclosed, please refrain from doing so. 
+
+As Internet communications are not secure, please be aware that RM cannot accept responsibility for its contents. Any views or opinions presented are those of the author only and not of RM. If you are not the intended recipient of this e-mail, please accept our apologies and arrange for copies of it to be deleted. For your information, RM may intercept incoming and outgoing email communications. 
+
+RM Education plc 
+Registered Office: New Mill House, 183 Milton Park, Abingdon, Oxfordshire, OX14 4SE, England 
+Registered Number: 1148594
+
+","Fletcher Matthew","EX","'Sokkha Monghay'","smonghay@rm.com","SMTP"
+"RE: NetOp - Truro nursery School (TR1 3RJ)","Thanks Sokkha,
+
+ 
+
+I can indeed NetOp to schools – an example of a school IP that I can currently connect to might be 10.0.52.20 (a server at Looe Community School) this is working at present.
+
+Internally running “netstat –a” didn’t return a reference for 6502. 6502 is definitely accessible through the firewall as it is an exclusion.
+
+I’m now trying to open the port binded to NetOp but cant work out how (NetOp normally does it for you).
+
+ 
+
+Cheers,
+
+ 
+
+Matt Fletcher,
+
+IMS Support,
+
+Cornwall LA.
+
+ 
+
+________________________________
+
+From: Sokkha Monghay [mailto:smonghay@rm.com] 
+Sent: 19 February 2009 12:52
+To: Fletcher Matthew
+Subject: RE: NetOp - Truro nursery School (TR1 3RJ)
+
+ 
+
+Hi Matt,
+
+ 
+
+My support team have provided me with an update.
+
+ 
+
+By the looks of things, the local servers, 10.143.79.253 and 10.143.79.21, is not responded on port 6502. 
+
+We performed a test from the the school's broadband router.
+
+ 
+
+Can you arrange for a local test to be performed to confirm that the server is listening?
+
+ 
+
+Thanks
+
+Sokkha Monghay
+Network Administrator
+SWGfL Managed Service Team
+Email: smonghay@rm.com or support@swgfl.org.uk
+Tel: (+44) 0845 307 7870
+Fax: (+44) 01235 826999
+
+To keep up to date with SWGfL News and Events and SWGfL Support Information, please subscribe to our mailing lists at                                                         <                                                       > 
+
+Visit the website at                         <                        >  
+
+ 
+
+________________________________
+
+From: Fletcher Matthew [mailto:mfletcher@cornwall.gov.uk] 
+Sent: 19 February 2009 11:31
+To: Sokkha Monghay
+Subject: RE: NetOp - Truro nursery School (TR1 3RJ)
+
+Thanks Sokkha,
+
+ 
+
+I can connect to the 62.171.195.94 address okay for other NetOp activity.
+
+The Nursery School Server and workstation both have NetOp exclusions set up in the Firewalls so traffic on the 6502 port is allowed.
+
+ 
+
+If I can help any further let me know.
+
+ 
+
+Regards,
+
+ 
+
+Matt Fletcher,
+
+IMS Support,
+
+Cornwall LA.
+
+ 
+
+________________________________
+
+From: Sokkha Monghay [mailto:smonghay@rm.com] 
+Sent: 19 February 2009 11:13
+To: Fletcher Matthew
+Subject: RE: NetOp - Truro nursery School (TR1 3RJ)
+
+ 
+
+Hi Matthew,
+
+ 
+
+Thanks for the information, it's really useful.
+
+ 
+
+To summarise:
+
+ 
+
+Your IP of 10.10.141.25 is a private IP address, so the SWGfL Network should not see this. It's probably that like you say, the 193.35.158.40 is presented instead.
+
+The IP 62.171.195.94 is a SWGfL IP address, however the physical server could belong to anyone. I have an inkling that it's at another school in Cornwall, but I'll check this.
+
+From the Nursery School, I'm not surprised that the tracert failed, as it's possible that access is only allowed on the NetOp ports, tracert works on ICMP, which is different.
+
+The router change may have affected the set up, as there may be access lists on the router that drops traffic.
+
+ 
+
+My actions:
+
+1) Check the ownership of 62.171.195.94
+
+I'd like to confirm that you can connect to this server okay from your PC.
+
+2) Check the router from 62.171.195.94 to the Truro Nursery IP addresses.
+
+ 
+
+I'll update you as soon as I can.
+
+ 
+
+Thanks
+
+Sokkha Monghay
+Network Administrator
+SWGfL Managed Service Team
+Email: smonghay@rm.com or support@swgfl.org.uk
+Tel: (+44) 0845 307 7870
+Fax: (+44) 01235 826999
+
+To keep up to date with SWGfL News and Events and SWGfL Support Information, please subscribe to our mailing lists at                                                         <                                                       > 
+
+Visit the website at                         <                        >  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+________________________________
+
+From: Fletcher Matthew [mailto:mfletcher@cornwall.gov.uk] 
+Sent: 19 February 2009 11:03
+To: Sokkha Monghay
+Cc: support@swgfl.org.uk
+Subject: NetOp - Truro nursery School (TR1 3RJ)
+
+Hi Sokkha,
+
+ 
+
+Thanks for your reply, this is the information as best I can give you:
+
+ 
+
+ 
+
+ 
+
+ 
+
+1) Source IP address:
+
+ 
+
+Presumably by this you mean the local authority. 
+
+The IP of the end user will obviously vary according to DHCP but the address you have been given is typical for the LA here in Cornwall. 
+
+Today I am working off 10.10.141.25
+
+If I use www.whatismyip.com <http://www.whatismyip.com/>  then I get 193.35.158.40 (presumably this is the outward interface on Cornwall County Councils Proxy Server.
+
+To connect to a school we first access a gateway Server at 62.171.195.94 (SWGfL)?? which routes us to connect to schools.
+
+I tried to tracert to the 62 (gateway) address I’ve given you but my network permissions here don’t allow it.
+
+ 
+
+ 
+
+ 
+
+ 
+
+2) Ports and protocols in use:
+
+ 
+
+6502
+
+Transport Control Protocol
+
+Internet Protocol
+
+The product is NetOp Remote Control
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+3) Destination Address:
+
+ 
+
+Using the software we have a list of IP Addresses like the two 10.X.X.X addresses shown below – access is granted by passing a request to the 62 (gateway) address first.
+
+ 
+
+Two machines have NetOp Installed at the nursery school.
+
+Network Server              10.143.79.253
+
+Admin Computer            10.143.79.21
+
+ 
+
+If I use www.whatismyip.com <http://www.whatismyip.com/>  then my current IP address on that Server is listed as 62.171.194.37 (I guess that is the outbound interface on the schools router)?
+
+If I use tracert from the nursery school Network Server to the gateway (62.171.195.94) address I get the following:
+
+ 
+
+ 
+
+Tracing route to 62.171.195.94 over a maximum of 30 hops
+
+ 
+
+1    <1 ms    <1 ms    <1 ms  10.143.79.254 
+
+2     3 ms     3 ms     3 ms  10.104.21.42 
+
+3     3 ms     3 ms     3 ms  10.104.10.222 
+
+4     4 ms     3 ms     3 ms  10.104.198.74 
+
+5     4 ms     4 ms     4 ms  10.104.226.65 
+
+6     7 ms     7 ms     7 ms  vacc5.ex-vpn.vpn-acc.bt.net [217.32.236.252] 
+
+7    17 ms    16 ms    16 ms  192.168.70.206 
+
+  8     *        *        *     Request timed out. 
+
+  9     *        *        *     Request timed out.
+
+10     *        *        *     Request timed out.
+
+11     *        *        *     Request timed out.
+
+12     *        *        *     Request timed out.
+
+13     *        *        *     Request timed out.
+
+14     *        *        *     Request timed out.
+
+15     *        *        *     Request timed out.
+
+16     *        *        *     Request timed out.
+
+17     *        *        *     Request timed out.
+
+18     *        *        *     Request timed out.
+
+19     *        *        *     Request timed out.
+
+20     *        *        *     Request timed out.
+
+21     *        *        *     Request timed out.
+
+22     *        *        *     Request timed out.
+
+23     *        *        *     Request timed out.
+
+24     *        *        *     Request timed out.
+
+25     *        *        *     Request timed out.
+
+26     *        *        *     Request timed out.
+
+27     *        *        *     Request timed out.
+
+28     *        *        *     Request timed out.
+
+29     *        *        *     Request timed out.
+
+30     *        *        *     Request timed out.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+4) History:
+
+ 
+
+The service has worked before on both machines.
+
+It failed sometime last summer and hasn’t worked since.
+
+I believe a new router was fitted (roughly) at that time in order to migrate from ADSL although this is probably unlinked.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Hope this is some help,
+
+ 
+
+ 
+
+Regards,
+
+ 
+
+Matt Fletcher,
+
+IMS Support,
+
+Cornwall LA.
+
+ 
+
+mfletcher@cornwall.gov.uk
+
+http://www.cornwall.gov.uk/cypf/index.cfm?articleid=32512/
+
+01872 323263
+
+ 
+
+ 
+
+ 
+
+Hello
+
+ 
+
+I`ve been asked to investigate this call and I need following
+
+information:
+
+ 
+
+1) Source IP address
+
+This IP address has been provided before as 10.10.142.130. This does not
+
+look right as our records state the IP address belongs to a different
+
+Local Authority. 
+
+Chances are, this is a private IP range used within the LA network,
+
+please can someone confirm what IP address is presented when trying to
+
+NetOp
+
+ 
+
+2) Ports and Protocols in use.
+
+This has been given as http and port 80. Is this correct, as it refers
+
+to the product called NetOp On Demand Remote Control. Previous updates
+
+stated that the product in use in NetOp Remote Control, which is
+
+different.
+
+ 
+
+3) Destination address
+
+In the software how is access granted. Do you enter IP address of Truro
+
+Nursery, 10.143.79.21?
+
+ 
+
+4) Has this service ever worked before?
+
+ 
+
+Thanks
+
+Sokkha Monghay
+
+Network Administrator
+
+SWGfL Managed Service Team
+
+Email: smonghay@rm.com or support@swgfl.org.uk
+
+Tel: (+44) 0845 307 7870
+
+Fax: (+44) 01235 826999
+
+ 
+
+To keep up to date with SWGfL News and Events and SWGfL Support
+
+Information, please subscribe to our mailing lists at
+
+                                                       
+
+ 
+
+ 
+
+ 
+
+This e-mail and attachments are intended for above named only and may be confidential. If they have come to you in error you must take no action based on them, nor must you copy or show them to anyone; please e-mail us immediately at enquiries@cornwall.gov.uk.
+
+Please note that this e-mail may be subject to recording and/or monitoring in accordance with the relevant legislation and may need to be disclosed under the Freedom of Information Act 2000 or the Environmental Information Regulations 2004.
+
+Security Warning: It is the responsibility of the recipient to ensure that this e-mail and any attachments are virus free. The Authority will not accept liability for any damage caused by a virus.
+
+ 
+
+This message is confidential, so please treat it appropriately and for its intended purpose only. In particular, if it refers to any technical data, terms or prices not generally available or known, such items are ""commercially sensitive information"" within the terms of the Freedom of Information Act 2000 and related laws. As it would be prejudicial to RM's commercial interests if these were disclosed, please refrain from doing so. 
+
+As Internet communications are not secure, please be aware that RM cannot accept responsibility for its contents. Any views or opinions presented are those of the author only and not of RM. If you are not the intended recipient of this e-mail, please accept our apologies and arrange for copies of it to be deleted. For your information, RM may intercept incoming and outgoing email communications. 
+
+RM Education plc 
+Registered Office: New Mill House, 183 Milton Park, Abingdon, Oxfordshire, OX14 4SE, England 
+Registered Number: 1148594
+
+","Fletcher Matthew","EX","'Sokkha Monghay'","smonghay@rm.com","SMTP"
+"RE: NetOp - Truro nursery School (TR1 3RJ)","Thanks Sokkha,
+
+ 
+
+I can connect to the 62.171.195.94 address okay for other NetOp activity.
+
+The Nursery School Server and workstation both have NetOp exclusions set up in the Firewalls so traffic on the 6502 port is allowed.
+
+ 
+
+If I can help any further let me know.
+
+ 
+
+Regards,
+
+ 
+
+Matt Fletcher,
+
+IMS Support,
+
+Cornwall LA.
+
+ 
+
+________________________________
+
+From: Sokkha Monghay [mailto:smonghay@rm.com] 
+Sent: 19 February 2009 11:13
+To: Fletcher Matthew
+Subject: RE: NetOp - Truro nursery School (TR1 3RJ)
+
+ 
+
+Hi Matthew,
+
+ 
+
+Thanks for the information, it's really useful.
+
+ 
+
+To summarise:
+
+ 
+
+Your IP of 10.10.141.25 is a private IP address, so the SWGfL Network should not see this. It's probably that like you say, the 193.35.158.40 is presented instead.
+
+The IP 62.171.195.94 is a SWGfL IP address, however the physical server could belong to anyone. I have an inkling that it's at another school in Cornwall, but I'll check this.
+
+From the Nursery School, I'm not surprised that the tracert failed, as it's possible that access is only allowed on the NetOp ports, tracert works on ICMP, which is different.
+
+The router change may have affected the set up, as there may be access lists on the router that drops traffic.
+
+ 
+
+My actions:
+
+1) Check the ownership of 62.171.195.94
+
+I'd like to confirm that you can connect to this server okay from your PC.
+
+2) Check the router from 62.171.195.94 to the Truro Nursery IP addresses.
+
+ 
+
+I'll update you as soon as I can.
+
+ 
+
+Thanks
+
+Sokkha Monghay
+Network Administrator
+SWGfL Managed Service Team
+Email: smonghay@rm.com or support@swgfl.org.uk
+Tel: (+44) 0845 307 7870
+Fax: (+44) 01235 826999
+
+To keep up to date with SWGfL News and Events and SWGfL Support Information, please subscribe to our mailing lists at                                                         <                                                       > 
+
+Visit the website at                         <                        >  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+________________________________
+
+From: Fletcher Matthew [mailto:mfletcher@cornwall.gov.uk] 
+Sent: 19 February 2009 11:03
+To: Sokkha Monghay
+Cc: support@swgfl.org.uk
+Subject: NetOp - Truro nursery School (TR1 3RJ)
+
+Hi Sokkha,
+
+ 
+
+Thanks for your reply, this is the information as best I can give you:
+
+ 
+
+ 
+
+ 
+
+ 
+
+1) Source IP address:
+
+ 
+
+Presumably by this you mean the local authority. 
+
+The IP of the end user will obviously vary according to DHCP but the address you have been given is typical for the LA here in Cornwall. 
+
+Today I am working off 10.10.141.25
+
+If I use www.whatismyip.com <http://www.whatismyip.com/>  then I get 193.35.158.40 (presumably this is the outward interface on Cornwall County Councils Proxy Server.
+
+To connect to a school we first access a gateway Server at 62.171.195.94 (SWGfL)?? which routes us to connect to schools.
+
+I tried to tracert to the 62 (gateway) address I’ve given you but my network permissions here don’t allow it.
+
+ 
+
+ 
+
+ 
+
+ 
+
+2) Ports and protocols in use:
+
+ 
+
+6502
+
+Transport Control Protocol
+
+Internet Protocol
+
+The product is NetOp Remote Control
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+3) Destination Address:
+
+ 
+
+Using the software we have a list of IP Addresses like the two 10.X.X.X addresses shown below – access is granted by passing a request to the 62 (gateway) address first.
+
+ 
+
+Two machines have NetOp Installed at the nursery school.
+
+Network Server              10.143.79.253
+
+Admin Computer            10.143.79.21
+
+ 
+
+If I use www.whatismyip.com <http://www.whatismyip.com/>  then my current IP address on that Server is listed as 62.171.194.37 (I guess that is the outbound interface on the schools router)?
+
+If I use tracert from the nursery school Network Server to the gateway (62.171.195.94) address I get the following:
+
+ 
+
+ 
+
+Tracing route to 62.171.195.94 over a maximum of 30 hops
+
+ 
+
+1    <1 ms    <1 ms    <1 ms  10.143.79.254 
+
+2     3 ms     3 ms     3 ms  10.104.21.42 
+
+3     3 ms     3 ms     3 ms  10.104.10.222 
+
+4     4 ms     3 ms     3 ms  10.104.198.74 
+
+5     4 ms     4 ms     4 ms  10.104.226.65 
+
+6     7 ms     7 ms     7 ms  vacc5.ex-vpn.vpn-acc.bt.net [217.32.236.252] 
+
+7    17 ms    16 ms    16 ms  192.168.70.206 
+
+  8     *        *        *     Request timed out. 
+
+  9     *        *        *     Request timed out.
+
+10     *        *        *     Request timed out.
+
+11     *        *        *     Request timed out.
+
+12     *        *        *     Request timed out.
+
+13     *        *        *     Request timed out.
+
+14     *        *        *     Request timed out.
+
+15     *        *        *     Request timed out.
+
+16     *        *        *     Request timed out.
+
+17     *        *        *     Request timed out.
+
+18     *        *        *     Request timed out.
+
+19     *        *        *     Request timed out.
+
+20     *        *        *     Request timed out.
+
+21     *        *        *     Request timed out.
+
+22     *        *        *     Request timed out.
+
+23     *        *        *     Request timed out.
+
+24     *        *        *     Request timed out.
+
+25     *        *        *     Request timed out.
+
+26     *        *        *     Request timed out.
+
+27     *        *        *     Request timed out.
+
+28     *        *        *     Request timed out.
+
+29     *        *        *     Request timed out.
+
+30     *        *        *     Request timed out.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+4) History:
+
+ 
+
+The service has worked before on both machines.
+
+It failed sometime last summer and hasn’t worked since.
+
+I believe a new router was fitted (roughly) at that time in order to migrate from ADSL although this is probably unlinked.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Hope this is some help,
+
+ 
+
+ 
+
+Regards,
+
+ 
+
+Matt Fletcher,
+
+IMS Support,
+
+Cornwall LA.
+
+ 
+
+mfletcher@cornwall.gov.uk
+
+http://www.cornwall.gov.uk/cypf/index.cfm?articleid=32512/
+
+01872 323263
+
+ 
+
+ 
+
+ 
+
+Hello
+
+ 
+
+I`ve been asked to investigate this call and I need following
+
+information:
+
+ 
+
+1) Source IP address
+
+This IP address has been provided before as 10.10.142.130. This does not
+
+look right as our records state the IP address belongs to a different
+
+Local Authority. 
+
+Chances are, this is a private IP range used within the LA network,
+
+please can someone confirm what IP address is presented when trying to
+
+NetOp
+
+ 
+
+2) Ports and Protocols in use.
+
+This has been given as http and port 80. Is this correct, as it refers
+
+to the product called NetOp On Demand Remote Control. Previous updates
+
+stated that the product in use in NetOp Remote Control, which is
+
+different.
+
+ 
+
+3) Destination address
+
+In the software how is access granted. Do you enter IP address of Truro
+
+Nursery, 10.143.79.21?
+
+ 
+
+4) Has this service ever worked before?
+
+ 
+
+Thanks
+
+Sokkha Monghay
+
+Network Administrator
+
+SWGfL Managed Service Team
+
+Email: smonghay@rm.com or support@swgfl.org.uk
+
+Tel: (+44) 0845 307 7870
+
+Fax: (+44) 01235 826999
+
+ 
+
+To keep up to date with SWGfL News and Events and SWGfL Support
+
+Information, please subscribe to our mailing lists at
+
+                                                       
+
+ 
+
+ 
+
+ 
+
+This e-mail and attachments are intended for above named only and may be confidential. If they have come to you in error you must take no action based on them, nor must you copy or show them to anyone; please e-mail us immediately at enquiries@cornwall.gov.uk.
+
+Please note that this e-mail may be subject to recording and/or monitoring in accordance with the relevant legislation and may need to be disclosed under the Freedom of Information Act 2000 or the Environmental Information Regulations 2004.
+
+Security Warning: It is the responsibility of the recipient to ensure that this e-mail and any attachments are virus free. The Authority will not accept liability for any damage caused by a virus.
+
+ 
+
+This message is confidential, so please treat it appropriately and for its intended purpose only. In particular, if it refers to any technical data, terms or prices not generally available or known, such items are ""commercially sensitive information"" within the terms of the Freedom of Information Act 2000 and related laws. As it would be prejudicial to RM's commercial interests if these were disclosed, please refrain from doing so. 
+
+As Internet communications are not secure, please be aware that RM cannot accept responsibility for its contents. Any views or opinions presented are those of the author only and not of RM. If you are not the intended recipient of this e-mail, please accept our apologies and arrange for copies of it to be deleted. For your information, RM may intercept incoming and outgoing email communications. 
+
+RM Education plc 
+Registered Office: New Mill House, 183 Milton Park, Abingdon, Oxfordshire, OX14 4SE, England 
+Registered Number: 1148594
+
+","Fletcher Matthew","EX","'Sokkha Monghay'","smonghay@rm.com","SMTP"
