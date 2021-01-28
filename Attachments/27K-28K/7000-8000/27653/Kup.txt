@@ -1,0 +1,62 @@
+Kup - Kill Unknown Processes
+----------------------------
+
+KUP is to be used on servers to kill any unwanted or unknown processes. 
+KUP uses a White list of processes.
+
+First time usage
+----------------
+  KupSvc -i						Install the service
+( Edit Kup.ini					Add a predefined White list in [Config] WProcesses= value )
+  Net Start "Kup Service"		Start the service in "Learning Mode"
+  Leave the system running for a while (1 day / 1 Week ...) so Kup is learning any started processes
+  Net Stop "Kup Service"		Stop the service and set it to "Production Mode"
+  Edit Kup.ini [Config] Processes= value and delete from it any unwanted processes
+  Net Start "Kup Service"		Start the service in "Production Mode" (any unknown process will be killed)
+
+Notes :
+-------
+-If it can help to kill some viruses, KUP.EXE is not an antivirus (Viruses named SVCHOST.EXE will not be killed !)
+-Don't run any SETUP.EXE if you want to prevent people to install something on the server.
+-Run any scheduled tasks during "Learning Mode" to avoid missing backups on your server
+-Dont run KUP.EXE with an empty White list. KUP will kill every running process => Your server will shutdown at once !
+-To re-initialise KUP, just delete/rename the file "Kup.ini"
+-You can edit the "White list" when KUP is running. The new list will be effective "SleepingTime" ms after saving "Kup.ini"
+-If KUP.EXE is not in the White list it will suicide !
+
+In the KUP.EXE directory you will find now :
+--------------------------------------------
+KUPSvc.EXE			The programm
+Kup.ini				Configuration file
+Kup.txt				Help file
+KillUnknownProcesses.log	Logfile containing the list of Learned/killed processes and more
+KUPOn				For Telnet usage, can be renamed as:
+					KUPOff to shutdown KUP.EXE 
+					KUPL to switch to "Learning Mode" 
+					KUPP to switch to "Production Mode"
+
+Usage
+-----
+KupSvc -i			Install the service
+KupSvc -u			De-Install the service
+
+Kup.ini
+-------
+[CurrentControlSet]
+Process=KupSvc.exe 	Binary name, NOT TO BE EDITED, FILLED UP BY KUPSvc.EXE
+[Config]
+Processes=			WHITE LIST | SEPARATED (Ex: |SVCHOST.EXE|EXPLORER.EXE|....)
+WProcesses=			Predifined White list use at first time run |Process1|Process2|...|
+Recurse=1			0 - ONE CHECK / 1 - RUN FOREVER                  (Default = 1)
+SleepingTime=1000	When Recurse = 1 Check frequency in ms           (Default = 1000)
+TrayIconHide=1		0 - Show Tray Icon / 1 - Hide Tray Icon          (Default = 1)
+DisplayTips=0		0 - Silent / 1 - Tips on the screen (In Logfile) (Default = 0)
+LearningMode=0		0 - Production mode / 1 - Learning mode          (Default = 0)
+
+ToDo
+----
+Create KUPSVC.EXE (KUP as a service) => Done
+Add a "BlackList" 
+	First kill anything in the Blacklist then all Unknown Processes
+	BlackListed Processes cannot fill the White List
+Add a "Program Files" scanner to fill up the "White list"
