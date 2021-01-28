@@ -1,0 +1,18 @@
+FAIL! Restart and Shutdown audit policy set for success. Should be failure
+FAIL! Logon and Logoff set for success. Should be success & failure
+FAIL! File and Object Access set for none. Should be failure
+FAIL! Use of User Rights set for none. Should be success & failure
+FAIL! Security and Policy Changes set for success. Should be success & failure
+FAIL! User and Group Management set for success. Should be success & failure
+FAIL! Directory Service Access set for success. Should be failure
+FAIL! rqm account: 'password never expires' is set, belongs to 'interactive login' rights group(s): Administrators, belongs to administrative group(s): Administrators
+FAIL! Improper permissions on \repair\ for Authenticated Users (READ_CONTROL SYNCHRONIZE FILE_READ_EA FILE_EXECUTE FILE_READ_ATTRIBUTES). Permissions should be maximum of ()
+FAIL! Improper permissions on \repair\ for Authenticated Users (GENERIC_EXECUTE GENERIC_READ). Permissions should be maximum of ()
+FAIL! Improper permissions on \security\ for Authenticated Users (READ_CONTROL SYNCHRONIZE FILE_EXECUTE FILE_READ_ATTRIBUTES). Permissions should be maximum of ()
+FAIL! Improper permissions on \security\ for Authenticated Users (GENERIC_EXECUTE). Permissions should be maximum of ()
+FAIL! Improper permissions on \system32\config\ for Authenticated Users (READ_CONTROL FILE_READ_EA FILE_EXECUTE FILE_READ_ATTRIBUTES). Permissions should be maximum of (SYNCHRONIZE)
+FAIL! Improper permissions on \system32\config\ for Authenticated Users (GENERIC_EXECUTE GENERIC_READ). Permissions should be maximum of (SYNCHRONIZE)
+FAIL! Eventlog must be set to retain 90 days of events or greater
+FAIL! Security is 256000 KB. 100% of capacity. Threshold is set to 95%
+FAIL! Eventlog must be set to retain 90 days of events or greater
+FAIL! Eventlog must be set to retain 90 days of events or greater
