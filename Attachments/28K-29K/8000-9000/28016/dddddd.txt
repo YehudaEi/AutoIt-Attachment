@@ -1,0 +1,44 @@
+Webmaster Toolspayitforward.jones3@gmail.com What's new? My Account Help Sign 
+out
+       
+
+« Back to Home
+Help with:
+Understanding verification
+ 
+Verifying with meta tag
+ 
+Verifying with HTML
+ 
+Verification errorsBefore we show detailed stats and information about your 
+site, we need to know you're really the site owner.Site 
+      URL                   
+      Verification statusNOT VERIFIED
+      Verification methodMeta tag HTML file
+       
+      Copy the meta tag below, and paste it into your site's home page. It 
+      should go in the <head> section, before the first <body> section.
+      <meta name="verify-v1" 
+      content="EnhXI57tuxWNlAkxSBDWYXP0rYphvpNDtjiyZ2v1GGk=" />
+      Show me an example 
+
+      <html> 
+      <head> 
+      <meta name="verify-v1" 
+      content="EnhXI57tuxWNlAkxSBDWYXP0rYphvpNDtjiyZ2v1GGk=" /> 
+      <title> My title </title>
+      </head> 
+      <body> 
+      page contents
+      </body>
+      </html>
+        
+      Create the HTML verification file specified below and upload it to 
+                         .
+      googlec83af7009c01deb7.html
+      Make sure you can view                                                in 
+      your browser before verifying your site.
+        
+
+© 2009 Google Inc. - Webmaster Central - Terms of Service - Privacy Policy - 
+Webmaster Tools Help
