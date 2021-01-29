@@ -1,0 +1,75 @@
+AIM - Read Only
+All-Station-DG-Access
+App - Awards Database
+App - Colleen-O-DexXP
+App - Employee History XP
+App - Gift Inventory
+App - Letters and Tapes
+Awards_DB
+Business Objects Users_S
+ccuser
+CEBS Deployment Notification-DG
+CEBS-CLIENTS-DG
+CEBS-DG
+CEBS-DRF-DG
+CitrixUsers
+CyberArk Users_R
+DA_AIM_S
+DA_Awards Database_S
+DA_Cargo COMAT_S
+DA_Cirrus_S
+DA_Colleen-O-Dex_S
+DA_CR Employee Database_S
+DA_Daily Dashboard Inputs_S
+DA_Employee History_S
+DA_Gift Inventory Read Only_S
+DA_Gift Inventory_S
+DA_Infoview_S
+DA_Infoview_S
+DA_Letters and Tapes_S
+DA_Lobby Metrics_S
+DA_Maestro FA_S
+DA_Microsoft Office 2003 Citrix_S
+DA_Minisoft HP995_S
+DA_Minisoft Zulu_S
+DA_Prism_S
+DA_Project Web_S
+DA_Putty_S
+DA_QIK 3 SU HDQ_S
+DA_Reflections_S
+DA_Remedy Critter_S
+DA_Remedy FAM Notes_S
+DA_Remedy Service Desk_S
+DA_Remote Desktop_S
+DA_Sabreview_S
+DA_Sybase SQL Advantage 12.5_S
+DA_TBF_S
+DA_Technology B and F_S
+DA_Technology STR_S
+Daily Clips-Indiv-DG
+FCPAList2007
+GO CSA Sups_R
+GO Ramp Sup_R
+GO_STATION_LDRS_D
+KM Users-DG
+Leapfrog All-DG
+LeapfrogCEBSClients-DG
+PMO
+Rational
+Rational Users-DG
+Res & Tktg Contractors-DG
+RPT_LPSA_D
+SAT Env Scheduling-DG
+SAT-DG
+SWA_Leaders-DG
+Sweep OC-DG
+TCB Contractors-DG
+TechInfoNoPsw
+Technology HR-Finance-DG
+Technology Java Users-DG
+Technology All_D
+Test SAAS Users-DG
+Tivoli Contacts-DG
+Websphere Developers-DG
+Wyatt ERP Security Team-DG
+Wyatt Technical-DG
