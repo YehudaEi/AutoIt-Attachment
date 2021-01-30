@@ -1,0 +1,5 @@
+Run("flash.exe")
+WinWait("Adobe Flash Player Plugin Setup: Completed","Show &details")
+If Not WinActive("Adobe Flash Player Plugin Setup: Completed","Show &details") Then WinActivate("Adobe Flash Player Plugin Setup: Completed","Show &details")
+WinWaitActive("Adobe Flash Player Plugin Setup: Completed","Show &details")
+Send("{ALTDOWN}c{ALTUP}")
