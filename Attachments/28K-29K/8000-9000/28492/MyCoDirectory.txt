@@ -1,0 +1,13 @@
+[Settings]
+CEO=Bigshot
+Category=MyCo
+BuildFile=no
+[IgnoreOUs]
+OU1=Ent Users - Field Sales
+OU2=Ent Users - Restricted VPN
+[IgnoreETs]
+ET1=ADM
+ET2=CR
+ET3=ZZ
+ET4=SVC
+
