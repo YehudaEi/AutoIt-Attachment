@@ -1,0 +1,25 @@
+
+Session Start: Sat Nov 28 21:17:04 2009
+Session Ident: #Requests
+03[21:17] * Joined channel
+02[21:17] * agosbes (agosbes19@117.198.193.85) Quit (Ping timeout)
+03[21:17] * gdn (gdn@90.184.111.76) has joined #Requests
+02[21:17] * JL (JL@CPE0022b0d37bd1-CM001bd71ce516.cpe.net.cable.rogers.com) Quit (Read error: Connection reset by peer)
+01[21:18] <Reinn> So, what's going on?
+[21:18] <goofe4> Nothing big.. is your script up and working?
+01[21:18] <Reinn> Nah I'm still having problems with it.. I think I'                                                                                                                                                                                                                               'll see what I have
+01[21:18] <Reinn> Yay
+01[21:18] <Reinn> I think I have some proxies.. Yep I've got 260, I'll send them right away...
+02[21:18] * Root2k (Root2k@Root2k.users.WhatNET.Org) Quit (Quit)
+02[21:18] * fantick (h4r3n@c-dbfce255.012-29-6f72652.cust.bredbandsbolaget.se) Quit (Quit)
+[21:18] <boyee> #request http://www.youtube.com/ (Script for DLing videos)
+03[21:18] * goofe4 (goofe4@adsl-76-252-51-142.dsl.ipltin.sbcglobal.net) has joined #Requests
+01[21:19] <Reinn> Proxies sent to JET-
+01[21:19] <Reinn> http://www.youtube.com script for Downloading videos sent to boyee
+01[21:19] <Reinn> Enjoy..
+[21:20] <TheLuke> Proxylist (200+) sent to Eragon12
+01[21:20] <Reinn> Gj Luke :)
+[21:20] <TheLuke> Thanks, I try to help!
+[21:20] <Reinn> See you later...
+[21:21] <TheLuke> Yeah, cu!
+Session Close: Sat Nov 28 21:21:13 2009
