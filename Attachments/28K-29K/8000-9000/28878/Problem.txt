@@ -1,0 +1,26 @@
+d:\code\a0_01.xls		Verified	vincecm		         
+d:\code\b0_50243688301.xls	Verified	patrick	
+d:\code\a0_73839.xls		Verified	sdhbshdy	
+d:\code\E0_0r6383u3037.xls	Verified	dennis
+d:\code\7939u390_01.xls		Verified	yeuhen
+
+
+In this Text File I want to Split into two files one conatins
+
+Textfile1.txt
+
+d:\code\a0_01.xls				         
+d:\code\b0_50243688301.xls		
+d:\code\a0_73839.xls		
+d:\code\E0_0r6383u3037.xls	
+d:\code\7939u390_01.xls
+
+and other file contains 
+
+TextFile2.txt
+
+vincecm		         
+patrick	
+sdhbshdy	
+dennis
+yeuhen
