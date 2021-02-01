@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list next="625" timestamp="11586" schemastamp="23">
+	<Schema next="19">
+		<ElementType name="item">
+			<element id="s1" type="id" display="No"/>
+			<!-- must have an id on every row -->
+			<element id="s2" type="Nom" display="Yes" values=""/>
+			<element id="s3" type="Prénom" display="Yes" values=""/>
+			<element id="s4" type="Ext1" display="Yes" values=""/>
+			<element id="s5" type="Ext2" display="Yes" values=""/>
+			<element id="s6" type="Notes" display="Yes" values=""/>
+			<element id="s7" type="Dept" display="Yes" values=""/>
+			<element id="s8" type="Dept2" display="No" values=""/>
+			<element id="s9" type="Keyword" display="No" values=""/>
+			<element id="s10" type="temp" display="No" values=""/>
+			<element id="s11" type="LoginName" display="Yes" values=""/>
+			<element id="s12" type="Experties" display="Never" values=""/>
+			<element id="s13" type="Admin" display="No" values="Yes,No"/>
+			<element id="s14" type="lat" display="No" values=""/>
+			<element id="s15" type="lng" display="No" values=""/>
+			<element id="s16" type="location" display="Yes" values=""/>
+			<element id="s17" type="floor" display="Yes" values="Yes,No"/>
+			<element id="s18" type="itemtype" display="No" values="Yes,No"/>
+		</ElementType>
+	</Schema>
+	<item>
+		<id>1</id>
+		<Nom>Brahki</Nom>
+		<Prénom>Claudia</Prénom>
+		<Ext1>43457</Ext1>
+		<Ext2>
+		</Ext2>
+		<Notes/>
+		<Dept>TI</Dept>
+		<Dept2>IT</Dept2>
+		<Keyword>gtr</Keyword>
+		<temp>
+		</temp>
+		<LoginName>barak</LoginName>
+		<Experties>Base de données / Database,Isis Draw / ChemDraw,Linux,MDL,Oracle,UNIX</Experties>
+		<Experties/>
+		<Admin/>
+		<lat>45.5747478365114</lat>
+		<lng>-73.7595677375793</lng>
+		<location>B104</location>
+		<floor>2</floor>
+		<itemtype>emp</itemtype>
+	</item>
+	<item>
+		<id>5</id>
+		<Nom>Nobry</Nom>
+		<Prénom>Mornin</Prénom>
+		<Ext1>4355</Ext1>
+		<Ext2>
+		</Ext2>
+		<Notes/>
+		<Dept>Chimie</Dept>
+		<Dept2>Chemistry</Dept2>
+		<Experties>Associé de recherche II / Research Associate II,Linux,Résonance magnétique nucléaire (RMN) / Nuclear magnetic resonance (NMR)</Experties>
+		<Admin/>
+		<LoginName>nobry</LoginName>
+		<lat>45.5782811572825</lat>
+		<lng>-73.7265229225158</lng>
+		<location>L-62A</location>
+		<floor>1</floor>
+		<itemtype>emp</itemtype>
+	</item>
+	<item>
+		<id>6</id>
+		<Nom>Zaily</Nom>
+		<Prénom>Hurray D., Dr</Prénom>
+		<Ext1>4289</Ext1>
+		<Ext2>
+		</Ext2>
+		<Notes/>
+		<Dept>Chimie</Dept>
+		<Dept2>Chemistry</Dept2>
+		<Experties>Cahier de laboratoire / Laboratory Notebook,Chimie organique / Organic chemistry,Enzyme en chimie organique / Enzyme in organic chemistry,Santé et sécurité au travail / Health and safety at work</Experties>
+		<Admin/>
+		<LoginName>zail</LoginName>
+		<lat>45.5811196683866</lat>
+		<lng>-73.7422084808349</lng>
+		<location>L125</location>
+		<floor>2</floor>
+		<itemtype>emp</itemtype>
+	</item>
+	<item>
+		<id>7</id>
+		<Nom>Palieu</Nom>
+		<Prénom>Peter, Dr</Prénom>
+		<Ext1>4380</Ext1>
+		<Ext2>
+		</Ext2>
+		<Notes/>
+		<Dept>Chimie</Dept>
+		<Dept2>Chemistry</Dept2>
+		<Experties/>
+		<Admin/>
+		<LoginName>pail</LoginName>
+		<lat>45.5867024057770</lat>
+		<lng>-73.7603348493576</lng>
+		<location>B130</location>
+		<floor>2</floor>
+		<itemtype>emp</itemtype>
+	</item>
+	<item>
+		<id>12</id>
+		<Nom>Jardwah</Nom>
+		<Prénom>Punieee, Dr</Prénom>
+		<Ext1>4225</Ext1>
+		<Ext2>
+		</Ext2>
+		<Notes/>
+		<Dept>Chimie</Dept>
+		<Dept2>Chemistry</Dept2>
+		<Experties/>
+		<Admin/>
+		<LoginName>ythty</LoginName>
+		<lat>45.5797830328861</lat>
+		<lng>-73.7331587076187</lng>
+		<location>L147</location>
+		<floor>2</floor>
+		<itemtype>emp</itemtype>
+	</item>
+	<item>
+		<id>13</id>
+		<Nom>Dorleir</Nom>
+		<Prénom>Frans</Prénom>
+		<Ext1>4393</Ext1>
+		<Ext2>
+		</Ext2>
+		<Notes/>
+		<Dept>Chimie</Dept>
+		<Dept2>Chemistry</Dept2>
+		<Keyword>Francois</Keyword>
+		<Experties/>
+		<LoginName>ftyty</LoginName>
+		<Experties/>
+		<Admin/>
+		<lat>45.5784050635402</lat>
+		<lng>-73.7481147050857</lng>
+		<location>L112</location>
+		<floor>2</floor>
+		<itemtype>inst</itemtype>
+	</item>
+	<item>
+		<id>15</id>
+		<Nom>Gorger</Nom>
+		<Prénom>Bordom, Dr</Prénom>
+		<Ext1>4252</Ext1>
+		<Ext2>
+		</Ext2>
+		<Notes/>
+		<Dept>Sciences biologiques</Dept>
+		<Dept2>Biological Sciences</Dept2>
+		<Experties/>
+		<Admin/>
+		<LoginName>thdeg</LoginName>
+		<lat>45.5783787804175</lat>
+		<lng>-73.7413340806961</lng>
+		<location>L-30</location>
+		<floor>1</floor>
+		<itemtype>inst</itemtype>
+	</item>
+</list>
