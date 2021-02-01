@@ -1,0 +1,1 @@
+AutoIt v3 is an freeware BASIC-like scripting language designed for automating the Windows GUI.
