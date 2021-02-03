@@ -1,0 +1,4 @@
+V0006474;"HKEY_LOCAL_MACHINE\SOFTWARE\McAfee\VSCore\On Access Scanner\McShield\Configuration";"bLogToFile"
+V0006475;"HKEY_LOCAL_MACHINE\SOFTWARE\McAfee\VSCore\On Access Scanner\McShield\Configuration";"bLimitSize"
+V0006475;"HKEY_LOCAL_MACHINE\SOFTWARE\McAfee\VSCore\On Access Scanner\McShield\Configuration";"dwMaxLogSizeMB"
+V0006476;"HKEY_LOCAL_MACHINE\SOFTWARE\McAfee\VSCore\On Access Scanner\McShield\Configuration";"bLogSettings"
