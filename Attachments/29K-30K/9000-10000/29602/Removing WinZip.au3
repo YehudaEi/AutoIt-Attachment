@@ -1,0 +1,10 @@
+RegDelete("HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\WinZip")
+RegDelete("HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\winzip.exe")
+RegDelete("HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\winzip32.exe")
+$path = "C:\Program Files\WinZip"
+run('cmd.exe /c rmdir /Q /S "' & $path & '"', "", @SW_HIDE)
+FileDelete("C:\Documents and Settings\All Users\Start Menu\WinZip.lnk")
+FileDelete("C:\Documents and Settings\All Users\Desktop\WinZip.lnk")
+DirRemove("C:\Program Files\WinZip")
+ProcessExists("WZQKPICK.EXE") 
+ProcessClose("WZQKPICK.EXE")
