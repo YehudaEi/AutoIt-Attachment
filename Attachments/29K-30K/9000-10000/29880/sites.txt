@@ -1,0 +1,37 @@
+SITE 1,Main Site,1st Floor
+SITE 1,Main Site,2nd Floor
+SITE 1,Main Site,3rd Floor
+SITE 1,Main Site,Ground Floor
+SITE 1,Main Site,Lower Ground Floor
+SITE 2,Building 1,1st Floor
+SITE 2,Building 1,2nd Floor
+SITE 2,Building 1,Ground Floor
+SITE 2,Building 2,1st Floor
+SITE 2,Building 2,2nd Floor
+SITE 2,Building 2,Ground Floor
+SITE 2,Building 3,1st Floor
+SITE 2,Building 3,2nd Floor
+SITE 2,Building 3,Ground Floor
+SITE 2,Building 4,A Floor
+SITE 2,Building 4,A1 (A/B) Floor
+SITE 2,Building 4,B Floor
+SITE 2,Building 4,C Floor
+SITE 2,Building 4,D Floor
+SITE 2,Building 4,Dawson Floor
+SITE 2,Building 4,E Floor
+SITE 2,Building 5,A Floor
+SITE 2,Building 5,B Floor
+SITE 2,Building 5,C Floor
+SITE 2,Building 5,D Floor
+SITE 3,Main Site,Ground Floor
+SITE 3,Main Site,First Floor
+SITE 4,Building 1,1st Floor
+SITE 4,Building 1,Ground Floor
+SITE 4,Building 2,Ground Floor
+SITE 5,Building 1,1st Floor
+SITE 5,Building 1,2nd Floor
+SITE 5,Building 1,Ground Floor
+SITE 5,Building 2,1st Floor
+SITE 5,Building 2,2nd Floor
+SITE 5,Building 2,Ground Floor
+SITE 5,Building 2,Lower Ground Floor
