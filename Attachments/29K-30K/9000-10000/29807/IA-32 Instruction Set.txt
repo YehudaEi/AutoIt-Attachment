@@ -1,0 +1,440 @@
+
+INC r/m8					FE /0 			
+INC r/m8        			REX + FE /0 	
+INC r/m16       			FF /0 			
+INC r/m32       			FF /0 			
+INC r/m64       			REX.W + FF /0 	
+INC r16         			40+ rw 			
+INC r32         			40+ rd 			
+			
+ADD AL, imm8				04 ib 				
+ADD AX, imm16   			05 iw 				
+ADD EAX, imm32  			05 id 				
+ADD RAX, imm32  			REX.W + 05 id 		
+ADD r/m8, imm8  			80 /0 ib 			
+ADD r/m8, imm8  			REX + 80 /0 ib 		
+ADD r/m16, imm16			81 /0 iw 			
+ADD r/m32, imm32			81 /0 id 			
+ADD r/m64, imm32			REX.W + 81 /0 id 	
+ADD r/m16, imm8 			83 /0 ib 			
+ADD r/m32, imm8 			83 /0 ib 			
+ADD r/m64, imm8 			REX.W + 83 /0 ib 	
+ADD r/m8, r8    			00 /r 				
+ADD r/m8, r8    			REX + 00 /r 		
+ADD r/m16, r16  			01 /r 				
+ADD r/m32, r32  			01 /r 				
+ADD r/m64, r64  			REX.W + 01 /r 		
+ADD r8, r/m8    			02 /r 				
+ADD r8, r/m8    			REX + 02 /r 		
+ADD r16, r/m16  			03 /r 				
+ADD r32, r/m32  			03 /r 				
+ADD r64, r/m64  			REX.W + 03 /r 		
+			
+DEC r/m8					FE /1 			
+DEC r/m8        			REX + FE /1 	
+DEC r/m16       			FF /1 			
+DEC r/m32       			FF /1 			
+DEC r/m64       			REX.W + FF /1 	
+DEC r16         			48+rw 			
+DEC r32         			48+rd 			
+			
+CMP AL, imm8				3C ib 				
+CMP AX, imm16   			3D iw 				
+CMP EAX, imm32  			3D id 				
+CMP RAX, imm32  			REX.W + 3D id 		
+CMP r/m8, imm8  			80 /7 ib 			
+CMP r/m8, imm8  			REX + 80 /7 ib 		
+CMP r/m16, imm16			81 /7 iw 			
+CMP r/m32, imm32			81 /7 id 			
+CMP r/m64, imm32			REX.W + 81 /7 id	
+CMP r/m16, imm8 			83 /7 ib 			
+CMP r/m32, imm8 			83 /7 ib 			
+CMP r/m64, imm8 			REX.W + 83 /7 ib	
+CMP r/m8, r8    			38 /r 				
+CMP r/m8, r8    			REX + 38 /r 		
+CMP r/m16, r16  			39 /r 				
+CMP r/m32, r32  			39 /r 				
+CMP r/m64,r64   			REX.W + 39 /r 		
+CMP r8, r/m8    			3A /r 				
+CMP r8, r/m8    			REX + 3A /r 		
+CMP r16, r/m16  			3B /r 				
+CMP r32, r/m32  			3B /r 				
+CMP r64, r/m64  			REX.W + 3B /r 		
+			
+ADC AL, imm8				14 ib 				
+ADC AX, imm16   			15 iw 				
+ADC EAX, imm32  			15 id 				
+ADC RAX, imm32  			REX.W + 15 id 		
+ADC r/m8, imm8  			80 /2 ib 			
+ADC r/m8, imm8  			REX + 80 /2 ib 		
+ADC r/m16, imm16			81 /2 iw 			
+ADC r/m32, imm32			81 /2 id 			
+ADC r/m64, imm32			REX.W + 81 /2 id	
+ADC r/m16, imm8 			83 /2 ib 			
+ADC r/m32, imm8 			83 /2 ib 			
+ADC r/m64, imm8 			REX.W + 83 /2 ib	
+ADC r/m8, r8    			10 /r 				
+ADC r/m8, r8    			REX + 10 /r 		
+ADC r/m16, r16  			11 /r 				
+ADC r/m32, r32  			11 /r 				
+ADC r/m64, r64  			REX.W + 11 /r 		
+ADC r8, r/m8    			12 /r 				
+ADC r8, r/m8    			REX + 12 /r 		
+ADC r16, r/m16  			13 /r 				
+ADC r32, r/m32  			13 /r 				
+ADC r64, r/m64  			REX.W + 13 /r 		
+			
+AND AL, imm8				24 ib 				
+AND AX, imm16   			25 iw 				
+AND EAX, imm32  			25 id 				
+AND RAX, imm32  			REX.W + 25 id 		
+AND r/m8, imm8  			80 /4 ib 			
+AND r/m8, imm8  			REX + 80 /4 ib 		
+AND r/m16, imm16			81 /4 iw 			
+AND r/m32, imm32			81 /4 id 			
+AND r/m64, imm32			REX.W + 81 /4 id 	
+AND r/m16, imm8 			83 /4 ib 			
+AND r/m32, imm8 			83 /4 ib 			
+AND r/m64, imm8 			REX.W + 83 /4 ib	
+AND r/m8, r8    			20 /r 				
+AND r/m8, r8    			REX + 20 /r 		
+AND r/m16, r16  			21 /r 				
+AND r/m32, r32  			21 /r 				
+AND r/m64, r64  			REX.W + 21 /r 		
+AND r8, r/m8    			22 /r 				
+AND r8, r/m8    			REX + 22 /r 		
+AND r16, r/m16  			23 /r 				
+AND r32, r/m32  			23 /r 				
+AND r64, r/m64  			REX.W + 23 /r 		
+
+OR AL, imm8					0C ib 						
+OR AX, imm16            	0D iw 						
+OR EAX, imm32           	0D id 						
+OR RAX, imm32           	REX.W + 0D id 				
+OR r/m8, imm8           	80 /1 ib 					
+OR r/m8, imm8           	REX + 80 /1 ib 				
+OR r/m16, imm16         	81 /1 iw 					
+OR r/m32, imm32         	81 /1 id 					
+OR r/m64, imm32         	REX.W + 81 /1 id 			
+OR r/m16, imm8          	83 /1 ib 					
+OR r/m32, imm8          	83 /1 ib 					
+OR r/m64, imm8          	REX.W + 83 /1 ib 			
+OR r/m8, r8             	08 /r 						
+OR r/m8, r8             	REX + 08 /r 				
+OR r/m16, r16           	09 /r 						
+OR r/m32, r32           	09 /r 						
+OR r/m64, r64           	REX.W + 09 /r 				
+OR r8, r/m8             	0A /r 						
+OR r8, r/m8             	REX + 0A /r 				
+OR r16, r/m16           	0B /r 						
+OR r32, r/m32           	0B /r 						
+OR r64, r/m64				REX.W + 0B /r 						
+
+XOR AL, imm8    			34 ib 				
+XOR AX, imm16   			35 iw 				
+XOR EAX, imm32  			35 id 				
+XOR RAX, imm32  			REX.W + 35 id 		
+XOR r/m8, imm8  			80 /6 ib 			
+XOR r/m8, imm8  			REX + 80 /6 ib 		
+XOR r/m16, imm16			81 /6 iw 			
+XOR r/m32, imm32			81 /6 id 			
+XOR r/m64, imm32			REX.W + 81 /6 id	
+XOR r/m16, imm8 			83 /6 ib 			
+XOR r/m32, imm8 			83 /6 ib 			
+XOR r/m64, imm8 			REX.W + 83 /6 ib	
+XOR r/m8, r8    			30 /r 				
+XOR r/m8, r8    			REX + 30 /r 		
+XOR r/m16, r16  			31 /r 				
+XOR r/m32, r32  			31 /r 				
+XOR r/m64, r64  			REX.W + 31 /r 		
+XOR r8, r/m8    			32 /r 				
+XOR r8, r/m8    			REX + 32 /r 		
+XOR r16, r/m16  			33 /r 				
+XOR r32, r/m32  			33 /r 				
+XOR r64, r/m64  			REX.W + 33 /r 		
+			
+MOV r/m8,r8					88 /r 				
+MOV r/m8,r8     			REX + 88 /r 		
+MOV r/m16,r16   			89 /r 				
+MOV r/m32,r32   			89 /r 				
+MOV r/m64,r64   			REX.W + 89 /r 		
+MOV r8,r/m8     			8A /r 				
+MOV r8,r/m8     			REX + 8A /r 		
+MOV r16,r/m16   			8B /r 				
+MOV r32,r/m32   			8B /r 				
+MOV r64,r/m64   			REX.W + 8B /r 		
+MOV r/m16,Sreg  			8C /r 				
+MOV r/m64,Sreg  			REX.W + 8C /r 		
+MOV Sreg,r/m16  			8E /r 				
+MOV Sreg,r/m64  			REX.W + 8E /r 		
+MOV AL,moffs8   			A0 					
+MOV AL,moffs8   			REX.W + A0 			
+MOV AX,moffs16  			A1 					
+MOV EAX,moffs32 			A1 					
+MOV RAX,moffs64 			REX.W + A1 			
+MOV moffs8,AL   			A2 					
+MOV moffs8,AL   			REX.W + A2 			
+MOV moffs16,AX  			A3 					
+MOV moffs32,EAX 			A3 					
+MOV moffs64,RAX 			REX.W + A3 			
+MOV r8, imm8    			B0+ rb 				
+MOV r8, imm8    			REX + B0+ rb 		
+MOV r16, imm16  			B8+ rw 				
+MOV r32, imm32  			B8+ rd 				
+MOV r64, imm64  			REX.W + B8+ rd 		
+MOV r/m8, imm8  			C6 /0 				
+MOV r/m8, imm8  			REX + C6 /0 		
+MOV r/m16, imm16			C7 /0 				
+MOV r/m32, imm32			C7 /0 				
+MOV r/m64, imm32			REX.W + C7 /0 	
+			
+PUSH r/m16					FF /6 				
+PUSH r/m32      			FF /6 				
+PUSH r/m64      			FF /6 				
+PUSH r16        			50+rw 				
+PUSH r32        			50+rd 				
+PUSH r64        			50+rd 				
+PUSH imm8       			6A 					
+PUSH imm16      			68 					
+PUSH imm32      			68 					
+PUSH CS         			0E 					
+PUSH SS         			16 					
+PUSH DS         			1E 					
+PUSH ES         			06 					
+PUSH FS         			0FA0 								
+PUSH GS         			0FA8 								
+			
+JMP rel8					EB cb 				
+JMP rel16       			E9 cw 				
+;JMP rel32       			E9 cd 				
+;JMP r/m16       			FF /4 				
+JMP r/m32       			FF /4 				
+;JMP r/m64       			FF /4 				
+JMP ptr32    			EA cd 				
+;JMP ptr16:32    			EA cp 				
+;JMP m16:16      			FF /5 				
+;JMP m16:32      			FF /5 				
+;JMP m16:64      			REX.W + FF /5 		
+			
+XCHG AX, r16				90+rw 				
+XCHG r16, AX    			90+rw 				
+XCHG EAX, r32   			90+rd 				
+XCHG RAX, r64   			REX.W + 90+rd 		
+XCHG r32, EAX   			90+rd 				
+XCHG r64, RAX   			REX.W + 90+rd 		
+XCHG r/m8, r8   			86 /r 				
+XCHG r/m8, r8   			REX + 86 /r 		
+XCHG r8, r/m8   			86 /r 				
+XCHG r8, r/m8   			REX + 86 /r 		
+XCHG r/m16, r16 			87 /r 				
+XCHG r16, r/m16 			87 /r 				
+XCHG r/m32, r32 			87 /r 				
+XCHG r/m64, r64 			REX.W + 87 /r 		
+XCHG r32, r/m32 			87 /r 				
+XCHG r64, r/m64 			REX.W + 87 /r 		
+			
+RET							C3 					
+RET             			CB 					
+RET imm16       			C2 iw 				
+RET imm16       			CA iw 			
+			
+SBB AL, imm8				1C ib 				
+SBB AX, imm16   			1D iw 				
+SBB EAX, imm32  			1D id 				
+SBB RAX, imm32  			REX.W + 1D id 		
+SBB r/m8, imm8  			80 /3 ib 			
+SBB r/m8, imm8  			REX + 80 /3 ib 		
+SBB r/m16, imm16			81 /3 iw 			
+SBB r/m32, imm32			81 /3 id 			
+SBB r/m64, imm32			REX.W + 81 /3 id 	
+SBB r/m16, imm8 			83 /3 ib 			
+SBB r/m32, imm8 			83 /3 ib 			
+SBB r/m64, imm8 			REX.W + 83 /3 ib 	
+SBB r/m8, r8    			18 /r 				
+SBB r/m8, r8    			REX + 18 /r 		
+SBB r/m16, r16  			19 /r 				
+SBB r/m32, r32  			19 /r 				
+SBB r/m64, r64  			REX.W + 19 /r 		
+SBB r8, r/m8    			1A /r 				
+SBB r8, r/m8    			REX + 1A /r 		
+SBB r16, r/m16  			1B /r 				
+SBB r32, r/m32  			1B /r 				
+SBB r64, r/m64  			REX.W + 1B /r 		
+			
+SUB AL, imm8				2C ib 				
+SUB AX, imm16   			2D iw 				
+SUB EAX, imm32  			2D id 				
+SUB RAX, imm32  			REX.W + 2D id 		
+SUB r/m8, imm8  			80 /5 ib 			
+SUB r/m8, imm8  			REX + 80 /5 ib 		
+SUB r/m16, imm16			81 /5 iw 			
+SUB r/m32, imm32			81 /5 id 			
+SUB r/m64, imm32			REX.W + 81 /5 id 	
+SUB r/m16, imm8 			83 /5 ib 			
+SUB r/m32, imm8 			83 /5 ib 			
+SUB r/m64, imm8 			REX.W + 83 /5 ib 	
+SUB r/m8, r8    			28 /r 				
+SUB r/m8, r8    			REX + 28 /r 		
+SUB r/m16, r16  			29 /r 				
+SUB r/m32, r32  			29 /r 				
+SUB r/m64, r32  			REX.W + 29 /r 		
+SUB r8, r/m8    			2A /r 				
+SUB r8, r/m8    			REX + 2A /r 		
+SUB r16, r/m16  			2B /r 				
+SUB r32, r/m32  			2B /r 				
+SUB r64, r/m64				REX.W + 2B /r 				
+			
+POP r/m16					8F /0 				
+POP r/m32       			8F /0 				
+POP r/m64       			8F /0 				
+POP r16         			58+ rw 				
+POP r32         			58+ rd 				
+POP r64         			58+ rd 				
+POP DS          			1F 					
+POP ES          			07 					
+POP SS          			17 					
+POP FS          			0FA1 				
+POP FS          			0FA1 				
+POP FS          			0FA1 				
+POP GS          			0FA9 				
+POP GS          			0FA9 			
+			
+JA rel8						77 cb 				
+JAE rel8        			73 cb 				
+JB rel8         			72 cb 				
+JBE rel8        			76 cb 				
+JC rel8         			72 cb 				
+JCXZ rel8       			E3 cb 				
+JECXZ rel8      			E3 cb 				
+JRCXZ rel8      			E3 cb 				
+JE rel8         			74 cb 				
+JG rel8         			7F cb 				
+JGE rel8        			7D cb 				
+JL rel8         			7C cb 				
+JLE rel8        			7E cb 				
+JNA rel8        			76 cb 				
+JNAE rel8       			72 cb 				
+JNB rel8        			73 cb 				
+JNBE rel8       			77 cb 				
+JNC rel8        			73 cb 				
+JNE rel8        			75 cb 				
+JNG rel8        			7E cb 				
+JNGE rel8       			7C cb 				
+JNL rel8        			7D cb 				
+JNLE rel8       			7F cb 				
+JNO rel8        			71 cb 				
+JNP rel8        			7B cb 				
+JNS rel8        			79 cb 				
+JNZ rel8        			75 cb 				
+JO rel8         			70 cb 				
+JP rel8         			7A cb 				
+JPE rel8        			7A cb 				
+JPO rel8        			7B cb 				
+JS rel8         			78 cb 				
+JZ rel8         			74 cb 				
+JA rel16        			0F87 cw 			
+JA rel32        			0F87 cd 			
+JAE rel16       			0F83 cw 			
+JAE rel32       			0F83 cd 			
+JB rel16        			0F82 cw 			
+JB rel32        			0F82 cd 			
+JBE rel16       			0F86 cw 			
+JBE rel32       			0F86 cd 			
+JC rel16        			0F82 cw 			
+JC rel32        			0F82 cd 			
+JE rel16        			0F84 cw 			
+JE rel32        			0F84 cd 			
+JZ rel16        			0F84 cw 			
+JZ rel32        			0F84 cd 			
+JG rel16        			0F8F cw 			
+JG rel32        			0F8F cd 			
+JGE rel16       			0F8D cw 			
+JGE rel32       			0F8D cd 			
+JL rel16        			0F8C cw 			
+JL rel32        			0F8C cd 			
+JLE rel16       			0F8E cw 			
+JLE rel32       			0F8E cd 			
+JNA rel16       			0F86 cw 			
+JNA rel32       			0F86 cd 			
+JNAE rel16      			0F82 cw 			
+JNAE rel32      			0F82 cd 			
+JNB rel16       			0F83 cw 			
+JNB rel32       			0F83 cd 			
+JNBE rel16      			0F87 cw 			
+JNBE rel32      			0F87 cd 			
+JNC rel16       			0F83 cw 			
+JNC rel32       			0F83 cd 			
+JNE rel16       			0F85 cw 			
+JNE rel32       			0F85 cd 			
+JNG rel16       			0F8E cw 			
+JNG rel32       			0F8E cd 			
+JNGE rel16      			0F8C cw 			
+JNGE rel32      			0F8C cd 			
+JNL rel16       			0F8D cw 			
+JNL rel32       			0F8D cd 			
+JNLE rel16      			0F8F cw 			
+JNLE rel32      			0F8F cd 			
+JNO rel16       			0F81 cw 			
+JNO rel32       			0F81 cd 			
+JNP rel16       			0F8B cw 			
+JNP rel32       			0F8B cd 			
+JNS rel16       			0F89 cw 			
+JNS rel32       			0F89 cd 			
+JNZ rel16       			0F85 cw 			
+JNZ rel32       			0F85 cd 			
+JO rel16        			0F80 cw 			
+JO rel32        			0F80 cd 			
+JP rel16        			0F8A cw 			
+JP rel32        			0F8A cd 			
+JPE rel16       			0F8A cw 			
+JPE rel32       			0F8A cd 			
+JPO rel16       			0F8B cw 			
+JPO rel32       			0F8B cd 			
+JS rel16        			0F88 cw 			
+JS rel32        			0F88 cd 			
+JZ rel16        			0F84 cw 			
+JZ rel32        			0F84 cd 			
+	
+MUL r/m8					F6 /4 				
+MUL r/m8                	REX + F6 /4 		
+MUL r/m16               	F7 /4 				
+MUL r/m32               	F7 /4 				
+MUL r/m64               	REX.W + F7 /4 		
+	
+IMUL r/m8               	F6 /5 				
+IMUL r/m16              	F7 /5 				
+IMUL r/m32              	F7 /5 				
+IMUL r/m64              	REX.W + F7 /5 		
+IMUL r16, r/m16         	0FAF /r 			
+IMUL r32, r/m32         	0FAF /r 			
+IMUL r64, r/m64         	REX.W + 0F AF /r 	
+IMUL r16, r/m16, imm8   	6B /r ib 			
+IMUL r32, r/m32, imm8   	6B /r ib 			
+IMUL r64, r/m64, imm8   	REX.W + 6B /r ib 	
+IMUL r16, r/m16, imm16  	69 /r iw 			
+IMUL r32, r/m32, imm32  	69 /r id 			
+IMUL r64, r/m64, imm32  	REX.W + 69 /r id 	
+	
+DIV r/m8                	F6 /6 				
+DIV r/m8                	REX + F6 /6 		
+DIV r/m16               	F7 /6 				
+DIV r/m32               	F7 /6 				
+DIV r/m64               	REX.W + F7 /6 		
+	
+IDIV r/m8               	F6 /7 				
+IDIV r/m8               	REX + F6 /7 		
+IDIV r/m16              	F7 /7 				
+IDIV r/m32              	F7 /7 				
+IDIV r/m64              	REX.W + F7 /7 		
+	
+CALL rel16					E8 cw 						
+;CALL rel32             	E8 cd 						
+CALL r/m16              	FF /2 						
+CALL r/m32              	FF /2 						
+CALL r/m64              	FF /2 						
+;CALL ptr16:16          	9A cd 						
+CALL ptr32           		9A cd 
+;CALL ptr16:32          	9A cp 						
+;CALL m16:16            	FF /3 						
+;CALL m16:32            	FF /3 						
+;CALL m16:64            	REX.W + FF /3 				
