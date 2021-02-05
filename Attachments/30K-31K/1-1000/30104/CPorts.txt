@@ -1,0 +1,33 @@
+@echo off
+REM ########################################## 
+REM ########  CPorts version 1.3   ###########
+REM ##########################################
+
+REM Get the argument and save it as the Printer IP value
+SET PRinterIP=%1
+
+REM Check if the Printer port already exist
+reg query "HKLM\SYSTEM\CurrentControlSet\Control\Print\Monitors\Standard TCP/IP Port\Ports\IP_%PrinterIP%" /v "IPAddress" >nul
+IF %ERRORLEVEL%==0 goto END
+
+REM If not, create a standard TCPIP Port for the printer
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\Print\Monitors\Standard TCP/IP Port\Ports\IP_%PrinterIP%" /v "Protocol" /t REG_DWORD /d "00000001" /f >nul
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\Print\Monitors\Standard TCP/IP Port\Ports\IP_%PrinterIP%" /v "Version" /t REG_DWORD /d "00000001" /f >nul
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\Print\Monitors\Standard TCP/IP Port\Ports\IP_%PrinterIP%" /v "PortNumber" /t REG_DWORD /d "9100" /f >nul
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\Print\Monitors\Standard TCP/IP Port\Ports\IP_%PrinterIP%" /v "SNMP Enabled" /t REG_DWORD /d "00000000" /f >nul
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\Print\Monitors\Standard TCP/IP Port\Ports\IP_%PrinterIP%" /v "SNMP Index" /t REG_DWORD /d "00000001" /f >nul
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\Print\Monitors\Standard TCP/IP Port\Ports\IP_%PrinterIP%" /v "HostName" /f >nul
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\Print\Monitors\Standard TCP/IP Port\Ports\IP_%PrinterIP%" /v "IPAddress" /d "%PrinterIP%" /f >nul
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\Print\Monitors\Standard TCP/IP Port\Ports\IP_%PrinterIP%" /v "HWAddress" /f >nul
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\Print\Monitors\Standard TCP/IP Port\Ports\IP_%PrinterIP%" /v "SNMP Community" /d "public" /f >nul
+
+:END
+
+
+
+
+
+
+
+
+
