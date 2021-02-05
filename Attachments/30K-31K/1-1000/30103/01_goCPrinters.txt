@@ -1,0 +1,47 @@
+@echo off
+REM ########################################## 
+REM ########gocPrinters version 1.3###########
+REM ##########################################
+
+REM Retrieve the Boutique CCLLLE code from the computername
+set BtqCode=%Computername:~0,3%
+REM Retrieve the network Path from the executed command
+set NetPath=%0%
+set NetPath=%NetPath:\goCPrinters.bat"=%
+REM Get the current flag version on the first line of the CCLLLE-LPrinters.txt file
+:GETFLAGVER
+setlocal enabledelayedexpansion
+SET /a counter=0
+for /f "usebackq delims=" %%i in (%NetPath%\%BtqCode%-LPrinters.txt") do (
+if "!counter!"=="1" goto ENDLOOP
+REM check on the host if this flag is present then exit
+if exist "%windir%\%%i" goto END
+set /a counter+=1
+)
+:ENDLOOP
+
+REM if not - launch the creation of the Printer TCPIP Port
+for /F "usebackq skip=2 Tokens=1" %%a in (%NetPath%\%BtqCode%-LPrinters.txt") do call %NetPath%\CPorts.bat" %%a
+
+REM Restart the spooler service
+net stop "Print Spooler" >nul
+net start "Print Spooler" >nul
+REM Launch the Printer creation
+
+for /F "usebackq skip=2 Tokens=1,2*" %%a in (%NetPath%\%BtqCode%-LPrinters.txt") do call %NetPath%\CPrinters.bat" %%a %%b "%%c"
+
+REM After the printer creation - create the flag file to prevent re-creation on next reboot
+goto SETFLAGVER
+
+:SETFLAGVER
+setlocal enabledelayedexpansion
+SET /a counter=0
+for /f "usebackq delims=" %%i in (%NetPath%\%BtqCode%-LPrinters.txt") do (
+if "!counter!"=="1" goto ENDLOOP2
+REM write the current flag file in Windir
+echo %date% %time% >"%windir%\%%i"
+set /a counter+=1
+)
+:ENDLOOP2
+
+:END
