@@ -1,0 +1,88 @@
+<HTML>
+<HEAD>
+<STYLE TYPE=Text/Css>
+	'Image setting
+	IMG {filter:blendTrans(duration=2):Alpha(Opacity=50)}
+</STYLE>
+<SCRIPT LANGUAGE=VBScript>
+<!--
+	Const DEVICE_NAME	= "M7000"	'DeviceName
+	Const DEVICE_SIZE	= 1			'DeviceSize
+
+	Dim ActCtrl						'Control object
+
+'/****************************************************************************/
+'/*  <function>   Initialization                                             */
+'/*  [[[Initialization]]]                                                    */
+'/****************************************************************************/
+	Sub Init
+		Dim lRet		'Return value
+
+		'The ActEasyIF object is made.
+		Set ActCtrl = CreateObject("ActMulti.ActMLEasyIF")
+		'The value of a LogicalStationNumber is set in the property.
+		ActCtrl.ActLogicalStationNumber = 1
+		'The Open method is executed.
+		lRet = ActCtrl.Open()
+		if (lRet <> 0 ) then
+			'When abnormally ending.
+			msgbox("Open Error:" & Hex(lRet) & "(Hex)" )
+			exit sub
+		End if
+
+		'Timer event beginning (every one second).
+		setInterval "OnTimer",1000
+
+		'The displayed position is set.
+		Lamp1.Style.posLeft = 120	'The position of the lamp image is set.
+		Lamp1.Style.posTop  = 10
+		Tank1.Style.posLeft = 20	'The position of the tank image is set.
+		Tank1.Style.posTop  = 10
+		Frame1.Style.posLeft = 55	'The position of the tank capacity frame image is set.
+		Frame1.Style.posTop = 45
+		Fill1.Style.posLeft = 55	'The position of the tank capacity value image is set.
+		Fill1.Style.posTop  = 245
+	End Sub
+
+'/****************************************************************************/
+'/*  <function>   OnTimer                                                    */
+'/*  [[[Timer event processing]]]                                            */
+'/****************************************************************************/
+	Sub OnTimer
+		Dim lRet		'Return value
+		Dim lVal		'DeviceData
+		
+		'The device value is acquired.
+		lRet = ActCtrl.GetDevice(DEVICE_NAME,lVal)
+		if (lRet <> 0 ) then
+			'When abnormally ending.
+			msgbox("ReadDeviceBlock Error:" & Hex(lRet) & "(Hex)" )  
+			exit sub
+		End if
+		
+		'The position where each image is displayed is set (M7000).
+		
+		Frame1.Style.posTop 		= 45			'The position of the tank capacity frame image is set.
+		Frame1.Style.posHeight		= 200 
+		Fill1.Style.posTop		= 245           	'The position of the tank capacity value image is set.
+		Fill1.Style.posHeight		= 200
+
+		'Judgment of DeviceData 
+ 		If(lVal = 0) then
+			Lamp1.src = ".\Pics\LampOFF.gif"	'A normal lamp is lit.
+		Else
+    		Lamp1.src = ".\Pics\LampERR.gif"	'An abnormal lamp is lit.
+		End if
+	End Sub
+-->
+</SCRIPT>
+
+<meta name="NetsparkQuiltingResult" total-length="3155" removed="0" rules-found="w4778,w4779,w3901,w3902,w4829,w7474,w5196,w4311,w7302,w7314,w7315" />
+</HEAD>
+<BODY BGCOLOR=#C0C0C0 onLoad=Init>
+	<IMG SRC=.\Pics\LampOFF.gif	ID=Lamp1 	STYLE=Position:Absolute WIDTH=32	HEIGHT=32>
+	<IMG SRC=./Pics/Tank.gif 	ID=Tank1 	STYLE=Position:Absolute WIDTH=100	HEIGHT=250>
+	<IMG SRC=./Pics/Frame.gif	ID=Frame1	STYLE=Position:Absolute;Filter:Alpha(Opacity=50)	WIDTH=30	HEIGHT=200>
+	<IMG SRC=.\Pics\Fill.gif	ID=Fill1	STYLE=Position:Absolute;Filter:Alpha(Opacity=50)	WIDTH=30	HEIGHT=0>
+</BODY> 
+</HTML> 
