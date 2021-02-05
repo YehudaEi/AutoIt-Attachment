@@ -1,0 +1,233 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0058)http://nmc-vietnam/cgi-bin/rms/UPDATE/inc.pl -->
+<HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>NMC-Vietnam</TITLE>
+<SCRIPT>
+	begn();
+
+	function begn(){
+		rn	= 9999999999*Math.random();
+		ron	= Math.round(rn);
+		setTimeout(function(){printMyTime('/cgi-bin/ssi/mytime.pl?awsa='+ron,'1','1')},5000);
+	}//end function
+
+
+	var req;
+	function parseDataMyTime(){
+		if (req.readyState == 4) {
+
+			document.getElementById('navspace').innerHTML 			= req.responseText;
+			begn();
+				
+		}
+	}//end function
+
+	function printMyTime(url)
+	{
+		// branch for native XMLHttpRequest object
+		if (window.XMLHttpRequest) {
+			req = new XMLHttpRequest();
+			req.onreadystatechange = parseDataMyTime;
+			req.open("GET", url, true);
+			req.send(null);
+		// branch for IE/Windows ActiveX version
+		} else if (window.ActiveXObject) {
+			req = new ActiveXObject("Microsoft.XMLHTTP");
+			if (req) {
+				req.onreadystatechange = parseDataMyTime;
+				req.open("GET", url, true);
+				req.send(null);
+			}
+		}
+	}//end function
+</SCRIPT>
+<!-- Meta Data -->
+<META content="text/html; charset=windows-1251" http-equiv=Content-Type>
+<META name=description content="Short description of your site here.">
+<META name=keywords content="keywords, go, here, seperated, by, commas"><!---->
+<SCRIPT language=JavaScript type=text/javascript 
+src="NMC-Vietnam_files/script.js"></SCRIPT>
+<!-- Site Title --><!-- Link to Style External Sheet --><LINK rel=stylesheet 
+type=text/css href="NMC-Vietnam_files/style.css"><!--<body onload="onloadbody();">-->
+<META name=GENERATOR content="MSHTML 8.00.6001.18702">
+<meta name="NetsparkQuiltingResult" total-length="8509" removed="0" rules-found="w3125,w8346,w4508,w3107,w8015,w8016,w2727" />
+</HEAD>
+<BODY>
+<SCRIPT language=JavaScript>
+  <!-- hide
+
+
+var mo='';
+
+
+
+var smallmenu_id;
+var blue="#0F3974";
+
+  function smallmenu(smallmenu_id) {
+
+   	document.getElementById("smallmenu_mo").style.color=blue;
+  	document.getElementById("smallmenu_contact").style.color=blue;
+  	document.getElementById("smallmenu_knowhow").style.color=blue;
+  	document.getElementById("smallmenu_site").style.color=blue;
+  	document.getElementById("smallmenu_news").style.color=blue;
+
+
+  	if (smallmenu_id=="smallmenu_mo")
+  	{
+		document.forms.search.action="/cgi-bin/dbs/u_sel/progressall/progressall.pl";
+		document.forms.search.site_mysql_script_name.value="";
+		document.getElementById("smallmenu_mo").style.color="white";
+  	}
+  	if (smallmenu_id=="smallmenu_contact")
+  	{
+  	    document.forms.search.action="/cgi-bin/dbs/u_sel/exec.pl";
+		document.forms.search.site_mysql_script_name.value="contact";
+		document.getElementById("smallmenu_contact").style.color="white";
+  	}
+  	if (smallmenu_id=="smallmenu_knowhow")
+  	{
+  	    document.forms.search.action="/cgi-bin/dbs/u_sel/exec.pl";
+		document.forms.search.site_mysql_script_name.value="knowhow";
+		document.getElementById("smallmenu_knowhow").style.color="white";
+  	}
+  	if (smallmenu_id=="smallmenu_site")
+  	{
+  	    document.forms.search.action="/cgi-bin/dbs/u_sel/exec.pl";
+		document.forms.search.site_mysql_script_name.value="site_resorses";
+		document.getElementById("smallmenu_site").style.color="white";
+  	}
+  	if (smallmenu_id=="smallmenu_news")
+  	{
+  	    document.forms.search.action="/cgi-bin/dbs/u_sel/exec.pl";
+		document.forms.search.site_mysql_script_name.value="news";
+		document.getElementById("smallmenu_news").style.color="white";
+  	}
+
+  }
+
+
+
+  // -->
+</SCRIPT>
+
+<DIV id=page_wrapper>
+<DIV id=header_wrapper>
+<DIV id=header>
+<DIV id=headerbox>
+<DIV id=name><A class=head_href href="http://nmc-vietnam/index.html">
+<H1>NMC<FONT color=#ffdf8c>-Vietnam</FONT></H1></A></DIV>
+<DIV id=input>
+<FORM class=form0 method=post name=search 
+action=/cgi-bin/dbs/u_sel/progressall/progressall.pl><INPUT type=hidden 
+name=site_mysql_script_name> 
+<DIV id=smallmenu>
+<DIV><A id=smallmenu_mo class=current onclick='smallmenu("smallmenu_mo");' 
+href="http://nmc-vietnam/cgi-bin/rms/UPDATE/inc.pl?OPERATIONID=1#">MO</A></DIV>
+<DIV><A id=smallmenu_contact onclick='smallmenu("smallmenu_contact");' 
+href="http://nmc-vietnam/cgi-bin/rms/UPDATE/inc.pl?OPERATIONID=1#">Contacts</A></DIV>
+<DIV><A id=smallmenu_knowhow onclick='smallmenu("smallmenu_knowhow");' 
+href="http://nmc-vietnam/cgi-bin/rms/UPDATE/inc.pl?OPERATIONID=1#">Knowhow 
+</A></DIV>
+<DIV><A id=smallmenu_news onclick='smallmenu("smallmenu_news");' 
+href="http://nmc-vietnam/cgi-bin/rms/UPDATE/inc.pl?OPERATIONID=1#">News</A></DIV>
+<DIV><A id=smallmenu_site onclick='smallmenu("smallmenu_site");' 
+href="http://nmc-vietnam/cgi-bin/rms/UPDATE/inc.pl?OPERATIONID=1#">Site 
+map</A></DIV></DIV>
+<UL id=search_line>
+  <LI><INPUT 
+  style="MARGIN-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; DISPLAY: inline; MARGIN-LEFT: 0px; MARGIN-RIGHT: 0px" 
+  id=global_search class=global_search name=global_search> 
+  <LI><A style="DISPLAY: inline" id=search_button_head 
+  onclick=document.forms.search.submit(); 
+  href="http://nmc-vietnam/cgi-bin/rms/UPDATE/inc.pl?OPERATIONID=1#">Search</A> 
+  </LI></UL></FORM></DIV></DIV></DIV>
+<DIV id=navcontainer>
+<DIV id=navspace>22 March 2010, Mon, 20:52 </DIV>
+<UL id=navlist>
+  <LI><A href="http://nmc-vietnam/">Main page</A> 
+  <LI><A 
+  href="http://nmc-vietnam/cgi-bin/dbs/u_sel/exec.pl?site_mysql_script_name=site_resorses&amp;limit1=0&amp;limit2=200">Site 
+  map</A> 
+  <LI><A 
+  href="http://nmc-vietnam/cgi-bin/dbs/u_sel/exec.pl?site_mysql_script_name=site_resorses&amp;global_search=register">Events</A> 
+
+  <LI><A href="http://nmc-vietnam/cgi-bin/rms/index.pl">RMS</A> 
+  <LI><A href="http://nmc-vietnam/cgi-bin/opl/index.pl">OPL</A> 
+  <LI><A 
+  href="http://nmc-vietnam/cgi-bin/dbs/u_sel/exec.pl?site_mysql_script_name=site_resorses&amp;global_search=Statistics">Statistics</A> 
+
+  <LI><A title=gianght_b 
+  href="http://nmc-vietnam/cgi-bin/modules/Auc/auc.pl">Log out</A> 
+</LI></UL></DIV></DIV>
+<SCRIPT language=JavaScript>
+  <!-- hide
+
+
+
+function onloadbody ()
+{
+
+document.getElementById("global_search").focus() ;
+
+
+UpdateTitle(mo);
+
+}
+
+
+function UpdateTitle(mo)
+{
+
+
+	document.title=mo+' '+document.title;
+	
+	
+
+}
+
+-->
+</SCRIPT>
+
+<DIV id=content_no_left_menu>
+<DIV class=oreg_title><SPAN style="MARGIN-LEFT: 5px">New Ticket</SPAN> </DIV>
+<DIV style="MARGIN-TOP: 5px" class=forms_search>
+<FORM method=post><INPUT value=CREATE type=hidden name=ACTION> <INPUT value=1 
+type=hidden name=OPERATIONID> <INPUT id=ACTION value=ADD type=hidden 
+name=ACTION> 
+<TABLE style="WIDTH: 643px" class=opl_filter>
+  <TBODY>
+  <TR>
+    <TD style="WIDTH: 443px">Region </TD>
+    <TD><SELECT style="WIDTH: 443px" id=REGIONID multiple size=3 
+        name=REGIONID> <OPTION value=0>Centre</OPTION> <OPTION selected 
+        value=1>North</OPTION> <OPTION value=2>South</OPTION></SELECT> </TD></TR>
+  <TR>
+    <TD>Category </TD>
+    <TD><SELECT style="WIDTH: 443px" id=CATEGORYID size=5 name=CATEGORYID> 
+        <OPTION selected value=2>BSS</OPTION> <OPTION value=14>NSS-CS</OPTION> 
+        <OPTION value=15>NSS-PS</OPTION> <OPTION value=6>Transmission</OPTION> 
+        <OPTION value=7>Power Supply</OPTION> <OPTION value=3>VAS</OPTION> 
+        <OPTION value=5>COMVERSE</OPTION> <OPTION value=12>Rollout</OPTION> 
+        <OPTION value=13>Network Optimisation</OPTION></SELECT> </TD></TR>
+  <TR>
+    <TD>Severity </TD>
+    <TD><SELECT style="WIDTH: 100%; FONT-FAMILY: Verdana; FONT-SIZE: 10pt" 
+      id=SEVERITYID name=SEVERITYID> <OPTION value=1>1</OPTION> <OPTION 
+        value=2>2</OPTION> <OPTION selected value=3>3</OPTION> <OPTION 
+        value=4>4</OPTION></SELECT> </TD></TR>
+  <TR>
+    <TD>Declarator</TD>
+    <TD><INPUT style="WIDTH: 100%; FONT-FAMILY: Verdana; FONT-SIZE: 10pt" 
+      id=DECLARATOR name=DECLARATOR></TD></TR>
+  <TR>
+    <TD><SPAN id=Label7>Description</SPAN></TD>
+    <TD><TEXTAREA style="WIDTH: 100%; FONT-FAMILY: Verdana; HEIGHT: 127px; FONT-SIZE: 10pt" id=DESCRIPTION name=DESCRIPTION></TEXTAREA></TD></TR>
+  <TR>
+    <TD></TD>
+    <TD align=right><INPUT style="WIDTH: 100px" id=bOk class=button value=Ok type=submit name=bOk>&nbsp; 
+<INPUT style="WIDTH: 100px" id=CANCEL class=button value=CANCEL type=submit name=CANCEL> 
+    </TD></TR></TBODY></TABLE></FORM></DIV>
+<DIV id=footer><A href="http://10.10.164.5/cgi-bin/alexserv">ALEX OSS</A> | <A 
+href="mailto:nh@bee.ac">Here may be some other links</A><BR>2009: <A 
+href="mailto:ninh.nh@beeline.vn">nmc-vietnam</A> 
+</DIV></DIV></DIV></BODY></HTML>
