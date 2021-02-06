@@ -1,0 +1,41 @@
+>>>> Window <<<<
+Title:	Properties
+Class:	#32770
+Position:	320, 54
+Size:	362, 447
+Style:	0x94C820C4
+ExStyle:	0x00010101
+Handle:	0x000305C6
+
+>>>> Control <<<<
+Class:	Internet Explorer_Server
+Instance:	1
+ClassnameNN:	Internet Explorer_Server1
+Name:	
+Advanced (Class):	[CLASS:Internet Explorer_Server; INSTANCE:1]
+ID:	
+Text:	
+Position:	10, 29
+Size:	336, 348
+ControlClick Coords:	309, 173
+Style:	0x56000000
+ExStyle:	0x00000000
+Handle:	0x000205BA
+
+>>>> Mouse <<<<
+Position:	642, 283
+Cursor ID:	2
+Color:	0xF4F4F4
+
+>>>> StatusBar <<<<
+
+>>>> ToolsBar <<<<
+
+>>>> Visible Text <<<<
+OK
+Cancel
+&Apply
+
+
+>>>> Hidden Text <<<<
+Help
