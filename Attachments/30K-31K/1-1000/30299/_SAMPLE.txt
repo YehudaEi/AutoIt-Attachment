@@ -1,0 +1,18 @@
+HETATM    1  N1  LIG     1     -13.807 -11.610  -4.342  1.00  0.00           N
+HETATM    2  N2  LIG     1       7.193 -11.610  -4.342  1.00  0.00           N
+HETATM    3  N3  LIG     1     -13.807   3.056  -4.342  1.00  0.00           N
+HETATM    4  N4  LIG     1       7.193   3.056  -4.342  1.00  0.00           N
+HETATM    5  N5  LIG     1     -13.807 -11.610   8.658  1.00  0.00           N
+HETATM    6  N6  LIG     1       7.193 -11.610   8.658  1.00  0.00           N
+HETATM    7  N7  LIG     1     -13.807   3.056   8.658  1.00  0.00           N
+HETATM    8  N8  LIG     1       7.193   3.056   8.658  1.00  0.00           N
+TER       9      LIG     1 
+CONECT    1    2    3    5
+CONECT    2    1    4    6
+CONECT    3    1    4    7
+CONECT    4    2    3    8
+CONECT    5    1    6    7
+CONECT    6    2    5    8
+CONECT    7    3    5    8
+CONECT    8    4    6    7
+END
