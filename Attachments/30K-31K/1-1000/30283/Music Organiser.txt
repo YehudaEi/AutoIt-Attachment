@@ -1,0 +1,10 @@
+[Defaults]
+Artist=216
+Artist1=20
+Artist2=13
+Albumn=14
+Year=15
+Title=21
+Track=26
+Duration=27
+Bitrate=28
