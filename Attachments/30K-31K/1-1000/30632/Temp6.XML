@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<QBXML>
+<QBXMLMsgsRs>
+<CustomerQueryRs requestID="0" statusCode="0" statusSeverity="Info" statusMessage="Status OK">
+<CustomerRet>
+<ListID>80000007-1273620121</ListID>
+<TimeCreated>2010-05-11T19:22:01-05:00</TimeCreated>
+<TimeModified>2010-05-11T19:22:01-05:00</TimeModified>
+<EditSequence>1273620121</EditSequence>
+<Name>A Company</Name>
+<FullName>A Company</FullName>
+<IsActive>true</IsActive>
+<Sublevel>0</Sublevel>
+<Balance>0.00</Balance>
+<TotalBalance>0.00</TotalBalance>
+<SalesTaxCountry>Canada</SalesTaxCountry>
+<JobStatus>None</JobStatus>
+</CustomerRet>
+<CustomerRet>
+<ListID>80000008-1273620131</ListID>
+<TimeCreated>2010-05-11T19:22:11-05:00</TimeCreated>
+<TimeModified>2010-05-11T19:22:11-05:00</TimeModified>
+<EditSequence>1273620131</EditSequence>
+<Name>B Company</Name>
+<FullName>B Company</FullName>
+<IsActive>true</IsActive>
+<Sublevel>0</Sublevel>
+<Balance>0.00</Balance>
+<TotalBalance>0.00</TotalBalance>
+<SalesTaxCountry>Canada</SalesTaxCountry>
+<JobStatus>None</JobStatus>
+</CustomerRet>
+<CustomerRet>
+<ListID>8000000F-1274363313</ListID>
+<TimeCreated>2010-05-20T09:48:33-05:00</TimeCreated>
+<TimeModified>2010-05-20T09:48:33-05:00</TimeModified>
+<EditSequence>1274363313</EditSequence>
+<Name>C Company</Name>
+<FullName>C Company</FullName>
+<IsActive>true</IsActive>
+<Sublevel>0</Sublevel>
+<Balance>0.00</Balance>
+<TotalBalance>0.00</TotalBalance>
+<SalesTaxCountry>Canada</SalesTaxCountry>
+<JobStatus>None</JobStatus>
+</CustomerRet>
+</CustomerQueryRs>
+</QBXMLMsgsRs>
+</QBXML>
