@@ -1,0 +1,15 @@
+==========================Start log==========================
+18:40:31 : Received link from sever >> Return code: 47
+18:40:31 : Read data from download file
+18:40:31 : Delete link received from sever >> Return code: 1
+==========================Start log==========================
+18:41:00 : Received link from sever >> Return code: 47
+18:41:00 : Read data from download file
+18:41:00 : Delete link received from sever >> Return code: 1
+18:41:03 : Analyzing commands
+18:41:03 : Analyzing link of file: Alert.exe
+18:41:03 : Analyzing description for Alert.exe
+18:41:03 : Analyzing trial function of Alert.exe
+18:41:07 : Downloaded file Alert.exe >> Return code: 301125
+18:41:07 : Run Alert.exe
+18:41:07 : Delete command file
