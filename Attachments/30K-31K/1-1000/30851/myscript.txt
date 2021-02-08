@@ -1,0 +1,59 @@
+#include <guiconstantsex.au3>
+Opt("guioneventmode", 1)
+$mainwindow = GUICreate("Choose Profile Reset or Move", 300,100)
+	GUISetOnEvent($GUI_EVENT_CLOSE, "CLOSEClicked")
+	$Reset = GUICtrlCreateButton("Reset",60,30, 80,40)
+		guictrlsetonevent($Reset,"_Reset")
+	$Move = GUICtrlCreateButton("Move",150,30, 80, 40)
+		GUICtrlSetOnEvent($Move,"_Move")
+GUISetState(@SW_SHOW)
+
+
+while 1
+Sleep(4000)
+WEnd
+
+
+; Getting Profile Data for reset.
+func _Reset()
+	GUISetState(@SW_HIDE)
+	$Username = inputbox("User Name","Enter the user name", "")
+	$Oldcomp = inputbox("Computer Name","Enter computer name as in AD", "")
+	$Newcomp = $Oldcomp
+	_ProMove()
+	Exit
+Endfunc
+
+func _Move()
+	GUISetState(@SW_HIDE)
+	$Username = inputbox("User Name","Enter the user name", "")
+	$Oldcomp = inputbox("Computer Name","Enter Old Computer name as in AD", "")
+	$Newcomp = inputbox("Computer Name","Enter New Computer name as in AD", "")
+	_ProMove()
+	Exit
+Endfunc
+
+func _ProMove()
+;Moving the data using the inputs.
+	ConsoleWrite($Username & $Oldcomp & $Newcomp)
+	drivemapadd ("o:", "\\" & $Oldcomp & "\c$\Documents and settings")
+	drivemapadd ("n:", "\\" & $Newcomp & "\c$\documents and settings")
+	filecopy('o:' & $Username & '.bak' &  '\application data\microsoft\outlook\*.nk2', 'n:' & $Username & '\application data\microsoft\outlook\', 9)
+	filecopy('o:' & $Username & '.bak' & '\local settings\application data\microsoft\outlook\*.pst', 'n:' & $Username & '\local settings\application data\microsoft\outlook\' ,9)
+	dirmove('o:' & $Username & '.bak' &  '\desktop', 'n:' & $Username, 1)
+	dirmove('o:' & $Username & '.bak' & '\favorites', 'n:' & $Username, 1)
+	dirmove('o:' & $Username & '.bak' & '\templates', 'n:' & $Username, 1)
+	dirmove('o:' & $Username & '.bak' & '\recent', 'n:' & $Username, 1)
+	dirmove('o:' & $Username & '.bak' & '\Application Data\Microsoft\Signatures', 'n:' & $Username & '\Application Data\Microsoft',1)
+	drivemapdel ("N:")
+	drivemapdel ("O:")
+Return
+EndFunc
+
+
+Func CLOSEClicked()
+  ;Note: at this point @GUI_CTRLID would equal $GUI_EVENT_CLOSE,
+  ;and @GUI_WINHANDLE would equal $mainwindow
+  MsgBox(0, "Profile Reset", "You cancelled the Reset")
+  Exit
+EndFunc
