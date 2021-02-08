@@ -1,0 +1,43 @@
+>>>> Window <<<<
+Title:	Installing Kaspersky Lab applications.
+Class:	#32770
+Position:	424, 423
+Size:	432, 178
+Style:	0x94CA08C4
+ExStyle:	0x00010101
+Handle:	0x0007055E
+
+>>>> Control <<<<
+Class:	Button
+Instance:	1
+ClassnameNN:	Button1
+Name:	
+Advanced (Class):	[CLASS:Button; INSTANCE:1]
+ID:	6
+Text:	Begin installation
+Position:	150, 117
+Size:	126, 23
+ControlClick Coords:	99, 11
+Style:	0x50030000
+ExStyle:	0x00000004
+Handle:	0x000A051C
+
+>>>> Mouse <<<<
+Position:	676, 576
+Cursor ID:	0
+Color:	0xF0CE87
+
+>>>> StatusBar <<<<
+
+>>>> ToolsBar <<<<
+
+>>>> Visible Text <<<<
+New applications will be installed on your computer: Kaspersky Anti-Virus 6.0 for Windows Workstations MP4 (6.0.4.1424) and  Network Agent (8.0.2090).
+Begin installation
+Cancel
+Save data and exit all running applications before installation beginning.
+
+
+>>>> Hidden Text <<<<
+????? ?????? ?? ?????? ?????????:
+60
