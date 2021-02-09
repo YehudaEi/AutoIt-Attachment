@@ -1,0 +1,61 @@
+; DesktopLock (Überdeckt den Desktop, damit dieser für den User nicht erreichbar ist)
+#include <GUIConstantsEx.au3>
+#include <WindowsConstants.au3>
+
+; #################################################################################################
+; Hilfsfunktionen (Funktionen die beim erstellen od. ausführen der GUI helfen (Keine Ablauffunk.)
+; #################################################################################################
+
+Func _API_SetLayeredWindowAttributes($hwnd, $i_transcolor, $Transparency = 255, $isColorRef = False)
+
+    Local Const $AC_SRC_ALPHA = 1
+    Local Const $ULW_ALPHA = 2
+    Local Const $LWA_ALPHA = 0x2
+    Local Const $LWA_COLORKEY = 0x1
+    If Not $isColorRef Then
+        $i_transcolor = Hex(String($i_transcolor), 6)
+        $i_transcolor = Execute('0x00' & StringMid($i_transcolor, 5, 2) & StringMid($i_transcolor, 3, 2) & StringMid($i_transcolor, 1, 2))
+    EndIf
+    Local $Ret = DllCall("user32.dll", "int", "SetLayeredWindowAttributes", "hwnd", $hwnd, "long", $i_transcolor, "byte", $Transparency, "long", $LWA_COLORKEY + $LWA_ALPHA)
+    Select
+        Case @error
+            Return SetError(@error, 0, 0)
+        Case $Ret[0] = 0
+            Return SetError(4, 0, 0)
+        Case Else
+            Return 1
+    EndSelect
+EndFunc;==>_API_SetLayeredWindowAttributes
+
+
+
+	$desktoplockgui		=	GuiCreate("DesktopLock", 1, 1, 0, 0, $WS_POPUP + $WS_VISIBLE + $DS_SETFOREGROUND, $WS_EX_TOPMOST) ;Initialisiert die GUI mit einer Grösse von 1x1 bei Pixel 0,0
+							WinSetTrans ("DesktopLock", "", 160)
+							GUISetBkColor(0x000000, $desktoplockgui)
+
+							WinMove ("DesktopLock", "", 0, 0, @DesktopWidth, @DesktopHeight) ;Verschiebt die DesktopLock-GUI auf Pixel 0,0 und vergrössert die GUI auf die Desktopweite und -höhe.
+
+	$activewindow="DesktopLock"
+	$progessBarGUI = GUICreate("Progessbar", 256, 64, @DesktopWidth/2-128, @DesktopHeight/2-32, $WS_POPUP + $WS_VISIBLE, BitOR(0x2000000, $WS_EX_TOOLWINDOW, $WS_EX_LAYERED), $desktoplockgui)
+	GUISetBkColor (0x000000, $progessBarGUI)
+	_API_SetLayeredWindowAttributes($progessBarGUI,0x000000,255);set special colour fully transparent
+
+	GUICtrlCreateLabel ("Überprüfe neues USB-Gerät...", 0, 0, 256, 18, -1, $WS_EX_LAYERED)
+	GUICtrlSetFont (-1, 12, -1, -1, "Microsoft Sans Serif")
+	GUICtrlSetColor (-1, 0xEEEEEE)
+	GUICtrlSetBkColor(-1, $GUI_BKCOLOR_TRANSPARENT) ;Macht den Textrahmen Transparent
+
+	$usbProgessBar = GUICtrlCreateProgress (0, 22, 256, 20)
+
+	GUICtrlCreateLabel ("Bitte warten", 0, 46, 96, 14, -1, $WS_EX_LAYERED)
+	GUICtrlSetFont (-1, 10, -1, -1, "Microsoft Sans Serif")
+	GUICtrlSetColor (-1, 0xEEEEEE)
+	GUICtrlSetBkColor(-1, $GUI_BKCOLOR_TRANSPARENT) ;Macht den Textrahmen Transparent
+
+	GUISetState (@SW_SHOW)
+
+
+While 1
+	Sleep (3000)
+	Exit
+WEnd
