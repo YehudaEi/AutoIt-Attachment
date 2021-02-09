@@ -1,0 +1,76 @@
+---------------------------------------------------------------------------------------------------------------
+msgbox = please Exit from every browser and any messenger or bittorrent application. (If not I will automatically kill it)
+---------------------------------------------------------------------------------------------------------------
+
+CREATE A GUI
+
+---------------------------------------------------------------------------------------------------------------
+kill Msn
+kill Skype
+kill yahoo
+kill Xfire
+kill Firefox
+kill googlechrome
+kill opera
+kill safari
+kill avant
+kill iexplore
+---------------------------------------------------------------------------------------------------------------
+C:\WINDOWS\Temp
+
+C:\Documents and Settings\Default User\Cookies
+
+C:\Documents and Settings\Default User\Local Settings\Temp
+
+C:\Documents and Settings\Default User\Local Settings\Temporary Internet Files
+
+C:\Documents and Settings\LocalService\Cookies
+
+C:\Documents and Settings\LocalService\Local Settings\Temp
+
+C:\Documents and Settings\LocalService\Local Settings\Temporary Internet Files
+
+C:\Documents and Settings\NetworkService\Cookies
+
+C:\Documents and Settings\NetworkService\Local Settings\Temp
+
+C:\Documents and Settings\NetworkService\Local Settings\Temporary Internet Files
+
+C:\Documents and Settings\Rendszergazda\Cookies
+
+C:\Documents and Settings\Rendszergazda\Local Settings\Temp
+
+C:\Documents and Settings\Rendszergazda\Local Settings\Temporary Internet Files
+
+C:\Documents and Settings\Rendszergazda\Local Settings\Temp\History
+
+C:\Documents and Settings\Unc3nZureD\Local Settings\Application Data\Google\Chrome\User Data\Default
+
+C:\Documents and Settings\Unc3nZureD\Local Settings\Application Data\Opera\Opera\cache
+
+C:\Documents and Settings\Unc3nZureD\Recent
+
+C:\Documents and Settings\Unc3nZureD\Application Data\Macromedia\Flash Player
+
+C:\WINDOWS\system32\wbem\Logs
+
+C:\WINDOWS\system32\LogFiles\PunkBuster
+
+C:\Documents and Settings\All Users\Application Data\Microsoft\Dr Watson
+
+C:\Documents and Settings\Unc3nZureD\Application Data\Avant Profiles\.default\conf
+
+C:\Documents and Settings\Unc3nZureD\Application Data\Avant Profiles\.default\conf.dat.bak
+
+C:\Documents and Settings\Unc3nZureD\Application Data\BitTorrent
+
+C:\Documents and Settings\Unc3nZureD\Application Data\Microsoft\Windows Live\Toolbar\Feeds
+
+C:\Documents and Settings\Unc3nZureD\Local Settings\Application Data\Microsoft\Messenger\ContactsLog.txt
+---------------------------------------------------------------------------------------------------------------
+Search Thumbs.db & delete all
+---------------------------------------------------------------------------------------------------------------
+Empty Recycle Bin!
+---------------------------------------------------------------------------------------------------------------
+Run cleanmgr.exe
+---------------------------------------------------------------------------------------------------------------
