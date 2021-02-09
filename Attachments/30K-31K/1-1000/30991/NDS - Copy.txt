@@ -1,0 +1,4 @@
+@ echo off
+
+"H:\Arcade\Nintendo DS\0.9.6\DeSmuME_x64.exe" %1
+Start /wait nds.exe
