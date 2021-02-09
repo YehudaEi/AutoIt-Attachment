@@ -1,0 +1,7 @@
+[Title of Window]
+Text=Some Text in window
+Send=Keys to send
+;example
+[Registry Editor]
+Text=
+Send=!{F4}
