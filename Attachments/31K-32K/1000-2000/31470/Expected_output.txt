@@ -1,0 +1,110 @@
+**********************************
+0
+**********************************
+MM_Procure to Pay
+
+Business Processes
+
+**********************************
+
+ 	Business Blueprint
+
+* See if Info shuttle provides meta-data info too..
+
+
+Name: 	Solman document
+Documentation Type: 	Additional Documentation
+
+Scenarios to Work Centers to ITIL
+The "Scenarios" of version 3 is repacked in version 4 
+
+Name: 	scenario docu
+Documentation Type: 	Additional Documentation
+
+Document for MM_Procure to Pay Scenario.
+
+1.Purchase Requisition.
+
+1.1.1 
+
+ 	Business Blueprint
+
+* See if Info shuttle provides meta-data info too..
+
+
+Name: 	Solman document
+Documentation Type: 	Additional Documentation
+
+Scenarios to Work Centers to ITIL
+The "Scenarios" of version 3 is repacked in version 4 
+
+Name: 	scenario docu
+Documentation Type: 	Additional Documentation
+
+Document for MM_Procure to Pay Scenario.
+
+1.Purchase Requisition.
+
+**********************************
+1
+**********************************
+
+Business Processes
+
+Purchase Requisition
+
+**********************************
+
+**********************************
+2
+**********************************
+
+Purchase Requisition
+
+Create Purchase Requisition
+
+**********************************
+
+The Requirements
+
+
+**********************************
+3
+**********************************
+
+Create Purchase Requisition
+
+PR Report
+
+**********************************
+
+ Menu Path
+From the SAP R/3 Screen, select the path:
+
+Logistics >> Materials management >> Purchasing >>
+
+/NME51
+
+
+**********************************
+4
+**********************************
+
+PR Report
+
+Quotation
+
+**********************************
+PR Report
+
+The PR report is generated.
+
+**********************************
+5
+**********************************
+
+Quotation
+
+Request for Quotation
+
+**********************************
