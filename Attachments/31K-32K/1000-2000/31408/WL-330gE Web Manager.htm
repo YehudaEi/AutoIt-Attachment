@@ -1,0 +1,240 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0050)http://223.223.223.1/Advanced_Wireless_Content.asp -->
+<HTML><HEAD><TITLE>WL-330gE Web Manager</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=UTF-8">
+<META http-equiv=Pragma content=no-cache><LINK media=screen 
+href="WL-330gE%20Web%20Manager_files/style.css" type=text/css 
+rel=stylesheet></LINK>
+<SCRIPT language=JavaScript src="WL-330gE%20Web%20Manager_files/overlib.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT language=JavaScript src="WL-330gE%20Web%20Manager_files/general.js" 
+type=text/javascript></SCRIPT>
+
+<META content="MSHTML 6.00.6000.17063" name=GENERATOR>
+<meta name="NetsparkQuiltingResult" total-length="15211" removed="0" rules-found="w9639,w3123,w6750,w2341,w7587,w240,w8757,w2918,w4947,w6769,w5189,w5191,w4473" />
+</HEAD>
+<BODY onload=load_body() onunload="return unload_body();">
+<DIV id=overDiv 
+style="Z-INDEX: 1000; VISIBILITY: hidden; POSITION: absolute"></DIV>
+<FORM name=form action=apply.cgi method=get><!-- Table for the conntent page -->
+<TABLE cellSpacing=0 cellPadding=0 width=666 border=0><INPUT type=hidden 
+  value=Advanced_Wireless_Content.asp name=current_page> <INPUT type=hidden 
+  value=Advanced_ACL_Content.asp name=next_page> <INPUT type=hidden 
+  name=next_host> <INPUT type=hidden value=WLANConfig11a;WLANConfig11b; 
+  name=sid_list> <INPUT type=hidden name=group_id> <INPUT type=hidden value=0 
+  name=modified> <INPUT type=hidden name=action_mode> <INPUT type=hidden 
+  value=EN name=preferred_lang> <INPUT type=hidden value=ap name=exmode> <INPUT 
+  type=hidden value=IP_Routed name=wan_route_mode> <INPUT type=hidden value=1 
+  name=wl_gmode_protection_x> <!--
+<input type="hidden" name="mssid_ssid_x0" value="">
+<input type="hidden" name="mssid_ssid_2_x0" value="">
+<input type="hidden" name="mssid_ssid_x1" value="">
+<input type="hidden" name="mssid_ssid_x2" value="">
+<input type="hidden" name="mssid_ssid_x3" value="">
+--><INPUT 
+  type=hidden value=AMTK_25 name=wl_ssid_org> <INPUT type=hidden value=AMTK_25 
+  name=wl_ssid2> <INPUT type=hidden value=guest name=wl_guest_ssid_2> <INPUT 
+  type=hidden value=2 name=wl_wpa_mode> <INPUT type=hidden 
+  value=z1y2x3w4v5u6t7s8r9q0p1o2n3m4l5k6j7i8h9g0f1e2d3c4b5a6 
+  name=wl_wpa_psk_org> <INPUT type=hidden name=wl_phrase_x_org> <INPUT 
+  type=hidden name=wl_key1_org> <INPUT type=hidden name=wl_key2_org> <INPUT 
+  type=hidden name=wl_key3_org> <INPUT type=hidden name=wl_key4_org> 
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE borderColor=#e0e0e0 cellSpacing=0 cellPadding=0 width=666 
+        border=1><TBODY>
+        <TR class=content_header_tr>
+          <TD class=content_header_td_title colSpan=2>Wireless - 
+        Interface</TD></TR>
+        <TR>
+          <TD class=content_header_td 
+          onmouseover="return overlib('Assign an identification string, consisting of up to 32 characters, for your WLAN.', LEFT);" 
+          onmouseout="return nd();">SSID:</TD>
+          <TD class=content_input_td><INPUT class=content_input_fd 
+            onkeypress="return is_string(this)" onblur=validate_string4(this) 
+            maxLength=32 onchange=page_changed() size=32 value=AMTK_25 
+            name=wl_ssid> </TD></TR>
+        <TR>
+          <TD class=content_header_td 
+          onmouseover="return overlib('Select the operating radio channel', LEFT);" 
+          onmouseout="return nd();">Channel: </TD>
+          <TD class=content_input_td><SELECT class=content_input_fd 
+            onchange="return change_common(this, 'WLANConfig11b', 'wl_channel')" 
+            name=wl_channel> <OPTION value=0>Auto</OPTION><OPTION 
+              value=1>1</OPTION><OPTION value=2>2</OPTION><OPTION 
+              value=3>3</OPTION><OPTION value=4 selected>4</OPTION><OPTION 
+              value=5>5</OPTION><OPTION value=6>6</OPTION><OPTION 
+              value=7>7</OPTION><OPTION value=8>8</OPTION><OPTION 
+              value=9>9</OPTION><OPTION value=10>10</OPTION><OPTION 
+              value=11>11</OPTION></SELECT></TD></TR>
+        <TR>
+          <TD class=content_header_td 
+          onmouseover="return overlib('This field indicates the mode of 802.11g interface. Selecting Auto allows 802.11g and 802.11b to connect to your device. Selecting 54g Only maximizes performance, but 802.11b client is not allowed to connect to your device. If 54g Protection is checked, G-Mode protection of 11g traffic is enabled automatically in the presence of 11b traffic.', LEFT);" 
+          onmouseout="return nd();">Wireless Mode:</TD>
+          <TD class=content_input_td><SELECT class=content_input_fd 
+            onchange="return change_common(this, 'WLANConfig11b', 'wl_gmode')" 
+            name=wl_gmode> <OPTION class=content_input_fd value=1 
+              selected>Auto</OPTION> <OPTION class=content_input_fd value=4>54G 
+              Only</OPTION> <OPTION class=content_input_fd value=0>802.11B 
+              Only</OPTION></SELECT> <INPUT style="MARGIN-LEFT: 30px" 
+            onclick="return change_common_radio(this, 'WLANConfig11b', 'wl_gmode_check', '1')" 
+            type=checkbox value="" name=wl_gmode_check>54g Protection</INPUT> 
+        </TD></TR>
+        <TR>
+          <TD class=content_header_td 
+          onmouseover="return overlib('This field indicates the method used to authenticate wireless users. Selecting different Authentication Method, different encryption scheme will be applied.', LEFT);" 
+          onmouseout="return nd();">Authentication Method:</TD>
+          <TD class=content_input_td><SELECT class=content_input_fd 
+            onchange="return change_common(this, 'WLANConfig11b', 'wl_auth_mode')" 
+            name=wl_auth_mode> <OPTION class=content_input_fd value=open>Open 
+              System</OPTION> <OPTION class=content_input_fd value=shared>Shared 
+              Key</OPTION> <OPTION class=content_input_fd 
+              value=psk>WPA-Personal</OPTION> <OPTION class=content_input_fd 
+              value=psk selected>WPA2-Personal</OPTION> <OPTION 
+              class=content_input_fd value=psk>WPA-Auto-Personal</OPTION> 
+              <OPTION class=content_input_fd value=wpa>WPA-Enterprise</OPTION> 
+              <OPTION class=content_input_fd value=wpa2>WPA2-Enterprise</OPTION> 
+              <OPTION class=content_input_fd value=radius>Radius with 
+              802.1x</OPTION></SELECT> </TD></TR>
+        <TR>
+          <TD class=content_header_td 
+          onmouseover="return overlib('This field indicates the encryption method used to encrypt data while WPA encryption is enabled.', LEFT);" 
+          onmouseout="return nd();">WPA Encryption: </TD>
+          <TD class=content_input_td><SELECT class=content_input_fd 
+            onchange="return change_common(this, 'WLANConfig11b', 'wl_crypto')" 
+            name=wl_crypto><OPTION class=content_input_fd 
+              value=tkip>TKIP</OPTION><OPTION class=content_input_fd 
+              value=aes>AES</OPTION><OPTION class=content_input_fd 
+              value=tkip+aes selected>TKIP+AES</OPTION></SELECT></TD></TR>
+        <TR>
+          <TD class=content_header_td 
+          onmouseover="return overlib('WPA Pre-shared key should be more than 7 characters and less than 64 characters!!! If you leave this field blank, system will assign 12345678 as your passphrase.', LEFT);" 
+          onmouseout="return nd();">WPA Pre-Shared Key: </TD>
+          <TD class=content_input_td>
+            <SCRIPT language=JavaScript 
+            src="WL-330gE%20Web%20Manager_files/md5.js" 
+            type=text/javascript></SCRIPT>
+            <INPUT class=content_input_fd 
+            onblur="return validate_wlphrase('WLANConfig11b', 'wl_wpa_psk', this)" 
+            onkeyup="return is_wlphrase('WLANConfig11b', 'wl_wpa_psk', this)" 
+            maxLength=63 size=32 
+            value=z1y2x3w4v5u6t7s8r9q0p1o2n3m4l5k6j7i8h9g0f1e2d3c4b5a6 
+            name=wl_wpa_psk></TD></TR>
+        <TR>
+          <TD class=content_header_td 
+          onmouseover="return overlib('This field indicates the encryption method used to encrypt data while WEP encryption is enabled.', LEFT);" 
+          onmouseout="return nd();">WEP Encryption: </TD>
+          <TD class=content_input_td><SELECT class=content_input_fd 
+            onchange="return change_common(this, 'WLANConfig11b', 'wl_wep_x')" 
+            name=wl_wep_x><OPTION class=content_input_fd value=0 
+              selected>None</OPTION><OPTION class=content_input_fd 
+              value=1>WEP-64bits</OPTION><OPTION class=content_input_fd 
+              value=2>WEP-128bits</OPTION></SELECT></TD></TR>
+        <TR>
+          <TD class=content_header_td 
+          onmouseover="return overlib('Selecting HEX allows the WEP key field to accept 10 or 26 hexadecimal digits(0~9, a~f, A~F). Selecting ASCII allows the WEP key field to accept 5 or 13 ASCII characters.', LEFT);" 
+          onmouseout="return nd();">WEP Key Type:</TD>
+          <TD class=content_input_td><SELECT class=content_input_fd 
+            onchange="return change_common(this, 'WLANConfig11b', 'wl_key_type')" 
+            name=wl_key_type> <OPTION class=content_input_fd value=0 
+              selected>HEX</OPTION> <OPTION class=content_input_fd 
+              value=1>ASCII</OPTION></SELECT> </TD></TR>
+        <TR>
+          <TD class=content_header_td 
+          onmouseover="return overlib('Selecting WEP-64bits or WEP-128bits encryption method, this field will be used to generate four WEP keys automatically.', LEFT);" 
+          onmouseout="return nd();">Passphrase: </TD>
+          <TD class=content_input_td>
+            <SCRIPT language=JavaScript 
+            src="WL-330gE%20Web%20Manager_files/md5.js" 
+            type=text/javascript></SCRIPT>
+            <INPUT class=content_input_fd 
+            onblur="return validate_wlphrase('WLANConfig11b', 'wl_phrase_x', this)" 
+            onkeyup="return is_wlphrase('WLANConfig11b', 'wl_phrase_x', this)" 
+            maxLength=64 
+            onchange="return is_wlphrase('WLANConfig11b', 'wl_phrase_x', this)" 
+            size=32 name=wl_phrase_x></TD></TR>
+        <TR>
+          <TD class=content_header_td>WEP Key 1 : </TD>
+          <TD class=content_input_td><INPUT class=content_input_fd 
+            onkeypress="return is_wlkey(this, 'WLANConfig11b')" 
+            onblur="return validate_wlkey(this, 'WLANConfig11b')" 
+            onkeyup="return change_wlkey(this, 'WLANConfig11b')" maxLength=32 
+            size=32 name=wl_key1></TD></TR>
+        <TR>
+          <TD class=content_header_td>WEP Key 2 : </TD>
+          <TD class=content_input_td><INPUT class=content_input_fd 
+            onkeypress="return is_wlkey(this, 'WLANConfig11b')" 
+            onblur="return validate_wlkey(this, 'WLANConfig11b')" 
+            onkeyup="return change_wlkey(this, 'WLANConfig11b')" maxLength=32 
+            size=32 name=wl_key2></TD></TR>
+        <TR>
+          <TD class=content_header_td>WEP Key 3 : </TD>
+          <TD class=content_input_td><INPUT class=content_input_fd 
+            onkeypress="return is_wlkey(this, 'WLANConfig11b')" 
+            onblur="return validate_wlkey(this, 'WLANConfig11b')" 
+            onkeyup="return change_wlkey(this, 'WLANConfig11b')" maxLength=32 
+            size=32 name=wl_key3></TD></TR>
+        <TR>
+          <TD class=content_header_td>WEP Key 4 : </TD>
+          <TD class=content_input_td><INPUT class=content_input_fd 
+            onkeypress="return is_wlkey(this, 'WLANConfig11b')" 
+            onblur="return validate_wlkey(this, 'WLANConfig11b')" 
+            onkeyup="return change_wlkey(this, 'WLANConfig11b')" maxLength=32 
+            size=32 name=wl_key4></TD></TR>
+        <TR>
+          <TD class=content_header_td 
+          onmouseover="return overlib('This field indicates the default transmit WEP key.', LEFT);" 
+          onmouseout="return nd();">Key Index: </TD>
+          <TD class=content_input_td><SELECT class=content_input_fd 
+            onchange="return change_common(this, 'WLANConfig11b', 'wl_key')" 
+            name=wl_key><OPTION class=content_input_fd 
+              value=1>Key1</OPTION><OPTION class=content_input_fd value=2 
+              selected>Key2</OPTION><OPTION class=content_input_fd 
+              value=3>Key3</OPTION><OPTION class=content_input_fd 
+              value=4>Key4</OPTION></SELECT></TD></TR>
+        <TR>
+          <TD class=content_header_td 
+          onmouseover="return overlib('This field specifies the time interval, in seconds, that WPA group key is changed. 0 means no periodic key-change is required.', LEFT);" 
+          onmouseout="return nd();">Network Key Rotation Interval: </TD>
+          <TD class=content_input_td><INPUT class=content_input_fd 
+            onkeypress="return is_number(this)" 
+            onblur="validate_range(this, 0, 86400)" maxLength=5 size=5 value=0 
+            name=wl_wpa_gtk_rekey></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD>
+      <TABLE borderColor=#e0e0e0 cellSpacing=0 cellPadding=0 width=666 
+        border=2><TBODY></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD>
+      <TABLE borderColor=#b0b0b0 cellSpacing=0 cellPadding=0 width=666 
+        border=1><TBODY>
+        <TR bgColor=#cccccc>
+          <TD colSpan=3><FONT face=arial size=2><B>&nbsp;</B></FONT></TD></TR>
+        <TR bgColor=#ffffff>
+          <TD id=Confirm width="34%" height=25>
+            <DIV align=center><FONT face=Arial><INPUT class=inputSubmit onmouseover=buttonOver(this) style="CURSOR: pointer" onclick="return onSubmitCtrl(this, ' Restore ');" onmouseout=buttonOut(this) type=submit value=" Restore " name=action></FONT></DIV></TD>
+          <TD width="33%" height=25>
+            <DIV align=center><FONT face=Arial><INPUT class=inputSubmit onmouseover=buttonOver(this) style="CURSOR: pointer" onclick="return onSubmitCtrl(this, ' Finish ');" onmouseout=buttonOut(this) type=submit value=" Finish " name=action></FONT></DIV></TD>
+          <TD width="33%" height=25>
+            <DIV align=center><FONT face=Arial><INPUT class=inputSubmit onmouseover=buttonOver(this) style="CURSOR: pointer" onclick="return onSubmitCtrl(this, ' Apply ');" onmouseout=buttonOut(this) type=submit value=" Apply " name=action></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD>
+      <TABLE borderColor=#b0b0b0 cellSpacing=0 cellPadding=0 width=666 
+        border=1><TBODY>
+        <TR>
+          <TD width=616 bgColor=#ffbb00 colSpan=2 height=25></TD></TR>
+        <TR bgColor=#ffffff>
+          <TD class=content_header_td_15 align=left>Restore: </TD>
+          <TD class=content_input_td_padding align=left>Clear the above 
+            settings and restore the settings in effect.</TD></TR>
+        <TR bgColor=#ffffff>
+          <TD class=content_header_td_15 align=left>Finish: </TD>
+          <TD class=content_input_td_padding align=left>Confirm all settings 
+            and restart WL-330gE now.</TD></TR>
+        <TR bgColor=#ffffff>
+          <TD class=content_header_td_15 align=left>Apply: </TD>
+          <TD class=content_input_td_padding align=left>Confirm above settings 
+            and 
+continue.</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></FORM></BODY></HTML>
