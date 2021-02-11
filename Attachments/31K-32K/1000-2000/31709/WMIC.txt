@@ -1,0 +1,147 @@
+[WMIC_PATH]
+Key=C:\WINDOWS\system32\wbem\WMIC.exe
+
+[WMIC_COMMANDS]
+Key=
+Key=product where "vendor like '%adobe%'" get name,version,identifyingNumber
+Key=
+Key=product where "vendor like '%Sun%'" get name,version,identifyingNumber
+Key=
+Key=product where "name like 'Configuration Manager Client%'" get name,version,identifyingNumber
+Key=
+Key=product where "name like '%Shock%'" get name,version,identifyingNumber
+Key=
+Key=product where "name like 'Spelling Dictionaries%'" get name,version,identifyingNumber
+Key=
+Key=product where "name like 'Adobe%'" get name,version,identifyingNumber
+Key=
+Key=product where "name like '%Flash%'" get name,version,identifyingNumber
+Key=
+Key=product where "name like '%Filler%'" get name,version,identifyingNumber
+Key=
+Key=product where "name like '%Dell%'" get name,version,identifyingNumber
+Key=
+Key=product where "name like '%AIR%'" get name,version,identifyingNumber
+Key=
+Key=product where "name like '%BelMonitor%'" get name,version,identifyingNumber
+Key=
+Key=product get name,version,vendor,identifyingNumber
+Key=
+Key=wmic qfe list /format:list | find "HotFixID"
+Key=
+Key=path Win32_PnPEntity where "PNPDeviceID like '%VEN%'" get Caption, Status, Manufacturer, Service
+Key=
+Key=path Win32_VideoController get  caption, CurrentHorizontalResolution, CurrentVerticalResolution, Description, DriverVersion, AdapterRAM /format:list
+Key=
+Key=cpu get systemname, name, caption, description, extclock, maxclockspeed, manufacturer
+Key=
+Key=process call create 'notepad.exe'
+Key=
+Key=bios get caption, manufacturer, smbiosbiosversion, version
+Key=
+Key=path win32_process get Caption,Processid,Commandline
+Key=
+Key=process list brief /every:1
+Key=
+Key=startup list full
+Key=
+Key=process list brief | find "cmd.exe"
+Key=
+Key=nicconfig where IPEnabled='true'
+Key=
+Key=wmic partition get BlockSize, StartingOffset, Name, Index
+Key=
+Key=WMISET list brief
+Key=
+Key=CPU list brief
+Key=
+Key=Acrobat.com 2.0.0
+Key=product where IdentifyingNumber="{6421F085-1FAA-DE13-D02A-CFB412C522A4}" call uninstall
+Key=
+Key=Acrobat.com  1.6.65
+Key=product where IdentifyingNumber="{287ECFA4-719A-2143-A09B-D6A12DE54E40}" call uninstall
+Key=
+Key=Acrobat.com  0.0.0
+Key=product where IdentifyingNumber="{C86E7C99-E4AD-79C7-375B-1AEF9A91EC2B}" call uninstall
+Key=
+Key=Adobe AIR 1.5.3.9120 / 1.5.3.9130
+Key=product where IdentifyingNumber="{A2BCA9F1-566C-4805-97D1-7FDC93386723}" call uninstall
+Key=
+Key=Adobe AIR  1.5.0.7220
+Key=product where IdentifyingNumber="{A2BCA9F1-566C-4805-97D1-7FDC93386723}" call uninstall
+Key=
+Key=Adobe AIR  1.1.0.5790
+Key=product where IdentifyingNumber="{197A3012-8C85-4FD3-AB66-9EC7E13DB92E}" call uninstall
+Key=
+Key=Spelling Dictionaries Support For Adobe Reader 8
+Key=product where IdentifyingNumber="{AC76BA86-7AD7-5464-3428-800000000003}" call uninstall
+Key=
+Key=Java(TM) 6 Update 13
+Key=product where IdentifyingNumber="{26A24AE4-039D-4CA4-87B4-2F83216013FF}" call uninstall
+Key=
+Key=JRE 6 U 16
+Key=product where IdentifyingNumber="{26A24AE4-039D-4CA4-87B4-2F83216016FF}" call uninstall
+Key=
+Key=JRE 6 U 17
+Key=product where IdentifyingNumber="{26A24AE4-039D-4CA4-87B4-2F83216017FF}" call uninstall
+Key=
+Key=JRE 6 U 18
+Key=product where IdentifyingNumber="{26A24AE4-039D-4CA4-87B4-2F83216018FF}" call uninstall
+Key=
+Key=
+Key=JRE 6 U 19
+Key=product where IdentifyingNumber="{26A24AE4-039D-4CA4-87B4-2F83216019FF}" call uninstall
+Key=
+Key=JRE 6 U 20
+Key=product where IdentifyingNumber="{26A24AE4-039D-4CA4-87B4-2F83216020FF}" call uninstall
+Key=
+Key=J2SE Runtime Environment 5.0 Update 18
+Key=product where IdentifyingNumber="{3248F0A8-6813-11D6-A77B-00B0D0150180}" call uninstall
+Key=
+Key=Flash Player 10.1.53.64 ActiveX
+Key=product where IdentifyingNumber="{FFB768E4-E427-4553-BC36-A11F5E62A94D}" call uninstall
+Key=
+Key=Flash Player 10.0.2.54 ActiveX
+Key=product where IdentifyingNumber="{3A6829EF-0791-4FDD-9382-C690DD0821B9}" call uninstall
+Key=
+Key=Flash Player 10.0.42.34 ActiveX
+Key=product where IdentifyingNumber="{24762012-C6C8-4AAD-A02D-71A009FA1683}" call uninstall
+Key=
+Key=Flash Player 10.0.32.18 ActiveX
+Key=product where IdentifyingNumber="{B7B3E9B3-FB14-4927-894B-E9124509AF5A}" call uninstall
+Key=
+Key=Adobe Flash Player 9.0.47.0 ActiveX
+Key=product where IdentifyingNumber="{786547F9-59BB-4FA3-B2D8-327FF1F14870}" call uninstall
+Key=
+Key=Adobe Flash Player 9.0.16.0 ActiveX
+Key=product where IdentifyingNumber="{BB65C393-C76E-4F06-9B0C-2124AA8AF97B}" call uninstall
+Key=
+Key=Flash Player 10.0.2.54 Plugin
+Key=product where IdentifyingNumber="{03DEEAD2-F3B7-45BF-9006-A25D015F00D2}" call uninstall
+Key=
+Key=Flash Player 10.0.42.34 Plugin
+Key=product where IdentifyingNumber="{D09E3C22-6573-4723-9962-B3B2ED761754}" call uninstall
+Key=
+Key=Shockwave Player 11.5.6.606
+Key=product where IdentifyingNumber="{9A9F7268-3899-4443-B071-B332493925AA}" call uninstall
+Key=
+Key=Shockwave Player 10.1.4.020
+Key=product where IdentifyingNumber="{A7DB362E-16DC-4E29-8A34-E74381E00B5B}" call uninstall
+Key=
+Key=Shockwave Player 11.5.1.601
+Key=product where IdentifyingNumber="{D8DFA46A-39F7-4368-810D-18AFCFDDAEAF}" call uninstall
+Key=
+Key=Shockwave Player 11.5.2.602
+Key=product where IdentifyingNumber="{7D0F2155-D7D3-42CE-903F-684ADD77FF89}" call uninstall
+Key=
+Key=Adobe Shockwave Player         10.1.4.020
+Key=product where IdentifyingNumber="{1BDC9633-895B-4842-BCB6-8FA1EC2A3C5A}" call uninstall
+Key=
+Key=Adobe Shockwave Player         11.0
+Key=product where IdentifyingNumber="{AD72CFB4-C2BF-424E-9DF0-C7BAD1F30A11}" call uninstall
+Key=
+Key=QuickTime 7.64.17.73
+Key=product where IdentifyingNumber="{A429C2AE-EBF1-4F81-A221-1C115CAADDAD}" call uninstall
+Key=
+Key=Apple Application  Support 1.0
+Key=product where IdentifyingNumber="{0C34B801-6AEC-4667-B053-03A67E2D0415}" call uninstall
