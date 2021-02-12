@@ -1,0 +1,7 @@
+taskkill /f /im adc.exe /t
+taskkill /f /im adb.exe /t
+
+:: Or you can select to wait for the task to finish
+
+start "" /B /Wait taskkill /f /im adb.exe /t
+start "" /B /Wait taskkill /f /im notepad.exe /t
