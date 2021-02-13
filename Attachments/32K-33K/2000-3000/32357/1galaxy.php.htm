@@ -1,0 +1,345 @@
+<html><head>
+
+<title></title>
+<link rel="shortcut icon" href="http://www.zorgempire.net/favicon.ico">
+<link rel="stylesheet" type="text/css" 
+href="1galaxy.php_files/default.css"><link rel="stylesheet" 
+type="text/css" href="1galaxy.php_files/formate.css"><link 
+rel="stylesheet" type="text/css" href="1galaxy.php_files/bgimage.css">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<script type="text/javascript" src="1galaxy.php_files/overlib.js"></script>
+</head><body onunload="" style="overflow: auto;">
+<center>
+<div style="top: 10px;" id="content"><script language="JavaScript">
+function galaxy_submit(value) {
+	document.getElementById('auto').name = value;
+	document.getElementById('galaxy_form').submit();
+}
+
+function fenster(target_url,win_name) {
+	var new_win = window.open(target_url,win_name,'resizable=yes,scrollbars=yes,menubar=no,toolbar=no,width=640,height=480,top=0,left=0');
+	new_win.focus();
+}
+</script>
+<script language="JavaScript" src="1galaxy.php_files/tw-sack.js"></script>
+<script type="text/javascript">
+
+var ajax = new sack();
+var strInfo = "";
+function whenResponse () {
+	retVals   = this.response.split("|");
+	Message   = retVals[0];
+	Infos     = retVals[1];
+	retVals   = Infos.split(" ");
+	UsedSlots = retVals[0];
+	SpyProbes = retVals[1];
+	Recyclers = retVals[2];
+	Missiles  = retVals[3];
+	retVals   = Message.split(";");
+	CmdCode   = retVals[0];
+	strInfo   = retVals[1];
+	addToTable("done", "success");
+	changeSlots( UsedSlots );
+	setShips("probes", SpyProbes );
+	setShips("recyclers", Recyclers );
+	setShips("missiles", Missiles );
+}
+
+function doit (order, galaxy, system, planet, planettype, shipcount) {
+	ajax.requestFile = "flotenajax.php?action=send";
+	ajax.runResponse = whenResponse;
+	ajax.execute = true;
+
+	ajax.setVar("thisgalaxy", 2);
+	ajax.setVar("thissystem", 257);
+	ajax.setVar("thisplanet", 14);
+	ajax.setVar("thisplanettype", 1);
+	ajax.setVar("mission", order);
+	ajax.setVar("galaxy", galaxy);
+	ajax.setVar("system", system);
+	ajax.setVar("planet", planet);
+	ajax.setVar("planettype", planettype);
+	if (order == 6)
+		ajax.setVar("ship210", shipcount);
+	if (order == 7) {
+		ajax.setVar("ship208", 1);
+
+		ajax.setVar("ship203", 2);
+
+	}
+	if (order == 8)
+		ajax.setVar("ship209", shipcount);
+
+	ajax.runAJAX();
+}
+
+function addToTable(strDataResult, strClass) {
+	var e = document.getElementById('fleetstatusrow');
+	var e2 = document.getElementById('fleetstatustable');
+	e.style.display = '';
+	if(e2.rows.length > 2) {
+		e2.deleteRow(2);
+	}
+	var row = e2.insertRow(0);
+	var td1 = document.createElement("td");
+	var td1text = document.createTextNode(strInfo);
+	td1.appendChild(td1text);
+	var td2 = document.createElement("td");
+	var span = document.createElement("span");
+	var spantext = document.createTextNode(strDataResult);
+	var spanclass = document.createAttribute("class");
+	spanclass.nodeValue = strClass;
+	span.setAttributeNode(spanclass);
+	span.appendChild(spantext);
+	td2.appendChild(span);
+	row.appendChild(td1);
+	row.appendChild(td2);
+}
+
+function changeSlots(slotsInUse) {
+	var e = document.getElementById('slots');
+	e.innerHTML = slotsInUse;
+}
+
+function setShips(ship, count) {
+	var e = document.getElementById(ship);
+	e.innerHTML = count;
+}
+</script>
+<br><br><form action="galaxy.php?mode=1" method="post" id="galaxy_form"><input
+ id="auto" value="dr" type="hidden"><table border="0"><tbody><tr><td><table><tbody><tr><td
+ class="c" colspan="3">Galaxy</td></tr><tr><td class="l"><input 
+name="galaxyLeft" value="&lt;-" onclick="galaxy_submit('galaxyLeft')" 
+type="button"></td><td class="l"><input gtbfieldid="3" name="galaxy" 
+value="2" size="5" maxlength="3" tabindex="1" type="text"></td><td 
+class="l"><input name="galaxyRight" value="-&gt;" 
+onclick="galaxy_submit('galaxyRight')" type="button"></td></tr></tbody></table></td><td><table><tbody><tr><td
+ class="c" colspan="3">System</td></tr><tr><td class="l"><input 
+name="systemLeft" value="&lt;-" onclick="galaxy_submit('systemLeft')" 
+type="button"></td><td class="l"><input gtbfieldid="4" name="system" 
+value="258" size="5" maxlength="3" tabindex="2" type="text"></td><td 
+class="l"><input name="systemRight" value="-&gt;" 
+onclick="galaxy_submit('systemRight')" type="button"></td></tr></tbody></table></td></tr><tr><td
+ class="l" colspan="2" align="center"> <input value="Display" 
+type="submit"></td></tr></tbody></table></form><table width="569"><tbody>
+<tr><td class="c" colspan="8">System 2:258</td></tr><tr><td class="c">Slot</td><td
+ class="c">Planet</td><td class="c">Name (Activity)</td><td class="c">Moon</td><td
+ class="c">DF</td><td class="c">Player (Status)</td><td class="c">Alliance</td><td
+ class="c">Actions</td></tr>
+<tr>
+<th width="30"><a href="#">1</a></th>
+<th width="30"></th>
+<th style="white-space: nowrap;" width="130"></th>
+<th style="white-space: nowrap;" width="30"></th>
+<th style="white-space: nowrap;" width="30"></th>
+<th width="150"></th>
+<th width="80"></th>
+<th style="white-space: nowrap;" width="125"></th>
+</tr>
+<tr>
+<th width="30"><a href="#">2</a></th>
+<th width="30"></th>
+<th style="white-space: nowrap;" width="130"></th>
+<th style="white-space: nowrap;" width="30"></th>
+<th style="white-space: nowrap;" width="30"></th>
+<th width="150"></th>
+<th width="80"></th>
+<th style="white-space: nowrap;" width="125"></th>
+</tr>
+<tr>
+<th width="30"><a href="#">3</a></th>
+<th width="30"></th>
+<th style="white-space: nowrap;" width="130"></th>
+<th style="white-space: nowrap;" width="30"></th>
+<th style="white-space: nowrap;" width="30"></th>
+<th width="150"></th>
+<th width="80"></th>
+<th style="white-space: nowrap;" width="125"></th>
+</tr>
+<tr>
+<th width="30"><a href="#">4</a></th>
+<th width="30"></th>
+<th style="white-space: nowrap;" width="130"></th>
+<th style="white-space: nowrap;" width="30"></th>
+<th style="white-space: nowrap;" width="30"></th>
+<th width="150"></th>
+<th width="80"></th>
+<th style="white-space: nowrap;" width="125"></th>
+</tr>
+<tr>
+<th width="30"><a href="#">5</a></th>
+<th width="30"></th>
+<th style="white-space: nowrap;" width="130"></th>
+<th style="white-space: nowrap;" width="30"></th>
+<th style="white-space: nowrap;" width="30"></th>
+<th width="150"></th>
+<th width="80"></th>
+<th style="white-space: nowrap;" width="125"></th>
+</tr>
+<tr>
+<th width="30"><a href="#" tabindex="7">6</a></th>
+<th width="30"><a style="cursor: pointer;" onmouseover="return 
+overlib(&quot;<table width=240><tr><td class=c colspan=2>Planet 222 
+[2:258:6]</td></tr><tr><th width=80><img 
+src=skins/xnova/planeten/small/s_dschjungelplanet06.jpg height=75 
+width=75 /></th><th align=left><a href=# onclick='javascript:doit(6, 2, 
+258, 6, 1, 10);' >Espionage</a><br /><br /><a 
+href=fleet.php?galaxy=2&amp;system=258&amp;planet=6&amp;planettype=1&amp;target_mission=1>Attack</a><br
+ /><a 
+href=fleet.php?galaxy=2&amp;system=258&amp;planet=6&amp;planettype=1&amp;target_mission=5>ACS
+ Defend</a><br /><a 
+href=fleet.php?galaxy=2&amp;system=258&amp;planet=6&amp;planettype=1&amp;target_mission=3>Transport</a></th></tr></table>&quot;,
+ STICKY, MOUSEOFF, DELAY, 750, CENTER, OFFSETX, -40, OFFSETY, -40 );" 
+onmouseout="return nd();"><img 
+src="1galaxy.php_files/s_dschjungelplanet06.jpg" height="32" width="32"></a></th>
+<th style="white-space: nowrap;" width="130">222</th>
+<th style="white-space: nowrap;" width="30"></th>
+<th style="white-space: nowrap;" width="30"></th>
+<th width="150"><a style="cursor: pointer;" onmouseover='return 
+overlib("<table width=190><tr><td class=c colspan=2>Player (Status) JAFo
+ Place 406</td></tr><tr><td><a 
+href=messages.php?mode=write&amp;id=14484>Write 
+message</a></td></tr><tr><td><a href=buddy.php?a=2&amp;u=14484>Buddy 
+request</a></td></tr><tr><td><a 
+href=stat.php?who=player&amp;start=401>Statistics</a></td></tr></table>",
+ STICKY, MOUSEOFF, DELAY, 750, CENTER, OFFSETX, -40, OFFSETY, -40 );' 
+onmouseout="return nd();"><span class="inactive">JAFo</span><font 
+color="white">(</font><span class="inactive"><span class="inactive">i</span><font
+ color="white">)</font> </span></a></th>
+<th width="80"><a style="cursor: pointer;" onmouseover='return 
+overlib("<table width=240><tr><td class=c>Alliance Hells Fury with 1 
+Member</td></tr><th><table><tr><td><a 
+href=alliance.php?mode=ainfo&amp;a=1469>Alliance 
+Page</a></td></tr><tr><td><a 
+href=stat.php?start=101&amp;who=ally>Statistics</a></td></tr></table></th></table>",
+ STICKY, MOUSEOFF, DELAY, 750, CENTER, OFFSETX, -40, OFFSETY, -40 );' 
+onmouseout="return nd();">~HELLS~</a></th>
+<th style="white-space: nowrap;" width="125"><a href="#" 
+onclick="javascript:doit(6, 2, 258, 6, 1, 10);"><img 
+src="1galaxy.php_files/spy.png" alt="Espionage" title="Espionage" 
+border="0" height="24" width="24"></a>&nbsp;<a 
+href="http://www.zorgempire.net/messages.php?mode=write&amp;id=14484"><img
+ src="1galaxy.php_files/message.png" alt="Write message" title="Write 
+message" border="0" height="24" width="24"></a>&nbsp;<a 
+href="http://www.zorgempire.net/buddy.php?a=2&amp;u=14484"><img 
+src="1galaxy.php_files/buddy.png" alt="Buddy request" title="Buddy 
+request" border="0" height="24" width="24"></a>&nbsp;</th>
+</tr>
+<tr>
+<th width="30"><a href="#">7</a></th>
+<th width="30"></th>
+<th style="white-space: nowrap;" width="130"></th>
+<th style="white-space: nowrap;" width="30"></th>
+<th style="white-space: nowrap;" width="30"></th>
+<th width="150"></th>
+<th width="80"></th>
+<th style="white-space: nowrap;" width="125"></th>
+</tr>
+<tr>
+<th width="30"><a href="#">8</a></th>
+<th width="30"></th>
+<th style="white-space: nowrap;" width="130"></th>
+<th style="white-space: nowrap;" width="30"></th>
+<th style="white-space: nowrap;" width="30"></th>
+<th width="150"></th>
+<th width="80"></th>
+<th style="white-space: nowrap;" width="125"></th>
+</tr>
+<tr>
+<th width="30"><a href="#">9</a></th>
+<th width="30"></th>
+<th style="white-space: nowrap;" width="130"></th>
+<th style="white-space: nowrap;" width="30"></th>
+<th style="white-space: nowrap;" width="30"></th>
+<th width="150"></th>
+<th width="80"></th>
+<th style="white-space: nowrap;" width="125"></th>
+</tr>
+<tr>
+<th width="30"><a href="#">10</a></th>
+<th width="30"></th>
+<th style="white-space: nowrap;" width="130"></th>
+<th style="white-space: nowrap;" width="30"></th>
+<th style="white-space: nowrap;" width="30"></th>
+<th width="150"></th>
+<th width="80"></th>
+<th style="white-space: nowrap;" width="125"></th>
+</tr>
+<tr>
+<th width="30"><a href="#">11</a></th>
+<th width="30"></th>
+<th style="white-space: nowrap;" width="130"></th>
+<th style="white-space: nowrap;" width="30"></th>
+<th style="white-space: nowrap;" width="30"></th>
+<th width="150"></th>
+<th width="80"></th>
+<th style="white-space: nowrap;" width="125"></th>
+</tr>
+<tr>
+<th width="30"><a href="#">12</a></th>
+<th width="30"></th>
+<th style="white-space: nowrap;" width="130"></th>
+<th style="white-space: nowrap;" width="30"></th>
+<th style="white-space: nowrap;" width="30"></th>
+<th width="150"></th>
+<th width="80"></th>
+<th style="white-space: nowrap;" width="125"></th>
+</tr>
+<tr>
+<th width="30"><a href="#">13</a></th>
+<th width="30"></th>
+<th style="white-space: nowrap;" width="130"></th>
+<th style="white-space: nowrap;" width="30"></th>
+<th style="white-space: nowrap;" width="30"></th>
+<th width="150"></th>
+<th width="80"></th>
+<th style="white-space: nowrap;" width="125"></th>
+</tr>
+<tr>
+<th width="30"><a href="#">14</a></th>
+<th width="30"></th>
+<th style="white-space: nowrap;" width="130"></th>
+<th style="white-space: nowrap;" width="30"></th>
+<th style="white-space: nowrap;" width="30"></th>
+<th width="150"></th>
+<th width="80"></th>
+<th style="white-space: nowrap;" width="125"></th>
+</tr>
+<tr>
+<th width="30"><a href="#">15</a></th>
+<th width="30"></th>
+<th style="white-space: nowrap;" width="130"></th>
+<th style="white-space: nowrap;" width="30"></th>
+<th style="white-space: nowrap;" width="30"></th>
+<th width="150"></th>
+<th width="80"></th>
+<th style="white-space: nowrap;" width="125"></th>
+</tr>
+<tr><th width="30">16</th><th colspan="7"><a 
+href="http://www.zorgempire.net/fleet.php?galaxy=2&amp;system=258&amp;planet=16;planettype=1&amp;target_mission=15"><b>Outer
+ Space</b></a></th></tr>
+<tr><td class="c" colspan="6">( 1 Planets colonized )</td><td class="c" 
+colspan="2"><a href="#" style="cursor: pointer;" onmouseover='return 
+overlib("<table width=240><tr><td class=c 
+colspan=2>Legend</td></tr><tr><td width=220>strong player</td><td><span 
+class=strong>s</span></td></tr><tr><td width=220>weaker player 
+(newbie)</td><td><span class=noob>n</span></td></tr><tr><td 
+width=220>Vacation Mode</td><td><span 
+class=vacation>v</span></td></tr><tr><td width=220>banned</td><td><span 
+class=banned>b</span></td></tr><tr><td width=220>7 days 
+inactive</td><td><span class=inactive>i</span></td></tr><tr><td 
+width=220>28 days inactive</td><td><span 
+class=longinactive>I</span></td></tr><tr><td 
+width=220>Admin</td><td><font 
+color=lime><blink>A</blink></font></td></tr></table>");' 
+onmouseout="return nd();">Legend</a></td></tr>
+<tr><td class="c" colspan="3"><span id="missiles">0</span> 
+Interplanetary Missile(s)</td><td class="c" colspan="3"><span id="slots">2</span>/13
+ free fleet slots</td><td class="c" colspan="2"><span id="recyclers">0</span>
+ Recycler(s) available<br><span id="probes">0</span> Probe(s) available</td></tr>
+<tr style="display: none;" id="fleetstatusrow"><th class="c" colspan="8"><!--<div id="fleetstatus"></div>--><table
+ style="font-weight: bold;" id="fleetstatustable" width="100%"><!-- will be filled with content later on while processing ajax replys --></table></th>
+</tr></tbody></table></div>
+</center>
+</body></html>
