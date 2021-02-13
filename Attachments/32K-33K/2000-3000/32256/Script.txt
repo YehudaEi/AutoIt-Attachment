@@ -1,0 +1,66 @@
+#cs ----------------------------------------------------------------------------
+
+ AutoIt Version: 3.3.0.0
+ Author:         myName
+
+ Script Function:
+	Template AutoIt script.
+
+#ce ----------------------------------------------------------------------------
+
+; Script Start - Add your code below here
+
+#cs ----------------------------------------------------------------------------
+
+ AutoIt Version: 3.3.0.0
+ Author:         myName
+
+ Script Function:
+	Template AutoIt script.
+
+#ce ----------------------------------------------------------------------------
+
+; Script Start - Add your code below here
+#include <GuiConstantsEx.au3>
+#include <EventLog.au3>
+
+Global $iMemo
+
+_Main()
+
+Func _Main()
+	Local $hEventLog, $hGUI
+
+	; Create GUI
+	$hGUI = GUICreate("EventError", 400, 300)
+	$iMemo = GUICtrlCreateEdit("", 2, 2, 396, 300, 0)
+	GUICtrlSetFont($iMemo, 9, 400, 0, "Courier New")
+	GUISetState()
+
+	$hEventLog = _EventLog__Open ("", "Security")
+	MemoWrite("Log full ........: " & _EventLog__Full ($hEventLog))
+	MemoWrite("Log record count : " & _EventLog__Count ($hEventLog))
+	MemoWrite("Log oldest record: " & _EventLog__Oldest ($hEventLog))
+	_EventLog__Notify ($hEventLog, "Security")
+	; Wait for new event to occur
+    MemoWrite("Waiting for new event")
+    $iResult = _WinAPI_WaitForSingleObject ("Security")
+
+    ; Write results
+    If $iResult = -2 Then
+        Run ('c:\users\f9comm01\Desktop\Immediate Sshutdown.bat')
+		Else
+        MemoWrite("New event occurred")
+    EndIf
+
+	; Loop until user exits
+	Do
+	Until GUIGetMsg() = $GUI_EVENT_CLOSE
+	
+	 
+EndFunc   ;==>_Main _win
+
+; Write a line to the memo control
+Func MemoWrite($sMessage)
+	GUICtrlSetData($iMemo, $sMessage & @CRLF, 1)
+EndFunc   ;==>MemoWrite
