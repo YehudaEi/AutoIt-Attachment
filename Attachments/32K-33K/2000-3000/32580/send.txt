@@ -1,0 +1,5 @@
+field1	field2	field3	field4	field5	field6	field7	field8	field9	field10	field11	field12	field13	field14	field15	field16	field17	field18	field19	field20	field21	field22	field23
+12/6/2010	16:10:00	11/30/2010	OP	Mickey Mouse	635	abc	1921980	112011793	2	El	Gl	2	17:37:00	17:44:00	17:47:00	18:10:00	18:14:00	53953	Blanc, Mel	65	18:14:00	Arbuckle, Jon, ABCD
+Shultz, Charles, ABCD"
+12/6/2010	13:55:00	10/12/2010	OP	Donald Duck	621	def	152891	112129967	2	El	Gl	3	15:13:00	15:26:00	15:29:00	15:55:00	15:57:00	53953	Blanc, Mel	60	15:57:00	Arbuckle, Jon, ABCD
+12/6/2010	09:40:00	11/30/2010	OP	Bugs Bunny	48	ghi 	1921975	112321783	8	El	Gl	1	10:12:00	10:24:00	10:32:00	10:44:00	10:57:00	30789	Freleng, Friz	50	10:57:00	Brown, Charlie, ABCD
