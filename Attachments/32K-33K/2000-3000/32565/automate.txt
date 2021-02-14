@@ -1,0 +1,18 @@
+Opt("WinTitleMatchMode",2)
+Opt("WinDetectHiddenText",1)
+
+WinActivate("Automate")					;program to shutdown
+
+
+If Not WinActive("Automate") Then _WinActivate()	;activate the window
+
+Sleep(500)
+
+If WinActive("Automate") Then Send("{ALTDOWN}x{ALTUP}")	;command to shutdown program 
+
+Func _WinActivate()
+	While WinActive("Automate") = 0
+	WinActivate("Automate")
+	Sleep(200)
+	WEnd
+EndFunc
