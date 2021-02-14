@@ -1,0 +1,615 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>SAMPLE</title>
+  <link rel="stylesheet" type="text/css" href="/css/default.css">
+  <script type="text/javascript" src="/lib/core.js"></script>
+  <script type="text/javascript" src="/cgi-bin/menu.pl?id=-1"></script>
+  <script type="text/javascript">if (top!=self) {top.location.replace(location.href);}</script>
+</head>
+<body onload="SetFocus()" bgcolor="#fffffc" text="#000000">
+<div class="noprint"><img id="cmecfLogo" class="cmecfLogo"
+ src="/graphics/cmecf-logo.gif" alt="CM/ECF" title=""
+ onclick="CMECF.MainMenu.showCourtInformation(); return false"><img
+ src="/graphics/menubar-help.gif" alt="?" title="" class="helpImage"
+ id="helpImage" onclick="CMECF.MainMenu.showHelpPage(''); return false"
+ onmouseover="CMECF.MainMenu.helpImageOn()"
+ onmouseout="CMECF.MainMenu.helpImageOff()">
+<div id="topmenu" class="yuimenubar">
+<div class="bd">
+<ul class="first-of-type">
+  <li class="yuimenubaritem" style="margin-left: 1.7%;"><a
+ href="/cgi-bin/iquery.pl"><u>Q</u>uery</a></li>
+  <li class="yuimenubaritem" style="margin-left: 1.7%;"><a
+ href="/cgi-bin/DisplayMenu.pl?Reports">Reports</a></li>
+  <li class="yuimenubaritem" style="margin-left: 1.7%;"><a
+ href="/cgi-bin/DisplayMenu.pl?Utilities"><u>U</u>tilities</a></li>
+  <li class="yuimenubaritem" style="margin-left: 1.7%;"><a
+ href="/cgi-bin/login.pl?logout">Logout</a></li>
+</ul>
+</div>
+</div>
+</div>
+<script type="text/javascript">if (navigator.appVersion.indexOf("MSIE")==-1){window.setTimeout(CMECF.MainMenu.createMenu, 0);}else{CMECF.util.Event.addListener(window, "load", CMECF.MainMenu.createMenu);}</script>
+<div id="cmecfMainContent"><input id="cmecfMainContentScroll" value="0"
+ type="hidden">
+<script language="JavaScript"> 
+		var IsForm = false;
+		var FirstField;
+		function SetFocus() {
+			if(IsForm) {
+				if(FirstField) {
+					var ind = FirstField.indexOf('document.',0);
+					if(ind == 0)
+					{
+						eval(FirstField);
+					}
+					else
+					{
+						var Code = "document.forms[0]."+FirstField+".focus();";
+						eval(Code);
+					}
+				} else {
+					var Cnt = 0;				
+					while(document.forms[0].elements[Cnt] != null) {
+						if(document.forms[0].elements[Cnt].type != "hidden") {
+							document.forms[0].elements[Cnt].focus();
+							break;
+						}
+						Cnt += 1;
+					}
+				}
+			}
+			return(true);
+		}
+		</script>
+<center><b><font size="+1">xx-xx42-rls</font></b>
+<br>
+<b>Case type:</b> bk
+<b>Chapter:</b> 13
+<b>Asset:</b> Yes
+<b>Vol: </b> v
+<b>JUDGE:</b>XXXXXX<br>
+<b>Date filed:</b> 03/31/2010
+<b>Date of last filing:</b> 09/14/2010
+<b>Plan confirmed:</b> 06/14/2010
+<br>
+</center>
+<br>
+<script language="JavaScript">
+		   <!--
+		   var aNewWin;
+		   function DktText(Id, cs_caseid, doc_num, seq_no) {
+			 var hyperlink = "/cgi-bin/HistDocQry.pl?" + Id + "-L_ShowDktTxt_1-0-" + cs_caseid + "-" + doc_num + "-" + seq_no;
+			 if (!aNewWin || aNewWin.closed) {
+			   aNewWin = window.open(hyperlink,"DktText","scrollbars=yes,resizable=yes,height=250,width=400");
+			 } else {
+			   aNewWin.location = hyperlink;
+			 }
+			 aNewWin.focus();
+		   }
+		   // -->
+		   </script>
+<center><b> <font size="5">History</font></b><br>
+<br>
+<table border="1" cellpadding="2" cellspacing="0">
+  <tbody>
+    <tr>
+      <th>Doc.<br>
+No.</th>
+      <th>Dates</th>
+      <th>Description</th>
+    </tr>
+    <tr valign="top">
+      <td align="center">--</td>
+      <td>
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+          <tr>
+            <td><i>Filed &amp; Entered: </i></td>
+            <td align="right">03/31/2010</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+      <td> <a
+ href="javascript:DktText('5169845','8097','','8')"> <img
+ src="/graphics/silverball.gif" alt="Docket Text" border="0" height="14"
+ width="14"></a> Automatic docket of credit card</td>
+    </tr>
+    <tr valign="top">
+      <td align="center"><a
+ href="/cgi-bin/show_doc.pl?caseid=83097&amp;de_seq_num=2&amp;dm_id=28465&amp;doc_num=1"
+ id="documentKcaseidV837Kde_seq_numV2Kdm_idV27778465Kdoc_numV1">1</a>
+      <script>DocLink('documentKc_numV1');</script></td>
+      <td>
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+          <tr>
+            <td><i>Filed &amp; Entered: </i></td>
+            <td align="right">03/31/2010</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+      <td> <a
+ href="javascript:DktText('28349329389','834097','1','2')"> <img
+ src="/graphics/silverball.gif" alt="Docket Text" border="0" height="14"
+ width="14"></a> Voluntary Petition (Chapter 13)</td>
+    </tr>
+    <tr valign="top">
+      <td align="center"><a
+ href="/cgi-bin/show_doc.pl?caseid=94rt0pw&amp;de_seq_num=12&amp;dm_id=27805695&amp;doc_num=2"
+ id="documentKcaseidV834097Kde_seq_numV12Kdm_idV27805695Kdoc_numV2">2</a>
+      <script>DocLink('documentKcaseidV834097Kde_seq_numV12Kdm_idV27805695Kdoc_numV2');</script></td>
+      <td>
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+          <tr>
+            <td><i>Filed &amp; Entered: </i></td>
+            <td align="right">04/02/2010</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+      <td> <a
+ href="javascript:DktText('28349329389','834097','2','12')"> <img
+ src="/graphics/silverball.gif" alt="Docket Text" border="0" height="14"
+ width="14"></a> Declaration Re: Electronic Filing (batch)</td>
+    </tr>
+    <tr valign="top">
+      <td align="center"><a
+ href="/cgi-bin/show_doc.pl?caseid=94rt0pw&amp;de_seq_num=14&amp;dm_id=27806325&amp;doc_num=3"
+ id="documentKcaseidV834097Kde_seq_numV14Kdm_idV27806325Kdoc_numV3">3</a>
+      <script>DocLink('documentKcaseidV834097Kde_seq_numV14Kdm_idV27806325Kdoc_numV3');</script></td>
+      <td>
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+          <tr>
+            <td><i>Filed &amp; Entered: </i></td>
+            <td align="right">04/02/2010</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+      <td> <a
+ href="javascript:DktText('28349329389','834097','3','14')"> <img
+ src="/graphics/silverball.gif" alt="Docket Text" border="0" height="14"
+ width="14"></a> Chapter 13 Plan</td>
+    </tr>
+    <tr valign="top">
+      <td align="center"><a
+ href="/cgi-bin/show_doc.pl?caseid=94rt0pw&amp;de_seq_num=18&amp;dm_id=27806354&amp;doc_num=4"
+ id="documentKcaseidV834097Kde_seq_numV18Kdm_idV27806354Kdoc_numV4">4</a>
+      <script>DocLink('documentKcaseidV834097Kde_seq_numV18Kdm_idV27806354Kdoc_numV4');</script></td>
+      <td>
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+          <tr>
+            <td><i>Filed &amp; Entered: </i></td>
+            <td align="right">04/02/2010</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+      <td> <a
+ href="javascript:DktText('28349329389','834097','4','18')"> <img
+ src="/graphics/silverball.gif" alt="Docket Text" border="0" height="14"
+ width="14"></a> Chapter 13 Statement of Current Monthly and Disposable
+Income</td>
+    </tr>
+    <tr valign="top">
+      <td align="center"><a
+ href="/cgi-bin/show_doc.pl?caseid=94rt0pw&amp;de_seq_num=20&amp;dm_id=27806363&amp;doc_num=5"
+ id="documentKcaseidV834097Kde_seq_numV20Kdm_idV27806363Kdoc_numV5">5</a>
+      <script>DocLink('documentKcaseidV834097Kde_seq_numV20Kdm_idV27806363Kdoc_numV5');</script></td>
+      <td>
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+          <tr>
+            <td><i>Filed &amp; Entered: </i></td>
+            <td align="right">04/02/2010</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+      <td> <a
+ href="javascript:DktText('28349329389','834097','5','20')"> <img
+ src="/graphics/silverball.gif" alt="Docket Text" border="0" height="14"
+ width="14"></a> Certificate of Credit Counseling</td>
+    </tr>
+    <tr valign="top">
+      <td align="center"><a
+ href="/cgi-bin/show_doc.pl?caseid=94rt0pw&amp;de_seq_num=22&amp;dm_id=27816673&amp;doc_num=6"
+ id="documentKcaseidV834097Kde_seq_numV22Kdm_idV27816673Kdoc_numV6">6</a>
+      <script>DocLink('documentKcaseidV834097Kde_seq_numV22Kdm_idV27816673Kdoc_numV6');</script></td>
+      <td>
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+          <tr>
+            <td><i>Filed &amp; Entered: </i></td>
+            <td align="right">04/05/2010</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+      <td> <a
+ href="javascript:DktText('28349329389','834097','6','22')"> <img
+ src="/graphics/silverball.gif" alt="Docket Text" border="0" height="14"
+ width="14"></a> Meeting of Creditors Chapter 13 - Toledo</td>
+    </tr>
+    <tr valign="top">
+      <td align="center"><a
+ href="/cgi-bin/show_doc.pl?caseid=94rt0pw&amp;de_seq_num=24&amp;dm_id=27818604&amp;doc_num=7"
+ id="documentKcaseidV834097Kde_seq_numV24Kdm_idV27818604Kdoc_numV7">7</a>
+      <script>DocLink('documentKcaseidV834097Kde_seq_numV24Kdm_idV27818604Kdoc_numV7');</script></td>
+      <td>
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+          <tr>
+            <td><i>Filed &amp; Entered: </i></td>
+            <td align="right">04/05/2010</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+      <td> <a
+ href="javascript:DktText('28349329389','834097','7','24')"> <img
+ src="/graphics/silverball.gif" alt="Docket Text" border="0" height="14"
+ width="14"></a> Employee Income Records</td>
+    </tr>
+    <tr valign="top">
+      <td align="center"><a
+ href="/cgi-bin/show_doc.pl?caseid=94rt0pw&amp;de_seq_num=26&amp;dm_id=27833024&amp;doc_num=8"
+ id="documentKcaseidV834097Kde_seq_numV26Kdm_idV27833024Kdoc_numV8">8</a>
+      <script>DocLink('documentKcaseidV834097Kde_seq_numV26Kdm_idV27833024Kdoc_numV8');</script></td>
+      <td>
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+          <tr>
+            <td><i>Filed &amp; Entered: </i></td>
+            <td align="right">04/06/2010</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+      <td> <a
+ href="javascript:DktText('28349329389','834097','8','26')"> <img
+ src="/graphics/silverball.gif" alt="Docket Text" border="0" height="14"
+ width="14"></a> Order Enjoining Debtor</td>
+    </tr>
+    <tr valign="top">
+      <td align="center"><a
+ href="/cgi-bin/show_doc.pl?caseid=94rt0pw&amp;de_seq_num=28&amp;dm_id=27833037&amp;doc_num=9"
+ id="documentKcaseidV834097Kde_seq_numV28Kdm_idV27833037Kdoc_numV9">9</a>
+      <script>DocLink('documentKcaseidV834097Kde_seq_numV28Kdm_idV27833037Kdoc_numV9');</script></td>
+      <td>
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+          <tr>
+            <td><i>Filed &amp; Entered: </i></td>
+            <td align="right">04/06/2010</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+      <td> <a
+ href="javascript:DktText('28349329389','834097','9','28')"> <img
+ src="/graphics/silverball.gif" alt="Docket Text" border="0" height="14"
+ width="14"></a> Order Enjoining Debtor</td>
+    </tr>
+    <tr valign="top">
+      <td align="center"><a
+ href="/cgi-bin/show_doc.pl?caseid=94rt0pw&amp;de_seq_num=30&amp;dm_id=27851210&amp;doc_num=10"
+ id="documentKcaseidV834097Kde_seq_numV30Kdm_idV27851210Kdoc_numV10">10</a>
+      <script>DocLink('documentKcaseidV834097Kde_seq_numV30Kdm_idV27851210Kdoc_numV10');</script></td>
+      <td>
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+          <tr>
+            <td><i>Filed: </i></td>
+            <td align="right">04/07/2010</td>
+          </tr>
+          <tr>
+            <td><i>Entered: </i></td>
+            <td align="right">04/08/2010</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+      <td> <a
+ href="javascript:DktText('28349329389','834097','10','30')"> <img
+ src="/graphics/silverball.gif" alt="Docket Text" border="0" height="14"
+ width="14"></a> Notice of Meeting of Creditors Chapter 13</td>
+    </tr>
+    <tr valign="top">
+      <td align="center"><a
+ href="/cgi-bin/show_doc.pl?caseid=94rt0pw&amp;de_seq_num=33&amp;dm_id=27851211&amp;doc_num=11"
+ id="documentKcaseidV834097Kde_seq_numV33Kdm_idV27851211Kdoc_numV11">11</a>
+      <script>DocLink('documentKcaseiddoc_numV11');</script></td>
+      <td>
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+          <tr>
+            <td><i>Filed: </i></td>
+            <td align="right">04/07/2010</td>
+          </tr>
+          <tr>
+            <td><i>Entered: </i></td>
+            <td align="right">04/08/2010</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+      <td> <a
+ href="javascript:DktText('28349329389','834097','11','33')"> <img
+ src="/graphics/silverball.gif" alt="Docket Text" border="0" height="14"
+ width="14"></a> Notice of Chapter 13 Plan</td>
+    </tr>
+    <tr valign="top">
+      <td align="center"><a
+ href="/cgi-bin/show_doc.pl?caseid=94rt0pw&amp;de_seq_num=36&amp;dm_id=27864944&amp;doc_num=12"
+ id="documentKcaseidV834097Kde_seq_numV36Kdm_idV27864944Kdoc_numV12">12</a>
+      <script>DocLink('documentKcase_numV12');</script></td>
+      <td>
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+          <tr>
+            <td><i>Filed: </i></td>
+            <td align="right">04/08/2010</td>
+          </tr>
+          <tr>
+            <td><i>Entered: </i></td>
+            <td align="right">04/09/2010</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+      <td> <a
+ href="javascript:DktText('28349329389','834097','12','36')"> <img
+ src="/graphics/silverball.gif" alt="Docket Text" border="0" height="14"
+ width="14"></a> Notice of Order Enjoining Debtor</td>
+    </tr>
+    <tr valign="top">
+      <td align="center"><a
+ href="/cgi-bin/show_doc.pl?caseid=94rt0pw&amp;de_seq_num=39&amp;dm_id=27864945&amp;doc_num=13"
+ id="documentKcaseidV834097Kde_seq_numV39Kdm_idV27864945Kdoc_numV13">13</a>
+      <script>DocLink('documentK_numV13');</script></td>
+      <td>
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+          <tr>
+            <td><i>Filed: </i></td>
+            <td align="right">04/08/2010</td>
+          </tr>
+          <tr>
+            <td><i>Entered: </i></td>
+            <td align="right">04/09/2010</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+      <td> <a
+ href="javascript:DktText('28349329389','834097','13','39')"> <img
+ src="/graphics/silverball.gif" alt="Docket Text" border="0" height="14"
+ width="14"></a> Notice of Order Enjoining Debtor</td>
+    </tr>
+    <tr valign="top">
+      <td align="center"><a
+ href="/cgi-bin/show_doc.pl?caseid=94rt0pw&amp;de_seq_num=42&amp;dm_id=28125765&amp;doc_num=14"
+ id="documentKcaseidV834097Kde_seq_numV42Kdm_idV28125765Kdoc_numV14">14</a>
+      <script>DocLink('documentKcas_numV14');</script></td>
+      <td>
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+          <tr>
+            <td><i>Filed &amp; Entered: </i></td>
+            <td align="right">04/09/2010</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+      <td> <a
+ href="javascript:DktText('28349329389','834097','14','42')"> <img
+ src="/graphics/silverball.gif" alt="Docket Text" border="0" height="14"
+ width="14"></a> Returned Mail (Batch)</td>
+    </tr>
+    <tr valign="top">
+      <td align="center"><a
+ href="/cgi-bin/show_doc.pl?caseid=94rt0pw&amp;de_seq_num=44&amp;dm_id=27900811&amp;doc_num=15"
+ id="documentKcaseidV834097Kde_seq_numV44Kdm_idV27900811Kdoc_numV15">15</a>
+      <script>DocLink('documentKcas_numV15');</script></td>
+      <td>
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+          <tr>
+            <td><i>Filed &amp; Entered: </i></td>
+            <td align="right">04/13/2010</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+      <td> <a
+ href="javascript:DktText('28349329389','834097','15','44')"> <img
+ src="/graphics/silverball.gif" alt="Docket Text" border="0" height="14"
+ width="14"></a> Expungement/Withdrawal of Claim</td>
+    </tr>
+    <tr valign="top">
+      <td align="center">--</td>
+      <td>
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+          <tr>
+            <td><i>Filed &amp; Entered: </i></td>
+            <td align="right">04/14/2010</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+      <td> <a
+ href="javascript:DktText('28349329389','834097','','47')"> <img
+ src="/graphics/silverball.gif" alt="Docket Text" border="0" height="14"
+ width="14"></a> Proof of Tax Returns</td>
+    </tr>
+    <tr valign="top">
+      <td align="center"><a
+ href="/cgi-bin/show_doc.pl?caseid=94rt0pw&amp;de_seq_num=53&amp;dm_id=28446481&amp;doc_num=17"
+ id="documentKcaseidV834097Kde_seq_numV53Kdm_idV28446481Kdoc_numV17">17</a>
+      <script>DocLink('document_numV17');</script></td>
+      <td>
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+          <tr>
+            <td><i>Filed: </i></td>
+            <td align="right">06/02/2010</td>
+          </tr>
+          <tr>
+            <td><i>Entered: </i></td>
+            <td align="right">06/03/2010</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+      <td> <a
+ href="javascript:DktText('28349329389','834097','17','53')"> <img
+ src="/graphics/silverball.gif" alt="Docket Text" border="0" height="14"
+ width="14"></a> Proceeding Memo</td>
+    </tr>
+    <tr valign="top">
+      <td align="center"><a
+ href="/cgi-bin/show_doc.pl?caseid=94rt0pw&amp;de_seq_num=49&amp;dm_id=28441757&amp;doc_num=16"
+ id="documentKcaseidV834097Kde_seq_numV49Kdm_idV28441757Kdoc_numV16">16</a>
+      <script>DocLink('documentKcasnumV16');</script></td>
+      <td>
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+          <tr>
+            <td><i>Filed &amp; Entered: </i></td>
+            <td align="right">06/03/2010</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+      <td> <a
+ href="javascript:DktText('28349329389','834097','16','49')"> <img
+ src="/graphics/silverball.gif" alt="Docket Text" border="0" height="14"
+ width="14"></a> Meeting of Creditors Held</td>
+    </tr>
+    <tr valign="top">
+      <td align="center"><a
+ href="/cgi-bin/show_doc.pl?caseid=94rt0pw&amp;de_seq_num=56&amp;dm_id=28557921&amp;doc_num=18"
+ id="documentKcaseidV834097Kde_seq_numV56Kdm_idV28557921Kdoc_numV18">18</a>
+      <script>DocLink('documentKcaseiKdoc_numV18');</script></td>
+      <td>
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+          <tr>
+            <td><i>Filed &amp; Entered: </i></td>
+            <td align="right">06/14/2010</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+      <td> <a
+ href="javascript:DktText('28349329389','834097','18','56')"> <img
+ src="/graphics/silverball.gif" alt="Docket Text" border="0" height="14"
+ width="14"></a> Order Confirming Chapter 13 Plan</td>
+    </tr>
+    <tr valign="top">
+      <td align="center"><a
+ href="/cgi-bin/show_doc.pl?caseid=94rt0pw&amp;de_seq_num=61&amp;dm_id=28589071&amp;doc_num=19"
+ id="documentKcaseidV834097Kde_seq_numV61Kdm_idV28589071Kdoc_numV19">19</a>
+      <script>DocLink('documentKca_numV19');</script></td>
+      <td>
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+          <tr>
+            <td><i>Filed: </i></td>
+            <td align="right">06/16/2010</td>
+          </tr>
+          <tr>
+            <td><i>Entered: </i></td>
+            <td align="right">06/17/2010</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+      <td> <a
+ href="javascript:DktText('28349329389','834097','19','61')"> <img
+ src="/graphics/silverball.gif" alt="Docket Text" border="0" height="14"
+ width="14"></a> Notice of Order Confirming Chapter 13 Plan</td>
+    </tr>
+    <tr valign="top">
+      <td align="center"><a
+ href="/cgi-bin/show_doc.pl?caseid=94rt0pw&amp;de_seq_num=64&amp;dm_id=29506794&amp;doc_num=20"
+ id="documentKcaseidV834097Kde_seq_numV64Kdm_idV29506794Kdoc_numV20">20</a>
+      <script>DocLink('documentKcas_numV20');</script></td>
+      <td>
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+          <tr>
+            <td><i>Filed &amp; Entered: </i></td>
+            <td align="right">09/14/2010</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+      <td> <a
+ href="javascript:DktText('28349329389','834097','20','64')"> <img
+ src="/graphics/silverball.gif" alt="Docket Text" border="0" height="14"
+ width="14"></a> Notice of Intention to Pay Claim (batch)</td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<center>
+<table bgcolor="white" border="1" width="400">
+  <tbody>
+    <tr>
+      <th colspan="4"><font color="DARKRED" size="+1">PACER Service
+Center </font></th>
+    </tr>
+    <tr>
+      <th colspan="4"><font color="DARKBLUE">Transaction Receipt </font></th>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+      <td colspan="4" align="center"><font color="DARKBLUE" size="-1">12/03/2010
+14:01:08</font></td>
+    </tr>
+    <tr>
+      <th align="left"><font color="DARKBLUE" size="-1"> PACER Login: </font></th>
+      <td align="left"><font color="DARKBLUE" size="-1">xxxxx </font></td>
+      <th align="left"><font color="DARKBLUE" size="-1"> Client Code: </font></th>
+      <td align="left"><font color="DARKBLUE" size="-1"> </font></td>
+    </tr>
+    <tr>
+      <th align="left"><font color="DARKBLUE" size="-1"> Description: </font></th>
+      <td align="left"><font color="DARKBLUE" size="-1">
+History/Documents </font></td>
+      <th align="left"><font color="DARKBLUE" size="-1"> Search
+Criteria: </font></th>
+      <td align="left"><font color="DARKBLUE" size="-1"> 10-32142-rls
+Type: History </font></td>
+    </tr>
+    <tr>
+      <th align="left"><font color="DARKBLUE" size="-1"> Billable
+Pages: </font></th>
+      <td align="left"><font color="DARKBLUE" size="-1"> 1 </font></td>
+      <th align="left"><font color="DARKBLUE" size="-1"> Cost: </font></th>
+      <td align="left"><font color="DARKBLUE" size="-1"> 0.08 </font></td>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+    </tr>
+  </tbody>
+</table>
+</center>
+</center>
+</div>
+</body>
+</html>
