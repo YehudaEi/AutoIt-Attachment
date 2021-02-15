@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD><TITLE></TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+<SCRIPT TYPE="text/javascript"><!--
+function regexbuddyhighlight(regexoffset) {
+  document.getElementById("regex" + regexoffset).style.background = "#FFFF00";
+  document.getElementById("tree" + regexoffset).style.background = "#FFFF00";
+}
+function regexbuddyclear(regexoffset) {
+  document.getElementById("regex" + regexoffset).style.background = "white";
+  document.getElementById("tree" + regexoffset).style.background = "white";
+}
+function regexbuddyhighlightdup(regexoffset) {
+  document.getElementById("regex" + regexoffset).style.background = "#FFFF00";
+  document.getElementById("tree" + regexoffset + "dup").style.background = "#FFFF00";
+}
+function regexbuddycleardup(regexoffset) {
+  document.getElementById("regex" + regexoffset).style.background = "white";
+  document.getElementById("tree" + regexoffset + "dup").style.background = "white";
+}
+--></SCRIPT>
+<style type="text/css"><!--
+body { margin: 0; padding: 0; background-color: white; color: black; }
+#regexbuddyregex { margin: 0; padding: 10pt; }
+#regexbuddytree { margin: 0; padding: 0; overflow-y: scroll; }
+#regexbuddyfooter { margin: 0; padding: 10pt; }
+h1 { margin: 0; padding-bottom: 10pt;}
+ul { margin-top: 0; }
+--></style>
+</HEAD>
+<BODY>
+<DIV id="regexbuddyregex"><H1></H1>
+<TT CLASS=regexbuddy><SPAN ID="regex0" onMouseOver="regexbuddyhighlight('0')" onMouseOut="regexbuddyclear('0')">(?i)</SPAN><SPAN ID="regex8" onMouseOver="regexbuddyhighlight('8')" onMouseOut="regexbuddyclear('8')">(?-s)</SPAN><SPAN ID="regex18" onMouseOver="regexbuddyhighlight('18')" onMouseOut="regexbuddyclear('18')">^</SPAN><SPAN ID="regex20" onMouseOver="regexbuddyhighlight('20')" onMouseOut="regexbuddyclear('20')">\s</SPAN><SPAN ID="regex24" onMouseOver="regexbuddyhighlight('24')" onMouseOut="regexbuddyclear('24')">*</SPAN><SPAN ID="regex26" onMouseOver="regexbuddyhighlight('26')" onMouseOut="regexbuddyclear('26')">(</SPAN><SPAN ID="regex28" onMouseOver="regexbuddyhighlight('28')" onMouseOut="regexbuddyclear('28')">\d</SPAN><SPAN ID="regex32" onMouseOver="regexbuddyhighlight('32')" onMouseOut="regexbuddyclear('32')">{5}</SPAN><SPAN ID="regex38" onMouseOver="regexbuddyhighlight('38')" onMouseOut="regexbuddyclear('38')">,</SPAN><SPAN ID="regex40" onMouseOver="regexbuddyhighlight('40')" onMouseOut="regexbuddyclear('40')">.</SPAN><SPAN ID="regex42" onMouseOver="regexbuddyhighlight('42')" onMouseOut="regexbuddyclear('42')">*?</SPAN><SPAN ID="regex46" onMouseOver="regexbuddyhighlight('46')" onMouseOut="regexbuddyclear('46')">,</SPAN><SPAN ID="regex48" onMouseOver="regexbuddyhighlight('48')" onMouseOut="regexbuddyclear('48')">[a-z]</SPAN><SPAN ID="regex58" onMouseOver="regexbuddyhighlight('58')" onMouseOut="regexbuddyclear('58')">{2}</SPAN><SPAN onMouseOver="regexbuddyhighlight('26')" onMouseOut="regexbuddyclear('26')">)</SPAN></TT>
+
+<P>Options: ^ and $ match at line breaks</P>
+</DIV>
+<DIV id="regexbuddytree"><UL CLASS="regexbuddy"><LI CLASS="regexoption"><SPAN ID="tree0" onMouseOver="regexbuddyhighlight('0')" onMouseOut="regexbuddyclear('0')">Match&nbsp;the&nbsp;remainder&nbsp;of&nbsp;the&nbsp;regex&nbsp;with&nbsp;the&nbsp;options:&nbsp;case&nbsp;insensitive&nbsp;(i)</SPAN><LI CLASS="regexoption"><SPAN ID="tree8" onMouseOver="regexbuddyhighlight('8')" onMouseOut="regexbuddyclear('8')">Match&nbsp;the&nbsp;remainder&nbsp;of&nbsp;the&nbsp;regex&nbsp;with&nbsp;the&nbsp;options:&nbsp;dot&nbsp;does&nbsp;not&nbsp;match&nbsp;newline&nbsp;(-s)</SPAN><LI CLASS="regexanchor"><SPAN ID="tree18" onMouseOver="regexbuddyhighlight('18')" onMouseOut="regexbuddyclear('18')">Assert&nbsp;position&nbsp;at&nbsp;the&nbsp;beginning&nbsp;of&nbsp;a&nbsp;line&nbsp;(at&nbsp;beginning&nbsp;of&nbsp;the&nbsp;string&nbsp;or&nbsp;after&nbsp;a&nbsp;line&nbsp;break&nbsp;character)</SPAN><LI CLASS="regexspecial"><SPAN ID="tree20" onMouseOver="regexbuddyhighlight('20')" onMouseOut="regexbuddyclear('20')">Match&nbsp;a&nbsp;single&nbsp;character&nbsp;that&nbsp;is&nbsp;a&nbsp;&quot;whitespace&nbsp;character&quot;&nbsp;(spaces,&nbsp;tabs,&nbsp;and&nbsp;line&nbsp;breaks)</SPAN><UL CLASS="regexbuddy"><LI CLASS="regexrepeat"><SPAN ID="tree24" onMouseOver="regexbuddyhighlight('24')" onMouseOut="regexbuddyclear('24')">Between&nbsp;zero&nbsp;and&nbsp;unlimited&nbsp;times,&nbsp;as&nbsp;many&nbsp;times&nbsp;as&nbsp;possible,&nbsp;giving&nbsp;back&nbsp;as&nbsp;needed&nbsp;(greedy)</SPAN></UL><LI CLASS="regexcapture"><SPAN ID="tree26" onMouseOver="regexbuddyhighlight('26')" onMouseOut="regexbuddyclear('26')">Match&nbsp;the&nbsp;regular&nbsp;expression&nbsp;below&nbsp;and&nbsp;capture&nbsp;its&nbsp;match&nbsp;into&nbsp;backreference&nbsp;number&nbsp;1</SPAN><UL CLASS="regexbuddy"><LI CLASS="regexspecial"><SPAN ID="tree28" onMouseOver="regexbuddyhighlight('28')" onMouseOut="regexbuddyclear('28')">Match&nbsp;a&nbsp;single&nbsp;digit&nbsp;0..9</SPAN><UL CLASS="regexbuddy"><LI CLASS="regexrepeat"><SPAN ID="tree32" onMouseOver="regexbuddyhighlight('32')" onMouseOut="regexbuddyclear('32')">Exactly&nbsp;5&nbsp;times</SPAN></UL><LI CLASS="regexliteral"><SPAN ID="tree38" onMouseOver="regexbuddyhighlight('38')" onMouseOut="regexbuddyclear('38')">Match&nbsp;the&nbsp;character&nbsp;&quot;,&quot;&nbsp;literally</SPAN><LI CLASS="regexspecial"><SPAN ID="tree40" onMouseOver="regexbuddyhighlight('40')" onMouseOut="regexbuddyclear('40')">Match&nbsp;any&nbsp;single&nbsp;character&nbsp;that&nbsp;is&nbsp;not&nbsp;a&nbsp;line&nbsp;break&nbsp;character</SPAN><UL CLASS="regexbuddy"><LI CLASS="regexrepeat"><SPAN ID="tree42" onMouseOver="regexbuddyhighlight('42')" onMouseOut="regexbuddyclear('42')">Between&nbsp;zero&nbsp;and&nbsp;unlimited&nbsp;times,&nbsp;as&nbsp;few&nbsp;times&nbsp;as&nbsp;possible,&nbsp;expanding&nbsp;as&nbsp;needed&nbsp;(lazy)</SPAN></UL><LI CLASS="regexliteral"><SPAN ID="tree46" onMouseOver="regexbuddyhighlight('46')" onMouseOut="regexbuddyclear('46')">Match&nbsp;the&nbsp;character&nbsp;&quot;,&quot;&nbsp;literally</SPAN><LI CLASS="regexcharclassrange"><SPAN ID="tree48" onMouseOver="regexbuddyhighlight('48')" onMouseOut="regexbuddyclear('48')">Match&nbsp;a&nbsp;single&nbsp;character&nbsp;in&nbsp;the&nbsp;range&nbsp;between&nbsp;&quot;a&quot;&nbsp;and&nbsp;&quot;z&quot;</SPAN><UL CLASS="regexbuddy"><LI CLASS="regexrepeat"><SPAN ID="tree58" onMouseOver="regexbuddyhighlight('58')" onMouseOut="regexbuddyclear('58')">Exactly&nbsp;2&nbsp;times</SPAN></UL></UL></UL></DIV>
+<DIV id="regexbuddyfooter"><P>Created with <A HREF="http://www.regexbuddy.com/">RegexBuddy</A></P></DIV>
+<script type="text/javascript">
+function resizetree() {
+  var winH;
+  if(!window.innerWidth) {
+    if(!(document.documentElement.clientWidth == 0)) { winH = document.documentElement.clientHeight; }
+    else { winH = document.body.clientHeight; }
+  } else { winH = window.innerHeight; }
+  if (winH) {
+    document.getElementById("regexbuddytree").style.height = (winH - document.getElementById("regexbuddyregex").offsetHeight - document.getElementById("regexbuddyfooter").offsetHeight) + "px";
+  }
+}
+window.onresize = resizetree; resizetree();
+</script>
+</BODY></HTML>
