@@ -1,0 +1,162 @@
+<HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"><META NAME="ROBOTS" CONTENT="NOINDEX,NOFOLLOW"><META NAME="Author" CONTENT="REALTECH AG"><TITLE>ServiceDesk Service RequestrtcItaly-HD-20101029-8949</TITLE><LINK REL="shortcut icon" href="favicon.ico"><LINK REL="stylesheet" TYPE="text/css" HREF="../../css/content.css"></HEAD><BODY CLASS="rtcBody"> <SCRIPT LANGUAGE="javascript" TYPE="text/javascript"> {    self.NAME="main"; } function calpopup(lnk) {   window.open(lnk, "calendar","HEIGHT=250,WIDTH=250,scrollbars=no") } </SCRIPT><script type="text/javascript" src=""></script><script type="text/javascript" src="https://support.realtech.de/internalitaly/rtc/common/jscalendar-1.0/lang/calendar-en.js"></script><script type="text/javascript" src=""></script>
+<SCRIPT language="Javascript">
+
+function OpenCategory(sForm,sField,iType,iuserdataref)
+{
+	window.open("../../rtc/common/categoryselect.asp?gaction=selectcategory&cattype=" + iType + "&formname=" + sForm + "&fieldname=" + sField + "&userdataref=" + iuserdataref,"Category","width=300,height=300,menubar=no,locationbar=no,resizable=yes,scrollbars");
+	return false;
+}
+
+function CloseCategory()
+{
+	window.close("", "Category");
+}
+
+function OpenKBNote(sForm,sField,iCategoryref)
+{
+	window.open("../../rtc/common/kbnoteselect.asp?gaction=selectkbnote&categoryref=" + iCategoryref + "&formname=" + sForm + "&fieldname=" + sField,"Category","width=900,height=400,menubar=no,locationbar=no,resizable=yes,scrollbars");
+	return false;
+}
+
+function CloseKBNote()
+{
+	window.close("", "KB Note");
+}
+
+</SCRIPT>
+
+<br>
+<TABLE  border="0" cellspacing="0" cellpadding="2" width="851"><SCRIPT LANGUAGE="JAVASCRIPT" TYPE="text/javascript">
+var RTC_TEXT_INPUT    = 1
+var RTC_EMAIL_INPUT   = 2
+var RTC_DATE_INPUT    = 3
+var RTC_INT_INPUT     = 4
+var RTC_MONEY_INPUT   = 5
+var RTC_SELECT_INPUT  = 6
+if (document.all) document.onkeydown = function () { return event.keyCode != 27;};function rtcCreateInput( o, t, e ) { this.object = o; this.type = t; this.emptyallowed = e; return this; }
+function rtcCheckEmail( str ) { var re = new RegExp( '^.+@.+$' ); return re.test( str ); }
+function rtcCheckDate( str ) {  // TODO: use RegExp 
+        return true;}
+function rtcCheckInt( str ) { var re = new RegExp( '^[+|-]?[0-9]+$' );        return re.test( str ); }
+function rtcCheckMoney( str ) { var re = new RegExp( '^[0-9]+[\.,]?[0-9]{0,2}$' );      return re.test( str ); }
+function rtcCheckInputs( inputs ) { 
+for( var i = 0; i < inputs.length; i++ ) { var f = inputs[ i ]; if( ( !f.emptyallowed ) && ( f.object.value.length == 0 ) ) {alert("Please fill in all required fields!" ); f.object.focus();      return false; }
+if( f.type == RTC_INT_INPUT ) { if ( (f.object.value.length > 0) && (!rtcCheckInt( f.object.value )) ) { alert( "Please enter an integer value." ); f.object.focus();      f.object.select(); return false;        }} 
+if( f.type == RTC_SELECT_INPUT ) {      if ( ( !f.emptyallowed ) && ( f.object.value == 0 ) ) { alert( "Please select a value for this select box." ); f.object.focus(); return false;        } } 
+if( f.type == RTC_TEXT_INPUT ) {// do nothing - text input cannot have an invalid format 
+} // RTC_TEXT_INPUT  
+else if( f.type == RTC_EMAIL_INPUT ) { if ( (f.object.value.length > 0) && (!rtcCheckEmail( f.object.value )) ) { alert( "Please enter a valid e-mail address." ); f.object.focus(); f.object.select(); return false;} // if 
+} // RTC_EMAIL_INPUT 
+else if( f.type == RTC_DATE_INPUT ) {   if ( (f.object.value.length > 0) && (!rtcCheckDate( f.object.value )) ) { alert( "Please enter a valid date." ); f.object.focus(); f.object.select(); return false;     } // if  
+} // RTC_DATE_INPUT 
+else if( f.type == RTC_MONEY_INPUT ) { if ( (f.object.value.length > 0) && (!rtcCheckMoney( f.object.value )) ) { alert( "Please enter a valid amount." ); f.object.focus(); f.object.select(); return false; } // if 
+ } // RTC_INT_INPUT
+} // for 
+return true;} //rtcCheckInputs 
+function rtcAlert(showstring) { alert(showstring);} //rtcAlert
+function rtcWindowOpen(strlink,strname,strpar){ window.open(strlink ,strname,strpar);};
+function URLEncode(strvar){
+  var SAFECHARS = "0123456789" + "ABCDEFGHIJKLMNOPQRSTUVWXYZ" + "abcdefghijklmnopqrstuvwxyz" + "-_.!~*'()";
+  var HEX = "0123456789ABCDEF";
+  var plaintext = strvar;
+  var encoded = "";
+  for (var i = 0; i < plaintext.length; i++ ) {
+     var ch = plaintext.charAt(i);
+     if (ch == " ") {encoded += "+";} else if (SAFECHARS.indexOf(ch) != -1) {
+     encoded += ch;} else {var charCode = ch.charCodeAt(0);if (charCode > 255) {
+        alert( "Unicode Character '" 
+        + ch
+        + "' cannot be encoded using standard URL encoding.\n" +
+        "(URL encoding only supports 8-bit characters.)\n" +
+        "A space (+) will be substituted." );
+        encoded += "+";
+       } else {
+        encoded += "%";
+        encoded += HEX.charAt((charCode >> 4) & 0xF);
+        encoded += HEX.charAt(charCode & 0xF);}}} 
+   return encoded;};</SCRIPT><SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript"> var ITALY_HD_CALL_EDIT_Inputs = new Array(); function ITALY_HD_CALL_EDIT_CheckInputs() { return rtcCheckInputs( ITALY_HD_CALL_EDIT_Inputs ); } </SCRIPT> <FORM action="genericcall.asp" METHOD="POST" NAME="ITALY_HD_CALL_EDIT"><!-- hidden field --> <INPUT TYPE="HIDDEN" NAME="gaction" VALUE="DUMMY"> <!-- hidden field -->
+<input type="hidden" name="sys_customerref" VALUE="1505"><!-- hidden field -->
+<input type="hidden" name="sys_taskref" VALUE="8949"><tr><td align="left" valign="top" width="0" class="tabtop" colspan="4"><B>Request Details</B></td>
+			<td align="left" valign="top" width="4" class="tabline1" colspan="1">&nbsp;</td></tr>
+<tr><td align="left" valign="top" width="139" class="tabline1" colspan="1">&nbsp;</td><td align="left" valign="top" width="0" class="tabnormal" colspan="1">&nbsp;</td><td align="left" valign="top" width="0" class="tabline1" colspan="1">&nbsp;</td><td align="left" valign="top" width="0" class="tabnormal" colspan="1">&nbsp;</td>
+	<td align="left" valign="top" width="4" class="tabline1" colspan="1">&nbsp;</td></tr>
+<tr><td align="left" valign="top" width="139" class="tabline1" colspan="1">&nbsp;</td><td align="left" valign="top" width="0" class="tabnormal" colspan="1"> &nbsp;</td><td align="left" valign="top" width="0" class="tabline1" colspan="1">&nbsp;</td><td align="left" valign="top" width="0" class="tabnormal" colspan="1">&nbsp;</td>
+	<td align="left" valign="top" width="4" class="tabline1" colspan="1">&nbsp;</td></tr>
+<tr><td align="left" valign="top" width="139" class="tabline1" colspan="1">&nbsp;</td><td align="left" valign="top" width="0" class="tabnormal" colspan="1">&nbsp;</td><td align="left" valign="top" width="0" class="tabline1" colspan="1">&nbsp;</td><td align="left" valign="top" width="0" class="tabnormal" colspan="1">&nbsp;</td>
+	<td align="left" valign="top" width="4" class="tabline1" colspan="1">&nbsp;</td></tr>
+<tr><td align="left" valign="top" width="139" class="tabline1" colspan="1">&nbsp;</td><td align="left" valign="top" width="0" class="tabnormal" colspan="1">&nbsp;</td><td align="left" valign="top" width="0" class="tabline1" colspan="1">&nbsp;</td><td align="left" valign="top" width="0" class="tabnormal" colspan="1">&nbsp;</td>
+	<td align="left" valign="top" width="4" class="tabline1" colspan="1">&nbsp;</td></tr>
+<tr><td align="left" valign="top" width="0" class="tabtop" colspan="4">&nbsp;</td>
+	<td align="left" valign="top" width="4" class="tabline1" colspan="1">&nbsp;</td></tr>
+<tr><td align="left" valign="top" width="139" class="tabline1" colspan="1">&nbsp;</td><td align="left" valign="top" width="0" class="tabline1" colspan="1">&nbsp;</td><td align="left" valign="top" width="0" class="tabline1" colspan="1">&nbsp;</td><td align="left" valign="top" width="0" class="tabline1" colspan="1">&nbsp;</td>
+	<td align="left" valign="top" width="4" class="tabline1" colspan="1">&nbsp;</td></tr>
+<tr><td align="left" valign="top" width="139" class="tabline1" colspan="1">&nbsp;</td><td align="left" valign="top" width="0" class="tabline1" colspan="1">&nbsp;</td><td align="left" valign="top" width="0" class="tabline1" colspan="1">&nbsp;</td><td align="left" valign="top" width="0" class="tabline1" colspan="1">&nbsp;</td>
+	<td align="left" valign="top" width="4" class="tabline1" colspan="1">&nbsp;</td></tr>
+<tr><td align="left" valign="top" width="139" class="tabline1" colspan="1">&nbsp;</td><td align="left" valign="top" width="0" class="tabline1" colspan="1">&nbsp;</td><td align="left" valign="top" width="0" class="tabline1" colspan="1">&nbsp;</td><td align="left" valign="top" width="0" class="tabline1" colspan="1">&nbsp;</td>
+	<td align="left" valign="top" width="4" class="tabline1" colspan="1">&nbsp;</td></tr>
+<tr><td align="left" valign="top" width="139" class="tabline1" colspan="1">&nbsp;</td><td align="left" valign="top" width="0" class="tabnormal" colspan="3">&nbsp;</td>
+	<td align="left" valign="top" width="4" class="tabline1" colspan="1">&nbsp;</td></tr>
+<tr><td align="left" valign="top" width="139" class="tabline1" colspan="1">&nbsp;</td>
+	<td align="left" valign="top" width="379" class="tabline1" colspan="1">&nbsp;</td>
+	<td align="left" valign="top" width="104" class="tabline1" colspan="1">&nbsp;</td>
+	<td align="left" valign="top" width="205" class="tabline1" colspan="1">&nbsp;</td>
+	<td align="left" valign="top" width="4" class="tabline1" colspan="1">&nbsp;</td></tr>
+<tr><td align="left" valign="top" width="139" class="tabline1" colspan="1">&nbsp;</td><td align="left" valign="top" width="0" class="tabline1" colspan="3">&nbsp;</td>
+	<td align="left" valign="top" width="4" class="tabline1" colspan="1">&nbsp;</td></tr>
+<tr><td align="left" valign="top" width="139" class="tabline1" colspan="1">&nbsp;</td>
+	<td align="left" valign="top" width="696" class="tabline1" colspan="3">&nbsp;</td>
+	<td align="left" valign="top" width="4" class="tabline1" colspan="1">&nbsp;</td></tr>
+<tr><td align="left" valign="top" width="139" class="tabline1" colspan="1">&nbsp;</td><td align="left" valign="top" width="0" class="tabnormal" colspan="3">&nbsp;</td>
+	<td align="left" valign="top" width="4" class="tabline1" colspan="1">&nbsp;</td></tr>
+<tr><td align="left" valign="top" width="0" class="tabtop" colspan="4">Response to Request</td>
+	<td align="left" valign="top" width="4" class="tabline1" colspan="1">&nbsp;</td></tr>
+<tr><td align="left" valign="top" width="139" class="tabline1" colspan="1">KB Search</td><td align="left" valign="top" width="0" class="tabline1" colspan="3"><A href=""><IMG BORDER=0 src="../../images/icons/insert.gif"onClick="return OpenKBNote('ITALY_HD_CALL_EDIT','sys_tasklog',131)"></A></td>
+	<td align="left" valign="top" width="4" class="tabline1" colspan="1">&nbsp;</td></tr>
+<tr><td align="left" valign="top" width="139" class="tabline1" colspan="1">Update Status</td><td align="left" valign="top" width="0" class="tabline1" colspan="1"><select name="sys_stateref" > 
+<option value="2" selected>Active</option>
+<option value="10">In Development</option>
+<option value="7">Waiting</option>
+<option value="4">Closed</option>
+<option value="200">Deleted</option>
+</select></td><td align="left" valign="top" width="0" class="tabline1" colspan="1">Project</td><td align="left" valign="top" width="0" class="tabline1" colspan="1"><select name="sys_projectref" > 
+<option value="3188">AKZO NOBEL (Co)</option>
+
+</select></td>
+	<td align="left" valign="top" width="4" class="tabline1" colspan="1">&nbsp;</td></tr>
+<tr><td align="left" valign="top" width="139" class="tabline1" colspan="1">Reassign</td><td align="left" valign="top" width="0" class="tabline1" colspan="3"><SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript"> 
+function Update_sys_agentuserref_List() { with(document.ITALY_HD_CALL_EDIT.sys_agentuserref) {var Var2 = options.length ; while( Var2 > 1 ) { Var2--; options[ Var2 ].text = ''; options[ Var2 ].value = ''; } 
+options[ 0 ].selected = true ; var Var1Selected = document.ITALY_HD_CALL_EDIT.sys_groupref.selectedIndex; var Var1IdSelected = document.ITALY_HD_CALL_EDIT.sys_groupref.options[ Var1Selected ].value; 
+ if ( Var1IdSelected == 1 ) { length = 12;options[0].value=1;options[0].text='Administrator, System';options[1].value=395;options[1].text='Bentin, Ulrich';options[2].value=402;options[2].text='Cocco, Pierfrancesco';options[3].value=379;options[3].text='Crepaldi, Katia';options[4].value=126;options[4].text='Dose, Dino';options[5].value=121;options[5].text='Dugo, Vincenzo';options[6].value=103;options[6].text='Gutfleisch, Rüdiger';options[7].value=413;options[7].text='Iacobucci, Armando';options[8].value=411;options[8].text='Kellermann, Sascha';options[9].value=102;options[9].text='Ludwig, Bernd';options[10].value=487;options[10].text='pellegrino, angela';options[11].value=112;options[11].text='Santisi, Carmen'; }  if ( Var1IdSelected == 223 ) { length = 31;options[0].value=421;options[0].text='alberici, christian';options[1].value=473;options[1].text='Andrisani, Alessandra';options[2].value=428;options[2].text='Artico, Alessio';options[3].value=459;options[3].text='Bargagli, ';options[4].value=443;options[4].text='bertolin, debora';options[5].value=479;options[5].text='Buscarino, Irene Floriana';options[6].value=431;options[6].text='cambianica, Federico';options[7].value=469;options[7].text='cavallo, Salvatore';options[8].value=481;options[8].text='Comuzzi, Arianna';options[9].value=379;options[9].text='Crepaldi, Katia';options[10].value=426;options[10].text='D\'Alessio, Pierluigi';options[11].value=465;options[11].text='D\'Aloia, Gilda';options[12].value=449;options[12].text='Dellagiovanna, Saul';options[13].value=458;options[13].text='Di Croce, Manuela';options[14].value=436;options[14].text='Galli, Marco';options[15].value=467;options[15].text='Galluzzo, Stefano';options[16].value=466;options[16].text='ghilardi, cristian';options[17].value=413;options[17].text='Iacobucci, Armando';options[18].value=480;options[18].text='Ippolito, Simona';options[19].value=429;options[19].text='Izzo, Gemma';options[20].value=437;options[20].text='Maino, Emanuele';options[21].value=463;options[21].text='miceli, marzia';options[22].value=416;options[22].text='nadalet, Katia';options[23].value=485;options[23].text='pacea, valeria';options[24].value=427;options[24].text='Pappalettera, Luca';options[25].value=415;options[25].text='Santussi, Katia';options[26].value=435;options[26].text='schiappadori, Francesco';options[27].value=438;options[27].text='sclano, Marco';options[28].value=448;options[28].text='Stucchi, Marco';options[29].value=468;options[29].text='verde, michele';options[30].value=442;options[30].text='Zandonadi, Paola'; }  if ( Var1IdSelected == 227 ) { length = 28;options[0].value=421;options[0].text='alberici, christian';options[1].value=473;options[1].text='Andrisani, Alessandra';options[2].value=459;options[2].text='Bargagli, ';options[3].value=443;options[3].text='bertolin, debora';options[4].value=479;options[4].text='Buscarino, Irene Floriana';options[5].value=431;options[5].text='cambianica, Federico';options[6].value=469;options[6].text='cavallo, Salvatore';options[7].value=481;options[7].text='Comuzzi, Arianna';options[8].value=379;options[8].text='Crepaldi, Katia';options[9].value=465;options[9].text='D\'Aloia, Gilda';options[10].value=449;options[10].text='Dellagiovanna, Saul';options[11].value=458;options[11].text='Di Croce, Manuela';options[12].value=436;options[12].text='Galli, Marco';options[13].value=467;options[13].text='Galluzzo, Stefano';options[14].value=466;options[14].text='ghilardi, cristian';options[15].value=413;options[15].text='Iacobucci, Armando';options[16].value=480;options[16].text='Ippolito, Simona';options[17].value=429;options[17].text='Izzo, Gemma';options[18].value=437;options[18].text='Maino, Emanuele';options[19].value=463;options[19].text='miceli, marzia';options[20].value=416;options[20].text='nadalet, Katia';options[21].value=485;options[21].text='pacea, valeria';options[22].value=427;options[22].text='Pappalettera, Luca';options[23].value=415;options[23].text='Santussi, Katia';options[24].value=438;options[24].text='sclano, Marco';options[25].value=448;options[25].text='Stucchi, Marco';options[26].value=468;options[26].text='verde, michele';options[27].value=442;options[27].text='Zandonadi, Paola'; }  if ( Var1IdSelected == 221 ) { length = 23;options[0].value=433;options[0].text='amoroso, Carmelo';options[1].value=444;options[1].text='battistoni, giorgio';options[2].value=488;options[2].text='botteri, ';options[3].value=402;options[3].text='Cocco, Pierfrancesco';options[4].value=123;options[4].text='Colleoni, Paolo';options[5].value=441;options[5].text='consiglio, andrea';options[6].value=115;options[6].text='Costantini, Alberto';options[7].value=417;options[7].text='dellapace, ';options[8].value=126;options[8].text='Dose, Dino';options[9].value=121;options[9].text='Dugo, Vincenzo';options[10].value=114;options[10].text='Fattori, Alessia';options[11].value=474;options[11].text='Fiore, Vito';options[12].value=445;options[12].text='grasso, lorenzo';options[13].value=476;options[13].text='loglisci, ';options[14].value=462;options[14].text='montanino, salvatore';options[15].value=414;options[15].text='paolucci, ';options[16].value=487;options[16].text='pellegrino, angela';options[17].value=477;options[17].text='pierno, ';options[18].value=496;options[18].text='riservato, Massimo';options[19].value=482;options[19].text='schiavo, massimo';options[20].value=483;options[20].text='sciallas, ';options[21].value=475;options[21].text='simone, massimiliano';options[22].value=484;options[22].text='tantari, '; }  if ( Var1IdSelected == 211 ) { length = 1;options[0].value=110;options[0].text='FLS_day, First Level Support'; }  if ( Var1IdSelected == 101 ) { length = 1;options[0].value=110;options[0].text='FLS_day, First Level Support'; }  if ( Var1IdSelected == 224 ) { length = 1;options[0].value=411;options[0].text='Kellermann, Sascha'; }  if ( Var1IdSelected == 217 ) { length = 2;options[0].value=133;options[0].text='Kayser, Joerg';options[1].value=411;options[1].text='Kellermann, Sascha'; }  if ( Var1IdSelected == 225 ) { length = 1;options[0].value=411;options[0].text='Kellermann, Sascha'; }  if ( Var1IdSelected == 217 ) { length = 1;options[0].value=112;options[0].text='Santisi, Carmen'; }  if ( Var1IdSelected == 204 ) { length = 4;options[0].value=103;options[0].text='Gutfleisch, Rüdiger';options[1].value=101;options[1].text='Himmelsbach, Wolfgang';options[2].value=411;options[2].text='Kellermann, Sascha';options[3].value=102;options[3].text='Ludwig, Bernd'; }  if ( Var1IdSelected == 228 ) { length = 1;options[0].value=404;options[0].text='Ester, Ralf'; }  if ( Var1IdSelected == 231 ) { length = 1;options[0].value=486;options[0].text='real-security, sicurezza SAP'; }  if ( Var1IdSelected == 230 ) { length = 4;options[0].value=123;options[0].text='Colleoni, Paolo';options[1].value=126;options[1].text='Dose, Dino';options[2].value=121;options[2].text='Dugo, Vincenzo';options[3].value=114;options[3].text='Fattori, Alessia'; }  if ( Var1IdSelected == 215 ) { length = 1;options[0].value=137;options[0].text='Second _Level_Day, Second Level Day'; }  if ( Var1IdSelected == 232 ) { length = 4;options[0].value=490;options[0].text='chirico, Nino';options[1].value=492;options[1].text='Pacifico, Mimmo';options[2].value=493;options[2].text='Rosu, Andrei';options[2].selected=true;options[3].value=494;options[3].text='rtci-campari, reperibile'; }  if ( Var1IdSelected == 234 ) { length = 4; options[0].value=490;options[0].text='chirico, Nino';options[1].value=492;options[1].text='Pacifico, Mimmo';options[2].value=493;options[2].text='Rosu, Andrei';options[2].selected=true;options[3].value=494;options[3].text='rtci-campari, reperibile';} } } </SCRIPT> <select name="sys_groupref" onChange="Update_sys_agentuserref_List();"> <option value=1>Administration </option>
+<option value=223>Appl_Gov Unic level  </option>
+</select><select name="sys_agentuserref"> <option value="0"> -------- </option></select> 
+<script language="JavaScript" TYPE="text/javascript"> Update_sys_agentuserref_List() ; </script></td>
+	<td align="left" valign="top" width="4" class="tabline1" colspan="1">&nbsp;</td></tr>
+<tr><td align="left" valign="top" width="139" class="tabline1" colspan="1">Comment</td><td align="left" valign="top" width="0" class="tabline1" colspan="3"><TEXTAREA id="sys_tasklog" NAME="sys_tasklog" ROWS="4" COLS="130" ></TEXTAREA><SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+var input_ITALY_HD_CALL_EDIT_sys_tasklog = new rtcCreateInput( document.ITALY_HD_CALL_EDIT.sys_tasklog, RTC_TEXT_INPUT, true ); 
+ITALY_HD_CALL_EDIT_Inputs[ ITALY_HD_CALL_EDIT_Inputs.length ] = input_ITALY_HD_CALL_EDIT_sys_tasklog; 
+</SCRIPT></td>
+	<td align="left" valign="top" width="4" class="tabline1" colspan="1">&nbsp;</td></tr>
+<tr><td align="left" valign="top" width="139" class="tabline1" colspan="1">Select the type of update</td><td align="left" valign="top" width="0" class="tabline1" colspan="3"><select name="sys_tasklogtyp" >
+<option value="1">Private</option>
+<option value="2">Public</option>
+<option value="3">Public and eMail</option>
+</select></select></td>
+	<td align="left" valign="top" width="4" class="tabline1" colspan="1">&nbsp;</td></tr>
+<tr><td align="left" valign="top" width="139" class="tabline1" colspan="1">Calculated Time</td><td align="left" valign="top" width="0" class="tabline1" colspan="1"><SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">  startday = new Date();  clockStart = startday.getTime() ;  window.setTimeout('getSecs()',1000) ;  function initStopwatch() {  var myTime = new Date() ;  return((myTime.getTime() - clockStart)/1000) ; }  function getSecs() {  var tSecs = Math.round(initStopwatch());  var iSecs = tSecs % 60;  var iMins = Math.round((tSecs-30)/60);  var sSecs ="" + ((iSecs > 9) ? iSecs : "0" + iSecs) ;  var sMins ="" + ((iMins > 9) ? iMins : "0" + iMins) ;  document.ITALY_HD_CALL_EDIT.sys_caltime.value = sMins+":"+sSecs;  window.setTimeout('getSecs()',1000); } </SCRIPT> <!-- InputField -->
+<INPUT NAME="sys_caltime" VALUE="0" SIZE="30" MAXLENGTH="2000">
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+var input_ITALY_HD_CALL_EDIT_sys_caltime = new rtcCreateInput( document.ITALY_HD_CALL_EDIT.sys_caltime, RTC_TEXT_INPUT, true ); 
+ITALY_HD_CALL_EDIT_Inputs[ ITALY_HD_CALL_EDIT_Inputs.length ] = input_ITALY_HD_CALL_EDIT_sys_caltime; 
+</SCRIPT></td><td align="left" valign="top" width="0" class="tabline1" colspan="1">Time to Add(mins)</td><td align="left" valign="top" width="0" class="tabline1" colspan="1"><!-- InputField -->
+<INPUT NAME="sys_addtimespent" VALUE="" SIZE="0" MAXLENGTH="2000">
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+var input_ITALY_HD_CALL_EDIT_sys_addtimespent = new rtcCreateInput( document.ITALY_HD_CALL_EDIT.sys_addtimespent, RTC_TEXT_INPUT, false ); 
+ITALY_HD_CALL_EDIT_Inputs[ ITALY_HD_CALL_EDIT_Inputs.length ] = input_ITALY_HD_CALL_EDIT_sys_addtimespent; 
+</SCRIPT></td>
+			<td align="left" valign="top" width="4" class="tabline1" colspan="1">&nbsp;</td></tr>
+<tr><td align="left" valign="top" width="139" class="tabline1" colspan="1">&nbsp;</td><td align="left" valign="top" width="0" class="tabline1" colspan="3"><SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript"> var strupdateAction ; var strupdateTarget ; strupdateAction = document.ITALY_HD_CALL_EDIT.action; function ITALY_HD_CALL_EDIT_submit_update_Clicked() { document.ITALY_HD_CALL_EDIT.target="_self";document.ITALY_HD_CALL_EDIT.gaction.value = 'update' ; document.ITALY_HD_CALL_EDIT.action = strupdateAction; return ITALY_HD_CALL_EDIT_CheckInputs(); } </SCRIPT> <INPUT TYPE="SUBMIT" NAME="whocares" VALUE="Submit Problem" onClick="return ITALY_HD_CALL_EDIT_submit_update_Clicked()"></td>
+	<td align="left" valign="top" width="4" class="tabline1" colspan="1">&nbsp;</td></tr>
+<tr><td align="left" valign="top" width="0" class="tabnormal" colspan="4"><TABLE width="100%"><TR><td class="tabtop">&nbsp;</td><td class="tabtop">&nbsp;</td><td class="tabtop">&nbsp;</td><td class="tabtop"> &nbsp;</td><td class="tabtop"> &nbsp;</td></TR><TR class="tabline2"><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></TR><TR class="tabline1"><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></TR><TR class="tabline2"><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></TR><TR class="tabline1"><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></TR><TR class="tabline2"><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></TR><TR class="tabline1"><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></TR><TR class="tabline2"><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></TR><TR class="tabline1"><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></TR><TR class="tabline2"><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></TR><TR class="tabline1"><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></TR><TR class="tabline2"><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></TR><TR class="tabline1"><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></TR><TR class="tabline2"><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></TR></TABLE></td>
+	<td align="left" valign="top" width="4" class="tabline1" colspan="1">&nbsp;</td></tr>
+</table>
+</FORM><br></body></html>
