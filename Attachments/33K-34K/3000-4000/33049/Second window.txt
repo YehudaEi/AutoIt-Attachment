@@ -1,0 +1,40 @@
+ >>>> Window <<<<
+Title:	Web TimeSheet Integration Manager for QuickBooks - InstallShield Wizard
+Class:	#32770
+Position:	443, 317
+Size:	487, 144
+Style:	0x94C801C5
+ExStyle:	0x00010101
+Handle:	0x0000000000020438
+
+>>>> Control <<<<
+Class:	
+Instance:	
+ClassnameNN:	
+Name:	
+Advanced (Class):	
+ID:	
+Text:	
+Position:	
+Size:	
+ControlClick Coords:	
+Style:	
+ExStyle:	
+Handle:	
+
+>>>> Mouse <<<<
+Position:	620, 322
+Cursor ID:	2
+Color:	0xD7DBEE
+
+>>>> StatusBar <<<<
+
+>>>> ToolsBar <<<<
+
+>>>> Visible Text <<<<
+&Yes
+&No
+Do you want to completely remove the selected application and all of its features?
+
+
+>>>> Hidden Text <<<<
