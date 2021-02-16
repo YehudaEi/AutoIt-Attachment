@@ -1,0 +1,20 @@
+	#NoTrayIcon
+run ("CMGQuick71.exe")
+WinWaitActive ("CMG Quick 7.1 Setup - InstallShield Wizard", "&Next")
+Send ("!N")
+WinWaitActive ("CMG Quick 7.1 Setup - InstallShield Wizard", "License Agreement")
+Send ("!a")
+Send ("!N")
+WinWaitActive ("CMG Quick 7.1 Setup - InstallShield Wizard", "Choose Destination Location")
+Send("{ENTER}")
+WinWaitActive ("CMG Quick 7.1 Setup - InstallShield Wizard", "CMG Server Connection")
+SEND ("{TAB} Need to send right arrowkey here!
+Send("vxl.dn.se")
+MouseClick("left" , 951, 689, 2)
+WinWaitActive ("CMG Quick 7.1 Setup - InstallShield Wizard", "Start Copying Files")
+Send("{ENTER}")
+WinWaitActive ("CMG Quick 7.1 Setup - InstallShield Wizard", "InstallShield Wizard Complete")
+Send("{ENTER}")
+
+
+
