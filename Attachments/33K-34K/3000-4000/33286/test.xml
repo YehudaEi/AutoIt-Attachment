@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VirtualDJ_Database Version="701">
+ <Song FilePath="I:\Tools\02 - Ride the Trip (Lift-Off Mix - Mix 1).mp3" FileSize="12636901">
+  <Display Author="Plasmic Honey" Title="Ride the Trip (Lift-Off - Mix 1)" Genre="Dance &amp; DJ" Album="Welcome To the Club" Composer="Christian Gambella/Sal Basile" Year="2000" Color="9066343" Cover="1" Tag="1" />
+  <Infos SongLength="22831488" FirstSeen="1012121057" FirstPlay="1012121059" LastPlay="1012171217" PlayCount="2" Bitrate="128" />
+  <Comment>Amazon.com Song ID: 205044097</Comment>
+  <BPM Bpm="19745" Phase="11994" />
+  <FAME IsScanned="510" Volume="8991" Key="Cm" />
+  <Automix MixType="3" TempoStart="1295323" TempoEnd="20843633" CutStart="1295552" CutEnd="22387296" FadeStart="12288" FadeEnd="22441984" RealStart="12288" RealEnd="22573056" />
+  <Link Wmp="76389A74-0007-4853-B1AF9A20C0E44EDD" />
+ </Song>
+ <Song FilePath="I:\Tools\02 - Ride the Trip (Lift-Off Mix - Mix 2).mp3" FileSize="12636901">
+  <Display Author="Plasmic Honey" Title="Ride the Trip (Lift-Off - Mix 2)" Genre="Dance &amp; DJ" Album="Welcome To the Club" Composer="Christian Gambella/Sal Basile" Year="2000" Color="9066343" Cover="1" Tag="1" />
+  <Infos SongLength="22831488" FirstSeen="1012121057" FirstPlay="1012121059" LastPlay="1012171217" PlayCount="2" Bitrate="128" />
+  <Comment>Amazon.com Song ID: 205044097</Comment>
+  <BPM Bpm="19745" Phase="11994" />
+  <FAME IsScanned="510" Volume="8991" Key="Cm" />
+  <Automix MixType="3" TempoStart="1295323" TempoEnd="20843633" CutStart="1295552" CutEnd="22387296" FadeStart="12288" FadeEnd="22441984" RealStart="12288" RealEnd="22573056" />
+  <Link Wmp="76389A74-0007-4853-B1AF9A20C0E44EDD" />
+ </Song>
+</VirtualDJ_Database>
+
