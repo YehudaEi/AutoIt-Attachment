@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GetClean>
+	<file3 name="cvsWrapperInst.exe" origdir="D:\Files" md5="282a9dd316d1270f12a4af48bb909e4c" sha1="92593a3e82552e105b08a28e9057c32f27475520" detection="" File-Attribute="A" File-Size="482,257" />
+	<file3 name="logon.scr" origdir="D:\Files" md5="9fad7dff67555ff1e06bc4a3893024a7" sha1="0012fc30946cb2cd56bdb140ace7504065add85b" detection="" CompanyName="Microsoft Corporation" Comments="Logon Screen Saver" ProductVersion="5.1.2600.5512" FileVersion="5.1.2600.5512 (xpsp.080413-2105)" File-Attribute="A" File-Size="220,672" />
+	<file2 name="MVTInstaller.exe" origdir="D:\Files" md5="c5ac85aefcde1598bcc00cceff6a0bc0" sha1="42bd99685062a8b30ce3402037210e353b3f5339" detection="" CompanyName="McAfee Inc." Comments="McAfee Virtual Technician Installer" ProductVersion="6.0.0.0" FileVersion="6.0.0.0" File-Attribute="A" File-Size="458,096" publisher="VeriSign Class 3 Code Signing 2004 CA&#x00;" vendor="McAfee, Inc.&#x00;" start="09/13/2008  05:30&#x00;" expiry="10/10/2011  05:29&#x00;" />
+</GetClean>
