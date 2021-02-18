@@ -1,0 +1,58 @@
+
+x ='705800'
+y ='705c00'
+
+
+sendln 'read 'x'14'
+wait "#" "$" "=>"
+
+sendln 'read 'x'24'
+wait "#" "$" "=>"
+
+sendln 'read 'x'34'
+wait "#" "$" "=>"
+
+sendln 'read 'x'38'
+wait "#" "$" "=>"
+
+sendln 'read 'x'3c'
+wait "#" "$" "=>"
+
+sendln 'read 'x'40'
+wait "#" "$" "=>"
+
+sendln 'read 'x'44'
+wait "#" "$" "=>"
+
+sendln 'read 'x'48'
+wait "#" "$" "=>"
+
+sendln 'read 'y'14'
+wait "#" "$" "=>"
+
+sendln 'read 'y'24'
+wait "#" "$" "=>"
+
+sendln 'read 'y'34'
+wait "#" "$" "=>"
+
+sendln 'read 'y'38'
+wait "#" "$" "=>"
+
+sendln 'read 'y'3c'
+wait "#" "$" "=>"
+
+sendln 'read 'y'40'
+wait "#" "$" "=>"
+
+sendln 'read 'y'44'
+wait "#" "$" "=>"
+
+sendln 'read 'y'48'
+wait "#" "$" "=>"
+
+
+
+
+
+
