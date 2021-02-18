@@ -1,0 +1,15 @@
+A,71843,testfname1,testlname1,testcname1,1 test st,,testcity1,10017,NY,6.55,USPS - Priority Mail,Mastercard,2,8.14,A0263,Organza Bags 4x5.5 White (PK10),1,1.59,0.04,0
+A,71860,testfname2,testlname2,,2 test st,,testcity2,11010,NY,12.67,UPS - Ground,,4,33.88,A0833,"Necklace Pad 8 7/8""H White ",2,1.31,0.11,0
+A,71860,testfname2,testlname2,,2 test st,,testcity2,11010,NY,12.67,UPS - Ground,,4,33.88,A0836,"Necklace Pad 8 7/8""H Black Velvet ",2,1.47,0.1,0
+A,71860,testfname2,testlname2,,2 test st,,testcity2,11010,NY,12.67,UPS - Ground,,4,33.88,A0555,Glossy Black Jewelry Box #53 (Each),20,0.27,0.08,0
+A,71860,testfname2,testlname2,,2 test st,,testcity2,11010,NY,12.67,UPS - Ground,,4,33.88,A0554,Glossy Black Jewelry Box #75 (Each),25,0.41,0.15,0
+A,71861,testfname3,testlname3,,3 test st,,testcity3,28904,NC,6.55,USPS - Priority Mail,,4,14.43,A0978,Earring Card 1x1 Black Flocked (PK100),2,3.94,0.06,0
+A,71862,testfname4,testlname4,,4 test st,,testcity4,38474,TN,12.8,UPS - Ground,Visa,2,49.6,A0258,Organza Bags 3x4 Olive Green (PK10),10,1.29,0.02,0
+A,71862,testfname4,testlname4,,4 test st,,testcity4,38474,TN,12.8,UPS - Ground,Visa,2,49.6,A0259,Organza Bags 3x4 Black (PK10),10,2.39,0.02,0
+A,71863,testfname5,testlname5,testcname5,5 test st,,testcity5,11580,NY,9.51,UPS - Ground,Visa,2,17.2,A0011,Jewelry Price Tags - Round White (Box1000),1,4.19,0.21,0
+A,71863,testfname5,testlname5,testcname5,5 test st,,testcity5,11580,NY,9.51,UPS - Ground,Visa,2,17.2,A0014,Jewelry Price Tags - Rectangle White (Box1000),1,3.5,0.21,0
+A,71864,testfname6,testlname6,,6 test st,,testcity6,90024,CA,8.73,UPS - Ground,Visa,2,17.83,A0306,Organza Bags 3x4 Purple (PK10),6,1.29,0.02,0
+A,71865,testfname7,testlname7,testcname7,7 test st,,testcity7,29715,SC,16.72,UPS - Ground,Visa,2,93.37,A0947,T Bar 12W x 12H Black Leatherette,3,8.14,1.7,0
+A,71865,testfname7,testlname7,testcname7,7 test st,,testcity7,29715,SC,16.72,UPS - Ground,Visa,2,93.37,A0738,T Bar 12W x 12H  Black Velvet ,1,8.14,2.03,0
+A,71865,testfname7,testlname7,testcname7,7 test st,,testcity7,29715,SC,16.72,UPS - Ground,Visa,2,93.37,A0788,"Necklace Pad 8.5""H White ",11,1.66,0.29,0
+A,71865,testfname7,testlname7,testcname7,7 test st,,testcity7,29715,SC,16.72,UPS - Ground,Visa,2,93.37,A0883,"Necklace Pad 5 1/4""H Black Velvet",21,1.23,0.06,0
