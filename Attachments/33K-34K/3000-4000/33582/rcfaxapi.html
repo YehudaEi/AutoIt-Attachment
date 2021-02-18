@@ -1,0 +1,70 @@
+
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+--> 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+<html> 
+  <head> 
+    <title></title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+  
+<meta name="NetsparkQuiltingResult" total-length="2763" removed="0" rules-found="w3123,w2341,w3104,w240,w6774,w5110" />
+</head> 
+  <body style="font-family: verdana;font-size: 8px"> 
+      <p style="font-size:12px;"> right click the page then click on view source.
+      edit the username and password value.
+      if after sending a fax, next page shows 0. means the fax was succesfully sent.
+      <table><tr><td valign="top"> 
+      <table align="center" style="background-color: #DCDCDC"> 
+          <tr valign="top"> 
+              <td valign="top"> 
+                  <font style="font-size:15px;color:blue;text-align: center">fax program using ringcentrals api</font><br><br> 
+                  <a href="https://service.ringcentral.com/faxoutapi/">rc fax api link</a> 
+              </td></tr><tr><td valign="top"> 
+      <form method="post" enctype="multipart/form-data"
+            action="https://service.ringcentral.com/faxapi.asp"> 
+ 
+          <input type="hidden" name="Username" value=""><br> 
+          <input type="hidden" name="Password" value=""><br> 
+          fax number: <input type="text" name="Recipient" value=""><br> 
+          Attachment: <input type="file" name="Attachment" value=""><br><br> 
+          
+                Notes :<br> 
+                <textarea name="coverpagetext" rows="8" cols="25"></textarea><br> 
+          <font style="font-size: 8px">ex. None, Contempo etc</font><br> 
+ 
+          CoverPage: <select name="coverpage"> 
+		<option value=0 selected> None</option> 
+		<option value=1 > Ancient</option> 
+		<option value=2 > Birthday</option> 
+		<option value=3 > Blank</option> 
+		<option value=4 > ClasMod</option> 
+		<option value=5 > Classic</option> 
+		<option value=6 > Confidential</option> 
+		<option value=7 > Contempo</option> 
+		<option value=8 > Elegant</option> 
+		<option value=9 > Express</option> 
+		<option value=10 > Formal</option> 
+		<option value=11 > Jazzy</option> 
+		<option value=12 > Modern</option> 
+		<option value=13 > Urgent</option> 
+		</select> 
+          resolution: <select name="Resolution"> 
+              <option value="2">Low</option> 
+              <option value="1" selected>High</option> 
+ 
+          </select><br><br> 
+ 
+          <input type="submit" value="send fax"><input type="reset" value="reset"> 
+ 
+ 
+      </form> 
+ 
+          </td> 
+          </tr> 
+          <tr><td style="font-size:8px">Copyright: rodelb@ringcentral.com</td></tr> 
+      </table></td><td><img src="faxapicode.jpg" alt="codes"></td></tr></table> 
+      
+  </body> 
+</html> 
