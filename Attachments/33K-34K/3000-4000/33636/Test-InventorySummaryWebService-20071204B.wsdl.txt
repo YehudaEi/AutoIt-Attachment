@@ -1,0 +1,212 @@
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="                                              " xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:ns="                                          " xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="                                          "><wsdl:documentation>
+		Web Service for Inventory Summary Use Case
+	</wsdl:documentation><wsdl:types><xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="                                              ">
+<xs:element name="summary">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="criteria" nillable="true" type="xsd:InventorySummaryWebServiceCriteria" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="login">
+<xs:complexType>
+<xs:all>
+<xs:element name="loginid" type="xs:string" />
+<xs:element name="password" type="xs:string" />
+</xs:all>
+</xs:complexType>
+</xs:element>
+<xs:element name="InventorySummaryWebServiceCriteria" type="xsd:InventorySummaryWebServiceCriteria" />
+<xs:complexType name="InventorySummaryWebServiceCriteria">
+<xs:sequence>
+<xs:element minOccurs="0" name="artDate1" type="xs:date" />
+<xs:element minOccurs="0" name="artDate2" type="xs:date" />
+<xs:element minOccurs="0" name="artRef1">
+<xs:simpleType>
+<xs:restriction base="xs:string">
+<xs:minLength value="1" />
+<xs:maxLength value="80" />
+</xs:restriction>
+</xs:simpleType>
+</xs:element>
+<xs:element minOccurs="0" name="artRef2">
+<xs:simpleType>
+<xs:restriction base="xs:string">
+<xs:minLength value="1" />
+<xs:maxLength value="80" />
+</xs:restriction>
+</xs:simpleType>
+</xs:element>
+<xs:element minOccurs="0" name="artRef3">
+<xs:simpleType>
+<xs:restriction base="xs:string">
+<xs:minLength value="1" />
+<xs:maxLength value="80" />
+</xs:restriction>
+</xs:simpleType>
+</xs:element>
+<xs:element maxOccurs="unbounded" minOccurs="0" name="article">
+<xs:simpleType>
+<xs:restriction base="xs:string">
+<xs:minLength value="1" />
+<xs:maxLength value="35" />
+</xs:restriction>
+</xs:simpleType>
+</xs:element>
+<xs:element minOccurs="0" name="articleStatus">
+<xs:simpleType>
+<xs:restriction base="xs:string">
+<xs:minLength value="1" />
+<xs:maxLength value="3" />
+</xs:restriction>
+</xs:simpleType>
+</xs:element>
+<xs:element name="client">
+<xs:simpleType>
+<xs:restriction base="xs:string">
+<xs:minLength value="1" />
+<xs:maxLength value="40" />
+</xs:restriction>
+</xs:simpleType>
+</xs:element>
+<xs:element minOccurs="0" name="consignmentNumber">
+<xs:simpleType>
+<xs:restriction base="xs:string">
+<xs:minLength value="1" />
+<xs:maxLength value="35" />
+</xs:restriction>
+</xs:simpleType>
+</xs:element>
+<xs:element minOccurs="0" name="groupedByClient" type="xs:boolean" />
+<xs:element minOccurs="0" name="groupedBySite" type="xs:boolean" />
+<xs:element minOccurs="0" name="includeNonConformGoods" type="xs:boolean" />
+<xs:element minOccurs="0" name="includeOrderFulfillment" type="xs:boolean" />
+<xs:element minOccurs="0" name="monitoringAlertStatusRed" type="xs:boolean" />
+<xs:element minOccurs="0" name="monitoringAlertStatusYellow" type="xs:boolean" />
+<xs:element minOccurs="0" name="monitoringAlertStatusBlue" type="xs:boolean" />
+<xs:element minOccurs="0" name="monitoringAlertStatusGreen" type="xs:boolean" />
+<xs:element minOccurs="0" name="monitoringNonAlertStatus" type="xs:boolean" />
+<xs:element minOccurs="0" name="ownStockOnly" type="xs:boolean" />
+<xs:element name="pageSize" nillable="true" type="xs:positiveInteger" />
+<xs:element minOccurs="0" name="pagingToken">
+<xs:simpleType>
+<xs:restriction base="xs:string">
+<xs:minLength value="1" />
+<xs:maxLength value="255" />
+</xs:restriction>
+</xs:simpleType>
+</xs:element>
+<xs:element minOccurs="0" name="site">
+<xs:simpleType>
+<xs:restriction base="xs:string">
+<xs:minLength value="1" />
+<xs:maxLength value="40" />
+</xs:restriction>
+</xs:simpleType>
+</xs:element>
+<xs:element minOccurs="0" name="supplier">
+<xs:simpleType>
+<xs:restriction base="xs:string">
+<xs:minLength value="1" />
+<xs:maxLength value="35" />
+</xs:restriction>
+</xs:simpleType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+<xs:element name="InventorySummaryResponse">
+<xs:complexType>
+<xs:sequence>
+<xs:element maxOccurs="unbounded" minOccurs="0" name="info">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="infocode" type="xs:string" />
+<xs:element name="infostring" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="moreResultsAvailable" type="xs:boolean" />
+<xs:element minOccurs="0" name="pagingToken">
+<xs:simpleType>
+<xs:restriction base="xs:string">
+<xs:minLength value="0" />
+<xs:maxLength value="255" />
+</xs:restriction>
+</xs:simpleType>
+</xs:element>
+<xs:element maxOccurs="unbounded" minOccurs="0" name="InventorySummaryLine" nillable="true" type="xsd:InventorySummaryWebServiceResult" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="InventorySummaryWebServiceResult" type="xsd:InventorySummaryWebServiceResult" />
+<xs:complexType name="InventorySummaryWebServiceResult">
+<xs:sequence>
+<xs:element minOccurs="0" name="monitoringAlertStatus">
+<xs:simpleType>
+<xs:restriction base="xs:string">
+<xs:enumeration value="RED" />
+<xs:enumeration value="RED_ATP" />
+<xs:enumeration value="GREEN" />
+<xs:enumeration value="GREEN_ATP" />
+<xs:enumeration value="BLUE" />
+<xs:enumeration value="BLUE_ATP" />
+<xs:enumeration value="YELLOW" />
+<xs:enumeration value="YELLOW_ATP" />
+<xs:enumeration value="NONE" />
+</xs:restriction>
+</xs:simpleType>
+</xs:element>
+<xs:element minOccurs="0" name="client">
+<xs:simpleType>
+<xs:restriction base="xs:string">
+<xs:minLength value="0" />
+<xs:maxLength value="40" />
+</xs:restriction>
+</xs:simpleType>
+</xs:element>
+<xs:element minOccurs="0" name="site">
+<xs:simpleType>
+<xs:restriction base="xs:string">
+<xs:minLength value="0" />
+<xs:maxLength value="40" />
+</xs:restriction>
+</xs:simpleType>
+</xs:element>
+<xs:element minOccurs="0" name="article">
+<xs:simpleType>
+<xs:restriction base="xs:string">
+<xs:minLength value="0" />
+<xs:maxLength value="35" />
+</xs:restriction>
+</xs:simpleType>
+</xs:element>
+<xs:element minOccurs="0" name="supplierArticle">
+<xs:simpleType>
+<xs:restriction base="xs:string">
+<xs:minLength value="0" />
+<xs:maxLength value="35" />
+</xs:restriction>
+</xs:simpleType>
+</xs:element>
+<xs:element minOccurs="0" name="articleDescription">
+<xs:simpleType>
+<xs:restriction base="xs:string">
+<xs:minLength value="0" />
+<xs:maxLength value="512" />
+</xs:restriction>
+</xs:simpleType>
+</xs:element>
+<xs:element minOccurs="0" name="monitoringMinValue" type="xs:int" />
+<xs:element minOccurs="0" name="monitoringMaxValue" type="xs:long" />
+<xs:element minOccurs="0" name="available" type="xs:int" />
+<xs:element minOccurs="0" name="blocked" type="xs:int" />
+<xs:element minOccurs="0" name="inbound" type="xs:int" />
+<xs:element minOccurs="0" name="outbound" type="xs:int" />
+<xs:element minOccurs="0" name="openInbound" type="xs:int" />
+<xs:element minOccurs="0" name="openInboundPartner" type="xs:int" />
+<xs:element minOccurs="0" name="openOutbound" type="xs:int" />
+<xs:element minOccurs="0" name="openOutboundPartner" type="xs:int" />
+<xs:element name="totalQty" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema></wsdl:types><wsdl:message name="summaryMessage"><wsdl:part name="part1" element="xsd:summary" /></wsdl:message><wsdl:message name="headerMessage"><wsdl:part name="login" element="xsd:login" /></wsdl:message><wsdl:message name="summaryResponseMessage"><wsdl:part name="part1" element="xsd:InventorySummaryResponse" /></wsdl:message><wsdl:portType name="InventorySummaryWebServicePortType"><wsdl:operation name="summary"><wsdl:input xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" message="ns:summaryMessage" wsaw:Action="urn:summary" /><wsdl:output xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" message="ns:summaryResponseMessage" wsaw:Action="                                                                                             " /></wsdl:operation></wsdl:portType><wsdl:binding name="InventorySummaryWebServiceSOAP11Binding" type="ns:InventorySummaryWebServicePortType"><soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" /><wsdl:operation name="summary"><soap:operation soapAction="urn:summary" style="document" /><wsdl:input><soap:body use="literal" /><soap:header use="literal" part="login" message="ns:headerMessage" /></wsdl:input><wsdl:output><soap:body use="literal" /></wsdl:output></wsdl:operation></wsdl:binding><wsdl:binding name="InventorySummaryWebServiceSOAP12Binding" type="ns:InventorySummaryWebServicePortType"><soap12:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" /><wsdl:operation name="summary"><soap12:operation soapAction="urn:summary" style="document" /><wsdl:input><soap12:body use="literal" /><soap12:header use="literal" part="login" message="ns:headerMessage" /></wsdl:input><wsdl:output><soap12:body use="literal" /></wsdl:output></wsdl:operation></wsdl:binding><wsdl:binding name="InventorySummaryWebServiceHttpBinding" type="ns:InventorySummaryWebServicePortType"><http:binding verb="POST" /><wsdl:operation name="summary"><http:operation location="summary" /><wsdl:input><mime:content type="text/xml" /></wsdl:input><wsdl:output><mime:content type="text/xml" /></wsdl:output></wsdl:operation></wsdl:binding><wsdl:service name="InventorySummaryWebService"><wsdl:port name="InventorySummaryWebServiceSOAP11port_http" binding="ns:InventorySummaryWebServiceSOAP11Binding"><soap:address location="http://www.kuehne-nagel.com:80/tinventoryWS/services/InventorySummaryWebService" /></wsdl:port><wsdl:port name="InventorySummaryWebServiceSOAP12port_http" binding="ns:InventorySummaryWebServiceSOAP12Binding"><soap12:address location="http://www.kuehne-nagel.com:80/tinventoryWS/services/InventorySummaryWebService" /></wsdl:port><wsdl:port name="InventorySummaryWebServiceHttpport1" binding="ns:InventorySummaryWebServiceHttpBinding"><http:address location="http://www.kuehne-nagel.com:80/tinventoryWS/rest/InventorySummaryWebService" /></wsdl:port></wsdl:service></wsdl:definitions>
