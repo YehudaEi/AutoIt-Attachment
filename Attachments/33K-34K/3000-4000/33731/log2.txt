@@ -1,0 +1,7 @@
+2008-01-14 00:23:41	Local7.Notice	172.17.175.129	55187: Jan 14 00:25:29: %LANCE-5-LATECOLL: Unit 0, late collision error
+2008-01-14 00:23:57	Local7.Notice	172.17.175.129	55188: Jan 14 00:25:45: %LANCE-5-LATECOLL: Unit 0, late collision error
+2008-01-14 00:24:00	Local7.Notice	172.17.175.129	55189: Jan 14 00:25:47: %LANCE-5-LATECOLL: Unit 0, late collision error
+2008-01-14 00:25:13	Local7.Warning	172.17.153.7	2008 Jan 14 00:27:01 SIN +08:00 %CDP-4-NVLANMISMATCH:Native vlan mismatch detected on port 3/6
+2008-01-14 00:25:56	Local7.Notice	172.17.112.6	2008 Jan 14 00:27:44 SIN +08:00 %DTP-5-TRUNKPORTON:Port 6/44 has become isl trunk
+2008-01-14 00:25:56	Local7.Notice	172.17.112.7	2008 Jan 14 00:27:44 SIN +08:00 %DTP-5-TRUNKPORTON:Port 6/44 has become isl trunk
+2008-01-14 00:26:08	Local7.Notice	172.17.112.6	2008 Jan 14 00:27:56 SIN +08:00 %PAGP-5-PORTTOSTP:Port 6/44 joined bridge port 6/44
