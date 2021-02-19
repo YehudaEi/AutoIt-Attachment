@@ -1,0 +1,26 @@
+#include <File.au3>
+#include <Array.au3>
+
+; ------------- Create "Baza_1.txt" --------------------------
+$baza1=@ScriptDir & "\Baza_1.txt"
+Local $sWords
+_FileReadToArray($baza1,$sWords)
+;  ------------ Create "Baza_2.txt" --------------------------
+Local $sWords = FileRead("Baza_1.txt")
+Local $aTemp = StringRegExp($sWords, "(?m)(?:^\H+)\h+(?:\H+)-(\H+)\)", 3)
+Local $aRhymn = _ArrayUnique($aTemp)
+_FileWriteFromArray("Baza_2.txt", $aRhymn, 1)
+
+;  -------------Create "Baza_3.txt" --------------------------
+Local $sResult
+For $i = 1 To UBound($aRhymn) - 1
+    Local $aMatch = StringRegExp($sWords, "(?m)(^\H+)\h+(?:\H+-" & $aRhymn[$i] & ".)", 3)
+    $sResult &= "-" & $aRhymn[$i] & @CRLF & @CRLF
+    For $j = 0 To UBound($aMatch) - 1
+        $sResult &= $aMatch[$j] & @CRLF
+    Next
+    $sResult &= @CRLF
+Next
+If FileExists("Baza_3.txt") Then FileDelete("Baza_3.txt")
+FileWrite("Baza_3.txt", $sResult)
+;----------------------------------------------------
