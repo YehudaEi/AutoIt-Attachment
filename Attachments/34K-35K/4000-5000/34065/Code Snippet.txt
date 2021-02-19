@@ -1,0 +1,61 @@
+Func _DateFunc(ByRef $DTArray)    ;  Subroutine to fill the passed array $DTArray with the appropriate values for further processing
+  $tTime = _Date_Time_GetLocalTime()
+  $sTime = _Date_Time_SystemTimeToDateTimeStr($tTime)
+  FileWriteLine($Hand, "Time and Date Information")
+  FileWriteLine($Hand, "System Time = " & $sTime)
+  ConsoleWrite("sTime = " & $sTime & @CRLF)
+  Sleep(100)
+  $sDate = StringMid($sTime, 7, 4) & "/" & StringLeft($sTime, 2) & "/" & StringMid($sTime, 4, 2)
+  FileWriteLine($Hand, "$sDate = " & $sDate)
+  ConsoleWrite("sDate = " & $sDate & @CRLF)
+  Sleep(100)
+  $DTArray[0] = StringMid($sTime, 15, 2) ; Minute
+  Sleep(100)
+  $DTArray[1] = StringMid($sTime, 12, 2) ; Hour
+  Sleep(100)
+  $DTArray[2] = StringMid($sTime, 4, 2)  ; Day
+  Sleep(100)
+  FileWriteLine($Hand, "$sTime = " & $sTime)
+  $DTArray[3] = _DateToDayOfWeek(StringMid($sTime, 7, 4), StringLeft($sTime, 2), StringMid($sTime, 4, 2))  ; DoW  Sleep(100)
+  Sleep(500)
+  ConsoleWrite($DTArray[0] & " " & $DTArray[1] & " " & $DTArray[2] & " " & $DTArray[3] & @CRLF)
+  FileWriteLine($Hand, "Immediate Day of Week = " & $DTArray[3])
+  FileWriteLine($Hand, "Immediate Hour = " & $DTArray[1])
+
+  Select
+	Case (($DTArray[3] > 1) And ($DTArray[3] <= 6) And ($DTArray[1] > 14)) ; Normal Weekday Run
+		  $sTime = _Date_Time_SystemTimeToDateStr($tTime)
+          FileWriteLine($Hand, "M-F > 14:00")
+          ConsoleWrite($sTime & @CRLF)
+		  $sTime = StringRight($sTime, 4) & "/" & StringLeft($sTime, 3) &   StringMid($sTime, 4, 2)
+          ConsoleWrite("Select 1" & @CRLF)
+          ConsoleWrite($sTime & @CRLF)
+	Case ($DTArray[3] = 1)
+		  $sTime = _DateAdd("D", -2,$sDate)
+          FileWriteLine($Hand, "Sunday")
+          ConsoleWrite("Select 2" & @CRLF)
+    Case ($DTArray[3] = 2 And $DTArray[1] < 14)
+		  $sTime = _DateAdd("D", -3,$sDate)
+          FileWriteLine($Hand, "M < 14:00")
+          ConsoleWrite("Select 3" & @CRLF)
+    Case ($DTArray[3] = 7)
+		  $sTime = _DateAdd("D", -1,$sDate)
+          FileWriteLine($Hand, "Saturday")
+          ConsoleWrite("Select 4" & @CRLF)
+	Case (($DTArray[3] > 2) And ($DTArray[3] < 7) And ($DTArray[1] < 14))
+		  $sTime = _DateAdd("D", -1,$sDate)
+          FileWriteLine($Hand, "M-F < 14:00")
+          ConsoleWrite("Select 5" & @CRLF)
+	  Case Else
+		  FileWriteLine($Hand, "No Case Selected")
+  EndSelect
+  $sDate = StringLeft($sTime, 10)
+  $DTArray[2] = StringRight($sDate, 2)  ; Day
+          ConsoleWrite("$sTime Before Calc = " & $sTime & @CRLF)
+          ConsoleWrite(StringLeft($sTime,4) &  @CRLF)
+          ConsoleWrite(StringMid($sTime, 6, 2) & @CRLF)
+          ConsoleWrite(StringRight($sTime, 2) & @CRLF)
+  Do
+    $DTArray[3] = _DateToDayOfWeek(StringLeft($sTime,4), StringMid($sTime, 6, 2), StringRight($sTime, 2))
+    Sleep(100)
+    ConsoleWrite("New DoW = " & $DTArray[3] & @CRLF)
