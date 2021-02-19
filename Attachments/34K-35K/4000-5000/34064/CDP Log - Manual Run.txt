@@ -1,0 +1,60 @@
+Time and Date Information
+System Time = 05/23/2011 16:56:27
+$sDate = 2011/05/23
+$sTime = 05/23/2011 16:56:27
+Immediate Day of Week = 2
+Immediate Hour = 16
+M-F > 14:00
+Minute = 56
+Hour = 16
+Day = 23
+Day of Week (Sunday = 1) = 2
+Month = 05
+Year(2) = 11
+Year(4) = 2011
+MM/DD/YYYY = 05/23/2011
+YY/MM/DD = 110523
+YYYYMMDD = 20110523
+ 
+FTP Information
+DN File = /dbupdate/options_20110523.zip
+Local File = C:\BOT\Delta Neutral\options_20110523.zip
+DateRun.txt file written
+FTP Start Time = 05/23/2011 16:56:38
+FTP Stop Time = 05/23/2011 16:57:51
+Successful FTP Download 05/23/2011 16:57:51
+Successful Zip Extraction 1
+Successful Dot Filter Run 0
+Successful AmiBroker Data Load 1
+Successful AmiBroker Analysis & File Write
+Successful AmiBroker Analysis
+Load Databases Successful 0
+Option Analyses Successful 0
+Index Analyses Successful 0
+Daily Report Successful 0
+Results Files Moved to Dropbox 1
+Results Files Zipped Boston Strangles.txt 1
+Results Files Zipped Call Calendars.txt 1
+Results Files Zipped Call Spread Sales.txt 1
+Results Files Zipped Collars.txt 1
+Results Files Zipped Combo Sales.txt 1
+Results Files Zipped Daily_Report.txt 1
+Results Files Zipped Double Calendars.txt 1
+Results Files Zipped Index Call Calendars.txt 1
+Results Files Zipped Index Call Spread Sales.txt 1
+Results Files Zipped Index Combo Sales.txt 1
+Results Files Zipped Index Double Calendars.txt 1
+Results Files Zipped Index Iron Condors.txt 1
+Results Files Zipped Index Put Calendars.txt 1
+Results Files Zipped Index Put Spread Sales.txt 1
+Results Files Zipped Iron Condors.txt 1
+Results Files Zipped Naked Call Sales.txt 1
+Results Files Zipped Naked Put Sales.txt 1
+Results Files Zipped Put Calendars.txt 1
+Results Files Zipped Put Spread Sales.txt 1
+Results Files Zipped 1
+Zipped Results Added to Archive 1
+AmiBroker Results Added to Archive 1
+MSN Results Added to Archive 1
+Corrected StockQuotes Added to Archive 1
+Databases Relocated and Backed Up 1
