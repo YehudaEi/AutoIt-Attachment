@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<foldercolors>
+	<path color="{A3B60A15-3008-40C5-B96B-615CF0005B25}" type="0">
+		<dir>
+			<pathstring>c:\windows</pathstring>
+		</dir>
+	</path>
+	<path color="{2F499E2B-8B6E-4B80-8E3B-C73E032E801F}" type="2">
+		<dir>
+			<pathstring>c:\windows\test.temp</pathstring>
+		</dir>
+	</path>
+	<path color="{C7A7BD30-0E8C-4A4B-B43A-2BA330167A21}" type="6">
+		<dir>
+			<pathstring>*(.zip|.rar|.7z|.tar|.tbz2|.tgz|.zipx)</pathstring>
+		</dir>
+	</path>
+</foldercolors>
