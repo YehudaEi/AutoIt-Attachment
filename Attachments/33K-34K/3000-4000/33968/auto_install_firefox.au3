@@ -1,0 +1,20 @@
+#RequireAdmin
+#AutoIt3Wrapper_Res_requestedExecutionLevel=requireAdministrator
+
+Run("Firefox Setup 4.0.exe")
+WinWaitActive("Cài đặt Mozilla Firefox")
+ControlClick("Cài đặt Mozilla Firefox","&Tiếp tục >",1)
+WinWaitActive("Cài đặt Mozilla Firefox")
+ControlClick("Cài đặt Mozilla Firefox","&Chuẩn",1201)
+ControlClick("Cài đặt Mozilla Firefox","&Tiếp tục >",1)
+WinWaitActive("Cài đặt Mozilla Firefox")
+ControlClick("Cài đặt Mozilla Firefox","&Cài đặt",1)
+WinWaitActive("Cài đặt Mozilla Firefox")
+ControlClick("Cài đặt Mozilla Firefox","&Chạy Firefox ngay bây giờ",1203)
+ControlClick("Cài đặt Mozilla Firefox","&Hoàn thành",1)
+WinWaitActive("Trình thuật sĩ Nhập")
+Send("!M")
+Send("!T")
+WinClose("Chào mừng đến Firefox - Mozilla Firefox")
+WinWaitActive("Xác nhận đóng")
+Send("{ENTER}")
