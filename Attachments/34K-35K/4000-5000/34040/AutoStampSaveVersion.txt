@@ -1,0 +1,226 @@
+-- TIME_STAMP   2011-05-21 15:33:45   v 1.0
+-- by BugFix (bugfix@autoit.de)
+
+-- declare table to hold helper functions
+local f = {}
+
+-- BEFORE SAVE==============================================BEGIN
+function OnBeforeSave(fname)
+	local tFile = {Dir = props['FileDir'], Name = props['FileName'], Ext = props['FileExt']:lower()}
+	if tFile.Ext == nil or (tFile.Ext ~= 'au3' and tFile.Ext ~= 'lua') then return end
+	local stamp = tonumber(props["SetTimeStamp."..tFile.Ext])
+	if stamp == 1 then f.InsertTimestamp(tFile) end
+end
+-- BEFORE SAVE================================================END
+
+-- HELPER FUNCTIONS=========================================BEGIN
+-----------------------------------------------------------------
+-- Check if an file exists, return: true/false
+f.FileExists =
+	function(sPath)
+		local fh = io.open(sPath)
+		local sRet = false
+		if fh ~= nil then fh:close() sRet = true end
+		return sRet
+	end
+-----------------------------------------------------------------
+-- Check if an folder exists, return: true/false
+f.FolderExists =
+	function(sPath)
+		local ret = os.rename(sPath, sPath)
+		if ret then return true else return false end
+	end
+-----------------------------------------------------------------
+-- Create a new folder
+-- (incl. subfolders, if given but not exists)
+-- use CMD - because that: short time pops up the CMD-window
+-- return:	true, 'successfully created'	= Succes
+--			false, 'creation failed'		= Failed
+--			false, 'always exists'			= Folder always exists
+f.FolderCreate =
+	function(sPath)
+		if not f.FolderExists(sPath) then
+			local ret = os.execute('MKDIR "' .. sPath .. '"')
+			if ret == 0 then return true, 'successfully created' else return false, 'creation failed' end
+		else
+			return false, 'always exists'
+		end
+	end
+-----------------------------------------------------------------
+-- Write to a file
+f.FileWrite =
+	function(sPath, data, flag)
+		local fhOut = io.open(sPath, flag)
+		fhOut:write(data)
+		fhOut:close()
+		return true
+	end
+-----------------------------------------------------------------
+-- Split version number to main and sub part
+f.splitVer =
+	function(sVer)
+		if type(sVer) ~= 'string' then sVer = tostring(sVer) end
+		if string.len(sVer) == 0 then return nil end
+		local tVer = {'',''} n = 1
+		for k, w in string.gmatch(sVer, ".") do
+			if k ~= "." then
+				tVer[n] = tVer[n] .. k
+			else
+				n = n +1
+			end
+		end
+		return tonumber(tVer[1]), tonumber(tVer[2])
+	end
+-----------------------------------------------------------------
+-- Get current version number and increase if required
+f.Version =
+	function (text, verMark)
+		local sVer, verMain, verSub
+		local mustSave = 0
+		local vStart, vEnd = string.find(text, "v %d+\.%d+")
+		if vStart == nil then
+			verMain = 0
+			verSub = 1
+		else
+			sVer = string.sub(text, vStart+2, vEnd)
+			verMain, verSub = f.splitVer(sVer)
+		end
+		if verMark ~= nil then verMark = string.sub(text, verMark, verMark) end
+		-- choose: 'V' =Main-Num increase, Sub-Num set back to '0'; 'v' =Sub-Num increase;
+		--         'n' =existing Ver-Num will used as is (may be changed by hand for version jump) and a backup will create
+		if verMark == 'V' then
+			verMain = verMain +1
+			verSub = 0
+			mustSave = 1
+		elseif verMark == 'v' then
+			verSub = verSub +1
+			mustSave = 1
+		elseif verMark == 'n' then
+			mustSave = 1
+		end
+		sVer = 'v '..verMain..'.'..verSub
+		return sVer, mustSave
+	end
+-----------------------------------------------------------------
+-- Save a copy of the current file with new version number and set time stamp
+--[[ Need an entry in SciTEUser.properties to use right folder!
+#~ Save with TimeStamp Y/N (1/0) - Requires '1' if version backup are wanted
+SetTimeStamp.au3=1
+SetTimeStamp.lua=0
+#~ Path for saving version backups [VER_DIR]: (Path/Deafult/no)
+#~ IMPORTANT:	Don't write path inside quotation!
+#~				NO trailing backslash!
+#~	Default = create subfolder in current script folder
+#~		foldername:	VER_DIR\BUVer_FILENAME.EXT\
+#~		filename:	\FILENAME[Version-Number].EXT
+#~	no	   = don't increase version number, don't save backup (only time stamp will print)
+Version.Path.au3=$(SciteDefaultHome)\VersionBackup\AU3
+Version.Path.lua=no
+]]
+f.SaveToVersionFolder =
+	function (tFile, sVer)
+		local sSaveFolder = props['Version.Path.'..tFile.Ext]:lower()
+		if sSaveFolder == 'no' then return end
+		local sVerFolder = 'BUVer_'..tFile.Name..'.'..tFile.Ext..'\\'
+		local sVerFile = tFile.Name..'['..string.sub(sVer, 3, string.len(sVer))..']'..'.'..tFile.Ext
+		if sSaveFolder == 'default' then sSaveFolder = tFile.Dir..'\\' end
+		local len = string.len(sSaveFolder)
+		if string.sub(sSaveFolder, len, len) ~= '\\' then sSaveFolder = sSaveFolder..'\\' end
+		if not f.FolderExists(sSaveFolder..sVerFolder) then f.FolderCreate(sSaveFolder..sVerFolder) end
+		if f.FileExists(sSaveFolder..sVerFolder..sVerFile) then return nil end
+		return f.FileWrite(sSaveFolder..sVerFolder..sVerFile, editor:GetText(), "wb")
+	end
+-- HELPER FUNCTIONS===========================================END
+
+--TIME STAMP WITH VERSION BACKUP============================BEGIN
+f.InsertTimestamp =
+	function (tFile)
+		local caret = editor.CurrentPos
+		local s = editor:GetText(), t, start, ende, lineNr, lineTxt, verMark, verLen
+		local mustSave = 0
+		local sVer = 'v 0.1' lineLen = 0
+		local onlyStamp = false space = '   '
+		if props['Version.Path.'..tFile.Ext]:lower() == 'no' then
+			onlyStamp = true
+			space = ''
+			sVer = ''
+		end
+		if tFile.Ext == 'au3' then
+			start = "#Region - TimeStamp"
+			ende = "#EndRegion - TimeStamp"
+		elseif tFile.Ext == 'lua' then
+			start = "-- TIME_STAMP"
+			ende = start
+		end
+		local a,b = editor:findtext("^"..start, SCFIND_REGEXP)
+		local x,y = editor:findtext("^"..ende, SCFIND_REGEXP)
+		editor:BeginUndoAction()
+		if a ~= nil then
+			editor:GotoPos(a)
+			lineNr = editor:LineFromPosition(editor.CurrentPos)
+			if tFile.Ext == 'lua' then
+				lineTxt, lineLen = editor:GetLine(lineNr)
+			else
+				lineTxt = editor:GetLine(lineNr +1)
+			end
+			if y then                                                  -- time stamp exists
+				if not onlyStamp then
+					verMark = string.find(lineTxt, "[vVn]\r\n")
+					if verMark == nil then                             -- no marker set, time stamp with/without version number
+						if string.find(lineTxt, "v %d+\.%d+") then     -- with version number
+							sVer, mustSave = f.Version(lineTxt, verMark)
+						else                                           -- without version number
+							space = ''
+							sVer = ''
+						end
+					else                                               -- marker set, time stamp with/without version number
+						if string.find(lineTxt, "v %d+\.%d+") then     -- with version number, version backup desired
+							sVer, mustSave = f.Version(lineTxt, verMark)
+						else                                           -- without version number, first backup
+							if string.find(lineTxt, "%dv\r\n") then
+								sVer = 'v 0.1'
+								mustSave = 1
+							elseif string.find(lineTxt, "%dV\r\n") then
+								sVer = 'v 1.0'
+								mustSave = 1
+							else
+								space = ''
+								sVer = ''
+							end
+						end
+					end
+				end
+				if tFile.Ext == 'lua' then
+					t =  "-- TIME_STAMP   "..os.date("%Y-%m-%d %H:%M:%S")..space..sVer.."\r\n"
+					y = a + lineLen
+				else
+					t =  "#Region - TimeStamp\r\n; "..os.date("%Y-%m-%d %H:%M:%S")..space..sVer.."\r\n#EndRegion - TimeStamp\r\n"
+					y = y +2
+				end
+				editor:SetSel(a,y)
+				editor:ReplaceSel(t)
+			end
+		else                                   -- first saving  -  to avoid backup, use asterisk at first editor position
+			mustSave = 1
+			editor:SetSel(0,1)
+			if editor:GetSelText() == '*' then -- with asterisk at first editor position: no backup will saved, only time stamp are print
+				mustSave = 0
+				space = ''
+				sVer = ''
+				s = string.sub(s, 2)           -- delete asterisk from editor text
+			end
+			editor:GotoPos(0)
+			if tFile.Ext == 'lua' then
+				t =  "-- TIME_STAMP   "..os.date("%Y-%m-%d %H:%M:%S")..space..sVer.."\r\n"
+				editor:SetText(t.."\r\n"..s)
+			else
+				t =  "#Region - TimeStamp\r\n; "..os.date("%Y-%m-%d %H:%M:%S")..space..sVer.."\r\n#EndRegion - TimeStamp\r\n"
+				editor:SetText(t.."\r\n"..s)
+			end
+			caret = caret + string.len(t) +2
+		end
+		editor:EndUndoAction()
+		editor:GotoPos(caret)
+		if mustSave == 1 then f.SaveToVersionFolder(tFile, sVer) end
+	end
+-- TIME STAMP WITH VERSION BACKUP=============================END
