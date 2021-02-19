@@ -1,0 +1,7 @@
+Time and Date Information
+System Time = 05/23/2011 14:30:03
+$sDate = 2011/05/23
+$sTime = 05/23/2011 14:30:03
+Immediate Day of Week = 2
+Immediate Hour = 14
+No Case Selected
