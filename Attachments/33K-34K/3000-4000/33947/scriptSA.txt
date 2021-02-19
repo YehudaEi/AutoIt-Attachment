@@ -1,0 +1,73 @@
+#include <String.au3>
+#include <Array.au3>
+#include <Timers.au3>
+
+Global $controle
+Global $tamMax = 100
+Global $vetSA[$tamMax]
+Global $tamVetor=0
+Global $line
+Global $i
+
+Func iniciaVetSA()
+	While $i < $tamMax
+		$vetSA[$i] = -1
+		$i=$i+1
+	WEnd
+EndFunc
+
+Func abre_controle()
+	FileCopy("C:\Documents and Settings\aidjunio\Desktop\Teste\controle.txt","C:\Documents and Settings\aidjunio\Desktop\Teste\Controle",1)
+	$controle = FileOpen("C:\Documents and Settings\aidjunio\Desktop\Teste\Controle\controle.txt", 0)
+	If @error = -1 Then
+		MsgBox(0,"","Impossivel abrir arquivo")
+		Exit
+	EndIf
+EndFunc
+
+Func verifica_id($var)
+
+	If $tamVetor >= $tamMax Then
+		MsgBox(0,"","Numero de SA's esgotado, favor re-executar o script")
+		Exit
+	EndIf
+	$cont=0
+	If $tamVetor=0 Then
+		_ArrayAdd($vetSA, $var)
+		$tamVetor=$tamVetor+1
+		return 1
+	EndIf
+	While $cont < $tamVetor & $tamVetor <> $tamMax
+		If $vetSA[$cont] = $var Then
+			return 0
+		Else
+			$cont=$cont+1
+		EndIf
+	WEnd
+	_ArrayAdd($vetSA, $var)
+	$tamVetor=$tamVetor+1
+	return 1
+EndFunc
+
+Func executa_leitura()
+		$line = FileReadLine($controle)
+		If @error = -1 Then
+			Return -1
+		EndIF
+		If $tamVetor >= 100 Then MsgBox(0,"","Vetor chegou ao maximo")
+		$id = _StringBetween($line, "", "")
+		If $id = 0 Then
+			MsgBox(0,"","Cheguei")
+		EndIf
+		$valorpassado = $id[0]
+		If verifica_id($valorpassado) = 1 Then MsgBox(0,"",$id[0])
+EndFunc
+
+iniciaVetSA()
+abre_controle()
+
+While 1=1
+	executa_leitura()
+WEnd
+
+FileClose($controle)
