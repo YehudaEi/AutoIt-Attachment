@@ -1,0 +1,2 @@
+Frames, Time (ms), Min, Max, Avg
+    23,     10000,   0,   6, 2.300
