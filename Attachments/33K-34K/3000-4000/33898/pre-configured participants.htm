@@ -1,0 +1,222 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html">
+<title>Codian MCU - Add pre-configured participants</title>
+<link rel="stylesheet" type="text/css" href="mcu.css">
+
+<meta name="NetsparkQuiltingResult" total-length="17854" removed="0" rules-found="w3123,w2341,w6750,w8724,w4375,w9678,w240,w6774,w73,w5402,r1101s-30p1" />
+</head>
+<body>
+<script type="text/javascript">
+<!--
+function open_top_level_help()
+{
+  var help_window = window.open('help_top_level.html', 'codian_mcu_help', 'location=yes,toolbar=yes,menubar=no,resizable,scrollbars,status');
+  help_window.focus();
+}
+// -->
+</script>
+<div class="titlebar">
+<table class="titlebar">
+<tr>
+<td align="left" rowspan="2"><a href="http://www.codian.com"><img src="logo.gif" name="logo" alt="logo" title="connect to the company website" border="0"></a></td>
+<td class="titlebar" align="right" valign="middle"><b>MSE</b>&nbsp;8510</td></tr>
+<tr>
+<td class="titlebar" align="right" valign="bottom">host:&nbsp;<b>dmpsd</b> &nbsp;&nbsp;login:&nbsp;<b>fomsupport</b></td>
+</tr>
+</table>
+</div>
+<div class="menubar_level_1">
+<table class="menubar_level_1" cellspacing="0">
+<tr>
+<td align="left">
+&nbsp;&nbsp;
+<a class="menubar_inactive" href="login_home.html">&nbsp;Home&nbsp;</a>
+<a class="menubar_inactive" href="streaming.html">&nbsp;Streaming&nbsp;</a>
+<a class="menubar_active" href="conference_list.html">&nbsp;Conferences&nbsp;</a>
+<a class="menubar_inactive" href="user_profile.html">&nbsp;Profile&nbsp;</a>
+<a class="menubar_inactive" href="endpoint_list.html">&nbsp;Endpoints&nbsp;</a>
+<a class="menubar_inactive" href="gateway_list.html">&nbsp;Gateways&nbsp;</a>
+</td>
+<td align="right">
+<a class="menubar_inactive" href="logout.html">&nbsp;Log out&nbsp;</a>
+<a class="menubar_inactive" href="help_top_level.html" onclick="javascript:open_top_level_help(); return false;">&nbsp;Help&nbsp;</a>
+&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+</div>
+<div class="bodycontent">
+<br>
+<a href="login_home.html">Home</a> &gt; <a href="conference_list.html">Conferences</a> &gt; <b>Add new conference</b>
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left">&nbsp;</td>
+<td align="right" rowspan="2" valign="bottom"></td>
+</tr>
+<tr>
+<td align="left" valign="bottom">
+<table width="100%" cellspacing="0" cellpadding="2">
+<tr style="font-weight: bold;">
+<td width="40%" align="center" class="tab_active">&nbsp;Pre-configured&nbsp;participants&nbsp;</td>
+<td width="60%" class="tab_spacing">&nbsp;</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr class="tab_table_line">
+<td width="100%" colspan="2" class="tab_table_contents">
+<form action="conference_add_action.html" method="post">
+<input type="hidden" name="name" value="">
+<input type="hidden" name="description" value="">
+<input type="hidden" name="numeric_id" value="">
+<input type="hidden" name="pin" value="">
+<input type="hidden" name="guest_numeric_id" value="">
+<input type="hidden" name="guest_pin" value="">
+<input type="hidden" name="owner" value="fomsupport">
+<input type="hidden" name="reserved_audio_ports" value="">
+<input type="hidden" name="reserved_video_ports" value="">
+<input type="hidden" name="maximum_audio_ports" value="">
+<input type="hidden" name="maximum_video_ports" value="">
+<input type="hidden" name="layout_control" value="true">
+<input type="hidden" name="preconfigured_endpoints_deferred" value="false">
+<input type="hidden" name="join_audio_muted" value="false">
+<input type="hidden" name="join_video_muted" value="false">
+<input type="hidden" name="h239_size" value="67109632">
+<input type="hidden" name="h239_contribution_enabled" value="true">
+<input type="hidden" name="allow_streaming" value="on">
+<input type="hidden" name="visibility" value="public">
+<input type="hidden" name="encryption" value="allowed">
+<input type="hidden" name="last_chairman_leaves" value="disconnect">
+<input type="hidden" name="chair_control" value="floor_only">
+<input type="hidden" name="start_hour" value="12">
+<input type="hidden" name="start_minute" value="31">
+<input type="hidden" name="start_year" value="2011">
+<input type="hidden" name="start_month" value="4">
+<input type="hidden" name="start_date" value="3">
+<input type="hidden" name="duration_days" value="0">
+<input type="hidden" name="duration_hours" value="1">
+<input type="hidden" name="duration_minutes" value="0">
+<input type="hidden" name="repeat_type" value="none">
+<input type="hidden" name="repeat_weekly_interval" value="weekly">
+<input type="hidden" name="repeat_monthly_week" value="0">
+<input type="hidden" name="repeat_monthly_day" value="0">
+<input type="hidden" name="endon_type" value="none">
+<input type="hidden" name="endon_reps" value="">
+<input type="hidden" name="endon_date" value="">
+<input type="hidden" name="endon_month" value="0">
+<input type="hidden" name="endon_year" value="">
+<script type="text/javascript">
+<!--
+var last_endpoint_clicked = -1;
+var last_endpoint_checked = true;
+function select_endpoint(box, e, box_index)
+{
+  with (box.form)
+  {
+    if (e.shiftKey && (last_endpoint_clicked >= 0))
+    {
+      var valid_index = 0;
+      for (var index=0 ; index<elements.length ; index++)
+      {
+        if (elements[index].type == 'checkbox')
+        {
+	         if ((valid_index >= last_endpoint_clicked) && (valid_index <= box_index))
+            elements[index].checked = last_endpoint_checked;
+	         else if ((valid_index >= box_index) && (valid_index <= last_endpoint_clicked))
+	           elements[index].checked = last_endpoint_checked;
+          valid_index++;
+	       }
+      }
+    }
+    last_endpoint_clicked = box_index;
+    last_endpoint_checked = box.checked;
+  }
+}
+// -->
+</script>
+<table width="100%" cellspacing="0" cellpadding="2">
+<tr><td align="right"><b>Page<input type="submit" class="evenline_page_link_current" name="preconfigured_page_index" value="1">
+<input type="submit" class="evenline_page_link_other" name="preconfigured_page_index" value="2">
+<input type="submit" class="evenline_page_link_other" name="preconfigured_page_index" value="3">
+<input type="submit" class="evenline_page_link_other" name="preconfigured_page_index" value="4">
+</b>
+</td></tr></table>
+<table width="100%" cellspacing="0" cellpadding="2" class="bordered_table">
+<tr class="headline"><th width="40%" align="right">Available endpoints</th><th width="60%" align="left"></th></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_156" onclick="javascript:select_endpoint(this, event, 0)"></td><td width="60%" align="left">H.323: *TCS Switched</td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_161" onclick="javascript:select_endpoint(this, event, 1)"></td><td width="60%" align="left">H.323: *TCS Switched - Backup</td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_199" onclick="javascript:select_endpoint(this, event, 2)"></td><td width="60%" align="left">H.323: ARC - ARHCC Baker 1</td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_11" onclick="javascript:select_endpoint(this, event, 3)"></td><td width="60%" align="left">H.323: ARC - CGH ICU2</td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_42" onclick="javascript:select_endpoint(this, event, 4)"></td><td width="60%" align="left">H.323: ARC - CRGH 1018</td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_24" onclick="javascript:select_endpoint(this, event, 5)"></td><td width="60%" align="left">H.323: ARC - CWH 2D22</td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_43" onclick="javascript:select_endpoint(this, event, 6)"></td><td width="60%" align="left">H.323: ARC - DCDH Bsmt</td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_174" onclick="javascript:select_endpoint(this, event, 7)"></td><td width="60%" align="left">H.323: ARC - Duncan</td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_53" onclick="javascript:select_endpoint(this, event, 8)"></td><td width="60%" align="left">H.323: ARC - FSJH 010</td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_146" onclick="javascript:select_endpoint(this, event, 9)"></td><td width="60%" align="left">H.323: ARC - KGH CAC 228</td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_147" onclick="javascript:select_endpoint(this, event, 10)"></td><td width="60%" align="left">H.323: ARC - KGH CAC 237</td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_190" onclick="javascript:select_endpoint(this, event, 11)"></td><td width="60%" align="left">H.323: ARC - LGH Annex 112</td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_181" onclick="javascript:select_endpoint(this, event, 12)"></td><td width="60%" align="left">H.323: ARC - LGH Seminar C</td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_56" onclick="javascript:select_endpoint(this, event, 13)"></td><td width="60%" align="left">H.323: ARC - LGH Seminar D</td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_61" onclick="javascript:select_endpoint(this, event, 14)"></td><td width="60%" align="left">H.323: ARC - MMH - Terrace</td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_245" onclick="javascript:select_endpoint(this, event, 15)"></td><td width="60%" align="left">H.323: ARC - NRGH 2053</td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_246" onclick="javascript:select_endpoint(this, event, 16)"></td><td width="60%" align="left">H.323: ARC - NRGH 2060</td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_74" onclick="javascript:select_endpoint(this, event, 17)"></td><td width="60%" align="left">H.323: ARC - NRGH 2061</td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_80" onclick="javascript:select_endpoint(this, event, 18)"></td><td width="60%" align="left">H.323: ARC - RGH 1763</td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_81" onclick="javascript:select_endpoint(this, event, 19)"></td><td width="60%" align="left">H.323: ARC - RIH B1</td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_244" onclick="javascript:select_endpoint(this, event, 20)"></td><td width="60%" align="left">H.323: ARC - SJH Comox</td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_10" onclick="javascript:select_endpoint(this, event, 21)"></td><td width="60%" align="left">H.323: ARC - SMH 1752</td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_167" onclick="javascript:select_endpoint(this, event, 22)"></td><td width="60%" align="left">H.323: Bell - T1 Audio-bridge</td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_198" onclick="javascript:select_endpoint(this, event, 23)"></td><td width="60%" align="left">H.323: Bell - T2 Audio Bridge </td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_52" onclick="javascript:select_endpoint(this, event, 24)"></td><td width="60%" align="left">H.323: IMP - UVIC - Casiro Portable</td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_102" onclick="javascript:select_endpoint(this, event, 25)"></td><td width="60%" align="left">H.323: IMP - UVIC - Eibner Portable</td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_8" onclick="javascript:select_endpoint(this, event, 26)"></td><td width="60%" align="left">H.323: IMP - UVIC - Lampron Portable</td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_16" onclick="javascript:select_endpoint(this, event, 27)"></td><td width="60%" align="left">H.323: IMP - UVIC - MSB 107</td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_64" onclick="javascript:select_endpoint(this, event, 28)"></td><td width="60%" align="left">H.323: IMP - UVIC - MSB 131</td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_65" onclick="javascript:select_endpoint(this, event, 29)"></td><td width="60%" align="left">H.323: IMP - UVIC - MSB 150 LT A</td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_224" onclick="javascript:select_endpoint(this, event, 30)"></td><td width="60%" align="left">H.323: IMP - UVIC - MSB 150 LT B</td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_66" onclick="javascript:select_endpoint(this, event, 31)"></td><td width="60%" align="left">H.323: IMP - UVIC - MSB 160</td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_139" onclick="javascript:select_endpoint(this, event, 32)"></td><td width="60%" align="left">H.323: IMP - UVIC - MSB 160B</td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_28" onclick="javascript:select_endpoint(this, event, 33)"></td><td width="60%" align="left">H.323: IMP - UVIC - MSB 210</td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_67" onclick="javascript:select_endpoint(this, event, 34)"></td><td width="60%" align="left">H.323: IMP - UVIC - MSB 310 MPL</td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_68" onclick="javascript:select_endpoint(this, event, 35)"></td><td width="60%" align="left">H.323: IMP - UVIC - MSB 350 GAL</td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_111" onclick="javascript:select_endpoint(this, event, 36)"></td><td width="60%" align="left">H.323: IMP - UVIC - RJH CA 011</td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_82" onclick="javascript:select_endpoint(this, event, 37)"></td><td width="60%" align="left">H.323: IMP - UVIC - RJH CA 107-Law Prt</td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_83" onclick="javascript:select_endpoint(this, event, 38)"></td><td width="60%" align="left">H.323: IMP - UVIC - RJH CA 120</td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_84" onclick="javascript:select_endpoint(this, event, 39)"></td><td width="60%" align="left">H.323: IMP - UVIC - RJH CA 125</td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_20" onclick="javascript:select_endpoint(this, event, 40)"></td><td width="60%" align="left">H.323: IMP - UVIC - RJH CA 130</td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_128" onclick="javascript:select_endpoint(this, event, 41)"></td><td width="60%" align="left">H.323: IMP - UVIC - RM A144</td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_89" onclick="javascript:select_endpoint(this, event, 42)"></td><td width="60%" align="left">H.323: IMP - UVIC - VGH 1912</td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_90" onclick="javascript:select_endpoint(this, event, 43)"></td><td width="60%" align="left">H.323: IMP - UVIC - VGH 1914</td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_91" onclick="javascript:select_endpoint(this, event, 44)"></td><td width="60%" align="left">H.323: IMP - UVIC - VGH 1916</td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_239" onclick="javascript:select_endpoint(this, event, 45)"></td><td width="60%" align="left">H.323: IMP: VGH Admin Boardroom </td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_135" onclick="javascript:select_endpoint(this, event, 46)"></td><td width="60%" align="left">H.323: Mirial - Dr. Kuo</td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_3" onclick="javascript:select_endpoint(this, event, 47)"></td><td width="60%" align="left">H.323: Movi - Anthony Chan</td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_101" onclick="javascript:select_endpoint(this, event, 48)"></td><td width="60%" align="left">H.323: Movi - Asif Hayat</td></tr>
+<tr class="evenline"><td width="40%" align="right"><input type="checkbox" name="h323_154" onclick="javascript:select_endpoint(this, event, 49)"></td><td width="60%" align="left">H.323: Movi - Ferooz Sekandarpoor</td></tr>
+</table>
+<table width="100%" cellspacing="0" cellpadding="2">
+<tr><td align="left"><input type="submit" name="return_to_configuration" value="Return to conference configuration"></td><td align="right"><b>Page<input type="submit" class="evenline_page_link_current" name="preconfigured_page_index" value="1">
+<input type="submit" class="evenline_page_link_other" name="preconfigured_page_index" value="2">
+<input type="submit" class="evenline_page_link_other" name="preconfigured_page_index" value="3">
+<input type="submit" class="evenline_page_link_other" name="preconfigured_page_index" value="4">
+</b>
+</td></tr></table>
+</form>
+</td>
+</tr>
+</table>
+<br>
+<br>
+</div>
+<br>
+<div class="copyright">
+<table class="copyright">
+<tr>
+<td align="center">(c) Copyright TANDBERG 2003-2009, <a href="help_contact.html">License information</a></td>
+</tr>
+</table>
+</div>
+</body>
+</html>
