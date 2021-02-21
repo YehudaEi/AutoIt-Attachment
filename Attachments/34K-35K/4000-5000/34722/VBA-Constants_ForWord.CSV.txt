@@ -1,0 +1,16 @@
+Property/Method,Class (variables),Member (constants),Value,Description,AutoIT Variable (classes),AutoIT Constant (members)
+DisplayAlerts,WdAlertLevel,wdAlertsAll,-1,All message boxes and alerts are displayed; errors are returned to the macro.,Dim $WdAlertLevel,Dim $wdAlertsAll  =  -1
+DisplayAlerts,WdAlertLevel,wdAlertsMessageBox,-2,Only message boxes are displayed; errors are trapped and returned to the macro.,Dim $WdAlertLevel,Dim $wdAlertsMessageBox  =  -2
+DisplayAlerts,WdAlertLevel,wdAlertsNone,0,"No alerts or message boxes are displayed. If a macro encounters a message box, the default value is chosen and the macro continues.",Dim $WdAlertLevel,Dim $wdAlertsNone  =  0
+InsertAlignmentTab,WdAlignmentTabAlignment,wdCenter,1,Centered tab.,Dim $WdAlignmentTabAlignment,Dim $wdCenter  =  1
+InsertAlignmentTab,WdAlignmentTabAlignment,wdLeft,0,Left-aligned tab.,Dim $WdAlignmentTabAlignment,Dim $wdLeft  =  0
+InsertAlignmentTab,WdAlignmentTabAlignment,wdRight,2,Right-aligned tab.,Dim $WdAlignmentTabAlignment,Dim $wdRight  =  2
+MoveRight,WdUnits,wdCell,12,A cell.,Dim $WdUnits,Dim $wdCell  =  12
+MoveRight,WdUnits,wdCharacter,1,A character.,Dim $WdUnits,Dim $wdCharacter  =  1
+MoveRight,WdUnits,wdColumn,9,A column.,Dim $WdUnits,Dim $wdColumn  =  9
+MoveRight,WdUnits,wdItem,16,The selected item.,Dim $WdUnits,Dim $wdItem  =  16
+MoveRight,WdUnits,wdLine,5,A line.,Dim $WdUnits,Dim $wdLine  =  5
+MoveRight,WdUnits,wdParagraph,4,A paragraph.,Dim $WdUnits,Dim $wdParagraph  =  4
+MoveRight,WdUnits,wdRow,10,A row.,Dim $WdUnits,Dim $wdRow  =  10
+MoveRight,wdMoveExtend,wdMove,0,The selection is collapsed to the endpoint and moved to the right.,Dim $wdMoveExtend,Dim $wdMove  =  0
+MoveRight,wdMoveExtend,wdExtend,1,The selection is extended to the right.,Dim $wdMoveExtend,Dim $wdExtend  =  1
