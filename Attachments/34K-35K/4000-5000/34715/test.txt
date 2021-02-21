@@ -1,0 +1,14 @@
+Ean	Smith	40077	Fake1 Elementary School	080	PS		07/25/2011	Withdraw
+Ean	Smith	40077	Fake2 Elementary School	100	K	07/25/2011		Enroll
+Angel	Smith	40032	Fake2 Elementary School	100	K	07/25/2011		Enroll
+Valeria	Smith	40053	Fake2 Elementary School	100	K	07/25/2011		Enroll
+Anthony	Smith	40023	Fake2 Elementary School	100	K	07/25/2011		Enroll
+Fernando	Smith	40057	Fake2 Elementary School	100	K	07/25/2011		Enroll
+Hugo	Smith	40026	Fake2 Elementary School	100	K	07/25/2011		Enroll
+Lakshya	Smith	40066	Fake2 Elementary School	100	K	07/25/2011		Enroll
+Ramon	Smith	40012	Fake2 Elementary School	100	K	07/25/2011		Enroll
+Alexandra	Smith	40074	Fake1 Elementary School	100	K	07/25/2011		Enroll
+Emily	Smith	40099	Fake1 Elementary School	100	K	07/25/2011		Enroll
+Fernando	Smith	40098	Fake1 Elementary School	100	K	07/25/2011		Enroll
+Danna	Smith	40120	Fake1 Elementary School	100	K		07/25/2011	Withdraw
+Danna	Smith	40120	Fake3 Elementary School	100	K	07/25/2011		Enroll
