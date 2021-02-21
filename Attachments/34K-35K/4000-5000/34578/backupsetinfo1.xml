@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+  <BackupSet>
+    <Name>07-02-2011_12-43-34</Name>
+    <OSVersion>Windows7</OSVersion>
+    <CreationTime>07/02/2011 12:44:06</CreationTime>
+    <DiskSize>40.0 GB</DiskSize>
+    <DiskUsedSize>40.0 GB</DiskUsedSize>
+    <BackupType>PARTITION_BACKUP</BackupType>
+    <CompressionType>NO_COMPRESSION</CompressionType>
+    <EncryptionType>NO_ENCRYPTION</EncryptionType>
+    <Comment></Comment>
+    <MaxNoOfIncrementals>600</MaxNoOfIncrementals>
+    <VolumeSet>G,I</VolumeSet>
+    <NoOfPartitions>2</NoOfPartitions>
+    <Partition>
+      <Name>G:\</Name>
+      <Index></Index>
+      <Size>20.0 GB</Size>
+      <UsedSpace>1.53 GB</UsedSpace>
+    </Partition>
+    <Partition>
+      <Name>I:\</Name>
+      <Index></Index>
+      <Size>19.99 GB</Size>
+      <UsedSpace>202.13 MB</UsedSpace>
+    </Partition>
+  </BackupSet>
+
