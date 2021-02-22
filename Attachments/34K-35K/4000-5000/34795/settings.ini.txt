@@ -1,0 +1,6 @@
+[config]
+date=110722
+FileLocName="C:\Users\fms7809022g\Desktop\New folder\SyslogCatchAll.txt"
+search="Local7.Warning"
+Paging="d:\test.bat"
+LastEOF=2616
