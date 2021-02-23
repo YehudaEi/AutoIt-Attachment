@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xsi:noNamespaceSchemaLocation="..\Config.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdsi="MDSI">
+	<form name="MASignOn" type="Data Entry">
+		<form_name>MASignOn</form_name>
+		<form_type>SIGNON</form_type>
+		<form_title>Sign On</form_title>
+		<help_topic>Logging_On.htm</help_topic>
+		<h>600</h>
+		<w>800</w>
+		<content>
+			<control name="LoginPanel" type="PANEL_CTRL">
+				<x>315</x>
+				<y>140</y>
+				<w>740</w>
+				<h>475</h>
+				<content>
+					<control type="GROUPBOX_CTRL" name="control_2254">
+						<field_name>dummyFrame_0_1</field_name>
+						<y>60</y>
+						<x>360</x>
+						<h>261</h>
+						<w>212</w>
+						<text>Sign On Form</text>
+						<font_name>Arial Black</font_name>
+						<font_size>15.75</font_size>
+						<content>
+							<control type="ADVTEXTBOX_CTRL" name="txtLogin">
+								<element_name>user_id</element_name>
+								<y>44</y>
+								<x>114</x>
+								<h>24</h>
+								<w>81</w>
+								<is_readonly>false</is_readonly>
+								<is_mandatory>true</is_mandatory>
+								<is_hidden>false</is_hidden>
+								<data_name>logon_id</data_name>
+								<field_name>MobileUserId</field_name>
+								<max_size>7</max_size>
+								<char_filter>None</char_filter>
+								<alignment>Left</alignment>
+								<is_reverse>false</is_reverse>
+								<font_name>Arial</font_name>
+								<font_size>9.75</font_size>
+								<linked_label>LABEL_1</linked_label>
+							</control>
+							<control type="ADVTEXTBOX_CTRL" name="txtPassword">
+								<element_name>user_password</element_name>
+								<y>80</y>
+								<x>114</x>
+								<h>24</h>
+								<w>81</w>
+								<is_readonly>false</is_readonly>
+								<is_mandatory>true</is_mandatory>
+								<is_hidden>false</is_hidden>
+								<data_name>logon_password</data_name>
+								<field_name>MobileUserPassword</field_name>
+								<max_size>30</max_size>
+								<char_filter>None</char_filter>
+								<alignment>Left</alignment>
+								<is_reverse>false</is_reverse>
+								<font_name>Arial</font_name>
+								<font_size>9.75</font_size>
+								<linked_label>LABEL_2</linked_label>
+							</control>
+				</content>
+			</control>
+		</content>
+	</form>
+</config>
