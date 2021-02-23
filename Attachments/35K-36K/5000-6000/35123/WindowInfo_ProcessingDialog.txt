@@ -1,0 +1,38 @@
+>>>> Window <<<<
+Title:	frmConverter
+Class:	TfrmConverter
+Position:	660, 106
+Size:	457, 344
+Style:	0x96000000
+ExStyle:	0x00010000
+Handle:	0x0029144E
+
+>>>> Control <<<<
+Class:	TSMImage
+Instance:	1
+ClassnameNN:	TSMImage1
+Name:	
+Advanced (Class):	[CLASS:TSMImage; INSTANCE:1]
+ID:	1970154
+Text:	
+Position:	0, 0
+Size:	457, 344
+ControlClick Coords:	404, 319
+Style:	0x56000000
+ExStyle:	0x00010000
+Handle:	0x001E0FEA
+
+>>>> Mouse <<<<
+Position:	404, 319
+Cursor ID:	2
+Color:	0x107DEF
+
+>>>> StatusBar <<<<
+
+>>>> ToolsBar <<<<
+
+>>>> Visible Text <<<<
+Shut down computer after conversion
+
+
+>>>> Hidden Text <<<<
