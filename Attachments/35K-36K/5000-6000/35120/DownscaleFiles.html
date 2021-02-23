@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>xxControlbased_Convert.au3</title>
+<meta name="Generator" content="SciTE - www.Scintilla.org" />
+<style type="text/css">
+.S0 {
+	color: #000000;
+}
+.S1 {
+	font-style: italic;
+	color: #009933;
+	background: #FFFFFF;
+	text-decoration: inherit;
+}
+.S3 {
+	font-style: italic;
+	font-weight: bold;
+	color: #AC00A9;
+	background: #FFFFFF;
+	text-decoration: inherit;
+}
+.S4 {
+	font-style: italic;
+	font-weight: bold;
+	color: #000090;
+	background: #FFFFFF;
+	text-decoration: inherit;
+}
+.S5 {
+	font-weight: bold;
+	color: #0000FF;
+	background: #FFFFFF;
+	text-decoration: inherit;
+}
+.S7 {
+	font-weight: bold;
+	color: #9999CC;
+	background: #FFFFFF;
+	text-decoration: inherit;
+}
+.S8 {
+	font-weight: bold;
+	color: #FF0000;
+	background: #FFFFFF;
+	text-decoration: inherit;
+}
+.S10 {
+	font-weight: bold;
+	color: #FF8800;
+	background: #FFFFFF;
+	text-decoration: inherit;
+}
+span {
+	font-family: 'Courier New';
+	color: #000000;
+	font-size: 10pt;
+}
+</style>
+</head>
+<body bgcolor="#F0F4F9">
+<span><span class="S4">AutoItSetOption</span><span class="S0"> </span><span class="S8">(</span><span class="S7">"TrayIconDebug"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">)</span><br />
+<span class="S4">Opt</span><span class="S8">(</span><span class="S7">"WinWaitDelay"</span><span class="S8">,</span><span class="S3">100</span><span class="S8">)</span><br />
+<span class="S4">Opt</span><span class="S8">(</span><span class="S7">"WinDetectHiddenText"</span><span class="S8">,</span><span class="S3">1</span><span class="S8">)</span><br />
+<span class="S4">Opt</span><span class="S8">(</span><span class="S7">"MouseCoordMode"</span><span class="S8">,</span><span class="S3">0</span><span class="S8">)</span><br />
+<br />
+<span class="S5">Func</span><span class="S0"> Terminate</span><span class="S8">()</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;</span><span class="S4">HotKeySet</span><span class="S8">(</span><span class="S7">"</span><span class="S10">{ESC}</span><span class="S7">"</span><span class="S8">)</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;</span><span class="S4">send</span><span class="S8">(</span><span class="S7">"</span><span class="S10">{ESC}</span><span class="S7">"</span><span class="S8">)</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;</span><span class="S4">HotKeySet</span><span class="S8">(</span><span class="S7">"</span><span class="S10">{ESC}</span><span class="S7">"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Terminate"</span><span class="S8">)</span><br />
+<span class="S0">&nbsp;&nbsp;&nbsp;</span><span class="S5">exit</span><br />
+<span class="S5">EndFunc</span><br />
+<br />
+<br />
+<span class="S4">ControlFocus</span><span class="S8">(</span><span class="S7">"Source"</span><span class="S8">,</span><span class="S7">"Address: C:\Users\Mike\Desktop\Source"</span><span class="S8">,</span><span class="S7">"1001"</span><span class="S8">)</span><br />
+<span class="S4">WinWaitActive</span><span class="S8">(</span><span class="S7">"Source"</span><span class="S8">,</span><span class="S7">""</span><span class="S8">,</span><span class="S7">""</span><span class="S8">)</span><br />
+<span class="S1">;ControlClick("Source","Source sibling list","")</span><br />
+<span class="S4">MouseMove</span><span class="S8">(</span><span class="S3">158</span><span class="S8">,</span><span class="S3">37</span><span class="S8">)</span><br />
+<span class="S4">MouseClick</span><span class="S8">(</span><span class="S7">"left"</span><span class="S8">,</span><span class="S3">158</span><span class="S8">,</span><span class="S3">37</span><span class="S8">,</span><span class="S3">4</span><span class="S8">)</span><br />
+<span class="S4">MouseMove</span><span class="S8">(</span><span class="S3">158</span><span class="S8">,</span><span class="S3">55</span><span class="S8">)</span><br />
+<span class="S4">MouseClick</span><span class="S8">(</span><span class="S7">"left"</span><span class="S8">,</span><span class="S3">158</span><span class="S8">,</span><span class="S3">55</span><span class="S8">,</span><span class="S3">2</span><span class="S8">)</span><br />
+<span class="S4">MouseMove</span><span class="S8">(</span><span class="S3">80</span><span class="S8">,</span><span class="S3">90</span><span class="S8">)</span><br />
+<span class="S4">MouseClick</span><span class="S8">(</span><span class="S7">"left"</span><span class="S8">,</span><span class="S3">80</span><span class="S8">,</span><span class="S3">90</span><span class="S8">,</span><span class="S3">2</span><span class="S8">)</span><br />
+<span class="S4">MouseMove</span><span class="S8">(</span><span class="S3">80</span><span class="S8">,</span><span class="S3">240</span><span class="S8">)</span><br />
+<span class="S4">MouseClick</span><span class="S8">(</span><span class="S7">"left"</span><span class="S8">,</span><span class="S3">80</span><span class="S8">,</span><span class="S3">240</span><span class="S8">,</span><span class="S3">1</span><span class="S8">)</span><br />
+<span class="S4">MouseMove</span><span class="S8">(</span><span class="S3">160</span><span class="S8">,</span><span class="S3">200</span><span class="S8">)</span><br />
+<span class="S4">MouseClickDrag</span><span class="S8">(</span><span class="S7">"left"</span><span class="S8">,</span><span class="S3">160</span><span class="S8">,</span><span class="S3">200</span><span class="S8">,</span><span class="S3">650</span><span class="S8">,</span><span class="S3">200</span><span class="S8">)</span><br />
+<span class="S4">WinActivate</span><span class="S8">(</span><span class="S7">"frmMain"</span><span class="S8">,</span><span class="S7">"Merge into one file"</span><span class="S8">)</span><br />
+<span class="S4">Sleep</span><span class="S8">(</span><span class="S3">4000</span><span class="S8">)</span><br />
+<span class="S4">MouseMove</span><span class="S8">(</span><span class="S3">389</span><span class="S8">,</span><span class="S3">132</span><span class="S8">)</span><br />
+<span class="S4">Sleep</span><span class="S8">(</span><span class="S7">""</span><span class="S8">)</span><br />
+<span class="S4">MouseClick</span><span class="S8">(</span><span class="S7">"left"</span><span class="S8">,</span><span class="S3">389</span><span class="S8">,</span><span class="S3">132</span><span class="S8">,</span><span class="S3">4</span><span class="S8">)</span><br />
+<span class="S4">ControlSend</span><span class="S8">(</span><span class="S7">"frmMain"</span><span class="S8">,</span><span class="S7">"Merge into one file"</span><span class="S8">,</span><span class="S7">"[CLASS:TVTEdit; INSTANCE:1]"</span><span class="S8">,</span><span class="S7">"A1"</span><span class="S8">)</span><br />
+<span class="S4">MouseMove</span><span class="S8">(</span><span class="S3">108</span><span class="S8">,</span><span class="S3">50</span><span class="S8">)</span><br />
+<span class="S4">MouseClick</span><span class="S8">(</span><span class="S7">"left"</span><span class="S8">,</span><span class="S3">108</span><span class="S8">,</span><span class="S3">50</span><span class="S8">,</span><span class="S3">1</span><span class="S8">)</span><br />
+<span class="S4">WinActivate</span><span class="S8">(</span><span class="S7">"frmEditor"</span><span class="S8">,</span><span class="S7">"Keep Original Aspect Ratio"</span><span class="S8">)</span><br />
+<span class="S4">Sleep</span><span class="S8">(</span><span class="S3">490</span><span class="S8">)</span><br />
+<span class="S4">MouseMove</span><span class="S8">(</span><span class="S3">37</span><span class="S8">,</span><span class="S3">300</span><span class="S8">)</span><br />
+<span class="S4">MouseClick</span><span class="S8">(</span><span class="S7">"left"</span><span class="S8">,</span><span class="S3">37</span><span class="S8">,</span><span class="S3">8</span><span class="S8">,</span><span class="S3">2</span><span class="S8">)</span><br />
+<span class="S1">;ControlFocus("Source", "Source sibling list", "1001")</span><br />
+<span class="S1">;WinMenuSelectItem("Source","Source sibling list","1283")</span><br />
+<span class="S1">;ControlClick("Source","C:\Users\Mike\Desktop\Source","5")</span><br />
+<span class="S1">;ControlFocus("Source","Source sibling list","[ID:5")</span><br />
+<span class="S1">;Send("{DOWN}")</span><br />
+<span class="S1">;MouseDown(</span><br />
+<span class="S1">;ControlFocus("A1","Source sibling list", "")</span><br />
+<span class="S1">;ControlClick("Source","","[ID:1001]","[CLASS:DropDown; INSTANCE:1]")</span><br />
+<span class="S1">;ControlClick("Source","Source sibling list", "5", "[CLASS:SysListView32; INSTANCE:1]")</span><br />
+<span class="S1">;ControlClick("A1","Organize","")</span><br />
+<span class="S1">;ControlClick("A1","Select All","")&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;Inserted code below&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</span><br />
+<span class="S4">ControlFocus</span><span class="S8">(</span><span class="S7">"frmMain"</span><span class="S8">,</span><span class="S7">"Merge into one file"</span><span class="S8">,</span><span class="S7">""</span><span class="S8">)</span><br />
+<span class="S1">;ControlClick("","Merge into one file","[ControlID:1398896; MouseClick:111,46]"}</span><br />
+<span class="S4">MouseMove</span><span class="S8">(</span><span class="S3">389</span><span class="S8">,</span><span class="S3">132</span><span class="S8">)</span><br />
+<span class="S4">Sleep</span><span class="S8">(</span><span class="S7">""</span><span class="S8">)</span><br />
+<span class="S4">MouseClick</span><span class="S8">(</span><span class="S7">"left"</span><span class="S8">,</span><span class="S3">389</span><span class="S8">,</span><span class="S3">132</span><span class="S8">,</span><span class="S3">4</span><span class="S8">)</span><br />
+<span class="S4">ControlSend</span><span class="S8">(</span><span class="S7">"frmMain"</span><span class="S8">,</span><span class="S7">"Merge into one file"</span><span class="S8">,</span><span class="S7">"[CLASS:TVTEdit; INSTANCE:1]"</span><span class="S8">,</span><span class="S7">"</span><span class="S10">{right}{right}{BS}</span><span class="S7">A1"</span><span class="S8">)</span><br />
+<span class="S4">MouseMove</span><span class="S8">(</span><span class="S3">108</span><span class="S8">,</span><span class="S3">50</span><span class="S8">)</span><br />
+<span class="S4">MouseClick</span><span class="S8">(</span><span class="S7">"left"</span><span class="S8">,</span><span class="S3">108</span><span class="S8">,</span><span class="S3">50</span><span class="S8">,</span><span class="S3">1</span><span class="S8">)</span><br />
+<span class="S4">WinWaitActive</span><span class="S8">(</span><span class="S7">"frmEditor"</span><span class="S8">,</span><span class="S7">"Keep Original Aspect Ratio"</span><span class="S8">,</span><span class="S7">"[CLASS:TRzTabSheet; INSTANCE:1]"</span><span class="S8">)</span><br />
+<span class="S4">MouseMove</span><span class="S8">(</span><span class="S3">37</span><span class="S8">,</span><span class="S3">8</span><span class="S8">)</span><br />
+<span class="S4">MouseClick</span><span class="S8">(</span><span class="S7">"left"</span><span class="S8">,</span><span class="S3">37</span><span class="S8">,</span><span class="S3">8</span><span class="S8">,</span><span class="S3">2</span><span class="S8">)</span><br />
+<span class="S1">;send("95")</span><br />
+<span class="S4">WinActivate</span><span class="S8">(</span><span class="S7">"frmEditor"</span><span class="S8">,</span><span class="S7">"Keep Original Aspect Ratio"</span><span class="S8">)</span><br />
+<span class="S4">MouseMove</span><span class="S8">(</span><span class="S3">98</span><span class="S8">,</span><span class="S3">459</span><span class="S8">)</span><br />
+<span class="S4">MouseClick</span><span class="S8">(</span><span class="S7">"left"</span><span class="S8">,</span><span class="S3">98</span><span class="S8">,</span><span class="S3">459</span><span class="S8">,</span><span class="S3">3</span><span class="S8">)</span><br />
+<span class="S4">Send</span><span class="S8">(</span><span class="S7">"</span><span class="S10">{BS}</span><span class="S7">"</span><span class="S8">)</span><br />
+<span class="S4">Send</span><span class="S8">(</span><span class="S7">"95"</span><span class="S8">)</span><br />
+<span class="S4">MouseMove</span><span class="S8">(</span><span class="S3">174</span><span class="S8">,</span><span class="S3">459</span><span class="S8">)</span><br />
+<span class="S4">MouseClick</span><span class="S8">(</span><span class="S7">"left"</span><span class="S8">,</span><span class="S3">174</span><span class="S8">,</span><span class="S3">459</span><span class="S8">,</span><span class="S3">3</span><span class="S8">)</span><br />
+<span class="S4">Send</span><span class="S8">(</span><span class="S7">"</span><span class="S10">{BS}</span><span class="S7">"</span><span class="S8">)</span><br />
+<span class="S4">Send</span><span class="S8">(</span><span class="S7">"0"</span><span class="S8">)</span><br />
+<span class="S4">MouseMove</span><span class="S8">(</span><span class="S3">344</span><span class="S8">,</span><span class="S3">459</span><span class="S8">)</span><br />
+<span class="S4">MouseClick</span><span class="S8">(</span><span class="S7">"left"</span><span class="S8">,</span><span class="S3">344</span><span class="S8">,</span><span class="S3">459</span><span class="S8">)</span><br />
+<span class="S4">Send</span><span class="S8">(</span><span class="S7">"</span><span class="S10">{BS}</span><span class="S7">"</span><span class="S8">)</span><br />
+<span class="S4">Send</span><span class="S8">(</span><span class="S7">"1242"</span><span class="S8">)</span><br />
+<span class="S4">MouseMove</span><span class="S8">(</span><span class="S3">482</span><span class="S8">,</span><span class="S3">459</span><span class="S8">)</span><br />
+<span class="S4">MouseClick</span><span class="S8">(</span><span class="S7">"left"</span><span class="S8">,</span><span class="S3">482</span><span class="S8">,</span><span class="S3">459</span><span class="S8">,</span><span class="S3">3</span><span class="S8">)</span><br />
+<span class="S4">Send</span><span class="S8">(</span><span class="S7">"</span><span class="S10">{BS}</span><span class="S7">"</span><span class="S8">)</span><br />
+<span class="S4">Send</span><span class="S8">(</span><span class="S7">"996"</span><span class="S8">)</span><br />
+<span class="S4">ControlClick</span><span class="S8">(</span><span class="S7">"frmEditor"</span><span class="S8">,</span><span class="S7">"Keep Original Aspect Ratio"</span><span class="S8">,</span><span class="S7">"[CLASS:TRzCheckBox; INSTANCE:1]"</span><span class="S8">)</span><br />
+<span class="S4">MouseMove</span><span class="S8">(</span><span class="S3">625</span><span class="S8">,</span><span class="S3">512</span><span class="S8">)</span><br />
+<span class="S4">MouseClick</span><span class="S8">(</span><span class="S7">"left"</span><span class="S8">,</span><span class="S3">625</span><span class="S8">,</span><span class="S3">512</span><span class="S8">,</span><span class="S3">1</span><span class="S8">)</span><br />
+<span class="S4">WinActivate</span><span class="S8">(</span><span class="S7">"frmMain"</span><span class="S8">,</span><span class="S7">"Merge into one file"</span><span class="S8">)</span><br />
+<span class="S4">MouseMove</span><span class="S8">(</span><span class="S3">700</span><span class="S8">,</span><span class="S3">474</span><span class="S8">)</span><br />
+<span class="S4">MouseClick</span><span class="S8">(</span><span class="S7">"left"</span><span class="S8">,</span><span class="S3">700</span><span class="S8">,</span><span class="S3">474</span><span class="S8">)</span><br />
+<span class="S4">WinActivate</span><span class="S8">(</span><span class="S7">"frmConverter"</span><span class="S8">,</span><span class="S7">"Shut down computer after conversion"</span><span class="S8">)</span><br />
+<span class="S4">Sleep</span><span class="S8">(</span><span class="S3">400000</span><span class="S8">)</span><br />
+<span class="S5">While</span><span class="S0"> </span><span class="S4">WinWait</span><span class="S8">(</span><span class="S7">"frmConverter"</span><span class="S8">,</span><span class="S7">"&amp;Finished"</span><span class="S8">)</span><br />
+<span class="S0">&nbsp; &nbsp; </span><span class="S4">sleep</span><span class="S8">(</span><span class="S3">40000</span><span class="S8">)</span><br />
+<span class="S5">WEnd</span><br />
+<span class="S4">MouseMove</span><span class="S8">(</span><span class="S3">395</span><span class="S8">,</span><span class="S3">319</span><span class="S8">)</span><br />
+<span class="S4">MouseClick</span><span class="S8">(</span><span class="S7">"left"</span><span class="S8">,</span><span class="S3">395</span><span class="S8">,</span><span class="S3">319</span><span class="S8">)</span><br />
+<span class="S0">&nbsp; &nbsp; </span><br />
+<br />
+<br />
+<span class="S0"></span></span>
+</body>
+</html>
