@@ -1,0 +1,40 @@
+>>>> Window <<<<
+Title:	
+Class:	DropDown
+Position:	241, 123
+Size:	143, 90
+Style:	0x9480009F
+ExStyle:	0x00000080
+Handle:	0x001307BC
+
+>>>> Control <<<<
+Class:	SysListView32
+Instance:	1
+ClassnameNN:	SysListView321
+Name:	
+Advanced (Class):	[CLASS:SysListView32; INSTANCE:1]
+ID:	5
+Text:	Source sibling list
+Position:	0, 2
+Size:	141, 84
+ControlClick Coords:	28, 9
+Style:	0x56004405
+ExStyle:	0x00000000
+Handle:	0x00120768
+
+>>>> Mouse <<<<
+Position:	29, 12
+Cursor ID:	2
+Color:	0x08246B
+
+>>>> StatusBar <<<<
+
+>>>> ToolsBar <<<<
+
+>>>> Visible Text <<<<
+Source
+Source sibling list
+Source parent list
+
+
+>>>> Hidden Text <<<<
