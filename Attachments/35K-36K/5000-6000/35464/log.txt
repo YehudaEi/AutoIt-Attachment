@@ -1,0 +1,890 @@
+0x010014|0|992|Res|Ina|Ena|Vis|csrss|#32769
+0x0101DC|1|1144|Res|Ina|Dis|Hid|ctfmon|TF_FloatingLangBar_WndTitle
+0x0101DE|1|1144|Res|Ina|Dis|Hid|ctfmon|CiceroUIWndFrame
+0x010088|1|1796|Res|Ina|Ena|Hid|explorer|tooltips_class32
+0x020662|1|2148|Res|Ina|Ena|Hid|firefox|MozillaDropShadowWindowClass
+0x05073E|1|2148|Res|Ina|Ena|Hid|firefox|MozillaDropShadowWindowClass
+0x01007A|1|1796|Res|Ina|Ena|Hid|explorer|tooltips_class32
+0x0300B6|1|1796|Res|Ina|Ena|Hid|explorer|tooltips_class32
+0x03008C|1|1796|Res|Ina|Ena|Hid|explorer|Start Menu
+0x0300AE|3|1796|Res|Ina|Ena|Vis|explorer|Desktop User Pane
+0x0300A2|4|1796|Res|Ina|Ena|Vis|explorer|UserXP
+0x0300A0|3|1796|Res|Ina|Ena|Vis|explorer|DesktopSFTBarHost
+0x0300A4|4|1796|Res|Ina|Ena|Vis|explorer|SysListView32
+0x0300A8|5|1796|Res|Ina|Ena|Hid|explorer|SysHeader32
+0x030092|3|1796|Res|Ina|Ena|Vis|explorer|Desktop More Programs Pane
+0x0300AA|4|1796|Res|Ina|Ena|Vis|explorer|All &Programs
+0x0300AC|3|1796|Res|Ina|Ena|Vis|explorer|DesktopSFTBarHost
+0x0300A6|4|1796|Res|Ina|Ena|Vis|explorer|SysListView32
+0x0300B4|5|1796|Res|Ina|Ena|Hid|explorer|SysHeader32
+0x03008E|3|1796|Res|Ina|Ena|Vis|explorer|DesktopLogoffPane
+0x0300B0|4|1796|Res|Ina|Ena|Vis|explorer|ToolbarWindow32
+0x01007C|1|1796|Res|Ina|Ena|Hid|explorer|tooltips_class32
+0x030068|1|1796|Res|Ina|Ena|Hid|explorer|tooltips_class32
+0x050078|1|1796|Res|Ina|Ena|Hid|explorer|tooltips_class32
+0x050056|1|1796|Res|Ina|Ena|Vis|explorer|Shell_TrayWnd
+0x030060|2|1796|Res|Ina|Ena|Vis|explorer|start
+0x03005E|2|1796|Res|Ina|Ena|Vis|explorer|TrayNotifyWnd
+0x030062|3|1796|Res|Ina|Ena|Vis|explorer|4:39 PM
+0x040058|3|1796|Res|Ina|Ena|Vis|explorer|SysPager
+0x030064|4|1796|Res|Ina|Ena|Vis|explorer|Notification Area
+0x030066|3|1796|Res|Ina|Ena|Vis|explorer|Button
+0x01007E|2|1796|Res|Ina|Ena|Vis|explorer|ReBarWindow32
+0x010082|3|1796|Res|Ina|Ena|Vis|explorer|Running Applications
+0x010086|4|1796|Res|Ina|Ena|Vis|explorer|Running Applications
+0x03073C|1|2148|Res|Ina|Ena|Hid|firefox|MozillaDropShadowWindowClass
+0x0300B2|1|1796|Res|Ina|Ena|Hid|explorer|tooltips_class32
+0x030090|1|1796|Res|Ina|Ena|Hid|explorer|tooltips_class32
+0x09076A|1|2148|Res|Ina|Ena|Hid|firefox|MozillaDropShadowWindowClass
+0x050678|1|2148|Res|Ina|Ena|Hid|firefox|MozillaDropShadowWindowClass
+0x050730|1|2148|Res|Ina|Ena|Hid|firefox|MozillaDropShadowWindowClass
+0x060686|1|2148|Res|Ina|Ena|Hid|firefox|MozillaDropShadowWindowClass
+0x02067A|1|2148|Res|Ina|Ena|Hid|firefox|MozillaDropShadowWindowClass
+0x030600|1|3332|Res|Ina|Ena|Hid|x|Auto-Suggest Dropdown
+0x030608|2|3332|Res|Ina|Ena|Hid|x|ScrollBar
+0x030602|2|3332|Res|Ina|Ena|Vis|x|ScrollBar
+0x030606|2|3332|Res|Ina|Ena|Vis|x|Internet Explorer
+0x030604|3|3332|Res|Ina|Ena|Vis|x|SysHeader32
+0x030744|1|2148|Res|Ina|Ena|Hid|firefox|MozillaDropShadowWindowClass
+0x050740|1|2148|Res|Ina|Ena|Hid|firefox|MozillaDropShadowWindowClass
+0x03064E|1|2148|Res|Ina|Ena|Hid|firefox|MozillaWindowClass
+0x03066C|1|2148|Res|Ina|Ena|Hid|firefox|MozillaWindowClass
+0x01064C|1|2148|Res|Ina|Ena|Hid|firefox|MozillaWindowClass
+0x02060C|1|3332|Res|Ina|Ena|Hid|x|Auto-Suggest Dropdown
+0x020610|2|3332|Res|Ina|Ena|Hid|x|ScrollBar
+0x020612|2|3332|Res|Ina|Ena|Vis|x|ScrollBar
+0x020616|2|3332|Res|Ina|Ena|Vis|x|Internet Explorer
+0x020614|3|3332|Res|Ina|Ena|Vis|x|SysHeader32
+0x020414|1|284|Res|Ina|Ena|Hid|orbitdm|CPPToolTip
+0x0102E8|1|284|Res|Ina|Ena|Hid|orbitdm|tooltips_class32
+0x0102E2|1|284|Res|Ina|Ena|Hid|orbitdm|ATL:00507560
+0x02028C|1|1996|Res|Ina|Ena|Hid|avgnt|Afx:00400000:0:00010011:01100063:00000
+0x0202A8|2|1996|Res|Ina|Ena|Vis|avgnt|_
+0x020284|2|1996|Res|Ina|Ena|Vis|avgnt|MFCGridCtrl
+0x0101F0|1|532|Res|Ina|Ena|Hid|NetMeter|NetMeter
+0x0101FA|2|532|Res|Ina|Ena|Hid|NetMeter|TTrafficGraph
+0x020192|1|1968|Res|Ina|Ena|Hid|FourEngi|BlackScreen
+0x010098|1|1796|Res|Ina|Ena|Hid|explorer|tooltips_class32
+0x0B0754|1|2096|Res|Act|Ena|Vis|cmd|C:\WINDOWS\system32\cmd.exe
+0x0A075A|1|2540|Res|Ina|Ena|Hid|AutoIt3|tooltips_class32
+0x0C0756|1|2540|Res|Ina|Ena|Hid|AutoIt3|My GUI
+0x220742|2|2540|Res|Ina|Ena|Vis|AutoIt3|SysListView32
+0x0307D0|3|2540|Res|Ina|Ena|Vis|AutoIt3|SysHeader32
+0x130750|1|2540|Res|Ina|Ena|Hid|AutoIt3|AutoIt v3
+0x0E0752|2|2540|Res|Ina|Ena|Vis|AutoIt3|Edit
+0x07043C|1|2328|Res|Ina|Ena|Vis|cmd|Command Prompt
+0x010618|1|3332|Res|Ina|Ena|Hid|x|tooltips_class32
+0x010628|1|3332|Res|Ina|Ena|Vis|x|FileBxBarWndClass_v2
+0x01061C|1|3332|Res|Ina|Ena|Hid|x|tooltips_class32
+0x01061A|1|3332|Res|Ina|Ena|Hid|x|tooltips_class32
+0x02042E|1|3332|Max|Ina|Ena|Vis|x|Search: S:\software\autoit\www.autoits
+0x0105E4|2|3332|Res|Ina|Ena|Hid|x|ThunderRT6PictureBoxDC
+0x0105DE|2|3332|Res|Ina|Ena|Hid|x|ThunderRT6PictureBoxDC
+0x020416|2|3332|Res|Ina|Ena|Hid|x|ThunderRT6ListBox
+0x02041C|2|3332|Res|Ina|Ena|Hid|x|ThunderRT6ListBox
+0x0105A8|2|3332|Res|Ina|Ena|Hid|x|ThunderRT6ListBox
+0x02042C|2|3332|Res|Ina|Ena|Hid|x|ThunderRT6Frame
+0x02042A|2|3332|Res|Ina|Ena|Vis|x|ThunderRT6PictureBoxDC
+0x020428|3|3332|Res|Ina|Ena|Vis|x|ThunderRT6PictureBoxDC
+0x020426|4|3332|Res|Ina|Ena|Vis|x|Selected Lo&cations
+0x020424|4|3332|Res|Ina|Ena|Vis|x|...
+0x020420|4|3332|Res|Ina|Ena|Vis|x|ThunderRT6UserControlDC
+0x02041E|5|3332|Res|Ina|Ena|Vis|x|ThunderRT6ComboBox
+0x020418|6|3332|Res|Ina|Ena|Vis|x|Edit
+0x02043A|4|3332|Res|Ina|Ena|Vis|x|ThunderRT6UserControlDC
+0x010446|5|3332|Res|Ina|Ena|Vis|x|ThunderRT6ComboBox
+0x01044A|6|3332|Res|Ina|Ena|Vis|x|Edit
+0x01044C|4|3332|Res|Ina|Ena|Vis|x|&Match case
+0x01044E|4|3332|Res|Ina|Ena|Vis|x|Whole &words
+0x010450|4|3332|Res|Ina|Ena|Vis|x|Follow f&older links
+0x010452|4|3332|Res|Ina|Ena|Vis|x|Fu&zzy
+0x010454|4|3332|Res|Ina|Ena|Vis|x|Inve&rt
+0x010456|4|3332|Res|Ina|Ena|Vis|x|Chec&k full path
+0x010458|4|3332|Res|Ina|Ena|Vis|x|Include s&ubfolders
+0x01045A|3|3332|Res|Ina|Ena|Hid|x|ThunderRT6PictureBoxDC
+0x01045C|4|3332|Res|Ina|Ena|Vis|x|Match &unicode
+0x01045E|4|3332|Res|Ina|Ena|Vis|x|&Match case
+0x010460|4|3332|Res|Ina|Ena|Vis|x|It's a &hex string
+0x010462|4|3332|Res|Ina|Ena|Vis|x|ThunderRT6TextBox
+0x010464|3|3332|Res|Ina|Ena|Hid|x|ThunderRT6PictureBoxDC
+0x010466|4|3332|Res|Ina|Ena|Vis|x|From &start of unit
+0x010468|4|3332|Res|Ina|Ena|Vis|x|in the &last
+0x01046A|4|3332|Res|Ina|Ena|Vis|x|&between
+0x01046C|4|3332|Res|Ina|Ena|Vis|x|ThunderRT6TextBox
+0x01046E|4|3332|Res|Ina|Ena|Vis|x|ThunderRT6TextBox
+0x010470|4|3332|Res|Ina|Ena|Vis|x|1
+0x010472|4|3332|Res|Ina|Ena|Vis|x|ThunderRT6ComboBox
+0x010476|4|3332|Res|Ina|Ena|Vis|x|ThunderRT6ComboBox
+0x01047A|4|3332|Res|Ina|Ena|Vis|x|&Not
+0x01047C|4|3332|Res|Ina|Ena|Vis|x|ThunderRT6UserControlDC
+0x01047E|5|3332|Res|Ina|Ena|Hid|x|ThunderRT6Timer
+0x010480|3|3332|Res|Ina|Ena|Vis|x|Re&set Filters
+0x010482|3|3332|Res|Ina|Ena|Hid|x|ThunderRT6PictureBoxDC
+0x010484|4|3332|Res|Ina|Ena|Vis|x|Not
+0x010486|4|3332|Res|Ina|Ena|Vis|x|Encrypted
+0x010488|4|3332|Res|Ina|Ena|Vis|x|Compressed
+0x01048A|4|3332|Res|Ina|Ena|Vis|x|Not
+0x01048C|4|3332|Res|Ina|Ena|Vis|x|Temporary
+0x01048E|4|3332|Res|Ina|Ena|Vis|x|Not
+0x010490|4|3332|Res|Ina|Ena|Vis|x|Normal
+0x010492|4|3332|Res|Ina|Ena|Vis|x|Not
+0x010494|4|3332|Res|Ina|Ena|Vis|x|Not
+0x010496|4|3332|Res|Ina|Ena|Vis|x|Not
+0x010498|4|3332|Res|Ina|Ena|Vis|x|Not
+0x01049A|4|3332|Res|Ina|Ena|Vis|x|Not
+0x01049C|4|3332|Res|Ina|Ena|Vis|x|Not
+0x01049E|4|3332|Res|Ina|Ena|Vis|x|Hidden
+0x0104A0|4|3332|Res|Ina|Ena|Vis|x|System
+0x0104A2|4|3332|Res|Ina|Ena|Vis|x|Directory
+0x0104A4|4|3332|Res|Ina|Ena|Vis|x|Read-only
+0x0104A6|4|3332|Res|Ina|Ena|Vis|x|Archive
+0x0104A8|3|3332|Res|Ina|Ena|Hid|x|ThunderRT6PictureBoxDC
+0x0104AA|4|3332|Res|Ina|Ena|Vis|x|&Browse...
+0x0104AC|4|3332|Res|Ina|Ena|Vis|x|ThunderRT6UserControlDC
+0x0104AE|5|3332|Res|Ina|Ena|Hid|x|ThunderRT6PictureBoxDC
+0x0104B0|5|3332|Res|Ina|Ena|Hid|x|ThunderRT6TextBox
+0x0104B2|5|3332|Res|Ina|Ena|Vis|x|ThunderRT6PictureBoxDC
+0x0104B4|6|3332|Res|Ina|Ena|Hid|x|ThunderRT6HScrollBar
+0x0104B6|6|3332|Res|Ina|Ena|Hid|x|ThunderRT6VScrollBar
+0x0104B8|4|3332|Res|Ina|Ena|Vis|x|&Manage...
+0x0104BA|4|3332|Res|Ina|Ena|Vis|x|&Add Current
+0x0104BC|3|3332|Res|Ina|Ena|Hid|x|ThunderRT6PictureBoxDC
+0x0104BE|4|3332|Res|Ina|Ena|Vis|x|Current tab
+0x0104C0|4|3332|Res|Ina|Ena|Vis|x|New tab
+0x0104C2|4|3332|Res|Ina|Ena|Vis|x|"Search results" tab
+0x0104C4|4|3332|Res|Ina|Ena|Vis|x|ThunderRT6ComboBox
+0x0104C8|3|3332|Res|Ina|Ena|Hid|x|ThunderRT6PictureBoxDC
+0x0104CA|4|3332|Res|Ina|Ena|Vis|x|MB
+0x0104CC|4|3332|Res|Ina|Ena|Vis|x|ThunderRT6TextBox
+0x0104CE|4|3332|Res|Ina|Ena|Vis|x|ThunderRT6TextBox
+0x0104D0|4|3332|Res|Ina|Ena|Vis|x|Bytes
+0x0104D2|4|3332|Res|Ina|Ena|Vis|x|KB
+0x0104D4|3|3332|Res|Ina|Ena|Vis|x|Name
+0x0104D6|3|3332|Res|Ina|Ena|Vis|x|Size
+0x0104D8|3|3332|Res|Ina|Ena|Vis|x|Date
+0x0104DA|3|3332|Res|Ina|Ena|Vis|x|Excl.
+0x0104DC|3|3332|Res|Ina|Ena|Vis|x|Attr.
+0x0104DE|3|3332|Res|Ina|Ena|Vis|x|Text
+0x0104E0|3|3332|Res|Ina|Ena|Vis|x|F&ind Now
+0x0104E2|3|3332|Res|Ina|Ena|Vis|x|Tem&plates...
+0x0104E4|3|3332|Res|Ina|Ena|Vis|x|ThunderRT6PictureBoxDC
+0x0104E6|2|3332|Res|Ina|Ena|Hid|x|ThunderRT6PictureBoxDC
+0x0104E8|3|3332|Res|Ina|Ena|Vis|x|ThunderRT6PictureBoxDC
+0x0104EA|4|3332|Res|Ina|Ena|Vis|x|Classic directory d&ump
+0x0104EC|4|3332|Res|Ina|Ena|Vis|x|T&ree structure only
+0x0104EE|4|3332|Res|Ina|Ena|Vis|x|E&xtended info to CSV
+0x0104F0|4|3332|Res|Ina|Ena|Vis|x|ThunderRT6PictureBoxDC
+0x0104F2|5|3332|Res|Ina|Ena|Vis|x|&No file version
+0x0104F4|5|3332|Res|Ina|Ena|Vis|x|F&ixed file version
+0x0104F6|5|3332|Res|Ina|Ena|Vis|x|S&tring file version
+0x0104F8|4|3332|Res|Ina|Ena|Vis|x|To File...
+0x0104FA|4|3332|Res|Ina|Ena|Vis|x|To Clipboard
+0x0104FC|4|3332|Res|Ina|Ena|Vis|x|To Printer...
+0x0104FE|4|3332|Res|Ina|Ena|Vis|x|Include &subfolders
+0x010500|3|3332|Res|Ina|Ena|Hid|x|ThunderRT6PictureBoxDC
+0x010502|4|3332|Res|Ina|Ena|Vis|x|Column &headers
+0x010504|4|3332|Res|Ina|Ena|Vis|x|Ta&b
+0x010506|4|3332|Res|Ina|Ena|Vis|x|&Other:
+0x010508|4|3332|Res|Ina|Ena|Vis|x|, 
+0x01050A|4|3332|Res|Ina|Ena|Vis|x|C&urrent date
+0x01050C|4|3332|Res|Ina|Ena|Vis|x|Path (F&ind settings)
+0x01050E|4|3332|Res|Ina|Ena|Vis|x|&Pad blanks
+0x010510|4|3332|Res|Ina|Ena|Vis|x|To File...
+0x010512|4|3332|Res|Ina|Ena|Vis|x|To Clipboard
+0x010514|4|3332|Res|Ina|Ena|Vis|x|&Selected files only
+0x010516|4|3332|Res|Ina|Ena|Vis|x|To Printer...
+0x010518|3|3332|Res|Ina|Dis|Hid|x|ThunderRT6ListBox
+0x01051A|3|3332|Res|Ina|Ena|Vis|x|ThunderRT6PictureBoxDC
+0x01051C|2|3332|Res|Ina|Ena|Hid|x|ThunderRT6PictureBoxDC
+0x01051E|3|3332|Res|Ina|Ena|Vis|x|ThunderRT6PictureBoxDC
+0x010520|3|3332|Res|Ina|Dis|Vis|x|Encrypted
+0x010522|3|3332|Res|Ina|Dis|Vis|x|Compressed
+0x010524|3|3332|Res|Ina|Dis|Vis|x|Temporary
+0x010526|3|3332|Res|Ina|Dis|Vis|x|Normal
+0x010528|3|3332|Res|Ina|Dis|Vis|x|Folder
+0x01052A|3|3332|Res|Ina|Ena|Vis|x|System
+0x01052C|3|3332|Res|Ina|Ena|Vis|x|Archive
+0x01052E|3|3332|Res|Ina|Ena|Vis|x|Hidden
+0x010530|3|3332|Res|Ina|Ena|Vis|x|Read-only
+0x010532|3|3332|Res|Ina|Ena|Hid|x|ThunderRT6TextBox
+0x010534|3|3332|Res|Ina|Ena|Hid|x|ThunderRT6HScrollBar
+0x010536|3|3332|Res|Ina|Ena|Vis|x|ThunderRT6PictureBoxDC
+0x010538|3|3332|Res|Ina|Ena|Hid|x|ThunderRT6PictureBoxDC
+0x01053A|3|3332|Res|Ina|Ena|Vis|x|ThunderRT6PictureBoxDC
+0x01053C|2|3332|Res|Ina|Ena|Hid|x|ThunderRT6PictureBoxDC
+0x01053E|2|3332|Res|Ina|Ena|Hid|x|ThunderRT6PictureBoxDC
+0x010564|3|3332|Res|Ina|Ena|Hid|x|ThunderRT6Frame
+0x010566|4|3332|Res|Ina|Ena|Vis|x|ThunderRT6PictureBoxDC
+0x010568|5|3332|Res|Ina|Ena|Vis|x|ThunderRT6TextBox
+0x01056A|5|3332|Res|Ina|Ena|Vis|x|ThunderRT6ComboBox
+0x01056E|5|3332|Res|Ina|Ena|Vis|x|ThunderRT6TextBox
+0x010570|5|3332|Res|Ina|Ena|Vis|x|ThunderRT6TextBox
+0x010572|5|3332|Res|Ina|Ena|Vis|x|ThunderRT6TextBox
+0x010574|5|3332|Res|Ina|Ena|Vis|x|ThunderRT6TextBox
+0x010576|5|3332|Res|Ina|Ena|Vis|x|ThunderRT6TextBox
+0x010578|5|3332|Res|Ina|Ena|Vis|x|ThunderRT6TextBox
+0x01057A|5|3332|Res|Ina|Ena|Vis|x|ThunderRT6TextBox
+0x010540|3|3332|Res|Ina|Ena|Hid|x|ThunderRT6Frame
+0x010542|4|3332|Res|Ina|Ena|Hid|x|&Snapshot
+0x010544|4|3332|Res|Ina|Ena|Vis|x|ThunderRT6UserControlDC
+0x010546|5|3332|Res|Ina|Ena|Hid|x|ThunderRT6Timer
+0x01055E|3|3332|Res|Ina|Ena|Hid|x|ThunderRT6HScrollBar
+0x010548|3|3332|Res|Ina|Ena|Hid|x|ThunderRT6Frame
+0x01054A|4|3332|Res|Ina|Ena|Vis|x|ThunderRT6PictureBoxDC
+0x01054C|3|3332|Res|Ina|Ena|Hid|x|ThunderRT6Frame
+0x01054E|4|3332|Res|Ina|Ena|Vis|x|ThunderRT6PictureBoxDC
+0x010550|5|3332|Res|Ina|Ena|Vis|x|ThunderRT6ComboBox
+0x010554|5|3332|Res|Ina|Ena|Hid|x|ThunderRT6PictureBoxDC
+0x010556|5|3332|Res|Ina|Ena|Vis|x|ThunderRT6PictureBoxDC
+0x010558|5|3332|Res|Ina|Ena|Hid|x|ThunderRT6PictureBoxDC
+0x01055A|5|3332|Res|Ina|Ena|Vis|x|ThunderRT6PictureBoxDC
+0x01055C|5|3332|Res|Ina|Ena|Hid|x|ThunderRT6Timer
+0x010560|3|3332|Res|Ina|Ena|Hid|x|ThunderRT6Frame
+0x010562|4|3332|Res|Ina|Ena|Vis|x|ThunderRT6PictureBoxDC
+0x01057C|3|3332|Res|Ina|Ena|Hid|x|ThunderRT6PictureBoxDC
+0x01057E|4|3332|Res|Ina|Ena|Vis|x|ThunderRT6TextBox
+0x010580|4|3332|Res|Ina|Ena|Vis|x|Shell Embedding
+0x010622|5|3332|Res|Ina|Ena|Vis|x|Shell DocObject View
+0x01062C|6|3332|Res|Ina|Ena|Vis|x|Internet Explorer_Server
+0x010584|3|3332|Res|Ina|Ena|Hid|x|ThunderRT6TextBox
+0x010586|3|3332|Res|Ina|Ena|Hid|x|ThunderRT6PictureBoxDC
+0x010588|4|3332|Res|Ina|Ena|Vis|x|ThunderRT6HScrollBar
+0x01058A|4|3332|Res|Ina|Ena|Vis|x|ThunderRT6VScrollBar
+0x01058C|3|3332|Res|Ina|Ena|Vis|x|ThunderRT6PictureBoxDC
+0x01058E|2|3332|Res|Ina|Ena|Hid|x|ThunderRT6UserControlDC
+0x010590|3|3332|Res|Ina|Ena|Vis|x|ThunderRT6PictureBoxDC
+0x010592|2|3332|Res|Ina|Ena|Vis|x|ThunderRT6PictureBoxDC
+0x010594|3|3332|Res|Ina|Ena|Hid|x|ThunderRT6PictureBoxDC
+0x010596|3|3332|Res|Ina|Ena|Vis|x|ThunderRT6PictureBoxDC
+0x010598|2|3332|Res|Ina|Ena|Hid|x|ThunderRT6Frame
+0x0105A6|2|3332|Res|Ina|Ena|Vis|x|ThunderRT6UserControlDC
+0x0105AA|3|3332|Res|Ina|Ena|Vis|x|ThunderRT6ComboBox
+0x0105AE|4|3332|Res|Ina|Ena|Vis|x|Edit
+0x0105B0|2|3332|Res|Ina|Ena|Hid|x|ThunderRT6PictureBoxDC
+0x0105B2|2|3332|Res|Ina|Ena|Vis|x|ThunderRT6UserControlDC
+0x0105B4|3|3332|Res|Ina|Ena|Hid|x|ThunderRT6Timer
+0x0105B6|2|3332|Res|Ina|Ena|Hid|x|ThunderRT6PictureBoxDC
+0x0105B8|3|3332|Res|Ina|Ena|Vis|x|ThunderRT6Frame
+0x0105BA|4|3332|Res|Ina|Ena|Vis|x|ThunderRT6UserControlDC
+0x0105BC|5|3332|Res|Ina|Ena|Hid|x|ThunderRT6Timer
+0x0105BE|3|3332|Res|Ina|Ena|Hid|x|ThunderRT6Timer
+0x0105C0|3|3332|Res|Ina|Ena|Vis|x|ThunderRT6Frame
+0x0105C2|4|3332|Res|Ina|Ena|Vis|x|ThunderRT6PictureBoxDC
+0x0105C4|5|3332|Res|Ina|Dis|Vis|x|International
+0x0105C6|5|3332|Res|Ina|Ena|Vis|x|Extract text
+0x0105C8|5|3332|Res|Ina|Ena|Vis|x|Hex view
+0x0105CA|5|3332|Res|Ina|Ena|Vis|x|Wrap
+0x0105CC|5|3332|Res|Ina|Ena|Vis|x|Line#
+0x0105CE|3|3332|Res|Ina|Ena|Vis|x|ThunderRT6PictureBoxDC
+0x0105D0|4|3332|Res|Ina|Ena|Vis|x|ThunderRT6VScrollBar
+0x0105D2|4|3332|Res|Ina|Ena|Hid|x|ThunderRT6HScrollBar
+0x0105D4|2|3332|Res|Ina|Ena|Hid|x|ThunderRT6PictureBoxDC
+0x0105D6|3|3332|Res|Ina|Ena|Vis|x|ThunderRT6ListBox
+0x0105D8|3|3332|Res|Ina|Ena|Vis|x|ThunderRT6TextBox
+0x0105DA|2|3332|Res|Ina|Ena|Hid|x|ThunderRT6PictureBoxDC
+0x0105DC|2|3332|Res|Ina|Ena|Vis|x|ThunderRT6PictureBoxDC
+0x0105E0|2|3332|Res|Ina|Ena|Hid|x|ThunderRT6PictureBoxDC
+0x0105E2|2|3332|Res|Ina|Ena|Hid|x|ThunderRT6PictureBoxDC
+0x0105E6|2|3332|Res|Ina|Ena|Vis|x|ThunderRT6Frame
+0x0105E8|2|3332|Res|Ina|Ena|Hid|x|ThunderRT6Frame
+0x0105EA|2|3332|Res|Ina|Ena|Hid|x|ThunderRT6Timer
+0x0105EC|2|3332|Res|Ina|Ena|Vis|x|ThunderRT6PictureBoxDC
+0x0105EE|2|3332|Res|Ina|Ena|Hid|x|ThunderRT6Timer
+0x0105F0|2|3332|Res|Ina|Ena|Vis|x|ThunderRT6PictureBoxDC
+0x0105F2|3|3332|Res|Ina|Ena|Hid|x|ThunderRT6TextBox
+0x0105F4|3|3332|Res|Ina|Ena|Hid|x|ThunderRT6VScrollBar
+0x0105F6|3|3332|Res|Ina|Ena|Vis|x|ThunderRT6HScrollBar
+0x0105F8|2|3332|Res|Ina|Ena|Hid|x|ThunderRT6PictureBoxDC
+0x0105FA|3|3332|Res|Ina|Ena|Hid|x|ThunderRT6TextBox
+0x0105FC|3|3332|Res|Ina|Ena|Vis|x|ThunderRT6HScrollBar
+0x0105FE|3|3332|Res|Ina|Ena|Vis|x|ThunderRT6VScrollBar
+0x01059A|2|3332|Res|Ina|Ena|Hid|x|ThunderRT6UserControlDC
+0x01059C|3|3332|Res|Ina|Ena|Hid|x|ThunderRT6PictureBoxDC
+0x01059E|3|3332|Res|Ina|Ena|Hid|x|ThunderRT6TextBox
+0x0105A0|3|3332|Res|Ina|Ena|Vis|x|ThunderRT6PictureBoxDC
+0x0105A2|4|3332|Res|Ina|Ena|Hid|x|ThunderRT6HScrollBar
+0x0105A4|4|3332|Res|Ina|Ena|Hid|x|ThunderRT6VScrollBar
+0x020422|1|3332|Res|Ina|Ena|Vis|x|Static
+0x020444|1|3332|Res|Ina|Ena|Vis|x|XYplorerFree
+0x020430|2|3332|Res|Ina|Ena|Hid|x|VBFocusRT6
+0x01069C|1|3396|Res|Ina|Ena|Hid|notepad+|tooltips_class32
+0x190762|1|3396|Res|Ina|Ena|Hid|notepad+|Find
+0x0E0768|3|3396|Res|Ina|Ena|Vis|notepad+|&Find what :
+0x11074A|3|3396|Res|Ina|Ena|Vis|notepad+|ComboBox
+0x110766|4|3396|Res|Ina|Ena|Vis|notepad+|Edit
+0x0B0776|3|3396|Res|Ina|Ena|Hid|notepad+|Rep&lace with :
+0x120764|3|3396|Res|Ina|Ena|Hid|notepad+|ComboBox
+0x19076E|4|3396|Res|Ina|Ena|Vis|notepad+|Edit
+0x050788|3|3396|Res|Ina|Ena|Vis|notepad+|&Mark Line
+0x050772|3|3396|Res|Ina|Ena|Vis|notepad+|Style found to&ken
+0x05077A|3|3396|Res|Ina|Ena|Vis|notepad+|Button
+0x05077C|3|3396|Res|Ina|Ena|Vis|notepad+|Purge for each search
+0x050774|3|3396|Res|Ina|Dis|Vis|notepad+|Find &All
+0x050778|3|3396|Res|Ina|Ena|Hid|notepad+|Button
+0x05077E|3|3396|Res|Ina|Dis|Vis|notepad+|In select&ion
+0x070782|3|3396|Res|Ina|Ena|Vis|notepad+|Clear
+0x070784|3|3396|Res|Ina|Ena|Hid|notepad+|Filter&s :
+0x080736|3|3396|Res|Ina|Ena|Hid|notepad+|ComboBox
+0x04078C|4|3396|Res|Ina|Ena|Vis|notepad+|Edit
+0x070780|3|3396|Res|Ina|Ena|Hid|notepad+|Dir&ectory :
+0x050786|3|3396|Res|Ina|Ena|Hid|notepad+|ComboBox
+0x010790|4|3396|Res|Ina|Ena|Vis|notepad+|Edit
+0x010792|3|3396|Res|Ina|Ena|Hid|notepad+|...
+0x010794|3|3396|Res|Ina|Ena|Hid|notepad+|Follow current doc
+0x010796|3|3396|Res|Ina|Ena|Hid|notepad+|In all su&b-folders
+0x010798|3|3396|Res|Ina|Ena|Hid|notepad+|In &hidden folders
+0x01079A|3|3396|Res|Ina|Ena|Vis|notepad+|Match &whole word only
+0x01079C|3|3396|Res|Ina|Ena|Vis|notepad+|Match &case
+0x01079E|3|3396|Res|Ina|Ena|Vis|notepad+|Wra&p around
+0x0107A0|3|3396|Res|Ina|Ena|Vis|notepad+|Search mode
+0x0107A2|3|3396|Res|Ina|Ena|Vis|notepad+|&Normal
+0x0107A4|3|3396|Res|Ina|Ena|Vis|notepad+|E&xtended (\n, \r, \t, \0, \x...)
+0x0107A6|3|3396|Res|Ina|Ena|Vis|notepad+|Re&gular expression
+0x0107A8|3|3396|Res|Ina|Ena|Vis|notepad+|&Up
+0x0107AA|3|3396|Res|Ina|Ena|Vis|notepad+|&Down
+0x0107AC|3|3396|Res|Ina|Ena|Vis|notepad+|Direction
+0x0107AE|3|3396|Res|Ina|Ena|Vis|notepad+|Find Next
+0x0107B0|3|3396|Res|Ina|Ena|Vis|notepad+|Coun&t
+0x0107B2|3|3396|Res|Ina|Ena|Vis|notepad+|Find all in all &opened documents
+0x0107B4|3|3396|Res|Ina|Ena|Vis|notepad+|Find all in current document
+0x0107B6|3|3396|Res|Ina|Ena|Hid|notepad+|&Replace
+0x0107B8|3|3396|Res|Ina|Ena|Hid|notepad+|Replace &All
+0x0107BA|3|3396|Res|Ina|Ena|Hid|notepad+|Replace all in all &opened documents
+0x0107BC|3|3396|Res|Ina|Ena|Hid|notepad+|Find All
+0x0107BE|3|3396|Res|Ina|Ena|Hid|notepad+|&Replace in files
+0x0107C0|3|3396|Res|Ina|Ena|Vis|notepad+|Close
+0x0107C2|3|3396|Res|Ina|Ena|Vis|notepad+|Button
+0x0107C4|3|3396|Res|Ina|Ena|Vis|notepad+|Transparenc&y
+0x0107C6|3|3396|Res|Ina|Ena|Vis|notepad+|On lose focus
+0x0107C8|3|3396|Res|Ina|Ena|Vis|notepad+|Always
+0x0107CA|3|3396|Res|Ina|Ena|Vis|notepad+|msctls_trackbar32
+0x0107CC|3|3396|Res|Ina|Ena|Vis|notepad+|Tab
+0x01072C|1|3396|Res|Ina|Ena|Vis|notepad+|FileBxBarWndClass_v2
+0x01072E|1|3396|Res|Ina|Ena|Hid|notepad+|tooltips_class32
+0x0106EA|1|3396|Res|Ina|Ena|Hid|notepad+|Dialog
+0x0106EC|3|3396|Res|Ina|Ena|Vis|notepad+|Address:
+0x0106EE|3|3396|Res|Ina|Ena|Vis|notepad+|Edit
+0x0106F0|3|3396|Res|Ina|Ena|Vis|notepad+|Port:
+0x0106F2|3|3396|Res|Ina|Ena|Vis|notepad+|Edit
+0x0106F4|3|3396|Res|Ina|Ena|Vis|notepad+|Connect
+0x0106F6|3|3396|Res|Ina|Ena|Vis|notepad+|Serve
+0x0106F8|3|3396|Res|Ina|Dis|Vis|notepad+|Disconnect
+0x0106FA|3|3396|Res|Ina|Ena|Vis|notepad+|Status:
+0x0106FC|3|3396|Res|Ina|Ena|Vis|notepad+|Edit
+0x0106FE|3|3396|Res|Ina|Ena|Vis|notepad+|Messages:
+0x010700|3|3396|Res|Ina|Ena|Vis|notepad+|Edit
+0x010702|3|3396|Res|Ina|Dis|Vis|notepad+|Edit
+0x010704|3|3396|Res|Ina|Dis|Vis|notepad+|Send
+0x010706|3|3396|Res|Ina|Ena|Vis|notepad+|Connected with:
+0x010708|3|3396|Res|Ina|Ena|Vis|notepad+|ListBox
+0x01070A|3|3396|Res|Ina|Ena|Hid|notepad+|Resume outgoing data
+0x01070C|3|3396|Res|Ina|Ena|Hid|notepad+|Stop outgoing data
+0x01070E|3|3396|Res|Ina|Ena|Hid|notepad+|Step
+0x010710|3|3396|Res|Ina|Ena|Hid|notepad+|MD5
+0x0106E0|1|3396|Res|Ina|Ena|Hid|notepad+|tooltips_class32
+0x0106DA|1|3396|Res|Ina|Ena|Hid|notepad+|N++FTPFOLDERDOCKDLG
+0x0106DC|2|3396|Res|Ina|Ena|Vis|notepad+|ToolbarWindow32
+0x0106DE|2|3396|Res|Ina|Ena|Vis|notepad+|SysTreeView32
+0x0106E2|2|3396|Res|Ina|Ena|Vis|notepad+|ListBox
+0x0106E4|2|3396|Res|Ina|Ena|Vis|notepad+|msctls_statusbar32
+0x0106E6|3|3396|Res|Ina|Ena|Vis|notepad+|msctls_progress32
+0x0106D6|1|3396|Res|Ina|Ena|Hid|notepad+|Dialog
+0x0106D8|3|3396|Res|Ina|Ena|Vis|notepad+|Edit
+0x0106A0|1|3396|Res|Ina|Ena|Hid|notepad+|tooltips_class32
+0x03068C|1|3396|Max|Ina|Ena|Vis|notepad+|C:\Documents and Settings\UserXP\Deskt
+0x0106CC|1|3396|Res|Ina|Ena|Hid|notepad+|Selected Tab
+0x0106CE|3|3396|Res|Ina|Ena|Vis|notepad+|Caption
+0x0106D0|3|3396|Res|Ina|Ena|Vis|notepad+|Static
+0x0106D2|3|3396|Res|Ina|Ena|Hid|notepad+|Tab1
+0x0106CE|3|3396|Res|Ina|Ena|Vis|notepad+|Caption
+0x0106D0|3|3396|Res|Ina|Ena|Vis|notepad+|Static
+0x0106D2|3|3396|Res|Ina|Ena|Hid|notepad+|Tab1
+0x0106C2|1|3396|Res|Ina|Ena|Hid|notepad+|Selected Tab
+0x0106C4|3|3396|Res|Ina|Ena|Vis|notepad+|Caption
+0x0106C6|3|3396|Res|Ina|Ena|Vis|notepad+|Static
+0x0106C8|3|3396|Res|Ina|Ena|Hid|notepad+|Tab1
+0x0106C4|3|3396|Res|Ina|Ena|Vis|notepad+|Caption
+0x0106C6|3|3396|Res|Ina|Ena|Vis|notepad+|Static
+0x0106C8|3|3396|Res|Ina|Ena|Hid|notepad+|Tab1
+0x0106B8|1|3396|Res|Ina|Ena|Hid|notepad+|Selected Tab
+0x0106BA|3|3396|Res|Ina|Ena|Vis|notepad+|Caption
+0x0106BC|3|3396|Res|Ina|Ena|Vis|notepad+|Static
+0x0106BE|3|3396|Res|Ina|Ena|Hid|notepad+|Tab1
+0x0106BA|3|3396|Res|Ina|Ena|Vis|notepad+|Caption
+0x0106BC|3|3396|Res|Ina|Ena|Vis|notepad+|Static
+0x0106BE|3|3396|Res|Ina|Ena|Hid|notepad+|Tab1
+0x0106AC|1|3396|Res|Ina|Ena|Hid|notepad+|Selected Tab
+0x0106AE|3|3396|Res|Ina|Ena|Vis|notepad+|Caption
+0x0106B0|3|3396|Res|Ina|Ena|Vis|notepad+|Static
+0x0106B2|3|3396|Res|Ina|Ena|Hid|notepad+|Tab1
+0x0106AE|3|3396|Res|Ina|Ena|Vis|notepad+|Caption
+0x0106B0|3|3396|Res|Ina|Ena|Vis|notepad+|Static
+0x0106B2|3|3396|Res|Ina|Ena|Hid|notepad+|Tab1
+0x010690|2|3396|Res|Ina|Ena|Vis|notepad+|N
+0x010696|2|3396|Res|Ina|Ena|Hid|notepad+|N
+0x010698|2|3396|Res|Ina|Ena|Hid|notepad+|N
+0x01069A|2|3396|Res|Ina|Ena|Vis|notepad+|Tab
+0x01069E|2|3396|Res|Ina|Ena|Hid|notepad+|Tab
+0x0106A2|2|3396|Res|Ina|Ena|Hid|notepad+|N
+0x0106A4|2|3396|Res|Ina|Ena|Hid|notepad+|splitterContainer
+0x0106A6|3|3396|Res|Ina|Ena|Vis|notepad+|wespliter
+0x0106A8|2|3396|Res|Ina|Ena|Vis|notepad+|msctls_statusbar32
+0x0106AA|2|3396|Res|Ina|Ena|Hid|notepad+|dockingManager
+0x0106B6|2|3396|Res|Ina|Ena|Hid|notepad+|wedockspliter
+0x0106C0|2|3396|Res|Ina|Ena|Hid|notepad+|wedockspliter
+0x0106CA|2|3396|Res|Ina|Ena|Hid|notepad+|nsdockspliter
+0x0106D4|2|3396|Res|Ina|Ena|Hid|notepad+|nsdockspliter
+0x0106E8|2|3396|Res|Ina|Ena|Hid|notepad+|N
+0x010714|2|3396|Res|Ina|Ena|Vis|notepad+|ReBarWindow32
+0x010712|3|3396|Res|Ina|Ena|Vis|notepad+|ToolbarWindow32
+0x010716|2|3396|Res|Ina|Ena|Vis|notepad+|ReBarWindow32
+0x010718|3|3396|Res|Ina|Ena|Vis|notepad+|#32770
+0x01071A|4|3396|Res|Ina|Ena|Vis|notepad+|X
+0x01071C|4|3396|Res|Ina|Ena|Vis|notepad+|Find :
+0x01071E|4|3396|Res|Ina|Ena|Vis|notepad+|Edit
+0x010720|4|3396|Res|Ina|Ena|Vis|notepad+|<
+0x010722|4|3396|Res|Ina|Ena|Vis|notepad+|>
+0x010724|4|3396|Res|Ina|Ena|Vis|notepad+|Highlight all
+0x010726|4|3396|Res|Ina|Ena|Vis|notepad+|Match case
+0x010728|4|3396|Res|Ina|Ena|Vis|notepad+|Find Status
+0x010666|1|2148|Res|Ina|Ena|Vis|firefox|FileBxBarWndClass_v2
+0x010640|1|2148|Max|Ina|Ena|Vis|firefox|get window handle - AutoIt Forums - Pa
+0x01064A|2|2148|Res|Ina|Ena|Vis|firefox|MozillaWindowClass
+0x010672|3|2148|Res|Ina|Ena|Vis|firefox|MozillaContentWindowClass
+0x100738|4|2148|Res|Ina|Ena|Vis|firefox|MozillaWindowClass
+0x1A0760|4|2148|Res|Ina|Ena|Hid|firefox|MozillaWindowClass
+0x110682|4|2148|Res|Ina|Ena|Hid|firefox|MozillaWindowClass
+0x0B075C|3|2148|Res|Ina|Ena|Hid|firefox|MozillaContentWindowClass
+0x09075E|4|2148|Res|Ina|Ena|Vis|firefox|MozillaWindowClass
+0x01066E|3|2148|Res|Ina|Ena|Hid|firefox|MozillaContentWindowClass
+0x020746|4|2148|Res|Ina|Ena|Vis|firefox|MozillaWindowClass
+0x010676|3|2148|Res|Ina|Ena|Hid|firefox|MozillaContentWindowClass
+0x020680|4|2148|Res|Ina|Ena|Vis|firefox|MozillaWindowClass
+0x07073A|3|2148|Res|Ina|Ena|Hid|firefox|MozillaContentWindowClass
+0x020732|4|2148|Res|Ina|Ena|Vis|firefox|MozillaWindowClass
+0x050734|3|2148|Res|Ina|Ena|Hid|firefox|MozillaContentWindowClass
+0x020758|4|2148|Res|Ina|Ena|Vis|firefox|MozillaWindowClass
+0x01066A|3|2148|Res|Ina|Ena|Hid|firefox|MozillaContentWindowClass
+0x01067E|4|2148|Res|Ina|Ena|Vis|firefox|MozillaWindowClass
+0x010658|3|2148|Res|Ina|Ena|Vis|firefox|MozillaWindowClass
+0x01065A|4|2148|Res|Ina|Ena|Vis|firefox|MozillaUIWindowClass
+0x010660|5|2148|Res|Ina|Ena|Vis|firefox|MozillaWindowClass
+0x010654|3|2148|Res|Ina|Ena|Hid|firefox|MozillaWindowClass
+0x010656|4|2148|Res|Ina|Ena|Hid|firefox|MozillaUIWindowClass
+0x01065E|5|2148|Res|Ina|Ena|Hid|firefox|MozillaWindowClass
+0x010650|3|2148|Res|Ina|Ena|Vis|firefox|MozillaWindowClass
+0x010652|4|2148|Res|Ina|Ena|Vis|firefox|MozillaUIWindowClass
+0x01065C|5|2148|Res|Ina|Ena|Vis|firefox|MozillaWindowClass
+0x01078E|1|3396|Res|Ina|Ena|Hid|notepad+|ComboLBox
+0x05078A|1|3396|Res|Ina|Ena|Hid|notepad+|ComboLBox
+0x1F074E|1|3396|Res|Ina|Ena|Hid|notepad+|ComboLBox
+0x12076C|1|3396|Res|Ina|Ena|Hid|notepad+|ComboLBox
+0x040674|1|1468|Res|Ina|Ena|Vis|Tooler|Tooler
+0x020630|1|2148|Res|Ina|Ena|Hid|firefox|FirefoxMessageWindow
+0x080620|1|3332|Res|Ina|Ena|Hid|x|Static
+0x090440|1|1796|Res|Ina|Ena|Hid|explorer|WorkerW
+0x01063E|1|2148|Res|Ina|Ena|Hid|firefox|MozillaHiddenWindowClass
+0x010648|2|2148|Res|Ina|Ena|Vis|firefox|MozillaWindowClass
+0x01063C|1|2148|Res|Ina|Dis|Hid|firefox|NetscapeDispatchWnd
+0x01063A|1|2148|Res|Ina|Ena|Hid|firefox|nsAppShell:EventWindow
+0x010636|1|2148|Res|Ina|Ena|Hid|firefox|DDEMLEvent
+0x010634|1|2148|Res|Ina|Ena|Hid|firefox|DDEMLMom
+0x01062E|1|3332|Res|Ina|Ena|Hid|x|VBBubbleRT6
+0x020626|1|3332|Res|Ina|Ena|Hid|x|Internet Explorer_Hidden
+0x01061E|1|3332|Res|Ina|Ena|Hid|x|WorkerW
+0x02060E|1|3332|Res|Ina|Ena|Hid|x|tooltips_class32
+0x03060A|1|3332|Res|Ina|Ena|Hid|x|tooltips_class32
+0x0105AC|1|3332|Res|Ina|Ena|Hid|x|ComboLBox
+0x01056C|1|3332|Res|Ina|Ena|Hid|x|ComboLBox
+0x010552|1|3332|Res|Ina|Ena|Hid|x|ComboLBox
+0x0104C6|1|3332|Res|Ina|Ena|Hid|x|ComboLBox
+0x010478|1|3332|Res|Ina|Ena|Hid|x|ComboLBox
+0x010474|1|3332|Res|Ina|Ena|Hid|x|ComboLBox
+0x010448|1|3332|Res|Ina|Ena|Hid|x|ComboLBox
+0x02041A|1|3332|Res|Ina|Ena|Hid|x|ComboLBox
+0x020432|1|3332|Res|Ina|Ena|Hid|x|VBMsoStdCompMgr
+0x020136|1|888|Res|Ina|Ena|Hid|CCC|DDE Server Window
+0x010402|1|2268|Res|Ina|Dis|Hid|dgnsvc|ATL:004430B8
+0x02040E|1|888|Res|Ina|Ena|Hid|CCC|WindowsForms10.Window.8.app.0.3d893c
+0x010410|1|888|Res|Ina|Ena|Hid|CCC|WindowsForms10.Window.0.app.0.3d893c
+0x010408|1|888|Res|Ina|Ena|Hid|CCC|WindowsForms10.Window.0.app.0.3d893c
+0x060272|1|1584|Res|Ina|Ena|Hid|FrzState|Frzstate2k
+0x0103EE|1|1584|Res|Ina|Ena|Hid|FrzState|TPUtilWindow
+0x0101D6|1|1144|Res|Ina|Dis|Hid|ctfmon|CicLoaderWndClass
+0x0103DE|1|1924|Res|Ina|Ena|Hid|WinList|WinList
+0x0103DA|1|284|Res|Ina|Ena|Hid|orbitdm|tooltips_class32
+0x0103D6|1|284|Res|Ina|Ena|Hid|orbitdm|tooltips_class32
+0x0103D2|1|284|Res|Ina|Ena|Hid|orbitdm|tooltips_class32
+0x010398|1|1956|Res|Ina|Ena|Hid|FileBX|tooltips_class32
+0x0102FA|1|1956|Res|Ina|Ena|Hid|FileBX|FileBox eXtender
+0x010300|2|1956|Res|Ina|Ena|Vis|FileBX|<<
+0x010302|2|1956|Res|Ina|Ena|Vis|FileBX|E&xit
+0x010304|2|1956|Res|Ina|Ena|Vis|FileBX|&Help
+0x010306|2|1956|Res|Ina|Ena|Vis|FileBX|About FbX
+0x010308|2|1956|Res|Ina|Ena|Vis|FileBX|H&ide
+0x01030A|2|1956|Res|Ina|Ena|Vis|FileBX|Press Help button for usage tips.
+0x01030C|2|1956|Res|Ina|Ena|Hid|FileBX|Button
+0x01030E|2|1956|Res|Ina|Ena|Vis|FileBX|#32770
+0x010310|3|1956|Res|Ina|Ena|Vis|FileBX|Shell Embedding
+0x010316|4|1956|Res|Ina|Ena|Vis|FileBX|Shell DocObject View
+0x0103E2|5|1956|Res|Ina|Ena|Vis|FileBX|Internet Explorer_Server
+0x01032A|2|1956|Res|Ina|Ena|Hid|FileBX|Settings
+0x01032C|3|1956|Res|Ina|Ena|Vis|FileBX|FileBX Buttons to Display
+0x01032E|3|1956|Res|Ina|Ena|Vis|FileBX|Push-pin button to keep windows on top
+0x010330|3|1956|Res|Ina|Ena|Vis|FileBX|Roll-up button to display only the tit
+0x010332|3|1956|Res|Ina|Ena|Vis|FileBX|When rolled up, keep the window bar on
+0x010334|3|1956|Res|Ina|Ena|Vis|FileBX|Favorites button on:
+0x010336|3|1956|Res|Ina|Ena|Vis|FileBX|file boxes
+0x010338|3|1956|Res|Ina|Ena|Vis|FileBX|Explorer folders
+0x01033A|3|1956|Res|Ina|Ena|Vis|FileBX|Recent folders button on:
+0x01033C|3|1956|Res|Ina|Ena|Vis|FileBX|file boxes
+0x01033E|3|1956|Res|Ina|Ena|Vis|FileBX|Explorer folders
+0x010340|3|1956|Res|Ina|Ena|Vis|FileBX|Move FbX buttons to the left by 
+0x010342|3|1956|Res|Ina|Ena|Vis|FileBX|Edit
+0x010344|3|1956|Res|Ina|Ena|Vis|FileBX|pixels
+0x010346|3|1956|Res|Ina|Ena|Vis|FileBX|Move FbX buttons to the left by 
+0x010348|3|1956|Res|Ina|Ena|Vis|FileBX|Edit
+0x01034A|3|1956|Res|Ina|Ena|Vis|FileBX|more pixels, if a window is maximized.
+0x01034C|3|1956|Res|Ina|Ena|Vis|FileBX|Display FbX icon in the system tray
+0x01034E|3|1956|Res|Ina|Ena|Vis|FileBX|Re-use the same Explorer window when s
+0x010350|2|1956|Res|Ina|Ena|Hid|FileBX|File Boxes
+0x010352|3|1956|Res|Ina|Ena|Vis|FileBX|Auto-switch std. file boxes to "Detail
+0x010354|3|1956|Res|Ina|Dis|Vis|FileBX|... and auto-size columns
+0x010356|3|1956|Res|Ina|Dis|Vis|FileBX|Sort columns by
+0x010358|3|1956|Res|Ina|Dis|Vis|FileBX|Name
+0x01035A|3|1956|Res|Ina|Dis|Vis|FileBX|Size
+0x01035C|3|1956|Res|Ina|Dis|Vis|FileBX|Type
+0x01035E|3|1956|Res|Ina|Dis|Vis|FileBX|Date
+0x010360|3|1956|Res|Ina|Dis|Vis|FileBX|Ascending
+0x010362|3|1956|Res|Ina|Dis|Vis|FileBX|Descending
+0x010364|3|1956|Res|Ina|Ena|Vis|FileBX|Resize std. file boxes to
+0x010366|3|1956|Res|Ina|Ena|Vis|FileBX|Edit
+0x010368|3|1956|Res|Ina|Ena|Vis|FileBX|% width and 
+0x01036A|3|1956|Res|Ina|Ena|Vis|FileBX|Edit
+0x01036C|3|1956|Res|Ina|Ena|Vis|FileBX|% height of the original size.
+0x01036E|3|1956|Res|Ina|Ena|Vis|FileBX|Click-switch file box folder feature
+0x010370|3|1956|Res|Ina|Ena|Vis|FileBX|Disabled
+0x010372|3|1956|Res|Ina|Ena|Vis|FileBX|Enable for clicks on opened Explorer f
+0x010374|3|1956|Res|Ina|Ena|Vis|FileBX|Enable for clicks on any window (switc
+0x010376|2|1956|Res|Ina|Ena|Hid|FileBX|Keys && Menus
+0x010378|3|1956|Res|Ina|Ena|Vis|FileBX|To select hot key combinations that wi
+0x01037A|3|1956|Res|Ina|Ena|Vis|FileBX|Open favorites menu:
+0x01037C|3|1956|Res|Ina|Ena|Vis|FileBX|msctls_hotkey32
+0x01037E|3|1956|Res|Ina|Ena|Vis|FileBX|Open recent menu:
+0x010380|3|1956|Res|Ina|Ena|Vis|FileBX|msctls_hotkey32
+0x010382|3|1956|Res|Ina|Ena|Vis|FileBX|Add underscored numbers to Recent menu
+0x010384|3|1956|Res|Ina|Ena|Vis|FileBX|Display full path on the "Recent" menu
+0x010386|3|1956|Res|Ina|Ena|Vis|FileBX|Sort "Recent" menu alphabetically
+0x010388|3|1956|Res|Ina|Ena|Vis|FileBX|Add "Always on top" command to a windo
+0x01038A|3|1956|Res|Ina|Ena|Vis|FileBX|Add "Roll up" command to a window syst
+0x01038C|3|1956|Res|Ina|Ena|Vis|FileBX|Display
+0x01038E|3|1956|Res|Ina|Ena|Vis|FileBX|Edit
+0x010390|3|1956|Res|Ina|Ena|Vis|FileBX|items on Recent Folders menu
+0x010392|3|1956|Res|Ina|Ena|Vis|FileBX|Add folders from Windows "My Recent Do
+0x010394|2|1956|Res|Ina|Ena|Vis|FileBX|Favorites
+0x010396|3|1956|Res|Ina|Ena|Vis|FileBX|Tree1
+0x01039A|3|1956|Res|Ina|Ena|Vis|FileBX|&New Item...
+0x01039C|3|1956|Res|Ina|Ena|Vis|FileBX|New Sub-&Menu
+0x01039E|3|1956|Res|Ina|Ena|Vis|FileBX|Add &Separator
+0x0103A0|3|1956|Res|Ina|Ena|Vis|FileBX|&Update Shortcuts...
+0x0103A2|3|1956|Res|Ina|Ena|Vis|FileBX|&Test Menu
+0x0103A4|3|1956|Res|Ina|Dis|Vis|FileBX|&Edit Item...
+0x0103A6|3|1956|Res|Ina|Dis|Vis|FileBX|&Rename
+0x0103A8|3|1956|Res|Ina|Dis|Vis|FileBX|&Delete Item
+0x0103AA|3|1956|Res|Ina|Dis|Vis|FileBX|Delete &All...
+0x0103AC|3|1956|Res|Ina|Ena|Vis|FileBX|Currently selected item:
+0x0103AE|3|1956|Res|Ina|Ena|Vis|FileBX|Edit
+0x0103B0|3|1956|Res|Ina|Ena|Hid|FileBX|Edit
+0x0103B2|3|1956|Res|Ina|Ena|Vis|FileBX|Switch Config
+0x0103B4|2|1956|Res|Ina|Ena|Hid|FileBX|Exceptions
+0x0103B6|3|1956|Res|Ina|Ena|Vis|FileBX|A few programs will not work correctly
+0x0103B8|3|1956|Res|Ina|Ena|Vis|FileBX|Add Program to Exceptions...
+0x0103BA|3|1956|Res|Ina|Dis|Vis|FileBX|Delete Program from Exceptions
+0x0103BC|3|1956|Res|Ina|Ena|Vis|FileBX|Exception List:
+0x0103BE|3|1956|Res|Ina|Ena|Vis|FileBX|ListBox
+0x0103C0|3|1956|Res|Ina|Ena|Vis|FileBX|Do not handle this program at all
+0x0103C2|3|1956|Res|Ina|Ena|Vis|FileBX|No pushpin button
+0x0103C4|3|1956|Res|Ina|Ena|Vis|FileBX|No Favorites or Recent buttons
+0x0103C6|3|1956|Res|Ina|Ena|Vis|FileBX|Allow horizontal resize of file boxes
+0x0103C8|3|1956|Res|Ina|Ena|Vis|FileBX|Allow vertical resize of file boxes
+0x0103CA|3|1956|Res|Ina|Ena|Vis|FileBX|No roll-up button
+0x0103CC|3|1956|Res|Ina|Ena|Vis|FileBX|Move FbX buttons to the left by 
+0x0103CE|3|1956|Res|Ina|Ena|Vis|FileBX|Edit
+0x0103D0|3|1956|Res|Ina|Ena|Vis|FileBX|pixels
+0x0102FE|2|1956|Res|Ina|Ena|Vis|FileBX|Tab1
+0x020326|1|1956|Res|Ina|Ena|Hid|FileBX|Internet Explorer_Hidden
+0x0102C0|1|284|Res|Ina|Ena|Hid|orbitdm|tooltips_class32
+0x0102B0|1|284|Res|Ina|Ena|Hid|orbitdm|Orbit
+0x0102B6|2|284|Res|Ina|Ena|Vis|orbitdm|ReBarWindow32
+0x0102BA|3|284|Res|Ina|Ena|Vis|orbitdm|ToolbarWindow32
+0x0102B2|3|284|Res|Ina|Ena|Vis|orbitdm|myCommandBar
+0x0102B8|2|284|Res|Ina|Ena|Vis|orbitdm|Ready
+0x030278|3|284|Res|Ina|Ena|Vis|orbitdm|Follow us on Twitter
+0x0103D4|3|284|Res|Ina|Dis|Vis|orbitdm|or
+0x0103D8|3|284|Res|Ina|Ena|Vis|orbitdm|Become a fan on Facebook
+0x0102BC|2|284|Res|Ina|Ena|Vis|orbitdm|ATL:00508128
+0x0102BE|3|284|Res|Ina|Ena|Vis|orbitdm|ATL:005081D0
+0x0102C2|3|284|Res|Ina|Ena|Vis|orbitdm|MySplitterWindowClass
+0x0102C4|4|284|Res|Ina|Ena|Vis|orbitdm|ATL:00507638
+0x0102D6|5|284|Res|Ina|Ena|Vis|orbitdm|ATL:00509500
+0x0102D8|6|284|Res|Ina|Ena|Vis|orbitdm|SysHeader32
+0x0102CE|5|284|Res|Ina|Ena|Hid|orbitdm|ATL:00509500
+0x0102D0|6|284|Res|Ina|Ena|Vis|orbitdm|SysHeader32
+0x0102CA|5|284|Res|Ina|Ena|Hid|orbitdm|ATL:00509448
+0x0102C6|5|284|Res|Ina|Ena|Vis|orbitdm|ATL:SysTabControl32
+0x0102DC|4|284|Res|Ina|Ena|Vis|orbitdm|ATL:00507708
+0x0102DE|5|284|Res|Ina|Ena|Vis|orbitdm|SysHeader32
+0x02031A|1|364|Res|Ina|Ena|Vis|VirtuaWi|VirtuaWinMainClass
+0x0102EC|1|888|Res|Ina|Ena|Vis|CCC|AMD:CCC-AEMCapturingWindow
+0x0102F2|1|888|Res|Ina|Ena|Hid|CCC|WindowsForms10.Window.0.app.0.3d893c
+0x01031E|1|284|Res|Ina|Ena|Hid|orbitdm|ATL:005085E8
+0x0102F0|1|888|Res|Ina|Ena|Hid|CCC|.NET-BroadcastEventWindow.2.0.0.0.3d89
+0x0102E0|1|284|Res|Ina|Ena|Hid|orbitdm|tooltips_class32
+0x0102DA|1|284|Res|Ina|Ena|Hid|orbitdm|tooltips_class32
+0x0102B4|1|448|Res|Ina|Ena|Hid|orbitnet|ORBTPROS_APP
+0x0102D4|1|284|Res|Ina|Ena|Hid|orbitdm|tooltips_class32
+0x0902A6|1|284|Res|Ina|Ena|Hid|orbitdm|TimeSynWindow
+0x010270|1|1932|Res|Ina|Ena|Hid|HDeck|tooltips_class32
+0x01026E|1|1932|Res|Ina|Ena|Hid|HDeck|tooltips_class32
+0x01026C|1|1932|Res|Ina|Ena|Hid|HDeck|tooltips_class32
+0x01026A|1|1932|Res|Ina|Ena|Hid|HDeck|tooltips_class32
+0x010268|1|1932|Res|Ina|Ena|Hid|HDeck|tooltips_class32
+0x010266|1|1932|Res|Ina|Ena|Hid|HDeck|tooltips_class32
+0x010264|1|1932|Res|Ina|Ena|Hid|HDeck|tooltips_class32
+0x010262|1|1932|Res|Ina|Ena|Hid|HDeck|tooltips_class32
+0x010260|1|1932|Res|Ina|Ena|Hid|HDeck|tooltips_class32
+0x01025E|1|1932|Res|Ina|Ena|Hid|HDeck|tooltips_class32
+0x01025C|1|1932|Res|Ina|Ena|Hid|HDeck|tooltips_class32
+0x01025A|1|1932|Res|Ina|Ena|Hid|HDeck|tooltips_class32
+0x010258|1|1932|Res|Ina|Ena|Hid|HDeck|tooltips_class32
+0x020248|1|1932|Res|Ina|Ena|Hid|HDeck|tooltips_class32
+0x02024C|1|1932|Res|Ina|Ena|Hid|HDeck|tooltips_class32
+0x02024E|1|1932|Res|Ina|Ena|Hid|HDeck|tooltips_class32
+0x020252|1|1932|Res|Ina|Ena|Hid|HDeck|tooltips_class32
+0x010256|1|1932|Res|Ina|Ena|Hid|HDeck|tooltips_class32
+0x010254|1|1932|Res|Ina|Ena|Hid|HDeck|tooltips_class32
+0x010250|1|1932|Res|Ina|Ena|Hid|HDeck|tooltips_class32
+0x01024A|1|1932|Res|Ina|Ena|Hid|HDeck|tooltips_class32
+0x010246|1|1932|Res|Ina|Ena|Hid|HDeck|tooltips_class32
+0x010244|1|1932|Res|Ina|Ena|Hid|HDeck|tooltips_class32
+0x010242|1|1932|Res|Ina|Ena|Hid|HDeck|tooltips_class32
+0x010240|1|1932|Res|Ina|Ena|Hid|HDeck|tooltips_class32
+0x01023E|1|1932|Res|Ina|Ena|Hid|HDeck|tooltips_class32
+0x01023C|1|1932|Res|Ina|Ena|Hid|HDeck|tooltips_class32
+0x01023A|1|1932|Res|Ina|Ena|Hid|HDeck|tooltips_class32
+0x010238|1|1932|Res|Ina|Ena|Hid|HDeck|tooltips_class32
+0x010236|1|1932|Res|Ina|Ena|Hid|HDeck|tooltips_class32
+0x010234|1|1932|Res|Ina|Ena|Hid|HDeck|tooltips_class32
+0x010232|1|1932|Res|Ina|Ena|Hid|HDeck|tooltips_class32
+0x010230|1|1932|Res|Ina|Ena|Hid|HDeck|tooltips_class32
+0x01022E|1|1932|Res|Ina|Ena|Hid|HDeck|tooltips_class32
+0x01022C|1|1932|Res|Ina|Ena|Hid|HDeck|tooltips_class32
+0x01022A|1|1932|Res|Ina|Ena|Hid|HDeck|tooltips_class32
+0x020222|1|1932|Res|Ina|Ena|Hid|HDeck|tooltips_class32
+0x020224|1|1932|Res|Ina|Ena|Hid|HDeck|tooltips_class32
+0x020226|1|1932|Res|Ina|Ena|Hid|HDeck|tooltips_class32
+0x020228|1|1932|Res|Ina|Ena|Hid|HDeck|tooltips_class32
+0x010220|1|1932|Res|Ina|Ena|Hid|HDeck|Afx:400000:0:10011:1100063:0
+0x0101F4|1|1932|Res|Ina|Ena|Hid|HDeck|#32770
+0x0101F6|3|1932|Res|Ina|Ena|Vis|HDeck|Static
+0x0102CC|1|1796|Res|Ina|Ena|Hid|explorer|Connections Tray
+0x020050|1|1932|Max|Ina|Ena|Hid|HDeck|VIA HD Audio Deck
+0x020046|2|1932|Res|Ina|Ena|Vis|HDeck|Static
+0x020042|2|1932|Res|Ina|Ena|Vis|HDeck|Static
+0x020052|2|1932|Res|Ina|Ena|Vis|HDeck|Static
+0x03004A|2|1932|Res|Ina|Ena|Hid|HDeck|ComboBox
+0x0100B8|2|1932|Res|Ina|Ena|Hid|HDeck|ComboBox
+0x0100BC|2|1932|Res|Ina|Ena|Hid|HDeck|ComboBox
+0x0100C0|2|1932|Res|Ina|Ena|Hid|HDeck|ComboBox
+0x0100C4|2|1932|Res|Ina|Ena|Hid|HDeck|ComboBox
+0x0100C8|2|1932|Res|Ina|Ena|Hid|HDeck|ComboBox
+0x0100CC|2|1932|Res|Ina|Ena|Hid|HDeck|ComboBox
+0x0100D0|2|1932|Res|Ina|Ena|Hid|HDeck|ComboBox
+0x0100D4|2|1932|Res|Ina|Ena|Hid|HDeck|ComboBox
+0x0100D8|2|1932|Res|Ina|Ena|Hid|HDeck|ComboBox
+0x0100DC|2|1932|Res|Ina|Ena|Hid|HDeck|ComboBox
+0x0100E0|2|1932|Res|Ina|Ena|Hid|HDeck|ComboBox
+0x0100E4|2|1932|Res|Ina|Ena|Hid|HDeck|ComboBox
+0x0100E8|2|1932|Res|Ina|Ena|Hid|HDeck|ComboBox
+0x0100EC|2|1932|Res|Ina|Ena|Hid|HDeck|Slider1
+0x0100EE|2|1932|Res|Ina|Ena|Hid|HDeck|ComboBox
+0x0100F2|2|1932|Res|Ina|Ena|Hid|HDeck|ComboBox
+0x0100FA|2|1932|Res|Ina|Ena|Hid|HDeck|ComboBox
+0x0100FE|2|1932|Res|Ina|Ena|Hid|HDeck|ComboBox
+0x010102|2|1932|Res|Ina|Ena|Hid|HDeck|0
+0x010104|2|1932|Res|Ina|Ena|Hid|HDeck|Spin1
+0x010106|2|1932|Res|Ina|Ena|Hid|HDeck|ComboBox
+0x01010A|3|1932|Res|Ina|Ena|Vis|HDeck|Edit
+0x01010C|2|1932|Res|Ina|Ena|Hid|HDeck|ComboBox
+0x010110|3|1932|Res|Ina|Ena|Vis|HDeck|Edit
+0x010212|1|488|Res|Ina|Ena|Hid|acrotray|AcrobatTrayIcon
+0x010202|1|1796|Res|Ina|Ena|Hid|explorer|Power Meter
+0x010206|2|1796|Res|Ina|Ena|Vis|explorer|Power status
+0x010208|2|1796|Res|Ina|Ena|Vis|explorer|&Always show icon on the taskbar.
+0x01020A|2|1796|Res|Ina|Ena|Vis|explorer|Show details for each &battery.
+0x01020C|2|1796|Res|Ina|Ena|Hid|explorer|Static
+0x0101FC|1|1796|Res|Ina|Ena|Hid|explorer|MS_WebcheckMonitor
+0x0101F2|1|532|Res|Ina|Ena|Hid|NetMeter|TPUtilWindow
+0x0101EE|1|532|Res|Ina|Ena|Hid|NetMeter|TPUtilWindow
+0x0101EC|1|532|Res|Ina|Ena|Hid|NetMeter|TPUtilWindow
+0x0101EA|1|532|Res|Ina|Ena|Hid|NetMeter|NetMeter
+0x0101E6|1|532|Res|Ina|Ena|Hid|NetMeter|TPUtilWindow
+0x0101E2|1|1968|Res|Ina|Ena|Hid|FourEngi|TPUtilWindow
+0x0101E0|1|1968|Res|Ina|Ena|Hid|FourEngi|TPUtilWindow
+0x0101DA|1|1144|Res|Ina|Dis|Hid|ctfmon|CTrayIconWndClass
+0x0101D2|1|1796|Res|Ina|Ena|Hid|explorer|DDEMLEvent
+0x0101D0|1|1796|Res|Ina|Ena|Hid|explorer|DDEMLMom
+0x0101AE|1|516|Res|Ina|Ena|Hid|BarahaIM|Afx:00400000:0
+0x0101AC|1|516|Res|Ina|Ena|Hid|BarahaIM|BarahaDirectSenderWndClass
+0x0101A8|1|2040|Res|Ina|Ena|Hid|MOM|.NET-BroadcastEventWindow.2.0.0.0.33c0
+0x0101A6|1|516|Res|Ina|Ena|Hid|BarahaIM|BarahaIMEClass
+0x01019E|1|516|Res|Ina|Ena|Hid|BarahaIM|BarahaIME
+0x0101A2|1|504|Res|Ina|Ena|Hid|FreeRAM|TPUtilWindow
+0x01019C|1|504|Res|Ina|Ena|Hid|FreeRAM|TPUtilWindow
+0x01019A|1|504|Res|Ina|Ena|Hid|FreeRAM|TPUtilWindow
+0x010198|1|504|Res|Ina|Ena|Hid|FreeRAM|TPUtilWindow
+0x010196|1|504|Res|Ina|Ena|Hid|FreeRAM|TPUtilWindow
+0x03018A|1|1968|Res|Ina|Ena|Hid|FourEngi|TCpuForm
+0x020184|1|1996|Res|Ina|Ena|Hid|avgnt|Avira AntiVir Personal - Free Antiviru
+0x020182|1|1968|Res|Ina|Ena|Hid|FourEngi|VgaForm
+0x030174|1|1968|Res|Ina|Ena|Hid|FourEngi|AdvancedSetting
+0x03016E|5|1968|Res|Ina|Ena|Hid|FourEngi|AsButton
+0x030170|5|1968|Res|Ina|Ena|Hid|FourEngi|TPanel
+0x030172|6|1968|Res|Ina|Ena|Hid|FourEngi|TListBox
+0x020176|5|1968|Res|Ina|Ena|Hid|FourEngi|AsButton
+0x02017A|5|1968|Res|Ina|Ena|Hid|FourEngi|TPanel
+0x020178|6|1968|Res|Ina|Ena|Hid|FourEngi|TListBox
+0x02017C|5|1968|Res|Ina|Ena|Hid|FourEngi|AsButton
+0x02017E|5|1968|Res|Ina|Ena|Hid|FourEngi|AsButton
+0x020180|5|1968|Res|Ina|Ena|Hid|FourEngi|AsButton
+0x02016C|1|1968|Res|Ina|Ena|Hid|FourEngi|UniversalDialog
+0x01016A|1|1968|Res|Ina|Ena|Hid|FourEngi|TPUtilWindow
+0x010162|1|1968|Res|Ina|Ena|Hid|FourEngi|ProgressDialog
+0x010168|3|1968|Res|Ina|Ena|Hid|FourEngi|AsButton
+0x010166|3|1968|Res|Ina|Dis|Hid|FourEngi|AsButton
+0x010164|3|1968|Res|Ina|Ena|Hid|FourEngi|Cancel
+0x010160|1|1968|Res|Ina|Ena|Hid|FourEngi|Cover
+0x01015C|1|1968|Res|Ina|Ena|Hid|FourEngi|TPUtilWindow
+0x01015A|1|1968|Res|Ina|Ena|Hid|FourEngi|TThreadWindow
+0x010158|1|1968|Res|Ina|Ena|Hid|FourEngi|TPUtilWindow
+0x010156|1|1968|Res|Ina|Ena|Hid|FourEngi|TPUtilWindow
+0x010154|1|1968|Res|Ina|Ena|Hid|FourEngi|TPUtilWindow
+0x010152|1|1968|Res|Ina|Ena|Hid|FourEngi|TPUtilWindow
+0x010132|1|1988|Res|Ina|Ena|Hid|rundll32|BluetoothNotificationAreaIconWindowCla
+0x010126|1|1988|Res|Ina|Ena|Hid|rundll32|RunDLL
+0x010116|1|1968|Res|Ina|Ena|Hid|FourEngi|Six Engine
+0x010150|3|1968|Res|Ina|Ena|Hid|FourEngi|AsBar
+0x01014E|3|1968|Res|Ina|Ena|Hid|FourEngi|AsBar
+0x01014C|3|1968|Res|Ina|Dis|Hid|FourEngi|AsBar
+0x01014A|3|1968|Res|Ina|Ena|Hid|FourEngi|AsBar
+0x010148|3|1968|Res|Ina|Ena|Hid|FourEngi|AsCheckBox
+0x010146|3|1968|Res|Ina|Dis|Hid|FourEngi|AsButton
+0x010144|3|1968|Res|Ina|Dis|Hid|FourEngi|AsButton
+0x010142|3|1968|Res|Ina|Ena|Hid|FourEngi|AsButton
+0x010140|3|1968|Res|Ina|Ena|Hid|FourEngi|AsButton
+0x01013E|3|1968|Res|Ina|Ena|Hid|FourEngi|Calibrate
+0x01013C|3|1968|Res|Ina|Ena|Hid|FourEngi|AsButton
+0x01013A|3|1968|Res|Ina|Ena|Hid|FourEngi|Current
+0x010138|3|1968|Res|Ina|Ena|Hid|FourEngi|Exit
+0x01012A|3|1968|Res|Ina|Ena|Hid|FourEngi|Setting
+0x010120|3|1968|Res|Ina|Ena|Hid|FourEngi|AsRadioButton
+0x01011E|3|1968|Res|Ina|Ena|Hid|FourEngi|AsRadioButton
+0x01011C|3|1968|Res|Ina|Ena|Hid|FourEngi|AsRadioButton
+0x01011A|3|1968|Res|Ina|Ena|Hid|FourEngi|AsButton
+0x010118|3|1968|Res|Ina|Ena|Hid|FourEngi|AsButton
+0x0100F6|1|1968|Res|Ina|Ena|Hid|FourEngi|EPU-4 Engine
+0x01010E|1|1932|Res|Ina|Ena|Hid|HDeck|ComboLBox
+0x010108|1|1932|Res|Ina|Ena|Hid|HDeck|ComboLBox
+0x010100|1|1932|Res|Ina|Ena|Hid|HDeck|ComboLBox
+0x0100FC|1|1932|Res|Ina|Ena|Hid|HDeck|ComboLBox
+0x0100F4|1|1932|Res|Ina|Ena|Hid|HDeck|ComboLBox
+0x0100F0|1|1932|Res|Ina|Ena|Hid|HDeck|ComboLBox
+0x0100EA|1|1932|Res|Ina|Ena|Hid|HDeck|ComboLBox
+0x0100E6|1|1932|Res|Ina|Ena|Hid|HDeck|ComboLBox
+0x0100E2|1|1932|Res|Ina|Ena|Hid|HDeck|ComboLBox
+0x0100DE|1|1932|Res|Ina|Ena|Hid|HDeck|ComboLBox
+0x0100DA|1|1932|Res|Ina|Ena|Hid|HDeck|ComboLBox
+0x0100D6|1|1932|Res|Ina|Ena|Hid|HDeck|ComboLBox
+0x0100D2|1|1932|Res|Ina|Ena|Hid|HDeck|ComboLBox
+0x0100CE|1|1932|Res|Ina|Ena|Hid|HDeck|ComboLBox
+0x0100CA|1|1932|Res|Ina|Ena|Hid|HDeck|ComboLBox
+0x0100C6|1|1932|Res|Ina|Ena|Hid|HDeck|ComboLBox
+0x0100C2|1|1932|Res|Ina|Ena|Hid|HDeck|ComboLBox
+0x0100BE|1|1932|Res|Ina|Ena|Hid|HDeck|ComboLBox
+0x0100BA|1|1932|Res|Ina|Ena|Hid|HDeck|ComboLBox
+0x020054|1|1932|Res|Ina|Ena|Hid|HDeck|ComboLBox
+0x010080|1|1796|Res|Ina|Ena|Hid|explorer|WorkerW
+0x030076|1|1796|Res|Ina|Ena|Hid|explorer|WorkerW
+0x030070|1|1796|Res|Ina|Ena|Hid|explorer|DDEMLEvent
+0x0B006C|1|1796|Res|Ina|Ena|Hid|explorer|DDEMLMom
+0x010048|1|848|Res|Ina|Ena|Hid|ati2evxx|ATI video bios poller client
+0x01002E|1|1336|Res|Ina|Ena|Hid|ati2evxx|ATI video bios poller
+0x01002A|1|1260|Res|Ina|Ena|Hid|DF5Serv|Df5serv
+0x0101B6|1|516|Res|Ina|Ena|Hid|BarahaIM|BarahaConvert
+0x0201B8|2|516|Res|Ina|Ena|Hid|BarahaIM|RichEdit20W
+0x0101BC|2|516|Res|Ina|Ena|Hid|BarahaIM|RichEdit20W
+0x0101A4|1|504|Res|Ina|Ena|Hid|FreeRAM|FreeRAM XP Pro 1.52: 100% RAM free (20
+0x0101B0|2|504|Res|Ina|Ena|Hid|FreeRAM|TPanel
+0x02018E|1|504|Min|Ina|Ena|Hid|FreeRAM|FreeRAM XP Pro: A YourWare Solution (T
+0x0101BE|1|516|Res|Ina|Ena|Hid|BarahaIM|BarahaSort
+0x0101C0|2|516|Res|Ina|Ena|Hid|BarahaIM|RichEdit20W
+0x0101C2|2|516|Res|Ina|Ena|Hid|BarahaIM|RichEdit20W
+0x0101C6|1|516|Res|Ina|Ena|Hid|BarahaIM|BarahaFontConvert
+0x0101C8|2|516|Res|Ina|Ena|Hid|BarahaIM|RichEdit20W
+0x0101CA|2|516|Res|Ina|Ena|Hid|BarahaIM|RichEdit20W
+0x010216|1|888|Min|Ina|Ena|Hid|CCC|GDI+ Window
+0x0102AC|1|284|Min|Ina|Ena|Hid|orbitdm|GDI+ Window
+0x050684|1|2148|Res|Ina|Ena|Hid|firefox|MCI command handling window
+0x01009A|1|1796|Res|Ina|Ena|Hid|explorer|tooltips_class32
+0x01008A|1|1796|Res|Ina|Ena|Vis|explorer|Program Manager
+0x010094|2|1796|Res|Ina|Ena|Vis|explorer|SHELLDLL_DefView
+0x010096|3|1796|Res|Ina|Ena|Vis|explorer|FolderView
+0x03005C|1|1796|Res|Ina|Dis|Hid|explorer|M
+0x03005A|1|1796|Res|Ina|Dis|Hid|explorer|Default IME
+0x02043E|1|284|Res|Ina|Dis|Hid|orbitdm|Default IME
+0x010296|1|1996|Res|Ina|Dis|Hid|avgnt|Default IME
+0x100770|1|2540|Res|Ina|Dis|Hid|AutoIt3|Default IME
+0x030668|1|3332|Res|Ina|Dis|Hid|x|M
+0x020434|1|3332|Res|Ina|Dis|Hid|x|Default IME
+0x0206B4|1|3396|Res|Ina|Dis|Hid|notepad+|M
+0x02068E|1|3396|Res|Ina|Dis|Hid|notepad+|Default IME
+0x040642|1|2148|Res|Ina|Dis|Hid|firefox|M
+0x010632|1|2148|Res|Ina|Dis|Hid|firefox|Default IME
+0x04067C|1|1468|Res|Ina|Dis|Hid|Tooler|M
+0x040670|1|1468|Res|Ina|Dis|Hid|Tooler|Default IME
+0x0E03FC|1|888|Res|Ina|Dis|Hid|CCC|Default IME
+0x010404|1|2268|Res|Ina|Dis|Hid|dgnsvc|Default IME
+0x0303DC|1|1584|Res|Ina|Dis|Hid|FrzState|Default IME
+0x010412|1|888|Res|Ina|Dis|Hid|CCC|M
+0x01040A|1|888|Res|Ina|Dis|Hid|CCC|Default IME
+0x0101D8|1|1144|Res|Ina|Dis|Hid|ctfmon|Default IME
+0x0103E0|1|1924|Res|Ina|Dis|Hid|WinList|Default IME
+0x010328|1|1956|Res|Ina|Dis|Hid|FileBX|M
+0x0102FC|1|1956|Res|Ina|Dis|Hid|FileBX|Default IME
+0x0102E4|1|284|Res|Ina|Dis|Hid|orbitdm|M
+0x0202A4|1|284|Res|Ina|Dis|Hid|orbitdm|Default IME
+0x010322|1|364|Res|Ina|Dis|Hid|VirtuaWi|M
+0x01031C|1|364|Res|Ina|Dis|Hid|VirtuaWi|Default IME
+0x0102EE|1|888|Res|Ina|Dis|Hid|CCC|Default IME
+0x0102F4|1|888|Res|Ina|Dis|Hid|CCC|M
+0x0102C8|1|448|Res|Ina|Dis|Hid|orbitnet|Default IME
+0x0101CE|1|1932|Res|Ina|Dis|Hid|HDeck|M
+0x020044|1|1932|Res|Ina|Dis|Hid|HDeck|Default IME
+0x010214|1|488|Res|Ina|Dis|Hid|acrotray|Default IME
+0x010204|1|1796|Res|Ina|Dis|Hid|explorer|Default IME
+0x0101E8|1|532|Res|Ina|Dis|Hid|NetMeter|Default IME
+0x0101AA|1|2040|Res|Ina|Dis|Hid|MOM|Default IME
+0x0101A0|1|516|Res|Ina|Dis|Hid|BarahaIM|Default IME
+0x010190|1|1996|Res|Ina|Dis|Hid|avgnt|Default IME
+0x01012C|1|1988|Res|Ina|Dis|Hid|rundll32|Default IME
+0x0100F8|1|1968|Res|Ina|Dis|Hid|FourEngi|Default IME
+0x01004C|1|848|Res|Ina|Dis|Hid|ati2evxx|Default IME
+0x010030|1|1336|Res|Ina|Dis|Hid|ati2evxx|Default IME
+0x01002C|1|1260|Res|Ina|Dis|Hid|DF5Serv|Default IME
+0x0101B2|1|504|Res|Ina|Dis|Hid|FreeRAM|M
+0x030186|1|504|Res|Ina|Dis|Hid|FreeRAM|Default IME
+0x010218|1|888|Res|Ina|Dis|Hid|CCC|Default IME
+0x0102AE|1|284|Res|Ina|Dis|Hid|orbitdm|Default IME
+0x020688|1|2148|Res|Ina|Dis|Hid|firefox|Default IME
+0x01009E|1|1796|Res|Ina|Dis|Hid|explorer|M
+0x03006E|1|1796|Res|Ina|Dis|Hid|explorer|Default IME
