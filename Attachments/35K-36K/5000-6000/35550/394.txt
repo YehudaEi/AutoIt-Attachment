@@ -1,0 +1,394 @@
+; #INDEX# =======================================================================================================================
+; Title .........: Console
+; AutoIt Version : 3.3.0.0+
+; Language ......: English
+; Description ...: Functions that assist with consoles.
+; Author(s) .....: Janus Thorborg (Shaggi)
+; ===============================================================================================================================
+#include-once
+#OnAutoItStartRegister "__Console__StartUp"
+
+; #CURRENT# =====================================================================================================================
+;Cout
+;Cin
+;Cerr
+;Getch
+;system
+; ===============================================================================================================================
+
+; #INTERNAL_USE_ONLY# ===========================================================================================================
+;__Console__CreateConsole
+;__Console__KillConsole
+;__Console__StartUp
+;__Console__ShutDown
+;__Console__GetStdHandle
+; ===============================================================================================================================
+
+; #VARIABLES# ===================================================================================================================
+;	Don't touch these.
+Global $__Dll_Kernel32, $__Amount__Startup_Console, $__ConsoleHandle__Output, $__ConsoleHandle__Input, $__ConsoleHandle__Error
+Global $_Included_Console = True
+; ===============================================================================================================================
+; #CONSTANTS# ===================================================================================================================
+;	Thanks to Matt Diesel (Mat) for writing these down.
+; Attributes flags (colors)
+; WinCon.h (153 - 160)
+Global Const $FOREGROUND_BLUE = 0x0001 ; text color contains blue.
+Global Const $FOREGROUND_GREEN = 0x0002 ; text color contains green.
+Global Const $FOREGROUND_RED = 0x0004 ; text color contains red.
+Global Const $FOREGROUND_INTENSITY = 0x0008 ; text color is intensified.
+Global Const $BACKGROUND_BLUE = 0x0010 ; background color contains blue.
+Global Const $BACKGROUND_GREEN = 0x0020 ; background color contains green.
+Global Const $BACKGROUND_RED = 0x0040 ; background color contains red.
+Global Const $BACKGROUND_INTENSITY = 0x0080 ; background color is intensified.
+; Attributes flags
+; WinCon.h (161 - 169)
+Global Const $COMMON_LVB_LEADING_BYTE = 0x0100 ; Leading Byte of DBCS
+Global Const $COMMON_LVB_TRAILING_BYTE = 0x0200 ; Trailing Byte of DBCS
+Global Const $COMMON_LVB_GRID_HORIZONTAL = 0x0400 ; DBCS: Grid attribute: top horizontal.
+Global Const $COMMON_LVB_GRID_LVERTICAL = 0x0800 ; DBCS: Grid attribute: left vertical.
+Global Const $COMMON_LVB_GRID_RVERTICAL = 0x1000 ; DBCS: Grid attribute: right vertical.
+Global Const $COMMON_LVB_REVERSE_VIDEO = 0x4000 ; DBCS: Reverse fore/back ground attribute.
+Global Const $COMMON_LVB_UNDERSCORE = 0x8000 ; DBCS: Underscore.
+Global Const $COMMON_LVB_SBCSDBCS = 0x0300 ; SBCS or DBCS flag.
+; ===============================================================================================================================
+; #STRUCTURES# ==================================================================================================================
+; $tag_CONSOLE_SCREEN_BUFFER_INFO
+; $tagCHAR_INFO_W
+; $tagPSMALL_RECT
+; ===============================================================================================================================
+;	These are merely provided for convinience, they aren't used (yet)
+Global Const $tag_CONSOLE_SCREEN_BUFFER_INFO = "short dwSizeX; short dwSizeY; short dwCursorPositionX;short dwCursorPositionY; word wAttributes;" & _
+		"SHORT srWindowLeft; SHORT srWindowRight; SHORT srWindowLeft; SHORT srWindowBottom;" & _
+		"short dwMaximumWindowSizeX; short dwMaximumWindowSizeY"
+Global Const $tagCHAR_INFO_W = "WCHAR UnicodeChar; WORD Attributes"
+Global Const $tagPSMALL_RECT = "SHORT Left; SHORT Right; SHORT Left; SHORT Bottom;"
+; ===============================================================================================================================
+; #FUNCTION# ====================================================================================================================
+; Name...........: system
+; Description ...: Invokes the command processor to execute a command. Once the command execution has terminated, the processor
+;				   gives the control back to the program, returning an int value, whose interpretation is system-dependent.
+;				   The function call also be used with NULL as argument to check whether a command processor exists.
+; Syntax.........: system($szCommand)
+; Parameters ....: $szString      		- A string containing a system command to be executed.
+; Return values .: Success              - Depends on command given.
+;                  Failure              - Depends on command given.
+; Author ........: Janus Thorborg (Shaggi)
+; Modified.......: 09/07/2011
+; Remarks .......: Common use is system("pause").
+; Related .......: RunWait
+; Link ..........: http://www.cplusplus.com/reference/clibrary/cstdlib/system/
+; Example .......: No
+; ===============================================================================================================================
+Func system($szCommand)
+	If $szCommand Then
+		If Not $__Amount__Startup_Console Then
+			__Console__CreateConsole()
+			$__Amount__Startup_Console += 1
+		EndIf
+		Return RunWait(@ComSpec & " /c " & StringUpper($szCommand), @ScriptDir, Default, 0x10)
+	EndIf
+	Return False
+EndFunc   ;==>system
+; #FUNCTION# ====================================================================================================================
+; Name...........: Cout
+; Description ...: Writes a UNICODE string to the Standard Output Stream, with optional attributes. Similar to std::cout in C++ and
+;					ConsoleWrite().
+; Syntax.........: Cout($szString [, $iAttr = -1])
+; Parameters ....: $szString      		- A string to write to the Standard Output Stream.
+;                  $iAttr             	- If supplied, the function sets the current text attributes to this before writing,
+;										  and resets it back to normal after writing. Attributes (Thanks to Matt Diesel (Mat)):
+;                                       |FOREGROUND_BLUE - Text color contains blue.
+;                                       |FOREGROUND_GREEN - Text color contains green.
+;                                       |FOREGROUND_RED - Text color contains red.
+;                                       |FOREGROUND_INTENSITY - Text color is intensified.
+;                                       |BACKGROUND_BLUE - Background color contains blue.
+;                                       |BACKGROUND_GREEN - Background color contains green.
+;                                       |BACKGROUND_RED - Background color contains red.
+;                                       |BACKGROUND_INTENSITY - Background color is intensified.
+;                                         BitOR these together, if more than one attribute is used.
+; Return values .: Success              - True
+;                  Failure              - False - @error is set and DllCall() @error is kept in @extended.
+; Author ........: Janus Thorborg (Shaggi)
+; Modified.......: 09/07/2011
+; Remarks .......:
+; Related .......: Cerr
+; Link ..........: http://msdn.microsoft.com/en-us/library/ms687401(VS.85).aspx
+; Example .......: No
+; ===============================================================================================================================
+Func Cout($szString, $iAttr = -1)
+	If Not $__Amount__Startup_Console Then
+		__Console__CreateConsole()
+		$__Amount__Startup_Console += 1
+	EndIf
+	Local $lpBuffer = DllStructCreate("wchar[" & StringLen($szString) & "]")
+	DllStructSetData($lpBuffer, 1, $szString)
+	Local $lpNumberOfCharsWritten = 0
+	ConsoleWrite($szString)
+	Switch $iAttr
+		Case -1
+			Local $aResult = DllCall($__Dll_Kernel32, "BOOL", "WriteConsoleW", _
+					"handle", $__ConsoleHandle__Output, _
+					"ptr", DllStructGetPtr($lpBuffer), _
+					"dword", StringLen($szString), _
+					"dword*", $lpNumberOfCharsWritten, _
+					"ptr", 0)
+			Return $aResult[0]
+		Case Else
+			Local $aResult1 = DllCall($__Dll_Kernel32, "BOOL", "SetConsoleTextAttribute", "handle", $__ConsoleHandle__Output, "word", $iAttr)
+			Local $aResult2 = DllCall($__Dll_Kernel32, "BOOL", "WriteConsoleW", _
+					"handle", $__ConsoleHandle__Output, _
+					"ptr", DllStructGetPtr($lpBuffer), _
+					"dword", StringLen($szString), _
+					"dword*", $lpNumberOfCharsWritten, _
+					"ptr", 0)
+			Local $aResult3 = DllCall($__Dll_Kernel32, "BOOL", "SetConsoleTextAttribute", "handle", $__ConsoleHandle__Output, "word", 0x7)
+			Switch $aResult2[0]
+				Case 0
+					Return SetError(1,@error,False)
+				Case Else
+					Return (($aResult1[0] <> 0) AND ($aResult3[0] <> 0))
+			EndSwitch
+	EndSwitch
+	Return False
+EndFunc   ;==>Cout
+; #FUNCTION# ====================================================================================================================
+; Name...........: Cerr
+; Description ...: Writes a UNICODE string to the Standard Error Stream, with optional attributes. Similar to std::cerr in C++ and
+;					ConsoleWriteError().
+; Syntax.........: Cerr($szString [, $iAttr = -1])
+; Parameters ....: $szString      		- A string to write to the Standard Error Stream.
+;                  $iAttr             	- If supplied, the function sets the current text attributes to this before writing,
+;										  and resets it back to normal after writing. Attributes (Thanks to Matt Diesel (Mat)):
+;                                       |FOREGROUND_BLUE - Text color contains blue.
+;                                       |FOREGROUND_GREEN - Text color contains green.
+;                                       |FOREGROUND_RED - Text color contains red.
+;                                       |FOREGROUND_INTENSITY - Text color is intensified.
+;                                       |BACKGROUND_BLUE - Background color contains blue.
+;                                       |BACKGROUND_GREEN - Background color contains green.
+;                                       |BACKGROUND_RED - Background color contains red.
+;                                       |BACKGROUND_INTENSITY - Background color is intensified.
+;                                         BitOR these together, if more than one attribute is used.
+; Return values .: Success              - True
+;                  Failure              - False - @error is set - see @extenden for DllCall() @error.
+; Author ........: Janus Thorborg (Shaggi)
+; Modified.......: 09/07/2011
+; Remarks .......:
+; Related .......: Cout
+; Link ..........: http://msdn.microsoft.com/en-us/library/ms687401(VS.85).aspx
+; Example .......: No
+; ===============================================================================================================================
+Func Cerr($szString, $iAttr = -1)
+	If Not $__Amount__Startup_Console Then
+		__Console__CreateConsole()
+		$__Amount__Startup_Console += 1
+	EndIf
+	Local $lpBuffer = DllStructCreate("wchar[" & StringLen($szString) & "]")
+	DllStructSetData($lpBuffer, 1, $szString)
+	Local $lpNumberOfCharsWritten = 0
+	ConsoleWrite($szString)
+	Switch $iAttr
+		Case -1
+			Local $aResult = DllCall($__Dll_Kernel32, "BOOL", "WriteConsoleW", _
+					"handle", $__ConsoleHandle__Error, _
+					"ptr", DllStructGetPtr($lpBuffer), _
+					"dword", StringLen($szString), _
+					"dword*", $lpNumberOfCharsWritten, _
+					"ptr", 0)
+			Return $aResult[0]
+		Case Else
+			Local $aResult1 = DllCall($__Dll_Kernel32, "BOOL", "SetConsoleTextAttribute", "handle", $__ConsoleHandle__Error, "word", $iAttr)
+			Local $aResult2 = DllCall($__Dll_Kernel32, "BOOL", "WriteConsoleW", _
+					"handle", $__ConsoleHandle__Error, _
+					"ptr", DllStructGetPtr($lpBuffer), _
+					"dword", StringLen($szString), _
+					"dword*", $lpNumberOfCharsWritten, _
+					"ptr", 0)
+			Local $aResult3 = DllCall($__Dll_Kernel32, "BOOL", "SetConsoleTextAttribute", "handle", $__ConsoleHandle__Error, "word", 0x7)
+			Switch $aResult2[0]
+				Case 0
+					Return SetError(1,@error,False)
+				Case Else
+					Return (($aResult1[0] <> 0) AND ($aResult3[0] <> 0))
+			EndSwitch
+	EndSwitch
+	Return False
+EndFunc   ;==>Cerr
+; #FUNCTION# ====================================================================================================================
+; Name...........: Cin
+; Description ...: Retrieves a UNICODE string from the Standard Input Stream, with optional size. Similar to std::cin in C++.
+; Syntax.........: Cin(ByRef $szString [, $iSize = 128])
+; Parameters ....: $szString      		- A string the content is copied to.
+;                  $iSize            	- If supplied, the function sets the maximal size of the characters read to this.
+; Return values .: Success              - Actual amount of characters read.
+;                  Failure              - False - @error is set and @extended holds DllCall() @error
+; Author ........: Janus Thorborg (Shaggi)
+; Modified.......: 09/07/2011
+; Remarks .......: Returns once something has been typed into console AND enter is pressed.
+; Related .......: Getch
+; Link ..........: http://msdn.microsoft.com/en-us/library/ms684958(VS.85).aspx
+; Example .......: No
+; ===============================================================================================================================
+Func Cin(ByRef $szString, $iSize = 128)
+	If Not $__Amount__Startup_Console Then
+		__Console__CreateConsole()
+		$__Amount__Startup_Console += 1
+	EndIf
+	Local $lpBuffer = DllStructCreate("wchar[" & $iSize & "]")
+	Local $lpNumberOfCharsRead = 0
+	Local $aResult = DllCall($__Dll_Kernel32, "BOOL", "ReadConsoleW", _
+			"handle", $__ConsoleHandle__Input, _
+			"ptr", DllStructGetPtr($lpBuffer), _
+			"dword", DllStructGetSize($lpBuffer), _
+			"dword*", $lpNumberOfCharsRead, _
+			"ptr", 0)
+	Select
+		Case Not $aResult[0]
+			Return SetError(1,@error,False)
+		Case Else
+			$szString = StringTrimRight(DllStructGetData($lpBuffer, 1),2)
+			Return $aResult[4]
+	EndSelect
+EndFunc   ;==>Cin
+; #FUNCTION# ====================================================================================================================
+; Name...........: Getch
+; Description ...: Retrieves 1 unicode character from the input buffer. Blocks.
+; Syntax.........: Getch()
+; Parameters ....:
+; Return values .: Success              - A single wide character.
+;                  Failure              - False and @error is set - see @extended for DllCall() @error.
+; Author ........: Janus Thorborg (Shaggi)
+; Modified.......: 09/07/2011
+; Remarks .......: Returns once something has been typed into console. Doesn't work with Esc, arrows or F1-12.
+; Related .......: Cin
+; Link ..........:
+; Example .......: No
+; ===============================================================================================================================
+Func Getch()
+	Local $mode, $Char, $Count, $lpNumberOfCharsRead
+	Local $Ret = DllCall($__Dll_Kernel32,"bool","GetConsoleMode","handle",$__ConsoleHandle__Input,"dword*",$mode)
+	If @Error OR NOT $Ret[0] Then Return SetError(1,@error,False)
+	$Mode = $Ret[2]
+	$Ret = DllCall($__Dll_Kernel32,"bool","SetConsoleMode","handle",$__ConsoleHandle__Input,"dword",0)
+	If @Error OR NOT $Ret[0] Then Return SetError(2,@error,False)
+	Local $aResult = DllCall($__Dll_Kernel32, "BOOL", "ReadConsoleW", _
+		"handle", $__ConsoleHandle__Input, _
+		"int*", $Char, _
+		"dword", 2, _
+		"int*", $lpNumberOfCharsRead, _
+		"ptr", 0)
+	If @Error OR NOT $aResult[0] Then Return SetError(3,@error,False)
+	Local $Return = ChrW($aResult[2])
+	$Ret = DllCall($__Dll_Kernel32,"bool","SetConsoleMode","handle",$__ConsoleHandle__Input,"dword",$Mode)
+	If @Error OR NOT $Ret[0] Then return SetError(4,@error,False)
+	Return $Return
+EndFunc ;==>Getch
+; #INTERNAL_USE_ONLY# ===========================================================================================================
+; Name...........: __Console_StartUp()
+; Description ...: Checks if running under SciTE, if, then executes the script via ShellExecute so own console can be opened.
+;				   Exits with the errorcode the executed script did.
+; Syntax.........: __Console_StartUp()
+; Parameters ....: None
+; Return values .: None
+; Author ........: Janus Thorborg (Shaggi)
+; Modified.......: 16/03/2011
+; Remarks .......: This function is used internally. Called automatically on AutoIt startup.
+; Related .......:
+; Link ..........:
+; Example .......:
+; ===============================================================================================================================
+Func __Console__StartUp()
+	Local $bIsRunningFromScite = StringInStr($CmdLineRaw, "/ErrorStdOut")
+	Local $bIsRecursed = Execute(StringLeft($Cmdline[$Cmdline[0]],StringLen("/Console=")))
+	If ($bIsRunningFromScite > 0) AND NOT $bIsRecursed Then
+		Local $szCommandLine = '"' & @AutoItExe & '" "' & @ScriptFullPath & '" /Console=True'
+		ConsoleWrite(@CRLF & "!<Console.au3>:" & @CRLF & @TAB & "Launching process on own..." & @CRLF & "+" & @TAB & "CmdLine:" & $szCommandLine & @CRLF)
+		Local $iReturnCode = RunWait($szCommandline)
+		ConsoleWrite(@CRLF & ">" & @TAB & @ScriptName & " returned " & $iReturnCode & " (0x" & Hex($iReturnCode, 8) & ")" & @CRLF)
+		Exit $iReturnCode
+	EndIf
+	Global $__Dll_Kernel32 = DllOpen("kernel32.dll")
+	OnAutoItExitRegister("__Console__ShutDown")
+EndFunc   ;==>__Console_StartUp
+; #INTERNAL_USE_ONLY# ===========================================================================================================
+; Name...........: __Console_ShutDown()
+; Description ...: If a console is present, it detaches and closes any handles opened.
+; Syntax.........: __Console_ShutDown()
+; Parameters ....: None
+; Return values .: None
+; Author ........: Janus Thorborg (Shaggi)
+; Modified.......: 15/03/2011
+; Remarks .......: This function is used internally. Called automatically on AutoIt shutdown.
+; Related .......:
+; Link ..........:
+; Example .......:
+; ===============================================================================================================================
+Func __Console__ShutDown()
+	If $__Amount__Startup_Console Then
+		__Console__KillConsole()
+		DllCall($__Dll_Kernel32,"BOOL","CloseHandle","handle",$__ConsoleHandle__Output)
+		DllCall($__Dll_Kernel32,"BOOL","CloseHandle","handle",$__ConsoleHandle__Input)
+		DllCall($__Dll_Kernel32,"BOOL","CloseHandle","handle",$__ConsoleHandle__Error)
+	EndIf
+	DllClose($__Dll_Kernel32)
+EndFunc   ;==>__Console_ShutDown
+; #INTERNAL_USE_ONLY# ===========================================================================================================
+; Name...........: __Console_CreateConsole()
+; Description ...: Allocates an console, and opens up handles for the three standard streams: Input, Output and Error.
+; Syntax.........: __Console_CreateConsole()
+; Parameters ....: None
+; Return values .: Success              - True
+;                  Failure              - False
+; Author ........: Janus Thorborg (Shaggi)
+; Modified.......: 15/03/2011
+; Remarks .......: This function is used internally. Called automatically the first time any of the Cin, Cerr or Cout funcs is used.
+; Related .......:
+; Link ..........:
+; Example .......:
+; ===============================================================================================================================
+Func __Console__CreateConsole()
+	If Not $__Amount__Startup_Console Then
+		$__Amount__Startup_Console += 1
+		Local $aResult = DllCall($__Dll_Kernel32, "BOOL", "AllocConsole")
+		$__ConsoleHandle__Output = __Console__GetStdHandle()
+		$__ConsoleHandle__Input = __Console__GetStdHandle(-10)
+		$__ConsoleHandle__Error = __Console__GetStdHandle(-12)
+		Return $aResult[0]
+	EndIf
+EndFunc   ;==>__Console__CreateConsole
+; #INTERNAL_USE_ONLY# ===========================================================================================================
+; Name...........: __Console_ShutDown()
+; Description ...: Frees the console from the process.
+; Syntax.........: __Console_ShutDown()
+; Parameters ....: None
+; Return values .: None
+; Author ........: Janus Thorborg (Shaggi)
+; Modified.......: 15/03/2011
+; Remarks .......: This function is used internally. Called automatically on AutoIt shutdown.
+; Related .......:
+; Link ..........:
+; Example .......:
+; ===============================================================================================================================
+Func __Console__KillConsole()
+	Local $aResult = DllCall($__Dll_Kernel32, "BOOL", "FreeConsole")
+	Return $aResult[0]
+EndFunc   ;==>__Console__KillConsole
+; #INTERNAL_USE_ONLY# ===========================================================================================================
+; Name...........: __Console_GetStdHandle()
+; Description ...: Returns an handle to the desired standard stream.
+; Syntax.........: __Console_GetStdHandle()
+; Parameters ....: None
+; Return values .: Success              - A handle to the stream.
+;                  Failure              - 0
+; Author ........: Janus Thorborg (Shaggi)
+; Modified.......: 15/03/2011
+; Remarks .......: This function is used internally. Called automatically the first time any of the Cin, Cerr or Cout funcs is used.
+; Related .......:
+; Link ..........:
+; Example .......:
+; ===============================================================================================================================
+Func __Console__GetStdHandle($nStdHandle = -11)
+	Local $aResult = DllCall($__Dll_Kernel32, "handle", "GetStdHandle", _
+			"dword", $nStdHandle)
+	Return $aResult[0]
+EndFunc   ;==>__Console__GetStdHandle
