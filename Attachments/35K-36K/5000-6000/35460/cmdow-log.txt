@@ -1,0 +1,1039 @@
+Handle  Lev Pid -Window status- Image    Caption
+0x010014 0  932 Res Ina Ena Vis csrss    #32769
+0x0101D4 1  372 Res Ina Dis Hid ctfmon   TF_FloatingLangBar_WndTitle
+0x0101D6 1  372 Res Ina Dis Hid ctfmon   CiceroUIWndFrame
+0x2507B6 1 1644 Res Ina Ena Hid explorer WorkerW
+0x0400A8 1 1644 Res Ina Ena Hid explorer tooltips_class32
+0x04008C 1 1644 Res Ina Ena Hid explorer Start Menu
+0x04008E 3 1644 Res Ina Ena Vis explorer Desktop User Pane
+0x0400A2 4 1644 Res Ina Ena Vis explorer UserXP
+0x050054 3 1644 Res Ina Ena Vis explorer DesktopSFTBarHost
+0x050046 4 1644 Res Ina Ena Vis explorer SysListView32
+0x040092 5 1644 Res Ina Ena Hid explorer SysHeader32
+0x06004E 3 1644 Res Ina Ena Vis explorer Desktop More Programs Pane
+0x050050 4 1644 Res Ina Ena Vis explorer All &Programs
+0x05004A 3 1644 Res Ina Ena Vis explorer DesktopSFTBarHost
+0x050052 4 1644 Res Ina Ena Vis explorer SysListView32
+0x050048 5 1644 Res Ina Ena Hid explorer SysHeader32
+0x0400A4 3 1644 Res Ina Ena Vis explorer DesktopLogoffPane
+0x040090 4 1644 Res Ina Ena Vis explorer ToolbarWindow32
+0x01007C 1 1644 Res Ina Ena Hid explorer tooltips_class32
+0x010088 1 1644 Res Ina Ena Hid explorer tooltips_class32
+0x01007A 1 1644 Res Ina Ena Hid explorer tooltips_class32
+0x030068 1 1644 Res Ina Ena Hid explorer tooltips_class32
+0x050078 1 1644 Res Ina Ena Hid explorer tooltips_class32
+0x030058 1 1644 Res Ina Ena Vis explorer Shell_TrayWnd
+0x060056 2 1644 Res Ina Ena Vis explorer start
+0x03005E 2 1644 Res Ina Ena Vis explorer TrayNotifyWnd
+0x030060 3 1644 Res Ina Ena Vis explorer 8:52 PM
+0x030062 3 1644 Res Ina Ena Vis explorer SysPager
+0x030064 4 1644 Res Ina Ena Vis explorer Notification Area
+0x030066 3 1644 Res Ina Ena Vis explorer Button
+0x01007E 2 1644 Res Ina Ena Vis explorer ReBarWindow32
+0x010082 3 1644 Res Ina Ena Vis explorer Running Applications
+0x010086 4 1644 Res Ina Ena Vis explorer Running Applications
+0x0400A6 1 1644 Res Ina Ena Hid explorer tooltips_class32
+0x020814 1 1700 Res Ina Ena Hid firefox  MozillaDropShadowWindowClass
+0x240520 1 1700 Res Ina Ena Hid firefox  MozillaDropShadowWindowClass
+0x0B07B8 1 1700 Res Ina Ena Hid firefox  MozillaDropShadowWindowClass
+0x010812 1 1700 Res Ina Ena Hid firefox  MozillaDropShadowWindowClass
+0x040636 1 1352 Res Ina Ena Hid x        Auto-Suggest Dropdown
+0x0906CE 2 1352 Res Ina Ena Hid x        ScrollBar
+0x0B07CC 2 1352 Res Ina Ena Vis x        ScrollBar
+0x11C063E 2 1352 Res Ina Ena Vis x        Internet Explorer
+0x1007A8 3 1352 Res Ina Ena Vis x        SysHeader32
+0x0806DC 1 1352 Res Ina Ena Hid x        Auto-Suggest Dropdown
+0x15094C 2 1352 Res Ina Ena Hid x        ScrollBar
+0x090900 2 1352 Res Ina Ena Vis x        ScrollBar
+0x0B08B6 2 1352 Res Ina Ena Vis x        Internet Explorer
+0x2908EC 3 1352 Res Ina Ena Vis x        SysHeader32
+0x0400A0 1 1644 Res Ina Ena Hid explorer tooltips_class32
+0x01081E 1 1700 Res Ina Ena Hid firefox  MozillaDropShadowWindowClass
+0x010818 1 1700 Res Ina Ena Hid firefox  MozillaDropShadowWindowClass
+0x0B0456 1 1700 Res Ina Ena Hid firefox  MozillaDropShadowWindowClass
+0x0A0546 2 1700 Res Ina Ena Hid firefox  MozillaWindowClass
+0x0F053E 1 1700 Res Ina Ena Hid firefox  MozillaWindowClass
+0x080504 1 1700 Res Ina Ena Hid firefox  MozillaDropShadowWindowClass
+0x100440 1 1700 Res Ina Ena Hid firefox  MozillaDropShadowWindowClass
+0x0A0454 1 1700 Res Ina Ena Hid firefox  MozillaDropShadowWindowClass
+0x010810 1 1700 Res Ina Ena Hid firefox  MozillaDropShadowWindowClass
+0x0C0552 1 1700 Res Ina Ena Hid firefox  MozillaDropShadowWindowClass
+0x0A043A 1 1700 Res Ina Ena Hid firefox  MozillaDropShadowWindowClass
+0x0308FA 1 1644 Res Ina Ena Hid explorer BaseBar
+0x0E0922 2 1644 Res Ina Ena Vis explorer MenuSite
+0x120872 3 1644 Res Ina Ena Vis explorer ToolbarWindow32
+0x0508BA 1 1644 Res Ina Ena Hid explorer tooltips_class32
+0x0207D4 1 1644 Res Ina Ena Hid explorer BaseBar
+0x050852 2 1644 Res Ina Ena Vis explorer MenuSite
+0x050856 3 1644 Res Ina Ena Vis explorer ToolbarWindow32
+0x010098 1 1644 Res Ina Ena Hid explorer tooltips_class32
+0x1007C2 1 1700 Res Ina Ena Hid firefox  MozillaDropShadowWindowClass
+0x17092E 1 3064 Res Ina Ena Hid FreeComm Right to left 
+0x15052E 1 1412 Res Act Ena Vis cmd      Command Prompt - cmdow 
+0x0307EA 1 1700 Res Ina Ena Vis firefox  FileBxBarWndClass_v2
+0x0A08F0 1 1700 Res Ina Ena Hid firefox  MozillaDropShadowWindowClass
+0x0107E8 1 1700 Max Ina Ena Vis firefox  Replying To get window handle - AutoIt
+0x0107F2 2 1700 Res Ina Ena Vis firefox  MozillaWindowClass
+0x1B0444 3 1700 Res Ina Ena Vis firefox  MozillaContentWindowClass
+0x190522 4 1700 Res Ina Ena Vis firefox  MozillaWindowClass
+0x2E08DC 4 1700 Res Ina Ena Hid firefox  MozillaWindowClass
+0x0B0910 3 1700 Res Ina Ena Hid firefox  MozillaContentWindowClass
+0x2208AA 4 1700 Res Ina Ena Vis firefox  MozillaWindowClass
+0x0B0548 3 1700 Res Ina Ena Hid firefox  MozillaContentWindowClass
+0x180890 4 1700 Res Ina Ena Vis firefox  MozillaWindowClass
+0x08054A 3 1700 Res Ina Ena Hid firefox  MozillaContentWindowClass
+0x0B0542 4 1700 Res Ina Ena Vis firefox  MozillaWindowClass
+0x0401B0 3 1700 Res Ina Ena Hid firefox  MozillaContentWindowClass
+0x03053A 4 1700 Res Ina Ena Vis firefox  MozillaWindowClass
+0x11094E 3 1700 Res Ina Ena Hid firefox  MozillaContentWindowClass
+0x100940 4 1700 Res Ina Ena Vis firefox  MozillaWindowClass
+0x0807C6 3 1700 Res Ina Ena Hid firefox  MozillaContentWindowClass
+0x0507C8 4 1700 Res Ina Ena Vis firefox  MozillaWindowClass
+0x0E0796 3 1700 Res Ina Ena Hid firefox  MozillaContentWindowClass
+0x0B07BE 4 1700 Res Ina Ena Vis firefox  MozillaWindowClass
+0x010800 3 1700 Res Ina Ena Vis firefox  MozillaWindowClass
+0x010802 4 1700 Res Ina Ena Vis firefox  MozillaUIWindowClass
+0x010808 5 1700 Res Ina Ena Vis firefox  MozillaWindowClass
+0x0107FC 3 1700 Res Ina Ena Hid firefox  MozillaWindowClass
+0x0107FE 4 1700 Res Ina Ena Hid firefox  MozillaUIWindowClass
+0x010806 5 1700 Res Ina Ena Hid firefox  MozillaWindowClass
+0x0107F8 3 1700 Res Ina Ena Vis firefox  MozillaWindowClass
+0x0107FA 4 1700 Res Ina Ena Vis firefox  MozillaUIWindowClass
+0x010804 5 1700 Res Ina Ena Vis firefox  MozillaWindowClass
+0x07090E 1 3064 Res Ina Ena Vis FreeComm FileBxBarWndClass_v2
+0x060700 1 3064 Max Ina Ena Vis FreeComm Desktop - FreeCommander
+0x0B06BC 2 3064 Res Ina Ena Hid FreeComm dos
+0x0706B8 3 3064 Res Ina Ena Hid FreeComm THistoryCombo
+0x0706F2 4 3064 Res Ina Ena Vis FreeComm Edit
+0x3D07CA 2 3064 Res Ina Ena Vis FreeComm TControlBar
+0x1F07F6 3 3064 Res Ina Ena Hid FreeComm TfcToolBar
+0x0506F8 3 3064 Res Ina Ena Vis FreeComm TToolBar
+0x0608F2 3 3064 Res Ina Ena Vis FreeComm TToolBar
+0x0506F4 3 3064 Res Ina Ena Vis FreeComm TToolBar
+0x3907CE 3 3064 Res Ina Ena Vis FreeComm TToolBar
+0x0506D2 3 3064 Res Ina Ena Vis FreeComm TToolBar
+0x0B08F8 3 3064 Res Ina Ena Vis FreeComm TToolBar
+0x190842 3 3064 Res Ina Ena Vis FreeComm TToolBar
+0x0706FC 3 3064 Res Ina Ena Vis FreeComm TToolBar
+0x0E06E8 2 3064 Res Ina Ena Vis FreeComm TfcDrivePanel
+0x0806E4 3 3064 Res Ina Ena Vis FreeComm fcDriveBarRight
+0x0D06AE 3 3064 Res Ina Ena Vis FreeComm fcDriveBarLeft
+0x2C07B4 2 3064 Res Ina Ena Vis FreeComm TfcCustomPanel
+0x2D0726 3 3064 Res Ina Ena Vis FreeComm TfcCustomPanel
+0x050906 4 3064 Res Ina Ena Vis FreeComm TPanel
+0x2E07AA 4 3064 Res Ina Ena Hid FreeComm TfcTabControl
+0x0706DE 4 3064 Res Ina Ena Vis FreeComm TfcCustomPanel
+0x140250 5 3064 Res Ina Ena Hid FreeComm TfcSeekPanel
+0x130550 6 3064 Res Ina Ena Hid FreeComm TEdit
+0x0506AC 5 3064 Res Ina Ena Vis FreeComm TfcCustomPanel
+0x080938 6 3064 Res Ina Ena Vis FreeComm TEdit
+0x0C06CC 4 3064 Res Ina Ena Vis FreeComm TfcCustomPanel
+0x0B06C0 5 3064 Res Ina Ena Vis FreeComm TPanel
+0x0A06FE 5 3064 Res Ina Ena Vis FreeComm TPanel
+0x0806BE 4 3064 Res Ina Ena Vis FreeComm TfcDirView
+0x0706C4 3 3064 Res Ina Ena Vis FreeComm TfcCustomPanel
+0x0D06B0 4 3064 Res Ina Ena Vis FreeComm TPanel
+0x0506E2 4 3064 Res Ina Ena Hid FreeComm TfcTabControl
+0x0406D8 4 3064 Res Ina Ena Vis FreeComm TfcCustomPanel
+0x0506EE 5 3064 Res Ina Ena Vis FreeComm TfcCustomPanel
+0x0506F0 6 3064 Res Ina Ena Vis FreeComm TEdit
+0x3507C4 4 3064 Res Ina Ena Vis FreeComm TfcCustomPanel
+0x1106CA 5 3064 Res Ina Ena Vis FreeComm TPanel
+0x0706D0 4 3064 Res Ina Ena Vis FreeComm TfcDirView
+0x13090C 5 3064 Res Ina Ena Vis FreeComm SysHeader32
+0x0906BA 1 3064 Res Ina Ena Vis FreeComm Desktop - FreeCommander
+0x0907A2 1 3816 Res Ina Ena Hid notepad+ tooltips_class32
+0x2C0926 1 3816 Res Ina Ena Hid notepad+ Find
+0x0D08DE 3 3816 Res Ina Ena Vis notepad+ &Find what :
+0x090902 3 3816 Res Ina Ena Vis notepad+ ComboBox
+0x0B0866 4 3816 Res Ina Ena Vis notepad+ Edit
+0x1208E0 3 3816 Res Ina Ena Hid notepad+ Rep&lace with :
+0x13090A 3 3816 Res Ina Ena Hid notepad+ ComboBox
+0x0E085E 4 3816 Res Ina Ena Vis notepad+ Edit
+0x1A0912 3 3816 Res Ina Ena Vis notepad+ &Mark Line
+0x0E0862 3 3816 Res Ina Ena Vis notepad+ Style found to&ken
+0x0C0882 3 3816 Res Ina Ena Vis notepad+ Button
+0x690954 3 3816 Res Ina Ena Vis notepad+ Purge for each search
+0x18093C 3 3816 Res Ina Dis Vis notepad+ Find &All
+0x1C0952 3 3816 Res Ina Ena Hid notepad+ Button
+0x100918 3 3816 Res Ina Dis Vis notepad+ In select&ion
+0x1308A4 3 3816 Res Ina Ena Vis notepad+ Clear
+0x1808A6 3 3816 Res Ina Ena Hid notepad+ Filter&s :
+0x0B0874 3 3816 Res Ina Ena Hid notepad+ ComboBox
+0x090894 4 3816 Res Ina Ena Vis notepad+ Edit
+0x17091A 3 3816 Res Ina Ena Hid notepad+ Dir&ectory :
+0x0A0860 3 3816 Res Ina Ena Hid notepad+ ComboBox
+0x0A086A 4 3816 Res Ina Ena Vis notepad+ Edit
+0x0A088A 3 3816 Res Ina Ena Hid notepad+ ...
+0x16093E 3 3816 Res Ina Ena Hid notepad+ Follow current doc
+0x10092A 3 3816 Res Ina Ena Hid notepad+ In all su&b-folders
+0x13091C 3 3816 Res Ina Ena Hid notepad+ In &hidden folders
+0x2B080A 3 3816 Res Ina Ena Vis notepad+ Match &whole word only
+0x5608A0 3 3816 Res Ina Ena Vis notepad+ Match &case
+0x1308F4 3 3816 Res Ina Ena Vis notepad+ Wra&p around
+0x2F08AE 3 3816 Res Ina Ena Vis notepad+ Search mode
+0x170870 3 3816 Res Ina Ena Vis notepad+ &Normal
+0x170914 3 3816 Res Ina Ena Vis notepad+ E&xtended (\n, \r, \t, \0, \x...)
+0x290950 3 3816 Res Ina Ena Vis notepad+ Re&gular expression
+0x1D0816 3 3816 Res Ina Ena Vis notepad+ &Up
+0x1108D8 3 3816 Res Ina Ena Vis notepad+ &Down
+0x2008E8 3 3816 Res Ina Ena Vis notepad+ Direction
+0x1108D6 3 3816 Res Ina Ena Vis notepad+ Find Next
+0x22093A 3 3816 Res Ina Ena Vis notepad+ Coun&t
+0x1D08DA 3 3816 Res Ina Ena Vis notepad+ Find all in all &opened documents
+0x1B0928 3 3816 Res Ina Ena Vis notepad+ Find all in current document
+0x1A08A8 3 3816 Res Ina Ena Hid notepad+ &Replace
+0x1208D2 3 3816 Res Ina Ena Hid notepad+ Replace &All
+0x260944 3 3816 Res Ina Ena Hid notepad+ Replace all in all &opened documents
+0x1A08B2 3 3816 Res Ina Ena Hid notepad+ Find All
+0x200948 3 3816 Res Ina Ena Hid notepad+ &Replace in files
+0x1A08FC 3 3816 Res Ina Ena Vis notepad+ Close
+0x1B0936 3 3816 Res Ina Ena Vis notepad+ Button
+0x1B084C 3 3816 Res Ina Ena Vis notepad+ Transparenc&y
+0x170916 3 3816 Res Ina Ena Vis notepad+ On lose focus
+0x1E0924 3 3816 Res Ina Ena Vis notepad+ Always
+0x150946 3 3816 Res Ina Ena Vis notepad+ msctls_trackbar32
+0x3D08EE 3 3816 Res Ina Ena Vis notepad+ Tab
+0x0A0848 1 3816 Res Ina Ena Hid notepad+ tooltips_class32
+0x0208BE 1 3816 Res Ina Ena Vis notepad+ FileBxBarWndClass_v2
+0x060746 1 3816 Res Ina Ena Hid notepad+ Dialog
+0x0A070A 3 3816 Res Ina Ena Vis notepad+ Address:
+0x060748 3 3816 Res Ina Ena Vis notepad+ Edit
+0x06073A 3 3816 Res Ina Ena Vis notepad+ Port:
+0x07072C 3 3816 Res Ina Ena Vis notepad+ Edit
+0x050792 3 3816 Res Ina Ena Vis notepad+ Connect
+0x050786 3 3816 Res Ina Ena Vis notepad+ Serve
+0x0A0798 3 3816 Res Ina Dis Vis notepad+ Disconnect
+0x1E070E 3 3816 Res Ina Ena Vis notepad+ Status:
+0x0707A0 3 3816 Res Ina Ena Vis notepad+ Edit
+0x03083E 3 3816 Res Ina Ena Vis notepad+ Messages:
+0x03083C 3 3816 Res Ina Ena Vis notepad+ Edit
+0x02083A 3 3816 Res Ina Dis Vis notepad+ Edit
+0x020838 3 3816 Res Ina Dis Vis notepad+ Send
+0x020832 3 3816 Res Ina Ena Vis notepad+ Connected with:
+0x020834 3 3816 Res Ina Ena Vis notepad+ ListBox
+0x020836 3 3816 Res Ina Ena Hid notepad+ Resume outgoing data
+0x020830 3 3816 Res Ina Ena Hid notepad+ Stop outgoing data
+0x02082E 3 3816 Res Ina Ena Hid notepad+ Step
+0x020828 3 3816 Res Ina Ena Hid notepad+ MD5
+0x080732 1 3816 Res Ina Ena Hid notepad+ tooltips_class32
+0x0307D2 1 3816 Res Ina Ena Hid notepad+ N++FTPFOLDERDOCKDLG
+0x080714 2 3816 Res Ina Ena Vis notepad+ ToolbarWindow32
+0x0A06AA 2 3816 Res Ina Ena Vis notepad+ SysTreeView32
+0x06077E 2 3816 Res Ina Ena Vis notepad+ ListBox
+0x060738 2 3816 Res Ina Ena Vis notepad+ msctls_statusbar32
+0x06071E 3 3816 Res Ina Ena Vis notepad+ msctls_progress32
+0x06074E 1 3816 Res Ina Ena Hid notepad+ Dialog
+0x06073E 3 3816 Res Ina Ena Vis notepad+ Edit
+0x090724 1 3816 Res Ina Ena Hid notepad+ tooltips_class32
+0x0407D6 1 3816 Max Ina Ena Vis notepad+ C:\Documents and Settings\UserXP\Deskt
+0x060742 1 3816 Res Ina Ena Hid notepad+ Selected Tab
+0x060734 3 3816 Res Ina Ena Vis notepad+ Caption
+0x0407B0 3 3816 Res Ina Ena Vis notepad+ Static
+0x0407B2 3 3816 Res Ina Ena Hid notepad+ Tab1
+0x060734 3 3816 Res Ina Ena Vis notepad+ Caption
+0x0407B0 3 3816 Res Ina Ena Vis notepad+ Static
+0x0407B2 3 3816 Res Ina Ena Hid notepad+ Tab1
+0x35074C 1 3816 Res Ina Ena Hid notepad+ Selected Tab
+0x050780 3 3816 Res Ina Ena Vis notepad+ Caption
+0x080730 3 3816 Res Ina Ena Vis notepad+ Static
+0x0906B2 3 3816 Res Ina Ena Hid notepad+ Tab1
+0x050780 3 3816 Res Ina Ena Vis notepad+ Caption
+0x080730 3 3816 Res Ina Ena Vis notepad+ Static
+0x0906B2 3 3816 Res Ina Ena Hid notepad+ Tab1
+0x050790 1 3816 Res Ina Ena Hid notepad+ Selected Tab
+0x05078E 3 3816 Res Ina Ena Vis notepad+ Caption
+0x060752 3 3816 Res Ina Ena Vis notepad+ Static
+0x0A06B6 3 3816 Res Ina Ena Hid notepad+ Tab1
+0x05078E 3 3816 Res Ina Ena Vis notepad+ Caption
+0x060752 3 3816 Res Ina Ena Vis notepad+ Static
+0x0A06B6 3 3816 Res Ina Ena Hid notepad+ Tab1
+0x06071A 1 3816 Res Ina Ena Hid notepad+ Selected Tab
+0x0B0712 3 3816 Res Ina Ena Vis notepad+ Caption
+0x08072E 3 3816 Res Ina Ena Vis notepad+ Static
+0x0E0710 3 3816 Res Ina Ena Hid notepad+ Tab1
+0x0B0712 3 3816 Res Ina Ena Vis notepad+ Caption
+0x08072E 3 3816 Res Ina Ena Vis notepad+ Static
+0x0E0710 3 3816 Res Ina Ena Hid notepad+ Tab1
+0x0C0720 2 3816 Res Ina Ena Vis notepad+ N
+0x080716 2 3816 Res Ina Ena Hid notepad+ N
+0x070728 2 3816 Res Ina Ena Hid notepad+ N
+0x0B0750 2 3816 Res Ina Ena Vis notepad+ Tab
+0x08079C 2 3816 Res Ina Ena Hid notepad+ Tab
+0x0907A4 2 3816 Res Ina Ena Hid notepad+ N
+0x06071C 2 3816 Res Ina Ena Hid notepad+ splitterContainer
+0x060718 3 3816 Res Ina Ena Vis notepad+ wespliter
+0x080736 2 3816 Res Ina Ena Vis notepad+ msctls_statusbar32
+0x06073C 2 3816 Res Ina Ena Hid notepad+ dockingManager
+0x060740 2 3816 Res Ina Ena Hid notepad+ wedockspliter
+0x05078C 2 3816 Res Ina Ena Hid notepad+ wedockspliter
+0x0507A6 2 3816 Res Ina Ena Hid notepad+ nsdockspliter
+0x060744 2 3816 Res Ina Ena Hid notepad+ nsdockspliter
+0x09070C 2 3816 Res Ina Ena Hid notepad+ N
+0x02082C 2 3816 Res Ina Ena Vis notepad+ ReBarWindow32
+0x02082A 3 3816 Res Ina Ena Vis notepad+ ToolbarWindow32
+0x020826 2 3816 Res Ina Ena Vis notepad+ ReBarWindow32
+0x020858 3 3816 Res Ina Ena Vis notepad+ #32770
+0x02085A 4 3816 Res Ina Ena Vis notepad+ X
+0x0208CA 4 3816 Res Ina Ena Vis notepad+ Find :
+0x0208CC 4 3816 Res Ina Ena Vis notepad+ Edit
+0x0208B8 4 3816 Res Ina Ena Vis notepad+ <
+0x0208C8 4 3816 Res Ina Ena Vis notepad+ >
+0x0208C6 4 3816 Res Ina Ena Vis notepad+ Highlight all
+0x0208C4 4 3816 Res Ina Ena Vis notepad+ Match case
+0x0208C2 4 3816 Res Ina Ena Vis notepad+ Find Status
+0x070702 1 3064 Res Ina Ena Hid FreeComm tooltips_class32
+0x0C0896 1 1352 Res Ina Ena Hid x        tooltips_class32
+0x070880 1 1352 Res Ina Ena Vis x        FileBxBarWndClass_v2
+0x0B0908 1 1352 Res Ina Ena Hid x        tooltips_class32
+0x0B0888 1 1352 Res Ina Ena Hid x        tooltips_class32
+0x0B0526 1 1352 Max Ina Ena Vis x        C:\Documents and Settings\UserXP - XYp
+0x020588 2 1352 Res Ina Ena Hid x        ThunderRT6PictureBoxDC
+0x020590 2 1352 Res Ina Ena Hid x        ThunderRT6PictureBoxDC
+0x18043E 2 1352 Res Ina Ena Hid x        ThunderRT6ListBox
+0x0F0452 2 1352 Res Ina Ena Hid x        ThunderRT6ListBox
+0x02064A 2 1352 Res Ina Ena Hid x        ThunderRT6ListBox
+0x1F0436 2 1352 Res Ina Ena Hid x        ThunderRT6Frame
+0x130530 2 1352 Res Ina Ena Hid x        ThunderRT6PictureBoxDC
+0x18054C 3 1352 Res Ina Ena Vis x        ThunderRT6PictureBoxDC
+0x0E052A 4 1352 Res Ina Ena Vis x        Selected Lo&cations
+0x2A0538 4 1352 Res Ina Ena Vis x        ...
+0x160442 4 1352 Res Ina Ena Vis x        ThunderRT6UserControlDC
+0x110446 5 1352 Res Ina Ena Vis x        ThunderRT6ComboBox
+0x06053C 6 1352 Res Ina Ena Vis x        Edit
+0x1E054E 4 1352 Res Ina Ena Vis x        ThunderRT6UserControlDC
+0x0F0534 5 1352 Res Ina Ena Vis x        ThunderRT6ComboBox
+0x030512 6 1352 Res Ina Ena Vis x        Edit
+0x030514 4 1352 Res Ina Ena Vis x        &Match case
+0x030518 4 1352 Res Ina Ena Vis x        Whole &words
+0x030516 4 1352 Res Ina Ena Vis x        Follow f&older links
+0x03050E 4 1352 Res Ina Ena Vis x        Fu&zzy
+0x03051C 4 1352 Res Ina Ena Vis x        Inve&rt
+0x04044E 4 1352 Res Ina Ena Vis x        Chec&k full path
+0x030502 4 1352 Res Ina Ena Vis x        Include s&ubfolders
+0x040510 3 1352 Res Ina Ena Hid x        ThunderRT6PictureBoxDC
+0x04050C 4 1352 Res Ina Ena Vis x        Match &unicode
+0x04050A 4 1352 Res Ina Ena Vis x        &Match case
+0x040508 4 1352 Res Ina Ena Vis x        It's a &hex string
+0x020500 4 1352 Res Ina Ena Vis x        ThunderRT6TextBox
+0x0204FE 3 1352 Res Ina Ena Hid x        ThunderRT6PictureBoxDC
+0x0204FC 4 1352 Res Ina Ena Vis x        From &start of unit
+0x0204FA 4 1352 Res Ina Ena Vis x        in the &last
+0x0204F8 4 1352 Res Ina Ena Vis x        &between
+0x0204F6 4 1352 Res Ina Ena Vis x        ThunderRT6TextBox
+0x0204F4 4 1352 Res Ina Ena Vis x        ThunderRT6TextBox
+0x0204F2 4 1352 Res Ina Ena Vis x        1
+0x0204E6 4 1352 Res Ina Ena Vis x        ThunderRT6ComboBox
+0x0204EE 4 1352 Res Ina Ena Vis x        ThunderRT6ComboBox
+0x0204EA 4 1352 Res Ina Ena Vis x        &Not
+0x0204E8 4 1352 Res Ina Ena Vis x        ThunderRT6UserControlDC
+0x0204DA 5 1352 Res Ina Ena Hid x        ThunderRT6Timer
+0x0204E2 3 1352 Res Ina Ena Vis x        Re&set Filters
+0x0204E4 3 1352 Res Ina Ena Hid x        ThunderRT6PictureBoxDC
+0x0204E0 4 1352 Res Ina Ena Vis x        Not
+0x0204DE 4 1352 Res Ina Ena Vis x        Encrypted
+0x0204DC 4 1352 Res Ina Ena Vis x        Compressed
+0x0204C6 4 1352 Res Ina Ena Vis x        Not
+0x0204D8 4 1352 Res Ina Ena Vis x        Temporary
+0x0204D6 4 1352 Res Ina Ena Vis x        Not
+0x0204CA 4 1352 Res Ina Ena Vis x        Normal
+0x0204D0 4 1352 Res Ina Ena Vis x        Not
+0x0204D4 4 1352 Res Ina Ena Vis x        Not
+0x0204D2 4 1352 Res Ina Ena Vis x        Not
+0x0204CE 4 1352 Res Ina Ena Vis x        Not
+0x0204CC 4 1352 Res Ina Ena Vis x        Not
+0x0204C8 4 1352 Res Ina Ena Vis x        Not
+0x0204A0 4 1352 Res Ina Ena Vis x        Hidden
+0x0204C4 4 1352 Res Ina Ena Vis x        System
+0x0204C2 4 1352 Res Ina Ena Vis x        Directory
+0x0204C0 4 1352 Res Ina Ena Vis x        Read-only
+0x0204BE 4 1352 Res Ina Ena Vis x        Archive
+0x0204BC 3 1352 Res Ina Ena Hid x        ThunderRT6PictureBoxDC
+0x0204BA 4 1352 Res Ina Ena Vis x        &Browse...
+0x0204B8 4 1352 Res Ina Ena Vis x        ThunderRT6UserControlDC
+0x0204B6 5 1352 Res Ina Ena Hid x        ThunderRT6PictureBoxDC
+0x0204B4 5 1352 Res Ina Ena Hid x        ThunderRT6TextBox
+0x0204B2 5 1352 Res Ina Ena Vis x        ThunderRT6PictureBoxDC
+0x0204B0 6 1352 Res Ina Ena Hid x        ThunderRT6HScrollBar
+0x0204AE 6 1352 Res Ina Ena Hid x        ThunderRT6VScrollBar
+0x0204AC 4 1352 Res Ina Ena Vis x        &Manage...
+0x0204AA 4 1352 Res Ina Ena Vis x        &Add Current
+0x0204A8 3 1352 Res Ina Ena Hid x        ThunderRT6PictureBoxDC
+0x0204A6 4 1352 Res Ina Ena Vis x        Current tab
+0x0204A4 4 1352 Res Ina Ena Vis x        New tab
+0x0204A2 4 1352 Res Ina Ena Vis x        "Search results" tab
+0x02049E 4 1352 Res Ina Ena Vis x        ThunderRT6ComboBox
+0x02049A 3 1352 Res Ina Ena Hid x        ThunderRT6PictureBoxDC
+0x02049C 4 1352 Res Ina Ena Vis x        MB
+0x020498 4 1352 Res Ina Ena Vis x        ThunderRT6TextBox
+0x020494 4 1352 Res Ina Ena Vis x        ThunderRT6TextBox
+0x020496 4 1352 Res Ina Ena Vis x        Bytes
+0x020490 4 1352 Res Ina Ena Vis x        KB
+0x020492 3 1352 Res Ina Ena Vis x        Name
+0x02048E 3 1352 Res Ina Ena Vis x        Size
+0x02048C 3 1352 Res Ina Ena Vis x        Date
+0x02048A 3 1352 Res Ina Ena Vis x        Excl.
+0x020488 3 1352 Res Ina Ena Vis x        Attr.
+0x020486 3 1352 Res Ina Ena Vis x        Text
+0x020484 3 1352 Res Ina Ena Vis x        F&ind Now
+0x020478 3 1352 Res Ina Ena Vis x        Tem&plates...
+0x020480 3 1352 Res Ina Ena Vis x        ThunderRT6PictureBoxDC
+0x02047E 2 1352 Res Ina Ena Hid x        ThunderRT6PictureBoxDC
+0x02047C 3 1352 Res Ina Ena Vis x        ThunderRT6PictureBoxDC
+0x02047A 4 1352 Res Ina Ena Vis x        Classic directory d&ump
+0x03044C 4 1352 Res Ina Ena Vis x        T&ree structure only
+0x020476 4 1352 Res Ina Ena Vis x        E&xtended info to CSV
+0x020474 4 1352 Res Ina Ena Vis x        ThunderRT6PictureBoxDC
+0x020472 5 1352 Res Ina Ena Vis x        &No file version
+0x020470 5 1352 Res Ina Ena Vis x        F&ixed file version
+0x02046E 5 1352 Res Ina Ena Vis x        S&tring file version
+0x02046C 4 1352 Res Ina Ena Vis x        To File...
+0x02046A 4 1352 Res Ina Ena Vis x        To Clipboard
+0x030438 4 1352 Res Ina Ena Vis x        To Printer...
+0x03045A 4 1352 Res Ina Ena Vis x        Include &subfolders
+0x030434 3 1352 Res Ina Ena Hid x        ThunderRT6PictureBoxDC
+0x020468 4 1352 Res Ina Ena Vis x        Column &headers
+0x030448 4 1352 Res Ina Ena Vis x        Ta&b
+0x03044A 4 1352 Res Ina Ena Vis x        &Other:
+0x030450 4 1352 Res Ina Ena Vis x        , 
+0x020648 4 1352 Res Ina Ena Vis x        C&urrent date
+0x020642 4 1352 Res Ina Ena Vis x        Path (F&ind settings)
+0x02063C 4 1352 Res Ina Ena Vis x        &Pad blanks
+0x030660 4 1352 Res Ina Ena Vis x        To File...
+0x0205A0 4 1352 Res Ina Ena Vis x        To Clipboard
+0x02064C 4 1352 Res Ina Ena Vis x        &Selected files only
+0x020646 4 1352 Res Ina Ena Vis x        To Printer...
+0x020616 3 1352 Res Ina Dis Hid x        ThunderRT6ListBox
+0x02061C 3 1352 Res Ina Ena Vis x        ThunderRT6PictureBoxDC
+0x02061A 2 1352 Res Ina Ena Hid x        ThunderRT6PictureBoxDC
+0x020618 3 1352 Res Ina Ena Vis x        ThunderRT6PictureBoxDC
+0x02060E 3 1352 Res Ina Dis Vis x        Encrypted
+0x020614 3 1352 Res Ina Dis Vis x        Compressed
+0x020612 3 1352 Res Ina Dis Vis x        Temporary
+0x020610 3 1352 Res Ina Dis Vis x        Normal
+0x02060C 3 1352 Res Ina Dis Vis x        Folder
+0x02060A 3 1352 Res Ina Ena Vis x        System
+0x020608 3 1352 Res Ina Ena Vis x        Archive
+0x020606 3 1352 Res Ina Ena Vis x        Hidden
+0x020604 3 1352 Res Ina Ena Vis x        Read-only
+0x020602 3 1352 Res Ina Ena Hid x        ThunderRT6TextBox
+0x020600 3 1352 Res Ina Ena Hid x        ThunderRT6HScrollBar
+0x0205FE 3 1352 Res Ina Ena Vis x        ThunderRT6PictureBoxDC
+0x0205FC 3 1352 Res Ina Ena Hid x        ThunderRT6PictureBoxDC
+0x0205FA 3 1352 Res Ina Ena Vis x        ThunderRT6PictureBoxDC
+0x0205F8 2 1352 Res Ina Ena Hid x        ThunderRT6PictureBoxDC
+0x0205F2 2 1352 Res Ina Ena Hid x        ThunderRT6PictureBoxDC
+0x0205D2 3 1352 Res Ina Ena Hid x        ThunderRT6Frame
+0x0205CE 4 1352 Res Ina Ena Vis x        ThunderRT6PictureBoxDC
+0x0205C4 5 1352 Res Ina Ena Vis x        ThunderRT6TextBox
+0x0205C8 5 1352 Res Ina Ena Vis x        ThunderRT6ComboBox
+0x0205CC 5 1352 Res Ina Ena Vis x        ThunderRT6TextBox
+0x04061E 5 1352 Res Ina Ena Vis x        ThunderRT6TextBox
+0x040620 5 1352 Res Ina Ena Vis x        ThunderRT6TextBox
+0x040626 5 1352 Res Ina Ena Vis x        ThunderRT6TextBox
+0x040624 5 1352 Res Ina Ena Vis x        ThunderRT6TextBox
+0x040622 5 1352 Res Ina Ena Vis x        ThunderRT6TextBox
+0x040628 5 1352 Res Ina Ena Vis x        ThunderRT6TextBox
+0x0205F6 3 1352 Res Ina Ena Hid x        ThunderRT6Frame
+0x0205F4 4 1352 Res Ina Ena Hid x        &Snapshot
+0x0205D4 4 1352 Res Ina Ena Vis x        ThunderRT6UserControlDC
+0x0205EC 5 1352 Res Ina Ena Hid x        ThunderRT6Timer
+0x0205D8 3 1352 Res Ina Ena Hid x        ThunderRT6HScrollBar
+0x0205F0 3 1352 Res Ina Ena Hid x        ThunderRT6Frame
+0x0205EE 4 1352 Res Ina Ena Vis x        ThunderRT6PictureBoxDC
+0x0205DE 3 1352 Res Ina Ena Hid x        ThunderRT6Frame
+0x0205E0 4 1352 Res Ina Ena Vis x        ThunderRT6PictureBoxDC
+0x0205EA 5 1352 Res Ina Ena Vis x        ThunderRT6ComboBox
+0x0205E6 5 1352 Res Ina Ena Hid x        ThunderRT6PictureBoxDC
+0x0205E4 5 1352 Res Ina Ena Vis x        ThunderRT6PictureBoxDC
+0x0205E2 5 1352 Res Ina Ena Hid x        ThunderRT6PictureBoxDC
+0x0205DC 5 1352 Res Ina Ena Vis x        ThunderRT6PictureBoxDC
+0x0205D6 5 1352 Res Ina Ena Hid x        ThunderRT6Timer
+0x0205DA 3 1352 Res Ina Ena Hid x        ThunderRT6Frame
+0x0205D0 4 1352 Res Ina Ena Vis x        ThunderRT6PictureBoxDC
+0x0205C6 3 1352 Res Ina Ena Hid x        ThunderRT6PictureBoxDC
+0x0205B8 4 1352 Res Ina Ena Vis x        ThunderRT6TextBox
+0x0205BE 4 1352 Res Ina Ena Vis x        Shell Embedding
+0x0B08CE 5 1352 Res Ina Ena Vis x        Shell DocObject View
+0x130868 6 1352 Res Ina Ena Vis x        Internet Explorer_Server
+0x0205C0 3 1352 Res Ina Ena Hid x        ThunderRT6TextBox
+0x0205BC 3 1352 Res Ina Ena Hid x        ThunderRT6PictureBoxDC
+0x0205BA 4 1352 Res Ina Ena Vis x        ThunderRT6HScrollBar
+0x0205B6 4 1352 Res Ina Ena Vis x        ThunderRT6VScrollBar
+0x0205B0 3 1352 Res Ina Ena Vis x        ThunderRT6PictureBoxDC
+0x0205B4 2 1352 Res Ina Ena Hid x        ThunderRT6UserControlDC
+0x0205B2 3 1352 Res Ina Ena Vis x        ThunderRT6PictureBoxDC
+0x0205AC 2 1352 Res Ina Ena Vis x        ThunderRT6PictureBoxDC
+0x0205AE 3 1352 Res Ina Ena Hid x        ThunderRT6PictureBoxDC
+0x02055C 3 1352 Res Ina Ena Vis x        ThunderRT6PictureBoxDC
+0x0205AA 2 1352 Res Ina Ena Hid x        ThunderRT6Frame
+0x030644 2 1352 Res Ina Ena Vis x        ThunderRT6UserControlDC
+0x020640 3 1352 Res Ina Ena Vis x        ThunderRT6ComboBox
+0x02057E 4 1352 Res Ina Ena Vis x        Edit
+0x020580 2 1352 Res Ina Ena Hid x        ThunderRT6PictureBoxDC
+0x02056A 2 1352 Res Ina Ena Vis x        ThunderRT6UserControlDC
+0x02056C 3 1352 Res Ina Ena Hid x        ThunderRT6Timer
+0x02057A 2 1352 Res Ina Ena Hid x        ThunderRT6PictureBoxDC
+0x020578 3 1352 Res Ina Ena Vis x        ThunderRT6Frame
+0x020576 4 1352 Res Ina Ena Vis x        ThunderRT6UserControlDC
+0x020574 5 1352 Res Ina Ena Hid x        ThunderRT6Timer
+0x020572 3 1352 Res Ina Ena Hid x        ThunderRT6Timer
+0x02056E 3 1352 Res Ina Ena Vis x        ThunderRT6Frame
+0x020570 4 1352 Res Ina Ena Vis x        ThunderRT6PictureBoxDC
+0x020566 5 1352 Res Ina Dis Vis x        International
+0x020568 5 1352 Res Ina Ena Vis x        Extract text
+0x02057C 5 1352 Res Ina Ena Vis x        Hex view
+0x02055E 5 1352 Res Ina Ena Vis x        Wrap
+0x020562 5 1352 Res Ina Ena Vis x        Line#
+0x020564 3 1352 Res Ina Ena Vis x        ThunderRT6PictureBoxDC
+0x020560 4 1352 Res Ina Ena Vis x        ThunderRT6VScrollBar
+0x020582 4 1352 Res Ina Ena Hid x        ThunderRT6HScrollBar
+0x020584 2 1352 Res Ina Ena Hid x        ThunderRT6PictureBoxDC
+0x020598 3 1352 Res Ina Ena Vis x        ThunderRT6ListBox
+0x020596 3 1352 Res Ina Ena Vis x        ThunderRT6TextBox
+0x020594 2 1352 Res Ina Ena Hid x        ThunderRT6PictureBoxDC
+0x020592 2 1352 Res Ina Ena Vis x        ThunderRT6PictureBoxDC
+0x02058E 2 1352 Res Ina Ena Hid x        ThunderRT6PictureBoxDC
+0x02058C 2 1352 Res Ina Ena Hid x        ThunderRT6PictureBoxDC
+0x02058A 2 1352 Res Ina Ena Vis x        ThunderRT6Frame
+0x020586 2 1352 Res Ina Ena Hid x        ThunderRT6Frame
+0x02055A 2 1352 Res Ina Ena Hid x        ThunderRT6Timer
+0x020558 2 1352 Res Ina Ena Hid x        ThunderRT6PictureBoxDC
+0x020556 2 1352 Res Ina Ena Hid x        ThunderRT6Timer
+0x03062A 2 1352 Res Ina Ena Vis x        ThunderRT6PictureBoxDC
+0x030630 3 1352 Res Ina Ena Hid x        ThunderRT6TextBox
+0x03062E 3 1352 Res Ina Ena Hid x        ThunderRT6VScrollBar
+0x030634 3 1352 Res Ina Ena Hid x        ThunderRT6HScrollBar
+0x030632 2 1352 Res Ina Ena Hid x        ThunderRT6PictureBoxDC
+0x03062C 3 1352 Res Ina Ena Hid x        ThunderRT6TextBox
+0x02063A 3 1352 Res Ina Ena Vis x        ThunderRT6HScrollBar
+0x020638 3 1352 Res Ina Ena Vis x        ThunderRT6VScrollBar
+0x0205A4 2 1352 Res Ina Ena Hid x        ThunderRT6UserControlDC
+0x0205A8 3 1352 Res Ina Ena Hid x        ThunderRT6PictureBoxDC
+0x0205A6 3 1352 Res Ina Ena Hid x        ThunderRT6TextBox
+0x0205A2 3 1352 Res Ina Ena Vis x        ThunderRT6PictureBoxDC
+0x02059A 4 1352 Res Ina Ena Hid x        ThunderRT6HScrollBar
+0x02059E 4 1352 Res Ina Ena Hid x        ThunderRT6VScrollBar
+0x09052C 1 1352 Res Ina Ena Vis x        Static
+0x120506 1 1352 Res Ina Ena Vis x        XYplorerFree
+0x0F0524 2 1352 Res Ina Ena Hid x        VBFocusRT6
+0x0506F6 1 3064 Res Ina Ena Hid FreeComm tooltips_class32
+0x050722 1 3364 Res Ina Ena Vis Foxit Re FileBxBarWndClass_v2
+0x020784 1 3364 Res Ina Ena Hid Foxit Re tooltips_class32
+0x03075A 1 3364 Res Ina Ena Hid Foxit Re tooltips_class32
+0x040772 1 3364 Res Ina Ena Hid Foxit Re tooltips_class32
+0x08068A 1 3364 Res Ina Ena Hid Foxit Re tooltips_class32
+0x09066A 1 3364 Res Ina Ena Hid Foxit Re tooltips_class32
+0x08066C 1 3364 Res Ina Ena Hid Foxit Re tooltips_class32
+0x070684 1 3364 Res Ina Ena Hid Foxit Re tooltips_class32
+0x13065A 1 3364 Res Ina Ena Hid Foxit Re tooltips_class32
+0x0B06A8 1 3364 Res Ina Ena Hid Foxit Re tooltips_class32
+0x0D0690 1 3364 Max Ina Ena Vis Foxit Re Foxit Reader
+0x1F0696 2 3364 Res Ina Ena Vis Foxit Re MDIClient
+0x0E069A 2 3364 Res Ina Ena Hid Foxit Re Full Screen
+0x0E069C 2 3364 Res Ina Ena Hid Foxit Re ToolbarWindow32
+0x0B0674 2 3364 Res Ina Ena Vis Foxit Re msctls_statusbar32
+0x0A0676 3 3364 Res Ina Ena Vis Foxit Re ToolbarWindow32
+0x0F0680 4 3364 Res Ina Dis Vis Foxit Re ComboBox
+0x0E0670 5 3364 Res Ina Dis Vis Foxit Re Edit
+0x110650 4 3364 Res Ina Dis Vis Foxit Re ComboBox
+0x070678 5 3364 Res Ina Dis Vis Foxit Re Edit
+0x050688 2 3364 Res Ina Ena Hid Foxit Re File Toolbar
+0x0A067A 3 3364 Res Ina Ena Hid Foxit Re Favorite Tools
+0x070708 3 3364 Res Ina Ena Hid Foxit Re Drawing Markup Tools
+0x04076A 3 3364 Res Ina Ena Hid Foxit Re Commenting Tools
+0x040760 3 3364 Res Ina Ena Hid Foxit Re Typewriter Tools
+0x03075C 3 3364 Res Ina Ena Hid Foxit Re Editing Tools
+0x030762 3 3364 Res Ina Ena Hid Foxit Re Measure Tools
+0x12067C 3 3364 Res Ina Ena Hid Foxit Re Basic Toolbar
+0x240694 3 3364 Res Ina Ena Hid Foxit Re Zoom Toolbar
+0x0A06A6 3 3364 Res Ina Ena Hid Foxit Re Rotate View Toolbar
+0x0F066E 3 3364 Res Ina Ena Hid Foxit Re Navigation
+0x0A0692 3 3364 Res Ina Ena Hid Foxit Re File Toolbar
+0x040766 3 3364 Res Ina Ena Hid Foxit Re Property Tools
+0x040768 3 3364 Res Ina Ena Hid Foxit Re Format Tools
+0x040778 4 3364 Res Ina Ena Vis Foxit Re #32770
+0x04076C 5 3364 Res Ina Ena Vis Foxit Re &Font:
+0x080788 5 3364 Res Ina Dis Vis Foxit Re ComboBox
+0x040754 5 3364 Res Ina Dis Hid Foxit Re ComboBox
+0x04077A 5 3364 Res Ina Dis Vis Foxit Re ComboBox
+0x040756 6 3364 Res Ina Dis Vis Foxit Re Edit
+0x080686 3 3364 Res Ina Ena Hid Foxit Re Find Tool
+0x0506A4 4 3364 Res Ina Ena Vis Foxit Re #32770
+0x0F0652 5 3364 Res Ina Ena Vis Foxit Re #32770
+0x0C0656 6 3364 Res Ina Dis Vis Foxit Re Button
+0x090654 6 3364 Res Ina Dis Vis Foxit Re Button
+0x0606A2 6 3364 Res Ina Ena Vis Foxit Re Button
+0x04076E 6 3364 Res Ina Ena Hid Foxit Re Button
+0x040764 6 3364 Res Ina Ena Vis Foxit Re Static
+0x040776 6 3364 Res Ina Dis Vis Foxit Re Button
+0x040770 6 3364 Res Ina Ena Vis Foxit Re Edit
+0x090672 2 3364 Res Ina Ena Hid Foxit Re AfxControlBar42s
+0x0B068E 2 3364 Res Ina Ena Hid Foxit Re AfxControlBar42s
+0x0C0668 2 3364 Res Ina Ena Vis Foxit Re Search PDF
+0x0D0664 3 3364 Res Ina Ena Hid Foxit Re Search PDF
+0x06067E 2 3364 Res Ina Ena Hid Foxit Re ReBarWindow32
+0x09068C 3 3364 Res Ina Ena Vis Foxit Re RD_TabList
+0x130878 1 3816 Res Ina Ena Hid notepad+ ComboLBox
+0x27094A 1 3816 Res Ina Ena Hid notepad+ ComboLBox
+0x19084E 1 3816 Res Ina Ena Hid notepad+ ComboLBox
+0x090904 1 3816 Res Ina Ena Hid notepad+ ComboLBox
+0x1008D4 1 1352 Res Ina Ena Hid x        Static
+0x08088C 1 1352 Res Ina Ena Hid x        VBBubbleRT6
+0x0B086E 1 1352 Res Ina Ena Hid x        Internet Explorer_Hidden
+0x0C08BC 1 1352 Res Ina Ena Hid x        WorkerW
+0x060846 1 1352 Res Ina Ena Hid x        tooltips_class32
+0x1207AE 1 1352 Res Ina Ena Hid x        tooltips_class32
+0x02059C 1 1352 Res Ina Ena Hid x        ComboLBox
+0x0205CA 1 1352 Res Ina Ena Hid x        ComboLBox
+0x0205E8 1 1352 Res Ina Ena Hid x        ComboLBox
+0x020482 1 1352 Res Ina Ena Hid x        ComboLBox
+0x0204EC 1 1352 Res Ina Ena Hid x        ComboLBox
+0x0204F0 1 1352 Res Ina Ena Hid x        ComboLBox
+0x03051A 1 1352 Res Ina Ena Hid x        ComboLBox
+0x0A051E 1 1352 Res Ina Ena Hid x        ComboLBox
+0x270458 1 1352 Res Ina Ena Hid x        VBMsoStdCompMgr
+0x02042C 1 2372 Res Ina Dis Hid dgnsvc   ATL:004430B8
+0x20089E 1 1644 Res Ina Ena Hid explorer ToolbarWindow32
+0x0706EA 1 1644 Res Ina Ena Hid explorer ToolbarWindow32
+0x0101CC 1  372 Res Ina Dis Hid ctfmon   CicLoaderWndClass
+0x06065C 1 1644 Res Ina Ena Hid explorer WorkerW
+0x160920 1 1700 Res Ina Ena Hid firefox  sw
+0x0D089C 1 1700 Res Ina Ena Hid firefox  _acroS_win
+0x0B06D4 1 3064 Res Ina Ena Hid FreeComm TPUtilWindow
+0x2707AC 1 3064 Res Ina Ena Hid FreeComm TPUtilWindow
+0x0506E6 1 3064 Res Ina Ena Hid FreeComm TPUtilWindow
+0x050704 1 3064 Res Ina Ena Hid FreeComm tooltips_class32
+0x3007C0 1 3064 Res Ina Ena Hid FreeComm tooltips_class32
+0x0C06E0 1 3064 Res Ina Ena Hid FreeComm WorkerW
+0x2807D0 1 3064 Res Ina Ena Hid FreeComm TPUtilWindow
+0x2907BA 1 3064 Res Ina Ena Hid FreeComm TPUtilWindow
+0x060706 1 3064 Res Ina Ena Hid FreeComm WorkerW
+0x0806C8 1 3064 Res Ina Ena Hid FreeComm TPUtilWindow
+0x0D06EC 1 3064 Res Ina Ena Hid FreeComm TPUtilWindow
+0x0806C6 1 3064 Res Ina Ena Hid FreeComm TPUtilWindow
+0x120174 1 3064 Res Ina Ena Hid FreeComm TPUtilWindow
+0x010820 1 1592 Res Ina Ena Hid orbitdm  FileBxBarWndClass_v2
+0x010822 1 1592 Res Ina Ena Hid orbitdm  tooltips_class32
+0x01035A 1 1592 Res Ina Ena Hid orbitdm  tooltips_class32
+0x010356 1 1592 Res Ina Ena Hid orbitdm  tooltips_class32
+0x010352 1 1592 Res Ina Ena Hid orbitdm  tooltips_class32
+0x02022E 1 1592 Res Ina Ena Hid orbitdm  tooltips_class32
+0x0102AA 1 1592 Res Ina Ena Hid orbitdm  Orbit
+0x04025A 2 1592 Res Ina Ena Vis orbitdm  ReBarWindow32
+0x020240 3 1592 Res Ina Ena Vis orbitdm  ToolbarWindow32
+0x0102AC 3 1592 Res Ina Ena Vis orbitdm  myCommandBar
+0x0102AE 2 1592 Res Ina Ena Vis orbitdm  Ready
+0x010350 3 1592 Res Ina Ena Vis orbitdm  Follow us on Twitter
+0x010354 3 1592 Res Ina Dis Vis orbitdm  or
+0x010358 3 1592 Res Ina Ena Vis orbitdm  Become a fan on Facebook
+0x0102B0 2 1592 Res Ina Ena Vis orbitdm  ATL:00508128
+0x0102B2 3 1592 Res Ina Ena Vis orbitdm  ATL:005081D0
+0x020290 3 1592 Res Ina Ena Vis orbitdm  MySplitterWindowClass
+0x02026E 4 1592 Res Ina Ena Vis orbitdm  ATL:00507638
+0x0102BE 5 1592 Res Ina Ena Vis orbitdm  ATL:00509500
+0x0102C2 6 1592 Res Ina Ena Vis orbitdm  SysHeader32
+0x0102B8 5 1592 Res Ina Ena Hid orbitdm  ATL:00509500
+0x0102BA 6 1592 Res Ina Ena Vis orbitdm  SysHeader32
+0x0102B6 5 1592 Res Ina Ena Hid orbitdm  ATL:00509448
+0x0102B4 5 1592 Res Ina Ena Vis orbitdm  ATL:SysTabControl32
+0x0102C6 4 1592 Res Ina Ena Vis orbitdm  ATL:00507708
+0x0102CA 5 1592 Res Ina Ena Vis orbitdm  SysHeader32
+0x1107BC 1 1468 Res Ina Ena Hid FileBX   FileBxBarWndClass_v2
+0x0103CA 1 1468 Res Ina Ena Hid FileBX   tooltips_class32
+0x01021A 1 1468 Res Ina Ena Hid FileBX   FileBox eXtender
+0x010264 2 1468 Res Ina Ena Vis FileBX   <<
+0x01027A 2 1468 Res Ina Ena Vis FileBX   E&xit
+0x010284 2 1468 Res Ina Ena Vis FileBX   &Help
+0x01028A 2 1468 Res Ina Ena Vis FileBX   About FbX
+0x02028C 2 1468 Res Ina Ena Vis FileBX   H&ide
+0x030288 2 1468 Res Ina Ena Vis FileBX   Press Help button for usage tips.
+0x010292 2 1468 Res Ina Ena Hid FileBX   Button
+0x01035C 2 1468 Res Ina Ena Vis FileBX   Settings
+0x01035E 3 1468 Res Ina Ena Vis FileBX   FileBX Buttons to Display
+0x010360 3 1468 Res Ina Ena Vis FileBX   Push-pin button to keep windows on top
+0x010362 3 1468 Res Ina Ena Vis FileBX   Roll-up button to display only the tit
+0x010364 3 1468 Res Ina Ena Vis FileBX   When rolled up, keep the window bar on
+0x010366 3 1468 Res Ina Ena Vis FileBX   Favorites button on:
+0x010368 3 1468 Res Ina Ena Vis FileBX   file boxes
+0x01036A 3 1468 Res Ina Ena Vis FileBX   Explorer folders
+0x01036C 3 1468 Res Ina Ena Vis FileBX   Recent folders button on:
+0x01036E 3 1468 Res Ina Ena Vis FileBX   file boxes
+0x010370 3 1468 Res Ina Ena Vis FileBX   Explorer folders
+0x010372 3 1468 Res Ina Ena Vis FileBX   Move FbX buttons to the left by 
+0x010374 3 1468 Res Ina Ena Vis FileBX   Edit
+0x010376 3 1468 Res Ina Ena Vis FileBX   pixels
+0x010378 3 1468 Res Ina Ena Vis FileBX   Move FbX buttons to the left by 
+0x01037A 3 1468 Res Ina Ena Vis FileBX   Edit
+0x01037C 3 1468 Res Ina Ena Vis FileBX   more pixels, if a window is maximized.
+0x01037E 3 1468 Res Ina Ena Vis FileBX   Display FbX icon in the system tray
+0x010380 3 1468 Res Ina Ena Vis FileBX   Re-use the same Explorer window when s
+0x010382 2 1468 Res Ina Ena Hid FileBX   File Boxes
+0x010384 3 1468 Res Ina Ena Vis FileBX   Auto-switch std. file boxes to "Detail
+0x010386 3 1468 Res Ina Dis Vis FileBX   ... and auto-size columns
+0x010388 3 1468 Res Ina Dis Vis FileBX   Sort columns by
+0x01038A 3 1468 Res Ina Dis Vis FileBX   Name
+0x01038C 3 1468 Res Ina Dis Vis FileBX   Size
+0x01038E 3 1468 Res Ina Dis Vis FileBX   Type
+0x010390 3 1468 Res Ina Dis Vis FileBX   Date
+0x010392 3 1468 Res Ina Dis Vis FileBX   Ascending
+0x010394 3 1468 Res Ina Dis Vis FileBX   Descending
+0x010396 3 1468 Res Ina Ena Vis FileBX   Resize std. file boxes to
+0x010398 3 1468 Res Ina Ena Vis FileBX   Edit
+0x01039A 3 1468 Res Ina Ena Vis FileBX   % width and 
+0x01039C 3 1468 Res Ina Ena Vis FileBX   Edit
+0x01039E 3 1468 Res Ina Ena Vis FileBX   % height of the original size.
+0x0103A0 3 1468 Res Ina Ena Vis FileBX   Click-switch file box folder feature
+0x0103A2 3 1468 Res Ina Ena Vis FileBX   Disabled
+0x0103A4 3 1468 Res Ina Ena Vis FileBX   Enable for clicks on opened Explorer f
+0x0103A6 3 1468 Res Ina Ena Vis FileBX   Enable for clicks on any window (switc
+0x0103A8 2 1468 Res Ina Ena Hid FileBX    Keys && Menus
+0x0103AA 3 1468 Res Ina Ena Vis FileBX   To select hot key combinations that wi
+0x0103AC 3 1468 Res Ina Ena Vis FileBX   Open favorites menu:
+0x0103AE 3 1468 Res Ina Ena Vis FileBX   msctls_hotkey32
+0x0103B0 3 1468 Res Ina Ena Vis FileBX   Open recent menu:
+0x0103B2 3 1468 Res Ina Ena Vis FileBX   msctls_hotkey32
+0x0103B4 3 1468 Res Ina Ena Vis FileBX   Add underscored numbers to Recent menu
+0x0103B6 3 1468 Res Ina Ena Vis FileBX   Display full path on the "Recent" menu
+0x0103B8 3 1468 Res Ina Ena Vis FileBX   Sort "Recent" menu alphabetically
+0x0103BA 3 1468 Res Ina Ena Vis FileBX   Add "Always on top" command to a windo
+0x0103BC 3 1468 Res Ina Ena Vis FileBX   Add "Roll up" command to a window syst
+0x0103BE 3 1468 Res Ina Ena Vis FileBX   Display
+0x0103C0 3 1468 Res Ina Ena Vis FileBX   Edit
+0x0103C2 3 1468 Res Ina Ena Vis FileBX   items on Recent Folders menu
+0x0103C4 3 1468 Res Ina Ena Vis FileBX   Add folders from Windows "My Recent Do
+0x0103C6 2 1468 Res Ina Ena Hid FileBX   Favorites
+0x0103C8 3 1468 Res Ina Ena Vis FileBX   Tree1
+0x0103CC 3 1468 Res Ina Ena Vis FileBX   &New Item...
+0x0103CE 3 1468 Res Ina Ena Vis FileBX   New Sub-&Menu
+0x0103D0 3 1468 Res Ina Ena Vis FileBX   Add &Separator
+0x0103D2 3 1468 Res Ina Ena Vis FileBX   &Update Shortcuts...
+0x0103D4 3 1468 Res Ina Ena Vis FileBX   &Test Menu
+0x0103D6 3 1468 Res Ina Dis Vis FileBX   &Edit Item...
+0x0103D8 3 1468 Res Ina Dis Vis FileBX   &Rename
+0x0103DA 3 1468 Res Ina Dis Vis FileBX   &Delete Item
+0x0103DC 3 1468 Res Ina Dis Vis FileBX   Delete &All...
+0x0103DE 3 1468 Res Ina Ena Vis FileBX   Currently selected item:
+0x0103E0 3 1468 Res Ina Ena Vis FileBX   Edit
+0x0103E2 3 1468 Res Ina Ena Hid FileBX   Edit
+0x0103E4 3 1468 Res Ina Ena Vis FileBX   Switch Config
+0x0103E6 2 1468 Res Ina Ena Hid FileBX   Exceptions
+0x0103E8 3 1468 Res Ina Ena Vis FileBX   A few programs will not work correctly
+0x0103EA 3 1468 Res Ina Ena Vis FileBX   Add Program to Exceptions...
+0x0103EC 3 1468 Res Ina Dis Vis FileBX   Delete Program from Exceptions
+0x0103EE 3 1468 Res Ina Ena Vis FileBX   Exception List:
+0x0103F0 3 1468 Res Ina Ena Vis FileBX   ListBox
+0x0103F2 3 1468 Res Ina Ena Vis FileBX   Do not handle this program at all
+0x0103F4 3 1468 Res Ina Ena Vis FileBX   No pushpin button
+0x0103F6 3 1468 Res Ina Ena Vis FileBX   No Favorites or Recent buttons
+0x0103F8 3 1468 Res Ina Ena Vis FileBX   Allow horizontal resize of file boxes
+0x0103FA 3 1468 Res Ina Ena Vis FileBX   Allow vertical resize of file boxes
+0x0103FC 3 1468 Res Ina Ena Vis FileBX   No roll-up button
+0x0103FE 3 1468 Res Ina Ena Vis FileBX   Move FbX buttons to the left by 
+0x010400 3 1468 Res Ina Ena Vis FileBX   Edit
+0x010402 3 1468 Res Ina Ena Vis FileBX   pixels
+0x030230 2 1468 Res Ina Ena Vis FileBX   Tab1
+0x01029A 2 1468 Res Ina Ena Vis FileBX   #32770
+0x01033C 3 1468 Res Ina Ena Vis FileBX   Shell Embedding
+0x02033A 4 1468 Res Ina Ena Vis FileBX   Shell DocObject View
+0x02024C 5 1468 Res Ina Ena Vis FileBX   Internet Explorer_Server
+0x010246 1 1644 Res Ina Ena Hid explorer Power Meter
+0x01025C 2 1644 Res Ina Ena Vis explorer Power status
+0x010262 2 1644 Res Ina Ena Vis explorer &Always show icon on the taskbar.
+0x010274 2 1644 Res Ina Ena Vis explorer Show details for each &battery.
+0x01027C 2 1644 Res Ina Ena Hid explorer Static
+0x050854 1 1644 Res Ina Ena Hid explorer SysFader
+0x0107F4 1 1700 Res Ina Ena Hid firefox  MozillaWindowClass
+0x01081A 1 1700 Res Ina Ena Hid firefox  MCI command handling window
+0x0107E6 1 1700 Res Ina Ena Hid firefox  MozillaHiddenWindowClass
+0x0107F0 2 1700 Res Ina Ena Vis firefox  MozillaWindowClass
+0x0107E4 1 1700 Res Ina Dis Hid firefox  NetscapeDispatchWnd
+0x0107E2 1 1700 Res Ina Ena Hid firefox  nsAppShell:EventWindow
+0x0107DE 1 1700 Res Ina Ena Hid firefox  DDEMLEvent
+0x0107DC 1 1700 Res Ina Ena Hid firefox  DDEMLMom
+0x0207D8 1 1700 Res Ina Ena Hid firefox  FirefoxMessageWindow
+0x020430 1 1592 Res Ina Ena Hid orbitdm  CPPToolTip
+0x0102C0 1 1892 Res Ina Ena Hid avgnt    Afx:00400000:0:00010011:01100063:00000
+0x0102F0 2 1892 Res Ina Ena Vis avgnt    _
+0x0102F2 2 1892 Res Ina Ena Vis avgnt    MFCGridCtrl
+0x0102D6 1 1592 Res Ina Ena Hid orbitdm  tooltips_class32
+0x0102CE 1 1592 Res Ina Ena Hid orbitdm  ATL:00507560
+0x0101EE 1  360 Res Ina Ena Hid NetMeter NetMeter
+0x0101F2 2  360 Res Ina Ena Hid NetMeter TTrafficGraph
+0x03019E 1 1864 Res Ina Ena Hid FourEngi BlackScreen
+0x020782 1 3364 Res Ina Ena Hid Foxit Re DDE Server Window
+0x05074A 1 3364 Res Ina Dis Hid Foxit Re ComboLBox
+0x040794 1 3364 Res Ina Dis Hid Foxit Re ComboLBox
+0x04077C 1 3364 Res Ina Dis Hid Foxit Re ComboLBox
+0x090666 1 3364 Res Ina Dis Hid Foxit Re ComboLBox
+0x0E0662 1 3364 Res Ina Dis Hid Foxit Re ComboLBox
+0x02027E 1 1644 Res Ina Ena Hid explorer MCI command handling window
+0x010460 1  612 Res Ina Ena Hid FrzState Frzstate2k
+0x020134 1  612 Res Ina Ena Hid FrzState TPUtilWindow
+0x010408 1  836 Res Ina Ena Hid WinList  WinList
+0x0302A2 1  508 Res Ina Ena Hid CCC      WindowsForms10.Window.8.app.0.3d893c
+0x02041A 1  508 Res Ina Ena Hid CCC      WindowsForms10.Window.0.app.0.3d893c
+0x010414 1  508 Res Ina Ena Hid CCC      WindowsForms10.Window.0.app.0.3d893c
+0x01040C 1  508 Res Ina Ena Hid CCC      DDE Server Window
+0x02034A 1 1644 Res Ina Ena Hid explorer Connections Tray
+0x020348 1 1468 Res Ina Ena Hid FileBX   Internet Explorer_Hidden
+0x010338 1 1804 Res Ina Ena Hid HDeck    tooltips_class32
+0x010336 1 1804 Res Ina Ena Hid HDeck    tooltips_class32
+0x010334 1 1804 Res Ina Ena Hid HDeck    tooltips_class32
+0x010332 1 1804 Res Ina Ena Hid HDeck    tooltips_class32
+0x010330 1 1804 Res Ina Ena Hid HDeck    tooltips_class32
+0x01032C 1 1804 Res Ina Ena Hid HDeck    tooltips_class32
+0x01032A 1 1804 Res Ina Ena Hid HDeck    tooltips_class32
+0x010328 1 1804 Res Ina Ena Hid HDeck    tooltips_class32
+0x010326 1 1804 Res Ina Ena Hid HDeck    tooltips_class32
+0x010324 1 1804 Res Ina Ena Hid HDeck    tooltips_class32
+0x010322 1 1804 Res Ina Ena Hid HDeck    tooltips_class32
+0x010320 1 1804 Res Ina Ena Hid HDeck    tooltips_class32
+0x01031E 1 1804 Res Ina Ena Hid HDeck    tooltips_class32
+0x01031C 1 1804 Res Ina Ena Hid HDeck    tooltips_class32
+0x01031A 1 1804 Res Ina Ena Hid HDeck    tooltips_class32
+0x010318 1 1804 Res Ina Ena Hid HDeck    tooltips_class32
+0x010316 1 1804 Res Ina Ena Hid HDeck    tooltips_class32
+0x010314 1 1804 Res Ina Ena Hid HDeck    tooltips_class32
+0x010312 1 1804 Res Ina Ena Hid HDeck    tooltips_class32
+0x01030E 1 1804 Res Ina Ena Hid HDeck    tooltips_class32
+0x01030C 1 1804 Res Ina Ena Hid HDeck    tooltips_class32
+0x01030A 1 1804 Res Ina Ena Hid HDeck    tooltips_class32
+0x010306 1 1804 Res Ina Ena Hid HDeck    tooltips_class32
+0x010304 1 1804 Res Ina Ena Hid HDeck    tooltips_class32
+0x010302 1 1804 Res Ina Ena Hid HDeck    tooltips_class32
+0x010300 1 1804 Res Ina Ena Hid HDeck    tooltips_class32
+0x0102FE 1 1804 Res Ina Ena Hid HDeck    tooltips_class32
+0x0102FC 1 1804 Res Ina Ena Hid HDeck    tooltips_class32
+0x0102FA 1 1804 Res Ina Ena Hid HDeck    tooltips_class32
+0x0102F8 1 1804 Res Ina Ena Hid HDeck    tooltips_class32
+0x0102F6 1 1804 Res Ina Ena Hid HDeck    tooltips_class32
+0x0102EE 1 1804 Res Ina Ena Hid HDeck    tooltips_class32
+0x0102EC 1 1804 Res Ina Ena Hid HDeck    tooltips_class32
+0x0102EA 1 1804 Res Ina Ena Hid HDeck    tooltips_class32
+0x0102E8 1 1804 Res Ina Ena Hid HDeck    tooltips_class32
+0x0102E6 1 1804 Res Ina Ena Hid HDeck    tooltips_class32
+0x0102E4 1 1804 Res Ina Ena Hid HDeck    tooltips_class32
+0x0102E2 1 1804 Res Ina Ena Hid HDeck    tooltips_class32
+0x0102E0 1 1804 Res Ina Ena Hid HDeck    tooltips_class32
+0x0102DE 1 1804 Res Ina Ena Hid HDeck    tooltips_class32
+0x0102DA 1 1804 Res Ina Ena Hid HDeck    Afx:400000:0:10011:1100063:0
+0x010208 1 1804 Res Ina Ena Hid HDeck    #32770
+0x01020A 3 1804 Res Ina Ena Vis HDeck    Static
+0x0100AA 1 1804 Max Ina Ena Hid HDeck    VIA HD Audio Deck
+0x0100AE 2 1804 Res Ina Ena Vis HDeck    Static
+0x0100B0 2 1804 Res Ina Ena Vis HDeck    Static
+0x0100B2 2 1804 Res Ina Ena Vis HDeck    Static
+0x0100B4 2 1804 Res Ina Ena Hid HDeck    ComboBox
+0x0100B8 2 1804 Res Ina Ena Hid HDeck    ComboBox
+0x0100BC 2 1804 Res Ina Ena Hid HDeck    ComboBox
+0x0100C0 2 1804 Res Ina Ena Hid HDeck    ComboBox
+0x0100C4 2 1804 Res Ina Ena Hid HDeck    ComboBox
+0x0100C8 2 1804 Res Ina Ena Hid HDeck    ComboBox
+0x0100CC 2 1804 Res Ina Ena Hid HDeck    ComboBox
+0x0100D0 2 1804 Res Ina Ena Hid HDeck    ComboBox
+0x0100D4 2 1804 Res Ina Ena Hid HDeck    ComboBox
+0x0100DC 2 1804 Res Ina Ena Hid HDeck    ComboBox
+0x0100E0 2 1804 Res Ina Ena Hid HDeck    ComboBox
+0x0100E4 2 1804 Res Ina Ena Hid HDeck    ComboBox
+0x0100E8 2 1804 Res Ina Ena Hid HDeck    ComboBox
+0x0100EC 2 1804 Res Ina Ena Hid HDeck    ComboBox
+0x0100F0 2 1804 Res Ina Ena Hid HDeck    Slider1
+0x0100F2 2 1804 Res Ina Ena Hid HDeck    ComboBox
+0x0100F6 2 1804 Res Ina Ena Hid HDeck    ComboBox
+0x0100FA 2 1804 Res Ina Ena Hid HDeck    ComboBox
+0x0100FE 2 1804 Res Ina Ena Hid HDeck    ComboBox
+0x010102 2 1804 Res Ina Ena Hid HDeck    0
+0x010104 2 1804 Res Ina Ena Hid HDeck    Spin1
+0x010106 2 1804 Res Ina Ena Hid HDeck    ComboBox
+0x01010A 3 1804 Res Ina Ena Vis HDeck    Edit
+0x01010C 2 1804 Res Ina Ena Hid HDeck    ComboBox
+0x010110 3 1804 Res Ina Ena Vis HDeck    Edit
+0x010340 1 1592 Res Ina Ena Hid orbitdm  ATL:005085E8
+0x0102F4 1  436 Res Ina Ena Hid orbitnet ORBTPROS_APP
+0x0102D8 1  208 Res Ina Ena Vis VirtuaWi VirtuaWinMainClass
+0x010214 1  508 Res Ina Ena Vis CCC      AMD:CCC-AEMCapturingWindow
+0x010224 1  508 Res Ina Ena Hid CCC      WindowsForms10.Window.0.app.0.3d893c
+0x0102CC 1 1592 Res Ina Ena Hid orbitdm  tooltips_class32
+0x0102C4 1 1592 Res Ina Ena Hid orbitdm  tooltips_class32
+0x0102BC 1 1592 Res Ina Ena Hid orbitdm  tooltips_class32
+0x010270 1 1864 Res Ina Ena Hid FourEngi TPUtilWindow
+0x01025E 1 1864 Res Ina Ena Hid FourEngi TPUtilWindow
+0x020236 1 1592 Res Ina Ena Hid orbitdm  TimeSynWindow
+0x010222 1  508 Res Ina Ena Hid CCC      .NET-BroadcastEventWindow.2.0.0.0.3d89
+0x010212 1 1644 Res Ina Ena Hid explorer MS_WebcheckMonitor
+0x010204 1  324 Res Ina Ena Hid acrotray AcrobatTrayIcon
+0x0101F0 1  360 Res Ina Ena Hid NetMeter TPUtilWindow
+0x0101EC 1  360 Res Ina Ena Hid NetMeter TPUtilWindow
+0x0101EA 1  360 Res Ina Ena Hid NetMeter TPUtilWindow
+0x0101E8 1  360 Res Ina Ena Hid NetMeter NetMeter
+0x0101E4 1  360 Res Ina Ena Hid NetMeter TPUtilWindow
+0x0101D2 1  372 Res Ina Dis Hid ctfmon   CTrayIconWndClass
+0x0101DA 1 1644 Res Ina Ena Hid explorer DDEMLEvent
+0x0101D8 1 1644 Res Ina Ena Hid explorer DDEMLMom
+0x0101AE 1  352 Res Ina Ena Hid BarahaIM Afx:00400000:0
+0x0101AC 1  352 Res Ina Ena Hid BarahaIM BarahaDirectSenderWndClass
+0x0101A8 1 1960 Res Ina Ena Hid MOM      .NET-BroadcastEventWindow.2.0.0.0.33c0
+0x0201A4 1 1892 Res Ina Ena Hid avgnt    Avira AntiVir Personal - Free Antiviru
+0x0301A2 1 1864 Res Ina Ena Hid FourEngi TCpuForm
+0x02019C 1 1864 Res Ina Ena Hid FourEngi VgaForm
+0x010190 1  340 Res Ina Ena Hid FreeRAM  TPUtilWindow
+0x01018E 1  340 Res Ina Ena Hid FreeRAM  TPUtilWindow
+0x01018C 1  340 Res Ina Ena Hid FreeRAM  TPUtilWindow
+0x010188 1  340 Res Ina Ena Hid FreeRAM  TPUtilWindow
+0x010186 1  340 Res Ina Ena Hid FreeRAM  TPUtilWindow
+0x030172 1 1864 Res Ina Ena Hid FourEngi AdvancedSetting
+0x010196 5 1864 Res Ina Ena Hid FourEngi AsButton
+0x010198 5 1864 Res Ina Ena Hid FourEngi TPanel
+0x01019A 6 1864 Res Ina Ena Hid FourEngi TListBox
+0x01018A 5 1864 Res Ina Ena Hid FourEngi AsButton
+0x02017C 5 1864 Res Ina Ena Hid FourEngi TPanel
+0x02017A 6 1864 Res Ina Ena Hid FourEngi TListBox
+0x02017E 5 1864 Res Ina Ena Hid FourEngi AsButton
+0x020180 5 1864 Res Ina Ena Hid FourEngi AsButton
+0x020182 5 1864 Res Ina Ena Hid FourEngi AsButton
+0x02016A 1 1864 Res Ina Ena Hid FourEngi UniversalDialog
+0x010168 1 1864 Res Ina Ena Hid FourEngi TPUtilWindow
+0x010162 1 1864 Res Ina Ena Hid FourEngi ProgressDialog
+0x010166 3 1864 Res Ina Ena Hid FourEngi AsButton
+0x02011C 3 1864 Res Ina Dis Hid FourEngi AsButton
+0x030142 3 1864 Res Ina Ena Hid FourEngi Cancel
+0x010160 1 1864 Res Ina Ena Hid FourEngi Cover
+0x01015E 1 1864 Res Ina Ena Hid FourEngi TPUtilWindow
+0x01015C 1 1864 Res Ina Ena Hid FourEngi TThreadWindow
+0x01015A 1 1864 Res Ina Ena Hid FourEngi TPUtilWindow
+0x010158 1 1864 Res Ina Ena Hid FourEngi TPUtilWindow
+0x010156 1 1864 Res Ina Ena Hid FourEngi TPUtilWindow
+0x010154 1 1864 Res Ina Ena Hid FourEngi TPUtilWindow
+0x010130 1 1880 Res Ina Ena Hid rundll32 BluetoothNotificationAreaIconWindowCla
+0x010126 1 1880 Res Ina Ena Hid rundll32 RunDLL
+0x010112 1 1864 Res Ina Ena Hid FourEngi Six Engine
+0x010152 3 1864 Res Ina Ena Hid FourEngi AsBar
+0x010150 3 1864 Res Ina Ena Hid FourEngi AsBar
+0x01014E 3 1864 Res Ina Dis Hid FourEngi AsBar
+0x01014C 3 1864 Res Ina Ena Hid FourEngi AsBar
+0x01014A 3 1864 Res Ina Ena Hid FourEngi AsCheckBox
+0x010148 3 1864 Res Ina Dis Hid FourEngi AsButton
+0x02013E 3 1864 Res Ina Dis Hid FourEngi AsButton
+0x030140 3 1864 Res Ina Ena Hid FourEngi AsButton
+0x010146 3 1864 Res Ina Ena Hid FourEngi AsButton
+0x01013C 3 1864 Res Ina Ena Hid FourEngi Calibrate
+0x01013A 3 1864 Res Ina Ena Hid FourEngi AsButton
+0x010138 3 1864 Res Ina Ena Hid FourEngi Current
+0x010136 3 1864 Res Ina Ena Hid FourEngi Exit
+0x01012E 3 1864 Res Ina Ena Hid FourEngi Setting
+0x01012C 3 1864 Res Ina Ena Hid FourEngi AsRadioButton
+0x01011A 3 1864 Res Ina Ena Hid FourEngi AsRadioButton
+0x010118 3 1864 Res Ina Ena Hid FourEngi AsRadioButton
+0x010116 3 1864 Res Ina Ena Hid FourEngi AsButton
+0x010114 3 1864 Res Ina Ena Hid FourEngi AsButton
+0x0100D8 1 1864 Res Ina Ena Hid FourEngi EPU-4 Engine
+0x01010E 1 1804 Res Ina Ena Hid HDeck    ComboLBox
+0x010108 1 1804 Res Ina Ena Hid HDeck    ComboLBox
+0x010100 1 1804 Res Ina Ena Hid HDeck    ComboLBox
+0x0100FC 1 1804 Res Ina Ena Hid HDeck    ComboLBox
+0x0100F8 1 1804 Res Ina Ena Hid HDeck    ComboLBox
+0x0100F4 1 1804 Res Ina Ena Hid HDeck    ComboLBox
+0x0100EE 1 1804 Res Ina Ena Hid HDeck    ComboLBox
+0x0100EA 1 1804 Res Ina Ena Hid HDeck    ComboLBox
+0x0100E6 1 1804 Res Ina Ena Hid HDeck    ComboLBox
+0x0100E2 1 1804 Res Ina Ena Hid HDeck    ComboLBox
+0x0100DE 1 1804 Res Ina Ena Hid HDeck    ComboLBox
+0x0100D6 1 1804 Res Ina Ena Hid HDeck    ComboLBox
+0x0100D2 1 1804 Res Ina Ena Hid HDeck    ComboLBox
+0x0100CE 1 1804 Res Ina Ena Hid HDeck    ComboLBox
+0x0100CA 1 1804 Res Ina Ena Hid HDeck    ComboLBox
+0x0100C6 1 1804 Res Ina Ena Hid HDeck    ComboLBox
+0x0100C2 1 1804 Res Ina Ena Hid HDeck    ComboLBox
+0x0100BE 1 1804 Res Ina Ena Hid HDeck    ComboLBox
+0x0100BA 1 1804 Res Ina Ena Hid HDeck    ComboLBox
+0x0100B6 1 1804 Res Ina Ena Hid HDeck    ComboLBox
+0x010080 1 1644 Res Ina Ena Hid explorer WorkerW
+0x030074 1 1644 Res Ina Ena Hid explorer WorkerW
+0x030070 1 1644 Res Ina Ena Hid explorer DDEMLEvent
+0x0B006C 1 1644 Res Ina Ena Hid explorer DDEMLMom
+0x01003C 1  652 Res Ina Ena Hid ati2evxx ATI video bios poller client
+0x01002E 1 1276 Res Ina Ena Hid ati2evxx ATI video bios poller
+0x01002A 1 1200 Res Ina Ena Hid DF5Serv  Df5serv
+0x010194 1  352 Res Ina Ena Hid BarahaIM BarahaIMEClass
+0x030840 1  352 Res Ina Ena Hid BarahaIM #32770
+0x050824 3  352 Res Ina Ena Vis BarahaIM Conversion is in progress.
+
+Please wai
+0x020178 1  352 Res Ina Ena Hid BarahaIM BarahaIME
+0x0101B4 1  352 Res Ina Ena Hid BarahaIM BarahaConvert
+0x0201B6 2  352 Res Ina Ena Hid BarahaIM RichEdit20W
+0x0101BA 2  352 Res Ina Ena Hid BarahaIM RichEdit20W
+0x0101BC 1  352 Res Ina Ena Hid BarahaIM BarahaSort
+0x0101BE 2  352 Res Ina Ena Hid BarahaIM RichEdit20W
+0x0101C0 2  352 Res Ina Ena Hid BarahaIM RichEdit20W
+0x0101C2 1  352 Res Ina Ena Hid BarahaIM BarahaFontConvert
+0x0101C4 2  352 Res Ina Ena Hid BarahaIM RichEdit20W
+0x0101C6 2  352 Res Ina Ena Hid BarahaIM RichEdit20W
+0x010192 1  340 Res Ina Ena Hid FreeRAM  FreeRAM XP Pro 1.52: 100% RAM free (20
+0x0101C8 2  340 Res Ina Ena Hid FreeRAM  TPanel
+0x03016C 1  340 Min Ina Ena Hid FreeRAM  FreeRAM XP Pro: A YourWare Solution (T
+0x0101FE 1  508 Min Ina Ena Hid CCC      GDI+ Window
+0x010272 1 1592 Min Ina Ena Hid orbitdm  GDI+ Window
+0x0906A0 1 3364 Min Ina Ena Hid Foxit Re GDI+ Window
+0x0606D6 1 3064 Res Ina Ena Hid FreeComm ComboLBox
+0x0A06DA 1 3064 Res Ina Ena Hid FreeComm TWinControl
+0x01009A 1 1644 Res Ina Ena Hid explorer tooltips_class32
+0x01008A 1 1644 Res Ina Ena Vis explorer Program Manager
+0x010094 2 1644 Res Ina Ena Vis explorer SHELLDLL_DefView
+0x010096 3 1644 Res Ina Ena Vis explorer FolderView
+0x18078A 4 1644 Res Ina Ena Hid explorer SysHeader32
+0x03005C 1 1644 Res Ina Dis Hid explorer M
+0x03005A 1 1644 Res Ina Dis Hid explorer Default IME
+0x02080C 1 1700 Res Ina Dis Hid firefox  M
+0x0107DA 1 1700 Res Ina Dis Hid firefox  Default IME
+0x0708B0 1 3064 Res Ina Dis Hid FreeComm M
+0x0F0464 1 3064 Res Ina Dis Hid FreeComm Default IME
+0x08079E 1 3816 Res Ina Dis Hid notepad+ M
+0x07075E 1 3816 Res Ina Dis Hid notepad+ Default IME
+0x1508F6 1 1352 Res Ina Dis Hid x        M
+0x0A0528 1 1352 Res Ina Dis Hid x        Default IME
+0x040774 1 3364 Res Ina Dis Hid Foxit Re M
+0x080682 1 3364 Res Ina Dis Hid Foxit Re Default IME
+0x02042E 1 2372 Res Ina Dis Hid dgnsvc   Default IME
+0x0101CE 1  372 Res Ina Dis Hid ctfmon   Default IME
+0x0102D0 1 1592 Res Ina Dis Hid orbitdm  M
+0x020234 1 1592 Res Ina Dis Hid orbitdm  Default IME
+0x01034E 1 1468 Res Ina Dis Hid FileBX   M
+0x01021C 1 1468 Res Ina Dis Hid FileBX   Default IME
+0x030658 1 1644 Res Ina Dis Hid explorer M
+0x02023A 1 1644 Res Ina Dis Hid explorer Default IME
+0x01081C 1 1700 Res Ina Dis Hid firefox  Default IME
+0x02045E 1 1592 Res Ina Dis Hid orbitdm  Default IME
+0x0102C8 1 1892 Res Ina Dis Hid avgnt    Default IME
+0x010462 1  612 Res Ina Dis Hid FrzState Default IME
+0x020280 1 1644 Res Ina Dis Hid explorer Default IME
+0x01040A 1  836 Res Ina Dis Hid WinList  Default IME
+0x01041C 1  508 Res Ina Dis Hid CCC      M
+0x010416 1  508 Res Ina Dis Hid CCC      Default IME
+0x01040E 1  508 Res Ina Dis Hid CCC      Default IME
+0x0101F6 1 1804 Res Ina Dis Hid HDeck    M
+0x0100AC 1 1804 Res Ina Dis Hid HDeck    Default IME
+0x010310 1  436 Res Ina Dis Hid orbitnet Default IME
+0x0102DC 1  208 Res Ina Dis Hid VirtuaWi Default IME
+0x010308 1  208 Res Ina Dis Hid VirtuaWi M
+0x01022A 1  508 Res Ina Dis Hid CCC      M
+0x010216 1  508 Res Ina Dis Hid CCC      Default IME
+0x010206 1  324 Res Ina Dis Hid acrotray Default IME
+0x0101E6 1  360 Res Ina Dis Hid NetMeter Default IME
+0x0101AA 1 1960 Res Ina Dis Hid MOM      Default IME
+0x0301A0 1 1892 Res Ina Dis Hid avgnt    Default IME
+0x01012A 1 1880 Res Ina Dis Hid rundll32 Default IME
+0x0100DA 1 1864 Res Ina Dis Hid FourEngi Default IME
+0x01003E 1  652 Res Ina Dis Hid ati2evxx Default IME
+0x010030 1 1276 Res Ina Dis Hid ati2evxx Default IME
+0x01002C 1 1200 Res Ina Dis Hid DF5Serv  Default IME
+0x03084A 1  352 Res Ina Dis Hid BarahaIM M
+0x020176 1  352 Res Ina Dis Hid BarahaIM Default IME
+0x0101CA 1  340 Res Ina Dis Hid FreeRAM  M
+0x03016E 1  340 Res Ina Dis Hid FreeRAM  Default IME
+0x010200 1  508 Res Ina Dis Hid CCC      Default IME
+0x010282 1 1592 Res Ina Dis Hid orbitdm  Default IME
+0x10069E 1 3364 Res Ina Dis Hid Foxit Re Default IME
+0x01009E 1 1644 Res Ina Dis Hid explorer M
+0x03006E 1 1644 Res Ina Dis Hid explorer Default IME
