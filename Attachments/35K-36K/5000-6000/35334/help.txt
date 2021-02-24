@@ -1,0 +1,92 @@
+#include <GUIConstantsEx.au3>
+#include <Date.au3>
+#include <StaticConstants.au3>
+
+Opt('MustDeclareVars', 1)
+
+Global $yrs, $current, $archive, $tab0, $tab1
+$yrs = IniRead(@ScriptDir & "\config.ini", "archive", "years", "Not Found")
+$current = IniRead(@ScriptDir & "\config.ini", "paths", "current", "Not Found")
+$archive = IniRead(@ScriptDir & "\config.ini", "paths", "archive", "Not Found")
+$tab0 = IniRead(@ScriptDir & "\config.ini", "tabs", "view", "Not Found")
+$tab1 = IniRead(@ScriptDir & "\config.ini", "tabs", "upload", "Not Found")
+
+#cs ***********   .ini file content   *****************
+[paths]
+current=c:\pictures\current
+archive=c:\pictures\archive
+
+[tabs]
+view=1
+upload=1
+
+[archive]
+years=2008|2009|2010|2011|2012
+#ce
+
+Main()
+
+Func Main()
+	Local $tabs, $tabsyrs_combo
+	Local $tab0_view, $radio1, $radio2, $tab0_btn1, $tab0_btn2
+	Local $tab1_view, $tab1_btn1
+	Local $filemenu, $fileitem, $exititem
+	Local $msg, $ans, $verify_path_sel
+
+	GUICreate("GST-Img - View / Upload Images", @DesktopWidth - 100, @DesktopHeight -200)
+	If $tab0 = 0 And $tab1 = 0 Then
+		MsgBox(0,"Config Error", "You must enable at least one tab in the config file to view the application.")
+		Run("notepad.exe " &  @ScriptDir & "\config.ini")
+		Exit
+	EndIf
+	$tabs = GUICtrlCreateTab(10, 40, @DesktopWidth - 120, @DesktopHeight - 290)
+	$tabsyrs_combo = GUICtrlCreateCombo("", 20, 70, 60, 120)
+	GUICtrlSetData(-1, $yrs)
+	If $tab0 =1 Then
+		$tab0_view = GUICtrlCreateTabItem("View")
+		GUICtrlSetState(-1, $GUI_SHOW)
+		$radio1 = GUICtrlCreateRadio("Current", 40, 190, 120, 20)
+		GUICtrlSetState(-1, $GUI_CHECKED)
+		$radio2 = GUICtrlCreateRadio("Archive", 40, 220, 120, 20)
+		$tab0_btn1 = GUICtrlCreateButton("Browse", 100, 100, 100, 20)
+	EndIf
+	If $tab1 = 1 Then
+		$tab1_view = GUICtrlCreateTabItem("Upload")
+		$tab1_btn1 = GUICtrlCreateButton("Upload", 100, 80, 50, 20)
+	EndIf
+	GUICtrlCreateTabItem("") 	; end tabitem definition
+
+	$filemenu = GUICtrlCreateMenu("&File")
+	$fileitem = GUICtrlCreateMenuItem("Edit Config", $filemenu)
+	GUICtrlSetState(-1, $GUI_DEFBUTTON)
+	$exititem = GUICtrlCreateMenuItem("Exit", $filemenu)
+
+	GUISetState()
+
+	While 1
+		$msg = GUIGetMsg()
+		Select
+			Case $msg = $GUI_EVENT_CLOSE Or $msg = $exititem
+				ExitLoop
+			Case $msg = $fileitem
+				$ans = MsgBox(4,"Edit Config", "Editing the config file will cause the application to restart.  Do you want to continue?")
+				If $ans = 6 Then
+					Run("notepad.exe " &  @ScriptDir & "\config.ini")
+					Exit
+				Else
+				EndIf
+			Case $msg = $tab0_btn1
+				$verify_path_sel = GUICtrlRead($radio1)
+				If $verify_path_sel = 1 Then
+					FileOpenDialog("Select File", $current & "\", "Images (*.jpg;*.bmp)", 1 + 4 )
+				Else
+					FileOpenDialog("Select File", $archive & "\", "Images (*.jpg;*.bmp)", 1 + 4 )
+				EndIf
+			Case $msg = $tab0_btn2
+				MsgBox(0,"", "Why am I displaying")
+				Exit
+			Case $msg = $radio1 And BitAND(GUICtrlRead($radio1), $GUI_CHECKED) = $GUI_CHECKED
+			Case $msg = $radio2 And BitAND(GUICtrlRead($radio2), $GUI_CHECKED) = $GUI_CHECKED
+		EndSelect
+	WEnd
+EndFunc   ;==>Main
