@@ -1,0 +1,27 @@
+; BASIC LOAD DATA .INI FILE for APR Benchmarking
+; 10/14/2003 this is the default LD.ini file.. this will be run before the negative tests to make sure 
+; everything is working.
+ 
+ [ldoptions]
+
+	filepath****************= C:\Multi DDt Delete Encounter MPI\cleanup.in
+	updatecreate            = 3
+	sysdefnumber            = 1
+	categorynum             = 2
+	mapnum                  = 1
+	logpath****************= D:\Test\testup.in
+	errorpath****************= E:\ Encounter MPI\testing.in
+	logpath                 = c:\samsamsam\ldclean.log
+	flexRootName            = FLEX@.BT
+	DBRootName              = HDM
+	pause                   = yes
+	numkey			= UnitNum:
+	namekey			= Name:
+	altkey			= VisitNum:
+	datekey			= DDT:
+	chkAltKeyUnique		= True
+	debuglogfile		= true
+
+
+Interface = LDBASE Interface
+
