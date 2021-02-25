@@ -1,0 +1,12 @@
+CPTPXINFO.CPTMod:1|1|
+CPTPXINFO.CPTLoc:1|1|
+CPTPXINFO.CPTAddons:1|1|
+CPTPXINFO.CEpiNum:1|1|
+CPTPXINFO.CPTModTxt:1|1|
+CPTPXINFO.CPTShrtTxt:1|1|71020 RadExm Chest 2VwFrnt/Lat
+CPTPXINFO.CPTPxMDSrvc:1|1|
+CPTPXINFO.CPTPxMDSpec:1|1|
+CPTPXINFO.APC:1|1|
+filepath****************= e:\autitMulti\ Encounter MPI\cleanup.in
+CPTPXINFO.CPTAddons:1|1|
+CPTPXINFO.CEpiNum:1|1|
