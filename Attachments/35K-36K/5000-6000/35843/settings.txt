@@ -1,0 +1,2 @@
+[Alert]
+Count=6
