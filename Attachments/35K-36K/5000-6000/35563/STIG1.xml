@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<Benchmark xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" id="Windows_2008_R2_MS_STIG" xml:lang="en" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" xmlns="http://checklists.nist.gov/xccdf/1.1">
+<status date="2011-06-15">accepted</status> 
+<title>Windows Server 2008 R2 Member Server Security Technical Implementation Guide</title> 
+<description>The Windows Server 2008 R2 Security Technical Implementation Guide (STIG) is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements were developed from DoD consensus, as well as the Windows Server 2008 R2 Security Guide and security templates published by Microsoft Corporation. Comments or proposed revisions to this document should be sent via e-mail to the following address: fso_spt@disa.mil.</description> 
+<notice id="terms-of-use" xml:lang="en">Developed_by_DISA_for_the_DoD</notice> 
+<reference href="http://iase.disa.mil">
+<dc:publisher>DISA, Field Security Operations</dc:publisher> 
+<dc:source>STIG.DOD.MIL</dc:source> 
+</reference>
+<plain-text id="release-info">Release: 1 Benchmark Date: 25 May 2011</plain-text> 
+<version>1</version> 
+<Profile id="MAC-1_Public">
+<title>I - Mission Critical Public</title> 
+<description><ProfileDescription></ProfileDescription></description> 
+<select idref="V-1070" selected="true" /> 
+<select idref="V-1072" selected="true" />  
+</Profile>
+
+<Group id="V-1070">
+<title>Physical security</title> 
+<description><GroupDescription></GroupDescription></description> 
+<Rule id="SV-32240r1_rule" severity="medium" weight="10.0">
+<version>1.001</version> 
+<title>The Automated Information System (AIS) will be physically secured in an access controlled area.</title> 
+<description><VulnDiscussion>Inadequate physical protection can undermine all other security precautions utilized to protect the system. This can jeopardize the confidentiality, availability, and integrity of the system. Physical security of the AIS is the first line protection of any system.</VulnDiscussion><FalsePositives></FalsePositives><FalseNegatives></FalseNegatives><Documentable>false</Documentable><Mitigations></Mitigations><SecurityOverrideGuidance></SecurityOverrideGuidance><PotentialImpacts></PotentialImpacts><ThirdPartyTools></ThirdPartyTools><MitigationControl></MitigationControl><Responsibility>System Administrator</Responsibility><IAControls>PECF-1</IAControls></description> 
+<fixtext fixref="F-31r1_fix">Relocate equipment to a controlled access area.</fixtext> 
+<fix id="F-31r1_fix" /> 
+<check system="C-32862r1_chk">
+<check-content-ref name="M" href="VMS_XCCDF_Benchmark_Windows_2008_R2_STIG.xml" /> 
+<check-content>Interview the SA to determine if equipment is located in an access controlled area. Servers will be located in rooms, or locked cabinets, that are accessible only to authorized systems personnel. Authorized user access should be verified at two points (i.e. building access and server room).</check-content> 
+</check>
+</Rule>
+</Group>
+<Group id="V-1072">
+<title>Shared User Accounts</title> 
+<description><GroupDescription></GroupDescription></description> 
+<Rule id="SV-32241r1_rule" severity="medium" weight="10.0">
+<version>1.008</version> 
+<title>Shared user accounts will not be permitted on the system.</title> 
+<description><VulnDiscussion>Shared accounts do not provide individual accountability for system access and resource usage.</VulnDiscussion><FalsePositives></FalsePositives><FalseNegatives></FalseNegatives><Documentable>false</Documentable><Mitigations></Mitigations><SecurityOverrideGuidance></SecurityOverrideGuidance><PotentialImpacts></PotentialImpacts><ThirdPartyTools></ThirdPartyTools><MitigationControl></MitigationControl><Responsibility>System Administrator</Responsibility><IAControls>IAGA-1</IAControls></description> 
+<fixtext fixref="F-33r1_fix">Remove any shared accounts that do not meet the exception requirements listed.</fixtext> 
+<fix id="F-33r1_fix" /> 
+<check system="C-32873r1_chk">
+<check-content-ref name="M" href="VMS_XCCDF_Benchmark_Windows_2008_R2_STIG.xml" /> 
+<check-content>Interview the SA to determine if any shared accounts exist. Any shared account must be documented with the IAO. Documentation should include the reason for the account, who has access to this account, and how the risk of using a shared account (which provides no individual identification and accountability) is mitigated. As an example, a shared account may be permitted for a help desk or a site security personnel machine, if that machine is stand-alone and has no access to the network.</check-content> 
+</check>
+</Rule>
+</Group>
+<Group id="V-1073">
+<title>Unsupported Service Packs</title> 
+<description><GroupDescription></GroupDescription></description> 
+<Rule id="SV-32242r1_rule" severity="medium" weight="10.0">
+<version>2.005</version> 
+<title>The current, approved service pack will be installed.</title> 
+<description><VulnDiscussion>Failure to install the most current Windows service pack leaves a system vulnerable to exploitation. Current service packs correct known security and system vulnerabilities. If a Windows OS is at an unsupported service pack this will be upgraded to a Category (CAT) I finding since new vulnerabilities may not be patched.</VulnDiscussion><FalsePositives></FalsePositives><FalseNegatives></FalseNegatives><Documentable>true</Documentable><Mitigations></Mitigations><SecurityOverrideGuidance>Unsupported Service Packs will be upgraded to a CAT I finding.</SecurityOverrideGuidance><PotentialImpacts></PotentialImpacts><ThirdPartyTools>HK</ThirdPartyTools><MitigationControl></MitigationControl><Responsibility>System Administrator</Responsibility><IAControls>VIVM-1</IAControls></description> 
+<fixtext fixref="F-50r1_fix">Install the current approved service pack.</fixtext> 
+<fix id="F-50r1_fix" /> 
+<check system="C-32704r1_chk">
+<check-content-ref name="M" href="VMS_XCCDF_Benchmark_Windows_2008_R2_STIG.xml" /> 
+<check-content>From the menu bar, click “Start” and then “Run”. Type “winver.exe” in the dialog box and click OK. If the dialog box does not display “Microsoft Windows Server Version 6.1 (Build 7600)” or greater, then this is a finding. No Release Candidates or Beta versions will be used in a production environment. Application of new service packs should be thoroughly tested before deploying in a production environment. Documentable Explanation: Some managed systems such as DMS and GCSS receive service pack updates via system releases. In this case, the current approved application release should be installed.</check-content> 
+</check>
+</Rule>
+</Group>
+</Benchmark>
