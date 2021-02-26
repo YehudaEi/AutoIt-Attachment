@@ -1,0 +1,75 @@
+-- TIME_STAMP   2011-12-30 21:40:48   v 0.3
+
+
+--------------------------------------------------------------------------------
+-- CommentsDelHide()
+--
+-- Hide (default) or delete comment lines in opened AutoIt-script in SciTE
+--
+-- Hided comments will shown again with reload file (menu file) or change to another tab and back
+--
+-- PARAMAETER..[optional]..: _fDelete - false=HIDE COMMENT-LINES (default) / true=DELETE COMMENT-LINES
+--------------------------------------------------------------------------------
+function CommentsDelHide(_fDelete)
+	if _fDelete == nil then _fDelete = false end
+	local function IsComment(pos) local tComment = {1,2} if tComment[editor.StyleAt[pos]] == nil then return false else return true end end
+	local function IsWS(pos) if editor.StyleAt[pos] == 0 then return true else return false end end
+	local function GetRange(tTable)
+		local tRange = {} iStart = ''
+		if table.getn(tTable) == 0 then return nil end
+		for i = 1, table.getn(tTable) do
+			if iStart == '' then iStart = tTable[i] end
+			if i < table.getn(tTable) then
+				if tTable[i+1] ~= tTable[i] +1 then table.insert(tRange, {iStart, tTable[i]}) iStart = '' else
+					if i+1 == table.getn(tTable) then table.insert(tRange, {iStart, tTable[i+1]}) break end end
+			else table.insert(tRange, {tTable[i], tTable[i]}) end
+		end
+		return tRange
+	end
+	local function PreZero(sText, iMax) return string.rep('0', iMax - string.len(sText))..sText end
+	editor:GotoLine(0)
+	local n = 0
+	local tCommLines = {}
+	while editor.LineCount > n do
+		editor:GotoLine(n)
+		if IsComment(editor.CurrentPos) then
+			table.insert(tCommLines, n)
+		elseif IsWS(editor.CurrentPos) then
+			editor:WordRight()
+			if IsComment(editor.CurrentPos) then
+				n = editor:LineFromPosition(editor.CurrentPos)
+				table.insert(tCommLines, n)
+			end
+		end
+		n = n +1
+	end
+	editor:BeginUndoAction()
+	if _fDelete then
+		if table.getn(tCommLines) > 0 then
+			for i = table.getn(tCommLines), 1, -1 do
+				editor:GotoLine(tCommLines[i])
+				editor:LineDelete()
+			end
+		else
+			print('!++ NO COMMENT LINES DETECT ++')
+		end
+	else
+		local tRanges = GetRange(tCommLines)
+		if tRanges == nil then print('!++ NO COMMENT LINES DETECT ++') end
+		local max = string.len(tRanges[table.getn(tRanges)][2])
+		for i = 1, table.getn(tRanges) do
+			print('++ HIDE LINE'..'....'..PreZero(tostring(tRanges[i][1] +1), max)..' TO '..PreZero(tostring(tRanges[i][2] +1), max)..' ++')
+			editor:HideLines(tRanges[i][1],tRanges[i][2])
+		end
+	end
+	editor:EndUndoAction()
+end  -- CommentsDelHide()
+
+function CommentsHide()
+	CommentsDelHide()
+end
+
+function CommentsDelete()
+	CommentsDelHide(true)
+end
+
