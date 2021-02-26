@@ -1,0 +1,103 @@
+-- TIME_STAMP   2011-12-16 12:46:18   v 0.8
+-- by BugFix
+
+
+EvtOnChar = EventClass:new(Common)
+------------------- Description -----------------------------------------
+-- EvtOnChar(charAdded)
+--
+-- Generally:
+-- ..........Labeling operations on: left or before: lower case/ right or after: upper case
+-- Used chars:
+-- r.........Repeat char
+-- g/G.......Go (word)
+-- w/W.......Word (delete)
+-- l/L.......Line (delete)
+-- s/S.......Swap (line)
+-- Trigger operations by: "!seq"
+--
+-- repeat n-times...............seq:  "!COUNTrCHAR"...."!5r*"....= "*****"
+-- go n-words left..............seq:  "!COUNTg"........"!5g".....= go 5 words to left
+-- go n-words right.............seq:  "!CountG"........"!5G".....= go 5 words to right
+-- delete one word left.........seq:  "!w"............."!w"......= one word left delete
+-- delete one word right........seq:  "!W"............."!W"......= one word right delete
+-- delete n-words left..........seq:  "!COUNTw"........"!5w".....= 5 words left delete
+-- delete n-words right.........seq:  "!CountW"........"!5W".....= 5 words right delete
+-- delete line to start.........seq:  "!l".......................= deletes in current line from caret to start
+-- delete line to end...........seq:  "!L".......................= deletes in current line from caret to end
+-- swap line with line before...seq:  "!s"
+-- swap line with line after....seq:  "!S"
+--
+-- Parameters:
+--   charAdded - The character typed.
+-------------------------------------------------------------------------
+
+------------------- Declarations ----------------------------------------
+-- exclamation mark as trigger
+local fTrigger = false
+-- wait for char to repeat
+local fRepeat = false
+-- string to collect given numbers
+local sNr = ''
+-- table sequences
+local tSeq = { 'w','W','l','L','g','G','s','S','r' }
+-- table numbers
+local tNum = { '0','1','2','3','4','5','6','7','8','9' }
+-- table of (opening) paired chairs, (if auto close braces is active)
+local tPairs  = { '(','{','[','"',"'" }
+-------------------------------------------------------------------------
+
+------------------- Helper Functions ------------------------------------
+local fH = {}
+fH.tContains   = function(_t, _value) for i, val in pairs(_t) do if _t[i] == _value then return true end end return false end
+fH.SetVarsBack = function() fTrigger = false fRepeat = false sNr = '' end
+fH.DeleteSeq   = function(_pos, _addLen) if _addLen == nil then _addLen = 0 end editor:SetSel(_pos -(2 +_addLen), _pos) editor:ReplaceSel('') end
+-------------------------------------------------------------------------
+
+------------------- Sequence Functions ----------------------------------
+local fS = {}
+fS['w'] = function(_pos) if sNr ~= '' then fH.DeleteSeq(_pos, string.len(sNr)) for i = 1, tonumber(sNr) do editor:DelWordLeft() end else fH.DeleteSeq(_pos) editor:DelWordLeft() end return true end
+fS['W'] = function(_pos) if sNr ~= '' then fH.DeleteSeq(_pos, string.len(sNr)) for i = 1, tonumber(sNr) do editor:DelWordRight() end else fH.DeleteSeq(_pos) editor:DelWordRight() end return true end
+fS['l'] = function(_pos) editor:DelLineLeft() return true end
+fS['L'] = function(_pos) editor:GotoPos(_pos-2) editor:DelLineRight() return true end
+fS['s'] = function(_pos) fH.DeleteSeq(_pos) fS.SwapLine(editor:LineFromPosition(_pos), -1) return true end
+fS['S'] = function(_pos) fH.DeleteSeq(_pos) fS.SwapLine(editor:LineFromPosition(_pos)) return true end
+fS['g'] = function(_pos) if sNr == '' then return true else fH.DeleteSeq(_pos, string.len(sNr)) for i = 1, tonumber(sNr) do editor:WordLeft() end end return true end
+fS['G'] = function(_pos) if sNr == '' then return true else fH.DeleteSeq(_pos, string.len(sNr)) for i = 1, tonumber(sNr) do editor:WordRight() end end return true end
+fS['r'] = function(_pos) if sNr == '' then fH.SetVarsBack() return true else fRepeat = true return false end end
+fS.SwapLine = 	function(_line, _direction) editor:BeginUndoAction() local caret = editor.CurrentPos local diff, pos, textSwap, lenSwap local textBase, lenBase = editor:GetLine(_line)
+					if lenBase == nil then lenBase = 0 end if _direction == nil then _direction = 1 end textSwap, lenSwap = editor:GetLine(_line +(_direction)) if lenSwap == nil then lenSwap = 0 end
+					editor:GotoLine(_line) pos = editor.CurrentPos diff = caret - pos editor:SetSel(pos, pos +lenBase) editor:ReplaceSel(textSwap)
+					editor:GotoLine(_line +(_direction)) pos = editor.CurrentPos editor:SetSel(pos, pos +lenSwap) editor:ReplaceSel(textBase)
+					editor:GotoLine(_line) editor:GotoPos(editor.CurrentPos + diff) editor:EndUndoAction() end
+fS.RepeatChar = function(_pos, _charAdded) editor:BeginUndoAction() editor:SetSel(_pos -(string.len(sNr) +3) , _pos) editor:ReplaceSel(string.rep(_charAdded, tonumber(sNr)))
+					-- by using auto close braces:
+					-- if repeating char is an opening char from paired chars - the last inserted char triggers additional insert of closing char - must delete that
+					if fH.tContains(tPairs, _charAdded) then _pos = editor.CurrentPos editor:SetSel(_pos, _pos+1) editor:ReplaceSel('') end
+					-- comment the line before, if you don't use a auto close braces function!
+					editor:EndUndoAction() fH.SetVarsBack() end
+-------------------------------------------------------------------------
+
+-------------------------------------------------------------------------
+function EvtOnChar:OnChar(_charAdded)
+	local pos = editor.CurrentPos
+	if fRepeat then
+		fS.RepeatChar(pos, _charAdded) fH.SetVarsBack()                   -- repeat _charAdded sNr -times
+	elseif fTrigger then                                                  -- exclamation mark was set - trigger is active
+		if fH.tContains(tNum, _charAdded) then                            -- input is number
+			if fRepeat == false then                                      -- not activated "repeat"
+				sNr = sNr.._charAdded                                     -- add number to string of numbers
+			elseif fRepeat then                                           -- activated "repeat"
+				fS.RepeatChar(pos, _charAdded) fH.SetVarsBack()           -- repeat this number sNr -times
+			end
+		elseif fH.tContains(tSeq, _charAdded) then                        -- _charAdded is a sequence identifier
+			if not fS[_charAdded](pos) then return false end              -- call the related sequence function
+			fH.SetVarsBack()
+		else
+			fH.SetVarsBack()
+		end
+	end
+	if _charAdded == '!' then fTrigger = true end                         -- activate "trigger"
+	return false
+end  --> EvtOnChar
+-------------------------------------------------------------------------
