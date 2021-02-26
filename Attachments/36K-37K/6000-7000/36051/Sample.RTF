@@ -1,0 +1,262 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Courier New;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\b\f0\fs20 Summary Title: \b0 2c-- (3M) MS Working CMI\par
+\b In Library? : \b0 Yes\par
+\b Owner RAD   : \b0 DocMS MS-DRG\par
+\b Access Owner: \b0 All\par
+\b Permissions\par
+  Service       : \b0 V R C E D\par
+\b   System Manager: \b0 V R C E D\par
+\b   All           : \b0 V R C E D\par
+\ul\par
+________________________________________________________________\par
+\par
+________________________________________________________________\par
+\b Classification Key Information:_________________________________\par
+\par
+----[ Classification Key Level 1 ]----\ulnone\par
+Field Name: \b0 Year/Month  \ul\b RDL Field\ulnone\par
+  RDL Source:\par
+    [RDL begin]\par
+\b0 if ADt is not empty then formatdate("%Y %B", ADt);\par
+\b     [RDL end]  Returns: \b0 Text\par
+\b   Dependant      : \b0 ??\par
+\b   Column visible : \b0 Yes\par
+\ul\b\par
+----[ Classification Key Level 2 ]----\ulnone\par
+Field Name: \b0 FinCl\par
+\b   Display Name   : \b0 Financial Class\par
+\b   Column visible : \b0 Yes\par
+\b   Code/Text      : \b0 Text Only\par
+\ul\par
+________________________________________________________________\par
+\b Categories:_____________________________________________________\par
+\b0 | Title                                     | Flags | Precision \par
+\ulnone |Month Sort                                 | IOMin | 0\par
+|Total Pts Reviewed                         |  RSum | 0\par
+|Total Pts w/ Working DRG                   |  RSum | 0\par
+|Overall CMI                                |  RAvg | 4\par
+|Medical CMI                                |  RSum | 4\par
+|Medical CMI Total                          |  RSum | 4\par
+|Surgical CMI                               |  RSum | 4\par
+|Surgical CMI Total                         |  RSum | 4\par
+|Month Sort                                 | IRMin | 0\par
+|Year Sort                                  | IRMin | 0\par
+|Surgical pts                               |  RSum | 0\par
+|Medical pts                                |  RSum | 0\par
+\ul\b\par
+  Category RDL Detail:\par
+\ulnone\b0\par
+\ul Month Sort\ulnone\b\par
+  RDL Source:\par
+    [RDL begin]\par
+\b0 formatdate("%Y %B", aDt);\par
+\b     [RDL end]  Returns: \b0 Text\par
+\par
+\par
+\ul Total Pts Reviewed\ulnone\b\par
+  RDL Source:\par
+    [RDL begin]\par
+\b0 True\par
+\b     [RDL end]  Returns: \b0 Boolean\par
+\par
+\par
+\ul Total Pts w/ Working DRG\ulnone\b\par
+  RDL Source:\par
+    [RDL begin]\par
+\b0 if msPDRGINFO(1).PDRG is not empty then true;\par
+\b     [RDL end]  Returns: \b0 Boolean\par
+\par
+\par
+\ul Overall CMI\ulnone\b\par
+  RDL Source:\par
+    [RDL begin]\par
+\b0 if trunctime(today) is between '100108'  and '093009' then begin\par
+calc(lookup(2219, msPDRGINFO(1).PDRG , drgwt));\par
+end;\par
+if trunctime(today) is between '100109'  and '093010' then begin\par
+calc(lookup(2221, msPDRGINFO(1).PDRG , drgwt));\par
+end;\par
+if trunctime(today) is between '100110'  and '093011' then begin\par
+calc(lookup(2222, msPDRGINFO(1).PDRG , drgwt));\par
+end;\par
+if trunctime(today) is between '100111'  and '093012' then begin\par
+calc(lookup(2228, msPDRGINFO(1).PDRG , drgwt));\par
+end;\par
+\b     [RDL end]  Returns: \b0 Number (real)\par
+\par
+\par
+\ul Medical CMI\ulnone\b\par
+  RDL Source:\par
+    [RDL begin]\par
+\b0 Cat[52]\{Medical CMI\} / Cat[64]\{Medical pts\}\par
+\b     [RDL end]  Returns: \b0 Number (real)\i\par
+    <Cross-Category Calculation>\i0\par
+\par
+\par
+\ul Medical CMI Total\ulnone\b\par
+  RDL Source:\par
+    [RDL begin]\par
+\b0 if trunctime(today) is between '100108'  and '093009' then begin\par
+if lookup(2219, msPDRGINFO(1).PDRG , Ty) = 'M' then\par
+calc(lookup(2219, msPDRGINFO(1).PDRG , drgwt));\par
+end;\par
+if trunctime(today) is between '100109'  and '093010' then begin\par
+if lookup(2221, msPDRGINFO(1).PDRG , Ty) = 'M' then\par
+calc(lookup(2221, msPDRGINFO(1).PDRG , drgwt));\par
+end;\par
+if trunctime(today) is between '100110'  and '093011' then begin\par
+if lookup(2222, msPDRGINFO(1).PDRG , Ty) = 'M' then\par
+calc(lookup(2222, msPDRGINFO(1).PDRG , drgwt));\par
+end;\par
+if trunctime(today) is between '100111'  and '093012' then begin\par
+if lookup(2228, msPDRGINFO(1).PDRG , Ty) = 'M' then\par
+calc(lookup(2228, msPDRGINFO(1).PDRG , drgwt));\par
+end;\par
+\b     [RDL end]  Returns: \b0 Number (real)\par
+\par
+\par
+\ul Surgical CMI\ulnone\b\par
+  RDL Source:\par
+    [RDL begin]\par
+\b0 Cat[53]\{Surgical CMI\} / Cat[63]\{Surgical pts\}\par
+\b     [RDL end]  Returns: \b0 Number (real)\i\par
+    <Cross-Category Calculation>\i0\par
+\par
+\par
+\ul Surgical CMI Total\ulnone\b\par
+  RDL Source:\par
+    [RDL begin]\par
+\b0 if trunctime(today) is between '100108'  and '093009' then begin\par
+if lookup(2219, msPDRGINFO(1).PDRG , Ty) = 'S' then\par
+calc(lookup(2219, msPDRGINFO(1).PDRG , drgwt));\par
+end;\par
+if trunctime(today) is between '100109'  and '093010' then begin\par
+if lookup(2221, msPDRGINFO(1).PDRG , Ty) = 'S' then\par
+calc(lookup(2221, msPDRGINFO(1).PDRG , drgwt));\par
+end;\par
+if trunctime(today) is between '100110'  and '093011' then begin\par
+if lookup(2222, msPDRGINFO(1).PDRG , Ty) = 'S' then\par
+calc(lookup(2222, msPDRGINFO(1).PDRG , drgwt));\par
+end;\par
+if trunctime(today) is between '100111'  and '093012' then begin\par
+if lookup(2228, msPDRGINFO(1).PDRG , Ty) = 'S' then\par
+calc(lookup(2228, msPDRGINFO(1).PDRG , drgwt));\par
+end;\par
+\b     [RDL end]  Returns: \b0 Number (real)\par
+\par
+\par
+\ul Month Sort\ulnone\b\par
+  RDL Source:\par
+    [RDL begin]\par
+\b0 month (adt)\par
+\b     [RDL end]  Returns: \b0 Number (whole)\par
+\par
+\par
+\ul Year Sort\ulnone\b\par
+  RDL Source:\par
+    [RDL begin]\par
+\b0 year (adt)\par
+\b     [RDL end]  Returns: \b0 Number (whole)\par
+\par
+\par
+\ul Surgical pts\ulnone\b\par
+  RDL Source:\par
+    [RDL begin]\par
+\b0 if trunctime(today) is between '100108'  and '093009' then begin\par
+if lookup(2219, msPDRGINFO(1).PDRG , Ty) = 'S' then true;\par
+end;\par
+if trunctime(today) is between '100109'  and '093010' then begin\par
+if lookup(2221, msPDRGINFO(1).PDRG , Ty) = 'S' then true;\par
+end;\par
+if trunctime(today) is between '100110'  and '093011' then begin\par
+if lookup(2222, msPDRGINFO(1).PDRG , Ty) = 'S' then true;\par
+end;\par
+if trunctime(today) is between '100111'  and '093012' then begin\par
+if lookup(2228, msPDRGINFO(1).PDRG , Ty) = 'S' then true;\par
+end;\par
+\b     [RDL end]  Returns: \b0 Boolean\par
+\par
+\par
+\ul Medical pts\ulnone\b\par
+  RDL Source:\par
+    [RDL begin]\par
+\b0 if trunctime (today) is between '100108'  and '093009' then\par
+if lookup(2219, msPDRGINFO(1).PDRG , Ty) = 'M' then true;\par
+\par
+if trunctime (today) is between '100109'  and '093010' then\par
+if lookup(2221, msPDRGINFO(1).PDRG , Ty) = 'M' then true;\par
+\par
+if trunctime (today) is between '100110'  and '093011' then\par
+if lookup(2222, msPDRGINFO(1).PDRG , Ty) = 'M' then true;\par
+\par
+if trunctime (today) is between '100111'  and '093012' then\par
+if lookup(2228, msPDRGINFO(1).PDRG , Ty) = 'M' then true;\par
+\b     [RDL end]  Returns: \b0 Boolean\par
+\par
+\ul\par
+________________________________________________________________\par
+\b Sorting Information:____________________________________________\par
+\par
+----[ Level 1 ]----\par
+\ulnone\b0   D | Year Sort\par
+  D | Month Sort\par
+\ul\b\par
+----[ Level 2 ]----\par
+\ulnone\b0   A | *Class Key*\par
+\ul\par
+________________________________________________________________\par
+\b Routing Information:____________________________________________\par
+\ulnone\b0\par
+\b Enable Routing  : \b0 No\par
+\b Template File   : \par
+\par
+Output Destination(s): \b0\par
+\par
+\ul\b Macros\ulnone\par
+Pre-Load: \b0\par
+\par
+\b Post-Load: \ul\b0\par
+________________________________________________________________\par
+\par
+________________________________________________________________\par
+\b Search Control:_________________________________________________\par
+\ulnone\b0\par
+\b Key    : \b0 DDt\par
+\b Include: \b0 Only non discharged records.\par
+\b Range  : \par
+Systems: \b0 IP \par
+\b Maximum Records: \par
+\ul Record Filter\ulnone\par
+  RDL Source:\par
+    [RDL begin]\par
+\b0 init begin\par
+_payer := prompt ("Please enter Financial Class(es) or Press Enter to include all Financial Classes");\par
+end;\par
+if DOCREV is not empty then begin\par
+    if  FinCl is in _payer then true\par
+       else if _payer = '' then true;\par
+end;\par
+\b     [RDL end]  Returns: \b0 Boolean\par
+\ul\par
+________________________________________________________________\par
+\par
+________________________________________________________________\par
+\b Modification Status:____________________________________________\par
+\ulnone\b0\par
+\b Author: \b0 CODE3\par
+\b   Date: \b0 Wednesday, August 01, 2001\par
+\par
+\b Modifier: \b0 CODE3\par
+\b     Date: \b0 Friday, September 02, 2011\par
+\par
+\b Number of Records used: \b0 23\ul\par
+________________________________________________________________\par
+\b Comments: \b0\i (Alert: No)\i0  \ulnone  \par
+The category of "# of patients reviewed" counts by month. So if the same patient was reviewed multiple times in one month, it is counted once.  If the same patient is reviewed across 2 or more months, the patient is counted once for each month.  3m\par
+\par
+\ul\par
+________________________________________________________________\par
+\ulnone\par
+}
+ 
