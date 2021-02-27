@@ -1,0 +1,6 @@
+[Archives]
+3=D:\Data\MailArchive\Archive - 2010.pst
+4=D:\Data\MailArchive\Archive - 2011.pst
+5=U:\My Documents\outlook\Archive - 2009.pst
+
+
