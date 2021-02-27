@@ -1,0 +1,20 @@
+diff -r ee0f584fc4dc -r d7926d7136bd lexers/LexAU3.cxx
+--- a/lexers/LexAU3.cxx	Mon Jan 23 00:10:48 2012 +0200
++++ b/lexers/LexAU3.cxx	Mon Jan 23 08:13:58 2012 +0200
+@@ -729,6 +729,11 @@ static void FoldAU3Doc(unsigned int star
+ 	bool foldInComment = styler.GetPropertyInt("fold.comment") == 2;
+ 	bool foldCompact = styler.GetPropertyInt("fold.compact", 1) != 0;
+ 	bool foldpreprocessor = styler.GetPropertyInt("fold.preprocessor") != 0;
++	const int LastLine = styler.GetLine(endPos);		//! var for use in FIX Last lines end tags not folding / fold highlight shows invalid range with Empty Newline
+ 	// Backtrack to previous line in case need to fix its fold status
+ 	int lineCurrent = styler.GetLine(startPos);
+ 	if (startPos > 0) {
+@@ -851,7 +856,8 @@ static void FoldAU3Doc(unsigned int star
+ 			}
+ 		}
+ 		// End of Line found so process the information
+-		if ((ch == '\r' && chNext != '\n') || (ch == '\n') || (i == endPos)) {
++		if (  (ch == '\r' && chNext != '\n') || (ch == '\n') || (i == endPos)|| (lineCurrent == LastLine)  ) {		//! FIX Last lines end tags not folding / fold highlight shows invalid range with Empty Newline
+ 			// **************************
+ 			// Folding logic for Keywords
+ 			// **************************
