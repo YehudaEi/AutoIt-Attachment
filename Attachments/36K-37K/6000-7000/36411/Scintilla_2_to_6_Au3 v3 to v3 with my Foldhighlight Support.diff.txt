@@ -1,0 +1,45 @@
+diff -r b51ffab61e8e -r 23ae5b5699ac lexers/LexAU3.cxx
+--- a/lexers/LexAU3.cxx	Sun Jan 22 05:16:52 2012 +0200
++++ b/lexers/LexAU3.cxx	Sun Jan 22 06:11:56 2012 +0200
+@@ -729,6 +729,8 @@ static void FoldAU3Doc(unsigned int star
+ 	bool foldInComment = styler.GetPropertyInt("fold.comment") == 2;
+ 	bool foldCompact = styler.GetPropertyInt("fold.compact", 1) != 0;
+ 	bool foldpreprocessor = styler.GetPropertyInt("fold.preprocessor") != 0;
++	bool foldHighlight = styler.GetPropertyInt ("fold.highlight") !=0; //! Add fold.highlight friendly folding
++
+ 	// Backtrack to previous line in case need to fix its fold status
+ 	int lineCurrent = styler.GetLine(startPos);
+ 	if (startPos > 0) {
+@@ -881,9 +883,12 @@ static void FoldAU3Doc(unsigned int star
+ 					strcmp(szKeyword,"next") == 0    || strcmp(szKeyword,"until") == 0 ||
+ 					strcmp(szKeyword,"endwith") == 0 ||strcmp(szKeyword,"wend") == 0){
+ 						levelNext--;
+-						if (!(levelPrev==levelNext))
+-							levelCurrent--;
++					if (!foldHighlight){ //! Add fold.highlight friendly folding
++						if (! (levelPrev == levelNext) )
++							levelCurrent--; 			//! Ends the fold before the current line, so above words are visible when folded.
++					}							//! Add fold.highlight friendly folding
+ 				}
++
+ 				// end the fold for these words before the current line and Start new fold
+ 				if (strcmp(szKeyword,"case") == 0      || strcmp(szKeyword,"else") == 0 ||
+ 					strcmp(szKeyword,"elseif") == 0 ) {
+@@ -894,6 +899,7 @@ static void FoldAU3Doc(unsigned int star
+ 						levelNext--;
+ 						levelNext--;
+ 						levelCurrent--;
++					if (!foldHighlight)	//! Add fold.highlight friendly folding
+ 						levelCurrent--;
+ 				}
+ 				// end the fold for these words on the current line
+@@ -931,7 +937,8 @@ static void FoldAU3Doc(unsigned int star
+ 				// Subtract level when Comment block Ends
+ 				else if ((strcmp(szKeyword, "#ce")== 0 || strcmp(szKeyword, "#comments-end")== 0)) {
+ 					levelNext--;
+-					levelCurrent--;
++					if (!foldHighlight)	//! Add fold.highlight friendly folding
++						levelCurrent--;
+ 				}
+ 				// fold till the last line for normal comment lines
+ 				else if (IsStreamCommentStyle(stylePrev)
