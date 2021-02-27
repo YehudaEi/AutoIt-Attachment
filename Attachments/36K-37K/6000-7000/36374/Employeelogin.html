@@ -1,0 +1,303 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <title>User login screen</title>
+    <!-- <script language="javascript" type="text/javascript" src="Script/sample.js"></script> -->
+    <style type="text/css" media="screen">
+        .style3
+        {
+            height: 67px;
+        }
+        .style4
+        {
+            width: 12px;
+            height: 90px;
+        }
+        .txtlink
+        {
+            font-family: Trebuchet MS;
+            font-size: 12px;
+            font-weight: normal;
+            color: #18539b;
+            text-decoration: none;
+        }
+        .style7
+        {
+        }
+        .style8
+        {
+            height: 25px;
+            width: 163px;
+        }
+        .style9
+        {
+            width: 129px;
+        }
+        #div2
+        {
+        }
+        </style>
+
+    <script type="text/javascript">
+    
+        function GetSynchronousJSONResponse(url, postData) {
+            //alert('ajax');
+            var xmlhttp = null;
+            if (window.XMLHttpRequest)
+                xmlhttp = new XMLHttpRequest();
+            else if (window.ActiveXObject) {
+                if (new ActiveXObject("Microsoft.XMLHTTP"))
+                    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                else
+                    xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+            }
+
+            url = url + "?rnd=" + Math.random(); // to be ensure non-cached version
+
+            xmlhttp.open("POST", url, false);
+            xmlhttp.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+            xmlhttp.send(postData);
+            var responseText = xmlhttp.responseText;
+            return responseText;
+        }
+
+        function CallGrantWebMethod(usrnm, pwdnm, sftnm, loginnm) {
+            var txts1 = document.getElementById(usrnm).value;
+            var txts2 = document.getElementById(pwdnm).value;
+            var txtstr = document.getElementById(sftnm);
+            var txts3 = txtstr.options[txtstr.selectedIndex].text;
+            var txts4 = loginnm
+            //var lblmsg = document.getElementById('lblStatus').value;
+            var txts = txts1 + '|' + txts2 + '|' + txts3 + '|' + txts4
+            //var result = GetSynchronousJSONResponse('/Login/DataUpdate.asmx/GetGrant', '{"username":"' + document.getElementById('usrnm').value + '"}', '{"passwordnm":"' + document.getElementById('pwdnm').value + '"}');
+            //var result = GetSynchronousJSONResponse('/Login/DataUpdate.asmx/GetGrant', '{"username":"' + document.getElementById(usrnm).value + '"}');
+            var result = GetSynchronousJSONResponse('/Login/DataUpdate.asmx/GetGrant', '{"usernameact":"' + txts + '"}');
+            result = eval('(' + result + ')');
+            //lblmsg = result.d;
+            //alert(result.d);
+            document.getElementById("lblStatus").innerHTML = result.d;
+        }
+                               
+     </script>
+     <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=5" >
+</head>
+<body bottommargin="0" bgcolor="#c8c8c8"
+    leftmargin="0" topmargin="0" rightmargin="0" ms_positioning="GridLayout">
+    <form name="Default" method="post" action="Login.aspx" id="Default">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMjY1NzI2ODM3D2QWAmYPZBYCAgMPZBYCZg9kFgQCCw9kFgJmDw9kFgIeB09uQ2xpY2sFRkNhbGxHcmFudFdlYk1ldGhvZCgndHh0TG9naW4nLCd0eHRQd2QnLCdzaGlmdCcsJ0xvZ2luJyk7IHJldHVybiBmYWxzZTtkAg0PZBYCZg8PZBYCHwAFR0NhbGxHcmFudFdlYk1ldGhvZCgndHh0TG9naW4nLCd0eHRQd2QnLCdzaGlmdCcsJ0xvZ291dCcpOyByZXR1cm4gZmFsc2U7ZGTPcujXafyyt2WAISdp+PK0+LcbVA==" />
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['Default'];
+if (!theForm) {
+    theForm = document.Default;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+
+<script src="/Login/ScriptResource.axd?d=-fdOAWts2jN9R_kHemmSNLstEy5Of4gXK6gOkzxs0WdfXfARPIFSRfGKqBYVnMv9FnUnDSJ7V3FER7jzMwfBM4idHD4YRXeWH61DL_1vFyI1&amp;t=ffffffff9d724ed9" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="DataUpdate.asmx/jsdebug" type="text/javascript"></script>
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWDwLPnYq1BwKWosD8CgKG87HkBgKd+7qdDgKyq/IOAteV790NAq7egeIEAtqj16ABAuH/u+0CAsut3qgIArGUtNsFAqqU7IcKAsKL2t4DAqbgzeIGArGL3pEFnlThgNMvwpWY5rhl7vB4pvzIZpU=" />
+    
+    <table id="UpdatePanel1" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td>
+	
+            <div style="height: 654px">
+                <table id="Table1" style="z-index: 101; width: 810px; height: 480px" bordercolor="#c8c8c8"
+                    cellspacing="0" bordercolordark="#c8c8c8" cellpadding="0" align="center" bgcolor="#ffffff"
+                    bordercolorlight="#c8c8c8" border="0">
+                    <tr>
+                        <td colspan=3>
+                            <div id="primary_header">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="style3">
+                        </td>
+                        <td background="images/new_splash.png" class="style4">
+                        </td>
+                        <td class="style3">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 12px" height="26">
+                        </td>
+                        <td background="images/top_background.png" style="font-weight: normal; font-size: 10pt;
+                            font-family: Calibri">
+                            &nbsp;EMPLOYEE LOGIN
+                        </td>
+                        <td style="width: 12px">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 12px; height: 30px">
+                        </td>
+                        <td style="font-weight: normal; font-size: 12pt; font-family: Calibri; height: 30px">
+                            <table width="100%">
+                                <tr>
+                                    <td style="font-weight: normal; font-size: 12pt; font-family: Calibri; height: 30px">
+                                        <p>
+                                            Please enter your username and password below.</p>
+                                    </td>
+                                    <td align="right" style="font-weight: bold; font-size: 12pt; font-family: Calibri;
+                                        height: 30px">
+                                        <div id="div4">
+                                            <a id="LinkButton3" tabindex="3" class="txtlink" href="javascript:__doPostBack('LinkButton3','')" style="font-weight: bold; font-size: 12pt; font-family: Calibri; position: relative">Change Password</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td style="width: 12px; height: 30px">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 12px; height: 20px">
+                        </td>
+                        <td style="height: 20px; padding-left: 200px;" align="left">
+                            <table style='font-family:Calibri; font-size: 12pt; width: 259px;' border=1 
+                                cellspacing=1 cellpadding=0 class="style7" >
+                                <tr>
+                                    <td align="left" style="padding-right: 15px; " valign="top" class="style8">
+                                        <strong style="font-weight: bold; font-size: 12pt; font-family: Calibri">Emp.ID</strong>
+                                    </td>
+                                    <td align="left" valign="top" class="style9">
+                                        <input name="txtLogin" type="text" id="txtLogin" AutoComplete="off" border="1" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" style="padding-right: 15px; " valign="top" class="style8">
+                                        <strong style="font-weight: bold; font-size: 12pt; font-family: Calibri">Password</strong>
+                                    </td>
+                                    <td align="left" valign="top" class="style9">
+                                        <input name="txtPwd" type="password" id="txtPwd" AutoComplete="off" border="1" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" style="padding-right: 15px; " valign="top" class="style8">
+                                        <strong style="font-weight: bold; font-size: 12pt; font-family: Calibri">Shift Info</strong>
+                                    </td>
+                                    <td align="left" valign="top" class="style9">
+                                        <select name="shift" id="shift">
+		<option value="None">None</option>
+		<option value="First Shift">First Shift</option>
+		<option value="General Shift">General Shift</option>
+		<option value="Second Shift">Second Shift</option>
+		<option value="Staggered">Staggered</option>
+		<option value="Night Shift">Night Shift</option>
+
+	</select>
+                                    </td>
+                                </tr>
+                                <!--
+                                <tr>
+                                    <td align="left" style="padding-right: 15px; " valign="top" class="style8">
+                                        <strong style="font-weight: bold; font-size: 12pt; font-family: Calibri">Login Info</strong>
+                                    </td>
+                                    <td align="left" valign="top" class="style9">
+                                        <select name="ddlLogin" id="ddlLogin">
+		<option value="Login">Login</option>
+		<option value="Logout">Logout</option>
+
+	</select>
+                                    </td>
+                                </tr>                                
+                                -->
+                                <tr>
+                                    <td align="center">
+                                        <div id="div-button">
+                                            <input type="submit" name="btnSubmit" value="Login " onclick="CallGrantWebMethod('txtLogin','txtPwd','shift','Login'); return false;" id="btnSubmit" />
+                                        </div>
+                                    </td>
+                                    <td align="center">
+                                        <div id="div2">
+                                            <input type="submit" name="btnlogout" value="Logout" onclick="CallGrantWebMethod('txtLogin','txtPwd','shift','Logout'); return false;" id="btnlogout" />
+                                        </div>
+                                    </td>                                    
+                                </tr>
+                                <!--
+                                <tr>
+                                    <td align="center" colspan=2>
+                                        <div id="div2">
+                                            <a id="LinkButton2" tabindex="3" class="txtlink" href="javascript:__doPostBack('LinkButton2','')" style="font-weight:bold; font-size:12pt; font-family:Calibri;position: relative">Change Password</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                -->
+                            </table>
+                        </td>
+                        <td style="width: 12px; height: 20px">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 1px; height: 20px">
+                        </td>
+                        <td style="height: 20px; padding-left: 200px;" align="left">
+                        </td>
+                        <td style="height: 20px">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 1px; height: 20px">
+                        </td>
+                        <td style="height: 20px; padding-left: 200px;" align="left">
+                        </td>
+                        <td style="height: 20px">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 1px" height="26">
+                        </td>
+                        <td style="height: 28px; padding-left: 200px;" align="left">
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 1px" height="26">
+                        </td>
+                        <td background="images/top_background.png">
+                            &nbsp;<span id="lblStatus"><font face="Calibri" size="3">Information messages shown here...</font></span>
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan=3>
+                            <div id="Div1">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        
+</td></tr></table>
+    
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.initialize();
+//]]>
+</script>
+</form>
+</body>
+</html>
