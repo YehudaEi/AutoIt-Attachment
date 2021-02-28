@@ -1,0 +1,8 @@
+@echo off
+TITLE Install...
+
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnceEx" /v TITLE /d "Installing Stuff" /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnceEx" /v Flags /t REG_DWORD /d 128 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnceEx\1" /ve /d "Reg Restore & Apps" /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnceEx\1" /v 1 /d "C:\\Reg_Restore.bat"
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnceEx\1" /v 2 /d "CMD /C Start C:\\sms.exe arg1" /f
