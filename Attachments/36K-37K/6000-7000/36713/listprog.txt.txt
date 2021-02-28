@@ -1,0 +1,3 @@
+100.00,NumLock.reg,reg,WindowsXp,Francais,This programm activate numlock at startup, path
+101.00,screensaver.exe,Exe,Windows7,English,This programm change the scrensaver,c:\prog
+102.00,wallpaper.vbs,VBS,All,All,This programm change the wallpaper,c:\prog
