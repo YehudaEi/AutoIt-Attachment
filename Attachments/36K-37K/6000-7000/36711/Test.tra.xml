@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Programik>
+  <global>
+	<id>cerrar</id>
+	<v>1 Close</v>
+  </global>
+  <global>
+	<id>aceptar</id>
+	<v>2 Agree</v>
+  </global>
+  <global>
+	<id>cancelar</id>
+	<v>3 Cancel</v>
+  </global>
+  <global>
+	<id>cancelar</id>
+	<v>4 How much</v>
+	<v>5 The program uses a lot of information that identifies the way you play and how they should behave the program according to your interest, it is important to save before you Zamknąć the program. Your $ configuration is stored in our data base, where their representatives are connected to your account also have their same preferences</v>
+    <v>6 ą, ń, ę, ż, dż, ź, ó, ł, ś, ć</v>
+    <v>7, Ą, Ń, Ę, Ż DŻ, Ź, Ó, Ł, Ś, Ć</v>
+  </global>
+ <Programik>
