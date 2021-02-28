@@ -1,0 +1,74 @@
+How do I pass this to my program, so when my program opens I get this result after it runs
+
+D:\MOVIES\MURDER BY DEATH (1980)\MURDER_BY_DEATH.ISO
+
+$answer = InputBox("Question", "What Is The Film Destination?","C:\Movies", "",)
+
+$filmyear = InputBox("Film Year", "Please Enter The Film Year")
+
+$filmname = InputBox("Film Name", "Please Enter The Film Name")
+
+D:\MOVIES\MURDER BY DEATH (1980)\MURDER_BY_DEATH.ISO
+
+Set Program=C:\Program Files\DVDFab 8 Qt\
+
+"%program%dvdfab.exe" /mode "mainmovie" /src "g:\" /dest "%dest%\%show% (%year%)\%show% (%year%).iso" /DISPLAYFORCEDSUB "Yes" /Title "auto" /removemenu "yes" /removepgc "yes" /outdisc "dvd9" /close
+
+============
+
+This is what I have now
+
+#cs ----------------------------------------------------------------------------
+
+ AutoIt Version: 3.3.8.1
+ Author:         
+
+ Script Function:
+	Template AutoIt script.
+
+#ce ----------------------------------------------------------------------------
+
+;Script Start - Add your code below here
+
+#include <GUIConstantsEx.au3>
+
+Opt('MustDeclareVars', 1)
+
+Dim $msg
+Dim $guiHandle = GUICreate("Run DVDFAB", 200, 60)
+Dim $blurbLabel  = GUICtrlCreateLabel("Enter Your Choice", 5, 5)
+Dim $dvdfabbutton  = GUICtrlCreateButton("Run DVDFab", 5, 30, 75)
+Dim $exitbutton = GUICtrlCreateButton("Exit", 120, 30, 75)
+
+GUISetState(@SW_SHOW, $guiHandle )
+While 1
+    $msg = GUIGetMsg($guiHandle )
+
+    Select
+        Case $msg == $GUI_EVENT_CLOSE Or $msg = $exitbutton
+            Exit
+
+        Case $msg == $dvdfabbutton
+
+            ;do dvdfab
+			;********************************************************************
+			;RunWait(@COMSPEC & " /c Start fabisog.exe") ; THIS WORKS
+			;********************************************************************
+			;ShellExecuteWait("fabisog.exe") ; THIS WORKS
+			;********************************************************************
+			RunWait("fabisog.exe") ; THIS WORKS
+			MsgBox(0,"Debug","Program is done!")
+			;********************************************************************
+			;RunWait(@COMSPEC & " /c Start fabisog.exe") ; THIS WORKS
+			;********************************************************************
+			;RunWait("fabisog.exe") ; THIS WORKS
+		    ;MsgBox(0,"Debug","Program is done!")
+			;********************************************************************
+
+
+
+
+
+        Case Default
+    EndSelect
+WEnd
