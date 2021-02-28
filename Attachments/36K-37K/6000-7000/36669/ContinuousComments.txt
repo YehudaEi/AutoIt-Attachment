@@ -1,0 +1,144 @@
+-- TIME_STAMP   2012-02-17 15:29:16   v 0.6
+
+--[[ FUNCTION: Continuous Comment Mode
+----------------------------------------------------------------------------------------------------------------------------------
+DESCRIPTION
+
+	The function is activated using a hotkey. If the mode is active, the cursor appears as a hand. At the current cursor position
+	will inserted chars from properties ('ContinuousComment.Chars.*.au3') e.g. "; ==".
+	In properties 'ContinuousComment.LFpos.*.au3' is determinate at which position should skip to next line.
+	It's triggered by press key <space> and position is greater than or equal to position from properties. So you can continuous
+	write comments and if the breakpoint is reached - automatically jumps the cursor to next line and inserts command-char at the
+	same position like in line before. If length of code in next line greather than the comment start position before, the comment
+	in this line starts behind the code.
+	Optional, contiguous comment with automatic line breaks are marked by additional break character.
+	You can manually skip to next line by press key <arrow down>. To appear in the next line no comment can turn "down arrow"
+	to the next line to be changed (in the current row will be no comment character set).
+	Stops the continuous-comment mode again with the hotkey, which is also used for launch. The cursor is reset.
+----------------------------------------------------------------------------------------------------------------------------------
+INSTALLATION
+
+	Rename the attached file to "ContinuousComments.lua".
+	Save the script "ContinuousComments.lua" to folder "..\SciTE\LUA\".
+
+	entries in "SciTEUser.properties":
+		ContinuousComment.LFpos.*.au3=170               <== line position for automatically line break
+		ContinuousComment.Chars.*.au3=;                 <== Character(s) that begins each comment line
+		ContinuousComment.BreakCharsLast.*.au3=˜ ˜ ›      <== [optional] Character(s) at line end on rows with automatically line break
+		ContinuousComment.BreakCharsNext.*.au3=›        <== [optional] Character(s) at next line on rows with automatically line break (in front of your text)
+
+		# 36 Comment Continuous
+		command.name.36.*=Activate Comment Mode
+		command.36.*=CommentModeActivate
+		command.mode.36.*=subsystem:lua,savebefore:no
+		command.shortcut.36.*=Ctrl+Shift+K              <== desired hotkey
+
+	entrie in "..\SciTE\LUA\SciTEStartup.lua"
+		LoadLuaFile("ContinuousComments.lua")           <== Insert at end of file!!
+----------------------------------------------------------------------------------------------------------------------------------
+]]
+
+--[[ FUNKTION: Kontinuierlicher Kommentar Modus
+----------------------------------------------------------------------------------------------------------------------------------
+BESCHREIBUNG
+
+	Per Hotkey wird die Funktion aktiviert. Dabei wird an der aktuellen Cursorposition die in den properties
+	('ContinuousComment.Chars.*.au3') festgelegte Zeichenfolge gesetzt (z.B. "; ==").
+	In den properties 'ContinuousComment.LFpos.*.au3' wird festgelegt an welcher Spaltenposition ein automatischer Wechsel auf die
+	nächste Zeile erfolgen soll (Trigger: Leerzeichen an Position gleich od. größer Spaltenangabe aus den properties). Man kann
+	also einfach fortlaufend seinen Kommentar schreiben und er wird automatisch in der Folgezeile hinter dem Code, an derselben
+	Spaltenposition wie in der vorigen Zeile, fortgesetzt. Ist der Code in der Folgezeile länger, beginnt der Kommentar erst
+	dahinter.
+	Manuell kann jeder Zeit mit "Pfeil ab" auf die Folgezeile gewechselt werden. Soll in der Folgezeile kein Kommentar erscheinen,
+	kann wiederum mit "Pfeil ab" zur nächsten Zeile gewechselt werden (in der momentanen Zeile wird dann kein Kommentarzeichen
+	gesetzt).
+	Beendet wird der Kontinuierliche-Kommentar-Modus wiederum mit dem Hotkey, das auch zum Start verwendet wird.
+----------------------------------------------------------------------------------------------------------------------------------
+INSTALLATION
+
+	Das Skript "ContinuousComments.lua" im Ordner "..\SciTE\LUA\" speichern.
+
+	Einträge in "SciTEUser.properties":
+		ContinuousComment.LFpos.*.au3=170               <== gewünschte Position für automatischen Zeilenwechsel beim Kommentar schreiben
+		ContinuousComment.Chars.*.au3=;                 <== Zeichenfolge mit der jede Kommentarzeile beginnt (Leerzeichen wird automatisch angefügt)
+		ContinuousComment.BreakCharsLast.*.au3=˜ ˜ ›      <== [optional] Zeichen am Zeilenende bei automatischem Umbruch
+		ContinuousComment.BreakCharsNext.*.au3=›        <== [optional] Zeichen am Anfang der Folgezeile bei automatischem Umbruch
+
+		# 36 Comment Continuous
+		command.name.36.*=Kommentarmodus aktivieren
+		command.36.*=CommentModeActivate
+		command.mode.36.*=subsystem:lua,savebefore:no
+		command.shortcut.36.*=Ctrl+Shift+K              <== gewünschter Hotkey
+
+	Eintrag in "..\SciTE\LUA\SciTEStartup.lua"
+		LoadLuaFile("ContinuousComments.lua")           <== Am Dateiende einfügen!!
+----------------------------------------------------------------------------------------------------------------------------------
+]]
+
+
+CommentHitKey = EventClass:new(Common)
+local ext = props['FileExt']
+local lfPos = tonumber(props['ContinuousComment.LFpos.*.' .. ext])
+local charComm = props['ContinuousComment.Chars.*.' .. ext]..' '
+local charBreak1 = props['ContinuousComment.BreakCharsLast.*.' .. ext]
+local charBreak2 = props['ContinuousComment.BreakCharsNext.*.' .. ext]
+local fCommentModeOn, fNext, fIsNewLine = false, false, false
+local lastLine, column
+
+local isLFpos = function()
+	local pos = editor.Column[editor.CurrentPos]
+	if pos >= lfPos then
+		return true
+	else
+		return false
+	end
+end
+
+local ContinuousComment = function()
+	local autoBreak = ''
+	if not fIsNewLine then
+		editor:GotoLine(editor:LineFromPosition(editor.CurrentPos) +1)
+		if charBreak2:len() > 0 then autoBreak = charBreak2..' ' end
+	else
+		fIsNewLine = false
+	end
+	local strAdd = ' '
+	editor:LineEnd()
+	col = editor.Column[editor.CurrentPos]
+	if col < column then
+		strAdd = string.rep(' ', column - col)
+	end
+	editor:InsertText(editor.CurrentPos, strAdd..charComm..autoBreak)
+	editor:LineEnd()
+end
+
+function CommentHitKey:OnKey(_keycode)
+	if fCommentModeOn then                                       -- fortsetzender Kommentarmodus ist aktiv
+		local fBreak = isLFpos()
+		if _keycode == 32 and fBreak then                        -- Leerzeichen u. Position für Zeilenwechsel erreicht (automatischer Zeilenwechsel)
+			fNext = true                                               -- Marker neue Zeile
+		elseif _keycode == 40 then                                  -- Pfeil_ab (manueller Zeilenwechsel)
+			fNext = true  fIsNewLine = true                            -- Marker neue Zeile und Marker in-neuer-Zeile
+		elseif fNext then                                           -- in neuer Zeile ==> Kommentarzeichen einfügen
+			fNext = false
+			if not fIsNewLine then                                     -- bei automatischem Wechsel (wenn in den properties ein Umbruchsymbol definiert):
+				editor:InsertText(editor.CurrentPos, charBreak1)          -- am Ende Umbruchsymbol aus den properties anhängen
+			end
+			ContinuousComment()
+		end
+	end
+	return nil
+end
+
+function CommentModeActivate()
+	if not fCommentModeOn then
+		editor:LineEnd()
+		column = editor.Column[editor.CurrentPos]
+		editor.Cursor = 8                           -- Cursor wechseln (Hand)
+		editor:InsertText(editor.CurrentPos, charComm)
+		editor:LineEnd()
+	else
+		editor.Cursor = -1                          -- Cursor zurück auf Standard
+	end
+	fCommentModeOn = not fCommentModeOn
+end
