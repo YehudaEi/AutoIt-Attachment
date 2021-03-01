@@ -1,0 +1,81 @@
+
+Visible Text:
+Xerox Phaser 6270 Photobook Printer - Firmware Update Software
+An update is available for the Phaser6270 printer firmware.(ESS Ver201202171423)
+Please make sure the printer(s) is powered on.
+Click the [Next] button to start the update.
+Next>
+Exit
+
+
+
+
+
+
+------------------------------------------
+
+>>>> Window  Summary<<<<
+Title:	Xerox Phaser 6270 Photobook Printer - Firmware Update Software
+Class:	#32770
+Position:	224, 10
+Size:	792, 655
+Style:	0x94C800C4
+ExStyle:	0x00010101
+Handle:	0x0004041A
+
+>>>> Control <<<<
+Class:	#32770
+Instance:	1
+ClassnameNN:	#327701
+Name:	
+Advanced (Class):	[CLASS:#32770; INSTANCE:1]
+ID:	
+Text:	Xerox Phaser 6270 Photobook Printer - Firmware Update Software
+Position:	11, 11
+Size:	765, 553
+ControlClick Coords:	599, 271
+Style:	0x50010444
+ExStyle:	0x00010000
+Handle:	0x0004047C
+
+>>>> Mouse <<<<
+Position:	837, 321
+Cursor ID:	0
+Color:	0xECE9D8
+
+>>>> StatusBar <<<<
+
+>>>> ToolsBar <<<<
+
+>>>> Visible Text <<<<
+Xerox Phaser 6270 Photobook Printer - Firmware Update Software
+An update is available for the Phaser6270 printer firmware.(ESS Ver201202171423)
+Please make sure the printer(s) is powered on.
+Click the [Next] button to start the update.
+Next>
+Exit
+
+
+>>>> Hidden Text <<<<
+Network
+USB
+Parallel
+When updating Firmware via Network interface, do not print jobs or open the print driver properties until the update is completed.
+When updating Firmware via USB interface,do not print jobs or open the print driver properties until the update is completed.
+When updating Firmware via Parallel interface, do not print jobs or open the print driver properties until the update is completed.
+Select a port for updating
+Network
+USB
+Parallel
+<Back
+Finish
+Help
+
+
+
+
+
+
+
+
+
