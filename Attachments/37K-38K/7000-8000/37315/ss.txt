@@ -1,0 +1,7 @@
+<ref>M.~Ainswoggegrth and P.~Coggins, {\em The stability of mixed $hp$-finite  element methods for {S}tokes flow on high aspect ratio elements}, SIAM J. Numer. Anal., 38 (2000), pp.~1721--1761.</ref>
+
+<ref>T.~Apel, {\em Anisotropic Finite Elements: Local Estimation and  Applications}, B.G.Teubner Stuttgart{$\cdot$}Leipzig, Germany, 1999.</ref>
+
+<ref>T.~Apel and S.~Nicaise, {\em The inf-sup condition for low order elements on anisotropic meshes}, CALCOLO, 41 (2004), pp.~89--113.</ref>
+
+<ref>T.~Apel and H.~Randrianarivony, {\em Stability of discretizations of the {S}tokes problem on anisotropic meshes}, Math. Comput. Simulation, 61 (2003), pp.~437--447.</ref>
