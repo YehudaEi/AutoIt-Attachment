@@ -62,28 +62,31 @@ Local Const $sBaseUrl = "https://www.autoitscript.com/forum/applications/core/in
 
 IniWrite("config.ini", "General", "StartFrom", $iStart)
 
-Global $i
-For $i = $iStart To $iStart + $iLen
-	Local $sDirName = @ScriptDir & "\Attachments\" & _getSubDirName($i) & "\" & $i
-	DirCreate($sDirName)
-	Local $sBaseName = HTTPFileName($sBaseUrl & $i)
-	If @error Then $sBaseName = $i
-	Local $sFilePath = $sDirName & "\" & $sBaseName
-	Local $hDownload = InetGet($sBaseUrl & $i, $sFilePath, $INET_FORCERELOAD, $INET_DOWNLOADBACKGROUND)
-	Do
-		Sleep(250)
-	Until InetGetInfo($hDownload, $INET_DOWNLOADCOMPLETE)
-	InetClose($hDownload)
+Global $i, $iCounter = 0
+While $iCounter = $iLen
+	For $i = $iStart To $iStart + 500000
+		Local $sDirName = @ScriptDir & "\Attachments\" & _getSubDirName($i) & "\" & $i
+		DirCreate($sDirName)
+		Local $sBaseName = HTTPFileName($sBaseUrl & $i)
+		If @error Then $sBaseName = $i
+		Local $sFilePath = $sDirName & "\" & $sBaseName
+		Local $hDownload = InetGet($sBaseUrl & $i, $sFilePath, $INET_FORCERELOAD, $INET_DOWNLOADBACKGROUND)
+		Do
+			Sleep(250)
+		Until InetGetInfo($hDownload, $INET_DOWNLOADCOMPLETE)
+		InetClose($hDownload)
 
-	If Not DirGetSize($sDirName, 1)[1] And Not DirGetSize($sDirName, 1)[2] Then
-		DirRemove($sDirName)
-	Else
-		RunWait("git add .", @ScriptDir, @SW_HIDE)
-		RunWait("git commit -m ""add " & $sBaseName & """ -m ""From the link: " & $sBaseUrl & $i & """", @ScriptDir, @SW_HIDE)
-	EndIf
+		If Not DirGetSize($sDirName, 1)[1] And Not DirGetSize($sDirName, 1)[2] Then
+			DirRemove($sDirName)
+		Else
+			$iCounter = $iCounter + 1
+			RunWait("git add .", @ScriptDir, @SW_HIDE)
+			RunWait("git commit -m ""add " & $sBaseName & """ -m ""From the link: " & $sBaseUrl & $i & """", @ScriptDir, @SW_HIDE)
+		EndIf
 
-	IniWrite("config.ini", "General", "Start", $i + 1)
-Next
+		IniWrite("config.ini", "General", "Start", $i + 1)
+	Next
+Wend
 
 IniWrite("config.ini", "General", "Length", $iLen)
 
