@@ -63,7 +63,8 @@ Local Const $sBaseUrl = "https://www.autoitscript.com/forum/applications/core/in
 IniWrite("config.ini", "General", "StartFrom", $iStart)
 
 Global $i, $iCounter = 0
-While $iCounter = $iLen
+
+While $iCounter <= $iLen
 	For $i = $iStart To $iStart + 500000
 		Local $sDirName = @ScriptDir & "\Attachments\" & _getSubDirName($i) & "\" & $i
 		DirCreate($sDirName)
@@ -90,9 +91,9 @@ Wend
 
 IniWrite("config.ini", "General", "Length", $iLen)
 
-MsgBox(0, "AutoIt Attachment", "Done. (" & $iStart & " - " & ($iStart + $iLen) & ")")
+MsgBox(0, "AutoIt Attachment", "Done. (" & $iStart & " - " & ($i) & ")")
 
 Func _Stats()
 	Local $iStartFrom = Number(IniRead("config.ini", "General", "StartFrom", "0"))
-	MsgBox(0, "AutoIt Attachment", "Started From: " & $iStartFrom & @CRLF & "Now: " & $i)
+	MsgBox(0, "AutoIt Attachment", "Started From: " & $iStartFrom & @CRLF & "Now: " & $i & @CRLF & "Current: " & $iCounter)
 EndFunc
