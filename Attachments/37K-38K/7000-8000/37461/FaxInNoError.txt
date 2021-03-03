@@ -1,0 +1,26 @@
+D:\Hlthpnt\sbin>faxin
+Connecting to Database...
+Connected to EMR...
+------------------------------------------ Fax In
+Product : Allscripts EMR
+Version : 9.2 Service Pack 2
+Build   : 9.2.2.11
+------------------------------------------ Start: 4/26/2012 10:18:06 AM
+
+Connecting to Database...
+Connected to EMR...
+Loading Locations...
+Config: Location "Urology Northwest" using "FaxIn_castelle.dll".
+Config: Location "Alaska Peace Health Clinic" using "FaxIn_castelle.dll".
+Config: Location "Alaska Peace Health OR" using "FaxIn_castelle.dll".
+Processing: 3 Locations...
+Processing: Receiving faxes through server FAXBACK (FaxIn_castelle.dll).
+Processing:   Fax from number: unknown, Batch ID 90214 created with 6 pages.
+Processing:   Fax from number: unknown, Batch ID 90215 created with 2 pages.
+Processing:   Done.
+Processing: Receiving faxes through server FAXBACK (FaxIn_castelle.dll).
+Processing:   Done.
+Processing: Receiving faxes through server FAXBACK (FaxIn_castelle.dll).
+Processing:   Done.
+
+------------------------------------------ End: 4/26/2012 10:18:07 AM
