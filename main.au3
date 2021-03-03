@@ -57,14 +57,14 @@ TraySetOnEvent(-13, "_Stats")
 
 
 Local $iStart = Number(IniRead("config.ini", "General", "Start", "0"))
-Local $iLen = Number(IniRead("config.ini", "General", "Length", "10"))
+Local $iLen = 1;Number(IniRead("config.ini", "General", "Length", "10"))
 Local Const $sBaseUrl = "https://www.autoitscript.com/forum/applications/core/interface/file/attachment.php?id="
 
 IniWrite("config.ini", "General", "StartFrom", $iStart)
 
 Global $i, $iCounter = 0
 
-While $iCounter <= $iLen
+While $iCounter < $iLen
 	For $i = $iStart To $iStart + 500000
 		Local $sDirName = @ScriptDir & "\Attachments\" & _getSubDirName($i) & "\" & $i
 		DirCreate($sDirName)
