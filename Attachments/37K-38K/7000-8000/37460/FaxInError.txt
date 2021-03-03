@@ -1,0 +1,32 @@
+D:\Hlthpnt\sbin>faxin
+Connecting to Database...
+Connected to EMR...
+------------------------------------------ Fax In
+Product : Allscripts EMR
+Version : 9.2 Service Pack 2
+Build   : 9.2.2.11
+------------------------------------------ Start: 4/26/2012 10:07:55 AM
+
+Connecting to Database...
+Connected to EMR...
+Loading Locations...
+Config: Location "Urology Northwest" using "FaxIn_castelle.dll".
+Config: Location "Alaska Peace Health Clinic" using "FaxIn_castelle.dll".
+Config: Location "Alaska Peace Health OR" using "FaxIn_castelle.dll".
+Processing: 3 Locations...
+Processing: Receiving faxes through server FAXBACK (FaxIn_castelle.dll).
+
+------------------------------------------ ERROR
+* Code    : 163
+* Class   : EFaxInError
+* Message : ReceiveFaxes() failed in FaxIn_castelle.dll for server :
+Save: Image not allocated.
+
+* Callstack:
+* [0059911A] faxInClasses.faxInClasses.TfaxIn.ProcessLocation (Line 263, "faxInClasses.pas" + 20) + $13
+* [00598A89] faxInClasses.faxInClasses.TfaxIn.Process (Line 188, "faxInClasses.pas" + 12) + $13
+* [0059D14B]
+------------------------------------------ ABORT
+
+------------------------------------------ End: 4/26/2012 10:07:55 AM
+
