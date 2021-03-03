@@ -1,0 +1,3 @@
+text text text 3+7? (Eventyaly More Text) - example 1
+Text Text Text 15-10? (eventualy more text) - exsample 2
+Text Text Text 18x3? (eventualy more text) -exsample 3
