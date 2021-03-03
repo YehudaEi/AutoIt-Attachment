@@ -1,0 +1,4 @@
+Caption				Identifying Number	Name		Vendor		Version  
+
+
+Computer System Product		FFF84F1			Latitude E6420	Dell Inc.	01     
