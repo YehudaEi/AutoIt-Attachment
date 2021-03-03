@@ -57,36 +57,35 @@ TraySetOnEvent(-13, "_Stats")
 
 
 Local $iStart = Number(IniRead("config.ini", "General", "Start", "0"))
-Local $iLen = 1;Number(IniRead("config.ini", "General", "Length", "10"))
+Local $iLen = Number(IniRead("config.ini", "General", "Length", "10"))
 Local Const $sBaseUrl = "https://www.autoitscript.com/forum/applications/core/interface/file/attachment.php?id="
 
 IniWrite("config.ini", "General", "StartFrom", $iStart)
 
-Global $i, $iCounter = 0
+Global $i = $iStart, $iCounter = 0
 
 While $iCounter < $iLen
-	For $i = $iStart To $iStart + 500000
-		Local $sDirName = @ScriptDir & "\Attachments\" & _getSubDirName($i) & "\" & $i
-		DirCreate($sDirName)
-		Local $sBaseName = HTTPFileName($sBaseUrl & $i)
-		If @error Then $sBaseName = $i
-		Local $sFilePath = $sDirName & "\" & $sBaseName
-		Local $hDownload = InetGet($sBaseUrl & $i, $sFilePath, $INET_FORCERELOAD, $INET_DOWNLOADBACKGROUND)
-		Do
-			Sleep(250)
-		Until InetGetInfo($hDownload, $INET_DOWNLOADCOMPLETE)
-		InetClose($hDownload)
+	Local $sDirName = @ScriptDir & "\Attachments\" & _getSubDirName($i) & "\" & $i
+	DirCreate($sDirName)
+	Local $sBaseName = HTTPFileName($sBaseUrl & $i)
+	If @error Then $sBaseName = $i
+	Local $sFilePath = $sDirName & "\" & $sBaseName
+	Local $hDownload = InetGet($sBaseUrl & $i, $sFilePath, $INET_FORCERELOAD, $INET_DOWNLOADBACKGROUND)
+	Do
+		Sleep(250)
+	Until InetGetInfo($hDownload, $INET_DOWNLOADCOMPLETE)
+	InetClose($hDownload)
 
-		If Not DirGetSize($sDirName, 1)[1] And Not DirGetSize($sDirName, 1)[2] Then
-			DirRemove($sDirName)
-		Else
-			$iCounter = $iCounter + 1
-			RunWait("git add .", @ScriptDir, @SW_HIDE)
-			RunWait("git commit -m ""add " & $sBaseName & """ -m ""From the link: " & $sBaseUrl & $i & """", @ScriptDir, @SW_HIDE)
-		EndIf
+	If Not DirGetSize($sDirName, 1)[1] And Not DirGetSize($sDirName, 1)[2] Then
+		DirRemove($sDirName)
+	Else
+		$iCounter = $iCounter + 1
+		RunWait("git add .", @ScriptDir, @SW_HIDE)
+		RunWait("git commit -m ""add " & $sBaseName & """ -m ""From the link: " & $sBaseUrl & $i & """", @ScriptDir, @SW_HIDE)
+	EndIf
 
-		IniWrite("config.ini", "General", "Start", $i + 1)
-	Next
+	$i = $i + 1
+	IniWrite("config.ini", "General", "Start", $i)
 Wend
 
 IniWrite("config.ini", "General", "Length", $iLen)
