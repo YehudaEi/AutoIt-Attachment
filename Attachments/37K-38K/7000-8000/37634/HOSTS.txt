@@ -1,0 +1,38 @@
+###################################################################
+## This is an example HOSTS file created by			 ##
+## www.bleepingcomputer.com.					 ##
+##								 ##		
+## All entries in a HOSTS file must be in the format of:	 ##
+## 								 ##
+## ipaddress	hostname					 ##
+## 								 ##
+## For example:							 ##
+## 								 ##
+## 192.168.1.1	mycomputer.mydomain.com				 ##
+##								 ##
+## Notice that you must have a whitespace between the IP address ##
+## and the hostname.  Also keep in mind that the hostname can 	 ##
+## not contain any symbols like /,\,http://, etc.		 ##
+## 								 ##
+## As a last note, you can the # symbol to make comments.  Any	 ##
+## line that starts with the # symbol will not be parsed by 	 ##
+## the operating system.  You can therefore use this # symbol	 ##
+## to make comments as seen below.				 ##
+## 								 ##
+## Example valid entries found below.				 ##
+###################################################################
+
+# The localhost entry should be in every HOSTS file and is used
+# to point back to yourself.
+
+127.0.0.1	localhost
+
+# My test server for the website
+
+192.168.1.2	test.bleepingcomputer.com
+
+#Blocking known malicious sites
+127.0.0.1  admin.abcsearch.com www.testo.com
+127.0.0.1  www3.abcsearch.com #[Browseraid]
+127.0.0.1  www.abcsearch.com #[Restricted Zone site]
+
