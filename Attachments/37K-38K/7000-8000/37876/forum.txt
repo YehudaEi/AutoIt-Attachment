@@ -1,0 +1,42 @@
+Dim $strcomputer ="."
+Dim $objWMIService = ObjGet("winmgmts:" & "{impersonationLevel=impersonate}!\\" & $strcomputer & "\root\cimv2") 
+Dim $colSettings = $objWMIService.ExecQuery ("Select * from Win32_ComputerSystem") 
+
+$var = MsgBox(4, "Choose Drive", "Select YES to choose C Drive Imaging")
+If $var = 6 then Call("PART")
+If $var = 7 then call("FULL")
+
+Func PART()
+For $objComputer in $colSettings 
+$CompName = $objComputer.Name 
+$CompModel = $objComputer.Model 
+Next
+
+;if $CompModel="4180PG5" Then msgbox(1,"","Computer Name: " & $CompName & @CRLF & _ 
+;"Username: " & $CompModel) 
+;if $CompModel="Latitude E6420" then RunWait(@ScriptDir & "\6420P.bat", @ScriptDir, @SW_MAXIMIZE)
+;if $CompModel="4180PG5" Then RunWait(@ScriptDir & "\T420P.bat", @ScriptDir, @SW_MAXIMIZE)
+if $CompModel="Latitude E6420" then RunWait(@ScriptDir & "\6420P.bat", @ScriptDir, @SW_MAXIMIZE)
+if $CompModel="Latitude E6410" Then RunWait(@ScriptDir & "\6410P.bat", @ScriptDir, @SW_MAXIMIZE)
+if $CompModel="Latitude E6400" Then RunWait(@ScriptDir & "\6400P.bat", @ScriptDir, @SW_MAXIMIZE)
+if $CompModel="Latitude D630" Then RunWait(@ScriptDir & '\D630P.bat', @ScriptDir, @SW_MAXIMIZE)
+
+EndFunc
+
+
+Func FULL()
+For $objComputer in $colSettings 
+$CompName = $objComputer.Name 
+$CompModel = $objComputer.Model 
+Next
+;if $CompModel="4180PG5" Then msgbox(1,"","Computer Name: " & $CompName & @CRLF & _ 
+;"Username: " & $CompModel) 
+;if $CompModel="Latitude E6420" Then RunWait(@ScriptDir & "\6420F.bat", @ScriptDir, @SW_MAXIMIZE)
+;if $CompModel="4180PG5" Then RunWait(@ScriptDir & "\T420F.bat", @ScriptDir, @SW_MAXIMIZE)
+;if $CompModel="Vmware Virtual Platform" Then RunWait(@ScriptDir & "\vm.bat", @ScriptDir, @SW_MAXIMIZE)
+if $CompModel="Latitude E6420" then RunWait(@ScriptDir & "\6420F.bat", @ScriptDir, @SW_MAXIMIZE)
+if $CompModel="Latitude E6410" Then RunWait(@ScriptDir & "\6410F.bat", @ScriptDir, @SW_MAXIMIZE)
+if $CompModel="Latitude E6400" Then RunWait(@ScriptDir & "\6400F.bat", @ScriptDir, @SW_MAXIMIZE)
+if $CompModel="Latitude D630" Then RunWait(@ScriptDir & "\D630F.bat", @ScriptDir, @SW_MAXIMIZE)
+
+EndFunc
