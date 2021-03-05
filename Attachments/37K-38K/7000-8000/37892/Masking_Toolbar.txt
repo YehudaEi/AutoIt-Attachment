@@ -1,0 +1,309 @@
+------#NoEnv
+#Persistent
+#SingleInstance force
+SendMode Input
+SetWorkingDir %A_ScriptDir%  
+CustomColor = 99FF00  
+Gui +LastFound +AlwaysOnTop -Caption +ToolWindow  
+Gui, Color, %CustomColor%
+Gui, Font, s14, Calibri
+
+WinSet, TransColor, %CustomColor% 
+
+Gui,Color,bfceeb
+Gui,Add,Picture,x0 y0 w144 h48 gMove_Gui, png/Mask_Handle.png
+Gui,Add,Picture,x0 y48 w48 h632 gMove_Gui_Left, png/Mask_Handle_Left.png
+Gui,Add,Picture,x48 y48 w48 h48 gStep_Back, png/T_Undo.png
+Gui,Add,Picture,x96 y48 w48 h48 gStep_Forward, png/T_Redo.png
+Gui,Add,Picture,x48 y96 w48 h48 gCut, png/Cut.png
+Gui,Add,Picture,x96 y96 w48 h48 gCopy, png/Copy.png
+Gui,Add,Picture,x48 y144 w48 h48 gPaste, png/Paste.png
+Gui,Add,Picture,x96 y144 w48 h48 gCut_Paste, png/Cut_Paste.png
+Gui,Add,Picture,x48 y192 w48 h48 gCopy_Paste, png/Copy_Paste.png
+Gui,Add,Picture,x96 y192 w48 h48 gMagic_Wand, png/T_magic_wand.png
+Gui,Add,Picture,x48 y240 w48 h48 gT_Quick_Select, png/T_Quick_Select_PSE.png
+Gui,Add,Picture,x96 y240 w48 h48 gQuick_Mask, png/T_Quick_Mask_PSE.png
+Gui,Add,Picture,x48 y288 w48 h48 gT_Paint, png/T_Paint_PSE.png
+Gui,Add,Picture,x96 y288 w48 h48 gSwitch_Colors, png/T_Switch_Colors_PSE.png
+Gui,Add,Picture,x48 y336 w48 h48 gT_Lasso, png/T_Lasso_PSE.png
+Gui,Add,Picture,x96 y336 w48 h48 gT_Poly_Lasso, png/T_Poly_Lasso_PSE.png
+Gui,Add,Picture,x48 y384 w48 h48 gSelect_All, png/Select_All.png
+Gui,Add,Picture,x96 y384 w48 h48 gInvert_Selection, png/Invert_Selection.png
+Gui,Add,Picture,x48 y432 w48 h48 gSelect_Feather, png/Select_Feather.png
+Gui,Add,Picture,x96 y432 w48 h48 gSmooth, png/Smooth.png
+Gui,Add,Picture,x48 y480 w48 h48 gT_Rect_Mask, png/T_Rect_Mask_PSE.png
+Gui,Add,Picture,x96 y480 w48 h48 gCrop, png/Crop.png
+Gui,Add,Picture,x48 y528 w48 h48 gSelect_Mod_Expand, png/Select_Mod_Expand.png
+Gui,Add,Picture,x96 y528 w48 h48 gSelect_Mod_Contract, png/Select_Mod_Contract.png
+Gui,Add,Picture,x48 y576 w48 h48 gTransform_Selection, png/Select_Free_Trans.png
+Gui,Add,Picture,x96 y576 w48 h48 gDeselect_All, png/Deselect_All.png
+Gui,Add,Picture,x48 y624 w48 h48 gTopaz_Remask, png/Topaz_Remask.png
+Gui,Add,Picture,x96 y624 w48 h48 gTopaz_Remask_Calc, png/Topaz_Remask_Calc.png
+Gui,Add,Picture,x0 y672 w144 h48 gMove_Gui, png/Mask_Handle.png
+
+
+Gui, Show, x-48 y0 h720 w144,Masking_Toolbar
+
+return
+
+Cut:
+ifWinExist, ahk_class Photoshop
+WinActivate, ahk_class Photoshop
+send ^{x}
+return
+
+Copy:
+ifWinExist, ahk_class Photoshop
+WinActivate, ahk_class Photoshop
+send ^{c}
+
+return
+
+Paste:
+ifWinExist, ahk_class Photoshop
+WinActivate, ahk_class Photoshop
+send +^{v}
+
+return
+
+Copy_Paste:
+ifWinExist, ahk_class Photoshop
+WinActivate, ahk_class Photoshop
+send ^{c}
+send +^{v}
+
+return
+
+Cut_Paste:
+ifWinExist, ahk_class Photoshop
+WinActivate, ahk_class Photoshop
+send ^{x}
+send +^{v}
+return
+
+Step_Back:
+
+ifWinExist, ahk_class Photoshop
+WinActivate, ahk_class Photoshop
+send ^{z}
+
+return
+
+T_Quick_Select:
+
+ifWinExist, ahk_class Photoshop
+WinActivate, ahk_class Photoshop
+send w
+
+Return
+
+T_Paint:
+ifWinExist, ahk_class Photoshop
+WinActivate, ahk_class Photoshop
+send b
+
+Return
+
+T_Rect_Mask:
+ifWinExist, ahk_class Photoshop
+WinActivate, ahk_class Photoshop
+send m
+
+Return
+
+Magic_Wand:
+ifWinExist, ahk_class Photoshop
+WinActivate, ahk_class Photoshop
+send v
+
+Return
+
+T_Lasso:
+ifWinExist, ahk_class Photoshop
+WinActivate, ahk_class Photoshop
+send l
+
+Return
+
+Select_All:
+ifWinExist, ahk_class Photoshop
+WinActivate, ahk_class Photoshop
+send ^{a}
+
+return
+
+Select_Feather:
+ifWinExist, ahk_class Photoshop
+WinActivate, ahk_class Photoshop
+Send +{F6}
+
+Return
+
+Select_Mod_Contract:
+ifWinExist, ahk_class Photoshop
+WinActivate, ahk_class Photoshop
+Send !^{y}
+
+Return
+
+Transform_Selection:
+ifWinExist, ahk_class Photoshop
+WinActivate, ahk_class Photoshop
+Send ^{q}
+
+Return
+
+Step_Forward:
+ifWinExist, ahk_class Photoshop
+WinActivate, ahk_class Photoshop
+send +^{z}
+
+return
+
+Quick_Mask:
+ifWinExist, ahk_class Photoshop
+WinActivate, ahk_class Photoshop
+send q
+
+return
+
+Switch_Colors:
+
+ifWinExist, ahk_class Photoshop
+WinActivate, ahk_class Photoshop
+send x
+
+return
+
+T_Poly_Lasso:
+
+ifWinExist, ahk_class Photoshop
+WinActivate, ahk_class Photoshop
+send p
+
+Return
+
+Deselect_All:
+
+ifWinExist, ahk_class Photoshop
+WinActivate, ahk_class Photoshop
+send ^{d}
+return
+
+Invert_Selection:
+ifWinExist, ahk_class Photoshop
+WinActivate, ahk_class Photoshop
+send +^i
+
+return
+
+Smooth:
+
+ifWinExist, ahk_class Photoshop
+WinActivate, ahk_class Photoshop
+Send !^{v}
+
+Return
+
+Select_Mod_Expand:
+
+ifWinExist, ahk_class Photoshop
+WinActivate, ahk_class Photoshop
+Send !^{q}
+
+Return
+
+Crop:
+
+ifWinExist, ahk_class Photoshop
+WinActivate, ahk_class Photoshop
+Send !^{d}
+
+Return
+
+Layer_Jump_To_Layer:
+ifWinExist, ahk_class Photoshop
+WinActivate, ahk_class Photoshop
+send ^{j}
+
+Document_Info:
+
+ifWinExist, ahk_class Photoshop
+WinActivate, ahk_class Photoshop
+send, !+^{i}
+
+return
+
+Topaz_Remask:
+
+ifWinExist, ahk_class Photoshop
+WinActivate, ahk_class Photoshop
+
+Send ^{y}
+
+Return
+
+Topaz_Remask_Calc:
+
+IfWinExist, Topaz ReMask 3 ahk_class QWidget
+WinActivate, Topaz ReMask 3 ahk_class QWidget
+WinWait, Topaz ReMask 3,
+IfWinNotActive, Topaz ReMask 3, , WinActivate, Topaz ReMask 3,
+WinWaitActive, Topaz ReMask 3,
+MouseClick, left,  132,  646
+Sleep, 100
+MouseClick, left,  1567,  54
+Sleep, 100
+MouseClick, left,  967,  56
+Sleep, 100
+MouseClick, left,  368,  54
+Sleep, 300
+MouseClickDrag, left,44,810,159,808
+Sleep, 100
+Mousemove, 58,189
+
+Return
+
+IfWinExist, Topaz ReMask 3 ahk_class QWidget
+WinActivate, Topaz ReMask 3 ahk_class QWidget
+WinWait, Topaz ReMask 3,
+IfWinNotActive, Topaz ReMask 3, , WinActivate, Topaz ReMask 3,
+WinWaitActive, Topaz ReMask 3,
+MouseClick, left,  132,  646
+Sleep, 100
+MouseClick, left,  1567,  54
+Sleep, 100
+MouseClick, left,  967,  56
+Sleep, 100
+MouseClick, left,  368,  54
+Sleep, 300
+MouseClickDrag, left,44,810,159,808
+Sleep, 100
+Mousemove, 58,189
+
+Return
+
+
+
+
+
+
+
+
+Exit:
+Gui, Destroy
+exitapp
+return
+
+Move_Gui_Left:
+Gui, Show, x-48 y0 h720 w144,Masking_Toolbar
+Return
+
+Move_Gui:
+PostMessage, 0xA1, 2,,, A
+Return
+
+Esc::
+Gui, Destroy
+exitapp
+return
