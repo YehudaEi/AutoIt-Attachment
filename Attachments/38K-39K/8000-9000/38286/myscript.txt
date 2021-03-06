@@ -1,0 +1,34 @@
+#cs
+You will need two .au3 scripts with the code below with the end keys changed. One for admin (or desired account) and another for default account (or desired account).
+#ce
+
+#cs
+Enables AutoLogon
+#ce
+RegWrite ("HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon", "AutoAdminLogon", "REG_SZ", "1")
+#cs
+Set USERNAME
+#ce
+RegWrite ("HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon", "ashley", "REG_SZ", "USERNAME")
+#cs
+Set PASSWORD
+#ce
+RegWrite ("HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon", "Upd0wn", "REG_SZ", "PASSWORD")
+#cs
+Set DOMAIN
+#ce
+RegWrite ("HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon", "ASHLEY", "REG_SZ", "DOMAIN")
+
+
+#CS 
+The code below goes into new .au3 script.
+The passwords are stored in the registry as clear text so you will want to delete that key.
+
+
+Disables AutoLogon
+#ce
+RegWrite ("HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon", "AutoAdminLogon", "REG_SZ", "0")
+#cs
+Deletes Password Key
+#ce
+RegDelete("HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon", "Upd0wn")
