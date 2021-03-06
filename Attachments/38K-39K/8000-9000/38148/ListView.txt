@@ -1,0 +1,79 @@
+blindman.exe|2.0.9.151|2.0.5.151|8/3/2011|n/a|n/a|Safer Networking Ltd.
+borlndmm.dll|10.0.2288.42451|10.0.2288.42451|8/3/2011|n/a|n/a|
+DelZip190.dll|1.9.0.107|1.9.0.87|8/3/2011|n/a|n/a|
+Includes\AdvWhite.sbs|11/29/2010|11/29/2010|5/10/2011|n/a|n/a|
+Includes\Adware.sbi|1/16/2012|3/18/2011|5/10/2011|n/a|n/a|Safer Networking Ltd.
+Includes\AdwareC.sbi|7/3/2012|7/3/2012|7/4/2012|n/a|n/a|Safer Networking Ltd.
+Includes\CLSIDs.sbs|3/1/2011|3/1/2011|5/10/2011|n/a|n/a|Safer Networking Ltd.
+Includes\Cookies.sbi|8/13/2010|8/13/2010|5/10/2011|n/a|n/a|Safer Networking Ltd.
+Includes\Cookies.sbs|3/1/2011|3/1/2011|5/10/2011|n/a|n/a|
+Includes\Dialer.sbi|12/14/2010|12/14/2010|5/10/2011|n/a|n/a|Safer Networking Ltd.
+Includes\DialerC.sbi|11/29/2011|11/29/2011|11/30/2011|n/a|n/a|Safer Networking Ltd.
+Includes\Domains.sbs|7/3/2012|4/10/2012|4/11/2012|n/a|n/a|
+Includes\HeavyDuty.sbi|1/31/2012|2/24/2011|5/10/2011|n/a|n/a|Safer Networking Ltd.
+Includes\Hijackers.sbi|6/19/2012|6/19/2012|6/20/2012|n/a|n/a|Safer Networking Ltd.
+Includes\HijackersC.sbi|5/16/2012|5/16/2012|5/16/2012|n/a|n/a|Safer Networking Ltd.
+Includes\HintOfTheDay.sbs|12/28/2011|10/27/2009|12/22/2011|n/a|n/a|Safer Networking Ltd.
+Includes\iPhone.sbi|9/15/2010|9/15/2010|5/10/2011|n/a|n/a|Safer Networking Ltd.
+Includes\Keyloggers.sbi|3/13/2012|12/14/2010|5/10/2011|n/a|n/a|Safer Networking Ltd.
+Includes\KeyloggersC.sbi|3/13/2012|1/24/2012|1/25/2012|n/a|n/a|Safer Networking Ltd.
+Includes\Malware.sbi|6/18/2012|6/18/2012|6/20/2012|n/a|n/a|Safer Networking Ltd.
+Includes\MalwareC.sbi|7/10/2012|7/10/2012|7/11/2012|n/a|n/a|Safer Networking Ltd.
+Includes\OperaPlugins.sbs|2/19/2008|2/19/2008|5/10/2011|n/a|n/a|
+Includes\PosOS.sbs|7/28/2011|1/21/2009|1/30/2009|n/a|n/a|
+Includes\PUPS.sbi|2/24/2011|2/24/2011|5/10/2011|n/a|n/a|Safer Networking Ltd.
+Includes\PUPSC.sbi|7/10/2012|7/10/2012|7/11/2012|n/a|n/a|Safer Networking Ltd.
+Includes\RegDFLinks.sbs|2/23/2007|2/23/2007|5/10/2011|n/a|n/a|
+Includes\RegWatch.sbs|2/11/2011|2/11/2011|5/10/2011|n/a|n/a|
+Includes\Security.sbi|6/19/2012|6/19/2012|6/20/2012|n/a|n/a|Safer Networking Ltd.
+Includes\SecurityC.sbi|12/13/2011|12/13/2011|12/14/2011|n/a|n/a|Safer Networking Ltd.
+Includes\Services.sbs|3/1/2011|3/1/2011|5/10/2011|n/a|n/a|Safer Networking Ltd.
+Includes\Spyware.sbi|1/17/2012|1/17/2012|1/18/2012|n/a|n/a|Safer Networking Ltd.
+Includes\SpywareC.sbi|5/8/2012|5/8/2012|5/9/2012|n/a|n/a|Safer Networking Ltd.
+Includes\Tracks.sbi|6/7/2011|6/7/2011|6/7/2011|n/a|n/a|Safer Networking Ltd.
+Includes\Tracks.uti|3/8/2010|3/8/2010|5/10/2011|n/a|n/a|Safer Networking Ltd.
+Includes\Trojans.sbi|9/28/2011|9/28/2011|9/28/2011|n/a|n/a|Safer Networking Ltd.
+Includes\TrojansC.sbi|7/10/2012|7/10/2012|7/11/2012|n/a|n/a|Safer Networking Ltd.
+Includes\TrojansC-02.sbi|7/2/2012|7/2/2012|7/4/2012|n/a|n/a|Safer Networking Ltd.
+Includes\TrojansC-03.sbi|6/21/2012|6/21/2012|6/27/2012|n/a|n/a|Safer Networking Ltd.
+Includes\TrojansC-04.sbi|7/10/2012|7/10/2012|7/11/2012|n/a|n/a|Safer Networking Ltd.
+Includes\TrojansC-05.sbi|5/23/2012|5/23/2012|5/23/2012|n/a|n/a|Safer Networking Ltd.
+Includes\URL-Blacklist.sbs|7/3/2012|5/24/2011|5/27/2011|n/a|n/a|
+Includes\X509White.sbs|6/29/2012|2/17/2011|5/10/2011|n/a|n/a|Safer Networking Ltd.
+Jcl150.bpl|2.4.0.4198|2.2.1.3845|8/3/2011|n/a|n/a|
+JSDialogPack150.bpl|7/4/2012|7/26/2011|8/3/2011|n/a|n/a|
+rtl150.bpl|15.0.3953.35171|15.0.3953.35171|8/3/2011|n/a|n/a|
+SDAdvancedCheckLibrary.dll|2.0.9.98|2.0.5.98|8/3/2011|n/a|n/a|Safer Networking Ltd.
+SDCleaner.exe|2.0.9.110|2.0.5.106|8/3/2011|n/a|n/a|Safer Networking Ltd.
+SDDelFile.exe|2.0.9.94|2.0.5.94|8/3/2011|n/a|n/a|Safer Networking Ltd.
+SDECon32.dll|2.0.9.113|2.0.5.113|8/3/2011|n/a|n/a|Safer Networking Ltd.
+SDEvents.dll|2.0.9.2|2.0.5.2|8/3/2011|n/a|n/a|Safer Networking Ltd.
+SDFiles.exe|2.0.9.129|2.0.5.127|8/3/2011|n/a|n/a|Safer Networking Ltd.
+SDFSSvc.exe|2.0.9.205|2.0.5.195|8/3/2011|n/a|n/a|Safer Networking Ltd.
+SDHelper.dll|2.0.9.88|2.0.5.88|8/3/2011|n/a|n/a|Safer Networking Ltd.
+SDImmunize.exe|2.0.9.130|2.0.5.123|8/3/2011|n/a|n/a|Safer Networking Ltd.
+SDLists.dll|2.0.9.4|2.0.5.4|8/3/2011|n/a|n/a|Safer Networking Ltd.
+SDLogReport.exe|2.0.9.104|2.0.5.104|8/3/2011|n/a|n/a|Safer Networking Ltd.
+SDPhoneScan.exe|2.0.9.27|2.0.5.27|8/3/2011|n/a|n/a|Safer Networking Ltd.
+SDPrepPos.exe|2.0.9.10|2.0.5.10|8/3/2011|n/a|n/a|Safer Networking Ltd.
+SDQuarantine.exe|2.0.9.103|2.0.5.102|8/3/2011|n/a|n/a|Safer Networking Ltd.
+SDResources.dll|2.0.9.7|2.0.5.1|8/3/2011|n/a|n/a|Safer Networking Ltd.
+SDRootAlyzer.exe|2.0.9.116|2.0.5.114|8/3/2011|n/a|n/a|Safer Networking Ltd.
+SDScan.exe|2.0.9.172|2.0.5.170|8/3/2011|n/a|n/a|Safer Networking Ltd.
+SDScanLibrary.dll|2.0.9.131|2.0.5.131|8/3/2011|n/a|n/a|Safer Networking Ltd.
+SDSettings.exe|2.0.9.121|2.0.5.112|8/3/2011|n/a|n/a|Safer Networking Ltd.
+SDShred.exe|2.0.9.105|2.0.5.104|8/3/2011|n/a|n/a|Safer Networking Ltd.
+SDSysRepair.exe|2.0.9.101|2.0.5.101|8/3/2011|n/a|n/a|Safer Networking Ltd.
+SDTools.exe|2.0.9.147|2.0.5.141|8/3/2011|n/a|n/a|Safer Networking Ltd.
+SDTray.exe|2.0.9.127|2.0.5.121|8/3/2011|n/a|n/a|Safer Networking Ltd.
+SDUpdate.exe|2.0.9.87|2.0.5.84|8/3/2011|n/a|n/a|Safer Networking Ltd.
+SDUpdSvc.exe|2.0.9.76|2.0.5.76|8/3/2011|n/a|n/a|Safer Networking Ltd.
+SDWelcome.exe|2.0.9.123|2.0.5.119|8/3/2011|n/a|n/a|Safer Networking Ltd.
+SDWinLogon.dll|2.0.9.0|2.0.5.0|8/3/2011|n/a|n/a|Safer Networking Ltd.
+SDWSCSvc.exe|2.0.5.1|2.0.5.1|8/3/2011|n/a|n/a|Safer Networking Ltd.
+sqlite3.dll|4/20/2011|4/20/2011|8/3/2011|n/a|n/a|
+Tools.dll|2.0.9.36|2.0.5.36|8/3/2011|n/a|n/a|Safer Networking Ltd.
+vcl150.bpl|15.0.3953.35171|15.0.3953.35171|11/3/2010|n/a|n/a|
+vclimg150.bpl|15.0.3953.35171|15.0.3953.35171|11/3/2010|n/a|n/a|
+vclx150.bpl|15.0.3953.35171|15.0.3953.35171|11/3/2010|n/a|n/a|
+ZMstr190D15.bpl|1.9.0.102|1.9.0.102|8/3/2011|n/a|n/a|
