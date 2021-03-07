@@ -1,0 +1,666 @@
+;Hewlett-Packard LaserJet combined printer driver INF file for Windows 2000 and XP
+;Copyright Hewlett-Packard 2004
+
+[Version]
+Signature="$Windows NT$"
+Provider=%HP% 
+ClassGUID={4D36E979-E325-11CE-BFC1-08002BE10318} 
+Class=Printer 
+DriverPackageType=PlugAndPlay
+DriverPackageDisplayName=%HP_Mombi_Driver_Name%
+DriverPackageDisplayName=%HP_Mombi_Driver_Name_2%
+CatalogFile=hpc30xxc.cat
+DriverVer=03/18/2008,61.074.561.43
+
+; Manufacturer section.
+;
+; This section lists all of the manufacturers
+; that we will display in the Dialog box
+;The format of TargetOSVersion, the version decoration, is as follows:
+;NT[Architecture][.[OSMajorVersion][.[OSMinorVersion][.[ProductType][.SuiteMask]]]]
+
+;NT 
+;Operating system version recognition is supported for Windows XP and later NT-based operating systems. 
+;
+;Architecture 
+;Identifies the hardware platform. This must be x86 or ia64. 
+;
+;OSMajorVersion 
+;A number representing the operating system's major version number. For Windows XP, this number is 5. 
+;
+;OSMinorVersion 
+;A number representing the operating system's minor version number. For Windows XP, this number is 1. 
+;
+;ProductType 
+;0x0000003 (VER_NT_SERVER)
+
+[MANUFACTURER]
+%HP%=HP, NT.6.0
+
+; Model sections
+;
+; Each section here corresponds with an entry listed in the
+; [Manufacturer] section, above. The models will be displayed in the order 
+; that they appear in the INF file.
+
+[HP]
+"HP LaserJet P3005 PCL 6"      = HPC30056.GPD,USBPRINT\Hewlett-Packardhp_La023A,Hewlett-Packardhp_La023A,DOT4PRT\Hewlett-Packardhp_La023A,Hewlett-Packardhp_La023A,DOT4PRT\VID_03F0&PID_7317,DOT4PRT\Hewlett-Packardhp_La023A&PRINT_HPZ,DOT4PRT\VID_03F0&PID_7317&PRINT_HPZ,DOT4PRT\Hewlett-Packardhp_La023A&DOT4&PRINT_HPZ,DOT4PRT\VID_03F0&PID_7317&DOT4&PRINT_HPZ
+
+"HP LaserJet P3004 PCL 6"      = HPC30046.GPD,USBPRINT\Hewlett-Packardhp_LaC2FB,Hewlett-Packardhp_LaC2FB,DOT4PRT\Hewlett-Packardhp_LaC2FB,Hewlett-Packardhp_LaC2FB,DOT4PRT\VID_03F0&PID_7617,DOT4PRT\Hewlett-Packardhp_LaC2FB&PRINT_HPZ,DOT4PRT\VID_03F0&PID_7617&PRINT_HPZ,DOT4PRT\Hewlett-Packardhp_LaC2FB&DOT4&PRINT_HPZ,DOT4PRT\VID_03F0&PID_7617&DOT4&PRINT_HPZ
+
+
+[HP.NT.6.0]
+"HP LaserJet P3005 PCL 6"      = HPC30056.GPD.NT.6.0,USBPRINT\Hewlett-Packardhp_La023A,Hewlett-Packardhp_La023A
+"HP LaserJet P3005 PCL 6"      = HPC30056.GPD.NT.6.0,DOT4PRT\Hewlett-Packardhp_La023A,Hewlett-Packardhp_La023A
+"HP LaserJet P3005 PCL 6"      = HPC30056.GPD.NT.6.0,DOT4PRT\VID_03F0&PID_7317
+
+
+"HP LaserJet P3004 PCL 6"      = HPC30046.GPD.NT.6.0,USBPRINT\Hewlett-Packardhp_LaC2FB,Hewlett-Packardhp_LaC2FB
+"HP LaserJet P3004 PCL 6"      = HPC30046.GPD.NT.6.0,DOT4PRT\Hewlett-Packardhp_LaC2FB,Hewlett-Packardhp_LaC2FB
+"HP LaserJet P3004 PCL 6"      = HPC30046.GPD.NT.6.0,DOT4PRT\VID_03F0&PID_7617
+
+
+
+
+; OEM URLS
+;
+; This sections gives the URL for manufacturers found in the Manufacturers section
+[OEM URLS]
+%HP% = "http://go.microsoft.com/fwlink/?LinkID=37&prd=10798&sbp=Printers"
+
+;
+; MS Driver Core installs
+;
+; These sections are used by Printer OEMs to install MS provided drivers
+
+; Installer Sections
+;
+; These sections control file installation, and reference all files that
+; need to be copied. The section name will be assumed to be the driver
+; file, unless there is an explicit DriverFile section listed.
+;
+
+;****************************************
+;32 bit XP machine
+;NTPRINT.INF supports UNIDRV_DATA Section
+;UNIDRV_DATA is added to Needs section
+;[UNIDRV_DATA] is removed from INF
+;****************************************
+
+[HPC30056.GPD]
+CopyFiles=VENDOR_SETUP,DATA_FILES_30056,HPPRPROC,UI,PCL6RENDER,DMC_x86,EAC,GPD_PCL6_COMMON1,STRING_DLL,MANUAL_DUPLEX,RES_PCL6,PCLXL_GPD_P3,HELP,HP_UNIDRV,SERVICES,PNPDLL,PNPDLL_SYSCOPY,CAPI_32
+DataFile=hpc30056.GPD
+DriverFile=unidrv.dll
+ConfigFile=hpmdp5r1.dll
+HelpFile=unidrv.hlp
+PrintProcessor=%PRINT_PROCESSOR% 
+DelFiles=DEL9xFILE
+AddReg=EACDirect.AddReg
+
+[HPC30046.GPD]
+CopyFiles=DATA_FILES_30046,VENDOR_SETUP,HPPRPROC,UI,PCL6RENDER,DMC_x86,EAC,GPD_PCL6_COMMON1,STRING_DLL,MANUAL_DUPLEX,RES_PCL6,PCLXL_GPD_P3,HELP,HP_UNIDRV,SERVICES,PNPDLL,PNPDLL_SYSCOPY,CAPI_32
+DataFile=hpc30046.gpd
+DriverFile=unidrv.dll
+ConfigFile=hpmdp5r1.dll
+HelpFile=unidrv.hlp
+PrintProcessor=%PRINT_PROCESSOR% 
+DelFiles=DEL9xFILE
+AddReg=EACDirect.AddReg
+
+
+[HPC30056.GPD.NT.6.0]
+
+
+
+
+CopyFiles=DATA_FILES_30056,VENDOR_SETUP,HPPRPROC,UI,PCL6RENDER,DMC_x86,EAC,GPD_PCL6_COMMON1,HP_UNIDRV,STRING_DLL,MANUAL_DUPLEX,RES_PCL6,PCLXL_GPD_P3,HELP,SERVICES,PNPDLL,PNPDLL_SYSCOPY,CAPI_32
+DataFile=hpc30056.GPD
+DriverFile=unidrv.dll
+ConfigFile=hpmdp5r1.dll
+HelpFile=unidrv.hlp
+PrintProcessor=%PRINT_PROCESSOR% 
+DelFiles=DEL9xFILE
+AddReg=EACDirect.AddReg
+
+[HPC30046.GPD.NT.6.0]
+CopyFiles=DATA_FILES_30046,VENDOR_SETUP,HPPRPROC,UI,PCL6RENDER,DMC_x86,EAC,GPD_PCL6_COMMON1,HP_UNIDRV,STRING_DLL,MANUAL_DUPLEX,RES_PCL6,PCLXL_GPD_P3,HELP,SERVICES,PNPDLL,PNPDLL_SYSCOPY,CAPI_32
+DataFile=hpc30046.GPD
+DriverFile=unidrv.dll
+ConfigFile=hpmdp5r1.dll
+HelpFile=unidrv.hlp
+PrintProcessor=%PRINT_PROCESSOR% 
+DelFiles=DEL9xFILE
+[EACDirect.AddReg]
+HKLM,"SOFTWARE\Hewlett-Packard\San Diego Shared IO", DirectConnectBidiSupported, 0x00010001, 1
+
+[PrinterPackageInstallation.x86]
+PackageAware=TRUE
+
+; Copy Sections
+;
+; Lists of files that are actually copied. These sections are referenced
+; from the installer sections, above. Create a section, even if it 
+; only copies a single file, rather than using the @filename notation. This 
+; will ensure compatibility with the NOVELL P&P Environment too.
+; If it's a color profile (since the DestinationDirs can only handle sections, and not
+; individual files) then a section is a must.
+
+;Name of the File to be deleted
+[DEL9xFILE]
+hpzimn12.DLL 
+
+[VENDOR_SETUP]
+hpbicoin.dll,,,0x00000020
+
+[CAPI_32]
+hpcc35r1.DLL,hpcc35r1.DLL,,0x00000020
+[HPPRPROC]
+hpcpp5r1.dll,hpcpp5r1.dll,,0x00000020
+
+[UI]
+hpcui5r1.dll,hpcui5r1.dll,,0x00000020
+hpcpe5r1.dll,hpcpe5r1.dll,,0x00000020
+hpmdp5r1.dll,hpmdp5r1.dll,,0x00000020
+
+[PNPDLL]
+hpcpn5r1.dll,hpcpn5r1.dll,,0x00000020
+
+[PNPDLL_SYSCOPY]
+hpcpn5r1.dll,hpcpn5r1.dll,,0x00000020
+
+[PCL6RENDER]
+hpc6r5r1.DLL,hpc6r5r1.DLL,,0x00000020
+
+[GPD_PCL6_COMMON1]
+hpc6m5r1.GPD,hpc6m5r1.GPD,,0x00000020
+hpcsm5r1.GPD,hpcsm5r1.GPD,,0x00000020
+
+[STRING_DLL]
+hpcst5r1.dll,hpcst5r1.dll,,0x00000020
+hpcur5r1.dll,hpcur5r1.dll,,0x00000020
+hpcsat.dll,,,0x00000020
+
+
+[MANUAL_DUPLEX]
+hpcev5r1.dll,hpcev5r1.dll,,0x00000020
+
+[HELP]
+HPCHL5r1.CAB,HPCHL5r1.CAB,,0x00000020
+
+[SERVICES]
+hpcls5r1.dll,hpcls5r1.dll,,0x00000020
+hpcss5r1.dll,hpcss5r1.dll,,0x00000020
+
+[RES_PCL6]
+pclxl.DLL,pclxl.DLL,,0x00000020
+
+[PCLXL_GPD_P3]
+pjl.GPD,pjl.GPD,,0x00000020
+pclxl.GPD,pclxl.GPD,,0x00000020
+
+[EAC]
+hpzbdi.dll,hpzbdi.dll,,0x00000020
+HPZBDI32.msi,HPZBDI32.msi,,0x00000020
+
+[DMC_x86]
+hpcdmc32.DLL,hpcdmc32.DLL,,0x00000020
+hpbcfgre.DLL,hpbcfgre.DLL,,0x00000020
+
+[HP_UNIDRV]
+UNIDRV.DLL,UNIDRV.DLL,,0x00000020
+UNIRES.DLL,UNIRES.DLL,,0x00000020
+UNIDRVUI.DLL,UNIDRVUI.DLL,,0x00000020
+STDNAMES.GPD,STDNAMES.GPD,,0x00000020 
+UNIDRV.HLP,UNIDRV.HLP,,0x00000020
+STDDTYPE.GDL,STDDTYPE.GDL,,0x00000020
+STDSCHEM.GDL,STDSCHEM.GDL,,0x00000020
+STDSCHMX.GDL,STDSCHMX.GDL,,0x00000020
+
+
+
+[DATA_FILES_30056]
+hpcp3005.CFG,hpcp3005.CF_,,0x00000020
+hpc30x56.XML,hpc30x56.XML,,0x00000020
+hpcsc5r1.DTD,hpcsc5r1.DTD,,0x00000020
+hpc30056.GPD,hpc30056.GPD,,0x00000020
+hpc30xx6.GPD,hpc30xx6.GPD,,0x00000020
+hpc30xxc.INI,hpc30xxc.INI,,0x00000020
+hpcP6.hpx,hpcP6.hpx,,0x00000020
+
+[DATA_FILES_30046]
+hpcp3005.CFG,hpcp3005.CF_,,0x00000020
+hpc30x46.XML,hpc30x46.XML,,0x00000020
+hpcsc5r1.DTD,hpcsc5r1.DTD,,0x00000020
+hpc30xx6.GPD,hpc30xx6.GPD,,0x00000020
+hpc30046.GPD,hpc30046.GPD,,0x00000020
+hpc30xxc.INI,hpc30xxc.INI,,0x00000020
+hpcP6.hpx,hpcP6.hpx,,0x00000020
+
+
+[SourceDisksNames]
+98="HP LaserJet P3004/3005 CD",hpc300xc.CAB,,
+97="HP LaserJet P3004/3005 CD",%LocaleCABFile%,,
+96=%DiskID%,,,""
+
+[SourceDisksFiles]
+hpc30056.GPD =98
+hpc30xxc.INI=98 
+hpcpp5r1.dll=98 
+hpc30xx6.GPD=98
+hpc30046.GPD=98
+hpcp3005.CF_=96
+hpc30x46.XML=98
+hpc30x56.XML=98
+hpmdp5r1.dll=98
+hpcpp5r1.DLL=98 
+hpcui5r1.DLL=98
+hpcpe5r1.DLL=98
+hpc6r5r1.DLL=98
+hpcsm5r1.GPD=98
+hpcst5r1.dll=98
+hpcur5r1.dll=98
+hpcpn5r1.dll=98
+hpzbdi.dll=98
+HPZBDI32.msi=98 
+STDDTYPE.GDL=98
+STDSCHEM.GDL=98
+STDSCHMX.GDL=98
+hpbicoin.dll=96
+hpcev5r1.DLL=98
+hpcls5r1.DLL=98
+hpcss5r1.DLL=98
+HPCDMC32.DLL=98
+hpbcfgre.DLL=98
+hpcsc5r1.DTD=98
+hpcP6.hpx=98
+STDNAMES.GPD=98 
+UNIDRV.DLL=98
+UNIRES.DLL=98 
+UNIDRVUI.DLL=98 
+UNIDRV.HLP=97
+HPCHL5r1.CAB=98
+pclxl.DLL=98
+pjl.GPD=98
+pclxl.GPD=98
+hpc6m5r1.GPD=98
+hpcsm5r1.GPD=98
+hpcc35r1.DLL=98
+hpcsat.dll=98
+
+[DestinationDirs]
+DefaultDestDir=66000
+HPPRPROC=66001 
+VENDOR_SETUP=66002
+PNPDLL_SYSCOPY=66002
+
+
+;[String Section]
+
+
+[Strings]      
+PrinterClassName="Printers" 
+DiskID="HP LaserJet P3004/3005 CD"
+PRINT_PROCESSOR="HPCPP5r1,hpcpp5r1.dll" 
+HP="HP" 
+HP_Mombi_Driver_Name="HP LaserJet P3005 PCL 6"
+HP_Mombi_Driver_Name_2="HP LaserJet P3004 PCL 6"
+LocaleCABFile ="p6i2enww.cab"
+
+[Strings.0401]      ; Arabic
+PrinterClassName="Printers" 
+DiskID="HP LaserJet P3004/3005 CD"
+PRINT_PROCESSOR="HPCPP5r1,hpcpp5r1.dll" 
+HP="HP" 
+HP_Mombi_Driver_Name="HP LaserJet P3005 PCL 6"
+HP_Mombi_Driver_Name_2="HP LaserJet P3004 PCL 6"
+LocaleCABFile ="p6i2arww.cab"
+
+[Strings.0403]      ; Catalan
+PrinterClassName="Printers" 
+DiskID="HP LaserJet P3004/3005 CD"
+PRINT_PROCESSOR="HPCPP5r1,hpcpp5r1.dll" 
+HP="HP" 
+HP_Mombi_Driver_Name="HP LaserJet P3005 PCL 6"
+HP_Mombi_Driver_Name_2="HP LaserJet P3004 PCL 6"
+LocaleCABFile ="p6i2caww.cab"
+
+[Strings.0404]      ; Chinese (Traditional)
+PrinterClassName="Printers" 
+DiskID="HP LaserJet P3004/3005 CD"
+PRINT_PROCESSOR="HPCPP5r1,hpcpp5r1.dll" 
+HP="HP" 
+HP_Mombi_Driver_Name="HP LaserJet P3005 PCL 6"
+HP_Mombi_Driver_Name_2="HP LaserJet P3004 PCL 6"
+LocaleCABFile ="p6i2zhtw.cab"
+
+[Strings.0804]      ; Chinese (Simplified)
+PrinterClassName="Printers" 
+DiskID="HP LaserJet P3004/3005 CD"
+PRINT_PROCESSOR="HPCPP5r1,hpcpp5r1.dll" 
+HP="HP" 
+HP_Mombi_Driver_Name="HP LaserJet P3005 PCL 6"
+HP_Mombi_Driver_Name_2="HP LaserJet P3004 PCL 6"
+LocaleCABFile ="P6i2zhcn.cab"
+
+
+[Strings.0405]       ; Czech
+PrinterClassName="Printers" 
+DiskID="HP LaserJet P3004/3005 CD"
+PRINT_PROCESSOR="HPCPP5r1,hpcpp5r1.dll" 
+HP="HP" 
+HP_Mombi_Driver_Name="HP LaserJet P3005 PCL 6"
+HP_Mombi_Driver_Name_2="HP LaserJet P3004 PCL 6"
+LocaleCABFile ="p6i2csww.cab"
+
+[Strings.0406]      ; Danish
+PrinterClassName="Printers" 
+DiskID="HP LaserJet P3004/3005 CD"
+PRINT_PROCESSOR="HPCPP5r1,hpcpp5r1.dll" 
+HP="HP" 
+HP_Mombi_Driver_Name="HP LaserJet P3005 PCL 6"
+HP_Mombi_Driver_Name_2="HP LaserJet P3004 PCL 6"
+LocaleCABFile ="p6i2daww.cab"
+
+
+[Strings.0413]        ;Dutch
+PrinterClassName="Printers" 
+DiskID="HP LaserJet P3004/3005 CD"
+PRINT_PROCESSOR="HPCPP5r1,hpcpp5r1.dll" 
+HP="HP" 
+HP_Mombi_Driver_Name="HP LaserJet P3005 PCL 6"
+HP_Mombi_Driver_Name_2="HP LaserJet P3004 PCL 6"
+LocaleCABFile ="p6i2nlww.cab"
+
+
+[Strings.0409]      ; English
+PrinterClassName="Printers" 
+DiskID="HP LaserJet P3004/3005 CD"
+PRINT_PROCESSOR="HPCPP5r1,hpcpp5r1.dll" 
+HP="HP" 
+HP_Mombi_Driver_Name="HP LaserJet P3005 PCL 6"
+HP_Mombi_Driver_Name_2="HP LaserJet P3004 PCL 6"
+LocaleCABFile ="p6i2enww.cab"
+
+
+[Strings.040B]        ;Finnish
+PrinterClassName="Printers" 
+DiskID="HP LaserJet P3004/3005 CD"
+PRINT_PROCESSOR="HPCPP5r1,hpcpp5r1.dll" 
+HP="HP" 
+HP_Mombi_Driver_Name="HP LaserJet P3005 PCL 6"
+HP_Mombi_Driver_Name_2="HP LaserJet P3004 PCL 6"
+LocaleCABFile ="p6i2fiww.cab"
+
+[Strings.040C]      ;French
+PrinterClassName="Printers" 
+DiskID="HP LaserJet P3004/3005 CD"
+PRINT_PROCESSOR="HPCPP5r1,hpcpp5r1.dll" 
+HP="HP" 
+HP_Mombi_Driver_Name="HP LaserJet P3005 PCL 6"
+HP_Mombi_Driver_Name_2="HP LaserJet P3004 PCL 6"
+LocaleCABFile ="p6i2frww.cab"
+
+
+[Strings.0407]      ;German
+PrinterClassName="Printers" 
+DiskID="HP LaserJet P3004/3005 CD"
+PRINT_PROCESSOR="HPCPP5r1,hpcpp5r1.dll" 
+HP="HP" 
+HP_Mombi_Driver_Name="HP LaserJet P3005 PCL 6"
+HP_Mombi_Driver_Name_2="HP LaserJet P3004 PCL 6"
+LocaleCABFile ="p6i2deww.cab"
+
+
+[Strings.0408]       ;Greek
+PrinterClassName="Printers" 
+DiskID="HP LaserJet P3004/3005 CD"
+PRINT_PROCESSOR="HPCPP5r1,hpcpp5r1.dll" 
+HP="HP" 
+HP_Mombi_Driver_Name="HP LaserJet P3005 PCL 6"
+HP_Mombi_Driver_Name_2="HP LaserJet P3004 PCL 6"
+LocaleCABFile ="p6i2elww.cab" 
+
+
+[Strings.040D]        ;Hebrew
+PrinterClassName="Printers" 
+DiskID="HP LaserJet P3004/3005 CD"
+PRINT_PROCESSOR="HPCPP5r1,hpcpp5r1.dll" 
+HP="HP" 
+HP_Mombi_Driver_Name="HP LaserJet P3005 PCL 6"
+HP_Mombi_Driver_Name_2="HP LaserJet P3004 PCL 6"
+LocaleCABFile ="p6i2heww.cab"
+
+[Strings.040E]       ;Hungerian 
+PrinterClassName="Printers" 
+DiskID="HP LaserJet P3004/3005 CD"
+PRINT_PROCESSOR="HPCPP5r1,hpcpp5r1.dll" 
+HP="HP" 
+HP_Mombi_Driver_Name="HP LaserJet P3005 PCL 6"
+HP_Mombi_Driver_Name_2="HP LaserJet P3004 PCL 6"
+LocaleCABFile ="p6i2huww.cab"
+
+
+[Strings.0410]       ;Italian
+PrinterClassName="Printers" 
+DiskID="HP LaserJet P3004/3005 CD"
+PRINT_PROCESSOR="HPCPP5r1,hpcpp5r1.dll" 
+HP="HP" 
+HP_Mombi_Driver_Name="HP LaserJet P3005 PCL 6"
+HP_Mombi_Driver_Name_2="HP LaserJet P3004 PCL 6"
+LocaleCABFile ="p6i2itww.cab"
+
+
+[Strings.0411]       ;Japanese
+PrinterClassName="Printers" 
+DiskID="HP LaserJet P3004/3005 CD"
+PRINT_PROCESSOR="HPCPP5r1,hpcpp5r1.dll" 
+HP="HP" 
+HP_Mombi_Driver_Name="HP LaserJet P3005 PCL 6"
+HP_Mombi_Driver_Name_2="HP LaserJet P3004 PCL 6"
+LocaleCABFile ="p6i2jaww.cab"
+
+
+[Strings.0412]        ;Korean
+PrinterClassName="Printers" 
+DiskID="HP LaserJet P3004/3005 CD"
+PRINT_PROCESSOR="HPCPP5r1,hpcpp5r1.dll" 
+HP="HP" 
+HP_Mombi_Driver_Name="HP LaserJet P3005 PCL 6"
+HP_Mombi_Driver_Name_2="HP LaserJet P3004 PCL 6"
+LocaleCABFile ="p6i2koww.cab"
+
+
+[Strings.0814]        ;Norwegian
+PrinterClassName="Printers" 
+DiskID="HP LaserJet P3004/3005 CD"
+PRINT_PROCESSOR="HPCPP5r1,hpcpp5r1.dll" 
+HP="HP" 
+HP_Mombi_Driver_Name="HP LaserJet P3005 PCL 6"
+HP_Mombi_Driver_Name_2="HP LaserJet P3004 PCL 6"
+LocaleCABFile ="p6i2noww.cab"
+
+
+[Strings.0415]        ;Polish
+PrinterClassName="Printers" 
+DiskID="HP LaserJet P3004/3005 CD"
+PRINT_PROCESSOR="HPCPP5r1,hpcpp5r1.dll" 
+HP="HP" 
+HP_Mombi_Driver_Name="HP LaserJet P3005 PCL 6"
+HP_Mombi_Driver_Name_2="HP LaserJet P3004 PCL 6"
+LocaleCABFile ="p6i2plww.cab"
+
+
+[Strings.0416]        ;Portugese
+PrinterClassName="Printers" 
+DiskID="HP LaserJet P3004/3005 CD"
+PRINT_PROCESSOR="HPCPP5r1,hpcpp5r1.dll" 
+HP="HP" 
+HP_Mombi_Driver_Name="HP LaserJet P3005 PCL 6"
+HP_Mombi_Driver_Name_2="HP LaserJet P3004 PCL 6"
+LocaleCABFile ="p6i2ptww.cab"
+
+
+[Strings.0419]        ;Russian
+PrinterClassName="Printers" 
+DiskID="HP LaserJet P3004/3005 CD"
+PRINT_PROCESSOR="HPCPP5r1,hpcpp5r1.dll" 
+HP="HP" 
+HP_Mombi_Driver_Name="HP LaserJet P3005 PCL 6"
+HP_Mombi_Driver_Name_2="HP LaserJet P3004 PCL 6"
+LocaleCABFile ="p6i2ruww.cab"
+
+
+[Strings.041B]        ;Slovak 
+PrinterClassName="Printers" 
+DiskID="HP LaserJet P3004/3005 CD"
+PRINT_PROCESSOR="HPCPP5r1,hpcpp5r1.dll" 
+HP="HP" 
+HP_Mombi_Driver_Name="HP LaserJet P3005 PCL 6"
+HP_Mombi_Driver_Name_2="HP LaserJet P3004 PCL 6"
+LocaleCABFile ="p6i2skww.cab"
+
+
+[Strings.040A]       ;Spanish
+PrinterClassName="Printers" 
+DiskID="HP LaserJet P3004/3005 CD"
+PRINT_PROCESSOR="HPCPP5r1,hpcpp5r1.dll" 
+HP="HP" 
+HP_Mombi_Driver_Name="HP LaserJet P3005 PCL 6"
+HP_Mombi_Driver_Name_2="HP LaserJet P3004 PCL 6"
+LocaleCABFile ="p6i2esww.cab"
+
+
+[Strings.041D]        ;Swedish
+PrinterClassName="Printers" 
+DiskID="HP LaserJet P3004/3005 CD"
+PRINT_PROCESSOR="HPCPP5r1,hpcpp5r1.dll" 
+HP="HP" 
+HP_Mombi_Driver_Name="HP LaserJet P3005 PCL 6"
+HP_Mombi_Driver_Name_2="HP LaserJet P3004 PCL 6"
+LocaleCABFile ="p6i2svww.cab"
+
+[Strings.041E]        ;Thai
+PrinterClassName="Printers" 
+DiskID="HP LaserJet P3004/3005 CD"
+PRINT_PROCESSOR="HPCPP5r1,hpcpp5r1.dll" 
+HP="HP" 
+HP_Mombi_Driver_Name="HP LaserJet P3005 PCL 6"
+HP_Mombi_Driver_Name_2="HP LaserJet P3004 PCL 6"
+LocaleCABFile ="p6i2thww.cab"
+
+
+[Strings.041F]        ;Turkish (Turkce)
+PrinterClassName="Printers" 
+DiskID="HP LaserJet P3004/3005 CD"
+PRINT_PROCESSOR="HPCPP5r1,hpcpp5r1.dll" 
+HP="HP" 
+HP_Mombi_Driver_Name="HP LaserJet P3005 PCL 6"
+HP_Mombi_Driver_Name_2="HP LaserJet P3004 PCL 6"
+LocaleCABFile ="p6i2trww.cab"
+[Strings.041A]        ;Croatian - Croatia
+PrinterClassName="Printers" 
+DiskID="HP LaserJet P3004/3005 CD"
+PRINT_PROCESSOR="HPCPP5r1,hpcpp5r1.dll" 
+HP="HP" 
+HP_Mombi_Driver_Name="HP LaserJet P3005 PCL 6"
+HP_Mombi_Driver_Name_2="HP LaserJet P3004 PCL 6"
+LocaleCABFile ="p6i2hrww.cab"
+
+[Strings.0402]        ;Bulgarian - Bulgaria
+PrinterClassName="Printers" 
+DiskID="HP LaserJet P3004/3005 CD"
+PRINT_PROCESSOR="HPCPP5r1,hpcpp5r1.dll" 
+HP="HP" 
+HP_Mombi_Driver_Name="HP LaserJet P3005 PCL 6"
+HP_Mombi_Driver_Name_2="HP LaserJet P3004 PCL 6"
+LocaleCABFile ="p6i2bgww.cab"
+
+[Strings.0425]        ;Estonian - Estonia
+PrinterClassName="Printers" 
+DiskID="HP LaserJet P3004/3005 CD"
+PRINT_PROCESSOR="HPCPP5r1,hpcpp5r1.dll" 
+HP="HP" 
+HP_Mombi_Driver_Name="HP LaserJet P3005 PCL 6"
+HP_Mombi_Driver_Name_2="HP LaserJet P3004 PCL 6"
+LocaleCABFile ="p6i2etww.cab"
+
+[Strings.0421]        ;Indonesian - Indonesia
+PrinterClassName="Printers" 
+DiskID="HP LaserJet P3004/3005 CD"
+PRINT_PROCESSOR="HPCPP5r1,hpcpp5r1.dll" 
+HP="HP" 
+HP_Mombi_Driver_Name="HP LaserJet P3005 PCL 6"
+HP_Mombi_Driver_Name_2="HP LaserJet P3004 PCL 6"
+LocaleCABFile ="p6i2idww.cab"
+ 
+[Strings.043F]        ;Kazakh - Kazakhstan
+PrinterClassName="Printers" 
+DiskID="HP LaserJet P3004/3005 CD"
+PRINT_PROCESSOR="HPCPP5r1,hpcpp5r1.dll" 
+HP="HP" 
+HP_Mombi_Driver_Name="HP LaserJet P3005 PCL 6"
+HP_Mombi_Driver_Name_2="HP LaserJet P3004 PCL 6"
+LocaleCABFile ="p6i2kkww.cab"
+
+[Strings.0427]        ;Lithuanian - Lithuania
+PrinterClassName="Printers" 
+DiskID="HP LaserJet P3004/3005 CD"
+PRINT_PROCESSOR="HPCPP5r1,hpcpp5r1.dll" 
+HP="HP" 
+HP_Mombi_Driver_Name="HP LaserJet P3005 PCL 6"
+HP_Mombi_Driver_Name_2="HP LaserJet P3004 PCL 6"
+LocaleCABFile ="p6i2ltww.cab"
+
+[Strings.0426]        ;Latvian - Latvia
+PrinterClassName="Printers" 
+DiskID="HP LaserJet P3004/3005 CD"
+PRINT_PROCESSOR="HPCPP5r1,hpcpp5r1.dll" 
+HP="HP" 
+HP_Mombi_Driver_Name="HP LaserJet P3005 PCL 6"
+HP_Mombi_Driver_Name_2="HP LaserJet P3004 PCL 6"
+LocaleCABFile ="p6i2lvww.cab"
+
+[Strings.0418]        ;Romanian - Romania
+PrinterClassName="Printers" 
+DiskID="HP LaserJet P3004/3005 CD"
+PRINT_PROCESSOR="HPCPP5r1,hpcpp5r1.dll" 
+HP="HP" 
+HP_Mombi_Driver_Name="HP LaserJet P3005 PCL 6"
+HP_Mombi_Driver_Name_2="HP LaserJet P3004 PCL 6"
+LocaleCABFile ="p6i2roww.cab"
+
+[Strings.081A]        ;Serbian (Latin) - Serbia
+PrinterClassName="Printers" 
+DiskID="HP LaserJet P3004/3005 CD"
+PRINT_PROCESSOR="HPCPP5r1,hpcpp5r1.dll" 
+HP="HP" 
+HP_Mombi_Driver_Name="HP LaserJet P3005 PCL 6"
+HP_Mombi_Driver_Name_2="HP LaserJet P3004 PCL 6"
+LocaleCABFile ="p6i2srww.cab"
+
+[Strings.0424]        ;Slovenian - Slovenia
+PrinterClassName="Printers" 
+DiskID="HP LaserJet P3004/3005 CD"
+PRINT_PROCESSOR="HPCPP5r1,hpcpp5r1.dll" 
+HP="HP" 
+HP_Mombi_Driver_Name="HP LaserJet P3005 PCL 6"
+HP_Mombi_Driver_Name_2="HP LaserJet P3004 PCL 6"
+LocaleCABFile ="p6i2slww.cab"
+
+[Strings.0422]        ;Ukrainian - Ukraine
+PrinterClassName="Printers" 
+DiskID="HP LaserJet P3004/3005 CD"
+PRINT_PROCESSOR="HPCPP5r1,hpcpp5r1.dll" 
+HP="HP" 
+HP_Mombi_Driver_Name="HP LaserJet P3005 PCL 6"
+HP_Mombi_Driver_Name_2="HP LaserJet P3004 PCL 6"
+LocaleCABFile ="p6i2ukww.cab"
+
+[Strings.042A]        ;Vietnamese - Vietnam
+PrinterClassName="Printers" 
+DiskID="HP LaserJet P3004/3005 CD"
+PRINT_PROCESSOR="HPCPP5r1,hpcpp5r1.dll" 
+HP="HP" 
+HP_Mombi_Driver_Name="HP LaserJet P3005 PCL 6"
+HP_Mombi_Driver_Name_2="HP LaserJet P3004 PCL 6"
+LocaleCABFile ="p6i2viww.cab"
