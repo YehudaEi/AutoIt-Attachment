@@ -86,7 +86,7 @@ While $iCounter < $iLen
 
 	$i = $i + 1
 	IniWrite("config.ini", "General", "Start", $i)
-	TraySetToolTip("Current: " & $iCounter & @CRLF & "Total Len: " & $iLen)
+	TraySetToolTip("Current: " & $iCounter & @CRLF & @CRLF & "Total Len: " & $iLen)
 Wend
 
 IniWrite("config.ini", "General", "Length", $iLen)
