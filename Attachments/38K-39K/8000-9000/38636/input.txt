@@ -1,0 +1,13 @@
+x,y,z,0
+x,y,z,1
+x,y,m,7
+x,y,z,3
+x,d,m,1
+x,d,m,2
+f,d,z,4
+f,d,m,6
+f,d,m,5
+g,bb,m,d
+g,bb,m,c
+g,bb,m,c
+g,bb,m,c
