@@ -1,0 +1,7 @@
+[Server]
+SName=SCCM01
+SCode=P01
+Logfile=\\SCCM01\Logs
+[Security]
+Group1=SCCM Tier I Technicians
+Group2=SCCM Tier II Technicians
