@@ -1,0 +1,59 @@
+<KeyFileAssoc version="0.3">
+	<Config>
+		<AppsRoot>..\..\Apps</AppsRoot>
+		<Language file="KeyFileAssoc_fr.xml">fr</Language>
+		<UpdateAutoCheck>on</UpdateAutoCheck>
+		<SysTrayFastSwitch>on</SysTrayFastSwitch>
+		<ShowAssocToolTip>on</ShowAssocToolTip>
+		<UseLbkProxySettings>on</UseLbkProxySettings>
+	</Config>
+	<AppsAssoc>
+		<FileType ext="mp3">
+			<TypeDescription.en>MPEG Audio Stream file, Layer III (MP3)</TypeDescription.en>
+			<TypeDescription.fr>Fichier MPEG Audio Stream, Layer III (MP3)</TypeDescription.fr>
+			<Shell>
+				<Action name="ouvrir_avec_mp3tag__liberkey">
+					<Description.en>Ouvrir avec Mp3tag  (LiberKey)</Description.en>
+					<Description.fr>Ouvrir avec Mp3tag  (LiberKey)</Description.fr>
+					<ExePath>%APPS%\Mp3tag\Mp3tagLKL.exe</ExePath>
+					<AppName>Mp3tag</AppName>
+					<CmdArgs>&quot;%1&quot;</CmdArgs>
+				</Action>
+				<Action name="vuplayer">
+					<Description.en>Open with AIMP (LiberKey)</Description.en>
+					<Description.fr>Ouvrir avec AIMP (LiberKey)</Description.fr>
+					<ExePath>%APPS%\AIMP\AIMPLKL.exe</ExePath>
+					<AppName>AIMP</AppName>
+					<CmdArgs>&quot;%1&quot;</CmdArgs>
+				</Action>
+				<Action name="editer_avec_audacity__liberkey">
+					<Description.en>Edit with Audacity  (LiberKey)</Description.en>
+					<Description.fr>Editer avec Audacity  (LiberKey)</Description.fr>
+					<ExePath>%APPS%\Audacity\AudacityLKL.exe</ExePath>
+					<AppName>Audacity </AppName>
+					<CmdArgs>&quot;%1&quot;</CmdArgs>
+				</Action>
+			</Shell>
+		</FileType>
+		<FileType ext="wav">
+			<TypeDescription.en>Audio file (WAV)</TypeDescription.en>
+			<TypeDescription.fr>Fichier Audio (WAV)</TypeDescription.fr>
+			<Shell>
+				<Action name="vuplayer">
+					<Description.fr>Ouvrir avec AIMP (LiberKey)</Description.fr>
+					<ExePath>%APPS%\AIMP\AIMPLKL.exe</ExePath>
+					<AppName>AIMP</AppName>
+					<CmdArgs>&quot;%1&quot;</CmdArgs>
+				</Action>
+				<Action name="editer_avec_audacity__liberkey">
+					<Description.en>Edit with Audacity  (LiberKey)</Description.en>
+					<Description.fr>Editer avec Audacity  (LiberKey)</Description.fr>
+					<ExePath>%APPS%\Audacity\AudacityLKL.exe</ExePath>
+					<AppName>Audacity </AppName>
+					<CmdArgs>&quot;%1&quot;</CmdArgs>
+				</Action>
+			</Shell>
+		</FileType>
+	</AppsAssoc>
+	<AppsAssocErrors/>
+</KeyFileAssoc>
