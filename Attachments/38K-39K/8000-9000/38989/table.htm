@@ -1,0 +1,426 @@
+<HTML><HEAD><TITLE>Просмотр документов</TITLE>
+<META name=GENERATOR content="Microsoft Visual Studio .NET 7.1">
+<META name=CODE_LANGUAGE content=C#>
+<META name=vs_defaultClientScript content=JavaScript>
+<META name=vs_targetSchema content=http://schemas.microsoft.com/intellisense/ie5><LINK rel=stylesheet type=text/css href="defaultCSS.css"><LINK rel=stylesheet type=text/css href="\Common\WebGrid\Grid.css">
+<SCRIPT language=Javascript src="/Common/Script/Localization.js"></SCRIPT>
+
+<SCRIPT language=JavaScript src="\Common\WebGrid\Grid2005.js"></SCRIPT>
+
+<SCRIPT language=JavaScript src="Script.js?v1.2"></SCRIPT>
+
+<SCRIPT language=javascript>
+		</SCRIPT>
+</HEAD>
+<BODY onload=InitDocuments() bottomMargin=0 leftMargin=3 rightMargin=0 topMargin=3>
+<TABLE id=tb_main border=0 cellSpacing=0 cellPadding=0 width="100%">
+<TBODY>
+<TR>
+<TD height=30>
+<TABLE id=tb_title border=0 cellSpacing=0 cellPadding=0>
+<TBODY>
+<TR>
+<TD style="BORDER-BOTTOM: black 2px solid; PADDING-BOTTOM: 5px; WIDTH: 1%; FONT-FAMILY: Arial; FONT-SIZE: 10pt; FONT-WEIGHT: bold" noWrap>
+<DIV style="DISPLAY: inline" id=lb_DocTitles>Все операции за день : </DIV></TD></TR>
+<TR>
+<TD style="PADDING-BOTTOM: 10px; PADDING-TOP: 5px">
+<TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+<TBODY>
+<TR>
+<TD style="PADDING-LEFT: 10px; WIDTH: 10px" vAlign=center align=left><IMG id=bt_Refresh class=appButtonStyle title=Перечитать onclick=RefreshButtonPressed() alt=Перечитать src="/Common/Images/refresh.gif" width=18 height=18> </TD>
+<TD style="PADDING-LEFT: 10px; WIDTH: 10px" vAlign=center align=left><IMG id=bt_Filter class=appButtonStyle title="Установить фильтр" onclick=FilterButtonPressed() alt="Установить фильтр" src="/Common/Images/FILTER_.gif" width=18 height=18> </TD>
+<TD width="100%"></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD>
+<DIV id=webService class=webservice showProgress="true">
+<DIV id=oTable>
+<TABLE style="BORDER-BOTTOM-COLOR: black; BACKGROUND-COLOR: white; BORDER-TOP-COLOR: black; BORDER-COLLAPSE: collapse; FONT-FAMILY: Verdana; BORDER-RIGHT-COLOR: black; FONT-SIZE: 8pt; BORDER-LEFT-COLOR: black; CURSOR: hand" border=1 cellSpacing=0 borderColor=black cellPadding=2 xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<TBODY>
+<TR style="BACKGROUND-COLOR: gray; FONT-FAMILY: Verdana; COLOR: white; FONT-SIZE: 8pt; CURSOR: hand; FONT-WEIGHT: bold" align=middle>
+<TD title="Порядок документа" onclick="Sort('REF')" width=70>Реф</TD>
+<TD title=Исполнитель onclick="Sort('USERID')" width=20>Вик</TD>
+<TD title="Номер документа" onclick="Sort('ND')" width=100>№ док</TD>
+<TD title=Счет-А onclick="Sort('NLSA')" width=100>Рах-А</TD>
+<TD title="Сумма в валюте отправителя" onclick="Sort('S')">Сума</TD>
+<TD title="Валюта отправителя" onclick="Sort('LCV')" width=40>Вал</TD>
+<TD title="Дата операции" onclick="Sort('a.VDAT')" width=70>Дата вал.</TD>
+<TD title="Сумма в валюте получателя" onclick="Sort('S2')">Сума(вал В)</TD>
+<TD title="Валюта получателя" onclick="Sort('LCV2')" width=40>Вал(В)</TD>
+<TD title="МФО одержувача" onclick="Sort('MFOB')" width=100>МФО(В)</TD>
+<TD title=Счет-В onclick="Sort('NLSB')" width=100>Рах-В</TD>
+<TD onclick="Sort('DK')" width=20>Д/К</TD>
+<TD onclick="Sort('SK')" width=40>СКП</TD>
+<TD title="Дата документа" onclick="Sort('a.DATD')" width=70>Дата док.</TD>
+<TD onclick="Sort('NAZN')">Назначение платежа</TD>
+<TD title="Код Операции" onclick="Sort('TT')" width=40>ОП</TD>
+<TD title="Код организации" onclick="Sort('TOBO')" width=70>Код безб.від.</TD></TR>
+<TR style="COLOR: #000000" id=r_1 oncontextmenu="ShowPopupMenu();SelectRow('88843348',1);return false" onclick="HidePopupMenu();SelectRow('88843348',1)" tt="515">
+<TD style="COLOR: blue; CURSOR: hand; TEXT-DECORATION: underline" title="Відкрити картку документа" onclick="OpenDoc('88843348')" align=right>88843348</TD>
+<TD align=middle>52513</TD>
+<TD align=left>25883348</TD>
+<TD align=left>9900601301001</TD>
+<TD noWrap align=right>32 908.63</TD>
+<TD align=middle>RUB</TD>
+<TD align=middle>23.10.2012</TD>
+<TD noWrap align=right>32 908.63</TD>
+<TD align=middle>RUB</TD>
+<TD align=left>883264</TD>
+<TD align=left>9900702201001</TD>
+<TD align=middle>1</TD>
+<TD align=middle></TD>
+<TD align=middle>23.10.2012</TD>
+<TD title="зачислена ошибная сумма по пенсии" noWrap align=left>зачислена ошибная сумма </TD>
+<TD align=middle>515</TD>
+<TD align=left>/883264/000001/</TD></TR>
+<TR style="COLOR: #000000" id=r_2 oncontextmenu="ShowPopupMenu();SelectRow('88843128',2);return false" onclick="HidePopupMenu();SelectRow('88843128',2)" tt="I00">
+<TD style="COLOR: blue; CURSOR: hand; TEXT-DECORATION: underline" title="Відкрити картку документа" onclick="OpenDoc('88843128')" align=right>88843128</TD>
+<TD align=middle>30003</TD>
+<TD align=left>P11122311</TD>
+<TD align=left>9900702201001</TD>
+<TD noWrap align=right>2 444.65</TD>
+<TD align=middle>RUB</TD>
+<TD align=middle>23.10.2012</TD>
+<TD noWrap align=right>2 444.65</TD>
+<TD align=middle>RUB</TD>
+<TD align=left>883264</TD>
+<TD align=left>37000000223885</TD>
+<TD align=middle>1</TD>
+<TD align=middle></TD>
+<TD align=middle>23.10.2012</TD>
+<TD title="ДоВ->Зач-Пен: ПЕНСИЯ Зачисление по списку; Кол-во=5" noWrap align=left>ДоВ-&gt;Зач-Пен: ПЕНСИЯ Зач</TD>
+<TD align=middle>I00</TD>
+<TD align=left>/883264/000001/000885/</TD></TR>
+<TR style="COLOR: #000000" id=r_3 oncontextmenu="ShowPopupMenu();SelectRow('88843127',3);return false" onclick="HidePopupMenu();SelectRow('88843127',3)" tt="I00">
+<TD style="COLOR: blue; CURSOR: hand; TEXT-DECORATION: underline" title="Відкрити картку документа" onclick="OpenDoc('88843127')" align=right>88843127</TD>
+<TD align=middle>30003</TD>
+<TD align=left>P11122310</TD>
+<TD align=left>9900800901001</TD>
+<TD noWrap align=right>1 214.85</TD>
+<TD align=middle>RUB</TD>
+<TD align=middle>23.10.2012</TD>
+<TD noWrap align=right>1 214.85</TD>
+<TD align=middle>RUB</TD>
+<TD align=left>883264</TD>
+<TD align=left>37000000223885</TD>
+<TD align=middle>1</TD>
+<TD align=middle></TD>
+<TD align=middle>23.10.2012</TD>
+<TD title="ДоВ->Зач-Зпл: Зачисление по списку Зачисление по списку; Кол-во=1" noWrap align=left>ДоВ-&gt;Зач-Зпл: Зачисление</TD>
+<TD align=middle>I00</TD>
+<TD align=left>/883264/000001/000885/</TD></TR>
+<TR style="COLOR: #000000" id=r_4 oncontextmenu="ShowPopupMenu();SelectRow('88843126',4);return false" onclick="HidePopupMenu();SelectRow('88843126',4)" tt="I00">
+<TD style="COLOR: blue; CURSOR: hand; TEXT-DECORATION: underline" title="Відкрити картку документа" onclick="OpenDoc('88843126')" align=right>88843126</TD>
+<TD align=middle>30003</TD>
+<TD align=left>P11122309</TD>
+<TD align=left>9900800901001</TD>
+<TD noWrap align=right>611.17</TD>
+<TD align=middle>RUB</TD>
+<TD align=middle>23.10.2012</TD>
+<TD noWrap align=right>611.17</TD>
+<TD align=middle>RUB</TD>
+<TD align=left>883264</TD>
+<TD align=left>37000000223885</TD>
+<TD align=middle>1</TD>
+<TD align=middle></TD>
+<TD align=middle>23.10.2012</TD>
+<TD title="ТДВ->Зач-Aлм: Зачисление по списку Зачисление по списку; Кол-во=1" noWrap align=left>ТДВ-&gt;Зач-Aлм: Зачисление</TD>
+<TD align=middle>I00</TD>
+<TD align=left>/883264/000001/000885/</TD></TR>
+<TR style="COLOR: #000000" id=r_5 oncontextmenu="ShowPopupMenu();SelectRow('88843125',5);return false" onclick="HidePopupMenu();SelectRow('88843125',5)" tt="I00">
+<TD style="COLOR: blue; CURSOR: hand; TEXT-DECORATION: underline" title="Відкрити картку документа" onclick="OpenDoc('88843125')" align=right>88843125</TD>
+<TD align=middle>30003</TD>
+<TD align=left>P11122308</TD>
+<TD align=left>9900800901001</TD>
+<TD noWrap align=right>2 021.27</TD>
+<TD align=middle>RUB</TD>
+<TD align=middle>23.10.2012</TD>
+<TD noWrap align=right>2 021.27</TD>
+<TD align=middle>RUB</TD>
+<TD align=left>883264</TD>
+<TD align=left>37000000223885</TD>
+<TD align=middle>1</TD>
+<TD align=middle></TD>
+<TD align=middle>23.10.2012</TD>
+<TD title="ТДВ->Зач-Зпл: Зачисление по списку Зачисление по списку; Кол-во=2" noWrap align=left>ТДВ-&gt;Зач-Зпл: Зачисление</TD>
+<TD align=middle>I00</TD>
+<TD align=left>/883264/000001/000885/</TD></TR>
+<TR style="COLOR: #000000" id=r_6 oncontextmenu="ShowPopupMenu();SelectRow('88843124',6);return false" onclick="HidePopupMenu();SelectRow('88843124',6)" tt="I00">
+<TD style="COLOR: blue; CURSOR: hand; TEXT-DECORATION: underline" title="Відкрити картку документа" onclick="OpenDoc('88843124')" align=right>88843124</TD>
+<TD align=middle>30003</TD>
+<TD align=left>P11122307</TD>
+<TD align=left>9900702201001</TD>
+<TD noWrap align=right>1 690.24</TD>
+<TD align=middle>RUB</TD>
+<TD align=middle>23.10.2012</TD>
+<TD noWrap align=right>1 690.24</TD>
+<TD align=middle>RUB</TD>
+<TD align=left>883264</TD>
+<TD align=left>37003002000885</TD>
+<TD align=middle>1</TD>
+<TD align=middle></TD>
+<TD align=middle>23.10.2012</TD>
+<TD title="П20->Пнс-Пен: пенсия Зачисление по списку; Кол-во=1" noWrap align=left>П20-&gt;Пнс-Пен: пенсия Зач</TD>
+<TD align=middle>I00</TD>
+<TD align=left>/883264/000001/000885/</TD></TR>
+<TR style="COLOR: #000000" id=r_7 oncontextmenu="ShowPopupMenu();SelectRow('88843123',7);return false" onclick="HidePopupMenu();SelectRow('88843123',7)" tt="I00">
+<TD style="COLOR: blue; CURSOR: hand; TEXT-DECORATION: underline" title="Відкрити картку документа" onclick="OpenDoc('88843123')" align=right>88843123</TD>
+<TD align=middle>30003</TD>
+<TD align=left>P11122306</TD>
+<TD align=left>9900702201001</TD>
+<TD noWrap align=right>1 705.59</TD>
+<TD align=middle>RUB</TD>
+<TD align=middle>23.10.2012</TD>
+<TD noWrap align=right>1 705.59</TD>
+<TD align=middle>RUB</TD>
+<TD align=left>883264</TD>
+<TD align=left>37003001700885</TD>
+<TD align=middle>1</TD>
+<TD align=middle></TD>
+<TD align=middle>23.10.2012</TD>
+<TD title="ПБУ->Зач-Пен: ПЕНСИЯ Зачисление по списку; Кол-во=1" noWrap align=left>ПБУ-&gt;Зач-Пен: ПЕНСИЯ Зач</TD>
+<TD align=middle>I00</TD>
+<TD align=left>/883264/000001/000885/</TD></TR>
+<TR style="COLOR: #000000" id=r_8 oncontextmenu="ShowPopupMenu();SelectRow('88843122',8);return false" onclick="HidePopupMenu();SelectRow('88843122',8)" tt="I00">
+<TD style="COLOR: blue; CURSOR: hand; TEXT-DECORATION: underline" title="Відкрити картку документа" onclick="OpenDoc('88843122')" align=right>88843122</TD>
+<TD align=middle>30003</TD>
+<TD align=left>P11122305</TD>
+<TD align=left>9900702201001</TD>
+<TD noWrap align=right>52 378.38</TD>
+<TD align=middle>RUB</TD>
+<TD align=middle>23.10.2012</TD>
+<TD noWrap align=right>52 378.38</TD>
+<TD align=middle>RUB</TD>
+<TD align=left>883264</TD>
+<TD align=left>37000002100885</TD>
+<TD align=middle>1</TD>
+<TD align=middle></TD>
+<TD align=middle>23.10.2012</TD>
+<TD title="П21->Пнс-Пен: ПЕНСИЯ Зачисление по списку; Кол-во=27" noWrap align=left>П21-&gt;Пнс-Пен: ПЕНСИЯ Зач</TD>
+<TD align=middle>I00</TD>
+<TD align=left>/883264/000001/000885/</TD></TR>
+<TR style="COLOR: #000000" id=r_9 oncontextmenu="ShowPopupMenu();SelectRow('88843121',9);return false" onclick="HidePopupMenu();SelectRow('88843121',9)" tt="I00">
+<TD style="COLOR: blue; CURSOR: hand; TEXT-DECORATION: underline" title="Відкрити картку документа" onclick="OpenDoc('88843121')" align=right>88843121</TD>
+<TD align=middle>30003</TD>
+<TD align=left>P11122304</TD>
+<TD align=left>9900702201001</TD>
+<TD noWrap align=right>30 463.98</TD>
+<TD align=middle>RUB</TD>
+<TD align=middle>23.10.2012</TD>
+<TD noWrap align=right>30 463.98</TD>
+<TD align=middle>RUB</TD>
+<TD align=left>883264</TD>
+<TD align=left>37000002100885</TD>
+<TD align=middle>1</TD>
+<TD align=middle></TD>
+<TD align=middle>23.10.2012</TD>
+<TD title="П21->Пнс-Пен: пенсия Зачисление по списку; Кол-во=17" noWrap align=left>П21-&gt;Пнс-Пен: пенсия Зач</TD>
+<TD align=middle>I00</TD>
+<TD align=left>/883264/000001/000885/</TD></TR>
+<TR style="COLOR: #000000" id=r_10 oncontextmenu="ShowPopupMenu();SelectRow('88843120',10);return false" onclick="HidePopupMenu();SelectRow('88843120',10)" tt="I00">
+<TD style="COLOR: blue; CURSOR: hand; TEXT-DECORATION: underline" title="Відкрити картку документа" onclick="OpenDoc('88843120')" align=right>88843120</TD>
+<TD align=middle>30003</TD>
+<TD align=left>P11122303</TD>
+<TD align=left>9900702201001</TD>
+<TD noWrap align=right>8 000.85</TD>
+<TD align=middle>RUB</TD>
+<TD align=middle>23.10.2012</TD>
+<TD noWrap align=right>8 000.85</TD>
+<TD align=middle>RUB</TD>
+<TD align=left>883264</TD>
+<TD align=left>37000000223885</TD>
+<TD align=middle>1</TD>
+<TD align=middle></TD>
+<TD align=middle>23.10.2012</TD>
+<TD title="ДоВ->Зач-Пен: ПЕНСИЯ Зачисление по списку; Кол-во=5" noWrap align=left>ДоВ-&gt;Зач-Пен: ПЕНСИЯ Зач</TD>
+<TD align=middle>I00</TD>
+<TD align=left>/883264/000001/000885/</TD></TR>
+<TR style="COLOR: #000000" id=r_11 oncontextmenu="ShowPopupMenu();SelectRow('88843119',11);return false" onclick="HidePopupMenu();SelectRow('88843119',11)" tt="I00">
+<TD style="COLOR: blue; CURSOR: hand; TEXT-DECORATION: underline" title="Відкрити картку документа" onclick="OpenDoc('88843119')" align=right>88843119</TD>
+<TD align=middle>30003</TD>
+<TD align=left>P11122302</TD>
+<TD align=left>9900702201001</TD>
+<TD noWrap align=right>4 821.01</TD>
+<TD align=middle>RUB</TD>
+<TD align=middle>23.10.2012</TD>
+<TD noWrap align=right>4 821.01</TD>
+<TD align=middle>RUB</TD>
+<TD align=left>883264</TD>
+<TD align=left>37000000223885</TD>
+<TD align=middle>1</TD>
+<TD align=middle></TD>
+<TD align=middle>23.10.2012</TD>
+<TD title="ДоВ->Зач-Пен: пенсия Зачисление по списку; Кол-во=3" noWrap align=left>ДоВ-&gt;Зач-Пен: пенсия Зач</TD>
+<TD align=middle>I00</TD>
+<TD align=left>/883264/000001/000885/</TD></TR>
+<TR style="COLOR: #000000" id=r_12 oncontextmenu="ShowPopupMenu();SelectRow('88843118',12);return false" onclick="HidePopupMenu();SelectRow('88843118',12)" tt="I00">
+<TD style="COLOR: blue; CURSOR: hand; TEXT-DECORATION: underline" title="Відкрити картку документа" onclick="OpenDoc('88843118')" align=right>88843118</TD>
+<TD align=middle>30003</TD>
+<TD align=left>P11122301</TD>
+<TD align=left>9900702201001</TD>
+<TD noWrap align=right>1 912.00</TD>
+<TD align=middle>RUB</TD>
+<TD align=middle>23.10.2012</TD>
+<TD noWrap align=right>1 912.00</TD>
+<TD align=middle>RUB</TD>
+<TD align=left>883264</TD>
+<TD align=left>37000000223885</TD>
+<TD align=middle>1</TD>
+<TD align=middle></TD>
+<TD align=middle>23.10.2012</TD>
+<TD title="ТДВ->Зач-Пен: ПЕНСИЯ Зачисление по списку; Кол-во=2" noWrap align=left>ТДВ-&gt;Зач-Пен: ПЕНСИЯ Зач</TD>
+<TD align=middle>I00</TD>
+<TD align=left>/883264/000001/000885/</TD></TR>
+<TR style="COLOR: #000000" id=r_13 oncontextmenu="ShowPopupMenu();SelectRow('88843092',13);return false" onclick="HidePopupMenu();SelectRow('88843092',13)" tt="I03">
+<TD style="COLOR: blue; CURSOR: hand; TEXT-DECORATION: underline" title="Відкрити картку документа" onclick="OpenDoc('88843092')" align=right>88843092</TD>
+<TD align=middle>30003</TD>
+<TD align=left>K11122306</TD>
+<TD align=left>37007201700885</TD>
+<TD noWrap align=right>3 000.00</TD>
+<TD align=middle>RUB</TD>
+<TD align=middle>23.10.2012</TD>
+<TD noWrap align=right>3 000.00</TD>
+<TD align=middle>RUB</TD>
+<TD align=left>883264</TD>
+<TD align=left>1003000100885</TD>
+<TD align=middle>1</TD>
+<TD align=middle>55</TD>
+<TD align=middle>23.10.2012</TD>
+<TD title="ДоБ->Рсх-ДЗн: Расход ; Кол-во=1" noWrap align=left>ДоБ-&gt;Рсх-ДЗн: Расход ; К</TD>
+<TD align=middle>I03</TD>
+<TD align=left>/883264/000001/000885/</TD></TR>
+<TR style="COLOR: #000000" id=r_14 oncontextmenu="ShowPopupMenu();SelectRow('88843091',14);return false" onclick="HidePopupMenu();SelectRow('88843091',14)" tt="I03">
+<TD style="COLOR: blue; CURSOR: hand; TEXT-DECORATION: underline" title="Відкрити картку документа" onclick="OpenDoc('88843091')" align=right>88843091</TD>
+<TD align=middle>30003</TD>
+<TD align=left>K11122305</TD>
+<TD align=left>37003001700885</TD>
+<TD noWrap align=right>1 000.00</TD>
+<TD align=middle>RUB</TD>
+<TD align=middle>23.10.2012</TD>
+<TD noWrap align=right>1 000.00</TD>
+<TD align=middle>RUB</TD>
+<TD align=left>883264</TD>
+<TD align=left>1003000100885</TD>
+<TD align=middle>1</TD>
+<TD align=middle>55</TD>
+<TD align=middle>23.10.2012</TD>
+<TD title="ПБУ->Рсх-ДЗн: Расход ; Кол-во=1" noWrap align=left>ПБУ-&gt;Рсх-ДЗн: Расход ; К</TD>
+<TD align=middle>I03</TD>
+<TD align=left>/883264/000001/000885/</TD></TR>
+<TR style="COLOR: #000000" id=r_15 oncontextmenu="ShowPopupMenu();SelectRow('88843090',15);return false" onclick="HidePopupMenu();SelectRow('88843090',15)" tt="I03">
+<TD style="COLOR: blue; CURSOR: hand; TEXT-DECORATION: underline" title="Відкрити картку документа" onclick="OpenDoc('88843090')" align=right>88843090</TD>
+<TD align=middle>30003</TD>
+<TD align=left>K11122304</TD>
+<TD align=left>37000002100885</TD>
+<TD noWrap align=right>36 593.00</TD>
+<TD align=middle>RUB</TD>
+<TD align=middle>23.10.2012</TD>
+<TD noWrap align=right>36 593.00</TD>
+<TD align=middle>RUB</TD>
+<TD align=left>883264</TD>
+<TD align=left>1003000100885</TD>
+<TD align=middle>1</TD>
+<TD align=middle>55</TD>
+<TD align=middle>23.10.2012</TD>
+<TD title="П21->Рсх-ДЗн: Расход ; Кол-во=30" noWrap align=left>П21-&gt;Рсх-ДЗн: Расход ; К</TD>
+<TD align=middle>I03</TD>
+<TD align=left>/883264/000001/000885/</TD></TR>
+<TR style="COLOR: #000000" id=r_16 oncontextmenu="ShowPopupMenu();SelectRow('88843089',16);return false" onclick="HidePopupMenu();SelectRow('88843089',16)" tt="I03">
+<TD style="COLOR: blue; CURSOR: hand; TEXT-DECORATION: underline" title="Відкрити картку документа" onclick="OpenDoc('88843089')" align=right>88843089</TD>
+<TD align=middle>30003</TD>
+<TD align=left>K11122303</TD>
+<TD align=left>37000000223885</TD>
+<TD noWrap align=right>15 530.00</TD>
+<TD align=middle>RUB</TD>
+<TD align=middle>23.10.2012</TD>
+<TD noWrap align=right>15 530.00</TD>
+<TD align=middle>RUB</TD>
+<TD align=left>883264</TD>
+<TD align=left>1003000100885</TD>
+<TD align=middle>1</TD>
+<TD align=middle>55</TD>
+<TD align=middle>23.10.2012</TD>
+<TD title="ДоВ->Рсх-ДЗн: Расход ; Кол-во=13" noWrap align=left>ДоВ-&gt;Рсх-ДЗн: Расход ; К</TD>
+<TD align=middle>I03</TD>
+<TD align=left>/883264/000001/000885/</TD></TR>
+<TR style="COLOR: #000000" id=r_17 oncontextmenu="ShowPopupMenu();SelectRow('88843088',17);return false" onclick="HidePopupMenu();SelectRow('88843088',17)" tt="I03">
+<TD style="COLOR: blue; CURSOR: hand; TEXT-DECORATION: underline" title="Відкрити картку документа" onclick="OpenDoc('88843088')" align=right>88843088</TD>
+<TD align=middle>30003</TD>
+<TD align=left>K11122302</TD>
+<TD align=left>37000000223885</TD>
+<TD noWrap align=right>2 486.00</TD>
+<TD align=middle>RUB</TD>
+<TD align=middle>23.10.2012</TD>
+<TD noWrap align=right>2 486.00</TD>
+<TD align=middle>RUB</TD>
+<TD align=left>883264</TD>
+<TD align=left>1003000100885</TD>
+<TD align=middle>1</TD>
+<TD align=middle>55</TD>
+<TD align=middle>23.10.2012</TD>
+<TD title="ТДВ->Рсх-ДЗн: Расход ; Кол-во=5" noWrap align=left>ТДВ-&gt;Рсх-ДЗн: Расход ; К</TD>
+<TD align=middle>I03</TD>
+<TD align=left>/883264/000001/000885/</TD></TR>
+<TR style="COLOR: #000000" id=r_18 oncontextmenu="ShowPopupMenu();SelectRow('88843087',18);return false" onclick="HidePopupMenu();SelectRow('88843087',18)" tt="I02">
+<TD style="COLOR: blue; CURSOR: hand; TEXT-DECORATION: underline" title="Відкрити картку документа" onclick="OpenDoc('88843087')" align=right>88843087</TD>
+<TD align=middle>30003</TD>
+<TD align=left>K11122301</TD>
+<TD align=left>37000000223885</TD>
+<TD noWrap align=right>1 244.00</TD>
+<TD align=middle>RUB</TD>
+<TD align=middle>23.10.2012</TD>
+<TD noWrap align=right>1 244.00</TD>
+<TD align=middle>RUB</TD>
+<TD align=left>883264</TD>
+<TD align=left>1003000100885</TD>
+<TD align=middle>0</TD>
+<TD align=middle>16</TD>
+<TD align=middle>23.10.2012</TD>
+<TD title="ТДВ->Прх-ДЗн: Приход ; Кол-во=2" noWrap align=left>ТДВ-&gt;Прх-ДЗн: Приход ; К</TD>
+<TD align=middle>I02</TD>
+<TD align=left>/883264/000001/000885/</TD></TR>
+<TR style="COLOR: #000000" id=r_19 oncontextmenu="ShowPopupMenu();SelectRow('88840605',19);return false" onclick="HidePopupMenu();SelectRow('88840605',19)" tt="I00">
+<TD style="COLOR: blue; CURSOR: hand; TEXT-DECORATION: underline" title="Відкрити картку документа" onclick="OpenDoc('88840605')" align=right>88840605</TD>
+<TD align=middle>30930</TD>
+<TD align=left>P11122326</TD>
+<TD align=left>97603000100566</TD>
+<TD noWrap align=right>1 030.55</TD>
+<TD align=middle>RUB</TD>
+<TD align=middle>23.10.2012</TD>
+<TD noWrap align=right>1 030.55</TD>
+<TD align=middle>RUB</TD>
+<TD align=left>883264</TD>
+<TD align=left>9910100101001</TD>
+<TD align=middle>1</TD>
+<TD align=middle></TD>
+<TD align=middle>23.10.2012</TD>
+<TD title="SDS->Отк-Пвф: Открытие зачислением со счета     01; Кол-во=1" noWrap align=left>SDS-&gt;Отк-Пвф: Открытие з</TD>
+<TD align=middle>I00</TD>
+<TD align=left>/883264/000001/000566/</TD></TR>
+<TR style="COLOR: #000000" id=r_20 oncontextmenu="ShowPopupMenu();SelectRow('88840604',20);return false" onclick="HidePopupMenu();SelectRow('88840604',20)" tt="I00">
+<TD style="COLOR: blue; CURSOR: hand; TEXT-DECORATION: underline" title="Відкрити картку документа" onclick="OpenDoc('88840604')" align=right>88840604</TD>
+<TD align=middle>30930</TD>
+<TD align=left>P11122325</TD>
+<TD align=left>97603000100566</TD>
+<TD noWrap align=right>2 637.80</TD>
+<TD align=middle>RUB</TD>
+<TD align=middle>23.10.2012</TD>
+<TD noWrap align=right>2 637.80</TD>
+<TD align=middle>RUB</TD>
+<TD align=left>883264</TD>
+<TD align=left>9910100101001</TD>
+<TD align=middle>1</TD>
+<TD align=middle></TD>
+<TD align=middle>23.10.2012</TD>
+<TD title="SDS->Отк-Пвф: Открытие зачислением со счета YTY 10968 Открытие зачислением со счета YTY 10968         01; Кол-во=1" noWrap align=left>SDS-&gt;Отк-Пвф: Открытие з</TD>
+<TD align=middle>I00</TD>
+<TD align=left>/883264/000001/000566/</TD></TR></TBODY></TABLE></DIV>
+<DIV id=oControls>
+<TABLE id=tblFooter class=footer_body border=0 cellSpacing=0 cellPadding=0 width="100%">
+<TBODY>
+<TR>
+<TD width="44%" align=left><IMG style="VISIBILITY: hidden" id=aLeft class=pager_img title="Предыдущая страница" onclick=fnPrev() src=""><SPAN id=PageNum class=pager_num>&nbsp;1 </SPAN><IMG style="VISIBILITY: visible" id=aRight class=pager_img title="Наступна сторінка" onclick=fnNext() src=""></TD>
+<TD width="44%">
+<DIV noWrap>Строк на листе:&nbsp;<INPUT id=edPageSize class=footer_PageSize title="Кількість рядків в таблиці" onkeypress="return KeyPressedOnEdit(event)" onchange=OnEditChanged() value=20></DIV></TD>
+<TD></TD></TR></TBODY></TABLE></DIV></DIV></TD></TR></TBODY></TABLE><INPUT id=currentPageCulture value=uk type=hidden name=currentPageCulture><INPUT id=wgPageSizeText value="Строк на листе:" type=hidden name=wgPageSizeText> <INPUT id=wgPrevPage value="Предыдущая страница" type=hidden name=wgPrevPage> <INPUT id=wgNextPage value="Наступна сторінка" type=hidden name=wgNextPage> <INPUT id=wgRowsInTable value="Кількість рядків в таблиці" type=hidden name=wgRowsInTable> <INPUT id=wgAscending value="У порядку зростання" type=hidden name=wgAscending> <INPUT id=wgDescending value="У порядку спадання" type=hidden name=wgDescending> <INPUT id=wgSave value=Зберегти type=hidden name=wgSave> <INPUT id=wgCancel value=Відміна type=hidden name=wgCancel> <INPUT id=wgSetFilter value="Встановити фільтр" type=hidden name=wgSetFilter> <INPUT id=wgFilter value=Фильтр type=hidden> <INPUT id=wgAttribute value=Атрибут type=hidden> <INPUT id=wgOperator value=Оператор type=hidden> <INPUT id=wgLike value=похож type=hidden> <INPUT id=wgNotLike value="не похож" type=hidden> <INPUT id=wgIsNull value=пустой type=hidden> <INPUT id=wgIsNotNull value="не пустой" type=hidden> <INPUT id=wgOneOf value="один из" type=hidden> <INPUT id=wgNotOneOf value="ни один из" type=hidden> <INPUT id=wgValue value=Значение type=hidden> <INPUT id=wgApply value=Применить type=hidden> <INPUT id=wgFilterCancel value=Отменить type=hidden> <INPUT id=wgCurrentFilter value="Текущий фильтр:" type=hidden> <INPUT id=wgDeleteRow value="Удалить строку" type=hidden> <INPUT id=wgDeleteAll value="Удалить все" type=hidden> <INPUT id=Message1 value="Всі документи " type=hidden name=Message1> <INPUT id=Message2 value="відділення " type=hidden name=Message2> <INPUT id=Message3 value="користувача " type=hidden name=Message3> <INPUT id=Message4 value="Отримані документи " type=hidden name=Message4> <INPUT id=Message5 value="за день : " type=hidden name=Message5> <INPUT id=Message6 value="Дата не задана!" type=hidden name=Message6 UniqueID="Дата не задана!"> <INPUT id=Message7 value=" з " type=hidden name=Message7> <INPUT id=Message8 value="Відкрити картку документа" type=hidden name=Message8> <INPUT id=Message9 value="по доступних рахунках " type=hidden name=Message9> <INPUT id=Message10 value="Продублювати документ" type=hidden name=Message10> <INPUT id=forbt_Refresh value=Перечитати type=hidden name=forbt_Refresh> <INPUT id=forbt_Filter value="Встановити фільтр" type=hidden name=forbt_Filter> 
+<DIV id=o_id><INPUT id=row_id type=hidden></DIV>
+<DIV id=sort_ord class=layer><IMG title="У порядку зростання" onclick=fnSortAsc() src=""><BR><IMG title="У порядку спадання" onclick=fnSortDesc() src=""></DIV></BODY></HTML>
