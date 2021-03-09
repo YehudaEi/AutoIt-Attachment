@@ -1,0 +1,7 @@
+http://www.beamantoyota.com/new-inventory/index.htm?SBmake=Toyota&SByear=clear&SBmodel=Corolla&SBtrim=clear&SBbodystyle=clear&SBhighwayMPG=clear
+http://www.beamantoyota.com/new-inventory/index.htm?SBmake=Toyota&SByear=clear&SBmodel=Camry&SBtrim=clear&SBbodystyle=clear&SBhighwayMPG=clear
+http://www.beamantoyota.com/new-inventory/index.htm?SBmake=Toyota&SByear=clear&SBmodel=Highlander&SBtrim=clear&SBbodystyle=clear&SBhighwayMPG=clear
+http://www.beamantoyota.com/new-inventory/index.htm?SBmake=Toyota&SByear=clear&SBmodel=Highlander%20Hybrid&SBtrim=clear&SBbodystyle=clear&SBhighwayMPG=clear
+http://www.beamantoyota.com/new-inventory/index.htm?SBmake=Toyota&SByear=clear&SBmodel=Land%20Cruiser&SBtrim=clear&SBbodystyle=clear&SBhighwayMPG=clear
+http://www.beamantoyota.com/new-inventory/index.htm?SBmake=Toyota&SByear=clear&SBmodel=Prius%20Hybrid&SBtrim=clear&SBbodystyle=clear&SBhighwayMPG=clear
+http://www.beamantoyota.com/new-inventory/index.htm?SBmake=Toyota&SByear=clear&SBmodel=RAV4&SBtrim=clear&SBbodystyle=clear&SBhighwayMPG=clear
