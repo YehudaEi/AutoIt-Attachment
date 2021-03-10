@@ -1,0 +1,11 @@
+﻿Computer 3
+Computer 9
+Computer 7
+Computer 8
+Computer 6
+Computer 2
+Computer 1
+Computer 4
+Computer 5
+192.168.1.66
+192.168.1.243
