@@ -1,0 +1,4 @@
+[Example Domain]
+DestPath=\\server\logs
+Paset=Paset
+DePass=Welcome.1
