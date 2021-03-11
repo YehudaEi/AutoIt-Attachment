@@ -1,0 +1,55 @@
+Workprocess Table				Wed Jan 23 16:03:53 2013
+=================
+
+No Type  Pid    Status  Cause Start Rstr  Err Time Program  Cl  User         SemR SemL
+------------------------------------------------------------------------------------------
+ 0 DIA     6672 Wait          yes   no     0    0                                           
+ 1 BTC    17424 Wait          yes   no     0    0                                           
+ 2 DIA    17624 Wait          yes   no     0    0                                           
+ 3 DIA     9624 Run           yes   no     0    0           150 E818GRENIERL                
+ 4 DIA    16544 Wait          yes   no     0    0                                           
+ 5 DIA    18056 Wait          yes   no     0    0                                           
+ 6 DIA    18268 Wait          yes   no     0    0                                           
+ 7 DIA    14424 Wait          yes   no     0    0                                           
+ 8 DIA    17988 Wait          yes   no     0    0                                           
+ 9 DIA    14908 Wait          yes   no     0    0                                           
+10 DIA     5664 Wait          yes   no     0    0                                           
+11 DIA     7200 Wait          yes   no     0    0                                           
+12 DIA    17772 Wait          yes   no     0    0                                           
+13 DIA     4964 Wait          yes   no     0    0                                           
+14 DIA    18376 Wait          yes   no     0    0                                           
+15 DIA    16228 Wait          yes   no     0    0                                           
+16 BTC     7216 Wait          yes   no     0    0                                           
+17 DIA     5760 Wait          yes   no     0    0                                           
+18 DIA     9468 Wait          yes   no     0    0                                           
+19 DIA    17948 Wait          yes   no     0    0                                           
+20 DIA    13116 Wait          yes   no     0    0                                           
+21 DIA    16100 Wait          yes   no     0    0                                           
+22 DIA    16172 Wait          yes   no     0    0                                           
+23 DIA    17660 Wait          yes   no     0    0                                           
+24 BTC    17752 Wait          yes   no     0    0                                           
+25 BTC     8160 Wait          yes   no     0    0                                           
+26 UP2    16004 Wait          yes   no     0    0                                           
+27 DIA    16572 Wait          yes   no     0    0                                           
+28 DIA     3284 Wait          yes   no     1    0                                           
+29 DIA    11440 Run           yes   no     1 5699  SAPDBKDF 150 U818BARONC                  
+30 UPD    17812 Wait          yes   no     0    0                                           
+31 DIA    17832 Wait          yes   no     0    0                                           
+32 DIA     7036 Wait          yes   no     0    0                                           
+33 DIA    15044 Wait          yes   no     0    0                                           
+34 DIA     8480 Wait          yes   no     0    0                                           
+35 BTC    17588 Wait          yes   no     0    0                                           
+36 DIA    10792 Wait          yes   no     0    0                                           
+37 DIA    17696 Wait          yes   no     0    0                                           
+38 UPD    15988 Wait          yes   no     0    0                                           
+39 UPD    16156 Wait          yes   no     0    0                                           
+40 DIA    18140 Wait          yes   no     1    0                                           
+41 DIA    15576 Wait          yes   no     0    0                                           
+42 DIA     5960 Wait          yes   no     0    0                                           
+43 BTC     8240 Wait          yes   no     0    0                                           
+44 DIA    16808 Wait          yes   no     0    0                                           
+45 DIA     4788 Wait          yes   no     0    0                                           
+46 SPO    15940 Wait          yes   no     0    0                                           
+47 SPO     3500 Wait          yes   no     0    0                                           
+48 SPO     6320 Wait          yes   no     0    0                                           
+49 UP2    13708 Wait          yes   no     0    0                                           
