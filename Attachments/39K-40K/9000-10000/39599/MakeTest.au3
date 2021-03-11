@@ -1,0 +1,2 @@
+shellexecutewait('Aut2exe.exe',' /in "VersionTest.au3" /out "VersionTest32Aut2Exe.exe" /nopack /comp 4 /x86 /bin "AutoItSC.bin"')
+shellexecutewait('Aut2exe.exe',' /in "VersionTest.au3" /out "VersionTest64Aut2Exe.exe" /nopack /comp 4 /x64 /bin "AutoItSC.bin"')
