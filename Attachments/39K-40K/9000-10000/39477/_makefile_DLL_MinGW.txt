@@ -1,0 +1,14 @@
+@echo off
+
+cls
+
+set list=.\test_call.c
+
+set path_32=C:\MinGW32\bin\
+set path_64=C:\MinGW64\bin\
+
+attrib -h -r -s .\test_call_x86.dll
+%path_32%gcc.exe -O2 -lm -mdll -m32 %list% -o .\test_call_x86.dll
+
+attrib -h -r -s .\test_call_x64.dll
+%path_64%x86_64-w64-mingw32-gcc.exe -O2 -lm -mdll -m64 %list% -o .\test_call_x64.dll
