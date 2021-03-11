@@ -1,0 +1,20 @@
+@echo off
+
+set list=
+set list=%list% global.h
+set list=%list% MyFunction.c
+
+set path_32=C:\MinGW32\bin\
+set path_64=C:\MinGW64\bin\
+set dll_32=.\MyCustomDll_x86.dll
+set dll_64=.\MyCustomDll_x64.dll
+echo ==================================================================================
+if exist %dll_32% ( attrib -h -r -s %dll_32% )
+if exist %dll_64% ( attrib -h -r -s %dll_64% )
+
+echo Compiling DLL-32bits
+%path_32%gcc.exe -O2 -lm -mdll -m32 %list% -o %dll_32%
+
+echo Compiling DLL-64bits
+%path_64%x86_64-w64-mingw32-gcc.exe -O2 -lm -mdll -m64 %list% -o %dll_64%
+echo ==================================================================================
