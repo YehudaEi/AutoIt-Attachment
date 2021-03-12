@@ -1,0 +1,22 @@
+
+Audible CD Image Converter 1.1, Copyright 2010 by Anonymous Audible Addict
+
+
+ ()
+ ()
+
+Chapter   1: 00:00:00:000  :  Kapitel 1
+Chapter   2: 00:09:35:000  :  Kapitel 2
+Chapter   3: 00:38:32:000  :  Kapitel 3
+Chapter   4: 01:09:12:000  :  Kapitel 4
+Chapter   5: 01:28:01:000  :  Kapitel 5
+Chapter   6: 01:57:05:000  :  Kapitel 6
+Chapter   7: 02:31:13:000  :  Kapitel 7
+Chapter   8: 03:05:18:000  :  Kapitel 8
+Chapter   9: 03:42:47:000  :  Kapitel 9
+Chapter  10: 04:09:59:000  :  Kapitel 10
+Chapter  11: 04:38:16:000  :  Kapitel 11
+Chapter  12: 05:27:13:000  :  Kapitel 12
+Chapter  13: 06:00:54:000  :  Kapitel 13
+
+Total Dur. : 06:49:28:000
