@@ -1,0 +1,48 @@
+
+;Script Start
+$App   = 'TestApp'
+$Title = 'AppTitle'
+
+$MyDLL   = 'C:\projects\MyApp\MyApp.dll'
+FileChangeDir("C:\projects\MyApp\MyApp.dll")	;; Required to find other dependent DLL's
+
+Local $dllHnd      = DllOpen($MyDLL)
+
+Run($App)
+WinWaitActive($Title)
+$MsgStr = ""
+
+;; these are the correct values
+Local $SimpleTest     = 0x10D2  ; ?TestChars@OAutoITTestClass@@QAEPADH@Z
+Local $ComplexTest    = 0x10D8  ; ?TestButtons@OAutoITTestClass@@QAEPADXZ'
+
+;; --------------------------
+;; This works fine
+;; --------------------------
+$res = DllCall($dllHnd, "str", $SimpleTest)
+if @error Then
+	$MsgStr = StringFormat("String test error %d", @error)
+	MsgBox(0,"Get Button Char Error", $MsgStr)
+Else
+    $rv = $res[0]
+	$st = StringFormat("String test was %s", $rv)
+	MsgBox(0,"First test Results", $st)
+EndIf
+
+;; --------------------------
+;; This doesn't work
+;; --------------------------
+$res = DllCall($dllHnd, "str", $ComplexTest)
+if @error Then
+	$MsgStr = StringFormat("Get Button Strings test error %d", @error)
+	MsgBox(0,"Get Button Char Error", $MsgStr)
+Else
+    $rv = $res[0]
+	$st = StringFormat("String test was %s", $rv)
+	MsgBox(0,"Second test Results", $st)
+EndIf
+
+
+DllClose($dllHnd)
+
+;; end of script
