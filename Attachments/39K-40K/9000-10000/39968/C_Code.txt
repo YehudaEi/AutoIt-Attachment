@@ -1,0 +1,32 @@
+#define MAX_AUTO_IT_CHARS (64*1024)
+...
+
+static char g_chAutoITbuf[MAX_AUTO_IT_CHARS];   // 64k buffer
+
+// this works fine & returns the expected result - namely
+// "Testing ability to return a string to AutoIT from C++"
+CHAR *OMyClass::SimpleCharTest()
+{
+    _snprintf(g_chAutoITbuf,
+              MAX_AUTO_IT_CHARS,
+              "Testing ability to return a string to AutoIT from C++");
+     return g_chAutoITbuf;
+}
+
+// This does not generate any errors in the Auto-IT Script.
+// However it does not return the proper result.
+// And, if you run the Debug Version, you will get ASSERTS in
+// AfxTempl.h  and AfxWin1.inl
+//
+CHAR *OMyClass::ComplexCharTest()
+{
+	// This is where I need the code to go out and do a bunch of stuff
+	// and place the results into a string
+	// If I call this method from the EXE directly - it works as expected
+	// If I call it from DllCall() via AutoIT, it doesn't work
+    CString str = DoMFCandATLStuffHere();
+
+    _snprintf(g_chAutoITbuf, AUTO_IT_MAX_CHAR_RETURN_SZ, "%s", str);
+
+    return g_chAutoITbuf;
+}
