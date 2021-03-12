@@ -1,0 +1,339 @@
+Computer	RegKey	DisplayName	DisplayVersion	Publisher	QuietDisplayName	InstallDate	InstallSource
+PCNAME	Adobe Acrobat 7.0 Professional - V	Adobe Acrobat 7.0 Professional	7.0.0	Adobe Systems		20/01/2005	
+PCNAME	BuildVersion	Where I work Build Version XP010	XP010 13/09/2010	IT Department			
+PCNAME	CentraStage	CentraStage	4.4.1632.1632	CentraStage			
+PCNAME	CutePDF Writer Installation	CutePDF Writer 3.0	 3.0	CutePDF.com			
+PCNAME	EMS	Capita One/EMS	Capita One EMS	Capita			
+PCNAME	Foundation Stage Profile	eProfile	3.3.0	FSP\Version3			
+PCNAME	HDMI	Intel(R) Graphics Media Accelerator Driver					
+PCNAME	IDNMitigationAPIs	Microsoft Internationalized Domain Names Mitigation APIs		Microsoft Corporation		20100906	
+PCNAME	ie7	Windows Internet Explorer 7	20070813.185237	Microsoft Corporation		20100906	
+PCNAME	ie8	Windows Internet Explorer 8	20090308.140743	Microsoft Corporation		20130125	
+PCNAME	KB2079403	Security Update for Windows XP (KB2079403)	1	Microsoft Corporation		20100906	
+PCNAME	KB2115168	Security Update for Windows XP (KB2115168)	1	Microsoft Corporation		20100906	
+PCNAME	KB2121546	Security Update for Windows XP (KB2121546)	1	Microsoft Corporation		20110401	
+PCNAME	KB2160329	Security Update for Windows XP (KB2160329)	1	Microsoft Corporation		20100906	
+PCNAME	KB2183461-IE7	Security Update for Windows Internet Explorer 7 (KB2183461)	1	Microsoft Corporation		20100906	
+PCNAME	KB2229593	Security Update for Windows XP (KB2229593)	1	Microsoft Corporation		20100906	
+PCNAME	KB2259922	Security Update for Windows XP (KB2259922)	1	Microsoft Corporation		20110401	
+PCNAME	KB2286198	Security Update for Windows XP (KB2286198)	1	Microsoft Corporation		20100906	
+PCNAME	KB2296011	Security Update for Windows XP (KB2296011)	1	Microsoft Corporation		20110401	
+PCNAME	KB2347290	Security Update for Windows XP (KB2347290)	1	Microsoft Corporation		20110401	
+PCNAME	KB2360937	Security Update for Windows XP (KB2360937)	1	Microsoft Corporation		20110401	
+PCNAME	KB2378111_WM9	Security Update for Windows Media Player (KB2378111)		Microsoft Corporation		20110401	
+PCNAME	KB2387149	Security Update for Windows XP (KB2387149)	1	Microsoft Corporation		20110401	
+PCNAME	KB2393802	Security Update for Windows XP (KB2393802)	1	Microsoft Corporation		20110401	
+PCNAME	KB2412687	Security Update for Windows XP (KB2412687)	1	Microsoft Corporation		20110418	
+PCNAME	KB2419632	Security Update for Windows XP (KB2419632)	1	Microsoft Corporation		20110401	
+PCNAME	KB2423089	Security Update for Windows XP (KB2423089)	1	Microsoft Corporation		20110401	
+PCNAME	KB2440591	Security Update for Windows XP (KB2440591)	1	Microsoft Corporation		20110401	
+PCNAME	KB2443105	Security Update for Windows XP (KB2443105)	1	Microsoft Corporation		20110401	
+PCNAME	KB2476490	Security Update for Windows XP (KB2476490)	1	Microsoft Corporation		20110628	
+PCNAME	KB2476687	Security Update for Windows XP (KB2476687)	1	Microsoft Corporation		20110401	
+PCNAME	KB2478960	Security Update for Windows XP (KB2478960)	1	Microsoft Corporation		20110401	
+PCNAME	KB2478971	Security Update for Windows XP (KB2478971)	1	Microsoft Corporation		20110401	
+PCNAME	KB2479628	Security Update for Windows XP (KB2479628)	1	Microsoft Corporation		20110401	
+PCNAME	KB2479943	Security Update for Windows XP (KB2479943)	1	Microsoft Corporation		20110401	
+PCNAME	KB2481109	Security Update for Windows XP (KB2481109)	1	Microsoft Corporation		20110401	
+PCNAME	KB2482017-IE7	Security Update for Windows Internet Explorer 7 (KB2482017)	1	Microsoft Corporation		20110401	
+PCNAME	KB2483185	Security Update for Windows XP (KB2483185)	1	Microsoft Corporation		20110401	
+PCNAME	KB2485376	Security Update for Windows XP (KB2485376)	1	Microsoft Corporation		20110401	
+PCNAME	KB2485663	Security Update for Windows XP (KB2485663)	1	Microsoft Corporation		20110418	
+PCNAME	KB2491683	Security Update for Windows XP (KB2491683)	1	Microsoft Corporation		20110418	
+PCNAME	KB2497640-IE7	Security Update for Windows Internet Explorer 7 (KB2497640)	1	Microsoft Corporation		20110418	
+PCNAME	KB2503658	Security Update for Windows XP (KB2503658)	1	Microsoft Corporation		20110418	
+PCNAME	KB2503665	Security Update for Windows XP (KB2503665)	1	Microsoft Corporation		20110628	
+PCNAME	KB2506212	Security Update for Windows XP (KB2506212)	1	Microsoft Corporation		20110418	
+PCNAME	KB2506223	Security Update for Windows XP (KB2506223)	1	Microsoft Corporation		20110418	
+PCNAME	KB2507618	Security Update for Windows XP (KB2507618)	1	Microsoft Corporation		20110418	
+PCNAME	KB2507938	Security Update for Windows XP (KB2507938)	1	Microsoft Corporation		20110718	
+PCNAME	KB2508272	Security Update for Windows XP (KB2508272)	1	Microsoft Corporation		20110418	
+PCNAME	KB2508429	Security Update for Windows XP (KB2508429)	1	Microsoft Corporation		20110418	
+PCNAME	KB2509553	Security Update for Windows XP (KB2509553)	1	Microsoft Corporation		20110418	
+PCNAME	KB2510531-IE8	Security Update for Windows Internet Explorer 8 (KB2510531)	1	Microsoft Corporation		20130128	
+PCNAME	KB2510581	Security Update for Windows XP (KB2510581)	1	Microsoft Corporation		20110418	
+PCNAME	KB2511455	Security Update for Windows XP (KB2511455)	1	Microsoft Corporation		20110418	
+PCNAME	KB2524375	Security Update for Windows XP (KB2524375)	1	Microsoft Corporation		20110401	
+PCNAME	KB2530548-IE7	Security Update for Windows Internet Explorer 7 (KB2530548)	1	Microsoft Corporation		20110628	
+PCNAME	KB2535512	Security Update for Windows XP (KB2535512)	1	Microsoft Corporation		20110628	
+PCNAME	KB2536276	Security Update for Windows XP (KB2536276)	1	Microsoft Corporation		20110628	
+PCNAME	KB2536276-v2	Security Update for Windows XP (KB2536276-v2)	2	Microsoft Corporation		20110815	
+PCNAME	KB2544521-IE7	Security Update for Windows Internet Explorer 7 (KB2544521)	1	Microsoft Corporation		20110628	
+PCNAME	KB2544521-IE8	Security Update for Windows Internet Explorer 8 (KB2544521)	1	Microsoft Corporation		20130128	
+PCNAME	KB2544893	Security Update for Windows XP (KB2544893)	1	Microsoft Corporation		20110628	
+PCNAME	KB2544893-v2	Security Update for Windows XP (KB2544893-v2)	2	Microsoft Corporation		20111114	
+PCNAME	KB2555917	Security Update for Windows XP (KB2555917)	1	Microsoft Corporation		20110718	
+PCNAME	KB2559049-IE7	Security Update for Windows Internet Explorer 7 (KB2559049)	1	Microsoft Corporation		20110815	
+PCNAME	KB2564958	Security Update for Microsoft Windows (KB2564958)		Microsoft Corporation		20111017	
+PCNAME	KB2566454	Security Update for Windows XP (KB2566454)	1	Microsoft Corporation		20110815	
+PCNAME	KB2567053	Security Update for Windows XP (KB2567053)	1	Microsoft Corporation		20111017	
+PCNAME	KB2567680	Security Update for Windows XP (KB2567680)	1	Microsoft Corporation		20110815	
+PCNAME	KB2570222	Security Update for Windows XP (KB2570222)	1	Microsoft Corporation		20110815	
+PCNAME	KB2570947	Security Update for Windows XP (KB2570947)	1	Microsoft Corporation		20110919	
+PCNAME	KB2584146	Security Update for Windows XP (KB2584146)	1	Microsoft Corporation		20120116	
+PCNAME	KB2585542	Security Update for Windows XP (KB2585542)	1	Microsoft Corporation		20120116	
+PCNAME	KB2586448-IE7	Security Update for Windows Internet Explorer 7 (KB2586448)	1	Microsoft Corporation		20111017	
+PCNAME	KB2592799	Security Update for Windows XP (KB2592799)	1	Microsoft Corporation		20111017	
+PCNAME	KB2598479	Security Update for Windows XP (KB2598479)	1	Microsoft Corporation		20120116	
+PCNAME	KB2603381	Security Update for Windows XP (KB2603381)	1	Microsoft Corporation		20120116	
+PCNAME	KB2616676-v2	Update for Windows XP (KB2616676-v2)	2	Microsoft Corporation		20110921	
+PCNAME	KB2618444-IE7	Security Update for Windows Internet Explorer 7 (KB2618444)	1	Microsoft Corporation		20111217	
+PCNAME	KB2618451	Security Update for Windows XP (KB2618451)	1	Microsoft Corporation		20111217	
+PCNAME	KB2619339	Security Update for Windows XP (KB2619339)	1	Microsoft Corporation		20111217	
+PCNAME	KB2620712	Security Update for Windows XP (KB2620712)	1	Microsoft Corporation		20111217	
+PCNAME	KB2621440	Security Update for Windows XP (KB2621440)	1	Microsoft Corporation		20120319	
+PCNAME	KB2624667	Security Update for Windows XP (KB2624667)	1	Microsoft Corporation		20111217	
+PCNAME	KB2631813	Security Update for Windows XP (KB2631813)	1	Microsoft Corporation		20120116	
+PCNAME	KB2633171	Security Update for Windows XP (KB2633171)	1	Microsoft Corporation		20111217	
+PCNAME	KB2639417	Security Update for Windows XP (KB2639417)	1	Microsoft Corporation		20111217	
+PCNAME	KB2641653	Security Update for Windows XP (KB2641653)	1	Microsoft Corporation		20120319	
+PCNAME	KB2641690	Update for Windows XP (KB2641690)	1	Microsoft Corporation		20111114	
+PCNAME	KB2646524	Security Update for Windows XP (KB2646524)	1	Microsoft Corporation		20120116	
+PCNAME	KB2647516-IE7	Security Update for Windows Internet Explorer 7 (KB2647516)	1	Microsoft Corporation		20120222	
+PCNAME	KB2653956	Security Update for Windows XP (KB2653956)	1	Microsoft Corporation		20120416	
+PCNAME	KB2655992	Security Update for Windows XP (KB2655992)	1	Microsoft Corporation		20120716	
+PCNAME	KB2659262	Security Update for Windows XP (KB2659262)	1	Microsoft Corporation		20120515	
+PCNAME	KB2660465	Security Update for Windows XP (KB2660465)	1	Microsoft Corporation		20120222	
+PCNAME	KB2661254-v2	Update for Windows XP (KB2661254-v2)	2	Microsoft Corporation		20121122	
+PCNAME	KB2661637	Security Update for Windows XP (KB2661637)	1	Microsoft Corporation		20120222	
+PCNAME	KB2675157-IE7	Security Update for Windows Internet Explorer 7 (KB2675157)	1	Microsoft Corporation		20120416	
+PCNAME	KB2676562	Security Update for Windows XP (KB2676562)	1	Microsoft Corporation		20120515	
+PCNAME	KB2685939	Security Update for Windows XP (KB2685939)	1	Microsoft Corporation		20120618	
+PCNAME	KB2686509	Security Update for Windows XP (KB2686509)	1	Microsoft Corporation		20120515	
+PCNAME	KB2691442	Security Update for Windows XP (KB2691442)	1	Microsoft Corporation		20120716	
+PCNAME	KB2698365	Security Update for Windows XP (KB2698365)	1	Microsoft Corporation		20120716	
+PCNAME	KB2699988-IE7	Security Update for Windows Internet Explorer 7 (KB2699988)	1	Microsoft Corporation		20120618	
+PCNAME	KB2705219	Security Update for Windows XP (KB2705219)	1	Microsoft Corporation		20120820	
+PCNAME	KB2707511	Security Update for Windows XP (KB2707511)	1	Microsoft Corporation		20120618	
+PCNAME	KB2709162	Security Update for Windows XP (KB2709162)	1	Microsoft Corporation		20120618	
+PCNAME	KB2712808	Security Update for Windows XP (KB2712808)	1	Microsoft Corporation		20120820	
+PCNAME	KB2718523	Security Update for Windows XP (KB2718523)	1	Microsoft Corporation		20120716	
+PCNAME	KB2718704	Update for Windows XP (KB2718704)	1	Microsoft Corporation		20120618	
+PCNAME	KB2719985	Security Update for Windows XP (KB2719985)	1	Microsoft Corporation		20120716	
+PCNAME	KB2722913-IE7	Security Update for Windows Internet Explorer 7 (KB2722913)	1	Microsoft Corporation		20120820	
+PCNAME	KB2723135	Security Update for Windows XP (KB2723135)	1	Microsoft Corporation		20120820	
+PCNAME	KB2724197	Security Update for Windows XP (KB2724197)	1	Microsoft Corporation		20121015	
+PCNAME	KB2727528	Security Update for Windows XP (KB2727528)	1	Microsoft Corporation		20121122	
+PCNAME	KB2731847	Security Update for Windows XP (KB2731847)	1	Microsoft Corporation		20120820	
+PCNAME	KB2744842-IE7	Security Update for Windows Internet Explorer 7 (KB2744842)	1	Microsoft Corporation		20120924	
+PCNAME	KB2749655	Update for Windows XP (KB2749655)	1	Microsoft Corporation		20121015	
+PCNAME	KB2753842	Security Update for Windows XP (KB2753842)	1	Microsoft Corporation		20121217	
+PCNAME	KB2753842-v2	Security Update for Windows XP (KB2753842-v2)	2	Microsoft Corporation		20130114	
+PCNAME	KB2757638	Security Update for Windows XP (KB2757638)	1	Microsoft Corporation		20130114	
+PCNAME	KB2758857	Security Update for Windows XP (KB2758857)	1	Microsoft Corporation		20121217	
+PCNAME	KB2761226	Security Update for Windows XP (KB2761226)	1	Microsoft Corporation		20121122	
+PCNAME	KB2761465-IE7	Security Update for Windows Internet Explorer 7 (KB2761465)	1	Microsoft Corporation		20121219	
+PCNAME	KB2761465-IE8	Security Update for Windows Internet Explorer 8 (KB2761465)	1	Microsoft Corporation		20130128	
+PCNAME	KB2770660	Security Update for Windows XP (KB2770660)	1	Microsoft Corporation		20121217	
+PCNAME	KB2778344	Security Update for Windows XP (KB2778344)	1	Microsoft Corporation		20130225	
+PCNAME	KB2779030	Security Update for Windows XP (KB2779030)	1	Microsoft Corporation		20121217	
+PCNAME	KB2780091	Security Update for Windows XP (KB2780091)	1	Microsoft Corporation		20130225	
+PCNAME	KB2792100-IE8	Security Update for Windows Internet Explorer 8 (KB2792100)	1	Microsoft Corporation		20130225	
+PCNAME	KB2797052-IE8	Security Update for Windows Internet Explorer 8 (KB2797052)	1	Microsoft Corporation		20130225	
+PCNAME	KB2799329-IE7	Security Update for Windows Internet Explorer 7 (KB2799329)	1	Microsoft Corporation		20130117	
+PCNAME	KB2799329-IE8	Security Update for Windows Internet Explorer 8 (KB2799329)	1	Microsoft Corporation		20130128	
+PCNAME	KB2799494	Security Update for Windows XP (KB2799494)	1	Microsoft Corporation		20130225	
+PCNAME	KB2802968	Security Update for Windows XP (KB2802968)	1	Microsoft Corporation		20130225	
+PCNAME	KB2807986	Security Update for Windows XP (KB2807986)	1	Microsoft Corporation		20130318	
+PCNAME	KB2809289-IE8	Security Update for Windows Internet Explorer 8 (KB2809289)	1	Microsoft Corporation		20130318	
+PCNAME	KB892130	Windows Genuine Advantage Validation Tool (KB892130)		Microsoft Corporation		20100906	
+PCNAME	KB898461	Update for Windows XP (KB898461)	1	Microsoft Corporation			
+PCNAME	KB923561	Security Update for Windows XP (KB923561)	1	Microsoft Corporation		20100906	
+PCNAME	KB929399	Hotfix for Windows Media Format 11 SDK (KB929399)		Microsoft Corporation		20100906	
+PCNAME	KB931906	Security Update for CAPICOM (KB931906)	2.1.0.2	Microsoft Corporation			
+PCNAME	KB938127-v2-IE7	Security Update for Windows Internet Explorer 7 (KB938127-v2)	2	Microsoft Corporation		20100906	
+PCNAME	KB939683	Hotfix for Windows Media Player 11 (KB939683)		Microsoft Corporation		20100906	
+PCNAME	KB941569	Security Update for Windows XP (KB941569)		Microsoft Corporation		20100906	
+PCNAME	KB942288-v3	Hotfix for Windows XP (KB942288-v3)	3	Microsoft Corporation		20100906	
+PCNAME	KB943729	Update for Windows XP (KB943729)		Microsoft Corporation		20100906	
+PCNAME	KB950760	Security Update for Windows XP (KB950760)	1	Microsoft Corporation		20100906	
+PCNAME	KB950762	Security Update for Windows XP (KB950762)	1	Microsoft Corporation		20100906	
+PCNAME	KB950974	Security Update for Windows XP (KB950974)	1	Microsoft Corporation		20100906	
+PCNAME	KB951376-v2	Security Update for Windows XP (KB951376-v2)	2	Microsoft Corporation		20100906	
+PCNAME	KB951748	Security Update for Windows XP (KB951748)	1	Microsoft Corporation		20100906	
+PCNAME	KB951978	Update for Windows XP (KB951978)	1	Microsoft Corporation		20100906	
+PCNAME	KB952004	Security Update for Windows XP (KB952004)	1	Microsoft Corporation		20100906	
+PCNAME	KB952069_WM9	Security Update for Windows Media Player (KB952069)		Microsoft Corporation		20100906	
+PCNAME	KB952287	Hotfix for Windows XP (KB952287)	1	Microsoft Corporation		20100906	
+PCNAME	KB952954	Security Update for Windows XP (KB952954)	1	Microsoft Corporation		20100906	
+PCNAME	KB954154_WM11	Security Update for Windows Media Player 11 (KB954154)		Microsoft Corporation		20100906	
+PCNAME	KB954155_WM9	Security Update for Windows Media Player (KB954155)		Microsoft Corporation		20100906	
+PCNAME	KB954459	Security Update for Windows XP (KB954459)	1	Microsoft Corporation		20100906	
+PCNAME	KB954550-v5	Hotfix for Windows XP (KB954550-v5)	5	Microsoft Corporation		20100906	
+PCNAME	KB955759	Update for Windows XP (KB955759)	1	Microsoft Corporation		20100906	
+PCNAME	KB956572	Security Update for Windows XP (KB956572)	1	Microsoft Corporation		20100906	
+PCNAME	KB956744	Security Update for Windows XP (KB956744)	1	Microsoft Corporation		20100906	
+PCNAME	KB956802	Security Update for Windows XP (KB956802)	1	Microsoft Corporation		20100906	
+PCNAME	KB956803	Security Update for Windows XP (KB956803)	1	Microsoft Corporation		20100906	
+PCNAME	KB956844	Security Update for Windows XP (KB956844)	1	Microsoft Corporation		20100906	
+PCNAME	KB958644	Security Update for Windows XP (KB958644)	1	Microsoft Corporation		20100906	
+PCNAME	KB958869	Security Update for Windows XP (KB958869)	1	Microsoft Corporation		20100906	
+PCNAME	KB959426	Security Update for Windows XP (KB959426)	1	Microsoft Corporation		20100906	
+PCNAME	KB960803	Security Update for Windows XP (KB960803)	1	Microsoft Corporation		20100906	
+PCNAME	KB960859	Security Update for Windows XP (KB960859)	1	Microsoft Corporation		20100906	
+PCNAME	KB961118	Hotfix for Windows XP (KB961118)	1	Microsoft Corporation		20100907	
+PCNAME	KB961501	Security Update for Windows XP (KB961501)	1	Microsoft Corporation		20100906	
+PCNAME	KB967715	Update for Windows XP (KB967715)	1	Microsoft Corporation		20100906	
+PCNAME	KB968389	Update for Windows XP (KB968389)	1	Microsoft Corporation		20100906	
+PCNAME	KB969059	Security Update for Windows XP (KB969059)	1	Microsoft Corporation		20100906	
+PCNAME	KB970238	Security Update for Windows XP (KB970238)	1	Microsoft Corporation		20100906	
+PCNAME	KB970430	Security Update for Windows XP (KB970430)	1	Microsoft Corporation		20100907	
+PCNAME	KB971029	Update for Windows XP (KB971029)	1	Microsoft Corporation		20110516	
+PCNAME	KB971657	Security Update for Windows XP (KB971657)	1	Microsoft Corporation		20100906	
+PCNAME	KB971737	Update for Windows XP (KB971737)	1	Microsoft Corporation		20100907	
+PCNAME	KB971961	Security Update for Windows XP (KB971961)	1	Microsoft Corporation		20100906	
+PCNAME	KB972270	Security Update for Windows XP (KB972270)	1	Microsoft Corporation		20100906	
+PCNAME	KB973507	Security Update for Windows XP (KB973507)	1	Microsoft Corporation		20100906	
+PCNAME	KB973540_WM9	Security Update for Windows Media Player (KB973540)		Microsoft Corporation		20100906	
+PCNAME	KB973687	Update for Windows XP (KB973687)	1	Microsoft Corporation		20110401	
+PCNAME	KB973815	Update for Windows XP (KB973815)	1	Microsoft Corporation		20100906	
+PCNAME	KB973869	Security Update for Windows XP (KB973869)	1	Microsoft Corporation		20100906	
+PCNAME	KB973904	Security Update for Windows XP (KB973904)	1	Microsoft Corporation		20100906	
+PCNAME	KB974112	Security Update for Windows XP (KB974112)	1	Microsoft Corporation		20100906	
+PCNAME	KB974318	Security Update for Windows XP (KB974318)	1	Microsoft Corporation		20100906	
+PCNAME	KB974392	Security Update for Windows XP (KB974392)	1	Microsoft Corporation		20100906	
+PCNAME	KB974571	Security Update for Windows XP (KB974571)	1	Microsoft Corporation		20100906	
+PCNAME	KB975025	Security Update for Windows XP (KB975025)	1	Microsoft Corporation		20100906	
+PCNAME	KB975467	Security Update for Windows XP (KB975467)	1	Microsoft Corporation		20100906	
+PCNAME	KB975558_WM8	Security Update for Windows Media Player (KB975558)		Microsoft Corporation		20110401	
+PCNAME	KB975560	Security Update for Windows XP (KB975560)	1	Microsoft Corporation		20100906	
+PCNAME	KB975562	Security Update for Windows XP (KB975562)	1	Microsoft Corporation		20100906	
+PCNAME	KB975713	Security Update for Windows XP (KB975713)	1	Microsoft Corporation		20100906	
+PCNAME	KB977816	Security Update for Windows XP (KB977816)	1	Microsoft Corporation		20100906	
+PCNAME	KB977914	Security Update for Windows XP (KB977914)	1	Microsoft Corporation		20100906	
+PCNAME	KB978037	Security Update for Windows XP (KB978037)	1	Microsoft Corporation		20100906	
+PCNAME	KB978338	Security Update for Windows XP (KB978338)	1	Microsoft Corporation		20100906	
+PCNAME	KB978542	Security Update for Windows XP (KB978542)	1	Microsoft Corporation		20100906	
+PCNAME	KB978601	Security Update for Windows XP (KB978601)	1	Microsoft Corporation		20100906	
+PCNAME	KB978695_WM9	Security Update for Windows Media Player (KB978695)		Microsoft Corporation		20100906	
+PCNAME	KB978706	Security Update for Windows XP (KB978706)	1	Microsoft Corporation		20100906	
+PCNAME	KB979309	Security Update for Windows XP (KB979309)	1	Microsoft Corporation		20100906	
+PCNAME	KB979482	Security Update for Windows XP (KB979482)	1	Microsoft Corporation		20100906	
+PCNAME	KB979687	Security Update for Windows XP (KB979687)	1	Microsoft Corporation		20110401	
+PCNAME	KB980195	Security Update for Windows XP (KB980195)	1	Microsoft Corporation		20100906	
+PCNAME	KB980218	Security Update for Windows XP (KB980218)	1	Microsoft Corporation		20100906	
+PCNAME	KB980232	Security Update for Windows XP (KB980232)	1	Microsoft Corporation		20100906	
+PCNAME	KB980436	Security Update for Windows XP (KB980436)	1	Microsoft Corporation		20100906	
+PCNAME	KB981322	Security Update for Windows XP (KB981322)	1	Microsoft Corporation		20110401	
+PCNAME	KB981349	Security Update for Windows XP (KB981349)	1	Microsoft Corporation		20100906	
+PCNAME	KB981793	Hotfix for Windows XP (KB981793)	1	Microsoft Corporation		20100906	
+PCNAME	KB981852	Security Update for Windows XP (KB981852)	1	Microsoft Corporation		20100906	
+PCNAME	KB981997	Security Update for Windows XP (KB981997)	1	Microsoft Corporation		20100906	
+PCNAME	KB982132	Security Update for Windows XP (KB982132)	1	Microsoft Corporation		20110401	
+PCNAME	KB982214	Security Update for Windows XP (KB982214)	1	Microsoft Corporation		20100906	
+PCNAME	KB982381-IE7	Security Update for Windows Internet Explorer 7 (KB982381)	1	Microsoft Corporation		20100906	
+PCNAME	KB982381-IE8	Security Update for Windows Internet Explorer 8 (KB982381)	1	Microsoft Corporation		20130128	
+PCNAME	KB982665	Security Update for Windows XP (KB982665)	1	Microsoft Corporation		20100906	
+PCNAME	M2698023	Microsoft .NET Framework 1.1 Security Update (KB2698023)					
+PCNAME	M2742597	Microsoft .NET Framework 1.1 Security Update (KB2742597)					
+PCNAME	M979906	Microsoft .NET Framework 1.1 Security Update (KB979906)					
+PCNAME	Microsoft .NET Framework 1.1  (1033)	Microsoft .NET Framework 1.1					
+PCNAME	Microsoft .NET Framework 3.5 SP1	Microsoft .NET Framework 3.5 SP1		Microsoft Corporation			
+PCNAME	Microsoft .NET Framework 4 Client Profile	Microsoft .NET Framework 4 Client Profile	4.0.30319	Microsoft Corporation			
+PCNAME	Microsoft .NET Framework 4 Extended	Microsoft .NET Framework 4 Extended	4.0.30319	Microsoft Corporation			
+PCNAME	Microsoft Firewall Client Update KB929556	Microsoft Firewall Client Update KB929556	4.0.3442	Microsoft Corporation			
+PCNAME	MSCompPackV1	Microsoft Compression Client Pack 1.0 for Windows XP	1	Microsoft Corporation		20100906	
+PCNAME	NLSDownlevelMapping	Microsoft National Language Support Downlevel APIs		Microsoft Corporation		20100906	
+PCNAME	Oracle	Oracle Client	11G R2 with ODAC Components	IT Department			
+PCNAME	WGA	Windows Genuine Advantage Validation Tool (KB892130)	1.7.0069.2	Microsoft Corporation			
+PCNAME	Windows Media Format Runtime	Windows Media Format 11 runtime					
+PCNAME	Windows Media Player	Windows Media Player 11					
+PCNAME	WMFDist11	Windows Media Format 11 runtime		Microsoft Corporation		20100906	
+PCNAME	wmp11	Windows Media Player 11		Microsoft Corporation		20100906	
+PCNAME	Wudf01000	Microsoft User-Mode Driver Framework Feature Pack 1.0		Microsoft Corporation		20100906	
+PCNAME	XpsEPSC	XML Paper Specification Shared Components Pack 1.0		Microsoft Corporation		20100906	
+PCNAME	{00000038-E5E0-11DF-9952-0417A1A01290}	Netop Remote Control Guest	9.52.10305	Netop Business Solutions A/S		20110401	
+PCNAME	{07FD9D5A-50DE-4421-AF8C-4D11309CA70A}	DisplayLink Graphics	7.0.41419.0	DisplayLink Corp.		20130321	
+PCNAME	{0A0CADCF-78DA-33C4-A350-CD51849B9702}	Microsoft .NET Framework 4 Extended	4.0.30319	Microsoft Corporation		20130114	
+PCNAME	{0A0CADCF-78DA-33C4-A350-CD51849B9702}.KB2162169	{0A0CADCF-78DA-33C4-A350-CD51849B9702}.KB2162169					KB2162169
+PCNAME	{0A0CADCF-78DA-33C4-A350-CD51849B9702}.KB2416472	Security Update for Microsoft .NET Framework 4 Extended (KB2416472)	1	Microsoft Corporation			KB2416472
+PCNAME	{0A0CADCF-78DA-33C4-A350-CD51849B9702}.KB2468871	{0A0CADCF-78DA-33C4-A350-CD51849B9702}.KB2468871					KB2468871
+PCNAME	{0A0CADCF-78DA-33C4-A350-CD51849B9702}.KB2478063	{0A0CADCF-78DA-33C4-A350-CD51849B9702}.KB2478063					KB2478063
+PCNAME	{0A0CADCF-78DA-33C4-A350-CD51849B9702}.KB2487367	Security Update for Microsoft .NET Framework 4 Extended (KB2487367)	1	Microsoft Corporation			KB2487367
+PCNAME	{0A0CADCF-78DA-33C4-A350-CD51849B9702}.KB2533523	{0A0CADCF-78DA-33C4-A350-CD51849B9702}.KB2533523					KB2533523
+PCNAME	{0A0CADCF-78DA-33C4-A350-CD51849B9702}.KB2544514	{0A0CADCF-78DA-33C4-A350-CD51849B9702}.KB2544514					KB2544514
+PCNAME	{0A0CADCF-78DA-33C4-A350-CD51849B9702}.KB2572063	{0A0CADCF-78DA-33C4-A350-CD51849B9702}.KB2572063					KB2572063
+PCNAME	{0A0CADCF-78DA-33C4-A350-CD51849B9702}.KB2599651	{0A0CADCF-78DA-33C4-A350-CD51849B9702}.KB2599651					KB2599651
+PCNAME	{0A0CADCF-78DA-33C4-A350-CD51849B9702}.KB2600211	{0A0CADCF-78DA-33C4-A350-CD51849B9702}.KB2600211					KB2600211
+PCNAME	{0A0CADCF-78DA-33C4-A350-CD51849B9702}.KB2600217	{0A0CADCF-78DA-33C4-A350-CD51849B9702}.KB2600217					KB2600217
+PCNAME	{0A0CADCF-78DA-33C4-A350-CD51849B9702}.KB2604121	{0A0CADCF-78DA-33C4-A350-CD51849B9702}.KB2604121					KB2604121
+PCNAME	{0A0CADCF-78DA-33C4-A350-CD51849B9702}.KB2639327	{0A0CADCF-78DA-33C4-A350-CD51849B9702}.KB2639327					KB2639327
+PCNAME	{0A0CADCF-78DA-33C4-A350-CD51849B9702}.KB2656351	Security Update for Microsoft .NET Framework 4 Extended (KB2656351)	1	Microsoft Corporation			KB2656351
+PCNAME	{0A0CADCF-78DA-33C4-A350-CD51849B9702}.KB2682543	{0A0CADCF-78DA-33C4-A350-CD51849B9702}.KB2682543					KB2682543
+PCNAME	{0A0CADCF-78DA-33C4-A350-CD51849B9702}.KB2736428	Security Update for Microsoft .NET Framework 4 Extended (KB2736428)	1	Microsoft Corporation			KB2736428
+PCNAME	{0A0CADCF-78DA-33C4-A350-CD51849B9702}.KB2742595	Security Update for Microsoft .NET Framework 4 Extended (KB2742595)	1	Microsoft Corporation			KB2742595
+PCNAME	{0B34DB03-1DA3-4C31-B86C-B2CD9692876F}	Foundation Stage Profile	3.3.0	FSP\Version3		20111003	
+PCNAME	{0EFDF2F9-836D-4EB7-A32D-038BD3F1FB2A}	Security Update for CAPICOM (KB931906)	2.1.0.2	Microsoft Corporation		20110405	
+PCNAME	{0FFC8EC3-38F4-4A3B-9D2D-6A56DDF4C97C}	BDE 5.11 for SIMS Workstation Setup					
+PCNAME	{199B7F78-69B7-47C5-8D4B-A3ED1391FB6B}	Microsoft Firewall Client	4.0.3442	Microsoft Corporation		20110401	
+PCNAME	{24531475-94B9-4A91-B4AA-16158C6AE026}	SOLUS 3 Agent	3.4.118.0	Capita Business Services Ltd		20120704	
+PCNAME	{28b931ed-c100-474c-8c84-85f403a26a85}.sdb	Valid Viewer Redirect Patch					
+PCNAME	{350C97B0-3D7C-4EE8-BAA9-00BCB3D54227}	WebFldrs XP	9.50.7523	Microsoft Corporation		20100906	
+PCNAME	{3C3901C5-3455-3E0A-A214-0B093A5070A6}	Microsoft .NET Framework 4 Client Profile	4.0.30319	Microsoft Corporation		20130225	
+PCNAME	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2160841	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2160841					KB2160841
+PCNAME	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2162169	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2162169					KB2162169
+PCNAME	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2446708	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2446708					KB2446708
+PCNAME	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2446708v2	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2446708v2					KB2446708v2
+PCNAME	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2468871	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2468871					KB2468871
+PCNAME	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2473228	Update for Microsoft .NET Framework 4 Client Profile (KB2473228)	1	Microsoft Corporation			KB2473228
+PCNAME	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2478063	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2478063					KB2478063
+PCNAME	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2478663	Security Update for Microsoft .NET Framework 4 Client Profile (KB2478663)	1	Microsoft Corporation			KB2478663
+PCNAME	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2514805	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2514805					KB2514805
+PCNAME	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2518870	Security Update for Microsoft .NET Framework 4 Client Profile (KB2518870)	1	Microsoft Corporation			KB2518870
+PCNAME	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2533523	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2533523					KB2533523
+PCNAME	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2539636	Security Update for Microsoft .NET Framework 4 Client Profile (KB2539636)	1	Microsoft Corporation			KB2539636
+PCNAME	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2544514	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2544514					KB2544514
+PCNAME	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2572063	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2572063					KB2572063
+PCNAME	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2572078	Security Update for Microsoft .NET Framework 4 Client Profile (KB2572078)	1	Microsoft Corporation			KB2572078
+PCNAME	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2599651	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2599651					KB2599651
+PCNAME	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2600211	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2600211					KB2600211
+PCNAME	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2600217	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2600217					KB2600217
+PCNAME	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2604121	Security Update for Microsoft .NET Framework 4 Client Profile (KB2604121)	1	Microsoft Corporation			KB2604121
+PCNAME	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2633870	Security Update for Microsoft .NET Framework 4 Client Profile (KB2633870)	1	Microsoft Corporation			KB2633870
+PCNAME	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2639327	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2639327					KB2639327
+PCNAME	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2656351	Security Update for Microsoft .NET Framework 4 Client Profile (KB2656351)	1	Microsoft Corporation			KB2656351
+PCNAME	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2656368	Security Update for Microsoft .NET Framework 4 Client Profile (KB2656368)	1	Microsoft Corporation			KB2656368
+PCNAME	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2656368v2	Security Update for Microsoft .NET Framework 4 Client Profile (KB2656368v2)	2	Microsoft Corporation			KB2656368v2
+PCNAME	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2656405	Security Update for Microsoft .NET Framework 4 Client Profile (KB2656405)	1	Microsoft Corporation			KB2656405
+PCNAME	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2686827	Security Update for Microsoft .NET Framework 4 Client Profile (KB2686827)	1	Microsoft Corporation			KB2686827
+PCNAME	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2698021	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2698021					KB2698021
+PCNAME	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2729449	Security Update for Microsoft .NET Framework 4 Client Profile (KB2729449)	1	Microsoft Corporation			KB2729449
+PCNAME	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2732797	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2732797					KB2732797
+PCNAME	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2736428	Security Update for Microsoft .NET Framework 4 Client Profile (KB2736428)	1	Microsoft Corporation			KB2736428
+PCNAME	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2737019	Security Update for Microsoft .NET Framework 4 Client Profile (KB2737019)	1	Microsoft Corporation			KB2737019
+PCNAME	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2742595	Security Update for Microsoft .NET Framework 4 Client Profile (KB2742595)	1	Microsoft Corporation			KB2742595
+PCNAME	{3C3901C5-3455-3E0A-A214-0B093A5070A6}.KB2789642	Security Update for Microsoft .NET Framework 4 Client Profile (KB2789642)	1	Microsoft Corporation			KB2789642
+PCNAME	{48DA0BC3-C3E6-4330-8073-23551EF98741}	Lumension Endpoint Security Client	4.4.1550	Lumension		20110816	
+PCNAME	{5C1FBBAF-14C8-4A23-A4A7-BCF19A979890}	McAfee Agent	4.5.0.1499	McAfee, Inc.		20110812	
+PCNAME	{6F7A0359-0D70-4E90-891A-0BA80B0DCF31}	SOLUS 3 Agent	3.4.118.0	Capita Business Services Ltd		20120828	
+PCNAME	{7148F0A8-6813-11D6-A77B-00B0D0142040}	{7148F0A8-6813-11D6-A77B-00B0D0142040}	1.4.2_04	Sun Microsystems, Inc.		20050512	
+PCNAME	{7299052b-02a4-4627-81f2-1818da5d550d}	Microsoft Visual C++ 2005 Redistributable	8.0.56336	Microsoft Corporation		20111129	
+PCNAME	{7505DE9C-4E85-4636-82F0-50F38077B900}	Crystal Reports 11	11.0.0.89327	Business Objects		20050512	
+PCNAME	{89F4137D-6C26-4A84-BDB8-2E5A4BB71E00}	Microsoft Silverlight	5.1.20125.0	Microsoft Corporation		20130318	
+PCNAME	{90110409-6000-11D3-8CFE-0150048383C9}	Microsoft Office Professional Edition 2003	11.0.8173.0	Microsoft Corporation		20130114	
+PCNAME	{90120000-0020-0409-0000-0000000FF1CE}	Compatibility Pack for the 2007 Office system	12.0.6514.5001	Microsoft Corporation		20130114	
+PCNAME	{90120409-6000-11D3-8CFE-0150048383C9}	Microsoft Office Standard Edition 2003	11.0.8173.0	Microsoft Corporation		20130114	
+PCNAME	{9223BBDE-693D-4B5F-A1DE-C40C7D2E4C89}	Adobe Flash Player 11 ActiveX	11.6.602.180	Adobe Systems Incorporated		20130313	
+PCNAME	{A3051CD0-2F64-3813-A88D-B8DCCDE8F8C7}	Microsoft .NET Framework 3.0 Service Pack 2	3.2.30729	Microsoft Corporation		20130114	
+PCNAME	{AC76BA86-1033-0000-7760-100000000002}	Adobe Acrobat 7.0 Professional	7.0.0	Adobe Systems		20050120	
+PCNAME	{AC76BA86-7AD7-1033-7B44-A95000000001}	Adobe Reader 9.5.4	9.5.4	Adobe Systems Incorporated		20130225	
+PCNAME	{B332732A-4958-41DD-B439-DDA2D32753C5}	McAfee Host Intrusion Prevention	7.00.0800	McAfee, Inc.		20100907	
+PCNAME	{B76FAB2C-B758-4571-8F82-08182F0836B6}	DisplayLink Core Software	7.0.41409.0	DisplayLink Corp.		20130321	
+PCNAME	{C09FB3CD-3D0C-3F2D-899A-6A1D67F2073F}	Microsoft .NET Framework 2.0 Service Pack 2	2.2.30729	Microsoft Corporation		20130225	
+PCNAME	{CB2F7EDD-9D1F-43C1-90FC-4F52EAE172A1}	Microsoft .NET Framework 1.1	1.1.4322	Microsoft		20130114	
+PCNAME	{CE15D1B6-19B6-4D4D-8F43-CF5D2C3356FF}	McAfee VirusScan Enterprise	8.8.02004	McAfee, Inc.		20130321	
+PCNAME	{CE2CDD62-0124-36CA-84D3-9F4DCF5C5BD9}	Microsoft .NET Framework 3.5 SP1	3.5.30729	Microsoft Corporation		20130114	
+PCNAME	{CE2CDD62-0124-36CA-84D3-9F4DCF5C5BD9}.KB2416473	{CE2CDD62-0124-36CA-84D3-9F4DCF5C5BD9}.KB2416473					KB2416473
+PCNAME	{CE2CDD62-0124-36CA-84D3-9F4DCF5C5BD9}.KB2604111	Security Update for Microsoft .NET Framework 3.5 SP1 (KB2604111)	1	Microsoft Corporation			KB2604111
+PCNAME	{CE2CDD62-0124-36CA-84D3-9F4DCF5C5BD9}.KB2657424	Security Update for Microsoft .NET Framework 3.5 SP1 (KB2657424)	1	Microsoft Corporation			KB2657424
+PCNAME	{CE2CDD62-0124-36CA-84D3-9F4DCF5C5BD9}.KB2695869	{CE2CDD62-0124-36CA-84D3-9F4DCF5C5BD9}.KB2695869					KB2695869
+PCNAME	{CE2CDD62-0124-36CA-84D3-9F4DCF5C5BD9}.KB2736416	Security Update for Microsoft .NET Framework 3.5 SP1 (KB2736416)	1	Microsoft Corporation			KB2736416
+PCNAME	{CE2CDD62-0124-36CA-84D3-9F4DCF5C5BD9}.KB350003	{CE2CDD62-0124-36CA-84D3-9F4DCF5C5BD9}.KB350003					KB350003
+PCNAME	{CE2CDD62-0124-36CA-84D3-9F4DCF5C5BD9}.KB953595	Hotfix for Microsoft .NET Framework 3.5 SP1 (KB953595)	1	Microsoft Corporation			KB953595
+PCNAME	{CE2CDD62-0124-36CA-84D3-9F4DCF5C5BD9}.KB958484	Hotfix for Microsoft .NET Framework 3.5 SP1 (KB958484)	1	Microsoft Corporation			KB958484
+PCNAME	{CE2CDD62-0124-36CA-84D3-9F4DCF5C5BD9}.KB960043	{CE2CDD62-0124-36CA-84D3-9F4DCF5C5BD9}.KB960043					KB960043
+PCNAME	{CE2CDD62-0124-36CA-84D3-9F4DCF5C5BD9}.KB963707	Update for Microsoft .NET Framework 3.5 SP1 (KB963707)	1	Microsoft Corporation			KB963707
+PCNAME	{D642E38E-0D24-486C-9A2D-E316DD696F4B}	Microsoft XML Parser	8.70.1104.04	Microsoft Corporation		20100906	
+PCNAME	{F132AF7F-7BCA-4EDE-8A7C-958108FE7DBC}	Realtek High Definition Audio Driver					
+PCNAME	{F6AA0BDC-F441-4436-8ADA-39CE8DD6E891}	FrontRange Solutions Discovery Client Agent	11.4	FrontRange Solutions USA Inc.		20120720	
+PCNAME	{F9B3DD02-B0B3-42E9-8650-030DFF0D133D}	Microsoft SQL Server Native Client	9.00.3042.00	Microsoft Corporation		20100510	
