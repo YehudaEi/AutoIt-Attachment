@@ -1,0 +1,147 @@
+  +------------------------------------------------------------------------+
+  |    This report is created by ASTRA32 v.2.13  .  Apr-03-2013 16:21:29   |
+  +------------------------------------------------------------------------+
+                  +-----------------------------------------+
+                  |              System Summary             |
+                  +-----------------------------------------+
+  Processor 
+     Processor:                Intel Core i3 Mobile 330M 2133 MHz
+     CPU Clock:                2128.1 MHz (16.0 x 133.0 MHz QDR)
+     Level 1 Cache:            2 x 32+32 kB (data+instr.)
+     Level 2 Cache:            2 x 256 kB
+     Level 3 Cache:            1 x 3072 kB
+  Motherboard
+     System Name:              Hewlett-Packard Presario CQ42 Notebook PC
+     Motherboard Vendor:       Unknown
+     Board Model:              Hewlett-Packard 1425
+     BIOS Version:             Insyde BIOS 5.31.DT
+     Chipset Name:             Intel HM55 (Ibex Peak)
+     Chipset Vendor:           Intel Corporation
+     Chipset:                  Auburndale/Havendale DRAM Controller
+     Southbridge Vendor:       Intel Corporation
+     Southbridge:              HM55 Chipset LPC Interface Controller
+     DMI/SMBIOS Version:       2.6
+  Memory
+     Memory Size:              1955696 kB (1909.86 MB)
+     System Memory:            1910 MB
+     Memory Module:            2048MB DDR3-1333 (PC3-10600) SDRAM (A-DATA Technology)
+  Storage
+     HDD Model:                Hitachi HTS725032A9A364
+     HDD Size:                 305245 MB (298.09 GB)
+     CD/DVD Model:             hp       CDDVDW TS-L633N
+     CD/DVD Speed:             24x (Write: 24x)
+  Video
+     Monitor Vendor:           AU Optronics Corp. (AUO)
+     Monitor Model:            AUOB140XW01 V8  (AUO 183C)
+     Video Chip Vendor:        Intel Corporation
+     Video Chip:               Auburndale/Havendale Integrated Graphics Controller
+     Video Memory Size:        748480 kB
+  Sound
+     Sound Chip Vendor:        Intel Corporation
+     Sound Chip:               5 Series/3400 Series Chipset High Definition Audio
+     AC'97/HDA Codec Name:     Realtek ALC270
+  Operating System
+     Operating System:         MS Windows 7 Ultimate (6.1.7600)
+     Windows Folder:           C:\Windows
+  Modem
+     Modem Vendor:             Intel Corporation
+     Modem Model:              5 Series/3400 Series Chipset HECI Controller
+  Network
+     Network Name:             SANGEETHA-PC
+     Adapter Vendor:           Realtek Semiconductor
+     Adapter Name:             RTL8191SEvA Wireless LAN Controller
+     Interface Description:    Realtek RTL8191SE Wireless LAN 802.11n PCI-E NIC
+     MAC Address:              70-F1-A1-30-3A-22
+     Adapter Vendor:           Realtek Semiconductor
+     Adapter Name:             RTL8139/810x Family Fast Ethernet NIC
+     Interface Description:    Realtek RTL8102E/RTL8103E Family PCI-E Fast Ethernet NIC (NDIS 6.20)
+     MAC Address:              C8-0A-A9-29-6A-25
+  Ports
+     LPT Ports:                None
+     COM Ports:                None
+                               
+                  +-----------------------------------------+
+                  |                  BIOS                   |
+                  +-----------------------------------------+
+  BIOS
+     Motherboard Vendor:       Unknown
+     Vendor URL:               Unknown
+     BIOS Version:             Insyde BIOS 5.31.DT
+     BIOS Date:                02/10/10
+     MP Specification Ver.:    Not Supported
+     DMI/SMBIOS Version:       2.6
+     DMI/SMBIOS Structures:    36
+     DMI/SMBIOS Address:       000Eh:A000h
+  SMBIOS
+     BIOS Vendor:              Hewlett-Packard
+     BIOS Version:             F.07
+     BIOS Date:                02/10/2010
+     BIOS ROM Size:            1536 kB
+     System BIOS Version:      15.7
+     Firmware Version:         84.19
+     Starting Segment:         0000h
+     Structure Length:         18h
+  Bus Supported
+     PCI is Supported:                    [X]
+     AGP is Supported:                    [ ]
+     USB is Supported:                    [X]
+     ISA is Supported:                    [ ]
+     VLBus is Supported:                  [ ]
+     MCA is Supported:                    [ ]
+     EISA is Supported:                   [ ]
+     PC Card is Supported:                [ ]
+  Boot Options
+     Selectable Boot:                     [X]
+     Boot From CD:                        [X]
+     ATAPI ZIP Drive Boot:                [ ]
+     LS-120 Boot:                         [ ]
+     BIOS Boot Specification:             [X]
+     Boot From PC Card:                   [ ]
+     Network Service Boot Supported:      [ ]
+     I2O Boot:                            [ ]
+     1394 Boot:                           [ ]
+  BIOS Features
+     BIOS Characteristics:                [X]
+     ACPI Supported:                      [X]
+     PnP is Supported:                    [ ]
+     APM is Supported:                    [ ]
+     ESCD Support:                        [ ]
+     Enhanced Disk Drive (EDD):           [X]
+     BIOS is Upgradeable (Flash):         [X]
+     BIOS ROM is Socketed:                [ ]
+     BIOS Shadowing is Allowed:           [X]
+     Smart Battery Supported:             [ ]
+     Targeted Content Distribution:       [X]
+     UEFI Specification is Supported:     [ ]
+     Virtual Machine:                     [ ]
+     Int 13h - 5.25"/360kB Floppy:        [X]
+     Int 13h - 5.25"/1.2MB Floppy:        [X]
+     Int 13h - 3.5"/720kB Floppy:         [X]
+     Int 13h - 3.5"/2.88MB Floppy:        [X]
+     Int 5h, Print Screen Service:        [ ]
+     Int 9h, 8042 Keyboard Services:      [X]
+     Int 14h, Serial Services:            [ ]
+     Int 17h, Printer Services:           [ ]
+     Int 10h, CGA/Mono Video Services:    [X]
+     Int 13h - Floppy for NEC 9800:       [X]
+     Int 13h - Floppy for Toshiba:        [X]
+     NEC PC-98:                           [ ]
+  OEM SMBIOS Strings
+     $HP$
+     LOC#ACJ
+     ABS 70/71 79 7A 7B 7C
+     CNB1 049D100000202810000010000
+  Other SMBIOS Structures
+     System Event Log (15)
+     Built-in Pointing Device (21)
+     Portable Battery (22)
+     System Boot Information (32)
+     Unknown (41)
+     Unknown (41)
+     32-bit Memory Error Information (18)
+     Memory Device Mapped Address (20)
+     32-bit Memory Error Information (18)
+     32-bit Memory Error Information (18)
+     Memory Array Mapped Address (19)
+                               
+                                [End of Report]                               
