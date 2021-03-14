@@ -1,0 +1,8 @@
+"type";"name";"tbl_name";"rootpage";"sql"
+"table";"Image_store";"Image_store";"2";"CREATE TABLE [Image_store] (
+  [Key] INTEGER NOT NULL ON CONFLICT ROLLBACK, 
+  [Filename] TEXT NOT NULL, 
+  [TypeOfObject] TEXT(4) NOT NULL, 
+  [Title] TEXT NOT NULL, 
+  [Object] BLOB NOT NULL ON CONFLICT FAIL)"
+"index";"Key";"Image_store";"3";"CREATE INDEX [Key] ON [Image_store] ([Key])"
