@@ -1,0 +1,23 @@
+Workgroup1Day
+Larry Fine......555 - 5555
+Moe Howard......555 - 5555
+Curly Howard....555 - 5555
+;
+Workgroup1Night
+Shemp Howard....555 - 5555
+Joe Besser......555 - 5555
+Joe DeRita......555 - 5555
+Emil Sitka......555 - 5555
+;
+Workgroup2Day
+Stan Laurel.....555 - 5555
+;
+Workgroup2Night
+Oliver Hardy....555 - 5555
+;
+Workgroup3Day
+Bud Abbott......555 - 5555
+;
+Workgroup3Night
+Lou Costello....555 - 5555
+;
