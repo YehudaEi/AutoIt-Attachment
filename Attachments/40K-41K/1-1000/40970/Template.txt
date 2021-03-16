@@ -1,0 +1,6 @@
+....
+WinTitle\DYNAMIC_PUTTY_TITLE\
+LogType\0\
+LogFileName\putty.log\
+HostName\DYNAMIC_HOSTNAME_IP\
+....
