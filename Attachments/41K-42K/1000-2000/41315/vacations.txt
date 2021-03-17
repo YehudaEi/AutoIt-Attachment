@@ -1,0 +1,41 @@
+[Swiss Soire]
+prod#=010
+length=3 days and 2 nights
+lodging=customer arranged
+travel=Swiss Air from most point of origion
+Notes=Skirts, Skiing and Skoal.  Three week advance booking required.  Not available on weekends.
+
+[Swiss Delux]
+prod#=020
+length=5 days and 4 nights
+lodging=Grand Swiss Whatever
+travel=1ST Class Swiss Air
+Notes=Package includes 2 meals per day , use of hot tub, gym and pool and free hotel transportation within the greater metropolitan area
+
+[Chicago]
+prod#=030
+length=Unknown.  Depends on whether you can get out or not.
+lodging=Hyatt Regency
+travel=based on availability
+Notes=Body guard and firearms NOT included
+
+[London]
+prod#=040
+length=2 days and 1 night
+lodging=Buckingham Palace
+travel=British Air
+notes=A chance to meet some of our English forum friends
+
+[Cairo]
+prod#=050
+length=3 days and 2 nights
+lodging=Great pyramid of Gizza
+travel=air to rail to camel
+notes=A can"t miss for Indiana Jones
+
+
+
+
+
+
+
