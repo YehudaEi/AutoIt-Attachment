@@ -1,0 +1,4121 @@
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+# START: DO NOT CHANGE ANYTHING AFTER THIS LINE     #-#-#-#-#
+# Created by SciTEConfig
+#------------------------------------------------------------
+font.base=font:Verdana,size:10,$(font.override)
+font.monospace=font:Courier New,size:10
+proper.case=0
+check.updates.scite4autoit3=1
+use.tabs=0
+indent.size=4
+indent.size.*.au3=4
+tabsize=4
+#Background
+style.au3.32=style.*.32=$(font.base),back:#F0F4F9
+#CaretLineBackground
+caret.line.back=#FFFED8
+#Selection Foreground/background and Alpha
+selection.fore=#006000
+selection.alpha=50
+selection.back=#F0A0A8
+# Brace highlight
+style.au3.34=fore:#0000FF,back:#F0F4F9
+# Brace incomplete highlight
+style.au3.35=fore:#008000,italics,back:#F0F4F9
+#White space
+style.au3.0=fore:#000000,back:#F0F4F9
+#Comment line
+style.au3.1=fore:#008000,italics,back:#F0F4F9
+#Comment block
+style.au3.2=fore:#008000,italics,back:#F0F4F9
+#Number
+style.au3.3=fore:#0000FF,back:#F0F4F9
+#Function
+style.au3.4=fore:#000090,back:#F0F4F9
+#Keyword
+style.au3.5=fore:#0000FF,back:#F0F4F9
+#Macro
+style.au3.6=fore:#808000,back:#F0F4F9
+#String
+style.au3.7=fore:#FF0000,back:#F0F4F9
+#Operator
+style.au3.8=fore:#FF8000,back:#F0F4F9
+#Variable
+style.au3.9=fore:#5A5A5A,back:#F0F4F9
+#Sent keys
+style.au3.10=fore:#808080,back:#F0F4F9
+#Pre-Processor
+style.au3.11=fore:#808000,back:#F0F4F9
+#Special
+style.au3.12=fore:#DC143C,back:#F0F4F9
+#Abbrev-Expand
+style.au3.13=fore:#000000,back:#F0F4F9
+#Com Objects
+style.au3.14=fore:#993399,back:#F0F4F9
+#Standard UDF's
+style.au3.15=fore:#0080FF,back:#F0F4F9
+# END => DO NOT CHANGE ANYTHING BEFORE THIS LINE  #-#-#-#-#-#
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+
+#include-once
+
+#include "StatusBarConstants.au3"
+#include "Memory.au3"
+#include "WinAPI.au3"
+#include "SendMessage.au3"
+#include "UDFGlobalID.au3"
+
+; #INDEX# =======================================================================================================================
+; Title .........: StatusBar
+; AutoIt Version : 3.2.3++
+; Language ......: English
+; Description ...: Functions that assist with StatusBar control management.
+;                  A status bar is a horizontal window at the bottom of a parent window in which an application can display
+;                  various kinds of status information.  The status bar can be divided into parts to display more than one type
+;                  of information
+; Author(s) .....: Paul Campbell (PaulIA)
+; Dll(s) ........: user32.dll, comctl32.dll, shell32.dll
+; ===============================================================================================================================
+
+; #VARIABLES# ===================================================================================================================
+Global $__ghSBLastWnd
+Global $Debug_SB = False
+; ===============================================================================================================================
+
+; #CONSTANTS# ===================================================================================================================
+Global Const $__STATUSBARCONSTANT_ClassName		= "msctls_statusbar32"
+Global Const $__STATUSBARCONSTANT_WM_SIZE		= 0x05
+Global Const $__STATUSBARCONSTANT_CLR_DEFAULT	= 0xFF000000
+; ===============================================================================================================================
+
+; #OLD_FUNCTIONS#================================================================================================================
+; Old Function/Name                      ; --> New Function/Name/Replacement(s)
+;
+; deprecated functions will no longer work
+;_GUICtrlStatusBarCreate                ; --> _GUICtrlStatusBar_Create
+;_GUICtrlStatusBarCreateProgress        ; --> for backward compatibilty only (won't be documented)
+;_GUICtrlStatusBarDelete                ; --> _GUICtrlStatusBar_Destroy
+;_GUICtrlStatusBarGetBorders            ; --> _GUICtrlStatusBar_GetBorders
+;_GUICtrlStatusBarGetIcon               ; --> _GUICtrlStatusBar_GetIcon
+;_GUICtrlStatusBarGetParts              ; --> _GUICtrlStatusBar_GetCount
+;_GUICtrlStatusBarGetRect               ; --> _GUICtrlStatusBar_GetRect
+;_GUICtrlStatusBarGetText               ; --> _GUICtrlStatusBar_GetText
+;_GUICtrlStatusBarGetTextLength         ; --> _GUICtrlStatusBar_GetTextLength
+;_GUICtrlStatusBarGetTip                ; --> _GUICtrlStatusBar_GetTipText
+;_GUICtrlStatusBarGetUnicode            ; --> _GUICtrlStatusBar_GetUnicodeFormat
+;_GUICtrlStatusBarIsSimple              ; --> _GUICtrlStatusBar_IsSimple
+;_GUICtrlStatusBarResize                ; --> _GUICtrlStatusBar_Resize
+;_GUICtrlStatusBarSetBKColor            ; --> _GUICtrlStatusBar_SetBKColor
+;_GUICtrlStatusBarSetIcon               ; --> _GUICtrlStatusBar_SetIcon
+;_GUICtrlStatusBarSetMinHeight          ; --> _GUICtrlStatusBar_SetMinHeight
+;_GUICtrlStatusBarSetParts              ; --> _GUICtrlStatusBar_SetParts
+;_GUICtrlStatusBarSetSimple             ; --> _GUICtrlStatusBar_SetSimple
+;_GUICtrlStatusBarSetText               ; --> _GUICtrlStatusBar_SetText
+;_GUICtrlStatusBarSetTip                ; --> _GUICtrlStatusBar_SetTipText
+;_GUICtrlStatusBarSetUnicode            ; --> _GUICtrlStatusBar_SetUnicodeFormat
+;_GUICtrlStatusBarShowHide              ; --> _GUICtrlStatusBar_ShowHide
+; ===============================================================================================================================
+
+; #CURRENT# =====================================================================================================================
+;_GUICtrlStatusBar_Create
+;_GUICtrlStatusBar_Destroy
+;_GUICtrlStatusBar_EmbedControl
+;_GUICtrlStatusBar_GetBorders
+;_GUICtrlStatusBar_GetBordersHorz
+;_GUICtrlStatusBar_GetBordersRect
+;_GUICtrlStatusBar_GetBordersVert
+;_GUICtrlStatusBar_GetCount
+;_GUICtrlStatusBar_GetHeight
+;_GUICtrlStatusBar_GetIcon
+;_GUICtrlStatusBar_GetParts
+;_GUICtrlStatusBar_GetRect
+;_GUICtrlStatusBar_GetRectEx
+;_GUICtrlStatusBar_GetText
+;_GUICtrlStatusBar_GetTextFlags
+;_GUICtrlStatusBar_GetTextLength
+;_GUICtrlStatusBar_GetTextLengthEx
+;_GUICtrlStatusBar_GetTipText
+;_GUICtrlStatusBar_GetUnicodeFormat
+;_GUICtrlStatusBar_GetWidth
+;_GUICtrlStatusBar_IsSimple
+;_GUICtrlStatusBar_Resize
+;_GUICtrlStatusBar_SetBKColor
+;_GUICtrlStatusBar_SetIcon
+;_GUICtrlStatusBar_SetMinHeight
+;_GUICtrlStatusBar_SetParts
+;_GUICtrlStatusBar_SetSimple
+;_GUICtrlStatusBar_SetText
+;_GUICtrlStatusBar_SetTipText
+;_GUICtrlStatusBar_SetUnicodeFormat
+;_GUICtrlStatusBar_ShowHide
+; ===============================================================================================================================
+
+; #INTERNAL_USE_ONLY# ===========================================================================================================
+;$tagBORDERS
+; ===============================================================================================================================
+
+; #INTERNAL_USE_ONLY# ===========================================================================================================
+; Name...........: $tagBORDERS
+; Description ...: Structure that recieves the current widths of the horizontal and vertical borders of a status window
+; Fields ........: BX - Width of the horizontal border
+;                  BY - Width of the vertical border
+;                  RX - Width of the border between rectangles
+; Author ........: Gary Frost (gafrost)
+; Remarks .......:
+; ===============================================================================================================================
+Global Const $tagBORDERS = "int BX;int BY;int RX"
+
+; #FUNCTION# ====================================================================================================================
+; Name...........: _GUICtrlStatusBar_Create
+; Description ...: Create a statusbar
+; Syntax.........: _GUICtrlStatusBar_Create($hWnd[, $vPartEdge = -1[, $vPartText = ""[, $iStyles = -1[, $iExStyles = 0x00000000]]]])
+; Parameters ....: $hWnd        - Handle to parent window
+;                  $vPartEdge  - Width of part or parts, for more than 1 part pass in zero based array in the following format:
+;                  |$vPartEdge[0] - Right edge of part #1
+;                  |$vPartEdge[1] - Right edge of part #2
+;                  |$vPartEdge[n] - Right edeg of part n
+;                  $vPartText   - Text of part or parts, for more than 1 part pass in zero based array in the following format:
+;                  |$vPartText[0] - First part
+;                  |$vPartText[1] - Second part
+;                  |$vPartText[n] - Last part
+;                  $iStyles     - Control styles:
+;                  |$SBARS_SIZEGRIP - The status bar control will include a sizing grip at the right end of the status bar
+;                  |$SBARS_TOOLTIPS - The status bar will have tooltips
+;                  -
+;                  |Forced: $WS_CHILD, $WS_VISIBLE
+;                  $iExStyles   - Control extended style
+; Return values .: Success      - Handle to the control
+;                  Failure      - 0
+; Author ........: Gary Frost, Steve Podhajecki <gehossafats at netmdc dot com>
+; Modified.......: Gary Frost
+; Remarks .......: If using GUICtrlCreateMenu then use _GUICtrlStatusBar_Create after GUICtrlCreateMenu
+; Related .......: _GUICtrlStatusBar_Destroy
+; Link ..........:
+; Example .......: Yes
+; ===============================================================================================================================
+Func _GUICtrlStatusBar_Create($hWnd, $vPartEdge = -1, $vPartText = "", $iStyles = -1, $iExStyles = -1)
+	If Not IsHWnd($hWnd) Then Return SetError(1, 0, 0)	; Invalid Window handle for _GUICtrlStatusBar_Create 1st parameter
+
+	Local $iStyle = BitOR($__UDFGUICONSTANT_WS_CHILD, $__UDFGUICONSTANT_WS_VISIBLE)
+
+	If $iStyles = -1 Then $iStyles = 0x00000000
+	If $iExStyles = -1 Then $iExStyles= 0x00000000
+
+	Local $aPartWidth[1], $aPartText[1]
+	If @NumParams > 1 Then ; more than param passed in
+		; setting up arrays
+		If IsArray($vPartEdge) Then ; setup part width array
+			$aPartWidth = $vPartEdge
+		Else
+			$aPartWidth[0] = $vPartEdge
+		EndIf
+		If @NumParams = 2 Then ; part text was not passed in so set array to same size as part width array
+			ReDim $aPartText[UBound($aPartWidth)]
+		Else
+			If IsArray($vPartText) Then ; setup part text array
+				$aPartText = $vPartText
+			Else
+				$aPartText[0] = $vPartText
+			EndIf
+			; if partwidth array is not same size as parttext array use larger sized array for size
+			If UBound($aPartWidth) <> UBound($aPartText) Then
+				Local $iLast
+				If UBound($aPartWidth) > UBound($aPartText) Then ; width array is larger
+					$iLast = UBound($aPartText)
+					ReDim $aPartText[UBound($aPartWidth)]
+					For $x = $iLast To UBound($aPartText) - 1
+						$aPartWidth[$x] = ""
+					Next
+				Else ; text array is larger
+					$iLast = UBound($aPartWidth)
+					ReDim $aPartWidth[UBound($aPartText)]
+					For $x = $iLast To UBound($aPartWidth) - 1
+						$aPartWidth[$x] = $aPartWidth[$x - 1] + 75
+					Next
+					$aPartWidth[UBound($aPartText) - 1] = -1
+				EndIf
+			EndIf
+		EndIf
+		If Not IsHWnd($hWnd) Then $hWnd = HWnd($hWnd)
+		If @NumParams > 3 Then $iStyle = BitOR($iStyle, $iStyles)
+	EndIf
+
+	Local $nCtrlID = __UDF_GetNextGlobalID($hWnd)
+	If @error Then Return SetError(@error, @extended, 0)
+
+	Local $hWndSBar = _WinAPI_CreateWindowEx($iExStyles, $__STATUSBARCONSTANT_ClassName, "", $iStyle, 0, 0, 0, 0, $hWnd, $nCtrlID)
+	If @error Then Return SetError(@error, @extended, 0)
+
+	If @NumParams > 1 Then ; set the parts/text
+		_GUICtrlStatusBar_SetParts($hWndSBar, UBound($aPartWidth), $aPartWidth)
+		For $x = 0 To UBound($aPartText) - 1
+			_GUICtrlStatusBar_SetText($hWndSBar, $aPartText[$x], $x)
+		Next
+	EndIf
+	Return $hWndSBar
+EndFunc   ;==>_GUICtrlStatusBar_Create
+
+; #FUNCTION# ====================================================================================================================
+; Name...........: _GUICtrlStatusBar_Destroy
+; Description ...: Delete the control
+; Syntax.........: _GUICtrlStatusBar_Destroy(ByRef $hWnd)
+; Parameters ....: $hWnd        - Handle to the control
+; Return values .: Success      - True, Handle is set to 0
+;                  Failure      - False
+; Author ........: Gary Frost (gafrost)
+; Modified.......:
+; Remarks .......: Restricted to only be used on StatusBar created with _GUICtrlStatusBar_Create
+; Related .......: _GUICtrlStatusBar_Create
+; Link ..........:
+; Example .......: Yes
+; ===============================================================================================================================
+Func _GUICtrlStatusBar_Destroy(ByRef $hWnd)
+	If $Debug_SB Then __UDF_ValidateClassName($hWnd, $__STATUSBARCONSTANT_ClassName)
+	If Not _WinAPI_IsClassName($hWnd, $__STATUSBARCONSTANT_ClassName) Then Return SetError(2, 2, False)
+
+	Local $Destroyed = 0
+	If IsHWnd($hWnd) Then
+		If _WinAPI_InProcess($hWnd, $__ghSBLastWnd) Then
+			Local $nCtrlID = _WinAPI_GetDlgCtrlID($hWnd)
+			Local $hParent = _WinAPI_GetParent($hWnd)
+			$Destroyed = _WinAPI_DestroyWindow($hWnd)
+			Local $iRet = __UDF_FreeGlobalID($hParent, $nCtrlID)
+			If Not $iRet Then
+				; can check for errors here if needed, for debug
+			EndIf
+		Else
+			; Not Allowed to Destroy Other Applications Control(s)
+			Return SetError(1, 1, False)
+		EndIf
+	EndIf
+	If $Destroyed Then $hWnd = 0
+	Return $Destroyed <> 0
+EndFunc   ;==>_GUICtrlStatusBar_Destroy
+
+; #FUNCTION# ====================================================================================================================
+; Name...........: _GUICtrlStatusBar_EmbedControl
+; Description ...: Embeds a child control in the control
+; Syntax.........: _GUICtrlStatusBar_EmbedControl($hWnd, $iPart, $hControl[, $iFit = 4])
+; Parameters ....: $hWnd        - Handle to the control
+;                  $iPart       - Zero based part index
+;                  $hControl    - Handle of control to embed in panel
+;                  $iFit        - Determines how to fit the control. Can be a combination of:
+;                  |1 - Center the control horizontally
+;                  |2 - Center the control vertically
+;                  |4 - Fit the control to the status bar part
+; Return values .:
+; Author ........: Paul Campbell (PaulIA)
+; Modified.......:
+; Remarks .......: You can embed ANY control in the status bar, not just the usual Progress Bar
+; Related .......:
+; Link ..........:
+; Example .......: Yes
+; ===============================================================================================================================
+Func _GUICtrlStatusBar_EmbedControl($hWnd, $iPart, $hControl, $iFit = 4)
+	Local $aRect = _GUICtrlStatusBar_GetRect($hWnd, $iPart)
+	Local $iBarX = $aRect[0]
+	Local $iBarY = $aRect[1]
+	Local $iBarW = $aRect[2] - $iBarX
+	Local $iBarH = $aRect[3] - $iBarY
+
+	Local $iConX = $iBarX
+	Local $iConY = $iBarY
+	Local $iConW = _WinAPI_GetWindowWidth($hControl)
+	Local $iConH = _WinAPI_GetWindowHeight($hControl)
+
+	If $iConW > $iBarW Then $iConW = $iBarW
+	If $iConH > $iBarH Then $iConH = $iBarH
+	Local $iPadX = ($iBarW - $iConW) / 2
+	Local $iPadY = ($iBarH - $iConH) / 2
+	If $iPadX < 0 Then $iPadX = 0
+	If $iPadY < 0 Then $iPadY = 0
+
+	If BitAND($iFit, 1) = 1 Then $iConX = $iBarX + $iPadX
+	If BitAND($iFit, 2) = 2 Then $iConY = $iBarY + $iPadY
+	If BitAND($iFit, 4) = 4 Then
+		$iPadX = _GUICtrlStatusBar_GetBordersRect($hWnd)
+		$iPadY = _GUICtrlStatusBar_GetBordersVert($hWnd)
+		$iConX = $iBarX
+		If _GUICtrlStatusBar_IsSimple($hWnd) Then $iConX += $iPadX
+		$iConY = $iBarY + $iPadY
+		$iConW = $iBarW - ($iPadX * 2)
+		$iConH = $iBarH - ($iPadY * 2)
+	EndIf
+
+	_WinAPI_SetParent($hControl, $hWnd)
+	_WinAPI_MoveWindow($hControl, $iConX, $iConY, $iConW, $iConH)
+EndFunc   ;==>_GUICtrlStatusBar_EmbedControl
+
+; #FUNCTION# ====================================================================================================================
+; Name...........: _GUICtrlStatusBar_GetBorders
+; Description ...: Retrieves the current widths of the horizontal and vertical borders
+; Syntax.........: _GUICtrlStatusBar_GetBorders($hWnd)
+; Parameters ....: $hWnd        - Handle to the control
+; Return values .: Success      - Array with the following format:
+;                  |$aBorders[0] - Width of the horizontal border
+;                  |$aBorders[1] - Width of the vertical border
+;                  |$aBorders[2] - Width of the border between rectangles
+; Author ........: Gary Frost (gafrost)
+; Modified.......:
+; Remarks .......:
+; Related .......: _GUICtrlStatusBar_GetBordersHorz, _GUICtrlStatusBar_GetBordersRect, _GUICtrlStatusBar_GetBordersVert
+; Link ..........:
+; Example .......: Yes
+; ===============================================================================================================================
+Func _GUICtrlStatusBar_GetBorders($hWnd)
+	If $Debug_SB Then __UDF_ValidateClassName($hWnd, $__STATUSBARCONSTANT_ClassName)
+
+	Local $tBorders = DllStructCreate($tagBORDERS)
+	Local $pBorders = DllStructGetPtr($tBorders)
+	Local $iRet
+	If _WinAPI_InProcess($hWnd, $__ghSBLastWnd) Then
+		$iRet = _SendMessage($hWnd, $SB_GETBORDERS, 0, $pBorders, 0, "wparam", "ptr")
+	Else
+		Local $iSize = DllStructGetSize($tBorders)
+		Local $tMemMap
+		Local $pMemory = _MemInit($hWnd, $iSize, $tMemMap)
+		$iRet = _SendMessage($hWnd, $SB_GETBORDERS, 0, $pMemory, 0, "wparam", "ptr")
+		_MemRead($tMemMap, $pMemory, $pBorders, $iSize)
+		_MemFree($tMemMap)
+	EndIf
+	Local $aBorders[3]
+	If $iRet = 0 Then Return SetError(-1, -1, $aBorders)
+	$aBorders[0] = DllStructGetData($tBorders, "BX")
+	$aBorders[1] = DllStructGetData($tBorders, "BY")
+	$aBorders[2] = DllStructGetData($tBorders, "RX")
+	Return $aBorders
+EndFunc   ;==>_GUICtrlStatusBar_GetBorders
+
+; #FUNCTION# ====================================================================================================================
+; Name...........: _GUICtrlStatusBar_GetBordersHorz
+; Description ...: Retrieves the current width of the horizontal border
+; Syntax.........: _GUICtrlStatusBar_GetBordersHorz($hWnd)
+; Parameters ....: $hWnd        - Handle to the control
+; Return values .: Success      - Width of the horizontal border
+; Author ........: Paul Campbell (PaulIA)
+; Modified.......:
+; Remarks .......:
+; Related .......: _GUICtrlStatusBar_GetBorders, _GUICtrlStatusBar_GetBordersRect, _GUICtrlStatusBar_GetBordersVert
+; Link ..........:
+; Example .......: Yes
+; ===============================================================================================================================
+Func _GUICtrlStatusBar_GetBordersHorz($hWnd)
+	Local $aBorders = _GUICtrlStatusBar_GetBorders($hWnd)
+	Return SetError(@error, @extended, $aBorders[0])
+EndFunc   ;==>_GUICtrlStatusBar_GetBordersHorz
+
+; #FUNCTION# ====================================================================================================================
+; Name...........: _GUICtrlStatusBar_GetBordersRect
+; Description ...: Retrieves the current width of the rectangle border
+; Syntax.........: _GUICtrlStatusBar_GetBordersRect($hWnd)
+; Parameters ....: $hWnd        - Handle to the control
+; Return values .: Success      - Width of the rectangle border
+; Author ........: Paul Campbell (PaulIA)
+; Modified.......:
+; Remarks .......:
+; Related .......: _GUICtrlStatusBar_GetBorders, _GUICtrlStatusBar_GetBordersHorz, _GUICtrlStatusBar_GetBordersVert
+; Link ..........:
+; Example .......: Yes
+; ===============================================================================================================================
+Func _GUICtrlStatusBar_GetBordersRect($hWnd)
+	Local $aBorders = _GUICtrlStatusBar_GetBorders($hWnd)
+	Return SetError(@error, @extended, $aBorders[2])
+EndFunc   ;==>_GUICtrlStatusBar_GetBordersRect
+
+; #FUNCTION# ====================================================================================================================
+; Name...........: _GUICtrlStatusBar_GetBordersVert
+; Description ...: Retrieves the current width of the vertical border
+; Syntax.........: _GUICtrlStatusBar_GetBordersVert($hWnd)
+; Parameters ....: $hWnd        - Handle to the control
+; Return values .: Success      - Width of the vertical border
+; Author ........: Paul Campbell (PaulIA)
+; Modified.......:
+; Remarks .......:
+; Related .......: _GUICtrlStatusBar_GetBorders, _GUICtrlStatusBar_GetBordersHorz, _GUICtrlStatusBar_GetBordersRect
+; Link ..........:
+; Example .......: Yes
+; ===============================================================================================================================
+Func _GUICtrlStatusBar_GetBordersVert($hWnd)
+	Local $aBorders = _GUICtrlStatusBar_GetBorders($hWnd)
+	Return SetError(@error, @extended, $aBorders[1])
+EndFunc   ;==>_GUICtrlStatusBar_GetBordersVert
+
+; #FUNCTION# ====================================================================================================================
+; Name...........: _GUICtrlStatusBar_GetCount
+; Description ...: Retrieves the number of parts
+; Syntax.........: _GUICtrlStatusBar_GetCount($hWnd)
+; Parameters ....: $hWnd        - Handle to the control
+; Return values .: Success      - Number of status bar parts
+; Author ........: Gary Frost (gafrost)
+; Modified.......:
+; Remarks .......:
+; Related .......:
+; Link ..........:
+; Example .......: Yes
+; ===============================================================================================================================
+Func _GUICtrlStatusBar_GetCount($hWnd)
+	If $Debug_SB Then __UDF_ValidateClassName($hWnd, $__STATUSBARCONSTANT_ClassName)
+
+	Return _SendMessage($hWnd, $SB_GETPARTS)
+EndFunc   ;==>_GUICtrlStatusBar_GetCount
+
+; #FUNCTION# ====================================================================================================================
+; Name...........: _GUICtrlStatusBar_GetHeight
+; Description ...: Retrieves the height of a part
+; Syntax.........: _GUICtrlStatusBar_GetHeight($hWnd)
+; Parameters ....: $hWnd        - Handle to the control
+; Return values .: Success      - Height of the parts
+; Author ........: Paul Campbell (PaulIA)
+; Modified.......: Gary Frost (gafrost) Removed dot notation
+; Remarks .......:
+; Related .......: _GUICtrlStatusBar_GetWidth, _GUICtrlStatusBar_SetMinHeight
+; Link ..........:
+; Example .......: Yes
+; ===============================================================================================================================
+Func _GUICtrlStatusBar_GetHeight($hWnd)
+	Local  $tRect = _GUICtrlStatusBar_GetRectEx($hWnd, 0)
+	Return DllStructGetData($tRect, "Bottom") - DllStructGetData($tRect, "Top") - (_GUICtrlStatusBar_GetBordersVert($hWnd) * 2)
+EndFunc   ;==>_GUICtrlStatusBar_GetHeight
+
+; #FUNCTION# ====================================================================================================================
+; Name...........: _GUICtrlStatusBar_GetIcon
+; Description ...: Retrieves the icon for a part
+; Syntax.........: _GUICtrlStatusBar_GetIcon($hWnd[, $iIndex = 0])
+; Parameters ....: $hWnd        - Handle to the control
+;                  $iIndex      - Zero based index of the part that contains the icon to be retrieved.  If this parameter is  -1,
+;                  +the status bar is assumed to be a Simple Mode status bar.
+; Return values .: Success      - The handle to the icon
+;                  Failure      - 0
+; Author ........: Steve Podhajecki <gehossafats at netmdc dotcom>
+; Modified.......: Gary Frost (GaryFrost)
+; Remarks .......:
+; Related .......: _GUICtrlStatusBar_SetIcon
+; Link ..........:
+; Example .......: Yes
+; ===============================================================================================================================
+Func _GUICtrlStatusBar_GetIcon($hWnd, $iIndex = 0)
+	If $Debug_SB Then __UDF_ValidateClassName($hWnd, $__STATUSBARCONSTANT_ClassName)
+
+	Return _SendMessage($hWnd, $SB_GETICON, $iIndex, 0, 0, "wparam", "lparam", "hwnd")
+EndFunc   ;==>_GUICtrlStatusBar_GetIcon
+
+; #FUNCTION# ====================================================================================================================
+; Name...........: _GUICtrlStatusBar_GetParts
+; Description ...: Retrieves the number of parts and the part edges
+; Syntax.........: _GUICtrlStatusBar_GetParts($hWnd)
+; Parameters ....: $hWnd        - Handle to the control
+; Return values .: Success      - Array with the following format:
+;                  |$aParts[0] - Number of parts
+;                  |$aParts[1] - Right edge of part #1
+;                  |$aParts[2] - Right edge of part #2
+;                  |$aParts[n] - Right edge of part n
+; Author ........: Paul Campbell (PaulIA)
+; Modified.......:
+; Remarks .......:
+; Related .......: _GUICtrlStatusBar_SetParts
+; Link ..........:
+; Example .......: Yes
+; ===============================================================================================================================
+Func _GUICtrlStatusBar_GetParts($hWnd)
+	If $Debug_SB Then __UDF_ValidateClassName($hWnd, $__STATUSBARCONSTANT_ClassName)
+
+	Local $iCount = _GUICtrlStatusBar_GetCount($hWnd)
+	Local $tParts = DllStructCreate("int[" & $iCount & "]")
+	Local $pParts = DllStructGetPtr($tParts)
+	Local $aParts[$iCount + 1]
+	If _WinAPI_InProcess($hWnd, $__ghSBLastWnd) Then
+		$aParts[0] = _SendMessage($hWnd, $SB_GETPARTS, $iCount, $pParts, 0, "wparam", "ptr")
+	Else
+		Local $iParts = DllStructGetSize($tParts)
+		Local $tMemMap
+		Local $pMemory = _MemInit($hWnd, $iParts, $tMemMap)
+		$aParts[0] = _SendMessage($hWnd, $SB_GETPARTS, $iCount, $pMemory, 0, "wparam", "ptr")
+		_MemRead($tMemMap, $pMemory, $pParts, $iParts)
+		_MemFree($tMemMap)
+	EndIf
+	For $iI = 1 To $iCount
+		$aParts[$iI] = DllStructGetData($tParts, 1, $iI)
+	Next
+	Return $aParts
+EndFunc   ;==>_GUICtrlStatusBar_GetParts
+
+; #FUNCTION# ====================================================================================================================
+; Name...........: _GUICtrlStatusBar_GetRect
+; Description ...: Retrieves the bounding rectangle of a part
+; Syntax.........: _GUICtrlStatusBar_GetRect($hWnd, $iPart)
+; Parameters ....: $hWnd        - Handle to the control
+;                  $iPart       - Zero based part index
+; Return values .: Success      - Array with the following format:
+;                  |$aRect[0] = X coordinate of the upper left corner of the rectangle
+;                  |$aRect[1] = Y coordinate of the upper left corner of the rectangle
+;                  |$aRect[2] = X coordinate of the lower right corner of the rectangle
+;                  |$aRect[3] = Y coordinate of the lower right corner of the rectangle
+; Author ........: Paul Campbell (PaulIA)
+; Modified.......:
+; Remarks .......:
+; Related .......: _GUICtrlStatusBar_GetRectEx
+; Link ..........:
+; Example .......: Yes
+; ===============================================================================================================================
+Func _GUICtrlStatusBar_GetRect($hWnd, $iPart)
+	Local $tRect = _GUICtrlStatusBar_GetRectEx($hWnd, $iPart)
+	If @error Then 	Return SetError(@error, 0, 0)
+	Local $aRect[4]
+	$aRect[0] = DllStructGetData($tRect, "Left")
+	$aRect[1] = DllStructGetData($tRect, "Top")
+	$aRect[2] = DllStructGetData($tRect, "Right")
+	$aRect[3] = DllStructGetData($tRect, "Bottom")
+	Return $aRect
+EndFunc   ;==>_GUICtrlStatusBar_GetRect
+
+; #FUNCTION# ====================================================================================================================
+; Name...........: _GUICtrlStatusBar_GetRectEx
+; Description ...: Retrieves the bounding rectangle of a part
+; Syntax.........: _GUICtrlStatusBar_GetRectEx($hWnd, $iPart)
+; Parameters ....: $hWnd        - Handle to the control
+;                  $iPart       - Zero based part index. If the control is in simple mode this field is ignored and the rectangle
+;                  +of the status bar is returned.
+; Return values .: Success      - $tagRECT structure that receives the bounding rectangle
+; Author ........: Paul Campbell (PaulIA)
+; Modified.......:
+; Remarks .......:
+; Related .......: _GUICtrlStatusBar_GetRect, $tagRECT
+; Link ..........:
+; Example .......: Yes
+; ===============================================================================================================================
+Func _GUICtrlStatusBar_GetRectEx($hWnd, $iPart)
+	If $Debug_SB Then __UDF_ValidateClassName($hWnd, $__STATUSBARCONSTANT_ClassName)
+
+	Local $tRect = DllStructCreate($tagRECT)
+	Local $pRect = DllStructGetPtr($tRect)
+	Local $iRet
+	If _WinAPI_InProcess($hWnd, $__ghSBLastWnd) Then
+		$iRet = _SendMessage($hWnd, $SB_GETRECT, $iPart, $pRect, 0, "wparam", "ptr")
+	Else
+		Local $iRect = DllStructGetSize($tRect)
+		Local $tMemMap
+		Local $pMemory = _MemInit($hWnd, $iRect, $tMemMap)
+		$iRet = _SendMessage($hWnd, $SB_GETRECT, $iPart, $pMemory, 0, "wparam", "ptr")
+		_MemRead($tMemMap, $pMemory, $pRect, $iRect)
+		_MemFree($tMemMap)
+	EndIf
+	Return SetError($iRet=0, 0, $tRect)
+EndFunc   ;==>_GUICtrlStatusBar_GetRectEx
+
+; #FUNCTION# ====================================================================================================================
+; Name...........: _GUICtrlStatusBar_GetText
+; Description ...: Retrieves the text from the specified part
+; Syntax.........: _GUICtrlStatusBar_GetText($hWnd, $iPart)
+; Parameters ....: $hWnd        - Handle to the control
+;                  $iPart       - Zero based part index
+; Return values .: Success      - Part text
+; Author ........: Paul Campbell (PaulIA)
+; Modified.......:
+; Remarks .......:
+; Related .......: _GUICtrlStatusBar_SetText
+; Link ..........:
+; Example .......: Yes
+; ===============================================================================================================================
+Func _GUICtrlStatusBar_GetText($hWnd, $iPart)
+	If $Debug_SB Then __UDF_ValidateClassName($hWnd, $__STATUSBARCONSTANT_ClassName)
+
+	Local $fUnicode = _GUICtrlStatusBar_GetUnicodeFormat($hWnd)
+
+	Local $iBuffer = _GUICtrlStatusBar_GetTextLength($hWnd, $iPart)
+	If $iBuffer = 0 Then Return SetError(1, 0, "")
+
+	Local $tBuffer
+	If $fUnicode Then
+		$tBuffer = DllStructCreate("wchar Text[" & $iBuffer & "]")
+		$iBuffer *= 2
+	Else
+		$tBuffer = DllStructCreate("char Text[" & $iBuffer & "]")
+	EndIf
+	Local $pBuffer = DllStructGetPtr($tBuffer)
+	If _WinAPI_InProcess($hWnd, $__ghSBLastWnd) Then
+		_SendMessage($hWnd, $SB_GETTEXTW, $iPart, $pBuffer, 0, "wparam", "ptr")
+	Else
+		Local $tMemMap
+		Local $pMemory = _MemInit($hWnd, $iBuffer, $tMemMap)
+		If $fUnicode Then
+			_SendMessage($hWnd, $SB_GETTEXTW, $iPart, $pMemory, 0, "wparam", "ptr")
+		Else
+			_SendMessage($hWnd, $SB_GETTEXT, $iPart, $pMemory, 0, "wparam", "ptr")
+		EndIf
+		_MemRead($tMemMap, $pMemory, $pBuffer, $iBuffer)
+		_MemFree($tMemMap)
+	EndIf
+	Return DllStructGetData($tBuffer, "Text")
+EndFunc   ;==>_GUICtrlStatusBar_GetText
+
+; #FUNCTION# ====================================================================================================================
+; Name...........: _GUICtrlStatusBar_GetTextFlags
+; Description ...: Retrieves the text length flags for a part
+; Syntax.........: _GUICtrlStatusBar_GetTextFlags($hWnd, $iPart)
+; Parameters ....: $hWnd        - Handle to the control
+;                  $iPart       - Zero based part index
+; Return values .: Success      - The low word specifies the length, in characters, of the text. The high word specifies the type
+;                  +of operation used to draw the text. The type can be one of the following values:
+;                  |0               - The text is drawn with a border to appear lower than the plane of the window
+;                  |$SBT_NOBORDERS  - The text is drawn without borders
+;                  |$SBT_OWNERDRAW  - The text is drawn by the parent window
+;                  |$SBT_POPOUT     - The text is drawn with a border to appear higher than the plane of the window
+;                  |$SBT_RTLREADING - The text will be displayed in the opposite direction to the text in the parent window
+; Author ........: Paul Campbell (PaulIA)
+; Modified.......:
+; Remarks .......:
+; Related .......: _GUICtrlStatusBar_GetTextLength, _GUICtrlStatusBar_GetTextLengthEx
+; Link ..........:
+; Example .......: Yes
+; ===============================================================================================================================
+Func _GUICtrlStatusBar_GetTextFlags($hWnd, $iPart)
+	If $Debug_SB Then __UDF_ValidateClassName($hWnd, $__STATUSBARCONSTANT_ClassName)
+
+	If _GUICtrlStatusBar_GetUnicodeFormat($hWnd) Then
+		Return _SendMessage($hWnd, $SB_GETTEXTLENGTHW, $iPart)
+	Else
+		Return _SendMessage($hWnd, $SB_GETTEXTLENGTH, $iPart)
+	EndIf
+EndFunc   ;==>_GUICtrlStatusBar_GetTextFlags
+
+; #FUNCTION# ====================================================================================================================
+; Name...........: _GUICtrlStatusBar_GetTextLength
+; Description ...: Retrieves the length of a part text
+; Syntax.........: _GUICtrlStatusBar_GetTextLength($hWnd, $iPart)
+; Parameters ....: $hWnd        - Handle to the control
+;                  $iPart       - Zero based part index
+; Return values .: Success      - Length of part text
+; Author ........: Paul Campbell (PaulIA)
+; Modified.......:
+; Remarks .......:
+; Related .......: _GUICtrlStatusBar_GetTextLengthEx, _GUICtrlStatusBar_GetTextFlags
+; Link ..........:
+; Example .......: Yes
+; ===============================================================================================================================
+Func _GUICtrlStatusBar_GetTextLength($hWnd, $iPart)
+	Return _WinAPI_LoWord(_GUICtrlStatusBar_GetTextFlags($hWnd, $iPart))
+EndFunc   ;==>_GUICtrlStatusBar_GetTextLength
+
+; #FUNCTION# ====================================================================================================================
+; Name...........: _GUICtrlStatusBar_GetTextLengthEx
+; Description ...: Retrieves the uFlag of a part
+; Syntax.........: _GUICtrlStatusBar_GetTextLengthEx($hwnd, $iPart)
+; Parameters ....: $hWnd        - Handle to the control
+;                  $iPart       - Zero based part index
+; Return values .: Success      - Type of drawing operation. The type can be one of the following values:
+;                  |0               - The text is drawn with a border to appear lower than the plane of the window
+;                  |$SBT_NOBORDERS  - The text is drawn without borders
+;                  |$SBT_OWNERDRAW  - The text is drawn by the parent window
+;                  |$SBT_POPOUT     - The text is drawn with a border to appear higher than the plane of the window
+;                  |$SBT_RTLREADING - The text will be displayed in the opposite direction to the text in the parent window
+; Author ........: Gary Frost (gafrost
+; Modified.......:
+; Remarks .......:
+; Related .......: _GUICtrlStatusBar_GetTextFlags, _GUICtrlStatusBar_GetTextLength
+; Link ..........:
+; Example .......: Yes
+; ===============================================================================================================================
+Func _GUICtrlStatusBar_GetTextLengthEx($hWnd, $iPart)
+	Return _WinAPI_HiWord(_GUICtrlStatusBar_GetTextFlags($hWnd, $iPart))
+EndFunc   ;==>_GUICtrlStatusBar_GetTextLengthEx
+
+; #FUNCTION# ====================================================================================================================
+; Name...........: _GUICtrlStatusBar_GetTipText
+; Description ...: Retrieves the ToolTip text for a part
+; Syntax.........: _GUICtrlStatusBar_GetTipText($hWnd, $iPart)
+; Parameters ....: $hWnd        - Handle to the control
+;                  $iPart       - Zero based part index
+; Return values .: Success      - Part text
+; Author ........: Paul Campbell (PaulIA)
+; Modified.......: Gary Frost (GaryFrost)
+; Remarks .......: The status bar must be created with the $SBARS_TOOLTIPS style to enable ToolTips
+; Related .......: _GUICtrlStatusBar_SetTipText
+; Link ..........:
+; Example .......: Yes
+; ===============================================================================================================================
+Func _GUICtrlStatusBar_GetTipText($hWnd, $iPart)
+	If $Debug_SB Then __UDF_ValidateClassName($hWnd, $__STATUSBARCONSTANT_ClassName)
+
+	Local $fUnicode = _GUICtrlStatusBar_GetUnicodeFormat($hWnd)
+
+	Local $tBuffer
+	If $fUnicode Then
+		$tBuffer = DllStructCreate("wchar Text[4096]")
+	Else
+		$tBuffer = DllStructCreate("char Text[4096]")
+	EndIf
+	Local $pBuffer = DllStructGetPtr($tBuffer)
+	If _WinAPI_InProcess($hWnd, $__ghSBLastWnd) Then
+		_SendMessage($hWnd, $SB_GETTIPTEXTW, _WinAPI_MakeLong($iPart, 4096), $pBuffer, 0, "wparam", "ptr")
+	Else
+		Local $tMemMap
+		Local $pMemory = _MemInit($hWnd, 4096, $tMemMap)
+		If $fUnicode Then
+			_SendMessage($hWnd, $SB_GETTIPTEXTW, _WinAPI_MakeLong($iPart, 4096), $pMemory, 0, "wparam", "ptr")
+		Else
+			_SendMessage($hWnd, $SB_GETTIPTEXTA, _WinAPI_MakeLong($iPart, 4096), $pMemory, 0, "wparam", "ptr")
+		EndIf
+		_MemRead($tMemMap, $pMemory, $pBuffer, 4096)
+		_MemFree($tMemMap)
+	EndIf
+	Return DllStructGetData($tBuffer, "Text")
+EndFunc   ;==>_GUICtrlStatusBar_GetTipText
+
+; #FUNCTION# ====================================================================================================================
+; Name...........: _GUICtrlStatusBar_GetUnicodeFormat
+; Description ...: Retrieves the Unicode character format flag
+; Syntax.........: _GUICtrlStatusBar_GetUnicodeFormat($hWnd)
+; Parameters ....: $hWnd        - Handle to the control
+; Return values .: True         - Control is using Unicode characters
+;                  False        - Control is using ANSI characters
+; Author ........: Gary Frost (gafrost)
+; Modified.......:
+; Remarks .......:
+; Related .......: _GUICtrlStatusBar_SetUnicodeFormat
+; Link ..........:
+; Example .......: Yes
+; ===============================================================================================================================
+Func _GUICtrlStatusBar_GetUnicodeFormat($hWnd)
+	If $Debug_SB Then __UDF_ValidateClassName($hWnd, $__STATUSBARCONSTANT_ClassName)
+
+	Return _SendMessage($hWnd, $SB_GETUNICODEFORMAT) <> 0
+EndFunc   ;==>_GUICtrlStatusBar_GetUnicodeFormat
+
+; #FUNCTION# ====================================================================================================================
+; Name...........: _GUICtrlStatusBar_GetWidth
+; Description ...: Retrieves the width of a part
+; Syntax.........: _GUICtrlStatusBar_GetWidth($hWnd, $iPart)
+; Parameters ....: $hWnd        - Handle to the control
+;                  $iPart       - Zero based part index
+; Return values .: Success      - Width of the parts
+; Author ........: Paul Campbell (PaulIA)
+; Modified.......: Gary Frost (gafrost) Removed dot notation
+; Remarks .......:
+; Related .......: _GUICtrlStatusBar_GetHeight
+; Link ..........:
+; Example .......: Yes
+; ===============================================================================================================================
+Func _GUICtrlStatusBar_GetWidth($hWnd, $iPart)
+	Local $tRect = _GUICtrlStatusBar_GetRectEx($hWnd, $iPart)
+	Return DllStructGetData($tRect, "Right") - DllStructGetData($tRect, "Left") - (_GUICtrlStatusBar_GetBordersHorz($hWnd) * 2)
+EndFunc   ;==>_GUICtrlStatusBar_GetWidth
+
+; #FUNCTION# ====================================================================================================================
+; Name...........: _GUICtrlStatusBar_IsSimple
+; Description ...: Checks a status bar control to determine if it is in simple mode
+; Syntax.........: _GUICtrlStatusBar_IsSimple($hWnd)
+; Parameters ....: $hWnd        - Handle to the control
+; Return values .: True         - Status bar is in simple mode
+;                  False        - Status bar is not in simple mode
+; Author ........: Gary Frost (gafrost)
+; Modified.......:
+; Remarks .......:
+; Related .......: _GUICtrlStatusBar_SetSimple
+; Link ..........:
+; Example .......: Yes
+; ===============================================================================================================================
+Func _GUICtrlStatusBar_IsSimple($hWnd)
+	If $Debug_SB Then __UDF_ValidateClassName($hWnd, $__STATUSBARCONSTANT_ClassName)
+
+	Return _SendMessage($hWnd, $SB_ISSIMPLE) <> 0
+EndFunc   ;==>_GUICtrlStatusBar_IsSimple
+
+; #FUNCTION# ====================================================================================================================
+; Name...........: _GUICtrlStatusBar_Resize
+; Description ...: Causes the status bar to resize itself
+; Syntax.........: _GUICtrlStatusBar_Resize($hWnd)
+; Parameters ....: $hWnd        - Handle to the control
+; Return values .:
+; Author ........: Paul Campbell (PaulIA)
+; Modified.......:
+; Remarks .......:
+; Related .......:
+; Link ..........:
+; Example .......: Yes
+; ===============================================================================================================================
+Func _GUICtrlStatusBar_Resize($hWnd)
+	If $Debug_SB Then __UDF_ValidateClassName($hWnd, $__STATUSBARCONSTANT_ClassName)
+
+	_SendMessage($hWnd, $__STATUSBARCONSTANT_WM_SIZE)
+EndFunc   ;==>_GUICtrlStatusBar_Resize
+
+; #FUNCTION# ====================================================================================================================
+; Name...........: _GUICtrlStatusBar_SetBkColor
+; Description ...: Sets the background color
+; Syntax.........: _GUICtrlStatusBar_SetBkColor($hWnd, $iColor)
+; Parameters ....: $hWnd        - Handle to the control
+;                  $iColor      - New background color.  Specify the CLR_DEFAULT value to cause the status bar to use its default
+;                  +background color.
+; Return values .: Success      - The previous background color, or CLR_DEFAULT if the background color is the default color
+; Author ........: Paul Campbell (PaulIA)
+; Modified.......: Gary Frost (gafrost)
+; Remarks .......: Returns RGB COLORREF color, color passed in must be BGR Hex color or RGB COLORREF
+; Related .......:
+; Link ..........:
+; Example .......: Yes
+; ===============================================================================================================================
+Func _GUICtrlStatusBar_SetBkColor($hWnd, $iColor)
+	If $Debug_SB Then __UDF_ValidateClassName($hWnd, $__STATUSBARCONSTANT_ClassName)
+
+	$iColor = _SendMessage($hWnd, $SB_SETBKCOLOR, 0, $iColor)
+	If $iColor = $__STATUSBARCONSTANT_CLR_DEFAULT Then Return '0x' & Hex($__STATUSBARCONSTANT_CLR_DEFAULT)
+	Return $iColor
+EndFunc   ;==>_GUICtrlStatusBar_SetBkColor
+
+; #FUNCTION# ====================================================================================================================
+; Name...........: _GUICtrlStatusBar_SetIcon
+; Description ...: Sets the icon for a part
+; Syntax.........: _GUICtrlStatusBar_SetIcon($hWnd, $iPart[, $hIcon = -1[, $sIconFile = ""]])
+; Parameters ....: $hWnd        - Handle to the control
+;                  $iPart       - Zero based part index. If the control is in simple mode, this field is ignored.
+;                  $hIcon       - Handle to the icon. If this value is -1, the icon is removed.
+;                  $sIconFile  - Icon filename to be used.
+; Return values .: Success      - True
+;                  Failure      - False
+; Author ........: Gary Frost (gafrost)
+; Modified.......:
+; Remarks .......:
+; Related .......: _GUICtrlStatusBar_GetIcon
+; Link ..........:
+; Example .......: Yes
+; ===============================================================================================================================
+Func _GUICtrlStatusBar_SetIcon($hWnd, $iPart, $hIcon = -1, $sIconFile = "")
+	If $Debug_SB Then __UDF_ValidateClassName($hWnd, $__STATUSBARCONSTANT_ClassName)
+
+	If $hIcon = -1 Then	Return _SendMessage($hWnd, $SB_SETICON, $iPart, $hIcon, 0, "wparam", "handle") <> 0  ; Remove Icon
+	If StringLen($sIconFile) <= 0 Then Return _SendMessage($hWnd, $SB_SETICON, $iPart, $hIcon) <> 0 ; set icon from icon handle
+	; set icon from file
+	Local $tIcon = DllStructCreate("handle")
+	Local $vResult = DllCall("shell32.dll", "uint", "ExtractIconExW", "wstr", $sIconFile, "int", $hIcon, "ptr", 0, "ptr", DllStructGetPtr($tIcon), "uint", 1)
+	If @error Then Return SetError(@error, @extended, False)
+	$vResult = $vResult[0]
+	If $vResult > 0 Then $vResult = _SendMessage($hWnd, $SB_SETICON, $iPart, DllStructGetData($tIcon, 1), 0, "wparam", "handle")
+	DllCall("user32.dll", "bool", "DestroyIcon", "handle", DllStructGetData($tIcon, 1))
+	; No need to test @error.
+	Return $vResult
+EndFunc   ;==>_GUICtrlStatusBar_SetIcon
+
+; #FUNCTION# ====================================================================================================================
+; Name...........: _GUICtrlStatusBar_SetMinHeight
+; Description ...: Sets the minimum height of a status window's drawing area
+; Syntax.........: _GUICtrlStatusBar_SetMinHeight($hWnd, $iMinHeight)
+; Parameters ....: $hWnd        - Handle to the control
+;                  $iMinHeight  - Minimum height, in pixels, of the window
+; Return values .:
+; Author ........: Gary Frost (gafrost)
+; Modified.......:
+; Remarks .......:
+; Related .......: _GUICtrlStatusBar_GetHeight
+; Link ..........:
+; Example .......: Yes
+; ===============================================================================================================================
+Func _GUICtrlStatusBar_SetMinHeight($hWnd, $iMinHeight)
+	If $Debug_SB Then __UDF_ValidateClassName($hWnd, $__STATUSBARCONSTANT_ClassName)
+
+	_SendMessage($hWnd, $SB_SETMINHEIGHT, $iMinHeight)
+	_GUICtrlStatusBar_Resize($hWnd)
+EndFunc   ;==>_GUICtrlStatusBar_SetMinHeight
+
+; #FUNCTION# ====================================================================================================================
+; Name...........: _GUICtrlStatusBar_SetParts
+; Description ...: Sets the number of parts and the part edges
+; Syntax.........: _GUICtrlStatusBar_SetParts($hWnd[, $iaParts = -1[, $iaPartWidth = 25]])
+; Parameters ....: $hWnd        - Handle to the control
+;                  $iaParts     - Number of parts, can be an zero based array of ints in the following format:
+;                  |$iaParts[0] - Right edge of part #1
+;                  |$iaParts[1] - Right edge of part #2
+;                  |$iaParts[n] - Right edge of part n
+;                  $iaPartWidth - Size of parts, can be an zero based array of ints in the following format:
+;                  |$iaPartWidth[0] - width part #1
+;                  |$iaPartWidth[1] - width of part #2
+;                  |$iaPartWidth[n] - width of part n
+; Return values .: Success      - True
+;                  Failure      - False
+; Author ........: Gary Frost (gafrost)
+; Modified.......:
+; Remarks .......: If an element is -1, the right edge of the corresponding part extends to the border of the window.
+; Related .......: _GUICtrlStatusBar_GetParts
+; Link ..........:
+; Example .......: Yes
+; ===============================================================================================================================
+Func _GUICtrlStatusBar_SetParts($hWnd, $iaParts = -1, $iaPartWidth = 25, $lnum = @ScriptLineNumber)
+    #forceref $lnum
+	If $Debug_SB Then __UDF_ValidateClassName($hWnd, $__STATUSBARCONSTANT_ClassName)
+
+consolewrite("+++: Called from line " & $lnum & @CRLF)
+consolewrite("+++: IsArray($iaParts) = " & IsArray($iaParts) & @CRLF)
+consolewrite("+++: $iaParts = " & $iaParts & @CRLF)
+consolewrite("+++: IsArray($iaPartWidth) = " & IsArray($iaPartWidth) & @CRLF)
+consolewrite("+++: $iaPartWidth = " & $iaPartWidth & @CRLF)
+
+    ; NOTE: The $SB_PARTS message expects an array of Right Edges, not Widths
+
+	;== start sizing parts
+	Local $tParts, $iParts = 1
+	If IsArray($iaParts) <> 0 Then ; adding array of parts (contains widths)
+        consolewrite("+++:  Parsing $aParts array of Edges" & @CRLF)
+        consolewrite("+++: UBound($iaParts) = " & UBound($iaParts) & @CRLF)
+
+        consolewrite("+++: $iaParts = " & $iaParts)
+        for $x = 0 to ubound($iaParts) - 1
+            consolewrite(" [" & $x & "] " & $iaParts[$x])
+        Next
+        consolewrite(@CRLF)
+
+		$iaParts[UBound($iaParts) - 1] = -1
+		$iParts = UBound($iaParts)
+		$tParts = DllStructCreate("int[" & $iParts & "]")
+		For $x = 0 To $iParts - 2
+			DllStructSetData($tParts, 1, $iaParts[$x], $x + 1)
+		Next
+		DllStructSetData($tParts, 1, -1, $iParts)
+	ElseIf IsArray($iaPartWidth) <> 0 Then ; adding array of part widths (make parts an array)
+        consolewrite("+++: Parsing $iaPartWidth array of Widths" & @CRLF)
+		$iParts = UBound($iaPartWidth)
+		$tParts = DllStructCreate("int[" & $iParts & "]")
+        local $width, $right_edge = 0
+		For $x = 0 To $iParts - 2
+            $width = $iaPartWidth[$x]
+            consolewrite("+++: $width = " & $width & @crlf)
+            consolewrite("+++: $right_edge = " & $right_edge & @crlf)
+             $right_edge += $width
+            consolewrite("+++: $right_edge = " & $right_edge & @crlf)
+			DllStructSetData($tParts, 1, $right_edge, $x + 1)
+		Next
+		DllStructSetData($tParts, 1, -1, $iParts)
+	ElseIf $iaParts > 1 Then ; adding parts with default width
+		$iParts = $iaParts
+		$tParts = DllStructCreate("int[" & $iParts & "]")
+		For $x = 1 To $iParts - 1
+			DllStructSetData($tParts, 1, $iaPartWidth * $x, $x)
+		Next
+		DllStructSetData($tParts, 1, -1, $iParts)
+	Else ; defaulting to 1 part
+		$tParts = DllStructCreate("int")
+		DllStructSetData($tParts, $iParts, -1)
+	EndIf
+	;== end set sizing
+
+    ; NOTE: The $SB_PARTS message expects an array of Right Edges, not Widths
+
+	Local $pParts = DllStructGetPtr($tParts)
+	If _WinAPI_InProcess($hWnd, $__ghSBLastWnd) Then
+		_SendMessage($hWnd, $SB_SETPARTS, $iParts, $pParts, 0, "wparam", "ptr")
+	Else
+		Local $iSize = DllStructGetSize($tParts)
+		Local $tMemMap
+		Local $pMemory = _MemInit($hWnd, $iSize, $tMemMap)
+		_MemWrite($tMemMap, $pParts)
+		_SendMessage($hWnd, $SB_SETPARTS, $iParts, $pMemory, 0, "wparam", "ptr")
+		_MemFree($tMemMap)
+	EndIf
+	_GUICtrlStatusBar_Resize($hWnd)
+	Return True
+EndFunc   ;==>_GUICtrlStatusBar_SetParts
+
+; #FUNCTION# ====================================================================================================================
+; Name...........: _GUICtrlStatusBar_SetSimple
+; Description ...: Specifies whether a status window displays simple text or displays all window parts
+; Syntax.........: _GUICtrlStatusBar_SetSimple($hWnd, $fSimple = True)
+; Parameters ....: $hWnd        - Handle to the control
+;                  $fSimple     - Sets the display of the windows
+;                  | True       - The window displays simple text
+;                  |False       - The window displays multiple parts
+; Return values .:
+; Author ........: Gary Frost (gafrost)
+; Modified.......:
+; Remarks .......:
+; Related .......: _GUICtrlStatusBar_IsSimple
+; Link ..........:
+; Example .......: Yes
+; ===============================================================================================================================
+Func _GUICtrlStatusBar_SetSimple($hWnd, $fSimple = True)
+	If $Debug_SB Then __UDF_ValidateClassName($hWnd, $__STATUSBARCONSTANT_ClassName)
+
+	_SendMessage($hWnd, $SB_SIMPLE, $fSimple)
+EndFunc   ;==>_GUICtrlStatusBar_SetSimple
+
+; #FUNCTION# ====================================================================================================================
+; Name...........: _GUICtrlStatusBar_SetText
+; Description ...: Sets the text in the specified part of a status window
+; Syntax.........: _GUICtrlStatusBar_SetText($hWnd, $sText = "", $iPart = 0, $iUFlag = 0)
+; Parameters ....: $hWnd        - Handle to the control
+;                  $sText       - The text to display in the part
+;                  $iPart       - The part to hold the text
+;                  $iUFlag      - Type of drawing operation. The type can be one of the following values:
+;                  |0               - The text is drawn with a border to appear lower than the plane of the window
+;                  |$SBT_NOBORDERS  - The text is drawn without borders
+;                  |$SBT_OWNERDRAW  - The text is drawn by the parent window
+;                  |$SBT_POPOUT     - The text is drawn with a border to appear higher than the plane of the window
+;                  |$SBT_RTLREADING - The text will be displayed in the opposite direction to the text in the parent window
+; Return values .: Success      - True
+;                  Failure      - False
+; Author ........: rysiora, JdeB, tonedef, Gary Frost (gafrost)
+; Modified.......: Gary Frost (gafrost) re-written also added $iUFlag
+; Remarks .......: Set $iPart to $SB_SIMPLEID for simple statusbar
+; Related .......: _GUICtrlStatusBar_GetText
+; Link ..........:
+; Example .......: Yes
+; ===============================================================================================================================
+Func _GUICtrlStatusBar_SetText($hWnd, $sText = "", $iPart = 0, $iUFlag = 0)
+	If $Debug_SB Then __UDF_ValidateClassName($hWnd, $__STATUSBARCONSTANT_ClassName)
+
+	Local $fUnicode = _GUICtrlStatusBar_GetUnicodeFormat($hWnd)
+
+	Local $iBuffer = StringLen($sText) + 1
+	Local $tText
+	If $fUnicode Then
+		$tText = DllStructCreate("wchar Text[" & $iBuffer & "]")
+		$iBuffer *= 2
+	Else
+		$tText = DllStructCreate("char Text[" & $iBuffer & "]")
+	EndIf
+	Local $pBuffer = DllStructGetPtr($tText)
+	DllStructSetData($tText, "Text", $sText)
+	If _GUICtrlStatusBar_IsSimple($hWnd) Then $iPart = $SB_SIMPLEID
+	Local $iRet
+	If _WinAPI_InProcess($hWnd, $__ghSBLastWnd) Then
+		$iRet = _SendMessage($hWnd, $SB_SETTEXTW, BitOR($iPart, $iUFlag), $pBuffer, 0, "wparam", "ptr")
+	Else
+		Local $tMemMap
+		Local $pMemory = _MemInit($hWnd, $iBuffer, $tMemMap)
+		_MemWrite($tMemMap, $pBuffer)
+		If $fUnicode Then
+			$iRet = _SendMessage($hWnd, $SB_SETTEXTW, BitOR($iPart, $iUFlag), $pMemory, 0, "wparam", "ptr")
+		Else
+			$iRet = _SendMessage($hWnd, $SB_SETTEXT, BitOR($iPart, $iUFlag), $pMemory, 0, "wparam", "ptr")
+		EndIf
+		_MemFree($tMemMap)
+	EndIf
+	Return $iRet <> 0
+EndFunc   ;==>_GUICtrlStatusBar_SetText
+
+; #FUNCTION# ====================================================================================================================
+; Name...........: _GUICtrlStatusBar_SetTipText
+; Description ...: Sets the ToolTip text for a part
+; Syntax.........: _GUICtrlStatusBar_SetTipText($hWnd, $iPart, $sText)
+; Parameters ....: $hWnd        - Handle to the control
+;                  $iPart       - Zero based part index
+;                  $sText    -
+; Return values .:
+; Author ........: Gary Frost (gafrost)
+; Modified.......:
+; Remarks .......: The status bar must have been created with the $SBARS_TOOLTIPS style to enable ToolTips
+; Related .......: _GUICtrlStatusBar_GetTipText
+; Link ..........:
+; Example .......: Yes
+; ===============================================================================================================================
+Func _GUICtrlStatusBar_SetTipText($hWnd, $iPart, $sText)
+	If $Debug_SB Then __UDF_ValidateClassName($hWnd, $__STATUSBARCONSTANT_ClassName)
+
+	Local $fUnicode = _GUICtrlStatusBar_GetUnicodeFormat($hWnd)
+
+	Local $iBuffer = StringLen($sText) + 1
+	Local $tText
+	If $fUnicode Then
+		$tText = DllStructCreate("wchar TipText[" & $iBuffer & "]")
+		$iBuffer *= 2
+	Else
+		$tText = DllStructCreate("char TipText[" & $iBuffer & "]")
+	EndIf
+	Local $pBuffer = DllStructGetPtr($tText)
+	DllStructSetData($tText, "TipText", $sText)
+	If _WinAPI_InProcess($hWnd, $__ghSBLastWnd) Then
+		_SendMessage($hWnd, $SB_SETTIPTEXTW, $iPart, $pBuffer, 0, "wparam", "ptr")
+	Else
+		Local $tMemMap
+		Local $pMemory = _MemInit($hWnd, $iBuffer, $tMemMap)
+		_MemWrite($tMemMap, $pBuffer, $pMemory, $iBuffer)
+		If $fUnicode Then
+			_SendMessage($hWnd, $SB_SETTIPTEXTW, $iPart, $pMemory, 0, "wparam", "ptr")
+		Else
+			_SendMessage($hWnd, $SB_SETTIPTEXTA, $iPart, $pMemory, 0, "wparam", "ptr")
+		EndIf
+		_MemFree($tMemMap)
+	EndIf
+EndFunc   ;==>_GUICtrlStatusBar_SetTipText
+
+; #FUNCTION# ====================================================================================================================
+; Name...........: _GUICtrlStatusBar_SetUnicodeFormat
+; Description ...: Sets the Unicode character format flag
+; Syntax.........: _GUICtrlStatusBar_SetUnicodeFormat($hWnd[, $fUnicode = True])
+; Parameters ....: $hWnd        - Handle to the control
+;                  $fUnicode    - Unicode character format flag:
+;                  | True - Control uses Unicode characters
+;                  |False - Control uses ANSI characters
+; Return values .: Success      - Previous character format flag setting
+; Author ........: Gary Frost (gafrost)
+; Modified.......:
+; Remarks .......:
+; Related .......: _GUICtrlStatusBar_GetUnicodeFormat
+; Link ..........:
+; Example .......: Yes
+; ===============================================================================================================================
+Func _GUICtrlStatusBar_SetUnicodeFormat($hWnd, $fUnicode = True)
+	If $Debug_SB Then __UDF_ValidateClassName($hWnd, $__STATUSBARCONSTANT_ClassName)
+
+	Return _SendMessage($hWnd, $SB_SETUNICODEFORMAT, $fUnicode)
+EndFunc   ;==>_GUICtrlStatusBar_SetUnicodeFormat
+
+; #FUNCTION# ====================================================================================================================
+; Name...........: _GUICtrlStatusBar_ShowHide
+; Description ...: Show/Hide the StatusBar control
+; Syntax.........: _GUICtrlStatusBar_ShowHide($hWnd, $iState)
+; Parameters ....: $hWnd        - Handle to the control
+;                  $iState      - State of the StatusBar, can be the following values:
+;                 |@SW_SHOW
+;                 |@SW_HIDE
+; Return values .: True         - The control was previously visible
+;                  False        - The control was previously hidden
+; Author ........: Gary Frost (gafrost)
+; Modified.......:
+; Remarks .......:
+; Related .......:
+; Link ..........:
+; Example .......: Yes
+; ===============================================================================================================================
+Func _GUICtrlStatusBar_ShowHide($hWnd, $iState)
+	If $Debug_SB Then __UDF_ValidateClassName($hWnd, $__STATUSBARCONSTANT_ClassName)
+
+	If $iState <> @SW_HIDE And $iState <> @SW_SHOW Then Return SetError(1, 1, False)
+	Return _WinAPI_ShowWindow($hWnd, $iState)
+EndFunc   ;==>_GUICtrlStatusBar_ShowHide
+
+import au3.keywords.user.abbreviations
+
+font.base=font:Verdana,size:10,$(font.override)
+
+font.monospace=font:Courier New,size:10
+
+proper.case=0
+
+use.tabs=1
+
+indent.size=4
+
+indent.size.*.au3=4
+
+tabsize=4
+
+style.au3.32=style.*.32=$(font.base),back:#F0F4F9
+
+caret.line.back=#FFFED8
+
+selection.fore=#006000
+
+selection.alpha=50
+
+selection.back=#F0A0A8
+
+style.au3.34=fore:#0000FF,back:#F0F4F9
+
+style.au3.35=fore:#008000,italics,back:#F0F4F9
+
+style.au3.0=fore:#000000,back:#F0F4F9
+
+style.au3.1=fore:#008000,italics,back:#F0F4F9
+
+style.au3.2=fore:#008000,italics,back:#F0F4F9
+
+style.au3.3=fore:#0000FF,back:#F0F4F9
+
+style.au3.4=fore:#000090,back:#F0F4F9
+
+style.au3.5=fore:#0000FF,back:#F0F4F9
+
+style.au3.6=fore:#FF80FF,back:#F0F4F9
+
+style.au3.7=fore:#FF0000,back:#F0F4F9
+
+style.au3.8=fore:#FF8000,back:#F0F4F9
+
+style.au3.9=fore:#5A5A5A,back:#F0F4F9
+
+style.au3.10=fore:#808080,back:#F0F4F9
+
+style.au3.11=fore:#808000,back:#F0F4F9
+
+style.au3.12=fore:#DC143C,back:#F0F4F9
+
+style.au3.13=fore:#FF0000,back:#F0F4F9
+
+style.au3.14=fore:#993399,back:#F0F4F9
+
+style.au3.15=fore:#0080FF,back:#F0F4F9
+
+command.name.19.$(au3)=
+
+command.19.beta=
+
+command.name.33.$(au3)=
+
+command.33.beta=
+
+openpath.$(au3)=C:\Andy\AutoIT-src\myLib;$(SciteDefaultHome)\..\include
+ÿØÿà
+MZ
+#include <_myDebug.au3>
+_DebugSetup(@ScriptName & "_debug.txt", False, 6, "C:\temp\x.log") ; 6 = Notepad; 2 = to console; 4 = to a file
+_DebugOut(@CRLF & @CRLF & "===================================" & @CRLF)
+
+Global $thisScriptVersion = "1.0"
+
+;
+; TBD:  Add a Copy to Clipboard button
+;
+;       fix: When resizing, statusbar does not resize.
+;
+#include <FileConstants.au3>
+
+_DebugOut("+++: $FILE_ATTRIBUTE_NORMAL = " & $FILE_ATTRIBUTE_NORMAL & @CRLF)
+;#include <EditConstants.au3>
+#include <GuiConstants.au3>
+#include <GuiComboBox.au3>
+#include <GuiEdit.au3>
+#include <ProgressConstants.au3>
+#include <StaticConstants.au3>
+#include <Timers.au3>
+#include <WindowsConstants.au3>
+#include <ColorConstants.au3>
+#include <GuiListBox.au3>
+#include <FTPEx.au3>
+
+; In myLib:
+#include <_myRegistryfuncs.au3>
+#include <_myCreate.au3>
+#include <_FormatTime.au3>
+#include <_FunctionMustExist.au3>
+#include <_myFTP.au3>
+#include <_Plural.au3>
+#include <_DrawLine.au3>
+#include <_DrawRectangle.au3>
+#include <_CallOnce.au3>
+#include <_INFO.au3>
+#include <_ToolTip.au3>
+#include <GUIFrame.au3>
+
+#NoTrayIcon
+#region ;**** Directives created by AutoIt3Wrapper_GUI ****
+#AutoIt3Wrapper_Au3Check_Parameters=-d -w 1 -w 2 -w 3 -w 4 -w 5 -w 6
+#AutoIt3Wrapper_Res_Description=Utility to update the user .api file
+#AutoIt3Wrapper_Au3Check_Parameters=-d -w 1 -w 2 -w 3 -w 4 -w 5 -w 6
+#AutoIt3Wrapper_icon=FTP_CheckDups.ico
+#Tidy_Parameters=/tc 4
+#endregion ;**** Directives created by AutoIt3Wrapper_GUI ****
+
+Opt("WinTitleMatchMode", 1) ;1=start, 2=subStr, 3=exact, 4=advanced, -1 to -4=Nocase
+Opt('MustDeclareVars', 1)
+Opt("GUIOnEventMode", 1) ; Change to OnEvent mode
+Opt("GUICloseOnESC", 1) ; ESC closes GUI
+OnAutoItExitRegister("ExitStageLeft_normal")
+
+; Declare Global Variables
+;=====================================================================
+Global $Pname = get_Pname() ; Do this early on because other Globals might use it
+
+; Define the elements of an INFO array
+; Define the INFO arrays
+Global $aAddSite_btn[$INFO_ARRAY_CNT]
+Global $aUpdateSite_btn[$INFO_ARRAY_CNT]
+Global $aCheckDups_btn[$INFO_ARRAY_CNT]
+Global $aDelSite_btn[$INFO_ARRAY_CNT]
+Global $aListView[$INFO_ARRAY_CNT]
+Global $aEXIT_btn[$INFO_ARRAY_CNT]
+Global $aSTOP_btn[$INFO_ARRAY_CNT]
+Global $aPING_btn[$INFO_ARRAY_CNT]
+Global $aQUIT_btn[$INFO_ARRAY_CNT]
+Global $aSAVE_btn[$INFO_ARRAY_CNT]
+Global $aIPAddress_label[$INFO_ARRAY_CNT]
+Global $aIPAddress[$INFO_ARRAY_CNT]
+Global $aMainWin[$INFO_ARRAY_CNT]
+Global $aPassword_label[$INFO_ARRAY_CNT]
+Global $aPassword[$INFO_ARRAY_CNT]
+Global $aProgressBar[$INFO_ARRAY_CNT]
+Global $aProgressLabel[$INFO_ARRAY_CNT]
+Global $aShowDir_btn[$INFO_ARRAY_CNT]
+Global $aStartDir_label[$INFO_ARRAY_CNT]
+Global $aStartDir[$INFO_ARRAY_CNT]
+Global $aSiteListCombo[$INFO_ARRAY_CNT]
+Global $aSiteListLabel[$INFO_ARRAY_CNT]
+Global $aStatusBar[$INFO_ARRAY_CNT]
+Global $aUsername_label[$INFO_ARRAY_CNT]
+Global $aUsername[$INFO_ARRAY_CNT]
+Global $aVerboseCheckbox[$INFO_ARRAY_CNT]
+Global $aTEST_btn[$INFO_ARRAY_CNT]
+
+; Define the rest of the global variables
+Global $aLastSelectName = ""
+Global $iModCnt
+Global $iOldCursor = 0
+Global $iProgressBarCount
+Global $iProgressBarLastCount
+Global $iProgressBarMax
+Global $sRegistryKey = "HKEY_CURRENT_USER\Software\AndyScharmer\" & $Pname
+Global $sRegistryKeyLastSelect = "LastSelectName"
+Global $sRegistryKeySiteList = "SiteList"
+Global $sRegistryKeyVerbose = "Verbose"
+Global $sRegistryName_WinPosition = "WinPos"
+Global $aSiteListArray = 0
+Global $bStartCheckDups = 0
+Global $bdo_SHOWDIR = 0
+Global $iStatusBarHeight
+Global $sStatusBarText
+Global $aStatusBar_aParts[2]
+Global $aStatusBar_aText[2]
+Global $iTickCnt = 0
+Global $iTicksPerSec = 10
+Global $bChanged = False
+Global $aColors[1]
+Global $bAllowTestMode = True; True
+Global $bFTPStop = 0
+Global $bShowFTPStat = False
+Global $aToolTips = 0
+Global $iID_Timer1 = 0
+Global $iStartTimer = 0
+
+; Define the elements of a SiteList item string
+Global Enum $iITEM_NAME = 1, $iITEM_IP, $iITEM_USERNAME, $iITEM_PASSWORD, $iITEM_STARTDIR
+Global $sIP
+Global $sUserName
+Global $sPassword
+Global $sStartDir
+Global $aDups
+Dim $aSiteListArray[1] = [0]
+Global $sInitial_value_for_SiteListCombo = "<list of sites>"
+Global $sInitial_value_for_IPAddress = "<IP Address>"
+Global $sInitial_value_for_Username = "<Username>"
+Global $sInitial_value_for_Password = "<Password>"
+Global $sInitial_value_for_StartDir = "<Start Directory>"
+Global $bGUIStarted = False
+Global $bBusy = False
+Global $iFrame_A = 0
+Global $bUseGUIFrame = True
+
+
+Global $aPendingRunRequests = 0
+Global $sRunHandler = ""
+Global $sLastRunHandler = ""
+Global $bRunning = False
+
+Global Const $WM_DROPFILES = 0x0233
+Global Const $ES_DISABLENOSCROLL = 8192
+
+Global Const $OK_BTN = 1
+Global Const $YES_BTN = 6
+
+Global $OK = "OK"
+Global $FAIL = "FAIL"
+
+
+
+_main()
+ExitStageLeft(0)
+
+;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;
+Func _main()
+
+    loadMainWinMetrics($aMainWin, 440, 430)
+
+    $aToolTips = StringSplit("", "")
+
+    ; Create the GUI window and all of the GUI components
+    CreateAllControls()
+
+    ;setSiteListComboSelection("usftp")
+    setSiteListComboSelection("23")
+    SiteListComboboxSelection2GUI()
+
+    _logMsg("+++a1aa+++");;; DEBUGGING ;;;
+    _logMsg("+++v2vv+++");;; DEBUGGING ;;;
+
+    GUISetState()
+
+    ;;;_CallOnce_RegisterFunc("do_SHOWDIR") ;;;DEBUGGING;;;
+
+    _MainLoop()
+EndFunc   ;==>_main
+
+; #FUNCTION# ====================================================================================================================
+; Name ..........: _MainLoop
+; Description ...: This is the main program loop.
+; Syntax ........: _MainLoop()
+; Parameters ....: None
+; Return values .: None
+; Author ........: Andy Scharmer
+; Modified ......:
+; Remarks .......:
+; Related .......:
+; Link ..........:
+; Example .......: No
+; ===============================================================================================================================
+Func _MainLoop()
+    Local $sleeptime
+
+    $bGUIStarted = 1
+    $sleeptime = 250
+    $iID_Timer1 = _Timer_SetTimer($aMainWin[$hW], 1000)
+
+    $aPendingRunRequests = StringSplit("", "")
+
+    While (1)
+        $iStartTimer = _Timer_Init()
+
+        ; Run any CallOnce registered functions.
+        _CallOnce_Check($aMainWin[$hW])
+
+        $iStartTimer = 0
+
+        _ToolTip_Check($aMainWin[$hW], $aToolTips)
+
+        Sleep($sleeptime)
+
+    WEnd
+EndFunc   ;==>_MainLoop
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; _showstatus() - Display some text in the left statusbar.
+;
+; PARAMS: 1st = The text to be displayed
+;
+; RETURNS: <nothing>
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func _showstatus($str)
+    UpdateStatusBarLeftText($str)
+EndFunc   ;==>_showstatus
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Gui2Globals() - Copy the data contained in the GUI controls to global variables
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func Gui2Globals($silent = False, $lnum = @ScriptLineNumber)
+    #forceref $lnum
+    _DebugOut("+++:" & $lnum & ": Gui2Globals(" & $silent & ") entered")
+    Local $ret = 1
+
+    ; Process the IP address GUI control
+    $sIP = GUICtrlRead($aIPAddress[$iID])
+    If ((Not $sIP) Or ($sIP == "")) Then
+        $ret = 0
+        _DebugOut("+++: ERROR - Empty IP address")
+        If ($silent == False) Then
+            WarningPopup("Empty IP address")
+            Return (0)
+        EndIf
+    EndIf
+
+    If ($sIP = $sInitial_value_for_IPAddress) Then
+        $ret = 0
+        _DebugOut("+++: ERROR - No IP address was entered")
+        If ($silent == False) Then
+            WarningPopup("No IP address was entered")
+            Return (0)
+        EndIf
+    EndIf
+
+    If (ValidIP($sIP) == 0) Then
+        $ret = 0
+        _DebugOut("+++: ERROR - Invalid IP address: ==>" & $sIP & "<==")
+        If ($silent == False) Then
+            WarningPopup("Invalid IP address: ==>" & $sIP & "<==" & @CRLF)
+        EndIf
+    EndIf
+
+    ; Process the Username GUI control
+    $sUserName = GUICtrlRead($aUsername[$iID])
+    If ((Not $sUserName) Or ($sUserName == "")) Then
+        $ret = 0
+        _DebugOut("+++: ERROR - Empty Username")
+        If ($silent == False) Then
+            WarningPopup("Empty Username")
+            Return (0)
+        EndIf
+    EndIf
+
+    If ($sUserName = $sInitial_value_for_Username) Then
+        $ret = 0
+        _DebugOut("+++: ERROR - No Username was entered")
+        If ($silent == False) Then
+            WarningPopup("No Username was entered")
+            Return (0)
+        EndIf
+    EndIf
+
+    ; Process the Password GUI control
+    $sPassword = GUICtrlRead($aPassword[$iID])
+    If ((Not $sPassword) Or ($sPassword == "")) Then
+        $ret = 0
+        _DebugOut("+++: ERROR - Empty Password")
+        If ($silent == False) Then
+            WarningPopup("Empty Password")
+            Return (0)
+        EndIf
+    EndIf
+
+    If ($sPassword = $sInitial_value_for_Password) Then
+        $ret = 0
+        _DebugOut("+++: ERROR - No Password was entered")
+        If ($silent == False) Then
+            WarningPopup("No Password was entered")
+            Return (0)
+        EndIf
+    EndIf
+
+    ; Process the StartDir GUI control
+    $sStartDir = GUICtrlRead($aStartDir[$iID])
+    _DebugOut("+++: $aStartDir = " & $sStartDir)
+
+    If (StringRight($sStartDir, 1) == "/") Then
+        $sStartDir = StringTrimRight($sStartDir, 1)
+        If ($sStartDir == "") Then $sStartDir = "/"
+        GUICtrlSetData($aStartDir[$iID], $sStartDir)
+        _DebugOut("+++: $sStartDir = " & $sStartDir)
+    EndIf
+
+    If (StringLeft($sStartDir, 2) == "//") Then
+        $sStartDir = StringTrimLeft($sStartDir, 1)
+        GUICtrlSetData($aStartDir[$iID], $sStartDir)
+        _DebugOut("+++: $sStartDir = " & $sStartDir)
+    EndIf
+
+    If ($sStartDir == ".") Then
+        $sStartDir = "./"
+        _DebugOut("+++: $sStartDir = " & $sStartDir)
+    EndIf
+
+    _DebugOut("+++: $sStartDir = " & $sStartDir)
+
+    If ((Not $sStartDir) Or ($sStartDir == "")) Then
+        $ret = 0
+        _DebugOut("+++: ERROR - Empty Start Directory")
+        If ($silent == False) Then
+            WarningPopup("Empty Start Directory")
+            Return (0)
+        EndIf
+    EndIf
+
+    If ($sStartDir = $sInitial_value_for_StartDir) Then
+        $ret = 0
+        _DebugOut("+++: ERROR - No Start directory was entered")
+        If ($silent == False) Then
+            WarningPopup("No Start directory was entered")
+            Return (0)
+        EndIf
+    EndIf
+
+    Return ($ret)
+EndFunc   ;==>Gui2Globals
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; isVerbose() - See if the Verbose boolean
+;               is checked or not.
+;
+; PARAMS: <none>
+;
+; RETURNS: True or False
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func isVerbose()
+    Local $checked = isChecked($aVerboseCheckbox[$iID])
+    Return ($checked)
+EndFunc   ;==>isVerbose
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; ValidIP() - See if a string contains a valid IP address
+;
+; PARAMS: 1st = The string to look at
+;
+; RETURNS: True = String contains a valid IP address
+;         False = String is empty or contains an invalid IP address
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func ValidIP($ip, $lnum = @ScriptLineNumber)
+    #forceref $lnum
+    _DebugOut("+++:" & $lnum & ": ValidIP(" & $ip & ") entered")
+    Local $parts, $part, $ndx, $ndx2, $ch
+
+    ; Make sure there are 4 segments in the IP address
+    $parts = StringSplit($ip, ".", 2)
+    If (UBound($parts) <> 4) Then
+        _DebugOut("+++: Wrong number of parts: " & $ip & " = " & UBound($parts) & ", expected 4")
+        Return (ValidURL($ip))
+    EndIf
+
+    For $ndx = 0 To UBound($parts) - 1
+        $part = $parts[$ndx]
+        For $ndx2 = 1 To StringLen($part)
+            $ch = StringMid($part, $ndx2, 1)
+            If (Not StringInStr("0123456789", $ch)) Then
+                _DebugOut("+++: Not numeric: " & $ch)
+                Return (ValidURL($ip))
+            EndIf
+        Next
+
+        If ($part == 0) Then
+            _DebugOut("+++: $part " & $ndx & " == 0")
+            Return (ValidURL($ip))
+        EndIf
+    Next
+
+    Return (1)
+EndFunc   ;==>ValidIP
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; ValidURL() - See if a string contains a valid URL
+;
+; PARAMS: 1st = The string to look at
+;
+; RETURNS: True = String contains a valid URL
+;         False = String is empty or contains an invalid URL
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func ValidURL($url, $lnum = @ScriptLineNumber)
+    #forceref $lnum
+    _DebugOut("+++:" & $lnum & ": ValidURL(" & $url & ") entered")
+    Local $parts, $ar, $str, $ndx, $end
+
+    If (StringInStr($url, ".") == 0) Then
+        _DebugOut("+++: Missing '.'")
+        Return (False)
+    EndIf
+
+    $parts = StringSplit($url, ".", 2)
+    $end = _ArrayPop($parts)
+    $str = "com,net,org"
+    $ar = StringSplit($str, ",", 2)
+    For $ndx = 0 To UBound($ar) - 1
+        If ($ar[$ndx] = $end) Then
+            Return (True) ; ends with com, net or org
+        EndIf
+    Next
+
+    _DebugOut("+++: Invalid URL")
+    Return (False)
+EndFunc   ;==>ValidURL
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; SiteListComboboxSelection2GUI() - Using the Site that's selected in
+;                                   the SiteList combobox, fill in the
+;                                   GU conterols (IP address, username,
+;                                   password, etc)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func SiteListComboboxSelection2GUI()
+    _DebugOut("+++: SiteListComboboxSelection2GUI() entered")
+    Local $selected, $ndx, $ar
+
+    $selected = GUICtrlRead($aSiteListCombo[$iID])
+    _DebugOut("+++: $selected = " & $selected)
+    If ($selected == $sInitial_value_for_SiteListCombo) Then $selected = ""
+    _DebugOut("+++: $selected = " & $selected)
+    If (($selected) And ($selected <> "")) Then
+        $ndx = findSelectedItem($selected) ; See if this name is already in the SiteList array
+        _DebugOut("+++: $ndx = " & $ndx)
+
+        If ($ndx > 0) Then
+            _DebugOut("+++: $aSiteListArray[" & $ndx & "] = " & $aSiteListArray[$ndx])
+            $ar = StringSplit($aSiteListArray[$ndx], "|")
+            _DebugOut("+++: $ar[$iITEM_IP] = " & $ar[$iITEM_IP])
+            _DebugOut("+++: $ar[$iITEM_USERNAME] = " & $ar[$iITEM_USERNAME])
+            _DebugOut("+++: $ar[$iITEM_PASSWORD] = " & $ar[$iITEM_PASSWORD])
+            _DebugOut("+++: $ar[$iITEM_STARTDIR] = " & $ar[$iITEM_STARTDIR])
+            GUICtrlSetData($aIPAddress[$iID], $ar[$iITEM_IP])
+            GUICtrlSetData($aUsername[$iID], $ar[$iITEM_USERNAME])
+            GUICtrlSetData($aPassword[$iID], $ar[$iITEM_PASSWORD])
+            GUICtrlSetData($aStartDir[$iID], $ar[$iITEM_STARTDIR])
+            $aLastSelectName = $selected
+        EndIf
+    EndIf
+EndFunc   ;==>SiteListComboboxSelection2GUI
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; SiteListArray2Combobox() - Reset the contents of the SiteList combobox
+;                            with the contents of the $aSiteList array
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func SiteListArray2Combobox($lnum = @ScriptLineNumber)
+    #forceref $lnum
+    _DebugOut("+++:" & $lnum & ": SiteListArray2Combobox() entered")
+    Local $ndx, $parts, $added_count, $selected, $str
+
+    _GUICtrlComboBox_BeginUpdate($aSiteListCombo[$hW])
+
+    $selected = GUICtrlRead($aSiteListCombo[$iID])
+    If ($selected == $sInitial_value_for_SiteListCombo) Then $selected = ""
+    _DebugOut("+++: $selected = " & $selected)
+    _GUICtrlComboBox_ResetContent($aSiteListCombo[$iID])
+
+    $added_count = 0
+
+    For $ndx = 1 To UBound($aSiteListArray) - 1
+        $parts = StringSplit($aSiteListArray[$ndx], "|")
+        _GUICtrlComboBox_AddString($aSiteListCombo[$iID], $parts[$iITEM_NAME])
+        $added_count += 1
+    Next
+
+    If ($added_count > 0) Then
+        If ($selected == "") Then
+            $parts = StringSplit($aSiteListArray[1], "|")
+            $selected = $parts[$iITEM_NAME]
+        Else
+            $ndx = findSelectedItem($selected)
+            If ($ndx > 0) Then
+                $str = $aSiteListArray[$ndx]
+                $parts = StringSplit($str, "|")
+                $selected = $parts[$iITEM_NAME]
+                _DebugOut("+++: $selected = " & $selected)
+            Else
+                $parts = StringSplit($aSiteListArray[1], "|")
+                $selected = $parts[$iITEM_NAME]
+                _DebugOut("+++: $selected = " & $selected)
+            EndIf
+        EndIf
+    EndIf
+
+    _GUICtrlComboBox_EndUpdate($aSiteListCombo[$hW])
+
+    If (($selected) And ($selected <> "")) Then
+        setSiteListComboSelection($selected)
+    EndIf
+
+
+EndFunc   ;==>SiteListArray2Combobox
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; setSiteListComboSelection() - Set the selection for the SiteList combobox
+;
+; PARAMS: 1st = The name to be selected
+;
+; RETURNS: nothing
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func setSiteListComboSelection($selected)
+    _DebugOut('+++: setSiteListComboSelection("' & $selected & '") entered' & @CRLF)
+    Local $ndx
+
+    $ndx = findSelectedItem($selected)
+    If ($ndx > 0) Then
+        _GUICtrlComboBox_SetCurSel($aSiteListCombo[$iID], $ndx - 1)
+        $aLastSelectName = $selected
+    EndIf
+EndFunc   ;==>setSiteListComboSelection
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; sortSiteListArray() - Sort the SiteList array
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func sortSiteListArray()
+    _ArrayDelete($aSiteListArray, 0) ; Remove element 0 (the item count)
+    _ArraySort($aSiteListArray) ; Sort the array
+    _ArrayInsert($aSiteListArray, 0, UBound($aSiteListArray) + 1) ; Set element[0] to a count of the number of elements
+EndFunc   ;==>sortSiteListArray
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; CreateAllControls() - Create all GUI controls (including the main window)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func CreateAllControls($lnum = @ScriptLineNumber)
+    _DebugOut($lnum & '(' & @MIN & ':' & @SEC & '): CreateAllControls() entered' & @CR)
+    Local $mw, $mh
+
+    loadMainWinMetrics($aMainWin, 440, 430)
+
+    $aMainWin[$sLabel] = "FTP Check DUPS     v" & $thisScriptVersion
+    $aMainWin[$iFlags] = 0 _
+             + $WS_CAPTION _
+             + $WS_OVERLAPPED _
+             + $WS_SIZEBOX _
+             + $WS_SYSMENU _
+             + $WS_VISIBLE _
+             + $WS_CLIPSIBLINGS _
+             + $WS_MINIMIZEBOX _
+             + $WS_MAXIMIZEBOX _
+             + $WS_EX_ACCEPTFILES ; allow drag and drop
+
+
+    ; Create the Main window first, then base its controls off of it
+    $aMainWin[$hW] = GUICreate( _
+            $aMainWin[$sLabel], _
+            $aMainWin[$iW], _
+            $aMainWin[$iH], _
+            $aMainWin[$iX], _
+            $aMainWin[$iY], _
+            $aMainWin[$iFlags])
+
+    If ($bUseGUIFrame) Then
+        ; >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+        ; Create a 1st level frame
+        $iFrame_A = _GUIFrame_Create($aMainWin[$hW], 1)
+        _GUIFrame_SetMin($iFrame_A, 50, 125 false)     	; This line adjusts the minima to equivalent percentages on resizing <<<<<<<<<<<<<<<<<<<<<
+
+        ; >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+        ; >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+        ; Switch to the top frame
+        switchToGUIFrame(1, $mw, $mh)
+        ; >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    EndIf
+
+    create_menus()
+
+    _myCreateLabel($aSiteListLabel, "Site:")
+    _myCreateCombo($aSiteListCombo, $sInitial_value_for_SiteListCombo, "handle_SITELIST_combo")
+    _myCreateLabel($aIPAddress_label, "IP Address:", $SS_RIGHT)
+    _myCreateInputBox($aIPAddress, $sInitial_value_for_IPAddress)
+    _myCreateLabel($aUsername_label, "Username:")
+    _myCreateInputBox($aUsername, $sInitial_value_for_Username)
+    _myCreateLabel($aPassword_label, "Password:")
+    _myCreateInputBox($aPassword, $sInitial_value_for_Password)
+    _myCreateLabel($aStartDir_label, "StartDir:")
+    _myCreateInputBox($aStartDir, $sInitial_value_for_StartDir)
+    _myCreateButton($aAddSite_btn, "Add", "handle_ADDSITE_btn")
+    _myCreateButton($aUpdateSite_btn, "Update", "handle_UPDATESITE_btn")
+    _myCreateButton($aDelSite_btn, "Delete", "handle_DELSITE_btn")
+    _myCreateButton($aCheckDups_btn, "Check for Dups", "handle_CHECKDUPS_btn")
+    _myCreateButton($aShowDir_btn, "Show Dir List", "handle_SHOWDIR_btn")
+    _myCreateCheckbox($aVerboseCheckbox, "Verbose", isVerbose())
+    _myCreateButton($aPING_btn, "Ping", "handle_PING_btn")
+
+
+    _myCreateButton($aSAVE_btn, "Save", "handle_SAVE_btn")
+    _myCreateLabel($aProgressLabel, "00%", $SS_RIGHT);
+    _myCreateProgressBar($aProgressBar, $PBS_SMOOTH)
+    $aProgressBar[$sLabel] = "<pb>"
+    _myCreateStatusBar($aStatusBar, 2, "", $aMainWin)
+
+    If ($bAllowTestMode) Then
+        _myCreateButton($aTEST_btn, "Test", "handle_TEST_btn")
+    EndIf
+
+    If ($bUseGUIFrame) Then
+        ; >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+        ; Switch to the bottom frame
+        switchToGUIFrame(2, $mw, $mh)
+        ; >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    EndIf
+
+    _myCreateListView($aListView, "<listview>", -1, 0)
+    _myCreateButton($aEXIT_btn, "Exit", "handle_EXIT_btn")
+    _myCreateButton($aSTOP_btn, "Stop", "handle_STOP_btn", $GUI_HIDE)
+    _myCreateButton($aQUIT_btn, "Quit", "handle_QUIT_btn")
+
+    create_ListViewMenu($aListView[$iID])
+
+    setVisible($aSTOP_btn, False)
+
+    SetupLocations() ; setup the locations of all controls on MainWin
+
+    setupToolTips()
+
+    _GUICtrlListView_InsertColumn($aListView[$hW], 0, "Console:", $mw)
+
+    GUICtrlSetState($aListView[$iID], $GUI_DROPACCEPTED)
+    GUICtrlSetFont($aListView[$iID], 10, 400, 0, "courier new");
+    If ($bAllowTestMode) Then GUICtrlSetFont($aTEST_btn[$iID], 8);
+
+    UpdateStatusBarLeftText("")
+    GUICtrlSetColor($aProgressBar[$iID], 0xff0000) ; Red
+
+    GUICtrlSetOnEvent($aSiteListCombo[$iID], "handle_SITELIST_combo")
+
+    GUICtrlSetBkColor($aCheckDups_btn[$iID], 0x06F9ED)
+    GUICtrlSetFont($aCheckDups_btn[$iID], 10, 400, 0, "courier new");
+
+    GUICtrlSetBkColor($aSTOP_btn[$iID], 0x06F9ED)
+
+    $iOldCursor = MouseGetCursor();
+
+    RelocateControls();
+
+    setListViewDefaultColors($aListView)
+
+    setSiteListComboSelection($aLastSelectName) ; Set that as the current selection
+    SiteListComboboxSelection2GUI() ; Set initial values for GUI items
+
+    loadFromRegistry()
+
+    setVisible($aSTOP_btn, False)
+
+    GUIRegisterMsg($WM_NOTIFY, "WM_NOTIFY")
+    GUIRegisterMsg($WM_TIMER, "WM_TIMER")
+
+    GUIRegisterMsg($WM_SIZE, "handle_WM_SIZE_event") ; RESIZE events
+    GUISetOnEvent($GUI_EVENT_CLOSE, 'Event_GUIClose')
+
+    GUISetState(@SW_SHOW) ; show the GUI
+EndFunc   ;==>CreateAllControls
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; RelocateControls() - Relocate all controls items, based on the main window size
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func RelocateControls($lnum = @ScriptLineNumber)
+    _DebugOut($lnum & '(' & @MIN & ':' & @SEC & '): RelocateControls() entered' & @CR)
+    Local $wPos, $mw, $mh
+
+    ; Get the MainWin size
+    $wPos = ControlGetPos($aMainWin[$sLabel], "", $aMainWin[$hW])
+    ; $wPos[0] = X-pos, $wPos[1] = Y-pos, $wPos[2] = Width, $wPos[3] = Height
+
+    If ($bUseGUIFrame) Then
+        ; >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+        ; Switch to the top frame
+        switchToGUIFrame(1, $mw, $mh)
+        ; >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    EndIf
+
+    $aMainWin[$iX] = $wPos[0]
+    $aMainWin[$iY] = $wPos[1]
+    $aMainWin[$iW] = $wPos[2] - 8
+    $aMainWin[$iH] = $wPos[3] - 27
+
+    SetupLocations()
+
+    RelocateStatusBar()
+
+    Relocate_a_control($aSiteListLabel)
+    Relocate_a_control($aSiteListCombo)
+
+    Relocate_a_control($aIPAddress_label)
+    Relocate_a_control($aIPAddress)
+
+    Relocate_a_control($aUsername_label)
+    Relocate_a_control($aUsername)
+
+    Relocate_a_control($aPassword_label)
+    Relocate_a_control($aPassword)
+
+    Relocate_a_control($aStartDir_label)
+    Relocate_a_control($aStartDir)
+
+    Relocate_a_control($aAddSite_btn)
+    Relocate_a_control($aUpdateSite_btn)
+    Relocate_a_control($aDelSite_btn)
+    Relocate_a_control($aSAVE_btn)
+
+    Relocate_a_control($aCheckDups_btn)
+    Relocate_a_control($aVerboseCheckbox)
+    Relocate_a_control($aShowDir_btn)
+    Relocate_a_control($aPING_btn)
+    If ($bAllowTestMode) Then Relocate_a_control($aTEST_btn)
+
+    Relocate_a_control($aProgressBar)
+    Relocate_a_control($aProgressLabel)
+
+    If ($bUseGUIFrame) Then
+        ; >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+        ; Switch to the bottom frame
+        switchToGUIFrame(2, $mw, $mh)
+        ; >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    EndIf
+
+    Relocate_a_control($aListView)
+    Relocate_a_control($aEXIT_btn)
+    Relocate_a_control($aSTOP_btn)
+    Relocate_a_control($aQUIT_btn)
+
+EndFunc   ;==>RelocateControls
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Relocate_a_control() - Relocate one control based on it's INFO structure
+;
+; PARAMS: 1st = The INFO array to base the relocation on
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func Relocate_a_control(ByRef $info, $lnum = @ScriptLineNumber)
+    #forceref $lnum
+    ;_DebugOut($lnum & '(' & @MIN & ':' & @SEC & '): Relocate_a_control("' _
+    ;		 & $info[$sLabel] & '") entered' & @CR)
+
+    GUICtrlSetPos($info[$iID], $info[$iX], $info[$iY], $info[$iW], $info[$iH])
+    addControlToolTipRect($info)
+    _INFO_Dump($info, "R-" & $info[$sLabel])
+EndFunc   ;==>Relocate_a_control
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; addControlToolTipRect() - Add a control's enclosing rectangle
+;                           to the array of ToolTips
+;
+; PARAMS: $info - [in/out] The caller's INFO array
+;
+; RETURNS: <nothing>
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func addControlToolTipRect(ByRef $info)
+    Local $aRect[$_TTinfo_CNT]
+
+    $aRect[$_TTinfo_ID] = $info[$iID]
+    $aRect[$_TTinfo_X] = $info[$iX]
+    $aRect[$_TTinfo_Y] = $info[$iY]
+    $aRect[$_TTinfo_W] = $info[$iW]
+    $aRect[$_TTinfo_H] = $info[$iH]
+    $aRect[$_TTinfo_TEXT] = $info[$sTOOLTIP]
+
+    _ToolTipAdd($aToolTips, $aRect, "")
+EndFunc   ;==>addControlToolTipRect
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; SetupLocations() - Setup the locations of all MainWin controls
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func SetupLocations($lnum = @ScriptLineNumber)
+    _DebugOut("+++:" & $lnum & ": SetupLocations() entered")
+    Local $x, $y, $w, $h, $mw, $mh
+
+    If ($bUseGUIFrame) Then
+        ;<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+        switchToGUIFrame(1, $mw, $mh) ; <<<<<<< Switch to the top frame >>>>>>>
+        ;<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+    Else
+        $mw = $aMainWin[$iW]
+        $mh = $aMainWin[$iH]
+    EndIf
+
+    _DebugOut("+++: $mw = " & $mw)
+    _DebugOut("+++: $mh = " & $mh)
+
+    $x = 1
+    $y = 10
+    $w = 25
+    $h = 12
+    set_labelled_ctrl_metrics($aSiteListLabel, $aSiteListCombo, $y)
+    set_labelled_ctrl_metrics($aIPAddress_label, $aIPAddress, $y)
+    set_labelled_ctrl_metrics($aUsername_label, $aUsername, $y)
+    set_labelled_ctrl_metrics($aPassword_label, $aPassword, $y)
+    set_labelled_ctrl_metrics($aStartDir_label, $aStartDir, $y)
+
+    $x = 14
+    $y = $y + 5
+    $w = 70
+    $h = 20
+    set_ctrl_metrics($aAddSite_btn, $x, $y, $w, $h)
+    $x = $w + $x
+    set_ctrl_metrics($aUpdateSite_btn, $x, $y, $w, $h)
+    $x += $w
+    set_ctrl_metrics($aDelSite_btn, $x, $y, $w, $h)
+    $x += $w
+    set_ctrl_metrics($aSAVE_btn, $x, $y, $w, $h)
+
+    $x += $w + 27
+    $y = $aIPAddress[$iY]
+    $w = 30
+    set_ctrl_metrics($aPING_btn, $x, $y, $w, $h)
+
+    $x = $aPING_btn[$iX] + $aPING_btn[$iW] + 20
+    $y = $aPING_btn[$iY] + 10
+    $w = 120
+    set_ctrl_metrics($aCheckDups_btn, $x, $y, $w, $h)
+
+    $y += $h + 15
+    set_ctrl_metrics($aShowDir_btn, $x, $y, $w, $h)
+
+    $w = 100
+    $h = 25
+    $y = $aSAVE_btn[$iY]
+    $x = $aPING_btn[$iX] + $aPING_btn[$iW]
+    set_ctrl_metrics($aVerboseCheckbox, $x + 10, $y, $w, $h)
+
+    $x = 1
+    $y = $aAddSite_btn[$iY] + $aAddSite_btn[$iH] + 5
+    $w = 25
+    $h = 12
+    set_ctrl_metrics($aProgressLabel, $x, $y, $w, $h)
+
+    $x += $w
+    $w = $mw - $x - 25 - 10
+    $h = 7
+    $y += 3
+    set_ctrl_metrics($aProgressBar, $x, $y, $w, $h)
+
+    If ($bAllowTestMode) Then
+        set_ctrl_metrics($aTEST_btn, $mw - $w - 10, 1, 30, 20)
+    EndIf
+
+    If ($bUseGUIFrame) Then
+        ;<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+        switchToGUIFrame(2, $mw, $mh); <<<<<<< Switch to the bottom frame  >>>>>>>
+        ;<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+        $x = 10
+        $y = 10
+    Else
+        $x = 10
+        $y += 12
+    EndIf
+
+    $w = $mw - 30
+    $h = $mh - ($y + 90)
+    set_ctrl_metrics($aListView, $x, $y, $w, $h)
+
+    $y += $h + 10
+    $w = 40
+    $h = 20
+    set_ctrl_metrics($aEXIT_btn, $x, $y, $w, $h)
+
+    $x += $w + 25
+    set_ctrl_metrics($aQUIT_btn, $x, $y, $w, $h)
+
+    $x += $w + 25
+    set_ctrl_metrics($aSTOP_btn, $x, $y, $w, $h)
+
+    $aStatusBar_aParts[0] = $mw - 75 ;($aMainWin[$iW] / 5) * 4 ; right edge of left part
+    $aStatusBar_aParts[1] = -1; ($aMainWin[$iW] / 5) * 1
+
+    _GUICtrlStatusBar_SetParts($aStatusBar[$hW], $aStatusBar_aParts)
+
+EndFunc   ;==>SetupLocations
+
+; >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+; switchToGUIFrame() - Switch to the requested frame
+; >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Func switchToGUIFrame($num, ByRef $mw, ByRef $mh, $lnum = @ScriptLineNumber)
+    #forceref $lnum
+    Local $aWinSize, $hWnd
+
+    _GUIFrame_Switch($iFrame_A, $num)
+    $hWnd = _GUIFrame_GetHandle($iFrame_A, $num)
+
+    $aWinSize = WinGetClientSize($hWnd)
+    $mw = $aWinSize[0]
+    $mh = $aWinSize[1]
+
+    _DebugOut("+++:" & $lnum & ": switchToGUIFrame(" & $num & ") returns: $w = " & $mw & ", $h = " & $mh)
+
+    Return ($hWnd)
+EndFunc   ;==>switchToGUIFrame
+
+; #FUNCTION# ====================================================================================================================
+; Name ..........: set_ctrl_metrics
+; Description ...: Populate the location metrics for a device's INFO array
+; Syntax ........: set_ctrl_metrics(Byref $info, $x, $y, $w, $h)
+; Parameters ....: $info - [in/out] The caller's INFO array
+;                  $x    - The X-Pos
+;                  $y    - The Y-Pos
+;                  $w    - The Width
+;                  $h    - The Height
+; Return values .: None
+; Author ........: Andy Scharmer
+; Modified ......:
+; Remarks .......:
+; Related .......:
+; Link ..........:
+; Example .......: No
+; ===============================================================================================================================
+Func set_ctrl_metrics(ByRef $info, $x, $y, $w, $h)
+    $info[$iX] = $x
+    $info[$iY] = $y
+    $info[$iW] = $w
+    $info[$iH] = $h
+EndFunc   ;==>set_ctrl_metrics
+
+
+; #FUNCTION# ====================================================================================================================
+; Name ..........: set_labelled_ctrl_metrics
+; Description ...: Set the location metrics for a device's INFO array for control and its label
+; Syntax ........: set_labelled_ctrl_metrics(Byref $linfo, Byref $info, Byref $y)
+; Parameters ....: $linfo - [in/out] The INFO array for the label.
+;                  $info  - [in/out] The INFO array for the control.
+;                  $y     - [in/out] The Y-Pos to use (bumpth by the control's height
+;                                    before returning.
+; Return values .: None
+; Author ........: Andy Scharmer
+; Modified ......:
+; Remarks .......: The control's label is positioned to the left of the control.
+; Related .......:
+; Link ..........:
+; Example .......: No
+; ===============================================================================================================================
+Func set_labelled_ctrl_metrics(ByRef $linfo, ByRef $info, ByRef $y)
+    $linfo[$iX] = 10
+    $linfo[$iY] = $y + 4
+    $linfo[$iW] = 55
+    $linfo[$iH] = 20
+
+    $y += 2
+    $info[$iX] = $linfo[$iX] + $linfo[$iW] + 5
+    $info[$iY] = $y
+    $info[$iW] = 250
+    $info[$iH] = 20
+
+    $y = $info[$iY] + $info[$iH]
+EndFunc   ;==>set_labelled_ctrl_metrics
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; create_menus() - Create the main menu and all of its submenus
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func create_menus()
+    create_file_menu() ; Create the File menu and it's choices
+    create_help_menu() ; Create the Help menu and it's choices
+
+EndFunc   ;==>create_menus
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; create_file_menu() - Create the File menu
+;
+; PARAMS: <none>
+;
+; RETURNS: <nothing>
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func create_file_menu()
+    Local $iID_Menu, $ndx = 1
+    #forceref $iID_Menu
+
+    $iID_Menu = GUICtrlCreateMenu("&File")
+    addMenuItem($iID_Menu, "Exit", "ExitStageLeft", $ndx)
+    addMenuSpacer($iID_Menu, $ndx)
+EndFunc   ;==>create_file_menu
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; create_help_menu() - Create the Help menu
+;
+; PARAMS: <none>
+;
+; RETURNS: <nothing>
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func create_help_menu()
+    Local $iID_Menu, $ndx = 1
+
+    $iID_Menu = GUICtrlCreateMenu("&Help")
+    addMenuItem($iID_Menu, "About " & $Pname, "ShowHelpAbout", $ndx)
+EndFunc   ;==>create_help_menu
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; create_ListViewMenu() - Create the menu that is attached to
+;                         the ListView control
+;
+; PARAMS: 1st = The ID of the control to attach to
+;
+; RETURNS: <nothing>
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func create_ListViewMenu($id)
+    _DebugOut("+++: create_ListViewMenu(" & $id & ") entered")
+    Local $menuID, $ndx = 1
+
+    $menuID = GUICtrlCreateContextMenu($id)
+    addMenuItem($menuID, "Copy Selected Text", "handle_LVCM_Copy", $ndx) ;
+EndFunc   ;==>create_ListViewMenu
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; handle_LVCM_Copy() - Handle the ListView Context Menu 'Copy Selection'
+;                      from the context menu associated with the ListView.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func handle_LVCM_Copy()
+    _DebugOut("+++: handle_LVCM_Copy() entered")
+    Local $hWnd = $aListView[$hW]
+
+    UpdateStatusBarLeftText("")
+
+    If (somethingIsSelected($hWnd)) Then
+        _CallOnce_RegisterFunc("do_LVCM_Copy")
+    Else
+        UpdateStatusBarLeftText("Nothing selected!")
+    EndIf
+EndFunc   ;==>handle_LVCM_Copy
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; do_LVCM_Copy() - Copy the selected lines from the ListView control
+;                  to the Clipboard.
+; PARAMS: <none>
+;
+; RETURNS: <nothing>
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func do_LVCM_Copy()
+    _DebugOut("+++: do_LVCM_Copy() entered")
+    Local $hWnd = $aListView[$hW]
+    Local $ar, $str, $cnt, $ndx
+
+    ; Get an array of selected index numbers
+    $ar = _GUICtrlListView_GetSelectedIndices($hWnd, True)
+    _DumpArray($ar, "$ar")
+
+    If (Not IsArray($ar)) Or ($ar[0] == 0) Then
+        _DebugOut("+++: Nothing is selected.")
+        UpdateStatusBarLeftText("Nothing selected!")
+        Return ; Nothing selected
+    EndIf
+
+    $str = ""
+    For $ndx = 1 To UBound($ar) - 1
+        If ($str <> "") Then $str &= @CRLF
+        $str &= _GUICtrlListView_GetItemText($hWnd, $ar[$ndx])
+    Next
+
+    ClipPut($str)
+    _DebugOut("+++: $str = " & $str)
+
+    $cnt = StringLen($str)
+    UpdateStatusBarLeftText("" _
+             & "Copied " & $cnt & " byte" & _Plural($cnt) _
+             & " to the Clipboard")
+EndFunc   ;==>do_LVCM_Copy
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; setupToolTips() - Create ToolTips for all controls that should have them
+;
+; PARAMS: <none>
+;
+; RETURNS: <nothing> - The global $aToolTips array is created and populated
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func setupToolTips()
+    Local $str
+
+
+    $str = "Click to add the Site defined in the input controls to the list of Sites."
+    setup_1_tooltip($aAddSite_btn, $str)
+    $str = "Update the current site with the data in the controls"
+    setup_1_tooltip($aUpdateSite_btn, $str)
+    $str = "Check the specified site and directory for duplicate names."
+    setup_1_tooltip($aCheckDups_btn, $str)
+    $str = "Delete the current site definition."
+    setup_1_tooltip($aDelSite_btn, $str)
+    ;$str = "This listbox displays log and operation results information."
+    ;setup_1_tooltip($aOutWin, $str)
+    $str = "Click here to exit the program."
+    setup_1_tooltip($aEXIT_btn, $str)
+    $str = "Click here to stop the current FTP operation."
+    setup_1_tooltip($aSTOP_btn, $str)
+    $str = "Click here to Ping the address in the URL control."
+    setup_1_tooltip($aPING_btn, $str)
+    $str = "Click here to exit the program without saving any changed site definitions."
+    setup_1_tooltip($aQUIT_btn, $str)
+    $str = "Click here to save any changes that have been made to the site definitions."
+    setup_1_tooltip($aSAVE_btn, $str)
+    $str = "Enter the IP address in nnn.nnn.nnn.nnn or www.sonething.com format"
+    setup_1_tooltip($aIPAddress_label, $str)
+    setup_1_tooltip($aIPAddress, $str)
+    $str = "Enter the Password needed to access the site."
+    setup_1_tooltip($aPassword_label, $str)
+    setup_1_tooltip($aPassword, $str)
+    $str = "Click here to get a directory listing for the defined site."
+    setup_1_tooltip($aShowDir_btn, $str)
+    $str = "Enter the starting directory here."
+    setup_1_tooltip($aStartDir_label, $str)
+    setup_1_tooltip($aStartDir, $str)
+    $str = "Choose a site to use (or enter a new one)."
+    setup_1_tooltip($aSiteListCombo, $str)
+    setup_1_tooltip($aSiteListLabel, $str)
+    $str = "Enter the User Name needed to access the site."
+    setup_1_tooltip($aUsername_label, $str)
+    setup_1_tooltip($aUsername, $str)
+    $str = "Check this control to log verbose messages."
+    setup_1_tooltip($aVerboseCheckbox, $str)
+
+EndFunc   ;==>setupToolTips
+
+Func setup_1_tooltip(ByRef $info, $str)
+    Local $aRect
+
+    $aRect = NewArray($_TTinfo_CNT)
+
+    $aRect[$_TTinfo_ID] = $info[$iID]
+    $aRect[$_TTinfo_X] = $info[$iX]
+    $aRect[$_TTinfo_Y] = $info[$iY]
+    $aRect[$_TTinfo_W] = $info[$iW]
+    $aRect[$_TTinfo_H] = $info[$iH]
+    $aRect[$_TTinfo_TEXT] = $str
+
+    _ToolTipAdd($aToolTips, $aRect, $info[$sTOOLTIP])
+EndFunc   ;==>setup_1_tooltip
+
+Func NewArray($size)
+    Local $aRect[$size]
+
+    For $x = 0 To $size - 1
+        $aRect[$x] = 0
+    Next
+    Return ($aRect)
+EndFunc   ;==>NewArray
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; somethingIsSelected() - Determine if anything in the ListView
+;                         is currently selected
+;
+; PARAMS: <none>
+;
+; RETURNS: True or False
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func somethingIsSelected($hWnd, $lnum = @ScriptLineNumber)
+    #forceref $lnum
+    _DebugOut("+++:" & $lnum & ": somethingIsSelected() entered")
+    Local $cnt
+
+    $cnt = _GUICtrlListView_GetSelectedCount($hWnd)
+    _DebugOut("+++: selected_count = " & $cnt)
+    If ($cnt <= 0) Then
+        Return (False)
+    Else
+        Return (True)
+    EndIf
+EndFunc   ;==>somethingIsSelected
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; addMenuItem() - Add a menu item to a menu
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func addMenuItem($id, $title, $handler, ByRef $ndx)
+    Local $sid
+    $sid = GUICtrlCreateMenuItem($title, $id, $ndx)
+    If ($handler <> "") Then GUICtrlSetOnEvent($sid, $handler)
+    $ndx += 1
+    Return ($sid)
+EndFunc   ;==>addMenuItem
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; addMenuSpacer() - Add a horizontal line spacer to a menu
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func addMenuSpacer($id, ByRef $ndx)
+    GUICtrlCreateMenuItem("", $id, $ndx)
+    $ndx += 1
+EndFunc   ;==>addMenuSpacer
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; addMenuItemRadio() - Add a Radio menu selection to a menu
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func addMenuItemRadio($id, $title, $handler, ByRef $ndx, ByRef $sid, $initial_setting)
+
+    $sid = GUICtrlCreateMenuItem($title, $id, $ndx, 1)
+    setChecked($sid, $initial_setting)
+    If ($handler <> "") Then GUICtrlSetOnEvent($sid, $handler)
+    $ndx += 1
+    Return ($sid)
+EndFunc   ;==>addMenuItemRadio
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; ShowHelpAbout() - Display program version and a 1-line usage.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func ShowHelpAbout()
+    Local $str
+
+    $str = ""
+    $str &= $Pname & "    v" & $thisScriptVersion & "\n"
+    $str &= "\n"
+    $str &= "Check for duplicate names on a FTP site.\n"
+    $str &= "\n"
+    $str &= StringFormat("   usage: %s \n", $Pname)
+
+    $str = StringReplace($str, "\n", @CRLF)
+    MsgBox(0, "HELP", $str)
+EndFunc   ;==>ShowHelpAbout
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; RelocateProgressBar() - Relocate the progressbar after a resize event
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func RelocateProgressBar($lnum = @ScriptLineNumber)
+    _DebugOut($lnum & '(' & @MIN & ':' & @SEC & '): RelocateProgressBar() entered' & @CR)
+    ; Resize the status bar when GUI size changes
+    _GUICtrlStatusBar_Resize($aStatusBar[$hW])
+EndFunc   ;==>RelocateProgressBar
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; RelocateStatusBar() - Relocate the status bar after a window resize
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func RelocateStatusBar($lnum = @ScriptLineNumber)
+    _DebugOut($lnum & '(' & @MIN & ':' & @SEC & '): RelocateStatusBar() entered' & @CR)
+    _GUICtrlStatusBar_Resize($aStatusBar[$hW])
+EndFunc   ;==>RelocateStatusBar
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; UpdateStatusBarText() - Update the left and right text parts
+;                         of the status bar
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func UpdateStatusBarText($sLeft, $sRight)
+    ;_DebugOut('@@ (711) :(' & @MIN & ':' & @SEC & ') UpdateStatusBarText()') ;### Function Trace
+    $aStatusBar_aText[0] = $sLeft
+    $aStatusBar_aText[1] = $sRight
+    _GUICtrlStatusBar_SetText($aStatusBar[$hW], $aStatusBar_aText[0], 0)
+    _GUICtrlStatusBar_SetText($aStatusBar[$hW], $aStatusBar_aText[1], 1)
+EndFunc   ;==>UpdateStatusBarText
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; UpdateStatusBarRightText() - Update the right text part
+;                              of the status bar
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func UpdateStatusBarRightText($sRight)
+    ;_DebugOut('@@ (722) :(' & @MIN & ':' & @SEC & ') UpdateStatusBarRightText()') ;### Function Trace
+    $aStatusBar_aText[1] = $sRight
+    _GUICtrlStatusBar_SetText($aStatusBar[$hW], $aStatusBar_aText[1], 1)
+EndFunc   ;==>UpdateStatusBarRightText
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; UpdateStatusBarLeftText() - Update the left text part
+;                              of the status bar
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func UpdateStatusBarLeftText($sLeft, $logit = 0)
+    ;_DebugOut('@@ (731) :(' & @MIN & ':' & @SEC & ') UpdateStatusBarLeftText("' & $sLeft & '")') ;### Function Trace
+    $aStatusBar_aText[0] = $sLeft
+    _GUICtrlStatusBar_SetText($aStatusBar[$hW], $aStatusBar_aText[0], 0)
+    If ($logit == 1) Then _logMsg($sLeft)
+EndFunc   ;==>UpdateStatusBarLeftText
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; isChecked() - See if a specified menu item is checked or not
+; PARAMS: 1st = The handle to the menu item
+; RETURNS: true = Yes it was
+;         false = No it wasn't
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func isChecked($iID_Menu)
+    Local $ret
+    If BitAND(GUICtrlRead($iID_Menu), $GUI_CHECKED) = $GUI_CHECKED Then
+        $ret = 1
+    Else
+        $ret = 0
+    EndIf
+    Return ($ret)
+EndFunc   ;==>isChecked
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; setChecked() - Set a checkbox item to checked or unchecked
+; PARAMS: 1st = Control ID of the checkbox control
+;         2nd = true = set the checkbox to checked
+;              false = set the checkbox to unchecked
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func setChecked($id, $flag)
+    Local $state
+    If ($flag = True) Then $state = $GUI_CHECKED
+    If ($flag = False) Then $state = $GUI_UNCHECKED
+    GUICtrlSetState($id, $state)
+EndFunc   ;==>setChecked
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; WarningPopup() - Display a warning popup with the caller's message
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func WarningPopup($msg, $lnum = @ScriptLineNumber)
+    MsgBox(0 + 48, $Pname & ":" & $lnum & ": ERROR", $msg)
+EndFunc   ;==>WarningPopup
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; ErrorPopup() - Display an error popup with the caller's message
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func ErrorPopup($msg, $lnum = @ScriptLineNumber)
+    _ToolTip_Clear()
+    MsgBox(0 + 48, $Pname & ":" & $lnum & ": ERROR", $msg)
+    Exit (1)
+EndFunc   ;==>ErrorPopup
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; get_Pname() - Return the name of this script (without the filename extension)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func get_Pname()
+    Local $ext, $parts, $str = @ScriptName
+    $parts = StringSplit($str, ".") ; Split on PERIODS
+    If ($parts[0] > 1) Then ; If there was at least 1 pariod
+        $ext = $parts[$parts[0]] ; Get the last part (the filename extension)
+        If (($ext = "au3") Or ($ext = "exe")) Then ; Only of *.au3 or *.exe
+            ; re-assemble, leaving off the filename extension
+            $str = $parts[1]
+            For $ndx = 2 To $parts[0] - 1
+                $str = $str & "." & $parts[$ndx]
+            Next
+        EndIf
+    EndIf
+    Return $str
+EndFunc   ;==>get_Pname
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; ExitStageLeft - Exit the program
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func ExitStageLeft($ret = 0)
+    _ToolTip_Clear()
+    _DebugOut("+++: ExitStageLeft() entered")
+    Local $str, $msgret
+    _DebugOut("+++: $bChanged = " & $bChanged)
+    If ($bChanged == True) Then
+        $str = "Save changes to the Registry?"
+        $msgret = MsgBox(3 + 32, "ASK", $str)
+        If (($msgret == $OK_BTN) Or ($msgret == $YES_BTN)) Then
+            saveToRegistry()
+        EndIf
+    EndIf
+
+    saveMainWinMetrics($aMainWin)
+
+    Exit ($ret)
+EndFunc   ;==>ExitStageLeft
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; ExitStageLeft_normal - Exit the program
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func ExitStageLeft_normal()
+    ExitStageLeft(0)
+EndFunc   ;==>ExitStageLeft_normal
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Event_GUIClose() - Handle the close event
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func Event_GUIClose()
+    _DebugOut('(' & @MIN & ':' & @SEC & '): Event_GUIClose() entered' & @CR)
+    ExitStageLeft(0)
+EndFunc   ;==>Event_GUIClose
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; handle_EXIT_btn() - Handle messages and events from the "EXIT" button
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func handle_EXIT_btn()
+    _DebugOut("+++: handle_EXIT_btn() entered");
+    ExitStageLeft(0)
+EndFunc   ;==>handle_EXIT_btn
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; handle_QUIT_btn() - Handle messages and events from the "QUIT" button
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func handle_QUIT_btn()
+    _DebugOut("+++: handle_QUIT_btn() entered");
+
+    $bChanged = False
+
+    ExitStageLeft(0)
+EndFunc   ;==>handle_QUIT_btn
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; handle_SAVE_btn() - Handle messages and events from the "SAVE" button
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func handle_SAVE_btn()
+    _DebugOut("+++: handle_SAVE_btn() entered")
+
+    _CallOnce_RegisterFunc("do_SAVE")
+EndFunc   ;==>handle_SAVE_btn
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; do_SAVE() - Handle SAVE button press - Save all GUI items to the registry
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func do_SAVE()
+    _DebugOut("+++: do_SAVE() entered")
+    clearListView()
+    _logMsg("Validating data...")
+    saveToRegistry()
+    _logMsg("Save complete.")
+EndFunc   ;==>do_SAVE
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; saveToRegistry() - Save all GUI items to the registry
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func saveToRegistry($lnum = @ScriptLineNumber)
+    #forceref $lnum
+    _DebugOut("+++:" & $lnum & ": saveToRegistry() entered")
+    Local $ndx, $sKname
+
+    saveMainWinMetrics($aMainWin)
+
+    ; Save Last Selected SiteList value
+    _myRegistry_StoreString($sRegistryKey, $sRegistryKeyLastSelect, $aLastSelectName)
+    _DebugOut("+++: Save select: ==>" & $aLastSelectName & "<==")
+
+    ; Save SiteList items
+    RegDelete($sRegistryKeySiteList) ; Remove all SiteList entries
+
+    _myRegistry_StoreString($sRegistryKey & "\" & $sRegistryKeySiteList, "", "")
+
+    For $ndx = 1 To UBound($aSiteListArray) - 1
+        $sKname = "Site" & StringFormat("%03d", $ndx)
+        _myRegistry_StoreString($sRegistryKey & "\" & $sRegistryKeySiteList, $sKname, $aSiteListArray[$ndx])
+        _DebugOut("+++: Save SiteList item " & $ndx & ": " & $sKname & " = " & $aSiteListArray[$ndx])
+    Next
+
+    ; Save Verbose boolean
+    _myRegistry_StoreTrueFalse($sRegistryKey, $sRegistryKeyVerbose, isVerbose())
+    _DebugOut("+++: Save Verbose: ==>" & isVerbose() & "<==")
+
+    $bChanged = False
+EndFunc   ;==>saveToRegistry
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; saveMainWinMetrics() - Save the Main GUI window's metrics
+;
+; The data saved: X-POS, Y-POS, WIDTH, HEIGHT
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func saveMainWinMetrics(ByRef $aMwin)
+    Local $ar, $str
+
+    If ($aMwin[$hW] > 0) Then
+        $ar = WinGetPos($aMwin[$hW])
+
+        If ($ar <> 0) Then
+            _DebugOut("+++: WinGetPos() returns: " & StringFormat("x,y,w,h = %d,%d,%d,%d)", $ar[0], $ar[1], $ar[2], $ar[3]))
+            ; $ar[0] = X position
+            ; $ar[1] = Y position
+            ; $ar[2] = Width
+            ; $ar[3] = Height
+
+            $ar[2] -= 16 ; Adjust Width
+            $ar[3] -= 38 ; Adjust Height
+
+
+            $str = StringFormat("%d,%d,%d,%d", $ar[0], $ar[1], $ar[2], $ar[3])
+            _DebugOut("+++: _myRegistry_StoreString: " & StringFormat("x,y,w,h = %d,%d,%d,%d)", $ar[0], $ar[1], $ar[2], $ar[3]))
+
+            _myRegistry_StoreString($sRegistryKey, $sRegistryName_WinPosition, $str)
+        EndIf
+    EndIf
+
+EndFunc   ;==>saveMainWinMetrics
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; loadFromRegistry() - Load all items grom the registry
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func loadFromRegistry($lnum = @ScriptLineNumber)
+    #forceref $lnum
+    _DebugOut("+++:" & $lnum & ": loadFromRegistry() entered")
+    Local $sKname, $cnt, $def, $val
+
+    ; Load Last Selected SiteList value
+    $val = _myRegistry_LoadValue($sRegistryKey, $sRegistryKeyLastSelect, "")
+
+    If ($val <> "") Then
+        $aLastSelectName = $val
+        _DebugOut("+++: Load select: ==>" & $aLastSelectName & "<==")
+    EndIf
+
+    ; Load SiteList items
+    _GUICtrlComboBox_ResetContent($aSiteListCombo[$iID])
+
+    $cnt = 0
+    $def = ""
+
+    ; Look for Site001 - Site099 (look at all of them, in case 1 or more got
+    ; manually removed from the registry)
+    For $cnt = 1 To 99
+        $sKname = "Site" & StringFormat("%03d", $cnt)
+        $val = _myRegistry_LoadValue($sRegistryKey & "\" & $sRegistryKeySiteList, $sKname, $def)
+        If ($val <> "") Then
+            itemStr2SiteListArray($val) ; Insert this item and sort the SiteList array
+            _DebugOut("+++: Load SiteList Item: " & $val)
+        EndIf
+    Next
+
+    ; Load Verbose boolean
+    $val = _myRegistry_LoadTrueFalseValue($sRegistryKey, $sRegistryKeyVerbose, False)
+    setChecked($aVerboseCheckbox[$iID], $val)
+    _DebugOut("+++: Load Verbose: ==>" & isVerbose() & "<==")
+
+    SiteListArray2Combobox()
+    SiteListComboboxSelection2GUI()
+    Gui2Globals(True)
+
+    $bChanged = False
+EndFunc   ;==>loadFromRegistry
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; loadMainWinMetrics() - Initialize the main gui, metrics from data
+;                              read from the registry.
+;
+; Default values are provided and the metrics are validated and afjusted
+; to valid values if necessary
+;
+; PARAMS: <none>
+;
+; RETURNS: <nothing> - The Main GUI's INFO array is updated
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func loadMainWinMetrics(ByRef $aMwin, $defX = 440, $defY = 430)
+    Local $str, $vals, $w, $h, $def
+
+    ; Create default metrics that will put the GUI in the center of the screen
+    $w = 600
+    $h = 600
+    $def = StringFormat("%d,%d,%d,%d", $defX, $defY, $w, $h)
+    _DebugOut("+++: $def = " & $def)
+    ; Start with the window size/position that was last used
+    $str = _myRegistry_LoadValue($sRegistryKey, $sRegistryName_WinPosition, $def)
+    _DebugOut("+++: $str = " & $str)
+    $vals = StringSplit($str & ",0,0,0", ",") ; split at commas (",0,0,0" provides defaults)
+
+    $aMwin[$iX] = isBetween($vals[1], 10, @DesktopWidth - 100)
+    $aMwin[$iY] = isBetween($vals[2], 10, @DesktopHeight - 100)
+    $aMwin[$iW] = isBetween($vals[3], 100, @DesktopWidth - $aMwin[$iX])
+    $aMwin[$iH] = isBetween($vals[4], 100, @DesktopHeight - $aMwin[$iY])
+    _INFO_Dump($aMwin, "$aMwin")
+EndFunc   ;==>loadMainWinMetrics
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; isBetween() - Force a number to be between a low number
+;               and a high number (inclusive)
+;
+; PARAMS: 1st = The number to look at
+;         2nd = The lowest that the number can be (if the
+;               number is lower than this number, it will
+;               be set to this value).
+;         3rd = The highest that the number can be (if the
+;               number is higher than this number, it will
+;               be set to this value).
+;
+; RETURNS: The caller's number (adjusted if necessary)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func isBetween($val, $lowest, $highest)
+    If ($val < $lowest) Then $val = $lowest
+    If ($val > $highest) Then $val = $highest
+    Return ($val)
+EndFunc   ;==>isBetween
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; handle_CHECKDUPS_btn() - Handle messages and events from the "CheckDups" button
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func handle_CHECKDUPS_btn()
+    _DebugOut("+++: handle_CHECKDUPS_btn() entered")
+
+    _CallOnce_RegisterFunc("do_CHECKDUPS")
+EndFunc   ;==>handle_CHECKDUPS_btn
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; do_CHECKDUPS() - Scan a directory and check for duplicate names
+;
+; When comparing names, letter-case is ignored.
+;
+; For example, "file123.txt" and "FILe123.txt" are considered
+; duplicate names
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func do_CHECKDUPS()
+    _DebugOut("+++: do_CHECKDUPS() entered")
+    Local $session, $hConn, $ret, $ndx, $name, $cnt, $ar
+    Local $last_name, $last_ar_fd, $this_name, $this_ar_fd, $tstamp
+
+    clearListView()
+    _logMsg("Validating data...")
+    If (Gui2Globals() == 0) Then Return
+    If (myPing($sIP) == 0) Then Return
+
+    _myFTP_RegisterFunc("LogStat", "_logFTPStat")
+    _myFTP_RegisterFunc("LogProg", "_logFTPProg")
+    _myFTP_RegisterFunc("Stop", "checkFTPStop")
+    $bFTPStop = False
+    $bShowFTPStat = True;
+
+    _logMsg("Connecting...")
+    $session = _myFTP_Open('_myFTP Control')
+    If ($session == 0) Then Return
+
+    $hConn = _myFTP_Connect($session, $sIP, $sUserName, $sPassword)
+    If ($hConn == 0) Then Return
+
+    $ar = StringSplit("", "")
+    setVisible($aSTOP_btn, True)
+
+    ; Get a list of all files/folders
+    _myFTP_FindAllFiles($hConn, $sStartDir, $ar, 0, 1)
+
+    makeArray_0_based($ar)
+
+    ;_DumpArray($ar, "$ar", 6)
+
+    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+    ;    _DumpArray($ar, "$ar before sort", 6)
+    _ArraySort($ar) ; Sort the array of $_myFTP_FD[] arrays
+    ; _DumpArray($ar, "$ar", 10)
+
+    $aDups = StringSplit("", "")
+    $last_name = ""
+
+    For $ndx = 0 To UBound($ar) - 1
+        $this_ar_fd = $ar[$ndx]
+        ;_DumpArray($this_ar_fd, "$this_ar_fd", 10)
+        $this_name = $this_ar_fd[$_myFTP_FD_NAME]
+
+        Local $e1 = ($this_name = $last_name)
+        Local $e2 = ($this_name == $last_name)
+
+        ;        _DebugOut(@CRLF)
+        ;        _DebugOut("+++: [" & $e1 & "][" & $cnt & "] last: " & $last_name)
+        ;        _DebugOut("+++: [" & $e2 & "][" & $cnt & "] this: " & $this_name)
+
+        If ($e1 == True) And ($e2 = False) Then
+            Local $t1 = $this_ar_fd[$_myFTP_FD_TIME]
+            Local $t2 = $last_ar_fd[$_myFTP_FD_TIME]
+
+            ;           _DebugOut("+++: $t1 ==>" & $t1 & "<== " & $this_name)
+            ;           _DebugOut("+++: $t2 ==>" & $t2 & "<== " & $last_name);
+
+            _ArrayAdd($aDups, StringFormat("%-20s %s", $t1, $last_name))
+            _ArrayAdd($aDups, StringFormat("%-20s %s", $t2, $this_name))
+        Else
+        EndIf
+
+        $last_name = $this_name
+        $last_ar_fd = $this_ar_fd
+    Next
+
+    ;_DumpArray($ar, "$ar after sort", 6)
+    $cnt = 0
+    ;_myFTP_MakeZeroBased($aDups)
+    ;_DumpArray($aDups, "$aDups", 10)
+
+    For $ndx = 1 To UBound($aDups) - 1
+        $name = $aDups[$ndx]
+        ; 2009/16/11 00:00:00  /va
+        ; 123456789.123456789.123456789.
+        $tstamp = StringLeft($name, 19)
+        $name = StringTrimLeft($name, 19)
+        $name = StringStripWS($name, 3)
+        $name = "./" & StringTrimLeft($name, StringLen($sStartDir) + 1)
+
+        _DebugOut("+++: $name = " & $name)
+
+        If ($cnt = 0) Then
+            _logMsg(@CRLF & "Duplicate Names found on " & $sIP & @CRLF)
+            _logMsg(@CRLF & " (in direcory: " & $sStartDir & ")")
+        EndIf
+
+        _logMsg("    " & $tstamp & "  " & $name)
+        $cnt += 1
+    Next
+
+    If ($cnt == 0) Then
+        _logMsg("")
+        _logMsg(@CRLF & "No duplicate names on " & $sIP & ":" & $sStartDir)
+    Else
+        _logMsg("")
+        _logmsg(@CRLF & "Found " & $cnt & " duplicate file" & _Plural($cnt))
+    EndIf
+
+    ;;; all done, so close the FTP connection
+    $ret = _myFTP_Close($session)
+
+    setVisible($aSTOP_btn, False)
+    If ($ret <> 0) Then UpdateStatusBarLeftText("Done.")
+
+EndFunc   ;==>do_CHECKDUPS
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; handle_SHOWDIR_btn() - Handle messages and events from the "Show dir" button
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func handle_SHOWDIR_btn()
+    _DebugOut("+++: handle_SHOWDIR_btn() entered");
+    _CallOnce_RegisterFunc("do_SHOWDIR")
+EndFunc   ;==>handle_SHOWDIR_btn
+
+Func do_SHOWDIR()
+    _DebugOut("+++: do_SHOWDIR() entered");
+    Local $session, $hConn, $ar, $ret, $err
+
+    clearListView()
+    _logMsg("Validating data...")
+    If (Gui2Globals() == 0) Then Return
+    If (myPing($sIP) == 0) Then Return
+    clearListView()
+
+    _myFTP_RegisterFunc("LogStat", "_logFTPStat")
+    _myFTP_RegisterFunc("LogProg", "_logFTPProg")
+    _myFTP_RegisterFunc("Stop", "checkFTPStop")
+    $bFTPStop = False
+    $bShowFTPStat = False
+
+    $session = _myFTP_Open('_myFTP Control')
+    If ($session == 0) Then Return
+
+    $hConn = _myFTP_Connect($session, $sIP, $sUserName, $sPassword)
+    If ($hConn == 0) Then Return
+
+    $ar = StringSplit("", "")
+    setVisible($aSTOP_btn, True)
+
+    ; Get a list of all files/folders
+    $ret = _myFTP_FindAllFiles($hConn, $sStartDir, $ar, 1, 1)
+    $err = @error
+    If ($err) And ($ret == 0) Then
+        _logMsg("No files or invalid start directory")
+    EndIf
+
+    ;;; all done, so close the FTP connection
+    _myFTP_Close($session)
+
+    setVisible($aSTOP_btn, False)
+    _logMsg("Done...")
+    UpdateStatusBarLeftText("Done.")
+
+EndFunc   ;==>do_SHOWDIR
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; handle_SITELIST_combo() - Handle messages and events from the "SiteList' combobox
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func handle_SITELIST_combo()
+    _DebugOut("+++: handle_SITELIST_combo() entered");
+    _CallOnce_RegisterFunc("do_SITELIST")
+EndFunc   ;==>handle_SITELIST_combo
+
+Func do_SITELIST()
+    _DebugOut("+++: do_SITELIST() entered")
+    SiteListComboboxSelection2GUI()
+EndFunc   ;==>do_SITELIST
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; handle_ADDSITE_btn() - Handle messages and events from the "Add Site" button
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func handle_ADDSITE_btn()
+    _DebugOut("+++: handle_ADDSITE_btn() entered");
+    _CallOnce_RegisterFunc("do_ADDSITE")
+EndFunc   ;==>handle_ADDSITE_btn
+
+; #FUNCTION# ====================================================================================================================
+; Name ..........: do_ADDSITE
+; Description ...: Add the site information from the GUI items, to the SiteList array.
+; Syntax ........: do_ADDSITE()
+; Parameters ....:
+; Return values .: None
+; Author ........: Andy Scharmer
+; Modified ......:
+; Remarks .......:
+; Related .......:
+; Link ..........:
+; Example .......: No
+; ===============================================================================================================================
+Func do_ADDSITE()
+    _DebugOut("+++: do_ADDSITE() entered");
+    Local $str, $selected
+
+    _DebugOut("+++: IWASHERE")
+    clearListView()
+    _logMsg("Validating data...")
+
+    _DebugOut("+++: IWASHERE")
+    $selected = GUICtrlRead($aSiteListCombo[$iID])
+
+    _DebugOut("+++: IWASHERE")
+    If (Gui2Globals() == 0) Then Return
+
+    _DebugOut("+++: IWASHERE")
+    $str = GUI2Str()
+    If ($str == "") Then Return
+    _DebugOut("+++: IWASHERE")
+
+    itemStr2SiteListArray($str) ; Insert this item and sort the SiteList array
+    SiteListArray2Combobox()
+    $bChanged = True
+
+    GUICtrlSetData($aSiteListCombo[$iID], $selected, $selected)
+
+    _logMsg("Added OK.")
+EndFunc   ;==>do_ADDSITE
+
+; #FUNCTION# ====================================================================================================================
+; Name ..........: GUI2Str
+; Description ...: Create a "|" delimited string of all values from the GUI controls
+; Syntax ........: GUI2Str()
+; Parameters ....:
+; Return values .: A  "|" delimited string.
+; Author ........: Andy Scharmer
+; Modified ......:
+; Remarks .......: The order of the items in the string is determined by the
+;                  global ENUM for the $iITEM_xxx values)
+; Related .......:
+; Link ..........:
+; Example .......: No
+; ===============================================================================================================================
+Func GUI2Str()
+    Local $Strings, $str, $selected
+
+    Dim $Strings[5 + 1]
+
+    $selected = GUICtrlRead($aSiteListCombo[$iID])
+    If ($selected == $sInitial_value_for_SiteListCombo) Then $selected = ""
+    If ((Not $selected) Or ($selected = "")) Then
+        WarningPopup("No Site Name was entered")
+        Return ("")
+    EndIf
+
+    ; Build a item string containing the data from the GUI controls
+    ; (the order of the iterms in this string is determined by the
+    ;  Global ENUM for the $iITEM_xxx values)
+    $Strings[$iITEM_NAME] = $selected
+    $Strings[$iITEM_IP] = $sIP
+    $Strings[$iITEM_USERNAME] = $sUserName
+    $Strings[$iITEM_PASSWORD] = $sPassword
+    $Strings[$iITEM_STARTDIR] = $sStartDir
+
+    $str = "" _
+             & $Strings[1] & "|" _
+             & $Strings[2] & "|" _
+             & $Strings[3] & "|" _
+             & $Strings[4] & "|" _
+             & $Strings[5]
+
+    Return ($str)
+EndFunc   ;==>GUI2Str
+
+; #FUNCTION# ====================================================================================================================
+; Name ..........: handle_UPDATESITE_btn
+; Description ...: Handle the UPDATE site button click
+; Syntax ........: handle_UPDATESITE_btn()
+; Parameters ....:
+; Return values .: None
+; Author ........: Andy Scharmer
+; Modified ......:
+; Remarks .......:
+; Related .......:
+; Link ..........:
+; Example .......: No
+; ===============================================================================================================================
+Func handle_UPDATESITE_btn()
+    _DebugOut("+++: handle_UPDATESITE_btn() entered")
+    Local $selected, $ndx, $itemstr
+
+    clearListView()
+    _logMsg("Validating data... ")
+
+    $selected = GUICtrlRead($aSiteListCombo[$iID])
+    If ($selected == $sInitial_value_for_SiteListCombo) Then $selected = ""
+    If ((Not $selected) Or ($selected = "")) Then
+        WarningPopup("No Site Name was entered")
+        Return
+    EndIf
+
+    If (Gui2Globals() == 0) Then Return
+    $itemstr = GUI2Str()
+
+    $ndx = findSelectedItem($selected)
+    If ($ndx > 0) Then
+        $aSiteListArray[$ndx] = $itemstr
+        $bChanged = True
+        _DebugOut("+++: Updated item " & $ndx & ": " & $itemstr)
+        _logMsg("Update complete.")
+    Else
+        _logError("Not in the SitList array")
+    EndIf
+
+EndFunc   ;==>handle_UPDATESITE_btn
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; handle_DELSITE_btn() - Handle messages and events from the "Delete Site" button
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func handle_DELSITE_btn()
+    _DebugOut("+++: handle_DELSITE_btn() entered")
+    _CallOnce_RegisterFunc("do_DELSITE")
+EndFunc   ;==>handle_DELSITE_btn
+
+; #FUNCTION# ====================================================================================================================
+; Name ..........: do_DELSITE
+; Description ...: Delete the currently displayed site from the site list.
+; Syntax ........: do_DELSITE()
+; Parameters ....:
+; Return values .: None
+; Author ........: Andy Scharmer
+; Modified ......:
+; Remarks .......:
+; Related .......:
+; Link ..........:
+; Example .......: No
+; ===============================================================================================================================
+Func do_DELSITE()
+    _DebugOut("+++: do_DELSITE() entered")
+    Local $selected, $ndx, $itemstr
+
+    clearListView()
+    _logMsg("Validating data... ")
+
+    $selected = GUICtrlRead($aSiteListCombo[$iID])
+    If ($selected == $sInitial_value_for_SiteListCombo) Then $selected = ""
+    If ((Not $selected) Or ($selected = "")) Then
+        WarningPopup("No Site Name was entered")
+        Return
+    EndIf
+
+    If (Gui2Globals() == 0) Then Return
+    $itemstr = GUI2Str()
+
+    $ndx = findSelectedItem($selected)
+    If ($ndx > 0) Then
+        _ArrayDelete($aSiteListArray, $ndx)
+        _DebugOut("+++: Delete item " & $ndx & ": " & $itemstr)
+
+        SiteListArray2Combobox()
+
+        _logMsg("Deleted OK.")
+    Else
+        _logError("Not in the SitList array")
+    EndIf
+
+EndFunc   ;==>do_DELSITE
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; findSelectedItem() - Scan all of the strings in the SiteList array for one
+;                      that contains the specified name in the first part
+;
+; The name comparison is NOT case sensitive.
+;
+; PARAMS: 1st = The name to look for
+;
+; RETURNS: 1-n - The index into the array where the item was located
+;          0   - The name was not found
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func findSelectedItem($item_name)
+    Local $ndx, $str2, $ar3
+
+    ; Scan all of the strings in the SiteList array for one
+    ; that contains the specified name in the first part
+    For $ndx = 1 To UBound($aSiteListArray) - 1
+        $str2 = $aSiteListArray[$ndx]
+        If (($str2) And ($str2 <> "")) Then
+            $ar3 = StringSplit($str2, "|")
+            If (IsArray($ar3)) Then
+                If ($ar3[$iITEM_NAME] == $item_name) Then
+                    Return ($ndx) ; Found it, so return the index to the full string
+                EndIf
+            EndIf
+        EndIf
+    Next
+
+    Return (0) ; Couldn't find it
+EndFunc   ;==>findSelectedItem
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; itemStr2SiteListArray() - Put an item string into the SiteList array
+;
+; After adding the item to the array (or replacing an item in the array),
+; the SiteList array is sorted.
+;
+; The item string is a '|' delimited bunch of substrings containing the
+; Site info (site name, IP address, etc.).
+;
+; PARAMS: 1st = The '|' delimited string
+;
+; RETURNS: nothing
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func itemStr2SiteListArray($item_str)
+    Local $ndx, $ar, $item_name
+
+    $ar = StringSplit($item_str, "|") ; split the substrings into a local array
+    $item_name = $ar[$iITEM_NAME] ; extract the site name
+
+    $ndx = findSelectedItem($item_name) ; See if this name is already in the SiteList array
+
+    If ($ndx > 0) Then
+        ; Found an item with the same name, so replace it with
+        ; the string passed to this function
+        _ArrayDelete($aSiteListArray, $ndx)
+        _ArrayInsert($aSiteListArray, $ndx, $item_str)
+    Else
+        ; It wasn't in the array, so add it to the end
+        _ArrayAdd($aSiteListArray, $item_str)
+        sortSiteListArray()
+    EndIf
+EndFunc   ;==>itemStr2SiteListArray
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; show_progress() - Display a 'scanning' progress message
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func show_progress($str)
+    UpdateStatusBarLeftText($str)
+    ProgressBar_update()
+EndFunc   ;==>show_progress
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; ProgressBar_init() - Create the progress bar
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func ProgressBar_init($maxval, $lnum = @ScriptLineNumber)
+    _DebugOut($lnum & '(' & @MIN & ':' & @SEC & '): ProgressBar_init() entered' & @CR)
+    $iProgressBarCount = 0
+    $iProgressBarLastCount = -1
+    $iProgressBarMax = $maxval
+
+    GUICtrlSetColor($aProgressBar[$iID], 0xff0000) ; Red
+    GUICtrlSetState($aProgressBar[$iID], $GUI_SHOW)
+    GUICtrlSetState($aProgressLabel[$iID], $GUI_SHOW)
+EndFunc   ;==>ProgressBar_init
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; ProgressBar_update() - Update a progress bar
+;
+; PARAMS: 1st = Max value of the progress bar
+;         3nd = Value to set it to
+; The parameters are converted to a percentage and
+; the progress bar is set to that percentage
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func ProgressBar_update()
+    Local $pcent
+
+    $pcent = ($iProgressBarCount / $iProgressBarMax) * 100
+
+    If (($pcent > 0) And ($pcent < 1)) Then $pcent = 1
+
+    If ($pcent <> 100) Then
+        GUICtrlSetData($aProgressBar[$iID], $pcent)
+        GUICtrlSetData($aProgressLabel[$iID], Round($pcent + .5, 0) & "%")
+    EndIf
+EndFunc   ;==>ProgressBar_update
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; ProgressBar_done() - Kill the progress bar window
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func ProgressBar_done($lnum = @ScriptLineNumber)
+    _DebugOut($lnum & '(' & @MIN & ':' & @SEC & '): ProgressBar_done() entered' & @CR)
+    $iProgressBarCount = 0
+    $iProgressBarLastCount = -1
+    GUICtrlSetState($aProgressLabel[$iID], $GUI_HIDE)
+    GUICtrlSetState($aProgressBar[$iID], $GUI_HIDE)
+EndFunc   ;==>ProgressBar_done
+
+; #FUNCTION# ====================================================================================================================
+; Name ..........: getGUI_IPaddress
+; Description ...: Get the IP address from the GUI and validate it.
+; Syntax ........: getGUI_IPaddress()
+; Parameters ....:
+; Return values .: Success: A string containing the IP address.
+;                  Failure: An empty string ("") - errors are logged.
+; Author ........: Andy Scharmer
+; Modified ......:
+; Remarks .......:
+; Related .......:
+; Link ..........:
+; Example .......: No
+; ===============================================================================================================================
+Func getGUI_IPaddress()
+    $sIP = GUICtrlRead($aIPAddress[$iID])
+    If (($sIP == 0) Or ($sIP == "")) Then
+        _logError("Empty IP address")
+        Return ("")
+    EndIf
+
+    If ($sIP = $sInitial_value_for_IPAddress) Then
+        _logError("No IP address was entered")
+        Return ("")
+    EndIf
+
+    If (ValidIP($sIP) == 0) Then
+        _logError("Invalid IP address: ==>" & $sIP & "<==" & @CRLF)
+        Return ("")
+    EndIf
+
+    Return ($sIP)
+EndFunc   ;==>getGUI_IPaddress
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; do_PING() - Send a PING to the currently selected IP Address
+;
+; (called either from a menu click event or by registering
+;  this function from within a button event handler.)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func handle_PING_btn()
+    _DebugOut("+++: handle_PING_btn() entered")
+    _CallOnce_RegisterFunc("do_PING")
+EndFunc   ;==>handle_PING_btn
+
+; #FUNCTION# ====================================================================================================================
+; Name ..........: do_PING
+; Description ...: Do a Ping using the IP-address/URL from the GUI.
+; Syntax ........: do_PING()
+; Parameters ....:
+; Return values .: None
+; Author ........: Andy Scharmer
+; Modified ......: The IP address is validated before doing the Ping.
+; Remarks .......:
+; Related .......:
+; Link ..........:
+; Example .......: No
+; ===============================================================================================================================
+Func do_PING()
+    _DebugOut("+++: do_PING() entered")
+    Local $ip, $ret, $str
+
+    clearListView()
+
+    UpdateStatusBarLeftText("Validating PING parameters...", 1)
+
+    ; Validate the IP Address that's currently selected
+    $ip = getGUI_IPaddress()
+    If ($ip == 0) Then Return
+    If ($ip == "") Then Return
+
+    $str = "Sending PING to " & $ip & "  ..."
+    UpdateStatusBarLeftText($str, 1)
+    _logMsg("   (waiting for a response)")
+
+    $ret = myPing($ip)
+
+    If ($ret <> 0) Then
+        $str = "PING sent to " & $ip
+        UpdateStatusBarLeftText($str, 1)
+
+        $str = "Response time = " & $ret
+        UpdateStatusBarLeftText($str, 1)
+    Else
+        UpdateStatusBarLeftText("Ping failed!!")
+    EndIf
+EndFunc   ;==>do_PING
+
+; #FUNCTION# ====================================================================================================================
+; Name ..........: myPing
+; Description ...: Do a Ping to a specified IP-address/URL
+; Syntax ........: myPing($ip)
+; Parameters ....: $ip                  - An integer value.
+; Return values .: None
+; Author ........: Andy Scharmer
+; Modified ......:
+; Remarks .......:
+; Related .......:
+; Link ..........:
+; Example .......: No
+; ===============================================================================================================================
+Func myPing($ip)
+    Local $ret, $err, $str2, $len, $str, $errstr, $wtime = 3
+
+    If (isVerbose()) Then
+        _logMsg("")
+        _logMsg("Sending PING to " & $ip & " ...")
+        _logMsg("   (waiting up to " & $wtime & " second" & _Plural($wtime) & " for a response)")
+    EndIf
+
+    $ret = Ping($ip, $wtime * 1000)
+    $err = @error
+
+    If ($ret <> 0) And (isVerbose()) Then
+        _logMsg("PING sent to " & $ip)
+        _logMsg("Response time = " & $ret)
+    EndIf
+
+    If ($ret == 0) Then
+        $errstr = ""
+        If ($err == 1) Then $errstr = "(Host is offline)"
+        If ($err == 2) Then $errstr = "(Host is unreachable)"
+        If ($err == 3) Then $errstr = "(Bad destination)"
+        If ($err == 4) Then $errstr = "(Other errors)"
+        $str2 = "Error pinging " & $ip
+        $len = StringLen($str2)
+        If ($len < StringLen($errstr)) Then $len = StringLen($errstr)
+        $str = StringFormat("%-" & $len & "s", $str2)
+        _logMsg("*** ===> " & $str & " <=== ***", $COLOR_RED)
+        $str = StringFormat("%-" & $len & "s", $errstr)
+        _logMsg("*** ===> " & $str & " <=== ***", $COLOR_RED)
+    EndIf
+
+    Return ($ret)
+EndFunc   ;==>myPing
+
+; #FUNCTION# ====================================================================================================================
+; Name ..........: getID
+; Description ...: Get a control ID, possibly associated with an INFO structure
+; Syntax ........: getID($info)
+; Parameters ....: $info                - An integer value.
+; Return values .: None
+; Author ........: Andy Scharmer
+; Modified ......:
+; Remarks .......: If the object passed to this function is an INFO array,
+;                  return the [$iID] element from the INFO array, or if
+;                  it's an integer, return it as is.
+; Related .......:
+; Link ..........:
+; Example .......: No
+; ===============================================================================================================================
+Func getID($info)
+    Local $id
+
+    If (IsArray($info)) Then
+        $id = $info[$iID]
+    Else
+        $id = $info
+    EndIf
+
+    Return ($id)
+EndFunc   ;==>getID
+
+; #FUNCTION# ====================================================================================================================
+; Name ..........: setBusyCursor
+; Description ...: Set the cursor to either the busy (hourglass) cursor or the normal (arrow) cursor.
+; Syntax ........: setBusyCursor($truefalse[, $hWnd = 0[, $lnum = @ScriptLineNumber]])
+; Parameters ....: $truefalse - A boolean: True = Set busy, False = Reset busy
+;                  $hWnd      - [optional] A handle to the window where the cursor is being displayed.
+;                                          Default = 0 ... Use $aMainWin[$hW])
+;                  $lnum      - [optional] Callers line number. Default is @ScriptLineNumber.
+; Return values .: None
+; Author ........: Andy Scharmer
+; Modified ......:
+; Remarks .......:
+; Related .......:
+; Link ..........:
+; Example .......: No
+; ===============================================================================================================================
+Func setBusyCursor($truefalse, $hWnd = 0, $lnum = @ScriptLineNumber)
+    #forceref $lnum
+    ;_DebugOut("+++:" & $lnum & ": setBusyCursor(" & $truefalse & ", " & $hWnd & ") entered")
+    Local $wasbusy
+
+    $wasbusy = $bBusy
+    ;traceBusy()
+
+    If ($hWnd == 0) Then
+        $hWnd = $aMainWin[$hW]
+        ;_DebugOut("+++: using $aMainWin[$hW] (" & Hex($hWnd) & ") as the default handle")
+    EndIf
+
+    If ($truefalse == True) Then
+        ;If ($wasbusy == True) Then _DebugOut("+++: was already 'busy'.")
+        GUISetCursor(15, 1, $hWnd) ; Set the hourglass cursor
+    Else
+        ;If ($wasbusy == False) Then _DebugOut("+++: was already 'not busy'.")
+        GUISetCursor(2, 1, $hWnd) ; Set the normal cursor
+    EndIf
+
+    $bBusy = $truefalse
+
+    Return ($wasbusy)
+EndFunc   ;==>setBusyCursor
+
+; #FUNCTION# ====================================================================================================================
+; Name ..........: setListViewDefaultColors
+; Description ...: Setup the default ListView items colors array
+; Syntax ........: setListViewDefaultColors(Byref $info)
+; Parameters ....: $info - [in/out] A INFO array to get the control ID from, or
+;                                   an actual ID.
+; Return values .: None
+; Author ........: Andy Scharmer
+; Modified ......:
+; Remarks .......:
+; Related .......:
+; Link ..........:
+; Example .......: No
+; ===============================================================================================================================
+Func setListViewDefaultColors(ByRef $info)
+    Local $id, $fgcolor, $bgcolor
+
+    $id = getID($info)
+
+    $fgcolor = $COLOR_BLACK
+    $bgcolor = $COLOR_OLIVE ;0x80FF80 ;light GREEN
+    $bgcolor = 0xF1F807
+
+    GUICtrlSetBkColor($id, $bgcolor)
+    GUICtrlSetColor($id, $fgcolor)
+EndFunc   ;==>setListViewDefaultColors
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; WM_NOTIFY(0 - Handle the WM_NOTIFY event
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func WM_NOTIFY($hWnd, $msg, $wParam, $lParam)
+    #forceref  $hWnd, $Msg, $wParam, $lParam
+    Local $tNMBHOTITEM, $nNotifyCode, $hCtrl
+
+    $tNMBHOTITEM = DllStructCreate("" _
+             & "hwnd hWndFrom;" _
+             & "int IDFrom;" _
+             & "int Code;" _
+             & "dword dwFlags", _
+            $lParam)
+
+    $nNotifyCode = DllStructGetData($tNMBHOTITEM, "Code")
+    $hCtrl = DllStructGetData($tNMBHOTITEM, "hWndFrom")
+
+    Switch $nNotifyCode
+        Case $NM_CUSTOMDRAW ; Redraw a listview line
+            Local $tCustDraw = DllStructCreate($tagNMLVCUSTOMDRAW, $lParam)
+            Local $iDrawStage
+            $iDrawStage = DllStructGetData($tCustDraw, 'dwDrawStage')
+            Switch $iDrawStage
+                Case $CDDS_ITEMPREPAINT ; 0x00010001
+                    setItemColor($tCustDraw, $hCtrl)
+                    Return $CDRF_NOTIFYSUBITEMDRAW
+                Case BitOR($CDDS_ITEMPREPAINT, $CDDS_SUBITEM) ; 0x00030001
+                    Return $CDRF_NEWFONT
+            EndSwitch
+    EndSwitch
+
+    Return $GUI_RUNDEFMSG
+EndFunc   ;==>WM_NOTIFY
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; setItemColor() - Set the color for an item in the ListView
+;
+; This function will read the param value (which is the color
+; number) from the specified item in the ListView, convert it
+; to an actual color value and chamnge the ListVire item to
+; that color.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func setItemColor($tCustDraw, $hWnd)
+    ; _debugout("+++: setItemColor($tCustDraw, " & HEX($hWnd) & ") entered")
+    Local $iIndex, $color, $colornum
+
+    $iIndex = DllStructGetData($tCustDraw, 'dwItemSpec')
+    ; _Debugout("+++: $iIndex = " & $iIndex)
+    $colornum = _GUICtrlListView_GetItemParam($hWnd, $iIndex)
+    ; _Debugout("+++: $colornum = " & $colornum & ", ubound($aColors) = " & ubound($aColors))
+    If ($colornum >= 0) And ($colornum < UBound($aColors)) Then
+        $color = $aColors[$colornum]
+        ;_debugout("+++ $color = " & $color)
+        DllStructSetData($tCustDraw, 'clrText', $color)
+    EndIf
+EndFunc   ;==>setItemColor
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; RGB2BGR() Convert a RGB value to a BGR value for doing text coloring in the ListView
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func RGB2BGR($iColor)
+    Local $sh = Hex($iColor, 6)
+    Return '0x' & StringRight($sh, 2) & StringMid($sh, 3, 2) & StringLeft($sh, 2)
+EndFunc   ;==>RGB2BGR
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; setupColorsArray() - Put actual RGB values into the global $aColors array
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func setupColorsArray()
+    $aColors = StringSplit("", "")
+    _ArrayAdd($aColors, RGB2BGR($COLOR_BLACK)) ;  0x000000 - Normal
+    _ArrayAdd($aColors, RGB2BGR($COLOR_RED)) ;    0xFF0000 - Secure
+    _ArrayAdd($aColors, RGB2BGR($COLOR_BLUE)) ;   0x0000FF - CNS
+    _ArrayAdd($aColors, RGB2BGR($COLOR_YELLOW)) ; 0xFFFF00 - Other
+    _ArrayDelete($aColors, 0)
+EndFunc   ;==>setupColorsArray
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; _logMsg() - Add a line of text to the lines displayed in the listview control
+;
+; PARAMS: 1st = The text to be displayed in the second col
+;         2nd = The color to display it (0 = black)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func _logMsg($sText, $color = 0, $lnum = @ScriptLineNumber)
+    #forceref $lnum
+    ; _DebugOut("+++:" & $lnum & ": _logMsg(" & $sText & ", " & $color & ") entered")
+    Local $hWnd = $aListView[$hW], $iIndex, $bgr
+
+    _showstatus($sText)
+
+    ;_GUICtrlListView_BeginUpdate($hWnd)
+
+    $iIndex = _GUICtrlListView_AddItem($hWnd, $sText)
+
+    ; _DebugOut("+++: $iIndex = " & $iIndex)
+    _GUICtrlListView_EnsureVisible($hWnd, $iIndex, False)
+
+    $bgr = RGB2BGR($color)
+    For $colornum = 0 To UBound($aColors) - 1
+        If ($aColors[$colornum] = $bgr) Then ExitLoop
+    Next
+
+    If ($colornum >= UBound($aColors)) Then
+        _ArrayAdd($aColors, $bgr)
+    EndIf
+
+    _GUICtrlListView_SetItemParam($hWnd, $iIndex, $colornum)
+
+    ;;;debugging;;;
+    ; For $ndx = 1 To UBound($ar) - 1
+    ;     $item = StringStripWS($ar[$ndx], 1)
+    ;      ;_GUICtrlListView_AddSubItem($hWnd, $iIndex, $item, $ndx, 1)
+    ;  Next
+
+    ;_GUICtrlListView_EndUpdate($hWnd)
+
+EndFunc   ;==>_logMsg
+
+; #FUNCTION# ====================================================================================================================
+; Name ..........: _logError
+; Description ...: Write an error message to the log output
+; Syntax ........: _logError($str)
+; Parameters ....: $str - The text to be logged.
+; Return values .: None
+; Author ........: Andy Scharmer
+; Modified ......:
+; Remarks .......: Output is sent to the ListView control
+; Related .......:
+; Link ..........:
+; Example .......: No
+; ===============================================================================================================================
+Func _logError($str)
+    $str = @CRLF & "*** ---> " & $str
+    _logMsg($str, $COLOR_RED)
+EndFunc   ;==>_logError
+
+; #FUNCTION# ====================================================================================================================
+; Name ..........: _logFTPStat
+; Description ...: Write an FTP Stat message to the output control
+; Syntax ........: _logFTPStat($str, $bOnlyIfVerbose)
+; Parameters ....: $str            - The text to be logged
+;                  $bOnlyIfVerbose - A boolean to determine if this text will be logged
+;                                    only if the caller's 'verbose' mode is set.
+; Return values .: None
+; Author ........: Andy Scharmer
+; Modified ......:
+; Remarks .......:  Output is sent to the ListView control
+;                   This function is tegistered to the FTP protocol and is called
+;                   from there whenever a stat message is to be logged.
+; Related .......:
+; Link ..........:
+; Example .......: No
+; ===============================================================================================================================
+Func _logFTPStat($str, $bOnlyIfVerbose)
+    If ($bOnlyIfVerbose == 0) Or (isVerbose()) Then
+        ; _DebugOut("+++: _logFTPStat() ... $bOnlyIfVerbose = " & $bOnlyIfVerbose & ", isVerbose() = " & isVerbose() & ", $bShowFTPStat = " & $bShowFTPStat & ", '" & $str & "'")
+        _logMsg($str)
+    ElseIf ($bShowFTPStat) Then
+        _showstatus($str)
+    EndIf
+EndFunc   ;==>_logFTPStat
+
+; #FUNCTION# ====================================================================================================================
+; Name ..........: _logFTPProg
+; Description ...: Write an FTP Progress message to the output control
+; Syntax ........: _logFTPProg($str)
+; Parameters ....: $str - The text to be logged
+; Return values .: None
+; Author ........: Andy Scharmer
+; Modified ......:
+; Remarks .......:  Output is sent to the ListView control
+;                   This function is tegistered to the FTP protocol and is called
+;                   from there whenever a stat message is to be logged.
+; Related .......:
+; Link ..........:
+; Example .......: No
+; ===============================================================================================================================
+Func _logFTPProg($str)
+    UpdateStatusBarLeftText($str)
+EndFunc   ;==>_logFTPProg
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; clearListView() - Clear all of the contents of the ListView control
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func clearListView()
+    _GUICtrlListView_DeleteAllItems($aListView[$hW])
+    _logMsg("")
+EndFunc   ;==>clearListView
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; handle_WM_SIZE_event() - Handler for a window resize event
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func handle_WM_SIZE_event();$hWnd, $iMsg, $iwParam, $ilParam)
+    _DebugOut("+++: handle_WM_SIZE_event() entered")
+    _CallOnce_RegisterFunc("do_RESIZE")
+    Return (0) ; Tell windows not to do it's resize as well
+    _DebugOut("+++: handle_WM_SIZE_event() returns")
+EndFunc   ;==>handle_WM_SIZE_event
+
+; #FUNCTION# ====================================================================================================================
+; Name ..........: do_RESIZE
+; Description ...: Handle a RESIZE request
+; Syntax ........: do_RESIZE()
+; Parameters ....:
+; Return values .: None
+; Author ........: Andy Scharmer
+; Modified ......:
+; Remarks .......:
+; Related .......:
+; Link ..........:
+; Example .......: No
+; ===============================================================================================================================
+Func do_RESIZE()
+    _DebugOut("+++: do_RESIZE() entered")
+
+    ;saveMainWinMetrics($aMainWin)
+    ;GUIDelete($aMainWin[$hW])
+    ;CreateAllControls()
+
+    ; If (Not $bRunning) Then
+    ;SetupLocations()
+    RelocateControls();$CALL_SETUPLOCATIONS)
+    ;EndIf
+
+    _DebugOut("+++: do_RESIZE() returns")
+    Return $GUI_RUNDEFMSG
+EndFunc   ;==>do_RESIZE
+
+Func setVisible($info, $truefalse)
+    Local $id
+
+    $id = $info[$iID]
+
+    If ($truefalse) Then
+        GUICtrlSetState($id, $GUI_SHOW)
+    Else
+        GUICtrlSetState($id, $GUI_HIDE)
+    EndIf
+EndFunc   ;==>setVisible
+
+Func handle_STOP_btn()
+    _DebugOut("+++: handle_STOP_btn() entered")
+    $bFTPStop = True
+    _DebugOut("+++: set $bFTPStop = " & $bFTPStop)
+    _logMsg(" ... Stopping ...")
+    _logMsg("")
+EndFunc   ;==>handle_STOP_btn
+
+Func checkFTPStop()
+    If ($bFTPStop) Then
+        _logMsg("...Stopped...")
+        _logmsg("")
+        Return True
+    Else
+        Return False
+    EndIf
+EndFunc   ;==>checkFTPStop
+
+; #FUNCTION# ====================================================================================================================
+; Name ..........: makeArray_0_based
+; Description ...: Convert a 1-based array to a 0-based array
+; Syntax ........: makeArray_0_based(Byref $ar)
+; Parameters ....: $ar - [in/out] The array to modify
+; Return values .: None ; The caller's array is updated (if necessary)
+; Author ........: Andy Scharmer
+; Modified ......:
+; Remarks .......: If the first element in the caller's array is all digits,
+;                  it's assumed to be a 1-based array, and that element is
+;                  deleted to make the array 0-based.
+;                  If it is not all digits, it's assumed to be 0-based
+;                  already, and the array is left unchanged.
+; Related .......:
+; Link ..........:
+; Example .......: No
+; ===============================================================================================================================
+Func makeArray_0_based(ByRef $ar)
+    Local $ch
+
+    If (Not IsArray($ar)) Then Return
+
+    For $ch In StringSplit($ar[0], "")
+        If (StringInStr("0123456789", $ch) == 0) Then Return (False)
+    Next
+
+    _ArrayDelete($ar, 0)
+EndFunc   ;==>makeArray_0_based
+
+Func getlist($hConn, ByRef $ar, $sDir)
+    ;_DebugOut("+++: getlist($hConn, ByRef $ar, " & $sDir & ") entered")
+    Local $arFiles, $arDirs, $ndx, $err, $errstr, $ret
+    If (StringInStr($sDir, "IOT Binary")) Then
+        _ArrayAdd($ar, $sDir & " ... <skipped> ...")
+        Return ; Ignore the "IOT Binary" directory
+    EndIf
+
+    _logmsg("getlist: " & $sDir)
+    If (StringLeft($sDir, 2) == "//") Then $sDir = StringTrimLeft($sDir, 1)
+
+    $arDirs = StringSplit("", "")
+    $arFiles = StringSplit("", "")
+
+    _ArrayAdd($ar, $sDir)
+    ;_debugout("+++: Added dir: " & $sDir)
+    ;_DumpArray($ar, "$ar")
+
+    $ret = _myFTP_DirSetCurrent($hConn, $sDir)
+
+    $err = @error
+
+    If ($ret == 0) Or ($err <> 0) Then
+        $errstr = "ERROR: after call to _myFTP_DirSetCurrent()" & @CRLF _
+                 & "$hConn = " & Hex($hConn) & @CRLF _
+                 & "$dir  = " & $sDir & @CRLF _
+                 & "$err =  " & $err & @CRLF _
+                 & "$ret =  " & $ret
+        _logMsg($errstr)
+        ;_DebugOut("+++: " & $errstr)
+        ;_DebugOut("+++: return(" & 0 & ")")
+        Return
+    EndIf
+    ;_logMsg("Set dir OK")
+
+
+    ; _logmsg("_FTP_ListToArray() to get dirs")
+    $arDirs = _FTP_ListToArray($hConn, 1)
+    ; _DumpArray($arDirs, "$arDirs")
+
+    ;_logmsg("_FTP_ListToArray() to get files")
+    $arFiles = _FTP_ListToArray($hConn, 2)
+    For $ndx = 1 To UBound($arFiles) - 1
+        _ArrayAdd($ar, $sDir & "/" & $arFiles[$ndx])
+        ;_debugout("+++: Added file: " & $sDir& "/" & $arFiles[$ndx])
+        ;_DumpArray($ar, "$ar")
+    Next
+
+    For $ndx = 1 To UBound($arDirs) - 1
+        getlist($hConn, $ar, $sDir & "/" & $arDirs[$ndx])
+    Next
+
+    ;_DumpArray($arFiles, "$arFiles")
+EndFunc   ;==>getlist
+
+; Timer Events
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; WM_TIMER() - Handle a timer event
+;
+; PARAMS: All are ignored
+;
+; RETURNS: $GUI_RUNDEFMSG
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func WM_TIMER($hWnd, $iMsg, $iwParam, $ilParam)
+    #forceref $hWnd, $iMsg, $ilParam
+    Switch _Timer_GetTimerID($iwParam)
+        Case $iID_Timer1
+            _UpdateStatusBarClock()
+    EndSwitch
+    Return $GUI_RUNDEFMSG
+EndFunc   ;==>WM_TIMER
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; _UpdateStatusBarClock() - Update the Clock on the lower right
+;                           statusbar element
+;
+; PARAMS: <none>
+;
+; RETURNS: <nothing>
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func _UpdateStatusBarClock()
+    ;_DebugOut("+++: _UpdateStatusBarClock()")
+    Local $diffstr, $diff, $tdiff
+    Local $hh, $mm, $ss
+
+    If ($iStartTimer) Then
+        $tdiff = _Timer_Diff($iStartTimer)
+        $diff = Floor($tdiff / 1000)
+        $ss = Floor(Mod($diff, 60))
+        $mm = Floor(Mod(($diff / 60), 60))
+        $hh = Floor(Mod(($diff / 60 / 60), 60))
+        $diffstr = StringFormat("%02d:%02d:%02d", $hh, $mm, $ss)
+        If ($hh + $mm + $ss <> 0) Then
+            ;_logMsg($diffstr)
+            UpdateStatusBarRightText($diffstr)
+        EndIf
+    EndIf
+EndFunc   ;==>_UpdateStatusBarClock
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;  handle_TEST_btn - Handle TEST button click event
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func handle_TEST_btn()
+    _CallOnce_RegisterFunc("do_TEST")
+EndFunc   ;==>handle_TEST_btn
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; do_TEST() - Do whatever test functionality that's associated
+;             with the pressing of the TEST button
+;
+; (called either from a menu click event or by registering
+;  this function from within a button event handler.)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Func do_TEST()
+    _DebugOut("+++: do_TEST() entered")
+    Local $session, $hConn, $ar, $sDir, $ndx
+
+    UpdateStatusBarLeftText("TEST Mode Button clicked...")
+
+    clearListView()
+    _logMsg("Validating data...")
+    If (Gui2Globals() == 0) Then Return
+    If (myPing($sIP) == 0) Then Return
+
+    clearListView()
+
+    _logMsg("Opening...")
+    $session = _myFTP_Open('_myFTP Control')
+    If ($session == 0) Then
+        _logMsg("Open failed")
+        Return
+    EndIf
+
+    _logMsg("Opened OK")
+
+    _logMsg("Connecting...")
+    $hConn = _myFTP_Connect($session, $sIP, $sUserName, $sPassword)
+    If ($hConn == 0) Then
+        _logMsg("Connect failed")
+        Return
+    EndIf
+    _logMsg("Connect OK")
+
+    _logMsg("Setting current dir ...")
+    $sDir = "/"
+
+    $ar = StringSplit("", "")
+
+    getlist($hConn, $ar, $sDir)
+    _ArraySort($ar, 0, 1)
+    ;_DumpArray($ar, "$ar")
+
+    For $ndx = 1 To UBound($ar) - 1
+        _logMsg($ar[$ndx])
+    Next
+
+    _logMsg("Closing...")
+    _myFTP_Close($session)
+    _logMsg("Closed")
+
+EndFunc   ;==>do_TEST
+
+#
+# Start of User defined commands
+#
+#   Syntax doc: http://www.scintilla.org/SciTEDoc.html
+#
+# Script version: 1.0
+#
+
+myLib=C:\Andy\AutoIT-src\myLib
+where1="C:\PROGRAm files\autoit3\include\*.au3" $(myLib)\*.au3
+findcmd=C:\Windows\System32\Findstr.exe
+
+#   "Find Definitions"
+# Look in the C:\Program Files\AutoIt3\Include directory for any .au3 file
+# that has a definition for the currently selected word (or the word the
+# cursor is on)
+#
+# cmd=C:\Andy\MyUtils\xgrep.bat -i
+command.name.40.$(au3)=
+command.40.$(au3)=$(findcmd) /N /R /I /C:"^global [0-9a-f].* $(CurrentWord) =" $(where1)
+command.subsystem.40.$(au3)=0
+command.save.before.40.$(au3)=2
+
+#  "Find References"
+# Look in the C:\Program Files\AutoIt3\Include directory for any .au3 file
+# that has references to the currently selected word (or the word the
+# cursor is on)
+#
+command.name.41.$(au3)=
+command.41.$(au3)=$(findcmd) /N /I /C:"$(CurrentWord)" $(where1)
+command.subsystem.41.$(au3)=0
+#                             2 = Don't save before running this command
+command.save.before.41.$(au3)=2
+
+# "Andy's FunctionList"
+# Display a popup window with a list of all functions in the current .au3 file,
+# showing the function name and its parameters.  Allow the operator to click
+# on a name to reposition the source file to that line.
+#
+command.name.42.$(au3)=My Function list
+command.42.$(au3)="C:\Util\Misc\FunctionList.exe" "$(FilePath)"
+command.subsystem.42.$(au3)=0
+command.shortcut.42.$(au3)=Ctrl+Alt+F
+#                             1 = Save before running this command
+command.save.before.42.$(au3)=1
+
+#
+# Find Selected Text in the Current Document
+#
+command.43.=$(findcmd) /N /I /C:"$(CurrentWord)" "$(FilePath)" nul
+command.subsystem.43=0
+command.save.before.43=1
+
+#
+# Find Selected Text in all Open Documents
+#
+command.44.=C:\Util\Misc\AutoITFileNames.exe -find "$(CurrentWord)"
+command.subsystem.44=0
+command.save.before.44=0
+
+# 45 Generates a function header and inserts it into the document.
+command.name.45.$(au3)=my Function Header
+command.subsystem.45.$(au3)=3
+command.45.$(au3)=InvokeTool AutoItTools.InsertMyHeader
+command.shortcut.45.$(au3)=Ctrl+Shift+H
+command.save.before.45.$(au3)=2
+
+# 46 Add a _DebugOut statement that displays the hilighted data or the word under the cursor like this:
+command.name.46.$(au3)=
+command.subsystem.46.$(au3)=3
+command.46.$(au3)=InvokeTool AutoItTools.addDebugOut
+###command.shortcut.46.$(au3)=Ctrl+Shift+H
+command.save.before.46.$(au3)=2
+
+# 46 Add a _DebugOut statement that displays the hilighted data or the word under the cursor like this:
+command.name.47.$(au3)=
+command.subsystem.47.$(au3)=3
+command.47.$(au3)=InvokeTool AutoItTools.addConsoleWrite
+###command.shortcut.47.$(au3)=Ctrl+Shift+H
+command.save.before.47.$(au3)=2
+
+
+#
+# Add my commands to the user context menu
+#
+user.context.menu=\
+||\
+40 - Find Definition | 1140 |\
+41 - Find References | 1141 |\
+||\
+42 - Function List   | 1142 |\
+43 - Find Selected Text in the Current Doc | 1143 |\
+44 - Find Selected Text in All Opened Docs | 1144 |\
+||\
+46 - add _DebugOut | 1146 |\
+47 - add ConsoleWrite | 1147 |\
+
+; error.inline=1 - Embed red text below source error and warning lines after compiling
+; error.inline=0 - Prohibit this behavior.
+error.inline=1
+
+find.replace.advanced=1
+###openpath.$(au3)=$(SciteDefaultHome)\..\include;$(myLib)
+###openpath.beta.$(au3)=$(SciteDefaultHome)\..\beta\include;$(myLib)
+UDFCreator=Andy Scharmer
+
+user.shortcuts=\
+Ctrl+B|IDM_SHOWCALLTIP|\
+
+
