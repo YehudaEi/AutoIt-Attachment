@@ -1,0 +1,206 @@
+SEASON,DIRECTOR_CODE,MERCH_MANAGER_CODE,BUYER_CODE,17_Way_Split
+W13,W  ,031,0P8,17.Ladies Baur
+W13,W  ,031,0P9,17.Ladies Baur
+W13,W  ,031,0PA,17.Ladies Baur
+W13,W  ,031,0PR,17.Ladies Baur
+W13,W  ,031,0SR,17.Ladies Baur
+W13,W  ,031,0ST,17.Ladies Baur
+W13,E  ,067,0KN,17.Electrical Appliances
+W13,E  ,067,0KP,17.Electrical Appliances
+W13,E  ,067,0KQ,17.Electrical Appliances
+W13,E  ,067,0KR,17.Electrical Appliances
+W13,E  ,068,0LD,17.Electrical Appliances
+W13,E  ,068,0LG,17.Electrical Appliances
+W13,E  ,068,0LH,17.Electrical Appliances
+W13,E  ,068,0LJ,17.Electrical Appliances
+W13,E  ,068,0LK,17.Electrical Appliances
+W13,P  ,071,0NR,17.Fitness
+W13,P  ,071,0NS,17.Fitness
+W13,P  ,071,0NT,17.Fitness
+W13,P  ,071,0NU,17.Fitness
+W13,P  ,071,0PD,17.Fitness
+W13,P  ,072,0QC,17.Fitness
+W13,P  ,072,0WC,17.Fitness
+W13,P  ,072,0WD,17.Fitness
+W13,P  ,073,0RE,17.Fitness
+W13,P  ,073,0WF,17.Fitness
+W13,P  ,073,0WG,17.Fitness
+W13,P  ,073,0WJ,17.Fitness
+W13,F  ,013,0P7,17.Footwear
+W13,F  ,013,0RJ,17.Footwear
+W13,F  ,013,0RK,17.Footwear
+W13,F  ,013,0RL,17.Footwear
+W13,F  ,013,0RM,17.Footwear
+W13,F  ,013,0RN,17.Footwear
+W13,F  ,060,0EG,17.Footwear
+W13,F  ,060,0EH,17.Footwear
+W13,F  ,060,0EJ,17.Footwear
+W13,F  ,060,0EL,17.Footwear
+W13,E  ,069,0ME,17.Home Entertainment
+W13,E  ,069,0MF,17.Home Entertainment
+W13,E  ,069,0MG,17.Home Entertainment
+W13,E  ,070,0NG,17.Home Entertainment
+W13,E  ,070,0NH,17.Home Entertainment
+W13,E  ,070,0NP,17.Home Entertainment
+W13,E  ,070,0NQ,17.Home Entertainment
+W13,I  ,065,0HG,17.Home Furniture
+W13,I  ,065,0HH,17.Home Furniture
+W13,I  ,065,0HP,17.Home Furniture
+W13,I  ,065,0HQ,17.Home Furniture
+W13,I  ,065,0HR,17.Home Furniture
+W13,I  ,065,0HS,17.Home Furniture
+W13,I  ,065,0HT,17.Home Furniture
+W13,I  ,065,0HU,17.Home Furniture
+W13,I  ,064,0GB,17.Home Textiles
+W13,I  ,064,0GC,17.Home Textiles
+W13,I  ,064,0GF,17.Home Textiles
+W13,I  ,064,0GH,17.Home Textiles
+W13,I  ,064,0GJ,17.Home Textiles
+W13,I  ,066,0TB,17.Household Articles
+W13,I  ,066,0TD,17.Household Articles
+W13,I  ,066,0TE,17.Household Articles
+W13,I  ,066,0TF,17.Household Articles
+W13,I  ,066,0TH,17.Household Articles
+W13,I  ,066,0TP,17.Household Articles
+W13,I  ,066,0TQ,17.Household Articles
+W13,I  ,066,0TR,17.Household Articles
+W13,I  ,066,0TX,17.Household Articles
+W13,F  ,063,0FC,17.Jewellery
+W13,F  ,063,0FD,17.Jewellery
+W13,F  ,063,0FF,17.Jewellery
+W13,F  ,063,0FG,17.Jewellery
+W13,F  ,063,0FH,17.Jewellery
+W13,C  ,039,0PT,17.Kidswear
+W13,C  ,039,0RT,17.Kidswear
+W13,C  ,039,0RU,17.Kidswear
+W13,C  ,039,0RV,17.Kidswear
+W13,C  ,039,0RW,17.Kidswear
+W13,C  ,039,0RX,17.Kidswear
+W13,F  ,076,0VE,17.Ladies 44/47
+W13,F  ,092,0EX,17.Ladies 44/47
+W13,F  ,092,0EY,17.Ladies 44/47
+W13,I  ,078,0VF,17.Ladies 44/47
+W13,I  ,093,0SM,17.Ladies 44/47
+W13,L  ,075,0VC,17.Ladies 44/47
+W13,M  ,077,0VB,17.Ladies 44/47
+W13,M  ,091,0EU,17.Ladies 44/47
+W13,M  ,091,0EV,17.Ladies 44/47
+W13,M  ,091,0EW,17.Ladies 44/47
+W13,W  ,011,0PW,17.Ladies 44/47
+W13,W  ,011,0SB,17.Ladies 44/47
+W13,W  ,011,0SI,17.Ladies 44/47
+W13,W  ,011,0SK,17.Ladies 44/47
+W13,W  ,011,0SL,17.Ladies 44/47
+W13,W  ,011,0SN,17.Ladies 44/47
+W13,W  ,011,0SO,17.Ladies 44/47
+W13,W  ,011,0SP,17.Ladies 44/47
+W13,W  ,011,0SQ,17.Ladies 44/47
+W13,W  ,011,0SU,17.Ladies 44/47
+W13,W  ,012,0P6,17.Ladies 44/47
+W13,W  ,012,0QM,17.Ladies 44/47
+W13,W  ,012,0QP,17.Ladies 44/47
+W13,W  ,012,0R1,17.Ladies 44/47
+W13,W  ,012,0R2,17.Ladies 44/47
+W13,W  ,012,0SC,17.Ladies 44/47
+W13,W  ,012,0SD,17.Ladies 44/47
+W13,W  ,012,0SF,17.Ladies 44/47
+W13,W  ,012,0SH,17.Ladies 44/47
+W13,W  ,024,0H2,17.Ladies 44/47
+W13,W  ,036,0QN,17.Ladies 44/47
+W13,W  ,074,0VA,17.Ladies 44/47
+W13,W  ,079,0Y2,17.Ladies 44/47
+W13,W  ,079,0Y4,17.Ladies 44/47
+W13,W  ,079,0YJ,17.Ladies 44/47
+W13,W  ,079,0YK,17.Ladies 44/47
+W13,W  ,079,0YL,17.Ladies 44/47
+W13,W  ,079,0YM,17.Ladies 44/47
+W13,W  ,079,0YN,17.Ladies 44/47
+W13,W  ,079,0YP,17.Ladies 44/47
+W13,W  ,079,0YQ,17.Ladies 44/47
+W13,W  ,079,0YR,17.Ladies 44/47
+W13,W  ,079,0YT,17.Ladies 44/47
+W13,W  ,079,0YU,17.Ladies 44/47
+W13,W  ,079,0YV,17.Ladies 44/47
+W13,W  ,079,0YY,17.Ladies 44/47
+W13,W  ,084,0OK,17.Ladies 44/47
+W13,W  ,084,0OL,17.Ladies 44/47
+W13,W  ,085,0OQ,17.Ladies 44/47
+W13,W  ,085,0OR,17.Ladies 44/47
+W13,W  ,085,0OS,17.Ladies 44/47
+W13,W  ,085,0OU,17.Ladies 44/47
+W13,W  ,086,0OC,17.Ladies 44/47
+W13,W  ,086,0OD,17.Ladies 44/47
+W13,W  ,086,0OV,17.Ladies 44/47
+W13,W  ,086,0OW,17.Ladies 44/47
+W13,W  ,086,0OX,17.Ladies 44/47
+W13,W  ,086,0OY,17.Ladies 44/47
+W13,W  ,086,0OZ,17.Ladies 44/47
+W13,W  ,087,0O1,17.Ladies 44/47
+W13,W  ,089,0BV,17.Ladies 44/47
+W13,W  ,089,0BW,17.Ladies 44/47
+W13,W  ,089,0BX,17.Ladies 44/47
+W13,W  ,089,0BY,17.Ladies 44/47
+W13,W  ,089,0BZ,17.Ladies 44/47
+W13,W  ,089,0CR,17.Ladies 44/47
+W13,W  ,089,0CS,17.Ladies 44/47
+W13,W  ,089,0CV,17.Ladies 44/47
+W13,W  ,089,0CW,17.Ladies 44/47
+W13,W  ,089,0CX,17.Ladies 44/47
+W13,W  ,089,0CY,17.Ladies 44/47
+W13,W  ,089,0EA,17.Ladies 44/47
+W13,W  ,089,0EZ,17.Ladies 44/47
+W13,W  ,089,0FK,17.Ladies 44/47
+W13,W  ,090,0CT,17.Ladies 44/47
+W13,W  ,090,0CZ,17.Ladies 44/47
+W13,W  ,090,0DH,17.Ladies 44/47
+W13,W  ,090,0DN,17.Ladies 44/47
+W13,W  ,090,0FA,17.Ladies 44/47
+W13,W  ,090,0FL,17.Ladies 44/47
+W13,W  ,090,0QA,17.Ladies 44/47
+W13,L  ,044,0P1,17.Lingerie & Nightwear
+W13,L  ,044,0P2,17.Lingerie & Nightwear
+W13,L  ,044,0P3,17.Lingerie & Nightwear
+W13,W  ,037,0QG,17.Lingerie & Nightwear
+W13,W  ,037,0QK,17.Lingerie & Nightwear
+W13,W  ,037,0R4,17.Lingerie & Nightwear
+W13,W  ,037,0R5,17.Lingerie & Nightwear
+W13,W  ,037,0R6,17.Lingerie & Nightwear
+W13,W  ,037,0R7,17.Lingerie & Nightwear
+W13,W  ,037,0S1,17.Lingerie & Nightwear
+W13,W  ,037,0S2,17.Lingerie & Nightwear
+W13,W  ,037,0S3,17.Lingerie & Nightwear
+W13,W  ,037,0S4,17.Lingerie & Nightwear
+W13,W  ,037,0S5,17.Lingerie & Nightwear
+W13,W  ,037,0S6,17.Lingerie & Nightwear
+W13,W  ,037,0SZ,17.Lingerie & Nightwear
+W13,M  ,034,0Q6,17.Menswear
+W13,M  ,034,0R8,17.Menswear
+W13,M  ,034,0R9,17.Menswear
+W13,M  ,034,0RP,17.Menswear
+W13,M  ,034,0RQ,17.Menswear
+W13,M  ,034,0RR,17.Menswear
+W13,O  ,008,037,Blank
+W13,O  ,008,039,Blank
+W13,O  ,008,040,Blank
+W13,O  ,008,089,Blank
+W13,O  ,008,098,Blank
+W13,O  ,008,099,Blank
+W13,M  ,094,0DV,17.Ladies Schwab
+W13,W  ,032,0QL,17.Ladies Schwab
+W13,W  ,032,0R3,17.Ladies Schwab
+W13,W  ,014,0RS,17.Sports Clothing
+W13,W  ,014,0SG,17.Sports Clothing
+W13,W  ,035,0QI,17.Sports Clothing
+W13,W  ,035,0QO,17.Sports Clothing
+W13,W  ,035,0SA,17.Sports Clothing
+W13,W  ,035,0RO,17.Sports Shoe
+W13,W  ,035,0SJ,17.Sports Shoe
+W13,W  ,038,0PB,17.Swimwear
+W13,W  ,038,0QH,17.Swimwear
+W13,W  ,038,0QJ,17.Swimwear
+W13,W  ,038,0S7,17.Swimwear
+W13,W  ,038,0S8,17.Swimwear
+W13,W  ,033,0RH,Blank
+W13,W  ,033,0RI,Blank
+W13,W  ,033,0S9,Blank
+W13,W  ,098,0Z9,Blank
