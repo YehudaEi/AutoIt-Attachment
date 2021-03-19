@@ -1,0 +1,1 @@
+ConsoleWrite('TEST ConsoleWrite' & @CRLF)
