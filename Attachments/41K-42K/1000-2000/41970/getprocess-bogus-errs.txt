@@ -1,0 +1,24 @@
+AutoIt3 Syntax Checker v1.54.22  Copyright (c) 2007-2011 Tylo & AutoIt Team
+
+d:\prj\lib\consoleprint\getprocess.au3(172,47) : ERROR: syntax error
+global $IO_COUNTERS=dllstructcreate(ULONGLONG ReadOperationCount
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+d:\prj\lib\consoleprint\getprocess.au3(174,51) : WARNING: $lpIoCounters: possibly used before declaration.
+func GetProcessIoCounters($hProcess, $lpIoCounters)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+d:\prj\lib\consoleprint\getprocess.au3(176,85) : WARNING: $hProcess: possibly used before declaration.
+	return dllcall("kernel32.dll", "DWORD", "GetProcessIoCounters", "HANDLE", $hProcess,
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+d:\prj\lib\consoleprint\getprocess.au3(176,108) : ERROR: 'Return' not allowed from global scope.
+	return dllcall("kernel32.dll", "DWORD", "GetProcessIoCounters", "HANDLE", $hProcess, "ptr", $lpIoCounters)
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+d:\prj\lib\consoleprint\getprocess.au3(177,1) : ERROR: syntax error
+endfunc
+^
+d:\prj\lib\consoleprint\getprocess.au3(174,51) : ERROR: $lpIoCounters: undeclared global variable.
+func GetProcessIoCounters($hProcess, $lpIoCounters)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+d:\prj\lib\consoleprint\getprocess.au3(176,85) : ERROR: $hProcess: undeclared global variable.
+	return dllcall("kernel32.dll", "DWORD", "GetProcessIoCounters", "HANDLE", $hProcess,
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+getprocess.au3 - 5 error(s), 2 warning(s)
