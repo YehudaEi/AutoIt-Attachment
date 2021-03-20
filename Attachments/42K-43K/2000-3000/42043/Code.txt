@@ -1,0 +1,6 @@
+$colItems = ""
+$objPrinters = ObjGet("WinNT://" & $strComputer & "" )
+
+Dim $filter[2] = ["PrintQueue"]
+$objPrinters.Filter = $filter
+$colItems = $objPrinters
