@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<?Copyright (c) Microsoft Corporation. All rights reserved.?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" company="Microsoft Corporation" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved." description="Microsoft Windows Update Client SelfUpdate ActiveX 7.6.7600.256" displayName="Microsoft Windows Update Client SelfUpdate ActiveX 7.6.7600.256" manifestVersion="1.0" supportInformation="http://support.microsoft.com">
+  <assemblyIdentity buildType="release" language="neutral" name="WUClient-SelfUpdate-ActiveX" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="7.6.7600.256" versionScope="nonSxS"/>
+  <package identifier="WindowsUpdateClient-SelfUpdate-ActiveX-Package" releaseType="Feature Pack" restart="possible">
+    <parent>
+      <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-Foundation-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.0.6000.16386" versionScope="nonSxS"/>
+      <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-Foundation-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.0.6001.18000" versionScope="nonSxS"/>
+      <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-Foundation-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+    </parent>
+    <update name="ActiveX">
+      <applicable disposition="staged">
+        <updateComponent elevate="version">
+          <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-WindowsUpdateClient-ActiveX" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="7.6.7600.256" versionScope="nonSxS"/>
+        </updateComponent>
+      </applicable>
+      <component>
+        <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-WindowsUpdateClient-ActiveX.Deployment" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="7.6.7600.256" versionScope="nonSxS"/>
+      </component>
+    </update>
+  </package>
+</assembly>
