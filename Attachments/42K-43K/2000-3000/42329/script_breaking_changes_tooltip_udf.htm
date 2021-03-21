@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ToolTip UDF - Script Breaking Changes</title>
+  <meta charset="ISO-8859-1">
+  <link href="css/default.css" rel="stylesheet">
+
+<meta name="NetsparkQuiltingResult" total-length="7040" removed="0" rules-found="w2341,w6774,w5536,w6750,w4947,w8757" />
+</head>
+<body>
+<h1>ToolTip UDF - Script Breaking Changes</h1>
+The ToolTip UDF was completely rewritten to remove magic numbers, make it easier to implement ToolTips in scripts, standardize the parameters and documentation, and correct bugs.<br>
+This means that scripts written for AutoIt up to version 3.3.8.1 won't run with later versions and need to be modified.<br>
+The following table lists the differences between the old and the new version.
+<p><p>
+<b>Changed and removed functions/parameters</b>
+<table summary="Renamed, removed and  functions/parameters">
+  <tr>
+    <th class=width25>Old UDF<br>Function/Parameter</th>
+    <th>Comments</th>
+  </tr>
+ <tr>
+  <td><a href ="Help file entries/_GUIToolTip_Activate.htm">_GUIToolTip_Activate</a></td>
+  <td>$fActivate parameter removed, only used to activate a tooltip as it no longer is used to deactivate one</td>
+ </tr>
+ <tr>
+  <td><a href ="Help file entries/_GUIToolTip_AddTool.htm">_GUIToolTip_AddTool</a></td>
+  <td>The $iFlags parameters have been changed to use the ToolTip constants instead of magic numbers, also the default setting has changed to BitOr($TTF_SUBCLASS, $TTF_IDISHWND)</td>
+ </tr>
+ <tr>
+  <td><a href ="Help file entries/_GUIToolTip_BitsToTTF.htm">_GUIToolTip_BitsToTTF</a></td>
+  <td>Functionality of this has been totally altered, because there are no longer any magic numbers for the tool flags, this function now translates
+  the value of the flags to a comma delimited text string containing the constants used in the flags parameter.</td>
+ </tr>
+ <tr>
+  <td><a href ="Help file entries/_GUIToolTip_Create.htm">_GUIToolTip_Create</a></td>
+  <td>New default constant for tooltip control creation</td>
+ </tr>
+ <tr>
+  <td>&nbsp;&nbsp;&nbsp;$_TT_ghTTDefaultStyle</td>
+  <td>Its value is equal to BitOr($TTS_ALWAYSTIP, $TTS_NOPREFIX)</td>
+ </tr>
+ <tr>
+  <td><a href ="Help file entries/_GUIToolTip_Destroy.htm">_GUIToolTip_Destroy</a></td>
+  <td>Documented @error return values</td>
+ </tr>
+ <tr>
+  <td><a href ="Help file entries/_GUIToolTip_EnumTools.htm">_GUIToolTip_EnumTools</a></td>
+  <td>The return values have changed to reflect the changes in <a href ="Help file entries/_GUIToolTip_Add.htm">_GUIToolTip_Add</a> and <a href ="Help file entries/_GUIToolTip_BitsToTTF.htm">_GUIToolTip_BitsToTTF</a>, the returned array's [0] element is now a text string containing the return
+  from the <a href ="Help file entries/_GUIToolTip_BitsToTTF.htm">_GUIToolTip_BitsToTTF</a> function instead of the magic numbers used previously.</td>
+ </tr>
+ <tr>
+  <td><a href ="Help file entries/_GUIToolTip_GetBubbleHeight.htm">_GUIToolTip_GetBubbleHeight</a></td>
+  <td>Default value for the $iFlags parameter changed to BitOR($TTF_IDISHWND, $TTF_SUBCLASS)</td>
+ </tr>
+  <td><a href ="Help file entries/_GUIToolTip_GetBubbleSize.htm">_GUIToolTip_GetBubbleSize</a></td>
+  <td>Default value for the $iFlags parameter changed to BitOR($TTF_IDISHWND, $TTF_SUBCLASS)</td>
+ </tr>
+  <td><a href ="Help file entries/_GUIToolTip_GetBubbleWidth.htm">_GUIToolTip_GetBubbleWidth</a></td>
+  <td>Default value for the $iFlags parameter changed to BitOR($TTF_IDISHWND, $TTF_SUBCLASS)</td>
+ </tr>
+ <tr>
+  <td><a href ="Help file entries/_GUIToolTip_GetCurrentTools.htm">_GUIToolTip_GetCurrentTools</a></td>
+  <td>The return values have changed to reflect the changes in <a href ="Help file entries/_GUIToolTip_Add.htm">_GUIToolTip_Add</a> and <a href ="Help file entries/_GUIToolTip_BitsToTTF.htm">_GUIToolTip_BitsToTTF</a>, the returned array's [0] element is now a text string containing the return
+  from the <a href ="Help file entries/_GUIToolTip_BitsToTTF.htm">_GUIToolTip_BitsToTTF</a> function instead of the magic numbers used previously.</td>
+ </tr>
+ <tr>
+  <td><a href ="Help file entries/_GUIToolTip_GetDelayTime.htm">_GUIToolTip_GetDelayTime</a></td>
+  <td>The function now correctly uses the ToolTip constants to retrieve the tooltip delay times. The previous values used were 0 - 2, the correct values for
+  the duration constants are 1 - 3</td>
+ </tr>
+ <tr>
+  <td><a href ="Help file entries/_GUIToolTip_GetTitleBitMap.htm">_GUIToolTip_GetTitleBitMap</a></td>
+  <td>Corrected a long standing bug in the function that prevented it from returning the correct information.</td>
+ </tr>
+ <tr>
+  <td><a href ="Help file entries/_GUIToolTip_GetTitleText.htm">_GUIToolTip_GetTitleText</a></td>
+  <td>Corrected a long standing bug in the function that prevented it from returning the correct information.</td>
+ </tr>
+ <tr>
+  <td><a href ="Help file entries/_GUIToolTip_GetToolInfo.htm">_GUIToolTip_GetToolInfo</a></td>
+  <td>The return values have changed to reflect the changes in <a href ="Help file entries/_GUIToolTip_Add.htm">_GUIToolTip_Add</a> and <a href ="Help file entries/_GUIToolTip_BitsToTTF.htm">_GUIToolTip_BitsToTTF</a>, the returned array's [0] element is now a text string containing the return
+  from the <a href ="Help file entries/_GUIToolTip_BitsToTTF.htm">_GUIToolTip_BitsToTTF</a> function instead of the magic numbers used previously.</td>
+ </tr>
+ <tr>
+  <td><a href ="Help file entries/_GUIToolTip_HitTest.htm">_GUIToolTip_HitTest</a></td>
+  <td>The return values have changed to reflect the changes in <a href ="Help file entries/_GUIToolTip_Add.htm">_GUIToolTip_Add</a> and <a href ="Help file entries/_GUIToolTip_BitsToTTF.htm">_GUIToolTip_BitsToTTF</a>, the returned array's [0] element is now a text string containing the return
+  from the <a href ="Help file entries/_GUIToolTip_BitsToTTF.htm">_GUIToolTip_BitsToTTF</a> function instead of the magic numbers used previously.</td>
+ </tr>
+ <tr>
+  <td><a href ="Help file entries/_GUIToolTip_SetToolInfo.htm">_GUIToolTip_SetToolInfo</a></td>
+  <td>The $iFlags parameters have been changed to use the ToolTip constants instead of magic numbers, also the default setting has changed to BitOr($TTF_SUBCLASS, $TTF_IDISHWND)</td>
+ </tr>
+ <tr>
+  <td><a href ="Help file entries/_GUIToolTip_ToolToArray.htm">_GUIToolTip_ToolToArray</a></td>
+  <td>The [0] element of the returned array now correctly returns the flag value based on the tooltip constants instead of the magic numbers used previously</td>
+ </tr>
+ <tr>
+  <td><a href ="Help file entries/_GUIToolTip_TTFToBits.htm">_GUIToolTip_TTFToBits</a></td>
+  <td>Removed</td>
+ </tr>
+</table>
+<p><p>
+<b>New functions/parameters</b>
+<table summary="New functions/parameters">
+  <tr>
+    <th class=width25>New UDF<br>Function/Parameter</th>
+    <th>Comments</th>
+  </tr>
+ <tr>
+  <td><a href ="Help file entries/_GUIToolTip_Dectivate.htm">_GUIToolTip_Dectivate</a></td>
+  <td>This function is used to deactivate a tooltip, replaces the dual functionality of the <a href ="Help file entries/_GUIToolTip_Activate.htm">_GUIToolTip_Activate</a> function.</td>
+ </tr>
+</table>
+</body>
+</html>
