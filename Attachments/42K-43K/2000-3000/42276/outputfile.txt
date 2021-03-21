@@ -1,0 +1,33 @@
+Looking up host "workserver"
+Connecting to 192.168.xx.xx port 22
+Server version: SSH-v.v-OpenSSH_v.v
+Using SSH protocol version 2
+We claim version: SSH-v.0-PuTTY_Release_v.vv
+Doing Diffie-Hellman group exchange
+Doing Diffie-Hellman key exchange with hash xxx-xxx
+Host key fingerprint is:
+ssh-rsa 1024 hex key in here
+Initialised AES-xxx xxxx client->server encryption
+Initialised HMAC-SHA1 client->server MAC algorithm
+Initialised AES-xxx xxxx server->client encryption
+Initialised HMAC-xxx server->client MAC algorithm
+Using username "x".
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx.
+xxxxxxxxxxxxxxxxxxxxxx.
+xxxxxxxxxxxxxxxxxxxxxxn
+Access granted
+Opened channel for session
+Started a shell/command
+processing date 20131006
+processing date 20131007
+processing date 20131008
+lots of text that could get me sued then sued then fired goes in here, lots of text that could get me sued then sued then fired goes in here
+lots of text that could get me sued then fired goes in here, lots of text that could get me sued then fired goes in here
+lots of text that could get me sued then fired goes in here, lots of text that could get me sued then fired goes in here
+lots of text that could get me sued then fired goes in here, lots of text that could get me sued then fired goes in here
+lots of text that could get me sued then fired goes in here, lots of text that could get me sued then fired goes in here
+lots of text that could get me sued then fired goes in here, lots of text that could get me sued then fired goes in here
+lots of text that could get me sued then fired goes in here, lots of text that could get me sued then fired goes in here
+lots of text that could get me sued then fired goes in here, lots of text that could get me sued then fired goes in here
+Server sent command exit status 0
+Disconnected: All channels closed
