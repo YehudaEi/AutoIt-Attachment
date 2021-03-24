@@ -1,0 +1,3137 @@
+>"C:\Program Files\AutoIt3\SciTE\AutoIt3Wrapper\AutoIt3Wrapper.exe" /run /prod /ErrorStdOut /in "P:\Autoit\files\USD_TESTING.au3" /UserParams    
++>13:21:39 Starting AutoIt3Wrapper v.2.1.0.33    Environment(Language:0409  Keyboard:00000409  OS:WIN_XP/Service Pack 3  CPU:X64 OS:X86)
+>Running AU3Check (1.54.22.0)  from:C:\Program Files\AutoIt3
++>13:21:39 AU3Check ended.rc:0
+>Running:(3.3.8.1):C:\Program Files\AutoIt3\autoit3.exe "P:\Autoit\files\USD_TESTING.au3"    
+--> Press Ctrl+Alt+F5 to Restart or Ctrl+Break to Stop
+addressbar
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+addressbar
+0
+browserx
+browsery
+busy
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+busy
+0
+contenteditable
+fullscreen
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+fullscreen
+0
+height
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+height
+0
+hwnd
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+hwnd
+0
+innerhtml
+innerhtml
+
+<SCRIPT language=JavaScript>
+disable_right_click();
+document.onkeydown = uspKeydownHandler;
+activateActionKeys();
+
+if ((typeof ahdtop.propSupportR50 != "string") || 
+    (ahdtop.propSupportR50 == "no"))
+{
+    var txt = "<DIV ID=busygifLayer STYLE='display: none; " +
+              "position: absolute; top: 15px; right: 15px;'>" +
+              "<A HREF=\"javascript:show_action_in_progress();\">" +
+              "<IMG BORDER=0 HEIGHT=20 WIDTH=20 SRC=\"" +
+              cfgCAISD + "/img/busy.gif\"></A></DIV>";
+    document.writeln(txt);
+}
+</SCRIPT>
+<A accessKey=A onfocus='altKeyPressed("A")' href="javascript:void(0)"></A><A accessKey=B onfocus='altKeyPressed("B")' href="javascript:void(0)"></A><A accessKey=C onfocus='altKeyPressed("C")' href="javascript:void(0)"></A><A accessKey=D onfocus='altKeyPressed("D")' href="javascript:void(0)"></A><A accessKey=E onfocus='altKeyPressed("E")' href="javascript:void(0)"></A><A accessKey=F onfocus='altKeyPressed("F")' href="javascript:void(0)"></A><A accessKey=G onfocus='altKeyPressed("G")' href="javascript:void(0)"></A><A accessKey=H onfocus='altKeyPressed("H")' href="javascript:void(0)"></A><A accessKey=I onfocus='altKeyPressed("I")' href="javascript:void(0)"></A><A accessKey=J onfocus='altKeyPressed("J")' href="javascript:void(0)"></A><A accessKey=K onfocus='altKeyPressed("K")' href="javascript:void(0)"></A><A accessKey=L onfocus='altKeyPressed("L")' href="javascript:void(0)"></A><A accessKey=M onfocus='altKeyPressed("M")' href="javascript:void(0)"></A><A accessKey=N onfocus='altKeyPressed("N")' href="javascript:void(0)"></A><A accessKey=O onfocus='altKeyPressed("O")' href="javascript:void(0)"></A><A accessKey=P onfocus='altKeyPressed("P")' href="javascript:void(0)"></A><A accessKey=Q onfocus='altKeyPressed("Q")' href="javascript:void(0)"></A><A accessKey=R onfocus='altKeyPressed("R")' href="javascript:void(0)"></A><A accessKey=S onfocus='altKeyPressed("S")' href="javascript:void(0)"></A><A accessKey=T onfocus='altKeyPressed("T")' href="javascript:void(0)"></A><A accessKey=U onfocus='altKeyPressed("U")' href="javascript:void(0)"></A><A accessKey=V onfocus='altKeyPressed("V")' href="javascript:void(0)"></A><A accessKey=W onfocus='altKeyPressed("W")' href="javascript:void(0)"></A><A accessKey=X onfocus='altKeyPressed("X")' href="javascript:void(0)"></A><A accessKey=Y onfocus='altKeyPressed("Y")' href="javascript:void(0)"></A><A accessKey=Z onfocus='altKeyPressed("Z")' href="javascript:void(0)"></A><A accessKey=0 onfocus='altKeyPressed("0")' href="javascript:void(0)"></A><A accessKey=1 onfocus='altKeyPressed("1")' href="javascript:void(0)"></A><A accessKey=2 onfocus='altKeyPressed("2")' href="javascript:void(0)"></A><A accessKey=3 onfocus='altKeyPressed("3")' href="javascript:void(0)"></A><A accessKey=4 onfocus='altKeyPressed("4")' href="javascript:void(0)"></A><A accessKey=5 onfocus='altKeyPressed("5")' href="javascript:void(0)"></A><A accessKey=6 onfocus='altKeyPressed("6")' href="javascript:void(0)"></A><A accessKey=7 onfocus='altKeyPressed("7")' href="javascript:void(0)"></A><A accessKey=8 onfocus='altKeyPressed("8")' href="javascript:void(0)"></A><A accessKey=9 onfocus='altKeyPressed("9")' href="javascript:void(0)"></A>
+<DIV style="POSITION: absolute; DISPLAY: none; TOP: 15px; RIGHT: 15px" id=busygifLayer><A href="javascript:show_action_in_progress();"><IMG border=0 src="/CAisd/img/busy.gif" width=20 height=20></A></DIV>
+<DIV style="POSITION: absolute; DISPLAY: block; TOP: 14px; RIGHT: 0px" id=gobtnDiv>
+<SCRIPT language=JavaScript>
+var txt = "<FORM METHOD=POST ACTION=" + cfgCgi +
+          " NAME=goBtnForm ONSUBMIT='return false;'>\n" +
+          "<INPUT TYPE=HIDDEN NAME=SID VALUE=" + cfgSID + ">\n" +
+          "<INPUT TYPE=HIDDEN NAME=FID VALUE=105>";
+document.writeln(txt);
+</SCRIPT>
+
+<FORM onsubmit="return false;" method=post name=goBtnForm action=/protected/usd-cgi/pdmweb/pdmweb.exe><INPUT value=318570990 type=hidden name=SID> <INPUT value=105 type=hidden name=FID> 
+<TABLE border=0 cellSpacing=0 cellPadding=0 height="100%">
+<TBODY>
+<TR vAlign=center>
+<TD>&nbsp; <SELECT onblur=gobtnBlur(this) id=factory onfocus=gobtnFocus(this) tabIndex=2 name=factory> 
+<SCRIPT language=JavaScript>
+if (0==dataPartition.indexOf("Tier2")){
+
+if (cfgAccessChgMgr > 0) {
+	document.write('<OPTION VALUE="chg.chg_ref_num">Change Order</OPTION>');
+}
+
+if (cfgAccessReqMgr) {
+	if ( propIsITIL ) {
+		document.write("<OPTION VALUE='in.ref_num'>Incident</OPTION>");
+		document.write("<OPTION VALUE='pr.ref_num'>Problem</OPTION>");
+	} 
+	document.write("<OPTION VALUE='cr.ref_num'>Request</OPTION>");
+}
+
+if (cfgAccessIssMgr > 0) {
+	document.write('<OPTION VALUE="iss.ref_num">Issue</OPTION>');
+}
+
+if ( typeof ahdtop.propUrlCi == "string" && ahdtop.propUrlCi.length > 0 ) {
+   document.write('<OPTION VALUE="kt">Knowledge</OPTION>');
+}
+
+if (cfgAccessInventory > 0) {
+	document.write('<OPTION VALUE="pb.userid">User by ID</OPTION>');
+	document.write('<OPTION VALUE="pb.phone_number">User by Phone</OPTION>');
+	document.write('<OPTION VALUE="pb.combo_name">User by Name</OPTION>');
+}	
+
+} else {
+
+if (cfgAccessReqMgr) {
+	if ( propIsITIL ) {
+		document.write("<OPTION VALUE='in.ref_num'>Incident</OPTION>");
+		document.write("<OPTION VALUE='pr.ref_num'>Problem</OPTION>");
+	} 
+	document.write("<OPTION VALUE='cr.ref_num'>Request</OPTION>");
+}
+
+if (cfgAccessChgMgr > 0) {
+	document.write('<OPTION VALUE="chg.chg_ref_num">Change Order</OPTION>');
+}
+
+if (cfgAccessIssMgr > 0) {
+	document.write('<OPTION VALUE="iss.ref_num">Issue</OPTION>');
+}
+
+if ( typeof ahdtop.propUrlCi == "string" && ahdtop.propUrlCi.length > 0 ) {
+   document.write('<OPTION VALUE="kt">Knowledge</OPTION>');
+}
+
+if (cfgAccessInventory > 0) {
+	document.write('<OPTION VALUE="pb.userid">User by ID</OPTION>');
+	document.write('<OPTION VALUE="pb.phone_number">User by Phone</OPTION>');
+	document.write('<OPTION VALUE="pb.combo_name">User by Name</OPTION>');
+}	
+}
+
+</SCRIPT>
+<OPTION value=chg.chg_ref_num>Change Order</OPTION><OPTION selected value=cr.ref_num>Request</OPTION><OPTION value=pb.userid>User by ID</OPTION><OPTION value=pb.phone_number>User by Phone</OPTION><OPTION value=pb.combo_name>User by Name</OPTION></SELECT> </TD>
+<TD><INPUT onblur=gobtnBlur(this) onfocus=gobtnFocus(this) tabIndex=3 size=16 name=searchKey AUTOCOMPLETE="off"> </TD>
+<TD>
+<SCRIPT language=JavaScript>
+ImgBtnCreate("btndflt", msgtext(486), "openDetail()", true, 0,
+             "Popup detail form for specified item");
+</SCRIPT>
+<A onblur=ImgBtnBlur(0); id=imgBtn0 onmouseup="return ImgBtnMouseUp(0);" onfocus=ImgBtnFocus(0); onmouseover="return ImgBtnMouseOver(0,this);" title="Popup detail form for specified item" onmouseout="return ImgBtnMouseUp(0);" onmousedown=ImgBtnMouseDown(0); onclick="return ImgBtnExecute(0);" href="JavaScript:void(0)" name=imgBtn0>
+<TABLE border=0 cellSpacing=0 cellPadding=0>
+<TBODY>
+<TR>
+<TD height=21 vAlign=center><IMG onmouseup="return ImgBtnMouseUp(0);" onmouseover="return ImgBtnMouseOver(0,this);" title="Popup detail form for specified item" onmouseout="return ImgBtnMouseUp(0);" onmousedown=ImgBtnMouseDown(0); border=0 src="/CAisd/img/button_left.gif" width=10 height=21></TD>
+<TD style="BACKGROUND: url(/CAisd/img/button_middle.gif)" id=imgBtn0_caption class=clsButtonEnabled vAlign=center noWrap align=middle><U>G</U>o</TD>
+<TD height=21 vAlign=center><IMG onmouseup="return ImgBtnMouseUp(0);" onmouseover="return ImgBtnMouseOver(0,this);" title="Popup detail form for specified item" onmouseout="return ImgBtnMouseUp(0);" onmousedown=ImgBtnMouseDown(0); border=0 src="/CAisd/img/button_right.gif" width=10 height=21></TD></TR></TBODY></TABLE></A></TD></TR></TBODY></TABLE><A onfocus=tabOff(-1) tabIndex=1 href="javascript:void(0)"></A><A onfocus=tabOff(1) tabIndex=4 href="javascript:void(0)"></A></FORM></DIV>
+<FORM name=globals><INPUT type=hidden name=folder_status> <INPUT type=hidden name=KEY.profile_search> </FORM>
+<SCRIPT language=JavaScript>
+if ( typeof ahdtop.propUrlCi == "string" && ahdtop.propUrlCi.length > 0 ) {
+   var text = "<FORM NAME=ci_search ACTION='" + ahdtop.propUrlCi +
+              "' METHOD=POST TARGET=" + ahdtop.ciSearchWindow + ">" +
+              "<INPUT TYPE=HIDDEN NAME=ACTION VALUE=AHD_CI_SEARCH>" +
+              "<INPUT TYPE=HIDDEN NAME=BOPSID>" +
+              "<INPUT TYPE=HIDDEN NAME=DESCRIPTION>" +
+              "</FORM>";
+   document.writeln(text);
+}
+</SCRIPT>
+innertext
+innertext
+     Change OrderRequestUser by IDUser by PhoneUser by Name  Go
+
+  
+isdisabled
+left
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+left
+0
+locationname
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+locationname
+0
+locationurl
+locationurl
+http://ml
+menubar
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+menubar
+0
+offline
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+offline
+0
+outertext
+outertext
+     Change OrderRequestUser by IDUser by PhoneUser by Name  Go
+
+  
+outerhtml
+outerhtml
+
+<BODY>
+<SCRIPT language=JavaScript>
+disable_right_click();
+document.onkeydown = uspKeydownHandler;
+activateActionKeys();
+
+if ((typeof ahdtop.propSupportR50 != "string") || 
+    (ahdtop.propSupportR50 == "no"))
+{
+    var txt = "<DIV ID=busygifLayer STYLE='display: none; " +
+              "position: absolute; top: 15px; right: 15px;'>" +
+              "<A HREF=\"javascript:show_action_in_progress();\">" +
+              "<IMG BORDER=0 HEIGHT=20 WIDTH=20 SRC=\"" +
+              cfgCAISD + "/img/busy.gif\"></A></DIV>";
+    document.writeln(txt);
+}
+</SCRIPT>
+<A accessKey=A onfocus='altKeyPressed("A")' href="javascript:void(0)"></A><A accessKey=B onfocus='altKeyPressed("B")' href="javascript:void(0)"></A><A accessKey=C onfocus='altKeyPressed("C")' href="javascript:void(0)"></A><A accessKey=D onfocus='altKeyPressed("D")' href="javascript:void(0)"></A><A accessKey=E onfocus='altKeyPressed("E")' href="javascript:void(0)"></A><A accessKey=F onfocus='altKeyPressed("F")' href="javascript:void(0)"></A><A accessKey=G onfocus='altKeyPressed("G")' href="javascript:void(0)"></A><A accessKey=H onfocus='altKeyPressed("H")' href="javascript:void(0)"></A><A accessKey=I onfocus='altKeyPressed("I")' href="javascript:void(0)"></A><A accessKey=J onfocus='altKeyPressed("J")' href="javascript:void(0)"></A><A accessKey=K onfocus='altKeyPressed("K")' href="javascript:void(0)"></A><A accessKey=L onfocus='altKeyPressed("L")' href="javascript:void(0)"></A><A accessKey=M onfocus='altKeyPressed("M")' href="javascript:void(0)"></A><A accessKey=N onfocus='altKeyPressed("N")' href="javascript:void(0)"></A><A accessKey=O onfocus='altKeyPressed("O")' href="javascript:void(0)"></A><A accessKey=P onfocus='altKeyPressed("P")' href="javascript:void(0)"></A><A accessKey=Q onfocus='altKeyPressed("Q")' href="javascript:void(0)"></A><A accessKey=R onfocus='altKeyPressed("R")' href="javascript:void(0)"></A><A accessKey=S onfocus='altKeyPressed("S")' href="javascript:void(0)"></A><A accessKey=T onfocus='altKeyPressed("T")' href="javascript:void(0)"></A><A accessKey=U onfocus='altKeyPressed("U")' href="javascript:void(0)"></A><A accessKey=V onfocus='altKeyPressed("V")' href="javascript:void(0)"></A><A accessKey=W onfocus='altKeyPressed("W")' href="javascript:void(0)"></A><A accessKey=X onfocus='altKeyPressed("X")' href="javascript:void(0)"></A><A accessKey=Y onfocus='altKeyPressed("Y")' href="javascript:void(0)"></A><A accessKey=Z onfocus='altKeyPressed("Z")' href="javascript:void(0)"></A><A accessKey=0 onfocus='altKeyPressed("0")' href="javascript:void(0)"></A><A accessKey=1 onfocus='altKeyPressed("1")' href="javascript:void(0)"></A><A accessKey=2 onfocus='altKeyPressed("2")' href="javascript:void(0)"></A><A accessKey=3 onfocus='altKeyPressed("3")' href="javascript:void(0)"></A><A accessKey=4 onfocus='altKeyPressed("4")' href="javascript:void(0)"></A><A accessKey=5 onfocus='altKeyPressed("5")' href="javascript:void(0)"></A><A accessKey=6 onfocus='altKeyPressed("6")' href="javascript:void(0)"></A><A accessKey=7 onfocus='altKeyPressed("7")' href="javascript:void(0)"></A><A accessKey=8 onfocus='altKeyPressed("8")' href="javascript:void(0)"></A><A accessKey=9 onfocus='altKeyPressed("9")' href="javascript:void(0)"></A>
+<DIV style="POSITION: absolute; DISPLAY: none; TOP: 15px; RIGHT: 15px" id=busygifLayer><A href="javascript:show_action_in_progress();"><IMG border=0 src="/CAisd/img/busy.gif" width=20 height=20></A></DIV>
+<DIV style="POSITION: absolute; DISPLAY: block; TOP: 14px; RIGHT: 0px" id=gobtnDiv>
+<SCRIPT language=JavaScript>
+var txt = "<FORM METHOD=POST ACTION=" + cfgCgi +
+          " NAME=goBtnForm ONSUBMIT='return false;'>\n" +
+          "<INPUT TYPE=HIDDEN NAME=SID VALUE=" + cfgSID + ">\n" +
+          "<INPUT TYPE=HIDDEN NAME=FID VALUE=105>";
+document.writeln(txt);
+</SCRIPT>
+
+<FORM onsubmit="return false;" method=post name=goBtnForm action=/protected/usd-cgi/pdmweb/pdmweb.exe><INPUT value=318570990 type=hidden name=SID> <INPUT value=105 type=hidden name=FID> 
+<TABLE border=0 cellSpacing=0 cellPadding=0 height="100%">
+<TBODY>
+<TR vAlign=center>
+<TD>&nbsp; <SELECT onblur=gobtnBlur(this) id=factory onfocus=gobtnFocus(this) tabIndex=2 name=factory> 
+<SCRIPT language=JavaScript>
+if (0==dataPartition.indexOf("Tier2")){
+
+if (cfgAccessChgMgr > 0) {
+	document.write('<OPTION VALUE="chg.chg_ref_num">Change Order</OPTION>');
+}
+
+if (cfgAccessReqMgr) {
+	if ( propIsITIL ) {
+		document.write("<OPTION VALUE='in.ref_num'>Incident</OPTION>");
+		document.write("<OPTION VALUE='pr.ref_num'>Problem</OPTION>");
+	} 
+	document.write("<OPTION VALUE='cr.ref_num'>Request</OPTION>");
+}
+
+if (cfgAccessIssMgr > 0) {
+	document.write('<OPTION VALUE="iss.ref_num">Issue</OPTION>');
+}
+
+if ( typeof ahdtop.propUrlCi == "string" && ahdtop.propUrlCi.length > 0 ) {
+   document.write('<OPTION VALUE="kt">Knowledge</OPTION>');
+}
+
+if (cfgAccessInventory > 0) {
+	document.write('<OPTION VALUE="pb.userid">User by ID</OPTION>');
+	document.write('<OPTION VALUE="pb.phone_number">User by Phone</OPTION>');
+	document.write('<OPTION VALUE="pb.combo_name">User by Name</OPTION>');
+}	
+
+} else {
+
+if (cfgAccessReqMgr) {
+	if ( propIsITIL ) {
+		document.write("<OPTION VALUE='in.ref_num'>Incident</OPTION>");
+		document.write("<OPTION VALUE='pr.ref_num'>Problem</OPTION>");
+	} 
+	document.write("<OPTION VALUE='cr.ref_num'>Request</OPTION>");
+}
+
+if (cfgAccessChgMgr > 0) {
+	document.write('<OPTION VALUE="chg.chg_ref_num">Change Order</OPTION>');
+}
+
+if (cfgAccessIssMgr > 0) {
+	document.write('<OPTION VALUE="iss.ref_num">Issue</OPTION>');
+}
+
+if ( typeof ahdtop.propUrlCi == "string" && ahdtop.propUrlCi.length > 0 ) {
+   document.write('<OPTION VALUE="kt">Knowledge</OPTION>');
+}
+
+if (cfgAccessInventory > 0) {
+	document.write('<OPTION VALUE="pb.userid">User by ID</OPTION>');
+	document.write('<OPTION VALUE="pb.phone_number">User by Phone</OPTION>');
+	document.write('<OPTION VALUE="pb.combo_name">User by Name</OPTION>');
+}	
+}
+
+</SCRIPT>
+<OPTION value=chg.chg_ref_num>Change Order</OPTION><OPTION selected value=cr.ref_num>Request</OPTION><OPTION value=pb.userid>User by ID</OPTION><OPTION value=pb.phone_number>User by Phone</OPTION><OPTION value=pb.combo_name>User by Name</OPTION></SELECT> </TD>
+<TD><INPUT onblur=gobtnBlur(this) onfocus=gobtnFocus(this) tabIndex=3 size=16 name=searchKey AUTOCOMPLETE="off"> </TD>
+<TD>
+<SCRIPT language=JavaScript>
+ImgBtnCreate("btndflt", msgtext(486), "openDetail()", true, 0,
+             "Popup detail form for specified item");
+</SCRIPT>
+<A onblur=ImgBtnBlur(0); id=imgBtn0 onmouseup="return ImgBtnMouseUp(0);" onfocus=ImgBtnFocus(0); onmouseover="return ImgBtnMouseOver(0,this);" title="Popup detail form for specified item" onmouseout="return ImgBtnMouseUp(0);" onmousedown=ImgBtnMouseDown(0); onclick="return ImgBtnExecute(0);" href="JavaScript:void(0)" name=imgBtn0>
+<TABLE border=0 cellSpacing=0 cellPadding=0>
+<TBODY>
+<TR>
+<TD height=21 vAlign=center><IMG onmouseup="return ImgBtnMouseUp(0);" onmouseover="return ImgBtnMouseOver(0,this);" title="Popup detail form for specified item" onmouseout="return ImgBtnMouseUp(0);" onmousedown=ImgBtnMouseDown(0); border=0 src="/CAisd/img/button_left.gif" width=10 height=21></TD>
+<TD style="BACKGROUND: url(/CAisd/img/button_middle.gif)" id=imgBtn0_caption class=clsButtonEnabled vAlign=center noWrap align=middle><U>G</U>o</TD>
+<TD height=21 vAlign=center><IMG onmouseup="return ImgBtnMouseUp(0);" onmouseover="return ImgBtnMouseOver(0,this);" title="Popup detail form for specified item" onmouseout="return ImgBtnMouseUp(0);" onmousedown=ImgBtnMouseDown(0); border=0 src="/CAisd/img/button_right.gif" width=10 height=21></TD></TR></TBODY></TABLE></A></TD></TR></TBODY></TABLE><A onfocus=tabOff(-1) tabIndex=1 href="javascript:void(0)"></A><A onfocus=tabOff(1) tabIndex=4 href="javascript:void(0)"></A></FORM></DIV>
+<FORM name=globals><INPUT type=hidden name=folder_status> <INPUT type=hidden name=KEY.profile_search> </FORM>
+<SCRIPT language=JavaScript>
+if ( typeof ahdtop.propUrlCi == "string" && ahdtop.propUrlCi.length > 0 ) {
+   var text = "<FORM NAME=ci_search ACTION='" + ahdtop.propUrlCi +
+              "' METHOD=POST TARGET=" + ahdtop.ciSearchWindow + ">" +
+              "<INPUT TYPE=HIDDEN NAME=ACTION VALUE=AHD_CI_SEARCH>" +
+              "<INPUT TYPE=HIDDEN NAME=BOPSID>" +
+              "<INPUT TYPE=HIDDEN NAME=DESCRIPTION>" +
+              "</FORM>";
+   document.writeln(text);
+}
+</SCRIPT>
+</BODY>
+readystate
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+readystate
+0
+referrer
+referrer
+http://
+resizable
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+resizable
+0
+screenx
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+screenx
+0
+screeny
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+screeny
+0
+silent
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+silent
+0
+statusbar
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+statusbar
+0
+statustext
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+statustext
+0
+theatermode
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+theatermode
+0
+title
+title
+
+toolbar
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+toolbar
+0
+top
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+top
+0
+visible
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+visible
+0
+width
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+width
+0
+uniqueid
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+uniqueid
+0
+
+
+addressbar
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+addressbar
+0
+browserx
+browsery
+busy
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+busy
+0
+contenteditable
+fullscreen
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+fullscreen
+0
+height
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+height
+0
+hwnd
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+hwnd
+0
+innerhtml
+innerhtml
+
+<SCRIPT language=JavaScript>
+disable_right_click();
+
+//Removed height and width (height=50 width=477 of old image) from the img tag as the new
+// product_banner image is of height=51 width=800 --SDT 23725
+
+document.writeln("<img border=0 src='" +
+   ahdtop.usdImg["product_banner"] + "' alt='" + cfgProductName + "'>");
+</SCRIPT>
+<IMG border=0 alt="Unicenter ServicePlus Service Desk" src="/CAisd/img/product_banner.jpg"> 
+<FORM name=globals><INPUT type=hidden name=folder_status> <INPUT type=hidden name=KEY.profile_search> </FORM>
+innertext
+innertext
+ 
+  
+isdisabled
+left
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+left
+0
+locationname
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+locationname
+0
+locationurl
+locationurl
+http:
+menubar
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+menubar
+0
+offline
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+offline
+0
+outertext
+outertext
+ 
+  
+outerhtml
+outerhtml
+
+<BODY bgColor=white>
+<SCRIPT language=JavaScript>
+disable_right_click();
+
+//Removed height and width (height=50 width=477 of old image) from the img tag as the new
+// product_banner image is of height=51 width=800 --SDT 23725
+
+document.writeln("<img border=0 src='" +
+   ahdtop.usdImg["product_banner"] + "' alt='" + cfgProductName + "'>");
+</SCRIPT>
+<IMG border=0 alt="Unicenter ServicePlus Service Desk" src="/CAisd/img/product_banner.jpg"> 
+<FORM name=globals><INPUT type=hidden name=folder_status> <INPUT type=hidden name=KEY.profile_search> </FORM></BODY>
+readystate
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+readystate
+0
+referrer
+referrer
+
+resizable
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+resizable
+0
+screenx
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+screenx
+0
+screeny
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+screeny
+0
+silent
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+silent
+0
+statusbar
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+statusbar
+0
+statustext
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+statustext
+0
+theatermode
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+theatermode
+0
+title
+title
+Unicenter ServicePlus Service Desk
+toolbar
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+toolbar
+0
+top
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+top
+0
+visible
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+visible
+0
+width
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+width
+0
+uniqueid
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+uniqueid
+0
+
+
+addressbar
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+addressbar
+0
+browserx
+browsery
+busy
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+busy
+0
+contenteditable
+fullscreen
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+fullscreen
+0
+height
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+height
+0
+hwnd
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+hwnd
+0
+innerhtml
+innerhtml
+0
+innertext
+innertext
+0
+isdisabled
+left
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+left
+0
+locationname
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+locationname
+0
+locationurl
+locationurl
+http:
+menubar
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+menubar
+0
+offline
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+offline
+0
+outertext
+outertext
+0
+outerhtml
+outerhtml
+
+<BODY bgColor=white></BODY>
+readystate
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+readystate
+0
+referrer
+referrer
+http:
+resizable
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+resizable
+0
+screenx
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+screenx
+0
+screeny
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+screeny
+0
+silent
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+silent
+0
+statusbar
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+statusbar
+0
+statustext
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+statustext
+0
+theatermode
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+theatermode
+0
+title
+title
+
+toolbar
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+toolbar
+0
+top
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+top
+0
+visible
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+visible
+0
+width
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+width
+0
+uniqueid
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+uniqueid
+0
+
+
+addressbar
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+addressbar
+0
+browserx
+browsery
+busy
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+busy
+0
+contenteditable
+fullscreen
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+fullscreen
+0
+height
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+height
+0
+hwnd
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+hwnd
+0
+innerhtml
+innerhtml
+
+<SCRIPT language=JavaScript>
+disable_right_click();
+activateActionKeys();
+document.writeln("<FORM METHOD=POST ACTION='" + cfgCgi +
+   "' NAME=menubarForm' ONSUBMIT='return false;'>");
+var showClosewin = ( typeof parent.cai_main == "object" ||
+                     typeof parent.page == "object" ||
+                     ahdtop.propInitialPopup == "1" );
+var out = "";
+if (_browser.supportsDOM >= 2) {
+   out = "<table height='100%' cellpadding=0 cellspacing=0 width='100%'>" +
+         "<tr>" +
+         "<td align='left' valign='center' id='idMenuBar' NOWRAP></td>";
+   if ( showClosewin )
+      out += "<td align='right' valign='center' id='idMenuCloseWin' STYLE='display: none;'>" +
+             "<SCRIPT LANGUAGE='JavaScript'>" +
+             "ImgBtnCreate('cwbtn', msgtext(484), 'unload_and_close_win()', true, 0, 'Close current window');<" + "/SCRIPT>";
+   out += "</tr></table>";
+}
+else {
+   out = "<DIV id='idMenuBar'>&nbsp;</DIV>" +
+         "<DIV id='idMenuFlds'>&nbsp;</DIV>"; 
+   if ( showClosewin )
+      out += "<DIV id='idMenuCloseWin' STYLE='display: none;'>" +
+             "<SCRIPT LANGUAGE='JavaScript'>" +
+             "ImgBtnCreate('cwbtn', ahdtop.msgtext(484), 'unload_and_close_win()', true, 0, 'Close current window');<" + 
+             "/SCRIPT>&nbsp;</DIV>";
+}
+document.writeln(out);
+</SCRIPT>
+<A accessKey=A onfocus='altKeyPressed("A")' href="javascript:void(0)"></A><A accessKey=B onfocus='altKeyPressed("B")' href="javascript:void(0)"></A><A accessKey=C onfocus='altKeyPressed("C")' href="javascript:void(0)"></A><A accessKey=D onfocus='altKeyPressed("D")' href="javascript:void(0)"></A><A accessKey=E onfocus='altKeyPressed("E")' href="javascript:void(0)"></A><A accessKey=F onfocus='altKeyPressed("F")' href="javascript:void(0)"></A><A accessKey=G onfocus='altKeyPressed("G")' href="javascript:void(0)"></A><A accessKey=H onfocus='altKeyPressed("H")' href="javascript:void(0)"></A><A accessKey=I onfocus='altKeyPressed("I")' href="javascript:void(0)"></A><A accessKey=J onfocus='altKeyPressed("J")' href="javascript:void(0)"></A><A accessKey=K onfocus='altKeyPressed("K")' href="javascript:void(0)"></A><A accessKey=L onfocus='altKeyPressed("L")' href="javascript:void(0)"></A><A accessKey=M onfocus='altKeyPressed("M")' href="javascript:void(0)"></A><A accessKey=N onfocus='altKeyPressed("N")' href="javascript:void(0)"></A><A accessKey=O onfocus='altKeyPressed("O")' href="javascript:void(0)"></A><A accessKey=P onfocus='altKeyPressed("P")' href="javascript:void(0)"></A><A accessKey=Q onfocus='altKeyPressed("Q")' href="javascript:void(0)"></A><A accessKey=R onfocus='altKeyPressed("R")' href="javascript:void(0)"></A><A accessKey=S onfocus='altKeyPressed("S")' href="javascript:void(0)"></A><A accessKey=T onfocus='altKeyPressed("T")' href="javascript:void(0)"></A><A accessKey=U onfocus='altKeyPressed("U")' href="javascript:void(0)"></A><A accessKey=V onfocus='altKeyPressed("V")' href="javascript:void(0)"></A><A accessKey=W onfocus='altKeyPressed("W")' href="javascript:void(0)"></A><A accessKey=X onfocus='altKeyPressed("X")' href="javascript:void(0)"></A><A accessKey=Y onfocus='altKeyPressed("Y")' href="javascript:void(0)"></A><A accessKey=Z onfocus='altKeyPressed("Z")' href="javascript:void(0)"></A><A accessKey=0 onfocus='altKeyPressed("0")' href="javascript:void(0)"></A><A accessKey=1 onfocus='altKeyPressed("1")' href="javascript:void(0)"></A><A accessKey=2 onfocus='altKeyPressed("2")' href="javascript:void(0)"></A><A accessKey=3 onfocus='altKeyPressed("3")' href="javascript:void(0)"></A><A accessKey=4 onfocus='altKeyPressed("4")' href="javascript:void(0)"></A><A accessKey=5 onfocus='altKeyPressed("5")' href="javascript:void(0)"></A><A accessKey=6 onfocus='altKeyPressed("6")' href="javascript:void(0)"></A><A accessKey=7 onfocus='altKeyPressed("7")' href="javascript:void(0)"></A><A accessKey=8 onfocus='altKeyPressed("8")' href="javascript:void(0)"></A><A accessKey=9 onfocus='altKeyPressed("9")' href="javascript:void(0)"></A>
+<FORM onsubmit="return false;" method=post name="menubarForm'" action=/protected/usd-cgi/pdmweb/pdmweb.exe>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" height="100%">
+<TBODY>
+<TR>
+<TD style="TOP: 0px" id=idMenuBar vAlign=center noWrap align=left><A id=menu_0 class=menu href="javascript:window.parent.cai_main.setActKeyMenuState(0)">F<U>i</U>le</A><SPAN class=menuDivider> | </SPAN><A id=menu_1 class=menu href="javascript:window.parent.cai_main.setActKeyMenuState(1)"><U>V</U>iew</A><SPAN class=menuDivider> | </SPAN><A id=menu_2 class=menu href="javascript:window.parent.cai_main.setActKeyMenuState(2)">Ac<U>t</U>ivities</A><SPAN class=menuDivider> | </SPAN><A id=menu_3 class=menu href="javascript:window.parent.cai_main.setActKeyMenuState(3)">S<U>e</U>arch</A><SPAN class=menuDivider> | </SPAN><A id=menu_4 class=menu href="javascript:window.parent.cai_main.setActKeyMenuState(4)"><U>W</U>indow</A><SPAN class=menuDivider> | </SPAN><A id=menu_5 class=menu href="javascript:window.parent.cai_main.setActKeyMenuState(5)"><U>H</U>elp</A><SPAN class=menuDivider> | </SPAN><A id=menu_6 class=menu href="javascript:window.parent.cai_main.setActKeyMenuState(6)">Logo<U>u</U>t</A></TD>
+<TD style="DISPLAY: block" id=idMenuCloseWin vAlign=center align=right>
+<SCRIPT language=JavaScript>ImgBtnCreate('cwbtn', msgtext(484), 'unload_and_close_win()', true, 0, 'Close current window');</SCRIPT>
+<A onblur=ImgBtnBlur(0); id=imgBtn0 onmouseup="return ImgBtnMouseUp(0);" onfocus=ImgBtnFocus(0); onmouseover="return ImgBtnMouseOver(0,this);" title="Close current window" onmouseout="return ImgBtnMouseUp(0);" onmousedown=ImgBtnMouseDown(0); onclick="return ImgBtnExecute(0);" href="JavaScript:void(0)" name=imgBtn0>
+<TABLE border=0 cellSpacing=0 cellPadding=0>
+<TBODY>
+<TR>
+<TD height=21 vAlign=center><IMG onmouseup="return ImgBtnMouseUp(0);" onmouseover="return ImgBtnMouseOver(0,this);" title="Close current window" onmouseout="return ImgBtnMouseUp(0);" onmousedown=ImgBtnMouseDown(0); border=0 src="/CAisd/img/button_left.gif" width=10 height=21></TD>
+<TD style="BACKGROUND: url(/CAisd/img/button_middle.gif)" id=imgBtn0_caption class=clsButtonEnabled vAlign=center noWrap align=middle><U>C</U>lose Window</TD>
+<TD height=21 vAlign=center><IMG onmouseup="return ImgBtnMouseUp(0);" onmouseover="return ImgBtnMouseOver(0,this);" title="Close current window" onmouseout="return ImgBtnMouseUp(0);" onmousedown=ImgBtnMouseDown(0); border=0 src="/CAisd/img/button_right.gif" width=10 height=21></TD></TR></TBODY></TABLE></A></TD></TR></TBODY></TABLE></FORM>
+innertext
+innertext
+File | View | Activities | Search | Window | Help | LogoutClose Window
+isdisabled
+left
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+left
+0
+locationname
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+locationname
+0
+locationurl
+locationurl
+http:
+menubar
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+menubar
+0
+offline
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+offline
+0
+outertext
+outertext
+File | View | Activities | Search | Window | Help | LogoutClose Window
+outerhtml
+outerhtml
+
+<BODY class=menuBar onload=set_cstDataPartition() leftMargin=5>
+<SCRIPT language=JavaScript>
+disable_right_click();
+activateActionKeys();
+document.writeln("<FORM METHOD=POST ACTION='" + cfgCgi +
+   "' NAME=menubarForm' ONSUBMIT='return false;'>");
+var showClosewin = ( typeof parent.cai_main == "object" ||
+                     typeof parent.page == "object" ||
+                     ahdtop.propInitialPopup == "1" );
+var out = "";
+if (_browser.supportsDOM >= 2) {
+   out = "<table height='100%' cellpadding=0 cellspacing=0 width='100%'>" +
+         "<tr>" +
+         "<td align='left' valign='center' id='idMenuBar' NOWRAP></td>";
+   if ( showClosewin )
+      out += "<td align='right' valign='center' id='idMenuCloseWin' STYLE='display: none;'>" +
+             "<SCRIPT LANGUAGE='JavaScript'>" +
+             "ImgBtnCreate('cwbtn', msgtext(484), 'unload_and_close_win()', true, 0, 'Close current window');<" + "/SCRIPT>";
+   out += "</tr></table>";
+}
+else {
+   out = "<DIV id='idMenuBar'>&nbsp;</DIV>" +
+         "<DIV id='idMenuFlds'>&nbsp;</DIV>"; 
+   if ( showClosewin )
+      out += "<DIV id='idMenuCloseWin' STYLE='display: none;'>" +
+             "<SCRIPT LANGUAGE='JavaScript'>" +
+             "ImgBtnCreate('cwbtn', ahdtop.msgtext(484), 'unload_and_close_win()', true, 0, 'Close current window');<" + 
+             "/SCRIPT>&nbsp;</DIV>";
+}
+document.writeln(out);
+</SCRIPT>
+<A accessKey=A onfocus='altKeyPressed("A")' href="javascript:void(0)"></A><A accessKey=B onfocus='altKeyPressed("B")' href="javascript:void(0)"></A><A accessKey=C onfocus='altKeyPressed("C")' href="javascript:void(0)"></A><A accessKey=D onfocus='altKeyPressed("D")' href="javascript:void(0)"></A><A accessKey=E onfocus='altKeyPressed("E")' href="javascript:void(0)"></A><A accessKey=F onfocus='altKeyPressed("F")' href="javascript:void(0)"></A><A accessKey=G onfocus='altKeyPressed("G")' href="javascript:void(0)"></A><A accessKey=H onfocus='altKeyPressed("H")' href="javascript:void(0)"></A><A accessKey=I onfocus='altKeyPressed("I")' href="javascript:void(0)"></A><A accessKey=J onfocus='altKeyPressed("J")' href="javascript:void(0)"></A><A accessKey=K onfocus='altKeyPressed("K")' href="javascript:void(0)"></A><A accessKey=L onfocus='altKeyPressed("L")' href="javascript:void(0)"></A><A accessKey=M onfocus='altKeyPressed("M")' href="javascript:void(0)"></A><A accessKey=N onfocus='altKeyPressed("N")' href="javascript:void(0)"></A><A accessKey=O onfocus='altKeyPressed("O")' href="javascript:void(0)"></A><A accessKey=P onfocus='altKeyPressed("P")' href="javascript:void(0)"></A><A accessKey=Q onfocus='altKeyPressed("Q")' href="javascript:void(0)"></A><A accessKey=R onfocus='altKeyPressed("R")' href="javascript:void(0)"></A><A accessKey=S onfocus='altKeyPressed("S")' href="javascript:void(0)"></A><A accessKey=T onfocus='altKeyPressed("T")' href="javascript:void(0)"></A><A accessKey=U onfocus='altKeyPressed("U")' href="javascript:void(0)"></A><A accessKey=V onfocus='altKeyPressed("V")' href="javascript:void(0)"></A><A accessKey=W onfocus='altKeyPressed("W")' href="javascript:void(0)"></A><A accessKey=X onfocus='altKeyPressed("X")' href="javascript:void(0)"></A><A accessKey=Y onfocus='altKeyPressed("Y")' href="javascript:void(0)"></A><A accessKey=Z onfocus='altKeyPressed("Z")' href="javascript:void(0)"></A><A accessKey=0 onfocus='altKeyPressed("0")' href="javascript:void(0)"></A><A accessKey=1 onfocus='altKeyPressed("1")' href="javascript:void(0)"></A><A accessKey=2 onfocus='altKeyPressed("2")' href="javascript:void(0)"></A><A accessKey=3 onfocus='altKeyPressed("3")' href="javascript:void(0)"></A><A accessKey=4 onfocus='altKeyPressed("4")' href="javascript:void(0)"></A><A accessKey=5 onfocus='altKeyPressed("5")' href="javascript:void(0)"></A><A accessKey=6 onfocus='altKeyPressed("6")' href="javascript:void(0)"></A><A accessKey=7 onfocus='altKeyPressed("7")' href="javascript:void(0)"></A><A accessKey=8 onfocus='altKeyPressed("8")' href="javascript:void(0)"></A><A accessKey=9 onfocus='altKeyPressed("9")' href="javascript:void(0)"></A>
+<FORM onsubmit="return false;" method=post name="menubarForm'" action=/protected/usd-cgi/pdmweb/pdmweb.exe>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" height="100%">
+<TBODY>
+<TR>
+<TD style="TOP: 0px" id=idMenuBar vAlign=center noWrap align=left><A id=menu_0 class=menu href="javascript:window.parent.cai_main.setActKeyMenuState(0)">F<U>i</U>le</A><SPAN class=menuDivider> | </SPAN><A id=menu_1 class=menu href="javascript:window.parent.cai_main.setActKeyMenuState(1)"><U>V</U>iew</A><SPAN class=menuDivider> | </SPAN><A id=menu_2 class=menu href="javascript:window.parent.cai_main.setActKeyMenuState(2)">Ac<U>t</U>ivities</A><SPAN class=menuDivider> | </SPAN><A id=menu_3 class=menu href="javascript:window.parent.cai_main.setActKeyMenuState(3)">S<U>e</U>arch</A><SPAN class=menuDivider> | </SPAN><A id=menu_4 class=menu href="javascript:window.parent.cai_main.setActKeyMenuState(4)"><U>W</U>indow</A><SPAN class=menuDivider> | </SPAN><A id=menu_5 class=menu href="javascript:window.parent.cai_main.setActKeyMenuState(5)"><U>H</U>elp</A><SPAN class=menuDivider> | </SPAN><A id=menu_6 class=menu href="javascript:window.parent.cai_main.setActKeyMenuState(6)">Logo<U>u</U>t</A></TD>
+<TD style="DISPLAY: block" id=idMenuCloseWin vAlign=center align=right>
+<SCRIPT language=JavaScript>ImgBtnCreate('cwbtn', msgtext(484), 'unload_and_close_win()', true, 0, 'Close current window');</SCRIPT>
+<A onblur=ImgBtnBlur(0); id=imgBtn0 onmouseup="return ImgBtnMouseUp(0);" onfocus=ImgBtnFocus(0); onmouseover="return ImgBtnMouseOver(0,this);" title="Close current window" onmouseout="return ImgBtnMouseUp(0);" onmousedown=ImgBtnMouseDown(0); onclick="return ImgBtnExecute(0);" href="JavaScript:void(0)" name=imgBtn0>
+<TABLE border=0 cellSpacing=0 cellPadding=0>
+<TBODY>
+<TR>
+<TD height=21 vAlign=center><IMG onmouseup="return ImgBtnMouseUp(0);" onmouseover="return ImgBtnMouseOver(0,this);" title="Close current window" onmouseout="return ImgBtnMouseUp(0);" onmousedown=ImgBtnMouseDown(0); border=0 src="/CAisd/img/button_left.gif" width=10 height=21></TD>
+<TD style="BACKGROUND: url(/CAisd/img/button_middle.gif)" id=imgBtn0_caption class=clsButtonEnabled vAlign=center noWrap align=middle><U>C</U>lose Window</TD>
+<TD height=21 vAlign=center><IMG onmouseup="return ImgBtnMouseUp(0);" onmouseover="return ImgBtnMouseOver(0,this);" title="Close current window" onmouseout="return ImgBtnMouseUp(0);" onmousedown=ImgBtnMouseDown(0); border=0 src="/CAisd/img/button_right.gif" width=10 height=21></TD></TR></TBODY></TABLE></A></TD></TR></TBODY></TABLE></FORM></BODY>
+readystate
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+readystate
+0
+referrer
+referrer
+http:
+resizable
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+resizable
+0
+screenx
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+screenx
+0
+screeny
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+screeny
+0
+silent
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+silent
+0
+statusbar
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+statusbar
+0
+statustext
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+statustext
+0
+theatermode
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+theatermode
+0
+title
+title
+
+toolbar
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+toolbar
+0
+top
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+top
+0
+visible
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+visible
+0
+width
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+width
+0
+uniqueid
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+uniqueid
+0
+
+
+addressbar
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+addressbar
+0
+browserx
+browsery
+busy
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+busy
+0
+contenteditable
+fullscreen
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+fullscreen
+0
+height
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+height
+0
+hwnd
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+hwnd
+0
+innerhtml
+innerhtml
+<DIV style="DISPLAY: none" id=rClickMenu class=ctxMenu onmouseover=parent.contextMenuMouseOver(0) onmouseout=parent.contextMenuMouseOut(event,0)>
+<TABLE border=0 cellSpacing=0 cellPadding=0>
+<TBODY>
+<TR>
+<TD onmouseover=parent.contextMenuMouseOver(0)><A ondragstart="return false;" id=ctx_0_0 class=ctxMenu onmouseover="return true;" onclick="parent.popup_window('about','help_about.htmpl',467,275,'ahdmenu=no,scrollbars=no,resizable=no')" href="/CAisd/html/empty.html"><U>A</U>bout Unicenter ServicePlus Service Desk...</A></TD></TR>
+<TR>
+<TD onmouseover=parent.contextMenuMouseOver(0)><A ondragstart="return false;" id=ctx_0_1 class=ctxMenu onmouseover="return true;" onclick=parent.refreshForm() href="/CAisd/html/empty.html"><U>R</U>efresh</A></TD></TR>
+<TR>
+<TD onmouseover=parent.contextMenuMouseOver(0)><A ondragstart="return false;" id=ctx_0_2 class=ctxMenu onmouseover="return true;" onclick="parent.help_on_form('home')" href="/CAisd/html/empty.html"><U>H</U>elp on Main Window...</A></TD></TR>
+<TR>
+<TD onmouseover=parent.contextMenuMouseOver(0)><A ondragstart="return false;" id=ctx_0_3 class=ctxMenu onmouseover="return true;" onclick=parent.help_on_form(self.propFormName) href="/CAisd/html/empty.html">Help on <U>T</U>his Window...</A></TD></TR></TBODY></TABLE></DIV><!-- BEGIN analyst/std_head_site.htmpl --><!-- END analyst/std_head_site.htmpl --><!-- END analyst/std_head.htmpl -->
+<SCRIPT>
+cfgMachineName = "ndcusdw605";
+argHumantouchLog = "";
+argPersistentID = "cr:217699609";
+argCstID = "177061855";
+cfgDateFormat = "MM/DD/YYYY hh:mm a(am,pm)";
+argRefNum = "AM31719505";
+cfgUserAuth = "2";
+cfgAccessNotify = "2";
+argID = "0";
+argChange = "";
+cfgCgiReportScript = '/protected/usd-cgi/pdmweb/pdm_cgireport.exe';
+rptName = new Array("crsum.rpt", "crdtl.rpt");
+argSearchSqlClause = "id = 0";
+formAsset = new Array("main_form","KEY.affected_resource");
+formEnduser = new Array("main_form","customer");
+prop_ref = "20.6.1.225|web:ndcusdw605:1|791CAA|1391663354|1";
+cfgCheckAgtInAreaDef = ""; 
+ZEN_PERSID = "";
+var orig_assignee = "Thompson, Mark, W";
+var orig_group = "";
+var orig_assignee_id = "177061855";
+var orig_customer_org = "";
+
+</SCRIPT>
+
+<SCRIPT language=JavaScript src="/CAisd/scripts/arrow_button.js"></SCRIPT>
+
+<SCRIPT language=JavaScript src="/CAisd/sitemods/scripts/CSC_CUSTOM/change_cat.js"></SCRIPT>
+
+<SCRIPT language=JavaScript src="/CAisd/scripts/check_submit.js"></SCRIPT>
+
+<SCRIPT language=JavaScript src="/CAisd/scripts/convert_date.js"></SCRIPT>
+
+<SCRIPT language=JavaScript src="/CAisd/scripts/date_helper.js"></SCRIPT>
+
+<SCRIPT language=JavaScript src="/CAisd/sitemods/scripts/CSC_CUSTOM/detail_form.js"></SCRIPT>
+
+<SCRIPT language=JavaScript src="/CAisd/scripts/img_link.js"></SCRIPT>
+
+<SCRIPT language=JavaScript src="/CAisd/sitemods/scripts/CSC_CUSTOM/upload.js"></SCRIPT>
+
+<SCRIPT language=JavaScript src="/CAisd/scripts/webtab.js"></SCRIPT>
+
+<SCRIPT language=JavaScript src="/CAisd/scripts/update_lrel.js"></SCRIPT>
+
+<SCRIPT language=JavaScript src="/CAisd/scripts/val_type.js"></SCRIPT>
+
+<SCRIPT language=JavaScript src="/CAisd/scripts/timer.js"></SCRIPT>
+
+<SCRIPT language=JavaScript src="/CAisd/scripts/attevts.js"></SCRIPT>
+
+<SCRIPT language=JavaScript src="/CAisd/scripts/spellcheck.js"></SCRIPT>
+
+<SCRIPT language=JavaScript src="/CAisd/sitemods/scripts/CSC_CUSTOM/sitemods.js"></SCRIPT>
+
+<SCRIPT language=JavaScript>
+var w_name = get_popup_window_name("ci_window");
+
+function EmailList() {
+
+        //invoke showPrint function
+	z_goto_zen(ZEN_PERSID,argPersistentID);
+}
+function loadActions()
+{
+   if ( _dtl.edit ) {
+      save_initial_vals();
+      StartTheTimer("main_form","timer");
+      
+   }
+   show_notebook();
+   
+   
+	// SDT 22046 get around IE 5.5 repaint problem by delaying call
+   window.setTimeout('default_scratchpad()', 1000);
+}
+
+function default_scratchpad() {
+	if ( _dtl.edit ) {
+		load_from_scratchpad("0");
+	}
+}
+
+function unloadActions()
+{
+   if ( _dtl.edit )
+      unload_check();
+   cancel_any_lrel_update();
+}
+
+// Gets the most recent values of the ticket
+//	and sends them off to KT.
+function do_kt_search() {
+
+	// Fill the form elements with the most recent ticket info;
+	//	applies only to editable tickets.
+	// Also make grab for IDs in SET fields; these may not be there,
+	//	but it will save KT from looking 'em up.  
+	
+	var fromArr = new Array();
+	var i = 0;
+	fromArr[i++] = ["KEY.category", "CATEGORY"];
+	fromArr[i++] = ["KEY.affected_resource", "ITEM"];
+	fromArr[i++] = ["SET.affected_resource", "SD_ASSET_ID"];
+	
+	var dOptField = cfgSearchStr;
+	if (null == dOptField || "" == dOptField)
+		dOptField = "description";
+	fromArr[i++] = ["SET." + dOptField, "DESCRIPTION"];
+	
+	ci_update_fields(window, "main_form", "ci_search", fromArr);
+	popupCiWindow(w_name ,"ci_search", "", 1);
+}
+
+var zcurrCustID="";
+
+function zcustomerChanged(form_name, base_name, lname, fname, mname, cntID, caller_type ) {
+
+if (zcurrCustID == cntID) 
+return;
+zcurrCustID=cntID;
+
+var url;
+url="SEARCH+FACTORY=cnt"
++"+KEEP.domset_name=RLIST_STATIC"
++"+QBE.EQ.id="+escape(cntID)
++"+KEEP.backfill_attr=z_vip"
++"+HTMPL=javascript:parent."+window.name+".zvipCallback";
+upd_workframe(url);
+if(curr_form_action==0) // =0 if customer selected from contact list; =6 if typed in
+{
+set_action_in_progress(ACTN_COMPLETE);
+}
+}
+
+function zvipCallback(persid,value,rel_attr_val) {
+if (value == 1) {
+    alert("VIP Customer Alert");
+}
+}
+function backfill_cnt_event( form_name, base_name, lname, fname, mname,
+                             cntID, caller_type )
+{
+   if (_dtl.edit && !_dtl.skip_agt_check)
+   {
+	var f = void(0);
+	var r = form_name.match(/main_form([0-9]*)/);
+	if ( r != null ) {
+	    if ( r[1].length == 0 )
+		f = _dtl.form[0];
+	    else
+		f = _dtl.form[r[1]-0];
+	}
+	detailAgtCheck(f, base_name, cntID, prop_ref);
+   }
+   detailCntBackfill( form_name, base_name, lname, fname, mname,
+                      cntID, caller_type );
+if (base_name == "customer" && typeof cntID != "undefined" && cntID.length > 1)
+{
+zcustomerChanged(form_name, base_name, lname, fname, mname, cntID, caller_type);
+}
+}
+
+function printForm() {
+
+        //invoke showPrint function
+	showPrint(argPersistentID);
+}
+
+function zautofill_pcat()
+{
+
+  f=document.main_form;
+  g=f.elements["KEY.category"];
+//  alert("g.value.length = "+g.value.length);
+
+   if (g.value.length <= 9) {
+	popup_search('pcat','KEY.category','main_form','',0,'sym');
+   }
+}
+
+function zcopyorg2()
+{
+  setTimeout("zcopyorg()", 100);
+}
+
+// Code added by CA consultant to show VIP (notes) field
+
+if (""=="1") {
+  alert("VIP Customer Alert");
+}
+
+
+</SCRIPT>
+<!-- BEGIN analyst/std_body.htmpl -->
+<SCRIPT language=JavaScript src="/CAisd/scripts/std_body.js"></SCRIPT>
+
+<SCRIPT language=JavaScript>
+activateActionKeys();
+
+if ("0" != "1")
+{
+if ( window.name != "content" &&
+     window.name != "scoreboard" &&
+     window.name != "cai_main" &&
+     window.name != "page" )
+{
+   document.write("<IMG ALT='Unicenter ServicePlus Service Desk' BORDER='0' SRC='" + cfgCAISD)
+   document.write("/img/product_banner.jpg' height='50' width='461'>")
+}
+}
+
+</SCRIPT>
+<A accessKey=A onfocus='altKeyPressed("A")' href="javascript:void(0)"></A><A accessKey=B onfocus='altKeyPressed("B")' href="javascript:void(0)"></A><A accessKey=C onfocus='altKeyPressed("C")' href="javascript:void(0)"></A><A accessKey=D onfocus='altKeyPressed("D")' href="javascript:void(0)"></A><A accessKey=E onfocus='altKeyPressed("E")' href="javascript:void(0)"></A><A accessKey=F onfocus='altKeyPressed("F")' href="javascript:void(0)"></A><A accessKey=G onfocus='altKeyPressed("G")' href="javascript:void(0)"></A><A accessKey=H onfocus='altKeyPressed("H")' href="javascript:void(0)"></A><A accessKey=I onfocus='altKeyPressed("I")' href="javascript:void(0)"></A><A accessKey=J onfocus='altKeyPressed("J")' href="javascript:void(0)"></A><A accessKey=K onfocus='altKeyPressed("K")' href="javascript:void(0)"></A><A accessKey=L onfocus='altKeyPressed("L")' href="javascript:void(0)"></A><A accessKey=M onfocus='altKeyPressed("M")' href="javascript:void(0)"></A><A accessKey=N onfocus='altKeyPressed("N")' href="javascript:void(0)"></A><A accessKey=O onfocus='altKeyPressed("O")' href="javascript:void(0)"></A><A accessKey=P onfocus='altKeyPressed("P")' href="javascript:void(0)"></A><A accessKey=Q onfocus='altKeyPressed("Q")' href="javascript:void(0)"></A><A accessKey=R onfocus='altKeyPressed("R")' href="javascript:void(0)"></A><A accessKey=S onfocus='altKeyPressed("S")' href="javascript:void(0)"></A><A accessKey=T onfocus='altKeyPressed("T")' href="javascript:void(0)"></A><A accessKey=U onfocus='altKeyPressed("U")' href="javascript:void(0)"></A><A accessKey=V onfocus='altKeyPressed("V")' href="javascript:void(0)"></A><A accessKey=W onfocus='altKeyPressed("W")' href="javascript:void(0)"></A><A accessKey=X onfocus='altKeyPressed("X")' href="javascript:void(0)"></A><A accessKey=Y onfocus='altKeyPressed("Y")' href="javascript:void(0)"></A><A accessKey=Z onfocus='altKeyPressed("Z")' href="javascript:void(0)"></A><A accessKey=0 onfocus='altKeyPressed("0")' href="javascript:void(0)"></A><A accessKey=1 onfocus='altKeyPressed("1")' href="javascript:void(0)"></A><A accessKey=2 onfocus='altKeyPressed("2")' href="javascript:void(0)"></A><A accessKey=3 onfocus='altKeyPressed("3")' href="javascript:void(0)"></A><A accessKey=4 onfocus='altKeyPressed("4")' href="javascript:void(0)"></A><A accessKey=5 onfocus='altKeyPressed("5")' href="javascript:void(0)"></A><A accessKey=6 onfocus='altKeyPressed("6")' href="javascript:void(0)"></A><A accessKey=7 onfocus='altKeyPressed("7")' href="javascript:void(0)"></A><A accessKey=8 onfocus='altKeyPressed("8")' href="javascript:void(0)"></A><A accessKey=9 onfocus='altKeyPressed("9")' href="javascript:void(0)"></A>
+<SCRIPT language=JavaScript src="/CAisd/sitemods/scripts/CSC_CUSTOM/menubar.js"></SCRIPT>
+
+<SCRIPT language=JavaScript>
+
+var AlertMsg = '';
+
+var ShowLockCancel = '';
+if ( typeof DetailForm == "undefined" ||
+     "" == "yes" )
+   build_alertmsg();
+if ((typeof show_header != "undefined") && 
+    (show_header == 1) &&
+    "" != "no")
+{
+    document.writeln("<CENTER>");
+    if ( "0" != "0" && "0" != "" )
+    {
+        document.writeln(" <H1 CLASS='HiliteTitle'>" + form_title + "</H1>");
+    }
+    else
+    {
+    document.writeln("<H1>" + form_title + "</H1>");
+    }
+    document.writeln("</CENTER>");
+    startScrollbar();
+}
+var argPopupName = "USD1391794118653";
+
+    if ((typeof parent.content == "object") && 
+        (parent.content.name == "content"))
+    {
+        alertmsg(272);
+    }
+
+</SCRIPT>
+
+<CENTER>
+<H1>Create New Request AM31719505</H1></CENTER>
+<DIV style="WIDTH: 100%; OVERFLOW: auto" id=scrollbarDiv0><!-- BEGIN analyst/std_body_site.htmpl --><!-- END analyst/std_body_site.htmpl --><!-- END analyst/std_body.htmpl -->
+<CENTER><INPUT value=orig_customer_org type=hidden name=SET.orig_cust_org>
+<SCRIPT language=JavaScript>
+//alert("");
+if ( "" == ""){
+_dtl = new DetailForm("cr","0","");
+}
+else{
+_dtl = new DetailForm("cr","0","", "", "");
+}
+
+//
+//if ( "" == "" ) {
+//   ImgBtnEndRow();
+//   ImgBtnRow();
+//   ImgBtnCreate("btnchg",msgtext(440), "detailSave('NEW_CHANGE')", true, 0);
+//}
+//
+ImgBtnCreate("PROFILE_BROWSER", msgtext(91), "edit_profile_browser(" +
+             '"combo_name", document.main_form["customer_combo_name"].value)',
+             false, 0);
+
+ImgBtnCreate("CLOSE_FIRST_CALL", msgtext(1022), "zclose_first_call()", true, 0);
+
+
+
+
+
+
+
+
+startDetail("", 1);
+
+
+</SCRIPT>
+ 
+<CENTER>
+<TABLE border=0>
+<TBODY>
+<TR>
+<TD height=21 align=middle><A onblur=ImgBtnBlur(0); id=imgBtn0 onmouseup="return ImgBtnMouseUp(0);" onfocus=ImgBtnFocus(0); onmouseover="return ImgBtnMouseOver(0,this);" title=Save onmouseout="return ImgBtnMouseUp(0);" onmousedown=ImgBtnMouseDown(0); onclick="return ImgBtnExecute(0);" href="JavaScript:void(0)" name=imgBtn0>
+<TABLE border=0 cellSpacing=0 cellPadding=0>
+<TBODY>
+<TR>
+<TD height=21 vAlign=center><IMG onmouseup="return ImgBtnMouseUp(0);" onmouseover="return ImgBtnMouseOver(0,this);" title=Save onmouseout="return ImgBtnMouseUp(0);" onmousedown=ImgBtnMouseDown(0); border=0 src="/CAisd/img/button_left.gif" width=10 height=21></TD>
+<TD style="BACKGROUND: url(/CAisd/img/button_middle.gif)" id=imgBtn0_caption class=clsButtonEnabled vAlign=center width=92 noWrap align=middle><U>S</U>ave</TD>
+<TD height=21 vAlign=center><IMG onmouseup="return ImgBtnMouseUp(0);" onmouseover="return ImgBtnMouseOver(0,this);" title=Save onmouseout="return ImgBtnMouseUp(0);" onmousedown=ImgBtnMouseDown(0); border=0 src="/CAisd/img/button_right.gif" width=10 height=21></TD></TR></TBODY></TABLE></A></TD>
+<TD height=21 align=middle><A onblur=ImgBtnBlur(1); id=imgBtn1 onmouseup="return ImgBtnMouseUp(1);" onfocus=ImgBtnFocus(1); onmouseover="return ImgBtnMouseOver(1,this);" title=Cancel onmouseout="return ImgBtnMouseUp(1);" onmousedown=ImgBtnMouseDown(1); onclick="return ImgBtnExecute(1);" href="JavaScript:void(0)" name=imgBtn1>
+<TABLE border=0 cellSpacing=0 cellPadding=0>
+<TBODY>
+<TR>
+<TD height=21 vAlign=center><IMG onmouseup="return ImgBtnMouseUp(1);" onmouseover="return ImgBtnMouseOver(1,this);" title=Cancel onmouseout="return ImgBtnMouseUp(1);" onmousedown=ImgBtnMouseDown(1); border=0 src="/CAisd/img/button_left.gif" width=10 height=21></TD>
+<TD style="BACKGROUND: url(/CAisd/img/button_middle.gif)" id=imgBtn1_caption class=clsButtonEnabled vAlign=center width=92 noWrap align=middle>Ca<U>n</U>cel</TD>
+<TD height=21 vAlign=center><IMG onmouseup="return ImgBtnMouseUp(1);" onmouseover="return ImgBtnMouseOver(1,this);" title=Cancel onmouseout="return ImgBtnMouseUp(1);" onmousedown=ImgBtnMouseDown(1); border=0 src="/CAisd/img/button_right.gif" width=10 height=21></TD></TR></TBODY></TABLE></A></TD>
+<TD height=21 align=middle><A onblur=ImgBtnBlur(2); id=imgBtn2 onmouseup="return ImgBtnMouseUp(2);" onfocus=ImgBtnFocus(2); onmouseover="return ImgBtnMouseOver(2,this);" title="Profile Browser" onmouseout="return ImgBtnMouseUp(2);" onmousedown=ImgBtnMouseDown(2); onclick="return ImgBtnExecute(2);" href="JavaScript:void(0)" name=imgBtn2>
+<TABLE border=0 cellSpacing=0 cellPadding=0>
+<TBODY>
+<TR>
+<TD height=21 vAlign=center><IMG onmouseup="return ImgBtnMouseUp(2);" onmouseover="return ImgBtnMouseOver(2,this);" title="Profile Browser" onmouseout="return ImgBtnMouseUp(2);" onmousedown=ImgBtnMouseDown(2); border=0 src="/CAisd/img/button_left.gif" width=10 height=21></TD>
+<TD style="BACKGROUND: url(/CAisd/img/button_middle.gif); COLOR: #000000" id=imgBtn2_caption class=clsButtonDisabled vAlign=center noWrap align=middle>Profile <U>B</U>rowser</TD>
+<TD height=21 vAlign=center><IMG onmouseup="return ImgBtnMouseUp(2);" onmouseover="return ImgBtnMouseOver(2,this);" title="Profile Browser" onmouseout="return ImgBtnMouseUp(2);" onmousedown=ImgBtnMouseDown(2); border=0 src="/CAisd/img/button_right.gif" width=10 height=21></TD></TR></TBODY></TABLE></A></TD>
+<TD height=21 align=middle><A onblur=ImgBtnBlur(3); id=imgBtn3 onmouseup="return ImgBtnMouseUp(3);" onfocus=ImgBtnFocus(3); onmouseover="return ImgBtnMouseOver(3,this);" title="Close-First Call" onmouseout="return ImgBtnMouseUp(3);" onmousedown=ImgBtnMouseDown(3); onclick="return ImgBtnExecute(3);" href="JavaScript:void(0)" name=imgBtn3>
+<TABLE border=0 cellSpacing=0 cellPadding=0>
+<TBODY>
+<TR>
+<TD height=21 vAlign=center><IMG onmouseup="return ImgBtnMouseUp(3);" onmouseover="return ImgBtnMouseOver(3,this);" title="Close-First Call" onmouseout="return ImgBtnMouseUp(3);" onmousedown=ImgBtnMouseDown(3); border=0 src="/CAisd/img/button_left.gif" width=10 height=21></TD>
+<TD style="BACKGROUND: url(/CAisd/img/button_middle.gif)" id=imgBtn3_caption class=clsButtonEnabled vAlign=center noWrap align=middle>Close-<U>F</U>irst Call</TD>
+<TD height=21 vAlign=center><IMG onmouseup="return ImgBtnMouseUp(3);" onmouseover="return ImgBtnMouseOver(3,this);" title="Close-First Call" onmouseout="return ImgBtnMouseUp(3);" onmousedown=ImgBtnMouseDown(3); border=0 src="/CAisd/img/button_right.gif" width=10 height=21></TD></TR></TBODY></TABLE></A></TD></TR></TBODY></TABLE></CENTER>
+<TABLE style="DISPLAY: none" id=alertmsg class=alertmsg width="100%">
+<TBODY>
+<TR>
+<TD id=alertmsgText></TD></TR></TBODY></TABLE>
+<DIV style="WIDTH: 100%; HEIGHT: 659px; OVERFLOW: scroll" id=scrollbarDiv1>
+<FORM style="DISPLAY: block" onsubmit="return check_submit();" method=post name=main_form action=/protected/usd-cgi/pdmweb/pdmweb.exe><INPUT value=1 type=hidden name=JEDIT> <INPUT value=318570990 type=hidden name=SID> <INPUT value=2012775861 type=hidden name=FID> <INPUT value=UPDATE type=hidden name=OP> <INPUT value=cr type=hidden name=FACTORY> <INPUT value=0 type=hidden name=SET.id> <A id=start onfocus=detailTabOff(-1) tabIndex=1 href="javascript:void(0)" name=start></A><A id=end onfocus=detailTabOff(1) tabIndex=1000 href="javascript:void(0)" name=end></A><INPUT value=0 type=hidden name=change_category> <INPUT id=SET.call_back_flag value=0 type=hidden name=SET.call_back_flag> <INPUT value=0 type=hidden name=priority_modified> <INPUT value=0 type=hidden name=status_modified> <INPUT type=hidden name=SET.orig_cust_org>
+<SCRIPT language=JavaScript>
+
+
+detailStartRow("CLASS=");
+
+
+
+function zcopyorg()
+{
+//	if(document.main_form["SET.string3"].value=="")
+//	{
+		zframe0=document.getElementById('ziframe0');
+		zID=escape(document.main_form.customer_combo_name.value);
+		if(zID!=""){
+		zframe0.src="/CAisd/pdmweb.exe?SID="+cfgSID+"+FID="+fid_generator()+"+OP=SEARCH+FACTORY=cnt+QBE.IN.combo_name="+zID+"+HTMPL=criframeorg.htmpl";	
+		}
+//	}
+}
+
+// document.write('<INPUT TYPE=hidden NAME="SET.string3">');
+// document.write('<INPUT TYPE=hidden NAME="KEEP.string3">');
+
+</SCRIPT>
+ 
+<TABLE cellSpacing=5 cellPadding=1 width="90%">
+<TBODY>
+<TR vAlign=top><IFRAME id=ziframe0 height=0 marginHeight=0 border=0 src="javascript:false;" frameBorder=NO width="100%" name=ziframe0 marginWidth=0 scrolling=no></IFRAME>
+<SCRIPT>
+
+
+
+
+detailLookup("Affected End User","customer","cnt",1,20,
+"1",
+"",
+"",
+"yes",
+"combo_name",
+'',
+"",
+
+"",
+"yes");
+
+
+
+
+   
+detailLookup("Asset","affected_resource","nr",1,20,
+"0",
+"",
+"",
+"yes",
+"name",
+'',
+"",
+
+"",
+"yes");
+
+
+detailSetEventHandler("onBlur=\"detailSyncEditForms(this)\"");
+
+detailDropdown("Priority","priority","pri",1,20, 
+"1",
+"pri:501",
+"2",
+
+"yes",
+"sym",
+"4",
+"",
+
+"",
+"no",
+""
+,"1","5","2","4","3","3","4","2","5","1");
+
+
+
+
+
+
+detailDropdown("Call Source","created_via","intfc",1,20, 
+"0",
+"intfc:3554",
+"3551",
+
+"yes",
+"sym",
+"WEB",
+"",
+
+"",
+"no",
+""
+,"EMAIL","3550","FAX","70000009","OTHER","70000006","PHONE","3551","TNG","3552","VOICE MAIL","70000011","WEB","3554");
+
+
+
+
+///////////////// Move 'Active?' here
+detailTextboxReadonly("Active?","active",1,
+'YES', "");
+
+/////////////////
+detailStartRow("CLASS=");
+
+
+     detailSetEventHandler("onChange=\"change_category_func('cr',null,'pcat')\"onBlur=\"change_category_func('cr',null,'pcat')\"");
+
+detailHier("Request Area","category","pcat",2,48,
+"1",
+"",
+"",
+"no",
+"sym",
+'',
+"",
+
+"");
+
+
+detailSetEventHandler("onBlur=\"detailSyncEditForms(this)\"");
+
+detailLookup("Assignee","assignee","agt",2,20,
+"0",
+"cnt:177061855",
+"177061855",
+"yes",
+"combo_name",
+'Thompson, Mark, W',
+"",
+
+"",
+"yes");
+
+	
+	detailSetEventHandler("onBlur=\"detailSyncEditForms(this)\"");
+
+detailDropdown("Status","status","crs",1,20, 
+"1",
+"crs:5200",
+"OP",
+
+"yes",
+"sym",
+"Open",
+"",
+
+"",
+"no",
+""
+,"Acknowledged","ACK","Assigned","AS","Bypass","BY","Cancelled","CN","Closed","CLO","Closed-First Call","CL","CSC Frozen","CF","Customer Frozen","FR","In Work","IW","Monitor","MO","Open","OP","Pending","PN","Re-Assigned","RA","Rejected","RJ","Resolved","RL","Responded","RP","Vendor Frozen","VF");
+
+
+
+
+
+
+detailStartRow("CLASS=");
+
+detailLookupReadonly("Reported By","log_agent",1,
+"cnt:177061855",
+"Thompson, Mark, W",
+"yes");
+
+detailSetEventHandler("onBlur=\"detailSyncEditForms(this)\"");
+
+detailLookup("Group","group","grp",1,20,
+"1",
+"",
+"",
+"yes",
+"combo_name",
+'',
+"",
+
+"",
+"yes");
+
+
+detailTextbox("Charge Back ID","charge_back_id",2,1,20,
+"0",
+"12",
+'',"no");
+
+var cbDateCheck = 0;
+if ( _dtl.edit)
+    cbDateCheck = 1;
+if ( "" != "" || ! _dtl.edit ) {
+   detailDate("Call Back Date/Time","call_back_date",1,20,
+"0",
+"");
+
+}
+else {
+   detailDateDropdown("Call Back Date/Time", "call_back_date", 1, 20,
+                      "0",
+                      "SET.call_back_flag",
+                      86400, msgtext(287),   // In one day
+                      172800, msgtext(288),  // In two days
+                      604800, msgtext(289)); // In one week
+}
+
+
+detailStartRow("CLASS=");
+
+
+detailTextbox("Summary","summary",4,1,60,
+"0",
+"240",
+'',"no");
+
+detailSetEventHandler("onBlur=\"detailSyncEditForms(this)\"");
+
+detailHier("Resolution Code","rootcause","rc",1,30,
+"0",
+"",
+"",
+"yes",
+"sym",
+'',
+"",
+
+"");
+
+
+
+detailStartRow("CLASS=");
+
+
+
+detailTextbox("Description","description",5,4,107,
+"1",
+"1000",
+'',"yes");
+
+
+detailStartRow("CLASS=");
+
+
+detailDropdown("Urgency","impact","imp",1,20, 
+"1",
+"imp:1605",
+"0",
+
+"yes",
+"sym",
+"2",
+"",
+
+"",
+"no",
+""
+,"1","5","2","0");
+
+
+
+
+
+detailLookup("Change Order","change","chg",1,20,
+"0",
+"",
+"",
+"yes",
+"chg_ref_num",
+'',
+"",
+
+"",
+"yes");
+
+
+detailTextboxReadonly("Ext Interface #","string5",2,
+' ', "");
+
+
+detailDropdown("Service Type","support_lev","sdsc",1,20, 
+"0",
+"",
+"",
+
+"yes",
+"sym",
+"",
+"",
+
+"",
+"no",
+"",
+"");
+
+
+
+if ( _dtl.edit ) {
+   detailRowHdr("Timer");
+   detailSetRowData("<INPUT TYPE=text NAME='timer' VALUE='' SIZE=8 READONLY>");
+}
+
+detailStartRow("CLASS=");
+
+detailDate("Open Date/Time","open_date",1,20,
+"1",
+"1391794080");
+
+detailDate("Close Date/Time","close_date",1,20,
+"0",
+"");
+ 
+detailDateReadonly("Last Modified","last_mod_dt",2,"");
+
+detailTextboxReadonly("Total Activity Time","time_spent_sum",1,
+'00:00:00', "");
+
+
+detailEndTable();
+</SCRIPT>
+
+<TH vAlign=center align=left><A onblur="return detailBlur(this);" id=dflnk_0_0 class=lookup onfocus="return detailFocus(this);" onmouseover="window.status='Popup search window for affected end user';return true" tabIndex=0 onmouseout="window.status=window.defaultStatus;return true" onclick="fill_name_fields(_dtl.form[0],'cnt','customer',true)" href="javascript:void(0)"><IMG style="VERTICAL-ALIGN: middle" border=0 src="/CAisd/img/lookup.gif" width=12 height=12>&nbsp;<SPAN class=requiredlabeltext>Affected End User</SPAN></A></TH>
+<TH vAlign=center align=left><A onblur="return detailBlur(this);" id=dflnk_0_1 class=lookup onfocus="return detailFocus(this);" onmouseover="window.status='Popup search window for asset';return true" tabIndex=0 onmouseout="window.status=window.defaultStatus;return true" onclick="popup_search('nr','KEY.affected_resource','main_form','',0,'name')" href="javascript:void(0)"><IMG style="VERTICAL-ALIGN: middle" border=0 src="/CAisd/img/lookup.gif" width=12 height=12>&nbsp;<SPAN class=lookup>Asset</SPAN></A></TH>
+<TH class=requiredlabeltext vAlign=baseline align=left>Priority&nbsp;&nbsp;&nbsp;</TH>
+<TH class=labeltext vAlign=baseline align=left>Call Source&nbsp;&nbsp;&nbsp;</TH>
+<TH class=labeltext vAlign=baseline align=left>Active?&nbsp;&nbsp;&nbsp;</TH></TR>
+<TR>
+<TD vAlign=top align=left><INPUT onblur="return detailBlur(this);" id=df_0_0 onfocus="return detailFocus(this);" tabIndex=2 onchange="detailAutofill(this,'cnt',true,'combo_name',false);" name=customer_combo_name> <INPUT type=hidden name=KEY.customer> <INPUT type=hidden name=customer_lname> <INPUT type=hidden name=customer_fname> <INPUT type=hidden name=customer_mname> <INPUT type=hidden name=SET.customer> </TD>
+<TD vAlign=top align=left><INPUT onblur="return detailBlur(this);" id=df_0_1 onfocus="return detailFocus(this);" tabIndex=3 onchange="detailAutofill(this,'nr',false,'name',false);" name=KEY.affected_resource> <INPUT type=hidden name=SET.affected_resource> </TD>
+<TD vAlign=top align=left><SELECT onblur=detailBlur(this);detailSyncEditForms(this) id=df_0_2 onfocus="return detailFocus(this);" tabIndex=4 name=SET.priority> <OPTION value=5>1<OPTION value=4>2<OPTION value=3>3<OPTION selected value=2>4<OPTION value=1>5</OPTION></SELECT> </TD>
+<TD vAlign=top align=left><SELECT onblur="return detailBlur(this);" id=df_0_3 onfocus="return detailFocus(this);" tabIndex=5 name=SET.created_via> <OPTION value="">&lt;empty&gt;<OPTION value=3550>EMAIL<OPTION value=70000009>FAX<OPTION value=70000006>OTHER<OPTION selected value=3551>PHONE<OPTION value=3552>TNG<OPTION value=70000011>VOICE MAIL<OPTION value=3554>WEB</OPTION></SELECT> </TD>
+<TD class=detailro vAlign=top align=left>YES </TD></TR>
+<TR vAlign=top>
+<TH vAlign=center colSpan=2 align=left><A onblur="return detailBlur(this);" id=dflnk_1_0 class=lookup onfocus="return detailFocus(this);" onmouseover="window.status='Popup search window for request area';return true" tabIndex=0 onmouseout="window.status=window.defaultStatus;return true" onclick="popup_search('pcat','KEY.category','main_form','',0,'sym')" href="javascript:void(0)"><IMG style="VERTICAL-ALIGN: middle" border=0 src="/CAisd/img/lookup.gif" width=12 height=12>&nbsp;<SPAN class=requiredlabeltext>Request Area</SPAN></A></TH>
+<TH vAlign=center colSpan=2 align=left><A onblur="return detailBlur(this);" id=dflnk_1_2 class=lookup onfocus="return detailFocus(this);" onmouseover="window.status='Popup search window for assignee';return true" tabIndex=0 onmouseout="window.status=window.defaultStatus;return true" onclick="fill_name_fields(_dtl.form[0],'agt','assignee',true)" href="javascript:void(0)"><IMG style="VERTICAL-ALIGN: middle" border=0 src="/CAisd/img/lookup.gif" width=12 height=12>&nbsp;<SPAN class=lookup>Assignee</SPAN></A></TH>
+<TH class=requiredlabeltext vAlign=baseline align=left>Status&nbsp;&nbsp;&nbsp;</TH></TR>
+<TR>
+<TD vAlign=top colSpan=2 align=left><INPUT onblur="detailBlur(this);change_category_func('cr',null,'pcat')" id=df_1_0 onfocus="return detailFocus(this);" tabIndex=6 onchange="detailClearSetField(this);change_category_func('cr',null,'pcat')" size=48 name=KEY.category> <INPUT type=hidden name=SET.category> </TD>
+<TD vAlign=top colSpan=2 align=left><INPUT onblur=detailBlur(this);detailSyncEditForms(this) id=df_1_2 onfocus="return detailFocus(this);" tabIndex=7 onchange="detailAutofill(this,'agt',true,'combo_name',false);" value="Thompson, Mark, W" name=assignee_combo_name> <INPUT type=hidden name=KEY.assignee> <INPUT type=hidden name=assignee_lname> <INPUT type=hidden name=assignee_fname> <INPUT type=hidden name=assignee_mname> <INPUT value=177061855 type=hidden name=SET.assignee> </TD>
+<TD vAlign=top align=left><SELECT onblur=detailBlur(this);detailSyncEditForms(this) id=df_1_4 onfocus="return detailFocus(this);" tabIndex=8 name=SET.status> <OPTION value=ACK>Acknowledged<OPTION value=AS>Assigned<OPTION value=BY>Bypass<OPTION value=CN>Cancelled<OPTION value=CLO>Closed<OPTION value=CL>Closed-First Call<OPTION value=CF>CSC Frozen<OPTION value=FR>Customer Frozen<OPTION value=IW>In Work<OPTION value=MO>Monitor<OPTION selected value=OP>Open<OPTION value=PN>Pending<OPTION value=RA>Re-Assigned<OPTION value=RJ>Rejected<OPTION value=RL>Resolved<OPTION value=RP>Responded<OPTION value=VF>Vendor Frozen</OPTION></SELECT> </TD></TR>
+<TR vAlign=top>
+<TH class=labeltext vAlign=baseline align=left>Reported By&nbsp;&nbsp;&nbsp;</TH>
+<TH vAlign=center align=left><A onblur="return detailBlur(this);" id=dflnk_2_1 class=lookup onfocus="return detailFocus(this);" onmouseover="window.status='Popup search window for group';return true" tabIndex=0 onmouseout="window.status=window.defaultStatus;return true" onclick="fill_name_fields(_dtl.form[0],'grp','group',true)" href="javascript:void(0)"><IMG style="VERTICAL-ALIGN: middle" border=0 src="/CAisd/img/lookup.gif" width=12 height=12>&nbsp;<SPAN class=requiredlabeltext>Group</SPAN></A></TH>
+<TH class=labeltext vAlign=baseline colSpan=2 align=left>Charge Back ID&nbsp;&nbsp;&nbsp;</TH>
+<TH vAlign=center align=left><A onblur="return detailBlur(this);" id=dflnk_2_4 class=lookup onfocus="return detailFocus(this);" onmouseover="window.status='Popup date helper for call back date/time';return true" tabIndex=0 onmouseout="window.status=window.defaultStatus;return true" onclick="detailSwitchDateToText('df_2_4','SET.call_back_date','SET.call_back_flag', true);return false;" href="javascript:void(0)"><IMG style="VERTICAL-ALIGN: middle" border=0 src="/CAisd/img/lookup_cal.gif" width=12 height=12>&nbsp;<SPAN class=lookup>Call Back Date/Time</SPAN></A></TH></TR>
+<TR>
+<TD vAlign=top align=left><A onblur="return detailBlur(this);" id=df_2_0 onfocus="return detailFocus(this);" tabIndex=9 href='javascript:showDetailWithPersid("cnt:177061855")'>Thompson, Mark, W</A> </TD>
+<TD vAlign=top align=left><INPUT onblur=detailBlur(this);detailSyncEditForms(this) id=df_2_1 onfocus="return detailFocus(this);" tabIndex=10 onchange="detailAutofill(this,'grp',true,'combo_name',false);" name=group_combo_name> <INPUT type=hidden name=KEY.group> <INPUT type=hidden name=group_lname> <INPUT type=hidden name=group_fname> <INPUT type=hidden name=group_mname> <INPUT type=hidden name=SET.group> </TD>
+<TD vAlign=top colSpan=2 align=left><INPUT onblur="return detailBlur(this);" id=df_2_2 onfocus="return detailFocus(this);" tabIndex=11 maxLength=12 name=SET.charge_back_id> </TD>
+<TD vAlign=top align=left><INPUT onblur="return detailBlur(this);" style="DISPLAY: none" id=df_2_4_hdn onfocus="return detailFocus(this);" tabIndex=12 onchange="internal_validate_date(this, 1, 0)" name=SET.call_back_date> <INPUT value=0 type=hidden name=SET.call_back_date_INT_DATE> <SELECT onblur="detailBlur(this);detailSwitchDateToText('df_2_4','SET.call_back_date','SET.call_back_flag', false);return false;" style="WIDTH: 200px" id=df_2_4 onfocus="return detailFocus(this);" tabIndex=12 onclick="_dtl.lastKeycode=0;detailSwitchDateToText('df_2_4','SET.call_back_date','SET.call_back_flag', false);"> <OPTION selected value=0>&lt;empty&gt;<OPTION value=86400>In one day<OPTION value=172800>In two days<OPTION value=604800>In one week<OPTION value=other>Other...</OPTION></SELECT> </TD></TR>
+<TR vAlign=top>
+<TH class=labeltext vAlign=baseline colSpan=4 align=left>Summary&nbsp;&nbsp;&nbsp;</TH>
+<TH vAlign=center align=left><A onblur="return detailBlur(this);" id=dflnk_3_4 class=lookup onfocus="return detailFocus(this);" onmouseover="window.status='Popup search window for resolution code';return true" tabIndex=0 onmouseout="window.status=window.defaultStatus;return true" onclick="popup_search('rc','KEY.rootcause','main_form','',0,'sym')" href="javascript:void(0)"><IMG style="VERTICAL-ALIGN: middle" border=0 src="/CAisd/img/lookup.gif" width=12 height=12>&nbsp;<SPAN class=lookup>Resolution Code</SPAN></A></TH></TR>
+<TR>
+<TD vAlign=top colSpan=4 align=left><INPUT onblur="return detailBlur(this);" id=df_3_0 onfocus="return detailFocus(this);" tabIndex=13 maxLength=240 size=60 name=SET.summary> </TD>
+<TD vAlign=top align=left><INPUT onblur=detailBlur(this);detailSyncEditForms(this) id=df_3_4 onfocus="return detailFocus(this);" tabIndex=14 onchange="detailAutofill(this,'rc',false,'sym',false);" size=30 name=KEY.rootcause> <INPUT type=hidden name=SET.rootcause> </TD></TR>
+<TR vAlign=top>
+<TH colSpan=5 align=left>
+<TABLE>
+<TBODY>
+<TR>
+<TH class=requiredlabeltext vAlign=center colSpan=5 align=left>Description&nbsp;&nbsp;&nbsp;</TH>
+<TH><A onblur=ImgBtnBlur(4); id=imgBtn4 onmouseup="return ImgBtnMouseUp(4);" onfocus=ImgBtnFocus(4); onmouseover="return ImgBtnMouseOver(4,this);" title=Spelling onmouseout="return ImgBtnMouseUp(4);" onmousedown=ImgBtnMouseDown(4); onclick="return ImgBtnExecute(4);" href="JavaScript:void(0)" name=imgBtn4>
+<TABLE border=0 cellSpacing=0 cellPadding=0>
+<TBODY>
+<TR>
+<TD height=21 vAlign=center><IMG onmouseup="return ImgBtnMouseUp(4);" onmouseover="return ImgBtnMouseOver(4,this);" title=Spelling onmouseout="return ImgBtnMouseUp(4);" onmousedown=ImgBtnMouseDown(4); border=0 src="/CAisd/img/button_left.gif" width=10 height=21></TD>
+<TD style="BACKGROUND: url(/CAisd/img/button_middle.gif)" id=imgBtn4_caption class=clsButtonEnabled vAlign=center noWrap align=middle>S<U>p</U>elling</TD>
+<TD height=21 vAlign=center><IMG onmouseup="return ImgBtnMouseUp(4);" onmouseover="return ImgBtnMouseOver(4,this);" title=Spelling onmouseout="return ImgBtnMouseUp(4);" onmousedown=ImgBtnMouseDown(4); border=0 src="/CAisd/img/button_right.gif" width=10 height=21></TD></TR></TBODY></TABLE></A></TH></TR></TBODY></TABLE></TH></TR>
+<TR>
+<TD vAlign=top colSpan=5 align=left><TEXTAREA onblur="return detailBlur(this);" id=df_4_0 onfocus="return detailFocus(this);" tabIndex=15 rows=4 cols=107 name=SET.description></TEXTAREA> </TD></TR>
+<TR vAlign=top>
+<TH class=requiredlabeltext vAlign=baseline align=left>Urgency&nbsp;&nbsp;&nbsp;</TH>
+<TH vAlign=center align=left><A onblur="return detailBlur(this);" id=dflnk_5_1 class=lookup onfocus="return detailFocus(this);" onmouseover="window.status='Popup search window for change order';return true" tabIndex=0 onmouseout="window.status=window.defaultStatus;return true" onclick="popup_search('chg','KEY.change','main_form','',0,'chg_ref_num')" href="javascript:void(0)"><IMG style="VERTICAL-ALIGN: middle" border=0 src="/CAisd/img/lookup.gif" width=12 height=12>&nbsp;<SPAN class=lookup>Change Order</SPAN></A></TH>
+<TH class=labeltext vAlign=baseline colSpan=2 align=left>Ext Interface #&nbsp;&nbsp;&nbsp;</TH>
+<TH vAlign=center align=left><A onblur="return detailBlur(this);" id=dflnk_5_4 class=lookup onfocus="return detailFocus(this);" onmouseover="window.status='Popup search window for service type';return true" tabIndex=0 onmouseout="window.status=window.defaultStatus;return true" onclick="popup_search('sdsc','KEY.support_lev','main_form','',0,'sym')" href="javascript:void(0)"><IMG style="VERTICAL-ALIGN: middle" border=0 src="/CAisd/img/lookup.gif" width=12 height=12>&nbsp;<SPAN class=lookup>Service Type</SPAN></A></TH>
+<TH class=labeltext vAlign=baseline align=left>Timer&nbsp;&nbsp;&nbsp;</TH></TR>
+<TR>
+<TD vAlign=top align=left><SELECT onblur="return detailBlur(this);" id=df_5_0 onfocus="return detailFocus(this);" tabIndex=16 name=SET.impact> <OPTION value=5>1<OPTION selected value=0>2</OPTION></SELECT> </TD>
+<TD vAlign=top align=left><INPUT onblur="return detailBlur(this);" id=df_5_1 onfocus="return detailFocus(this);" tabIndex=17 onchange="detailAutofill(this,'chg',false,'chg_ref_num',false);" name=KEY.change> <INPUT type=hidden name=SET.change> </TD>
+<TD class=detailro vAlign=top colSpan=2 align=left>&nbsp; </TD>
+<TD vAlign=top align=left><INPUT onblur="return detailBlur(this);" id=df_5_4 onfocus="return detailFocus(this);" tabIndex=18 onchange="detailAutofill(this,'sdsc',false,'sym',false);" name=KEY.support_lev> <INPUT type=hidden name=SET.support_lev> </TD>
+<TD vAlign=top align=left><INPUT style="BACKGROUND-COLOR: salmon; COLOR: black" value=00:53:02 readOnly size=8 name=timer> </TD></TR>
+<TR vAlign=top>
+<TH vAlign=center align=left><A onblur="return detailBlur(this);" id=dflnk_6_0 class=lookup onfocus="return detailFocus(this);" onmouseover="window.status='Popup date helper for open date/time';return true" tabIndex=0 onmouseout="window.status=window.defaultStatus;return true" onclick="popup_date_helper('main_form','SET.open_date');return false;" href="javascript:void(0)"><IMG style="VERTICAL-ALIGN: middle" border=0 src="/CAisd/img/lookup_cal.gif" width=12 height=12>&nbsp;<SPAN class=requiredlabeltext>Open Date/Time</SPAN></A></TH>
+<TH vAlign=center align=left><A onblur="return detailBlur(this);" id=dflnk_6_1 class=lookup onfocus="return detailFocus(this);" onmouseover="window.status='Popup date helper for close date/time';return true" tabIndex=0 onmouseout="window.status=window.defaultStatus;return true" onclick="popup_date_helper('main_form','SET.close_date');return false;" href="javascript:void(0)"><IMG style="VERTICAL-ALIGN: middle" border=0 src="/CAisd/img/lookup_cal.gif" width=12 height=12>&nbsp;<SPAN class=lookup>Close Date/Time</SPAN></A></TH>
+<TH class=labeltext vAlign=baseline colSpan=2 align=left>Last Modified&nbsp;&nbsp;&nbsp;</TH>
+<TH class=labeltext vAlign=baseline align=left>Total Activity Time&nbsp;&nbsp;&nbsp;</TH></TR>
+<TR>
+<TD class=detailro vAlign=top align=left><INPUT onblur="return detailBlur(this);" id=df_6_0 onfocus="return detailFocus(this);" tabIndex=19 onchange="internal_validate_date(this, 1, 1)" value="02/07/2014 12:28 pm" name=SET.open_date> <INPUT value=0 type=hidden name=SET.open_date_INT_DATE> </TD>
+<TD class=detailro vAlign=top align=left><INPUT onblur="return detailBlur(this);" id=df_6_1 onfocus="return detailFocus(this);" tabIndex=20 onchange="internal_validate_date(this, 1, 2)" name=SET.close_date> <INPUT value=0 type=hidden name=SET.close_date_INT_DATE> </TD>
+<TD class=detailro vAlign=top colSpan=2 align=left>&nbsp; </TD>
+<TD class=detailro vAlign=top align=left>00:00:00 </TD></TR></TBODY></TABLE>
+<SCRIPT language=JavaScript>start_notebook('crro_nb','',230);</SCRIPT>
+
+<DIV id=nb_crro_nb_ixdiv>
+<TABLE style="TOP: 467px; LEFT: 44px" class=notebook valign="bottom" cellspacing="0">
+<TBODY>
+<TR>
+<TH id=nbtab_0_crro_nb_hdr>
+<TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+<TBODY>
+<TR>
+<TD vAlign=top width=8><A style="WIDTH: 100%" class=tab tabIndex=0 onclick=show_tab_src(0) href="javascript:void(0)"><IMG id=nbtab_0_crro_nb_left border=0 src="/CAisd/img/selected_left.gif" width=8 height=17></A></TD>
+<TD style="BACKGROUND: url(/CAisd/img/selected_middle.gif); HEIGHT: 17px" id=nbtab_0_crro_nb_middle align=middle BORDER="0"><A id=nbtab_0_crro_nb_text class=tab tabIndex=2001 onclick=show_tab_src(0) href="javascript:void(0)"><U>1</U>. Activities</A></TD>
+<TD vAlign=top width=8><A style="WIDTH: 100%" class=tab tabIndex=0 onclick=show_tab_src(0) href="javascript:void(0)"><IMG id=nbtab_0_crro_nb_right border=0 src="/CAisd/img/selected_right.gif" width=8 height=17></A></TD></TR></TBODY></TABLE></TH>
+<TH id=nbtab_1_crro_nb_hdr>
+<TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+<TBODY>
+<TR>
+<TD vAlign=top width=8><A style="WIDTH: 100%" class=tab tabIndex=0 onclick=show_tab_src(1) href="javascript:void(0)"><IMG id=nbtab_1_crro_nb_left border=0 src="http:" width=8 height=17></A></TD>
+<TD style="BACKGROUND: url(http:); HEIGHT: 17px" id=nbtab_1_crro_nb_middle align=middle BORDER="0"><A id=nbtab_1_crro_nb_text class=tabUnselected tabIndex=2002 onclick=show_tab_src(1) href="javascript:void(0)"><U>2</U>. Related Requests</A></TD>
+<TD vAlign=top width=8><A style="WIDTH: 100%" class=tab tabIndex=0 onclick=show_tab_src(1) href="javascript:void(0)"><IMG id=nbtab_1_crro_nb_right border=0 src="http:" width=8 height=17></A></TD></TR></TBODY></TABLE></TH></TR></TBODY></TABLE>
+<TABLE style="TOP: 444px; LEFT: 44px" class=notebook valign="bottom" cellspacing="0">
+<TBODY>
+<TR>
+<TH id=nbtab_2_crro_nb_hdr>
+<TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+<TBODY>
+<TR>
+<TD vAlign=top width=8><A style="WIDTH: 100%" class=tab tabIndex=0 onclick=show_tab_src(2) href="javascript:void(0)"><IMG id=nbtab_2_crro_nb_left border=0 src="" width=8 height=17></A></TD>
+<TD style="BACKGROUND: url(http://); HEIGHT: 17px" id=nbtab_2_crro_nb_middle align=middle BORDER="0"><A id=nbtab_2_crro_nb_text class=tabUnselected tabIndex=2003 onclick=show_tab_src(2) href="javascript:void(0)"><U>3</U>. Attachments</A></TD>
+<TD vAlign=top width=8><A style="WIDTH: 100%" class=tab tabIndex=0 onclick=show_tab_src(2) href="javascript:void(0)"><IMG id=nbtab_2_crro_nb_right border=0 src="http:" width=8 height=17></A></TD></TR></TBODY></TABLE></TH>
+<TH id=nbtab_3_crro_nb_hdr>
+<TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+<TBODY>
+<TR>
+<TD vAlign=top width=8><A style="WIDTH: 100%" class=tab tabIndex=0 onclick=show_tab_src(3) href="javascript:void(0)"><IMG id=nbtab_3_crro_nb_left border=0 src="" width=8 height=17></A></TD>
+<TD style="BACKGROUND: url(http:); HEIGHT: 17px" id=nbtab_3_crro_nb_middle align=middle BORDER="0"><A id=nbtab_3_crro_nb_text class=tabUnselected tabIndex=2004 onclick=show_tab_src(3) href="javascript:void(0)"><U>4</U>. Properties</A></TD>
+<TD vAlign=top width=8><A style="WIDTH: 100%" class=tab tabIndex=0 onclick=show_tab_src(3) href="javascript:void(0)"><IMG id=nbtab_3_crro_nb_right border=0 src="http:" width=8 height=17></A></TD></TR></TBODY></TABLE></TH></TR></TBODY></TABLE></DIV><A onfocus=nbTabOff(-1) tabIndex=2000 href="javascript:void(0)"></A><A onfocus=nbTabOff(1) tabIndex=2099 href="javascript:void(0)"></A>
+<SCRIPT language=JavaScript>
+start_pdm_tab("Activities","");
+</SCRIPT>
+
+<DIV style="DISPLAY: block; HEIGHT: auto; TOP: 490px; LEFT: 44px" id=nbtab_0_crro_nb_div class=notebook>
+<SCRIPT language=JavaScript>
+// 10/05/05 MJ2W - Remove Search button - Jose Zamith
+//ImgBtnRow();
+//ImgBtnCreate("btn101", msgtext(450), "search_alg(this.form, 'cr:217699609')", true, 0);
+ImgBtnEndRow();
+docWriteln("<TABLE ID=tbl101 CLASS=tab>");
+docWriteln("<TR>");
+docWriteln("<TH COLSPAN=6 class=detailro>History</TH>");
+docWriteln("</TR>");
+docWriteln("<TR>");
+docWriteln("<TH ALIGN=LEFT class=detailro>Created By</TH>");
+docWriteln("<TH ALIGN=LEFT class=detailro>Date</TH>");
+// 10/12/05 MJ2W - Remove Search button - Jose Zamith
+// docWriteln("<TH ALIGN=LEFT class=detailro>Time Spent</TH>");
+docWriteln("<TH ALIGN=LEFT class=detailro>Type</TH>");
+docWriteln("<TH ALIGN=LEFT class=detailro>Description</TH>");
+docWriteln("</TR>");
+
+
+
+docWriteln("</TABLE>");
+</SCRIPT>
+
+<TABLE id=tbl101 class=tab>
+<TBODY>
+<TR>
+<TH class=detailro colSpan=6>History</TH></TR>
+<TR>
+<TH class=detailro align=left>Created By</TH>
+<TH class=detailro align=left>Date</TH>
+<TH class=detailro align=left>Type</TH>
+<TH class=detailro align=left>Description</TH></TR></TBODY></TABLE>
+<SCRIPT>end_pdm_tab("Activities");</SCRIPT>
+<BR></DIV>
+<SCRIPT language=JavaScript>
+start_pdm_tab("Related Requests","");
+</SCRIPT>
+
+<DIV style="HEIGHT: auto" id=nbtab_1_crro_nb_div class=notebook>
+<SCRIPT language=JavaScript>
+if (typeof argID != "number")
+	argID = Number("0");
+if (isNaN(argID) == false && argID != 0)
+{
+
+
+ImgBtnRow();
+if (propIsITIL) {
+   ImgBtnCreate("UPDATE_CHILDREN", msgtext(426), "update_child('cr', 'cr:217699609', 'children', 'cr', 'parent', 'Requests', 'Request AM31719505<BR>Children')", true, 0);
+}else {
+   ImgBtnCreate("UPDATE_CHILD",msgtext(427), "update_child('cr', 'cr:217699609', 'children', 'cr', 'parent', 'Requests', 'Request AM31719505<BR>Children')", true, 0);
+}
+ImgBtnEndRow();
+
+}
+</SCRIPT>
+
+<SCRIPT language=JavaScript>
+detailStartRow("CLASS=tab");
+if (propIsITIL)
+   
+detailLookup("Parent","parent","cr",1,20,
+"0",
+"",
+"",
+"yes",
+"ref_num",
+'',
+"",
+
+"",
+"yes");
+
+else
+   
+detailLookup("Parent Request","parent","cr",1,20,
+"0",
+"",
+"",
+"yes",
+"ref_num",
+'',
+"",
+
+"",
+"yes");
+
+detailTextboxReadonly("Status","parent.status",1,
+' ', "");
+
+detailTextboxReadonly("Summary","parent.summary",1,
+' ', "");
+
+detailEndRow();
+docWriteln("<TR>");
+docWriteln("<TD>&nbsp;</TD>");
+docWriteln("</TR>");
+docWriteln("<TR>");
+if (propIsITIL)
+   docWriteln("<TH ALIGN=LEFT class=detailro>Children</TH>");
+else
+   docWriteln("<TH ALIGN=LEFT class=detailro>Child Request(s)</TH>");
+docWriteln("<TH ALIGN=LEFT class=detailro>Status</TH>");
+docWriteln("<TH ALIGN=LEFT class=detailro>Summary</TH>");
+docWriteln("</TR>");
+
+detailEndTable();
+</SCRIPT>
+
+<TABLE class=tab>
+<TBODY>
+<TR vAlign=top>
+<TH vAlign=center align=left><A onblur="return detailBlur(this);" id=dflnk_7_0 class=lookup onfocus="return detailFocus(this);" onmouseover="window.status='Popup search window for parent request';return true" tabIndex=0 onmouseout="window.status=window.defaultStatus;return true" onclick="popup_search('cr','KEY.parent','main_form','',0,'ref_num')" href="javascript:void(0)"><IMG style="VERTICAL-ALIGN: middle" border=0 src="/CAisd/img/lookup.gif" width=12 height=12>&nbsp;<SPAN class=lookup>Parent Request</SPAN></A></TH>
+<TH class=labeltext vAlign=baseline align=left>Status&nbsp;&nbsp;&nbsp;</TH>
+<TH class=labeltext vAlign=baseline align=left>Summary&nbsp;&nbsp;&nbsp;</TH></TR>
+<TR>
+<TD vAlign=top align=left><INPUT onblur="return detailBlur(this);" id=df_7_0 onfocus="return detailFocus(this);" tabIndex=21 onchange="detailAutofill(this,'cr',false,'ref_num',false);" name=KEY.parent> <INPUT type=hidden name=SET.parent> </TD>
+<TD class=detailro vAlign=top align=left>&nbsp; </TD>
+<TD class=detailro vAlign=top align=left>&nbsp; </TD></TR>
+<TR>
+<TD>&nbsp;</TD></TR>
+<TR>
+<TH class=detailro align=left>Child Request(s)</TH>
+<TH class=detailro align=left>Status</TH>
+<TH class=detailro align=left>Summary</TH></TR></TBODY></TABLE>
+<SCRIPT>end_pdm_tab("Related Requests");</SCRIPT>
+<BR></DIV>
+<SCRIPT language=JavaScript>
+start_pdm_tab("Attachments","Yes");
+</SCRIPT>
+
+<DIV style="HEIGHT: auto" id=nbtab_2_crro_nb_div class=notebook>
+<SCRIPT language=JavaScript>
+switch ("cr") {
+   case "cr":  var access = "2" - 0; break;
+   case "iss": var access = "0" - 0; break;
+   case "chg": var access = "2" - 0; break;
+   default:    var access = 0;
+}
+var attmnt_menu = new ContextMenu("attmnt_menu");
+attmnt_menu.addItem("View Document", "download_exec(self.attdata[self.lnkid])");
+attmnt_menu.addItem("Show URL", "download_exec(self.attdata[self.lnkid],true)");
+if ( access > 1 ) {
+   attmnt_menu.addItem("Edit Attachment","edit_attmnt('cr:217699609',self.attdata[self.lnkid].id)");
+   attmnt_menu.addItem("Delete Attachment","delete_attmnt('cr:217699609',self.attdata[self.lnkid].id)");
+}
+attmnt_menu.finish();
+		
+var lnkid = -1;
+var attdata = new Array();
+
+ImgBtnRow();
+if (! _dtl.edit)
+{
+    var query_str = cfgCgi + "?SID=318570990+FID=2012775861" + 
+		    "+OP=CREATE_NEW+FACTORY=attmnt+NEXT_PERSID=cr:217699609";
+	query_str += "+attmnt_parent=" + "cr";
+    ImgBtnCreate("btn201", msgtext(448), "browseWithURL('" + query_str + "')", true, 0);
+}
+else
+{
+    var query_str = cfgCgi + "?SID=318570990+FID=2012775861" + 
+		    "+OP=CREATE_NEW+FACTORY=attmnt+KEEP.attmnt_for_edit=1";
+	query_str += "+attmnt_parent=" + "cr";
+    ImgBtnCreate("btn201", msgtext(448), "popupWithURL('" + query_str + "')", true, 0);
+}
+ImgBtnEndRow();
+
+docWriteln("<TABLE ID=tbl201 CLASS=tab>");
+docWriteln("<TR>");
+docWriteln("<TH COLSPAN=6 class=detailro>Attachments</TH>");
+docWriteln("</TR>");
+docWriteln("<TR>");
+docWriteln("<TH ALIGN=LEFT class=detailro>Repository</TH>");
+docWriteln("<TH ALIGN=LEFT class=detailro>Document</TH>");
+docWriteln("<TH ALIGN=LEFT class=detailro>Description</TH>");
+docWriteln("<TH ALIGN=LEFT class=detailro>Attached On</TH>");
+docWriteln("<TH ALIGN=LEFT class=detailro>Status</TH>");
+docWriteln("</TR>");
+
+docWriteln("</TABLE>");
+</SCRIPT>
+
+<DIV style="DISPLAY: none" id=attmnt_menu class=ctxMenu onmouseover=parent.contextMenuMouseOver(1) onmouseout=parent.contextMenuMouseOut(event,1)>
+<TABLE border=0 cellSpacing=0 cellPadding=0>
+<TBODY>
+<TR>
+<TD onmouseover=parent.contextMenuMouseOver(1)><A ondragstart="return false;" id=ctx_1_0 class=ctxMenu onmouseover="return true;" onclick=parent.download_exec(self.attdata[self.lnkid]) href="/CAisd/html/empty.html"><U>V</U>iew Document</A></TD></TR>
+<TR>
+<TD onmouseover=parent.contextMenuMouseOver(1)><A ondragstart="return false;" id=ctx_1_1 class=ctxMenu onmouseover="return true;" onclick=parent.download_exec(self.attdata[self.lnkid],true) href="/CAisd/html/empty.html"><U>S</U>how URL</A></TD></TR>
+<TR>
+<TD onmouseover=parent.contextMenuMouseOver(1)><A ondragstart="return false;" id=ctx_1_2 class=ctxMenu onmouseover="return true;" onclick="parent.edit_attmnt('cr:217699609',self.attdata[self.lnkid].id)" href="/CAisd/html/empty.html"><U>E</U>dit Attachment</A></TD></TR>
+<TR>
+<TD onmouseover=parent.contextMenuMouseOver(1)><A ondragstart="return false;" id=ctx_1_3 class=ctxMenu onmouseover="return true;" onclick="parent.delete_attmnt('cr:217699609',self.attdata[self.lnkid].id)" href="/CAisd/html/empty.html"><U>D</U>elete Attachment</A></TD></TR></TBODY></TABLE></DIV>
+<CENTER>
+<TABLE border=0>
+<TBODY>
+<TR>
+<TD height=21 align=middle><A onblur=ImgBtnBlur(5); id=imgBtn5 onmouseup="return ImgBtnMouseUp(5);" onfocus=ImgBtnFocus(5); onmouseover="return ImgBtnMouseOver(5,this);" title="Attach Document" onmouseout="return ImgBtnMouseUp(5);" onmousedown=ImgBtnMouseDown(5); onclick="return ImgBtnExecute(5);" href="JavaScript:void(0)" name=imgBtn5>
+<TABLE border=0 cellSpacing=0 cellPadding=0>
+<TBODY>
+<TR>
+<TD height=21 vAlign=center><IMG onmouseup="return ImgBtnMouseUp(5);" onmouseover="return ImgBtnMouseOver(5,this);" title="Attach Document" onmouseout="return ImgBtnMouseUp(5);" onmousedown=ImgBtnMouseDown(5); border=0 src="/CAisd/img/button_left.gif" width=10 height=21></TD>
+<TD style="BACKGROUND: url(/CAisd/img/button_middle.gif)" id=imgBtn5_caption class=clsButtonEnabled vAlign=center noWrap align=middle><U>A</U>ttach Document</TD>
+<TD height=21 vAlign=center><IMG onmouseup="return ImgBtnMouseUp(5);" onmouseover="return ImgBtnMouseOver(5,this);" title="Attach Document" onmouseout="return ImgBtnMouseUp(5);" onmousedown=ImgBtnMouseDown(5); border=0 src="/CAisd/img/button_right.gif" width=10 height=21></TD></TR></TBODY></TABLE></A></TD></TR></TBODY></TABLE></CENTER>
+<TABLE id=tbl201 class=tab>
+<TBODY>
+<TR>
+<TH class=detailro colSpan=6>Attachments</TH></TR>
+<TR>
+<TH class=detailro align=left>Repository</TH>
+<TH class=detailro align=left>Document</TH>
+<TH class=detailro align=left>Description</TH>
+<TH class=detailro align=left>Attached On</TH>
+<TH class=detailro align=left>Status</TH></TR></TBODY></TABLE>
+<SCRIPT>end_pdm_tab("Attachments");</SCRIPT>
+<BR></DIV>
+<SCRIPT language=JavaScript>
+start_pdm_tab("Properties","");
+</SCRIPT>
+
+<DIV style="HEIGHT: auto" id=nbtab_3_crro_nb_div class=notebook>
+<SCRIPT language=JavaScript>
+docWriteln("<DIV ID=propertyDiv>");
+detailStartRow("CLASS=tab");
+
+detailRowHdr("Name");
+detailRowHdr("Value");
+detailRowHdr("Examples");
+detailEndHdrRow();
+var n = 0;
+
+
+   detailNoProperties();
+
+
+detailEndTable();
+docWrite("</DIV>");
+</SCRIPT>
+
+<DIV id=propertyDiv>
+<TABLE class=tab>
+<TBODY>
+<TR vAlign=top>
+<TH class=labeltext vAlign=baseline align=left>Name&nbsp;&nbsp;&nbsp;</TH>
+<TH class=labeltext vAlign=baseline align=left>Value&nbsp;&nbsp;&nbsp;</TH>
+<TH class=labeltext vAlign=baseline align=left>Examples&nbsp;&nbsp;&nbsp;</TH></TR>
+<TR>
+<TD class=labeltext colSpan=3 align=middle>No properties are defined for this request area</TD></TR></TBODY></TABLE></DIV>
+<SCRIPT>end_pdm_tab("Properties");</SCRIPT>
+<BR></DIV><!-- must be in the main form --><INPUT type=hidden name=zvip>
+<SCRIPT language=JavaScript>
+endDetail();
+</SCRIPT>
+ </FORM>
+<FORM method=post name=spell_form action=/protected/usd-cgi/pdmweb/pdmweb.exe?SID=318570990+FID=4758+OP=SPELLCHECK+HTMPL=spellcheck.htmpl+KEEP.form_name=main_form target=spell_form><INPUT type=hidden name=KEEP.evaltext><INPUT value=" " type=hidden name=KEEP.evallang><INPUT value=" " type=hidden name=KEEP.evalopts><INPUT value=" " type=hidden name=KEEP.evallexlist><INPUT type=hidden name=KEEP.control_name></FORM><!-- BEGIN analyst/std_footer.htmpl -->
+<SCRIPT language=JavaScript>
+if (typeof std_footer_setup != "undefined")
+    std_footer_setup();
+</SCRIPT>
+</DIV></DIV>
+<SCRIPT>
+	var ahdtop = get_ahdtop();
+	if (typeof ahdtop == "object" &&
+	    typeof ahdtop.LoadingPopup == "object" &&
+	    typeof ahdtop.LoadingPopup.name == "string" &&
+	    ahdtop.LoadingPopup.name == "USD1391794118653")
+		ahdtop.LoadingPopup = void(0);
+</SCRIPT>
+<!-- BEGIN analyst/std_footer_site.htmpl --><!-- END analyst/std_footer_site.htmpl --><!-- END analyst/std_footer.htmpl --></CENTER>
+innertext
+innertext
+About Unicenter ServicePlus Service Desk...
+Refresh
+Help on Main Window...
+Help on This Window...
+Create New Request AM31719505
+ 
+Save
+Cancel
+Profile Browser
+Close-First Call
+
+
+
+            Affected End User AssetPriority   Call Source   Active?   
+         12345  <empty>EMAILFAXOTHERPHONETNGVOICE MAILWEB YES 
+ Request Area AssigneeStatus   
+         AcknowledgedAssignedBypassCancelledClosedClosed-First CallCSC FrozenCustomer FrozenIn WorkMonitorOpenPendingRe-AssignedRejectedResolvedRespondedVendor Frozen 
+Reported By    GroupCharge Back ID    Call Back Date/Time
+Thompson, Mark, W           <empty>In one dayIn two daysIn one weekOther... 
+Summary    Resolution Code
+   
+Description   Spelling
+
+
+ 
+Urgency    Change OrderExt Interface #    Service TypeTimer   
+ 12        
+ Open Date/Time Close Date/TimeLast Modified   Total Activity Time   
+      00:00:00 
+
+1. Activities
+2. Related Requests
+
+3. Attachments
+4. Properties
+
+
+History
+Created ByDateTypeDescription
+
+ Parent RequestStatus   Summary   
+      
+ 
+Child Request(s)StatusSummary
+
+View Document
+Show URL
+Edit Attachment
+Delete Attachment
+Attach Document
+
+
+Attachments
+RepositoryDocumentDescriptionAttached OnStatus
+
+Name   Value   Examples   
+No properties are defined for this request area
+
+ 
+isdisabled
+left
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+left
+0
+locationname
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+locationname
+0
+locationurl
+locationurl
+                                                                                                                                                                  
+menubar
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+menubar
+0
+offline
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+offline
+0
+outertext
+outertext
+About Unicenter ServicePlus Service Desk...
+Refresh
+Help on Main Window...
+Help on This Window...
+Create New Request AM31719505
+ 
+Save
+Cancel
+Profile Browser
+Close-First Call
+
+
+
+            Affected End User AssetPriority   Call Source   Active?   
+         12345  <empty>EMAILFAXOTHERPHONETNGVOICE MAILWEB YES 
+ Request Area AssigneeStatus   
+         AcknowledgedAssignedBypassCancelledClosedClosed-First CallCSC FrozenCustomer FrozenIn WorkMonitorOpenPendingRe-AssignedRejectedResolvedRespondedVendor Frozen 
+Reported By    GroupCharge Back ID    Call Back Date/Time
+Thompson, Mark, W           <empty>In one dayIn two daysIn one weekOther... 
+Summary    Resolution Code
+   
+Description   Spelling
+
+
+ 
+Urgency    Change OrderExt Interface #    Service TypeTimer   
+ 12        
+ Open Date/Time Close Date/TimeLast Modified   Total Activity Time   
+      00:00:00 
+
+1. Activities
+2. Related Requests
+
+3. Attachments
+4. Properties
+
+
+History
+Created ByDateTypeDescription
+
+ Parent RequestStatus   Summary   
+      
+ 
+Child Request(s)StatusSummary
+
+View Document
+Show URL
+Edit Attachment
+Delete Attachment
+Attach Document
+
+
+Attachments
+RepositoryDocumentDescriptionAttached OnStatus
+
+Name   Value   Examples   
+No properties are defined for this request area
+
+ 
+outerhtml
+outerhtml
+
+<BODY class=detailro><DIV style="DISPLAY: none" id=rClickMenu class=ctxMenu onmouseover=parent.contextMenuMouseOver(0) onmouseout=parent.contextMenuMouseOut(event,0)>
+<TABLE border=0 cellSpacing=0 cellPadding=0>
+<TBODY>
+<TR>
+<TD onmouseover=parent.contextMenuMouseOver(0)><A ondragstart="return false;" id=ctx_0_0 class=ctxMenu onmouseover="return true;" onclick="parent.popup_window('about','help_about.htmpl',467,275,'ahdmenu=no,scrollbars=no,resizable=no')" href="/CAisd/html/empty.html"><U>A</U>bout Unicenter ServicePlus Service Desk...</A></TD></TR>
+<TR>
+<TD onmouseover=parent.contextMenuMouseOver(0)><A ondragstart="return false;" id=ctx_0_1 class=ctxMenu onmouseover="return true;" onclick=parent.refreshForm() href="/CAisd/html/empty.html"><U>R</U>efresh</A></TD></TR>
+<TR>
+<TD onmouseover=parent.contextMenuMouseOver(0)><A ondragstart="return false;" id=ctx_0_2 class=ctxMenu onmouseover="return true;" onclick="parent.help_on_form('home')" href="/CAisd/html/empty.html"><U>H</U>elp on Main Window...</A></TD></TR>
+<TR>
+<TD onmouseover=parent.contextMenuMouseOver(0)><A ondragstart="return false;" id=ctx_0_3 class=ctxMenu onmouseover="return true;" onclick=parent.help_on_form(self.propFormName) href="/CAisd/html/empty.html">Help on <U>T</U>his Window...</A></TD></TR></TBODY></TABLE></DIV><!-- BEGIN analyst/std_head_site.htmpl --><!-- END analyst/std_head_site.htmpl --><!-- END analyst/std_head.htmpl -->
+<SCRIPT>
+cfgMachineName = "ndcusdw605";
+argHumantouchLog = "";
+argPersistentID = "cr:217699609";
+argCstID = "177061855";
+cfgDateFormat = "MM/DD/YYYY hh:mm a(am,pm)";
+argRefNum = "AM31719505";
+cfgUserAuth = "2";
+cfgAccessNotify = "2";
+argID = "0";
+argChange = "";
+cfgCgiReportScript = '/protected/usd-cgi/pdmweb/pdm_cgireport.exe';
+rptName = new Array("crsum.rpt", "crdtl.rpt");
+argSearchSqlClause = "id = 0";
+formAsset = new Array("main_form","KEY.affected_resource");
+formEnduser = new Array("main_form","customer");
+prop_ref = "20.6.1.225|web:ndcusdw605:1|791CAA|1391663354|1";
+cfgCheckAgtInAreaDef = ""; 
+ZEN_PERSID = "";
+var orig_assignee = "Thompson, Mark, W";
+var orig_group = "";
+var orig_assignee_id = "177061855";
+var orig_customer_org = "";
+
+</SCRIPT>
+
+<SCRIPT language=JavaScript src="/CAisd/scripts/arrow_button.js"></SCRIPT>
+
+<SCRIPT language=JavaScript src="/CAisd/sitemods/scripts/CSC_CUSTOM/change_cat.js"></SCRIPT>
+
+<SCRIPT language=JavaScript src="/CAisd/scripts/check_submit.js"></SCRIPT>
+
+<SCRIPT language=JavaScript src="/CAisd/scripts/convert_date.js"></SCRIPT>
+
+<SCRIPT language=JavaScript src="/CAisd/scripts/date_helper.js"></SCRIPT>
+
+<SCRIPT language=JavaScript src="/CAisd/sitemods/scripts/CSC_CUSTOM/detail_form.js"></SCRIPT>
+
+<SCRIPT language=JavaScript src="/CAisd/scripts/img_link.js"></SCRIPT>
+
+<SCRIPT language=JavaScript src="/CAisd/sitemods/scripts/CSC_CUSTOM/upload.js"></SCRIPT>
+
+<SCRIPT language=JavaScript src="/CAisd/scripts/webtab.js"></SCRIPT>
+
+<SCRIPT language=JavaScript src="/CAisd/scripts/update_lrel.js"></SCRIPT>
+
+<SCRIPT language=JavaScript src="/CAisd/scripts/val_type.js"></SCRIPT>
+
+<SCRIPT language=JavaScript src="/CAisd/scripts/timer.js"></SCRIPT>
+
+<SCRIPT language=JavaScript src="/CAisd/scripts/attevts.js"></SCRIPT>
+
+<SCRIPT language=JavaScript src="/CAisd/scripts/spellcheck.js"></SCRIPT>
+
+<SCRIPT language=JavaScript src="/CAisd/sitemods/scripts/CSC_CUSTOM/sitemods.js"></SCRIPT>
+
+<SCRIPT language=JavaScript>
+var w_name = get_popup_window_name("ci_window");
+
+function EmailList() {
+
+        //invoke showPrint function
+	z_goto_zen(ZEN_PERSID,argPersistentID);
+}
+function loadActions()
+{
+   if ( _dtl.edit ) {
+      save_initial_vals();
+      StartTheTimer("main_form","timer");
+      
+   }
+   show_notebook();
+   
+   
+	// SDT 22046 get around IE 5.5 repaint problem by delaying call
+   window.setTimeout('default_scratchpad()', 1000);
+}
+
+function default_scratchpad() {
+	if ( _dtl.edit ) {
+		load_from_scratchpad("0");
+	}
+}
+
+function unloadActions()
+{
+   if ( _dtl.edit )
+      unload_check();
+   cancel_any_lrel_update();
+}
+
+// Gets the most recent values of the ticket
+//	and sends them off to KT.
+function do_kt_search() {
+
+	// Fill the form elements with the most recent ticket info;
+	//	applies only to editable tickets.
+	// Also make grab for IDs in SET fields; these may not be there,
+	//	but it will save KT from looking 'em up.  
+	
+	var fromArr = new Array();
+	var i = 0;
+	fromArr[i++] = ["KEY.category", "CATEGORY"];
+	fromArr[i++] = ["KEY.affected_resource", "ITEM"];
+	fromArr[i++] = ["SET.affected_resource", "SD_ASSET_ID"];
+	
+	var dOptField = cfgSearchStr;
+	if (null == dOptField || "" == dOptField)
+		dOptField = "description";
+	fromArr[i++] = ["SET." + dOptField, "DESCRIPTION"];
+	
+	ci_update_fields(window, "main_form", "ci_search", fromArr);
+	popupCiWindow(w_name ,"ci_search", "", 1);
+}
+
+var zcurrCustID="";
+
+function zcustomerChanged(form_name, base_name, lname, fname, mname, cntID, caller_type ) {
+
+if (zcurrCustID == cntID) 
+return;
+zcurrCustID=cntID;
+
+var url;
+url="SEARCH+FACTORY=cnt"
++"+KEEP.domset_name=RLIST_STATIC"
++"+QBE.EQ.id="+escape(cntID)
++"+KEEP.backfill_attr=z_vip"
++"+HTMPL=javascript:parent."+window.name+".zvipCallback";
+upd_workframe(url);
+if(curr_form_action==0) // =0 if customer selected from contact list; =6 if typed in
+{
+set_action_in_progress(ACTN_COMPLETE);
+}
+}
+
+function zvipCallback(persid,value,rel_attr_val) {
+if (value == 1) {
+    alert("VIP Customer Alert");
+}
+}
+function backfill_cnt_event( form_name, base_name, lname, fname, mname,
+                             cntID, caller_type )
+{
+   if (_dtl.edit && !_dtl.skip_agt_check)
+   {
+	var f = void(0);
+	var r = form_name.match(/main_form([0-9]*)/);
+	if ( r != null ) {
+	    if ( r[1].length == 0 )
+		f = _dtl.form[0];
+	    else
+		f = _dtl.form[r[1]-0];
+	}
+	detailAgtCheck(f, base_name, cntID, prop_ref);
+   }
+   detailCntBackfill( form_name, base_name, lname, fname, mname,
+                      cntID, caller_type );
+if (base_name == "customer" && typeof cntID != "undefined" && cntID.length > 1)
+{
+zcustomerChanged(form_name, base_name, lname, fname, mname, cntID, caller_type);
+}
+}
+
+function printForm() {
+
+        //invoke showPrint function
+	showPrint(argPersistentID);
+}
+
+function zautofill_pcat()
+{
+
+  f=document.main_form;
+  g=f.elements["KEY.category"];
+//  alert("g.value.length = "+g.value.length);
+
+   if (g.value.length <= 9) {
+	popup_search('pcat','KEY.category','main_form','',0,'sym');
+   }
+}
+
+function zcopyorg2()
+{
+  setTimeout("zcopyorg()", 100);
+}
+
+// Code added by CA consultant to show VIP (notes) field
+
+if (""=="1") {
+  alert("VIP Customer Alert");
+}
+
+
+</SCRIPT>
+<!-- BEGIN analyst/std_body.htmpl -->
+<SCRIPT language=JavaScript src="/CAisd/scripts/std_body.js"></SCRIPT>
+
+<SCRIPT language=JavaScript>
+activateActionKeys();
+
+if ("0" != "1")
+{
+if ( window.name != "content" &&
+     window.name != "scoreboard" &&
+     window.name != "cai_main" &&
+     window.name != "page" )
+{
+   document.write("<IMG ALT='Unicenter ServicePlus Service Desk' BORDER='0' SRC='" + cfgCAISD)
+   document.write("/img/product_banner.jpg' height='50' width='461'>")
+}
+}
+
+</SCRIPT>
+<A accessKey=A onfocus='altKeyPressed("A")' href="javascript:void(0)"></A><A accessKey=B onfocus='altKeyPressed("B")' href="javascript:void(0)"></A><A accessKey=C onfocus='altKeyPressed("C")' href="javascript:void(0)"></A><A accessKey=D onfocus='altKeyPressed("D")' href="javascript:void(0)"></A><A accessKey=E onfocus='altKeyPressed("E")' href="javascript:void(0)"></A><A accessKey=F onfocus='altKeyPressed("F")' href="javascript:void(0)"></A><A accessKey=G onfocus='altKeyPressed("G")' href="javascript:void(0)"></A><A accessKey=H onfocus='altKeyPressed("H")' href="javascript:void(0)"></A><A accessKey=I onfocus='altKeyPressed("I")' href="javascript:void(0)"></A><A accessKey=J onfocus='altKeyPressed("J")' href="javascript:void(0)"></A><A accessKey=K onfocus='altKeyPressed("K")' href="javascript:void(0)"></A><A accessKey=L onfocus='altKeyPressed("L")' href="javascript:void(0)"></A><A accessKey=M onfocus='altKeyPressed("M")' href="javascript:void(0)"></A><A accessKey=N onfocus='altKeyPressed("N")' href="javascript:void(0)"></A><A accessKey=O onfocus='altKeyPressed("O")' href="javascript:void(0)"></A><A accessKey=P onfocus='altKeyPressed("P")' href="javascript:void(0)"></A><A accessKey=Q onfocus='altKeyPressed("Q")' href="javascript:void(0)"></A><A accessKey=R onfocus='altKeyPressed("R")' href="javascript:void(0)"></A><A accessKey=S onfocus='altKeyPressed("S")' href="javascript:void(0)"></A><A accessKey=T onfocus='altKeyPressed("T")' href="javascript:void(0)"></A><A accessKey=U onfocus='altKeyPressed("U")' href="javascript:void(0)"></A><A accessKey=V onfocus='altKeyPressed("V")' href="javascript:void(0)"></A><A accessKey=W onfocus='altKeyPressed("W")' href="javascript:void(0)"></A><A accessKey=X onfocus='altKeyPressed("X")' href="javascript:void(0)"></A><A accessKey=Y onfocus='altKeyPressed("Y")' href="javascript:void(0)"></A><A accessKey=Z onfocus='altKeyPressed("Z")' href="javascript:void(0)"></A><A accessKey=0 onfocus='altKeyPressed("0")' href="javascript:void(0)"></A><A accessKey=1 onfocus='altKeyPressed("1")' href="javascript:void(0)"></A><A accessKey=2 onfocus='altKeyPressed("2")' href="javascript:void(0)"></A><A accessKey=3 onfocus='altKeyPressed("3")' href="javascript:void(0)"></A><A accessKey=4 onfocus='altKeyPressed("4")' href="javascript:void(0)"></A><A accessKey=5 onfocus='altKeyPressed("5")' href="javascript:void(0)"></A><A accessKey=6 onfocus='altKeyPressed("6")' href="javascript:void(0)"></A><A accessKey=7 onfocus='altKeyPressed("7")' href="javascript:void(0)"></A><A accessKey=8 onfocus='altKeyPressed("8")' href="javascript:void(0)"></A><A accessKey=9 onfocus='altKeyPressed("9")' href="javascript:void(0)"></A>
+<SCRIPT language=JavaScript src="/CAisd/sitemods/scripts/CSC_CUSTOM/menubar.js"></SCRIPT>
+
+<SCRIPT language=JavaScript>
+
+var AlertMsg = '';
+
+var ShowLockCancel = '';
+if ( typeof DetailForm == "undefined" ||
+     "" == "yes" )
+   build_alertmsg();
+if ((typeof show_header != "undefined") && 
+    (show_header == 1) &&
+    "" != "no")
+{
+    document.writeln("<CENTER>");
+    if ( "0" != "0" && "0" != "" )
+    {
+        document.writeln(" <H1 CLASS='HiliteTitle'>" + form_title + "</H1>");
+    }
+    else
+    {
+    document.writeln("<H1>" + form_title + "</H1>");
+    }
+    document.writeln("</CENTER>");
+    startScrollbar();
+}
+var argPopupName = "USD1391794118653";
+
+    if ((typeof parent.content == "object") && 
+        (parent.content.name == "content"))
+    {
+        alertmsg(272);
+    }
+
+</SCRIPT>
+
+<CENTER>
+<H1>Create New Request AM31719505</H1></CENTER>
+<DIV style="WIDTH: 100%; OVERFLOW: auto" id=scrollbarDiv0><!-- BEGIN analyst/std_body_site.htmpl --><!-- END analyst/std_body_site.htmpl --><!-- END analyst/std_body.htmpl -->
+<CENTER><INPUT value=orig_customer_org type=hidden name=SET.orig_cust_org>
+<SCRIPT language=JavaScript>
+//alert("");
+if ( "" == ""){
+_dtl = new DetailForm("cr","0","");
+}
+else{
+_dtl = new DetailForm("cr","0","", "", "");
+}
+
+//
+//if ( "" == "" ) {
+//   ImgBtnEndRow();
+//   ImgBtnRow();
+//   ImgBtnCreate("btnchg",msgtext(440), "detailSave('NEW_CHANGE')", true, 0);
+//}
+//
+ImgBtnCreate("PROFILE_BROWSER", msgtext(91), "edit_profile_browser(" +
+             '"combo_name", document.main_form["customer_combo_name"].value)',
+             false, 0);
+
+ImgBtnCreate("CLOSE_FIRST_CALL", msgtext(1022), "zclose_first_call()", true, 0);
+
+
+
+
+
+
+
+
+startDetail("", 1);
+
+
+</SCRIPT>
+ 
+<CENTER>
+<TABLE border=0>
+<TBODY>
+<TR>
+<TD height=21 align=middle><A onblur=ImgBtnBlur(0); id=imgBtn0 onmouseup="return ImgBtnMouseUp(0);" onfocus=ImgBtnFocus(0); onmouseover="return ImgBtnMouseOver(0,this);" title=Save onmouseout="return ImgBtnMouseUp(0);" onmousedown=ImgBtnMouseDown(0); onclick="return ImgBtnExecute(0);" href="JavaScript:void(0)" name=imgBtn0>
+<TABLE border=0 cellSpacing=0 cellPadding=0>
+<TBODY>
+<TR>
+<TD height=21 vAlign=center><IMG onmouseup="return ImgBtnMouseUp(0);" onmouseover="return ImgBtnMouseOver(0,this);" title=Save onmouseout="return ImgBtnMouseUp(0);" onmousedown=ImgBtnMouseDown(0); border=0 src="/CAisd/img/button_left.gif" width=10 height=21></TD>
+<TD style="BACKGROUND: url(/CAisd/img/button_middle.gif)" id=imgBtn0_caption class=clsButtonEnabled vAlign=center width=92 noWrap align=middle><U>S</U>ave</TD>
+<TD height=21 vAlign=center><IMG onmouseup="return ImgBtnMouseUp(0);" onmouseover="return ImgBtnMouseOver(0,this);" title=Save onmouseout="return ImgBtnMouseUp(0);" onmousedown=ImgBtnMouseDown(0); border=0 src="/CAisd/img/button_right.gif" width=10 height=21></TD></TR></TBODY></TABLE></A></TD>
+<TD height=21 align=middle><A onblur=ImgBtnBlur(1); id=imgBtn1 onmouseup="return ImgBtnMouseUp(1);" onfocus=ImgBtnFocus(1); onmouseover="return ImgBtnMouseOver(1,this);" title=Cancel onmouseout="return ImgBtnMouseUp(1);" onmousedown=ImgBtnMouseDown(1); onclick="return ImgBtnExecute(1);" href="JavaScript:void(0)" name=imgBtn1>
+<TABLE border=0 cellSpacing=0 cellPadding=0>
+<TBODY>
+<TR>
+<TD height=21 vAlign=center><IMG onmouseup="return ImgBtnMouseUp(1);" onmouseover="return ImgBtnMouseOver(1,this);" title=Cancel onmouseout="return ImgBtnMouseUp(1);" onmousedown=ImgBtnMouseDown(1); border=0 src="/CAisd/img/button_left.gif" width=10 height=21></TD>
+<TD style="BACKGROUND: url(/CAisd/img/button_middle.gif)" id=imgBtn1_caption class=clsButtonEnabled vAlign=center width=92 noWrap align=middle>Ca<U>n</U>cel</TD>
+<TD height=21 vAlign=center><IMG onmouseup="return ImgBtnMouseUp(1);" onmouseover="return ImgBtnMouseOver(1,this);" title=Cancel onmouseout="return ImgBtnMouseUp(1);" onmousedown=ImgBtnMouseDown(1); border=0 src="/CAisd/img/button_right.gif" width=10 height=21></TD></TR></TBODY></TABLE></A></TD>
+<TD height=21 align=middle><A onblur=ImgBtnBlur(2); id=imgBtn2 onmouseup="return ImgBtnMouseUp(2);" onfocus=ImgBtnFocus(2); onmouseover="return ImgBtnMouseOver(2,this);" title="Profile Browser" onmouseout="return ImgBtnMouseUp(2);" onmousedown=ImgBtnMouseDown(2); onclick="return ImgBtnExecute(2);" href="JavaScript:void(0)" name=imgBtn2>
+<TABLE border=0 cellSpacing=0 cellPadding=0>
+<TBODY>
+<TR>
+<TD height=21 vAlign=center><IMG onmouseup="return ImgBtnMouseUp(2);" onmouseover="return ImgBtnMouseOver(2,this);" title="Profile Browser" onmouseout="return ImgBtnMouseUp(2);" onmousedown=ImgBtnMouseDown(2); border=0 src="/CAisd/img/button_left.gif" width=10 height=21></TD>
+<TD style="BACKGROUND: url(/CAisd/img/button_middle.gif); COLOR: #000000" id=imgBtn2_caption class=clsButtonDisabled vAlign=center noWrap align=middle>Profile <U>B</U>rowser</TD>
+<TD height=21 vAlign=center><IMG onmouseup="return ImgBtnMouseUp(2);" onmouseover="return ImgBtnMouseOver(2,this);" title="Profile Browser" onmouseout="return ImgBtnMouseUp(2);" onmousedown=ImgBtnMouseDown(2); border=0 src="/CAisd/img/button_right.gif" width=10 height=21></TD></TR></TBODY></TABLE></A></TD>
+<TD height=21 align=middle><A onblur=ImgBtnBlur(3); id=imgBtn3 onmouseup="return ImgBtnMouseUp(3);" onfocus=ImgBtnFocus(3); onmouseover="return ImgBtnMouseOver(3,this);" title="Close-First Call" onmouseout="return ImgBtnMouseUp(3);" onmousedown=ImgBtnMouseDown(3); onclick="return ImgBtnExecute(3);" href="JavaScript:void(0)" name=imgBtn3>
+<TABLE border=0 cellSpacing=0 cellPadding=0>
+<TBODY>
+<TR>
+<TD height=21 vAlign=center><IMG onmouseup="return ImgBtnMouseUp(3);" onmouseover="return ImgBtnMouseOver(3,this);" title="Close-First Call" onmouseout="return ImgBtnMouseUp(3);" onmousedown=ImgBtnMouseDown(3); border=0 src="/CAisd/img/button_left.gif" width=10 height=21></TD>
+<TD style="BACKGROUND: url(/CAisd/img/button_middle.gif)" id=imgBtn3_caption class=clsButtonEnabled vAlign=center noWrap align=middle>Close-<U>F</U>irst Call</TD>
+<TD height=21 vAlign=center><IMG onmouseup="return ImgBtnMouseUp(3);" onmouseover="return ImgBtnMouseOver(3,this);" title="Close-First Call" onmouseout="return ImgBtnMouseUp(3);" onmousedown=ImgBtnMouseDown(3); border=0 src="/CAisd/img/button_right.gif" width=10 height=21></TD></TR></TBODY></TABLE></A></TD></TR></TBODY></TABLE></CENTER>
+<TABLE style="DISPLAY: none" id=alertmsg class=alertmsg width="100%">
+<TBODY>
+<TR>
+<TD id=alertmsgText></TD></TR></TBODY></TABLE>
+<DIV style="WIDTH: 100%; HEIGHT: 659px; OVERFLOW: scroll" id=scrollbarDiv1>
+<FORM style="DISPLAY: block" onsubmit="return check_submit();" method=post name=main_form action=/protected/usd-cgi/pdmweb/pdmweb.exe><INPUT value=1 type=hidden name=JEDIT> <INPUT value=318570990 type=hidden name=SID> <INPUT value=2012775861 type=hidden name=FID> <INPUT value=UPDATE type=hidden name=OP> <INPUT value=cr type=hidden name=FACTORY> <INPUT value=0 type=hidden name=SET.id> <A id=start onfocus=detailTabOff(-1) tabIndex=1 href="javascript:void(0)" name=start></A><A id=end onfocus=detailTabOff(1) tabIndex=1000 href="javascript:void(0)" name=end></A><INPUT value=0 type=hidden name=change_category> <INPUT id=SET.call_back_flag value=0 type=hidden name=SET.call_back_flag> <INPUT value=0 type=hidden name=priority_modified> <INPUT value=0 type=hidden name=status_modified> <INPUT type=hidden name=SET.orig_cust_org>
+<SCRIPT language=JavaScript>
+
+
+detailStartRow("CLASS=");
+
+
+
+function zcopyorg()
+{
+//	if(document.main_form["SET.string3"].value=="")
+//	{
+		zframe0=document.getElementById('ziframe0');
+		zID=escape(document.main_form.customer_combo_name.value);
+		if(zID!=""){
+		zframe0.src="/CAisd/pdmweb.exe?SID="+cfgSID+"+FID="+fid_generator()+"+OP=SEARCH+FACTORY=cnt+QBE.IN.combo_name="+zID+"+HTMPL=criframeorg.htmpl";	
+		}
+//	}
+}
+
+// document.write('<INPUT TYPE=hidden NAME="SET.string3">');
+// document.write('<INPUT TYPE=hidden NAME="KEEP.string3">');
+
+</SCRIPT>
+ 
+<TABLE cellSpacing=5 cellPadding=1 width="90%">
+<TBODY>
+<TR vAlign=top><IFRAME id=ziframe0 height=0 marginHeight=0 border=0 src="javascript:false;" frameBorder=NO width="100%" name=ziframe0 marginWidth=0 scrolling=no></IFRAME>
+<SCRIPT>
+
+
+
+
+detailLookup("Affected End User","customer","cnt",1,20,
+"1",
+"",
+"",
+"yes",
+"combo_name",
+'',
+"",
+
+"",
+"yes");
+
+
+
+
+   
+detailLookup("Asset","affected_resource","nr",1,20,
+"0",
+"",
+"",
+"yes",
+"name",
+'',
+"",
+
+"",
+"yes");
+
+
+detailSetEventHandler("onBlur=\"detailSyncEditForms(this)\"");
+
+detailDropdown("Priority","priority","pri",1,20, 
+"1",
+"pri:501",
+"2",
+
+"yes",
+"sym",
+"4",
+"",
+
+"",
+"no",
+""
+,"1","5","2","4","3","3","4","2","5","1");
+
+
+
+
+
+
+detailDropdown("Call Source","created_via","intfc",1,20, 
+"0",
+"intfc:3554",
+"3551",
+
+"yes",
+"sym",
+"WEB",
+"",
+
+"",
+"no",
+""
+,"EMAIL","3550","FAX","70000009","OTHER","70000006","PHONE","3551","TNG","3552","VOICE MAIL","70000011","WEB","3554");
+
+
+
+
+///////////////// Move 'Active?' here
+detailTextboxReadonly("Active?","active",1,
+'YES', "");
+
+/////////////////
+detailStartRow("CLASS=");
+
+
+     detailSetEventHandler("onChange=\"change_category_func('cr',null,'pcat')\"onBlur=\"change_category_func('cr',null,'pcat')\"");
+
+detailHier("Request Area","category","pcat",2,48,
+"1",
+"",
+"",
+"no",
+"sym",
+'',
+"",
+
+"");
+
+
+detailSetEventHandler("onBlur=\"detailSyncEditForms(this)\"");
+
+detailLookup("Assignee","assignee","agt",2,20,
+"0",
+"cnt:177061855",
+"177061855",
+"yes",
+"combo_name",
+'Thompson, Mark, W',
+"",
+
+"",
+"yes");
+
+	
+	detailSetEventHandler("onBlur=\"detailSyncEditForms(this)\"");
+
+detailDropdown("Status","status","crs",1,20, 
+"1",
+"crs:5200",
+"OP",
+
+"yes",
+"sym",
+"Open",
+"",
+
+"",
+"no",
+""
+,"Acknowledged","ACK","Assigned","AS","Bypass","BY","Cancelled","CN","Closed","CLO","Closed-First Call","CL","CSC Frozen","CF","Customer Frozen","FR","In Work","IW","Monitor","MO","Open","OP","Pending","PN","Re-Assigned","RA","Rejected","RJ","Resolved","RL","Responded","RP","Vendor Frozen","VF");
+
+
+
+
+
+
+detailStartRow("CLASS=");
+
+detailLookupReadonly("Reported By","log_agent",1,
+"cnt:177061855",
+"Thompson, Mark, W",
+"yes");
+
+detailSetEventHandler("onBlur=\"detailSyncEditForms(this)\"");
+
+detailLookup("Group","group","grp",1,20,
+"1",
+"",
+"",
+"yes",
+"combo_name",
+'',
+"",
+
+"",
+"yes");
+
+
+detailTextbox("Charge Back ID","charge_back_id",2,1,20,
+"0",
+"12",
+'',"no");
+
+var cbDateCheck = 0;
+if ( _dtl.edit)
+    cbDateCheck = 1;
+if ( "" != "" || ! _dtl.edit ) {
+   detailDate("Call Back Date/Time","call_back_date",1,20,
+"0",
+"");
+
+}
+else {
+   detailDateDropdown("Call Back Date/Time", "call_back_date", 1, 20,
+                      "0",
+                      "SET.call_back_flag",
+                      86400, msgtext(287),   // In one day
+                      172800, msgtext(288),  // In two days
+                      604800, msgtext(289)); // In one week
+}
+
+
+detailStartRow("CLASS=");
+
+
+detailTextbox("Summary","summary",4,1,60,
+"0",
+"240",
+'',"no");
+
+detailSetEventHandler("onBlur=\"detailSyncEditForms(this)\"");
+
+detailHier("Resolution Code","rootcause","rc",1,30,
+"0",
+"",
+"",
+"yes",
+"sym",
+'',
+"",
+
+"");
+
+
+
+detailStartRow("CLASS=");
+
+
+
+detailTextbox("Description","description",5,4,107,
+"1",
+"1000",
+'',"yes");
+
+
+detailStartRow("CLASS=");
+
+
+detailDropdown("Urgency","impact","imp",1,20, 
+"1",
+"imp:1605",
+"0",
+
+"yes",
+"sym",
+"2",
+"",
+
+"",
+"no",
+""
+,"1","5","2","0");
+
+
+
+
+
+detailLookup("Change Order","change","chg",1,20,
+"0",
+"",
+"",
+"yes",
+"chg_ref_num",
+'',
+"",
+
+"",
+"yes");
+
+
+detailTextboxReadonly("Ext Interface #","string5",2,
+' ', "");
+
+
+detailDropdown("Service Type","support_lev","sdsc",1,20, 
+"0",
+"",
+"",
+
+"yes",
+"sym",
+"",
+"",
+
+"",
+"no",
+"",
+"");
+
+
+
+if ( _dtl.edit ) {
+   detailRowHdr("Timer");
+   detailSetRowData("<INPUT TYPE=text NAME='timer' VALUE='' SIZE=8 READONLY>");
+}
+
+detailStartRow("CLASS=");
+
+detailDate("Open Date/Time","open_date",1,20,
+"1",
+"1391794080");
+
+detailDate("Close Date/Time","close_date",1,20,
+"0",
+"");
+ 
+detailDateReadonly("Last Modified","last_mod_dt",2,"");
+
+detailTextboxReadonly("Total Activity Time","time_spent_sum",1,
+'00:00:00', "");
+
+
+detailEndTable();
+</SCRIPT>
+
+<TH vAlign=center align=left><A onblur="return detailBlur(this);" id=dflnk_0_0 class=lookup onfocus="return detailFocus(this);" onmouseover="window.status='Popup search window for affected end user';return true" tabIndex=0 onmouseout="window.status=window.defaultStatus;return true" onclick="fill_name_fields(_dtl.form[0],'cnt','customer',true)" href="javascript:void(0)"><IMG style="VERTICAL-ALIGN: middle" border=0 src="/CAisd/img/lookup.gif" width=12 height=12>&nbsp;<SPAN class=requiredlabeltext>Affected End User</SPAN></A></TH>
+<TH vAlign=center align=left><A onblur="return detailBlur(this);" id=dflnk_0_1 class=lookup onfocus="return detailFocus(this);" onmouseover="window.status='Popup search window for asset';return true" tabIndex=0 onmouseout="window.status=window.defaultStatus;return true" onclick="popup_search('nr','KEY.affected_resource','main_form','',0,'name')" href="javascript:void(0)"><IMG style="VERTICAL-ALIGN: middle" border=0 src="/CAisd/img/lookup.gif" width=12 height=12>&nbsp;<SPAN class=lookup>Asset</SPAN></A></TH>
+<TH class=requiredlabeltext vAlign=baseline align=left>Priority&nbsp;&nbsp;&nbsp;</TH>
+<TH class=labeltext vAlign=baseline align=left>Call Source&nbsp;&nbsp;&nbsp;</TH>
+<TH class=labeltext vAlign=baseline align=left>Active?&nbsp;&nbsp;&nbsp;</TH></TR>
+<TR>
+<TD vAlign=top align=left><INPUT onblur="return detailBlur(this);" id=df_0_0 onfocus="return detailFocus(this);" tabIndex=2 onchange="detailAutofill(this,'cnt',true,'combo_name',false);" name=customer_combo_name> <INPUT type=hidden name=KEY.customer> <INPUT type=hidden name=customer_lname> <INPUT type=hidden name=customer_fname> <INPUT type=hidden name=customer_mname> <INPUT type=hidden name=SET.customer> </TD>
+<TD vAlign=top align=left><INPUT onblur="return detailBlur(this);" id=df_0_1 onfocus="return detailFocus(this);" tabIndex=3 onchange="detailAutofill(this,'nr',false,'name',false);" name=KEY.affected_resource> <INPUT type=hidden name=SET.affected_resource> </TD>
+<TD vAlign=top align=left><SELECT onblur=detailBlur(this);detailSyncEditForms(this) id=df_0_2 onfocus="return detailFocus(this);" tabIndex=4 name=SET.priority> <OPTION value=5>1<OPTION value=4>2<OPTION value=3>3<OPTION selected value=2>4<OPTION value=1>5</OPTION></SELECT> </TD>
+<TD vAlign=top align=left><SELECT onblur="return detailBlur(this);" id=df_0_3 onfocus="return detailFocus(this);" tabIndex=5 name=SET.created_via> <OPTION value="">&lt;empty&gt;<OPTION value=3550>EMAIL<OPTION value=70000009>FAX<OPTION value=70000006>OTHER<OPTION selected value=3551>PHONE<OPTION value=3552>TNG<OPTION value=70000011>VOICE MAIL<OPTION value=3554>WEB</OPTION></SELECT> </TD>
+<TD class=detailro vAlign=top align=left>YES </TD></TR>
+<TR vAlign=top>
+<TH vAlign=center colSpan=2 align=left><A onblur="return detailBlur(this);" id=dflnk_1_0 class=lookup onfocus="return detailFocus(this);" onmouseover="window.status='Popup search window for request area';return true" tabIndex=0 onmouseout="window.status=window.defaultStatus;return true" onclick="popup_search('pcat','KEY.category','main_form','',0,'sym')" href="javascript:void(0)"><IMG style="VERTICAL-ALIGN: middle" border=0 src="/CAisd/img/lookup.gif" width=12 height=12>&nbsp;<SPAN class=requiredlabeltext>Request Area</SPAN></A></TH>
+<TH vAlign=center colSpan=2 align=left><A onblur="return detailBlur(this);" id=dflnk_1_2 class=lookup onfocus="return detailFocus(this);" onmouseover="window.status='Popup search window for assignee';return true" tabIndex=0 onmouseout="window.status=window.defaultStatus;return true" onclick="fill_name_fields(_dtl.form[0],'agt','assignee',true)" href="javascript:void(0)"><IMG style="VERTICAL-ALIGN: middle" border=0 src="/CAisd/img/lookup.gif" width=12 height=12>&nbsp;<SPAN class=lookup>Assignee</SPAN></A></TH>
+<TH class=requiredlabeltext vAlign=baseline align=left>Status&nbsp;&nbsp;&nbsp;</TH></TR>
+<TR>
+<TD vAlign=top colSpan=2 align=left><INPUT onblur="detailBlur(this);change_category_func('cr',null,'pcat')" id=df_1_0 onfocus="return detailFocus(this);" tabIndex=6 onchange="detailClearSetField(this);change_category_func('cr',null,'pcat')" size=48 name=KEY.category> <INPUT type=hidden name=SET.category> </TD>
+<TD vAlign=top colSpan=2 align=left><INPUT onblur=detailBlur(this);detailSyncEditForms(this) id=df_1_2 onfocus="return detailFocus(this);" tabIndex=7 onchange="detailAutofill(this,'agt',true,'combo_name',false);" value="Thompson, Mark, W" name=assignee_combo_name> <INPUT type=hidden name=KEY.assignee> <INPUT type=hidden name=assignee_lname> <INPUT type=hidden name=assignee_fname> <INPUT type=hidden name=assignee_mname> <INPUT value=177061855 type=hidden name=SET.assignee> </TD>
+<TD vAlign=top align=left><SELECT onblur=detailBlur(this);detailSyncEditForms(this) id=df_1_4 onfocus="return detailFocus(this);" tabIndex=8 name=SET.status> <OPTION value=ACK>Acknowledged<OPTION value=AS>Assigned<OPTION value=BY>Bypass<OPTION value=CN>Cancelled<OPTION value=CLO>Closed<OPTION value=CL>Closed-First Call<OPTION value=CF>CSC Frozen<OPTION value=FR>Customer Frozen<OPTION value=IW>In Work<OPTION value=MO>Monitor<OPTION selected value=OP>Open<OPTION value=PN>Pending<OPTION value=RA>Re-Assigned<OPTION value=RJ>Rejected<OPTION value=RL>Resolved<OPTION value=RP>Responded<OPTION value=VF>Vendor Frozen</OPTION></SELECT> </TD></TR>
+<TR vAlign=top>
+<TH class=labeltext vAlign=baseline align=left>Reported By&nbsp;&nbsp;&nbsp;</TH>
+<TH vAlign=center align=left><A onblur="return detailBlur(this);" id=dflnk_2_1 class=lookup onfocus="return detailFocus(this);" onmouseover="window.status='Popup search window for group';return true" tabIndex=0 onmouseout="window.status=window.defaultStatus;return true" onclick="fill_name_fields(_dtl.form[0],'grp','group',true)" href="javascript:void(0)"><IMG style="VERTICAL-ALIGN: middle" border=0 src="/CAisd/img/lookup.gif" width=12 height=12>&nbsp;<SPAN class=requiredlabeltext>Group</SPAN></A></TH>
+<TH class=labeltext vAlign=baseline colSpan=2 align=left>Charge Back ID&nbsp;&nbsp;&nbsp;</TH>
+<TH vAlign=center align=left><A onblur="return detailBlur(this);" id=dflnk_2_4 class=lookup onfocus="return detailFocus(this);" onmouseover="window.status='Popup date helper for call back date/time';return true" tabIndex=0 onmouseout="window.status=window.defaultStatus;return true" onclick="detailSwitchDateToText('df_2_4','SET.call_back_date','SET.call_back_flag', true);return false;" href="javascript:void(0)"><IMG style="VERTICAL-ALIGN: middle" border=0 src="/CAisd/img/lookup_cal.gif" width=12 height=12>&nbsp;<SPAN class=lookup>Call Back Date/Time</SPAN></A></TH></TR>
+<TR>
+<TD vAlign=top align=left><A onblur="return detailBlur(this);" id=df_2_0 onfocus="return detailFocus(this);" tabIndex=9 href='javascript:showDetailWithPersid("cnt:177061855")'>Thompson, Mark, W</A> </TD>
+<TD vAlign=top align=left><INPUT onblur=detailBlur(this);detailSyncEditForms(this) id=df_2_1 onfocus="return detailFocus(this);" tabIndex=10 onchange="detailAutofill(this,'grp',true,'combo_name',false);" name=group_combo_name> <INPUT type=hidden name=KEY.group> <INPUT type=hidden name=group_lname> <INPUT type=hidden name=group_fname> <INPUT type=hidden name=group_mname> <INPUT type=hidden name=SET.group> </TD>
+<TD vAlign=top colSpan=2 align=left><INPUT onblur="return detailBlur(this);" id=df_2_2 onfocus="return detailFocus(this);" tabIndex=11 maxLength=12 name=SET.charge_back_id> </TD>
+<TD vAlign=top align=left><INPUT onblur="return detailBlur(this);" style="DISPLAY: none" id=df_2_4_hdn onfocus="return detailFocus(this);" tabIndex=12 onchange="internal_validate_date(this, 1, 0)" name=SET.call_back_date> <INPUT value=0 type=hidden name=SET.call_back_date_INT_DATE> <SELECT onblur="detailBlur(this);detailSwitchDateToText('df_2_4','SET.call_back_date','SET.call_back_flag', false);return false;" style="WIDTH: 200px" id=df_2_4 onfocus="return detailFocus(this);" tabIndex=12 onclick="_dtl.lastKeycode=0;detailSwitchDateToText('df_2_4','SET.call_back_date','SET.call_back_flag', false);"> <OPTION selected value=0>&lt;empty&gt;<OPTION value=86400>In one day<OPTION value=172800>In two days<OPTION value=604800>In one week<OPTION value=other>Other...</OPTION></SELECT> </TD></TR>
+<TR vAlign=top>
+<TH class=labeltext vAlign=baseline colSpan=4 align=left>Summary&nbsp;&nbsp;&nbsp;</TH>
+<TH vAlign=center align=left><A onblur="return detailBlur(this);" id=dflnk_3_4 class=lookup onfocus="return detailFocus(this);" onmouseover="window.status='Popup search window for resolution code';return true" tabIndex=0 onmouseout="window.status=window.defaultStatus;return true" onclick="popup_search('rc','KEY.rootcause','main_form','',0,'sym')" href="javascript:void(0)"><IMG style="VERTICAL-ALIGN: middle" border=0 src="/CAisd/img/lookup.gif" width=12 height=12>&nbsp;<SPAN class=lookup>Resolution Code</SPAN></A></TH></TR>
+<TR>
+<TD vAlign=top colSpan=4 align=left><INPUT onblur="return detailBlur(this);" id=df_3_0 onfocus="return detailFocus(this);" tabIndex=13 maxLength=240 size=60 name=SET.summary> </TD>
+<TD vAlign=top align=left><INPUT onblur=detailBlur(this);detailSyncEditForms(this) id=df_3_4 onfocus="return detailFocus(this);" tabIndex=14 onchange="detailAutofill(this,'rc',false,'sym',false);" size=30 name=KEY.rootcause> <INPUT type=hidden name=SET.rootcause> </TD></TR>
+<TR vAlign=top>
+<TH colSpan=5 align=left>
+<TABLE>
+<TBODY>
+<TR>
+<TH class=requiredlabeltext vAlign=center colSpan=5 align=left>Description&nbsp;&nbsp;&nbsp;</TH>
+<TH><A onblur=ImgBtnBlur(4); id=imgBtn4 onmouseup="return ImgBtnMouseUp(4);" onfocus=ImgBtnFocus(4); onmouseover="return ImgBtnMouseOver(4,this);" title=Spelling onmouseout="return ImgBtnMouseUp(4);" onmousedown=ImgBtnMouseDown(4); onclick="return ImgBtnExecute(4);" href="JavaScript:void(0)" name=imgBtn4>
+<TABLE border=0 cellSpacing=0 cellPadding=0>
+<TBODY>
+<TR>
+<TD height=21 vAlign=center><IMG onmouseup="return ImgBtnMouseUp(4);" onmouseover="return ImgBtnMouseOver(4,this);" title=Spelling onmouseout="return ImgBtnMouseUp(4);" onmousedown=ImgBtnMouseDown(4); border=0 src="/CAisd/img/button_left.gif" width=10 height=21></TD>
+<TD style="BACKGROUND: url(/CAisd/img/button_middle.gif)" id=imgBtn4_caption class=clsButtonEnabled vAlign=center noWrap align=middle>S<U>p</U>elling</TD>
+<TD height=21 vAlign=center><IMG onmouseup="return ImgBtnMouseUp(4);" onmouseover="return ImgBtnMouseOver(4,this);" title=Spelling onmouseout="return ImgBtnMouseUp(4);" onmousedown=ImgBtnMouseDown(4); border=0 src="/CAisd/img/button_right.gif" width=10 height=21></TD></TR></TBODY></TABLE></A></TH></TR></TBODY></TABLE></TH></TR>
+<TR>
+<TD vAlign=top colSpan=5 align=left><TEXTAREA onblur="return detailBlur(this);" id=df_4_0 onfocus="return detailFocus(this);" tabIndex=15 rows=4 cols=107 name=SET.description></TEXTAREA> </TD></TR>
+<TR vAlign=top>
+<TH class=requiredlabeltext vAlign=baseline align=left>Urgency&nbsp;&nbsp;&nbsp;</TH>
+<TH vAlign=center align=left><A onblur="return detailBlur(this);" id=dflnk_5_1 class=lookup onfocus="return detailFocus(this);" onmouseover="window.status='Popup search window for change order';return true" tabIndex=0 onmouseout="window.status=window.defaultStatus;return true" onclick="popup_search('chg','KEY.change','main_form','',0,'chg_ref_num')" href="javascript:void(0)"><IMG style="VERTICAL-ALIGN: middle" border=0 src="/CAisd/img/lookup.gif" width=12 height=12>&nbsp;<SPAN class=lookup>Change Order</SPAN></A></TH>
+<TH class=labeltext vAlign=baseline colSpan=2 align=left>Ext Interface #&nbsp;&nbsp;&nbsp;</TH>
+<TH vAlign=center align=left><A onblur="return detailBlur(this);" id=dflnk_5_4 class=lookup onfocus="return detailFocus(this);" onmouseover="window.status='Popup search window for service type';return true" tabIndex=0 onmouseout="window.status=window.defaultStatus;return true" onclick="popup_search('sdsc','KEY.support_lev','main_form','',0,'sym')" href="javascript:void(0)"><IMG style="VERTICAL-ALIGN: middle" border=0 src="/CAisd/img/lookup.gif" width=12 height=12>&nbsp;<SPAN class=lookup>Service Type</SPAN></A></TH>
+<TH class=labeltext vAlign=baseline align=left>Timer&nbsp;&nbsp;&nbsp;</TH></TR>
+<TR>
+<TD vAlign=top align=left><SELECT onblur="return detailBlur(this);" id=df_5_0 onfocus="return detailFocus(this);" tabIndex=16 name=SET.impact> <OPTION value=5>1<OPTION selected value=0>2</OPTION></SELECT> </TD>
+<TD vAlign=top align=left><INPUT onblur="return detailBlur(this);" id=df_5_1 onfocus="return detailFocus(this);" tabIndex=17 onchange="detailAutofill(this,'chg',false,'chg_ref_num',false);" name=KEY.change> <INPUT type=hidden name=SET.change> </TD>
+<TD class=detailro vAlign=top colSpan=2 align=left>&nbsp; </TD>
+<TD vAlign=top align=left><INPUT onblur="return detailBlur(this);" id=df_5_4 onfocus="return detailFocus(this);" tabIndex=18 onchange="detailAutofill(this,'sdsc',false,'sym',false);" name=KEY.support_lev> <INPUT type=hidden name=SET.support_lev> </TD>
+<TD vAlign=top align=left><INPUT style="BACKGROUND-COLOR: salmon; COLOR: black" value=00:53:02 readOnly size=8 name=timer> </TD></TR>
+<TR vAlign=top>
+<TH vAlign=center align=left><A onblur="return detailBlur(this);" id=dflnk_6_0 class=lookup onfocus="return detailFocus(this);" onmouseover="window.status='Popup date helper for open date/time';return true" tabIndex=0 onmouseout="window.status=window.defaultStatus;return true" onclick="popup_date_helper('main_form','SET.open_date');return false;" href="javascript:void(0)"><IMG style="VERTICAL-ALIGN: middle" border=0 src="/CAisd/img/lookup_cal.gif" width=12 height=12>&nbsp;<SPAN class=requiredlabeltext>Open Date/Time</SPAN></A></TH>
+<TH vAlign=center align=left><A onblur="return detailBlur(this);" id=dflnk_6_1 class=lookup onfocus="return detailFocus(this);" onmouseover="window.status='Popup date helper for close date/time';return true" tabIndex=0 onmouseout="window.status=window.defaultStatus;return true" onclick="popup_date_helper('main_form','SET.close_date');return false;" href="javascript:void(0)"><IMG style="VERTICAL-ALIGN: middle" border=0 src="/CAisd/img/lookup_cal.gif" width=12 height=12>&nbsp;<SPAN class=lookup>Close Date/Time</SPAN></A></TH>
+<TH class=labeltext vAlign=baseline colSpan=2 align=left>Last Modified&nbsp;&nbsp;&nbsp;</TH>
+<TH class=labeltext vAlign=baseline align=left>Total Activity Time&nbsp;&nbsp;&nbsp;</TH></TR>
+<TR>
+<TD class=detailro vAlign=top align=left><INPUT onblur="return detailBlur(this);" id=df_6_0 onfocus="return detailFocus(this);" tabIndex=19 onchange="internal_validate_date(this, 1, 1)" value="02/07/2014 12:28 pm" name=SET.open_date> <INPUT value=0 type=hidden name=SET.open_date_INT_DATE> </TD>
+<TD class=detailro vAlign=top align=left><INPUT onblur="return detailBlur(this);" id=df_6_1 onfocus="return detailFocus(this);" tabIndex=20 onchange="internal_validate_date(this, 1, 2)" name=SET.close_date> <INPUT value=0 type=hidden name=SET.close_date_INT_DATE> </TD>
+<TD class=detailro vAlign=top colSpan=2 align=left>&nbsp; </TD>
+<TD class=detailro vAlign=top align=left>00:00:00 </TD></TR></TBODY></TABLE>
+<SCRIPT language=JavaScript>start_notebook('crro_nb','',230);</SCRIPT>
+
+<DIV id=nb_crro_nb_ixdiv>
+<TABLE style="TOP: 467px; LEFT: 44px" class=notebook valign="bottom" cellspacing="0">
+<TBODY>
+<TR>
+<TH id=nbtab_0_crro_nb_hdr>
+<TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+<TBODY>
+<TR>
+<TD vAlign=top width=8><A style="WIDTH: 100%" class=tab tabIndex=0 onclick=show_tab_src(0) href="javascript:void(0)"><IMG id=nbtab_0_crro_nb_left border=0 src="/CAisd/img/selected_left.gif" width=8 height=17></A></TD>
+<TD style="BACKGROUND: url(/CAisd/img/selected_middle.gif); HEIGHT: 17px" id=nbtab_0_crro_nb_middle align=middle BORDER="0"><A id=nbtab_0_crro_nb_text class=tab tabIndex=2001 onclick=show_tab_src(0) href="javascript:void(0)"><U>1</U>. Activities</A></TD>
+<TD vAlign=top width=8><A style="WIDTH: 100%" class=tab tabIndex=0 onclick=show_tab_src(0) href="javascript:void(0)"><IMG id=nbtab_0_crro_nb_right border=0 src="/CAisd/img/selected_right.gif" width=8 height=17></A></TD></TR></TBODY></TABLE></TH>
+<TH id=nbtab_1_crro_nb_hdr>
+<TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+<TBODY>
+<TR>
+<TD vAlign=top width=8><A style="WIDTH: 100%" class=tab tabIndex=0 onclick=show_tab_src(1) href="javascript:void(0)"><IMG id=nbtab_1_crro_nb_left border=0 src="http:" width=8 height=17></A></TD>
+<TD style="BACKGROUND: url(http:); HEIGHT: 17px" id=nbtab_1_crro_nb_middle align=middle BORDER="0"><A id=nbtab_1_crro_nb_text class=tabUnselected tabIndex=2002 onclick=show_tab_src(1) href="javascript:void(0)"><U>2</U>. Related Requests</A></TD>
+<TD vAlign=top width=8><A style="WIDTH: 100%" class=tab tabIndex=0 onclick=show_tab_src(1) href="javascript:void(0)"><IMG id=nbtab_1_crro_nb_right border=0 src="http:" width=8 height=17></A></TD></TR></TBODY></TABLE></TH></TR></TBODY></TABLE>
+<TABLE style="TOP: 444px; LEFT: 44px" class=notebook valign="bottom" cellspacing="0">
+<TBODY>
+<TR>
+<TH id=nbtab_2_crro_nb_hdr>
+<TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+<TBODY>
+<TR>
+<TD vAlign=top width=8><A style="WIDTH: 100%" class=tab tabIndex=0 onclick=show_tab_src(2) href="javascript:void(0)"><IMG id=nbtab_2_crro_nb_left border=0 src="http:" width=8 height=17></A></TD>
+<TD style="BACKGROUND: url(http:); HEIGHT: 17px" id=nbtab_2_crro_nb_middle align=middle BORDER="0"><A id=nbtab_2_crro_nb_text class=tabUnselected tabIndex=2003 onclick=show_tab_src(2) href="javascript:void(0)"><U>3</U>. Attachments</A></TD>
+<TD vAlign=top width=8><A style="WIDTH: 100%" class=tab tabIndex=0 onclick=show_tab_src(2) href="javascript:void(0)"><IMG id=nbtab_2_crro_nb_right border=0 src="http:" width=8 height=17></A></TD></TR></TBODY></TABLE></TH>
+<TH id=nbtab_3_crro_nb_hdr>
+<TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+<TBODY>
+<TR>
+<TD vAlign=top width=8><A style="WIDTH: 100%" class=tab tabIndex=0 onclick=show_tab_src(3) href="javascript:void(0)"><IMG id=nbtab_3_crro_nb_left border=0 src="http:" width=8 height=17></A></TD>
+<TD style="BACKGROUND: url(http:); HEIGHT: 17px" id=nbtab_3_crro_nb_middle align=middle BORDER="0"><A id=nbtab_3_crro_nb_text class=tabUnselected tabIndex=2004 onclick=show_tab_src(3) href="javascript:void(0)"><U>4</U>. Properties</A></TD>
+<TD vAlign=top width=8><A style="WIDTH: 100%" class=tab tabIndex=0 onclick=show_tab_src(3) href="javascript:void(0)"><IMG id=nbtab_3_crro_nb_right border=0 src="http:" width=8 height=17></A></TD></TR></TBODY></TABLE></TH></TR></TBODY></TABLE></DIV><A onfocus=nbTabOff(-1) tabIndex=2000 href="javascript:void(0)"></A><A onfocus=nbTabOff(1) tabIndex=2099 href="javascript:void(0)"></A>
+<SCRIPT language=JavaScript>
+start_pdm_tab("Activities","");
+</SCRIPT>
+
+<DIV style="DISPLAY: block; HEIGHT: auto; TOP: 490px; LEFT: 44px" id=nbtab_0_crro_nb_div class=notebook>
+<SCRIPT language=JavaScript>
+// 10/05/05 MJ2W - Remove Search button - Jose Zamith
+//ImgBtnRow();
+//ImgBtnCreate("btn101", msgtext(450), "search_alg(this.form, 'cr:217699609')", true, 0);
+ImgBtnEndRow();
+docWriteln("<TABLE ID=tbl101 CLASS=tab>");
+docWriteln("<TR>");
+docWriteln("<TH COLSPAN=6 class=detailro>History</TH>");
+docWriteln("</TR>");
+docWriteln("<TR>");
+docWriteln("<TH ALIGN=LEFT class=detailro>Created By</TH>");
+docWriteln("<TH ALIGN=LEFT class=detailro>Date</TH>");
+// 10/12/05 MJ2W - Remove Search button - Jose Zamith
+// docWriteln("<TH ALIGN=LEFT class=detailro>Time Spent</TH>");
+docWriteln("<TH ALIGN=LEFT class=detailro>Type</TH>");
+docWriteln("<TH ALIGN=LEFT class=detailro>Description</TH>");
+docWriteln("</TR>");
+
+
+
+docWriteln("</TABLE>");
+</SCRIPT>
+
+<TABLE id=tbl101 class=tab>
+<TBODY>
+<TR>
+<TH class=detailro colSpan=6>History</TH></TR>
+<TR>
+<TH class=detailro align=left>Created By</TH>
+<TH class=detailro align=left>Date</TH>
+<TH class=detailro align=left>Type</TH>
+<TH class=detailro align=left>Description</TH></TR></TBODY></TABLE>
+<SCRIPT>end_pdm_tab("Activities");</SCRIPT>
+<BR></DIV>
+<SCRIPT language=JavaScript>
+start_pdm_tab("Related Requests","");
+</SCRIPT>
+
+<DIV style="HEIGHT: auto" id=nbtab_1_crro_nb_div class=notebook>
+<SCRIPT language=JavaScript>
+if (typeof argID != "number")
+	argID = Number("0");
+if (isNaN(argID) == false && argID != 0)
+{
+
+
+ImgBtnRow();
+if (propIsITIL) {
+   ImgBtnCreate("UPDATE_CHILDREN", msgtext(426), "update_child('cr', 'cr:217699609', 'children', 'cr', 'parent', 'Requests', 'Request AM31719505<BR>Children')", true, 0);
+}else {
+   ImgBtnCreate("UPDATE_CHILD",msgtext(427), "update_child('cr', 'cr:217699609', 'children', 'cr', 'parent', 'Requests', 'Request AM31719505<BR>Children')", true, 0);
+}
+ImgBtnEndRow();
+
+}
+</SCRIPT>
+
+<SCRIPT language=JavaScript>
+detailStartRow("CLASS=tab");
+if (propIsITIL)
+   
+detailLookup("Parent","parent","cr",1,20,
+"0",
+"",
+"",
+"yes",
+"ref_num",
+'',
+"",
+
+"",
+"yes");
+
+else
+   
+detailLookup("Parent Request","parent","cr",1,20,
+"0",
+"",
+"",
+"yes",
+"ref_num",
+'',
+"",
+
+"",
+"yes");
+
+detailTextboxReadonly("Status","parent.status",1,
+' ', "");
+
+detailTextboxReadonly("Summary","parent.summary",1,
+' ', "");
+
+detailEndRow();
+docWriteln("<TR>");
+docWriteln("<TD>&nbsp;</TD>");
+docWriteln("</TR>");
+docWriteln("<TR>");
+if (propIsITIL)
+   docWriteln("<TH ALIGN=LEFT class=detailro>Children</TH>");
+else
+   docWriteln("<TH ALIGN=LEFT class=detailro>Child Request(s)</TH>");
+docWriteln("<TH ALIGN=LEFT class=detailro>Status</TH>");
+docWriteln("<TH ALIGN=LEFT class=detailro>Summary</TH>");
+docWriteln("</TR>");
+
+detailEndTable();
+</SCRIPT>
+
+<TABLE class=tab>
+<TBODY>
+<TR vAlign=top>
+<TH vAlign=center align=left><A onblur="return detailBlur(this);" id=dflnk_7_0 class=lookup onfocus="return detailFocus(this);" onmouseover="window.status='Popup search window for parent request';return true" tabIndex=0 onmouseout="window.status=window.defaultStatus;return true" onclick="popup_search('cr','KEY.parent','main_form','',0,'ref_num')" href="javascript:void(0)"><IMG style="VERTICAL-ALIGN: middle" border=0 src="/CAisd/img/lookup.gif" width=12 height=12>&nbsp;<SPAN class=lookup>Parent Request</SPAN></A></TH>
+<TH class=labeltext vAlign=baseline align=left>Status&nbsp;&nbsp;&nbsp;</TH>
+<TH class=labeltext vAlign=baseline align=left>Summary&nbsp;&nbsp;&nbsp;</TH></TR>
+<TR>
+<TD vAlign=top align=left><INPUT onblur="return detailBlur(this);" id=df_7_0 onfocus="return detailFocus(this);" tabIndex=21 onchange="detailAutofill(this,'cr',false,'ref_num',false);" name=KEY.parent> <INPUT type=hidden name=SET.parent> </TD>
+<TD class=detailro vAlign=top align=left>&nbsp; </TD>
+<TD class=detailro vAlign=top align=left>&nbsp; </TD></TR>
+<TR>
+<TD>&nbsp;</TD></TR>
+<TR>
+<TH class=detailro align=left>Child Request(s)</TH>
+<TH class=detailro align=left>Status</TH>
+<TH class=detailro align=left>Summary</TH></TR></TBODY></TABLE>
+<SCRIPT>end_pdm_tab("Related Requests");</SCRIPT>
+<BR></DIV>
+<SCRIPT language=JavaScript>
+start_pdm_tab("Attachments","Yes");
+</SCRIPT>
+
+<DIV style="HEIGHT: auto" id=nbtab_2_crro_nb_div class=notebook>
+<SCRIPT language=JavaScript>
+switch ("cr") {
+   case "cr":  var access = "2" - 0; break;
+   case "iss": var access = "0" - 0; break;
+   case "chg": var access = "2" - 0; break;
+   default:    var access = 0;
+}
+var attmnt_menu = new ContextMenu("attmnt_menu");
+attmnt_menu.addItem("View Document", "download_exec(self.attdata[self.lnkid])");
+attmnt_menu.addItem("Show URL", "download_exec(self.attdata[self.lnkid],true)");
+if ( access > 1 ) {
+   attmnt_menu.addItem("Edit Attachment","edit_attmnt('cr:217699609',self.attdata[self.lnkid].id)");
+   attmnt_menu.addItem("Delete Attachment","delete_attmnt('cr:217699609',self.attdata[self.lnkid].id)");
+}
+attmnt_menu.finish();
+		
+var lnkid = -1;
+var attdata = new Array();
+
+ImgBtnRow();
+if (! _dtl.edit)
+{
+    var query_str = cfgCgi + "?SID=318570990+FID=2012775861" + 
+		    "+OP=CREATE_NEW+FACTORY=attmnt+NEXT_PERSID=cr:217699609";
+	query_str += "+attmnt_parent=" + "cr";
+    ImgBtnCreate("btn201", msgtext(448), "browseWithURL('" + query_str + "')", true, 0);
+}
+else
+{
+    var query_str = cfgCgi + "?SID=318570990+FID=2012775861" + 
+		    "+OP=CREATE_NEW+FACTORY=attmnt+KEEP.attmnt_for_edit=1";
+	query_str += "+attmnt_parent=" + "cr";
+    ImgBtnCreate("btn201", msgtext(448), "popupWithURL('" + query_str + "')", true, 0);
+}
+ImgBtnEndRow();
+
+docWriteln("<TABLE ID=tbl201 CLASS=tab>");
+docWriteln("<TR>");
+docWriteln("<TH COLSPAN=6 class=detailro>Attachments</TH>");
+docWriteln("</TR>");
+docWriteln("<TR>");
+docWriteln("<TH ALIGN=LEFT class=detailro>Repository</TH>");
+docWriteln("<TH ALIGN=LEFT class=detailro>Document</TH>");
+docWriteln("<TH ALIGN=LEFT class=detailro>Description</TH>");
+docWriteln("<TH ALIGN=LEFT class=detailro>Attached On</TH>");
+docWriteln("<TH ALIGN=LEFT class=detailro>Status</TH>");
+docWriteln("</TR>");
+
+docWriteln("</TABLE>");
+</SCRIPT>
+
+<DIV style="DISPLAY: none" id=attmnt_menu class=ctxMenu onmouseover=parent.contextMenuMouseOver(1) onmouseout=parent.contextMenuMouseOut(event,1)>
+<TABLE border=0 cellSpacing=0 cellPadding=0>
+<TBODY>
+<TR>
+<TD onmouseover=parent.contextMenuMouseOver(1)><A ondragstart="return false;" id=ctx_1_0 class=ctxMenu onmouseover="return true;" onclick=parent.download_exec(self.attdata[self.lnkid]) href="/CAisd/html/empty.html"><U>V</U>iew Document</A></TD></TR>
+<TR>
+<TD onmouseover=parent.contextMenuMouseOver(1)><A ondragstart="return false;" id=ctx_1_1 class=ctxMenu onmouseover="return true;" onclick=parent.download_exec(self.attdata[self.lnkid],true) href="/CAisd/html/empty.html"><U>S</U>how URL</A></TD></TR>
+<TR>
+<TD onmouseover=parent.contextMenuMouseOver(1)><A ondragstart="return false;" id=ctx_1_2 class=ctxMenu onmouseover="return true;" onclick="parent.edit_attmnt('cr:217699609',self.attdata[self.lnkid].id)" href="/CAisd/html/empty.html"><U>E</U>dit Attachment</A></TD></TR>
+<TR>
+<TD onmouseover=parent.contextMenuMouseOver(1)><A ondragstart="return false;" id=ctx_1_3 class=ctxMenu onmouseover="return true;" onclick="parent.delete_attmnt('cr:217699609',self.attdata[self.lnkid].id)" href="/CAisd/html/empty.html"><U>D</U>elete Attachment</A></TD></TR></TBODY></TABLE></DIV>
+<CENTER>
+<TABLE border=0>
+<TBODY>
+<TR>
+<TD height=21 align=middle><A onblur=ImgBtnBlur(5); id=imgBtn5 onmouseup="return ImgBtnMouseUp(5);" onfocus=ImgBtnFocus(5); onmouseover="return ImgBtnMouseOver(5,this);" title="Attach Document" onmouseout="return ImgBtnMouseUp(5);" onmousedown=ImgBtnMouseDown(5); onclick="return ImgBtnExecute(5);" href="JavaScript:void(0)" name=imgBtn5>
+<TABLE border=0 cellSpacing=0 cellPadding=0>
+<TBODY>
+<TR>
+<TD height=21 vAlign=center><IMG onmouseup="return ImgBtnMouseUp(5);" onmouseover="return ImgBtnMouseOver(5,this);" title="Attach Document" onmouseout="return ImgBtnMouseUp(5);" onmousedown=ImgBtnMouseDown(5); border=0 src="/CAisd/img/button_left.gif" width=10 height=21></TD>
+<TD style="BACKGROUND: url(/CAisd/img/button_middle.gif)" id=imgBtn5_caption class=clsButtonEnabled vAlign=center noWrap align=middle><U>A</U>ttach Document</TD>
+<TD height=21 vAlign=center><IMG onmouseup="return ImgBtnMouseUp(5);" onmouseover="return ImgBtnMouseOver(5,this);" title="Attach Document" onmouseout="return ImgBtnMouseUp(5);" onmousedown=ImgBtnMouseDown(5); border=0 src="/CAisd/img/button_right.gif" width=10 height=21></TD></TR></TBODY></TABLE></A></TD></TR></TBODY></TABLE></CENTER>
+<TABLE id=tbl201 class=tab>
+<TBODY>
+<TR>
+<TH class=detailro colSpan=6>Attachments</TH></TR>
+<TR>
+<TH class=detailro align=left>Repository</TH>
+<TH class=detailro align=left>Document</TH>
+<TH class=detailro align=left>Description</TH>
+<TH class=detailro align=left>Attached On</TH>
+<TH class=detailro align=left>Status</TH></TR></TBODY></TABLE>
+<SCRIPT>end_pdm_tab("Attachments");</SCRIPT>
+<BR></DIV>
+<SCRIPT language=JavaScript>
+start_pdm_tab("Properties","");
+</SCRIPT>
+
+<DIV style="HEIGHT: auto" id=nbtab_3_crro_nb_div class=notebook>
+<SCRIPT language=JavaScript>
+docWriteln("<DIV ID=propertyDiv>");
+detailStartRow("CLASS=tab");
+
+detailRowHdr("Name");
+detailRowHdr("Value");
+detailRowHdr("Examples");
+detailEndHdrRow();
+var n = 0;
+
+
+   detailNoProperties();
+
+
+detailEndTable();
+docWrite("</DIV>");
+</SCRIPT>
+
+<DIV id=propertyDiv>
+<TABLE class=tab>
+<TBODY>
+<TR vAlign=top>
+<TH class=labeltext vAlign=baseline align=left>Name&nbsp;&nbsp;&nbsp;</TH>
+<TH class=labeltext vAlign=baseline align=left>Value&nbsp;&nbsp;&nbsp;</TH>
+<TH class=labeltext vAlign=baseline align=left>Examples&nbsp;&nbsp;&nbsp;</TH></TR>
+<TR>
+<TD class=labeltext colSpan=3 align=middle>No properties are defined for this request area</TD></TR></TBODY></TABLE></DIV>
+<SCRIPT>end_pdm_tab("Properties");</SCRIPT>
+<BR></DIV><!-- must be in the main form --><INPUT type=hidden name=zvip>
+<SCRIPT language=JavaScript>
+endDetail();
+</SCRIPT>
+ </FORM>
+<FORM method=post name=spell_form action=/protected/usd-cgi/pdmweb/pdmweb.exe?SID=318570990+FID=4758+OP=SPELLCHECK+HTMPL=spellcheck.htmpl+KEEP.form_name=main_form target=spell_form><INPUT type=hidden name=KEEP.evaltext><INPUT value=" " type=hidden name=KEEP.evallang><INPUT value=" " type=hidden name=KEEP.evalopts><INPUT value=" " type=hidden name=KEEP.evallexlist><INPUT type=hidden name=KEEP.control_name></FORM><!-- BEGIN analyst/std_footer.htmpl -->
+<SCRIPT language=JavaScript>
+if (typeof std_footer_setup != "undefined")
+    std_footer_setup();
+</SCRIPT>
+</DIV></DIV>
+<SCRIPT>
+	var ahdtop = get_ahdtop();
+	if (typeof ahdtop == "object" &&
+	    typeof ahdtop.LoadingPopup == "object" &&
+	    typeof ahdtop.LoadingPopup.name == "string" &&
+	    ahdtop.LoadingPopup.name == "USD1391794118653")
+		ahdtop.LoadingPopup = void(0);
+</SCRIPT>
+<!-- BEGIN analyst/std_footer_site.htmpl --><!-- END analyst/std_footer_site.htmpl --><!-- END analyst/std_footer.htmpl --></CENTER></BODY>
+readystate
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+readystate
+0
+referrer
+referrer
+http:
+resizable
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+resizable
+0
+screenx
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+screenx
+0
+screeny
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+screeny
+0
+silent
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+silent
+0
+statusbar
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+statusbar
+0
+statustext
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+statustext
+0
+theatermode
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+theatermode
+0
+title
+title
+Create New Request AM31719505 - Unicenter ServicePlus Service Desk
+toolbar
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+toolbar
+0
+top
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+top
+0
+visible
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+visible
+0
+width
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+width
+0
+uniqueid
+--> IE.au3 V2.4-0 Error from function _IEPropertyGet, $_IEStatus_InvalidObjectType
+uniqueid
+0
+
+
++>13:21:43 AutoIT3.exe ended.rc:0
+>Exit code: 0    Time: 4.895
