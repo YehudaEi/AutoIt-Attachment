@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<DeploymentConfiguration PackageId="testID" DisplayName="testDisplayname" xmlns="http://schemas.microsoft.com/appv/2010/deploymentconfiguration"></DeploymentConfiguration>
