@@ -1,0 +1,76 @@
+2014.01.28 13:29:28 
+-------------------
+COM Error Encountered in New AutoIt v3 Script.au3
+OutlookEX UDF version = 0.10.0
+@AutoItVersion = 3.3.10.2
+@AutoItX64 = 0
+@Compiled = 0
+@OSArch = X64
+@OSVersion = WIN_7
+Scriptline = 2788
+NumberHex = 80004004
+Number = -2147467260
+WinDescription = Operation aborted
+Description = 
+Source = 
+HelpFile = 
+HelpContext = 
+LastDllError = 0
+========================================================
+2014.01.28 13:29:28 
+-------------------
+COM Error Encountered in New AutoIt v3 Script.au3
+OutlookEX UDF version = 0.10.0
+@AutoItVersion = 3.3.10.2
+@AutoItX64 = 0
+@Compiled = 0
+@OSArch = X64
+@OSVersion = WIN_7
+Scriptline = 5512
+NumberHex = 80004004
+Number = -2147467260
+WinDescription = Operation aborted
+Description = 
+Source = 
+HelpFile = 
+HelpContext = 
+LastDllError = 0
+========================================================
+2014.01.28 13:29:39 
+-------------------
+COM Error Encountered in New AutoIt v3 Script.au3
+OutlookEX UDF version = 0.10.0
+@AutoItVersion = 3.3.11.3
+@AutoItX64 = 0
+@Compiled = 0
+@OSArch = X64
+@OSVersion = WIN_7
+Scriptline = 2788
+NumberHex = 80004004
+Number = -2147467260
+WinDescription = Operation aborted
+Description = 
+Source = 
+HelpFile = 
+HelpContext = 
+LastDllError = 0
+========================================================
+2014.01.28 13:29:39 
+-------------------
+COM Error Encountered in New AutoIt v3 Script.au3
+OutlookEX UDF version = 0.10.0
+@AutoItVersion = 3.3.11.3
+@AutoItX64 = 0
+@Compiled = 0
+@OSArch = X64
+@OSVersion = WIN_7
+Scriptline = 5512
+NumberHex = 80004004
+Number = -2147467260
+WinDescription = Operation aborted
+Description = 
+Source = 
+HelpFile = 
+HelpContext = 
+LastDllError = 0
+========================================================
