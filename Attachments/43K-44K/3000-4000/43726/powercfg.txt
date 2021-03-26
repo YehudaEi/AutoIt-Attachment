@@ -1,0 +1,14 @@
+
+Existing Power Schemes (* Active)
+-----------------------------------
+Power Scheme GUID: 1d77c431-8167-48c8-aca3-0d1260bfdf2b  (Extended Battery Life (Max run-time))
+Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)
+Power Scheme GUID: 456bebbc-19e9-4f0e-83ca-722d47dacb88  (Samsung High Performance)
+Power Scheme GUID: 49ef8fc0-bb7f-488e-b6a0-f1fc77ec649b  (Dell)
+Power Scheme GUID: 674fd206-2c45-4789-99d5-c8a90034c8a7  (Cool (Reduced Temp Levels))
+Power Scheme GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c  (High performance)
+Power Scheme GUID: a1841308-3541-4fab-bc81-f71556f20b4a  (Power saver)
+Power Scheme GUID: a4440d9d-6985-4a08-8159-f7534e9f3a93  (My Custom Plan 1 My Custom Plan 1 (fred))
+Power Scheme GUID: a54c0e2c-1c4e-480a-bec8-6817cc9474fb  (Ultra Performance (Max Fan Levels))
+Power Scheme GUID: a6e6de9f-80d1-4b7b-bc9d-c10e33fe245b  (Pro Audio/Video (Low-latency))
+Power Scheme GUID: dea1a47b-7939-4ad2-9293-eafb59386025  (Quiet (Reduced Fan Levels)) *
