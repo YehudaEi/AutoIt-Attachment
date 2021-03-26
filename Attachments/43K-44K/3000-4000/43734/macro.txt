@@ -1,0 +1,165 @@
+Sub Test1()
+'
+' Test1 Macro
+'
+
+'
+    ActiveCell.FormulaR1C1 = "WSB Checklist"
+    Range("B2").Select
+    Columns("A:A").ColumnWidth = 25.29
+    Range("A1").Select
+    Selection.Font.Size = 12
+    Selection.Font.Size = 14
+    Selection.Font.Size = 16
+    Selection.Font.Size = 18
+    Selection.Font.Size = 20
+    Selection.Font.Size = 22
+    Selection.Font.Size = 24
+    Selection.Font.Size = 26
+    Range("C7").Select
+    Columns("A:A").ColumnWidth = 33
+    Columns("A:A").ColumnWidth = 37
+    Range("A1").Select
+    With Selection.Interior
+        .Pattern = xlSolid
+        .PatternColorIndex = xlAutomatic
+        .Color = 15773696
+        .TintAndShade = 0
+        .PatternTintAndShade = 0
+    End With
+    With Selection.Font
+        .ThemeColor = xlThemeColorDark1
+        .TintAndShade = 0
+    End With
+    Range("A1").Select
+    ActiveCell.FormulaR1C1 = "WSB Checklist"
+    Range("A3").Select
+    ActiveCell.FormulaR1C1 = "NAV Contact"
+    Range("A4").Select
+    ActiveCell.FormulaR1C1 = "Klant"
+    Range("A5").Select
+    ActiveCell.FormulaR1C1 = "Service Request / Incident nummer:"
+    Range("A7").Select
+    Columns("B:B").ColumnWidth = 29.86
+    Range("A3:B5").Select
+    Selection.Style = "Verklarende tekst"
+    Range("A3").Select
+    ActiveCell.FormulaR1C1 = "NAV Contact:"
+    Range("A4").Select
+    ActiveCell.FormulaR1C1 = "Klant:"
+    Range("A7").Select
+    Range("A7:C7").Select
+    Range("A7:C7").Select
+    With Selection.Interior
+        .Pattern = xlSolid
+        .PatternColorIndex = xlAutomatic
+        .ThemeColor = xlThemeColorDark1
+        .TintAndShade = -0.499984740745262
+        .PatternTintAndShade = 0
+    End With
+    Range("A7").Select
+    ActiveCell.FormulaR1C1 = "Uit te voeren actie"
+    Range("A7").Select
+    Selection.Font.Bold = True
+    Range("B7").Select
+    ActiveCell.FormulaR1C1 = "Uitslag"
+    Range("B7").Select
+    With Selection.Font
+        .ThemeColor = xlThemeColorDark1
+        .TintAndShade = 0
+    End With
+    Range("C7").Select
+    Columns("C:C").ColumnWidth = 26
+    With Selection.Font
+        .ThemeColor = xlThemeColorDark1
+        .TintAndShade = 0
+    End With
+    ActiveCell.FormulaR1C1 = "Toelichting (dient met de hand ingevuld te worden)"
+    Range("C9").Select
+    Columns("C:C").ColumnWidth = 46.71
+    Columns("C:C").ColumnWidth = 47.71
+    Range("C22").Select
+    Columns("B:B").ColumnWidth = 35.29
+    Range("A9").Select
+    ActiveCell.FormulaR1C1 = "Computer model"
+    Range("A10").Select
+    ActiveCell.FormulaR1C1 = "Windows versie "
+    Range("A11").Select
+    ActiveCell.FormulaR1C1 = "Authenticatie gegevens"
+    Range("A12").Select
+    ActiveCell.FormulaR1C1 = "Windows activatie"
+    Range("A9").Select
+    ActiveCell.FormulaR1C1 = "Computer/laptop model"
+    Range("A13").Select
+    ActiveWindow.ScrollRow = 1
+    ActiveCell.FormulaR1C1 = "Computer/"
+    Range("A13").Select
+    ActiveCell.FormulaR1C1 = "Computer/laptop naam"
+    Range("A14").Select
+    Application.Goto Reference:="Test1"
+    Range("A4").Select
+    ActiveCell.FormulaR1C1 = "Klantnaam:"
+    Range("A4").Select
+    ActiveCell.FormulaR1C1 = "Customer:"
+    Range("A6").Select
+    Rows("6:6").Select
+    Selection.Insert Shift:=xlDown, CopyOrigin:=xlFormatFromLeftOrAbove
+    Range("A6").Select
+    ActiveCell.FormulaR1C1 = "Naam installateur:"
+    Range("A15").Select
+    ActiveCell.FormulaR1C1 = ""
+    Range("A11").Select
+    ActiveCell.FormulaR1C1 = "Is Windows geactiveerd?"
+    Range("A12").Select
+    ActiveCell.FormulaR1C1 = "Wat zijn de lokale authenticatie gegevens?"
+    Range("A18").Select
+    Columns("A:A").ColumnWidth = 39.14
+    Range("A13").Select
+    ActiveCell.FormulaR1C1 = "Wat is de naam van de computer/laptop"
+    Range("A14").Select
+    ActiveCell.FormulaR1C1 = "Zijn alle drivers-up-to-date"
+    Range("A14").Select
+    ActiveCell.FormulaR1C1 = "Zijn alle drivers-up-to-date?"
+    Range("A15").Select
+    ActiveCell.FormulaR1C1 = "Welke programma's heeft u geïnstalleerd?"
+    Range("A16").Select
+    ActiveCell.FormulaR1C1 = _
+        "Welke versie van Microsoft Office heeft u geïnstalleerd?"
+    Range("A21").Select
+    Columns("A:A").ColumnWidth = 52.57
+    Range("A17").Select
+    ActiveCell.FormulaR1C1 = "Heeft u Microsoft Office geactiveerd?"
+    Range("A18").Select
+    ActiveCell.FormulaR1C1 = "Heeft u alle software geupdate?"
+    Range("A19").Select
+    ActiveCell.FormulaR1C1 = "Heeft u User Account Control uitgeschakeld?"
+    Range("A20").Select
+    ActiveCell.FormulaR1C1 = "Zijn alle programma's bij opstart uitgeschakeld?"
+    Range("A21").Select
+    ActiveCell.FormulaR1C1 = "Heeft u "
+    Rows("15:15").Select
+    Selection.Insert Shift:=xlDown, CopyOrigin:=xlFormatFromLeftOrAbove
+    Range("A15").Select
+    ActiveCell.FormulaR1C1 = "Heeft u WSB-support op bureaublad geplaatst?"
+    Range("A22").Select
+    ActiveCell.FormulaR1C1 = "Heeft u Public Desktop ingericht?"
+    Range("A23").Select
+    ActiveCell.FormulaR1C1 = "Van welk domein is de computer lid gemaakt?"
+    Range("A24").Select
+    ActiveCell.FormulaR1C1 = _
+        "Heeft u Domain Users lid gemaakt van de lokale Administrators"
+    Range("A27").Select
+    Columns("A:A").ColumnWidth = 61.29
+    Range("A25").Select
+    ActiveCell.FormulaR1C1 = "Overig"
+    Range("A24").Select
+    ActiveCell.FormulaR1C1 = _
+        "Heeft u Domain Users lid gemaakt van de lokale Administrators?"
+    Range("C32").Select
+    ActiveWindow.ScrollRow = 5
+    ActiveWindow.ScrollRow = 4
+    ActiveWindow.ScrollRow = 3
+    ActiveWindow.ScrollRow = 2
+    ActiveWindow.ScrollRow = 1
+    Application.Goto Reference:="Test1"
+End Sub
