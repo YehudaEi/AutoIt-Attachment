@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SysSettings>
+	<SystemSpecific>
+		<MODEL>
+			<NICPowerSettings>
+				<Setting Name="PMARPffload" Value="*PMARPOffload,REG_SZ,0"></Setting>
+				<Setting Name="PMNSOffload" Value="*PMNSOffload,REG_SZ,0"></Setting>
+				<Setting Name="WakeOnMagicPacket" Value="*WakeOnMagicPacket,REG_SZ,0"></Setting>
+				<Setting Name="WakeOnPattern" Value="*WakeOnPattern,REG_SZ,0"></Setting>
+				<Setting Name="EEELinkAdvertisement" Value="EEELinkAdvertisement,REG_SZ,0"></Setting>
+				<Setting Name="ReduceSpeedOnPowerDown" Value="ReduceSpeedOnPowerDown,REG_SZ,0"></Setting>
+			</NICPowerSettings>
+		</MODEL>
+	</SystemSpecific>
+	<Global>
+	</Global>
+</SysSettings>
