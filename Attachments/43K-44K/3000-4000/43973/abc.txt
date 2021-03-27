@@ -1,0 +1,139 @@
+amount	Category
+761.65	eat out
+-17.92	eat out
+-5.58	eat out
+-29.78	eat out
+-20.24	eat out
+-17.68	eat out
+-157.87	eat out
+-15	eat out
+-26.98	eat out
+-21.58	eat out
+-17.15	eat out
+-6.05	eat out
+-9.49	eat out
+-29.39	eat out
+-8.31	eat out
+-28.31	eat out
+-50.9	eat out
+-13.33	eat out
+-47.29	eat out
+-19.71	eat out
+-4.19	eat out
+-4.29	eat out
+-5.48	eat out
+-35	eat out
+-15.25	eat out
+	0
+	
+	food
+	food
+	food
+	food
+	food
+	food
+	food
+-4.19	food
+-19.71	food
+-88.57	food
+-7.83	food
+-7.86	food
+-49.48	food
+-6.53	food
+0	food
+0	food
+0	food
+0	food
+0	food
+0	food
+0	food
+0	food
+0	food
+0	food
+0	food
+0	food
+0	food
+0	0
+0	
+-15	gas
+-50.01	gas
+-50.9	gas
+-8.31	gas
+-29.99	gas
+-51.55	gas
+0	gas
+0	gas
+0	gas
+0	gas
+0	gas
+0	gas
+0	gas
+0	gas
+0	0
+0	
+-10.62	misc
+-86.23	misc
+-29.99	misc
+-7.83	misc
+-7.86	misc
+-49.48	misc
+-27.03	misc
+-51.55	misc
+-6.53	misc
+0	
+0	
+-29.78	household
+0	household
+0	household
+0	0
+0	
+-20	haircut
+0	haircut
+0	haircut
+0	haircut
+0	0
+0	
+0	
+0	clothes
+0	clothes
+0	clothes
+0	clothes
+0	0
+0	
+0	vacation
+0	vacation
+0	vacation
+0	0
+0	
+0	xmas 
+0	xmas 
+0	xmas 
+0	xmas 
+0	xmas 
+0	xmas 
+0	xmas 
+0	xmas 
+0	xmas 
+0	xmas 
+0	xmas 
+0	xmas 
+0	xmas 
+0	0
+0	
+0	
+0	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
