@@ -1,0 +1,40 @@
+[NEW VERSION] - 24 Apr 12
+
+Added 2 optional changes to the way the frames act when the surrounding GUI is changed in size:
+
+1. Previously the frame minimum sizes set by _GUIFrame_SetMin were stored as a percentage of the initial GUI size - resizing the GUI changed the actual size of the minimum value to maintain the same percentage value. An additional parameter now allows you set an absolute value for these minima regardless of the size of the GUI. The top/left frame will always take priority if the GUI is reduced below the combined minimum sizes.
+
+2. The separator bar did not move when the GUI was resized - you can now specify in the _GUIFrame_ResizeSet function whether either or neither frame should remain static when the GUI is resized.
+
+These changes are not script-breaking as the new parameters are optional and the default behaviour of the UDF is very close to what you are used to seeing. Thanks to thewizard21 for asking for the new features
+
+[NEW VERSION] - 24 Mar 12
+
+The previous change introduced some unwanted behaviour so I have reverted the code as the bug in deep within the AutoIt core code and there seems no simple way to avoid the problem while also allowing controls to use accelerator letters in the titles. I believe that it is the lesser of the 2 evils to have non-draggable GUI as frames.
+ 
+[NEW VERSION] - 4 Feb 12
+
+Changed: Controls with accelerator letters in the titles (set by &) now work. Thanks to DicatoroftheUSA for reporting the problem and ProgAndy for coming up with the solution (and also pointing out a couple of typos).
+
+As explained above this change has been reverted.
+ 
+[NEW VERSION] - 20 Jan 12
+
+Changed: Code amended to allow UDF to work on x64 systems with the 32bit AutoIt executable.
+ 
+[NEW VERSION - 21 Dec 10] - New UDF code and zip
+
+[New] - Now x64 compatible (thanks Yashied)
+No requirement for any changes to existing scripts - the UDF automatically detects the correct form of DLLCall to make.
+ 
+[NEW VERSION - 14 Dec 10] - New UDF code, examples and zip
+
+[New] - Removal of the limit on child frames. You can now have as many as you can fit in! :party:
+[New] - Automatic exit clean up by using OnAutoItExitRegister to call the required function - no user action required.
+[New] - Ability to get current separator position (_GUIFrame_GetSepPos) and to set the separator position programatically (_GUIFrame_SetSepPos) to permit GUI to be recreated as it was left - see examples for how to use them.
+ 
+[NEW VERSION - 4 Nov 10] - Added user-defined intial position of separator bar within Frame. New UDF & example code and zip.
+Warning: Script-breaking syntax change. You need to adjust the _GUIFrame_Create syntax if you used any parameters other than the separator orientation.
+Sorry about that, but I felt keeping the various parameters in logical groups was more important.
+ 
+[NEW VERSION - 27 Sep 10] - Fixed bug in resizing code (Thanks Beege o:) ). New UDF code and zip.
