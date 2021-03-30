@@ -1,0 +1,9 @@
+STWD
+RDS
+A
+COP
+CVX
+B
+TOT
+BP
+WAG
