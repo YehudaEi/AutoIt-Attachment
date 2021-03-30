@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<Codes Ownership="CompanyA">
+		<ReadItemLists ForceLoad="true">
+			<ReadItemList>
+				<ReadItemListID>CB2Register-All1</ReadItemListID>
+				<Description>CB2Register-All1</Description>
+				<MeterType>0</MeterType>
+				<ReadLoadProfileFlag>0</ReadLoadProfileFlag>
+				<SupportsKeyedFlag>0</SupportsKeyedFlag>
+				<SupportsWalkByFlag>1</SupportsWalkByFlag>
+				<SupportsOpticalFlag>1</SupportsOpticalFlag>
+				<SupportsWandFlag>0</SupportsWandFlag>
+				<ResetDemandFlag>0</ResetDemandFlag>
+				<ReadItem>
+					<Description>batteryUsage</Description>
+					<ReadType>00</ReadType>
+					<ChannelNumber>0</ChannelNumber>
+					<HHFFieldPosition>0</HHFFieldPosition>
+					<NumberDials>8</NumberDials>
+					<NumberDecimals>0</NumberDecimals>
+					<MainReading>true</MainReading>
+					<TextPrompt>BatUs</TextPrompt>
+					<CollManWhenPrimReadMethFails>true</CollManWhenPrimReadMethFails>
+					<ReadDirection>1</ReadDirection>
+					<RequiredReadItem>true</RequiredReadItem>
+					<P4ManualReadItem>0</P4ManualReadItem>
+					<P4DateTimeIndicator>0</P4DateTimeIndicator>
+					<P4ReadItemLength>0</P4ReadItemLength>
+					<P4ReadItemName />
+					<ReadMethod>3</ReadMethod>
+					<TIMTagNumber>2</TIMTagNumber>
+					<DateTimeIndicator>0</DateTimeIndicator>
+				</ReadItem>
+			</ReadItemList>
+			<ReadItemList>
+				<ReadItemListID>ReadList2</ReadItemListID>
+				<Description>Listing of read items for list 2</Description>
+				<MeterType></MeterType>
+				<ReadLoadProfileFlag>0</ReadLoadProfileFlag>
+				<SupportsKeyedFlag>0</SupportsKeyedFlag>
+				<SupportsWalkByFlag>1</SupportsWalkByFlag>
+				<SupportsOpticalFlag>1</SupportsOpticalFlag>
+				<SupportsWandFlag>0</SupportsWandFlag>
+				<ResetDemandFlag>0</ResetDemandFlag>
+				<ReadItem>
+					<Description>Last Reset Demand Date</Description>
+					<ReadType>00</ReadType>
+					<ChannelNumber>0</ChannelNumber>
+					<HHFFieldPosition>0</HHFFieldPosition>
+					<NumberDials>6</NumberDials>
+					<NumberDecimals>3</NumberDecimals>
+					<MainReading>true</MainReading>
+					<TextPrompt>LRDT</TextPrompt>
+					<CollManWhenPrimReadMethFails>true</CollManWhenPrimReadMethFails>
+					<ReadDirection>1</ReadDirection>
+					<RequiredReadItem>true</RequiredReadItem>
+					<P4ManualReadItem>0</P4ManualReadItem>
+					<P4DateTimeIndicator>0</P4DateTimeIndicator>
+					<P4ReadItemLength>0</P4ReadItemLength>
+					<P4ReadItemName />
+					<ReadMethod>3</ReadMethod>
+					<TIMTagNumber>1051</TIMTagNumber>
+					<DateTimeIndicator>1</DateTimeIndicator>
+				</ReadItem>
+			</ReadItemList>
+		</ReadItemLists>
+	</Codes>
