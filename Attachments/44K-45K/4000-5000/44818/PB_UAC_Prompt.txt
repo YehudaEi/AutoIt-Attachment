@@ -1,0 +1,40 @@
+Record Number: 79535
+Submitted: 08/07/2014 03:02:16 PM
+Description: PowerBroker for Windows detected a UAC prompt:Path: C:\windows\system32\taskmgr.exeArguments: /1Vendor: Microsoft CorporationProduct Name: Microsoft® Windows® Operating SystemVersion: 6.1.7601.17514Hash: 0xD748D5B325E5DD4FADEB837A59F61E55D2636D31Certificate Publisher: O=Microsoft Corporation, L=Redmond, S=Washington, C=USOriginal Filename: taskmgr.exeProcess Type: Standard UserResponse: C:\windows\system32\taskmgr.exe0Account used for elevation: C:\windows\system32\taskmgr.exe1Authorization: C:\windows\system32\taskmgr.exe2
+
+Record Number: 79414
+Submitted: 08/07/2014 09:06:57 AM
+Description: PowerBroker for Windows detected a UAC prompt:Path: C:\windows\system32\mmc.exeArguments: c:\program files\citrix\desktop studio\desktopstudio.mscVendor: Microsoft CorporationProduct Name: Microsoft® Windows® Operating SystemVersion: 6.1.7600.16385Hash: 0xD63163689D0D55DD322CEB509BEE63B0436946ADCertificate Publisher: O=Microsoft Corporation, L=Redmond, S=Washington, C=USOriginal Filename: mmc.exeProcess Type: Standard UserResponse: C:\windows\system32\mmc.exe0Account used for elevation: C:\windows\system32\mmc.exe1Authorization: C:\windows\system32\mmc.exe2
+
+Record Number: 79390
+Submitted: 08/07/2014 08:43:36 AM
+Description: PowerBroker for Windows detected a UAC prompt:Path: C:\windows\system32\mmc.exeArguments: c:\stuff\_remoteapps\praxair ad tools.mscVendor: Microsoft CorporationProduct Name: Microsoft® Windows® Operating SystemVersion: 6.1.7600.16385Hash: 0xD63163689D0D55DD322CEB509BEE63B0436946ADCertificate Publisher: O=Microsoft Corporation, L=Redmond, S=Washington, C=USOriginal Filename: mmc.exeProcess Type: Standard UserResponse: C:\windows\system32\mmc.exe0Account used for elevation: C:\windows\system32\mmc.exe1Authorization: C:\windows\system32\mmc.exe2
+
+Record Number: 78861
+Submitted: 08/06/2014 02:20:51 PM
+Description: PowerBroker for Windows detected a UAC prompt:Path: C:\windows\system32\mmc.exeArguments: c:\windows\system32\eventvwr.msc /sVendor: Microsoft CorporationProduct Name: Microsoft® Windows® Operating SystemVersion: 6.1.7600.16385Hash: 0xD63163689D0D55DD322CEB509BEE63B0436946ADCertificate Publisher: O=Microsoft Corporation, L=Redmond, S=Washington, C=USOriginal Filename: mmc.exeProcess Type: Standard UserResponse: C:\windows\system32\mmc.exe0Account used for elevation: C:\windows\system32\mmc.exe1Authorization: C:\windows\system32\mmc.exe2
+
+Record Number: 78808
+Submitted: 08/06/2014 01:47:54 PM
+Description: PowerBroker for Windows detected a UAC prompt:Path: C:\Windows\System32\mmc.exeArguments: c:\program files (x86)\wyse\wdm\\wysedevicemanager.mscVendor: Microsoft CorporationProduct Name: Microsoft® Windows® Operating SystemVersion: 6.1.7600.16385Hash: 0xD63163689D0D55DD322CEB509BEE63B0436946ADCertificate Publisher: O=Microsoft Corporation, L=Redmond, S=Washington, C=USOriginal Filename: mmc.exeProcess Type: Standard UserResponse: C:\Windows\System32\mmc.exe0Account used for elevation: C:\Windows\System32\mmc.exe1Authorization: C:\Windows\System32\mmc.exe2
+
+Record Number: 78771
+Submitted: 08/06/2014 01:23:28 PM
+Description: PowerBroker for Windows detected a UAC prompt:Path: C:\windows\system32\eventvwr.exeArguments: <None>Vendor: Microsoft CorporationProduct Name: Microsoft® Windows® Operating SystemVersion: 6.1.7600.16385Hash: 0xADA934DA7A0D40FA0F54652687F762B82EA5F27ECertificate Publisher: O=Microsoft Corporation, L=Redmond, S=Washington, C=USOriginal Filename: eventvwr.exeProcess Type: Standard UserResponse: C:\windows\system32\eventvwr.exe0Account used for elevation: C:\windows\system32\eventvwr.exe1Authorization: C:\windows\system32\eventvwr.exe2
+
+Record Number: 78378
+Submitted: 08/06/2014 08:38:19 AM
+Description: PowerBroker for Windows detected a UAC prompt:Path: C:\Windows\System32\eventvwr.exeArguments: <None>Vendor: Microsoft CorporationProduct Name: Microsoft® Windows® Operating SystemVersion: 6.1.7600.16385Hash: 0xADA934DA7A0D40FA0F54652687F762B82EA5F27ECertificate Publisher: O=Microsoft Corporation, L=Redmond, S=Washington, C=USOriginal Filename: eventvwr.exeProcess Type: Standard UserResponse: C:\Windows\System32\eventvwr.exe0Account used for elevation: C:\Windows\System32\eventvwr.exe1Authorization: C:\Windows\System32\eventvwr.exe2
+
+Record Number: 77186
+Submitted: 08/05/2014 04:01:03 PM
+Description: PowerBroker for Windows detected a UAC prompt:Path: C:\Users\usaaxf18\Desktop\autoit-v3-setup.exeArguments: <None>Vendor: AutoIt TeamProduct Name: <None>Version: 3.3.12.0Hash: 0xBD206A771C5CF8131620477C4229FB07FE18AD5BCertificate Publisher: O=AutoIt Consulting Ltd, L=Birmingham, C=GBOriginal Filename: <None>Process Type: Standard UserResponse: C:\Users\usaaxf18\Desktop\autoit-v3-setup.exe0Account used for elevation: C:\Users\usaaxf18\Desktop\autoit-v3-setup.exe1Authorization: C:\Users\usaaxf18\Desktop\autoit-v3-setup.exe2
+
+Record Number: 77075
+Submitted: 08/05/2014 02:40:32 PM
+Description: PowerBroker for Windows detected a UAC prompt:Path: C:\Windows\System32\eventvwr.exeArguments: <None>Vendor: Microsoft CorporationProduct Name: Microsoft® Windows® Operating SystemVersion: 6.1.7600.16385Hash: 0xADA934DA7A0D40FA0F54652687F762B82EA5F27ECertificate Publisher: O=Microsoft Corporation, L=Redmond, S=Washington, C=USOriginal Filename: eventvwr.exeProcess Type: Standard UserResponse: C:\Windows\System32\eventvwr.exe0Account used for elevation: C:\Windows\System32\eventvwr.exe1Authorization: C:\Windows\System32\eventvwr.exe2
+
+Record Number: 76754
+Submitted: 08/05/2014 10:46:45 AM
+Description: PowerBroker for Windows detected a UAC prompt:Path: C:\windows\system32\systempropertiesadvanced.exeArguments: <None>Vendor: Microsoft CorporationProduct Name: Microsoft® Windows® Operating SystemVersion: 6.1.7600.16385Hash: 0xB1AD7473D2E904C6279F86BB3676923BC8806EEDCertificate Publisher: O=Microsoft Corporation, L=Redmond, S=Washington, C=USOriginal Filename: SystemPropertiesAdvanced.EXEProcess Type: Standard UserResponse: C:\windows\system32\systempropertiesadvanced.exe0Account used for elevation: C:\windows\system32\systempropertiesadvanced.exe1Authorization: C:\windows\system32\systempropertiesadvanced.exe2
+
