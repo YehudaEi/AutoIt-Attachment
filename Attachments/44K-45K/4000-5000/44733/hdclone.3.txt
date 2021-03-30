@@ -1,0 +1,145 @@
+************************************
+* HDClone 5.0Enterprise64x Edition *
+************************************
+
+
+ F I N A L   R E P O R T 
+=========================
+
+
+Registration data:
+------------------
+Christian
+Trejo 00987
+Rio Grande
+Country
+
+
+System information:
+-------------------
+
+Processors:
+Description: Intel64 Family 6 Model 23 Stepping 10
+Manufacturer: GenuineIntel
+Name: Pentium(R) Dual-Core  CPU      E5500  @ 2.80GHz
+ProcessorId: BFEBFBFF0001067A
+IdentifyingNumber: To Be Filled By O.E.M.
+Name: To Be Filled By O.E.M.
+Vendor: To Be Filled By O.E.M.
+Version: To Be Filled By O.E.M.
+SerialNumber:                       
+Memory modules:
+BankLabel: BANK0
+Capacity: 2147483648
+DeviceLocator: DIMM0
+BankLabel: BANK1
+Capacity: 2147483648
+DeviceLocator: DIMM1
+
+
+
+Copy mode:
+----------
+Drive cloning
+
+
+Selected drives:
+----------------
+
+Source:
+-------
+Controller: IDE
+Device/Channel: 2
+LUN: 0/1/3/0
+Name: TOSHIBA MQ01ABF032
+Serial number: 34KIP031T
+Vendor: 
+Firmware: AM001A
+Size: 320 GB
+Sector size: 512 B
+Number of sectors:625,142,448
+Partition type: GPT
+Disk signature: {243FA3B7-A8D8-4D45-B9D7-6381B1691BAD}
+
+Target:
+-------
+Controller: IDE
+Device/Channel: 1
+LUN: 0/0/2/1
+Name: TOSHIBA MQ01ABD050
+Serial number: 92ILPHJIT
+Vendor: 
+Firmware: AX003M
+Size: 500 GB
+Sector size: 512 B
+Number of sectors:976,773,168
+Partition type: GPT
+Disk signature: {38F2512B-545E-461C-810A-304F6AAEB28E}
+
+Options:
+--------
+
+Defragmentation: OFF
+Verification: OFF
+Copy free areas: OFF
+SmartCopy: ON
+4K alignment: OFF
+Driver adjustment: OFF
+MediaDirect (Dell): ON
+
+Partition adjustment:
+---------------------
+
+Automatic adjustment to target size
+
+Volume analysis
+---------------
+Start: 2014-07-30 09:18:41
+End: 2014-07-30 09:18:49
+
+Copying run
+-----------
+Start: 2014-07-30 09:18:49
+End: 2014-07-30 09:26:59
+Data transferred: 34,485,504,000 bytes
+
+SafeRescue run
+--------------
+Start: 2014-07-30 09:26:59
+End: 2014-07-30 09:28:06
+Data transferred: 34,485,504,000 bytes
+
+Adjustment run
+--------------
+Start: 2014-07-30 09:28:06
+End: 2014-07-30 09:28:12
+
+Results:
+-----------
+
+Copying run
+  Read errors: 0
+  Write errors: 79
+
+SafeRescue run
+  Read errors: 0
+  Write errors: 510,311
+    In the following sectors:
+
+    
+2,049-2,064, 2,592-2,600, 9,320-9,576, 9,304-9,320, 511,792-511,832, 
+    
+512,344-512,360, 8,752-8,760, 14,184-16,232, 16,360-49,128, 381,920-511,792, 
+    
+2,600-8,744, 9,576-14,184, 8,784-9,304, 8,744-8,752, 16,232-16,360, 
+    
+511,832-512,344, 8,760-8,784, 2,584-2,592, 2,576-2,584, 2,064-2,576, 
+    
+49,128-381,920, 
+
+
+*********************************************
+*******     End of Final Report.      *******
+*********************************************
+
+
