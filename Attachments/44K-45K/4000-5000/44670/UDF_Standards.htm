@@ -1,0 +1,278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+	<meta content="text/html; charset=windows-1252" http-equiv="content-type">
+    <style type="text/css">
+<!--
+.style1 {font-family: "Courier New", Courier, mono}
+.style2 {font-weight: bold}
+.style3 {font-weight: bold}
+.style4 {font-weight: bold}
+.style5 {
+	font-size: 24px;
+	font-weight: bold;
+}
+.style6 {
+	font-size: 18px;
+	font-weight: bold;
+}
+-->
+  </style>
+  
+<meta name="NetsparkQuiltingResult" total-length="11721" removed="0" rules-found="w3123,w2341,w4947,w2645,w3704,w4473,w5511,w4061,w3937,w2918,w5534,w6774,w6750,w8757,w5481,w6769,w8130,w8131" />
+</head>
+  <body>
+    <p align="center"><u><span class="style5">User Defined Functions Standards</span></u>
+    </p>
+    <p align="left">This Page contains instructions on submitting UDF's for
+      AutoIt3, it helps me if code is submitted following the below standards
+      and include those 1 +2*n files::</p>
+    <ol>
+      <li><span class="style2"><span style="font-style: italic;">NewUDF</span>.au3</span>
+        (the actual UDF in the proposed include filename) </li>
+      <li><span class="style4"><em><span class="style4"><em>FunctionName</em>.txt</span></em></span>
+        (the text file to be used to build.the helpfile page of AutoIt.chm) </li>
+      <li><span class="style4"><em>FunctionName</em>.au3</span> (the example
+        script to be used in the helpfile) </li>
+    </ol>
+    <p>There is as many 2+3 as function to be described.</p>
+    <p>You will appreciate that we can only include those UDF's that are useful
+      to a larger group of scripter's.<br>
+      When you still like your UDF to be included :-) then:</p>
+    <ol>
+      <li>Follow the below instructions for the files. </li>
+      <li>Ensure your UDF is error free by running AU3Check with options:-d -w 1
+        -w 2 -w 3 -w- 4 -w 5 -w 6 -w 7. </li>
+      <li>Ensure your UDF code is Tidy. </li>
+      <li>Send me a PM that contains the files in a zip file. (guinness or&nbsp;
+        jpm) .</li>
+    </ol>
+    <p>Thanks,<br>
+      guinness and jpm<br>
+    </p>
+    <p class="style6"><u>User Defined Function coding standards</u></p>
+    <p><strong>Function Names</strong><br>
+      All function names must start with an underscore (“_”). * <br>
+      Each word in the function name should be capitalized. <br>
+      The first word of the function name should start with a word describing a
+      general category such as “Date”, “String”, “Array”, “Network”, etc.. If
+      the word is too long like “Window”, then an obvious abbreviation may be
+      used (e.g. “Win” for “Window” or “Net” for “Network”). <br>
+      All function names must closely resemble the established naming convention
+      for "internal" AutoIt functions.</p>
+    <p><strong>Variable Names</strong><br>
+      The first set of characters after the dollar sign (“$”) should be used to
+      specify the type of data that will be held in it. The following list
+      signifies the different prefixes and their data type significance. <br>
+      &nbsp;&nbsp;&nbsp; $a&lt;letter&gt; - Array (the following letter
+      describes the data type taken from the rest of the data types below) <br>
+      &nbsp;&nbsp;&nbsp; $d - Binary data <br>
+      &nbsp;&nbsp;&nbsp; $h - File or window handle <br>
+      &nbsp;&nbsp;&nbsp; $id - An AutoIt control Id (GUI)<br>
+      &nbsp;&nbsp;&nbsp; $i - Integer <br>
+      &nbsp;&nbsp;&nbsp; $b - Boolean <br>
+      &nbsp;&nbsp;&nbsp; $f - Floating point number <br>
+      &nbsp;&nbsp;&nbsp; $n - general number with no preference for floating
+      point or integer<br>
+      &nbsp;&nbsp;&nbsp; $s - String <br>
+      &nbsp;&nbsp;&nbsp; $v - Variant (unknown/variable type of data)<br>
+      &nbsp;&nbsp;&nbsp; $o - COM object<br>
+      &nbsp;&nbsp;&nbsp; $p - Pointer. It is assumed that it points to a struct
+      so no further letters are needed<br>
+      &nbsp;&nbsp;&nbsp; $t - Structure returned from DllStructCreate()<br>
+      &nbsp;&nbsp;&nbsp; $tag - Struct definition string. Structure definitions
+      should conform to the structure guidelines<br>
+      The rest of the name uses capitalized words to describe the function of
+      the variable. Names like “$iC” are unacceptable. "$aiWeekDayNames" or
+      "$iCounter" are much preferable. <br>
+      All variables must be declared at the beginning of the UDF with a “Local”
+      scope and before they are used for the first time.<br>
+      This convention apply also to Local/Global variables. Global variables
+      must have an extra first letter "g". UDF global variables must start with
+      underscore.<br>
+      Const/Enum variables are better if they are defined in UpperCase to
+      illustrate that they cannot be changed. First letter of the constant is
+      optional, $e can be used.<br>
+    </p>
+    <p>Note: Global variables should only be used if they are called from more
+      than one function or used in another scope. For example if the variable is
+      only used in main scope regardless of not in a fuction, then it should be
+      declared using Local. </p>
+    <p>The “Dim” or “Global” keywords are ambiguous inside of a UDF and as such
+      should be avoided, all variables should be transferred via the Function
+      Parameters using Byref when the updated value needs to be returned.</p>
+    <p> <strong>Parameters</strong><br>
+      The parameter names must use the same naming conventions as variables. <br>
+      All parameters must be checked for validity and return appropriate error
+      codes. <br>
+      If parameters are used to pass data back to the calling script (ByRef),
+      then the documentation should explicitly describe said behavior.</p>
+    <p><strong>Function Documentation</strong><br>
+      All UDFs must have a documentation header in the script in the following
+      form:</p>
+    <table width="713">
+      <tbody>
+        <tr>
+          <td bgcolor="#cccccc" width="705">
+            <pre class="style1">; #FUNCTION# ;===============================================================================<br>; Author ........: Jos van der Zande<br>; Modified.......:<br>; ===========================================================================================<br>Func _DateDiff($sType, $sStartDate, $sEndDate)<br>...</pre>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p>&nbsp;</p>
+    <p class="style6"><strong><u>Function Helpfile Documentation</u></strong></p>
+    <p>All submitted UDFs must include 1 extra file to be able to incorporate
+      them in the Helpfile:<br>
+    </p>
+    <p><strong><em>FunctionName</em>.txt. </strong> This is the example to be
+      used to build the&nbsp; Helpfile page for AutoIt.chm<br>
+    </p>
+    <table width="713">
+      <tbody>
+        <tr>
+          <td bgcolor="#cccccc" width="705">
+            <pre class="style1">###User Defined Function###
+Name goes here.
+
+###Description###
+One-line description
+
+###Syntax###
+#include &lt;NewUDF.au3&gt;<br>One-line syntax spec.
+
+
+###Parameters###
+@@ParamTable@@
+Description
+	ParamTables are special, two-column tables
+	where the first column is only one line,
+	but the second column can be many lines.
+How To Denote
+	Any information that appears in the second
+	column must be indented with at least one tab.
+	Each entry that is NOT indented begins a new row.
+	DO NOT LEAVE ANY BLANK LINE BETWEEN HERE AND "@@End@"
+@@End@@
+
+Parameters naming as described above.
+
+###ReturnValue###
+@@ReturnTable@@
+Success:	@TAB followed by info for second column as 1.
+; If several line are needed to describe they must start  with @TAB. More than one @TAB allows small extra indentation.
+Failure:	@TAB followed by info for second column as 0.
+@error:	@TAB followed by value explanation.
+@@End@@
+
+
+
+###Remarks###
+In general, whitespace outside of tables is ignored.
+@TAB are converted to 4 blanks which allow small identation.
+IN the Remarks Section:  non-consecutive blank lines are converted as HTML &lt;br /&gt;'s.
+
+You can also use &lt;strong&gt;bold&lt;/strong&gt; and &lt;em&gt;italic&lt;/em&gt; tags.  Pretty much any HTML formatting can be used, since this text is more or less copied directly over to the htm file.
+
+Remarks go here.  Here's a standard table; each line is a new row, and columns are tab-separated:
+
+@@StandardTable@@
+row1col1	row1col2	row1col3	row1col4
+row2col1	row2col2	row2col3	row2col4
+@@End@@
+
+
+###Related###
+Foo, Bar (Option), &lt;a href="whatever/baz.htm"&gt;Baz&lt;/a&gt;
+
+; the above will be converted to the following HTML:
+&lt;a href="foo.htm"&gt;Foo&lt;/a&gt;, &lt;a href="AutoItSetOption.htm#Bar"&gt;Bar (Option)&lt;/a&gt;, &lt;a href="whatever/baz.htm"&gt;Baz&lt;/a&gt;
+
+
+###See Also###
+@@MsdnLink@@ stringToBeSearched
+
+; A Link that will search on the Msdn Online library will be inserted.<br><br>;This section is optional.<br><br>###Example###
+@@IncludeExample@@ [NameOfDuplicateUDF]
+
+; All examples should pass #AutoIt3Wrapper_Au3Check_Parameters=-q -d -w 1 -w 2 -w 3 -w- 4 -w 5 -w 6 -w- 7 without errors or warning.
+; If the optional name is defined it will be the file NameOfDuplicateUDF.au3 will be used.</pre>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p><strong> </strong><strong><em>FunctionName</em>.txt. </strong> This is
+      the example to be used to build the&nbsp; Helpfile page for AutoIt.chm<br>
+      (Example):</p>
+    <p>
+      <table width="713">
+        <tbody>
+          <tr>
+            <td bgcolor="#cccccc" width="705">
+              <pre class="style1">###User Defined Function###
+_DateDiff
+
+###Description###
+Returns the difference between 2 dates, expressed in the type requested
+
+###Syntax###
+#include &lt;Date.au3&gt;
+_DateDiff ( $sType, $sStartDate, $sEndDate )
+
+
+###Parameters###
+@@ParamTable@@
+$sType
+	One of the following:
+	D = Difference in days between the given dates
+	M = Difference in months between the given dates
+	Y = Difference in years between the given dates
+	w = Difference in Weeks between the given dates
+	h = Difference in hours between the given dates
+	n = Difference in minutes between the given dates
+	s = Difference in seconds between the given dates
+$sStartDate
+	Input Start date in the format "YYYY/MM/DD[ HH:MM:SS]"
+$sEndDate
+	Input End date in the format "YYYY/MM/DD[ HH:MM:SS]"
+@@End@@
+
+###ReturnValue###
+@@ReturnTable@@
+Success:	Difference between the 2 dates.
+Failure:	0 and sets the @error flag to non-zero.
+@error:	1 - Invalid $sType
+	2 - Invalid $sStartDate
+	3 - Invalid $sEndDate
+@@End@@
+
+
+###Remarks###
+See &lt;a href="_DateTimeSplit.htm"&gt;_DateTimeSplit()&lt;/a&gt; for other possible variations of the start and end date formats.
+
+
+###Related###
+_DateAdd, _DateTimeSplit, _DateToDayOfWeek, _DateToDayOfWeekISO, _DateToDayValue, _DayValueToDate, _NowCalc
+
+
+###Example###
+@@IncludeExample@@ _NowCalc
+</pre> </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+    </p>
+    <p><strong><em>FunctionName</em>.au3. </strong> This is the example to be
+      included in the Helpfile <strong><br>
+      </strong></p>
+    <table width="713">
+      <tbody>
+        <tr>
+          <td bgcolor="#cccccc" width="705">
+            <pre class="style1">#include &lt;Date.au3&gt;<br><br>; Calculated the number of seconds since EPOCH (1970/01/01 00:00:00) <br>$iDateCalc = _DateDiff( 's',"1970/01/01 00:00:00",_NowCalc())<br>MsgBox( 4096, "", "Number of seconds since EPOCH: " &amp; $iDateCalc )<br><br>; Calculated the number of Hours this year <br>$iDateCalc = _DateDiff( 'h',@YEAR &amp; "/01/01 00:00:00",_NowCalc())<br>MsgBox( 4096, "", "Number of Hours this year: " &amp; $iDateCalc )</pre>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
