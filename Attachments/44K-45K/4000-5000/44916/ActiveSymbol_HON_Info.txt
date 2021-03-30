@@ -1,0 +1,125 @@
+Mouse position is retrieved 575-130
+At least we have an element [HON][TextBlock]
+Having the following values for all properties: 
+Title is: <HON>	Class   := <TextBlock>	controltype:= <UIA_TextControlTypeId>	,<50020>	, (0000C364)	
+*** Parent Information top down ***
+5: Title is: <Desktop>	Class   := <#32769>	controltype:= <UIA_PaneControlTypeId>	,<50033>	, (0000C371)	
+"Title:=Desktop;controltype:=UIA_PaneControlTypeId;class:=#32769"	
+4: Title is: <TC2000 ® Beta 12.4.5235.25989>	Class   := <Afx:00F30000:0>	controltype:= <UIA_WindowControlTypeId>	,<50032>	, (0000C370)	
+"Title:=TC2000 ® Beta 12.4.5235.25989;controltype:=UIA_WindowControlTypeId;class:=Afx:00F30000:0"	
+3: Title is: <>	Class   := <Shell Embedding>	controltype:= <UIA_PaneControlTypeId>	,<50033>	, (0000C371)	
+"Title:=;controltype:=UIA_PaneControlTypeId;class:=Shell Embedding"	
+2: Title is: <>	Class   := <Shell DocObject View>	controltype:= <UIA_PaneControlTypeId>	,<50033>	, (0000C371)	
+"Title:=;controltype:=UIA_PaneControlTypeId;class:=Shell DocObject View"	
+1: Title is: <file://C:\Users\Doug\AppData\Local\Microsoft\Silverlight\OutOfBrowser\1350570325.www.tc2000.com\index.html>	Class   := <Internet Explorer_Server>	controltype:= <UIA_PaneControlTypeId>	,<50033>	, (0000C371)	
+"Title:=file://C:\Users\Doug\AppData\Local\Microsoft\Silverlight\OutOfBrowser\1350570325.www.tc2000.com\index.html;controltype:=UIA_PaneControlTypeId;class:=Internet Explorer_Server"	
+0: Title is: <Silverlight Control>	Class   := <MicrosoftSilverlight>	controltype:= <UIA_WindowControlTypeId>	,<50032>	, (0000C370)	
+"Title:=Silverlight Control;controltype:=UIA_WindowControlTypeId;class:=MicrosoftSilverlight"	
+*** Standard code ***
+#include "UIAWrappers.au3"
+AutoItSetOption("MustDeclareVars", 1)
+
+Local $oP4=_UIA_getObjectByFindAll($UIA_oDesktop, "Title:=TC2000 ® Beta 12.4.5235.25989;controltype:=UIA_WindowControlTypeId;class:=Afx:00F30000:0", $treescope_children)	
+_UIA_Action($oP4,"setfocus")
+Local $oP3=_UIA_getObjectByFindAll($oP4, "Title:=;controltype:=UIA_PaneControlTypeId;class:=Shell Embedding", $treescope_children)	
+_UIA_Action($oP3,"setfocus")
+Local $oP2=_UIA_getObjectByFindAll($oP3, "Title:=;controltype:=UIA_PaneControlTypeId;class:=Shell DocObject View", $treescope_children)	
+_UIA_Action($oP2,"setfocus")
+Local $oP1=_UIA_getObjectByFindAll($oP2, "Title:=file://C:\Users\Doug\AppData\Local\Microsoft\Silverlight\OutOfBrowser\1350570325.www.tc2000.com\index.html;controltype:=UIA_PaneControlTypeId;class:=Internet Explorer_Server", $treescope_children)	
+_UIA_Action($oP1,"setfocus")
+Local $oP0=_UIA_getObjectByFindAll($oP1, "Title:=Silverlight Control;controltype:=UIA_WindowControlTypeId;class:=MicrosoftSilverlight", $treescope_children)	
+_UIA_Action($oP0,"setfocus")
+;~ First find the object in the parent before you can do something
+;~$oUIElement=_UIA_getObjectByFindAll("HON.mainwindow", "title:=HON;ControlType:=UIA_TextControlTypeId", $treescope_subtree)
+Local $oUIElement=_UIA_getObjectByFindAll($oP0, "title:=HON;ControlType:=UIA_TextControlTypeId", $treescope_subtree)
+_UIA_action($oUIElement,"click")
+*** Detailed properties of the highlighted element ***
+UIA_title:= <HON>
+UIA_class:= <TextBlock>
+UIA_iaccessiblechildId:= <0>
+UIA_RuntimeId:= <42;591352;2;1>
+UIA_BoundingRectangle:= <558;121;38;21>
+UIA_ProcessId:= <4640>
+UIA_ControlType:= <50020>
+UIA_LocalizedControlType:= <text>
+UIA_Name:= <HON>
+UIA_HasKeyboardFocus:= <False>
+UIA_IsKeyboardFocusable:= <False>
+UIA_IsEnabled:= <True>
+UIA_AutomationId:= <theText>
+UIA_ClassName:= <TextBlock>
+UIA_ClickablePoint:= <577;131>
+UIA_Culture:= <0>
+UIA_IsControlElement:= <True>
+UIA_IsContentElement:= <True>
+UIA_IsPassword:= <False>
+UIA_NativeWindowHandle:= <0>
+UIA_IsOffscreen:= <False>
+UIA_Orientation:= <0>
+UIA_FrameworkId:= <Silverlight>
+UIA_IsRequiredForForm:= <False>
+UIA_IsDockPatternAvailable:= <False>
+UIA_IsExpandCollapsePatternAvailable:= <False>
+UIA_IsGridItemPatternAvailable:= <False>
+UIA_IsGridPatternAvailable:= <False>
+UIA_IsInvokePatternAvailable:= <False>
+UIA_IsMultipleViewPatternAvailable:= <False>
+UIA_IsRangeValuePatternAvailable:= <False>
+UIA_IsScrollPatternAvailable:= <False>
+UIA_IsScrollItemPatternAvailable:= <False>
+UIA_IsSelectionItemPatternAvailable:= <False>
+UIA_IsSelectionPatternAvailable:= <False>
+UIA_IsTablePatternAvailable:= <False>
+UIA_IsTableItemPatternAvailable:= <False>
+UIA_IsTextPatternAvailable:= <False>
+UIA_IsTogglePatternAvailable:= <False>
+UIA_IsTransformPatternAvailable:= <False>
+UIA_IsValuePatternAvailable:= <False>
+UIA_IsWindowPatternAvailable:= <False>
+UIA_ValueIsReadOnly:= <True>
+UIA_RangeValueValue:= <0>
+UIA_RangeValueIsReadOnly:= <True>
+UIA_RangeValueMinimum:= <0>
+UIA_RangeValueMaximum:= <0>
+UIA_RangeValueLargeChange:= <0>
+UIA_RangeValueSmallChange:= <0>
+UIA_ScrollHorizontalScrollPercent:= <0>
+UIA_ScrollHorizontalViewSize:= <100>
+UIA_ScrollVerticalScrollPercent:= <0>
+UIA_ScrollVerticalViewSize:= <100>
+UIA_ScrollHorizontallyScrollable:= <False>
+UIA_ScrollVerticallyScrollable:= <False>
+UIA_SelectionCanSelectMultiple:= <False>
+UIA_SelectionIsSelectionRequired:= <False>
+UIA_GridRowCount:= <0>
+UIA_GridColumnCount:= <0>
+UIA_GridItemRow:= <0>
+UIA_GridItemColumn:= <0>
+UIA_GridItemRowSpan:= <1>
+UIA_GridItemColumnSpan:= <1>
+UIA_DockDockPosition:= <5>
+UIA_ExpandCollapseExpandCollapseState:= <3>
+UIA_MultipleViewCurrentView:= <0>
+UIA_WindowCanMaximize:= <False>
+UIA_WindowCanMinimize:= <False>
+UIA_WindowWindowVisualState:= <0>
+UIA_WindowWindowInteractionState:= <0>
+UIA_WindowIsModal:= <False>
+UIA_WindowIsTopmost:= <False>
+UIA_SelectionItemIsSelected:= <False>
+UIA_TableRowOrColumnMajor:= <2>
+UIA_ToggleToggleState:= <2>
+UIA_TransformCanMove:= <False>
+UIA_TransformCanResize:= <False>
+UIA_TransformCanRotate:= <False>
+UIA_IsLegacyIAccessiblePatternAvailable:= <True>
+UIA_LegacyIAccessibleChildId:= <0>
+UIA_LegacyIAccessibleName:= <HON>
+UIA_LegacyIAccessibleRole:= <41>
+UIA_LegacyIAccessibleState:= <0>
+UIA_IsDataValidForForm:= <False>
+UIA_ProviderDescription:= <[pid:4640,hwnd:0x0 Main(parent link):Unidentified Provider (unmanaged:npctrl.dll)]>
+UIA_IsItemContainerPatternAvailable:= <False>
+UIA_IsVirtualizedItemPatternAvailable:= <False>
+UIA_IsSynchronizedInputPatternAvailable:= <False>
+
