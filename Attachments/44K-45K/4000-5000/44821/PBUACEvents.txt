@@ -1,0 +1,65 @@
+Record Number: 80120
+Submitted: 08/08/2014 10:31:18 AM
+Description: PowerBroker for Windows detected a UAC prompt:
+
+Path: C:\Users\usaaxf18\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\BJQVKP2D\install_flashplayer14x32ax_gtbd_chrd_dn_aaa_aih.exe
+Arguments: -elevated
+Vendor: Adobe
+Product Name: Adobe Installation Helper
+Version: 3.5.4.25
+Hash: 0x5434EE6D715B1ADE06EC4A6C0253C66932E3C9E7
+Certificate Publisher: O=Adobe Systems Incorporated, L=San Jose, S=California, C=US
+Original Filename: host.exe
+Process Type: Standard User
+Response: C:\Users\usaaxf18\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\BJQVKP2D\install_flashplayer14x32ax_gtbd_chrd_dn_aaa_aih.exe0
+Account used for elevation: C:\Users\usaaxf18\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\BJQVKP2D\install_flashplayer14x32ax_gtbd_chrd_dn_aaa_aih.exe1
+Authorization: C:\Users\usaaxf18\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\BJQVKP2D\install_flashplayer14x32ax_gtbd_chrd_dn_aaa_aih.exe2
+Record Number: 80110
+Submitted: 08/08/2014 10:22:44 AM
+Description: PowerBroker for Windows detected a UAC prompt:
+
+Path: C:\windows\system32\acppage.dll
+Arguments: {program compatibility}::{513d916f-2a8e-4f51-aeab-0cbc76fb1af8}
+Vendor: Microsoft Corporation
+Product Name: Microsoft® Windows® Operating System
+Version: 6.1.7601.17514
+Hash: 0x8756CB09CBB7A5D32C37AD10880E08298D4CFCEF
+Certificate Publisher: O=Microsoft Corporation, L=Redmond, S=Washington, C=US
+Original Filename: acppage.dll
+Process Type: Standard User
+Response: C:\windows\system32\acppage.dll0
+Account used for elevation: C:\windows\system32\acppage.dll1
+Authorization: C:\windows\system32\acppage.dll2
+Record Number: 80099
+Submitted: 08/08/2014 09:55:55 AM
+Description: PowerBroker for Windows detected a UAC prompt:
+
+Path: C:\windows\regedit.exe
+Arguments: <None>
+Vendor: Microsoft Corporation
+Product Name: Microsoft® Windows® Operating System
+Version: 6.1.7600.16385
+Hash: 0x682214961228453C389854E81E6786DF92BBFA67
+Certificate Publisher: O=Microsoft Corporation, L=Redmond, S=Washington, C=US
+Original Filename: REGEDIT.EXE
+Process Type: Standard User
+Response: C:\windows\regedit.exe0
+Account used for elevation: C:\windows\regedit.exe1
+Authorization: C:\windows\regedit.exe2
+Record Number: 80019
+Submitted: 08/08/2014 08:37:29 AM
+Description: PowerBroker for Windows detected a UAC prompt:
+
+Path: C:\windows\system32\mmc.exe
+Arguments: c:\stuff\_remoteapps\praxair ad tools.msc
+Vendor: Microsoft Corporation
+Product Name: Microsoft® Windows® Operating System
+Version: 6.1.7600.16385
+Hash: 0xD63163689D0D55DD322CEB509BEE63B0436946AD
+Certificate Publisher: O=Microsoft Corporation, L=Redmond, S=Washington, C=US
+Original Filename: mmc.exe
+Process Type: Standard User
+Response: C:\windows\system32\mmc.exe0
+Account used for elevation: C:\windows\system32\mmc.exe1
+Authorization: C:\windows\system32\mmc.exe2
+
