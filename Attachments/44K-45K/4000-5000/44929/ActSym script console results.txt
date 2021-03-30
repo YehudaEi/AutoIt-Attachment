@@ -1,0 +1,11 @@
+Console results of latest run of Script:
+
+
+>"C:\Program Files (x86)\AutoIt3\SciTE\AutoIt3Wrapper\AutoIt3Wrapper.exe" /run /beta /ErrorStdOut /in "F:\AutoIt Scripts\UI\TC SCRIPTS\TC2000_ActSym_StdCode.au3" /UserParams    
++>17:53:30 Starting AutoIt3Wrapper v.2.1.2.9    Environment(Language:0409  Keyboard:00000409  OS:WIN_7/  CPU:X64 OS:X64)
+-> Skipping AU3check: Current version doesn't support the AutoIt3 v 3.3.9.5+ syntax.
+>Running:(3.3.13.18):C:\Program Files (x86)\AutoIt3\beta\autoit3_x64.exe "F:\AutoIt Scripts\UI\TC SCRIPTS\TC2000_ActSym_StdCode.au3"    
+--> Press Ctrl+Alt+F5 to Restart or Ctrl+Break to Stop
+Got P4P4 Focus SetGot P3P3 Focus SetGot P2P2 Focus SetGot P1P1 Focus SetGot P0P0 Focus SetGot $oUIElement$oUIElement Focus Set
++>17:54:04 AutoIt3.exe ended.rc:0
+>Exit code: 0    Time: 34.641
