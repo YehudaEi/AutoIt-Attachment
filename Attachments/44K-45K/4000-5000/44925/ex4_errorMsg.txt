@@ -1,0 +1,14 @@
+CONSOLE ERROR DISPLAY AFTER RUNNING ex4_calculator.au3:
+
+
+>"C:\Program Files (x86)\AutoIt3\SciTE\AutoIt3Wrapper\AutoIt3Wrapper.exe" /run /beta /ErrorStdOut /in "F:\AutoIt Scripts\UI\ex4_calculator.au3" /UserParams    
++>08:48:05 Starting AutoIt3Wrapper v.2.1.2.9    Environment(Language:0409  Keyboard:00000409  OS:WIN_7/  CPU:X64 OS:X64)
+-> Skipping AU3check: Current version doesn't support the AutoIt3 v 3.3.9.5+ syntax.
+>Running:(3.3.13.18):C:\Program Files (x86)\AutoIt3\beta\autoit3_x64.exe "F:\AutoIt Scripts\UI\ex4_calculator.au3"    
+--> Press Ctrl+Alt+F5 to Restart or Ctrl+Break to Stop
+Example text is for dutch calculator so please change text to english or other language to identify controls
+"F:\AutoIt Scripts\UI\UIAWrappers.au3" (1045) : ==> Variable must be of type "Object".:
+$obj.getCurrentPattern($PatternId, $pPattern)
+$obj^ ERROR
+->08:48:07 AutoIt3.exe ended.rc:1
+>Exit code: 1    Time: 2.306
