@@ -1,0 +1,71 @@
+
+[Clean the House]
+group=001
+001=Take out the garbage
+002=Do the Dishes
+003=Too much like work, get wife to do it
+
+[Wash the Car]
+group=001
+001=Get out the Hose
+002=Get a bucket
+003=Find the soap
+004=Fill bucket with soap and water
+005=Was from top to bottom with soapy solution
+006=Rinse with hose
+
+[Yard Maintenance]
+group=001
+001=Pickup the dog shit
+002=Mow the lawn
+003=Weed the garden
+004=Pop a cold one
+
+[Printer Problem]
+group=002
+001=Power printer off/on
+002=Open trouble ticket (help desk)
+
+
+[Help Kids with Homework]
+group=003
+001=Clear work area
+002=Get school books / homework papers
+003=Beat the kids till they get it
+
+
+[Write Code]
+group=004
+001=Define task
+002=Break task into functional pieces
+003=Define data
+004=Define presentation mechanism
+005=Give up, you actually have to read something!
+
+[Maintain PC]
+group=004
+001=Run pending Updates
+002=Run CCLeaner
+003=Review / delete uneeded files
+004=Run Adware scanner
+005=Run AV scanner
+
+[attitude problem]
+group=002
+001=talk to the bitch
+002=fire the bitch
+
+[pencil dull]
+group=002
+001=call problem meeting
+002=submit change request
+003=schedule testing time
+004=schedule live environment test
+005=get final manager approval
+006=aquire equipment
+007=test sharpened pencil
+008=get final signoff for project
+
+[length test]
+group=002
+001=123456789012345678901234567890123456789012345678901234567890
