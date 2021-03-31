@@ -1,0 +1,451 @@
+TF1 HD (720p)
+                                                
+
+France 2
+http://dbw9rg1ntmxk6.cloudfront.net/live2/france2.smil/playlist.m3u8
+
+France 3
+http://dbw9rg1ntmxk6.cloudfront.net/live2/france3.smil/playlist.m3u8
+
+France 5
+http://dbw9rg1ntmxk6.cloudfront.net/live2/france5.smil/playlist.m3u8
+
+M6
+                                                                                          
+
+Arte
+                                                                                
+
+EXTINF:-1,La Deux
+                                                         :
+ ?#?EXTINF?:-1,RTL-TVi HD
+                                                         :
+ #EXTINF:-1,Club RTL / Kidz RTL
+                                                         :
+ #EXTINF:-1,Plug RTL
+                                                         :
+ #EXTINF:-1,La Trois
+                                                         :
+ #EXTINF:-1,AB3
+                                                          :
+ #EXTINF:-1,AB4
+                                                          :
+ #EXTINF:-1,TF1 HD
+                                                          :
+ #EXTINF:-1,France 2 HD
+                                                          :
+ #EXTINF:-1,France 3
+                                                          :
+ #EXTINF:-1,France 4
+                                                          :
+ #EXTINF:-1,France 5
+                                                          :
+ #EXTINF:-1,France O
+                                                          :
+ #EXTINF:-1,MAISON+
+                                                        :
+ #EXTINF:-1,STYLIA
+                                                        :
+ #EXTINF:-1,COMEDIE+
+                                                        :
+ #EXTINF:-1,D17
+                                                        :
+ #EXTINF:-1,JUNE
+                                                        :
+ #EXTINF:-1,NT1
+                                                          :
+ #EXTINF:-1,AB1
+                                                          :
+ #EXTINF:-1,RTL Tele Letzebuerg 23.5
+                                                        :
+ #EXTINF:-1,TV5MONDE FBS
+                                                           :
+ #EXTINF:-1,Arte
+                                                          :
+ #EXTINF:-1,Arte HD
+                                                          :
+ #EXTINF:-1,DISNEY CHANNEL
+                                                        :
+ #EXTINF:-1,DISNEY CHANNEL+1
+                                                        :
+ #EXTINF:-1,DISNEY XD
+                                                        :
+ #EXTINF:-1,DISNEY JUNIOR
+                                                        :
+ #EXTINF:-1,Boomerang
+                                                        :
+ #EXTINF:-1,Cartoon Network
+                                                        :
+ #EXTINF:-1,Gulli
+                                                          :
+ #EXTINF:-1,NICKELODEON France
+                                                        :
+ #EXTINF:-1,TIJI
+                                                        :
+ #EXTINF:-1,CANAL J
+                                                        :
+ #EXTINF:-1,TELETOON+
+                                                        :
+ #EXTINF:-1,TELETOON+1
+                                                        :
+ #EXTINF:-1,PIWI+
+                                                        :
+ #EXTINF:-1,MANGAS
+                                                          :
+ #EXTINF:-1,GAME ONE
+                                                        :
+ #EXTINF:-1,TCM HD France
+                                                        :
+ #EXTINF:-1,ACTION
+                                                          :
+ #EXTINF:-1,POLAR
+                                                          :
+ #EXTINF:-1,CINE FX
+                                                          :
+ #EXTINF:-1,ENCYCLO
+                                                          :
+ #EXTINF:-1,PLANETE+
+                                                        :
+ #EXTINF:-1,HISTOIRE
+                                                        :
+ #EXTINF:-1,Toute l'Histoire
+                                                          :
+ #EXTINF:-1,ESCALES
+                                                          :
+ #EXTINF:-1,ANIMAUX
+                                                          :
+ #EXTINF:-1,USHUAIA TV
+                                                        :
+ #EXTINF:-1,Golf Channel France
+                                                           :
+ #EXTINF:-1,NATIONAL GEO
+                                                        :
+ #EXTINF:-1,NatGeo Wild HD
+                                                        :
+ #EXTINF:-1,CHASSE &amp; PECHE
+                                                          :
+ #EXTINF:-1,Fashion One
+                                                        :
+ #EXTINF:-1,Fashion TV
+                                                          :
+ #EXTINF:-1,I&gt;TELE
+                                                        :
+ #EXTINF:-1,LCI
+                                                        :
+ #EXTINF:-1,LCP
+                                                        :
+ #EXTINF:-1,Euronews
+                                                           :
+ #EXTINF:-1,France 24 (en Francais)
+                                                         :
+ #EXTINF:-1,BFM TV
+                                                          :
+ #EXTINF:-1,TV5MONDE EUROPE
+                                                           :
+ #EXTINF:-1,BBC World News
+                                                           :
+ #EXTINF:-1,CNN Int.
+                                                        :
+ #EXTINF:-1,France 24 (in English)
+                                                         :
+ #EXTINF:-1,Al Jazeera Intl
+                                                          :
+ #EXTINF:-1,Sky News Intl
+                                                        :
+ #EXTINF:-1,Bloomberg European TV
+                                                           :
+ #EXTINF:-1,CNBC Europe
+                                                        :
+ #EXTINF:-1,NHK World TV
+                                                        :
+ #EXTINF:-1,Canal+ HD (FTA)
+                                                        :
+ #EXTINF:-1,Canal+ Décalé HD (FTA)
+                                                        :
+ #EXTINF:-1,CANAL+
+                                                        :
+
+D8 
+                                                                                          
+
+W9
+                                                                                          
+
+NRJ 12
+rtsp://rtsp-out-b.live.tdf-cdn.com:554/2887_nrj_12_tv_nrj_174257.sdp
+
+France 4
+http://dbw9rg1ntmxk6.cloudfront.net/live2/france4.smil/playlist.m3u8
+
+M6
+                                                                                          
+
+W9
+                                                                                          
+
+
+
+:1
+set "Channel=BEIN 1 HD"
+set "Stream=rtmp://195.154.220.115:1935/private/xsbein1"
+goto FFPLAY
+
+:2
+set "Channel=BEIN 2 HD"
+set "Stream=rtmp://195.154.220.115:1935/private/xsbein2"
+goto FFPLAY
+
+:3
+set "Channel=BEIN 3 HD"
+set "Stream=rtmp://195.154.220.115:1935/private/xsbein3"
+goto FFPLAY
+
+:4
+set "Channel=BEIN 4 HD"
+set "Stream=rtmp://195.154.220.115:1935/private/xsbein4"
+goto FFPLAY
+
+:5
+set "Channel=BEIN 5 HD"
+set "Stream=rtmp://195.154.220.115:1935/private/xsbein5"
+goto FFPLAY
+
+:6
+set "Channel=BEIN 6 HD"
+set "Stream=rtmp://195.154.220.115:1935/private/xsbein6"
+goto FFPLAY
+
+:7
+set "Channel=BEIN 7 HD"
+set "Stream=rtmp://195.154.220.115:1935/private/xsbein7"
+goto FFPLAY
+
+:8
+set "Channel=BEIN 8 HD"
+set "Stream=rtmp://195.154.220.115:1935/private/xsbein8"
+goto FFPLAY
+
+:9
+set "Channel=BEIN 9 HD"
+set "Stream=rtmp://195.154.220.115:1935/private/xsbein9"
+goto FFPLAY
+
+:10
+set "Channel=BEIN 10 HD"
+set "Stream=rtmp://195.154.220.115:1935/private/xsbein10"
+goto FFPLAY
+
+:11
+set "Channel=BEIN 11 HD"
+set "Stream=rtmp://195.154.220.115:1935/private/xsbein11"
+goto FFPLAY
+
+:12
+set "Channel=BEIN 12 HD"
+set "Stream=rtmp://195.154.220.115:1935/private/xsbein12"
+goto FFPLAY
+
+:13
+set "Channel=BEIN 13 HD"
+set "Stream=rtmp://195.154.220.115:1935/private/xsbein13"
+gotoFFPLAY
+
+:14
+set "Channel=BEIN 14 HD"
+set "Stream=rtmp://195.154.220.115:1935/private/xsbein14"
+goto FFPLAY
+
+:15
+set "Channel=BEIN 15 HD"
+set "Stream=rtmp://195.154.220.115:1935/private/xsbein15"
+goto FFPLAY
+
+:16
+set "Channel=SKY 1"
+set "Stream=rtmp://195.154.220.115:1935/private/sskys1"
+goto FFPLAY
+
+:17
+set "Channel=SKY 2"
+set "Stream=rtmp://195.154.220.115:1935/private/sskys2"
+goto FFPLAY
+
+:18
+set "Channel=SKY 3"
+set "Stream=rtmp://195.154.220.115:1935/private/sskys3"
+goto FFPLAY
+
+:19
+set "Channel=SKY 4"
+set "Stream=rtmp://195.154.220.115:1935/private/sskys4"
+goto FFPLAY
+
+:20
+set "Channel=SKY F1"
+set "Stream=rtmp://195.154.220.115:1935/private/sskysf1"
+goto FFPLAY
+
+:21
+set "Channel=SKY NEWS"
+set "Stream=rtmp://195.154.220.115:1935/private/sskynews"
+goto FFPLAY
+
+:22
+set "Channel=BT 1"
+set "Stream=rtmp://195.154.220.115:1935/private/sbt1"
+goto FFPLAY
+
+:23
+set "Channel=BT 2"
+set "Stream=rtmp://195.154.220.115:1935/private/sbt2"
+goto FFPLAY
+
+:24
+set "Channel=TRT 1"
+set "Stream=                                                        "
+goto FFMPEG
+
+:25
+set "Channel=ESPN 2"
+set "Stream=rtmp://195.154.220.115:1935/private/sespn2"
+goto FFPLAY
+
+:26
+set "Channel=FOX 1"
+set "Stream=rtmp://195.154.220.115:1935/private/sfox1"
+goto FFPLAY
+
+:27
+set "Channel=FOX 2"
+set "Stream=rtmp://195.154.220.115:1935/private/sfox2"
+goto FFPLAY
+
+:28
+set "Channel=SN 1"
+set "Stream=rtmp://195.154.220.115:1935/private/snone"
+goto FFPLAY
+
+:29
+set "Channel=SPORTS TV "
+set "Stream=rtmp://stream.sportstv.com.tr/sportstv/SportsTV3 "
+goto FFPLAY
+
+:30
+set "Channel=IDMAN TV"
+set "Stream=                                                                      "
+goto FFPLAY
+
+:31
+set "Channel=AD SPORTS 1"
+set "Stream=rtmp://85.91.143.21/15675//15675.stream"
+goto FFPLAY
+
+:32
+set "Channel=NTV FUTBUL"
+set "Stream=                                                        "
+goto FFPLAY
+
+:33
+set "Channel=ARENA SPORT1"
+set "Stream=                         "
+goto FFPLAY
+
+:34
+set "Channel=AD SPORTS 1"
+set "Stream=rtmp://85.91.143.21/35428//35428.stream"
+goto FFPLAY
+
+:35
+set "Channel=GALATASARAY TV"
+set "Stream=rtmp://cdn21.motiwe.com/live/gstv370"
+goto FFPLAY
+
+:36
+set "Channel=BURSASPOR TV"
+set "Stream=                                                             "
+goto FFPLAY
+
+:37
+set "Channel=SPORT TIME 1"
+set "Stream=rtmp://streamer.a1.net:1935/rtmplive/redundant/channels/Sporttime/SporttimeTV/mp4:channel1_800"
+goto FFPLAY
+
+:38
+set "Channel=SPORT TIME 2"
+set "Stream=rtmp://streamer.a1.net:1935/rtmplive/redundant/channels/Sporttime/SporttimeTV/mp4:channel2_800"
+goto FFPLAY
+
+:39
+set "Channel=SPORT TIME 3"
+set "Stream=rtmp://streamer.a1.net:1935/rtmplive/redundant/channels/Sporttime/SporttimeTV/mp4:channel3_800"
+goto FFPLAY
+
+:40
+set "Channel=SPORT TIME 4"
+set "Stream=rtmp://streamer.a1.net:1935/rtmplive/redundant/channels/Sporttime/SporttimeTV/mp4:channel4_1200"
+goto FFPLAY
+
+:41
+set "Channel=SPORT TIME 5"
+set "Stream=rtmp://streamer.a1.net:1935/rtmplive/redundant/channels/Sporttime/SporttimeTV/mp4:channel5_800"
+goto FFPLAY
+
+:42
+set "Channel=SPORT TIME 6"
+set "Stream=rtmp://streamer.a1.net:1935/rtmplive/redundant/channels/Sporttime/SporttimeTV/mp4:channel6_800"
+goto FFPLAY
+
+:43
+set "Channel=SPORT TIME 7"
+set "Stream=rtmp://streamer.a1.net:1935/rtmplive/redundant/channels/Sporttime/SporttimeTV/mp4:channel7_800"
+goto FFPLAY
+
+:44
+set "Channel=ARENA SPORT 1"
+set "Stream=                           "
+goto FFPLAY
+
+:45
+set "Channel=ARENA SPORT 2"
+set "Stream=                           "
+goto FFPLAY
+
+:46
+set "Channel=ARENA SPORT 3"
+set "Stream=                           "
+goto FFPLAY
+
+:47
+set "Channel=ARENA SPORT 4"
+set "Stream=                           "
+goto FFPLAY
+
+:48
+set "Channel=SPORTKLUB 1"
+set "Stream=                           "
+goto FFPLAY
+
+:49
+set "Channel=SPORTKLUB 2"
+set "Stream=                            "
+goto FFPLAY
+
+:50
+set "Channel=SPORTKLUB 3"
+set "Stream=                           "
+goto FFPLAY
+
+:51
+set "Channel=EUROSPORT 1"
+set "Stream=                           "
+goto FFPLAY
+
+:52
+set "Channel=EUROSPORT 2"
+set "Stream=                           "
+goto FFPLAY
+
+:53
+set "Channel=ZDF"
+set "Stream=http://is.gd/J5wqGR/udp/239.3.0.15:5000"
+goto FFPLAY
